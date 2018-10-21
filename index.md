@@ -1,3 +1,7 @@
+---
+background: 'https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1280/v1539415848/markus-spiske-666904-unsplash_y4hjex.jpg'
+---
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/hectorip/TheDojoMXBlog/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
