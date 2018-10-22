@@ -1,6 +1,6 @@
 ---
 layout: home
-background: 'https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1280/v1539415848/markus-spiske-666904-unsplash_y4hjex.jpg'
+author_profile: true
 ---
 
 ## Welcome to GitHub Pages

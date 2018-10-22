@@ -1,1 +1,51 @@
-remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: mmistakes/minimal-mistakes
+locale: es
+plugins:
+    - jekyll-feed
+    - jekyll-redirect-from
+    - jekyll-seo-tag
+    - jekyll-sitemap
+    - jekyll-avatar
+    - jemoji
+    - jekyll-mentions
+    - jekyll-include-cache
+
+paginate: 10
+paginate_path: /page:num/
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+author:
+  name   : "Héctor Patricio"
+  avatar : "/assets/images/me.jpg"
+  bio    : "Developer"
+  uri    : "https://github.com/hectorip"
+  home   : # null (default), "absolute or relative url to link to author home"
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "UA-53624335-5"
+    anonymize_ip: false # default
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "hectorips-til"
