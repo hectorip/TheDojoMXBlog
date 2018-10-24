@@ -3,6 +3,6 @@ layout: home
 author_profile: false
 ---
 
-# welcome to The DojoMX blog
+# The Dojo MX :: Blog
 
 This will be the blog for the marvelous dojo.
