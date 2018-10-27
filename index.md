@@ -2,11 +2,10 @@
 title: "The Dojo :: Blog"
 layout: splash
 date: 2018-10-26
-background: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1539415848/markus-spiske-666904-unsplash_y4hjex.jpg
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/unsplash-image-1.jpg
+  overlay_image:  https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1539415848/markus-spiske-666904-unsplash_y4hjex.jpg
   actions:
     - label: "Download"
       url: "https://github.com/mmistakes/minimal-mistakes/"
