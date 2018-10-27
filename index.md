@@ -1,7 +1,7 @@
 ---
 title: "The Dojo :: Blog"
 layout: splash
-date: 2018-10-26
+# date: 2018-10-26
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
