@@ -1,0 +1,7 @@
+main:
+  - title: "Últimos Posts"
+    url: /latest
+  - title: "Acerca de"
+    url: /about
+  - title: "Página principal"
+    url: "https://thedojo.mx"

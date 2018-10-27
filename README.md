@@ -9,7 +9,6 @@ En este blog hablamos de:
 - Análisis de datos
 - Inteligencia artifical
 
-
 ## Acerca de
 
 ### ¿A quiénes está dirigido este blog?
