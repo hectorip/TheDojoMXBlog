@@ -8,7 +8,7 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 excerpt: "Nuestro objetivo es mejorar el estado del arte de desarrollo de software en México."
 intro: 
-  - excerpt: "Este es un blog Open Source. Si quieres participar visita el [repositorio](https://github.com/hectorip/TheDojoMXBlog){:target="_blank"}."
+  - excerpt: "Este es un blog Open Source. Si quieres participar visita el [repositorio](https://github.com/hectorip/TheDojoMXBlog)."
 ---
 
 {% include feature_row id="intro" type="center" %}
