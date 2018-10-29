@@ -48,4 +48,4 @@ analytics:
 comments:
   provider: "disqus"
   disqus:
-    shortname: "hthe-dojo-mx-blog"
+    shortname: "the-dojo-mx-blog"
