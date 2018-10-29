@@ -1,6 +1,6 @@
 ---
-date: 2018-10-28
 title: "Bienvenidos al Blog de The Dojo MX"
+date: 2018-10-28
 author: Héctor Patricio
 tags: thedojomx opensource
 comments: true
