@@ -1,4 +1,5 @@
 ---
 layout: home
 permalink: /latest/
+author_profile: false
 ---
