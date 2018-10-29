@@ -4,6 +4,7 @@ date: 2018-10-28
 author: Héctor Patricio
 tags: thedojomx opensource
 comments: true
+excerpt: "El primer post del blog"
 ---
 
 Este es el primer post, esperamos que de muchos, del blog de The Dojo MX.
