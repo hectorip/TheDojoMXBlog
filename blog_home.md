@@ -1,4 +1,4 @@
 ---
 layout: home
-pemalink: /latest/
+permalink: /latest/
 ---

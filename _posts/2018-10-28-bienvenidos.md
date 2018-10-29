@@ -29,6 +29,8 @@ software, con un enfoque educativo. Algunos ejemplos de los tópicos a tratar so
 
 Este es unblog Open Source. Está construido sobre GitHub pages con Jekyll (tenfremos que actualizar esto si un día cambia), pero esto te permite contribuir con el simple hecho de hacer un Pull Request si crees que podemos cambiar algo en la estructura del sitio o si quieres escribir un post.
 
-En uno de los siguientes posts de la semana daremos una lista de pasos detallados de cómo hacer esto.
+En uno de los siguientes posts de la semana daremos una lista de pasos detallados de cómo hacer esto, junto con los lineamientos necesarios para aceptar un post.
 
 Si tienes ideas o peticiones de temas que deberíamos tratar, haznolas saber con un Issue en GitHub.
+
+También puedes dejar algún comentario para dar ideas.
