@@ -7,4 +7,9 @@ comments: true
 published: false
 ---
 
-En este post hablaremos de cómo puedes contribuir con un artículo en este blog.
+En este post hablaremos de cómo puedes contribuir con un artículo, recuerda que este es un blog Open source.
+
+## Entorno
+
+Este blog está hosteado en GitHub Pages, y su código fuente está disponible ahí para que lo
+tomes, edites y hagas las contribuciones que desees.
