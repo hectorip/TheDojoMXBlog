@@ -21,6 +21,6 @@ def main(draft=False, *names):
     directory = "_drafts" if draft else "_posts"
     for name in names:
       
-        file_name = "_posts/{}-{}.md".format(date, slugify(name))
+        file_name = "{}/{}-{}.md".format(directory, date, slugify(name))
         with open(file_name, "w") as f:
             f.write(template.format(name, date))
