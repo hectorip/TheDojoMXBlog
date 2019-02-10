@@ -1,11 +1,13 @@
-import begin
+import os
 from datetime import datetime
+
+import begin
 from slugify import slugify
 
 template = """---
 title: "{}"
 date: {}
-author: Héctor Patricio
+author: {}
 tags:
 comments: true
 excerpt: ""
@@ -13,14 +15,19 @@ header:
   image: #image
 ---"""
 
+
 @begin.start(auto_convert=True)
-def main(draft=False, *names):
+def main(draft=False, author="Héctor Patricio", *names):
     """ Creates a new file with today's date and title as slug in _posts dir """
+
     t = datetime.today()
-    date = "{}-{:02d}-{:02d}".format(t.year, t.month,t.day)
+    date = f"{t.year}-{t.month:02d}-{t.day:02d}"
     directory = "_drafts" if draft else "_posts"
+
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
     for name in names:
-      
-        file_name = "{}/{}-{}.md".format(directory, date, slugify(name))
-        with open(file_name, "w") as f:
-            f.write(template.format(name, date))
+        file_name = f"{directory}/{date}-{slugify(name)}.md"
+        with open(file_name, "w", encoding="utf-8") as f:
+            f.write(template.format(name, date, author))
