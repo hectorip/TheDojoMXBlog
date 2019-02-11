@@ -2,9 +2,9 @@
 title: "cadena-responsabilidades"
 date: 2019-02-10
 author: Esteban Galicia
-tags:
+tags: python patrones SOLID Responsability Chain
 comments: true
-excerpt: ""
+excerpt: "Los patrones de diseño como eje central en el desarrollo de software"
 header:
   image: #image
 ---
