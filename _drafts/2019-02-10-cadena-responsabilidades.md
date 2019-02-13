@@ -2,16 +2,16 @@
 title: "cadena-responsabilidades"
 date: 2019-02-10
 author: Esteban Galicia
-tags: python patrones SOLID Responsability Chain
+tags: python patrones SOLID Chain-of-Responsibility design-patterns
 comments: true
-excerpt: "Los patrones de diseño como eje central en el desarrollo de software"
+excerpt: "Manejar múltiples handlers, conocidos y no conocidos."
 header:
   image: #image
 ---
 
 # Cadena de responsabilidad
 
-Hace unas semanas me enfrente a un tema de procesar un mensaje de un usuario y darle tratamiento por medio de un algoritmo de Natrual Language Processing. Antes de pasar el mensaje por el set de algoritmos apropiados hay que darle una serie de tratamientos:
+Hace unas semanas me enfrenté a un tema de procesar un mensaje de un usuario y darle tratamiento por medio de un algoritmo de Natrual Language Processing. Antes de pasar el mensaje por el set de algoritmos apropiados hay que darle una serie de tratamientos previos:
 
  1. Eliminar los acentos y sólo dejar en ASCII el mensaje.
  2. Pasar el mensaje a lowercase.
@@ -32,7 +32,11 @@ Poco a poco se fue agregando y agregando código para tareas como eliminar emoji
 
 ## El salvador
 
-El patrón de diseño *Chain of responsibility* como premisa principal es que mas de una entidad de software pueda atender una petición.
+El patrón de diseño *Chain of responsibility* como premisa principal es que mas de una entidad de software pueda atender una petición. Dichas entidades pueden ser conocidas y de hecho se acaman implementando, pero también pueden ser desconocidas y esas no las podemos implementar pero debemos ser capaces de implementarlas en un futuro.
+En éste patrón la peticion es mandada de entidad en entidad (cada entidad es un eslabón de la cadena), cada entidad maneja la petición y la pasa al siguiente eslabón hasta que se terminen los eslabones de la cadena o uno de ellos decida que hay que regresar un valor.
+
+
+Siguiendo con el problema original, el código propuesto es el siguiente [(aquí uno en Java)](https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm):
 
 ```python
 def to_lower(message=""):
@@ -54,6 +58,9 @@ def to_disk(message):
         fp.write(f"{message}\n")
     return message
 
+def remove_all_punctuation(message):
+    #all code to remove punctuation marks
+    return message
 
 class Pipe:
     def __init__(self,message):
@@ -72,14 +79,16 @@ pipe=Pipe("Dios bendiga a los héroes que nos dieron el internet.")
 pipe.add_process(to_disk)
 pipe.add_process(to_lower)
 pipe.add_process(to_ascii)
+pipe.add_process(remove_all_punctuation)
 new_message=pipe.run()
 print(new_message)
 
 ```
 El código anterior es un código más profesional, más mantenible ya que cumplimos con el principio open/close y de paso de resposnabilidad única.
 
-Podemos ir agregando funciones de procesamiento de manera más legible, y también podemos quitarlas a voluntad dado que el nivel de acoplamiento es muy bajo. A todo ésto hay que añadir la ventaja de facilidad al escribir test unitarios que da pie para el CI/CD.
+Podemos ir agregando funciones de procesamiento de manera más legible, y también podemos quitarlas a voluntad dado que el nivel de acoplamiento es muy bajo. A todo ésto hay que añadir la ventaja de facilidad al escribir test unitarios que dan pie para el CI/CD.
 
-Se puede ver que es una sobre ingeniería para algo tan sencillo, sin embargo puede proveer un ejemplo claro/práctico de la aplicación del patrón.
+Se puede pensar al inicio que es una sobre ingeniería para algo tan sencillo, pero los negocios son tan cambiantes en el tiempo que se vuelve un poco ingenuo pensar que lo que escribamos nunca lo tendremos que modificar, ¿Por que no mejor diseñamos softwar que pueda der modificable en el ahora y el futuro?. Éste tema de los patrones de diseño es un tema muy extenso que poco a poco iremos cubriendo con entradas en éste blog dando ejemplos sencillos como el anterior.
+Lo importante es quedarse con el concepto de que hace el patrón y no con la implementación como tal de código, en Java el código anterior puede poco similar sin embargo cumple el patrón. Tuve conciencia de ésto leyendo que en un principio en los años dorados de C, éste patrón se implementaba con listas enlazadas a su vez implementadas con apuntadores.
 
 Saludos y no dudes en ejercer tu derecho de réplica :) , discutamos un poco al respecto :D
