@@ -1,5 +1,5 @@
 ---
-title: "cadena-responsabilidades"
+title: "Patrón de diseño: Cadena de responsabilidad"
 date: 2019-02-10
 author: Esteban Galicia
 tags: python patrones SOLID Chain-of-Responsibility design-patterns
@@ -8,8 +8,6 @@ excerpt: "Manejar múltiples handlers, conocidos y no conocidos."
 header:
   image: #image
 ---
-
-# Cadena de responsabilidad
 
 Hace unas semanas me enfrenté a un tema de procesar un mensaje de un usuario y darle tratamiento por medio de un algoritmo de Natrual Language Processing. Antes de pasar el mensaje por el set de algoritmos apropiados hay que darle una serie de tratamientos previos:
 
@@ -88,7 +86,8 @@ El código anterior es un código más profesional, más mantenible ya que cumpl
 
 Podemos ir agregando funciones de procesamiento de manera más legible, y también podemos quitarlas a voluntad dado que el nivel de acoplamiento es muy bajo. A todo ésto hay que añadir la ventaja de facilidad al escribir test unitarios que dan pie para el CI/CD.
 
-Se puede pensar al inicio que es una sobre ingeniería para algo tan sencillo, pero los negocios son tan cambiantes en el tiempo que se vuelve un poco ingenuo pensar que lo que escribamos nunca lo tendremos que modificar, ¿Por que no mejor diseñamos softwar que pueda der modificable en el ahora y el futuro?. Éste tema de los patrones de diseño es un tema muy extenso que poco a poco iremos cubriendo con entradas en éste blog dando ejemplos sencillos como el anterior.
-Lo importante es quedarse con el concepto de que hace el patrón y no con la implementación como tal de código, en Java el código anterior puede poco similar sin embargo cumple el patrón. Tuve conciencia de ésto leyendo que en un principio en los años dorados de C, éste patrón se implementaba con listas enlazadas a su vez implementadas con apuntadores.
+Se puede pensar al inicio que es una sobre-ingeniería para algo tan sencillo, pero los negocios son tan cambiantes en el tiempo que se vuelve un poco ingenuo pensar que lo que escribamos nunca lo tendremos que modificar, ¿por que no mejor diseñamos software que pueda ser modificable en el ahora y el futuro?. Este tema de los patrones de diseño es un tema muy extenso que poco a poco iremos cubriendo con entradas en este blog dando ejemplos sencillos como el anterior.
 
-Saludos y no dudes en ejercer tu derecho de réplica :) , discutamos un poco al respecto :D
+Lo importante es quedarse con el concepto de qué es lo que hace el patrón y no con la implementación como tal del código, en Java el código anterior puede ser muy diferente, sin embargo cumple el patrón. Tuve conciencia de esto leyendo que en un principio, en los años dorados de C, este patrón se implementaba con listas enlazadas, a su vez implementadas con apuntadores.
+
+Saludos y no dudes en ejercer tu derecho de réplica :) , discutamos un poco al respecto :D.
