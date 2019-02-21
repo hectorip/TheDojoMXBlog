@@ -2,6 +2,14 @@ Héctor Patricio:
   name: "Héctor Patricio"
   uri: "https://gihub.com/hectorip"
   email: "hectorivanpatriciomoreno@gmail.com"
-  bio: "Developer Developer Developer"
+  bio: "Tech Leader en HAL."
   avatar: "/assets/images/me.jpg"
   twitter: "hectorip"
+
+Esteban Galicia:
+  name: "Esteban Galicia"
+  # uri: "https://gihub.com/hectorip"
+  # email: "hectorivanpatriciomoreno@gmail.com"
+  bio: "Developer apasionado del conocimiento"
+  avatar: "https://res.cloudinary.com/hectorip/image/upload/v1539749539/44147293_251168868909676_2757599841344290816_n_1_zadepv.png"
+  # twitter: "hectorip"
