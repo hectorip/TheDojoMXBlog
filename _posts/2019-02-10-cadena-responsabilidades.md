@@ -43,7 +43,7 @@ Pero, si el código anterior es muy sencillo, no veo caso de hacerlo _complejo_;
 
 En este patrón la petición (_request_) es mandada de entidad en entidad (cada entidad es un eslabón de la cadena o _handler_), cada entidad maneja la petición y la pasa al siguiente eslabón hasta que se terminen los eslabones de la cadena o uno de ellos decida que hay que regresar un valor.
 
-![Representación gráfica]("/assets/images/chain-of-responsibility.jpg")
+![Representación gráfica](assets/images/chain-of-responsibility.jpg)
 
 Siguiendo con el problema original, el código propuesto es el siguiente [(aquí uno en Java)](https://www.tutorialspoint.com/design_pattern/chain_of_responsibility_pattern.htm):
 
