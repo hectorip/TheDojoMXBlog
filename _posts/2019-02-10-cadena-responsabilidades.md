@@ -1,6 +1,6 @@
 ---
 title: "Patrón de diseño: Cadena de responsabilidad"
-date: 2019-02-10
+date: 2019-02-21
 author: Esteban Galicia
 tags: python patrones SOLID Chain-of-Responsibility design-patterns
 comments: true
