@@ -49,3 +49,7 @@ comments:
   provider: "disqus"
   disqus:
     shortname: "the-dojo-mx-blog"
+
+paginate: 10
+paginate_path: /page:num/
+include: ["_pages"]
