@@ -3,7 +3,7 @@ permalink: /about/
 title: "Acerca de este Blog"
 ---
 
-Este blog pertenece a [The Dojo MX](https://thedojo.mx), y en publicamos constantemente
+Este blog pertenece a [The Dojo MX](https://thedojo.mx){:target="_blank"}, y en publicamos constantemente
 artículos acerca de desarrollo de software, ciencias de la comptación y temas relacionados
 al software que tienen como objetivo ayudar a los desarrolladores de habla hispana.
 
