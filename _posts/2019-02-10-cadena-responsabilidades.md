@@ -6,7 +6,7 @@ tags: python patrones SOLID Chain-of-Responsibility design-patterns
 comments: true
 excerpt: "Manejar múltiples handlers, conocidos y no conocidos."
 header:
-  image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1550949447/mike-alonzo-3347-unsplash_cwqcud.jpg
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1550949447/mike-alonzo-3347-unsplash_cwqcud.jpg
 ---
 
 
