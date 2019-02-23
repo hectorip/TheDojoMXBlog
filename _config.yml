@@ -42,7 +42,7 @@ author:
 analytics:
   provider: "google-gtag"
   google:
-    tracking_id: "UA-53624335-5"
+    tracking_id: "UA-127437335-2"
     anonymize_ip: false # default
 
 comments:
