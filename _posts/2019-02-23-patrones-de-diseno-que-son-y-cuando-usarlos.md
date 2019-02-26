@@ -4,7 +4,7 @@ date: 2019-02-23
 author: Héctor Patricio
 tags: design-patterns gof software-engineering programación "patrones de diseño"
 comments: true
-excerpt: "Los problemas que tienes hoy otros lo han resuelto antes. Aplica soluciones probadas a problemas que se repiten vez tras vez."
+excerpt: "Los problemas que tienes hoy, otros los han resuelto antes. Aplica soluciones probadas a problemas que se repiten vez tras vez."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1550984806/scott-webb-16566-unsplash_kyeizc.jpg
 ---
@@ -24,6 +24,15 @@ problemas que la humanidad se ha enfrentado se siguen repitiendo vez tras vez. A
 > Soluciones estándar a problemas conocidos (que se repiten) en el desarrollo de software
 
 Es decir, son soluciones que sabemos que funcionan para problemas que sabemos que existen desde antes que nosotros los encontráramos. Así de sencillo.
+
+## Composición
+
+Los patrones de diseño de software, se componen de cuatro partes: 
+
+1. *Nombre.* Permite referirte al patrón unívocamente y hablar con otras personas sobre esta solución específica sin tener que explicarla.
+2. *Problema.* La situación que resuelve el patrón específico. Incluye el contexto y los _síntomas_ que se tienen que dar para usar este patrón.
+3. *Solución.* Describe todas las partes necesarias, su estructura y relacions que resuelven el problema _sin hablar de una implementación específica_, ya que un patrón se debe poder aplicar y adaptar a muchas situaciones diferentes.
+4. *Consecuencias.* Los resultados de aplicar este patrón tanto negativos como positivos, con el fin de poder evaluar si es conveniente usarlo.
 
 ## Historia
 
@@ -50,7 +59,7 @@ llamado _[Design Patterns: Elements of reusable Object-Oriented Software](http:/
 2. *Estructurales*: Establecen la manera de relacionar objetos y clases (composición y herencia)
 3. *De comportamiento*: Se centran principalmente entre la comunicación entre objetos.
 
-Este es un libro obligado si quieres mejorar tus habilidades de de desarrollo y diseño de software.
+Este es un libro obligado si quieres mejorar tus habilidades de desarrollo y diseño de software.
 
 ## Importancia
 
