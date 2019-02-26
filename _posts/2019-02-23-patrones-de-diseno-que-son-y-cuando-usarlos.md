@@ -73,15 +73,14 @@ Conocer y usar los patrones de diseño nos da varias ventajas importantes:
 
 ## En contra de los patrones de diseño
 
-Todo en la vida y sobre todo en el desarrollo de software representa un intercambio de valor. Damos algo a cambio de otro bien, y nos corresponde personalmente evaluar si una herramienta en una situación determinada es conveniente. Deberíamos evitar usar algo porque los demás dicen que lo debemos usar o es lo más utilizado por todos. Además tenemos que evitar caer en lo que Cal Newport llama la mentalidad de _["el mínimo beneficio"](http://www.helwyssocietyforum.com/the-any-benefit-mentality/)_, aquella en la que justificamos el uso de algo sólo porque nos da un pequeño beneficio sin considerar lo que damos para obtenerlo. 
-Dado el sermón anterior, pensemos en los contras de los patrones de diseño:
+Todo en la vida y sobre todo en el desarrollo de software representa un intercambio de valor. Damos algo a cambio de otro bien, y nos corresponde personalmente evaluar si una herramienta en una situación determinada es conveniente. Deberíamos evitar usar algo porque los demás dicen que lo debemos usar o es lo más utilizado por todos. Además tenemos que evitar caer en lo que Cal Newport llama la mentalidad de _["el mínimo beneficio"](http://www.helwyssocietyforum.com/the-any-benefit-mentality/)_, aquella en la que justificamos el uso de algo sólo porque nos da un pequeño beneficio, sin considerar lo que damos para obtenerlo. Dado el sermón anterior, pensemos en los contras de los patrones de diseño:
 
-1. La urgencia de aplicar nuestro recien adquirido conocimiento nos puede llevar a buscar aplicar soluciones complicadas en donde no pertencen.
-2. Algunos patrones han probado con el tiempo en realidad ser anti-patrones (te veo a ti [singleton](https://stackoverflow.com/questions/12755539/why-is-singleton-considered-an-anti-pattern)), soluciones que no se deberían aplicar nunca, o que por lo menos es muy difícil justificar su uso.
+1. La urgencia de aplicar nuestro recién adquirido conocimiento nos puede llevar a buscar aplicar soluciones complicadas en donde no pertencen.
+2. Algunos patrones han probado con el tiempo en realidad ser anti-patrones (te veo a ti [singleton](https://stackoverflow.com/questions/12755539/why-is-singleton-considered-an-anti-pattern)), soluciones que no se deberían aplicar nunca, o que es muy difícil justificar su uso.
 3. A veces, la necesidad de aplicarlos revela el mal diseño de alguna otra parte de nuestro sistema: desde la plataforma hasta el lenguaje y la elección de otras herramientas.
 4. Los patrones de diseño tradicionales están casados con la programción orientada a objetos, que no siempre es la mejor para resolver el problema, aunque es lo más usado actualmente.
 
-Hay toda una horda de programadores respetados que han hablado en contra de los patrones de diseño, pero ese es tema de otro artículo.
+Hay toda una horda de programadores respetados que han hablado en contra de los patrones de diseño (como [Peter Norvig](http://norvig.com/design-patterns/design-patterns.pdf), para quien los patrones de diseño son flaquezas de tu lenguaje).
 
 ## Por dónde empezar
 
