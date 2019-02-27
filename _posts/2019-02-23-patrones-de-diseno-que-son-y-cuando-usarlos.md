@@ -39,7 +39,7 @@ Los patrones de diseño de software, se componen de cuatro partes:
 Como muchas otras cosas en la joven industria del desarrollo del software, el concepto de patrones de diseño
 fue adaptado de otro campo: la arquitectura, o el diseño de espacios físicos habitables.
 
-El arquitecto [Cristopher Alexander](https://en.wikipedia.org/wiki/Christopher_Alexander) se dio cuenta que al diseñar edificios y
+El arquitecto [Christopher Alexander](https://en.wikipedia.org/wiki/Christopher_Alexander) se dio cuenta que al diseñar edificios y
 ciudades era común encontrarse con situaciones que se repetían una y otra vez. Así que empezó a crear una colección de estos problemas
 comunes y las soluciones que le habían funcionado, con lo que empezó a crear un "lenguaje de patrones". Aquellas personas
 con las que compartía el conocimiento del problema y de la solución podían referirse a estos
