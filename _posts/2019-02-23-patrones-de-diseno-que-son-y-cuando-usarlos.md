@@ -109,24 +109,3 @@ Un patrón de diseño es una solución "probada" aplicada a un problema conocido
 Conocer los patrones de diseño definitivamente te hará un mejor programador por su extendido uso. Aplicarlos _puede_ y _normalmente_ mejorará la arquitectura de tus programas y proyectos, pero hay que ser cautelosos. Aprender cómo se aplican es una buena inversión de tiempo.
 
 Gracias por leernos y no dudes en dejarnos tus comentarios.
-
-<!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;}
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="https://thedojo.us20.list-manage.com/subscribe/post?u=8e502c6ff53aacad881b3629d&amp;id=c9486cf5f1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL">Suscríbete</label>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8e502c6ff53aacad881b3629d_c9486cf5f1" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
