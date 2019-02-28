@@ -13,6 +13,12 @@ header:
 
 ## Pre-requisitos
 
+Para instalar el repositorio necesitas tener instalado:
+
+1. Ruby
+2. Git
+
+
 ## Instalando el repositorio localmente
 
 ## Empieza a escribir
