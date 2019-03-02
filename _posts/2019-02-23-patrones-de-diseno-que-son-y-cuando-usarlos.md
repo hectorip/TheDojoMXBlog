@@ -6,7 +6,7 @@ tags: design-patterns gof software-engineering programación "patrones de diseñ
 comments: true
 excerpt: "Los problemas que tienes hoy, otros los han resuelto antes. Aplica soluciones probadas a problemas que se repiten vez tras vez."
 header:
-  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1550984806/scott-webb-16566-unsplash_kyeizc.jpg
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1551506016/photo-1551267881-f198ba4aba07_dfxmjj.jpg
 ---
 
 Parte del conocimiento fundamental de un desarrollador profesional de software son los *Patrones de diseño* (Design Patterns). En este artículo explicamos de manera concisa:

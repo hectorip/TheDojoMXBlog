@@ -62,9 +62,9 @@
       },
       "image": {
         "@type": "ImageObject",
-        "width": {{ page.img_width | default: 500 }},
-        "height": {{ page.img_height | default: 500 }},
-        "url": "{{ site.url }}{{ page.overlay_image | default: site.img_url }}"
+        "width": {{ page.img_width | default: 1200 }},
+        "height": {{ page.img_height | default: 400 }},
+        "url": "{{ site.url }}{{ page.header.overlay_image | default: site.img_url }}"
       }
     }
 </script>
