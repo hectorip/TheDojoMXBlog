@@ -63,7 +63,7 @@
         "@type": "ImageObject",
         "width": {{ page.img_width | default: 1200 }},
         "height": {{ page.img_height | default: 400 }},
-        "url": "{{ site.url }}{{ page.header.overlay_image | default: site.img_url }}"
+        "url": "{{ page.header.overlay_image | default: site.img_url }}"
       }
     }
 </script>
