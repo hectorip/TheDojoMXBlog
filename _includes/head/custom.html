@@ -23,3 +23,47 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+
+<script src="/assets/js/sharect.min.js"></script>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "url": "{{ site.url }}{{ page.url }}",
+      "name": {{ page.title | jsonify }},
+      "headline": {{ page.title | jsonify }},
+      "keywords": {{ page.tags | join: ',' | jsonify }},
+      "description": {{ page.excerpt | strip_newlines | strip | jsonify }},
+      "articleBody": {{ page.content | strip_html | jsonify }},
+      "datePublished": {{ page.date | jsonify }},
+      "dateModified": {{ page.last_modified_at | default: page.date | jsonify }},
+      "author": {
+        "@type": "Person",
+        "name": {{ page.author | jsonify }},
+        "givenName": {{ page.author | jsonify }},
+        "email": {{ page.author.email | jsonify }}
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": {{ site.title | jsonify }},
+        "url": "{{ site.url }}",
+        "logo": {
+          "@type": "ImageObject",
+          "width": 32,
+          "height": 32,
+          "url": "{{ site.url }}/icon/favicon.ico"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}{{ page.url }}"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "width": {{ page.img_width | default: 1200 }},
+        "height": {{ page.img_height | default: 400 }},
+        "url": "{{ page.header.overlay_image | default: site.img_url }}"
+      }
+    }
+</script>
