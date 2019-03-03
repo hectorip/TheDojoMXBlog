@@ -64,7 +64,7 @@ es: &DEFAULT_ES
   toc_label                  : "Contenidos"
   ext_link_label             : "Enlace"
   less_than                  : "menos de"
-  minute_read                : "minuto de lectura"
+  minute_read                : "minutos de lectura"
   share_on_label             : "Compartir"
   meta_label                 :
   tags_label                 : "Etiquetas:"
@@ -202,7 +202,7 @@ pt: &DEFAULT_PT
   toc_label                  : "Nesta Página"
   ext_link_label             : "Link Direto"
   less_than                  : "menos de"
-  minute_read                : "minutos de leitura"
+  minute_read                : "minuto(s) de leitura"
   share_on_label             : "Partilhar no"
   meta_label                 :
   tags_label                 : "Etiquetas:"
