@@ -9,10 +9,11 @@ title: "{}"
 date: {}
 author: {}
 tags:
+categories: 
 comments: true
-excerpt: ""
+excerpt: "Escribe aquí un buen resumen de tu artículo"
 header:
-  image: #image
+  overlay_image: #image
 ---"""
 
 
@@ -28,6 +29,7 @@ def main(draft=False, author="Héctor Patricio", *names):
         os.makedirs(directory)
 
     for name in names:
-        file_name = f"{directory}/{date}-{slugify(name)}.md"
+        date_string = (date + "-") * (not draft)
+        file_name = f"{directory}/{date_string}{slugify(name)}.md"
         with open(file_name, "w", encoding="utf-8") as f:
             f.write(template.format(name, date, author))

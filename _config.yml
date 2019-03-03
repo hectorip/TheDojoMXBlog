@@ -13,7 +13,7 @@ plugins:
 paginate: 10
 paginate_path: /latest/page:num/
 logo: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1551590729/TheDojo/dojo-cover_scaodz.jpg
-masthead_title: "The Dojo MX - Blog"
+masthead_title: "The Dojo MX Blog"
 
 defaults:
   # _posts
