@@ -10,11 +10,9 @@ intro:
   - excerpt: "Aprende de todo lo relacionado con el desarrollo de software. Este blog es Open Source. Visita el [repositorio](https://github.com/hectorip/TheDojoMXBlog)."
 ---
 
-{% include feature_row id="intro" type="center" %}
-
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 
-{% for post in site.posts limit: 5%}
+{% for post in site.posts limit: 10%}
   {% include archive-single.html type="grid" %}
 {% endfor %}
