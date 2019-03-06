@@ -53,3 +53,4 @@ comments:
     shortname: "the-dojo-mx-blog"
 
 include: ["_pages"]
+search: true
