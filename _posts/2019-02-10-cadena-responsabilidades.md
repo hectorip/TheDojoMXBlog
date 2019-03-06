@@ -7,6 +7,7 @@ comments: true
 excerpt: "Manejar múltiples handlers, conocidos y no conocidos."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1550949447/mike-alonzo-3347-unsplash_cwqcud.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1550949447/mike-alonzo-3347-unsplash_cwqcud.jpg
 ---
 
 
