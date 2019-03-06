@@ -7,7 +7,6 @@ comments: true
 excerpt: "Los problemas que tienes hoy, otros los han resuelto antes. Aplica soluciones probadas a problemas que se repiten vez tras vez."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1220/v1551506407/photo-1456611984355-c05be968ebe9_nwptjx.jpg
-
 ---
 
 Parte del conocimiento fundamental de un desarrollador profesional de software son los *Patrones de diseño* (Design Patterns). En este artículo explicamos de manera concisa:
