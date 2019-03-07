@@ -5,6 +5,9 @@ author: Héctor Patricio
 tags: thedojomx opensource
 comments: true
 excerpt: "Bienvenidos al blog de The Dojo MX."
+header:
+    overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1551938206/fancycrave-284219-unsplash_ylbmvr.jpg
+    teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1551938206/fancycrave-284219-unsplash_ylbmvr.jpg
 ---
 
 Este es el primer post, esperamos que de muchos, del blog de The Dojo MX.
