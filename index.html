@@ -12,7 +12,7 @@ intro:
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
-<div style="display: flex; justify-content: center">
+<div class="custom-grid">
   {% for post in site.posts limit: 10 %}
     {% include archive-single.html type="grid" %}
   {% endfor %}
