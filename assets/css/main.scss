@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .custom-grid {
+    display: flex;
     .grid__item {
         min-width: 290px;
         max-width: 25%;
