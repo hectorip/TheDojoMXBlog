@@ -1,5 +1,5 @@
 ---
-title: "Produccion y desarollo en Django"
+title: "Producción y desarollo en Django"
 date: 2019-03-09
 author: Esteban Galicia
 tags: Django producción deploy despliegue
