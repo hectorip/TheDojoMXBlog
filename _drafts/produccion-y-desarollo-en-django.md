@@ -21,7 +21,7 @@ header:
 
 ## Problemática.
 
-Al desarrollar en Django se sucitó un problema, se requería hacer multiples pruebas con el ORM para generar consultas complejas a base de datos.
+Al desarrollar en Django se suscitó un problema, se requería hacer múltiples pruebas con el ORM para generar consultas complejas a base de datos.
 Para hacer la prueba se ejecuta:
 ```python
 python manage.py shell
@@ -34,7 +34,7 @@ from blog.models import Post
 all_posts = post.objects.all()
 ```
 
-Todo opera bien hasta que debemos importar múltiples modelos, al modificar un modelo se debe detener la consola `Ctrl+C` y ejecutarla de nueva cuenta, y denueva cuenta cargar todos los modelos.
+Todo opera bien hasta que debemos importar múltiples modelos, al modificar un modelo se debe detener la consola `Ctrl+C` y ejecutarla de nueva cuenta, y de nueva cuenta cargar todos los modelos.
 
 A fin de perder tiempo cargando los modelos en cada detención de la consola se opta por usar una herramienta llamada [`django-extensions`](https://django-extensions.readthedocs.io/en/latest/)
 
@@ -52,7 +52,7 @@ INSTALLED_APPS = (
 )
 ```
 
-Hecho eso, puedo ejecutar una consola donde se cargán ya todos los modelos listos para hacer consultas a la base de datos, traducción, ahorraos mucho tiempo.
+Hecho eso, puedo ejecutar una consola donde se cargan ya todos los modelos listos para hacer consultas a la base de datos, traducción, ahorramos mucho tiempo.
 
 ```sh
 python manage.py shell_plus
@@ -60,7 +60,7 @@ python manage.py shell_plus
 
 El siguiente problema hallado es que esta herramienta no debe estar en producción, solamente es para propósitos de desarrollo.
 
-pero, ¿Qué hacer?, la agrego y quito manualmente a cada push que haga en  mi repositorio?, esa estrategia es muy propensa al error y a la hora de desplegar podemos tener un error por no tener instalada la herramienta.
+pero, ¿Qué hacer?, ¿La agrego y quito manualmente a cada push que haga en  mi repositorio?, esa estrategia es muy propensa al error y a la hora de desplegar podemos tener un error por no tener instalada la herramienta.
 
 La forma que me ha gustado más hasta ahora es hacer uso del paquete `sys` de Python, con el que puedo con uno de sus módulos leer los argumentos con los que se ejecuta la aplicación de Django.
 
@@ -74,4 +74,12 @@ if len(DJANGO_RUN_ARGS.intersection(DEBUG_COMMAND))>0:
 
 ```
 
-En `DEBUG_COMMAND` se definen los comandos que se ejecutan solo en desarrollo, hay que recordar que `runserver` se agrega también en el set dado que no es posible 
+En `DEBUG_COMMAND` se definen los comandos que se ejecutan solo en desarrollo, hay que recordar que `runserver` se agrega también en el set dado que NO se debe pasar a producción la ejecución de Django por medio de dicho mecanismo, para producción lo correcto es pasarlo con un WSGI server diseñado para producción
+
+`DJANGO_RUN_ARGS` es la variable que guardará los argumentos con los que se ejecuta Django.
+
+Ambas variables son un set, así es sencillo comprobar que argumentos serán catalogados como de desarrollo por medio de la intersección de ambas variables, el que haya elementos en la intersección implica que por lo menos uno de los argumentos se cataloga como de desarrollo.
+
+Y bueno, solo falta agregar que después de la condicional se pueden agregar tanto código como se requiera.
+
+No olvides comentar tu experiencia usando esta estrategia para manejar desarrollo y producción en Django.
