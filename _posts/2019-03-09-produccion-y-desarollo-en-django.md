@@ -31,7 +31,7 @@ Con lo que se abrirá una consola de Python, en dicha consola se puede importar 
 ```python
 from blog.models import Post
 
-all_posts = post.objects.all()
+all_posts = Post.objects.all()
 ```
 
 Todo opera bien hasta que debemos importar múltiples modelos, al modificar un modelo se debe detener la consola `Ctrl+C` y ejecutarla de nueva cuenta, y de nueva cuenta cargar todos los modelos.
