@@ -21,12 +21,12 @@ header:
 
 ## Problemática.
 
-Al desarrollar en Django se suscitó un problema, se requería hacer múltiples pruebas con el ORM para generar consultas complejas a base de datos.
+Mientras desarrollba en Django, me encontré con un problema,  requería hacer múltiples pruebas con el ORM para generar consultas complejas a base de datos.
 Para hacer la prueba se ejecuta:
 ```python
 python manage.py shell
 ```
-Con lo que se abrirá una consola de Python en dicha consola se puede importar un modelo y con ese modelo hacer las pruebas requeridas.
+Con lo que se abrirá una consola de Python, en dicha consola se puede importar un modelo y con ese modelo hacer las pruebas requeridas.
 
 ```python
 from blog.models import Post
@@ -36,9 +36,10 @@ all_posts = post.objects.all()
 
 Todo opera bien hasta que debemos importar múltiples modelos, al modificar un modelo se debe detener la consola `Ctrl+C` y ejecutarla de nueva cuenta, y de nueva cuenta cargar todos los modelos.
 
-A fin de perder tiempo cargando los modelos en cada detención de la consola se opta por usar una herramienta llamada [`django-extensions`](https://django-extensions.readthedocs.io/en/latest/)
+A fin de no perder tiempo cargando los modelos en cada detención de la consola se opta por usar una herramienta llamada [`django-extensions`](https://django-extensions.readthedocs.io/en/latest/)
 
-La instalo en mi proyecto usando
+La instalo en mi proyecto usando:
+
 ```sh
 pip install 
 ```
@@ -52,19 +53,23 @@ INSTALLED_APPS = (
 )
 ```
 
-Hecho eso, puedo ejecutar una consola donde se cargan ya todos los modelos listos para hacer consultas a la base de datos, traducción, ahorramos mucho tiempo.
+Hecho eso, puedo ejecutar una consola donde se cargan ya todos los modelos listos para hacer consultas a la base de datos. Traducción: ahorramos mucho tiempo. 
 
 ```sh
 python manage.py shell_plus
 ```
 
-El siguiente problema hallado es que esta herramienta no debe estar en producción, solamente es para propósitos de desarrollo.
+El siguiente problema que hallé es que esta herramienta no debe estar en producción, solo es para propósitos de desarrollo.
 
-pero, ¿Qué hacer?, ¿La agrego y quito manualmente a cada push que haga en  mi repositorio?, esa estrategia es muy propensa al error y a la hora de desplegar podemos tener un error por no tener instalada la herramienta.
+Pero, ¿Qué hacer?, ¿La agrego y quito de `INSTALLED_APPS` manualmente a cada push que haga en  mi repositorio?, esa estrategia es muy propensa al error y a la hora de desplegar podemos tener un error por no tener instalada la herramienta.
 
 La forma que me ha gustado más hasta ahora es hacer uso del paquete `sys` de Python, con el que puedo con uno de sus módulos leer los argumentos con los que se ejecuta la aplicación de Django.
 
 ```python
+import sys
+.
+.
+.
 DEBUG_COMMAND = set('shell_plus', 'shell', 'runserver')
 
 DJANGO_RUN_ARGS = set(sys.argv)
@@ -74,7 +79,7 @@ if len(DJANGO_RUN_ARGS.intersection(DEBUG_COMMAND))>0:
 
 ```
 
-En `DEBUG_COMMAND` se definen los comandos que se ejecutan solo en desarrollo, hay que recordar que `runserver` se agrega también en el set dado que NO se debe pasar a producción la ejecución de Django por medio de dicho mecanismo, para producción lo correcto es pasarlo con un WSGI server diseñado para producción
+En `DEBUG_COMMAND` se definen los comandos que se ejecutan solo en desarrollo, hay que recordar que `runserver` se agrega también en el set dado que NO se debe pasar a producción la ejecución de Django por medio de dicho mecanismo, para producción lo correcto es pasarlo con un WSGI server diseñado para producción como [guinicorn](https://gunicorn.org).
 
 `DJANGO_RUN_ARGS` es la variable que guardará los argumentos con los que se ejecuta Django.
 
