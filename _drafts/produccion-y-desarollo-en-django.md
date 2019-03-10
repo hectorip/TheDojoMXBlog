@@ -21,7 +21,7 @@ header:
 
 ## Problemática.
 
-Mientras desarrollba en Django, me encontré con un problema,  requería hacer múltiples pruebas con el ORM para generar consultas complejas a base de datos.
+Mientras desarrollaba en Django, me encontré con un problema, requería hacer múltiples pruebas con el ORM para generar consultas complejas a base de datos.
 Para hacer la prueba se ejecuta:
 ```python
 python manage.py shell
