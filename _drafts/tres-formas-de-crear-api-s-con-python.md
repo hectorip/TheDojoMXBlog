@@ -88,7 +88,7 @@ Si quieres aprender más aquí tienes algunos recursos:
 
 Más adelante tendremos nuestro propio post 😉.
 
-**Cuándo usarlo:** Personalmente lo uso para proyectos pequeños o medianos que sé que no crecerán demasiado en características en el mediano plazo.
+**Cuándo usarlo:** Personalmente lo uso para proyectos pequeños o medianos que sé que no crecerán demasiado en características en el mediano plazo. Si tienes que hacer cosas complicadas, Flask requiere bastante experiencia técnia y de arquitectura para que no se te vaya de las manos el proyecto, **su flexibilidad puede trabajar en tu contra en estos casos**.
 
 
 ## Django y Django Rest Framework
@@ -104,7 +104,7 @@ Django provee:
 * Interfaz de administración automática
 * Administración de usuarios
 
-... y muchas otras cosas más. Como verás es mucho más robusto que los otros dos, pero también es el que tiene la mayor curva de aprendizaje y con el que se requiere más experiencia técnica para lograr hacer cosas para las que no está preparado naturalmente.
+...y muchas otras cosas más. Como verás es mucho más robusto(viene por default con más cosas) que los otros dos, pero también es el que tiene la mayor curva de aprendizaje. Si encuentras algo para lo que no esté preparado Django o DRF éste es el caso en el que se requiere más experiencia técnica para modificarlo.
 
 Django posee muchísimos paquetes para extenderlo en funciones y uno de los más famosos es el Django REST Framework (DRF a partir de ahora), que provee todas las funcionalidades que te imagines para desarrollar una API de manera sencilla y con pocas líneas de código.
 
@@ -120,10 +120,12 @@ No pondremos el ejemplo de código aquí, porque en este caso el código se repa
 
 * [Introducción a Django REST Framework](https://www.paradigmadigital.com/dev/introduccion-django-rest-framework/) - Este post lo puedes seguir una vez que tengas una comprensión básica de Django.
 
-**Cuándo usarlo:** Django es mi elección para proyectos que se que pueden requerir caracterísitcas enterprise, pueden crecer en funcionalidades en el mediano plazo y estas funcionalidades no están demasiado fuera de lo común. Si quiere desarrollar algo rápidamente en estas condiciones, no hay nada que pensar: usa Django.
+**Cuándo usarlo:** Django es mi elección para proyectos que se que pueden requerir caracterísitcas enterprise, pueden crecer en funcionalidades en el mediano plazo y estas funcionalidades no están demasiado fuera de lo común. Si quieres desarrollar algo rápidamente en estas condiciones, no hay nada que pensar: usa Django, con él (después de la curva de aprendizaje), estarás haciendo cosas medianamente complejas en muy poco tiempo, además de que su inmensa cantidad de módulos para hacer muchísimas cosas sin tanto trabajo te facilitará la vida.
 
 
 ## Conclusión
+
+Algo que hay que tener en mente siempre es que se debe de elegir la herramienta adecuada para el trabajo a la mano. En los tres casos de las herramientas propuestas anteriormente tienes que analizar muy bien tus necesidades antes de decidirte por una, pero incluso podrías usar una para una etapa del proyecto y cambiarla en una fase posterior.
 
 Esperamos que esta pequeña guía acerca de las opciones para elegir la mejor herramienta para crear tu API con flask te sea útil.
 
