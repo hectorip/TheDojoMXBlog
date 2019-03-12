@@ -7,8 +7,8 @@ categories:
 comments: true
 excerpt: "Una manera para manejar producción y desarrollo sin tanto esfuerzo."
 header:
-  overlay_image: https://res.cloudinary.com/dg89awi0p/image/upload/v1552160611/rawpixel-1135756-unsplash.jpg
-  teaser: https://res.cloudinary.com/dg89awi0p/image/upload/v1552160611/rawpixel-1135756-unsplash.jpg
+  overlay_image: https://res.cloudinary.com/dg89awi0p/image/upload/c_scale,w_1200/v1552160611/rawpixel-1135756-unsplash.jpg
+  teaser: https://res.cloudinary.com/dg89awi0p/image/upload/c_scale,w_1200/v1552160611/rawpixel-1135756-unsplash.jpg
 ---
 
 
