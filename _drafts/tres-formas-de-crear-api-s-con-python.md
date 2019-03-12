@@ -127,6 +127,4 @@ No pondremos el ejemplo de código aquí, porque en este caso el código se repa
 
 Algo que hay que tener en mente siempre es que se debe de elegir la herramienta adecuada para el trabajo a la mano. En los tres casos de las herramientas propuestas anteriormente tienes que analizar muy bien tus necesidades antes de decidirte por una, pero incluso podrías usar una para una etapa del proyecto y cambiarla en una fase posterior.
 
-Esperamos que esta pequeña guía acerca de las opciones para elegir la mejor herramienta para crear tu API con flask te sea útil.
-
-
+Esperamos que esta pequeña guía acerca de las opciones para elegir la mejor herramienta para crear tu API con flask te sea útil, y si tienes alguna opinión/experiencia diferente es bienvenida en los comentarios.
