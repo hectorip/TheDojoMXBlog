@@ -12,7 +12,7 @@ header:
 ---
 
 
-# Para no salir herido al combinar desarrollo y producción en Django.
+## Para no salir herido al combinar desarrollo y producción en Django.
 
 
 > Se usará Django >= 2.0
