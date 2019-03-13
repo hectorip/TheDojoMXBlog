@@ -1,6 +1,6 @@
 ---
 title: "Patrones de diseño: qué son y cuándo usarlos"
-date: 2019-02-23
+date: 2019-03-12
 author: Héctor Patricio
 tags: design-patterns gof software-engineering programación "patrones de diseño"
 comments: true
