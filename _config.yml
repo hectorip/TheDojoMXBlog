@@ -2,6 +2,7 @@ remote_theme: mmistakes/minimal-mistakes
 locale: es
 plugins:
     - jekyll-feed
+    - jekyll-archives
     - jekyll-redirect-from
     - jekyll-seo-tag
     - jekyll-sitemap
