@@ -4,8 +4,8 @@ date: 2019-03-12
 author: Héctor Patricio
 tags: api python hug django-rest-framework flask
 comments: true
-author_profile: false
-excerpt: "¿Vas que hacer una API? Aprende la mejor forma de hacer desde la más sencilla hasta las más completa."
+author_profile: true
+excerpt: "¿Vas que hacer una API? Aprende la mejor forma de hacer desde la más sencilla hasta la más completa."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1552198393/brian-patrick-tagalog-704059-unsplash_z3kdwg.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1552198393/brian-patrick-tagalog-704059-unsplash_z3kdwg.jpg
