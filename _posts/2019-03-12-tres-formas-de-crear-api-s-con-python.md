@@ -58,7 +58,7 @@ Aquí tienes un post introcutorio a Hug:
 
 Entre las características de Flask están:
 
-* Integración por dafult con [Jinja2](http://jinja.pocoo.org/docs/2.10/)
+* Integración por default con [Jinja2](http://jinja.pocoo.org/docs/2.10/)
 * Soporte de cookies de sesión seguras
 * Servidor web para desarrollo y debuggeo
 
