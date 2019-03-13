@@ -1,6 +1,6 @@
 ---
 title: "Tres formas de crear API's con Python"
-date: 2019-03-10
+date: 2019-03-12
 author: Héctor Patricio
 tags: api python hug django-rest-framework flask
 comments: true
