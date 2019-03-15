@@ -15,12 +15,12 @@ Es una tarea común para un desarrollador el diseñar e implementar una API web.
 
 ## Hug
 
-[Hug](http://www.hug.rest/) es una pequeña librería para crear API's muy fáciles de entender y mantener.
+[Hug](http://www.hug.rest/) es una pequeña biblioteca para crear API's muy fáciles de entender y mantener.
 Provee un serie de herramientas que permiten hacer tu API muy rápidamente, con poco código
-y siguiendo las mejores prácticas. Hug no es una librería exclusiva para hacer API's web, sino que se enfoca
+y siguiendo las mejores prácticas. Hug no es una biblioteca exclusiva para hacer API's web, sino que se enfoca
 en permitirte crear API's en el más amplio sentido de la palabra: una intefaz para permitir el uso automatizado (mediante código) de tu programa.
 
-Si haces una API en Hug, podrás exponerla a parte de en web como un módilo de Python o a la interfaz de línea de comandos.
+Si haces una API en Hug, podrás exponerla a parte de en web como un módulo de Python o a la interfaz de línea de comandos.
 
 Con hug, puedes hacer algo tan sencillo como lo siguiente:
 
@@ -32,7 +32,7 @@ def hola_apis():
   return {"mensaje": "Hola API's"}
 ```
 
-¡Y listo! Lo anterior es una API lista para ser consumida, no necesitas crear ni configuración ni caberceras ni nada más.
+¡Y listo! Lo anterior es una API lista para ser consumida, no necesitas crear ni configuración ni caberceras ni nada más (aunque claro que las puedes poner).
 
 Hug provee de cosas interesantes:
 
@@ -48,7 +48,7 @@ Aquí tienes un post introcutorio a Hug:
 
 * [Crear APIs REST con Python y Hug](http://laesporadelhongo.com/crear-apis-rest-con-python-y-hug/)
 
-**Cuándo usarlo:** No he usado Hug en producción aún, pero promete ser muy bueno sobre todo con las exigencias del mundo actual. Lo recomendaría para proyectos pequeños y medianos y para exponer librerías que ya existen en alguna parte de código como versiones Web o CLI.
+**Cuándo usarlo:** No he usado Hug en producción aún, pero promete ser muy bueno, sobre todo con las exigencias del mundo actual. Lo recomendaría para proyectos pequeños y medianos y para exponer bibliotecas o módulos que ya existen en alguna parte de código como versiones Web o CLI.
 
 
 
@@ -62,7 +62,7 @@ Entre las características de Flask están:
 * Soporte de cookies de sesión seguras
 * Servidor web para desarrollo y debuggeo
 
-Personalmente, considero Flask como la opción más flexible para desarrollar proyectos web en Python. Además perimite empezar fácil. Y comparándolo con otras opciones, es mucho más ligero, perimitiéndote integrar tus propias opciones para diferentes partes del proyecto. Si tu proyecto es muy poco común o muy especializado, Flask es la mejor opción.
+Personalmente, considero Flask como la opción más flexible para desarrollar proyectos web en Python. Además permite empezar fácil. Y comparándolo con otras opciones, es mucho más ligero, permitiéndote integrar tus propias opciones para diferentes partes del proyecto. Si tu proyecto es muy poco común o muy especializado, Flask es la mejor opción.
 
 Aquí un pequeño ejemplo de cómo se empiza con Flask (sacado de su documentación en su mayoría)
 
