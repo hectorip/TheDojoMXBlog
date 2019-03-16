@@ -8,3 +8,9 @@ excerpt: ""
 header:
   image: #image
 ---
+
+## Qué es un principio
+
+## Principios Solid
+
+## Conclusión
