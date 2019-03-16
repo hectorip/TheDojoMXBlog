@@ -64,3 +64,4 @@ tag_archive:
 
 include: ["_pages"]
 search: true
+skin: dark
