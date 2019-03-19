@@ -22,7 +22,7 @@ Un principio se puede entender como una guía de comportamiento amplia aplicable
 
 En ciencia un principio también se pueden entender como una ley o una verdad que se puede aplicar en una muchas situaciones.
 
-Hablando de **principios de diseño de software**, puedes pensar en ellos como en un faro que te guía a través de la oscuridad de los requerimientos del problema 😛. A diferencia de los [patrones de diseño](/2019-02-23-patrones-de-diseno-que-son-y-cuando-usarlos), no establecen los pasos necesarios para aplicarlos, ni siquiera la situaciones en las que se aplican, de hecho, se pueden crear varios patrones y reglas basándonos en ellos.
+Hablando de **principios de diseño de software**, puedes pensar en ellos como en un faro que te guía a través de la oscuridad de los requerimientos del problema 😛. A diferencia de los [patrones de diseño](/2019/02/23/patrones-de-diseno-que-son-y-cuando-usarlos), no establecen los pasos necesarios para aplicarlos, ni siquiera la situaciones en las que se aplican, de hecho, se pueden crear varios patrones y reglas basándonos en ellos.
 
 Ahora hablemos de los más relevantes.
 
