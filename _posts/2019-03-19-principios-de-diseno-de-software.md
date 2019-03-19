@@ -5,6 +5,9 @@ author: Héctor Patricio
 tags: solid diseño-de-software dry kiss
 comments: true
 excerpt: "Aprende qué es un principio de diseño de software y lee acerca de los más importantes."
+toc: true
+toc_label: Contenido
+toc_sticky: true
 header:
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1552951011/evgeni-tcherkasski-974328-unsplash_kqnoni.jpg
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1552951011/evgeni-tcherkasski-974328-unsplash_kqnoni.jpg
