@@ -10,7 +10,7 @@ header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1552951011/evgeni-tcherkasski-974328-unsplash_kqnoni.jpg
 ---
 
-En este artículo hablaremos primero de la importancia de aprender **principios**, qué son, qué ventajas tienen y cómo aplicarlos.
+En este artículo hablaremos primero de la importancia de aprender **principios**: qué son, qué ventajas tienen y cómo aplicarlos.
 
 Hallarás una explicación básica de cada principio y su importancia, pero cada principio tendrá un post extenso explicando sus aplicaciones, forma de implementarlo y ejemplos prácticos, un sólo artículo no es suficiente para explicarlos cuando se podría escribir un libro sobre cada principio.
 
