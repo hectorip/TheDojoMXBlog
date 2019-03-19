@@ -11,9 +11,12 @@ header:
 ---
 
 En este artículo hablaremos primero de la importancia de aprender **principios**, qué son, qué ventajas tienen y cómo aplicarlos.
-Hablaremos específicamente de los principios de diseño de software **SOLID**. Hallarás una explicación básica de cada principio y su importancia, pero cada principio tendrá un post extenso explicando sus aplicaciones, forma de implementarlo y ejemplos prácticos, un sólo artículo no es suficiente para explicarlos cuando se podría escribir un libro sobre cada principio.
 
-## Qué es un principio
+Hallarás una explicación básica de cada principio y su importancia, pero cada principio tendrá un post extenso explicando sus aplicaciones, forma de implementarlo y ejemplos prácticos, un sólo artículo no es suficiente para explicarlos cuando se podría escribir un libro sobre cada principio.
+
+Ponle atención a los primeros dos 😉. Pero antes hablemos de lo que es un principio en general.
+
+## ¿Qué es un principio?
 
 Un principio se puede entender como una guía de comportamiento amplia aplicable a muchas situaciones. En general un principio no te dice que hacer exactamente, sino que te da pistas de cuál es la acción correcta a través de una gran cantidad de situaciones, los detalles están a cargo de ti mismo.
 
