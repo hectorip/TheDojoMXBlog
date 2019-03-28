@@ -51,6 +51,18 @@ En cambio, la función `calcularIVAPura` es una función que no depende de valor
 
 Las funciones puras proporcionan las siguientes ventajas:
 
-* **Transparencia Referencial**. Esto se refiere a que dentro de un contexto en el que se use la función, sabiendo que la función siempre que sea llamada con ciertos parámetros devolverá lo mismo, podemos sustituir la función con su valor directamente. Esto hace a las funciones puras *cacheables* (a través de técnicas como la programación dinámica y la [memoización](http://nereida.deioc.ull.es/~lpp/perlexamples/node170.html)) y *predecibles*.
+* **Transparencia referencial**. Dentro de un contexto en el que se use la función, sabiendo que la función siempre que sea llamada con ciertos parámetros devolverá lo mismo, podemos sustituir la función con su valor directamente. Esto hace a las funciones puras *cacheables* (a través de técnicas como la programación dinámica y la [memoización](http://nereida.deioc.ull.es/~lpp/perlexamples/node170.html)) y *predecibles*. Pongamos un ejemplo más claro:
+
+```javascript
+function factorial(n) {
+  if(n <= 1){
+    return 1
+  } 
+  return n * factorial(n-1)
+}
+
+function ()
+
+```
 
 <!-- * **Predecibles** -->
