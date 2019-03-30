@@ -2,7 +2,7 @@
 title: "¿Qué es la programación funcional?"
 date: 2019-03-24
 author: Héctor Patricio
-tags:
+tags: fp functional-programming programación-funcional elixir
 categories: 
 comments: true
 excerpt: "¿Por qué se ha escuchado tanto de la programación funcional recientemente? En este artículo la explicamos de manera concisa"
@@ -18,7 +18,7 @@ En este artículo hablaremos de sus dos caracterísitcas más distintivas y el t
 
 Se puede definir la programación funcional así:
 
-> Estilo de programación en el que se usan principalmente **funciones puras** y valores **inmutables**.
+> Estilo de programación en el que se usan principalmente **funciones puras** y valores **inmutables**. En los lenguajes funcionales, todo es una expresión, es decir, todo tiene un valor inmutable.
 
 Eso es todo, todas las demás cosas que lees cuando se menciona la programación funcional se derivan de estas dos características. Ahora tenemos que definir estas dos características y ver como nos proporcionan amplias capacidades para crear programas altamente legibles, rápidos y que pueden procesar grandes cantidades de datos.
 
@@ -70,6 +70,13 @@ Para los lenguajes funcionales más puros, todo se puede tratar como una funció
 * **Colecciones diferidas**. Algunos lenguajes de programación incluyen colecciones que nunca cargan en memoria todos lo valores que
 van necisitar nunca, sino que los van generando uno a uno. Esto permite crear colecciones **infinitas** conceptualmente, o procesar conjuntos de datos muy muy grandes sin staurar la memoria.
 
+Al preferir la evalución diferida a la anticipada (eager), el estilo de programación funcional intenta evitar la iteración al máximo grado posible. Para trabajar con colecciones de datos u operaciones reptitivas se prefieren otras técnicas:
+
+* **Recursividad**. La función se llama a sí misma con valores diferentes, produciendo eventualmente el resultado deseado.
+* **Operaciones sobre colecciones y rangos**. Se busca aplicar funciones como `map`, que aplica una función a todos los elementos de una lista o `reduce` que transforma todos los elementos de una lista en uno solo.
+* **Comprensión de listas (*list comprehension*)**. Se crean nuevas listas a partir de lo que parece la iteración de una colección. Muy parecido a como lo hace la función map, pero recibiendo el código directamente en vez de una función.
+
+Esto permite que las operaciones sobre coleeciones sigan pudiendo ser evaluadas de manera diferida: no se aplican las funciones hasta que de verdad se necesita.
 
 ### Concurrencia
 
@@ -81,28 +88,97 @@ Por último, debemos notar que la concurrencia y el paralelismo se llevan bien, 
 
 Como puedes ver, la programación funcional se posiciona como una muy buena opción para tratamiento y procesamiento de GRANDES cantidades de datos, y sus patrones han inspirado arquitecturas de procesamiento famosas.
 
-### 
+Ahora hablemos de la segunda característica importante de la programación funcional.
+
+## Valores Inmutables
+
+Esta característica implica que todos los valores que se definen y almacenan en un programa son finales, no pueden ser modificados. ¿Cómo hacemos entonces para llegar a los valores que necesitamos? En un programa funcional, **siempre se crean nuevos valores a partir de los antiguos**. Esto implica que en un lenguaje funcional no existe el paso por referencia. Siempre que se pasa un valor a una función, se crea una copia independiente de estos valores. Tampoco existen las transformaciones "in place". Si quiero reordenar una lista, por ejemplo,  necesariamente crearé una nueva colección, esta vez con los valores ordenados, manteniendo la colección original intacta.
+
+En general en los lenguajes funcionales todo es una expresión, es decir: *cada cosa que se pueda escribir tiene un valor inmutable*.
+
+¿Cómo ayuda que los valores sean inmutables?
+
+### Existencia de funciones puras
+
+Al no permitir que un elemento externo modifique los valores que se han pasado, podemos estar seguros que los datos de la función permanecerán intactos. En lenguajes que permiten la modificación de los tipos de datos compuestos (diccionarios, listas, arrays o tuplas) es posible que alguien modifique un valor que se le pasó a la función sin que nos percatemos, pero la inmutabilidad lo previene. 
+
+### Independencia de ejecución
+
+Tener valores que no van ser modificados por ninguna razón habilita la independencia de ejecución tanto en tiempo como en espacio. En tiempo de ejecución podemos mandar a ejecutar la función en otro procesador o máquina completamente diferente o diferir su ejecución hasta que sea necesario. 
+
+### Código legible y menos errores
+
+Nunca más en la vida (mientras uses FP) volverás a dudar si una función devuelve el valor o lo modifica en la misma variable. Evitarás todos esos errores en los que pensabas que una función devolvía algo modificado y en realidad no devolvía nada no pasarán más.
+
+Por supuesto que este depende del lenguaje, pero tú mismo puedes seguir los mismos principios en tu código si usas un lenguaje como JavaScript que no es completamente fucnional pero permite aplicar los ideas principales.
 
 
+## Cómo hacer programas usables
+
+Todos los programas útiles escriben en memoria, pintan algo en la pantalla, consultan una base de datos o un servicio web o mandan una respuesta HTTP. Si las funciones puras no deben tocar nada del exterior, ¿cómo hacer un programa que tenga un uso?
+
+Los programas escritos con lenguajes o en un estilo funcional usan *principalmente* funciones puras para su diseño, pero no son el único tipo de funciones que ocupan, justo para permitir la entrada y salida de datos del sistema. Lo importante es separar las funciones que lo hacen de las que son puras.
+
+## Otros características
+
+Para finalizar hablemos de algunas de las características que los diseñadores de programas funcionales han añandido para hacer la programación más fácil.
 
 
+### Pattern Matching
 
+En algunos lenguajes funcionales no existe el concepto de asignación como lo conocemos en los lenguajes imperativos. El símbolo `=` representa algo parecido a lo que representa en las ecuaciones matemáticas: estamos afirmando la equivalencia entre dos valores, no asignándola. Por ejemplo en Elixir, las siguientes sentencias son válidas:
 
-```javascript
+```elixir
+
+a = 5
+
+5 = a
+```
+
+La primera expresión puede parecer una asginación, pero en realidad, lo que está haciendo es "enlazar" el valor `5` a la variable recientemente creada, para hacer posible que tu aserción sea verdadera. 
+
+En el segundo caso en tiempo de ejecución el programa se limita a verificar que es verdad tu afirmación: si `a` tiene el valor `5`, el programa continuará sin ningún problema, pero si no, surgirá un error en tiempo de ejecución. El pattern matching funciona a nivel también de parámetros:
+
+```elixir
+
+defmodule fibonacci do
+  def fib(1), do: 1
+  def fib(2), do: 1
+  def fib(n), do: fib(n-1) + fib(n-2)
+end
 
 ```
 
+Cada clausula de la función entrará sólo si se manda a llamar a la función con el parámetro que empareje con el declarado en los parámetros.
+
+### Funciones de orden superior
+
+En realidad ya hablamos un poco de ellas. Una función de orden superior puede recibir funciones como parámetros (recuerda que la funciones a final de cuenta simplemente son otro tipo de valores inmutables) o regresar funciones como parámetros.
+ 
+Un ejemplo en JavaScript:
 
 ```javascript
-function factorial(n) {
-  if(n <= 1){
-    return 1
-  } 
-  return n * factorial(n-1)
+
+// Devuelve una función que recibe un parámetro y multiplica por el número provisto
+function producir_multiplicador(por_cuanto) {
+  return ((n) => n * por_cuanto)
 }
 
-function ()
+doblar = producir_multiplicador(2)
+triplicar = producir_multiplicador(3)
+
+doblar(5) // 10
+triplicar(5) // 15
 
 ```
 
-<!-- * **Predecibles** -->
+Esto es una técnica común para producir código más adecuado al dominio de tu problema.
+
+
+### Conclusión
+
+No hablamos de varias cosas que la programación funcional provee o permite realizar, como la composición de funciones, la aplicación parcial y los caombinadores, pero en artículos futuros hablaremos de algunos recursos que te ayudarán aprenderla.
+
+Esperamo haber aclarado algunos conceptos que se oyen alrededor de la programación funcional y cómo es que estos son habilitados por sus dos caracterísitcas principales: funciones puras y valores inmutables.
+
+No dudes en dejarnos algún comentario si algo no quedó claro.
