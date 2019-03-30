@@ -1,6 +1,6 @@
 ---
 title: "¿Qué es la programación funcional?"
-date: 2019-03-24
+date: 2019-03-30
 author: Héctor Patricio
 tags: fp functional-programming programación-funcional elixir
 categories: 
