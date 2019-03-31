@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
         min-width: 290px;
         max-width: 400px;
     }
+
 }
 
 @media (max-width: 640px){
@@ -35,5 +36,8 @@ h1, h2, h3, h4, h5, h6 {
     }
     .archive__item-teaser {
         max-height: 267px;
+    }
+    .grid__item {
+        margin-top: 5px;
     }
 }
