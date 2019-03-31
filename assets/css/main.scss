@@ -33,4 +33,7 @@ h1, h2, h3, h4, h5, h6 {
     .grid__item .archive__item-excerpt {
         display: block;
     }
+    .archive__item-teaser {
+        max-height: 267px;
+    }
 }
