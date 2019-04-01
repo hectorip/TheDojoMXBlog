@@ -57,20 +57,20 @@ Veamos ahora una a una de las ventajas que proporciona usar funciones puras.
 
 Dentro de un contexto en el que se use la función, sabiendo que la función siempre que sea llamada con ciertos parámetros devolverá lo mismo, *podemos sustituir la función con su valor directamente*. Esto nos permite crear programas más legibles inicialmente.
 
-La tranparencia referencial hace que las funciones sean *cacheables* (a través de técnicas como la programación dinámica y la [memoización](http://nereida.deioc.ull.es/~lpp/perlexamples/node170.html)) y *predecibles*: al saber que una función llamada con los mismos parámetros podemos almacenar ese valor en vez de volver a llamar la función y usarlo directamente. Si la función es costosa en tiempo o procesamiento, el cachearla hará nuestro programa más eficiente.
+La tranparencia referencial hace que las funciones sean *cacheables* (a través de técnicas como la programación dinámica y la [memoización](http://nereida.deioc.ull.es/~lpp/perlexamples/node170.html)) y *predecibles*: al saber que una función llamada con los mismos parámetros devolverá lo mismo, podemos almacenar ese valor en vez de volver a llamar la función y usarlo directamente. Si la función es costosa en tiempo o procesamiento, el cachearla hará nuestro programa más eficiente.
 
 <!-- ¿Qué ventajas da esto, podrías preguntarte? Pensemos en algunas cosas que propociona la transparencia referencial: -->
 
 ### Evaluación diferida (*lazy evaluation*)
 
-Para los lenguajes funcionales más puros, todo se puede tratar como una función. Al saber que las funciones no dependen del contexto para funcionar correctamente, puedo evaluarlas ahora mismo o más tarde. Para evitar procesamiento innecesario, los lenguajes funcionales difieren la evalución de las funciones y valores hasta que realmente se requiera el valor para alguna otra operación. Mientras el valor está sólamente definido, sin haber sido procesado. La evaluación diferida es muy conveniente sobre todo al trabajar con colecciones de datos grandes u operaciones gigantes. Algunas de las ventajas de la evaluación diferida son las siguientes:
+Para los lenguajes funcionales más puros, todo se puede tratar como una función. Al saber que las funciones no dependen del contexto para funcionar correctamente, puedo evaluarlas ahora mismo o más tarde. Para evitar procesamiento innecesario, los lenguajes funcionales difieren la evaluación de las funciones y valores hasta que realmente se requiera el valor para alguna otra operación. Mientras el valor está sólamente definido, sin haber sido procesado. La evaluación diferida es muy conveniente sobre todo al trabajar con colecciones de datos grandes u operaciones gigantes. Algunas de las ventajas de la evaluación diferida son las siguientes:
 
 * **Ahorro en tiempo de procesamiento**. Si defino un valor que es una función que corre sobre una colección de un millón de elementos, no tendré que esperar al procesamiento inicial porque no lo hará hasta que realmente ocupe los valores. Si por alguna razón no se ocupa ese valor más adelante en el programa, ese procesamiento ya nos lo ahorramos definitivamente.
 * **Ahorro en memoria**. Cuando definimos colecciones muy grandes, los lenguajes con evaluación diferida no reservarán la memoria que van a ocupar inmediatamente, sino hasta que hagamos referencia a este valor para su procesamiento. De igual manera, si nunca se ocupó este valor o se canceló en algún punto del programa, nos ahorramos esa memoria.
 * **Colecciones diferidas**. Algunos lenguajes de programación incluyen colecciones que nunca cargan en memoria todos lo valores que
 van necisitar nunca, sino que los van generando uno a uno. Esto permite crear colecciones **infinitas** conceptualmente, o procesar conjuntos de datos muy muy grandes sin staurar la memoria.
 
-Al preferir la evalución diferida a la anticipada (eager), el estilo de programación funcional intenta evitar la iteración al máximo grado posible. Para trabajar con colecciones de datos u operaciones reptitivas se prefieren otras técnicas:
+Al preferir la evaluación diferida a la anticipada (eager), el estilo de programación funcional intenta evitar la iteración al máximo grado posible. Para trabajar con colecciones de datos u operaciones reptitivas se prefieren otras técnicas:
 
 * **Recursividad**. La función se llama a sí misma con valores diferentes, produciendo eventualmente el resultado deseado.
 * **Operaciones sobre colecciones y rangos**. Se busca aplicar funciones como `map`, que aplica una función a todos los elementos de una lista o `reduce` que transforma todos los elementos de una lista en uno solo.

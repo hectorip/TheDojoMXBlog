@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
     .grid__item {
         min-width: 290px;
         max-width: 400px;
+        margin-top: 15px;
     }
 
 }
@@ -38,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
         max-height: 267px;
     }
     .grid__item {
-        margin-top: 5px;
+        margin-top: 10px;
     }
     .grid__item .archive__item-title {
         font-size: 1.3em;
