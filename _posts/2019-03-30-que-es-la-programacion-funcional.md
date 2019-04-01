@@ -8,6 +8,7 @@ comments: true
 excerpt: "¿Por qué se ha escuchado tanto de la programación funcional recientemente? En este artículo la explicamos de manera concisa"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1280/v1553485527/john-moeses-bauan-690280-unsplash_atpm3w.jpg
+  overlay_filter: rgba(0, 0, 0, 0.5)
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1280/v1553485527/john-moeses-bauan-690280-unsplash_atpm3w.jpg
 ---
 
