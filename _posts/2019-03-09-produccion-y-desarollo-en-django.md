@@ -8,6 +8,7 @@ comments: true
 excerpt: "Una manera para manejar producción y desarrollo sin tanto esfuerzo."
 header:
   overlay_image: https://res.cloudinary.com/dg89awi0p/image/upload/c_scale,w_1200/v1552160611/rawpixel-1135756-unsplash.jpg
+  overlay_filter: rgba(0, 0, 0, 0.5)
   teaser: https://res.cloudinary.com/dg89awi0p/image/upload/c_scale,w_1200/v1552160611/rawpixel-1135756-unsplash.jpg
 ---
 

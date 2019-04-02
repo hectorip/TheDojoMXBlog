@@ -7,6 +7,7 @@ comments: true
 excerpt: "¿Quieres escribir un artículo para este blog? Este artículo explica la manera más sencilla."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1551246660/camille-orgel-58391-unsplash_jvqz1c.jpg
+  overlay_filter: rgba(0, 0, 0, 0.5)
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1551246660/camille-orgel-58391-unsplash_jvqz1c.jpg
 ---
 

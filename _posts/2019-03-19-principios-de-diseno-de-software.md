@@ -10,6 +10,7 @@ toc_label: Contenido
 toc_sticky: true
 header:
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1552951011/evgeni-tcherkasski-974328-unsplash_kqnoni.jpg
+  overlay_filter: rgba(0, 0, 0, 0.5)
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1552951011/evgeni-tcherkasski-974328-unsplash_kqnoni.jpg
 ---
 
