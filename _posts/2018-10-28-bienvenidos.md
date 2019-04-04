@@ -7,6 +7,7 @@ comments: true
 excerpt: "Bienvenidos al blog de The Dojo MX."
 header:
     overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1551938206/fancycrave-284219-unsplash_ylbmvr.jpg
+    overlay_filter: rgba(0, 0, 0, 0.5)
     teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1551938206/fancycrave-284219-unsplash_ylbmvr.jpg
 ---
 
