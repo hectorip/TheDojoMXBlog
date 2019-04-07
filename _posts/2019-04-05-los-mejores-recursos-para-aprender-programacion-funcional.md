@@ -31,8 +31,7 @@ Los chicos de Computerphile lo explican de manera sencilla en la siguiente charl
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eis11j_iGMs?start=7" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-<hr>
+---
 La charla de John Hughes: "Why Functional Programming Matters" es imperdible. Aquí podrás ver algunas aplicaciones de la programación funcional y como es que importa para resolver problemas que de otra manera serían muy difíciles.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1qBHf8DrWR8?start=7" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
