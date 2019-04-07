@@ -9,7 +9,7 @@ excerpt: "¿Quieres aprender programación funcional? En este artículo encontra
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1554614154/martin-adams-1475028-unsplash_ahieks.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1554614154/martin-adams-1475028-unsplash_ahieks.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_fill,g_custom,h_300,w_400/v1554614154/martin-adams-1475028-unsplash_ahieks.jpg
 ---
 
 En [el articulo anterior](/2019/03/30/que-es-la-programacion-funcional.html) hablamos de la programación funcional y por qué es importante. En este te daremos algunos recursos para que puedas iniciarte en ella.
