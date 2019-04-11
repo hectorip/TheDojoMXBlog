@@ -24,6 +24,8 @@ Hablamos de composición en el sentido de "acomodo" o "estructura" e incluso "di
 
 ### Ejemplos de programas concurrentes
 
+### Modelos de concurrencia
+
 ## Paralelismo
 
 ### Ejemplos de programas paralelos
