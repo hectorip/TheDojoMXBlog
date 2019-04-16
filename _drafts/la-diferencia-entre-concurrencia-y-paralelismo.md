@@ -51,12 +51,19 @@ Si logramos hacer que estos procesos puedan correr de manera independiente, tene
 
 Por lo tanto, estos procesos se pueden ejecutar independientemente. Entonces, con estas tareas (y la manera de organizarlas) podemos tener un proceso de creación de podcasts concurrente. Imagina por ejemplo que el podcaster decide crear una parte del borrador, digamos 5 minutos, y grabarlos, sólo para escucharse a sí mismo y probar el tono y el _feeling_. Despues repite la operación hasta tener 30 minutos de contenido. Este es un proceso que podemos decir que es concurrente porque aunque no podía grabar y escribir el borrador al mismo tiempo, estas tareas se estaban completando 'al mismo tiempo', no hizo una después de otra hasta completarla.
 
+Imagínate el proceso algo así:
+
+![Proceso del podcaster](https://res.cloudinary.com/hectorip/image/upload/v1555440917/IMG_0033_sypjyx.jpg)
+
+
 Concurrencia es **manejar** varias tareas en un periodo de tiempo, aunque no se ejecuten simultáneamente.
 
 #### El ajedrecista.
 
 Ahora imagina a un Gran Maestro del ajedrez al que retan a enfrentarse con 10 personas a ciegas al mismo tiempo.
+El ajedrecista acepta y juega contra los 10 formados en círculo.
 
+![El ajedrecista](https://res.cloudinary.com/hectorip/image/upload/v1555440939/IMG_0034_dyakuk.jpg)
 
 ### Ejemplos de programas concurrentes
 
