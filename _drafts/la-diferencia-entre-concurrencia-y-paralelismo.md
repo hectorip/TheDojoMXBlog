@@ -69,7 +69,9 @@ El ajedrecista acepta y juega contra los 10 formados en círculo.
 
 Ahora hablemos de algunos ejemplos de programas concurrentes, de la vida real:
 
-1. **Sistema operativo**. Un sistema operativo ejecuta muchas tareas relacionadas entre sí para lograr que un sistema de hardware sea usable para los humanos, por ejemplo: leer entrada del ratón y el teclado, mostrar el resultado de los procesos en pantallas, ejecutar el reloj, ejecutar muchos programas que hacen de tu experiencia agradable (spotify, administrador de ventanas), servicios de red. Aunque las computadoras actuales tienen varios procesdores, no se acercan al número de tareas con las que un sistema opertivo **trata** al mismo tiempo.
+1. **Sistema operativo**. Un sistema operativo ejecuta muchas tareas relacionadas entre sí para lograr que un sistema de hardware sea usable para los humanos, por ejemplo: leer entrada del ratón y el teclado, mostrar el resultado de los procesos en pantallas, ejecutar el reloj, ejecutar muchos programas que hacen de tu experiencia agradable (spotify, administrador de ventanas), servicios de red. Aunque las computadoras actuales tienen varios procesdores, no se acercan al número de tareas con las que un sistema opertivo **trata** al mismo tiempo. La siguiente ilustración es un ejemplo de cómo trataría en sistema operativo la entrada del texto "AB":
+
+![Sistema operativo](https://res.cloudinary.com/hectorip/image/upload/v1555446371/IMG_0035_bzo3e5.jpg)
 
 2. **Servidor Web**. Los servidores web están diseñados para atender a muchos clientes (usuarios) dentro de un corto espacio de tiempo. Un servidor web está tratando con varios usuarios al mismo tiempo sin que necesariamente todas sus tareas se ejecuten simultáneamente.
 
