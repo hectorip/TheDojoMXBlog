@@ -13,7 +13,7 @@ header:
 ---
 
 Los términos **concurrencia** y **paralelismo** siempre han sido relevantes en el entorno de la computación y desarrollo de software. Casi no hay ningún sistema serio que no aplique lo que significan para trabajar decentemente. Hablemos de la diferencia entre ellos y cómo podemos aplicarlos en nuestros programas.
-Pero decir que uno es el otro es como decir que las naranjas y manzanas son iguales.
+Son conceptos relacionados, pero decir que uno es el otro es como decir que las naranjas y manzanas son iguales.
 
 Empecemos por el concepto más sencillo: el paralelismo.
 
