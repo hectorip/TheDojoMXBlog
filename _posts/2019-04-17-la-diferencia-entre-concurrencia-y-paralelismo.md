@@ -12,16 +12,16 @@ header:
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1555480885/zhipeng-ya-348674-unsplash_lgerdr.jpg
 ---
 
-Los términos **concurrencia** y **paralelismo** siempre han sido relevantes en el entorno de la computación y desarrollo de software. Casi no hay ningún sistema serio que no aplique lo que significan para trabajar decentemente. Hablemos de la diferencia entre ellos y cómo podemos aplicarlos en nuestros programas.
+Los términos **concurrencia** y **paralelismo** siempre han sido relevantes en el entorno de la computación y desarrollo de software. Hablemos de la diferencia entre ellos y cómo podemos aplicarlos en nuestros programas.
 Son conceptos relacionados, pero decir que uno es el otro es como decir que las naranjas y manzanas son iguales.
 
 Empecemos por el concepto más sencillo: el paralelismo.
 
 ## Paralelismo
 
-Se refiere a la **_ejecución simultánea_** de varios procesos computacionales, que pueden estar relacionados entre ellos o no. Esto significa que se requieren varios medios de ejecución física: varios procesadores (o un procesador con vairios núcleos) o varias computadoras (sistemas distribuidos) y la suficiente memoria para mantenerlos. Los procesos pueden estar relacionados entre ellos, para realizar una misma tarea, **o no**.
+Se refiere a la **_ejecución simultánea_** de varios procesos computacionales. Esto significa que se requieren varios medios de ejecución física: varios procesadores (o un procesador con vairios núcleos) o varias computadoras (sistemas distribuidos) y la suficiente memoria para mantenerlos. Los procesos pueden estar relacionados entre ellos, para realizar una misma tarea, **o no**.
 
-El paralelismo entonces está relacionado con la capacidad del sistema en el que se ejecuta el programa y que el software lo pueda aprovechar.
+El paralelismo está relacionado con la capacidad del sistema en el que se ejecuta el programa, con sus recursos disponibles y que el software lo pueda aprovechar.
 
 [Rob Pike](https://en.wikipedia.org/wiki/Rob_Pike), uno de los creadores del lenguaje Go, dice que el mundo real es paralelo. Y pensemos un poco: suceden muchas cosas al mismo tiempo, algunas relacionadas entre ellas, otras no.
 
@@ -29,7 +29,7 @@ Veamos algunos ejemplos concretos de paralelismo en la vida real.
 
 #### El torneo de ajedrez
 
-Imagínate un torneo de ajedrez en el que entran 100 personas a participar pero tiene como límite de tiempo un día. Para lograr terminar a tiempo se tienen que jugar varias partidas _simultáneamente_. Aunque una partida no afecta el resultado de otra que se esté jugando al mismo tiempo, esas partidas sí afectan partidas futuras si el torneo se pensó en varias etapas. Esto es un ejemplo de paralelismo con procesos relacionados.
+Imagínate un torneo de ajedrez en el que entran 100 personas a participar pero tiene como límite de tiempo un día. Para lograr terminar a tiempo se tienen que jugar varias partidas _simultáneamente_. Aunque una partida no afecta el resultado de otra que se esté jugando al mismo tiempo, esas partidas sí afectan partidas futuras si el torneo se pensó en varias etapas. La cantidad de partidas simultáneas que se puedan jugar dependerá tanto del número de jugadores como de los recursos disponibles: lugares, para jugar, tableros, coinjuntos de piezas, etc, y del diseño del torneo. Esto es un ejemplo de paralelismo con procesos relacionados.
 
 #### Un grupo musical
 
@@ -37,7 +37,7 @@ A menos que sea el hombre orquesta, una persona no puede tocar todos los instrum
 
 #### Un grupo tomando clase
 
-Ahora piensa en un profesor que imparte clases a sus alumnos. Cada alumno tomando notas es un proceso corriendo al mismo tiempo. Cada alumno produce sus propias notas con su estilo y contenido para consulta posterior. Esto es un ejemplo de paralelismo con tareas no relacionadas.
+Ahora piensa en un profesor que imparte clases a sus alumnos. Cada alumno tomando notas es un proceso corriendo al mismo tiempo. Un alumno produce sus propias notas con su estilo y contenido para consulta posterior. Esto es un ejemplo de paralelismo con tareas no relacionadas, ya que las notas de todos los alumnos no tienen por qué converger.
 
 ### Ejemplos de programas paralelos
 
@@ -45,7 +45,7 @@ Hablemos de algunos sistemas y programas que pueden o necesitan ejecutar tareas 
 
 1. **Las computadoras actuales**. Las computadoras actuales en general cuentan con un procesador con por lo menos dos núcleos. Cada núcleo es capaz de correr un proceso por lo que esa computadora, si el software lo aprovecha, puede correr dos procesos a la vez. Insistimos: los procesos no necesariamente están relacionados.
 
-2. **Red de Bitcoin**. Cuando se crea un nuevo bloque en el blockchain de la red de Bitcoin, muchas computadoras, llamadas "mineros", compiten para encontrar la solución a un problema matemático para el que se require gran capacidad de cómputo. Todas empiezan al mismo tiempo y la primera que termine gana una cantidad de bitcoins por haber encontrado la solución. Entonces: las computadoras trabajan en paralelo _compitiendo_ para encontrar una solución lo más rápido posible.
+2. **Red de Bitcoin**. Cuando se crea un nuevo bloque en el blockchain de la red de Bitcoin, muchas computadoras, llamadas "mineros", compiten para encontrar la solución a un problema matemático para el que se requiere gran capacidad de cómputo. Todas empiezan al mismo tiempo y la primera que termine gana una cantidad de bitcoins por haber encontrado la solución. Entonces: las computadoras trabajan en paralelo _compitiendo_ para encontrar una solución lo más rápido posible.
 
 3. **Sistemas web modernos**. Casi todos los sistemas web modernos que tienen que atender a una cantidad considerable de usuarios ocupan varios sistemas computacionales para poder responder las peticiones en un tiempo razonable. La primera división que se hace generalmente tiene que ver con la base de datos y el programa encargado de recibir y procesar las peticiones web. Al trabajar en computadoras diferentes que pueden trabajar al mismo tiempo, se vuelve un sistema que trabaja en paralelo. Algunas arquitecturas más complejas incluyen un _balanceador de carga_, que distribuye las peticiones a diferentes computadoras encargadas de procesar las peticiones, y se levantan tantas como se necesiten.
 
