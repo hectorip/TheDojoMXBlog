@@ -19,7 +19,7 @@ Empecemos por el concepto más sencillo: el paralelismo.
 
 ## Paralelismo
 
-Se refiere a la **_ejecución simultánea_** de varios procesos computacionales. Esto significa que se requieren varios medios de ejecución física: varios procesadores (o un procesador con vairios núcleos) o varias computadoras (sistemas distribuidos) y la suficiente memoria para mantenerlos. Los procesos pueden estar relacionados entre ellos, para realizar una misma tarea, **o no**.
+Se refiere a la **_ejecución simultánea_** de varios procesos computacionales. Esto significa que se requieren varios medios de ejecución física: varios procesadores (o un procesador con varios núcleos) o varias computadoras (sistemas distribuidos) y la suficiente memoria para mantenerlos. Los procesos pueden estar relacionados entre ellos, para realizar una misma tarea, **o no**.
 
 El paralelismo está relacionado con la capacidad del sistema en el que se ejecuta el programa, con sus recursos disponibles y que el software lo pueda aprovechar.
 
@@ -74,14 +74,14 @@ Piensa en una persona que quiere grabar un podcast. Para facilitarse la vida ha 
 
 1. Crear el borrador -> Independiente
 2. Grabar el episodio -> Puede o no ocupar un borrador, es mejor idea tener uno.
-3. Editar -> Requiere uuna grabación que editar y decorar y produce un episodio final.
+3. Editar -> Requiere una grabación que editar y decorar y produce un episodio final.
 4. Publicar -> Requiere un episodio que publicar
 
 Por lo tanto, estos procesos se pueden ejecutar independientemente. Entonces, con estas tareas (y la manera de organizarlas) podemos tener un proceso de creación de podcasts concurrente. Imagina por ejemplo que el podcaster decide crear una parte del borrador, digamos 5 minutos, y grabarlos, sólo para escucharse a sí mismo y probar el tono y el _feeling_. Despues repite la operación hasta tener 30 minutos de contenido. Este es un proceso que podemos decir que es concurrente porque aunque no podía grabar y escribir el borrador al mismo tiempo, estas tareas se estaban completando 'al mismo tiempo', no hizo una después de otra hasta completarla.
 
 Imagínate el proceso algo así:
 
-![Proceso del podcaster](https://res.cloudinary.com/hectorip/image/upload/v1555440917/IMG_0033_sypjyx.jpg)
+![Proceso del podcaster](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1555523914/IMG_0033_1_btpgl3.jpg)
 
 
 Concurrencia es **manejar** varias tareas en un periodo de tiempo, aunque no se ejecuten simultáneamente. Pero podríamos hacer este proceso paralelo al integrar a más personas: una persona que escriba el borrador, empezando un poco antes que el encargado de hablar al micrófono comience. Así aceleramos el proceso. O los encargados de editar y publicar pueden estar trabajando en episodios anteriores
@@ -94,7 +94,7 @@ Ahora imagina a un Gran Maestro (GM) del ajedrez al que retan a enfrentarse con 
 El ajedrecista acepta y juega contra los 10 formados en círculo. Para lograr esto (además de jugar muy bien ajedrez), el gran maestro debe establecer un orden para cada openente y, por lo menos en su mente, una manera de retomar cada juego cuando sea el turno. Las tareas (los juegos), vistos desde el lado del GM están relacionadas en el sentido de que cada una suma dificultad al encuentro, cada uno hace más difícil ganar al siguiente. Este proceso no puede paralelizarse porque perdería todo el sentido.
 
 
-![El ajedrecista](https://res.cloudinary.com/hectorip/image/upload/v1555440939/IMG_0034_dyakuk.jpg)
+![El ajedrecista](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1555523924/IMG_0037_pkqalv.jpg)
 
 
 #### Un equipo de trabajo
@@ -108,7 +108,7 @@ Ahora hablemos de algunos ejemplos de programas concurrentes, de la vida real:
 
 1. **Sistema operativo**. Un sistema operativo ejecuta muchas tareas relacionadas entre sí para lograr que un sistema de hardware sea usable para los humanos, por ejemplo: leer entrada del ratón y el teclado, mostrar el resultado de los procesos en pantallas, ejecutar el reloj, ejecutar muchos programas que hacen de tu experiencia agradable (spotify, administrador de ventanas), servicios de red. Aunque las computadoras actuales tienen varios procesdores, no se acercan al número de tareas con las que un sistema opertivo **trata** al mismo tiempo. Como decíamos en la sección de paralelismo, actualmente casi todas las computadoras pueden correr varios procesos al mismo tiempo, por lo que puede que el sistema operativo se aproveche de esto. La siguiente ilustración es un ejemplo de cómo trataría en sistema operativo la entrada del texto "AB":
 
-![Sistema operativo concurrente](https://res.cloudinary.com/hectorip/image/upload/v1555446371/IMG_0035_bzo3e5.jpg)
+![Sistema operativo concurrente](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1555523897/IMG_0035_1_emhyju.jpg)
 
 
 2. **Servidor Web**. Los servidores web están diseñados para atender a muchos clientes (usuarios) dentro de un corto espacio de tiempo. Un servidor web está tratando con varios usuarios al mismo tiempo sin que necesariamente todas sus tareas se ejecuten simultáneamente: atiende a cada usuario en muy corto periodo de tiempo y pasarse al siguiente. Puede funcionar en paralelo si cuenta con los recursos computacionales suficiente. Se parece al ajedrecista, "juega" con muchos usuarios al mismo tiempo, dividiendo sus recursos por tiempo.
