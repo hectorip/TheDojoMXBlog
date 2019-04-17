@@ -49,7 +49,7 @@ Hablemos de algunos sistemas y programas que pueden o necesitan ejecutar tareas 
 
 3. **Sistemas web modernos**. Casi todos los sistemas web modernos que tienen que atender a una cantidad considerable de usuarios ocupan varios sistemas computacionales para poder responder las peticiones en un tiempo razonable. La primera división que se hace generalmente tiene que ver con la base de datos y el programa encargado de recibir y procesar las peticiones web. Al trabajar en computadoras diferentes que pueden trabajar al mismo tiempo, se vuelve un sistema que trabaja en paralelo. Algunas arquitecturas más complejas incluyen un _balanceador de carga_, que distribuye las peticiones a diferentes computadoras encargadas de procesar las peticiones, y se levantan tantas como se necesiten.
 
-Como decíamos al principio, casi todos los sistemas computacionales modernos se valen del paralelismo para funcionar decentemente. Ahora pasemoa a hablar de un concepto un poco menos fácil de entender.
+Como decíamos al principio, casi todos los sistemas computacionales modernos se valen del paralelismo para funcionar decentemente. Ahora pasemos a hablar de un concepto un poco menos fácil de entender.
 
 ## Concurrencia
 
@@ -77,7 +77,7 @@ Piensa en una persona que quiere grabar un podcast. Para facilitarse la vida ha 
 3. Editar -> Requiere una grabación que editar y decorar y produce un episodio final.
 4. Publicar -> Requiere un episodio que publicar
 
-Por lo tanto, estos procesos se pueden ejecutar independientemente. Entonces, con estas tareas (y la manera de organizarlas) podemos tener un proceso de creación de podcasts concurrente. Imagina por ejemplo que el podcaster decide crear una parte del borrador, digamos 5 minutos, y grabarlos, sólo para escucharse a sí mismo y probar el tono y el _feeling_. Despues repite la operación hasta tener 30 minutos de contenido. Este es un proceso que podemos decir que es concurrente porque aunque no podía grabar y escribir el borrador al mismo tiempo, estas tareas se estaban completando 'al mismo tiempo', no hizo una después de otra hasta completarla.
+Por lo tanto, estos procesos se pueden ejecutar independientemente. Entonces, con estas tareas (y la manera de organizarlas) podemos tener un proceso de creación de podcasts concurrente. Imagina por ejemplo que el podcaster decide crear una parte del borrador, digamos 5 minutos, y grabarlos, sólo para escucharse a sí mismo y probar el tono y el _feeling_. Después repite la operación hasta tener 30 minutos de contenido. Este es un proceso que podemos decir que es concurrente porque aunque no podía grabar y escribir el borrador al mismo tiempo, estas tareas se estaban completando 'al mismo tiempo', no hizo una después de otra hasta completarla.
 
 Imagínate el proceso algo así:
 
