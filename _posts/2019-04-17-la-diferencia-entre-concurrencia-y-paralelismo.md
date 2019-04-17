@@ -1,6 +1,6 @@
 ---
 title: "La diferencia entre concurrencia y paralelismo"
-date: 2019-04-08
+date: 2019-04-17
 author: Héctor Patricio
 tags: concurrencia paralelismo go elixir
 categories: 
