@@ -12,8 +12,6 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Este post es una actualización [de otro](https://medium.com/@HectorIP/fuentes-tipogr%C3%A1ficas-para-programadores-7d93c55f1223) que hice hace como dos años.
-
 Personalizar el entorno de programación se ha convertido en uno de los temas más relevantes para los desarrolladores de software, nos permite ser más productivos y estar más contentos en general con el trabajo día a día. No dudo que el lugar en el que más pasamos tiempo los desarrolladores sea el editor de texto o IDE, y, por lo tanto, aprender a personalizarlo es bastante importante. Uno de los aspectos más importantes del editor de texto es la fuente tipográfica.
 
 En éste artículo presentaré las fuentes que me parecen más interesantes diseñadas para programar, además de otras que aunque no fueron diseñadas para los programadores exclusivamente, hacen un gran trabajo. Aunque parezca un tema superfluo, tener un entorno adaptado a nuestros gustos, tanto estética como funcionalmente, es increíblemente efectivo para ser más productivos. Pero antes de empezar unas notas acerca de la tipografía.
@@ -124,3 +122,4 @@ Podemos ver que existen suficientes tipos de fuentes listas para diferentes gust
 
 En [Programming Fonts](http://programmingfonts.org/) puedes encontrar más opciones si no te convenció ninguna de las que mostramos aquí. También puedes probar muchos [estilos diferentes](https://app.programmingfonts.org/).
 
+_Nota: Este post es una actualización [de otro](https://medium.com/@HectorIP/fuentes-tipogr%C3%A1ficas-para-programadores-7d93c55f1223) que hice tiempo._
