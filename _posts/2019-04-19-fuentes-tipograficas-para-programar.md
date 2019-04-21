@@ -53,7 +53,7 @@ Las ligaduras en las fuentes tipográficas suceden cuando el conjunto de caracte
 
 Ahora bien, las ligaduras se pueden usar para mostrar carácteres especiales más legibles y entendibles como en el caso de los conjuntos de caracteres: =>, !=, ==. Varias fuentes han aprovechado las ligaduras para poder llevar esto a la realidad. Lo triste de esto es que no todos los editores de texto, IDE’s y terminales los soportan. Algo que debe quedar claro que sólo cambia la *representación* del texto, no los caracteres realmente escritos, por lo que no produce ningún problema con el código fuente.
 
-Ahora sí hablemos de algunas de las fuentes bonitas que podemos usar.
+Ahora sí, hablemos de algunas de las fuentes bonitas que podemos usar.
 
 ## Fira Code
 
@@ -116,10 +116,23 @@ Esta fuente no tiene ligaduras (aunque hay un proyecto que se las pone: [aquí](
 
 Si el tema de resaltado de sintaxis que usas hace buen uso de las cursivas esta fuente luce absolutamente hermosa.
 
-## Conclusión
+## Proggy Fonts
 
-Podemos ver que existen suficientes tipos de fuentes listas para diferentes gustos así que no hay pretexto para que hagamos nuestro entorno más agradable y adaptado a lo que más nos funcione.
+Este sitio tiene varias fuentes de la familia Proggy, lucen con un toque retro pero se ven muy bien, sobre todo si te gusta el estilo de 8 bits.
+
+Aquí un ejemplo:
+
+![Ejemplo Proggy Square](https://cdn.proggyfonts.net/wp-content/uploads/2017/08/26195436/code_proggysquaresz.png)
+
+En el sitio puedes encontrar otras fuentes exclusivas para progrmar, todas gratis.
+
+
+## Bonus
 
 En [Programming Fonts](http://programmingfonts.org/) puedes encontrar más opciones si no te convenció ninguna de las que mostramos aquí. También puedes probar muchos [estilos diferentes](https://app.programmingfonts.org/).
 
+En [este repo de Github](https://github.com/chrissimpkins/codeface) puedes encontrar más ejemplos. 
+
+
 _Nota: Este post es una actualización [de otro](https://medium.com/@HectorIP/fuentes-tipogr%C3%A1ficas-para-programadores-7d93c55f1223) que hice tiempo._
+
