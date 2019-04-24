@@ -5,7 +5,7 @@ author: Héctor Patricio
 tags:
 categories: 
 comments: true
-excerpt: "Escribe aquí un buen resumen de tu artículo"
+excerpt: "El primer artículo de la serie. ¿Qué es una API y qué debemos tener en cuenta al diseñarla?"
 header:
   overlay_image: #image
 ---
