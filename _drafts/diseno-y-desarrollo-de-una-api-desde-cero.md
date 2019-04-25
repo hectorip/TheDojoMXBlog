@@ -9,3 +9,9 @@ excerpt: "El primer artículo de la serie. ¿Qué es una API y qué debemos tene
 header:
   overlay_image: #image
 ---
+ 
+
+## Principios de diseño de API's
+
+## API's REST
+
