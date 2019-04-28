@@ -10,11 +10,11 @@ header:
   overlay_image: #image
 ---
 
-En este post explicaremos los principios básicos de diseño de una API. Esta primera parte es bastante teórica, empezaremos con la práctica (no necesariamente con la programación) en la parte final de este post. Priemero hablemos de la importancia del diseño o la arquitectura de la API. En este post hablaremos de API's para consumo web, a través de HTTP.
+En este post explicaremos **los principios básicos de diseño de una API**. Esta primera parte es bastante teórica, empezaremos con la práctica (no necesariamente con la programación) en la parte final de este post. Primero hablemos de la importancia del diseño o la arquitectura de la API. En este post hablaremos de API's para consumo web, a través de HTTP. Pero antes hablemos de la importancia de diseñar nuestra API.
 
 ## ¿Por qué diseñar mi API?
 
-Cuando tengamos que hacer una API podemos tomar varios caminos: dejar que vaya creciendo y agregando las URL's como se nos vaya ocurriendo, o las vayamos necesitando.
+Cuando tengamos que hacer una API podemos tomar varios caminos: dejar que vaya creciendo y agregando las URL's y funciones como se nos vaya ocurriendo y las vayamos necesitando o pensar de antemano en en los nombres y la estructura que utilizaremos.
 
 
 ## Principios de diseño de API's
