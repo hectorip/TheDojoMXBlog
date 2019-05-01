@@ -28,9 +28,14 @@ Cuando tengamos que hacer una API podemos tomar varios caminos: dejar que vaya c
 
 Hay diferentes estilos, por ejemplo, basada en acciones (estilo SOAP), basada en recursos (RESTful).
 
-
-## API's REST
+## Interfaces REST
 
 Una API REST aprovecha el diseño de las peticiones HTTP para hacer interfaces programáticas intuitivas.
 REST son las siglas de "Representational State Transfer" (Transferencia de Estado Representacional). Esto significa.
 
+
+## Protocolos y lenguajes de comunicación
+
+## El ejercicio
+
+## Conclusión y próximos artículos
