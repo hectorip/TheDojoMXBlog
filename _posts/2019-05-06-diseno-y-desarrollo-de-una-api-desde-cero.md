@@ -1,13 +1,15 @@
 ---
 title: "Diseño y desarrollo de una API RESTful desde cero - La importancia de diseñar tu API"
-date: 2019-04-22
+date: 2019-05-06
 author: Héctor Patricio
-tags:
-categories: 
+tags: apis rest soap
+categories: api rest soap
 comments: true
 excerpt: "El primer artículo de la serie. ¿Por qué es importante diseñar de antemano tu API?"
 header:
-  overlay_image: #image
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1557201862/edho-pratama-149011-unsplash_jlppci.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1557201862/edho-pratama-149011-unsplash_jlppci.jpg
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 En este post explicaré **los principios básicos de diseño de una API**. Esta primera parte es bastante teórica, empezaremos con la práctica (no con la programación, sino con el diseño) en la parte final de este post.
@@ -97,4 +99,6 @@ En el camino aprenderemos:
 
 El ejercicio será el siguiente:
 
-> Crear una API que 
+> Crear una API que permita crear listas de vocabularios. Un usuario se registra y puede crear tantos vocabularios como desee. Un vocabulario consiste de una lista de palabras ornedas por tiempo de inserción y su definción, que puede ser tomada del diccionario (fija) o definida por el usuario. Además una palabra puede tener imágenes adjuntas.
+
+Esta aplicación nos permitirá poner en práctica y aprender de todos los puntos antes mencionados y otros. No te pierdas el siguiente artículo.
