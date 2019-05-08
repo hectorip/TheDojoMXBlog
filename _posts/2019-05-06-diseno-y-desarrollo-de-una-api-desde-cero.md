@@ -12,13 +12,13 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-En este post explicaré **los principios básicos de diseño de una API**. Esta primera parte es bastante teórica, empezaremos con la práctica (no con la programación, sino con el diseño) en la parte final de este post.
+En este post explicaré **los principios básicos de diseño de una API**. Esta primera parte es bastante teórica, empezaremos con la práctica (no con la programación, sino con el diseño) en un post posterior.
 
-Primero hablemos de la importancia del diseño o la arquitectura de la API. En la serie de posts hablaremos de API's para consumo web, a través de HTTP, ya que son las de mayor uso actualmente.
+Primero hablemos de la importancia del diseño o la arquitectura de la API. En la serie de posts hablaremos de API's para consumo web, a través de HTTP, ya que son las de mayor uso y popularidad.
 
 Pero primero hablemos de la importancia del diseño de la API.
 
-## La importancia de diseñar la API
+## La importancia de diseñar tu API
 
 Pensar de antemano (y tal vez poner por escrito) la estructura y nombres de la API, aunque parezca una tarea a veces innecesaria, aburrida o burocrática, puede dar las siguientes ventajas:
 
@@ -28,7 +28,7 @@ Pensar de antemano (y tal vez poner por escrito) la estructura y nombres de la A
 
 El trabajo extra que pongas en diseñar tu API o por lo menos escoger un patrón de diseño común te ahorrará trabajo en el futuro, a tu equipo y a otros desarrolladores.
 
-Dependiendo de la época y las necesidades han surgido varios estilos o patrones de diseño comunes. Aquí hablaremos de tres de los más usados a lo largo del tiempo y los más comunes.
+Dependiendo de la época y las necesidades han surgido varios estilos o patrones de diseño comunes. Aquí hablaremos de dos de los más usados a lo largo del tiempo y de los más populares.
 
 ## SOAP (Simple Object Access Protocol)
 
@@ -68,7 +68,7 @@ Todos los puntos anteriores nos permiten crear una API que se comporta de manera
 
 ### Ventas de REST
 
-1. **Implementación más fácil**. Comparado con SOAP, implementar una API RESTful es más sencillo casi en cualquier lenguaje, no requiere protocolos extra.
+1. **Implementación más fácil**. Comparado con SOAP, implementar una API RESTful es más sencillo casi en cualquier lenguaje, no requiere protocolos extra. Además en la mayoría de los lenguajes ya hay clientes o es muy sencillo programar uno.
 2. **Flexibilidad**. REST no define el lenguaje de transferencia de datos, el tipo de autenticación y otros detalles de la comunicación que se dejan a discreción de los implementadores. En la actualidad, la mayoría de las API's REST usan JSON como lenguaje de transeferencia, pero bien podrían usar XML o MessagePack, incluso un lenguaje propietario.
 3. **Popularidad**. La extensión de uso de API's RESTful ha hecho que proliferen herramientas para construirlas, probarlas y ponerlas en producción, por le que es muy sencillo desarrollarlas, aunque no deja de presentar retos.
 4. **Escalabilidad**. Esta es una de las razones por las que las API rest se han vuelto tan populares. Incrementar la cantidad de usuarios que se pueden atender con una API RESTful es más sencillo que son SOAP debido a la cacheabilidad y a que las conexiones sin estado permiten escalamiento horizontal (replicación de servidores) y por lo tanto los costos se abaratan. La mayoría de las API's grandes conocidas siguen este estilo.
