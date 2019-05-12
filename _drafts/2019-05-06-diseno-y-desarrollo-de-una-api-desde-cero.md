@@ -20,11 +20,11 @@ Pero primero hablemos de la importancia del diseño de la API.
 
 ## La importancia de diseñar tu API
 
-Pensar de antemano (y tal vez poner por escrito) la estructura y nombres de la API, aunque parezca una tarea a veces innecesaria, aburrida o burocrática, puede dar las siguientes ventajas:
+Aunque parezca una tarea aburrida, innecesaria o burocrática, elegir un estilo de diseño de API's te servirá de las siguientes maneras:
 
 1. **Mayor facilidad de desarrollo**. Tener una forma de nombrar los endpoints (los links con los que los sistemas externos interactúan), una estrucutra de respuesta, un estándar de errores y otras cuestiones definidas de antemano te permitirá pasar directo al diseño e implementación de las funcionalidades cuando llegue el momento. Si escoges usar una estructura de diseño común y popular puede que incluso haya herramientas que te faciliten la tarea. Nuestra API estará preparada para ser mantenible y escalable.
 2. **Familiariadad**. Si sigues un patrón de diseño común, cuando otros desarrolladores usen tu API la entenderán más fácil y podrán comenzar a sacarle provecho más rápido.
-3. **Menos documentación**. Aprovechando lo anterior, puede que gran parte de la estructura y prácticas comunes del patrón que escogiste ya estén explicadas, por lo que normalmente tendrás que documentar sólamente las partes que son especeificas de tu API.
+3. **Menos documentación**. Aprovechando lo anterior, puede que gran parte de la estructura y prácticas comunes del patrón que escogiste ya estén documentadas, por lo que normalmente tendrás que documentar sólamente las partes que son especeificas de tu API.
 
 El trabajo extra que pongas en diseñar tu API o por lo menos escoger un patrón de diseño común te ahorrará trabajo en el futuro, a tu equipo y a otros desarrolladores.
 
@@ -32,24 +32,24 @@ Dependiendo de la época y las necesidades han surgido varios estilos o patrones
 
 ## SOAP (Simple Object Access Protocol)
 
-Este es el estilo de servicios más usado en el mundo empresarial y también el más antiguo de los que hablaremo aquí. En realidad es un protocolo que establece desde la manera de comunicación hasta el lenguaje usado para transferir datos.
-Su nombre es un acrónimo que signfica *Simple Object Access Protocol (Protocolo simple de acceso a objetos)* y fue desarrollado por Microsoft inicialmente. El lenguaje que se usa para transferir datos es XML y tiene varios estándares que definen cada aspecto de la comunicación, por lo que no se queda en sólo un estilo de diseño de API's. Su objetivo original era definir como acceder y usar servicios web.
+Este es el estilo de servicios más usado en el mundo empresarial. En realidad es un protocolo que establece desde la manera de comunicación hasta el lenguaje usado para transferir datos, entre otras cosas.
+Su nombre es un acrónimo que signfica *Simple Object Access Protocol (Protocolo simple de acceso a objetos)* y fue desarrollado por Microsoft inicialmente. El lenguaje que se usa para transferir datos es [XML](https://www.w3schools.com/xml/xml_whatis.asp) y tiene varios estándares que definen cada aspecto de la comunicación, por lo que no se queda en sólo un estilo de diseño de API's. Su objetivo original era definir como acceder y usar servicios web.
+Una de las partes más fuertes del protocolo es la manera en que establece un contrato con el cliente acerca de la manera de usar los serivicios que expone. El archivo [WSDL](https://www.w3.org/TR/2001/NOTE-wsdl-20010315) contiene la descripción de los serivcios expuestos en un lenguaje exclusivamente creado para eso, el *Web Service Description Language*.
 
 ### Ventajas de SOAP
 
 1. **Pensado para transacciones complejas**. SOAP está pensado para usarse con **transacciones**. Si lo que requieres es que tu API realice transacciones [ACID](https://en.wikipedia.org/wiki/ACID_(computer_science)), trabajar con SOAP te facilitará la vida.
-2. **Establece cada parte de la comunicación**. Esto puede ser una ventaja o una desventaja, pero si estás con una tecnología que lo permite y aprovecha, trabajar con SOAP puede ser rápido y sin dolor, ya que los estándares estarán implementados en la platafoma/lenguaje (sobre todo las de Microsoft).
-3. **Se lleva bien con las tecnologías de Microsoft**. Si trabajas en los lenguajes y con los editores de MS, nunca en tu vida vas a tener que tocar siquiera el XML crudo con el que se transmiten los datos. Sus herramientas y lenguajes tienen todo lo necesario para hacerte fácil trabajar con SOAP.
+2. **Establece cada parte de la comunicación**. Esto puede ser una ventaja o una desventaja, pero si estás con una tecnología que lo permite y aprovecha, trabajar con SOAP puede ser rápido y sin dolor, ya que los estándares estarán implementados en la platafoma/lenguaje y las herramientas de programación pueden aprovecharse de los estándares para facilitarte la vida.
+3. **Web Service Description Language**. 
 
 ### Desventajas de SOAP.
 
-1. **Sólo se lleva bien con las tecnologíos de MS**. Casi en ningún otro lenguaje y editores hay soporte tan completo para SOAP como lo hay para las tecnologías de MS. Si por alguna razón tienes que trabajar con SOAP en otra tecnología, va a parecer un martirio, y aún así a veces se tiene que hacer. Hayu mejores herramientas para trabajar con otros tipos de API's en los lenguajes más comunes usados en OpenSource.
-2. **XML**. Parsear y procesar XML es en geneal más difícil y requiere más pasos que hacer con otros lenguajes de transmisión de datos usados con otros estilos de API's.
-3. **Velocidad**. Al ser un protocolo más complejo, aumenta la cantidad de procesamiento y transferencia de datos requerido para funcionar, lo que lo hace más lento que otras alternativas. Además, no es fácilmente cacheable, por lo que cada respuesta tiene que ser única.
+1. **XML**. Parsear y procesar XML es en geneal más difícil y requiere más pasos que hacer con otros lenguajes de transmisión de datos usados con otros estilos de API's, claro que ésta deventaja sólo aplica si tu lenguaje y herramientas de desarrollo no soportan completamente los protocolos establecidos por SOAP. Así que la experiencia que tengas con SOAP depende en gran medida de las cosas implementadas por los lenguajes y herramientas en que programarás en el lenguaje (por ejmplo, los IDE's para C# y Java soportan recibir el WSDL para automatizar gran parte del proceso de crear un cliente)
+2. **Velocidad**. Al ser un protocolo más complejo, aumenta la cantidad de procesamiento y transferencia de datos requerido para funcionar, lo que lo hace más lento que otras alternativas. Además, no es fácilmente cacheable, por lo que cada respuesta tiene que ser única y por lo tanto requiere mayores recursos.
 
 ### Conclusión acerca de SOAP
 
-Hay personas que se escandalizan cuando tienen que trabajar en un API's SOAP, y esto de verdad es un problema cuando tus herramientas no hacen fácil trabajar con este tipo de API's. Sin embargo, sus características las hacen adecuadas para API's transaccionales enfocadas en el mercado empresarial, por lo que es conveniente escorger este tipo de API's en los casos adecuados. **Cada herramienta fue creada con un propósito y tiene sus usos adecuados.**
+Hay personas que se escandalizan cuando tienen que trabajar en un API's SOAP, sobre todo las generaciones recientes, y esto de verdad es un problema cuando tus herramientas no hacen fácil trabajar con este tipo de API's. Sin embargo, sus características la hace adecuadas para API's transaccionales, por lo que es conveniente escorger este tipo de API's en los casos adecuados. **Cada herramienta fue creada con un propósito y tiene sus usos adecuados.**
 
 ## API's RESTful
 
