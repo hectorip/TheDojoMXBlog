@@ -5,7 +5,7 @@ author: Héctor Patricio
 tags: apis rest soap
 categories: api rest soap
 comments: true
-excerpt: "El primer artículo de la serie. ¿Por qué es importante diseñar de antemano tu API?"
+excerpt: "El primer artículo de la serie. ¿Por qué es importante diseñar de antemano tu API? Compararemos dos de los estilos más populares: SOAP vs REST"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1557201862/edho-pratama-149011-unsplash_jlppci.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1557201862/edho-pratama-149011-unsplash_jlppci.jpg
@@ -34,31 +34,35 @@ Dependiendo de la época y las necesidades han surgido varios estilos o patrones
 
 Este es el estilo de servicios más usado en el mundo empresarial. En realidad es un protocolo que establece desde la manera de comunicación hasta el lenguaje usado para transferir datos, entre otras cosas.
 Su nombre es un acrónimo que signfica *Simple Object Access Protocol (Protocolo simple de acceso a objetos)* y fue desarrollado por Microsoft inicialmente. El lenguaje que se usa para transferir datos es [XML](https://www.w3schools.com/xml/xml_whatis.asp) y tiene varios estándares que definen cada aspecto de la comunicación, por lo que no se queda en sólo un estilo de diseño de API's. Su objetivo original era definir como acceder y usar servicios web.
-Una de las partes más fuertes del protocolo es la manera en que establece un contrato con el cliente acerca de la manera de usar los serivicios que expone. El archivo [WSDL](https://www.w3.org/TR/2001/NOTE-wsdl-20010315) contiene la descripción de los serivcios expuestos en un lenguaje exclusivamente creado para eso, el *Web Service Description Language*.
+Una de las partes más fuertes del protocolo es la manera en que establece un contrato con el cliente acerca de la forma de usar los serivicios que expone. El archivo [WSDL](https://www.w3.org/TR/2001/NOTE-wsdl-20010315) contiene la descripción de los serivcios expuestos en un lenguaje exclusivamente creado para eso, el *Web Service Description Language*, que se vale de XML. En este archivo define los servicios que la API provee, mediante la definición de una colección de endpoints, mensajes y tipos de datos. Este documento permite automatizar la creación de clientes mediante código.
 
 ### Ventajas de SOAP
 
-1. **Pensado para transacciones complejas**. SOAP está pensado para usarse con **transacciones**. Si lo que requieres es que tu API realice transacciones [ACID](https://en.wikipedia.org/wiki/ACID_(computer_science)), trabajar con SOAP te facilitará la vida.
+1. **Pensado para transacciones complejas**. Una parte de SOAP está pensada para usarse con **transacciones**. Si lo que requieres es que tu API realice transacciones [ACID](https://en.wikipedia.org/wiki/ACID_(computer_science)), trabajar con SOAP te facilitará la vida.
 2. **Establece cada parte de la comunicación**. Esto puede ser una ventaja o una desventaja, pero si estás con una tecnología que lo permite y aprovecha, trabajar con SOAP puede ser rápido y sin dolor, ya que los estándares estarán implementados en la platafoma/lenguaje y las herramientas de programación pueden aprovecharse de los estándares para facilitarte la vida.
-3. **Web Service Description Language**. 
+3. **Interfaz definida**. Mediante el documento WSDL, SOAP permite la lectura de la interfaz (los endpoints), los tipos de datos de datos y sus mensajes, así como las acciones que se pueden realizar de manera automatizada, lo que hace sencillo entender y consumir la API, incluso de manera automatizada mediante una herramienta que cree el cliente automáticamente o un paquete de tu lenguaje que te facilite la vida.
 
 ### Desventajas de SOAP.
 
-1. **XML**. Parsear y procesar XML es en geneal más difícil y requiere más pasos que hacer con otros lenguajes de transmisión de datos usados con otros estilos de API's, claro que ésta deventaja sólo aplica si tu lenguaje y herramientas de desarrollo no soportan completamente los protocolos establecidos por SOAP. Así que la experiencia que tengas con SOAP depende en gran medida de las cosas implementadas por los lenguajes y herramientas en que programarás en el lenguaje (por ejmplo, los IDE's para C# y Java soportan recibir el WSDL para automatizar gran parte del proceso de crear un cliente)
+1. **XML**. Parsear y procesar XML es en geneal más difícil y requiere más pasos que hacer con otros lenguajes de transmisión de datos usados con otros estilos de API's, pero esta deventaja sólo aplica si tu lenguaje y herramientas de desarrollo no soportan completamente los protocolos establecidos por SOAP. Así que la experiencia que tengas con SOAP depende en gran medida de las cosas implementadas por los lenguajes y herramientas en que programarás en el lenguaje (por ejmplo, los IDE's para C# y Java soportan recibir el WSDL para automatizar gran parte del proceso de crear un cliente)
 2. **Velocidad**. Al ser un protocolo más complejo, aumenta la cantidad de procesamiento y transferencia de datos requerido para funcionar, lo que lo hace más lento que otras alternativas. Además, no es fácilmente cacheable, por lo que cada respuesta tiene que ser única y por lo tanto requiere mayores recursos.
 
 ### Conclusión acerca de SOAP
 
-Hay personas que se escandalizan cuando tienen que trabajar en un API's SOAP, sobre todo las generaciones recientes, y esto de verdad es un problema cuando tus herramientas no hacen fácil trabajar con este tipo de API's. Sin embargo, sus características la hace adecuadas para API's transaccionales, por lo que es conveniente escorger este tipo de API's en los casos adecuados. **Cada herramienta fue creada con un propósito y tiene sus usos adecuados.**
+Hay personas que se escandalizan cuando tienen que trabajar en un API SOAP, sobre todo las generaciones recientes, y esto de verdad es un problema cuando tus herramientas no hacen fácil trabajar con este tipo de API's. Sin embargo, sus características la hace adecuadas para API's transaccionales, por lo que es conveniente escorger este tipo de API's en los casos adecuados. Además, puedes beneficiarte de su forma de establecer la interfaz de manera clara y estricta. **Cada herramienta fue creada con un propósito y tiene sus usos adecuados.**
 
 ## API's RESTful
 
-Una API REST aprovecha el diseño de las peticiones HTTP para hacer interfaces web intuitivas.
+Una API REST aprovecha el diseño de las peticiones HTTP para crear servicios web con interfaces intuitivas.
 REST son las siglas de "Representational State Transfer" (Transferencia de Estado Representacional), que es un estilo de arquitectura de sistemas distribuidos (podemos pensar en la web como un sistema distribuido). 
 Este estilo establece 6 características que se deben de cumplir para que un sistema sea considerado RESTful:
 
 1. Arquitectura cliente-servidor. Existe un programa encargado de hacer peticiones (cliente) y uno encargado de responderlas (servidor).
-2. Interfaz uniforme. Todos los clientes deberían acceder a la misma interfaz. Si el servidor cumple con la interfaz, puede haber un número ilimitado de clientes independientes que cambian sin dependencias entre ellos o con la implementación del servidor. *Esta es una de las razones principales por las que las API's REST son tan usadas actualmente.* Este punto lo trataremos más a profundidad en el siguiente artículo.
+2. Interfaz uniforme. Todos los clientes deberían acceder a la misma interfaz. Si el servidor cumple con la interfaz, puede haber un número ilimitado de clientes independientes que cambian sin dependencias entre ellos o con la implementación del servidor. *Esta es una de las razones principales por las que las API's REST son tan usadas actualmente.* Este punto lo trataremos más a profundidad en el siguiente artículo. Pero para cumplir esto mencionemos brevemente qué principios debe seguir esta interfaz para que cumpla con este propósito:
+  - **Basada en *recursos***. Las URL's de los endpoints hacen referencia a _recursos_, es decir, a elementos de datos que pueden ser representados como objetos con un tipo, datos asociados, relaciones con otros objetos y las operaciones que se pueden realizar sobre él.
+  - **Manipulación de recursos mediante *representaciones***. La API no devuelve nunca el recurso original al cliente que lo solicita o solicita una operación sobre él, sino que lo hace a través de alguna _representación_ de este recurso. Una representación es un subconjunto de los datos de recurso transmitido en un lenguaje adecuado: HTML, XML, JSON, MessagePack, etc.
+  - **Mensajes autodescriptivos**. Cada mensaje tiene suficiente información en sí mismo para ser procesado.
+  - **HATEOAS**. Estas son las siglas de **Hypermedia As The Engine Of Applicaton State** (Hypermedia como el motor del estado de la aplicación).
 3. Sistema sin estado. Las conexiones entre los sistemas (cliente y servidor) no deberían dependender de un estado creado o mantenido a través de peticiones anteiores. Todo lo necesario para generar una respuesta se encuentra en la petición actual.
 4. Cacheable. Las respuestas pueden ser guardadas para ser contestadas más rápidamente por el mismo servidor o por un sistema intermedio.
 5. Sistema en capas. El sistema puede estar construido por varias capas de servicio y esto ser transparente para los clientes (no tienen que modificar sus llamadas).
