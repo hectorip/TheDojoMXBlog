@@ -49,7 +49,7 @@ Una de las partes más fuertes del protocolo es la manera en que establece un co
 
 ### Conclusión acerca de SOAP
 
-Hay personas que se escandalizan cuando tienen que trabajar en un API SOAP, sobre todo las generaciones recientes, y esto de verdad es un problema cuando tus herramientas no hacen fácil trabajar con este tipo de API's. Sin embargo, sus características la hace adecuadas para API's transaccionales, por lo que es conveniente escorger este tipo de API's en los casos adecuados. Además, puedes beneficiarte de su forma de establecer la interfaz de manera clara y estricta. **Cada herramienta fue creada con un propósito y tiene sus usos adecuados.**
+Hay personas que se escandalizan cuando tienen que trabajar en un API SOAP, sobre todo las generaciones recientes, y esto de verdad es un problema cuando tus herramientas no hacen fácil trabajar con este tipo de API's, sobre todo desarrolladores con poca experiencia. Sin embargo, sus características la hace adecuadas para API's transaccionales, por lo que es conveniente escorger este tipo de API's en los casos adecuados. Además, puedes beneficiarte de su forma de establecer la interfaz de manera clara y estricta. **Cada herramienta fue creada con un propósito y tiene sus usos adecuados.**
 
 ## API's RESTful
 
@@ -62,15 +62,14 @@ Este estilo establece 6 características que se deben de cumplir para que un sis
   - **Basada en *recursos***. Las URL's de los endpoints hacen referencia a _recursos_, es decir, a elementos de datos que pueden ser representados como objetos con un tipo, datos asociados, relaciones con otros objetos y las operaciones que se pueden realizar sobre él.
   - **Manipulación de recursos mediante *representaciones***. La API no devuelve nunca el recurso original al cliente que lo solicita o solicita una operación sobre él, sino que lo hace a través de alguna _representación_ de este recurso. Una representación es un subconjunto de los datos de recurso transmitido en un lenguaje adecuado: HTML, XML, JSON, MessagePack, etc.
   - **Mensajes autodescriptivos**. Cada mensaje tiene suficiente información en sí mismo para ser procesado.
-  - **HATEOAS**. Estas son las siglas de **Hypermedia As The Engine Of Applicaton State** (Hypermedia como el motor del estado de la aplicación).
+  - **HATEOAS**. Estas son las siglas de **Hypermedia As The Engine Of Applicaton State** (Hypermedia como el motor del estado de la aplicación). La palabra [hypermedia](https://smartbear.com/learn/api-design/what-is-hypermedia/) se refiere a un formato de texto (o hypertexto) que contiene links hacia otros documentos, imágenes, video y audio. Es una forma de mostrar las relaciones que existen conceptualmente en una red de información.
 3. Sistema sin estado. Las conexiones entre los sistemas (cliente y servidor) no deberían dependender de un estado creado o mantenido a través de peticiones anteiores. Todo lo necesario para generar una respuesta se encuentra en la petición actual.
 4. Cacheable. Las respuestas pueden ser guardadas para ser contestadas más rápidamente por el mismo servidor o por un sistema intermedio.
 5. Sistema en capas. El sistema puede estar construido por varias capas de servicio y esto ser transparente para los clientes (no tienen que modificar sus llamadas).
 6. Código bajo demanda. El servidor debe ser capaz de envíar código a cliente para que sea ejecutado.
 
-Todos los puntos anteriores nos permiten crear una API que se comporta de manera efectuva para las necesidades actuales, además aprovecha las caractarísticas nativas de los sistemas web, por lo que crear una API RESTful es más sencillo que trabajar con SOAP, por que no implica protocolos extra.
 
-### Ventas de REST
+### Ventajas de REST
 
 1. **Implementación más fácil**. Comparado con SOAP, implementar una API RESTful es más sencillo casi en cualquier lenguaje, no requiere protocolos extra. Además en la mayoría de los lenguajes ya hay clientes o es muy sencillo programar uno.
 2. **Flexibilidad**. REST no define el lenguaje de transferencia de datos, el tipo de autenticación y otros detalles de la comunicación que se dejan a discreción de los implementadores. En la actualidad, la mayoría de las API's REST usan JSON como lenguaje de transeferencia, pero bien podrían usar XML o MessagePack, incluso un lenguaje propietario.
