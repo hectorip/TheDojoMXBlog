@@ -89,10 +89,11 @@ Han surgido nuevas maneras de consumir y diseñar API's como [GraphQL](https://g
 
 ## Nuestra API
 
-Para crear nuestra API elegiremos el estilo RESTful, primero, por su popularidad, las aplicaciones y porque lo que aprendamos tendrá aplicaciones útiles inmeditas y en el futuro.
+Para crear nuestra API elegiremos el estilo RESTful, por su popularidad y porque lo que aprendamos tendrá aplicaciones útiles inmeditas y en el futuro.
 
 En el camino aprenderemos:
 
+- Cómo dieseñar una API RESTful
 - Buenas prácticas de transferencia de datos y de estado
 - Cómo comunicar errores
 - Crear una estructura de mensajes intuitiva
@@ -102,6 +103,6 @@ En el camino aprenderemos:
 
 El ejercicio será el siguiente:
 
-> Crear una API que permita crear listas de vocabularios. Un usuario se registra y puede crear tantos vocabularios como desee. Un vocabulario consiste de una lista de palabras ornedas por tiempo de inserción y su definción, que puede ser tomada del diccionario (fija) o definida por el usuario. Además una palabra puede tener imágenes adjuntas.
+> Crear una API que permita crear listas de vocabularios. Un usuario se registra y puede crear tantos vocabularios como desee. Un vocabulario consiste de una lista de palabras ordenadas por tiempo de inserción y su definción, que puede ser tomada del diccionario (fija) o definida por el usuario. Además una palabra puede tener imágenes adjuntas.
 
 Esta aplicación nos permitirá poner en práctica y aprender de todos los puntos antes mencionados y otros. No te pierdas el siguiente artículo.
