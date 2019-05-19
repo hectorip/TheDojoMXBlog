@@ -3,7 +3,6 @@ title: "Diseño y desarrollo de una API RESTful desde cero - La importancia de d
 date: 2019-05-06
 author: Héctor Patricio
 tags: apis rest soap
-categories: api rest soap
 comments: true
 excerpt: "El primer artículo de la serie. ¿Por qué es importante diseñar de antemano tu API? Compararemos dos de los estilos más populares: SOAP vs REST"
 header:
