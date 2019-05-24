@@ -5,7 +5,7 @@ author: Héctor Patricio
 tags: api rest restful arquitectura
 categories: 
 comments: true
-excerpt: "Escribe aquí un buen resumen de tu artículo"
+excerpt: "Diseñemos una API REST"
 header:
   overlay_image: #image
 ---
@@ -16,13 +16,15 @@ Antes de empezar con lo nuestro, hablemos que lo que NO es una API RESTful.
 
 ## Esto no es RESTful
 
-Actualmente, muchos desarrolladores (yo me contaba entre ellos), llaman API REST a cualquier Servicio Web que corra sobre HTTP, sirva recursos (objetos o elementos que representan un objeto) o cosas parecidas y use JSON como meido de comunicaión.
+Actualmente, muchos desarrolladores (yo me contaba entre ellos), llaman API REST a cualquier Servicio Web que corra sobre HTTP, sirva recursos (objetos o elementos que representan un objeto) o cosas parecidas y use JSON como meido de comunicación.
 De estas cosas, sólo la parte de servir recursos (en realidad _representaciones_ de recursos) tiene que ver con una API RESTful. El estilo Arquitectural RESTful no forza el uso de HTTP y mucho menos de JSON.
 
-La mayoría de las API's que nos proveen de un servicio no son completamente RESTful, algunas se acercan pero alguna de sus características rompe con el estilo arquitectural.
+Dada esta tendencia de llamar API REST a cualquier cosa que funcione sobre HTTP, debemos estar de acuerdo en que la mayoría de las API's ni siquiera _intenta_ ser REST. Algunas son RPC (Remote Procedure Call) sobre HTTP simplemente. Otro sínonimo mal uso que he escuchado es que cualquier cosa que sirva JSON es llamada API REST, pero como ya dijimos el estilo arquitectural REST ni siquiera fuerza el uso de JSON.
 
-## Arquitectura RESTful 
+## Arquitectura RESTful
 
-## Implementación de los constraints
+## Implementación de los restricciones de REST
 
 ## Documentación
+
+## Conclusión
