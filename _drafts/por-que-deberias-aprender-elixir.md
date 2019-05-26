@@ -14,13 +14,20 @@ Elixir es un lenguaje de programación bastante reciente (creado cerca de 2014),
 
 ## Un poco de historia
 
-Elixir es un lenguaje de programación creado por José Valim, que empezó a ser programado en 2011 y su versión 1.0 salió a la luz en 2014. Ahora en 2019 va en su versión 1.8.
+Elixir es un lenguaje de programación creado por José Valim, que empezó a ser programado en 2011 y su versión 1.0 salió a la luz en 2014. Ahora en 2019 va en su **versión 1.8**.
 
 ## Características de Elixir
 
-### Ventajas
+### Funcional
+### BEAM - Erlang
+### Sistemas Distribuidos
+### Fácil de aprender
+### Grandes herramientas
 
-### Desventajas
+## Desventajas
+
+### Reciente creación
+### Menos librerías
 
 ## Casos de Uso
 
