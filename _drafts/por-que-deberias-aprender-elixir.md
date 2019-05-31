@@ -39,9 +39,12 @@ A partir de estas dos características se desprenden muchas otras que llevan a u
 4. Independencia de contexto de ejecución
 5. Pipelines
 
-Debemos tener presente que la programación funcional no es la mejor opción para todos los casos, sobre todo tiene problemas en los que se tengan que mantener estructuras de datos muy grandes que se tengan que modificar constantemente.
+Debemos tener presente que la programación funcional no es la mejor opción para todos los casos, sobre todo presenta dificultades cuando se tienen que mantener estructuras de datos muy grandes que se tengan que modificar constantemente, algunos lenguajes tiene trucos inteligentes pero sigue sin ser lo óptimo.
 
 ### BEAM - Erlang
+
+Valim escogió Erlang por su poderosa máquina virtual.
+
 ### Sistemas Distribuidos
 ### Fácil de aprender
 ### Grandes herramientas
