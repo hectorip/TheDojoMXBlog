@@ -43,11 +43,24 @@ Debemos tener presente que la programación funcional no es la mejor opción par
 
 ### BEAM - Erlang
 
-Valim escogió Erlang por su poderosa máquina virtual.
+Valim escogió Erlang por su poderosa máquina virtual. 
 
 ### Sistemas Distribuidos
+
+La BEAM está pensada para trabajar con sistemas distribuidos, específicamente, puede funcionar a través de una red de computadoras y distirbuir el programa y la carga a través de todos los nodos que la componen.
+
 ### Fácil de aprender
+
+Elixir fue creado con el objetivo de ser divertido y fácil de aprender aún siendo un lenguaje funcional.
+
 ### Grandes herramientas
+
+Una caracterísitca que resalta de Elixir son las herramientas para desarrollo con las que cuenta. Primero, puede aprovecharse de todas las que Erlang provee y segundo porque los creadores pusieron especial atención en esto.
+
+### Metaporgramación
+
+### Gran comunidad
+
 
 ## Desventajas
 
