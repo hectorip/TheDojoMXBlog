@@ -4,10 +4,7 @@ date: 2019-06-02
 author: Héctor Patricio
 tags: elixir fp programación-funcional
 comments: true
-excerpt: "Escribe aquí un buen resumen de tu artículo"
-toc: true
-toc_label: Contenido
-toc_sticky: true
+excerpt: "Elixir es un lenguaje que recientemente ha estado haciendo ruido. Aquí te contamos algunas cosas de él para que te animes a aprenderlo."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1559453191/jr-korpa-1316724-unsplash_f1ujyj.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1559453191/jr-korpa-1316724-unsplash_f1ujyj.jpg
