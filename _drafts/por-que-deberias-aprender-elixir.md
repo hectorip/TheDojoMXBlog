@@ -59,7 +59,17 @@ Una caracterísitca que resalta de Elixir son las herramientas para desarrollo c
 
 ### Metaporgramación
 
+La metagprogramación se refiere a la capacidad de algunos lenguajes de crear código (o su representación interna) con un programa hecho en el mismo lenguaje. Gran parte (casi todo) en Elixir está hecho con esta técnica, es decir, Elixir está implementado en Elixir.
+
+Pero lo mejor es que el equipo deicidió darle estas capacidades a los usuarios del lenguaje. Así que, gracias a esto, podemos manejar el AST (Abstract Syntax Tree o Árbol de Sintaxis abstracta), que es la representación interna del lenguaje, como si fuera un estructura común de datos y crear nuestas propias macros y estructuras sintácticas.
+
+Esta habilidad permite por ejemplo la creción de macros para crear tu propio mini-lenguaje adentro de Elixir, lo que generalmente se conoce como un DSL (Domain Specific Language), adaptado a lo que necesitas en el sistema que estés progrmando.
+
 ### Gran comunidad
+
+La comunidad alrededor de Elixir es uno de los puntos más fuertes. Grandes programadores de otras comunidades y con mucha experiencia están apoyándolo y desarrollando el mismo lenguaje, librerías y herramientas para él, pero más importante, son muy abiertos y fomentan el trabajo de comunidad contestando dudas directamente y mentoreando a programadores más inexpertos.
+
+Esto ha hecho que la comunidad de Elixir sea muy receptiva, cordial y que las herramientas y librerías estén creciendo mucho en el poco tiempo de vida que tiene.
 
 
 ## Desventajas
