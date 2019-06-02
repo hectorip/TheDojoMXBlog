@@ -11,9 +11,9 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Elixir es un lenguaje de programación bastante reciente (cerca de 2012), pero que está haciendo mucho ruido y más considerando que no tiene ninguno de los nombres legendarios del área de sistemas atrás nin niguna empresa prominente.
+Elixir es un lenguaje de programación bastante reciente (creado cerca de 2012), pero que está haciendo mucho ruido y más considerando que no tiene ninguno de los nombres legendarios del área de sistemas atrás ni a alguna empresa prominente.
 
-En este post vamos a habalar de por qué es buena idea aprender Elixir en 2019.
+En este post vamos a hablar de por qué es buena idea aprender Elixir en 2019.
 
 ## Un poco de historia
 
