@@ -3,9 +3,8 @@ title: "Diseño de una API RESTful"
 date: 2019-05-17
 author: Héctor Patricio
 tags: api rest restful arquitectura
-categories: 
 comments: true
-excerpt: "Diseñemos una API REST"
+excerpt: "Diseñemos una API REST, pero aprendamos en el camino qué es."
 header:
   overlay_image: #image
 ---
@@ -24,9 +23,25 @@ Algunas son RPC (Remote Procedure Call) sobre HTTP simplemente. Otro mal uso que
 
 ## Arquitectura RESTful
 
-Una API REST está definida por seis características.
+Una API REST está definida por seis características o restricciones que vamos a explicar a continuación. Las vamos a cambiar un poco del orden tradicional para que tenga más sentido la forma en que las explicamos.
 
-## Implementación de los restricciones de REST
+### Arquitectura cliente-servidor.
+
+Esta característica normalmente no está en primer lugar, pero para que todo tenga sentido creo que debe ser la primera. Una API REST debe ser ejecutada en un servidor, que sea encargado de contestar las peticiones de un cliente. Esta arquitectura nos permite separar claramente las responsabilidades de cada programa.
+
+### Sistema en capas
+
+El sistema de comunicación entre el cliente y el servidor debería estar separado en capas con diferentes funcionalidades pero que todo esto sea transparente para el usuario.
+
+### Interfaz uniforme
+
+### Sin estado
+
+### Cacheable
+
+### Código bajo demanda [opcional]
+
+## Implementación de las restricciones de REST
 
 ## Documentación
 
