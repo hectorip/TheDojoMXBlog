@@ -51,7 +51,7 @@ Debemos tener presente que la programación funcional no es la mejor opción par
 
 La tecnología que está atrás de Elixir es Erlang y su máquina virtual, la [BEAM](http://erlang.org/faq/implementations.html). Esto quiere decir que los programas hechos con Elixir corren como su fuera un programa hecho en Erlang sobre el entorno de ejecución que originalmente fue creado para él. Además al correr sobre el mismo entorno, Elixir puede aprovechar todo lo que ya existe en Erlang, desde sus librerías hasta varias de las herramientas de desarrollo.
 
-¿Por qué es tan importante la máquina virtual? La BEAM es la encargada de la ejecución de los programas creados con Erlang y [muchos otros lenguajes](https://github.com/llaisdy/beam_languages), entre ellos Elixir. Se encarga de distribuir el procesamiento y administrar la memoria, así como conectarse con los nodos necesarios para la ejecución del programa. Además adminsitra y levanta los procesos que los programas requieren. La BEAM es el soporte para las características que vienen.
+¿Por qué es tan importante la máquina virtual? La BEAM es la encargada de la ejecución de los programas creados con Erlang y [muchos otros lenguajes](https://github.com/llaisdy/beam_languages), entre ellos Elixir. Se encarga de distribuir el procesamiento y administrar la memoria, así como conectarse con los nodos necesarios para la ejecución del programa. Además administra y levanta los procesos que los programas requieren. La BEAM es el soporte para las características que vienen.
 
 ### Distribuido
 
