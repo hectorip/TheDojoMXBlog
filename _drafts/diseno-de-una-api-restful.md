@@ -21,21 +21,38 @@ De estas cosas, sólo la parte de servir recursos (en realidad _representaciones
 Dada esta tendencia de llamar API REST a cualquier cosa que funcione sobre HTTP, debemos estar de acuerdo en que la mayoría de las API's ni siquiera _intenta_ ser REST.
 Algunas son RPC (Remote Procedure Call) sobre HTTP simplemente. Otro mal uso que he escuchado es que cualquier cosa que sirva JSON es llamada API REST, pero como ya dijimos el estilo arquitectural REST ni siquiera fuerza el uso de JSON (y no todas las API's que sirven XML son SOAP).
 
+Con esto no queremos decir que el que un serivicio no sea REST lo haga malo de hecho muchas veces (la mayoría) no se necesita cumplir con las características de REST y con cumplir con algunas de las características o principios de diseño de REST es suficiente.
+
+Ahora sí, hablemos de lo que hace que una API pueda ser llamada REST.
+
 ## Arquitectura RESTful
 
 Una API REST está definida por seis características o restricciones que vamos a explicar a continuación. Las vamos a cambiar un poco del orden tradicional para que tenga más sentido la forma en que las explicamos.
 
 ### Arquitectura cliente-servidor.
 
-Esta característica normalmente no está en primer lugar, pero para que todo tenga sentido creo que debe ser la primera. Una API REST debe ser ejecutada en un servidor, que sea encargado de contestar las peticiones de un cliente. Esta arquitectura nos permite separar claramente las responsabilidades de cada programa.
+Esta característica normalmente no está en primer lugar y es algo que ya hacemos normalmente con nuestros servicios web en general.
+
+Una API REST debe ser ejecutada como un **servidor**, que sea encargado de contestar las peticiones de un **cliente**. El cliente es el programa que usa los servicios que la API provee, pide datos u operaciones y estas son ejecutadas.
+
+Esta arquitectura nos permite separar claramente las responsabilidades de cada programa y esto a su vez *permite que tanto el cliente como el servidor puedan cambiar por su cuenta*.
+
+La arquitectura cliente servidor también define otras cosas, por ejemplo, que el servidor nunca inicia la comunicación y sólo responde a peticiones que el cliente le haya hecho.
 
 ### Sistema en capas
 
-El sistema de comunicación entre el cliente y el servidor debería estar separado en capas con diferentes funcionalidades pero que todo esto sea transparente para el usuario.
+El sistema de comunicación entre el cliente y el servidor podría estar separado en capas con diferentes funciones cada una. Por ejemplo, el servicio podría estar compuesto por:
+
+* Una red de entreaga de contenido (CDN)
+* Un balanceador de carga
+* Un firewall
+* Un servidor de autenticación
+* El servidor de web
+* El servidor de aplicaciones
 
 ### Interfaz uniforme
 
-### Sin estado
+### No mantiene el estado
 
 ### Cacheable
 
