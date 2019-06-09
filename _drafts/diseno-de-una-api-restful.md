@@ -1,65 +1,40 @@
 ---
-title: "Diseño de una API RESTful"
+title: "Entendiendo REST a fondo."
 date: 2019-05-17
 author: Héctor Patricio
 tags: api rest restful arquitectura
 comments: true
-excerpt: "Diseñemos una API REST, pero aprendamos en el camino qué es."
+excerpt: "Empieza a entender qué es REST y por qué ha sido tan importante en la web moderna. Hablemos de la motivación."
 header:
   overlay_image: #image
 ---
 
-En el [artículo anterior de la serie](/2019/05/06/diseno-y-desarrollo-de-una-api-desde-cero.html) hablamos un poco de lo que es una API RESTful. En este artículo la definiremos a cabalidad, con ejemplos y veremos las ventajas y desventajas desde el punto de vista de desarrollo y arquitectura.
+En el [artículo anterior de la serie](/2019/05/06/diseno-y-desarrollo-de-una-api-desde-cero.html) hablamos un poco de lo que es una API REST. En este artículo empezaremos a ver qué es REST y por qué surgió.
 
-Antes de empezar con lo nuestro, hablemos que lo que NO es una API RESTful.
+Antes de empezar con lo nuestro, hablemos que lo que NO es una API REST.
 
-## Esto no es RESTful
+## Esto no es REST
 
 Actualmente, muchos desarrolladores (yo me contaba entre ellos), llaman API REST a cualquier servicio Web que corra sobre HTTP, sirva recursos (objetos o elementos que representan un objeto) o cosas parecidas y use JSON como medio de comunicación.
-De estas cosas, sólo la parte de servir recursos (en realidad _representaciones_ de recursos) tiene que ver con una API RESTful. El estilo arquitectural RESTful no forza el uso de HTTP y mucho menos de JSON.
+De estas cosas, sólo la parte de servir recursos (en realidad _representaciones_ de recursos) tiene que ver con una API REST. El estilo arquitectural REST no obliga el uso de HTTP y mucho menos de JSON.
 
 Dada esta tendencia de llamar API REST a cualquier cosa que funcione sobre HTTP, debemos estar de acuerdo en que la mayoría de las API's ni siquiera _intenta_ ser REST.
 Algunas son RPC (Remote Procedure Call) sobre HTTP simplemente. Otro mal uso que he escuchado es que cualquier cosa que sirva JSON es llamada API REST, pero como ya dijimos el estilo arquitectural REST ni siquiera fuerza el uso de JSON (y no todas las API's que sirven XML son SOAP).
 
-Con esto no queremos decir que el que un serivicio no sea REST lo haga malo de hecho muchas veces (la mayoría) no se necesita cumplir con las características de REST y con cumplir con algunas de las características o principios de diseño de REST es suficiente.
+Con esto no queremos decir que el que un servicio no sea REST lo haga malo o de mala calidad, de hecho, muchas veces (la mayoría) no se necesita cumplir con las características de REST y con cumplir con algunas de las características o principios de diseño de REST es suficiente.
 
-Ahora sí, hablemos de lo que hace que una API pueda ser llamada REST.
+En artículos posteriores vamos a hablar de las seis características que **sí** definen una arquitectura REST, las vamos a cambiar un poco del orden tradicional que se explica en la mayoría de los tutoriales (y seguiremos el de la tesis original) para que tenga más sentido la forma en que las explicamos.
 
-## Arquitectura RESTful
+Las características de las que hablaremos son en cierto modo _restricciones_ (constraints, como lo dice la tesis original): una cosa es definida por las cosas que _no_ puede o debe hacer.
 
-Una API REST está definida por seis características o restricciones que vamos a explicar a continuación. Las vamos a cambiar un poco del orden tradicional para que tenga más sentido la forma en que las explicamos.
+## Arquitectura
 
-### Arquitectura cliente-servidor.
+La definición de la arquitectura REST la hizo Thomas Fielding en su tesis doctoral, que puedes descargar y leer completa [aquí](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm), junto con lo que lo llevó a definirla y diseñarla tal como es.
 
-Esta característica normalmente no está en primer lugar y es algo que ya hacemos normalmente con nuestros servicios web en general.
+Cuando hablamos de REST (REpresentational State Transfer) estamos hablando se un **estilo de arquitectura**.
 
-Una API REST debe ser ejecutada como un **servidor**, que sea encargado de contestar las peticiones de un **cliente**. El cliente es el programa que usa los servicios que la API provee, pide datos u operaciones y estas son ejecutadas.
+¿Qué es la arquitectura de un sistema?
 
-Esta arquitectura nos permite separar claramente las responsabilidades de cada programa y esto a su vez *permite que tanto el cliente como el servidor puedan cambiar por su cuenta*.
 
-La arquitectura cliente servidor también define otras cosas, por ejemplo, que el servidor nunca inicia la comunicación y sólo responde a peticiones que el cliente le haya hecho.
 
-### Sistema en capas
 
-El sistema de comunicación entre el cliente y el servidor podría estar separado en capas con diferentes funciones cada una. Por ejemplo, el servicio podría estar compuesto por:
-
-* Una red de entreaga de contenido (CDN)
-* Un balanceador de carga
-* Un firewall
-* Un servidor de autenticación
-* El servidor de web
-* El servidor de aplicaciones
-
-### Interfaz uniforme
-
-### No mantiene el estado
-
-### Cacheable
-
-### Código bajo demanda [opcional]
-
-## Implementación de las restricciones de REST
-
-## Documentación
-
-## Conclusión
