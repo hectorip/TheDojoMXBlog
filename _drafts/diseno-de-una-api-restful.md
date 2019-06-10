@@ -35,6 +35,7 @@ Cuando hablamos de REST (REpresentational State Transfer) estamos hablando se un
 
 ¿Qué es la arquitectura de un sistema?
 
+[Simon Brown](), que es una da las grandes mentes actualmente en el campo de la arquitectura de software la define como la estructura básica de un sistema que debe asegurar que se cumplan las características requeridas del sistema.
 
 
 
