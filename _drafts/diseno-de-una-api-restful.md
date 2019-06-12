@@ -51,3 +51,12 @@ Cuando hablamos de REST (REpresentational State Transfer) estamos hablando se un
 Como podemos ver, la arquitectura de software tiene muchas cosas de preocuparse. Pues bueno, el estilo de arquitectura ayuda a resolver varias de estas preocupaciones predefiniendo la estructura y el comportamiento del sistema mediante las características y limitaciones que establece.
 
 ¿Qué de estas cosas ataca REST? Hablemos de ellas.
+
+## Rendimiento
+
+## Disponibilidad
+
+## Escalabilidad
+
+## Simplicidad
+
