@@ -25,17 +25,29 @@ Con esto no queremos decir que el que un servicio no sea REST lo haga malo o de 
 
 En artículos posteriores vamos a hablar de las seis características que **sí** definen una arquitectura REST, las vamos a cambiar un poco del orden tradicional que se explica en la mayoría de los tutoriales (y seguiremos el de la tesis original) para que tenga más sentido la forma en que las explicamos.
 
-Las características de las que hablaremos son en cierto modo _restricciones_ (constraints, como lo dice la tesis original): una cosa es definida por las cosas que _no_ puede o debe hacer.
+Las características de las que hablaremos son en cierto modo _restricciones_ (constraints, como lo dice la tesis original): una cosa es definida por las cosas que _no_ puede o _no_ debe hacer.
 
 ## Arquitectura
 
-La definición de la arquitectura REST la hizo Thomas Fielding en su tesis doctoral, que puedes descargar y leer completa [aquí](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm), junto con lo que lo llevó a definirla y diseñarla tal como es.
+La definición de la arquitectura REST la hizo [Thomas Fielding](https://www.ics.uci.edu/~fielding/) en su tesis doctoral, que puedes descargar y leer completa [aquí](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm), en ella explica lo que lo llevó a definirla y diseñarla tal como es.
 
 Cuando hablamos de REST (REpresentational State Transfer) estamos hablando se un **estilo de arquitectura**.
 
-¿Qué es la arquitectura de un sistema?
+¿Qué es la arquitectura de un sistema de software?
 
-[Simon Brown](), que es una da las grandes mentes actualmente en el campo de la arquitectura de software la define como la estructura básica de un sistema que debe asegurar que se cumplan las características requeridas del sistema.
+[Simon Brown](https://simonbrown.je/), que es actualmente una da las grandes mentes en el campo de la arquitectura de software, la define como la *todo lo relacionado con el diseño de un sistema de software, desde la estructura del código hasta cómo funciona a alto nivel, pasando por cómo el software es puesto en producción*. Es responsabilidad de la arquitectura definir las siguientes características y funciones del sistema:
 
+- Tareas que abarquen todo el sistema: Logging, manejo de errores, etc.
+- Seguridad
+- Rendimiento
+- Escalabilidad
+- Disponibilidad
+- Auditorías y cumplimiento de regulaciones
+- Limitaciones del entorno
+- Interoperatividad e integración con otros sistemas
+- Consistencia de soluciones a través de toda la base de código
+- Evaluación de cumplimiento de los entregables
 
+Como podemos ver, la arquitectura de software tiene muchas cosas de preocuparse. Pues bueno, el estilo de arquitectura ayuda a resolver varias de estas preocupaciones predefiniendo la estructura y el comportamiento del sistema mediante las características y limitaciones que establece.
 
+¿Qué de estas cosas ataca REST? Hablemos de ellas.
