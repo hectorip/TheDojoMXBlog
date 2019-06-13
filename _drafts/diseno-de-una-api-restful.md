@@ -54,9 +54,29 @@ Como podemos ver, la arquitectura de software tiene muchas cosas de preocuparse.
 
 ## Rendimiento
 
+Uno de las principales que este estilo de arquitectura quier atacar es el rendimiento de las aplicaciones que funcionan como API's. El rendimiento se refiere tanto a la capacidad real como percibida de cumplir con **lo que se espera de un sistema de software** en términos de velocidad de respuesta.
+
+Esto implica que tanto la aplicación como la red (recordemos que siempre estamos hablando de aplocaciones web) debe responder en un tiempo razonable.
+
+
 ## Disponibilidad
+
+La disponibilidad se refiere al tiempo que tu aplicación está lista para servir a los usuarios.
 
 ## Escalabilidad
 
+¿Cuántos usuarios al mismo tiempo puede soportar tu aplicación? ¿Qué pasa si de repente llegan diez veces más usuarios de los que esperabas? La respuesta a estas preguntas es la disponibilidad de tu aplicación.
+
 ## Simplicidad
 
+Un buen desarrollo debe ser tan simple como sea posible. Si se añade complejidad extra a la innata del problema en cuestión será más difícil de mantener.
+
+Estas cuestiones y cosas importantes acerca de todas las aplicaciones son lo que llevó a Fielding a definir REST y a agregar las características/restricciones que puso.
+
+## Conclusión
+
+El estilo arquitectural REST te ayuda a resolver problemas que pueden empezar a dar dolores de cabeza desde el principio, al dar una guía de cómo debería comportarse tu aplicación para cumplir con las cualidades mencionadas arriba.
+
+No debemos olvidar que toda selección es **necesariamente** un intercambio de valor. Se pierde algo por ganar otra cosa. La pregunta que siempre hay que tener en mente es: ¿Qué me conviene más en este caso?
+
+En el siguiente artículo analizaremos la primera restricción de  REST: la arquitectura cliente-servidor.
