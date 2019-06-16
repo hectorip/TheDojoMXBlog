@@ -1,6 +1,6 @@
 ---
 title: "Entendiendo REST. El estilo de Arquitectura."
-date: 2019-05-17
+date: 2019-06-15
 author: Héctor Patricio
 tags: api rest restful arquitectura
 comments: true
