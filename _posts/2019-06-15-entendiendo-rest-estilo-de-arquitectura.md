@@ -35,13 +35,13 @@ Cuando hablamos de REST (REpresentational State Transfer) estamos hablando se un
 
 La definición del estilo de arquitectura REST la hizo [Thomas Fielding](https://www.ics.uci.edu/~fielding/) en su tesis doctoral, que puedes descargar y leer completa [aquí](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm), en ella explica lo que lo llevó a definirla y diseñarla tal como es.
 
-Fields hace la distinción entre tres conceptos que parecerían lo mismo a simple vista.
+Fielding hace la distinción entre tres conceptos que parecerían lo mismo a simple vista.
 
 - **Estilo de arquitectura o estilo arquitectural**: Es un conjunto de restricciones que limitan como los elementos de una arquitectura (componentes del software, conectores y datos) pueden interactuar entre sí y las características que deben tener. En la arquitectura de espacios físicos podemos pensar en los estilos más amplios que a veces escuchamos mencionados: Barroco, Moderno, Post-moderno. En la arquitectura de software, **REST cae en esta categoría**.
 
 - **Diseño arquitectural**: Es la aplicación de un estilo de arquitectura. Podemos pensar en esto como las guías que definen como una arquitectura se implementará. El diseño arquitectural en los edificios podría pensarse en la aplicación de las reglas del diseño arquitectural a un tipo de edificio específico tu catedral o castillo 🤔.
 
-- **Arquitectura**: Fields la define como una abstracción del estado de un sistema en un momento determinado. La arquitectura es la concreción de un diseño arquitectural. En el ejemplo de los edificios puedes pensar en esto como en los planos de la catedral barroca.
+- **Arquitectura**: Fielding la define como una abstracción del estado de un sistema en un momento determinado. La arquitectura es la concreción de un diseño arquitectural. En el ejemplo de los edificios puedes pensar en esto como en los planos de la catedral barroca.
 
 Hablando de arquitectura [Simon Brown](https://simonbrown.je/), que es actualmente una da las grandes mentes en el campo de la arquitectura de software, la define como la *todo lo relacionado con el diseño de un sistema de software, desde la estructura del código hasta cómo funciona a alto nivel, pasando por cómo el software es puesto en producción*. Es responsabilidad de la arquitectura definir las siguientes características y funciones del sistema:
 
@@ -76,9 +76,9 @@ Varias de las restricciones y características que REST establece están relacio
 
 ### Facilidad de Modificación
 
-Fields elabora esto como uno de los puntos más grandes que las arquitecturas deben atender. A final de cuentas un sistema no se puede quedar estático, y facilitar el trabajo para nosotros mismos en el futuro o para otras personas debería ser una prioridad.
+Fielding elabora esto como uno de los puntos más grandes que las arquitecturas deben atender. A final de cuentas un sistema no se puede quedar estático, y facilitar el trabajo para nosotros mismos en el futuro o para otras personas debería ser una prioridad.
 
-Los cinco puntos que Fields considera que definen la facilidad de modifición son:
+Los cinco puntos que Fielding considera que definen la facilidad de modifición son:
 
 - **Facilidad de evolución**. Es la capacidad que tiene un sistema de que sus componentes cambien sin afectar directamente negativamente a los demás y por lo tanto el estado general del sistema.
 
@@ -95,21 +95,21 @@ La visibilidad es la capacidad de monitorear un componente del sistema e incluso
 
 ### Portabilidad
 
-Uno de los puntos que se necesita resolver de algunas aplicaciones, es que la solución pueda correr en diferentes entornos. A esto se refiere la portabilidad para Fields, que un sistema pueda correr sin cambios en diferentes instalaciones y sin grandes cambios.
+Uno de los puntos que se necesita resolver de algunas aplicaciones, es que la solución pueda correr en diferentes entornos. A esto se refiere la portabilidad para Fielding, que un sistema pueda correr sin cambios en diferentes instalaciones y sin grandes cambios.
 
 ### Escalabilidad
 
 ¿Cuántos usuarios al mismo tiempo puede soportar tu aplicación? ¿Qué pasa si de repente llegan diez veces más usuarios de los que esperabas? La respuesta a estas preguntas está directamente relacionada con la escalabilidad de la aplicación. 
 
-Fields la define como la capacidad de los componentes de soportar un número grande de interacciones, que se ve impactada no sólo por la cantidad sino por la frecuencia de interacciones.
+Fielding la define como la capacidad de los componentes de soportar un número grande de interacciones, que se ve impactada no sólo por la cantidad sino por la frecuencia de interacciones.
 
 ### Simplicidad
 
 Un buen desarrollo debe ser tan simple como sea posible. Si se añade complejidad extra a la innata del problema en cuestión será más difícil de mantener.
 
-Estas cuestiones y cosas importantes acerca de todas las aplicaciones son lo que llevó a Fields a definir REST y a agregar las características/restricciones que puso.
+Estas cuestiones y cosas importantes acerca de todas las aplicaciones son lo que llevó a Fielding a definir REST y a agregar las características/restricciones que puso.
 
-Fields resume tres características en lo que el llama simplicidad:
+Fielding resume tres características en lo que el llama simplicidad:
 
 - **Complejidad**. Es la cantidad de componentes interconectados. Mientras menos sea, mejor.
 - **Facilidad de comprensión**. ¿Qué tan preparado está el sistema para poder ser entendido fácilmente?
