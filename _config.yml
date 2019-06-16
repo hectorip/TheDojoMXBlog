@@ -65,4 +65,4 @@ tag_archive:
 
 include: ["_pages"]
 search: true
-minimal_mistakes_skin: dark
+# minimal_mistakes_skin: dark
