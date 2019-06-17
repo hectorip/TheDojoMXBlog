@@ -1,5 +1,4 @@
-# TheDojoMXBlog
-The Dojo MX's blog
+# Blog The Dojo MX
 
 En este blog hablamos de:
 
@@ -9,7 +8,9 @@ En este blog hablamos de:
 - Análisis de datos
 - Inteligencia artifical
 
-## Acerca de
+## Acerca de este blog
+
+Intentamos mejorar el ecosistema de desrrollo en español. 
 
 ### ¿A quiénes está dirigido este blog?
 
