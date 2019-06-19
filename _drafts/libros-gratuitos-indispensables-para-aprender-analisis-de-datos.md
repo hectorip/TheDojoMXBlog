@@ -9,3 +9,13 @@ excerpt: "Escribe aquí un buen resumen de tu artículo"
 header:
   overlay_image: #image
 ---
+
+¿Quieres aprender análisis de datos? Estos libros pueden ser de gran ayuda. Este post está basado en [un artículo inglés que encontramos](http://bit.ly/2RjPiol), pero con los recursos que recomienda actualizados.
+
+## 1. Think Stats, 2da Edición
+
+Este libro enseña estadística básica con Python. 
+
+[Lée Think Stats, segunda edición](http://bit.ly/2Rlq20V)
+
+## 
