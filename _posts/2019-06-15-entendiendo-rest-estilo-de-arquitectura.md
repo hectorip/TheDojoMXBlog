@@ -13,11 +13,11 @@ header:
 
 En el [artículo anterior de la serie](/2019/05/06/diseno-y-desarrollo-de-una-api-desde-cero.html) hablamos un poco de lo que es una API REST. En este artículo empezaremos a ver qué es REST y por qué surgió.
 
-Antes de empezar con lo nuestro, hablemos que lo que NO es una API REST.
+Antes de empezar con lo nuestro, hablemos de lo que NO es una API REST.
 
 ## Esto no es REST
 
-Actualmente, muchos desarrolladores (yo me contaba entre ellos), llaman API REST a cualquier servicio Web que corra sobre HTTP, sirva recursos (objetos o elementos que representan un objeto) o cosas parecidas y use JSON como medio de comunicación.
+Actualmente, muchos desarrolladores (yo me contaba entre ellos), llaman API REST a cualquier servicio Web que corra sobre HTTP, sirva recursos (objetos o elementos que representan un objeto) o cosas parecidas y use JSON como lenguaje de transferencia de datos.
 De estas cosas, sólo la parte de servir recursos (en realidad _representaciones_ de recursos) tiene que ver con una API REST. El estilo arquitectural REST no obliga el uso de HTTP y mucho menos de JSON.
 
 Dada esta tendencia de llamar API REST a cualquier cosa que funcione sobre HTTP, debemos estar de acuerdo en que la mayoría de las API's ni siquiera _intenta_ ser REST.
@@ -37,9 +37,9 @@ La definición del estilo de arquitectura REST la hizo [Thomas Fielding](https:/
 
 Fielding hace la distinción entre tres conceptos que parecerían lo mismo a simple vista.
 
-- **Estilo de arquitectura o estilo arquitectural**: Es un conjunto de restricciones que limitan como los elementos de una arquitectura (componentes del software, conectores y datos) pueden interactuar entre sí y las características que deben tener. En la arquitectura de espacios físicos podemos pensar en los estilos más amplios que a veces escuchamos mencionados: Barroco, Moderno, Post-moderno. En la arquitectura de software, **REST cae en esta categoría**.
+- **Estilo de arquitectura o estilo arquitectural**: Es un conjunto de restricciones que limitan cómo los elementos de una arquitectura (componentes del software, conectores y datos) pueden interactuar entre sí y las características que deben tener. En la arquitectura de espacios físicos podemos pensar en los estilos más amplios que a veces escuchamos mencionados: Barroco, Moderno, Post-moderno. En la arquitectura de software, **REST cae en esta categoría**.
 
-- **Diseño arquitectural**: Es la aplicación de un estilo de arquitectura. Podemos pensar en esto como las guías que definen como una arquitectura se implementará. El diseño arquitectural en los edificios podría pensarse en la aplicación de las reglas del diseño arquitectural a un tipo de edificio específico tu catedral o castillo 🤔.
+- **Diseño arquitectural**: Es la aplicación de un estilo de arquitectura. Podemos pensar en esto como las guías que definen cómo una arquitectura se implementará. El diseño arquitectural en los edificios podría pensarse en la aplicación de las reglas del diseño arquitectural a un tipo de edificio específico tu catedral o castillo 🤔.
 
 - **Arquitectura**: Fielding la define como una abstracción del estado de un sistema en un momento determinado. La arquitectura es la concreción de un diseño arquitectural. En el ejemplo de los edificios puedes pensar en esto como en los planos de la catedral barroca.
 

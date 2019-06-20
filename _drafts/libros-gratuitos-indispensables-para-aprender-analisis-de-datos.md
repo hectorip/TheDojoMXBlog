@@ -12,7 +12,7 @@ header:
 
 ¿Quieres aprender análisis de datos? Estos libros pueden ser de gran ayuda. Este post está basado en [un artículo inglés que encontramos](http://bit.ly/2RjPiol), pero con los recursos que recomienda actualizados.
 
-## 1. Think Stats, 2da Edición
+## 1. Think Stats, Segunda Edición
 
 Este libro enseña estadística básica con Python. 
 
