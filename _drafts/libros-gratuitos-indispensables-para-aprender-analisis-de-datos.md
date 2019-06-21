@@ -16,6 +16,9 @@ header:
 
 Este libro enseña estadística básica con Python. 
 
-[Lée Think Stats, segunda edición](http://bit.ly/2Rlq20V)
+[Lee Think Stats, segunda edición](http://bit.ly/2Rlq20V)
 
-## 
+Extra: La editorial tiene todos sus libros para leer en formatos digitales gratuitos. Una oportunidad que no puedes perderte, sólo que su sitio no es fácil de navegar así que visita la [página de inicio](https://greenteapress.com/wp/)
+
+
+## 2. Bayessian Methods for Programmers
