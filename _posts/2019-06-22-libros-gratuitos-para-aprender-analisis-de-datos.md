@@ -94,7 +94,8 @@ Empieza estableciendo las bases matemáticas y el entendimiento necesario de los
 
 ## 7. A Programmer's Guide to Data Mining
 
-![Guide to data mining](http://guidetodatamining.com/img/mozi.png)
+![Guide to data mining](https://res-console.cloudinary.com/hectorip/thumbnails/transform/v1/image/upload//v1561237264/bW96aV9jMDFnY3Y=/drilldown)
+
 Es una guía práctica para minería de datos y sistema de recomendación, con la técnica de aprender haciendo, con ejercicions en Python. Es libro menos serio (en sentido de seriedad formal) de los que hemos visto hasta ahorita, tiene memes, bromas e imágines divertidas.
 
 ![Blood, sweat and code](https://res.cloudinary.com/hectorip/image/upload/v1561228640/Screenshot_2019-06-22_13.37.09_igbbp1.png)
