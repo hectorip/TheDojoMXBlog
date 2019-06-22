@@ -94,10 +94,10 @@ Empieza estableciendo las bases matemáticas y el entendimiento necesario de los
 
 ## 7. A Programmer's Guide to Data Mining
 
-!(Guide to data mining)[http://guidetodatamining.com/img/mozi.png]
+![Guide to data mining](http://guidetodatamining.com/img/mozi.png)
 Es una guía práctica para minería de datos y sistema de recomendación, con la técnica de aprender haciendo, con ejercicions en Python. Es libro menos serio (en sentido de seriedad formal) de los que hemos visto hasta ahorita, tiene memes, bromas e imágines divertidas.
 
-!(Blood, sweat and code)[https://res.cloudinary.com/hectorip/image/upload/v1561228640/Screenshot_2019-06-22_13.37.09_igbbp1.png]
+![Blood, sweat and code](https://res.cloudinary.com/hectorip/image/upload/v1561228640/Screenshot_2019-06-22_13.37.09_igbbp1.png)
 
 (Puedes descargar el libro aquí)[http://bit.ly/2RtFCaY]{:target="_blank"}
 
@@ -105,8 +105,7 @@ Es una guía práctica para minería de datos y sistema de recomendación, con l
 
 ![MMDS cover](http://i.stanford.edu/~ullman/gifs/mmds2.jpg)
 
-Este libro está basado en el curso [CS246](http://cs246.stanford.edu/) de Stanford del mismo nombre. Está 
-enfocado en la minería de datos en grandes cantidades, es decir que no puedan ser mantenidos en la memoria principal. 
+Este libro está basado en el curso [CS246](http://cs246.stanford.edu/) de Stanford del mismo nombre. Está enfocado en la minería de datos en grandes cantidades, es decir que no puedan ser mantenidos en la memoria principal. 
 
 >  "Data mining is about applying algorithms
 to data, rather than using data to “train” a machine-learning engine of some
@@ -125,7 +124,7 @@ Puedes comprar el libro o leerlo directamente desde [su página](http://bit.ly/2
 
 ## 10. Machine Learning Yearning
 
-![ML Yearning](https://static.wixstatic.com/media/dc4875_5917fae9edee48349cc8e95f6f9ac348~mv2.png/v1/fill/w_264,h_260,al_c,q_80,usm_0.66_1.00_0.01/dc4875_5917fae9edee48349cc8e95f6f9ac348~mv2.webp)
+![ML Yearning](https://res.cloudinary.com/hectorip/image/upload/v1561236864/Screenshot_2019-06-22_15.54.12_r585on.png)
 
 Está escrito por [Andrew Ng](http://bit.ly/2RrkYYS) uno de los fundadores de Coursera y un gigante de la inteligencia artificial. Su enfoque principal es enseñarte cómo organizar un proyecto de Machine Learning, cómo hacer que los algoritmos funcionen y den resultados.
 
