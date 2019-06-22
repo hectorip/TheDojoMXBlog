@@ -9,7 +9,7 @@ excerpt: "Encuentra una colección de libros gratuitos para aprender acerca de e
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1561236196/sharon-mccutcheon-532782-unsplash_obsxhd.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1561236196/sharon-mccutcheon-532782-unsplash_obsxhd.jpg
-  overlay_filter: rgb(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 ¿Quieres aprender análisis de datos y ya eres programador? Los siguientes libros pueden ser de gran ayuda. Este post está basado en [un artículo inglés que encontramos](http://bit.ly/2RjPiol), pero con los recursos que recomienda actualizados y algunos otros de nuestra cosecha.
