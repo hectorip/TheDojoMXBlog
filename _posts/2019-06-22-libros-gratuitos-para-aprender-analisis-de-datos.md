@@ -33,7 +33,7 @@ Es un libro que te lleva de la mano desde la instalación hasta la exploración 
 
 ### R para principiantes de Emmanuel Paradis, traducido por Jorge A. Ahumada.
 
-Es una introducción al lenguaje R explicando un poco los detalles de funcionamiento para poder sentar las bases de uso avanzado, para principiantes en programación. toca algunas nociones muy básicas de estadística para proporcionar ejemplos.
+Es una introducción al lenguaje R explicando un poco los detalles de funcionamiento para poder sentar las bases de uso avanzado, para principiantes en programación. Toca algunas nociones muy básicas de estadística para proporcionar ejemplos.
 
 Puedes [descargarlo **aquí**.](http://bit.ly/2RuQ02j){:target="_blank"}.
 
@@ -52,7 +52,7 @@ Extra: La editorial tiene todos sus libros para leer en formatos digitales gratu
 
 ## 2. Bayesian Methods for Hackers
 
-Este libro explica cómo aplicar métodos de inferencia bayesiana para programadores que no tienen tanto conocimiento de estádística y matemáticas, enfocados en el lado de la programación.
+Este libro explica cómo aplicar métodos de inferencia bayesiana para programadores que no tienen tanto conocimiento de estadística y matemáticas, enfocados en el lado de la programación.
 
 [Descarga el libro aquí](http://bit.ly/2Rs2TKt){:target="_blank"}
 
@@ -66,7 +66,7 @@ Este libro incluye un análisis de la complejidad computacional implicada.
 
 ## 4. The Elements of Statistical Learning
 
-> "Estamos inundados de información pero secos de conocimiento" - Rutherfor D. Roger
+> "Estamos inundados de información pero secos de conocimiento" - Rutherford D. Roger
 
 Esta frase que abre el libro explica la necesidad de entender y aplicar correctamente métodos estadísticos de análisis de datos para entender bien el mundo, dada la explosión de información que estamos viendo gracias a la digitalización de todas las industrias y de las ciencias. 
 
@@ -78,7 +78,7 @@ El libro se enfoca en los métodos de análisis y sus fundamentos conceptuales e
 
 ![Portada del libro An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/ISL%20Cover%202.jpg)
 
-Está dirigido a personas que no estudiaron algo relacionado con matemáticas (como la mayoría de los programadores), para introducirlos a al aprendizaje estadístico práctico, inspirado poe el libro del punto 4.
+Está dirigido a personas que no estudiaron algo relacionado con matemáticas (como la mayoría de los programadores), para introducirlos a al aprendizaje estadístico práctico, inspirado por el libro del punto 4.
 
 Este libro es adecuado para personas sin preparación ni en estadística ni en ciencia de la computación. Usa R para aprender los conceptos.
 
