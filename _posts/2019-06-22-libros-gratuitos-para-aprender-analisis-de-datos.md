@@ -29,13 +29,13 @@ Empecemos por los pocos recursos en español. Encontré dos libros enfocados en 
 Es un libro que te lleva de la mano desde la instalación hasta la exploración visual de los datos, mediante el uso de la gráficas generadas por R, de manos de un practicante asiduo del lenguaje.
 
 
-[Léelo aquí](http://bit.ly/2Ru1cvU){:target="_blank"}
+[Lée R para principiantes **aquí**.](http://bit.ly/2Ru1cvU){:target="_blank"}
 
 ### R para principiantes de Emmanuel Paradis, traducido por Jorge A. Ahumada.
 
 Es una introducción al lenguaje R explicando un poco los detalles de funcionamiento para poder sentar las bases de uso avanzado, para principiantes en programación. toca algunas nociones muy básicas de estadística para proporcionar ejemplos.
 
-Puedes [descargarlo aquí](http://bit.ly/2RuQ02j){:target="_blank"}.
+Puedes [descargarlo **aquí**.](http://bit.ly/2RuQ02j){:target="_blank"}.
 
 
 ## 1. Think Stats, Segunda Edición
@@ -45,7 +45,7 @@ Puedes [descargarlo aquí](http://bit.ly/2RuQ02j){:target="_blank"}.
 
 Este libro enseña estadística básica con Python y el proceso de análisis de exploración y análisis de datos básico, con un enfoque en los programas más que en las matemáticas.
 
-[Lee Think Stats, segunda edición](http://bit.ly/2Rlq20V){:target="_blank"}
+[Lee Think Stats, segunda edición.](http://bit.ly/2Rlq20V){:target="_blank"}
 
 Extra: La editorial tiene todos sus libros para leer en formatos digitales gratuitos. Una oportunidad que no puedes perderte, sólo que su sitio no es fácil de navegar así que visita la [página de inicio](https://greenteapress.com/wp/){:target="_blank"}
 
@@ -90,7 +90,7 @@ Este libro intenta enseñar los fundamentos de análisis de datos desde una pers
 
 Empieza estableciendo las bases matemáticas y el entendimiento necesario de los conceptos estadísticos para luego avanzar a la aplicación de estos.
 
-[Puedes descargarlo aquí](http://bit.ly/2RtkNMI){:target="_blank"}
+[Puedes descargarlo **aquí**.](http://bit.ly/2RtkNMI){:target="_blank"}
 
 ## 7. A Programmer's Guide to Data Mining
 
@@ -100,7 +100,7 @@ Es una guía práctica para minería de datos y sistema de recomendación, con l
 
 ![Blood, sweat and code](https://res.cloudinary.com/hectorip/image/upload/v1561228640/Screenshot_2019-06-22_13.37.09_igbbp1.png)
 
-(Puedes descargar el libro aquí)[http://bit.ly/2RtFCaY]{:target="_blank"}
+[Puedes descargar el libro aquí](http://bit.ly/2RtFCaY){:target="_blank"}
 
 ## 8. Mining of Massive Datasets
 
@@ -129,7 +129,7 @@ Puedes comprar el libro o leerlo directamente desde [su página](http://bit.ly/2
 
 Está escrito por [Andrew Ng](http://bit.ly/2RrkYYS) uno de los fundadores de Coursera y un gigante de la inteligencia artificial. Su enfoque principal es enseñarte cómo organizar un proyecto de Machine Learning, cómo hacer que los algoritmos funcionen y den resultados.
 
-Te pide suscripción con correo electrónico para que recibir una copia del borrador gratuita. Puedes [registrarte aquí](http://bit.ly/2RsPwtv).
+Te pide suscripción con correo electrónico para que recibir una copia del borrador gratuita. Puedes [registrarte aquí](http://bit.ly/2RsPwtv){:target="_blank"}.
 
 ## 11. Los libros OpenIntro
 
