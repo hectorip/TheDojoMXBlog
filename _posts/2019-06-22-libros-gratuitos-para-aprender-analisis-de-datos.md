@@ -2,7 +2,7 @@
 title: "Libros gratuitos para aprender análisis de datos"
 date: 2019-06-22
 author: Héctor Patricio
-tags: machine learning, python, r,
+tags: "machine learning" python r
 categories:  
 comments: true
 excerpt: "Encuentra una colección de libros gratuitos para aprender acerca de estadística, análisis de datos y machine learning usando tanto Python como R."
@@ -106,6 +106,7 @@ Es una guía práctica para minería de datos y sistema de recomendación, con l
 
 ![MMDS cover](http://i.stanford.edu/~ullman/gifs/mmds2.jpg)
 
+
 Este libro está basado en el curso [CS246](http://cs246.stanford.edu/) de Stanford del mismo nombre. Está enfocado en la minería de datos en grandes cantidades, es decir que no puedan ser mantenidos en la memoria principal. 
 
 >  "Data mining is about applying algorithms
@@ -129,7 +130,7 @@ Puedes comprar el libro o leerlo directamente desde [su página](http://bit.ly/2
 
 Está escrito por [Andrew Ng](http://bit.ly/2RrkYYS) uno de los fundadores de Coursera y un gigante de la inteligencia artificial. Su enfoque principal es enseñarte cómo organizar un proyecto de Machine Learning, cómo hacer que los algoritmos funcionen y den resultados.
 
-Te pide suscripción con correo electrónico para que recibir una copia del borrador gratuita. Puedes [registrarte aquí](http://bit.ly/2RsPwtv){:target="_blank"}.
+Te pide suscripción con correo electrónico para que recibir una copia del borrador gratuita. Puedes [**registrarte aquí**](http://bit.ly/2RsPwtv){:target="_blank"}.
 
 ## 11. Los libros OpenIntro
 
@@ -137,7 +138,7 @@ Te pide suscripción con correo electrónico para que recibir una copia del borr
 
 OpenIntro es una iniciativa para proveer recursos de aprendizaje de alta calidad a un precio razonable.
 
-Provee todos sus recursos de manera gratuita para descarga. Puedes [visitarlos aquí](http://bit.ly/2RxUIvZ).
+Provee todos sus recursos de manera gratuita para descarga. Puedes [**visitarlos aquí**](http://bit.ly/2RxUIvZ).
 
 ## 12. Los libros de Roger D. Peng y sus colegas
 
@@ -148,7 +149,7 @@ Escuela Johns Hopkins Bloomberg de Salud Pública. Tiene varios cursos en Course
 
 Ha escito numerosos libros sobre análisis de datos y manejo de proyectos de análisis de datos. Su especialidad es R.
 
-Puedes ver el [índice de sus libros aquí](http://bit.ly/2Rrleai), casi todos ellos gratuitos, aunque puedes continuir monetariamente si gustas.
+Puedes ver el [índice de sus libros **aquí**](http://bit.ly/2Rrleai), casi todos ellos gratuitos, aunque puedes continuir monetariamente si gustas.
 
 
 ## Conclusión
@@ -156,4 +157,3 @@ Puedes ver el [índice de sus libros aquí](http://bit.ly/2Rrleai), casi todos e
 Si sabes inglés, hay más material del que podríamos leer decentemente en un buen tiempo sin tener que gastar un solo peso directamente en esta información. ¿Por qué no aprovecharla?
 
 Cuéantanos si ya leíste uno de ellos y qué te pareció.
-
