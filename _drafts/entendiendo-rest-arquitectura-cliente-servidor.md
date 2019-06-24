@@ -32,6 +32,8 @@ Una red peer-to-peer puede lucir así:
 
 ![Ejemplo de red peer to peer](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_871/v1561266301/PNG_image-CC8B051C8851-1_r78hfc.png)
 
+##
+
 ## Explicación de cliente-servidor
 ## Ventajas
 ## Desventajas
