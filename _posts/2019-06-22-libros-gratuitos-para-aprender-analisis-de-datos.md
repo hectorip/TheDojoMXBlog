@@ -2,7 +2,7 @@
 title: "Libros gratuitos para aprender análisis de datos"
 date: 2019-06-22
 author: Héctor Patricio
-tags: "machine learning", python, r
+# tags: "machine learning", python, r
 comments: true
 excerpt: "Encuentra una colección de libros gratuitos para aprender acerca de estadística, análisis de datos y machine learning usando tanto Python como R."
 header:
