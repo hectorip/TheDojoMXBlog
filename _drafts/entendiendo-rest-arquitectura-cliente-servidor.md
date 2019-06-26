@@ -12,13 +12,13 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Ya hablamos de las [motivaciones detrás del estilo arquitectural REST](). Ahora empecemos con la primera de sus características o constraints, que la empieza a definir: la arquitectura cliente-servidor.
+Ya hablamos de las [motivaciones detrás del estilo arquitectural REST](). Ahora empecemos con la primera de sus características o restricciones, que la empieza a definir: la arquitectura cliente-servidor.
 
 Pero un momento, ¿acaso no es la única que existe para sistemas web o sistemas distribuidos?
 
 ## Otras arquitecturas web
 
-La aqruitectura para aplicaciones distribuidas más escucha es la cliente-servidor, pero no es ni de lejos la única. Analicemos otras arquitecturas y dónde se usan.
+La arquitectura para aplicaciones distribuidas más escucha es la cliente-servidor, pero no es ni de lejos la única. Analicemos otras arquitecturas y dónde se usan.
 
 ### Peer-to-Peer
 
@@ -32,7 +32,7 @@ Una red peer-to-peer puede lucir así:
 
 ![Ejemplo de red peer to peer](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_871/v1561266301/PNG_image-CC8B051C8851-1_r78hfc.png)
 
-##
+### Otro Ejemplo
 
 ## Explicación de cliente-servidor
 ## Ventajas
