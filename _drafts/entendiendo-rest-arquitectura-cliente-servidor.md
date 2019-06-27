@@ -20,7 +20,7 @@ Pero un momento, ¿acaso no es la única que existe para sistemas web o sistemas
 
 La arquitectura para aplicaciones distribuidas más escucha es la cliente-servidor, pero no es ni de lejos la única. Analicemos otras arquitecturas y dónde se usan.
 
-### Peer-to-Peer
+### Peer to Peer
 
 En este estilo está compuesta por nodos equivalentes, es decir, que tiene la misma función (aunque pueden no tener la misma información) y que se distribuyen la carga que soporta el sistema entero según las capacidades de cada uno o se proporcionan servicios entre ellos.
 
@@ -32,7 +32,9 @@ Una red peer-to-peer puede lucir así:
 
 ![Ejemplo de red peer to peer](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_871/v1561266301/PNG_image-CC8B051C8851-1_r78hfc.png)
 
-### Otro Ejemplo
+### Pipe and Filter
+
+Este patrón es el que siguen los pipelines de datos normalmente.
 
 ## Explicación de cliente-servidor
 ## Ventajas
