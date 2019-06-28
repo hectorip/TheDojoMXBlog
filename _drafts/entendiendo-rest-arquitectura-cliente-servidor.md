@@ -34,7 +34,7 @@ Una red peer-to-peer puede lucir así:
 
 ### Pipe and Filter
 
-Este patrón es el que siguen los pipelines de datos normalmente.
+Este patrón es el que siguen los pipelines de datos normalmente. La información pasa por una series de "filtros" que la procesan y van dejando la información en un nuevo estado.
 
 ## Explicación de cliente-servidor
 ## Ventajas
