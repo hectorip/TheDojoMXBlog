@@ -42,5 +42,15 @@ En este patrón, la información pasa por una series de "filtros" o nodos que la
 La principal característica de la arquitectura cliente-servidor es la separación de responsabilidades clara.
 
 ## Ventajas
+
+### Separación clara de responsabilidades
+### Bajo acoplamiento
+
 ## Desventajas
+
+### Complejidad ligeramente aumentada
+### Comunicación
+
 ## Conclusión
+
+Para los propósistos de REST, parece que la arquietectura Cliente-serivdor es muy adecuada. Sus beneficios superan sus desaventajas para este caso de uso particular.
