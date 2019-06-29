@@ -34,9 +34,13 @@ Una red peer-to-peer puede lucir así:
 
 ### Pipe and Filter
 
-Este patrón es el que siguen los pipelines de datos normalmente. La información pasa por una series de "filtros" que la procesan y van dejando la información en un nuevo estado.
+En este patrón, la información pasa por una series de "filtros" o nodos que la procesan y van dejando la información en un nuevo estado o con nuevas propiedades y que pasan la información al siguiente nodo. Este patrón es el que siguen los pipelines de datos normalmente, en el que la información que es producida por una fuente externa es procesada a través de una serie de pasos, que pueden incluir la recolección, limpieza, almacenamiento, etc.
+
 
 ## Explicación de cliente-servidor
+
+La principal característica de la arquitectura cliente-servidor es la separación de responsabilidades clara.
+
 ## Ventajas
 ## Desventajas
 ## Conclusión
