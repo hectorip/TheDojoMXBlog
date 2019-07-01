@@ -11,24 +11,36 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
+> El propósito de construir software no es crear una topología de interacciones específicas, o usar un tipo particular de componente; es crear un sistema que cumpla y exceda las necesidades de la aplicación. - Thomas Fielding
+
 Ya hablamos de las [motivaciones detrás del estilo arquitectural REST](). Ahora empecemos con la primera de sus características o restricciones, que la empieza a definir: la arquitectura cliente-servidor.
 
-Pero un momento, ¿acaso no es la única que existe para sistemas web o sistemas distribuidos?
+## ¿Qué es la arquitectura cliente-servidor?
 
+Esta arquitectura de aplicación tiene dos componentes:
 
-## Explicación de cliente-servidor
+- **Cliente**: Es un programa o proceso que solicita un servicio y usa la información provista para sus propios objetivos.
+- **Servidor**: Programa o proceso que ofrece un conjunto de servicios y espera por peticiones para ejecutar o dar estos servicios.
 
-La principal característica de la arquitectura cliente-servidor es la separación de responsabilidades clara.
+La principal característica de la arquitectura cliente-servidor es lograr una separación de responsabilidades clara, con el costo de un poco de aumento de complejidad en el sistema en general.
+
+Recordemos que todos los diseños o arquitecturas implican un intercambio de valor entre varias características, en este caso un poco de simplicidad por la separación de responsabilidades claras.
+
 
 ## Ventajas
 
 ### Separación clara de responsabilidades
+El cliente y el servidor tienen funciones completamente distintas y cada uno puede cambiar por su lado sin afectar al otro. El ejemplo que tenemos es el del navegador y las páginas que visitamos normalmente en internet. Mientras sigan cumpliendo con el protocolo establecido de comunicación (HTTP) van a poder seguir comunicándose y transfiriendo información.
+
 ### Bajo acoplamiento
 
 ## Desventajas
 
 ### Complejidad ligeramente aumentada
 ### Comunicación
+
+
+Pero un momento, ¿acaso no es la única que existe para sistemas web o sistemas distribuidos?
 
 ## Otras arquitecturas web
 
@@ -52,8 +64,9 @@ Las redes peer-to-peer son una de las mejores formas de crear sistemas distribui
 
 En este patrón, la información pasa por una series de "filtros" o nodos que la procesan y van dejando la información en un nuevo estado o con nuevas propiedades y que pasan la información al siguiente nodo. Este patrón es el que siguen los pipelines de datos normalmente, en el que la información que es producida por una fuente externa es procesada a través de una serie de pasos, que pueden incluir la recolección, limpieza, almacenamiento, etc.
 
-
-
 ## Conclusión
+
+> The architectural styles chosen for a system’s design must conform to those needs, not the other way around.
+
 
 Para los propósitos de REST la arquitectura Cliente-servidor es muy adecuada. Sus beneficios superan sus desventajas para este caso de uso particular.
