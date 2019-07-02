@@ -13,7 +13,7 @@ header:
 
 > El propósito de construir software no es crear una topología de interacciones específicas, o usar un tipo particular de componente; es crear un sistema que cumpla y exceda las necesidades de la aplicación. - Thomas Fielding
 
-Ya hablamos de las [motivaciones detrás del estilo arquitectural REST](). Ahora empecemos con la primera de sus características o restricciones, que la empieza a definir: la arquitectura cliente-servidor.
+Ya hablamos de las [motivaciones detrás del estilo arquitectural REST](){:taget=blank}. Ahora empecemos con la primera de sus características o restricciones, que la empieza a definir: la arquitectura cliente-servidor.
 
 ## ¿Qué es la arquitectura cliente-servidor?
 
@@ -22,17 +22,20 @@ Esta arquitectura de aplicación tiene dos componentes:
 - **Cliente**: Es un programa o proceso que solicita un servicio y usa la información provista para sus propios objetivos.
 - **Servidor**: Programa o proceso que ofrece un conjunto de servicios y espera por peticiones para ejecutar o dar estos servicios.
 
-La principal característica de la arquitectura cliente-servidor es lograr una separación de responsabilidades clara, con el costo de un poco de aumento de complejidad en el sistema en general.
+La principal característica de la arquitectura cliente-servidor es lograr una _separación de responsabilidades clara_, con el costo de un poco de aumento de complejidad en el sistema en general.
 
 Recordemos que todos los diseños o arquitecturas implican un intercambio de valor entre varias características, en este caso un poco de simplicidad por la separación de responsabilidades claras.
-
 
 ## Ventajas
 
 ### Separación clara de responsabilidades
-El cliente y el servidor tienen funciones completamente distintas y cada uno puede cambiar por su lado sin afectar al otro. El ejemplo que tenemos es el del navegador y las páginas que visitamos normalmente en internet. Mientras sigan cumpliendo con el protocolo establecido de comunicación (HTTP) van a poder seguir comunicándose y transfiriendo información.
+
+El cliente y el servidor tienen funciones completamente distintas y cada uno puede cambiar por su lado sin afectar al otro, a esto le podemos llamar "evolución independiente".
+
+El ejemplo que tenemos es el del navegador y las páginas que visitamos normalmente en internet. Mientras sigan cumpliendo con el protocolo establecido de comunicación (HTTP) van a poder seguir comunicándose y transfiriendo información, sin interferir la manera en que estén implementados sus procesos internos.
 
 ### Bajo acoplamiento
+
 
 ## Desventajas
 
@@ -40,7 +43,7 @@ El cliente y el servidor tienen funciones completamente distintas y cada uno pue
 ### Comunicación
 
 
-Pero un momento, ¿acaso no es la única que existe para sistemas web o sistemas distribuidos?
+Pero, un momento, ¿acaso no es la única que existe para sistemas web o sistemas distribuidos?
 
 ## Otras arquitecturas web
 
