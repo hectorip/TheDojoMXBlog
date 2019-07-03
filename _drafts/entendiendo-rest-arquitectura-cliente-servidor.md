@@ -34,14 +34,14 @@ El cliente y el servidor tienen funciones completamente distintas y cada uno pue
 
 El ejemplo que tenemos es el del navegador y las páginas que visitamos normalmente en internet. Mientras sigan cumpliendo con el protocolo establecido de comunicación (HTTP) van a poder seguir comunicándose y transfiriendo información, sin interferir la manera en que estén implementados sus procesos internos.
 
-### Bajo acoplamiento
+### División de complejidad
 
+Esta arquitectura nos permite dividir la complejidad de un sitema completo.
 
 ## Desventajas
 
-### Complejidad ligeramente aumentada
+### Complejidad general ligeramente aumentada
 ### Comunicación
-
 
 Pero, un momento, ¿acaso no es la única que existe para sistemas web o sistemas distribuidos?
 
