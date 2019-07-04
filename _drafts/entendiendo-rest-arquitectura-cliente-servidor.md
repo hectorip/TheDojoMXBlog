@@ -28,7 +28,11 @@ Recordemos que todos los diseños o arquitecturas implican un intercambio de val
 
 ## Ventajas
 
+Hablemos de los beneficios que trae usar la arquitectura cliente-servidor.
+
 ### Separación clara de responsabilidades
+
+La funcionalidad del sistema se divide en dos partes (por lo menos), como el nombre lo indica en parte de dar los servicios (generalmente de datos) y la parte de atender al usuario (humanos o programa) final.
 
 El cliente y el servidor tienen funciones completamente distintas y cada uno puede cambiar por su lado sin afectar al otro, a esto le podemos llamar "evolución independiente".
 
@@ -36,18 +40,31 @@ El ejemplo que tenemos es el del navegador y las páginas que visitamos normalme
 
 ### División de complejidad
 
-Esta arquitectura nos permite dividir la complejidad de un sitema completo.
+La misma división de la que hablamos en el punto anterior permite dividir la complejidad en dos partes por lo que cada una por su lado es más fácil de entender y desarrollar que el sistema completo.
+
+Por lo tanto se sigue el mismo principio que se usa para desarrollar software complejo en general: divide y vencerás. Esto permite que podamos dividir el trabajo limpiamente en diferentes etapas de desarrollo o entre diferentes equipos, que lo único que requieren es una interfaz de comunicación clara.
+
+Esto no quiere decir que la complejidad _general_ se reduzca. De esto hablaremos en las desventajas.
 
 ## Desventajas
 
-### Complejidad general ligeramente aumentada
-### Comunicación
+Todo en la vida viene con desventajas y otra vez: intercambios de valor entre diferentes partes de la aplicación. Analicemos algunas de estos intercambios que hacemos al aplicar la arquitectura cliente-servidor.
+
+### Complejidad general aumentada
+
+Cuando dividimos la aplicación y funciones completas en dos partes, aunque la complejidad de cada parte es menos que la complejidad en general, la complejidad completa aumenta porque hay que agregar elementos al sistema:
+
+- Interfaces de comunicación entre cliente y servidor
+- Mantenimiento o forma de recuperación del estado general de la aplicación
+- Protocolos de comunicación de red cuando es el caso
+
+###
 
 Pero, un momento, ¿acaso no es la única que existe para sistemas web o sistemas distribuidos?
 
 ## Otras arquitecturas web
 
-La arquitectura para aplicaciones distribuidas más escuchada es la cliente-servidor, pero no es ni de lejos la única. Analicemos otras arquitecturas y dónde se usan.
+La arquitectura para aplicaciones distribuidas más escuchada es la cliente-servidor, pero no es ni de lejos la única. Analicemos otras dos arquitecturas comunes y dónde se usan. Si quieres ver la lista completa que Fielding analiza puedes checar la sección 2 de [su tesis doctoral](https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf).
 
 ### Peer to Peer
 
@@ -66,6 +83,8 @@ Las redes peer-to-peer son una de las mejores formas de crear sistemas distribui
 ### Pipe and Filter
 
 En este patrón, la información pasa por una series de "filtros" o nodos que la procesan y van dejando la información en un nuevo estado o con nuevas propiedades y que pasan la información al siguiente nodo. Este patrón es el que siguen los pipelines de datos normalmente, en el que la información que es producida por una fuente externa es procesada a través de una serie de pasos, que pueden incluir la recolección, limpieza, almacenamiento, etc.
+
+
 
 ## Conclusión
 
