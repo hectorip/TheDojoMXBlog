@@ -13,18 +13,26 @@ header:
 
 > El propósito de construir software no es crear una topología de interacciones específicas, o usar un tipo particular de componente; es crear un sistema que cumpla y exceda las necesidades de la aplicación. - Thomas Fielding
 
-Ya hablamos de las [motivaciones detrás del estilo arquitectural REST](){:taget=blank}. Ahora empecemos con la primera de sus características o restricciones, que la empieza a definir: la arquitectura cliente-servidor.
+Ya hablamos de las [motivaciones detrás del estilo arquitectural REST](/2019/06/15/entendiendo-rest-estilo-de-arquitectura.html){:taget=blank}. Ahora empecemos con la primera de sus características o restricciones, que la empieza a definir: la arquitectura cliente-servidor.
 
 ## ¿Qué es la arquitectura cliente-servidor?
 
-Esta arquitectura de aplicación tiene dos componentes:
+Esta arquitectura de aplicación divide un sistema en dos componentes:
 
 - **Cliente**: Es un programa o proceso que solicita un servicio y usa la información provista para sus propios objetivos.
+
 - **Servidor**: Programa o proceso que ofrece un conjunto de servicios y espera por peticiones para ejecutar o dar estos servicios.
 
-La principal característica de la arquitectura cliente-servidor es lograr una _separación de responsabilidades clara_, con el costo de un poco de aumento de complejidad en el sistema en general.
+La principal característica de la arquitectura cliente-servidor es que lograr una _separación de responsabilidades clara_.
+
+En palabras de [Gregory R. Andrews](https://homepages.cwi.nl/~marcello/SAPapers/And91.pdf){:target=blank}, el servidor es un proceso desencadenante mientras que el servidor es un proceso reactivo. Es decir el servidor no puede envíar datos o empezar procesos que un cliente no le ha solicitado.
+
+La arquitectura básica de un sistema cliente-servidor es esta:
+![Esquema Cliente-servidor]()
 
 Recordemos que todos los diseños o arquitecturas implican un intercambio de valor entre varias características, en este caso un poco de simplicidad por la separación de responsabilidades claras.
+
+Veamos sus ventajas y desventajas.
 
 ## Ventajas
 
@@ -42,22 +50,43 @@ El ejemplo que tenemos es el del navegador y las páginas que visitamos normalme
 
 La misma división de la que hablamos en el punto anterior permite dividir la complejidad en dos partes por lo que cada una por su lado es más fácil de entender y desarrollar que el sistema completo.
 
-Por lo tanto se sigue el mismo principio que se usa para desarrollar software complejo en general: divide y vencerás. Esto permite que podamos dividir el trabajo limpiamente en diferentes etapas de desarrollo o entre diferentes equipos, que lo único que requieren es una interfaz de comunicación clara.
+Por lo tanto, se sigue el mismo principio que se usa para desarrollar software complejo en general: **divide y vencerás**. Esto permite que podamos dividir el trabajo limpiamente en diferentes etapas de desarrollo o entre diferentes equipos, que lo único que requieren es una interfaz de comunicación clara.
 
 Esto no quiere decir que la complejidad _general_ se reduzca. De esto hablaremos en las desventajas.
 
+### Múltiples versiones y reusabilidad
+
+La implementación de la interfaz de comunicación es el único requisito indispensable para que un sistema cliente-servidor pueda seguir funcionando. Esto permite que un servidor pueda tener un número indefinido versiones de clientes diferentes que puedan consumir su interfaz y viceversa. En el caso de REST implementar el servidor con la API permite crear tantos clientes como se necesite:
+
+- página web
+- aplicación móvil
+- sistema embebido
+- SDK para servidores
+
+Para ilustrarlo:
+
+![]()
+
+Tener N versiones de los clientes o poder crear una sin tener que volver a a replicar la funcionalidad del servidor ha hecho que las API's se vuelvan sumamente populares.
+
 ## Desventajas
 
-Todo en la vida viene con desventajas y otra vez: intercambios de valor entre diferentes partes de la aplicación. Analicemos algunas de estos intercambios que hacemos al aplicar la arquitectura cliente-servidor.
+Todo en la vida viene con desventajas asociadas y generalmente directamente proporcionales a sus ventajas. Y otra vez: intercambiamos valor entre diferentes partes de la aplicación. Analicemos algunas de estos intercambios que hacemos al aplicar la arquitectura cliente-servidor.
 
 ### Complejidad general aumentada
 
-Cuando dividimos la aplicación y funciones completas en dos partes, aunque la complejidad de cada parte es menos que la complejidad en general, la complejidad completa aumenta porque hay que agregar elementos al sistema:
+Cuando dividimos la aplicación y funciones completas en dos partes, aunque la complejidad de cada parte es menos que la general, la complejidad general aumenta porque hay que agregar elementos al sistema:
 
 - Interfaces de comunicación entre cliente y servidor
 - Mantenimiento o forma de recuperación del estado general de la aplicación
 - Protocolos de comunicación de red cuando es el caso
 
+
+### Centralización de la información
+
+El servidor es el responsable de almacenar la información y procesarla para darle servicio a los diferentes clientes que los soliciten, lo cual, aunque hace más fácil su administración, representa la desventaja de tener la información centralizada en el sistema que actúa como cliente. Si este sistema se corrompe de alguna forma, los clientes necesitan otras fuentes de información para eliminar este problema. 
+
+Combinar cliente-servidor con otra arquitecturas ayuda a mitigar esta falla. Por ejemplo, se puede implementar el patrón de replicación de repositorio en el lado de los proveedores de servicio.
 
 Pero, un momento, ¿acaso no es la única que existe para sistemas web o sistemas distribuidos?
 
@@ -88,7 +117,6 @@ En este patrón, la información pasa por una series de "filtros" o nodos que la
 
 ## Conclusión
 
-> The architectural styles chosen for a system’s design must conform to those needs, not the other way around.
-
+> Los estilos arquitectónicos para un sistema para el diseño de un sistema deben adecuarse a las necesidades de ese sistema, no al revés. - Thomas Fielding
 
 Para los propósitos de REST la arquitectura Cliente-servidor es muy adecuada. Sus beneficios superan sus desventajas para este caso de uso particular.
