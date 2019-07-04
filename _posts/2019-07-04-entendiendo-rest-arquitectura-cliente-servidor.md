@@ -1,13 +1,13 @@
 ---
 title: "Entendiendo REST: Arquitectura cliente-servidor"
-date: 2019-06-22
+date: 2019-07-04
 author: Héctor Patricio
 tags:
 comments: true
 excerpt: "Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST."
 header:
-  overlay_image: 
-  teaser: 
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1260/v1562217908/krzysztof-kowalik-KiH2-tdGQRY-unsplash_v0vf7l.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1260/v1562217908/krzysztof-kowalik-KiH2-tdGQRY-unsplash_v0vf7l.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -58,11 +58,10 @@ Cuando dividimos la aplicación y funciones completas en dos partes, aunque la c
 - Mantenimiento o forma de recuperación del estado general de la aplicación
 - Protocolos de comunicación de red cuando es el caso
 
-###
 
 Pero, un momento, ¿acaso no es la única que existe para sistemas web o sistemas distribuidos?
 
-## Otras arquitecturas web
+## Otras arquitecturas
 
 La arquitectura para aplicaciones distribuidas más escuchada es la cliente-servidor, pero no es ni de lejos la única. Analicemos otras dos arquitecturas comunes y dónde se usan. Si quieres ver la lista completa que Fielding analiza puedes checar la sección 2 de [su tesis doctoral](https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf).
 
@@ -84,6 +83,7 @@ Las redes peer-to-peer son una de las mejores formas de crear sistemas distribui
 
 En este patrón, la información pasa por una series de "filtros" o nodos que la procesan y van dejando la información en un nuevo estado o con nuevas propiedades y que pasan la información al siguiente nodo. Este patrón es el que siguen los pipelines de datos normalmente, en el que la información que es producida por una fuente externa es procesada a través de una serie de pasos, que pueden incluir la recolección, limpieza, almacenamiento, etc.
 
+![Ilustración de pipe and filter](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1562217820/PNG_image-C00985E33227-1_mevaqa.png)
 
 
 ## Conclusión
