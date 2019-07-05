@@ -28,7 +28,8 @@ La principal característica de la arquitectura cliente-servidor es que lograr u
 En palabras de [Gregory R. Andrews](https://homepages.cwi.nl/~marcello/SAPapers/And91.pdf){:target=blank}, el servidor es un proceso desencadenante mientras que el servidor es un proceso reactivo. Es decir el servidor no puede envíar datos o empezar procesos que un cliente no le ha solicitado.
 
 La arquitectura básica de un sistema cliente-servidor es esta:
-![Esquema Cliente-servidor]()
+
+![Esquema cliente-servidor](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1562300061/PNG_image-B6068204DEE0-1_pnmgnv.png)
 
 Recordemos que todos los diseños o arquitecturas implican un intercambio de valor entre varias características, en este caso un poco de simplicidad por la separación de responsabilidades claras.
 
@@ -65,9 +66,13 @@ La implementación de la interfaz de comunicación es el único requisito indisp
 
 Para ilustrarlo:
 
-![]()
+![Ilustración de cliente-servidor multicliente](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1562294072/PNG_image-5618E8EA3C0D-1_vk18wv.png)
 
 Tener N versiones de los clientes o poder crear una sin tener que volver a a replicar la funcionalidad del servidor ha hecho que las API's se vuelvan sumamente populares.
+
+### Simplificación de escalamiento
+
+Poder tener separado el servidor permite que podamos escalarlo de forma independiente dependiendo del número de clientes a los que va a atender. Si necesitamos dar un servicio a escala mundial podemos replicar nuestros servidores (usando las arquitecturas adecuadas para esto) sin afectar a los clientes y sin que ellos se enteren y por lo tanto tengan que hacer algún cambio.
 
 ## Desventajas
 
@@ -118,5 +123,15 @@ En este patrón, la información pasa por una series de "filtros" o nodos que la
 ## Conclusión
 
 > Los estilos arquitectónicos para un sistema para el diseño de un sistema deben adecuarse a las necesidades de ese sistema, no al revés. - Thomas Fielding
+
+¿A qué necesidades nos adaptamos? 
+
+A la necesidad de tener una separación clara entre las funciones de datos y procesos de negocio y las interfaces de usuario: sean usuarios finales humanos u otros programas que consumen información.
+
+La arquitectura cliente-servidor permite simplificar el trabajo del lado del servidor al no tener que preocuparse por todas las distintas situaciones en las que sus datos o procesos van a ser usados.
+
+Esto nos lleva a que sus procesos sean **reutilizables** por todos los clientes que sepan comunicarse con el servidor (léase: usar su interfaz). A su vez los clientes son más fáciles de crear por no tener en ellos mismos toda la lógica del negocio y poder enfocarse en las funcionalidades de la entidad al que le van servir.
+
+Y por último, esta separación permite que el servidor sea fácil de escalar al nivel del servicio requerido.
 
 Para los propósitos de REST la arquitectura Cliente-servidor es muy adecuada. Sus beneficios superan sus desventajas para este caso de uso particular.
