@@ -2,7 +2,7 @@
 title: "Entendiendo REST: Arquitectura cliente-servidor"
 date: 2019-07-04
 author: Héctor Patricio
-tags:
+tags: REST, cliente-servidor
 comments: true
 excerpt: "Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST."
 header:
