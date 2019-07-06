@@ -29,7 +29,7 @@ En palabras de [Gregory R. Andrews](https://homepages.cwi.nl/~marcello/SAPapers/
 
 La arquitectura básica de un sistema cliente-servidor es esta:
 
-![Esquema cliente-servidor](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1562300061/PNG_image-B6068204DEE0-1_pnmgnv.png)
+![Esquema cliente-servidor](https://res.cloudinary.com/hectorip/image/upload/v1562387932/PNG_image-B6068204DEE0-1_pnmgnv.png)
 
 Recordemos que todos los diseños o arquitecturas implican un intercambio de valor entre varias características, en este caso un poco de simplicidad por la separación de responsabilidades claras.
 
@@ -64,9 +64,9 @@ La implementación de la interfaz de comunicación es el único requisito indisp
 - sistema embebido
 - SDK para servidores
 
-Para ilustrarlo:
+Sólo para ilustrar:
 
-![Ilustración de cliente-servidor multicliente](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1562294072/PNG_image-5618E8EA3C0D-1_vk18wv.png)
+![Ilustración de cliente-servidor multi-cliente](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1562294072/PNG_image-5618E8EA3C0D-1_vk18wv.png)
 
 Tener N versiones de los clientes o poder crear una sin tener que volver a a replicar la funcionalidad del servidor ha hecho que las API's se vuelvan sumamente populares.
 
