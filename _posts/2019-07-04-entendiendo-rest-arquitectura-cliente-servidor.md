@@ -29,7 +29,7 @@ En palabras de [Gregory R. Andrews](https://homepages.cwi.nl/~marcello/SAPapers/
 
 La arquitectura básica de un sistema cliente-servidor es esta:
 
-![Esquema cliente-servidor](https://res.cloudinary.com/hectorip/image/upload/v1562387932/PNG_image-B6068204DEE0-1_pnmgnv.png)
+![Esquema cliente-servidor](https://res.cloudinary.com/hectorip/image/upload/v1562699566/PNG_image-ABC17A5C0944-1_wpyk2e.png)
 
 <!-- Recordemos que todos los diseños o arquitecturas implican un intercambio de valor entre varias características, en este caso un poco de simplicidad por la separación de responsabilidades claras. -->
 
