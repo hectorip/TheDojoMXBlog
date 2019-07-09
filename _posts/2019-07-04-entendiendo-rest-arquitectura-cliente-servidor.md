@@ -23,15 +23,15 @@ Esta arquitectura de aplicación divide un sistema en dos componentes:
 
 - **Servidor**: Programa o proceso que ofrece un conjunto de servicios y espera por peticiones para ejecutar o dar estos servicios.
 
-La principal característica de la arquitectura cliente-servidor es que lograr una _separación de responsabilidades clara_.
+La principal característica de la arquitectura cliente-servidor es que logra una _separación de responsabilidades clara_.
 
-En palabras de [Gregory R. Andrews](https://homepages.cwi.nl/~marcello/SAPapers/And91.pdf){:target=blank}, el servidor es un proceso desencadenante mientras que el servidor es un proceso reactivo. Es decir el servidor no puede envíar datos o empezar procesos que un cliente no le ha solicitado.
+En palabras de [Gregory R. Andrews](https://homepages.cwi.nl/~marcello/SAPapers/And91.pdf){:target=blank}, el cliente es un proceso desencadenante mientras que el servidor es un proceso reactivo. Es decir el servidor no puede envíar datos o empezar procesos que un cliente no le ha solicitado.
 
 La arquitectura básica de un sistema cliente-servidor es esta:
 
 ![Esquema cliente-servidor](https://res.cloudinary.com/hectorip/image/upload/v1562387932/PNG_image-B6068204DEE0-1_pnmgnv.png)
 
-Recordemos que todos los diseños o arquitecturas implican un intercambio de valor entre varias características, en este caso un poco de simplicidad por la separación de responsabilidades claras.
+<!-- Recordemos que todos los diseños o arquitecturas implican un intercambio de valor entre varias características, en este caso un poco de simplicidad por la separación de responsabilidades claras. -->
 
 Veamos sus ventajas y desventajas.
 
@@ -57,7 +57,7 @@ Esto no quiere decir que la complejidad _general_ se reduzca. De esto hablaremos
 
 ### Múltiples versiones y reusabilidad
 
-La implementación de la interfaz de comunicación es el único requisito indispensable para que un sistema cliente-servidor pueda seguir funcionando. Esto permite que un servidor pueda tener un número indefinido versiones de clientes diferentes que puedan consumir su interfaz y viceversa. En el caso de REST implementar el servidor con la API permite crear tantos clientes como se necesite:
+La implementación de la interfaz de comunicación es el único requisito indispensable para que un sistema cliente-servidor pueda seguir funcionando. Esto permite que un servidor pueda tener un número indefinido de clientes diferentes que puedan consumir su interfaz y viceversa. En el caso de REST implementar el servidor con la API permite crear tantos clientes como se necesite:
 
 - página web
 - aplicación móvil
@@ -93,7 +93,7 @@ El servidor es el responsable de almacenar la información y procesarla para dar
 
 Combinar cliente-servidor con otra arquitecturas ayuda a mitigar esta falla. Por ejemplo, se puede implementar el patrón de replicación de repositorio en el lado de los proveedores de servicio.
 
-Pero, un momento, ¿acaso no es la única que existe para sistemas web o sistemas distribuidos?
+Pero, un momento, ¿acaso no es cliente-servidor la única arquitectura que existe para sistemas web o sistemas distribuidos?
 
 ## Otras arquitecturas
 
