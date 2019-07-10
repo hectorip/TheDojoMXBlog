@@ -122,7 +122,7 @@ En este patrón, la información pasa por una series de "filtros" o nodos que la
 
 ## Conclusión
 
-> Los estilos arquitectónicos para un sistema para el diseño de un sistema deben adecuarse a las necesidades de ese sistema, no al revés. - Thomas Fielding
+> Los estilos arquitectónicos el diseño de un sistema deben adecuarse a las necesidades de ese sistema, no al revés. - Thomas Fielding
 
 ¿A qué necesidades nos adaptamos? 
 
