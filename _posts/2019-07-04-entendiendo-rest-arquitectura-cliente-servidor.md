@@ -2,7 +2,7 @@
 title: "Entendiendo REST: Arquitectura cliente-servidor"
 date: 2019-07-04
 author: Héctor Patricio
-tags: REST, cliente-servidor
+tags: REST cliente-servidor
 comments: true
 excerpt: "Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST."
 header:
@@ -89,7 +89,7 @@ Cuando dividimos la aplicación y funciones completas en dos partes, aunque la c
 
 ### Centralización de la información
 
-El servidor es el responsable de almacenar la información y procesarla para darle servicio a los diferentes clientes que los soliciten, lo cual, aunque hace más fácil su administración, representa la desventaja de tener la información centralizada en el sistema que actúa como cliente. Si este sistema se corrompe de alguna forma, los clientes necesitan otras fuentes de información para eliminar este problema. 
+El servidor es el responsable de almacenar la información y procesarla para darle servicio a los diferentes clientes que los soliciten, lo cual, aunque hace más fácil su administración, representa la desventaja de tener la información centralizada en el sistema que actúa como servidor. Si este sistema se corrompe de alguna forma, los clientes necesitan otras fuentes de información para eliminar este problema. 
 
 Combinar cliente-servidor con otra arquitecturas ayuda a mitigar esta falla. Por ejemplo, se puede implementar el patrón de replicación de repositorio en el lado de los proveedores de servicio.
 
