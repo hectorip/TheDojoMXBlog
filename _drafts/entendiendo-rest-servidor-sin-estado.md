@@ -16,3 +16,13 @@ Hemos venido hablando de las características que componen a un sistema REST. En
 ## ¿A qué nos referimos con "el estado"?
 
 El estado de una aplicación son todos los datos que usa para operar en un momento determinado. Podemos pensar en una aplicación de ventas en línea. El estado de esta aplicación, para un usuario específico sus datos de identificación, su carrito de compras y los productos que ha estado viendo son el estado.
+
+## Conexión sin estado
+
+## Ventajas de mantener el servidor sin estado
+
+## Desventajas
+
+## Conexiones con estado
+
+## Conclusión
