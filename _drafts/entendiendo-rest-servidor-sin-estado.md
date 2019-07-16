@@ -20,7 +20,7 @@ Como ejemplo podemos pensar en una aplicación de ventas en línea. El estado de
 
 ## Conexión sin estado
 
-En una conexión sin estado consideramos 1) Que la conexión no es persistente.
+En una conexión sin estado consideramos 1) Que la conexión no es persistente, es decir, no se mantiene un canal de comunicación abierto que pueda mantener en memoria la información de los procesos actuales. 2) Que no podemos (ni debemos) asumir que el servidor mantendrá los datos del cliente automáticamente por medio de reconocer al cliente.
 
 
 ## Ventajas de mantener el servidor sin estado
