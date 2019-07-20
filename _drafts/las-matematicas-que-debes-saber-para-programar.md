@@ -5,7 +5,7 @@ author: Héctor Patricio
 tags:
 categories: 
 comments: true
-excerpt: "Escribe aquí un buen resumen de tu artículo"
+excerpt: "Aprende de las matemáticas que necesitar para ser un buen programador."
 header:
   overlay_image: #image
 ---
