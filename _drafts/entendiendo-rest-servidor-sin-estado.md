@@ -2,12 +2,12 @@
 title: "Entendiendo REST: conexión sin estado"
 date: 2019-07-05
 author: Héctor Patricio
-tags: REST 
+tags: REST stateless thomas-fielding
 comments: true
 excerpt: "¿Cómo mantener la información entre conexiones en un sistema REST?"
 header:
-  overlay_image: #image
-  teaser: #image
+  overlay_image: 
+  teaser: 
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
