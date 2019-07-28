@@ -25,9 +25,11 @@ En una conexión sin estado consideramos 1) Que la conexión no es persistente, 
 
 ## Ventajas de mantener el servidor sin estado
 
-1. Escalabilidad -> Permite replicar los servdores.
+1. Replicación de servidores. Permite replicar los servidores más fácilmente, al no tener que mantener el estado o conexiones persistentes una conexión sin estado puede permitir que la petición sea atendida por cualquier servidor que tenga el mismo código que las peticiones anteriores, ya que toda la información necesaria para atender esas peticiones estará incluida.
+2. Escalabilidad. Esto es una consecuencia inmediata de la ventaja anterior: poder replicar los servidores permite distribuir la carga entre muchas computadoras y aplicar técnicas de balanceo para poder atender a muchos más clientes de lo que se podría en un sistema que requira mantener estados.
 2. Las conexiones persistentes son innecesarias.
-3. Sistemas cacheables.
+3. Información cacheable?
+4.
 
 
 ## Desventajas
