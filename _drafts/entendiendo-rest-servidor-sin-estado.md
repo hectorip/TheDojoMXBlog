@@ -34,6 +34,16 @@ En una conexión sin estado consideramos 1) Que la conexión no es persistente, 
 
 ## Desventajas
 
+1. Incremento de la complejidad de las peticiones.
+2. Tamaño de las peticiones aumentado.
+3. Mayor carga en la red
+
+
 ## Conexiones con estado
 
+En los últimos años la mayoría de las conexiones que se levantan en programas creados con la arquitectura cliente-servidor son creados con este tipo de conexiones. Sin embargo, también se puede mantener una conexión con estado en la arquitectura cliente-servidor. Hay varias formas de lograr esto, pero la principal característica es que debe haber una manera de identificar al cliente que está solicitando los servicios.
+
+
 ## Conclusión
+
+La segunda característica definida de los sistemas REST es importante porque permite que los servicios sean más confiables, disponibles y escalables.
