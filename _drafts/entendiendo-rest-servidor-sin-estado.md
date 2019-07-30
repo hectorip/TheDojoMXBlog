@@ -27,23 +27,18 @@ En una conexión sin estado consideramos 1) Que la conexión no es persistente, 
 
 1. Replicación de servidores. Permite replicar los servidores más fácilmente, al no tener que mantener el estado o conexiones persistentes una conexión sin estado puede permitir que la petición sea atendida por cualquier servidor que tenga el mismo código que las peticiones anteriores, ya que toda la información necesaria para atender esas peticiones estará incluida.
 2. Escalabilidad. Esto es una consecuencia inmediata de la ventaja anterior: poder replicar los servidores permite distribuir la carga entre muchas computadoras y aplicar técnicas de balanceo para poder atender a muchos más clientes de lo que se podría en un sistema que requira mantener estados.
-2. Las conexiones persistentes son innecesarias.
-3. Información cacheable?
-4.
-
 
 ## Desventajas
 
-1. Incremento de la complejidad de las peticiones.
-2. Tamaño de las peticiones aumentado.
-3. Mayor carga en la red
+1. **Complejidad de las peticiones**. La complejidad de las peticiones aumenta al necesitar mantener en el cliente toda la información necesaria para reconstruir el estado en cada petición en un servidor desde cero.
+2. Tamaño de las peticiones aumentado -
+3. Mayor carga en la red -
 
 
 ## Conexiones con estado
 
 En los últimos años la mayoría de las conexiones que se levantan en programas creados con la arquitectura cliente-servidor son creados con este tipo de conexiones. Sin embargo, también se puede mantener una conexión con estado en la arquitectura cliente-servidor. Hay varias formas de lograr esto, pero la principal característica es que debe haber una manera de identificar al cliente que está solicitando los servicios.
 
-
 ## Conclusión
 
-La segunda característica definida de los sistemas REST es importante porque permite que los servicios sean más confiables, disponibles y escalables.
+La segunda característica definida de los sistemas REST es importante porque permite que los servicios sean más confiables, disponibles y escalables. Como cada decisión que se toma en el desarrollo, esta viene con sus propias desventajas: al hacer más complejas las peticiones, la base de código es más difícil de mantener en general.
