@@ -43,4 +43,6 @@ En los últimos años la mayoría de las conexiones que se levantan en programas
 
 ## Conclusión
 
-La segunda característica definida de los sistemas REST es importante porque permite que los servicios sean más confiables, disponibles y escalables. Como cada decisión que se toma en el desarrollo, esta viene con sus propias desventajas: al hacer más complejas las peticiones, la base de código es más difícil de mantener en general.
+La segunda característica definida de los sistemas REST es importante porque permite que los servicios sean más confiables, disponibles y flexibles en tamaño (escalables). Como cada decisión que se toma en el desarrollo, esta viene con sus propias desventajas: al hacer más complejas las peticiones, la base de código es más difícil de mantener en general, tanto del lado del cliente como del lado del servidor.
+ 
+Para evaluar si nos convieneusar REST, debemos tener en cuenta estas características.
