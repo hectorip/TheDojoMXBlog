@@ -13,11 +13,10 @@ header:
 
 Hemos venido hablando de las características que componen a un sistema REST. En el último artículo [hablamos de la arquitectura cliente-servidor](/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html). Esta es la primera característica fundamental de un sistema REST. Ahora pasemos a la siguiente caractarística-limitante que Thomas Fielding establece para los sistemas REST: **conexión sin estado**.
 
-## ¿A qué nos referimos con "el estado"?
+## ¿Qué es el estado de un sistema?
 
 El estado de una aplicación son todos los datos que usa para operar en un momento determinado.
-Como ejemplo podemos pensar en una aplicación de ventas en línea. El estado de esta aplicación, para un usuario específico son sus datos de identificación, su carrito de compras y los productos que ha estado viendo o que tiene en su lista de deseos.
-
+Como ejemplo podemos pensar en una aplicación de ventas en línea. El estado de esta aplicación, para un usuario específico son sus datos de identificación, su bolsa de compras y los productos que ha estado viendo o que tiene en su lista de deseos, así como datos que no son identificables directamente desde la interfaz de usuario como los tokens de sesión, su historial de visita de las páginas y productos (piensa en Amazon) y los productos que ha comprado anteriormente en esta página.
 
 ## Conexión sin estado
 
