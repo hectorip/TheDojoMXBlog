@@ -1,10 +1,10 @@
 ---
 title: "Entendiendo REST: conexión sin estado"
-date: 2019-07-05
+date: 2019-08-03
 author: Héctor Patricio
 tags: REST stateless thomas-fielding
 comments: true
-excerpt: "¿Cómo mantener la información entre diferentes peticiones en un sistema REST?"
+excerpt: "¿Cómo mantener la información entre peticiones en un sistema REST? Entendamos las ventajas y desventajas"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1564879566/nick-hillier-yD5rv8_WzxA-unsplash_cthqzt.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1564879566/nick-hillier-yD5rv8_WzxA-unsplash_cthqzt.jpg
