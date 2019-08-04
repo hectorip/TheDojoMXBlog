@@ -16,15 +16,18 @@ Hemos venido hablando de las características que componen a un sistema REST. En
 ## ¿Qué es el estado de un sistema?
 
 El estado de una aplicación son todos los datos que usa para operar en un momento determinado.
-Como ejemplo podemos pensar en una aplicación de ventas en línea. El estado de esta aplicación, para un usuario específico son sus datos de identificación, su bolsa de compras y los productos que ha estado viendo o que tiene en su lista de deseos, así como datos que no son identificables directamente desde la interfaz de usuario como los tokens de sesión, su historial de visita de las páginas y productos (piensa en Amazon) y los productos que ha comprado anteriormente en esta página. Todos estos datos necesarios para operar tanto a nivel interno como para la interfaz de usuario son el estado de la aplicación para este usuario. **Puedes entender el estado como el contexto de una aplicación.**
 
-Todas las aplicaciones y programas usables tienen uno. Entonces, ¿a qué nos referimos con conexiones sin estado?
+Como ejemplo podemos pensar en una aplicación de ventas en línea. El estado de esta aplicación, para un usuario específico son sus datos de identificación, su bolsa de compras y los productos que ha estado viendo o que tiene en su lista de deseos, así como datos que no son identificables directamente desde la interfaz de usuario como los tokens de sesión, su historial de visita de las páginas y productos (piensa en Amazon) y los productos que ha comprado anteriormente en esta página.
+
+Todos estos datos necesarios para operar tanto a nivel interno como para la interfaz de usuario son el estado de la aplicación para este usuario. **Puedes entender el estado como el contexto de una aplicación**. Todas las aplicaciones y programas usables tienen uno. Entonces, ¿a qué nos referimos con conexiones sin estado?
 
 ## Conexión sin estado
 
 Dando por supuesto que estamos trabajando en un sistema con arquitectura de red client-servidor, las dos parte comparten la información (el estado) necesario para realizar las operaciones. La pregunta es: ¿cómo o en qué lado mantengo esta información? Damos por supuesto que el almacenamiento de información a largo plazo está guardada en el algún lado del servidor. Pero en el momento de la operación, ¿quién mantiene estos datos memoria operativa?
 
 En el ejemplo del que hablamos: ¿quién mantiene en memoria la bolsa de compras del usuario, el cliente (el navegador web) o el servidor? Cualquiera de los dos podría llevarlo a cabo. Veamos los dos casos, empecemos por una conexión que "recuerda" el estado.
+
+Imagínate la siguiente conversación:
 
 - Cliente(C): Vamos a empezar a trabajar con el usuario *hectorip*
 - Servidor(S): De acuerdo
@@ -35,9 +38,9 @@ En el ejemplo del que hablamos: ¿quién mantiene en memoria la bolsa de compras
 - C: hectorip quiere pagar
 - S: he cobrado a hectorip
 
-El tipo de conversación que acabamos de ver sería una conexión con estado: cada uno de los mensajes anteriores depende del mensaje anterior, para poder entender de que estábamos hablando. intenta leerla de regreso y lo notarás.
+El tipo de conversación que acabamos de ver sería una conexión con estado: cada uno de los mensajes anteriores depende del mensaje anterior, para poder entender de qué estábamos hablando. Intenta leerla de regreso y lo notarás.
 
-Ahora vemos cómo sería un conversación que no recuerda los mensajes anteriores:
+Ahora veamos cómo sería un conversación que no recuerda los mensajes anteriores:
 
 - Cliente: Dame la bolsa de compra de *hectorip*
 - Servidor(S): hectorip tiene estos 5 artículos en su bolsa
@@ -60,7 +63,7 @@ Pero también tiene desventajas. ¿Qué pasa si esta conversación se interrumpe
 
 Hablemos de las características de una conexión sin estado.
 
-Primeramente característica es que *no necesitamos* que la conexión a nivel de sesión de red sea persistente, es decir, que se mantenga un canal de comunicación abierto que pueda mantener en memoria la información de los procesos actuales. 
+La primera característica es que *no necesitamos* que la conexión a nivel de sesión de red sea persistente, es decir, que se mantenga un canal de comunicación abierto que pueda mantener en memoria la información de los procesos actuales. 
 
 Segundo, no podemos (ni debemos) asumir que el servidor mantendrá los datos del cliente automáticamente por medio de reconocer al cliente. En cada una de las peticiones que se hacen al servidor, **deben venir todos los datos necesarios para que el servidor mantenga realice la operación**, no se puede confiar en que las peticiones anteriores transfirieron esa información y no es necesario repetirla.
 
