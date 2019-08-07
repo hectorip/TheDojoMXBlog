@@ -5,7 +5,16 @@ author: Héctor Patricio
 tags:
 categories: 
 comments: true
-excerpt: "Escribe aquí un buen resumen de tu artículo"
+excerpt: "Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo."
 header:
   overlay_image: #image
 ---
+
+
+## Qué es el caché
+
+## Ventajas del caché
+
+## Retos de cachear
+
+## Conclusión
