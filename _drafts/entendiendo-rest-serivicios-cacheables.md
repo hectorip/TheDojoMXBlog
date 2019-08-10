@@ -42,4 +42,4 @@ Memoria
 
 El caché es una parte de los sistemas REST que les permite funcionar mejor cuando tenemos bastante carga. Mantenerlo funcionando bien es un reto, pero los sistemas que quieren ser resilientes.
 
-En el siguiente artículo veremos la cuarta restricción de los sistemas REST: 
+En el siguiente artículo veremos la cuarta restricción de los sistemas REST: la interfaz uniforme, la más amplia de las restricciones, pero una de las más útiles.
