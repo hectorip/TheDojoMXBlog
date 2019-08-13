@@ -7,10 +7,12 @@ categories:
 comments: true
 excerpt: "Todos queremos aprender muchas cosas. Aprende a aprender con las técnicas de un experto en aprendizaje."
 header:
-  overlay_image: #image
+  overlay_image: ?
+  teaser: 
+  overlay_filet: rgba(0, 0, 0, 0.5)
 ---
 
-¿Cuántas cosas están en tu lista de aprendizaje? Todos tenemos una lista larga de temas, habilidades y curiosidades por aprender. Pero tenemos una cantidad igual de grande de obstáculos para lograrlo: la falta de acceso a recursos de aprendizaje, la falta de tiempo, falta de motivación, etc.
+**¿Cuántas cosas están en tu lista de aprendizaje?** Todos tenemos una lista larga de temas, habilidades y curiosidades por aprender. Pero tenemos una cantidad igual de grande de obstáculos para lograrlo: la falta de acceso a recursos de aprendizaje, la falta de tiempo, falta de motivación, dificultad en estructura etc.
 
 [Scott Young](https://www.scotthyoung.com/) el autor de [Ultralearning](https://www.scotthyoung.com/blog/ultralearning/) fue muy amable de proporcionarme una copia de revisión antes de que saliera el libro que [ya está a la venta](https://www.amazon.com.mx/Ultralearning-Master-Outsmart-Competition-Accelerate/dp/006285268X/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1565413014&sr=8-1), y en este artículo quiero sintetizar las principales técnicas que enseña para que puedas lograr aprender mejor.
 

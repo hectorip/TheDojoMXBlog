@@ -23,7 +23,7 @@ Todos estos datos necesarios para operar tanto a nivel interno como para la inte
 
 ## Conexión sin estado
 
-Dando por supuesto que estamos trabajando en un sistema con arquitectura de red client-servidor, las dos parte comparten la información (el estado) necesario para realizar las operaciones. La pregunta es: ¿cómo o en qué lado mantengo esta información? Damos por supuesto que el almacenamiento de información a largo plazo está guardada en el algún lado del servidor. Pero en el momento de la operación, ¿quién mantiene estos datos memoria operativa?
+Dando por supuesto que estamos trabajando en un sistema con arquitectura de red [cliente-servidor](/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html), las dos partes comparten la información (el estado) necesaria para realizar las operaciones. La pregunta es: ¿en qué lado mantengo esta información durante la operación? Damos por supuesto que el almacenamiento de información a largo plazo está localizado en algún lado del servidor. Pero en el momento de la operación, ¿quién mantiene estos datos memoria operativa?
 
 En el ejemplo del que hablamos: ¿quién mantiene en memoria la bolsa de compras del usuario, el cliente (el navegador web) o el servidor? Cualquiera de los dos podría llevarlo a cabo. Veamos los dos casos, empecemos por una conexión que "recuerda" el estado.
 
@@ -35,15 +35,15 @@ Imagínate la siguiente conversación:
 - S: Tiene estos 5 artículos guardados
 - C: Comprar todos los artículos de su bolsa
 - S: Ok, serán $500
-- C: hectorip quiere pagar
-- S: he cobrado a hectorip
+- C: el cliente quiere pagar
+- S: le he cobrado todo lo de su bolsa
 
-El tipo de conversación que acabamos de ver sería una conexión con estado: cada uno de los mensajes anteriores depende del mensaje anterior, para poder entender de qué estábamos hablando. Intenta leerla de regreso y lo notarás.
+El tipo de conversación que acabamos de ver sería una **conexión con estado**: cada uno de los mensajes depende del mensaje anterior para poder entender de qué estábamos hablando. Intenta leerla de regreso y lo notarás.
 
 Ahora veamos cómo sería un conversación que no recuerda los mensajes anteriores:
 
-- Cliente: Dame la bolsa de compra de *hectorip*
-- Servidor(S): hectorip tiene estos 5 artículos en su bolsa
+- C: Dame la bolsa de compra de *hectorip*
+- S: hectorip tiene estos 5 artículos en su bolsa
 - C: hectorip quiere comprar todos los artículos de su bolsa
 - S: Ok, serán $500 por todos los artículos de la bolsa de compra
 - C: hectorip quiere realizar un pago por $500 por los artículos en su bolsa de compras
@@ -54,10 +54,10 @@ Si revisamos la conversación anterior, podemos entender cada mensaje leído ind
 La primera conversación (conexión con estado) tiene algunas ventajas claras:
 
 - Los mensajes son más cortos
-- La conversación es fluída
+- La conversación es más fluída
 - Se transfiere menos información de un lado a otro
 
-Pero también tiene desventajas. ¿Qué pasa si esta conversación se interrumpe y se intenta retomar? Hay que empezar la conversación desde cero. ¿Qué pasa si el servidor, por algún error olvida de lo que estábamos hablando? Hay que reiniciar la conversación. ¿Qué pasa si quiero continuar la compra en otro servidor? Hay que reiniciar la conversación.
+Pero también tiene desventajas. ¿Qué pasa si esta conversación se interrumpe y se intenta retomar? *Hay que empezar la conversación desde cero.* ¿Qué pasa si el servidor, por algún error olvida de lo que estábamos hablando? *Hay que reiniciar la conversación.* ¿Qué pasa si quiero continuar la compra en otro servidor? *Hay que reiniciar la conversación con el nuevo servidor.*
 
 # Características de conexión sin estado
 
