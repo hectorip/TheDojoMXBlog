@@ -90,11 +90,11 @@ La siguiente imagen ilustra una técnica común para atender a muchos clientes.
 3. **Mayor carga en la red**. Como las peticiones son más complejas y generalmente contienen más información para poder recuperar el contexto efectivamente, el viaje de información en la red es mayor en tamaño.
 
 
-## Conexiones con estado
+## Conexiones que mantienen estado
 
-En los últimos años la mayoría de las conexiones que se levantan en programas creados con la arquitectura cliente-servidor son creados con este tipo de conexiones. Sin embargo, también se puede mantener una conexión con estado en la arquitectura cliente-servidor. Hay varias formas de lograr esto, pero la principal característica es que debe haber una manera de relacionar al cliente que está solicitando los servicios con el servidor que está atendiéndolo, por lo general la manera de hacerlo es con conexiones persistentes que se mantienen abiertas mientras el proceso dura.
+En los últimos años la mayoría de las conexiones que se levantan en programas creados con la arquitectura cliente-servidor son creados con conexiones que no mantienen el estado. Sin embargo, también se puede mantener una conexión con estado en la arquitectura cliente-servidor. Hay varias formas de lograr esto, pero la principal característica es que debe haber una manera de relacionar al cliente que está solicitando los servicios con el servidor que está atendiéndolo, por lo general la manera de hacerlo es con conexiones persistentes que se mantienen abiertas mientras el proceso de uso de los servicios dura.
 
-Esto viene con sus propios retos, pero tecnologías actuales como Elixir, Phoenix y los Websockets hacen el camino más fácil.
+Esto viene con sus propios retos, pero tecnologías actuales como [Elixir](/2019/06/02/por-que-deberias-aprender-elixir.html), Phoenix y los WebSockets hacen el camino más fácil. En otro post hablaremos de cómo podemos aprovechar esta arquitectura y en qué casos nos conviene.
 
 ## Conclusión
 
