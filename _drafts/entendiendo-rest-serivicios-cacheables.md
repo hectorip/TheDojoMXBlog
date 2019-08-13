@@ -29,17 +29,18 @@ Hablaremos más adelante de estas preguntas en nuestro propio contexto.
 
 Permite responder más rápidamente.
 Menos procesamiento.
-Sistemas más escalables y resilientes.
+Sistemas más escalables y resistentes.
 
 ## Retos de cachear
 
-> Quote
+> Los problemas de la computación.
+
 Vida del caché.
 Frescura del caché.
 Memoria
 
 ## Conclusión
 
-El caché es una parte de los sistemas REST que les permite funcionar mejor cuando tenemos bastante carga. Mantenerlo funcionando bien es un reto, pero los sistemas que quieren ser resilientes.
+El caché es una parte de los sistemas REST que les permite funcionar mejor cuando tenemos bastante carga. Mantenerlo funcionando bien es un reto, pero los sistemas que quieren ser escalables y resistentes.
 
 En el siguiente artículo veremos la cuarta restricción de los sistemas REST: la interfaz uniforme, la más amplia de las restricciones, pero una de las más útiles.

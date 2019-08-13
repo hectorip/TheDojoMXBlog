@@ -101,4 +101,4 @@ Sin duda todas estas razones son suficientes para intentarlo por lo menos.
 Esto a su vez, tendrá efectos en otros campos de tu vida. 
 **¿Quién te podrías volver?**
 
-Puedes comprar el libro aquí: 
+Puedes comprar el libro en [Amazon](). 
