@@ -15,8 +15,6 @@ Pero para programar con eficacia no necesitas saber muchas matemáticas, de hech
 
 # Matemáticas Básicas
 
-# Lógica (Matemáticas Discretas)
+# Lógica (Matemáticas discretas)
 
 # Matemáticas avanzadas y especificas
-
-# Conclusión
