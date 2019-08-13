@@ -6,7 +6,8 @@ En este blog hablamos de:
 - Lenguajes de programación
 - Desarrollo de productos digitales
 - Análisis de datos
-- Inteligencia artifical
+- Inteligencia artificial
+- Aprendizaje en general (enfocado en programación)
 
 ## Acerca de este blog
 
@@ -18,7 +19,7 @@ Personas interesadas en el desarrollo de software en general, pero sobre todo qu
 
 ### Publicaciones
 
-Este es un blog open source. Si quieres participar con un artículo manda un Pull Request. Serán considerados los artículos con las siguientes características:
+Este es un blog open source. Si quieres participar con un artículo manda un PR. Serán considerados los artículos con las siguientes características:
 
 - Tienen información útil, que sea interesante para el público de este blog.
 - Información práctica, que se pueda aplicar.
