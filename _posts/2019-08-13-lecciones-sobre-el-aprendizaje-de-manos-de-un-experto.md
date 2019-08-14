@@ -1,6 +1,6 @@
 ---
 title: "Lecciones sobre el aprendizaje de manos de un experto"
-date: 2019-08-09
+date: 2019-08-13
 author: Héctor Patricio
 tags:
 categories: 
