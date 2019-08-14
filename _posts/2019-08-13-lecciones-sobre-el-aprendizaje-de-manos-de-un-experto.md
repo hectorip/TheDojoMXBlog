@@ -2,14 +2,14 @@
 title: "Lecciones sobre el aprendizaje de manos de un experto"
 date: 2019-08-13
 author: Héctor Patricio
-tags:
+tags: aprendizaje libros lectura
 categories: 
 comments: true
 excerpt: "Todos queremos aprender muchas cosas. Aprende a aprender con las técnicas de un experto en aprendizaje."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1565702060/annie-spratt-kZO9xqmO_TA-unsplash_swtrj6.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1565702060/annie-spratt-kZO9xqmO_TA-unsplash_swtrj6.jpg
-  overlay_filet: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 > ¿En qué te convertirías si aprendieras todo lo que deseas?
