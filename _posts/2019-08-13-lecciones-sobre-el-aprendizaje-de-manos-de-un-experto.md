@@ -20,12 +20,12 @@ header:
 
 Pero primero, ¿quién es Scott Young y por qué deberíamos escucharlo? Se hizo famoso por estudiar el currículum completo (o casi completo) del MIT para Computer Science que normalmente se cursa en 4 años **en sólo 1**. Este proyecto ocupaba todo su tiempo, un montón de concentración y técnicas para aprender. Aquí es donde empezó a desarrollar el concepto que presenta en el libro (me tomaré la libertad de traducirlo): Ultra-aprendizaje. A partir de ahí ha aprendido muchas más cosas con el mismo estilo agresivo de aprendizaje y ha ayudado a otros a hacer lo mismo.
 
-Un proyecto de ultra-aprendizaje se define como un periodo de concentración intensa que permite aprender de manera acelerada y profunda el tema del que hayas elegido. Para realizar estos proyectos, Scott propone ocho principios, tomando como base lo que aprendido de otras personas que han realizado proyectos similares a los de él pero también los estudios más recientes sobre el tema del aprendizaje.
+Un proyecto de ultra-aprendizaje se define como un periodo de concentración intensa que permite aprender de manera acelerada y profunda el tema que hayas elegido. Para realizar estos proyectos, Scott propone **nueve principios**, tomando como base lo que aprendió de otras personas que han realizado proyectos similares a los de él pero también los estudios más recientes sobre el tema.
 
 Este libro te servirá tanto si eres tú el que desea aprender como si quieres enseñarle a otras personas.
-Veamos los ocho principios necesarios para realizar tu propio proyecto de ultra-aprendizaje.
+Veamos los nueve principios necesarios para realizar tu propio proyecto de ultra-aprendizaje.
 
-## Meta-aprendizaje
+## 1: Meta-aprendizaje
 
 Podemos pensar en este principio como la etapa de planeación. Tienes que investigar cómo esto que quieres aprender lo han aprendido otras personas, que ruta de aprendizaje han seguido, cuáles eran sus conocimientos previos, cuánto les tomó, etc. Para esto puedes investigar en internet o incluso conseguir una entrevista con una persona que tenga los conocimientos que tú quieres.Todo lo que puedas obtener de esta información es útil.
 
@@ -33,7 +33,7 @@ También tienes que buscar y entender la estructura del tema que quieres aprende
 
 Es entonces que tienes que reunir todos los recursos posibles de aprendizaje y **trazar un plan, un mapa de aprendizaje**. En este periodo decidirás cuánto tiempo vas a dedicarle al proyecto y hasta dónde llegarás. Muy importante porque un poco de investigación te puede ahorrar mucho tiempo de ejecución. Este principio te invita a reducir al máximo posible lo que no sabes que no sabes sobre el tema.
 
-## Enfoque
+## 2: Enfoque
 
 Este principio establece que para poder aprender efectivamente antes tenemos que agudizar nuestra capacidad de concentrarnos en un tema. 
 
@@ -47,7 +47,7 @@ El enfoque puede trabajarse en tres capas diferentes:
 Muchos autores coinciden en que la calidad y capacidad par concentrarse es uno de las claves para poder progresar en cualquier cosa, no sólo en el aprendizaje.
 
 
-## Aprendizaje directo
+## 3: Aprendizaje directo
 
 > Aquel que puede ir a la fuente no va sólo por la jarra.
 
@@ -57,7 +57,7 @@ Practicar la habilidad directamente o poner en acción el conocimiento hará que
 
 Este principio es muy importante y muchos de nosotros lo hemos vivido en nuestra experiencia escolar: nada de lo que no es enseñaron es aplicable en el mundo real porque las habilidades necesarias para realizar el trabajo de verdad son muy diferentes a lo que se ve en los libros. Aunque el conocimiento adquirido puede servir como base, **la práctica hace al maestro**.
 
-## Ensayo
+## 4: Ensayo
 
 Esta parte es una de las que a las personas en general menos le gusta: practicar o ensayar partes de la habilidad que no sean difíciles, laboriosas o aburridas.
 
@@ -67,7 +67,7 @@ Esto incluye que descompongas la habilidad en diferentes sub-procesos que puedan
 
 Esto es conveniente porque al trabajar sobre una parte específica del proceso completo puedes liberar recursos mentales para mejorar de manera más profunda y significativa en esa parte de la habilidad.
 
-## Recuperación de la información
+## 5: Recuperación de la información
 
 El principio de "retrieval" consiste en intentar poner en práctica y ver si de verdad entendiste lo que acabas de aprender mediante pruebas reales, por ejemplo: usar las palabras de un nuevo idioma en conversación, contestar preguntas de un examen o usar una nueva técnica aprendida para programar.
 
@@ -75,7 +75,7 @@ Esto ayudará a que recuerdes mejor lo aprendido y a que no te quedes con la sen
 
 Este principio pone de relieve algo: es mucho más incómodo "probarse" a uno mismo mediante imponerse algún obstáculo, es una fuente de cansancio e incomodidad mental, lo cuál nos puede dejar con la sensación de que no estamos aprendiendo o avanzando mucho. Pero estudios sobre esto demuestran que aunque sólo leer puede dejar la sensación de que entendimos y aprendimos mucho, la forma más efectiva de aprender es poner a prueba el conocimiento y la sensación de aprendizaje no está directamente ligada a cuánto aprendimos de verdad.
 
-## Retroalimentación
+## 6: Retroalimentación
 
 Una forma importante de mejorar y aprender es tener a alguien o algo que te ayude a encontrar lo que está fallando en tu desempeño del tema de lo que estés aprendiendo.
 
@@ -89,7 +89,7 @@ Muy probablemente todos hemos experimentado este tipo de comentarios: "Eres muy 
 
 Para que la retroalimentación sea útil debe proveer información que guíe las siguientes etapas de aprendizaje. Para lograr esto debe ser muy específico y si es posible decirte cómo mejorar en ese aspecto.
 
-## Retención
+## 7: Retención
 
 No deberíamos echar agua en una bote con fugas. De igual manera, no vale la pena que leas y aprendas muchas cosas que después no podrás recordar porque las olvidaste rápidamente.
 
@@ -101,15 +101,15 @@ Scott propone varios métodos:
 
 1. Repetición espaciada. Es un método que consiste en repasar la información un poco de tiempo después de haberla estudiado o aprendido por primera vez y repetir el proceso con cada vez más tiempo de espacio.
 
-2. Automatización
+2. Automatización. Cuando aprendemos algo a tal grado que podamos decir que tenemos automatizada la habilidad (como andar en bicicleta), es muy poco probable que lo olvidemos.
 
-## Intuición
+## 8: Intuición
 
 La intuición es el producto una gran cantidad de experiencia acumulada. Para verdaderamente entender algo tenemos que desarrollar nuestra intuición en el tema. ¿Qué podemos hacer para desarrollarla?
 
 En esta sección se tratan temas como "la técnica de Feynman" que establece una manera práctica de desarrollar un entendimiento profundo de un tema de tu interés.
 
-## Experimentación
+## 9: Experimentación
 
 El verdadero conocimiento no se queda en llegar al punto en que otros te dijeron que debías llegar sino en ir más allá.
 
