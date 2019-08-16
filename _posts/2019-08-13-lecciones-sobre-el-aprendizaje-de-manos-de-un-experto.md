@@ -109,6 +109,8 @@ La intuición es el producto una gran cantidad de experiencia acumulada. Para ve
 
 En esta sección se tratan temas como "la técnica de Feynman" que establece una manera práctica de desarrollar un entendimiento profundo de un tema de tu interés.
 
+La técnica de Feynman consiste en llegar a las soluciones de los problemas y las explicaciones por uno mismo, en vez de quedarnos con la explicación de los maestros o de los libros.de tal forma que parezca que la solución viene
+
 ## 9: Experimentación
 
 El verdadero conocimiento no se queda en llegar al punto en que otros te dijeron que debías llegar sino en ir más allá.
@@ -137,3 +139,4 @@ Esto a su vez, tendrá efectos en otros campos de tu vida.
 > **¿Quién te podrías volver?**
 
 Puedes comprar el libro en [Amazon](https://www.amazon.com.mx/Ultralearning-Outsmart-Competition-Accelerate-English-ebook/dp/B07K6MF8MD/). 
+
