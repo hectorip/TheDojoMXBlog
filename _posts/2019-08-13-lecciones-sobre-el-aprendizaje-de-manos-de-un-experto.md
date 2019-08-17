@@ -3,7 +3,6 @@ title: "Lecciones sobre el aprendizaje de manos de un experto"
 date: 2019-08-13
 author: Héctor Patricio
 tags: aprendizaje libros lectura
-categories: 
 comments: true
 excerpt: "Todos queremos aprender muchas cosas. Aprende a aprender con las técnicas de un experto en aprendizaje."
 header:
@@ -99,18 +98,33 @@ En este principio Scott explica que tenemos que aprender y reconocer por qué ol
 
 Scott propone varios métodos:
 
-1. Repetición espaciada. Es un método que consiste en repasar la información un poco de tiempo después de haberla estudiado o aprendido por primera vez y repetir el proceso con cada vez más tiempo de espacio.
+1. **Repetición espaciada**. Es un método que consiste en repasar la información un poco de tiempo después de haberla estudiado o aprendido por primera vez y repetir el proceso con cada vez más tiempo de espacio.
 
-2. Automatización. Cuando aprendemos algo a tal grado que podamos decir que tenemos automatizada la habilidad (como andar en bicicleta), es muy poco probable que lo olvidemos.
+2. **Automatización**. Cuando aprendemos algo a tal grado que podamos decir que tenemos automatizada la habilidad (como andar en bicicleta), es muy poco probable que lo olvidemos.
+
+3. **Sobre-aprendizaje**. Practicar más allá de lo que es requerido para volverse bueno en algo o competente hará que las cosas sean mucho más difíciles de olvidar. Esto se puede hacer practicando hasta el cansancio una actividad clave o aprendiedo algo más difícil que construya sobre la actividad principal, por ejemplo: aprender y practicar cálculo diferencial hará que sobre-aprendas álgebra.
+
+4. **Mnemónicos**. Estas es un técnica que consiste en crear imágenes vívidas o palabras relacionadas con lo que estemos buscando aprender para poder recordarlo. Los mejores memoristas del mundo aplican esta técnica para poder recordar grandes cantidades de información en poco tiempo.
+
+Poder retener información es uno de los requisitos para que tu proyecto de ultra-aprendizaje valga la pena.
 
 ## 8: Intuición
 
 La intuición es el producto una gran cantidad de experiencia acumulada. Para verdaderamente entender algo tenemos que desarrollar nuestra intuición en el tema. ¿Qué podemos hacer para desarrollarla?
 
-En esta sección se tratan temas como "la técnica de Feynman" que establece una manera práctica de desarrollar un entendimiento profundo de un tema de tu interés.
+En esta sección del libro se habla de cómo personas como Richard Feynman parecen hacer magia al resolver problemas de física y de matemáticas. La principal característica de Feynman usada para resolver los problemas es su capacidad de identificar _los principios que están en juego_, además de la gran cantidad de información almacenada obtenida de otros problemas resueltos con anterioridad.
 
-La técnica de Feynman consiste en llegar a las soluciones de los problemas y las explicaciones por uno mismo, en vez de quedarnos con la explicación de los maestros o de los libros.de tal forma que parezca que la solución viene
+¿Cómo puedes desarrollar una intuición similar?
 
+1. Resolver problemas difíciles. Muchas veces huímos de los problemas que nos parecen demasiado difíciles para nosotros, pero resolver problemas que rebasen nuestra habilidad puede darnos un entendimiento muy profundo del tema tratado.
+
+2. Comprueba la información para entenderla. No te quedes sólamente con la explicación del libro, sino trata de demostrar que lo que estás aprendiendo es cierto.
+
+3. Usa ejemplos concretos. Cuando trates con conceptos o temas abstractos, desde el principio establece un ejemplo al que le puedas ir aplicando los puntos que se van explicando. Esta concreción permitirá desarrollar un mejor entendimiento del tema.
+
+4. No te engañes a ti mismo. Cuando te falta conocimiento sobre un tema, generalmente también te falta conocimiento para saber qué tan hábil eres. Esto quiere decir que el que no tengas dudas sobre un tema significa que lo sabes todo, sino más bien que sabes muy poco. Hacer muchas preguntas es una manera de hacerle frente a este problema, aunque parezcan tontas.
+
+Una forma muy efectiva de desarrollar un entendimiento real: la técnica de Feynman. Esta consiste en intentar explicar el problema, solución o concepto de la manera más clara posible como para alguien que nunca ha visto nada relacionado con el tema.
 ## 9: Experimentación
 
 El verdadero conocimiento no se queda en llegar al punto en que otros te dijeron que debías llegar sino en ir más allá.
