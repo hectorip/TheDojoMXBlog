@@ -115,11 +115,15 @@ La técnica de Feynman consiste en llegar a las soluciones de los problemas y la
 
 El verdadero conocimiento no se queda en llegar al punto en que otros te dijeron que debías llegar sino en ir más allá.
 
-Además, mientras más aprendas de algo menos guía podrás recibir ya que hay menos personas y recursos en ese nivel. Para experimentar en tu aprendizaje y resultados puedes intentar tres cosas: 
+Además, mientras más aprendas de algo menos guía podrás recibir ya que hay menos personas y recursos en ese nivel, por lo que es algo requerido aprender a experimentar con maneras de generar conocimiento.
+ 
+Para experimentar en tu aprendizaje y resultados puedes intentar tres cosas: 
 
-1. Variar los recursos de aprendizaje.
-2. Experimentar la técnica de aprendizaje.
-3. Experimentar con tu estilo de trabajo.
+1. Variar los **recursos de aprendizaje**.
+2. Experimentar la **técnica de aprendizaje**.
+3. Experimentar con tu **estilo de trabajo y aprendizaje**.
+
+Experimentar te permitirá convertirte en verdadero experto en el tema que estés queriendo dominar.
 
 ## Conclusión
 
@@ -139,4 +143,3 @@ Esto a su vez, tendrá efectos en otros campos de tu vida.
 > **¿Quién te podrías volver?**
 
 Puedes comprar el libro en [Amazon](https://www.amazon.com.mx/Ultralearning-Outsmart-Competition-Accelerate-English-ebook/dp/B07K6MF8MD/). 
-
