@@ -1,10 +1,10 @@
 ---
-title: "Lecciones sobre el aprendizaje de manos de un experto"
+title: "Ultralearning: el arte del aprendizaje profundo"
 date: 2019-08-13
 author: Héctor Patricio
-tags: aprendizaje libros lectura
+tags: aprendizaje libros lectura reseñas
 comments: true
-excerpt: "Todos queremos aprender muchas cosas. Aprende a aprender con las técnicas de un experto en aprendizaje."
+excerpt: "Todos queremos aprender muchas cosas. Aprende un método que te permitirá mejorar tus habilidades para adquirir conocimiento."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1565702060/annie-spratt-kZO9xqmO_TA-unsplash_swtrj6.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1565702060/annie-spratt-kZO9xqmO_TA-unsplash_swtrj6.jpg
@@ -17,7 +17,7 @@ header:
 
 [Scott Young](https://www.scotthyoung.com/) el autor de [Ultralearning](https://www.scotthyoung.com/blog/ultralearning/) fue muy amable al proporcionarme una copia de revisión antes de que saliera el libro que [ya está a la venta](https://www.amazon.com.mx/Ultralearning-Master-Outsmart-Competition-Accelerate/dp/006285268X/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1565413014&sr=8-1), y en este artículo quiero sintetizar las principales técnicas que enseña para que puedas lograr aprender mejor.
 
-Pero primero, ¿quién es Scott Young y por qué deberíamos escucharlo? Se hizo famoso por estudiar el currículum completo (o casi completo) del MIT para Computer Science que normalmente se cursa en 4 años **en sólo 1**. Este proyecto ocupaba todo su tiempo, un montón de concentración y técnicas para aprender. Aquí es donde empezó a desarrollar el concepto que presenta en el libro (me tomaré la libertad de traducirlo): Ultra-aprendizaje. A partir de ahí ha aprendido muchas más cosas con el mismo estilo agresivo de aprendizaje y ha ayudado a otros a hacer lo mismo.
+Pero primero, ¿quién es Scott Young y por qué deberíamos escucharlo? Se hizo famoso por estudiar el temario completo (o casi completo) del MIT para Computer Science que normalmente se cursa en 4 años **en sólo 1**. Este proyecto ocupaba todo su tiempo, un montón de concentración y técnicas para aprender. Aquí es donde empezó a desarrollar el concepto que presenta en el libro (me tomaré la libertad de traducirlo): Ultra-aprendizaje. A partir de ahí ha aprendido muchas más cosas con el mismo estilo agresivo de aprendizaje y ha ayudado a otros a hacer lo mismo.
 
 Un proyecto de ultra-aprendizaje se define como un periodo de concentración intensa que permite aprender de manera acelerada y profunda el tema que hayas elegido. Para realizar estos proyectos, Scott propone **nueve principios**, tomando como base lo que aprendió de otras personas que han realizado proyectos similares a los de él pero también los estudios más recientes sobre el tema.
 
@@ -36,7 +36,7 @@ Es entonces que tienes que reunir todos los recursos posibles de aprendizaje y *
 
 Este principio establece que para poder aprender efectivamente antes tenemos que agudizar nuestra capacidad de concentrarnos en un tema. 
 
-El enfoque puede trabajarse en tres capas diferentes:
+El enfoque puede trabajarse en tres momentos diferentes:
 
 1. Empezar a enfocarse en algo
 2. Mantener el enfoque
@@ -45,12 +45,13 @@ El enfoque puede trabajarse en tres capas diferentes:
 
 Muchos autores coinciden en que la calidad y capacidad par concentrarse es uno de las claves para poder progresar en cualquier cosa, no sólo en el aprendizaje.
 
+En el libro se dan sugerencias prácticas para poder mejorar en las tres etapas de enfoque.
 
 ## 3: Aprendizaje directo
 
 > Aquel que puede ir a la fuente no va sólo por la jarra.
 
-Es bueno aprender cosas leyendo, pero es mucho mejor aprenderlas aplicando lo que leemos o practicando directamente. Si quieres aprender a programar tienes que crear programas reales que funcionen. Si quieres aprender un idioma tienes que hablar o comunicarte con otras personas en ese idioma. Haciendo esto aprenderás mucho más rápido de lo que harías sólamente leyendo libros que relaten la experiencia de otros.
+Es bueno aprender cosas leyendo, pero es mucho mejor aprenderlas aplicando lo que leemos o practicando directamente. Si quieres aprender a programar tienes que crear programas reales que funcionen. Si quieres aprender un idioma tienes que hablar o comunicarte con otras personas en ese idioma. Haciendo esto aprenderás mucho más rápido de lo que harías sólamente leyendo libros que relaten la experiencia de otros, o usando Duolingo.
 
 Practicar la habilidad directamente o poner en acción el conocimiento hará que este sea más profundo, útil y que lo recuerdes mejor.
 
@@ -58,7 +59,7 @@ Este principio es muy importante y muchos de nosotros lo hemos vivido en nuestra
 
 ## 4: Ensayo
 
-Esta parte es una de las que a las personas en general menos le gusta: practicar o ensayar partes de la habilidad que no sean difíciles, laboriosas o aburridas.
+Esta parte es una de las que a las personas en general menos le gusta: practicar o ensayar partes de la habilidad que sean difíciles, laboriosas o aburridas.
 
 Muchas veces nuestras habilidades están topadas o detenidas por cierta parte del proceso, como si fuera un embudo deteniendo el flujo de líquido. Para acabar con esto hay que practicar con la parte más incómoda de la habilidad.
 
@@ -80,7 +81,7 @@ Una forma importante de mejorar y aprender es tener a alguien o algo que te ayud
 
 El ejemplo que Scott usa de una persona que aprendió a hablar en público como su proyecto de ultra-aprendizaje y que recibía retroalimentación de un mentor que le decía exactamente dónde fallaba. Al atacar estos puntos que una persona con más experiencia le marcaba pudo llegar a ser un orador de clase mundial en muy poco tiempo.
 
-A nadie nos gusta escuchar nuestras fallas, pero es una parte importantísima de aprender de manera efectiva.
+A nadie nos gusta escuchar nuestras fallas, pero es una parte  muy importante de aprender de manera efectiva.
 
 Pero no todo tipo de retroalimentación es útil. Cuando esta información es sobre alguna cualidad personal o sobre tu persona directamente, en general es más perjudicial que benéfico, puede llevarte hasta a abandonar la habilidad que estabas intentando aprender.
 
@@ -102,7 +103,7 @@ Scott propone varios métodos:
 
 2. **Automatización**. Cuando aprendemos algo a tal grado que podamos decir que tenemos automatizada la habilidad (como andar en bicicleta), es muy poco probable que lo olvidemos.
 
-3. **Sobre-aprendizaje**. Practicar más allá de lo que es requerido para volverse bueno en algo o competente hará que las cosas sean mucho más difíciles de olvidar. Esto se puede hacer practicando hasta el cansancio una actividad clave o aprendiedo algo más difícil que construya sobre la actividad principal, por ejemplo: aprender y practicar cálculo diferencial hará que sobre-aprendas álgebra.
+3. **Sobre-aprendizaje**. Practicar más allá de lo que es requerido para volverse bueno en algo o competente hará que las cosas sean mucho más difíciles de olvidar. Esto se puede hacer practicando hasta el cansancio una actividad clave o aprendiendo algo más difícil que construya sobre la actividad principal, por ejemplo: aprender y practicar cálculo diferencial hará que sobre-aprendas álgebra.
 
 4. **Mnemónicos**. Estas es un técnica que consiste en crear imágenes vívidas o palabras relacionadas con lo que estemos buscando aprender para poder recordarlo. Los mejores memoristas del mundo aplican esta técnica para poder recordar grandes cantidades de información en poco tiempo.
 
@@ -143,7 +144,7 @@ Experimentar te permitirá convertirte en verdadero experto en el tema que esté
 
 > Completar un proyecto de este tamaño te demuestra que tienes la habilidad de mejorarte y de sacarle buen provecho a tu vida. Te da la confianza de que puedes lograr cosas ambiciosas.
 
-Esta es una de las frases más inspiradoras del libro y creo que te da buenos motivos para empezar a pensar en tus propio proyecto de ultra-aprendizaje, además de los beneficios asociados al tema mismo que quieras aprender: 
+Esta es una de las frases más inspiradoras del libro y creo que te da buenos motivos para empezar a pensar en tus propio proyecto de ultra-aprendizaje, además de los beneficios asociados al tema mismo que quieras aprender:
 
 - ¿Te ayudará a conseguir un mejor trabajo o puesto?
 - ¿Podrás ser más útil a tu familia, comunidad o amigos?
@@ -153,7 +154,10 @@ Sin duda todas estas razones son suficientes para intentarlo por lo menos.
 
 > "Hacer cosas difíciles, sobre todo cosas que tienen que ver con aprender, puede crecer el concepto que tienes de ti mismo".
 
-Esto a su vez, tendrá efectos en otros campos de tu vida. 
+Esto a su vez, tendrá efectos en otros campos de tu vida.
+
 > **¿Quién te podrías volver?**
 
-Puedes comprar el libro en [Amazon](https://www.amazon.com.mx/Ultralearning-Outsmart-Competition-Accelerate-English-ebook/dp/B07K6MF8MD/). 
+¡A aprender!
+
+Puedes comprar el libro en [Amazon](https://www.amazon.com.mx/Ultralearning-Outsmart-Competition-Accelerate-English-ebook/dp/B07K6MF8MD/).
