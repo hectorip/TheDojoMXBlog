@@ -4,9 +4,11 @@ date: 2019-08-18
 author: Héctor Patricio
 tags: matemáticas maths polya books libros
 comments: true
-excerpt: "¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? G. Polya escribió un libro completo sobre eso."
+excerpt: "¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 1928."
 header:
-  overlay_image: 
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1566189999/91gQt6wB-KL_t7svba.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1566189999/91gQt6wB-KL_t7svba.jpg
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 George Polya fue uno de los matemáticos más prolíficos del Siglo XX, un matemático de primera clase (de esos que descubren e inventan cosas) pero que mantenía un interés por la educación y le enseñanza de las matemáticas, algo muy peculiar.
@@ -15,7 +17,25 @@ Polya escribió varios libros, entre ellos está "How to solve it" un tratado de
 
 Todos los desarrolladores nos hemos topado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolverlos. Las técnicas explicadas por Polya te pueden ayudar a desarrollar tus capacidades de resolución de problemas.
 
-Empecemos por hablar de los problemas de los que Polya habla en su libro.
+Empecemos por hablar de la estructura los problemas de los que Polya habla en su libro.
+
+## Estructura de un problema
+
+Polya define un problema un enunciado o texto con tres partes:
+
+1. **Los datos**. Es la información que tenemos disponible para resolver el problema.
+2. **Las condiciones**. Describen la relación que existe entre los datos y la solución, pero también la forma, los límites y características de la solución buscada.
+3. **La incógnita o lo desconocido**. Es la información que buscamos que cumple con las condiciones del problema.
+
+Es muy importante conocer la composición de un problema para poder aplicar las técnicas descritas en el libro. Cualquier problema matemático debería cumplir con estas características, pero no todos los problemas de la vida real cumplen con esta estructura tal y como la necesitamos o esperamos, por lo que deberíamos ser capaces de entender los problemas que se son presentan y estructurarlos lo mejor posible según esta definición.
+
+Para resolver un problema deberías ser capaz de contestar las siguientes preguntas:
+
+1. ¿Qué estoy buscando? ¿Cuál es la incógnita?
+2. ¿Qué datos tengo disponibles?
+3. ¿Qué condiciones tiene que cumplir la incógnita? ¿Qué relación hay entre los datos y la incógnita?
+
+Ahora hablemos de de los tipos de problemas de los que Polya hace distinción.
 
 ## Tipos de problemas
 
@@ -37,7 +57,6 @@ Varios de estos problemas suenan demasiado simples porque ya los tenemos bien tr
 - ¿Qué lenguaje de programación debo usar para un sistema que estará emebebido en un millón de dispositivos electrónicos mandando notificaciones críticas cada segundo?
 - ¿Qué sistema de comunicación puedo usar entre dos celulares que no cuentan con una conexión confiable a internet?
 
-
 ### 2. Problemas para demostrar
 
 > "Demuestre que la línea de mayor longitud que toca dos puntos de una circunferencia pasa por el centro del círculo". 
@@ -49,9 +68,6 @@ Para un desarrollador podríamos poner problemas para demostrar como:
 - "Demuestra que es imposible un _deadlock_ con el algoritmo usado actualmente".
 - "¿Cómo sabemos que evitamos todas las condiciones de carrera en el sistema actual?"
 - "Comprueba que el máximo tiempo que puede tardar el sistema en responder es menor que X"
-
-
-## Estructura de un problema
 
 ### Problemas matemáticos, acertijos y problemas de la vida real
 
@@ -65,4 +81,4 @@ Para un desarrollador podríamos poner problemas para demostrar como:
 
 ## Ejemplos?
 
-## Palabras finales
+## Para recordar
