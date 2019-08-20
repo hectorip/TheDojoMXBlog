@@ -25,7 +25,7 @@ Polya define un problema un enunciado o texto con tres partes:
 
 1. **Los datos**. Es la información que tenemos disponible para resolver el problema.
 2. **Las condiciones**. Describen la relación que existe entre los datos y la solución, pero también la forma, los límites y características de la solución buscada.
-3. **La incógnita o lo desconocido**. Es la información que buscamos que cumple con las condiciones del problema.
+3. **La incógnita o lo desconocido**. Es la información que buscamos y que cumple con las condiciones del problema.
 
 Es muy importante conocer la composición de un problema para poder aplicar las técnicas descritas en el libro. Cualquier problema matemático debería cumplir con estas características, pero no todos los problemas de la vida real cumplen con esta estructura tal y como la necesitamos o esperamos, por lo que deberíamos ser capaces de entender los problemas que se son presentan y estructurarlos lo mejor posible según esta definición.
 
@@ -39,7 +39,7 @@ Ahora hablemos de de los tipos de problemas de los que Polya hace distinción.
 
 ## Tipos de problemas
 
-A través de todo el libro se hace la distinción entre dos tipos diferentes de problemas que hay que tratar de manera diferente para poder resolverlos de mejor manera, aunque la estructura sea la misma.
+Polya hace la distinción entre dos tipos diferentes de problemas que hay que tratar de manera ligeramente diferente para poder resolverlos de mejor manera, aunque la estructura sea la misma.
 
 ### 1. Problema para encontrar
 
@@ -51,11 +51,12 @@ Como programadores podríamos tener estos ejemplos de este tipo de problemas:
 - ¿A cuántos usuarios simultáneos podré atender con este servidor con 4GB de RAM?
 - ¿Cuánto tiempo va a tardar en subir mi millón de archivos si lo paralelizo? ¿Cuánto va a tardar si no lo paralelizo?
 
+
 Varios de estos problemas suenan demasiado simples porque ya los tenemos bien trabajados a base de repetición. Pero otros que no tienen una respuesta numérica pueden ser un poco más complicados:
 
 - ¿Qué base de datos debería usar para servir notificaciones en tiempo real?
 - ¿Qué lenguaje de programación debo usar para un sistema que estará emebebido en un millón de dispositivos electrónicos mandando notificaciones críticas cada segundo?
-- ¿Qué sistema de comunicación puedo usar entre dos celulares que no cuentan con una conexión confiable a internet?
+- ¿Qué sistema de comunicación puedo usar entre dos dispositivos que no cuentan con una conexión confiable a internet?
 
 ### 2. Problemas para demostrar
 
@@ -69,7 +70,11 @@ Para un desarrollador podríamos poner problemas para demostrar como:
 - "¿Cómo sabemos que evitamos todas las condiciones de carrera en el sistema actual?"
 - "Comprueba que el máximo tiempo que puede tardar el sistema en responder es menor que X"
 
+Espero que con estos ejemplos haya quedado clara la diferencia entre los diferentes tipos de problemas.
+
 ### Problemas matemáticos, acertijos y problemas de la vida real
+
+
 
 ## Cómo empezar a resolver un problema
 
