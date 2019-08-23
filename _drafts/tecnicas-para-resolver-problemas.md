@@ -74,7 +74,7 @@ Espero que con estos ejemplos haya quedado clara la diferencia entre los diferen
 
 ### Problemas matemáticos, acertijos y problemas de la vida real
 
-Polya habla en sus libro sobre todo de un tipo muy espercial de problemas: los problemas matemáticos.
+Polya habla en sus libro sobre todo de un tipo muy especial de problemas: los problemas matemáticos.
 
 Un problema matemático bien definido cuenta con:
 
@@ -86,10 +86,12 @@ Por extensión, los acertijos cumplen con las mismas características, y se dan 
 Pero los problemas de la vida real son muy diferentes, ya que estos pueden no cumplir con las características completas
 de un problema bien definido.
 
-
 ## Cómo empezar a resolver un problema
 
 ## Heurística
+
+Cuando no tienes idea del procedmiento a seguir para resolver un problema, existe una forma de experimentar para poderlo resolver.
+
 
 ## Inducción y Deducción
 
