@@ -90,7 +90,8 @@ de un problema bien definido.
 
 ## Heurística
 
-Cuando no tienes idea del procedmiento a seguir para resolver un problema, existe una forma de experimentar para poderlo resolver.
+Cuando no tienes idea del procedimiento a seguir para resolver un problema, existe una forma de experimentar para poderlo resolver efectivamente.
+Esta forma de experimentación consiste en aceptar soluciones parciales, semi-erróneas y asumidas para avanzar en la resolución del problema.
 
 
 ## Inducción y Deducción
