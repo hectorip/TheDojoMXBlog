@@ -87,6 +87,12 @@ Pero los problemas de la vida real son muy diferentes, ya que estos pueden no cu
 de un problema bien definido.
 
 ## Cómo empezar a resolver un problema
+Polya plantea cuatro etapas de resolución de un problema:
+
+1. Enteendimiento
+2. Planeación
+3. Ejecución
+4. Retrospectiva.
 
 ## Heurística
 
