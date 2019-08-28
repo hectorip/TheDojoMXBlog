@@ -16,7 +16,7 @@ header:
 > Go fue diseñado por Google para resolver sus problemas, y Google tiene grandes problemas. _Rob Pike_
 
 ## Historia de Go
-Go fue creado dentro de Google por un grupo de ingenieros y científicos de la computación MUY experimentados. Entre ellos Robert g. , Rob Pike, el principal contribuidor del lenguaje. [?]
+Go fue creado dentro de Google por un grupo de ingenieros y científicos de la computación MUY experimentados. Entre ellos Robert Griesemer, Rob Pike y **Ken Thompson** (el co-creador de UNIX).
 
 ## Características
 
