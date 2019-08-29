@@ -15,17 +15,53 @@ header:
 
 > Go fue diseñado por Google para resolver sus problemas, y Google tiene grandes problemas. _Rob Pike_
 
+Go es un lenguaje que llama la atención por algunos rumores que hay acerca de él, como por ejemplo que es el lenguaje que va a matar a C, o que es muy muy rápido y poderoso. En este artículo vamos a hablar de qué cosas son ciertas y en qué casos te conviene aprender Go.
+
+Empecemos hablando de cómo y por qué nació.
+
 ## Historia de Go
-Go fue creado dentro de Google por un grupo de ingenieros y científicos de la computación MUY experimentados. Entre ellos Robert Griesemer, Rob Pike y **Ken Thompson** (el co-creador de UNIX).
 
-## Características
+Go fue creado dentro de Google por un grupo de desarrolladores de software y científicos de la computación MUY experimentados. Las tres personas que lo iniciaron a pensar y diseñar en 2007 fueron Robert Griesemer, Rob Pike y **Ken Thompson** (el co-creador de UNIX). De ese tamaño son las personas que lo diseñaron.
 
-### Tipado estático
+## Características del Go
+
+### Procedural
+### Fuertemente tipado y tipado estático
+### Rápida compilación
+### Manejo de dependencias
+### Manejo de errores
+
+
+## Ventajas de Go sobre otros lenguajes
+
 ### Eficiencia al correr
 ### Legibilidad
 ### Usable para los programadores
 ### Alto desempeño en multiprocesamiento y red
 
 ## Desventajas
+
+## Relativamente joven
+## Tipado
+
+Go es nun lenguaje con tipado estático y fuerte. Esto quiere implica varias cosas:
+
+- Los idenntificadores no pueden cambiar el tipo de dato con el que están relacionados durante la duración del programa
+- La conversión de tipos debe ser explícita
+
 ## Proyectos que lo usan
+
+Muchos proyectos importantes del mundo de la infraestructura, orquestación y herramientas para programadores lo usan. Algunos ejemplos:
+
+- Docker
+- Kubernetes
+- Terraform
+- Vault
+
+
+## Go vs Rust
+
+Una discusión reciente es cuál de los dos lenguajes va a lograr efectivamente a C, con características más modernas y como un lenguaje más adaptado a las necesidades actuales.
 ## Conclusión
+
+Aprende Go
