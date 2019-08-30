@@ -11,9 +11,9 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-> Go es eficiente, escalable y productivo. _Rob Pike_
+> Go es eficiente, escalable y productivo. - _Rob Pike_
 
-> Go fue diseñado por Google para resolver sus problemas, y Google tiene grandes problemas. _Rob Pike_
+> Go fue diseñado por Google para resolver sus problemas, y Google tiene grandes problemas. - _Rob Pike_
 
 Go es un lenguaje que llama la atención por algunos rumores que hay acerca de él, como por ejemplo que es el lenguaje que va a matar a C, o que es muy muy rápido y poderoso. En este artículo vamos a hablar de qué cosas son ciertas y en qué casos te conviene aprender Go.
 
@@ -42,11 +42,19 @@ Go fue creado dentro de Google por un grupo de desarrolladores de software y cie
 ## Desventajas
 
 ## Relativamente joven
+
+Go tiene a penas 10 años de haber salido a la luz, 12 desde que se empezó a diseñar. El tiempo de vida de un lenguaje influye en su usabilidad y la conveniencia de varias formas:
+
+- La comunidad que ha desarrollado
+- Las herramientas disponibles
+- Los errores encontrados
+- Experiencias de otros desarrolladores con diferentes tipos y tamaños de sistemas
+
 ## Tipado
 
 Go es nun lenguaje con tipado estático y fuerte. Esto quiere implica varias cosas:
 
-- Los idenntificadores no pueden cambiar el tipo de dato con el que están relacionados durante la duración del programa
+- Los identificadores no pueden cambiar el tipo de dato con el que están relacionados durante la duración del programa
 - La conversión de tipos debe ser explícita
 
 ## Proyectos que lo usan
@@ -57,11 +65,14 @@ Muchos proyectos importantes del mundo de la infraestructura, orquestación y he
 - Kubernetes
 - Terraform
 - Vault
+- InfluxDB
 
 
 ## Go vs Rust
 
 Una discusión reciente es cuál de los dos lenguajes va a lograr efectivamente a C, con características más modernas y como un lenguaje más adaptado a las necesidades actuales.
+
+
 ## Conclusión
 
-Aprende Go
+Aprende Go ahora mismo
