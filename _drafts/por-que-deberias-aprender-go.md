@@ -11,7 +11,7 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-> Go es eficiente, escalable y productivo. - _Rob Pike_
+> Go es **eficiente, escalable y productivo**. - _Rob Pike_
 
 > Go fue diseñado por Google para resolver sus problemas, y Google tiene grandes problemas. - _Rob Pike_
 
@@ -59,13 +59,14 @@ Go es nun lenguaje con tipado estático y fuerte. Esto quiere implica varias cos
 
 ## Proyectos que lo usan
 
-Muchos proyectos importantes del mundo de la infraestructura, orquestación y herramientas para programadores lo usan. Algunos ejemplos:
+Muchos proyectos importantes del mundo de la infraestructura, orquestación de servidores, contendores, bases de datos y herramientas para programadores lo usan. Algunos ejemplos:
 
 - Docker
 - Kubernetes
 - Terraform
 - Vault
 - InfluxDB
+
 
 
 ## Go vs Rust
@@ -75,4 +76,4 @@ Una discusión reciente es cuál de los dos lenguajes va a lograr efectivamente 
 
 ## Conclusión
 
-Aprende Go ahora mismo
+Aprende Go ahora mismo.
