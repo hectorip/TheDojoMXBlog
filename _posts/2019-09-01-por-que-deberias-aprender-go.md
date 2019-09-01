@@ -6,14 +6,12 @@ tags: go golang lenguajes-de-programación
 comments: true
 excerpt: "Go es un lenguaje muy relevante en algunas áreas del desarrollo de software. Aprende para qué deberías usarlo y por qué te conviene aprenderlo."
 header:
-  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1566845796/o-GOOGLE-DATA-CENTERS-facebook_s7ggc0.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1566845796/o-GOOGLE-DATA-CENTERS-facebook_s7ggc0.jpg
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/v1567376344/google-servers-datacenter_bs7xzt.png
+  teaser: https://res.cloudinary.com/hectorip/image/upload/v1567376344/google-servers-datacenter_bs7xzt.png
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 > Go es **eficiente, escalable y productivo**. - _Rob Pike_
-
-> Go fue diseñado por Google para resolver sus problemas, y Google tiene _grandes_ problemas. - _Rob Pike_
 
 Go es un lenguaje que llama la atención por algunos rumores que hay acerca de él, como, por ejemplo, que es el lenguaje que va a matar a C, o que es muy muy rápido y poderoso. En este artículo vamos a hablar de qué cosas son ciertas y en qué casos te conviene aprender Go.
 
@@ -21,19 +19,21 @@ Empecemos hablando de cómo y por qué nació.
 
 ## Historia de Go
 
+> Go fue diseñado por Google para resolver sus problemas, y Google tiene _grandes_ problemas. - _Rob Pike_
+
 Go fue creado dentro de Google por un grupo de desarrolladores de software y científicos de la computación **MUY experimentados**. Las tres personas que lo iniciaron a pensar y diseñar en 2007 fueron Robert Griesemer, Rob Pike y **Ken Thompson** (sí, el co-creador de UNIX, grep y muchas cosas más). De ese tamaño son las personas que lo diseñaron, y así se siente el lenguaje cuando lo usas.
 
 Después de una serie de correos y discusiones sobre el diseño, empezaron a trabajar en él y [lo presentaron como proyecto Open Source en 2009](https://www.youtube.com/watch?v=rKnDgT73v8s), a partir de ahí muchas personas tanto de dentro como de fuera de Google han contribuido a su desarrollo.
 
-## Características del Go
+## Características de  Go
 
-Go fue concebido pensando en los problemas que los diseñadores veían en los sistemas de Google: su proceso de desarrollo estaba entorpecido por las herramientas que usaban. Según Rob Pike, todo era demasiado lento: demasiado lento compilar, demasiado lento para construir, demasiado lento para pensar. Cuando decimos que l tiempo de compilación era demasiado largo nos referimos a que podía llegar a tomar varias horas para compilar un sistema.
+Go fue concebido pensando en los problemas que los diseñadores veían en los sistemas de Google: su proceso de desarrollo estaba entorpecido por las herramientas que usaban. Según Rob Pike, todo era demasiado lento: demasiado lento de compilar, demasiado lento de construir, demasiado lento de pensar. Cuando decimos que el tiempo de compilación era demasiado largo nos referimos a que podía llegar a tomar _varias horas_ para compilar un sistema.
 
 También había una "explosión de complejidad". Así que Go fue pensado para ser simple, de una "simplicidad radical". Por lo tanto, carece de características que otros lenguajes sí tienen, pero hacen que los programas sean complejos.
 
 > La simplicidad es la clave del buen software. - _The Go Programming Language_
 
-Analicemos las características de Go.
+Analicemos las características de Go, un lenguaje pensado para trabajar en sistemas muy grandes de manera simple.
 
 ### Procedural, con flexibilidad para orientación a objetos
 
@@ -74,7 +74,7 @@ Pensado para sistemas muy grandes, justo como los desarrollados en Google, Go se
 - El programa objeto compilado de cada paquete exporta información útil para sus dependencias que puede ser usada sin tener que leer todo el paquete.
 
 ### Manejo de dependencias y paquetes
-Go tiene en su biblioteca estándar más de 100 paquetes y la comunidad de Go cada vez contribuye más paquetes. Go viene con la herramienta para la línea de comandos `go` que es fácil de usar para manejar proyectos creados con Go. La herraminta `go` nos ayuda a administrar nuestras dependencias: descargarlas, limpiarlas e instalarlas.
+Go tiene en su biblioteca estándar más de 100 paquetes y la comunidad de Go cada vez contribuye más paquetes. Go viene con la herramienta para la línea de comandos `go` que es fácil de usar para manejar proyectos creados con Go. La herramienta `go` nos ayuda a administrar nuestras dependencias: descargarlas, limpiarlas e instalarlas.
 
 ### Manejo de memoria
 Go tiene manejo automático de memoria, lo que quiere decir que tal como en Java o Python, no tienes que preocuparte de liberar la memoria manualmente. Sin embargo, esta característica lo hace poco práctico para sistemas que requieran tratamiento de datos en tiempo real demasiado fuerte y preciso.
@@ -152,7 +152,7 @@ Considera esto si tienes que hacer un proyecto grande.
 
 ## Proyectos que lo usan
 
-Muchos proyectos importantes del mundo de la infraestructura, orquestación de servidores, contendores, bases de datos y herramientas para programadores lo usan. Algunos ejemplos:
+Muchos proyectos importantes del mundo de la infraestructura, orquestación de servidores, contenedores, bases de datos y herramientas para programadores lo usan. Algunos ejemplos:
 
 - Docker
 - Kubernetes
