@@ -56,6 +56,7 @@ func main() {
 Go es un lenguaje fuertemente tipado, lo cuál quiere implica varias cosas: 
 
 1. La declaración de variables implica el tipo de valor que estará asociado a esta instancia del nombre, por lo que no puede usarse para guardar otro tipo de valor. En Go no necesariamente se tiene que decir explícitamente el tipo de valor a usarse, puede ser inferido:
+
 ```go
 
 miNombre := "Héctor"  // La variable es un string
