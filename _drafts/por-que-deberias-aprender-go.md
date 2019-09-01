@@ -13,17 +13,23 @@ header:
 
 > Go es **eficiente, escalable y productivo**. - _Rob Pike_
 
-> Go fue diseñado por Google para resolver sus problemas, y Google tiene grandes problemas. - _Rob Pike_
+> Go fue diseñado por Google para resolver sus problemas, y Google tiene _grandes_ problemas. - _Rob Pike_
 
-Go es un lenguaje que llama la atención por algunos rumores que hay acerca de él, como por ejemplo que es el lenguaje que va a matar a C, o que es muy muy rápido y poderoso. En este artículo vamos a hablar de qué cosas son ciertas y en qué casos te conviene aprender Go.
+Go es un lenguaje que llama la atención por algunos rumores que hay acerca de él, como, por ejemplo, que es el lenguaje que va a matar a C, o que es muy muy rápido y poderoso. En este artículo vamos a hablar de qué cosas son ciertas y en qué casos te conviene aprender Go.
 
 Empecemos hablando de cómo y por qué nació.
 
 ## Historia de Go
 
-Go fue creado dentro de Google por un grupo de desarrolladores de software y científicos de la computación MUY experimentados. Las tres personas que lo iniciaron a pensar y diseñar en 2007 fueron Robert Griesemer, Rob Pike y **Ken Thompson** (el co-creador de UNIX). De ese tamaño son las personas que lo diseñaron.
+Go fue creado dentro de Google por un grupo de desarrolladores de software y científicos de la computación **MUY experimentados**. Las tres personas que lo iniciaron a pensar y diseñar en 2007 fueron Robert Griesemer, Rob Pike y **Ken Thompson** (sí, el co-creador de UNIX, grep y muchas cosas más). De ese tamaño son las personas que lo diseñaron, y así se siente el lenguaje cuando lo usas.
+
+Después de una serie de correos y discusiones sobre el diseño, empezaron a trabajar en él y lo presentaron como proyecto open source en 2009, a partir de ahí muchas personas tanto de dentro como de fuera de Google han contribuido a su desarrollo.
 
 ## Características del Go
+
+Go fue concebido pensando en los problemas que los diseñadores veían en los sistemas de Google: su proceso de desarrollo estaba entorpecido por las herramientas que usaban.
+
+El tiempo de compilación era demasiado largo, por ejemplo, llegando a tomar varias horas para compilar un programa. También había una "explosión de complejidad".
 
 ### Procedural
 ### Fuertemente tipado y tipado estático
@@ -76,4 +82,4 @@ Una discusión reciente es cuál de los dos lenguajes va a lograr efectivamente 
 
 ## Conclusión
 
-Aprende Go ahora mismo.
+Go es un lenguaje relevante en 2019 y lo seguirá siendo por muchos años, sobre todo por los proyectos ya desarrollados en él y las características de las que hablamos en este artículo. Aprenderlo te dará una herramienta más para desarrollar programas que valgan la pena y cumplan con lo esperado.
