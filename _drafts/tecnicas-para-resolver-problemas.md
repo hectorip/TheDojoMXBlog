@@ -74,17 +74,18 @@ Espero que con estos ejemplos haya quedado clara la diferencia entre los diferen
 
 ### Problemas matemáticos, acertijos y problemas de la vida real
 
-Polya habla en sus libro sobre todo de un tipo muy especial de problemas: los problemas matemáticos.
+Polya habla en sus libro sobre todo de un tipo muy especial de problemas: **los problemas matemáticos**.
 
 Un problema matemático bien definido cuenta con:
 
 1. Datos suficientes para resolución
-2. Datos no inútiles o sobrantes
-3. Condiciones no contradictorias
+2. No tiene datos sobrantes
+3. Condiciones no contradictorias o imposibles de cumplir
 
 Por extensión, los acertijos cumplen con las mismas características, y se dan algunos de ejemplos de ellos en el libro.
 Pero los problemas de la vida real son muy diferentes, ya que estos pueden no cumplir con las características completas
-de un problema bien definido.
+de un problema bien definido. Así que uno de los pasos previos para resolver un problema de la vida real es intentar definirlo
+lo mejor posible.
 
 ## Cómo empezar a resolver un problema
 Polya plantea cuatro etapas de resolución de un problema:
