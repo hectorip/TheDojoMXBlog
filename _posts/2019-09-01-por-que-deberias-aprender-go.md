@@ -83,7 +83,8 @@ Go tiene manejo automático de memoria, lo que quiere decir que tal como en Java
 ## Concurrencia
 
 ![La mascota de Go haciendo el trabajo](https://res.cloudinary.com/hectorip/image/upload/v1567320490/Go-routines-gopher_vgcpbt.jpg)
-A esta característica decidimos dedicarle un poco más de espacio. Debido a que el mundo de la computación ha cambiado desde que se escribieron los primeros programas, en los que se contaba con un sólo procesador, el equipo de go le dio gran importancia a la capacidad de crear programas con un muy buen diseño concurrente que eventualmente pudieran correr en paralelo aprovechando los sistemas de computación que existen actualmente.
+
+A esta característica decidimos dedicarle un poco más de espacio. Debido a que el mundo de la computación ha cambiado desde que se escribieron los primeros programas, en los que se contaba con un sólo procesador, el equipo de Go le dio gran importancia a la capacidad de **crear programas con un muy buen diseño concurrente**. Eventualmente estos programas podrían correr en paralelo aprovechando los sistemas de computación que existen actualmente, con múltiples procesadores.
 
 Go permite crear procesos concurrente de manera muy sencilla:
 
@@ -97,7 +98,7 @@ Eso es todo. Go ejecutará la función `myFunc` de manera concurrente (se ejecut
 
 Go soporta dos modelos de concurrencia:
 
-- **Comunicación de procesos secuenciales** (Communicating Sequential Processes - CSP), en la que cada proceso tiene su espacio de memoria, y se transfieren información entre ellos mediante mensajes. En el caso de Go es a través de *canales*.
+- **Comunicación de procesos secuenciales** (Communicating Sequential Processes - CSP), en la que cada proceso tiene sus propias variables, y se transfieren información entre ellos mediante mensajes. En el caso de Go es a través de *canales*.
 - **Multihilo con memoria compartida**. En este tipo de concurrencia todos los procesos escriben sobre el mismo espacio de memoria, es decir, comparten variables, pero debe haber algúna forma de coordinación entre ellos para que no choquen ni se bloqueen mutuamente al tomar un recurso.
 
 La concurrencia es uno de los puntos más fuertes de Go.
