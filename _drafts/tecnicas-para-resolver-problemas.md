@@ -84,8 +84,7 @@ Un problema matemático bien definido cuenta con:
 
 Por extensión, los acertijos cumplen con las mismas características, y se dan algunos de ejemplos de ellos en el libro.
 Pero los problemas de la vida real son muy diferentes, ya que estos pueden no cumplir con las características completas
-de un problema bien definido. Así que uno de los pasos previos para resolver un problema de la vida real es intentar definirlo
-lo mejor posible.
+de un problema bien definido. Así que uno de los pasos previos para resolver un problema de la vida real es intentar definir lo mejor posible el problema por resolver.
 
 ## Cómo empezar a resolver un problema
 Polya plantea cuatro etapas de resolución de un problema:
@@ -94,6 +93,16 @@ Polya plantea cuatro etapas de resolución de un problema:
 2. Planeación
 3. Ejecución
 4. Retrospectiva.
+
+Hablemos de cada una, para entender claramente cómo podemos mejorar nuestras posibilidades de resolución del problema.
+
+### Entendimiento
+
+Para empezar a resolver un problema, se tiene que empezar por verificar que se cuente con todos los elementos necesarios para resolverlo y que estamos comprendiendo lo que significa cada uno. Comprendemos los datos que se dan, las condiciones a satisfacer y la incógnita o lo que hay que demostrar.
+
+ ### Planeación
+
+ Una vez entendido el problema, se debe trazar un plan para atacar el problema. Esta es la parte más difícil. Teniendo un plan, se puede considerar casi resuelto el problema, es la parte más difícil de lograr.
 
 ## Heurística
 
@@ -105,6 +114,7 @@ Esta forma de experimentación consiste en aceptar soluciones parciales, semi-er
 
 ## Análisis y Síntesis
 
-## Ejemplos?
+## ¿Ejemplos?
 
 ## Para recordar
+
