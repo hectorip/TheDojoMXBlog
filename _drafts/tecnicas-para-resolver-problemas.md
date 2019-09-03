@@ -92,25 +92,44 @@ Polya plantea cuatro etapas de resolución de un problema:
 1. Entendimiento
 2. Planeación
 3. Ejecución
-4. Retrospectiva.
+4. Retrospectiva
 
 Hablemos de cada una, para entender claramente cómo podemos mejorar nuestras posibilidades de resolución del problema.
 
 ### Entendimiento
 
-Para empezar a resolver un problema, se tiene que empezar por verificar que se cuente con todos los elementos necesarios para resolverlo y que estamos comprendiendo lo que significa cada uno. Comprendemos los datos que se dan, las condiciones a satisfacer y la incógnita o lo que hay que demostrar.
+> Es tonto contestar una pregunta que no entiendes. Es Triste trabar por un fin que no deseas. - **G. Polya**
+
+El entendimiento del problema consiste primeramente en asegurarnos de que entendemos el planteamiento verbal del problema (si no tenemos ni siquiera un planteamiento verbal, debemos empezar por crearlo).
+Para empezar a resolver un problema, se tiene que verificar que se cuente con todos los elementos necesarios para resolverlo y que estamos comprendiendo lo que significa cada uno. Comprendemos los datos que se dan, las condiciones a satisfacer y la incógnita o lo que hay que demostrar.
 
  ### Planeación
 
  Una vez entendido el problema, se debe trazar un plan para atacar el problema. Esta es la parte más difícil. Teniendo un plan, se puede considerar casi resuelto el problema, es la parte más difícil de lograr.
 
+ ### Ejecución
+
+ Es hora de llevar a cabo los pasos establecidos en la planeación.
+
+ ### Retrospectiva
+
+
+### Las preguntas principales de Polya
+
+Polya estableció
+
 ## Heurística
+
+> We have to shift our position again and again - **G. Polya**
+
 
 Cuando no tienes idea del procedimiento a seguir para resolver un problema, existe una forma de experimentar para poderlo resolver efectivamente.
 Esta forma de experimentación consiste en aceptar soluciones parciales, semi-erróneas y asumidas para avanzar en la resolución del problema.
 
 
 ## Inducción y Deducción
+
+Polya habla acerca de lo importante que es conocer la indu
 
 ## Análisis y Síntesis
 
