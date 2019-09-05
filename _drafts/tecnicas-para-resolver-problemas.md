@@ -109,10 +109,11 @@ Para empezar a resolver un problema, se tiene que verificar que se cuente con to
 
  ### Ejecución
 
- Es hora de llevar a cabo los pasos establecidos en la planeación.
+ Es hora de llevar a cabo los pasos establecidos en la planeación. En esta etapa hay que llevar a cabo cada uno de los pasos que establecimos en la planeación de ejecución del problema. Polya dice que aquí es donde hay que ser rigurosos con nuestros pasos.
 
  ### Retrospectiva
 
+Revisar los resultados, ver si podemos hacer algo diferente.
 
 ### Las preguntas principales de Polya
 
