@@ -15,7 +15,7 @@ George Polya fue uno de los matemáticos más prolíficos del Siglo XX, un matem
 
 Polya escribió varios libros, entre ellos está "How to solve it" un tratado de 4 partes en el que explica de manera muy detallada cómo resolver problemas matemáticos principalmente, pero también cómo aplicar este conocimiento a otras áreas de la vida.
 
-Todos los desarrolladores nos hemos topado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolverlos. Las técnicas explicadas por Polya te pueden ayudar a desarrollar tus capacidades de resolución de problemas.
+Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver. Las técnicas explicadas por Polya te pueden ayudar a desarrollar tus capacidades de resolución de problemas.
 
 Empecemos por hablar de la estructura los problemas de los que Polya habla en su libro.
 
@@ -27,12 +27,12 @@ Polya define un problema un enunciado o texto con tres partes:
 2. **Las condiciones**. Describen la relación que existe entre los datos y la solución, pero también la forma, los límites y características de la solución buscada.
 3. **La incógnita o lo desconocido**. Es la información que buscamos y que cumple con las condiciones del problema.
 
-Es muy importante conocer la composición de un problema para poder aplicar las técnicas descritas en el libro. Cualquier problema matemático debería cumplir con estas características, pero no todos los problemas de la vida real cumplen con esta estructura tal y como la necesitamos o esperamos, por lo que deberíamos ser capaces de entender los problemas que se son presentan y estructurarlos lo mejor posible según esta definición.
+Es muy importante conocer la composición de un problema para poder aplicar las técnicas descritas en el libro. Cualquier problema matemático debería **cumplir con estas características**, pero no todos los problemas de la vida real cumplen con esta estructura tal y como la necesitamos o esperamos, por lo que deberíamos ser capaces de entender los problemas que se son presentan y estructurarlos lo mejor posible según esta definición.
 
 Para resolver un problema deberías ser capaz de contestar las siguientes preguntas:
 
 1. ¿Qué estoy buscando? ¿Cuál es la incógnita?
-2. ¿Qué datos tengo disponibles?
+2. ¿Qué datos tengo disponibles? ¿Son suficientes los datos que tengo para resolver el problema?
 3. ¿Qué condiciones tiene que cumplir la incógnita? ¿Qué relación hay entre los datos y la incógnita?
 
 Ahora hablemos de de los tipos de problemas de los que Polya hace distinción.
@@ -98,10 +98,12 @@ Hablemos de cada una, para entender claramente cómo podemos mejorar nuestras po
 
 ### Entendimiento
 
-> Es tonto contestar una pregunta que no entiendes. Es Triste trabar por un fin que no deseas. - **G. Polya**
+> Es tonto contestar una pregunta que no entiendes. Es Triste trabajar por un fin que no deseas. - **G. Polya**
 
 El entendimiento del problema consiste primeramente en asegurarnos de que entendemos el planteamiento verbal del problema (si no tenemos ni siquiera un planteamiento verbal, debemos empezar por crearlo).
 Para empezar a resolver un problema, se tiene que verificar que se cuente con todos los elementos necesarios para resolverlo y que estamos comprendiendo lo que significa cada uno. Comprendemos los datos que se dan, las condiciones a satisfacer y la incógnita o lo que hay que demostrar.
+
+Esta parte puede llevar gran parte del tiempo total dedicado al problema, ya que es el fundamento de los próximos pasos.
 
  ### Planeación
 
@@ -113,11 +115,11 @@ Para empezar a resolver un problema, se tiene que verificar que se cuente con to
 
  ### Retrospectiva
 
-Revisar los resultados, ver si podemos hacer algo diferente.
+Revisar los resultados, ver si podemos hacer algo diferente, si nuestro resultado cumple con lo esparado y si podemos encontrar o derivar el resultado de alguna otra forma ahora que ya sabemos cuál es.
 
 ### Las preguntas principales de Polya
 
-Polya estableció
+Polya estableció una serie de preguntas que te pueden guiarte en la solución de un problema. Estas preguntas las repite vez tras vez en el libro y en verdad son ilumindaoras si estás atorado en algún problema que no puedes resolver. A continuación las listamos.
 
 ## Heurística
 
