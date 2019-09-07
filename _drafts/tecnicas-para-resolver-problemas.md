@@ -117,9 +117,17 @@ Esta parte puede llevar gran parte del tiempo total dedicado al problema, ya que
 
 Revisar los resultados, ver si podemos hacer algo diferente, si nuestro resultado cumple con lo esparado y si podemos encontrar o derivar el resultado de alguna otra forma ahora que ya sabemos cuál es.
 
-### Las preguntas principales de Polya
+### Las preguntas de Polya
 
-Polya estableció una serie de preguntas que te pueden guiarte en la solución de un problema. Estas preguntas las repite vez tras vez en el libro y en verdad son ilumindaoras si estás atorado en algún problema que no puedes resolver. A continuación las listamos.
+Polya estableció una serie de preguntas que pueden guiarte en la solución de un problema. Estas preguntas las repite vez tras vez en el libro y en verdad son iluminadoras si estás atorado en algún problema que no puedes resolver. A continuación las listamos.
+
+- ¿He resuelto un problema relacionado? ¿Conozco un problema que se aproxime?
+- ¿Estoy usando todos los datos?
+- ¿Puedo cambiar algo del problema para hacerlo más fácil?
+  - ¿Puedo cambiar los datos?
+  - ¿Puedo cambiar las condiciones?
+  - ¿Puedo cambiar la incógnita?
+  - ¿Qué debería mantener?
 
 ## Heurística
 
