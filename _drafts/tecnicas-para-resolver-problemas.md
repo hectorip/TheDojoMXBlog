@@ -121,28 +121,33 @@ Revisar los resultados, ver si podemos hacer algo diferente, si nuestro resultad
 
 Polya estableció una serie de preguntas que pueden guiarte en la solución de un problema. Estas preguntas las repite vez tras vez en el libro y en verdad son iluminadoras si estás atorado en algún problema que no puedes resolver. A continuación las listamos.
 
-- ¿He resuelto un problema relacionado? ¿Conozco un problema que se aproxime?
+- ¿He resuelto un problema **relacionado**? ¿Conozco un **problema que se aproxime**?
 - ¿Estoy usando todos los datos?
 - ¿Puedo cambiar algo del problema para hacerlo más fácil?
   - ¿Puedo cambiar los datos?
   - ¿Puedo cambiar las condiciones?
   - ¿Puedo cambiar la incógnita?
   - ¿Qué debería mantener?
+- 
 
-## Heurística
+## Heurística - El arte resolver problemas
 
-> We have to shift our position again and again - **G. Polya**
+> Tenemos que cambiar nuestra posición una y otra vez. - **G. Polya**
 
-
+La frase anterior deja clara la actitud que se debe tener respecto a algunos problemas.
 Cuando no tienes idea del procedimiento a seguir para resolver un problema, existe una forma de experimentar para poderlo resolver efectivamente.
-Esta forma de experimentación consiste en aceptar soluciones parciales, semi-erróneas y asumidas para avanzar en la resolución del problema.
 
+Esta forma de experimentación consiste en aceptar soluciones parciales, semi-erróneas y asumidas (o completamente inventadas) para avanzar en la resolución del problema. Si una de estas soluciones nos ayuda avanzar en el problema, es aceptada.
 
 ## Inducción y Deducción
 
-Polya habla acerca de lo importante que es conocer la indu
+Polya apoyándose en la sabiduría de otros.
 
 ## Análisis y Síntesis
+
+Análisis: proceso para entender y descomponer un problema, planear los pasos necesarios. Ida.
+Síntesis: ejecución de los pasos para llevar a cabo los resultados del análisis. Regreso.
+
 
 ## ¿Ejemplos?
 
