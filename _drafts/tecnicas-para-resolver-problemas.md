@@ -1,6 +1,6 @@
 ---
 title: "Técnicas para resolver problemas"
-date: 2019-08-18
+date: 2019-09-08
 author: Héctor Patricio
 tags: matemáticas maths polya books libros
 comments: true
@@ -152,4 +152,3 @@ Síntesis: ejecución de los pasos para llevar a cabo los resultados del anális
 ## ¿Ejemplos?
 
 ## Para recordar
-
