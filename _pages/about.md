@@ -11,4 +11,4 @@ al software que tienen como objetivo ayudar a los desarrolladores de habla hispa
 
 ## Acerca de los autores
 
-Este es un blog Open Source, vive hosteado en GitHub Pages y se ha usado Jekyll para construirlo. Si quieres participar puedes hacerlo siguiendo los pasos de cualquier otro sitio con Jekyll.
+Este es un blog Open Source, vive en GitHub Pages y se ha usado Jekyll para construirlo. Si quieres participar puedes hacerlo siguiendo los pasos de cualquier otro sitio con Jekyll.

@@ -94,24 +94,25 @@ Polya plantea cuatro etapas de resolución de un problema:
 3. Ejecución
 4. Retrospectiva
 
-Hablemos de cada una, para entender claramente cómo podemos mejorar nuestras posibilidades de resolución del problema.
+Hablemos de cada una, para entender claramente cómo podemos mejorar nuestras posibilidades de resolución de un problema.
 
 ### Entendimiento
 
-> Es tonto contestar una pregunta que no entiendes. Es Triste trabajar por un fin que no deseas. - **G. Polya**
+> Es tonto contestar una pregunta que no entiendes. Es triste trabajar por un fin que no deseas. - **G. Polya**
 
-El entendimiento del problema consiste primeramente en asegurarnos de que entendemos el planteamiento verbal del problema (si no tenemos ni siquiera un planteamiento verbal, debemos empezar por crearlo).
-Para empezar a resolver un problema, se tiene que verificar que se cuente con todos los elementos necesarios para resolverlo y que estamos comprendiendo lo que significa cada uno. Comprendemos los datos que se dan, las condiciones a satisfacer y la incógnita o lo que hay que demostrar.
+El entendimiento del problema consiste primero en asegurarnos de que **entendemos el planteamiento verbal del problema**, si no tenemos ni siquiera un planteamiento verbal, debemos empezar por crearlo.
 
-Esta parte puede llevar gran parte del tiempo total dedicado al problema, ya que es el fundamento de los próximos pasos.
+Para decir que comprendemos el problema, tenemos que conocer los datos que se dan, las condiciones a satisfacer y la incógnita o lo que hay que demostrar.
+
+Esta parte puede llevar gran parte del tiempo total dedicado al problema, ya que es el fundamento de los próximos pasos, sin la que no se puede continuar.
 
  ### Planeación
 
- Una vez entendido el problema, se debe trazar un plan para atacar el problema. Esta es la parte más difícil. Teniendo un plan, se puede considerar casi resuelto el problema, es la parte más difícil de lograr.
+El siguiente paso es trazar un plan para atacar el problema. Esta es la parte más difícil, ya que implica conocimiento profundo del problema y es casi un esbozo de la solución.
 
  ### Ejecución
 
- Es hora de llevar a cabo los pasos establecidos en la planeación. En esta etapa hay que llevar a cabo cada uno de los pasos que establecimos en la planeación de ejecución del problema. Polya dice que aquí es donde hay que ser rigurosos con nuestros pasos.
+ Es hora de llevar a cabo los pasos establecidos en la planeación. En esta etapa hay que ejecutar cada uno de los pasos que establecimos en la planeación de ejecución del problema. Polya dice que aquí es donde hay que ser rigurosos con lo que hacemos, verificando que lo que hacemos tenga sentido y sea estrictamente correcto.
 
  ### Retrospectiva
 
