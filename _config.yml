@@ -6,7 +6,7 @@ plugins:
     - jekyll-redirect-from
     - jekyll-seo-tag
     - jekyll-sitemap
-    - jekyll-paginate
+    - jekyll-paginate-v2
     - jekyll-avatar
     - jemoji
     - jekyll-mentions
