@@ -6,13 +6,14 @@ plugins:
     - jekyll-redirect-from
     - jekyll-seo-tag
     - jekyll-sitemap
+    - jekyll-paginate
     - jekyll-avatar
     - jemoji
     - jekyll-mentions
     - jekyll-include-cache
 
 paginate: 5
-paginate_path: /latest/page:num
+paginate_path: /latest/page:num/
 # logo: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1551590729/TheDojo/dojo-cover_scaodz.jpg
 logo: https://res.cloudinary.com/hectorip/image/upload/v1554098427/TheDojo/the-dojo-transparent.png
 masthead_title: "The Dojo Blog"
@@ -58,6 +59,7 @@ comments:
 category_archive:
   type: liquid
   path: /categories/
+
 tag_archive:
   type: liquid
   path: /tags/
