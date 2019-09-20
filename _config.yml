@@ -64,6 +64,6 @@ tag_archive:
   path: /tags/
 
 
-include: ["_pages"]
+include: ["_pages", "latest"]
 search: true
 # minimal_mistakes_skin: dark
