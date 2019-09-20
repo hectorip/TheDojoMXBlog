@@ -1,0 +1,75 @@
+I"�<h2 id="para-no-salir-herido-al-combinar-desarrollo-y-producción-en-django">Para no salir herido al combinar desarrollo y producción en Django.</h2>
+
+<blockquote>
+  <p>Se usará Django &gt;= 2.0</p>
+</blockquote>
+
+<blockquote>
+  <p>Se usará Python &gt;= 3.6</p>
+</blockquote>
+
+<h2 id="problemática">Problemática.</h2>
+
+<p>Mientras desarrollaba en Django, me encontré con un problema, requería hacer múltiples pruebas con el ORM para generar consultas complejas a base de datos.
+Para hacer la prueba se ejecuta:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> python manage.py shell
+</code></pre></div></div>
+<p>Con lo que se abrirá una consola de Python, en dicha consola se puede importar un modelo y con ese modelo hacer las pruebas requeridas.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> from blog.models import Post
+<span class="o">&gt;</span> all_posts <span class="o">=</span> Post.objects.all<span class="o">()</span>
+</code></pre></div></div>
+
+<p>Todo opera bien hasta que debemos importar múltiples modelos, al modificar un modelo se debe detener la consola <code class="highlighter-rouge">Ctrl+C</code> y ejecutarla de nueva cuenta, y de nueva cuenta cargar todos los modelos.</p>
+
+<p>A fin de no perder tiempo cargando los modelos en cada detención de la consola se opta por usar una herramienta llamada <a href="https://django-extensions.readthedocs.io/en/latest/"><code class="highlighter-rouge">django-extensions</code></a></p>
+
+<p>La instalo en mi proyecto usando:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> pip <span class="nb">install </span>django-extensions
+</code></pre></div></div>
+
+<p>y agregándola a mis apps en el archivo <code class="highlighter-rouge">settings.py</code></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="o">...</span>
+    <span class="s">'django_extensions'</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<p>Hecho eso, puedo ejecutar una consola donde se cargan ya todos los modelos listos para hacer consultas a la base de datos. Traducción: ahorramos mucho tiempo.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> python manage.py shell_plus
+</code></pre></div></div>
+
+<p>El siguiente problema que hallé es que esta herramienta no debe estar en producción, solo es para propósitos de desarrollo.</p>
+
+<p>Pero, ¿Qué hacer?, ¿La agrego y quito de <code class="highlighter-rouge">INSTALLED_APPS</code> manualmente a cada push que haga en  mi repositorio?, esa estrategia es muy propensa al error y a la hora de desplegar podemos tener un error por no tener instalada la herramienta.</p>
+
+<p>La forma que me ha gustado más hasta ahora es hacer uso del paquete <code class="highlighter-rouge">sys</code> de Python, con el que puedo con uno de sus módulos leer los argumentos con los que se ejecuta la aplicación de Django.</p>
+
+<p>Vámos como queda el archivo <code class="highlighter-rouge">settings.py</code></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="o">.</span>
+<span class="o">.</span>
+<span class="o">.</span>
+<span class="n">DEBUG_COMMAND</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="s">'shell_plus'</span><span class="p">,</span> <span class="s">'shell'</span><span class="p">,</span> <span class="s">'runserver'</span><span class="p">)</span>
+
+<span class="n">DJANGO_RUN_ARGS</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">DJANGO_RUN_ARGS</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">DEBUG_COMMAND</span><span class="p">))</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+    <span class="c1"># Code executed in develop time
+</span>    <span class="n">INSTALLED_APPS</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">'django_extensions'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>En <code class="highlighter-rouge">DEBUG_COMMAND</code> se definen los comandos que se ejecutan solo en desarrollo, hay que recordar que <code class="highlighter-rouge">runserver</code> se agrega también en el set dado que NO se debe pasar a producción la ejecución de Django por medio de dicho mecanismo, para producción lo correcto es pasarlo con un WSGI server diseñado para producción como <a href="https://gunicorn.org">guinicorn</a>.</p>
+
+<p><code class="highlighter-rouge">DJANGO_RUN_ARGS</code> es la variable que guardará los argumentos con los que se ejecuta Django.</p>
+
+<p>Ambas variables son un set, así es sencillo comprobar que argumentos serán catalogados como de desarrollo por medio de la intersección de ambas variables, el que haya elementos en la intersección implica que por lo menos uno de los argumentos se cataloga como de desarrollo.</p>
+
+<p>Y bueno, solo falta agregar que después de la condicional se pueden agregar tanto código como se requiera.</p>
+
+<p>No olvides comentar tu experiencia usando esta estrategia para manejar desarrollo y producción en Django.</p>
+:ET

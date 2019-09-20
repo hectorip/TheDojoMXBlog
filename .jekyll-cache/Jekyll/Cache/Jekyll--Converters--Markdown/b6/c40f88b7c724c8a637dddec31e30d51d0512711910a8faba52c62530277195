@@ -1,0 +1,12 @@
+I"�<ul class="toc__menu">
+  <li><a href="#qué-es-un-principio">¿Qué es un principio?</a></li>
+  <li><a href="#algunos-principios-de-diseño-de-software">Algunos principios de Diseño de Software</a>
+    <ul>
+      <li><a href="#dont-repeat-yourself-no-te-repitas">Don’t Repeat Yourself (No te repitas)</a></li>
+      <li><a href="#kiss">KISS</a></li>
+      <li><a href="#principios-solid">Principios SOLID</a></li>
+    </ul>
+  </li>
+  <li><a href="#conclusión">Conclusión</a></li>
+</ul>
+:ET

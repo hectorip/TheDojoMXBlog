@@ -1,0 +1,33 @@
+I"�<p>Este es el primer post, esperamos que de muchos, del blog de The Dojo MX.</p>
+
+<p>El objetivo de este blog es compartir información útil para los desarrolladores
+y contribuir al avance y desarrollo de los que nos dedicamos a hacer productos digitales.</p>
+
+<h2 id="temática-y-enfoque">Temática y enfoque</h2>
+
+<p>Se tratarán todos los temas del amplio espectro que abarca desarrollar un producto de
+software, con un enfoque educativo. Algunos ejemplos de los tópicos a tratar son:</p>
+
+<ul>
+  <li>Desarrollo web front y backend</li>
+  <li>Lenguajes de programación en general</li>
+  <li>Mejores prácitcas de desarrollo</li>
+  <li>Inteligencia Artificial</li>
+  <li>Ciencias de la computación teóricas</li>
+  <li>Algoritmia</li>
+  <li>Ingeniería de software</li>
+  <li>Open Source</li>
+</ul>
+
+<h2 id="contribuciones">Contribuciones</h2>
+
+<p>Este es un blog Open Source. Está construido sobre GitHub Pages con Jekyll (tendremos que actualizar esto si un día cambia), lo cuál te permite contribuir con el simple hecho de hacer un PR si crees que podemos cambiar algo en la estructura del sitio o si quieres escribir un post.</p>
+
+<p>En uno de los siguientes posts daremos una lista de pasos detallados de cómo hacer esto, junto con los lineamientos para aceptar un post.</p>
+
+<p>Si tienes ideas o peticiones de temas que deberíamos tratar, puedes abrir un issue en GitHub.</p>
+
+<p>También puedes dejar algún comentario para dar ideas.</p>
+
+<p>¡Nos leemos pronto!</p>
+:ET

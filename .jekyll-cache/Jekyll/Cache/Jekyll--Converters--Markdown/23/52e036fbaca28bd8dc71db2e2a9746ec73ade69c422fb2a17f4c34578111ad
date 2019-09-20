@@ -1,0 +1,116 @@
+I"�#<p>Parte del conocimiento fundamental de un desarrollador profesional de software son los <em>Patrones de diseño</em> (Design Patterns). En este artículo explicamos de manera concisa:</p>
+
+<ol>
+  <li>Qué son</li>
+  <li>De dónde vienen</li>
+  <li>Por qué deberías aprender algunos cuantos</li>
+  <li>Por dónde empezar</li>
+</ol>
+
+<h2 id="qué-son-los-patrones-de-diseño">Qué son los patrones de diseño</h2>
+
+<p>“No hay nada nuevo bajo el sol”: es una conocida frase que quiere decir que gran parte de los
+problemas que la humanidad se ha enfrentado se siguen repitiendo vez tras vez. Aprovechando este conocimiento, los patrones de diseño se pueden definir como:</p>
+
+<blockquote>
+  <p>Soluciones estándar a problemas conocidos (que se repiten) en el desarrollo de software</p>
+</blockquote>
+
+<p>Es decir, son soluciones que sabemos que funcionan para problemas que sabemos que existen desde antes que nosotros los encontráramos. Así de sencillo.</p>
+
+<h2 id="composición">Composición</h2>
+
+<p>Los patrones de diseño de software, se componen de cuatro partes:</p>
+
+<ol>
+  <li><em>Nombre.</em> Permite referirte al patrón unívocamente y hablar con otras personas sobre esta solución específica sin tener que explicarla.</li>
+  <li><em>Problema.</em> La situación que resuelve el patrón específico. Incluye el contexto y los <em>síntomas</em> que se tienen que dar para usar este patrón.</li>
+  <li><em>Solución.</em> Describe todas las partes necesarias, su estructura y relacions que resuelven el problema <em>sin hablar de una implementación específica</em>, ya que un patrón se debe poder aplicar y adaptar a muchas situaciones diferentes.</li>
+  <li><em>Consecuencias.</em> Los resultados de aplicar este patrón tanto negativos como positivos, con el fin de poder evaluar si es conveniente usarlo.</li>
+</ol>
+
+<h2 id="historia">Historia</h2>
+
+<p>Como muchas otras cosas en la joven industria del desarrollo del software, el concepto de patrones de diseño
+fue adaptado de otro campo: la arquitectura, o el diseño de espacios físicos habitables.</p>
+
+<p>El arquitecto <a href="https://en.wikipedia.org/wiki/Christopher_Alexander">Christopher Alexander</a> se dio cuenta que al diseñar edificios y
+ciudades era común encontrarse con situaciones que se repetían una y otra vez. Así que empezó a crear una colección de estos problemas
+comunes y las soluciones que le habían funcionado, con lo que empezó a crear un “lenguaje de patrones”. Aquellas personas
+con las que compartía el conocimiento del problema y de la solución podían referirse a estos
+por los nuevos nombres sin tener que explicarlo todo de nuevo.</p>
+
+<p>En su libro <em>A Pattern Language (1977)</em> puso por escrito una serie de patrones para situaciones
+de diseño arquitectónico para casas y edificios.</p>
+
+<p>Esto inspiró a <a href="https://en.wikipedia.org/wiki/Kent_Beck">Kent Beck</a> y otras personas para usar
+y hablar de soluciones parecidas para el desarrollo de software, aproximadamente 10 años
+después de la publicación del libro.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Erich_Gamma">Erich Gamma</a> y otros tres autores conocidos como la “Banda de los cuatro”(Gang of Four o <a href="http://wiki.c2.com/?GangOfFour">GoF</a>) publicaron un libro
+llamado <em><a href="http://wiki.c2.com/?DesignPatternsBook">Design Patterns: Elements of reusable Object-Oriented Software</a></em> que popularizó el término “Patrones de diseño” y mostró 23 patrones enfocados en la progrmación de sistemas y divididos en 3 categorías:</p>
+
+<ol>
+  <li><em>Creacionales</em>: Se enfocan en la forma de crear nuevos objetos</li>
+  <li><em>Estructurales</em>: Establecen la manera de relacionar objetos y clases (composición y herencia)</li>
+  <li><em>De comportamiento</em>: Se centran principalmente entre la comunicación entre objetos.</li>
+</ol>
+
+<p>Este es un libro obligado si quieres mejorar tus habilidades de desarrollo y diseño de software.</p>
+
+<h2 id="importancia">Importancia</h2>
+
+<p>Conocer y usar los patrones de diseño nos da varias ventajas importantes:</p>
+
+<ol>
+  <li>Permite que usemos soluciones probadas por el tiempo, en muchos proyectos y muchas otras personas y evitemos otras que no han funcionado tan bien.</li>
+  <li>Nos dan un lenguaje común que otras personas, que también entienden este “diccionario”, pueden comprender sin la necesidad de una explicación detallada. Esto es de gran importancia porque gran parte del proceso de desarrollo es entender el código que otros escribieron. Si entiendes los patrones de diseño más comunes, será mucho más fácil que entiendas el código y la arquitectura de otros programas que los usan.</li>
+  <li>Nos dan la flexibilidad de construir sobre ellos. El que exista patrón que seguir no significa que siempre se tenga que implementar a la perfección, sin cambios. Estos patrones dan la capacidad de aprovechar las características que sirven para nuestro problema específico y agregar nuevas para adaptarlo completamente a nuestro problema.</li>
+  <li>Pueden reducir la complejidad de un proyecto si son bien usados.</li>
+</ol>
+
+<h2 id="en-contra-de-los-patrones-de-diseño">En contra de los patrones de diseño</h2>
+
+<p>Todo en la vida y sobre todo en el desarrollo de software representa un intercambio de valor. Damos algo a cambio de otro bien, y nos corresponde personalmente evaluar si una herramienta en una situación determinada es conveniente. Deberíamos evitar usar algo porque los demás dicen que lo debemos usar o es lo más utilizado por todos. Además tenemos que evitar caer en lo que Cal Newport llama la mentalidad de <em><a href="http://www.helwyssocietyforum.com/the-any-benefit-mentality/">“el mínimo beneficio”</a></em>, aquella en la que justificamos el uso de algo sólo porque nos da un pequeño beneficio, sin considerar lo que damos para obtenerlo. Dado el sermón anterior, pensemos en los contras de los patrones de diseño:</p>
+
+<ol>
+  <li>La urgencia de aplicar nuestro recién adquirido conocimiento nos puede llevar a buscar aplicar soluciones complicadas en donde no pertencen.</li>
+  <li>Algunos patrones han probado con el tiempo en realidad ser anti-patrones (te veo a ti <a href="https://stackoverflow.com/questions/12755539/why-is-singleton-considered-an-anti-pattern">singleton</a>), soluciones que no se deberían aplicar nunca, o que es muy difícil justificar su uso.</li>
+  <li>A veces, la necesidad de aplicarlos revela el mal diseño de alguna otra parte de nuestro sistema: desde la plataforma hasta el lenguaje y la elección de otras herramientas.</li>
+  <li>Los patrones de diseño tradicionales están casados con la programción orientada a objetos, que no siempre es la mejor para resolver el problema, aunque es lo más usado actualmente.</li>
+</ol>
+
+<p>Hay toda una horda de programadores respetados que han hablado en contra de los patrones de diseño (como <a href="http://norvig.com/design-patterns/design-patterns.pdf">Peter Norvig</a>, para quien los patrones de diseño son flaquezas de tu lenguaje).</p>
+
+<h2 id="por-dónde-empezar">Por dónde empezar</h2>
+
+<p>Habiendo hablado de las ventajas y adevertencias, ¿por dónde puedes empezar, si te interesa?</p>
+
+<p>Los siguientes recursos son útiles:</p>
+
+<ol>
+  <li><a href="https://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8">Design Patters: Elements of reusable Object-Oriented Software</a>. El libro de referencia de los patrones de diseño clásicos. También está en español, aunque es un poco difícil de conseguir.</li>
+  <li>Para Python específicamente: <a href="https://github.com/faif/python-patterns">Python Patterns</a> y</li>
+  <li><a href="https://python-3-patterns-idioms-test.readthedocs.io/en/latest/index.html">Python 3 Patterns</a></li>
+  <li><a href="https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124">Head First Design Patterns</a>. A este libro se refieren como una guía con bromillas tontas y super pedagógica.</li>
+</ol>
+
+<p>Puedes encontrar una referencia completa de los patrones de diseño en <a href="https://es.wikipedia.org/wiki/Patr%C3%B3n_de_dise%C3%B1o">wikipedia</a>.</p>
+
+<p>En este blog, publicaremos artículos dedicados a patrones de diseño, explicando cómo los hemos usado en nuestro trabajo diario, en los que explicaremos:</p>
+
+<ol>
+  <li>El patrón</li>
+  <li>Cómo reconocer una situación para usarlo</li>
+  <li>Su implementación (normalmente en Python)</li>
+  <li>Otras maneras de aplicarlo</li>
+  <li>Las desventajas de este patrón</li>
+</ol>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>Un patrón de diseño es una solución “probada” aplicada a un problema conocido y repetido en diferentes circunstancias. A veces pueden fallar.
+Conocer los patrones de diseño definitivamente te hará un mejor programador por su extendido uso. Aplicarlos <em>puede</em> y <em>normalmente</em> mejorará la arquitectura de tus programas y proyectos, pero hay que ser cautelosos. Aprender cómo se aplican es una buena inversión de tiempo.</p>
+
+<p>Gracias por leernos y no dudes en dejarnos tus comentarios.</p>
+:ET

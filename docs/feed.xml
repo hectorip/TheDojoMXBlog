@@ -1,0 +1,1429 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-09-20T11:59:17-05:00</updated><id>/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">¿Por qué deberías aprender Go?</title><link href="/2019/09/01/por-que-deberias-aprender-go.html" rel="alternate" type="text/html" title="¿Por qué deberías aprender Go?" /><published>2019-09-01T00:00:00-05:00</published><updated>2019-09-01T00:00:00-05:00</updated><id>/2019/09/01/por-que-deberias-aprender-go</id><content type="html" xml:base="/2019/09/01/por-que-deberias-aprender-go.html">&lt;blockquote&gt;
+  &lt;p&gt;Go es &lt;strong&gt;eficiente, escalable y productivo&lt;/strong&gt;. - &lt;em&gt;Rob Pike&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Go es un lenguaje que llama la atención por algunos rumores que hay acerca de él, como, por ejemplo, que es el lenguaje que va a matar a C, o que es muy muy rápido y poderoso. En este artículo vamos a hablar de qué cosas son ciertas y en qué casos te conviene aprender Go.&lt;/p&gt;
+
+&lt;p&gt;Empecemos hablando de cómo y por qué nació.&lt;/p&gt;
+
+&lt;h2 id=&quot;historia-de-go&quot;&gt;Historia de Go&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Go fue diseñado por Google para resolver sus problemas, y Google tiene &lt;em&gt;grandes&lt;/em&gt; problemas. - &lt;em&gt;Rob Pike&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Go fue creado dentro de Google por un grupo de desarrolladores de software y científicos de la computación &lt;strong&gt;MUY experimentados&lt;/strong&gt;. Las tres personas que lo iniciaron a pensar y diseñar en 2007 fueron Robert Griesemer, Rob Pike y &lt;strong&gt;Ken Thompson&lt;/strong&gt; (sí, el co-creador de UNIX, grep y muchas cosas más). De ese tamaño son las personas que lo diseñaron, y así se siente el lenguaje cuando lo usas.&lt;/p&gt;
+
+&lt;p&gt;Después de una serie de correos y discusiones sobre el diseño, empezaron a trabajar en él y &lt;a href=&quot;https://www.youtube.com/watch?v=rKnDgT73v8s&quot;&gt;lo presentaron como proyecto Open Source en 2009&lt;/a&gt;, a partir de ahí muchas personas tanto de dentro como de fuera de Google han contribuido a su desarrollo.&lt;/p&gt;
+
+&lt;h2 id=&quot;características-de--go&quot;&gt;Características de  Go&lt;/h2&gt;
+
+&lt;p&gt;Go fue concebido pensando en los problemas que los diseñadores veían en los sistemas de Google: su proceso de desarrollo estaba entorpecido por las herramientas que usaban. Según Rob Pike, todo era demasiado lento: demasiado lento de compilar, demasiado lento de construir, demasiado lento de pensar. Cuando decimos que el tiempo de compilación era demasiado largo nos referimos a que podía llegar a tomar &lt;em&gt;varias horas&lt;/em&gt; para compilar un sistema.&lt;/p&gt;
+
+&lt;p&gt;También había una “explosión de complejidad”. Así que Go fue pensado para ser simple, de una “simplicidad radical”. Por lo tanto, carece de características que otros lenguajes sí tienen, pero hacen que los programas sean complejos.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;La simplicidad es la clave del buen software. - &lt;em&gt;The Go Programming Language&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Analicemos las características de Go, un lenguaje pensado para trabajar en sistemas muy grandes de manera simple.&lt;/p&gt;
+
+&lt;h3 id=&quot;procedural-con-flexibilidad-para-orientación-a-objetos&quot;&gt;Procedural, con flexibilidad para orientación a objetos&lt;/h3&gt;
+
+&lt;p&gt;El paradigma principal de Go es el procedural se parece mucho a C en este aspecto. Sus principales medios de organización son las funciones y los paquetes, aunque permite crear un tipo débil de organización muy parecida a los objetos mediante &lt;code class=&quot;highlighter-rouge&quot;&gt;structs&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Aquí puedes ver un ‘Hello world’:&lt;/p&gt;
+
+&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;¡Hola Go!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;tipado-estático-y-fuerte&quot;&gt;Tipado estático y fuerte&lt;/h3&gt;
+
+&lt;p&gt;Go es un lenguaje fuertemente tipado, lo cuál quiere implica varias cosas:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;La declaración de variables implica el tipo de valor que estará asociado a esta instancia del nombre, por lo que no puede usarse para guardar otro tipo de valor. En Go no necesariamente se tiene que decir explícitamente el tipo de valor a usarse, puede ser inferido:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;n&quot;&gt;miNombre&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Héctor&quot;&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;// La variable es un string&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Esto es verificado en tiempo de compilación, por lo que podrás estar tranquilo de que Go no te dejará correr programas usando variables como lo que no son.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;No existe la conversión o forzamiento de tipos automática e implícita, como en JS, que intenta realizar la operación aunque los tipos de valor usados no tengan sentido en la operación. En Go, si intentas hacer una operación con tipos no compatibles el programa puede no compilar o fallar en tiempo de ejecución.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;rápida-compilación&quot;&gt;Rápida compilación&lt;/h3&gt;
+
+&lt;p&gt;Pensado para sistemas muy grandes, justo como los desarrollados en Google, Go se toma en serio el tiempo de complicación y es muy rápido al compilar los programas, a diferencia de Java, C o C++. Esto está apoyado por tres pilares:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Las dependencias están puestas al principio de cada archivo, por lo que no hay que buscar en todo el programa por dependencias perdidas.&lt;/li&gt;
+  &lt;li&gt;Las dependencias no forman ciclos, por lo que pueden organizarse para que sean compiladas independientemente, incluso de manera paralela.&lt;/li&gt;
+  &lt;li&gt;El programa objeto compilado de cada paquete exporta información útil para sus dependencias que puede ser usada sin tener que leer todo el paquete.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;manejo-de-dependencias-y-paquetes&quot;&gt;Manejo de dependencias y paquetes&lt;/h3&gt;
+&lt;p&gt;Go tiene en su biblioteca estándar más de 100 paquetes y la comunidad de Go cada vez contribuye más paquetes. Go viene con la herramienta para la línea de comandos &lt;code class=&quot;highlighter-rouge&quot;&gt;go&lt;/code&gt; que es fácil de usar para manejar proyectos creados con Go. La herramienta &lt;code class=&quot;highlighter-rouge&quot;&gt;go&lt;/code&gt; nos ayuda a administrar nuestras dependencias: descargarlas, limpiarlas e instalarlas.&lt;/p&gt;
+
+&lt;h3 id=&quot;manejo-de-memoria&quot;&gt;Manejo de memoria&lt;/h3&gt;
+&lt;p&gt;Go tiene manejo automático de memoria, lo que quiere decir que tal como en Java o Python, no tienes que preocuparte de liberar la memoria manualmente. Sin embargo, esta característica lo hace poco práctico para sistemas que requieran tratamiento de datos en tiempo real demasiado fuerte y preciso.&lt;/p&gt;
+
+&lt;h2 id=&quot;concurrencia&quot;&gt;Concurrencia&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1567320490/Go-routines-gopher_vgcpbt.jpg&quot; alt=&quot;La mascota de Go haciendo el trabajo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A esta característica decidimos dedicarle un poco más de espacio. Debido a que el mundo de la computación ha cambiado desde que se escribieron los primeros programas, en los que se contaba con un sólo procesador, el equipo de Go le dio gran importancia a la capacidad de &lt;strong&gt;crear programas con un muy buen diseño concurrente&lt;/strong&gt;. Eventualmente estos programas podrían correr en paralelo aprovechando los sistemas de computación que existen actualmente, con múltiples procesadores.&lt;/p&gt;
+
+&lt;p&gt;Go permite crear procesos concurrente de manera muy sencilla:&lt;/p&gt;
+
+&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;go&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Eso es todo. Go ejecutará la función &lt;code class=&quot;highlighter-rouge&quot;&gt;myFunc&lt;/code&gt; de manera concurrente (se ejecuta de manera independiente al programa principal o a otras funciones concurrentes). Esto es una &lt;strong&gt;gorutine&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Go soporta dos modelos de concurrencia:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Comunicación de procesos secuenciales&lt;/strong&gt; (Communicating Sequential Processes - CSP), en la que cada proceso tiene sus propias variables, y se transfieren información entre ellos mediante mensajes. En el caso de Go es a través de &lt;em&gt;canales&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Multihilo con memoria compartida&lt;/strong&gt;. En este tipo de concurrencia todos los procesos escriben sobre el mismo espacio de memoria, es decir, comparten variables, pero debe haber algúna forma de coordinación entre ellos para que no choquen ni se bloqueen mutuamente al tomar un recurso.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La concurrencia es uno de los puntos más fuertes de Go.&lt;/p&gt;
+
+&lt;h2 id=&quot;ventajas-de-go-sobre-otros-lenguajes&quot;&gt;Ventajas de Go sobre otros lenguajes&lt;/h2&gt;
+
+&lt;p&gt;Hablemos de en qué casos querrías usar Go.&lt;/p&gt;
+
+&lt;h3 id=&quot;eficiencia-al-correr&quot;&gt;Eficiencia al correr&lt;/h3&gt;
+&lt;p&gt;Go no corre sobre ninguna máquina virtual. Crea ejecutables para los sistemas operativos a los que apunta, que contienen todo lo necesario para poder ejecutarse sin necesidad de tener algo instalado allí. Al ser compilado, Go es mucho más eficiente para correr que otros lenguajes interpretados, como JS, Python o Ruby. Consume menos memoria y su velocidad se acerca a la de C.&lt;/p&gt;
+
+&lt;h3 id=&quot;legibilidad&quot;&gt;Legibilidad&lt;/h3&gt;
+&lt;p&gt;Go fue pensado para ser &lt;em&gt;simple&lt;/em&gt;. Sus estructuras, su sintaxis y su filosofía lo hacen fácil de leer y de aprender. Es cierto que no es tan legible como Python o Ruby, por ejemplo, pero es mucho más legible que otros lenguajes con características similares como C++ o Java.&lt;/p&gt;
+
+&lt;h3 id=&quot;usable-para-los-programadores&quot;&gt;Usable para los programadores&lt;/h3&gt;
+
+&lt;p&gt;Una de las promesas de Go desde el principio era poder hacer mucho con poco. Y es algo que cumple completamente. Su librería estándar está diseñada y construida por verdaderos titanes de la ingeniería del software, practicantes de esto por más tiempo que la vida de muchos de los que leerán este artículo. El siguiente ejemplo es un servidor web con una ruta, sin usar ningún framework o biblioteca extra, sino sólo la pura biblioteca estándar de Go.&lt;/p&gt;
+
+&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;net/http&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HandleFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HelloServer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ListenAndServe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;:8080&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HelloServer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ResponseWriter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Fprintf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello, %s!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;// te saluda de regreso&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;desventajas&quot;&gt;Desventajas&lt;/h2&gt;
+
+&lt;h3 id=&quot;sistema-de-tipos&quot;&gt;Sistema de tipos&lt;/h3&gt;
+&lt;p&gt;Esta no es una desventaja como tal de Go, sino una creada por el ecosistema de desarrollo actual: al haber tantos lenguajes que hacen manejo de valores y tipos de dato automáticamente, al programar en &lt;em&gt;cualquier&lt;/em&gt; lenguaje tipado, incluyendo Go, muchos sienten que están desperdiciando su tiempo.&lt;/p&gt;
+
+&lt;h2 id=&quot;relativamente-joven&quot;&gt;Relativamente joven&lt;/h2&gt;
+
+&lt;p&gt;Go tiene a penas 10 años de haber salido a la luz, 12 desde que se empezó a diseñar. El tiempo de vida de un lenguaje influye en su usabilidad y la conveniencia de varias formas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;La comunidad que ha desarrollado&lt;/li&gt;
+  &lt;li&gt;Las herramientas disponibles&lt;/li&gt;
+  &lt;li&gt;Los errores encontrados&lt;/li&gt;
+  &lt;li&gt;Experiencias de otros desarrolladores con diferentes tipos y tamaños de sistemas&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Considera esto si tienes que hacer un proyecto grande.&lt;/p&gt;
+
+&lt;h2 id=&quot;proyectos-que-lo-usan&quot;&gt;Proyectos que lo usan&lt;/h2&gt;
+
+&lt;p&gt;Muchos proyectos importantes del mundo de la infraestructura, orquestación de servidores, contenedores, bases de datos y herramientas para programadores lo usan. Algunos ejemplos:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Docker&lt;/li&gt;
+  &lt;li&gt;Kubernetes&lt;/li&gt;
+  &lt;li&gt;Terraform y Vault (casi todos las herramientas de HashiCorp)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.influxdata.com/&quot;&gt;InfluxDB&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/caddyserver/caddy&quot;&gt;Caddy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Esto te debería dar una idea de la importancia de Go en el ecosistema de desarrollo. Grandes proyectos lo usan, grandes empresas lo usan.&lt;/p&gt;
+
+&lt;h2 id=&quot;go-vs-rust&quot;&gt;Go vs Rust&lt;/h2&gt;
+
+&lt;p&gt;Una discusión reciente es cuál de los dos lenguajes va a lograr efectivamente reemplazar a C, con características más modernas y como un lenguaje más adaptado a las necesidades actuales. Esto es pura opinión: Rust es un mejor candidato para reemplazar a C por sus características de manejo de memoria. Pero Rust no es un lenguaje tan fácil de aprender o empezar com Go.
+En Go puedes hacer muchas cosas que haces con C razonablemente bien, sin tanta complicación y sin tener que manejar la memoria manualmente o semi-manualmente. La prueba está en todos los proyectos que manejan cosas de bajo nivel.&lt;/p&gt;
+
+&lt;p&gt;Más adelante tendremos un artículo de por qué deberías aprender Rust.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Go es un lenguaje relevante en 2019, 10 años después de haber nacido y lo seguirá siendo por muchos años, sobre todo por los proyectos ya desarrollados en él y las características de las que hablamos en este artículo. Aprenderlo te dará una herramienta más para desarrollar programas que valgan la pena y cumplan con lo esperado.&lt;/p&gt;
+
+&lt;p&gt;Pero como &lt;a href=&quot;https://fs.blog/about/&quot;&gt;Shane Parrish&lt;/a&gt; dice: Go es “simple pero no fácil”. Es sencillo empezar a programar con él, pero dominar sus conceptos requiere estudio y esfuerzo. Go se siente como una herencia de gente muy sabia haciendo un lenguaje para hacer cosas grandes. No te arrepentirás de aprenderlo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="go" /><category term="golang" /><category term="lenguajes-de-programación" /><summary type="html">Go es un lenguaje muy relevante en algunas áreas del desarrollo de software. Aprende para qué deberías usarlo y por qué te conviene aprenderlo.</summary></entry><entry><title type="html">Ultralearning: el arte del aprendizaje profundo</title><link href="/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto.html" rel="alternate" type="text/html" title="Ultralearning: el arte del aprendizaje profundo" /><published>2019-08-13T00:00:00-05:00</published><updated>2019-08-13T00:00:00-05:00</updated><id>/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto</id><content type="html" xml:base="/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto.html">&lt;blockquote&gt;
+  &lt;p&gt;¿En qué te convertirías si aprendieras todo lo que deseas?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;¿Cuántas cosas están en tu lista de aprendizaje?&lt;/strong&gt; Todos tenemos una lista larga de temas, habilidades y curiosidades por aprender. Pero tenemos una cantidad igual de grande de obstáculos para lograrlo: la falta de acceso a recursos de aprendizaje, la falta de tiempo, falta de motivación, dificultad en estructura, entre muchas otras cosas.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.scotthyoung.com/&quot;&gt;Scott Young&lt;/a&gt; el autor de &lt;a href=&quot;https://www.scotthyoung.com/blog/ultralearning/&quot;&gt;Ultralearning&lt;/a&gt; fue muy amable al proporcionarme una copia de revisión antes de que saliera el libro que &lt;a href=&quot;https://www.amazon.com.mx/Ultralearning-Master-Outsmart-Competition-Accelerate/dp/006285268X/ref=tmm_hrd_swatch_0?_encoding=UTF8&amp;amp;qid=1565413014&amp;amp;sr=8-1&quot;&gt;ya está a la venta&lt;/a&gt;, y en este artículo quiero sintetizar las principales técnicas que enseña para que puedas lograr aprender mejor.&lt;/p&gt;
+
+&lt;p&gt;Pero primero, ¿quién es Scott Young y por qué deberíamos escucharlo? Se hizo famoso por estudiar el temario completo (o casi completo) del MIT para Computer Science que normalmente se cursa en 4 años &lt;strong&gt;en sólo 1&lt;/strong&gt;. Este proyecto ocupaba todo su tiempo, un montón de concentración y técnicas para aprender. Aquí es donde empezó a desarrollar el concepto que presenta en el libro (me tomaré la libertad de traducirlo): Ultra-aprendizaje. A partir de ahí ha aprendido muchas más cosas con el mismo estilo agresivo de aprendizaje y ha ayudado a otros a hacer lo mismo.&lt;/p&gt;
+
+&lt;p&gt;Un proyecto de ultra-aprendizaje se define como un periodo de concentración intensa que permite aprender de manera acelerada y profunda el tema que hayas elegido. Para realizar estos proyectos, Scott propone &lt;strong&gt;nueve principios&lt;/strong&gt;, tomando como base lo que aprendió de otras personas que han realizado proyectos similares a los de él pero también los estudios más recientes sobre el tema.&lt;/p&gt;
+
+&lt;p&gt;Este libro te servirá tanto si eres tú el que desea aprender como si quieres enseñarle a otras personas.
+Veamos los nueve principios necesarios para realizar tu propio proyecto de ultra-aprendizaje.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-meta-aprendizaje&quot;&gt;1: Meta-aprendizaje&lt;/h2&gt;
+
+&lt;p&gt;Podemos pensar en este principio como la etapa de planeación. Tienes que investigar cómo esto que quieres aprender lo han aprendido otras personas, que ruta de aprendizaje han seguido, cuáles eran sus conocimientos previos, cuánto les tomó, etc. Para esto puedes investigar en internet o incluso conseguir una entrevista con una persona que tenga los conocimientos que tú quieres.Todo lo que puedas obtener de esta información es útil.&lt;/p&gt;
+
+&lt;p&gt;También tienes que buscar y entender la estructura del tema que quieres aprender, los subtemas principales, cuáles son buenos recursos para aprender. Si encontraste un experto que te ayudara ya tienes cubierto gran parte de esto.&lt;/p&gt;
+
+&lt;p&gt;Es entonces que tienes que reunir todos los recursos posibles de aprendizaje y &lt;strong&gt;trazar un plan, un mapa de aprendizaje&lt;/strong&gt;. En este periodo decidirás cuánto tiempo vas a dedicarle al proyecto y hasta dónde llegarás. Muy importante porque un poco de investigación te puede ahorrar mucho tiempo de ejecución. Este principio te invita a reducir al máximo posible lo que no sabes que no sabes sobre el tema.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-enfoque&quot;&gt;2: Enfoque&lt;/h2&gt;
+
+&lt;p&gt;Este principio establece que para poder aprender efectivamente antes tenemos que agudizar nuestra capacidad de concentrarnos en un tema.&lt;/p&gt;
+
+&lt;p&gt;El enfoque puede trabajarse en tres momentos diferentes:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Empezar a enfocarse en algo&lt;/li&gt;
+  &lt;li&gt;Mantener el enfoque&lt;/li&gt;
+  &lt;li&gt;Mejorar la calidad de nuestra concentración&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Muchos autores coinciden en que la calidad y capacidad par concentrarse es uno de las claves para poder progresar en cualquier cosa, no sólo en el aprendizaje.&lt;/p&gt;
+
+&lt;p&gt;En el libro se dan sugerencias prácticas para poder mejorar en las tres etapas de enfoque.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-aprendizaje-directo&quot;&gt;3: Aprendizaje directo&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Aquel que puede ir a la fuente no va sólo por la jarra.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Es bueno aprender cosas leyendo, pero es mucho mejor aprenderlas aplicando lo que leemos o practicando directamente. Si quieres aprender a programar tienes que crear programas reales que funcionen. Si quieres aprender un idioma tienes que hablar o comunicarte con otras personas en ese idioma. Haciendo esto aprenderás mucho más rápido de lo que harías sólamente leyendo libros que relaten la experiencia de otros, o usando Duolingo.&lt;/p&gt;
+
+&lt;p&gt;Practicar la habilidad directamente o poner en acción el conocimiento hará que este sea más profundo, útil y que lo recuerdes mejor.&lt;/p&gt;
+
+&lt;p&gt;Este principio es muy importante y muchos de nosotros lo hemos vivido en nuestra experiencia escolar: nada de lo que no es enseñaron es aplicable en el mundo real porque las habilidades necesarias para realizar el trabajo de verdad son muy diferentes a lo que se ve en los libros. Aunque el conocimiento adquirido puede servir como base, &lt;strong&gt;la práctica hace al maestro&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;4-ensayo&quot;&gt;4: Ensayo&lt;/h2&gt;
+
+&lt;p&gt;Esta parte es una de las que a las personas en general menos le gusta: practicar o ensayar partes de la habilidad que sean difíciles, laboriosas o aburridas.&lt;/p&gt;
+
+&lt;p&gt;Muchas veces nuestras habilidades están topadas o detenidas por cierta parte del proceso, como si fuera un embudo deteniendo el flujo de líquido. Para acabar con esto hay que practicar con la parte más incómoda de la habilidad.&lt;/p&gt;
+
+&lt;p&gt;Esto incluye que descompongas la habilidad en diferentes sub-procesos que puedan ejecutarse individualmente y practicar cada uno por separado hasta que lo domines de manera razonable, uno tras otro, cada de los sub-procesos hasta terminarlos todos. Después hay que practicar de nuevo el proceso completo y medir nuestro desempeño.&lt;/p&gt;
+
+&lt;p&gt;Esto es conveniente porque al trabajar sobre una parte específica del proceso completo puedes liberar recursos mentales para mejorar de manera más profunda y significativa en esa parte de la habilidad.&lt;/p&gt;
+
+&lt;h2 id=&quot;5-recuperación-de-la-información&quot;&gt;5: Recuperación de la información&lt;/h2&gt;
+
+&lt;p&gt;El principio de “retrieval” consiste en intentar poner en práctica y ver si de verdad entendiste lo que acabas de aprender mediante pruebas reales, por ejemplo: usar las palabras de un nuevo idioma en conversación, contestar preguntas de un examen o usar una nueva técnica aprendida para programar.&lt;/p&gt;
+
+&lt;p&gt;Esto ayudará a que recuerdes mejor lo aprendido y a que no te quedes con la sensación de que has aprendido algo cuando no es la realidad. Poner a prueba tu conocimiento es la mejor manera de saber que sí existe y de qué calidad es.&lt;/p&gt;
+
+&lt;p&gt;Este principio pone de relieve algo: es mucho más incómodo “probarse” a uno mismo mediante imponerse algún obstáculo, es una fuente de cansancio e incomodidad mental, lo cuál nos puede dejar con la sensación de que no estamos aprendiendo o avanzando mucho. Pero estudios sobre esto demuestran que aunque sólo leer puede dejar la sensación de que entendimos y aprendimos mucho, la forma más efectiva de aprender es poner a prueba el conocimiento y la sensación de aprendizaje no está directamente ligada a cuánto aprendimos de verdad.&lt;/p&gt;
+
+&lt;h2 id=&quot;6-retroalimentación&quot;&gt;6: Retroalimentación&lt;/h2&gt;
+
+&lt;p&gt;Una forma importante de mejorar y aprender es tener a alguien o algo que te ayude a encontrar lo que está fallando en tu desempeño del tema de lo que estés aprendiendo.&lt;/p&gt;
+
+&lt;p&gt;El ejemplo que Scott usa de una persona que aprendió a hablar en público como su proyecto de ultra-aprendizaje y que recibía retroalimentación de un mentor que le decía exactamente dónde fallaba. Al atacar estos puntos que una persona con más experiencia le marcaba pudo llegar a ser un orador de clase mundial en muy poco tiempo.&lt;/p&gt;
+
+&lt;p&gt;A nadie nos gusta escuchar nuestras fallas, pero es una parte  muy importante de aprender de manera efectiva.&lt;/p&gt;
+
+&lt;p&gt;Pero no todo tipo de retroalimentación es útil. Cuando esta información es sobre alguna cualidad personal o sobre tu persona directamente, en general es más perjudicial que benéfico, puede llevarte hasta a abandonar la habilidad que estabas intentando aprender.&lt;/p&gt;
+
+&lt;p&gt;Muy probablemente todos hemos experimentado este tipo de comentarios: “Eres muy inteligente”, “No eres bueno para esto”, “Mejor dedícate a otra cosa”. Este tipo de comentarios no aportan nada relevante y atacan o inflan el ego de la persona.&lt;/p&gt;
+
+&lt;p&gt;Para que la retroalimentación sea útil debe proveer información que guíe las siguientes etapas de aprendizaje. Para lograr esto debe ser muy específico y si es posible decirte cómo mejorar en ese aspecto.&lt;/p&gt;
+
+&lt;h2 id=&quot;7-retención&quot;&gt;7: Retención&lt;/h2&gt;
+
+&lt;p&gt;No deberíamos echar agua en una bote con fugas. De igual manera, no vale la pena que leas y aprendas muchas cosas que después no podrás recordar porque las olvidaste rápidamente.&lt;/p&gt;
+
+&lt;p&gt;En este principio Scott explica que tenemos que aprender y reconocer por qué olvidamos y atacar esas causas específicas.&lt;/p&gt;
+
+&lt;p&gt;¿Cómo hacer para no olvidar el valioso conocimiento que con tanto trabajo ganamos?&lt;/p&gt;
+
+&lt;p&gt;Scott propone varios métodos:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Repetición espaciada&lt;/strong&gt;. Es un método que consiste en repasar la información un poco de tiempo después de haberla estudiado o aprendido por primera vez y repetir el proceso con cada vez más tiempo de espacio.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Automatización&lt;/strong&gt;. Cuando aprendemos algo a tal grado que podamos decir que tenemos automatizada la habilidad (como andar en bicicleta), es muy poco probable que lo olvidemos.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sobre-aprendizaje&lt;/strong&gt;. Practicar más allá de lo que es requerido para volverse bueno en algo o competente hará que las cosas sean mucho más difíciles de olvidar. Esto se puede hacer practicando hasta el cansancio una actividad clave o aprendiendo algo más difícil que construya sobre la actividad principal, por ejemplo: aprender y practicar cálculo diferencial hará que sobre-aprendas álgebra.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Mnemónicos&lt;/strong&gt;. Estas es un técnica que consiste en crear imágenes vívidas o palabras relacionadas con lo que estemos buscando aprender para poder recordarlo. Los mejores memoristas del mundo aplican esta técnica para poder recordar grandes cantidades de información en poco tiempo.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Poder retener información es uno de los requisitos para que tu proyecto de ultra-aprendizaje valga la pena.&lt;/p&gt;
+
+&lt;h2 id=&quot;8-intuición&quot;&gt;8: Intuición&lt;/h2&gt;
+
+&lt;p&gt;La intuición es el producto una gran cantidad de experiencia acumulada. Para verdaderamente entender algo tenemos que desarrollar nuestra intuición en el tema. ¿Qué podemos hacer para desarrollarla?&lt;/p&gt;
+
+&lt;p&gt;En esta sección del libro se habla de cómo personas como Richard Feynman parecen hacer magia al resolver problemas de física y de matemáticas. La principal característica de Feynman usada para resolver los problemas es su capacidad de identificar &lt;em&gt;los principios que están en juego&lt;/em&gt;, además de la gran cantidad de información almacenada obtenida de otros problemas resueltos con anterioridad.&lt;/p&gt;
+
+&lt;p&gt;¿Cómo puedes desarrollar una intuición similar?&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Resolver problemas difíciles. Muchas veces huímos de los problemas que nos parecen demasiado difíciles para nosotros, pero resolver problemas que rebasen nuestra habilidad puede darnos un entendimiento muy profundo del tema tratado.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Comprueba la información para entenderla. No te quedes sólamente con la explicación del libro, sino trata de demostrar que lo que estás aprendiendo es cierto.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Usa ejemplos concretos. Cuando trates con conceptos o temas abstractos, desde el principio establece un ejemplo al que le puedas ir aplicando los puntos que se van explicando. Esta concreción permitirá desarrollar un mejor entendimiento del tema.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;No te engañes a ti mismo. Cuando te falta conocimiento sobre un tema, generalmente también te falta conocimiento para saber qué tan hábil eres. Esto quiere decir que el que no tengas dudas sobre un tema significa que lo sabes todo, sino más bien que sabes muy poco. Hacer muchas preguntas es una manera de hacerle frente a este problema, aunque parezcan tontas.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Una forma muy efectiva de desarrollar un entendimiento real: la técnica de Feynman. Esta consiste en intentar explicar el problema, solución o concepto de la manera más clara posible como para alguien que nunca ha visto nada relacionado con el tema.&lt;/p&gt;
+&lt;h2 id=&quot;9-experimentación&quot;&gt;9: Experimentación&lt;/h2&gt;
+
+&lt;p&gt;El verdadero conocimiento no se queda en llegar al punto en que otros te dijeron que debías llegar sino en ir más allá.&lt;/p&gt;
+
+&lt;p&gt;Además, mientras más aprendas de algo menos guía podrás recibir ya que hay menos personas y recursos en ese nivel, por lo que es algo requerido aprender a experimentar con maneras de generar conocimiento.&lt;/p&gt;
+
+&lt;p&gt;Para experimentar en tu aprendizaje y resultados puedes intentar tres cosas:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Variar los &lt;strong&gt;recursos de aprendizaje&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Experimentar la &lt;strong&gt;técnica de aprendizaje&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Experimentar con tu &lt;strong&gt;estilo de trabajo y aprendizaje&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Experimentar te permitirá convertirte en verdadero experto en el tema que estés queriendo dominar.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Completar un proyecto de este tamaño te demuestra que tienes la habilidad de mejorarte y de sacarle buen provecho a tu vida. Te da la confianza de que puedes lograr cosas ambiciosas.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Esta es una de las frases más inspiradoras del libro y creo que te da buenos motivos para empezar a pensar en tus propio proyecto de ultra-aprendizaje, además de los beneficios asociados al tema mismo que quieras aprender:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;¿Te ayudará a conseguir un mejor trabajo o puesto?&lt;/li&gt;
+  &lt;li&gt;¿Podrás ser más útil a tu familia, comunidad o amigos?&lt;/li&gt;
+  &lt;li&gt;¿Disfrutarás más de tu tiempo libre o tendrás más a consecuencia de esto?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sin duda todas estas razones son suficientes para intentarlo por lo menos.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Hacer cosas difíciles, sobre todo cosas que tienen que ver con aprender, puede crecer el concepto que tienes de ti mismo”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Esto a su vez, tendrá efectos en otros campos de tu vida.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;¿Quién te podrías volver?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;¡A aprender!&lt;/p&gt;
+
+&lt;p&gt;Puedes comprar el libro en &lt;a href=&quot;https://www.amazon.com.mx/Ultralearning-Outsmart-Competition-Accelerate-English-ebook/dp/B07K6MF8MD/&quot;&gt;Amazon&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprendizaje" /><category term="libros" /><category term="lectura" /><category term="reseñas" /><summary type="html">Todos queremos aprender muchas cosas. Aprende un método que te permitirá mejorar tus habilidades para adquirir conocimiento.</summary></entry><entry><title type="html">Entendiendo REST: conexión sin estado</title><link href="/2019/08/03/entendiendo-rest-servidor-sin-estado.html" rel="alternate" type="text/html" title="Entendiendo REST: conexión sin estado" /><published>2019-08-03T00:00:00-05:00</published><updated>2019-08-03T00:00:00-05:00</updated><id>/2019/08/03/entendiendo-rest-servidor-sin-estado</id><content type="html" xml:base="/2019/08/03/entendiendo-rest-servidor-sin-estado.html">&lt;p&gt;Hemos venido hablando de las características que componen a un sistema REST. En el último artículo &lt;a href=&quot;/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html&quot;&gt;hablamos de la arquitectura cliente-servidor&lt;/a&gt;. Esta es la primera característica fundamental de un sistema REST. Ahora pasemos a la siguiente característica-limitante que Thomas Fielding establece para los sistemas REST: &lt;strong&gt;conexión sin estado&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-el-estado-de-un-sistema&quot;&gt;¿Qué es el estado de un sistema?&lt;/h2&gt;
+
+&lt;p&gt;El estado de una aplicación son todos los datos que usa para operar en un momento determinado.&lt;/p&gt;
+
+&lt;p&gt;Como ejemplo podemos pensar en una aplicación de ventas en línea. El estado de esta aplicación, para un usuario específico son sus datos de identificación, su bolsa de compras y los productos que ha estado viendo o que tiene en su lista de deseos, así como datos que no son identificables directamente desde la interfaz de usuario como los tokens de sesión, su historial de visita de las páginas y productos (piensa en Amazon) y los productos que ha comprado anteriormente en esta página.&lt;/p&gt;
+
+&lt;p&gt;Todos estos datos necesarios para operar tanto a nivel interno como para la interfaz de usuario son el estado de la aplicación para este usuario. &lt;strong&gt;Puedes entender el estado como el contexto de una aplicación&lt;/strong&gt;. Todas las aplicaciones y programas usables tienen uno. Entonces, ¿a qué nos referimos con conexiones sin estado?&lt;/p&gt;
+
+&lt;h2 id=&quot;conexión-sin-estado&quot;&gt;Conexión sin estado&lt;/h2&gt;
+
+&lt;p&gt;Dando por supuesto que estamos trabajando en un sistema con arquitectura de red &lt;a href=&quot;/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html&quot;&gt;cliente-servidor&lt;/a&gt;, las dos partes comparten la información (el estado) necesaria para realizar las operaciones. La pregunta es: ¿en qué lado mantengo esta información durante la operación? Damos por supuesto que el almacenamiento de información a largo plazo está localizado en algún lado del servidor. Pero en el momento de la operación, ¿quién mantiene estos datos memoria operativa?&lt;/p&gt;
+
+&lt;p&gt;En el ejemplo del que hablamos: ¿quién mantiene en memoria la bolsa de compras del usuario, el cliente (el navegador web) o el servidor? Cualquiera de los dos podría llevarlo a cabo. Veamos los dos casos, empecemos por una conexión que “recuerda” el estado.&lt;/p&gt;
+
+&lt;p&gt;Imagínate la siguiente conversación:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cliente(C): Vamos a empezar a trabajar con el usuario &lt;em&gt;hectorip&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Servidor(S): De acuerdo&lt;/li&gt;
+  &lt;li&gt;C: Dame su bolsa de compras&lt;/li&gt;
+  &lt;li&gt;S: Tiene estos 5 artículos guardados&lt;/li&gt;
+  &lt;li&gt;C: Comprar todos los artículos de su bolsa&lt;/li&gt;
+  &lt;li&gt;S: Ok, serán $500&lt;/li&gt;
+  &lt;li&gt;C: el cliente quiere pagar&lt;/li&gt;
+  &lt;li&gt;S: le he cobrado todo lo de su bolsa&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;El tipo de conversación que acabamos de ver sería una &lt;strong&gt;conexión con estado&lt;/strong&gt;: cada uno de los mensajes depende del mensaje anterior para poder entender de qué estábamos hablando. Intenta leerla de regreso y lo notarás.&lt;/p&gt;
+
+&lt;p&gt;Ahora veamos cómo sería un conversación que no recuerda los mensajes anteriores:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;C: Dame la bolsa de compra de &lt;em&gt;hectorip&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;S: hectorip tiene estos 5 artículos en su bolsa&lt;/li&gt;
+  &lt;li&gt;C: hectorip quiere comprar todos los artículos de su bolsa&lt;/li&gt;
+  &lt;li&gt;S: Ok, serán $500 por todos los artículos de la bolsa de compra&lt;/li&gt;
+  &lt;li&gt;C: hectorip quiere realizar un pago por $500 por los artículos en su bolsa de compras&lt;/li&gt;
+  &lt;li&gt;S: He cobrado $500 a hectorip por el pedido de los artículos en su bolsa de compras&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Si revisamos la conversación anterior, podemos entender cada mensaje leído individualmente, sin necesitar el contexto completo de la conversación.&lt;/p&gt;
+
+&lt;p&gt;La primera conversación (conexión con estado) tiene algunas ventajas claras:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Los mensajes son más cortos&lt;/li&gt;
+  &lt;li&gt;La conversación es más fluída&lt;/li&gt;
+  &lt;li&gt;Se transfiere menos información de un lado a otro&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pero también tiene desventajas. ¿Qué pasa si esta conversación se interrumpe y se intenta retomar? &lt;em&gt;Hay que empezar la conversación desde cero.&lt;/em&gt; ¿Qué pasa si el servidor, por algún error olvida de lo que estábamos hablando? &lt;em&gt;Hay que reiniciar la conversación.&lt;/em&gt; ¿Qué pasa si quiero continuar la compra en otro servidor? &lt;em&gt;Hay que reiniciar la conversación con el nuevo servidor.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;características-de-conexión-sin-estado&quot;&gt;Características de conexión sin estado&lt;/h1&gt;
+
+&lt;p&gt;Hablemos de las características de una conexión sin estado.&lt;/p&gt;
+
+&lt;p&gt;La primera característica es que &lt;em&gt;no necesitamos&lt;/em&gt; que la conexión a nivel de sesión de red sea persistente, es decir, que se mantenga un canal de comunicación abierto que pueda mantener en memoria la información de los procesos actuales.&lt;/p&gt;
+
+&lt;p&gt;Segundo, no podemos (ni debemos) asumir que el servidor mantendrá los datos del cliente automáticamente por medio de reconocer al cliente. En cada una de las peticiones que se hacen al servidor, &lt;strong&gt;deben venir todos los datos necesarios para que el servidor mantenga realice la operación&lt;/strong&gt;, no se puede confiar en que las peticiones anteriores transfirieron esa información y no es necesario repetirla.&lt;/p&gt;
+
+&lt;p&gt;Hasta ahora parece que esto presenta más problemas que ventajas. Revisemos por qué alguien querría trabajar con un sistema así.&lt;/p&gt;
+
+&lt;h2 id=&quot;ventajas-de-mantener-el-servidor-sin-estado&quot;&gt;Ventajas de mantener el servidor sin estado&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Replicación de servidores&lt;/strong&gt;. Al no tener que mantener el estado o conexiones persistentes con una instancia del servidor, una conexión sin estado puede permitir que la petición sea atendida por cualquier instancia del código del servidor que tenga el mismo código que las peticiones anteriores, ya que toda la información necesaria para atender esas peticiones estará incluida.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Escalabilidad&lt;/strong&gt;. Esto es una consecuencia inmediata de la ventaja anterior: poder replicar los servidores permite distribuir la carga entre muchas computadoras y aplicar técnicas de balanceo para poder atender a muchos más clientes de lo que se podría en un sistema que requiera mantener estados.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Servicios más sencillos&lt;/strong&gt;. Quitarle la responsabilidad de mantener el contexto de las operaciones actuales a los servicios hace que su código sea más sencillo y por lo tanto más mantenible.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Menos carga en los servidores&lt;/strong&gt;. Al no tener que mantener conexiones persistentes, ni tener que mantener procesos o memoria relacionada con los clientes con los que está operando, se reduce la carga en memoria operativa de los servidores (teóricamente). Esto también implica que el servidor ni siquiera tiene que estar corriendo mientras no esté activamente respondiendo una petición (como las funciones lambda).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;La siguiente imagen ilustra una técnica común para atender a muchos clientes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1564887852/PNG_image-428CDB12FF65-1_ojrpoo.png&quot; alt=&quot;Diagrama de replicación de servidores&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;desventajas&quot;&gt;Desventajas&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Complejidad de las peticiones&lt;/strong&gt;. La complejidad de las peticiones aumenta al necesitar mantener en el cliente toda la información necesaria para reconstruir el estado en cada petición en un servidor desde cero. Por lo tanto, la complejidad de los clientes aumenta. y el tamaño de las peticiones se incrementa.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Mayor carga en la red&lt;/strong&gt;. Como las peticiones son más complejas y generalmente contienen más información para poder recuperar el contexto efectivamente, el viaje de información en la red es mayor en tamaño.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;conexiones-que-mantienen-estado&quot;&gt;Conexiones que mantienen estado&lt;/h2&gt;
+
+&lt;p&gt;En los últimos años la mayoría de las conexiones que se levantan en programas creados con la arquitectura cliente-servidor son creados con conexiones que no mantienen el estado. Sin embargo, también se puede mantener una conexión con estado en la arquitectura cliente-servidor. Hay varias formas de lograr esto, pero la principal característica es que debe haber una manera de relacionar al cliente que está solicitando los servicios con el servidor que está atendiéndolo, por lo general la manera de hacerlo es con conexiones persistentes que se mantienen abiertas mientras el proceso de uso de los servicios dura.&lt;/p&gt;
+
+&lt;p&gt;Esto viene con sus propios retos, pero tecnologías actuales como &lt;a href=&quot;/2019/06/02/por-que-deberias-aprender-elixir.html&quot;&gt;Elixir&lt;/a&gt;, Phoenix y los WebSockets hacen el camino más fácil. En otro post hablaremos de cómo podemos aprovechar esta arquitectura y en qué casos nos conviene.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;La segunda característica definida de los sistemas REST es importante porque permite que los servicios sean más confiables, disponibles y flexibles en tamaño (escalables). Como cada decisión que se toma en el desarrollo, esta viene con sus propias desventajas: al hacer más complejas las peticiones, la base de código es más difícil de mantener en general (del lado del cliente), pero permite características importantes en los sistemas que tienen que atender a una gran cantidad de clientes.&lt;/p&gt;
+
+&lt;p&gt;En el siguiente artículo hablaremos de la tercera característica de los sistemas REST: la capacidad de ser cachear información.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="REST" /><category term="stateless" /><category term="thomas-fielding" /><summary type="html">¿Cómo mantener la información entre peticiones en un sistema REST? Entendamos las ventajas y desventajas</summary></entry><entry><title type="html">Entendiendo REST: Arquitectura cliente-servidor</title><link href="/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html" rel="alternate" type="text/html" title="Entendiendo REST: Arquitectura cliente-servidor" /><published>2019-07-04T00:00:00-05:00</published><updated>2019-07-04T00:00:00-05:00</updated><id>/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor</id><content type="html" xml:base="/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html">&lt;blockquote&gt;
+  &lt;p&gt;El propósito de construir software no es crear una topología de interacciones específicas, o usar un tipo particular de componente; es crear un sistema que cumpla y exceda las necesidades de la aplicación. - Thomas Fielding&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ya hablamos de las &lt;a href=&quot;/2019/06/15/entendiendo-rest-estilo-de-arquitectura.html&quot;&gt;motivaciones detrás del estilo arquitectural REST&lt;/a&gt;. Ahora empecemos con la primera de sus características o restricciones, que la empieza a definir: la arquitectura cliente-servidor.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-la-arquitectura-cliente-servidor&quot;&gt;¿Qué es la arquitectura cliente-servidor?&lt;/h2&gt;
+
+&lt;p&gt;Esta arquitectura de aplicación divide un sistema en dos componentes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Cliente&lt;/strong&gt;: Es un programa o proceso que solicita un servicio y usa la información provista para sus propios objetivos.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Servidor&lt;/strong&gt;: Programa o proceso que ofrece un conjunto de servicios y espera por peticiones para ejecutar o dar estos servicios.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La principal característica de la arquitectura cliente-servidor es que logra una &lt;em&gt;separación de responsabilidades clara&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;En palabras de &lt;a href=&quot;https://homepages.cwi.nl/~marcello/SAPapers/And91.pdf&quot;&gt;Gregory R. Andrews&lt;/a&gt;, el cliente es un proceso desencadenante mientras que el servidor es un proceso reactivo. Es decir el servidor no puede envíar datos o empezar procesos que un cliente no le ha solicitado.&lt;/p&gt;
+
+&lt;p&gt;La arquitectura básica de un sistema cliente-servidor es esta:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1562699566/PNG_image-ABC17A5C0944-1_wpyk2e.png&quot; alt=&quot;Esquema cliente-servidor&quot; /&gt;&lt;/p&gt;
+
+&lt;!-- Recordemos que todos los diseños o arquitecturas implican un intercambio de valor entre varias características, en este caso un poco de simplicidad por la separación de responsabilidades claras. --&gt;
+
+&lt;p&gt;Veamos sus ventajas y desventajas.&lt;/p&gt;
+
+&lt;h2 id=&quot;ventajas&quot;&gt;Ventajas&lt;/h2&gt;
+
+&lt;p&gt;Hablemos de los beneficios que trae usar la arquitectura cliente-servidor.&lt;/p&gt;
+
+&lt;h3 id=&quot;separación-clara-de-responsabilidades&quot;&gt;Separación clara de responsabilidades&lt;/h3&gt;
+
+&lt;p&gt;La funcionalidad del sistema se divide en dos partes (por lo menos), como el nombre lo indica en parte de dar los servicios (generalmente de datos) y la parte de atender al usuario (humanos o programa) final.&lt;/p&gt;
+
+&lt;p&gt;El cliente y el servidor tienen funciones completamente distintas y cada uno puede cambiar por su lado sin afectar al otro, a esto le podemos llamar “evolución independiente”.&lt;/p&gt;
+
+&lt;p&gt;El ejemplo que tenemos es el del navegador y las páginas que visitamos normalmente en internet. Mientras sigan cumpliendo con el protocolo establecido de comunicación (HTTP) van a poder seguir comunicándose y transfiriendo información, sin interferir la manera en que estén implementados sus procesos internos.&lt;/p&gt;
+
+&lt;h3 id=&quot;división-de-complejidad&quot;&gt;División de complejidad&lt;/h3&gt;
+
+&lt;p&gt;La misma división de la que hablamos en el punto anterior permite dividir la complejidad en dos partes por lo que cada una por su lado es más fácil de entender y desarrollar que el sistema completo.&lt;/p&gt;
+
+&lt;p&gt;Por lo tanto, se sigue el mismo principio que se usa para desarrollar software complejo en general: &lt;strong&gt;divide y vencerás&lt;/strong&gt;. Esto permite que podamos dividir el trabajo limpiamente en diferentes etapas de desarrollo o entre diferentes equipos, que lo único que requieren es una interfaz de comunicación clara.&lt;/p&gt;
+
+&lt;p&gt;Esto no quiere decir que la complejidad &lt;em&gt;general&lt;/em&gt; se reduzca. De esto hablaremos en las desventajas.&lt;/p&gt;
+
+&lt;h3 id=&quot;múltiples-versiones-y-reusabilidad&quot;&gt;Múltiples versiones y reusabilidad&lt;/h3&gt;
+
+&lt;p&gt;La implementación de la interfaz de comunicación es el único requisito indispensable para que un sistema cliente-servidor pueda seguir funcionando. Esto permite que un servidor pueda tener un número indefinido de clientes diferentes que puedan consumir su interfaz y viceversa. En el caso de REST implementar el servidor con la API permite crear tantos clientes como se necesite:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;página web&lt;/li&gt;
+  &lt;li&gt;aplicación móvil&lt;/li&gt;
+  &lt;li&gt;sistema embebido&lt;/li&gt;
+  &lt;li&gt;SDK para servidores&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sólo para ilustrar:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1562294072/PNG_image-5618E8EA3C0D-1_vk18wv.png&quot; alt=&quot;Ilustración de cliente-servidor multi-cliente&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tener N versiones de los clientes o poder crear una sin tener que volver a a replicar la funcionalidad del servidor ha hecho que las API’s se vuelvan sumamente populares.&lt;/p&gt;
+
+&lt;h3 id=&quot;simplificación-de-escalamiento&quot;&gt;Simplificación de escalamiento&lt;/h3&gt;
+
+&lt;p&gt;Poder tener separado el servidor permite que podamos escalarlo de forma independiente dependiendo del número de clientes a los que va a atender. Si necesitamos dar un servicio a escala mundial podemos replicar nuestros servidores (usando las arquitecturas adecuadas para esto) sin afectar a los clientes y sin que ellos se enteren y por lo tanto tengan que hacer algún cambio.&lt;/p&gt;
+
+&lt;h2 id=&quot;desventajas&quot;&gt;Desventajas&lt;/h2&gt;
+
+&lt;p&gt;Todo en la vida viene con desventajas asociadas y generalmente directamente proporcionales a sus ventajas. Y otra vez: intercambiamos valor entre diferentes partes de la aplicación. Analicemos algunas de estos intercambios que hacemos al aplicar la arquitectura cliente-servidor.&lt;/p&gt;
+
+&lt;h3 id=&quot;complejidad-general-aumentada&quot;&gt;Complejidad general aumentada&lt;/h3&gt;
+
+&lt;p&gt;Cuando dividimos la aplicación y funciones completas en dos partes, aunque la complejidad de cada parte es menos que la general, la complejidad general aumenta porque hay que agregar elementos al sistema:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Interfaces de comunicación entre cliente y servidor&lt;/li&gt;
+  &lt;li&gt;Mantenimiento o forma de recuperación del estado general de la aplicación&lt;/li&gt;
+  &lt;li&gt;Protocolos de comunicación de red cuando es el caso&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;centralización-de-la-información&quot;&gt;Centralización de la información&lt;/h3&gt;
+
+&lt;p&gt;El servidor es el responsable de almacenar la información y procesarla para darle servicio a los diferentes clientes que los soliciten, lo cual, aunque hace más fácil su administración, representa la desventaja de tener la información centralizada en el sistema que actúa como servidor. Si este sistema se corrompe de alguna forma, los clientes necesitan otras fuentes de información para eliminar este problema.&lt;/p&gt;
+
+&lt;p&gt;Combinar cliente-servidor con otra arquitecturas ayuda a mitigar esta falla. Por ejemplo, se puede implementar el patrón de replicación de repositorio en el lado de los proveedores de servicio.&lt;/p&gt;
+
+&lt;p&gt;Pero, un momento, ¿acaso no es cliente-servidor la única arquitectura que existe para sistemas web o sistemas distribuidos?&lt;/p&gt;
+
+&lt;h2 id=&quot;otras-arquitecturas&quot;&gt;Otras arquitecturas&lt;/h2&gt;
+
+&lt;p&gt;La arquitectura para aplicaciones distribuidas más escuchada es la cliente-servidor, pero no es ni de lejos la única. Analicemos otras dos arquitecturas comunes y dónde se usan. Si quieres ver la lista completa que Fielding analiza puedes revisar la sección 2 de &lt;a href=&quot;https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf&quot;&gt;su tesis doctoral&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;peer-to-peer&quot;&gt;Peer to Peer&lt;/h3&gt;
+
+&lt;p&gt;En este estilo está compuesta por nodos equivalentes, es decir, que tiene la misma función (aunque pueden tener diferente información) y que se distribuyen la carga que soporta el sistema entero según las capacidades de cada uno y a veces se proporcionan servicios entre ellos. Un mismo nodo puede cambiar entre funciones o roles en la red dependiendo de la demanda.&lt;/p&gt;
+
+&lt;p&gt;En esta arquitectura no hay por definición un nodo más importante que otro y si alguno de toda la red falla, puede ser sustituido por otro si tiene la información replicada.&lt;/p&gt;
+
+&lt;p&gt;Las redes de torrents, el blockchain y programas como Ares o LimeWire funcionaban de esta forma.&lt;/p&gt;
+
+&lt;p&gt;Una red peer-to-peer puede lucir así:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_871/v1561266301/PNG_image-CC8B051C8851-1_r78hfc.png&quot; alt=&quot;Ejemplo de red peer to peer&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Las redes peer-to-peer son una de las mejores formas de crear sistemas distribuidos resistentes y descentralizados, es decir, que no concentran la información en un sólo punto que se vuelve el más delicado e importante de todos.&lt;/p&gt;
+
+&lt;h3 id=&quot;pipe-and-filter&quot;&gt;Pipe and Filter&lt;/h3&gt;
+
+&lt;p&gt;En este patrón, la información pasa por una series de “filtros” o nodos que la procesan y van dejando la información en un nuevo estado o con nuevas propiedades y que pasan la información al siguiente nodo. Este patrón es el que siguen los pipelines de datos normalmente, en el que la información que es producida por una fuente externa es procesada a través de una serie de pasos, que pueden incluir la recolección, limpieza, almacenamiento, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1562217820/PNG_image-C00985E33227-1_mevaqa.png&quot; alt=&quot;Ilustración de pipe and filter&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Los estilos arquitectónicos el diseño de un sistema deben adecuarse a las necesidades de ese sistema, no al revés. - Thomas Fielding&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;¿A qué necesidades nos adaptamos?&lt;/p&gt;
+
+&lt;p&gt;A la necesidad de tener una separación clara entre las funciones de datos y procesos de negocio y las interfaces de usuario: sean usuarios finales humanos u otros programas que consumen información.&lt;/p&gt;
+
+&lt;p&gt;La arquitectura cliente-servidor permite simplificar el trabajo del lado del servidor al no tener que preocuparse por todas las distintas situaciones en las que sus datos o procesos van a ser usados.&lt;/p&gt;
+
+&lt;p&gt;Esto nos lleva a que sus procesos sean &lt;strong&gt;reutilizables&lt;/strong&gt; por todos los clientes que sepan comunicarse con el servidor (léase: usar su interfaz). A su vez los clientes son más fáciles de crear por no tener en ellos mismos toda la lógica del negocio y poder enfocarse en las funcionalidades de la entidad al que le van servir.&lt;/p&gt;
+
+&lt;p&gt;Y por último, esta separación permite que el servidor sea fácil de escalar al nivel del servicio requerido.&lt;/p&gt;
+
+&lt;p&gt;Para los propósitos de REST la arquitectura Cliente-servidor es muy adecuada. Sus beneficios superan sus desventajas para este caso de uso particular.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="REST" /><category term="cliente-servidor" /><summary type="html">Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST.</summary></entry><entry><title type="html">Libros gratuitos para aprender análisis de datos</title><link href="/2019/06/22/libros-gratuitos-para-aprender-analisis-de-datos.html" rel="alternate" type="text/html" title="Libros gratuitos para aprender análisis de datos" /><published>2019-06-22T00:00:00-05:00</published><updated>2019-06-22T00:00:00-05:00</updated><id>/2019/06/22/libros-gratuitos-para-aprender-analisis-de-datos</id><content type="html" xml:base="/2019/06/22/libros-gratuitos-para-aprender-analisis-de-datos.html">&lt;p&gt;¿Quieres aprender análisis de datos y ya eres programador? Los siguientes libros pueden ser de gran ayuda. Este post está basado en &lt;a href=&quot;http://bit.ly/2RjPiol&quot;&gt;un artículo inglés que encontramos&lt;/a&gt;, pero con los recursos que recomienda actualizados y algunos otros de nuestra cosecha.&lt;/p&gt;
+
+&lt;p&gt;Casi todos están en inglés pero incluímos unos cuántos en español y, en los que nos fue posible, tienes descarga directa.&lt;/p&gt;
+
+&lt;h2 id=&quot;0-r-en-español&quot;&gt;0. R en español&lt;/h2&gt;
+
+&lt;p&gt;Empecemos por los pocos recursos en español. Encontré dos libros enfocados en aprender R (ojo: sin profundizar en el análisis de datos) en español.&lt;/p&gt;
+
+&lt;h3 id=&quot;r-para-principiantes-de-juan-bosco-mendoza&quot;&gt;R para principiantes de Juan Bosco Mendoza&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://bookdown.org/jboscomendoza/r-principiantes4/images/r-principiantes-cover.png&quot; alt=&quot;Portada de R para principiantes&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;R para principiantes pretende ser un material introductorio al lenguaje de programación R, dirigído a personas que nunca han usado R o ningún otro lenguaje de programación, ni tiene conocimiento previo de probabilidad y estadística.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Es un libro que te lleva de la mano desde la instalación hasta la exploración visual de los datos, mediante el uso de la gráficas generadas por R, de manos de un practicante asiduo del lenguaje.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2Ru1cvU&quot; target=&quot;_blank&quot;&gt;Lée R para principiantes &lt;strong&gt;aquí&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;r-para-principiantes-de-emmanuel-paradis-traducido-por-jorge-a-ahumada&quot;&gt;R para principiantes de Emmanuel Paradis, traducido por Jorge A. Ahumada.&lt;/h3&gt;
+
+&lt;p&gt;Es una introducción al lenguaje R explicando un poco los detalles de funcionamiento para poder sentar las bases de uso avanzado, para principiantes en programación. Toca algunas nociones muy básicas de estadística para proporcionar ejemplos.&lt;/p&gt;
+
+&lt;p&gt;Puedes &lt;a href=&quot;http://bit.ly/2RuQ02j&quot; target=&quot;_blank&quot;&gt;descargarlo &lt;strong&gt;aquí&lt;/strong&gt;.&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-think-stats-segunda-edición&quot;&gt;1. Think Stats, Segunda Edición&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The thesis of this book is that data combined with practical methods can answer questions and guide decisions under uncertainty.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Este libro enseña estadística básica con Python y el proceso de análisis de exploración y análisis de datos básico, con un enfoque en los programas más que en las matemáticas.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2Rlq20V&quot; target=&quot;_blank&quot;&gt;Lee Think Stats, segunda edición.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Extra: La editorial tiene todos sus libros para leer en formatos digitales gratuitos. Una oportunidad que no puedes perderte, sólo que su sitio no es fácil de navegar así que visita la &lt;a href=&quot;https://greenteapress.com/wp/&quot; target=&quot;_blank&quot;&gt;página de inicio&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-bayesian-methods-for-hackers&quot;&gt;2. Bayesian Methods for Hackers&lt;/h2&gt;
+
+&lt;p&gt;Este libro explica cómo aplicar métodos de inferencia bayesiana para programadores que no tienen tanto conocimiento de estadística y matemáticas, enfocados en el lado de la programación.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2Rs2TKt&quot; target=&quot;_blank&quot;&gt;Descarga el libro aquí&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-undestarding-machine-learning-from-theory-to-algorithms&quot;&gt;3. Undestarding Machine Learning: From Theory to Algorithms&lt;/h2&gt;
+
+&lt;p&gt;Este libro Shai Shalev-Shwartz y Shai Ben-David nos  enseñan los fundamentos de machine learning y cómo transformar estos principios en algoritmos &lt;em&gt;usables&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Este libro incluye un análisis de la complejidad computacional implicada.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2Rr1Nys&quot; target=&quot;_blank&quot;&gt;Descarga Undestarding Machine Learning aquí&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4-the-elements-of-statistical-learning&quot;&gt;4. The Elements of Statistical Learning&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Estamos inundados de información pero secos de conocimiento” - Rutherford D. Roger&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Esta frase que abre el libro explica la necesidad de entender y aplicar correctamente métodos estadísticos de análisis de datos para entender bien el mundo, dada la explosión de información que estamos viendo gracias a la digitalización de todas las industrias y de las ciencias.&lt;/p&gt;
+
+&lt;p&gt;El libro se enfoca en los métodos de análisis y sus fundamentos conceptuales en vez de en los detalles matemáticos.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://stanford.io/2RtnVrX&quot; target=&quot;_blank&quot;&gt;Descarga The Elements of Statistical Learning&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5-an-introduction-to-statistical-learning&quot;&gt;5. An Introduction to Statistical Learning&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www-bcf.usc.edu/~gareth/ISL/ISL%20Cover%202.jpg&quot; alt=&quot;Portada del libro An Introduction to Statistical Learning&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Está dirigido a personas que no estudiaron algo relacionado con matemáticas (como la mayoría de los programadores), para introducirlos a al aprendizaje estadístico práctico, inspirado por el libro del punto 4.&lt;/p&gt;
+
+&lt;p&gt;Este libro es adecuado para personas sin preparación ni en estadística ni en ciencia de la computación. Usa R para aprender los conceptos.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2RqyE6o&quot; target=&quot;_blank&quot;&gt;Descarga An Introduction to Statistical Learning&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;6-foundations-of-data-science&quot;&gt;6. Foundations of Data Science&lt;/h2&gt;
+
+&lt;p&gt;Este libro intenta enseñar los fundamentos de análisis de datos desde una perspectiva computacional, para darles a los lectores un fundamento para los siguientes 40 años de la era de la computación, argumentando que la primera época, la enfocada en compiladores, algoritmos y lenguajes ha pasado y que ahora el foco debería estar en el análisis y procesamiento de datos.&lt;/p&gt;
+
+&lt;p&gt;Empieza estableciendo las bases matemáticas y el entendimiento necesario de los conceptos estadísticos para luego avanzar a la aplicación de estos.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2RtkNMI&quot; target=&quot;_blank&quot;&gt;Puedes descargarlo &lt;strong&gt;aquí&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;7-a-programmers-guide-to-data-mining&quot;&gt;7. A Programmer’s Guide to Data Mining&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_570/v1561237264/mozi_c01gcv.png&quot; alt=&quot;Guide to data mining&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Es una guía práctica para minería de datos y sistema de recomendación, con la técnica de aprender haciendo, con ejercicions en Python. Es libro menos serio (en sentido de seriedad formal) de los que hemos visto hasta ahorita, tiene memes, bromas e imágines divertidas.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1561228640/Screenshot_2019-06-22_13.37.09_igbbp1.png&quot; alt=&quot;Blood, sweat and code&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2RtFCaY&quot; target=&quot;_blank&quot;&gt;Puedes descargar el libro aquí&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;8-mining-of-massive-datasets&quot;&gt;8. Mining of Massive Datasets&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.stanford.edu/~ullman/gifs/mmds2.jpg&quot; alt=&quot;MMDS cover&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Este libro está basado en el curso &lt;a href=&quot;http://cs246.stanford.edu/&quot;&gt;CS246&lt;/a&gt; de Stanford del mismo nombre. Está enfocado en la minería de datos en grandes cantidades, es decir que no puedan ser mantenidos en la memoria principal.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Data mining is about applying algorithms
+to data, rather than using data to “train” a machine-learning engine of some
+sort.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;En enfoque es en e los algoritmos que podemos aplicarle a los datos para obtener información relevante.&lt;/p&gt;
+
+&lt;p&gt;Puedes descargar la &lt;a href=&quot;http://bit.ly/2RsGkoR&quot;&gt;segunda edición&lt;/a&gt; y ver el beta de la &lt;a href=&quot;https://stanford.io/2RAaJ4M&quot;&gt;tercera edición&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;9-deep-learning&quot;&gt;9. Deep Learning&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1561233648/Screenshot_2019-06-22_15.00.27_fxtwob.png&quot; alt=&quot;Deep learning cover book&quot; /&gt;
+Es un recurso introductorio al campo de machine learning específicamente enfocado en deep learning. 
+Es un buen recurso para programadores que no tienen preparación en estadística porque la primera parte del libro está enfocada en dar las bases matemáticas para comprender los algoritmos y técnicas de deep learning.&lt;/p&gt;
+
+&lt;p&gt;Puedes comprar el libro o leerlo directamente desde &lt;a href=&quot;http://bit.ly/2RtKtZK&quot;&gt;su página&lt;/a&gt; de forma gratuita.&lt;/p&gt;
+
+&lt;h2 id=&quot;10-machine-learning-yearning&quot;&gt;10. Machine Learning Yearning&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1561236864/Screenshot_2019-06-22_15.54.12_r585on.png&quot; alt=&quot;ML Yearning&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Está escrito por &lt;a href=&quot;http://bit.ly/2RrkYYS&quot;&gt;Andrew Ng&lt;/a&gt; uno de los fundadores de Coursera y un gigante de la inteligencia artificial. Su enfoque principal es enseñarte cómo organizar un proyecto de Machine Learning, cómo hacer que los algoritmos funcionen y den resultados.&lt;/p&gt;
+
+&lt;p&gt;Te pide suscripción con correo electrónico para que recibir una copia del borrador gratuita. Puedes &lt;a href=&quot;http://bit.ly/2RsPwtv&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;registrarte aquí&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;11-los-libros-openintro&quot;&gt;11. Los libros OpenIntro&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1561234376/Screenshot_2019-06-22_15.11.04_m19ucx.png&quot; alt=&quot;Portadas OpenIntro&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;OpenIntro es una iniciativa para proveer recursos de aprendizaje de alta calidad a un precio razonable.&lt;/p&gt;
+
+&lt;p&gt;Provee todos sus recursos de manera gratuita para descarga. Puedes &lt;a href=&quot;http://bit.ly/2RxUIvZ&quot;&gt;&lt;strong&gt;visitarlos aquí&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;12-los-libros-de-roger-d-peng-y-sus-colegas&quot;&gt;12. Los libros de Roger D. Peng y sus colegas&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1561235101/Screenshot_2019-06-22_15.24.56_xkx1qk.png&quot; alt=&quot;Roger D. Peng libros&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://bit.ly/2Rvyg6Y&quot;&gt;Roger D. Peng&lt;/a&gt; es un profesor de bioestadística la 
+Escuela Johns Hopkins Bloomberg de Salud Pública. Tiene varios cursos en Coursera sobre análisis de datos, y también lo podemos considerar uno de los grandes contribuidores a la educación sobre análisis de datos.&lt;/p&gt;
+
+&lt;p&gt;Ha escito numerosos libros sobre análisis de datos y manejo de proyectos de análisis de datos. Su especialidad es R.&lt;/p&gt;
+
+&lt;p&gt;Puedes ver el &lt;a href=&quot;http://bit.ly/2Rrleai&quot;&gt;índice de sus libros &lt;strong&gt;aquí&lt;/strong&gt;&lt;/a&gt;, casi todos ellos gratuitos, aunque puedes continuir monetariamente si gustas.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Si sabes inglés, hay más material del que podríamos leer decentemente en un buen tiempo sin tener que gastar un solo peso directamente en esta información. ¿Por qué no aprovecharla?&lt;/p&gt;
+
+&lt;p&gt;Cuéantanos si ya leíste uno de ellos y qué te pareció.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="Machine Learning" /><category term="python" /><category term="r" /><summary type="html">Encuentra una colección de libros gratuitos para aprender acerca de estadística, análisis de datos y machine learning usando tanto Python como R.</summary></entry><entry><title type="html">Entendiendo REST. El estilo de Arquitectura.</title><link href="/2019/06/15/entendiendo-rest-estilo-de-arquitectura.html" rel="alternate" type="text/html" title="Entendiendo REST. El estilo de Arquitectura." /><published>2019-06-15T00:00:00-05:00</published><updated>2019-06-15T00:00:00-05:00</updated><id>/2019/06/15/entendiendo-rest-estilo-de-arquitectura</id><content type="html" xml:base="/2019/06/15/entendiendo-rest-estilo-de-arquitectura.html">&lt;p&gt;En el &lt;a href=&quot;/2019/05/06/diseno-y-desarrollo-de-una-api-desde-cero.html&quot;&gt;artículo anterior de la serie&lt;/a&gt; hablamos un poco de lo que es una API REST. En este artículo empezaremos a ver qué es REST y por qué surgió.&lt;/p&gt;
+
+&lt;p&gt;Antes de empezar con lo nuestro, hablemos de lo que NO es una API REST.&lt;/p&gt;
+
+&lt;h2 id=&quot;esto-no-es-rest&quot;&gt;Esto no es REST&lt;/h2&gt;
+
+&lt;p&gt;Actualmente, muchos desarrolladores (yo me contaba entre ellos), llaman API REST a cualquier servicio Web que corra sobre HTTP, sirva recursos (objetos o elementos que representan un objeto) o cosas parecidas y use JSON como lenguaje de transferencia de datos.
+De estas cosas, sólo la parte de servir recursos (en realidad &lt;em&gt;representaciones&lt;/em&gt; de recursos) tiene que ver con una API REST. El estilo arquitectural REST no obliga el uso de HTTP y mucho menos de JSON.&lt;/p&gt;
+
+&lt;p&gt;Dada esta tendencia de llamar API REST a cualquier cosa que funcione sobre HTTP, debemos estar de acuerdo en que la mayoría de las API’s ni siquiera &lt;em&gt;intenta&lt;/em&gt; ser REST.
+Algunas son RPC (Remote Procedure Call) sobre HTTP simplemente. Otro mal uso que he escuchado es que cualquier cosa que sirva JSON es llamada API REST, pero como ya dijimos el estilo arquitectural REST ni siquiera fuerza el uso de JSON (y no todas las API’s que sirven XML son SOAP).&lt;/p&gt;
+
+&lt;p&gt;Con esto no queremos decir que el que un servicio no sea REST lo haga malo o de mala calidad, de hecho, muchas veces (la mayoría) no se necesita cumplir con las características de REST y con cumplir con algunas de las características o principios de diseño de REST es suficiente.&lt;/p&gt;
+
+&lt;p&gt;En artículos posteriores vamos a hablar de las seis características que &lt;strong&gt;sí&lt;/strong&gt; definen una arquitectura REST, las vamos a cambiar un poco del orden tradicional que se explica en la mayoría de los tutoriales (y seguiremos el de la tesis original) para que tenga más sentido la forma en que las explicamos.&lt;/p&gt;
+
+&lt;p&gt;Las características de las que hablaremos son en cierto modo &lt;em&gt;restricciones&lt;/em&gt; (constraints, como lo dice la tesis original): una cosa es definida por las cosas que &lt;em&gt;no&lt;/em&gt; puede o &lt;em&gt;no&lt;/em&gt; debe hacer.&lt;/p&gt;
+
+&lt;h2 id=&quot;arquitectura&quot;&gt;Arquitectura&lt;/h2&gt;
+
+&lt;p&gt;Cuando hablamos de REST (REpresentational State Transfer) estamos hablando se un &lt;strong&gt;estilo de arquitectura&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;La definición del estilo de arquitectura REST la hizo &lt;a href=&quot;https://www.ics.uci.edu/~fielding/&quot;&gt;Thomas Fielding&lt;/a&gt; en su tesis doctoral, que puedes descargar y leer completa &lt;a href=&quot;https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm&quot;&gt;aquí&lt;/a&gt;, en ella explica lo que lo llevó a definirla y diseñarla tal como es.&lt;/p&gt;
+
+&lt;p&gt;Fielding hace la distinción entre tres conceptos que parecerían lo mismo a simple vista.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Estilo de arquitectura o estilo arquitectural&lt;/strong&gt;: Es un conjunto de restricciones que limitan cómo los elementos de una arquitectura (componentes del software, conectores y datos) pueden interactuar entre sí y las características que deben tener. En la arquitectura de espacios físicos podemos pensar en los estilos más amplios que a veces escuchamos mencionados: Barroco, Moderno, Post-moderno. En la arquitectura de software, &lt;strong&gt;REST cae en esta categoría&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Diseño arquitectural&lt;/strong&gt;: Es la aplicación de un estilo de arquitectura. Podemos pensar en esto como las guías que definen cómo una arquitectura se implementará. El diseño arquitectural en los edificios podría pensarse en la aplicación de las reglas del diseño arquitectural a un tipo de edificio específico tu catedral o castillo 🤔.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Arquitectura&lt;/strong&gt;: Fielding la define como una abstracción del estado de un sistema en un momento determinado. La arquitectura es la concreción de un diseño arquitectural. En el ejemplo de los edificios puedes pensar en esto como en los planos de la catedral barroca.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hablando de arquitectura &lt;a href=&quot;https://simonbrown.je/&quot;&gt;Simon Brown&lt;/a&gt;, que es actualmente una da las grandes mentes en el campo de la arquitectura de software, la define como la &lt;em&gt;todo lo relacionado con el diseño de un sistema de software, desde la estructura del código hasta cómo funciona a alto nivel, pasando por cómo el software es puesto en producción&lt;/em&gt;. Es responsabilidad de la arquitectura definir las siguientes características y funciones del sistema:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tareas que abarquen todo el sistema: Logging, manejo de errores, etc.&lt;/li&gt;
+  &lt;li&gt;Seguridad&lt;/li&gt;
+  &lt;li&gt;Rendimiento&lt;/li&gt;
+  &lt;li&gt;Escalabilidad&lt;/li&gt;
+  &lt;li&gt;Disponibilidad&lt;/li&gt;
+  &lt;li&gt;Auditorías y cumplimiento de regulaciones&lt;/li&gt;
+  &lt;li&gt;Limitaciones del entorno&lt;/li&gt;
+  &lt;li&gt;Interoperatividad e integración con otros sistemas&lt;/li&gt;
+  &lt;li&gt;Consistencia de soluciones a través de toda la base de código&lt;/li&gt;
+  &lt;li&gt;Evaluación de cumplimiento de los entregables&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Como podemos ver, la arquitectura de software tiene muchas cosas de preocuparse. Pues bueno, el estilo de arquitectura ayuda a resolver varias de estas preocupaciones predefiniendo algunas cosas la estructura y el comportamiento del sistema mediante las características y limitaciones que establece.&lt;/p&gt;
+
+&lt;p&gt;¿Qué de estas cosas ataca REST? Hablemos de ellas.&lt;/p&gt;
+
+&lt;h2 id=&quot;cosas-que-rest-intenta-resolver&quot;&gt;Cosas que REST intenta resolver&lt;/h2&gt;
+
+&lt;p&gt;Todo este embrollo de arquitectura-diseño-estilos fue definido con un fin en mente: estudiar los estilos y las características de las arquitecturas para poder llegar a la resolución de los problemas concretos que los sistemas tienen.&lt;/p&gt;
+
+&lt;p&gt;Las cosas que REST intenta ayudar a resolver concretamente son las siguientes.&lt;/p&gt;
+
+&lt;h3 id=&quot;rendimiento&quot;&gt;Rendimiento&lt;/h3&gt;
+
+&lt;p&gt;Una de las principales cosas que este estilo de arquitectura quiere atacar es el rendimiento de las aplicaciones. El rendimiento se refiere tanto a la capacidad real como percibida de cumplir con &lt;strong&gt;lo que se espera de un sistema de software&lt;/strong&gt; en términos de velocidad de respuesta.&lt;/p&gt;
+
+&lt;p&gt;Esto implica que tanto la aplicación como la red (recordemos que siempre estamos hablando de aplicaciones web) debe responder en un tiempo razonable.&lt;/p&gt;
+
+&lt;p&gt;Varias de las restricciones y características que REST establece están relacionadas directamente con este punto.&lt;/p&gt;
+
+&lt;h3 id=&quot;facilidad-de-modificación&quot;&gt;Facilidad de Modificación&lt;/h3&gt;
+
+&lt;p&gt;Fielding elabora esto como uno de los puntos más grandes que las arquitecturas deben atender. A final de cuentas un sistema no se puede quedar estático, y facilitar el trabajo para nosotros mismos en el futuro o para otras personas debería ser una prioridad.&lt;/p&gt;
+
+&lt;p&gt;Los cinco puntos que Fielding considera que definen la facilidad de modifición son:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Facilidad de evolución&lt;/strong&gt;. Es la capacidad que tiene un sistema de que sus componentes cambien sin afectar directamente negativamente a los demás y por lo tanto el estado general del sistema.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Extensibilidad&lt;/strong&gt;. Es la capacidad de agregar funcionalidades o capacidades a un sistema.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Facilidad de personalización&lt;/strong&gt;. Es la capacidad de un elemento de poder adaptarse temporalmente para dar un servicio que no siempre da, sin afectar negativamente el sistema en general.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Facilidad de configuración&lt;/strong&gt;. Se refiere a poder cambiar la configuración o modificar un sistema en producción mediante configuraciones, es decir, sin cambios en el código.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Facilidad de reutilización&lt;/strong&gt;. Se puede explicar como la capacidad de los componentes de un sistema de ser usados sin modificaciones en otros sistemas.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;visibilidad&quot;&gt;Visibilidad&lt;/h3&gt;
+
+&lt;p&gt;La visibilidad es la capacidad de monitorear un componente del sistema e incluso mediar la interacción entre dos componentes. Este tipo específico de visibilidad (recientemente llamado observabilidad), puede mejorar el sistema de muchas maneras como mediante cachés, capas intermedias para mejorar la escalabilidad, monitoreo activo y la seguridad al observar la comunicación de los componentes y actuar, tal como un firewall lo hace.&lt;/p&gt;
+
+&lt;h3 id=&quot;portabilidad&quot;&gt;Portabilidad&lt;/h3&gt;
+
+&lt;p&gt;Uno de los puntos que se necesita resolver de algunas aplicaciones, es que la solución pueda correr en diferentes entornos. A esto se refiere la portabilidad para Fielding, que un sistema pueda correr sin cambios en diferentes instalaciones y sin grandes cambios.&lt;/p&gt;
+
+&lt;h3 id=&quot;escalabilidad&quot;&gt;Escalabilidad&lt;/h3&gt;
+
+&lt;p&gt;¿Cuántos usuarios al mismo tiempo puede soportar tu aplicación? ¿Qué pasa si de repente llegan diez veces más usuarios de los que esperabas? La respuesta a estas preguntas está directamente relacionada con la escalabilidad de la aplicación.&lt;/p&gt;
+
+&lt;p&gt;Fielding la define como la capacidad de los componentes de soportar un número grande de interacciones, que se ve impactada no sólo por la cantidad sino por la frecuencia de interacciones.&lt;/p&gt;
+
+&lt;h3 id=&quot;simplicidad&quot;&gt;Simplicidad&lt;/h3&gt;
+
+&lt;p&gt;Un buen desarrollo debe ser tan simple como sea posible. Si se añade complejidad extra a la innata del problema en cuestión será más difícil de mantener.&lt;/p&gt;
+
+&lt;p&gt;Estas cuestiones y cosas importantes acerca de todas las aplicaciones son lo que llevó a Fielding a definir REST y a agregar las características/restricciones que puso.&lt;/p&gt;
+
+&lt;p&gt;Fielding resume tres características en lo que el llama simplicidad:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Complejidad&lt;/strong&gt;. Es la cantidad de componentes interconectados. Mientras menos sea, mejor.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Facilidad de comprensión&lt;/strong&gt;. ¿Qué tan preparado está el sistema para poder ser entendido fácilmente?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Verificabilidad&lt;/strong&gt;. ¿Se puede verificar que la solución y los datos que entrega el sistema sean correctos?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Todas estas características y necesidades de un sistema de software de fácil mantenimiento son las que llevaron a la creación de el estilo arquitectural REST. Sirven para entender por qué definió las 6 restricciones que un sistema REST debe cumplir, pero algo interesante que se menciona a través de su tesis es que cada una de las decisiones es un intercambio de valor que hay que sopesar.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;¿Por qué deberías elegir REST?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;El estilo arquitectural REST te ayuda a resolver problemas que pueden empezar a dar dolores de cabeza desde el principio, al dar una guía de cómo debería comportarse tu aplicación para cumplir con las cualidades mencionadas arriba.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;No debemos olvidar que toda selección es &lt;strong&gt;necesariamente&lt;/strong&gt; un intercambio de valor. Se pierde algo por ganar otra cosa. La pregunta que siempre hay que tener en mente es:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;¿Qué me conviene más en este caso?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;En el siguiente artículo analizaremos la primera restricción de  REST: la arquitectura cliente-servidor.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="api" /><category term="rest" /><category term="restful" /><category term="arquitectura" /><summary type="html">Empieza a entender qué es REST y por qué ha sido tan importante en la web moderna. Hablemos de la motivación que llevó a crearlo</summary></entry><entry><title type="html">¿Por qué deberías aprender Elixir?</title><link href="/2019/06/02/por-que-deberias-aprender-elixir.html" rel="alternate" type="text/html" title="¿Por qué deberías aprender Elixir?" /><published>2019-06-02T00:00:00-05:00</published><updated>2019-06-02T00:00:00-05:00</updated><id>/2019/06/02/por-que-deberias-aprender-elixir</id><content type="html" xml:base="/2019/06/02/por-que-deberias-aprender-elixir.html">&lt;p&gt;Elixir es un lenguaje de programación bastante reciente (creado cerca de 2012), pero que está haciendo mucho ruido y más considerando que no tiene ninguno de los nombres legendarios del área de sistemas atrás ni a alguna empresa prominente.&lt;/p&gt;
+
+&lt;p&gt;En este post vamos a hablar de por qué es buena idea aprender Elixir en 2019.&lt;/p&gt;
+
+&lt;h2 id=&quot;un-poco-de-historia&quot;&gt;Un poco de historia&lt;/h2&gt;
+
+&lt;p&gt;Elixir es un lenguaje de programación creado por José Valim, que empezó a ser programado en 2011 y su versión 1.0 salió a la luz en 2014. Ahora en Junio 2019 va en su &lt;strong&gt;versión 1.8&lt;/strong&gt;. &lt;em&gt;Nació con la idea de mejorar el rendimiento de los programas sin afectar la productividad de los programadores&lt;/em&gt;. José Valim era un contribuidor al núcleo de Rails, hasta que se dio cuenta de que no podría escalar hasta el grado que necesitaba, sobre todo por Ruby y sus limitaciones. Ahí empieza la historia de Elixir y el aprovechamiento de la concurrencia provista por Erlang y su máquina virtual, &lt;strong&gt;BEAM&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;En el siguiente documental explican por qué se creó y cómo es que resuelve algunos problemas para diferentes empresas:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/lxYFOM3UJzo&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Elixir es como el hijo de Erlang y Ruby. La belleza de Ruby y el poder de Erlang.&lt;/p&gt;
+
+&lt;h2 id=&quot;características-de-elixir&quot;&gt;Características de Elixir&lt;/h2&gt;
+
+&lt;p&gt;Platiquemos un poco de las características de este lenguaje que lo hacen muy adecuado para crear programas modernos, aunque aprovecha tecnología de hace 30 años.&lt;/p&gt;
+
+&lt;h3 id=&quot;funcional&quot;&gt;Funcional&lt;/h3&gt;
+
+&lt;p&gt;Una de las primeras cosas que resalta de Elixir es que es un lenguaje funcional, como Erlang. En &lt;a href=&quot;/&quot;&gt;otro post&lt;/a&gt; explicamos las ventajas y características de la programación funcional pero recordemos un poco las dos principales:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Se basan en funciones puras&lt;/li&gt;
+  &lt;li&gt;Los valores son inmutables&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A partir de estas dos características se desprenden muchas otras que llevan a una mejor descomposición de los problemas, mejor rendimiento y mantenibilidad para los problemas adecuados:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Funciones de orden superior (o tratar las funciones como cualquier otro valor)&lt;/li&gt;
+  &lt;li&gt;Evaluación retardada o perezosa&lt;/li&gt;
+  &lt;li&gt;Transparencia referencial&lt;/li&gt;
+  &lt;li&gt;Independencia de contexto de ejecución&lt;/li&gt;
+  &lt;li&gt;Pipelines para transformación de datos&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Debemos tener presente que la programación funcional no es la mejor opción para todos los casos, sobre todo presenta dificultades cuando se tienen que mantener estructuras de datos muy grandes que se tengan que modificar constantemente, algunos lenguajes tiene trucos inteligentes pero sigue sin ser lo óptimo.&lt;/p&gt;
+
+&lt;h3 id=&quot;beam---erlang&quot;&gt;BEAM - Erlang&lt;/h3&gt;
+
+&lt;p&gt;La tecnología que está atrás de Elixir es Erlang y su máquina virtual, la &lt;a href=&quot;http://erlang.org/faq/implementations.html&quot;&gt;BEAM&lt;/a&gt;. Esto quiere decir que los programas hechos con Elixir corren como su fuera un programa hecho en Erlang sobre el entorno de ejecución que originalmente fue creado para él. Además al correr sobre el mismo entorno, Elixir puede aprovechar todo lo que ya existe en Erlang, desde sus librerías hasta varias de las herramientas de desarrollo.&lt;/p&gt;
+
+&lt;p&gt;¿Por qué es tan importante la máquina virtual? La BEAM es la encargada de la ejecución de los programas creados con Erlang y &lt;a href=&quot;https://github.com/llaisdy/beam_languages&quot;&gt;muchos otros lenguajes&lt;/a&gt;, entre ellos Elixir. Se encarga de distribuir el procesamiento y administrar la memoria, así como conectarse con los nodos necesarios para la ejecución del programa. Además administra y levanta los procesos que los programas requieren. La BEAM es el soporte para las características que vienen.&lt;/p&gt;
+
+&lt;h3 id=&quot;distribuido&quot;&gt;Distribuido&lt;/h3&gt;
+
+&lt;p&gt;La BEAM está pensada para trabajar con sistemas distribuidos, específicamente puede funcionar a través de una red de computadoras y distribuir el programa y la carga a través de todos los nodos que la componen. De esta manera puedes crear aplicaciones que aprovechen la memoria y el procesamiento de toda una red de computadoras.&lt;/p&gt;
+
+&lt;p&gt;Así nació Erlang y ahora puedes aprovechar estas características con Elixir. Por ejemplo, puedes llamar y mandar mensajes a un proceso que vive en una computadora al otro lado del mundo justo como si estuviera viviendo en tu misma computadora, siempre y cuando la BEAM tenga conectados los nodos.&lt;/p&gt;
+
+&lt;p&gt;Esto es una de las características que suma a una característica de la que vamos a hablar más tarde: &lt;strong&gt;resiliencia&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;concurrente&quot;&gt;Concurrente&lt;/h3&gt;
+
+&lt;p&gt;Elixir y Erlang permiten crear programas concurrentes de manera sencilla. Su modelo de concurrencia está basado en &lt;strong&gt;actores&lt;/strong&gt;, que son pequeños procesos muy ligeros que no comparten memoria entre ellos y se comunican mediante mensajes colocados en un &lt;em&gt;mailbox&lt;/em&gt;. Este tipo de concurrencia permite crear también supervisores, que son procesos que “vigilan” a otros procesos y toman acciones cuando terminan o fallan.&lt;/p&gt;
+
+&lt;p&gt;Todo esto permite crear estructuras de procesos complejas que nos habilitan para lograr diferentes objetivos. Un ejemplo son los &lt;strong&gt;árboles de supervisión&lt;/strong&gt; (en realidad todas las aplicaciones de Erlang y Elixir lo tienen), que es una estructura de procesos que permite crear un programa resistente a fallos.&lt;/p&gt;
+
+&lt;p&gt;Siendo uno de los puntos principales del lenguaje y la BEAM, existe un conjunto de patrones, librerías y procesos diseñados para aprovechar las características concurrentes llamado &lt;strong&gt;OTP&lt;/strong&gt;, que es uno de los puntos más fuertes de la plataforma completa.&lt;/p&gt;
+
+&lt;h3 id=&quot;resiliente&quot;&gt;Resiliente&lt;/h3&gt;
+
+&lt;p&gt;Las características de las que hemos platicado llevan al lenguaje a una característica muy importante. Las aplicaciones hechas en Elixir pueden llegar ser muy, muy resilientes. Es decir, puede aguantar mucho tiempo sin caerse e incluso problemas inesperados. Las aplicaciones hechas en Erlang pueden ofrecer &lt;strong&gt;99.9999999%&lt;/strong&gt; de disponibilidad, lo que quiere decir que sólamente van a estar indisponibles 32ms en un año. A esta resiliencia contribuyen tres de las características antes mencionadas: la distribución de al computación y la memoria, la concurrencia y los árboles de supervisión.&lt;/p&gt;
+
+&lt;h3 id=&quot;velocidad&quot;&gt;Velocidad&lt;/h3&gt;
+
+&lt;p&gt;Al ser un lenguaje compilado y gracias a la BEAM, que aprovecha todos los núcleos de procesamiento disponibles, Elixir es un lenguaje muy rápido en general. Aquí una muesta del tiempo que tarda en responder una petición web usando un framework llamado Phoenix:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1559515060/Screenshot_2019-06-02_17.36.52_sx8dgs.png&quot; alt=&quot;Tiempo de respuesta de Phoenix&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;fácil-para-empezar-a-programar&quot;&gt;Fácil para empezar a programar&lt;/h3&gt;
+
+&lt;p&gt;Elixir fue creado con el objetivo de ser divertido y fácil de aprender aún siendo un lenguaje funcional. Sigue la filosofía de Ruby. Hereda gran parte de la sintaxis y las ideas de Ruby (a final de cuentas de allí nació). Ruby nació para ser un lenguaje disfrutable y lo mismo Elixir. La sintaxis y operadores lo hacen fácil de entender una vez que entiendes que no está basado en la sintaxis de C.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, uno de los operadores más usados, el pipe, permite hacer cosas bastante legibles:&lt;/p&gt;
+
+&lt;div class=&quot;language-elixir highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Enum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;only:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;map:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;sum:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;zip:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;calculados&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;reales&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;5.9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calculados&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reales&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Elixir es de &lt;strong&gt;tipado dinámico&lt;/strong&gt;, es decir, no necesitas declarar y mantener los tipos de las variables y de cada operación.&lt;/p&gt;
+
+&lt;p&gt;Lo anterior no quiere decir que todo sea fácil en Elixir. El modelo de programación que lo respalda (funcional), la sintaxis no basada en C y el modelo de &lt;a href=&quot;/2019/04/17/la-diferencia-entre-concurrencia-y-paralelismo.html&quot;&gt;concurrencia&lt;/a&gt; basado en actores no son cosas con las que tratemos todos los días si venimos de la programción no concurrente y en su mayor parte basada en la herencia de C.&lt;/p&gt;
+
+&lt;h3 id=&quot;grandes-herramientas&quot;&gt;Grandes herramientas&lt;/h3&gt;
+
+&lt;p&gt;Una característica que resalta de Elixir son las herramientas para desarrollo con las que cuenta. Primero, puede aprovecharse de todas las que Erlang provee y segundo porque los creadores pusieron especial atención en esto.
+La principal herramienta para desarrollo en Elixir es &lt;a href=&quot;https://elixir-lang.org/getting-started/mix-otp/introduction-to-mix.html&quot;&gt;mix&lt;/a&gt; que permite desde iniciar un proyecto hasta monitorear tu código en producción mediante conectarse a la máquina virtual que lo está corriendo.&lt;/p&gt;
+
+&lt;p&gt;Otra de las herramientas/características que la BEAM tiene son &lt;strong&gt;actualización de código en vivo&lt;/strong&gt; (hot code swapping). Esto es especialmente difícil de lograr con sistemas que mantienen un estado en memoria, pero por lo menos es posible y permitido por la máquina virtual.&lt;/p&gt;
+
+&lt;p&gt;Hablando por ejemplo de monitorear un programa que está corriendo, la BEAM permite examinarlo hasta de manera visual:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1559505687/Screenshot_2019-06-02_15.00.01_u1xiwd.png&quot; alt=&quot;Visualizador de procesos de Erlang&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;(por cierto, esto es un árbol de supervisión).&lt;/p&gt;
+
+&lt;h3 id=&quot;metaporgramación&quot;&gt;Metaporgramación&lt;/h3&gt;
+
+&lt;p&gt;La metagprogramación se refiere a la capacidad de algunos lenguajes de crear código (o su representación interna) con un programa hecho en el mismo lenguaje. Gran parte (casi todo) en Elixir está hecho con esta técnica, es decir, Elixir está implementado en Elixir.&lt;/p&gt;
+
+&lt;p&gt;Pero lo mejor es que el equipo deicidió darle estas capacidades a los usuarios del lenguaje. Así que, gracias a esto, podemos manejar el AST (Abstract Syntax Tree o Árbol de Sintaxis abstracta), que es la representación interna del lenguaje, como si fuera un estructura común de datos y crear nuestras propias macros y estructuras sintácticas.&lt;/p&gt;
+
+&lt;p&gt;Esta habilidad permite por ejemplo la creación de macros para crear tu propio mini-lenguaje adentro de Elixir, lo que generalmente se conoce como un DSL (Domain Specific Language), adaptado a lo que necesitas en el sistema que estés programando.&lt;/p&gt;
+
+&lt;p&gt;La siguiente imagen da un ejemplo de cómo puede lucir un lenguaje para un domino específico.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1559509232/20180416_1_rlvoac.png&quot; alt=&quot;Ejemplo de DSL en Elixir&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Como puedes ver es mucho más adecuado para el problema específico que si sólamente creáramos funciones.&lt;/p&gt;
+
+&lt;h3 id=&quot;gran-comunidad&quot;&gt;Gran comunidad&lt;/h3&gt;
+
+&lt;p&gt;La comunidad alrededor de Elixir es uno de los puntos más fuertes. Grandes programadores de otras comunidades y con mucha experiencia están apoyándolo y desarrollando el mismo lenguaje, librerías y herramientas para él, pero más importante, son muy abiertos y fomentan el trabajo de comunidad contestando dudas directamente y apoyando a programadores más inexpertos.&lt;/p&gt;
+
+&lt;p&gt;Esto ha hecho que la comunidad de Elixir sea muy receptiva, cordial y que las herramientas y librerías estén creciendo mucho en el poco tiempo de vida que tiene.&lt;/p&gt;
+
+&lt;h2 id=&quot;desventajas&quot;&gt;Desventajas&lt;/h2&gt;
+
+&lt;p&gt;Nada es perfecto. Al empezar a programar en Elixir te puedes topar con algunas problemas, de los que ahora hablaremos.&lt;/p&gt;
+
+&lt;h3 id=&quot;reciente-creación&quot;&gt;Reciente creación&lt;/h3&gt;
+
+&lt;p&gt;Su juventud como lenguaje hace que muchos de los problemas que te enfrentas sean recientes, no haya tantos programadores experimentados y la comunidad sea más pequeña (aunque está creciendo). Esto también implica que encontrarás menos librerías y algunas tendrán aún fallas de algún tipo por no haber sido probadas completamente por una gran cantidad de usuarios.&lt;/p&gt;
+
+&lt;p&gt;Si vas a iniciar un proyecto que requiera muchos programadores, conseguir programadores de Elixir será más difícil que con otros lenguajes más longevos. Pero siempre puedes enseñarles 😉.&lt;/p&gt;
+
+&lt;h3 id=&quot;rendimiento-crudo-bajo-en-comparación-con-otras-soluciones&quot;&gt;Rendimiento crudo bajo en comparación con otras soluciones&lt;/h3&gt;
+
+&lt;p&gt;La BEAM no es tan poderosa en procesamiento numérico como lo son otras máquinas virtuales (como la JVM) o como soluciones que compilan directamente a código máquina (Rust o Go). Es mucho mucho más lenta que estos últimos, lo cuál no la hace una solución especialmente buena cuando se trata de procesar grandes cantidades de información por sí sola (procesamiento de imágenes, análisis y transformación de datos). Para solventar esto, la BEAM soporta “plugins” llamados NIF’s, escritos en otros lenguajes que permiten delegar esta tarea a módulos y funciones escritas en otro lenguaje más adecuado para la tarea en cuestión.&lt;/p&gt;
+
+&lt;h2 id=&quot;casos-de-uso&quot;&gt;Casos de Uso&lt;/h2&gt;
+
+&lt;p&gt;Con las características mencionadas anteriormente te podrás dar una idea de para qué es bueno elixir:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sistemas de misión crítica&lt;/strong&gt;. Si necesitas un sistema que no se muera con nada y sea capaz de aguantar muchos tipos diferentes de fallas (incluso desconocidas) Elixir es una gran elección.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sistemas web&lt;/strong&gt;. La naturaleza de uso de la web actual hace que Elixir sea una gran elección si quieres que tu sistema ocupe pocos recursos, sea confiable, escale fácilmente y aguante una cantidad brutal de usuario simultáneamente.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sistemas en tiempo real ligero (soft real-time)&lt;/strong&gt;. Las características de Elixir lo hacen adecuado para manejar interacciones en tiempo real con muy muy poco atraso en la comunicación. Es adecuado para juegos, salas de chat, sistemas de notificaciones e incluso IoT.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sistemas que tienen que trabajar sobre muchas máquinas&lt;/strong&gt;. La BEAM está especialmente hecha para eso.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Programas embebidos&lt;/strong&gt;. La ligereza de sus procesos y la capacidad de crear árboles de supervisión lo hacen muy adecuado para crear software embebido. Hay un proyecto específicamente creado para eso, llamado &lt;a href=&quot;https://nerves-project.org/&quot;&gt;Nerves&lt;/a&gt;. Con él podrás crear software a prueba de balas.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;en-dónde-evitarlo&quot;&gt;En dónde evitarlo&lt;/h2&gt;
+
+&lt;p&gt;Las limitantes en cuanto al procesamiento de información cruda (number crunching) pueden hacer que Elixir no sea la mejor elección si la función principal de tu programa es algo que incluya muchas operaciones matemáticas sobre grandes cantidades de números: procesamiento y transformación de imágenes, análisis de video, etc.&lt;/p&gt;
+
+&lt;h2 id=&quot;recursos-de-aprendizaje&quot;&gt;Recursos de aprendizaje.&lt;/h2&gt;
+
+&lt;p&gt;En este post puedes ver unos cuantos recursos de aprendizaje: &lt;a href=&quot;https://hectorip.com/2018/12/27/aprendiendo-elixir.html&quot;&gt;Recursos de aprendizaje de Elixir&lt;/a&gt;, pero en este blog vamos a ir subiendo algunos ejercicios para que puedas aprender más de él.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Conviene aprender Elixir por muchas razones. Te divertirás creando programas en él. En este blog vamos a ir compartiendo artículos para que puedas aprender más de él.&lt;/p&gt;
+
+&lt;p&gt;No dudes en comentarnos tus dudas y podemos compartir nuestras experiencias.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="elixir" /><category term="fp" /><category term="programación-funcional" /><summary type="html">Elixir es un lenguaje que recientemente ha estado haciendo ruido. Aquí te contamos algunas cosas de él para que te animes a aprenderlo.</summary></entry><entry><title type="html">Diseño y desarrollo de una API RESTful desde cero - La importancia de diseñar tu API</title><link href="/2019/05/06/diseno-y-desarrollo-de-una-api-desde-cero.html" rel="alternate" type="text/html" title="Diseño y desarrollo de una API RESTful desde cero - La importancia de diseñar tu API" /><published>2019-05-06T00:00:00-05:00</published><updated>2019-05-06T00:00:00-05:00</updated><id>/2019/05/06/diseno-y-desarrollo-de-una-api-desde-cero</id><content type="html" xml:base="/2019/05/06/diseno-y-desarrollo-de-una-api-desde-cero.html">&lt;p&gt;En este post explicaré &lt;strong&gt;los principios básicos de diseño de una API&lt;/strong&gt;. Esta primera parte es bastante teórica, empezaremos con la práctica (no con la programación, sino con el diseño) en un post posterior.&lt;/p&gt;
+
+&lt;p&gt;Primero hablemos de la importancia del diseño o la arquitectura de la API. En la serie de posts hablaremos de API’s para consumo web, a través de HTTP, ya que son las de mayor uso y popularidad.&lt;/p&gt;
+
+&lt;h2 id=&quot;la-importancia-de-diseñar-tu-api&quot;&gt;La importancia de diseñar tu API&lt;/h2&gt;
+
+&lt;p&gt;Aunque parezca una tarea aburrida, innecesaria o burocrática, elegir un estilo de diseño de API’s te servirá de las siguientes maneras:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Mayor facilidad de desarrollo&lt;/strong&gt;. Tener una forma de nombrar los endpoints (los links con los que los sistemas externos interactúan), una estrucutra de respuesta, un estándar de errores y otras cuestiones definidas de antemano te permitirá pasar directo al diseño e implementación de las funcionalidades cuando llegue el momento. Si escoges usar una estructura de diseño común y popular puede que incluso haya herramientas que te faciliten la tarea. Nuestra API estará preparada para ser mantenible y escalable.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Familiariadad&lt;/strong&gt;. Si sigues un patrón de diseño común, cuando otros desarrolladores usen tu API la entenderán más fácil y podrán comenzar a sacarle provecho más rápido.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Menos documentación&lt;/strong&gt;. Aprovechando lo anterior, puede que gran parte de la estructura y prácticas comunes del patrón que escogiste ya estén documentadas, por lo que normalmente tendrás que documentar sólamente las partes que son especeificas de tu API.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;El trabajo extra que pongas en diseñar tu API o por lo menos escoger un patrón de diseño común te ahorrará trabajo en el futuro, a tu equipo y a otros desarrolladores.&lt;/p&gt;
+
+&lt;p&gt;Dependiendo de la época y las necesidades han surgido varios estilos o patrones de diseño comunes. Aquí hablaremos de dos de los más usados a lo largo del tiempo y de los más populares.&lt;/p&gt;
+
+&lt;h2 id=&quot;soap-simple-object-access-protocol&quot;&gt;SOAP (Simple Object Access Protocol)&lt;/h2&gt;
+
+&lt;p&gt;Este es el estilo de servicios más usado en el mundo empresarial. En realidad es un protocolo que establece desde la manera de comunicación hasta el lenguaje usado para transferir datos, entre otras cosas.
+Su nombre es un acrónimo que signfica &lt;em&gt;Simple Object Access Protocol (Protocolo simple de acceso a objetos)&lt;/em&gt; y fue desarrollado por Microsoft inicialmente. El lenguaje que se usa para transferir datos es &lt;a href=&quot;https://www.w3schools.com/xml/xml_whatis.asp&quot;&gt;XML&lt;/a&gt; y tiene varios estándares que definen cada aspecto de la comunicación, por lo que no se queda en sólo un estilo de diseño de API’s. Su objetivo original era definir cómo acceder y usar servicios web.&lt;/p&gt;
+
+&lt;p&gt;Una de las partes más fuertes del protocolo es la manera en que establece un contrato con el cliente acerca de la forma de usar los serivicios que expone. El archivo &lt;a href=&quot;https://www.w3.org/TR/2001/NOTE-wsdl-20010315&quot;&gt;WSDL&lt;/a&gt; contiene la descripción de los serivcios expuestos en un lenguaje exclusivamente creado para eso, el &lt;em&gt;Web Service Description Language&lt;/em&gt;, que se vale de XML. En este archivo define los servicios que la API provee, mediante la definición de una colección de endpoints, mensajes y tipos de datos. Este documento permite automatizar la creación de clientes mediante código.&lt;/p&gt;
+
+&lt;h3 id=&quot;ventajas-de-soap&quot;&gt;Ventajas de SOAP&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Pensado para transacciones complejas&lt;/strong&gt;. Una parte de SOAP está pensada para usarse con &lt;strong&gt;transacciones&lt;/strong&gt;. Si lo que requieres es que tu API realice transacciones &lt;a href=&quot;https://en.wikipedia.org/wiki/ACID_(computer_science)&quot;&gt;ACID&lt;/a&gt;, trabajar con SOAP te facilitará la vida.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Establece cada parte de la comunicación&lt;/strong&gt;. Esto puede ser una ventaja o una desventaja, pero si estás con una tecnología que lo permite y aprovecha, trabajar con SOAP puede ser rápido y sin dolor, ya que los estándares estarán implementados en la platafoma/lenguaje y las herramientas de programación pueden aprovecharse de los estándares para facilitarte la vida.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Interfaz definida&lt;/strong&gt;. Mediante el documento WSDL, SOAP permite la lectura de la interfaz (los endpoints), los tipos de datos y sus mensajes, así como las acciones que se pueden realizar de manera automatizada, lo que hace sencillo entender y consumir la API, incluso de manera automatizada mediante una herramienta que cree el cliente automáticamente o un paquete de tu lenguaje que te facilite la vida.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;desventajas-de-soap&quot;&gt;Desventajas de SOAP.&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;XML&lt;/strong&gt;. Parsear y procesar XML es en geneal más difícil y requiere más pasos que hacer con otros lenguajes de transmisión de datos usados con otros estilos de API’s, pero esta deventaja sólo aplica si tu lenguaje y herramientas de desarrollo no soportan completamente los protocolos establecidos por SOAP. Así que la experiencia que tengas con SOAP depende en gran medida de las cosas implementadas por los lenguajes y herramientas en que programarás en el lenguaje (por ejmplo, los IDE’s para C# y Java soportan recibir el WSDL para automatizar gran parte del proceso de crear un cliente)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Velocidad&lt;/strong&gt;. Al ser un protocolo más complejo, aumenta la cantidad de procesamiento y transferencia de datos requerido para funcionar, lo que lo hace más lento que otras alternativas. Además, no es fácilmente cacheable, por lo que cada respuesta tiene que ser única y por lo tanto requiere mayores recursos.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;conclusión-acerca-de-soap&quot;&gt;Conclusión acerca de SOAP&lt;/h3&gt;
+
+&lt;p&gt;Muchos desarrolladores, sobre todo con poca experiencia, se escandalizan cuando tienen que trabajar en un API SOAP, sobre todo las generaciones recientes, y sí es un problema cuando tus herramientas no hacen fácil trabajar con este tipo de API’s (como con cualquier otro tipo de desarrollo, tecnología o protocolo). Sin embargo, sus características las hacen ideales para API’s transaccionales, por lo que es conveniente escorger este tipo de API’s en los casos adecuados. Además, puedes beneficiarte de su forma de establecer la interfaz de manera clara y estricta. &lt;strong&gt;Cada herramienta fue creada con un propósito y tiene sus usos adecuados.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;apis-restful&quot;&gt;API’s RESTful&lt;/h2&gt;
+
+&lt;p&gt;Una API REST aprovecha el diseño de las peticiones HTTP para crear servicios web con interfaces intuitivas.
+REST son las siglas de “Representational State Transfer” (Transferencia de Estado Representacional), que es un estilo de arquitectura de sistemas distribuidos (podemos pensar en la web como un sistema distribuido). 
+Este estilo establece 6 características que se deben de cumplir para que un sistema sea considerado RESTful:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Arquitectura cliente-servidor. Existe un programa encargado de hacer peticiones (cliente) y uno encargado de responderlas (servidor).&lt;/li&gt;
+  &lt;li&gt;Interfaz uniforme. Todos los clientes deberían acceder a la misma interfaz. Si el servidor cumple con la interfaz, puede haber un número ilimitado de clientes independientes que cambian sin dependencias entre ellos o con la implementación del servidor. &lt;em&gt;Esta es una de las razones principales por las que las API’s REST son tan usadas actualmente.&lt;/em&gt; Este punto lo trataremos más a profundidad en el siguiente artículo. Pero para cumplir esto mencionemos brevemente qué principios debe seguir esta interfaz para que cumpla con este propósito:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Basada en &lt;em&gt;recursos&lt;/em&gt;&lt;/strong&gt;. Las URL’s de los endpoints hacen referencia a &lt;em&gt;recursos&lt;/em&gt;, es decir, a elementos de datos que pueden ser representados como objetos con un tipo, datos asociados, relaciones con otros objetos y las operaciones que se pueden realizar sobre él.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Manipulación de recursos mediante &lt;em&gt;representaciones&lt;/em&gt;&lt;/strong&gt;. La API no devuelve nunca el recurso original al cliente que lo solicita o solicita una operación sobre él, sino que lo hace a través de alguna &lt;em&gt;representación&lt;/em&gt; de este recurso. Una representación es un subconjunto de los datos de recurso transmitido en un lenguaje adecuado: HTML, XML, JSON, MessagePack, etc.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Mensajes autodescriptivos&lt;/strong&gt;. Cada mensaje tiene suficiente información en sí mismo para ser procesado.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;HATEOAS&lt;/strong&gt;. Estas son las siglas de &lt;strong&gt;Hypermedia As The Engine Of Applicaton State&lt;/strong&gt; (Hypermedia como el motor del estado de la aplicación). La palabra &lt;a href=&quot;https://smartbear.com/learn/api-design/what-is-hypermedia/&quot;&gt;hypermedia&lt;/a&gt; se refiere a un formato de texto (o hypertexto) que contiene links hacia otros documentos, imágenes, video y audio. Es una forma de mostrar las relaciones que existen conceptualmente en una red de información, incluyendo formatos más allá del texto. Por lo tanto, este punto se refiere a que la API debería ser navegable con la información expuesta en cada respuesta, las relaciones con otros recursos, los links a otros documentos y achivos. &lt;a href=&quot;https://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven&quot;&gt;El autor&lt;/a&gt; de la deficinición de API’s REST hace enfásis en que no está casada con ningúna forma de transporte o protocolo de comunicación, pero su implementación bien puede depender de que el protocolo de comunicación tenga las características básicas como el usar URI’s para identificación. Todo el estado de la aplicación necesaria para funcionar será transmitido a partir de hypermedia. En el caso del HTTP, se usan las URL’s con su cadena da consulta (query string), las cabeceras y los cuerpos de petición y respuesta para mantener este estado.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Sistema sin estado. Las conexiones entre los sistemas (cliente y servidor) no deberían dependender de un estado creado o mantenido a través de peticiones anteiores. Todo lo necesario para generar una respuesta se encuentra en la petición actual.&lt;/li&gt;
+  &lt;li&gt;Cacheable. Las respuestas pueden ser guardadas para ser contestadas más rápidamente por el mismo servidor o por un sistema intermedio.&lt;/li&gt;
+  &lt;li&gt;Sistema en capas. El sistema puede estar construido por varias capas de servicio y esto debe ser transparente para los clientes (no tienen que modificar sus llamadas).&lt;/li&gt;
+  &lt;li&gt;Código bajo demanda. El servidor debe ser capaz de envíar código a cliente para que sea ejecutado.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;ventajas-de-rest&quot;&gt;Ventajas de REST&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Flexibilidad&lt;/strong&gt;. REST no define el lenguaje de transferencia de datos, el tipo de autenticación y otros detalles de la comunicación que se dejan a discreción de los implementadores. En la actualidad, la mayoría de las API’s REST usan JSON como lenguaje de transeferencia, pero bien podrían usar XML o MessagePack, incluso un lenguaje propietario.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Popularidad&lt;/strong&gt;. La extensión de uso de API’s RESTful ha hecho que proliferen herramientas para construirlas, probarlas y ponerlas en producción, por le que es muy sencillo desarrollarlas, aunque no deja de presentar retos.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Escalabilidad&lt;/strong&gt;. Esta es una de las razones por las que las API rest se han vuelto tan populares. Incrementar la cantidad de usuarios que se pueden atender con una API RESTful es más sencillo que son SOAP debido a la cacheabilidad y a que las conexiones sin estado permiten escalamiento horizontal (replicación de servidores) y por lo tanto los costos se abaratan. La mayoría de las API’s grandes conocidas siguen este estilo.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;desventajas-de-rest&quot;&gt;Desventajas de REST&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Flexibilidad&lt;/strong&gt;. La flexibilidad es un don y maldición. Cuando a las personas se les permite hacer lo que sea, harán hasta lo inimaginable, por lo que se pueden encontrar implementaciones horribles y sin una guía definida nuestra propia API puede quedar hecha un asco.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Transacciones&lt;/strong&gt;. REST no establece una manera de manejar operaciones transaccionales, por lo que la implementación queda completamente del lado del diseño. Hay que tener en cuenta el manejo del estado, replicación de servidores, consistencia y &lt;a href=&quot;https://es.wikipedia.org/wiki/Condici%C3%B3n_de_carrera&quot;&gt;condiciones de carrera&lt;/a&gt;. Esto no hace sencillo trabajar con transacciones en API’s REST.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Seguridad&lt;/strong&gt;. No estamos diciendo que REST sea más inseguro que SOAP, sino REST no establece los medios de protección de interacciones e información, por lo que queda completamente como decisión de los desarrolladores y arquitectos del sistema. Sin una implementación adecuada tu API quedará vulnerable.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;otros-estilos&quot;&gt;Otros estilos&lt;/h2&gt;
+
+&lt;p&gt;Han surgido nuevas maneras de consumir y diseñar API’s como &lt;a href=&quot;https://graphql.org/learn/&quot;&gt;GraphQL&lt;/a&gt; y &lt;a href=&quot;https://grpc.io/&quot;&gt;gRPC&lt;/a&gt;, pero cada una merece su propio artículo.&lt;/p&gt;
+
+&lt;h2 id=&quot;nuestra-api&quot;&gt;Nuestra API&lt;/h2&gt;
+
+&lt;p&gt;Para crear nuestra API elegiremos el estilo RESTful, por su popularidad y porque lo que aprendamos tendrá aplicaciones útiles inmeditas y en el futuro.&lt;/p&gt;
+
+&lt;p&gt;En el camino aprenderemos:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cómo dieseñar una API RESTful&lt;/li&gt;
+  &lt;li&gt;Buenas prácticas de transferencia de datos y de estado&lt;/li&gt;
+  &lt;li&gt;Cómo comunicar errores&lt;/li&gt;
+  &lt;li&gt;Crear una estructura de mensajes intuitiva&lt;/li&gt;
+  &lt;li&gt;Versionamiento de nuestra API&lt;/li&gt;
+  &lt;li&gt;Nombrado de los endpoints&lt;/li&gt;
+  &lt;li&gt;Seguridad&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;El ejercicio será el siguiente:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Crear una API que permita crear listas de vocabularios. Un usuario se registra y puede crear tantos vocabularios como desee. Un vocabulario consiste de una lista de palabras ordenadas por tiempo de inserción y su definción, que puede ser tomada del diccionario (fija) o definida por el usuario. Además una palabra puede tener imágenes adjuntas.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Esta aplicación nos permitirá poner en práctica y aprender de todos los puntos antes mencionados y otros. No te pierdas el siguiente artículo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="apis" /><category term="rest" /><category term="soap" /><summary type="html">El primer artículo de la serie. ¿Por qué es importante diseñar de antemano tu API? Compararemos dos de los estilos más populares: SOAP vs REST</summary></entry><entry><title type="html">Las mejores fuentes tipográficas para programar</title><link href="/2019/04/19/fuentes-tipograficas-para-programar.html" rel="alternate" type="text/html" title="Las mejores fuentes tipográficas para programar" /><published>2019-04-19T00:00:00-05:00</published><updated>2019-04-19T00:00:00-05:00</updated><id>/2019/04/19/fuentes-tipograficas-para-programar</id><content type="html" xml:base="/2019/04/19/fuentes-tipograficas-para-programar.html">&lt;p&gt;Personalizar el entorno de programación se ha convertido en uno de los temas más relevantes para los desarrolladores de software, nos permite ser más productivos y estar más contentos en general con el trabajo día a día. No dudo que el lugar en el que más pasamos tiempo los desarrolladores sea el editor de texto o IDE, y, por lo tanto, aprender a personalizarlo es bastante importante. Uno de los aspectos más importantes del editor de texto es la fuente tipográfica.&lt;/p&gt;
+
+&lt;p&gt;En éste artículo presentaré las fuentes que me parecen más interesantes diseñadas para programar, además de otras que aunque no fueron diseñadas para los programadores exclusivamente, hacen un gran trabajo. Aunque parezca un tema superfluo, tener un entorno adaptado a nuestros gustos, tanto estética como funcionalmente, es increíblemente efectivo para ser más productivos. Pero antes de empezar unas notas acerca de la tipografía.&lt;/p&gt;
+
+&lt;h2 id=&quot;fuentes-tipográficas&quot;&gt;Fuentes tipográficas&lt;/h2&gt;
+
+&lt;p&gt;Las fuentes usadas usadas en entornos cotidianos, como este post, en los procesadores de texto, en la mayoría de los textos impresos, libros y revistas son fuentes &lt;em&gt;espaciadas proporcionalmente&lt;/em&gt;, las letras ocupan espacio horizontal proporcional a lo anchas que son naturalmente, así la &lt;strong&gt;i&lt;/strong&gt; y la &lt;strong&gt;m&lt;/strong&gt; ocupan diferente espacio horizontal:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;iiiiiiiiii&quot;&gt;&lt;em&gt;iiiiiiiiii&lt;/em&gt;&lt;/h2&gt;
+  &lt;p&gt;&lt;em&gt;mmmmmmmmmm&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;¿Podrías decir que es el mismo número de letras? Son 10 de cada una.&lt;/p&gt;
+
+&lt;p&gt;Las fuentes espaciadas proporcionalmente facilitan la lectura o el escaneo de &lt;strong&gt;palabras enteras&lt;/strong&gt;, por lo que nos permiten leer más rápido. Sin embargo, tienen algunas desventajas: los los signos de puntuación, las letras delgadas y otros símbolos son fáciles de pasar por alto. &lt;strong&gt;Algo que no conviene en la programación&lt;/strong&gt;, como ya sabrás.&lt;/p&gt;
+
+&lt;p&gt;Por la razón anterior, y &lt;a href=&quot;http://stackoverflow.com/questions/218623/why-use-monospace-fonts-in-your-ide&quot;&gt;otras mencionadas en esta pregunta de Stack Overflow&lt;/a&gt;, los programadores estamos acostumbrados a usar fuentes &lt;em&gt;monoespaciadas&lt;/em&gt; o con &lt;em&gt;espaciado fijo&lt;/em&gt;. En este tipo de fuentes las letras ocupan el mismo espacio horizontal sin importar el ancho natural de la letra en cuestión, incluídos los signos de puntuación. Así se puede crear una “cuadrícula” de letras. Veamos otra vez el ejemplo de las letras &lt;strong&gt;i&lt;/strong&gt; y &lt;strong&gt;m&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  iiiiiiiiii
+  mmmmmmmmmm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Ahora puedes afirmar que hay el mismo número de carácteres aunque no sepas exactamente cuántos. ¿Cómo ayuda esto a los programadores? Aquí un ejemplo:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;if !i, do: func()&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-elixir highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;!i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;¿En qué tipo de fuente es más legible la expresión anterior? Al dar un espaciado fijo a cada letra podemos distinguir mejor los dos caracteres que existen. Por ejemplo, en la fuente monoespaciada podemos ver claramente el símbolo de negación.&lt;/p&gt;
+
+&lt;p&gt;Después de entender esto sabemos porque muchas de las fuentes usadas para programar llevan en su nombre “Mono”, quiere decir que es una fuente monoespaciada. Ahora sólo un detalle más acerca de algunas fuentes: las ligaduras.&lt;/p&gt;
+
+&lt;h2 id=&quot;ligaduras&quot;&gt;Ligaduras&lt;/h2&gt;
+
+&lt;p&gt;Las ligaduras en las fuentes tipográficas suceden cuando el conjunto de caracteres se ha diseñado para que algunos conjuntos especiales de dos o tres caracteres puedan ser representados con un solo trazo o glifo. Lo normal era en letras como la &lt;strong&gt;f&lt;/strong&gt; y la &lt;strong&gt;i&lt;/strong&gt;, para que el espacio no quedara desproporcionado. Puedes leer más a detalle sobre las ligaduras tradicionales en este artículo: &lt;a href=&quot;http://www.tiposconcaracter.es/ligaduras/&quot;&gt;Ligaduras&lt;/a&gt;. Aquí hay unos ejemplos de las ligaduras tradicionales:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/0*kZ5QtY4t8GMhrtLl.jpg&quot; alt=&quot;Ligaduras tradicionales&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora bien, las ligaduras se pueden usar para mostrar carácteres especiales más legibles y entendibles como en el caso de los conjuntos de caracteres: =&amp;gt;, !=, ==. Varias fuentes han aprovechado las ligaduras para poder llevar esto a la realidad. Lo triste de esto es que no todos los editores de texto, IDE’s y terminales los soportan. Algo que debe quedar claro que sólo cambia la &lt;em&gt;representación&lt;/em&gt; del texto, no los caracteres realmente escritos, por lo que no produce ningún problema con el código fuente.&lt;/p&gt;
+
+&lt;p&gt;Ahora sí, hablemos de algunas de las fuentes bonitas que podemos usar.&lt;/p&gt;
+
+&lt;h2 id=&quot;fira-code&quot;&gt;Fira Code&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/0*_wmY1HhArgNtf--1.jpg&quot; alt=&quot;Fira code&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una fuente con ligaduras diseñada exclusivamente para programadores. Open Source y gratuita, la pueden encontrar en su &lt;a href=&quot;https://github.com/tonsky/FiraCode&quot;&gt;repositorio de Github&lt;/a&gt;. Es derivada de Fira Mono y añade las ligaduras. Aquí un ejemplo de cómo cambian los caracteres en ligadura, extraído del repo de Github:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2160/0*8Ud6Ss4VPLcR2nKi.png&quot; alt=&quot;Ligaduras de Fira Code&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Si le quieren dar una oportunidad la pueden probar con &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VS Code&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;monoid&quot;&gt;Monoid&lt;/h2&gt;
+
+&lt;p&gt;Fuente monoespaciada semicondensada, también con ligaduras. Esta fuente al ser más condensada que Fira Code, permite tener más texto (código) en la pantalla, sin perder demasiada legibilidad. En &lt;a href=&quot;https://medium.com/larsenwork-andreas-larsen/designing-a-coding-font-b10cabd594fc#.chvb73c3c&quot;&gt;Medium&lt;/a&gt; explica las decisiones de diseño que tomó a través de varios artículos.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/0*judcRlccKzjXz-8F.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;hasklig&quot;&gt;Hasklig&lt;/h2&gt;
+
+&lt;p&gt;Fuente diseñada por y para programadores de Haskell (aunque no limitada para ellos), debido al extenso uso que hace de los símbolos compuestos como =&amp;gt;, ==, &amp;gt;-, -«, ::, el creador decidió hacer un fork de la fuente Source Code Pro y añadirle ligaduras. Se puede descargar en su &lt;a href=&quot;https://github.com/i-tu/Hasklig&quot;&gt;repositorio de Github&lt;/a&gt;. 
+ Aquí un ejemplo de cómo luce:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/0*J4JomQCofwrPbqAV.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y aquí cómo se verían esos carácteres en &lt;a href=&quot;https://github.com/adobe-fonts/source-code-pro&quot;&gt;Source Code Pro&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/0*OOk-BjFh8OLHN19E.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;input&quot;&gt;Input&lt;/h3&gt;
+
+&lt;p&gt;Input es una familia de fuentes tipográficas específicamente diseñadas para programadores, con propuestas bastante interesantes: ofrece fuentes proporcionales, monoespaciadas, serif y sans-serif.&lt;/p&gt;
+
+&lt;p&gt;¿Fuentes proporcionales para el código? David Jonathan Ross, el diseñador, dice que las fuentes monoespaciadas ni siquiera llegan a tomar en cuenta el grosor de la fuente, por lo que a veces el resaltado de la sintaxis puede producir resultados extraños, debido a que su espacio horizontal se mantiene constante, así las letras anchas se aplastan y las mayúsculas parecen estiradas al lado de las minúsculas.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/0*aRObIWuheijDt52-.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para resolver esto, su fuente proporcional intenta importar los atributos que hacen que una fuente monoespaciada sea atractiva: &lt;strong&gt;símbolos de puntución grandes, espaciado generoso y caractéres fáciles de reconocer individualmente&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/0*DRcoyMX3o-_lh5RH.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una gran cualidad de esta fuente es que es completamente personalizable. Se pueden personalizar carácteres como &lt;strong&gt;i&lt;/strong&gt;, &lt;strong&gt;a&lt;/strong&gt;, &lt;strong&gt;l&lt;/strong&gt;, &lt;strong&gt;0&lt;/strong&gt; (cero) y también se puede escoger que tan condensada (espacio horizontal) está la fuente, este es muy valioso en el caso de tener una pantalla pequeña con líneas de código largas.&lt;/p&gt;
+
+&lt;p&gt;En su &lt;a href=&quot;http://input.fontbureau.com&quot;&gt;página oficial&lt;/a&gt; pueden encontrar una muestra, esto es un ejemplo de cómo puede llegar a verse:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/0*iuA1UTTDs1xqUjBY.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;El ejemplo anterior es con fuente monoespaciada, a mí me sigue gustando más.&lt;/p&gt;
+
+&lt;p&gt;En la &lt;a href=&quot;http://input.fontbureau.com/download/?customize&quot;&gt;página de personalización&lt;/a&gt; pueden descargarla completamente gratis para uso personal, en el caso de usarse en publicaciones y en web se tiene que pagar por ella.&lt;/p&gt;
+
+&lt;h3 id=&quot;operator-mono&quot;&gt;Operator Mono&lt;/h3&gt;
+
+&lt;p&gt;Esta fuente la vi usada en un tutorial &lt;a href=&quot;http://laracasts.com&quot;&gt;Laracasts&lt;/a&gt; y me enamoré de ella, es una fuente monoespaciada sans-serif, diseñada para progrmadores y diseñadores, que tiene una característica que la hace muy notable: el estilo itálico cambia completamente del normal, se vuelve una fuente más estilizada, simulando las letras manuscritas.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2046/0*Jf0p8R5uMnhStfHR.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sus creadores pusieron &lt;a href=&quot;http://www.typography.com/blog/tag/Monospace&quot;&gt;especial énfasis en las llaves y los corchetes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Esta fuente no tiene ligaduras (aunque hay un proyecto que se las pone: &lt;a href=&quot;https://github.com/kiliman/operator-mono-lig&quot;&gt;aquí&lt;/a&gt;), no es Open Source y tiene un costo de $199 USD por los 10 estilos básicos. Se puede comprar en su &lt;a href=&quot;http://www.typography.com/fonts/operator/overview/&quot;&gt;sitio oficial&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si el tema de resaltado de sintaxis que usas hace buen uso de las cursivas esta fuente luce absolutamente hermosa.&lt;/p&gt;
+
+&lt;h2 id=&quot;proggy-fonts&quot;&gt;Proggy Fonts&lt;/h2&gt;
+
+&lt;p&gt;Este sitio tiene varias fuentes de la familia Proggy, lucen con un toque retro pero se ven muy bien, sobre todo si te gusta el estilo de 8 bits.&lt;/p&gt;
+
+&lt;p&gt;Aquí un ejemplo:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.proggyfonts.net/wp-content/uploads/2017/08/26195436/code_proggysquaresz.png&quot; alt=&quot;Ejemplo Proggy Square&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En el sitio puedes encontrar otras fuentes exclusivas para progrmar, todas gratis.&lt;/p&gt;
+
+&lt;h2 id=&quot;bonus&quot;&gt;Bonus&lt;/h2&gt;
+
+&lt;p&gt;En &lt;a href=&quot;http://programmingfonts.org/&quot;&gt;Programming Fonts&lt;/a&gt; puedes encontrar más opciones si no te convenció ninguna de las que mostramos aquí. También puedes probar muchos &lt;a href=&quot;https://app.programmingfonts.org/&quot;&gt;estilos diferentes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;En &lt;a href=&quot;https://github.com/chrissimpkins/codeface&quot;&gt;este repo de Github&lt;/a&gt; puedes encontrar más ejemplos.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Nota: Este post es una actualización &lt;a href=&quot;https://medium.com/@HectorIP/fuentes-tipogr%C3%A1ficas-para-programadores-7d93c55f1223&quot;&gt;de otro&lt;/a&gt; que hice tiempo.&lt;/em&gt;&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="fuente" /><category term="editor" /><category term="ide" /><summary type="html">Las mejores fuentes para tu editor de código.</summary></entry><entry><title type="html">La diferencia entre concurrencia y paralelismo</title><link href="/2019/04/17/la-diferencia-entre-concurrencia-y-paralelismo.html" rel="alternate" type="text/html" title="La diferencia entre concurrencia y paralelismo" /><published>2019-04-17T00:00:00-05:00</published><updated>2019-04-17T00:00:00-05:00</updated><id>/2019/04/17/la-diferencia-entre-concurrencia-y-paralelismo</id><content type="html" xml:base="/2019/04/17/la-diferencia-entre-concurrencia-y-paralelismo.html">&lt;p&gt;Los términos &lt;strong&gt;concurrencia&lt;/strong&gt; y &lt;strong&gt;paralelismo&lt;/strong&gt; siempre han sido relevantes en el entorno de la computación y desarrollo de software. Hablemos de la diferencia entre ellos y cómo podemos aplicarlos en nuestros programas.
+Son conceptos relacionados, pero decir que uno es el otro es como decir que las naranjas y manzanas son iguales.&lt;/p&gt;
+
+&lt;p&gt;Empecemos por el concepto más sencillo: el paralelismo.&lt;/p&gt;
+
+&lt;h2 id=&quot;paralelismo&quot;&gt;Paralelismo&lt;/h2&gt;
+
+&lt;p&gt;Se refiere a la &lt;strong&gt;&lt;em&gt;ejecución simultánea&lt;/em&gt;&lt;/strong&gt; de varios procesos computacionales. Esto significa que se requieren varios medios de ejecución física: varios procesadores (o un procesador con varios núcleos) o varias computadoras (sistemas distribuidos) y la suficiente memoria para mantenerlos. Los procesos pueden estar relacionados entre ellos, para realizar una misma tarea, &lt;strong&gt;o no&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;El paralelismo está relacionado con la capacidad del sistema en el que se ejecuta el programa, con sus recursos disponibles y que el software lo pueda aprovechar.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Rob_Pike&quot;&gt;Rob Pike&lt;/a&gt;, uno de los creadores del lenguaje Go, dice que el mundo real es paralelo. Y pensemos un poco: suceden muchas cosas al mismo tiempo, algunas relacionadas entre ellas, otras no.&lt;/p&gt;
+
+&lt;p&gt;Veamos algunos ejemplos concretos de paralelismo en la vida real.&lt;/p&gt;
+
+&lt;h4 id=&quot;el-torneo-de-ajedrez&quot;&gt;El torneo de ajedrez&lt;/h4&gt;
+
+&lt;p&gt;Imagínate un torneo de ajedrez en el que entran 100 personas a participar pero tiene como límite de tiempo un día. Para lograr terminar a tiempo se tienen que jugar varias partidas &lt;em&gt;simultáneamente&lt;/em&gt;. Aunque una partida no afecta el resultado de otra que se esté jugando al mismo tiempo, esas partidas sí afectan partidas futuras si el torneo se pensó en varias etapas. La cantidad de partidas simultáneas que se puedan jugar dependerá tanto del número de jugadores como de los recursos disponibles: lugares, para jugar, tableros, conjuntos de piezas, etc, y del diseño del torneo. Esto es un ejemplo de paralelismo con procesos relacionados.&lt;/p&gt;
+
+&lt;h4 id=&quot;un-grupo-musical&quot;&gt;Un grupo musical&lt;/h4&gt;
+
+&lt;p&gt;A menos que sea el hombre orquesta, una persona no puede tocar todos los instrumentos para producir una canción compleja. Cada miembro del grupo toma un instrumento y se encarga de producir las notas correctas en el momento adecuado. Esto es otro ejemplo de un proceso paralelo con tareas relacionadas entre sí.&lt;/p&gt;
+
+&lt;h4 id=&quot;un-grupo-tomando-clase&quot;&gt;Un grupo tomando clase&lt;/h4&gt;
+
+&lt;p&gt;Ahora piensa en un profesor que imparte clases a sus alumnos. Cada alumno tomando notas es un proceso corriendo al mismo tiempo. Un alumno produce sus propias notas con su estilo y contenido para consulta posterior. Esto es un ejemplo de paralelismo con tareas no relacionadas, ya que las notas de todos los alumnos no tienen por qué converger.&lt;/p&gt;
+
+&lt;h3 id=&quot;ejemplos-de-programas-paralelos&quot;&gt;Ejemplos de programas paralelos&lt;/h3&gt;
+
+&lt;p&gt;Hablemos de algunos sistemas y programas que pueden o necesitan ejecutar tareas en paralelo.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Las computadoras actuales&lt;/strong&gt;. Las computadoras actuales en general cuentan con un procesador con por lo menos dos núcleos. Cada núcleo es capaz de correr un proceso por lo que esa computadora, si el software lo aprovecha, puede correr dos procesos a la vez. Insistimos: los procesos no necesariamente están relacionados.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Red de Bitcoin&lt;/strong&gt;. Cuando se crea un nuevo bloque en el blockchain de la red de Bitcoin, muchas computadoras, llamadas “mineros”, compiten para encontrar la solución a un problema matemático para el que se requiere gran capacidad de cómputo. Todas empiezan al mismo tiempo y la primera que termine gana una cantidad de bitcoins por haber encontrado la solución. Entonces: las computadoras trabajan en paralelo &lt;em&gt;compitiendo&lt;/em&gt; para encontrar una solución lo más rápido posible.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sistemas web modernos&lt;/strong&gt;. Casi todos los sistemas web modernos que tienen que atender a una cantidad considerable de usuarios ocupan varios sistemas computacionales para poder responder las peticiones en un tiempo razonable. La primera división que se hace generalmente tiene que ver con la base de datos y el programa encargado de recibir y procesar las peticiones web. Al trabajar en computadoras diferentes que pueden funcionar al mismo tiempo, se vuelve un sistema paralelo. Algunas arquitecturas más complejas incluyen un &lt;em&gt;balanceador de carga&lt;/em&gt;, que distribuye las peticiones a diferentes computadoras encargadas de procesar las peticiones, y se levantan tantas como se necesiten.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Como decíamos al principio, casi todos los sistemas computacionales modernos se valen del paralelismo para funcionar decentemente. Ahora pasemos a hablar de un concepto un poco menos fácil de entender.&lt;/p&gt;
+
+&lt;h2 id=&quot;concurrencia&quot;&gt;Concurrencia&lt;/h2&gt;
+
+&lt;p&gt;Esta palabra intuitivamente la entendemos como la confluencia o el encuentro de varias cosas o procesos en un sólo lugar al mismo tiempo. Cuando un lugar está lleno de gente decimos que “está muy concurrido”. Esto nos puede llevar a confundir el término con paralelismo. En cuanto a las ciencias computacionales, es algo totalmente diferente: es una manera de diseñar, componer o estructurar programas. &lt;strong&gt;Concurrencia&lt;/strong&gt;, entonces, se puede definir de la siguiente forma:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;La composición de elementos (funciones, procesos, programas, etc) que se ejecutan independientemente pero &lt;strong&gt;interactúan&lt;/strong&gt; entre sí. No necesariamente se ejecutan al mismo tiempo.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Hablamos de composición en el sentido de “acomodo” o “estructura” e incluso “diseño”.&lt;/p&gt;
+
+&lt;p&gt;Por lo tanto, un programa concurrente es uno que se vale de distintos procesos indpendientes para lograr su objetivo, que pueden o no correr al mismo tiempo exactamente.
+Pongamos unos ejemplos de la vida real.&lt;/p&gt;
+
+&lt;h4 id=&quot;el-podcaster&quot;&gt;El podcaster&lt;/h4&gt;
+
+&lt;p&gt;Piensa en una persona que quiere grabar un podcast. Para facilitarse la vida ha escrito su proceso en una lista de tareas:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Crear borrador de los temas y el script&lt;/li&gt;
+  &lt;li&gt;Grabar el episodio&lt;/li&gt;
+  &lt;li&gt;Editar y decorar el episodio&lt;/li&gt;
+  &lt;li&gt;Publicarlo en los sitios de podcast mas populares&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;¿Son estos procesos independientes? Lo cierto es que cada uno necesita una entrada (que PUEDE venir del proceso anterior), pero no necesariamente la entrada producida por el proceso anterior. Es decir:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Crear el borrador -&amp;gt; Independiente&lt;/li&gt;
+  &lt;li&gt;Grabar el episodio -&amp;gt; Puede o no ocupar un borrador, es mejor idea tener uno.&lt;/li&gt;
+  &lt;li&gt;Editar -&amp;gt; Requiere una grabación que editar y decorar y produce un episodio final.&lt;/li&gt;
+  &lt;li&gt;Publicar -&amp;gt; Requiere un episodio que publicar&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Por lo tanto, estos procesos se pueden ejecutar independientemente. Entonces, con estas tareas (y la manera de organizarlas) podemos tener un proceso de creación de podcasts concurrente. Imagina por ejemplo que el podcaster decide crear una parte del borrador, digamos 5 minutos, y grabarlos, sólo para escucharse a sí mismo y probar el tono y el &lt;em&gt;feeling&lt;/em&gt;. Después repite la operación hasta tener 30 minutos de contenido. Este es un proceso que podemos decir que es concurrente porque aunque no podía grabar y escribir el borrador al mismo tiempo, estas tareas se estaban completando ‘al mismo tiempo’, no hizo una después de otra hasta completarla.&lt;/p&gt;
+
+&lt;p&gt;Imagínate el proceso algo así:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1555523914/IMG_0033_1_btpgl3.jpg&quot; alt=&quot;Proceso del podcaster&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Concurrencia es &lt;strong&gt;manejar&lt;/strong&gt; varias tareas en un periodo de tiempo, aunque no se ejecuten simultáneamente. Pero podríamos hacer este proceso paralelo al integrar a más personas: una persona que escriba el borrador, empezando un poco antes que el encargado de hablar al micrófono comience. Así aceleramos el proceso. O los encargados de editar y publicar pueden estar trabajando en episodios anteriores
+mientras se graba uno nuevo.&lt;/p&gt;
+
+&lt;h4 id=&quot;el-ajedrecista&quot;&gt;El ajedrecista&lt;/h4&gt;
+
+&lt;p&gt;Ahora imagina a un Gran Maestro (GM) del ajedrez al que retan a enfrentarse con 10 personas a ciegas al mismo tiempo.
+El ajedrecista acepta y juega contra los 10 formados en círculo. Para lograr esto (además de jugar muy bien ajedrez), el gran maestro debe establecer un orden para cada openente y, por lo menos en su mente, una manera de retomar cada juego cuando sea el turno. Las tareas (los juegos), vistos desde el lado del GM están relacionadas en el sentido de que cada una suma dificultad al encuentro, cada uno hace más difícil ganar al siguiente. Este proceso no puede paralelizarse porque perdería todo el sentido.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1555523924/IMG_0037_pkqalv.jpg&quot; alt=&quot;El ajedrecista&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;un-equipo-de-trabajo&quot;&gt;Un equipo de trabajo&lt;/h4&gt;
+
+&lt;p&gt;Pensemos en un equipo que tiene que desarrollar un programa más o menos complejo. El equipo está compuesto por un desarrollador backend, un frontend y un UX/UI. Además los coordina un administrador de proyectos (PM). El PM puede diseñar una forma de trabajo que permita a cada uno de los miembros trabajar en
+diferentes partes del proyecto para avanzar más rápido. Para lograr esta coordinación se necesita trabajo extra: reportes, juntas y coordinación de tareas, para no empezar algo de lo que no se tenga claridad.&lt;/p&gt;
+
+&lt;h3 id=&quot;ejemplos-de-programas-concurrentes&quot;&gt;Ejemplos de programas concurrentes&lt;/h3&gt;
+
+&lt;p&gt;Ahora hablemos de algunos ejemplos de programas concurrentes, de la vida real:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Sistema operativo&lt;/strong&gt;. Un sistema operativo ejecuta muchas tareas relacionadas entre sí para lograr que un sistema de hardware sea usable para los humanos, por ejemplo: leer entrada del ratón y el teclado, mostrar el resultado de los procesos en pantallas, ejecutar el reloj, ejecutar muchos programas que hacen de tu experiencia agradable (spotify, administrador de ventanas), servicios de red. Aunque las computadoras actuales tienen varios procesdores, no se acercan al número de tareas con las que un sistema opertivo &lt;strong&gt;trata&lt;/strong&gt; al mismo tiempo. Como decíamos en la sección de paralelismo, actualmente casi todas las computadoras pueden correr varios procesos al mismo tiempo, por lo que puede que el sistema operativo se aproveche de esto. La siguiente ilustración es un ejemplo de cómo trataría en sistema operativo la entrada del texto “AB”:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1555523897/IMG_0035_1_emhyju.jpg&quot; alt=&quot;Sistema operativo concurrente&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Servidor Web&lt;/strong&gt;. Los servidores web están diseñados para atender a muchos clientes (usuarios) dentro de un corto espacio de tiempo. Un servidor web está tratando con varios usuarios al mismo tiempo sin que necesariamente todas sus tareas se ejecuten simultáneamente: atiende a cada usuario en muy corto periodo de tiempo y pasarse al siguiente. Puede funcionar en paralelo si cuenta con los recursos computacionales suficiente. Se parece al ajedrecista, “juega” con muchos usuarios al mismo tiempo, dividiendo sus recursos por tiempo.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Navegador&lt;/strong&gt;. Un navegador web es un sistema naturalmente concurrente. Cada una las pestañas que tienes abiertas puede contar como una de las tareas con las que el pobre navegador web tiene que trabajar para mantenerte contento. No es necesario que esté corriendo el código de todas al mismo tiempo para funcionar, sino que usa métodos diversos para identificar exactamente qué debe estar ejecutando en cada instante.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Algo que debemos hacer notar es que un sistema concurrente generalmente realiza &lt;em&gt;&lt;strong&gt;más trabajo&lt;/strong&gt;&lt;/em&gt; que uno secuencial, ya que tiene que coordinar las diversas tareas independientes y la utilización de recursos. Para lograrlo, existen varias técnicas, llamadas &lt;a href=&quot;https://stackoverflow.com/questions/4153118/list-of-concurrency-models&quot;&gt;modelos de concurrencia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;en-el-desarrollo-del-software&quot;&gt;En el desarrollo del software&lt;/h2&gt;
+
+&lt;p&gt;Los lenguajes tienen diferentes maneras de permitirte aprovechar los recursos de cómputo para crear programas concurrentes y paralelos:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Hilos (threads)&lt;/strong&gt;. La forma más común en que lo permiten es mediante hilos: subprocesos que se coordinan entre sí, que ocupan menos memoria que un proceso normal y comparten memoria con otros hilos y con el proceso padre.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Procesos&lt;/strong&gt;. Programas que corren en su propio espacio de memoria independientemente de otros procesos. Lo que hace un proceso no le afecta a otro, por lo que hay que diseñar y mantener maneras de comunicarlos.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Tareas y Futuros&lt;/strong&gt;. Estas son una abstracción sobre los procesos e hilos, que son los elementos más básicos de concurrencia. JavaScript con los callbacks (futuros), las promesas (futuros) y posteriormente con Async/Await (tareas) permiten crear programas que deben ser concurrentes.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Como resumen:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;La concurrencia tiene que ver con el diseño del software, mientras que el paralelismo tiene que ver con la ejecución.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Por ejemplo, un sistema operativo es concurrente y aplica a diversas técnicas para coordinar todos los procesos que necesita para que logre hacer una computadora usable para los humanos. Este sistema no necesariamente es paralelo (y por mucho tiempo no lo pudieron ser), ya que si no cuenta con más de un medio físico para la ejecución simultánea de tareas o procesos recurre a técnicas de compartimiento de procesador que hacen que para los humanos parezca que ejecuta muchas tareas al mismo tiempo.&lt;/p&gt;
+
+&lt;p&gt;La concurrencia permite aprovechar sistemas que permitan ejecución paralela para lograr la tarea a la mano más rápidamente.&lt;/p&gt;
+
+&lt;p&gt;Saber crear sistemas concurrentes es una de las habilidades más importantes para un desarrollador moderno, independientemente del área en la que trabajes.&lt;/p&gt;
+
+&lt;p&gt;Gran parte del contenido de este post fue extraído de esta charla: &lt;a href=&quot;https://blog.golang.org/concurrency-is-not-parallelism&quot;&gt;Concurrency is not Parallelism&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="concurrencia" /><category term="paralelismo" /><category term="go" /><category term="elixir" /><summary type="html">Muchos programadores confunden la concurrencia con el paralelismo, aunque son conceptos que se relacionan, no son lo mismo</summary></entry></feed>

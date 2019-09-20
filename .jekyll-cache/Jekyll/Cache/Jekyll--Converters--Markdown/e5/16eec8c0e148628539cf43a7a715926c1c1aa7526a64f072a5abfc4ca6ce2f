@@ -1,0 +1,28 @@
+I"X<p>¿Quieres empezar a escribir? Contribuye con tus artículos a la comunidad. En este post encontrarás una guía detallada para la instalación del repositorio y ver tus posts de manera local, así como la convenciones que seguimos antes de publicar un post.
+Como verás, todo está por desarrolladores y para desarrolladores.</p>
+
+<h2 id="el-único-paso">El único paso</h2>
+
+<p>Si no quieres complicarte mucho la vida, has un <a href="https://help.github.com/en/articles/fork-a-repo">fork</a> del <a href="https://github.com/TheDojoMX/TheDojoMXBlog">repositorio</a>, y crea un archivo nombrado como <code class="highlighter-rouge">YYYY-MM-DD-tu-titulo-como-slug.md</code> en la carpeta <code class="highlighter-rouge">_posts</code>. Una vez que lo tengas listo, has un <a href="https://github.com/AeroPython/PyFME/wiki/Tutorial-paso-a-paso:-contribuyendo-a-un-pull-request">Pull Request</a> y nosotros lo revisaremos, te daremos nuestros comentarios sobre el contenido, gramática, estilo, etc. y si lo aprobamos mezclaremos tu branch en el master para que tu artículo aparezca publicado.</p>
+
+<p>Pero puede que quieras correr el sitio en tu local, ver tu artículo como un borrador antes de publicarlo y probar diferentes imágenes, para eso necesitas instalar el repositorio localmente. A continuación hablaremos de eso.</p>
+
+<p>Algunos requisitos para aprobar tu artículo:</p>
+
+<ol>
+  <li>Debe ser un tema relacionado con desarrollo, útil para la comunidad en general</li>
+  <li>No se aceptan artículos de opinión</li>
+  <li>Ortográfica y gramaticalmente correcto</li>
+  <li>Tu estilo es ameno, amigable e invita a la gente seguirte leyendo</li>
+</ol>
+
+<p>Algunos puntos extra:</p>
+
+<ol>
+  <li>Una buena imagen como cabecera (las imágenes generalmente se hostean externamente, puedes usar un serivicio como <a href="https://cloudinary.com/">Cloudinary</a>), pero también podrías subirla a la carpeta <code class="highlighter-rouge">assets/images</code></li>
+  <li>Tu escritura es entretenida</li>
+  <li>Es un tema del que se ha escrito poco</li>
+</ol>
+
+<p>Gracias por contribuir a que la comunidad sea más fuerte.</p>
+:ET

@@ -1,0 +1,108 @@
+I"�%<p>Hemos venido hablando de las características que componen a un sistema REST. En el último artículo <a href="/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html">hablamos de la arquitectura cliente-servidor</a>. Esta es la primera característica fundamental de un sistema REST. Ahora pasemos a la siguiente característica-limitante que Thomas Fielding establece para los sistemas REST: <strong>conexión sin estado</strong>.</p>
+
+<h2 id="qué-es-el-estado-de-un-sistema">¿Qué es el estado de un sistema?</h2>
+
+<p>El estado de una aplicación son todos los datos que usa para operar en un momento determinado.</p>
+
+<p>Como ejemplo podemos pensar en una aplicación de ventas en línea. El estado de esta aplicación, para un usuario específico son sus datos de identificación, su bolsa de compras y los productos que ha estado viendo o que tiene en su lista de deseos, así como datos que no son identificables directamente desde la interfaz de usuario como los tokens de sesión, su historial de visita de las páginas y productos (piensa en Amazon) y los productos que ha comprado anteriormente en esta página.</p>
+
+<p>Todos estos datos necesarios para operar tanto a nivel interno como para la interfaz de usuario son el estado de la aplicación para este usuario. <strong>Puedes entender el estado como el contexto de una aplicación</strong>. Todas las aplicaciones y programas usables tienen uno. Entonces, ¿a qué nos referimos con conexiones sin estado?</p>
+
+<h2 id="conexión-sin-estado">Conexión sin estado</h2>
+
+<p>Dando por supuesto que estamos trabajando en un sistema con arquitectura de red <a href="/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html">cliente-servidor</a>, las dos partes comparten la información (el estado) necesaria para realizar las operaciones. La pregunta es: ¿en qué lado mantengo esta información durante la operación? Damos por supuesto que el almacenamiento de información a largo plazo está localizado en algún lado del servidor. Pero en el momento de la operación, ¿quién mantiene estos datos memoria operativa?</p>
+
+<p>En el ejemplo del que hablamos: ¿quién mantiene en memoria la bolsa de compras del usuario, el cliente (el navegador web) o el servidor? Cualquiera de los dos podría llevarlo a cabo. Veamos los dos casos, empecemos por una conexión que “recuerda” el estado.</p>
+
+<p>Imagínate la siguiente conversación:</p>
+
+<ul>
+  <li>Cliente(C): Vamos a empezar a trabajar con el usuario <em>hectorip</em></li>
+  <li>Servidor(S): De acuerdo</li>
+  <li>C: Dame su bolsa de compras</li>
+  <li>S: Tiene estos 5 artículos guardados</li>
+  <li>C: Comprar todos los artículos de su bolsa</li>
+  <li>S: Ok, serán $500</li>
+  <li>C: el cliente quiere pagar</li>
+  <li>S: le he cobrado todo lo de su bolsa</li>
+</ul>
+
+<p>El tipo de conversación que acabamos de ver sería una <strong>conexión con estado</strong>: cada uno de los mensajes depende del mensaje anterior para poder entender de qué estábamos hablando. Intenta leerla de regreso y lo notarás.</p>
+
+<p>Ahora veamos cómo sería un conversación que no recuerda los mensajes anteriores:</p>
+
+<ul>
+  <li>C: Dame la bolsa de compra de <em>hectorip</em></li>
+  <li>S: hectorip tiene estos 5 artículos en su bolsa</li>
+  <li>C: hectorip quiere comprar todos los artículos de su bolsa</li>
+  <li>S: Ok, serán $500 por todos los artículos de la bolsa de compra</li>
+  <li>C: hectorip quiere realizar un pago por $500 por los artículos en su bolsa de compras</li>
+  <li>S: He cobrado $500 a hectorip por el pedido de los artículos en su bolsa de compras</li>
+</ul>
+
+<p>Si revisamos la conversación anterior, podemos entender cada mensaje leído individualmente, sin necesitar el contexto completo de la conversación.</p>
+
+<p>La primera conversación (conexión con estado) tiene algunas ventajas claras:</p>
+
+<ul>
+  <li>Los mensajes son más cortos</li>
+  <li>La conversación es más fluída</li>
+  <li>Se transfiere menos información de un lado a otro</li>
+</ul>
+
+<p>Pero también tiene desventajas. ¿Qué pasa si esta conversación se interrumpe y se intenta retomar? <em>Hay que empezar la conversación desde cero.</em> ¿Qué pasa si el servidor, por algún error olvida de lo que estábamos hablando? <em>Hay que reiniciar la conversación.</em> ¿Qué pasa si quiero continuar la compra en otro servidor? <em>Hay que reiniciar la conversación con el nuevo servidor.</em></p>
+
+<h1 id="características-de-conexión-sin-estado">Características de conexión sin estado</h1>
+
+<p>Hablemos de las características de una conexión sin estado.</p>
+
+<p>La primera característica es que <em>no necesitamos</em> que la conexión a nivel de sesión de red sea persistente, es decir, que se mantenga un canal de comunicación abierto que pueda mantener en memoria la información de los procesos actuales.</p>
+
+<p>Segundo, no podemos (ni debemos) asumir que el servidor mantendrá los datos del cliente automáticamente por medio de reconocer al cliente. En cada una de las peticiones que se hacen al servidor, <strong>deben venir todos los datos necesarios para que el servidor mantenga realice la operación</strong>, no se puede confiar en que las peticiones anteriores transfirieron esa información y no es necesario repetirla.</p>
+
+<p>Hasta ahora parece que esto presenta más problemas que ventajas. Revisemos por qué alguien querría trabajar con un sistema así.</p>
+
+<h2 id="ventajas-de-mantener-el-servidor-sin-estado">Ventajas de mantener el servidor sin estado</h2>
+
+<ol>
+  <li>
+    <p><strong>Replicación de servidores</strong>. Al no tener que mantener el estado o conexiones persistentes con una instancia del servidor, una conexión sin estado puede permitir que la petición sea atendida por cualquier instancia del código del servidor que tenga el mismo código que las peticiones anteriores, ya que toda la información necesaria para atender esas peticiones estará incluida.</p>
+  </li>
+  <li>
+    <p><strong>Escalabilidad</strong>. Esto es una consecuencia inmediata de la ventaja anterior: poder replicar los servidores permite distribuir la carga entre muchas computadoras y aplicar técnicas de balanceo para poder atender a muchos más clientes de lo que se podría en un sistema que requiera mantener estados.</p>
+  </li>
+  <li>
+    <p><strong>Servicios más sencillos</strong>. Quitarle la responsabilidad de mantener el contexto de las operaciones actuales a los servicios hace que su código sea más sencillo y por lo tanto más mantenible.</p>
+  </li>
+  <li>
+    <p><strong>Menos carga en los servidores</strong>. Al no tener que mantener conexiones persistentes, ni tener que mantener procesos o memoria relacionada con los clientes con los que está operando, se reduce la carga en memoria operativa de los servidores (teóricamente). Esto también implica que el servidor ni siquiera tiene que estar corriendo mientras no esté activamente respondiendo una petición (como las funciones lambda).</p>
+  </li>
+</ol>
+
+<p>La siguiente imagen ilustra una técnica común para atender a muchos clientes.</p>
+
+<p><img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1564887852/PNG_image-428CDB12FF65-1_ojrpoo.png" alt="Diagrama de replicación de servidores" /></p>
+
+<h2 id="desventajas">Desventajas</h2>
+
+<ol>
+  <li>
+    <p><strong>Complejidad de las peticiones</strong>. La complejidad de las peticiones aumenta al necesitar mantener en el cliente toda la información necesaria para reconstruir el estado en cada petición en un servidor desde cero. Por lo tanto, la complejidad de los clientes aumenta. y el tamaño de las peticiones se incrementa.</p>
+  </li>
+  <li>
+    <p><strong>Mayor carga en la red</strong>. Como las peticiones son más complejas y generalmente contienen más información para poder recuperar el contexto efectivamente, el viaje de información en la red es mayor en tamaño.</p>
+  </li>
+</ol>
+
+<h2 id="conexiones-que-mantienen-estado">Conexiones que mantienen estado</h2>
+
+<p>En los últimos años la mayoría de las conexiones que se levantan en programas creados con la arquitectura cliente-servidor son creados con conexiones que no mantienen el estado. Sin embargo, también se puede mantener una conexión con estado en la arquitectura cliente-servidor. Hay varias formas de lograr esto, pero la principal característica es que debe haber una manera de relacionar al cliente que está solicitando los servicios con el servidor que está atendiéndolo, por lo general la manera de hacerlo es con conexiones persistentes que se mantienen abiertas mientras el proceso de uso de los servicios dura.</p>
+
+<p>Esto viene con sus propios retos, pero tecnologías actuales como <a href="/2019/06/02/por-que-deberias-aprender-elixir.html">Elixir</a>, Phoenix y los WebSockets hacen el camino más fácil. En otro post hablaremos de cómo podemos aprovechar esta arquitectura y en qué casos nos conviene.</p>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>La segunda característica definida de los sistemas REST es importante porque permite que los servicios sean más confiables, disponibles y flexibles en tamaño (escalables). Como cada decisión que se toma en el desarrollo, esta viene con sus propias desventajas: al hacer más complejas las peticiones, la base de código es más difícil de mantener en general (del lado del cliente), pero permite características importantes en los sistemas que tienen que atender a una gran cantidad de clientes.</p>
+
+<p>En el siguiente artículo hablaremos de la tercera característica de los sistemas REST: la capacidad de ser cachear información.</p>
+:ET

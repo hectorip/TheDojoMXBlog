@@ -1,0 +1,101 @@
+I"w$<p>En este artículo hablaremos primero de la importancia de aprender <strong>principios</strong>: qué son, qué ventajas tienen y cómo aplicarlos.</p>
+
+<p>Hallarás una explicación básica de cada principio y su importancia, pero cada principio tendrá un post extenso explicando sus aplicaciones, forma de implementarlo y ejemplos prácticos, un sólo artículo no es suficiente para explicarlos cuando se podría escribir un libro sobre cada principio.</p>
+
+<p>Ponle atención a los primeros dos 😉. Pero antes hablemos de lo que es un principio en general.</p>
+
+<h2 id="qué-es-un-principio">¿Qué es un principio?</h2>
+
+<p>Un principio se puede entender como una guía de comportamiento amplia aplicable a muchas situaciones. En general un principio no te dice que hacer exactamente, sino que te da pistas de cuál es la acción correcta a través de una gran cantidad de situaciones, los detalles están a cargo de ti mismo.</p>
+
+<p>En ciencia un principio también se pueden entender como una ley o una verdad que se puede aplicar en una muchas situaciones.</p>
+
+<p>Hablando de <strong>principios de diseño de software</strong>, puedes pensar en ellos como en un faro que te guía a través de la oscuridad de los requerimientos del problema 😛. A diferencia de los <a href="/2019/02/23/patrones-de-diseno-que-son-y-cuando-usarlos">patrones de diseño</a>, no establecen los pasos necesarios para aplicarlos, ni siquiera la situaciones en las que se aplican, de hecho, se pueden crear varios patrones y reglas basándonos en ellos.</p>
+
+<p>Ahora hablemos de los más relevantes.</p>
+
+<h2 id="algunos-principios-de-diseño-de-software">Algunos principios de Diseño de Software</h2>
+
+<p>Los siguientes principios de diseño son de los que más escucharás a lo largo de tu carrera. Aquí presentamos una síntesis de lo que tratan pero cada uno tendrá su propio artículo extenso explicando ejemplos de cómo podemos aplicarlos.</p>
+
+<h3 id="dont-repeat-yourself-no-te-repitas">Don’t Repeat Yourself (No te repitas)</h3>
+
+<p>Este principio (conocido como DRY) se explica por sí mismo: <strong>debes evitar al máximo grado posible la repetición de código</strong>. Partiendo de este principio se han creado un montón de maneras de reutilizar lo que ya hemos programado, si no piénsalo un poco: funciones, módulos, bibliotecas, clases, prototipos, herencia, composición, macros, saltos (goto).</p>
+
+<p>Estas son sólo algunas maneras de evitar la repetición, claro, cada una de las estrategias anteriores lo logra a su manera y añade otras ventajas y desventajas.</p>
+
+<p><strong>¿Por qué es importante?</strong> Existen varias razones:</p>
+
+<ul>
+  <li><em>Hace el código más mantenible</em>. Evitar la repetición de código permite que si alguna vez cambia la funcionalidad que estás repitiendo, no lo tengas que hacer en todos los lugares en los que lo repetiste.</li>
+  <li><em>Reduce el tamaño del código</em>. Esto lo hace más legible y entendible, porque hay menos código que entender. Los procesos para evitar la repeticón implican nombrar el pedazo de código que estás reutilizando para identificarlo, esto hace el código más legible si lo nombraste bien.</li>
+  <li><em>Ahorra tiempo</em>. Al tener pedazos de código disponibles para reutilizarlos, en el futuro estás más preparado para lograr lo mismo en menos tiempo.</li>
+</ul>
+
+<h3 id="kiss">KISS</h3>
+
+<p><strong>“Keep it simple[,] stupid”</strong>: hay discrepancias sobre si esta frase significa: “Déjalo simple, estúpido” o “Mantenlo estúpidamente simple”. Este principio establece que el código, el diseño, la documentación, todo lo relacionado con el software, debe ser tan simple como sea posible.</p>
+
+<p>Los programadores tendemos a complicar las cosas. Nos piden un formulario sencillo y queremos hacer un generador de formularios que soporte este y todos los formularios en el futuro. No tenemos ni 100 usuarios y ya queremos usar Kubernetes. Necesitamos un simple binding de datos y queremos meter Angular 7, Ionic 3 y 250 librerías más.</p>
+
+<p>Este principio establece que:</p>
+<ul>
+  <li>Nuestro software en general debería tener tan pocos componentes (y por lo tanto líneas) como sea posible.</li>
+  <li>No deberíamos tener funcionalidades que no se ocupen actualmente <em>“por si en el futuro se ocupan”</em>.</li>
+  <li>La documentación debe tener la información <strong>estrictamente necesaria</strong>.</li>
+  <li>El código debe ser <strong>lo más obvio y sencillo posible</strong>. Se deben evitar esas líneas que sólo sirven para presumir lo inteligente que eres.</li>
+  <li>El diseño debe mantener la estructura simple, siempre que se pueda.</li>
+</ul>
+
+<p><strong>¿Por qué es importante?</strong> Las siguientes son algunas de las razones que justifican la existencia de este principio:</p>
+<ul>
+  <li><strong>Proyectos más mantenibles</strong>. Hay mucho menos que explicar al mantener las cosas simples. El código es más fácil de mantener y actualizar.</li>
+  <li><strong>menos documentación</strong>. Hay menos cosas raras que documentar al hacer el código fácil, sin trucos de listillos que nadie entiende.</li>
+  <li><strong>Debugging más rápido</strong>. Al reducir la complejidad se pueden encontrar los errores más rápidamente.</li>
+  <li><strong>Mayor rendimiento económico</strong>. Los tres efectos anteriores permiten que la inversión económica inicial en el código creado tenga mayores rendimientos.</li>
+</ul>
+
+<p>Estes es uno de los principios más difíciles de aplicar, si no es que el <em>más difícil</em>. Hacer algo simple para los demás requiere de pensar las cosas el tiempo suficiente, de tener la experiencia técnica necesaria para evitar intentar matar una mosca con un cañón (o investigar y tener la capacidad de aprender). A final de cuentas <strong>la simplicidad es la última sofisticación</strong>.</p>
+
+<p>Los principios que vienen están fundamentados sobre estos dos principios.</p>
+
+<h3 id="principios-solid">Principios SOLID</h3>
+
+<p>Si te dedicas a programar, llegado cierto punto vas a encontrar estos principios mencionados lo suficiente como para que tengas que aprender que significan.</p>
+
+<p>SOLID es un acrónimo que engloba el nombre de 5 principios, originalmente dirigidos a la programación orientada a objetos, pero que son aplicables a muchas otras cosas.</p>
+
+<p>Los 5 principios son:</p>
+
+<ol>
+  <li>
+    <p><strong>Single Responsibility</strong>. Una entidad de software debería tener una sola responsabilidad, esto también se puede interpretar como “tener una y sólo una razón para cambiar.”. En pocas palabras, tu componente/función/clase debería hacer muy bien una sola cosa.</p>
+  </li>
+  <li>
+    <p><strong>Open/Closed</strong>. Una entidad de software (este principio está dirigido a las clases), debería estar abierto a extensión (crecer sus funcionalidades con otras entidades externas) pero cerrado a modificación.</p>
+  </li>
+  <li>
+    <p><strong>Liskov Substitution</strong>. El principio de susbstitución de Liskov habla de interfaces: si una entidad de software usa una clase, este debe ser capaz de usar clases derivadas de esta. Esto es muy parecido a la progrmación por contrato, en el que se establecen las interfaces antes de la implementación.</p>
+  </li>
+  <li>
+    <p><strong>Interface Segregation</strong>. Los clientes (las entidade de software) que usan una entidad de software (una clase, originalmente), no deberían estar obligados a depender de métodos que no usan. Para resolver esto, interfaces de gran tamaño se deben <em>segregar</em>, es decir, romper en otras más pequeñas.</p>
+  </li>
+  <li>
+    <p><strong>Dependency Inversion</strong>. El principio de Inversión de Dependencias establece que los módulos de alto nivel, es decir, los más cercanos a las ideas humanas de lo que debe hacer el software, no deben depender de los de bajo nivel (los más cercanos a la implementación de los detalles para la computadora). Ambos deberían depender de las abstracciones del problema (en general, interfaces). Además los detalles de implementación deben depender de las abastracciones también. Se llama así porque en general la gente lo piensa al revés.</p>
+  </li>
+</ol>
+
+<p>Estos principios empiezan sencillos pero se van complicando, así que le dedicaremos más adelante un post entero a cada principio y a su aplicación, extendiéndola más allá del software orientado a objetos.</p>
+
+<p><strong>¿Por qué son importantes?</strong> Permiten crear software estructurado correctamente que resista el paso del tiempo.</p>
+
+<p>Como podrás ver estos principios pueden complicar con un poco el código. Sin embargo, dependiendo del fin del software que estés creando, puedes decidir aplicarlos o saltarte alguno de ellos.</p>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>Hay más principios de diseño de software de los que no hablamos en este momento, pero estos son los básicos que todo programador debe de conocer porque facilitan la vida.</p>
+
+<p>Si seguimos estos principios podremos hacer software mantenible, que sea fácil de actualizar, entender, compartir, explicar y que esté preparado para el futuro.</p>
+
+<p>Sigue atento por los siguientes posts que explican cada principio en profundidad, con ejemplos reales.</p>
+:ET

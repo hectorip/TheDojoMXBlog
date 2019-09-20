@@ -1,4 +1,4 @@
-remote_theme: mmistakes/minimal-mistakes
+theme: minimal-mistakes-jekyll
 locale: es
 plugins:
     - jekyll-feed
@@ -6,13 +6,12 @@ plugins:
     - jekyll-redirect-from
     - jekyll-seo-tag
     - jekyll-sitemap
+    - jekyll-paginate-v2
     - jekyll-avatar
     - jemoji
     - jekyll-mentions
     - jekyll-include-cache
 
-paginate: 10
-paginate_path: /latest/page:num/
 # logo: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1551590729/TheDojo/dojo-cover_scaodz.jpg
 logo: https://res.cloudinary.com/hectorip/image/upload/v1554098427/TheDojo/the-dojo-transparent.png
 masthead_title: "The Dojo Blog"
@@ -64,6 +63,17 @@ tag_archive:
   path: /tags/
 
 
-include: ["_pages", "latest"]
+include: ["_pages"]
 search: true
 # minimal_mistakes_skin: dark
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/:num/'
+  # title_suffix: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
+paginate_path: '/latest/:num'
