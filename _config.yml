@@ -2,18 +2,18 @@ remote_theme: mmistakes/minimal-mistakes
 locale: es
 plugins:
     - jekyll-feed
+    - jekyll-paginate
     - jekyll-archives
     - jekyll-redirect-from
     - jekyll-seo-tag
     - jekyll-sitemap
-    - jekyll-paginate-v2
     - jekyll-avatar
     - jemoji
     - jekyll-mentions
     - jekyll-include-cache
 
 paginate: 5
-paginate_path: /latest/page:num/
+paginate_path: /latest/:num/
 # logo: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1551590729/TheDojo/dojo-cover_scaodz.jpg
 logo: https://res.cloudinary.com/hectorip/image/upload/v1554098427/TheDojo/the-dojo-transparent.png
 masthead_title: "The Dojo Blog"
