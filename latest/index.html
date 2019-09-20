@@ -3,3 +3,9 @@ layout: archive
 permalink: /latest/
 author_profile: false
 ---
+
+<div class="custom-grid">
+  {% for post in paginator.posts %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
