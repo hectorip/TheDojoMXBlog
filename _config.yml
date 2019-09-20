@@ -2,7 +2,6 @@ remote_theme: mmistakes/minimal-mistakes
 locale: es
 plugins:
     - jekyll-feed
-    - jekyll-paginate
     - jekyll-archives
     - jekyll-redirect-from
     - jekyll-seo-tag
@@ -67,4 +66,4 @@ tag_archive:
 
 include: ["_pages"]
 search: true
-minimal_mistakes_skin: dark 
+# minimal_mistakes_skin: dark
