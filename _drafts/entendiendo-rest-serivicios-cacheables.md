@@ -7,7 +7,7 @@ categories:
 comments: true
 excerpt: "Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo."
 header:
-  overlay_image: 
+  overlay_image: # cache
   teaser: 
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---

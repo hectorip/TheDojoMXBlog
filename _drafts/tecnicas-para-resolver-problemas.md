@@ -62,11 +62,11 @@ Varios de estos problemas suenan demasiado simples porque ya los tenemos bien tr
 
 > "Demuestre que la línea de mayor longitud que toca dos puntos de una circunferencia pasa por el centro del círculo". 
 
-Esto es un ejemplo de un problema para demostrar. Los problemas para demostrar implican la comprobación o refutación de una aserción (hipótesis) enunciada en el problema. Estos problemas generalmente nos los ponían en la preparatoria o universidad, por su naturaleza son un poco más difíciles en general.
+Esto es un ejemplo de un problema para demostrar. Estos implican la comprobación o refutación de una aserción (hipótesis) enunciada en el problema. Estos problemas generalmente nos los ponían en la preparatoria o universidad, por su naturaleza son un poco más difíciles en general.
 
 Para un desarrollador podríamos poner problemas para demostrar como:
 
-- "Demuestra que es imposible un _deadlock_ con el algoritmo usado actualmente".
+- "Demuestra que es imposible un bloqueo mutuo entre procesos con el algoritmo usado actualmente".
 - "¿Cómo sabemos que evitamos todas las condiciones de carrera en el sistema actual?"
 - "Comprueba que el máximo tiempo que puede tardar el sistema en responder es menor que X"
 
