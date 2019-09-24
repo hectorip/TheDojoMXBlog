@@ -156,5 +156,9 @@ Para resolver un problema:
   - Asegúrate de entender el problema completamente: qué datos tienes, qué relación hay entre los datos y la incógnita y lo que tienes que encontrar.
   - Planea cómo vas a atacar el problema
   - Si estás detenido en la resolución de un problema puedes:
-    - Variar los datos, las condiciones o el resultado esperado.
+    - **Variar los datos**, las condiciones o el resultado esperado.
     - Pensar en otros problemas que se le parezcan: puedes usar el método que usaste para resolverlos o el resultado.
+    - Aceptar soluciones parciales, parcialmente erróneas o asumidas.
+    - Genera nuevas ideas y re-evalúa el problema y el plan a la luz de cada nuevo paso.
+  - Aprovecha cualquier idea aunque suene disparatada si no tienes idea de por dónde empezar.
+

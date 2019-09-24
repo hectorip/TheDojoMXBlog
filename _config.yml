@@ -43,7 +43,7 @@ author:
   home   : # null (default), "absolute or relative url to link to author home"
 
 analytics:
-  provider: "google-gtag"
+  provider: "google"
   google:
     tracking_id: "UA-127437335-2"
     anonymize_ip: false # default

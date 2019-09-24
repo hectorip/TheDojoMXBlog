@@ -11,7 +11,7 @@ En este blog hablamos de:
 
 ## Acerca de este blog
 
-Intentamos mejorar el ecosistema de desrrollo en español. 
+Intentamos mejorar el ecosistema de desarrollo en español.
 
 ### ¿A quiénes está dirigido este blog?
 
