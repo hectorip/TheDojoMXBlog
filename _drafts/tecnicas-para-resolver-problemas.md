@@ -116,7 +116,7 @@ El siguiente paso es trazar un plan para atacar el problema. Esta es la parte m�
 
  ### Retrospectiva
 
-Revisar los resultados, ver si podemos hacer algo diferente, si nuestro resultado cumple con lo esparado y si podemos encontrar o derivar el resultado de alguna otra forma ahora que ya sabemos cuál es.
+Revisar los resultados, ver si podemos hacer algo diferente, si nuestro resultado cumple con lo esperado y si podemos encontrar o derivar el resultado de alguna otra forma ahora que ya sabemos cuál es.
 
 ### Las preguntas de Polya
 
@@ -150,6 +150,11 @@ Análisis: proceso para entender y descomponer un problema, planear los pasos ne
 Síntesis: ejecución de los pasos para llevar a cabo los resultados del análisis. Regreso.
 
 
-## ¿Ejemplos?
-
 ## Para recordar
+
+Para resolver un problema:
+  - Asegúrate de entender el problema completamente: qué datos tienes, qué relación hay entre los datos y la incógnita y lo que tienes que encontrar.
+  - Planea cómo vas a atacar el problema
+  - Si estás detenido en la resolución de un problema puedes:
+    - Variar los datos, las condiciones o el resultado esperado.
+    - Pensar en otros problemas que se le parezcan: puedes usar el método que usaste para resolverlos o el resultado.
