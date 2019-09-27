@@ -93,4 +93,9 @@ var store = [{
         "excerpt":"Go es eficiente, escalable y productivo. - Rob Pike Go es un lenguaje que llama la atención por algunos rumores que hay acerca de él, como, por ejemplo, que es el lenguaje que va a matar a C, o que es muy muy rápido y poderoso. En este artículo vamos...","categories": [],
         "tags": ["go","golang","lenguajes-de-programación"],
         "url": "/2019/09/01/por-que-deberias-aprender-go.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/v1567376344/google-servers-datacenter_bs7xzt.png"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/v1567376344/google-servers-datacenter_bs7xzt.png"},{
+        "title": "Técnicas para resolver problemas",
+        "excerpt":"Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver. George Polya fue uno de los matemáticos más prolíficos del Siglo XX, un matemático de primera clase (de esos que descubren e inventan cosas, y para algunos,...","categories": [],
+        "tags": ["matemáticas","maths","polya","books","libros"],
+        "url": "/2019/09/27/tecnicas-para-resolver-problemas.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1569549306/joel-filipe-187166-unsplash_b5p0hv.jpg"}]

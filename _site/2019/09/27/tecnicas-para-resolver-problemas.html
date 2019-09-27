@@ -20,7 +20,7 @@
 <meta property="og:locale" content="es">
 <meta property="og:site_name" content="">
 <meta property="og:title" content="Técnicas para resolver problemas">
-<meta property="og:url" content="/2019/09/08/tecnicas-para-resolver-problemas.html">
+<meta property="og:url" content="/2019/09/27/tecnicas-para-resolver-problemas.html">
 
 
   <meta property="og:description" content="¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 1928. Hablemos de las principales lecciones que podemos sacar.">
@@ -33,14 +33,14 @@
 
 
 
-  <meta property="article:published_time" content="2019-09-08T00:00:00-05:00">
+  <meta property="article:published_time" content="2019-09-27T00:00:00-05:00">
 
 
 
 
 
 
-<link rel="canonical" href="/2019/09/08/tecnicas-para-resolver-problemas.html">
+<link rel="canonical" href="/2019/09/27/tecnicas-para-resolver-problemas.html">
 
 
 
@@ -125,14 +125,14 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "url": "/2019/09/08/tecnicas-para-resolver-problemas.html",
+      "url": "/2019/09/27/tecnicas-para-resolver-problemas.html",
       "name": "Técnicas para resolver problemas",
       "headline": "Técnicas para resolver problemas",
       "keywords": "matemáticas,maths,polya,books,libros",
       "description": "¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 1928. Hablemos de las principales lecciones que podemos sacar.",
-      "articleBody": "Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver.\n\nGeorge Polya fue uno de los matemáticos más prolíficos del Siglo XX, un matemático de primera clase (de esos que descubren e inventan cosas, y para algunos, el matemático más influyente del siglo) pero que, a diferencia de muchos otros, mantenía un interés por la educación y la enseñanza de las matemáticas, algo muy peculiar.\n\nEscribió varios libros, entre ellos está “How to solve it” un tratado de 4 partes en el que explica de manera muy detallada cómo resolver problemas matemáticos principalmente, pero también cómo aplicar este conocimiento a otras áreas de la vida.\n\nLas técnicas explicadas por Polya te pueden ayudar a desarrollar tus capacidades de resolución de problemas.\n\nEmpecemos por hablar de la estructura los problemas de los que Polya habla en su libro.\n\nEstructura de un problema\n\nPolya enseña que un problema tiene tres partes:\n\n\n  Los datos. Es la información que tenemos disponible para resolver el problema.\n  Las condiciones. Describen la relación que existe entre los datos y la solución, pero también la forma, los límites y características de la solución buscada.\n  La incógnita o lo desconocido. Es la información que buscamos y que cumple con las condiciones del problema.\n\n\nEs muy importante conocer la composición de un problema para poder aplicar las técnicas descritas en el libro. Cualquier problema matemático debería cumplir con estas características, pero no todos los problemas de la vida real cumplen con esta estructura tal y como la necesitamos; por esta razón deberíamos desarrollar la capacidad de entender los problemas que se nos presentan y estructurarlos lo mejor posible según esta definición para facilitarnos la vida posteriormente.\n\nPara resolver un problema deberías ser capaz de contestar las siguientes preguntas:\n\n\n  ¿Qué estoy buscando? -&gt; ¿Cuál es la incógnita?\n  ¿Qué datos tengo disponibles? -&gt; ¿Son suficientes los datos que tengo para resolver el problema?\n  ¿Qué condiciones tiene que cumplir la incógnita? -&gt; ¿Es posible cumplir con esta condición?\n  ¿Qué relación hay entre los datos y la incógnita?\n\n\nEsta estructura sienta las bases para lo que viene. Ahora hablemos de de los tipos de problemas de los que Polya hace distinción.\n\nTipos de problemas\n\nPolya hace la distinción entre dos tipos diferentes de problemas que hay que tratar de resolver de manera ligeramente diferente aunque la estructura sea la misma.\n\n1. Problemas para encontrar\n\nEstos son los problemas básicos que nos ponían en la escuela primaria: “Hallar el área de un terreno cuadrado de 10m por lado”, “Encuentra la diámetro de una circunferencia con un perímetro de 12cm”.\n\nEn este tipo de problemas hay que encontrar un resultado, que puede ser numérico o no. Estos son los problemas con los que nos encontramos mayormente en áreas del conocimiento muy exploradas.\n\nComo programadores podríamos tener estos ejemplos de este tipo de problemas:\n\n\n  ¿Qué complejidad tiene este algoritmo que acabo de programar?\n  ¿A cuántos usuarios simultáneos podré atender con este servidor con 4GB de RAM?\n  ¿Cuánto tiempo va a tardar en subir mi millón de archivos si lo vuelvo paralelo? ¿Cuánto va a tardar si no lo paralelizo?\n\n\nVarios de estos problemas suenan demasiado simples porque ya los tenemos bien trabajados a base de repetición. Pero otros que no tienen una respuesta numérica pueden ser un poco más complicados:\n\n\n  ¿Qué base de datos debería usar para servir notificaciones en tiempo real?\n  ¿Qué lenguaje de programación debo usar para un sistema que estará emebebido en un millón de dispositivos electrónicos mandando notificaciones críticas cada segundo?\n  ¿Qué sistema de comunicación puedo usar entre dos dispositivos que no cuentan con una conexión confiable a internet?\n\n\nEn los ejemplos anteriores encontrar una solución concreta a las preguntas planteadas permite abanzsar.\n\n2. Problemas para demostrar\n\n\n  “Demuestre que la línea de mayor longitud que toca dos puntos de una circunferencia pasa por el centro del círculo”.\n\n\nEsto es un ejemplo de un problema para demostrar. Estos implican la comprobación o refutación de una aserción (hipótesis) enunciada en el problema. Estos problemas generalmente nos los ponían en la preparatoria o universidad, por su naturaleza son un poco más difíciles en general.\n\nPara un desarrollador podríamos poner problemas para demostrar como:\n\n\n  “Demuestra que es imposible un bloqueo mutuo entre procesos con el algoritmo usado actualmente”.\n  “¿Cómo sabemos que evitamos todas las condiciones de carrera en el sistema actual?”\n  “Comprueba que el máximo tiempo que puede tardar el sistema en responder es menor que X”\n\n\nEspero que con estos ejemplos haya quedado clara la diferencia entre los diferentes tipos de problemas.\n\nProblemas matemáticos, acertijos y problemas de la vida real\n\nPolya habla en sus libro sobre todo de un tipo muy especial de problemas: los problemas matemáticos.\n\nUn problema matemático bien definido cuenta con:\n\n\n  Datos suficientes para resolución\n  No tiene datos sobrantes\n  Condiciones no contradictorias o imposibles de cumplir\n\n\nPor extensión, los acertijos cumplen con las mismas características, y se dan algunos de ejemplos de ellos en el libro.\nPero los problemas de la vida real son muy diferentes, ya que estos pueden no cumplir con las características completas\nde un problema bien definido. Así que uno de los pasos previos para resolver un problema de la vida real es intentar definir lo mejor posible el problema por resolver.\n\nCómo empezar a resolver un problema\nPolya plantea cuatro etapas de resolución de un problema:\n\n\n  Entendimiento\n  Planeación\n  Ejecución\n  Retrospectiva\n\n\nHablemos de cada una, para entender claramente cómo podemos mejorar nuestras posibilidades de resolución de un problema.\n\nEntendimiento\n\n\n  Es tonto contestar una pregunta que no entiendes. Es triste trabajar por un fin que no deseas. - G. Polya\n\n\nEl entendimiento del problema consiste primero en asegurarnos de que entendemos el planteamiento verbal del problema, si no tenemos ni siquiera un planteamiento verbal, debemos empezar por crearlo.\n\nPara decir que comprendemos el problema, tenemos que conocer los datos que se dan, las condiciones a satisfacer y la incógnita o lo que hay que demostrar.\n\nEsta parte puede llevar gran parte del tiempo total dedicado al problema, ya que es el fundamento de los próximos pasos, sin la que no se puede continuar.\n\n### Planeación\n\nEl siguiente paso es trazar un plan para atacar el problema. Esta es la parte más difícil, ya que implica conocimiento profundo del problema y es casi un esbozo de la solución.\n\n### Ejecución\n\nEs hora de llevar a cabo los pasos establecidos en la planeación. En esta etapa hay que ejecutar cada uno de los pasos que establecimos en la planeación de ejecución del problema. Polya dice que aquí es donde hay que ser rigurosos con lo que hacemos, verificando que lo que hacemos tenga sentido y sea estrictamente correcto.\n\n### Retrospectiva\n\nRevisar los resultados, ver si podemos hacer algo diferente, si nuestro resultado cumple con lo esperado y si podemos encontrar o derivar el resultado de alguna otra forma ahora que ya sabemos cuál es.\n\nLas preguntas de Polya\n\nPolya estableció una serie de preguntas que pueden guiarte en la solución de un problema. Estas preguntas las repite vez tras vez en el libro y en verdad son iluminadoras si estás atorado en algún problema que no puedes resolver. A continuación las listamos.\n\n\n  ¿He resuelto un problema relacionado? ¿Conozco un problema que se aproxime?\n  ¿Estoy usando todos los datos?\n  ¿Puedo cambiar algo del problema para hacerlo más fácil?\n    \n      ¿Puedo cambiar los datos?\n      ¿Puedo cambiar las condiciones?\n      ¿Puedo cambiar la incógnita?\n      ¿Qué debería mantener?\n    \n  \n  \n\n\nHeurística - El arte resolver problemas\n\n\n  Tenemos que cambiar nuestra posición una y otra vez. - G. Polya\n\n\nLa frase anterior deja clara la actitud que se debe tener respecto a algunos problemas.\nCuando no tienes idea del procedimiento a seguir para resolver un problema, existe una forma de experimentar para poderlo resolver efectivamente.\n\nEsta forma de experimentación consiste en aceptar soluciones parciales, semi-erróneas y asumidas (o completamente inventadas) para avanzar en la resolución del problema. Si una de estas soluciones nos ayuda avanzar en el problema, es aceptada.\n\nInducción y Deducción\n\nPolya apoyándose en la sabiduría de otros.\n\nAnálisis y Síntesis\n\nAnálisis: proceso para entender y descomponer un problema, planear los pasos necesarios. Ida.\nSíntesis: ejecución de los pasos para llevar a cabo los resultados del análisis. Regreso.\n\nPara recordar\n\nPara resolver un problema:\n\n  Asegúrate de entender el problema completamente: qué datos tienes, qué relación hay entre los datos y la incógnita y lo que tienes que encontrar.\n  Planea cómo vas a atacar el problema\n  Si estás detenido en la resolución de un problema puedes:\n    \n      Variar los datos, las condiciones o el resultado esperado.\n      Pensar en otros problemas que se le parezcan: puedes usar el método que usaste para resolverlos o el resultado.\n      Aceptar soluciones parciales, parcialmente erróneas o asumidas.\n      Genera nuevas ideas y re-evalúa el problema y el plan a la luz de cada nuevo paso.\n    \n  \n  Aprovecha cualquier idea aunque suene disparatada.\n\n",
-      "datePublished": "2019-09-08 00:00:00 -0500",
-      "dateModified": "2019-09-08 00:00:00 -0500",
+      "articleBody": "Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver.\n\nGeorge Polya fue uno de los matemáticos más prolíficos del Siglo XX, un matemático de primera clase (de esos que descubren e inventan cosas, y para algunos, el matemático más influyente del siglo) pero que, a diferencia de muchos otros, mantenía un interés por la educación y la enseñanza de las matemáticas, algo muy peculiar.\n\nEscribió varios libros, entre ellos está “How to solve it” un tratado de 4 partes en el que explica de manera muy detallada cómo resolver problemas matemáticos principalmente, pero también cómo aplicar este conocimiento a otras áreas de la vida.\n\nLas técnicas explicadas por Polya te pueden ayudar a desarrollar tus capacidades de resolución de problemas.\n\nEmpecemos por hablar de la estructura los problemas de los que Polya habla en su libro.\n\nEstructura de un problema\n\nPolya enseña que un problema tiene tres partes:\n\n\n  Los datos. Es la información que tenemos disponible para resolver el problema.\n  Las condiciones. Describen la relación que existe entre los datos y la solución, pero también la forma, los límites y características de la solución buscada.\n  La incógnita o lo desconocido. Es la información que buscamos y que cumple con las condiciones del problema.\n\n\nEs muy importante conocer la composición de un problema para poder aplicar las técnicas descritas en el libro. Cualquier problema matemático debería cumplir con estas características, pero no todos los problemas de la vida real cumplen con esta estructura tal y como la necesitamos; por esta razón deberíamos desarrollar la capacidad de entender los problemas que se nos presentan y estructurarlos lo mejor posible según esta definición para facilitarnos la vida posteriormente.\n\nPara resolver un problema deberías ser capaz de contestar las siguientes preguntas:\n\n\n  ¿Qué estoy buscando? -&gt; ¿Cuál es la incógnita?\n  ¿Qué datos tengo disponibles? -&gt; ¿Son suficientes los datos que tengo para resolver el problema?\n  ¿Qué condiciones tiene que cumplir la incógnita? -&gt; ¿Es posible cumplir con esta condición?\n  ¿Qué relación hay entre los datos y la incógnita?\n\n\nEsta estructura sienta las bases para lo que viene. Ahora hablemos de de los tipos de problemas de los que Polya hace distinción.\n\nTipos de problemas\n\nPolya hace la distinción entre dos tipos diferentes de problemas que hay que tratar de resolver de manera ligeramente diferente aunque la estructura sea la misma.\n\n1. Problemas para encontrar\n\nEstos son los problemas básicos que nos ponían en la escuela primaria: “Hallar el área de un terreno cuadrado de 10m por lado”, “Encuentra la diámetro de una circunferencia con un perímetro de 12cm”.\n\nEn este tipo de problemas hay que encontrar un resultado, que puede ser numérico o no. Estos son los problemas con los que nos encontramos mayormente en áreas del conocimiento muy exploradas.\n\nComo programadores podríamos tener estos ejemplos de este tipo de problemas:\n\n\n  ¿Qué complejidad tiene este algoritmo que acabo de programar?\n  ¿A cuántos usuarios simultáneos podré atender con este servidor con 4GB de RAM?\n  ¿Cuánto tiempo va a tardar en subir mi millón de archivos si lo vuelvo paralelo? ¿Cuánto va a tardar si no lo paralelizo?\n\n\nVarios de estos problemas suenan demasiado simples porque ya los tenemos bien trabajados a base de repetición. Pero otros que no tienen una respuesta numérica pueden ser un poco más complicados:\n\n\n  ¿Qué base de datos debería usar para servir notificaciones en tiempo real?\n  ¿Qué lenguaje de programación debo usar para un sistema que estará emebebido en un millón de dispositivos electrónicos mandando notificaciones críticas cada segundo?\n  ¿Qué sistema de comunicación puedo usar entre dos dispositivos que no cuentan con una conexión confiable a internet?\n\n\nEn los ejemplos anteriores encontrar una solución concreta a las preguntas planteadas permite avanzar.\n\n2. Problemas para demostrar\n\n\n  “Demuestre que la línea de mayor longitud que toca dos puntos de una circunferencia pasa por el centro del círculo”.\n\n\nEsto es un ejemplo de un problema para demostrar. Estos implican la comprobación o refutación de una aserción (hipótesis) enunciada en el problema. Estos problemas generalmente nos los ponían en la preparatoria o universidad, por su naturaleza son un poco más difíciles en general.\n\nPara un desarrollador podríamos poner problemas para demostrar como:\n\n\n  “Demuestra que es imposible un bloqueo mutuo entre procesos con el algoritmo usado actualmente”.\n  “¿Cómo sabemos que evitamos todas las condiciones de carrera en el sistema actual?”\n  “Comprueba que el máximo tiempo que puede tardar el sistema en responder es menor que X.”\n\n\nEstos problemas requieren soluciones más generales y abstractas en general. Espero que con estos ejemplos haya quedado clara la diferencia entre los diferentes tipos de problemas.\n\nProblemas matemáticos, acertijos y problemas de la vida real\n\nPolya habla en sus libro sobre todo de un tipo específico de problemas: los problemas matemáticos.\n\nUn problema matemático bien definido cuenta con:\n\n\n  Datos suficientes para resolución\n  No tiene datos sobrantes\n  Condiciones no contradictorias o imposibles de cumplir\n\n\nPor extensión, los acertijos cumplen con las mismas características, y se dan algunos de ejemplos de ellos en el libro.\nPero los problemas de la vida real son muy diferentes, ya que estos pueden no cumplir con las características completas\nde un problema bien definido. Así que uno de los pasos previos para resolver un problema de la vida real es intentar definir lo mejor posible el problema por resolver y completarlo en caso de que falte algo.\n\nCómo empezar a resolver un problema\nPolya plantea cuatro etapas de resolución de un problema:\n\n\n  Entendimiento\n  Planeación\n  Ejecución\n  Retrospectiva\n\n\nHablemos de cada una, para entender claramente cómo podemos mejorar nuestras posibilidades de resolución de un problema.\n\nEntendimiento\n\n\n  Es tonto contestar una pregunta que no entiendes. Es triste trabajar por un fin que no deseas. - G. Polya\n\n\nEl entendimiento del problema consiste primero en asegurarnos de que entendemos el planteamiento verbal del problema, si no tenemos ni siquiera un planteamiento verbal, debemos empezar por crearlo.\n\nPara decir que comprendemos el problema, tenemos que conocer los datos que se dan, las condiciones a satisfacer y la incógnita o lo que hay que demostrar.\n\nEsta parte puede llevar gran parte del tiempo total dedicado al problema, ya que es el fundamento de los próximos pasos, sin la que no se puede continuar.\n\n### Planeación\n\nEl siguiente paso es trazar un plan para atacar el problema. El plan consiste en saber que transformaciones, derivaciones y combinaciones tenemos que hacer con los datos para llegar a la solución esperada.\n\nEsta es la parte más difícil, ya que implica conocimiento profundo del problema. Para Polya, concebir un plan es el mayor logro en la resolución de un problema. Cuando lo concebimos parece que tenemos una “idea brillante”.\n\nPero es casi imposible tener una idea brillante cuando sabemos muy poco del tema. Las buenas ideas están basadas en conocimiento y experiencia previa. Por eso conviene preguntarse: ¿Conozco o resuelto un problema relacionado o similar?. Hablaremos de otras preguntas que nos pueden ayudar a concebir un plan más adelante.\n\n### Ejecución\n\nEs hora de llevar a cabo los pasos establecidos en la planeación. En esta etapa hay que ejecutar cada uno de los pasos que establecimos en la planeación de ejecución del problema. Polya dice que aquí es donde hay que ser rigurosos con lo que hacemos, verificando que lo que hacemos tenga sentido y sea estrictamente correcto. ¿Puedes comprobar en cada paso que es correcto lo que estás haciendo?\n\n### Retrospectiva\n\nEn este paso hay que examinar el resultado. ¿Puedes probar que el resultado final es correcto?\nAdemás podemos ver si podemos hacer algo diferente, si nuestro resultado cumple con todo lo esperado y si podemos encontrar o derivar el resultado de alguna otra forma ahora que ya sabemos cuál es.\n\nEste paso también sirve para verificar si el resultado o el método que usamos para resolverlo nues puede ayudar con algún otro problema que tengamos que resolver.\n\nLas preguntas de Polya\n\nPolya estableció una serie de preguntas que pueden guiarte en la solución de un problema, muy relacionadas con los pasos de los que acabamos de hablar. Estas preguntas las repite vez tras vez en el libro y en verdad son iluminadoras si estás atorado en algún problema que no puedes resolver. A continuación las listamos.\n\n\n  ¿He resuelto un problema relacionado? ¿Conozco un problema que se aproxime?\n  ¿Estoy usando todos los datos?\n  ¿Puedo cambiar algo del problema para hacerlo más fácil?\n    \n      ¿Puedo cambiar los datos?\n      ¿Puedo cambiar las condiciones?\n      ¿Puedo cambiar la incógnita?\n    \n  \n\n\nPara recordar\n\nPara resolver un problema:\n\n  Asegúrate de entender el problema completamente: qué datos tienes, qué relación hay entre los datos y la incógnita y lo que tienes que encontrar.\n  Planea cómo vas a atacar el problema\n  Si estás detenido en la resolución de un problema puedes:\n    \n      Variar los datos, las condiciones o el resultado esperado.\n      Pensar en otros problemas que se le parezcan: puedes usar el método que usaste para resolverlos o el resultado.\n      Aceptar soluciones parciales, parcialmente erróneas o asumidas.\n      Genera nuevas ideas y re-evalúa el problema y el plan a la luz de cada nuevo paso.\n    \n  \n  Aprovecha cualquier idea aunque suene disparatada.\n\n\nEn el siguiente post hablaremos de 5 cosas más de las que Polya habla en su libro: heurística, inducción, deducción, análisis y síntesis.\n",
+      "datePublished": "2019-09-27 00:00:00 -0500",
+      "dateModified": "2019-09-27 00:00:00 -0500",
       "author": {
         "@type": "Person",
         "name": "Héctor Patricio",
@@ -152,7 +152,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/2019/09/08/tecnicas-para-resolver-problemas.html"
+        "@id": "/2019/09/27/tecnicas-para-resolver-problemas.html"
       },
       "image": {
         "@type": "ImageObject",
@@ -258,7 +258,7 @@
 
 
 
-| <i class="far fa-calendar" aria-hidden="true"></i> 08-09-2019
+| <i class="far fa-calendar" aria-hidden="true"></i> 27-09-2019
 </p>
       
       
@@ -394,7 +394,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Técnicas para resolver problemas">
     <meta itemprop="description" content="¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 1928. Hablemos de las principales lecciones que podemos sacar.">
-    <meta itemprop="datePublished" content="September 08, 2019">
+    <meta itemprop="datePublished" content="September 27, 2019">
     
 
     <div class="page__inner-wrap">
@@ -467,7 +467,7 @@
   <li>¿Qué sistema de comunicación puedo usar entre dos dispositivos que no cuentan con una conexión confiable a internet?</li>
 </ul>
 
-<p>En los ejemplos anteriores encontrar una solución concreta a las preguntas planteadas permite abanzsar.</p>
+<p>En los ejemplos anteriores encontrar una solución concreta a las preguntas planteadas permite avanzar.</p>
 
 <h3 id="2-problemas-para-demostrar">2. Problemas para demostrar</h3>
 
@@ -482,14 +482,14 @@
 <ul>
   <li>“Demuestra que es imposible un bloqueo mutuo entre procesos con el algoritmo usado actualmente”.</li>
   <li>“¿Cómo sabemos que evitamos todas las condiciones de carrera en el sistema actual?”</li>
-  <li>“Comprueba que el máximo tiempo que puede tardar el sistema en responder es menor que X”</li>
+  <li>“Comprueba que el máximo tiempo que puede tardar el sistema en responder es menor que X.”</li>
 </ul>
 
-<p>Espero que con estos ejemplos haya quedado clara la diferencia entre los diferentes tipos de problemas.</p>
+<p>Estos problemas requieren soluciones más generales y abstractas en general. Espero que con estos ejemplos haya quedado clara la diferencia entre los diferentes tipos de problemas.</p>
 
 <h3 id="problemas-matemáticos-acertijos-y-problemas-de-la-vida-real">Problemas matemáticos, acertijos y problemas de la vida real</h3>
 
-<p>Polya habla en sus libro sobre todo de un tipo muy especial de problemas: <strong>los problemas matemáticos</strong>.</p>
+<p>Polya habla en sus libro sobre todo de un tipo específico de problemas: <strong>los problemas matemáticos</strong>.</p>
 
 <p>Un problema matemático bien definido cuenta con:</p>
 
@@ -499,9 +499,9 @@
   <li>Condiciones no contradictorias o imposibles de cumplir</li>
 </ol>
 
-<p>Por extensión, los acertijos cumplen con las mismas características, y se dan algunos de ejemplos de ellos en el libro.
+<p>Por extensión, <strong>los acertijos</strong> cumplen con las mismas características, y se dan algunos de ejemplos de ellos en el libro.
 Pero los problemas de la vida real son muy diferentes, ya que estos pueden no cumplir con las características completas
-de un problema bien definido. Así que uno de los pasos previos para resolver un problema de la vida real es intentar definir lo mejor posible el problema por resolver.</p>
+de un problema bien definido. Así que uno de los pasos previos para resolver un problema de la vida real es intentar definir lo mejor posible el problema por resolver y completarlo en caso de que falte algo.</p>
 
 <h2 id="cómo-empezar-a-resolver-un-problema">Cómo empezar a resolver un problema</h2>
 <p>Polya plantea cuatro etapas de resolución de un problema:</p>
@@ -529,19 +529,26 @@ de un problema bien definido. Así que uno de los pasos previos para resolver un
 
 <p>### Planeación</p>
 
-<p>El siguiente paso es trazar un plan para atacar el problema. Esta es la parte más difícil, ya que implica conocimiento profundo del problema y es casi un esbozo de la solución.</p>
+<p>El siguiente paso es trazar un plan para atacar el problema. El plan consiste en saber que transformaciones, derivaciones y combinaciones tenemos que hacer con los datos para llegar a la solución esperada.</p>
+
+<p>Esta es la parte más difícil, ya que implica conocimiento profundo del problema. Para Polya, concebir un plan es el mayor logro en la resolución de un problema. Cuando lo concebimos parece que tenemos una “idea brillante”.</p>
+
+<p>Pero es casi imposible tener una idea brillante cuando sabemos muy poco del tema. Las buenas ideas están basadas en conocimiento y experiencia previa. Por eso conviene preguntarse: <strong>¿Conozco o resuelto un problema relacionado o similar?</strong>. Hablaremos de otras preguntas que nos pueden ayudar a concebir un plan más adelante.</p>
 
 <p>### Ejecución</p>
 
-<p>Es hora de llevar a cabo los pasos establecidos en la planeación. En esta etapa hay que ejecutar cada uno de los pasos que establecimos en la planeación de ejecución del problema. Polya dice que aquí es donde hay que ser rigurosos con lo que hacemos, verificando que lo que hacemos tenga sentido y sea estrictamente correcto.</p>
+<p>Es hora de llevar a cabo los pasos establecidos en la planeación. En esta etapa hay que ejecutar cada uno de los pasos que establecimos en la planeación de ejecución del problema. Polya dice que aquí es donde <strong>hay que ser rigurosos con lo que hacemos</strong>, verificando que lo que hacemos tenga sentido y sea estrictamente correcto. ¿Puedes comprobar en cada paso que es correcto lo que estás haciendo?</p>
 
 <p>### Retrospectiva</p>
 
-<p>Revisar los resultados, ver si podemos hacer algo diferente, si nuestro resultado cumple con lo esperado y si podemos encontrar o derivar el resultado de alguna otra forma ahora que ya sabemos cuál es.</p>
+<p>En este paso hay que <strong>examinar el resultado</strong>. ¿Puedes probar que el resultado final es correcto?
+Además podemos ver si podemos hacer algo diferente, si nuestro resultado cumple con todo lo esperado y si podemos encontrar o derivar el resultado de alguna otra forma ahora que ya sabemos cuál es.</p>
+
+<p>Este paso también sirve para verificar si el resultado o el método que usamos para resolverlo nues puede ayudar con algún otro problema que tengamos que resolver.</p>
 
 <h3 id="las-preguntas-de-polya">Las preguntas de Polya</h3>
 
-<p>Polya estableció una serie de preguntas que pueden guiarte en la solución de un problema. Estas preguntas las repite vez tras vez en el libro y en verdad son iluminadoras si estás atorado en algún problema que no puedes resolver. A continuación las listamos.</p>
+<p>Polya estableció una serie de preguntas que pueden guiarte en la solución de un problema, muy relacionadas con los pasos de los que acabamos de hablar. Estas preguntas las repite vez tras vez en el libro y en verdad son iluminadoras si estás atorado en algún problema que no puedes resolver. A continuación las listamos.</p>
 
 <ul>
   <li>¿He resuelto un problema <strong>relacionado</strong>? ¿Conozco un <strong>problema que se aproxime</strong>?</li>
@@ -551,31 +558,9 @@ de un problema bien definido. Así que uno de los pasos previos para resolver un
       <li>¿Puedo cambiar los datos?</li>
       <li>¿Puedo cambiar las condiciones?</li>
       <li>¿Puedo cambiar la incógnita?</li>
-      <li>¿Qué debería mantener?</li>
     </ul>
   </li>
-  <li>
 </ul>
-
-<h2 id="heurística---el-arte-resolver-problemas">Heurística - El arte resolver problemas</h2>
-
-<blockquote>
-  <p>Tenemos que cambiar nuestra posición una y otra vez. - <strong>G. Polya</strong></p>
-</blockquote>
-
-<p>La frase anterior deja clara la actitud que se debe tener respecto a algunos problemas.
-Cuando no tienes idea del procedimiento a seguir para resolver un problema, existe una forma de experimentar para poderlo resolver efectivamente.</p>
-
-<p>Esta forma de experimentación consiste en aceptar soluciones parciales, semi-erróneas y asumidas (o completamente inventadas) para avanzar en la resolución del problema. Si una de estas soluciones nos ayuda avanzar en el problema, es aceptada.</p>
-
-<h2 id="inducción-y-deducción">Inducción y Deducción</h2>
-
-<p>Polya apoyándose en la sabiduría de otros.</p>
-
-<h2 id="análisis-y-síntesis">Análisis y Síntesis</h2>
-
-<p>Análisis: proceso para entender y descomponer un problema, planear los pasos necesarios. Ida.
-Síntesis: ejecución de los pasos para llevar a cabo los resultados del análisis. Regreso.</p>
 
 <h2 id="para-recordar">Para recordar</h2>
 
@@ -594,6 +579,8 @@ Síntesis: ejecución de los pasos para llevar a cabo los resultados del anális
   </li>
   <li>Aprovecha cualquier idea aunque suene disparatada.</li>
 </ul>
+
+<p>En el siguiente post hablaremos de 5 cosas más de las que Polya habla en su libro: heurística, inducción, deducción, análisis y síntesis.</p>
 
         
       </section>
@@ -639,7 +626,7 @@ Síntesis: ejecución de los pasos para llevar a cabo los resultados del anális
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2019-09-08T00:00:00-05:00">September 08, 2019</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2019-09-27T00:00:00-05:00">September 27, 2019</time></p>
         
       </footer>
 
@@ -648,11 +635,11 @@ Síntesis: ejecución de los pasos para llevar a cabo los resultados del anális
     <h4 class="page__share-title">Compartir</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=T%C3%A9cnicas+para+resolver+problemas%20%2F2019%2F09%2F08%2Ftecnicas-para-resolver-problemas.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=T%C3%A9cnicas+para+resolver+problemas%20%2F2019%2F09%2F27%2Ftecnicas-para-resolver-problemas.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2019%2F09%2F08%2Ftecnicas-para-resolver-problemas.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2019%2F09%2F27%2Ftecnicas-para-resolver-problemas.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2F2019%2F09%2F08%2Ftecnicas-para-resolver-problemas.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2F2019%2F09%2F27%2Ftecnicas-para-resolver-problemas.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -942,8 +929,8 @@ Síntesis: ejecución de los pasos para llevar a cabo los resultados del anális
     
   <script>
     var disqus_config = function () {
-      this.page.url = "/2019/09/08/tecnicas-para-resolver-problemas.html";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/2019/09/08/tecnicas-para-resolver-problemas"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "/2019/09/27/tecnicas-para-resolver-problemas.html";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/2019/09/27/tecnicas-para-resolver-problemas"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
