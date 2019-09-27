@@ -4,20 +4,21 @@ date: 2019-09-08
 author: Héctor Patricio
 tags: matemáticas maths polya books libros
 comments: true
-excerpt: "¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 1928."
+excerpt: "¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver?
+George Polya escribió un libro completo sobre eso en 1928. Hablemos de las principales lecciones que podemos sacar."
 header:
-  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1566189999/91gQt6wB-KL_t7svba.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1566189999/91gQt6wB-KL_t7svba.jpg
-  overlay_filter: rgba(0, 0, 0, 0.5)
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1569549306/joel-filipe-187166-unsplash_b5p0hv.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1569549306/joel-filipe-187166-unsplash_b5p0hv.jpg
+  overlay_filter: rgba(0, 0, 0, 0.7)
 ---
 
-<!-- EScribir introducción decente -->
+Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver.
 
-George Polya fue uno de los matemáticos más prolíficos del Siglo XX, un matemático de primera clase (de esos que descubren e inventan cosas) pero que, a diferencia de muchos otros, mantenía un interés por la educación y le enseñanza de las matemáticas, algo muy peculiar.
+George Polya fue uno de los matemáticos más prolíficos del Siglo XX, un matemático de primera clase (de esos que descubren e inventan cosas, y para algunos, **el matemático más influyente del siglo**) pero que, a diferencia de muchos otros, mantenía un interés por la educación y la enseñanza de las matemáticas, algo muy peculiar.
 
-Polya escribió varios libros, entre ellos está "How to solve it" un tratado de 4 partes en el que explica de manera muy detallada cómo resolver problemas matemáticos principalmente, pero también cómo aplicar este conocimiento a otras áreas de la vida.
+Escribió varios libros, entre ellos está **"How to solve it"** un tratado de 4 partes en el que explica de manera muy detallada cómo resolver problemas matemáticos principalmente, pero también cómo aplicar este conocimiento a otras áreas de la vida.
 
-Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver. Las técnicas explicadas por Polya te pueden ayudar a desarrollar tus capacidades de resolución de problemas.
+Las técnicas explicadas por Polya te pueden ayudar a desarrollar tus capacidades de resolución de problemas.
 
 Empecemos por hablar de la estructura los problemas de los que Polya habla en su libro.
 
@@ -29,22 +30,20 @@ Polya enseña que un problema tiene tres partes:
 2. **Las condiciones**. Describen la relación que existe entre los datos y la solución, pero también la forma, los límites y características de la solución buscada.
 3. **La incógnita o lo desconocido**. Es la información que buscamos y que cumple con las condiciones del problema.
 
-Es muy importante conocer la composición de un problema para poder aplicar las técnicas descritas en el libro. Cualquier problema matemático **debería cumplir con estas características**, pero no todos los problemas de la vida real cumplen con esta estructura tal y como la necesitamos o esperamos, por lo que deberíamos ser capaces de entender los problemas que se nos presentan y estructurarlos lo mejor posible según esta definición para facilitarnos la vida posteriormente.
+Es muy importante conocer la composición de un problema para poder aplicar las técnicas descritas en el libro. Cualquier problema matemático **debería cumplir con estas características**, pero no todos los problemas de la vida real cumplen con esta estructura tal y como la necesitamos; por esta razón deberíamos desarrollar la capacidad de entender los problemas que se nos presentan y estructurarlos lo mejor posible según esta definición para facilitarnos la vida posteriormente.
 
 Para resolver un problema deberías ser capaz de contestar las siguientes preguntas:
 
-- ¿Qué estoy buscando? **¿Cuál es la incógnita?**
-- ¿Qué datos tengo disponibles? **¿Son suficientes los datos que tengo para resolver el problema?**
-- ¿Qué condiciones tiene que cumplir la incógnita? **¿Es posible cumplir con esta condición?**
+- ¿Qué estoy buscando? -> **¿Cuál es la incógnita?**
+- ¿Qué datos tengo disponibles? -> **¿Son suficientes los datos que tengo para resolver el problema?**
+- ¿Qué condiciones tiene que cumplir la incógnita? -> **¿Es posible cumplir con esta condición?**
 - **¿Qué relación hay entre los datos y la incógnita?**
 
-
-
-Ahora hablemos de de los tipos de problemas de los que Polya hace distinción.
+Esta estructura sienta las bases para lo que viene. Ahora hablemos de de los tipos de problemas de los que Polya hace distinción.
 
 ## Tipos de problemas
 
-Polya hace la distinción entre dos tipos diferentes de problemas que hay que tratar de manera ligeramente diferente para poder resolverlos de mejor manera, aunque la estructura sea la misma.
+Polya hace la distinción entre dos tipos diferentes de problemas que hay que tratar de resolver de manera ligeramente diferente aunque la estructura sea la misma.
 
 ### 1. Problemas para encontrar
 

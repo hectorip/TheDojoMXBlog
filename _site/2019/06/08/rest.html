@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Bienvenidos al Blog de The Dojo MX -</title>
-<meta name="description" content="Bienvenidos al blog de The Dojo MX.">
+<!-- begin _includes/seo.html --><title>Rest -</title>
+<meta name="description" content="Arquitectura cliente-servidor.">
 
 
   <meta name="author" content="Héctor Patricio">
@@ -19,28 +19,26 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es">
 <meta property="og:site_name" content="">
-<meta property="og:title" content="Bienvenidos al Blog de The Dojo MX">
-<meta property="og:url" content="/2018/10/28/bienvenidos.html">
+<meta property="og:title" content="Rest">
+<meta property="og:url" content="/2019/06/08/rest.html">
 
 
-  <meta property="og:description" content="Bienvenidos al blog de The Dojo MX.">
-
-
-
-  <meta property="og:image" content="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1551938206/fancycrave-284219-unsplash_ylbmvr.jpg">
-
-
-
-
-
-  <meta property="article:published_time" content="2018-10-28T00:00:00-05:00">
+  <meta property="og:description" content="Arquitectura cliente-servidor.">
 
 
 
 
 
 
-<link rel="canonical" href="/2018/10/28/bienvenidos.html">
+
+  <meta property="article:published_time" content="2019-06-08T23:44:07-05:00">
+
+
+
+
+
+
+<link rel="canonical" href="/2019/06/08/rest.html">
 
 
 
@@ -125,18 +123,18 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "url": "/2018/10/28/bienvenidos.html",
-      "name": "Bienvenidos al Blog de The Dojo MX",
-      "headline": "Bienvenidos al Blog de The Dojo MX",
-      "keywords": "thedojomx,opensource",
-      "description": "Bienvenidos al blog de The Dojo MX.",
-      "articleBody": "Este es el primer post, esperamos que de muchos, del blog de The Dojo MX.\n\nEl objetivo de este blog es compartir información útil para los desarrolladores\ny contribuir al avance y desarrollo de los que nos dedicamos a hacer productos digitales.\n\nTemática y enfoque\n\nSe tratarán todos los temas del amplio espectro que abarca desarrollar un producto de\nsoftware, con un enfoque educativo. Algunos ejemplos de los tópicos a tratar son:\n\n\n  Desarrollo web front y backend\n  Lenguajes de programación en general\n  Mejores prácitcas de desarrollo\n  Inteligencia Artificial\n  Ciencias de la computación teóricas\n  Algoritmia\n  Ingeniería de software\n  Open Source\n\n\nContribuciones\n\nEste es un blog Open Source. Está construido sobre GitHub Pages con Jekyll (tendremos que actualizar esto si un día cambia), lo cuál te permite contribuir con el simple hecho de hacer un PR si crees que podemos cambiar algo en la estructura del sitio o si quieres escribir un post.\n\nEn uno de los siguientes posts daremos una lista de pasos detallados de cómo hacer esto, junto con los lineamientos para aceptar un post.\n\nSi tienes ideas o peticiones de temas que deberíamos tratar, puedes abrir un issue en GitHub.\n\nTambién puedes dejar algún comentario para dar ideas.\n\n¡Nos leemos pronto!\n",
-      "datePublished": "2018-10-28 00:00:00 -0500",
-      "dateModified": "2018-10-28 00:00:00 -0500",
+      "url": "/2019/06/08/rest.html",
+      "name": "Rest",
+      "headline": "Rest",
+      "keywords": "",
+      "description": "<h3 id=\"arquitectura-cliente-servidor\">Arquitectura cliente-servidor.</h3>",
+      "articleBody": "Arquitectura cliente-servidor.\n\nEsta característica normalmente es algo que ya hacemos normalmente con nuestros servicios web en general.\n\nUna API REST debe ser ejecutada como un servidor, que sea encargado de contestar las peticiones de un cliente. El cliente es el programa que usa los servicios que la API provee, pide datos u operaciones y estas son ejecutadas. Fielding pensaba en el cliente como en la interfaz de usuario, pero en nuestros días un cliente podría ser fácilmente otro servidor.\n\nEsta arquitectura nos permite separar claramente las responsabilidades de cada programa y esto a su vez permite que tanto el cliente como el servidor puedan cambiar y evolucionar por su cuenta, sin depender mutuamente uno del otro.\n\nLa arquitectura cliente servidor también define otras cosas, por ejemplo que el servidor nunca inicia la comunicación y sólo responde a peticiones que el cliente le haya hecho, pero no es esencial cumplir con estas para hablar de una API REST, lo más importante es la separación de responsabilidades entre cliente y servidor.\n\nComunicación sin estado\n\nEl estado se refiere a toda la información que contiene un sistema programa en un punto del tiempo. Un sistema REST no mantiene esta información en la comunicación entre cliente y servidor.\n\nEsto quiere decir que no se mantiene una conexión que mantenga un sesión en el servidor que contenga los datos del cliente actual. Cada vez que el cliente haga una petición deberá envíar todos los datos necesarios para que el servidor genere y obtenga la información que se está pidiendo.\n\nEsto tiene ventajas y desventajas. Primero, desacopla completamente el cliente y la implementación del servidor, ya que un cliente se podría comunicar con cualquier instancia del servidor actual. Esto a su vez permite crear servicios replicados y balanceados que son capaces de soportar mucho mejor cargas grandes de trabajo generadas por muchos clientes, ya que no se casa un cliente con un servidor.\n\nUna de las desventajas de este tipo de comunicación es que el estado se tiene que recrear en cada llamada, por lo que la transferencia de información repetida y el procesamiento de esta genera una carga extra que se podría evitar en una conexión que mantenga el estado.\n\nConocer estos detalles nos permitirá decidir si REST es lo adecuado para nuestro proyecto.\n\nInterfaz uniforme\n\nEsta es la característica más distintiva de un sistema REST. Quier\n\nSistema en capas\n\nLas funciones del servidor y la comunicación con el cliente podrían (normalmente, deberían) estar separadas en capas con diferentes funciones cada una. Por ejemplo, el servicio podría estar compuesto por:\n\n\n  Una red de entrega de contenido (CDN)\n  Un balanceador de carga\n  Un firewall\n  Un servidor de autenticación\n  El servidor de web\n  El servidor de aplicaciones\n\n\nEsta separación en capas hace que el servicio web sea más confiable y tenga mejor comportamiento en general. Lo importante de\n\nInterfaz uniforme\n\nNo mantiene el estado\n\nCacheable\n\nCódigo bajo demanda [opcional]\n\nImplementación de las restricciones de REST\n\nDocumentación\n\nConclusión\n",
+      "datePublished": "2019-06-08 23:44:07 -0500",
+      "dateModified": "2019-06-08 23:44:07 -0500",
       "author": {
         "@type": "Person",
-        "name": "Héctor Patricio",
-        "givenName": "Héctor Patricio",
+        "name": null,
+        "givenName": null,
         "email": null
       },
       "publisher": {
@@ -152,13 +150,13 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/2018/10/28/bienvenidos.html"
+        "@id": "/2019/06/08/rest.html"
       },
       "image": {
         "@type": "ImageObject",
         "width": 1200,
         "height": 400,
-        "url": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1551938206/fancycrave-284219-unsplash_ylbmvr.jpg"
+        "url": ""
       }
     }
 </script>
@@ -223,52 +221,6 @@
 
     <div class="initial-content">
       
-  
-
-
-
-
-
-
-
-
-
-
-
-<div class="page__hero--overlay" style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1551938206/fancycrave-284219-unsplash_ylbmvr.jpg');">
-  
-    <div class="wrapper">
-      <h1 id="page-title" class="page__title" itemprop="headline">
-        
-          Bienvenidos al Blog de The Dojo MX
-
-        
-      </h1>
-      
-        <p class="page__lead">Bienvenidos al blog de The Dojo MX.
-</p>
-      
-      
-        <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  1 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 28-10-2018
-</p>
-      
-      
-      
-    </div>
-  
-  
-</div>
-
-
 
 
 
@@ -296,7 +248,7 @@
     
     
       <div class="author__bio" itemprop="description">
-        <p>Tech Leader en HAL.</p>
+        <p>Desarrollador de software, tech lead @ HAL y The Dojo MX</p>
 
       </div>
     
@@ -318,22 +270,9 @@
       
 
       
-        <li>
-          <a href="mailto:hectorivanpatriciomoreno@gmail.com">
-            <meta itemprop="email" content="hectorivanpatriciomoreno@gmail.com">
-            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
-          </a>
-        </li>
-      
 
       
 
-      
-        <li>
-          <a href="https://twitter.com/hectorip" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
-          </a>
-        </li>
       
 
       
@@ -392,48 +331,88 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Bienvenidos al Blog de The Dojo MX">
-    <meta itemprop="description" content="Bienvenidos al blog de The Dojo MX.">
-    <meta itemprop="datePublished" content="October 28, 2018">
+    <meta itemprop="headline" content="Rest">
+    <meta itemprop="description" content="Arquitectura cliente-servidor.">
+    <meta itemprop="datePublished" content="June 08, 2019">
     
 
     <div class="page__inner-wrap">
       
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Rest
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 08-06-2019
+</p>
+          
+        </header>
+      
 
       <section class="page__content" itemprop="text">
         
-        <p>Este es el primer post, esperamos que de muchos, del blog de The Dojo MX.</p>
+        <h3 id="arquitectura-cliente-servidor">Arquitectura cliente-servidor.</h3>
 
-<p>El objetivo de este blog es compartir información útil para los desarrolladores
-y contribuir al avance y desarrollo de los que nos dedicamos a hacer productos digitales.</p>
+<p>Esta característica normalmente es algo que ya hacemos normalmente con nuestros servicios web en general.</p>
 
-<h2 id="temática-y-enfoque">Temática y enfoque</h2>
+<p>Una API REST debe ser ejecutada como un <strong>servidor</strong>, que sea encargado de contestar las peticiones de un <strong>cliente</strong>. El cliente es el programa que usa los servicios que la API provee, pide datos u operaciones y estas son ejecutadas. Fielding pensaba en el cliente como en la interfaz de usuario, pero en nuestros días un cliente podría ser fácilmente otro servidor.</p>
 
-<p>Se tratarán todos los temas del amplio espectro que abarca desarrollar un producto de
-software, con un enfoque educativo. Algunos ejemplos de los tópicos a tratar son:</p>
+<p>Esta arquitectura nos permite separar claramente las responsabilidades de cada programa y esto a su vez <em>permite que tanto el cliente como el servidor puedan cambiar y evolucionar por su cuenta</em>, sin depender mutuamente uno del otro.</p>
+
+<p>La arquitectura cliente servidor también define otras cosas, por ejemplo que el servidor nunca inicia la comunicación y sólo responde a peticiones que el cliente le haya hecho, pero no es esencial cumplir con estas para hablar de una API REST, lo más importante es la <strong>separación de responsabilidades</strong> entre cliente y servidor.</p>
+
+<h3 id="comunicación-sin-estado">Comunicación sin estado</h3>
+
+<p>El estado se refiere a toda la información que contiene un sistema programa en un punto del tiempo. Un sistema REST no mantiene esta información <em>en la comunicación entre cliente y servidor</em>.</p>
+
+<p>Esto quiere decir que no se mantiene una conexión que mantenga un sesión en el servidor que contenga los datos del cliente actual. Cada vez que el cliente haga una petición deberá envíar todos los datos necesarios para que el servidor genere y obtenga la información que se está pidiendo.</p>
+
+<p>Esto tiene ventajas y desventajas. Primero, desacopla completamente el cliente y la implementación del servidor, ya que un cliente se podría comunicar con <em>cualquier instancia</em> del servidor actual. Esto a su vez permite crear servicios replicados y balanceados que son capaces de soportar mucho mejor cargas grandes de trabajo generadas por muchos clientes, ya que no se casa un cliente con un servidor.</p>
+
+<p>Una de las desventajas de este tipo de comunicación es que el estado se tiene que recrear en cada llamada, por lo que la transferencia de información repetida y el procesamiento de esta genera una carga extra que se podría evitar en una conexión que mantenga el estado.</p>
+
+<p>Conocer estos detalles nos permitirá decidir si REST es lo adecuado para nuestro proyecto.</p>
+
+<h3 id="interfaz-uniforme">Interfaz uniforme</h3>
+
+<p>Esta es la característica más distintiva de un sistema REST. Quier</p>
+
+<h3 id="sistema-en-capas">Sistema en capas</h3>
+
+<p>Las funciones del servidor y la comunicación con el cliente podrían (normalmente, <em>deberían</em>) estar separadas en capas con diferentes funciones cada una. Por ejemplo, el servicio podría estar compuesto por:</p>
 
 <ul>
-  <li>Desarrollo web front y backend</li>
-  <li>Lenguajes de programación en general</li>
-  <li>Mejores prácitcas de desarrollo</li>
-  <li>Inteligencia Artificial</li>
-  <li>Ciencias de la computación teóricas</li>
-  <li>Algoritmia</li>
-  <li>Ingeniería de software</li>
-  <li>Open Source</li>
+  <li>Una red de entrega de contenido (CDN)</li>
+  <li>Un balanceador de carga</li>
+  <li>Un firewall</li>
+  <li>Un servidor de autenticación</li>
+  <li>El servidor de web</li>
+  <li>El servidor de aplicaciones</li>
 </ul>
 
-<h2 id="contribuciones">Contribuciones</h2>
+<p>Esta separación en capas hace que el servicio web sea más confiable y tenga mejor comportamiento en general. Lo importante de</p>
 
-<p>Este es un blog Open Source. Está construido sobre GitHub Pages con Jekyll (tendremos que actualizar esto si un día cambia), lo cuál te permite contribuir con el simple hecho de hacer un PR si crees que podemos cambiar algo en la estructura del sitio o si quieres escribir un post.</p>
+<h3 id="interfaz-uniforme-1">Interfaz uniforme</h3>
 
-<p>En uno de los siguientes posts daremos una lista de pasos detallados de cómo hacer esto, junto con los lineamientos para aceptar un post.</p>
+<h3 id="no-mantiene-el-estado">No mantiene el estado</h3>
 
-<p>Si tienes ideas o peticiones de temas que deberíamos tratar, puedes abrir un issue en GitHub.</p>
+<h3 id="cacheable">Cacheable</h3>
 
-<p>También puedes dejar algún comentario para dar ideas.</p>
+<h3 id="código-bajo-demanda-opcional">Código bajo demanda [opcional]</h3>
 
-<p>¡Nos leemos pronto!</p>
+<h2 id="implementación-de-las-restricciones-de-rest">Implementación de las restricciones de REST</h2>
+
+<h2 id="documentación">Documentación</h2>
+
+<h2 id="conclusión">Conclusión</h2>
 
         
       </section>
@@ -441,33 +420,10 @@ software, con un enfoque educativo. Algunos ejemplos de los tópicos a tratar so
       <footer class="page__meta">
         
         
-  
-
-
-  
-  
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Etiquetas: </strong>
-    <span itemprop="keywords">
-    
-      
-      
-      <a href="/tags/#opensource" class="page__taxonomy-item" rel="tag">opensource</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/tags/#thedojomx" class="page__taxonomy-item" rel="tag">thedojomx</a>
-    
-    </span>
-  </p>
-
-
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2018-10-28T00:00:00-05:00">October 28, 2018</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2019-06-08T23:44:07-05:00">June 08, 2019</time></p>
         
       </footer>
 
@@ -476,21 +432,22 @@ software, con un enfoque educativo. Algunos ejemplos de los tópicos a tratar so
     <h4 class="page__share-title">Compartir</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Bienvenidos+al+Blog+de+The+Dojo+MX%20%2F2018%2F10%2F28%2Fbienvenidos.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Rest%20%2F2019%2F06%2F08%2Frest.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2018%2F10%2F28%2Fbienvenidos.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2019%2F06%2F08%2Frest.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2F2018%2F10%2F28%2Fbienvenidos.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2F2019%2F06%2F08%2Frest.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">Anterior</a>
+      <a href="/2019/06/02/por-que-deberias-aprender-elixir.html" class="pagination--pager" title="¿Por qué deberías aprender Elixir?
+">Anterior</a>
     
     
-      <a href="/2019/02/21/cadena-responsabilidades.html" class="pagination--pager" title="Patrón de diseño: Cadena de responsabilidad
+      <a href="/2019/06/15/entendiendo-rest-estilo-de-arquitectura.html" class="pagination--pager" title="Entendiendo REST. El estilo de Arquitectura.
 ">Siguiente</a>
     
   </nav>
@@ -514,6 +471,41 @@ software, con un enfoque educativo. Algunos ejemplos de los tópicos a tratar so
     <div class="page__related">
       <h4 class="page__related-title">Podrías ver también</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1569549306/joel-filipe-187166-unsplash_b5p0hv.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2019/09/08/tecnicas-para-resolver-problemas.html" rel="permalink">Técnicas para resolver problemas
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  7 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 08-09-2019
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 19...</p>
+  </article>
+</div>
+
         
           
 
@@ -594,13 +586,9 @@ software, con un enfoque educativo. Algunos ejemplos de los tópicos a tratar so
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1564879566/nick-hillier-yD5rv8_WzxA-unsplash_cthqzt.jpg" alt="">
-      </div>
-    
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/2019/08/03/entendiendo-rest-servidor-sin-estado.html" rel="permalink">Entendiendo REST: conexión sin estado
+        <a href="/2019/08/04/entendiendo-rest-serivicios-cacheables.html" rel="permalink">Entendiendo REST: Serivicios cacheables
 </a>
       
     </h2>
@@ -610,50 +598,14 @@ software, con un enfoque educativo. Algunos ejemplos de los tópicos a tratar so
 
 
 
-  6 minutos de lectura
+  1 minutos de lectura
 
 
 
-| <i class="far fa-calendar" aria-hidden="true"></i> 03-08-2019
+| <i class="far fa-calendar" aria-hidden="true"></i> 04-08-2019
 </p>
     
-    <p class="archive__item-excerpt" itemprop="description">¿Cómo mantener la información entre peticiones en un sistema REST? Entendamos las ventajas y desventajas
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1260/v1562217908/krzysztof-kowalik-KiH2-tdGQRY-unsplash_v0vf7l.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html" rel="permalink">Entendiendo REST: Arquitectura cliente-servidor
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  6 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 04-07-2019
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST.
+    <p class="archive__item-excerpt" itemprop="description">Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo.
 </p>
   </article>
 </div>
@@ -774,8 +726,8 @@ software, con un enfoque educativo. Algunos ejemplos de los tópicos a tratar so
     
   <script>
     var disqus_config = function () {
-      this.page.url = "/2018/10/28/bienvenidos.html";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/2018/10/28/bienvenidos"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "/2019/06/08/rest.html";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/2019/06/08/rest"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
