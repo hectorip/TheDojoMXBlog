@@ -109,6 +109,16 @@ var store = [{
         "tags": ["go","golang","lenguajes-de-programación"],
         "url": "/2019/09/01/por-que-deberias-aprender-go.html",
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/v1567376344/google-servers-datacenter_bs7xzt.png"},{
+        "title": "El arte de resolver problemas: la heurística",
+        "excerpt":"En un artículo anterior analizamos la estructura básica de un problema y la estructura básica de resolución que George Polya propone para intentar resolverlos. No todos los problemas se pueden resolver siguiendo una serie de pasos. Es por eso que Polya habla de otras técnicas para resolver problemas. Aquí hablaremos...","categories": [],
+        "tags": [],
+        "url": "/2019/09/27/el-arte-de-resolver-problemas-la-heuristica.html",
+        "teaser":null},{
+        "title": "Recursos gratutitos para aprender a programar desde cero",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/2019/09/27/recursos-gratutitos-para-aprender-a-programar-desde-cero.html",
+        "teaser":null},{
         "title": "Técnicas para resolver problemas",
         "excerpt":"Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver. George Polya fue uno de los matemáticos más prolíficos del Siglo XX, un matemático de primera clase (de esos que descubren e inventan cosas, y para algunos,...","categories": [],
         "tags": ["matemáticas","maths","polya","books","libros"],
