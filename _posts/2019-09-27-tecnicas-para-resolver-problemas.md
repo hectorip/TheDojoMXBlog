@@ -144,8 +144,6 @@ Polya estableció una serie de preguntas que pueden guiarte en la solución de u
   - ¿Puedo cambiar las condiciones?
   - ¿Puedo cambiar la incógnita?
 
-
-
 ## Para recordar
 
 Para resolver un problema:
