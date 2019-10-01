@@ -38,8 +38,9 @@ La principal diferencia a tener en cuenta cuando hablamos o tratamos con este ti
 Hay varias técnicas que se pueden clasificar como heurísticas para crear algoritmos.
 
 ## Ejemplos
- La mejor manera de entender completamente la heurística es con algunos ejemplos.
 
-## Inducción y Deducción
+La mejor manera de entender completamente la heurística es con algunos ejemplos.
 
-## Análisis y síntesis
+### Ejemplo 1
+
+### Ejemplo 2
