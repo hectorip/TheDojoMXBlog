@@ -4,7 +4,7 @@ date: 2019-09-27
 author: Héctor Patricio
 tags:
 comments: true
-excerpt: "Escribe aquí un buen resumen de tu artículo"
+excerpt: "La heurística te ayudará a resolver mejor los problemas que se te presentan como programador. Veamosla más detenidamente."
 header:
   overlay_image:
   teaser:
@@ -35,7 +35,7 @@ Un algoritmo heurístico en vez de garantizar siempre la mejor solución en cada
 
 La principal diferencia a tener en cuenta cuando hablamos o tratamos con este tipo de algoritmos es que **no garantizan la respuesta correcta o la respuesta óptima**, aunque en algunos casos son la mejor forma de lograrlo. Fuera de la programación, la heurística es un método para llegar a la respuesta correcta aceptando temporalmente soluciones intermedias no óptimas, semi-erróneas o incompletas.
 
-Hay varias técnicas que se pueden clasificar como heurísticas para crear algoritmos.
+Hay varias técnicas que se pueden clasificar como heurísticas para crear algoritmos. entre ellas algunos algoritmos voraces (greedy).
 
 ## Ejemplos
 
