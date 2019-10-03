@@ -13,7 +13,7 @@ header:
 
 > La heurística habla del **comportamiento humano** frente a los problemas. - George Polya
 
-En un [artículo anterior](2019/09/27/tecnicas-para-resolver-problemas.html) analizamos la estructura básica de un problema y la estructura de resolución que George Polya propone para intentar resolverlos.
+En un [artículo anterior](/2019/09/27/tecnicas-para-resolver-problemas.html) analizamos la estructura básica de un problema y la estructura de resolución que George Polya propone para intentar resolverlos.
 
 Polya analiza a fondo la estructura del proceso de resolución de problemas. Aquí hablaremos de **la heurística**, de la que escribió en [**"How to solve it"**](https://math.hawaii.edu/home/pdf/putnam/PolyaHowToSolveIt.pdf){:target="_blank"}, un compendio que pensó originalmente como un análisis de esta.
 
