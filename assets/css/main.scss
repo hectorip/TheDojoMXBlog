@@ -5,19 +5,25 @@
 @charset "utf-8";
 
 // $link_color: #D32734;
-$link_color: #00adb5;
+$link_color: rgb(0, 0, 238);
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:700,700i,800,800i,900|Source+Sans+Pro:300,400,700,700i,900&display=swap');
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
 article.page{
-    font-family: 'Sorce Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Poppins", sans-serif;
-}
+// h1, h2, h3, h4, h5, h6 {
+//     font-family: "Poppins", sans-serif;
+// } // Don't know if we should be using poppins
+
 
 .custom-grid {
     // display: flex;

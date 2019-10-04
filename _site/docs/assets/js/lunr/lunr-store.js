@@ -98,4 +98,9 @@ var store = [{
         "excerpt":"Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver. George Polya fue uno de los matemáticos más prolíficos del Siglo XX, un matemático de primera clase (de esos que descubren e inventan cosas, y para algunos,...","categories": [],
         "tags": ["matemáticas","maths","polya","books","libros"],
         "url": "/2019/09/27/tecnicas-para-resolver-problemas.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1569549306/joel-filipe-187166-unsplash_b5p0hv.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1569549306/joel-filipe-187166-unsplash_b5p0hv.jpg"},{
+        "title": "El arte de resolver problemas: la heurística",
+        "excerpt":"La heurística habla del comportamiento humano frente a los problemas. - George Polya En un artículo anterior analizamos la estructura básica de un problema y la estructura de resolución que George Polya propone para intentar resolverlos. Polya analiza a fondo la estructura del proceso de resolución de problemas. Aquí hablaremos...","categories": [],
+        "tags": ["polya","problemas","how_to_solve_it","heurística","heuristics"],
+        "url": "/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1551506016/photo-1551267881-f198ba4aba07_dfxmjj.jpg"}]

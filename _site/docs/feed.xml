@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-09-27T01:47:32-05:00</updated><id>/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Técnicas para resolver problemas</title><link href="/2019/09/27/tecnicas-para-resolver-problemas.html" rel="alternate" type="text/html" title="Técnicas para resolver problemas" /><published>2019-09-27T00:00:00-05:00</published><updated>2019-09-27T00:00:00-05:00</updated><id>/2019/09/27/tecnicas-para-resolver-problemas</id><content type="html" xml:base="/2019/09/27/tecnicas-para-resolver-problemas.html">&lt;p&gt;Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-03T08:23:46-05:00</updated><id>/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">El arte de resolver problemas: la heurística</title><link href="/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html" rel="alternate" type="text/html" title="El arte de resolver problemas: la heurística" /><published>2019-10-03T00:00:00-05:00</published><updated>2019-10-03T00:00:00-05:00</updated><id>/2019/10/03/el-arte-de-resolver-problemas-la-heuristica</id><content type="html" xml:base="/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html">&lt;blockquote&gt;
+  &lt;p&gt;La heurística habla del &lt;strong&gt;comportamiento humano&lt;/strong&gt; frente a los problemas. - George Polya&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;En un &lt;a href=&quot;/2019/09/27/tecnicas-para-resolver-problemas.html&quot;&gt;artículo anterior&lt;/a&gt; analizamos la estructura básica de un problema y la estructura de resolución que George Polya propone para intentar resolverlos.&lt;/p&gt;
+
+&lt;p&gt;Polya analiza a fondo la estructura del proceso de resolución de problemas. Aquí hablaremos de &lt;strong&gt;la heurística&lt;/strong&gt;, de la que escribió en &lt;a href=&quot;https://math.hawaii.edu/home/pdf/putnam/PolyaHowToSolveIt.pdf&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;“How to solve it”&lt;/strong&gt;&lt;/a&gt;, un compendio que pensó originalmente como un análisis de esta.&lt;/p&gt;
+
+&lt;h2 id=&quot;definición&quot;&gt;Definición&lt;/h2&gt;
+
+&lt;p&gt;La palabra heurística viene de una raíz griega que transmite la idea de &lt;strong&gt;descubrimiento o invención&lt;/strong&gt;. La heurística históricamente ha estado relacionada con &lt;strong&gt;estudiar los medios por los que se descubre o inventa algo&lt;/strong&gt;. Su campo de estudio abarca la lógica, la psicología y la filosofía, pero no se puede acotar a ninguna de las tres áreas.&lt;/p&gt;
+
+&lt;p&gt;Polya estudia y define la heurística moderna &lt;em&gt;el arte de resolver problemas&lt;/em&gt;, porque en eso consiste el proceso: descubrir una solución(en los problemas en los que hay que &lt;em&gt;encontrar algo&lt;/em&gt;) o inventar algo (en los problemas en los que hay que &lt;em&gt;crear una demostración&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;Podemos echar mano de lo que nos enseña al atacar problemas muy difíciles de los que no tenemos la mínima idea de cómo resolver o no podemos idear un plan confiable para resolverlos (recuerda que crear un plan es el punto medular de la resolución de un problema).&lt;/p&gt;
+
+&lt;h2 id=&quot;heurística-moderna&quot;&gt;Heurística moderna&lt;/h2&gt;
+
+&lt;p&gt;La heurística actualmente busca entender el proceso de resolución de problemas, pero particularmente las operaciones mentales relacionadas con ese proceso.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;La experiencia en la resolución de problemas u observar a otros resolver problemas debe ser la base de la heurística. - G. Polya&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Se busca encontrar patrones y propiedades comunes en una gran variedad de problemas, por lo que se puede decir que la heurística tiende a la generalidad, estudia procedimientos que son independientes del dominio del problema.
+Polya habla de múltiples métodos y procedimientos para avanzar en la resolución de un problema complicado.&lt;/p&gt;
+
+&lt;p&gt;Analicemos algunos de ellos:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Variación del problema&lt;/strong&gt;. ¿Puedo variar por lo menos temporalmente alguna de las partes del problema? ¿Puedo cambiar los datos, las condiciones o la solución?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Descomposición y recombinación&lt;/strong&gt;. Esta operación mental implica entender y separar las partes esenciales de un problema y tratar de re-crearlo con un nuevo entendimiento o crear un problema ligeramente diferente.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Regresar a las definiciones&lt;/strong&gt;. Comprender los términos usados en cada parte del problema a veces implicará que busquemos lo que algo significa desde sus raíces. Esto nos puede ayudar a entender mejor el problema así como a introducir elementos auxiliares que ayuden en la resolución.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Generalización, especialización y analogías&lt;/strong&gt;. Estas tres operaciones son una forma de variar un problema. ¿Puedo hacer el problema más amplio, para resolver un caso más general y después aplicar los resultados o el método a mi problema original? ¿Existe un problema similar al que estoy resolviendo que pueda resolver más fácilmente?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Notación adecuada&lt;/strong&gt;. Una vez entendido el problema, sobre todo para problemas matemáticos, es muy importante introducir notación que nos pueda ayudar a trabajar sobre el problema. Para los problemas matemáticos y en ciencias en general, ya existen estas notaciones estándar. Para nuestros problemas tenemos que inventar una que la mayoría de los implicados puede entender y usar.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Suponer, pero comprobar las suposiciones&lt;/strong&gt;. Para avanzar en la resolución de un problema muchas veces hay que dar cosas por supuesto, como en el caso de las comprobaciones por reducción al absurdo. Polya afirma que no está mal suponer cosas temporalmente mientras más adelante encontremos una forma de comprobar o rechazar esas suposiciones.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Trabajar en reversa&lt;/strong&gt;. Muchas veces sabemos &lt;em&gt;como luce&lt;/em&gt; la solución, o tenemos que comprobar que una solución supuesta es correcta. Trabajar en reversa significa avanzar de la solución hasta nuestro estado actual, trabajando paso por paso hasta poder encontrar la cadena de transformaciones necesarias para conectar esos estados.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Aspectos psicológicos: determinación, esperanza y éxito&lt;/strong&gt;. Al principio mencionamos que la heurística es también trataba con aspectos psicológicos. Polya afirma que sería un error considerar que los problemas son ejercicios puramente intelectuales. En el proceso de resolución influye mucho los sentimientos y emocionses. Los tres puntos mencionados aquí son muy importantes para la resolución de un problema. Primero, debemos &lt;em&gt;desear&lt;/em&gt; resolver el problema, esto es la determinación. Segundo, debemos creer que somos &lt;em&gt;capaces&lt;/em&gt; de resolver el problema y que este tiene solución. Y tercero, en lo relacionado con problemas intelectuales es muy difícil perseverar si no se experimenta una razonable dosis de éxito de vez en cuando. Para esto es necesario aplicar algunas de las técnicas mencionadas arriba.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Como puedes ver, la heurística es práctica. Además la heurística aplicada a la enseñanza y a la puede tener efectos positivos, ya que ayuda a las personas a aprender a pensar mejor.&lt;/p&gt;
+
+&lt;h2 id=&quot;razonamiento-heurístico&quot;&gt;Razonamiento Heurístico&lt;/h2&gt;
+
+&lt;p&gt;Aplicar las técnicas antes mencionadas tiene un efecto en la forma de resolver los problemas: en algunos de los pasos de la solución aceptamos soluciones supuestas, incompletas, relacionadas vagamente con el problema o parcialmente erróneas con tal de avanzar en la solución y el entendimiento del problema y de generar nuevas ideas/éxitos para mantener y aumentar la motivación.&lt;/p&gt;
+
+&lt;p&gt;Esto no quiere decir que la heurística acepte soluciones erróneas, estos pasos son temporales, y las soluciones finales deben ser comprobadas con el mayor rigor posible.&lt;/p&gt;
+
+&lt;h2 id=&quot;algoritmos-heurísticos&quot;&gt;Algoritmos heurísticos&lt;/h2&gt;
+
+&lt;p&gt;Ahora hablemos de aprovechar estas ideas para la programación, con una clase de algoritmos conocidos como algoritmos heurísticos.&lt;/p&gt;
+
+&lt;p&gt;Un algoritmo heurístico en vez de garantizar siempre la mejor solución en cada paso del programa, acepta soluciones parciales o suficientemente buenas. Este tipo de algoritmos funciona muy bien en casos donde hay demasiadas soluciones posibles como para probarlas todas (fuerza bruta) o muchas de ellas (como los algoritmos de &lt;em&gt;backtracking&lt;/em&gt;) y no hay ningún algoritmo establecido conocido que resuleva el problema  o se haya demostrado que esta solución es imposible.&lt;/p&gt;
+
+&lt;p&gt;La principal diferencia a tener en cuenta cuando hablamos o tratamos con este tipo de algoritmos es que &lt;strong&gt;no garantizan la respuesta correcta o la respuesta óptima&lt;/strong&gt;, aunque en algunos casos son la mejor forma de lograrlo. Fuera de la programación, la heurística nos ayuda a llegar a la respuesta correcta aceptando temporalmente soluciones intermedias no óptimas, semi-erróneas o incompletas, pero con soluciones finales &lt;em&gt;*que se pueden verificar como correctas rigurosamente&lt;/em&gt;. No es así con los algoritmos heurísticos en la programación, y he aquí por lo que el nombre puede confundirnos.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;La heurística es un campo de estudio valioso sobre todo para la vida moderna y para el desarrollo de software porque puede ayudarnos a estructurar nuestros esfuerzos en la resolución de los problemas que nos enfrentamos.&lt;/p&gt;
+
+&lt;p&gt;En el siguiente y último artículo de la serie analizaremos más técnicas usadas en la resolución de problemas de las que Polya habla en el libro “How to Solve It”.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problemas" /><category term="how_to_solve_it" /><category term="heurística" /><category term="heuristics" /><summary type="html">La heurística te ayudará a resolver mejor los problemas que se te presentan como programador. Veamosla más detenidamente.</summary></entry><entry><title type="html">Técnicas para resolver problemas</title><link href="/2019/09/27/tecnicas-para-resolver-problemas.html" rel="alternate" type="text/html" title="Técnicas para resolver problemas" /><published>2019-09-27T00:00:00-05:00</published><updated>2019-09-27T00:00:00-05:00</updated><id>/2019/09/27/tecnicas-para-resolver-problemas</id><content type="html" xml:base="/2019/09/27/tecnicas-para-resolver-problemas.html">&lt;p&gt;Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver.&lt;/p&gt;
 
 &lt;p&gt;George Polya fue uno de los matemáticos más prolíficos del Siglo XX, un matemático de primera clase (de esos que descubren e inventan cosas, y para algunos, &lt;strong&gt;el matemático más influyente del siglo&lt;/strong&gt;) pero que, a diferencia de muchos otros, mantenía un interés por la educación y la enseñanza de las matemáticas, algo muy peculiar.&lt;/p&gt;
 
@@ -1327,125 +1403,4 @@ Este estilo establece 6 características que se deben de cumplir para que un sis
   &lt;p&gt;Crear una API que permita crear listas de vocabularios. Un usuario se registra y puede crear tantos vocabularios como desee. Un vocabulario consiste de una lista de palabras ordenadas por tiempo de inserción y su definción, que puede ser tomada del diccionario (fija) o definida por el usuario. Además una palabra puede tener imágenes adjuntas.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Esta aplicación nos permitirá poner en práctica y aprender de todos los puntos antes mencionados y otros. No te pierdas el siguiente artículo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="apis" /><category term="rest" /><category term="soap" /><summary type="html">El primer artículo de la serie. ¿Por qué es importante diseñar de antemano tu API? Compararemos dos de los estilos más populares: SOAP vs REST</summary></entry><entry><title type="html">Las mejores fuentes tipográficas para programar</title><link href="/2019/04/19/fuentes-tipograficas-para-programar.html" rel="alternate" type="text/html" title="Las mejores fuentes tipográficas para programar" /><published>2019-04-19T00:00:00-05:00</published><updated>2019-04-19T00:00:00-05:00</updated><id>/2019/04/19/fuentes-tipograficas-para-programar</id><content type="html" xml:base="/2019/04/19/fuentes-tipograficas-para-programar.html">&lt;p&gt;Personalizar el entorno de programación se ha convertido en uno de los temas más relevantes para los desarrolladores de software, nos permite ser más productivos y estar más contentos en general con el trabajo día a día. No dudo que el lugar en el que más pasamos tiempo los desarrolladores sea el editor de texto o IDE, y, por lo tanto, aprender a personalizarlo es bastante importante. Uno de los aspectos más importantes del editor de texto es la fuente tipográfica.&lt;/p&gt;
-
-&lt;p&gt;En éste artículo presentaré las fuentes que me parecen más interesantes diseñadas para programar, además de otras que aunque no fueron diseñadas para los programadores exclusivamente, hacen un gran trabajo. Aunque parezca un tema superfluo, tener un entorno adaptado a nuestros gustos, tanto estética como funcionalmente, es increíblemente efectivo para ser más productivos. Pero antes de empezar unas notas acerca de la tipografía.&lt;/p&gt;
-
-&lt;h2 id=&quot;fuentes-tipográficas&quot;&gt;Fuentes tipográficas&lt;/h2&gt;
-
-&lt;p&gt;Las fuentes usadas usadas en entornos cotidianos, como este post, en los procesadores de texto, en la mayoría de los textos impresos, libros y revistas son fuentes &lt;em&gt;espaciadas proporcionalmente&lt;/em&gt;, las letras ocupan espacio horizontal proporcional a lo anchas que son naturalmente, así la &lt;strong&gt;i&lt;/strong&gt; y la &lt;strong&gt;m&lt;/strong&gt; ocupan diferente espacio horizontal:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;h2 id=&quot;iiiiiiiiii&quot;&gt;&lt;em&gt;iiiiiiiiii&lt;/em&gt;&lt;/h2&gt;
-  &lt;p&gt;&lt;em&gt;mmmmmmmmmm&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;¿Podrías decir que es el mismo número de letras? Son 10 de cada una.&lt;/p&gt;
-
-&lt;p&gt;Las fuentes espaciadas proporcionalmente facilitan la lectura o el escaneo de &lt;strong&gt;palabras enteras&lt;/strong&gt;, por lo que nos permiten leer más rápido. Sin embargo, tienen algunas desventajas: los los signos de puntuación, las letras delgadas y otros símbolos son fáciles de pasar por alto. &lt;strong&gt;Algo que no conviene en la programación&lt;/strong&gt;, como ya sabrás.&lt;/p&gt;
-
-&lt;p&gt;Por la razón anterior, y &lt;a href=&quot;http://stackoverflow.com/questions/218623/why-use-monospace-fonts-in-your-ide&quot;&gt;otras mencionadas en esta pregunta de Stack Overflow&lt;/a&gt;, los programadores estamos acostumbrados a usar fuentes &lt;em&gt;monoespaciadas&lt;/em&gt; o con &lt;em&gt;espaciado fijo&lt;/em&gt;. En este tipo de fuentes las letras ocupan el mismo espacio horizontal sin importar el ancho natural de la letra en cuestión, incluídos los signos de puntuación. Así se puede crear una “cuadrícula” de letras. Veamos otra vez el ejemplo de las letras &lt;strong&gt;i&lt;/strong&gt; y &lt;strong&gt;m&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  iiiiiiiiii
-  mmmmmmmmmm
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Ahora puedes afirmar que hay el mismo número de carácteres aunque no sepas exactamente cuántos. ¿Cómo ayuda esto a los programadores? Aquí un ejemplo:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;if !i, do: func()&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;language-elixir highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;!i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;¿En qué tipo de fuente es más legible la expresión anterior? Al dar un espaciado fijo a cada letra podemos distinguir mejor los dos caracteres que existen. Por ejemplo, en la fuente monoespaciada podemos ver claramente el símbolo de negación.&lt;/p&gt;
-
-&lt;p&gt;Después de entender esto sabemos porque muchas de las fuentes usadas para programar llevan en su nombre “Mono”, quiere decir que es una fuente monoespaciada. Ahora sólo un detalle más acerca de algunas fuentes: las ligaduras.&lt;/p&gt;
-
-&lt;h2 id=&quot;ligaduras&quot;&gt;Ligaduras&lt;/h2&gt;
-
-&lt;p&gt;Las ligaduras en las fuentes tipográficas suceden cuando el conjunto de caracteres se ha diseñado para que algunos conjuntos especiales de dos o tres caracteres puedan ser representados con un solo trazo o glifo. Lo normal era en letras como la &lt;strong&gt;f&lt;/strong&gt; y la &lt;strong&gt;i&lt;/strong&gt;, para que el espacio no quedara desproporcionado. Puedes leer más a detalle sobre las ligaduras tradicionales en este artículo: &lt;a href=&quot;http://www.tiposconcaracter.es/ligaduras/&quot;&gt;Ligaduras&lt;/a&gt;. Aquí hay unos ejemplos de las ligaduras tradicionales:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/0*kZ5QtY4t8GMhrtLl.jpg&quot; alt=&quot;Ligaduras tradicionales&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Ahora bien, las ligaduras se pueden usar para mostrar carácteres especiales más legibles y entendibles como en el caso de los conjuntos de caracteres: =&amp;gt;, !=, ==. Varias fuentes han aprovechado las ligaduras para poder llevar esto a la realidad. Lo triste de esto es que no todos los editores de texto, IDE’s y terminales los soportan. Algo que debe quedar claro que sólo cambia la &lt;em&gt;representación&lt;/em&gt; del texto, no los caracteres realmente escritos, por lo que no produce ningún problema con el código fuente.&lt;/p&gt;
-
-&lt;p&gt;Ahora sí, hablemos de algunas de las fuentes bonitas que podemos usar.&lt;/p&gt;
-
-&lt;h2 id=&quot;fira-code&quot;&gt;Fira Code&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/0*_wmY1HhArgNtf--1.jpg&quot; alt=&quot;Fira code&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Una fuente con ligaduras diseñada exclusivamente para programadores. Open Source y gratuita, la pueden encontrar en su &lt;a href=&quot;https://github.com/tonsky/FiraCode&quot;&gt;repositorio de Github&lt;/a&gt;. Es derivada de Fira Mono y añade las ligaduras. Aquí un ejemplo de cómo cambian los caracteres en ligadura, extraído del repo de Github:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2160/0*8Ud6Ss4VPLcR2nKi.png&quot; alt=&quot;Ligaduras de Fira Code&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Si le quieren dar una oportunidad la pueden probar con &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VS Code&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;monoid&quot;&gt;Monoid&lt;/h2&gt;
-
-&lt;p&gt;Fuente monoespaciada semicondensada, también con ligaduras. Esta fuente al ser más condensada que Fira Code, permite tener más texto (código) en la pantalla, sin perder demasiada legibilidad. En &lt;a href=&quot;https://medium.com/larsenwork-andreas-larsen/designing-a-coding-font-b10cabd594fc#.chvb73c3c&quot;&gt;Medium&lt;/a&gt; explica las decisiones de diseño que tomó a través de varios artículos.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/0*judcRlccKzjXz-8F.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;hasklig&quot;&gt;Hasklig&lt;/h2&gt;
-
-&lt;p&gt;Fuente diseñada por y para programadores de Haskell (aunque no limitada para ellos), debido al extenso uso que hace de los símbolos compuestos como =&amp;gt;, ==, &amp;gt;-, -«, ::, el creador decidió hacer un fork de la fuente Source Code Pro y añadirle ligaduras. Se puede descargar en su &lt;a href=&quot;https://github.com/i-tu/Hasklig&quot;&gt;repositorio de Github&lt;/a&gt;. 
- Aquí un ejemplo de cómo luce:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/0*J4JomQCofwrPbqAV.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Y aquí cómo se verían esos carácteres en &lt;a href=&quot;https://github.com/adobe-fonts/source-code-pro&quot;&gt;Source Code Pro&lt;/a&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/0*OOk-BjFh8OLHN19E.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;input&quot;&gt;Input&lt;/h3&gt;
-
-&lt;p&gt;Input es una familia de fuentes tipográficas específicamente diseñadas para programadores, con propuestas bastante interesantes: ofrece fuentes proporcionales, monoespaciadas, serif y sans-serif.&lt;/p&gt;
-
-&lt;p&gt;¿Fuentes proporcionales para el código? David Jonathan Ross, el diseñador, dice que las fuentes monoespaciadas ni siquiera llegan a tomar en cuenta el grosor de la fuente, por lo que a veces el resaltado de la sintaxis puede producir resultados extraños, debido a que su espacio horizontal se mantiene constante, así las letras anchas se aplastan y las mayúsculas parecen estiradas al lado de las minúsculas.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/0*aRObIWuheijDt52-.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Para resolver esto, su fuente proporcional intenta importar los atributos que hacen que una fuente monoespaciada sea atractiva: &lt;strong&gt;símbolos de puntución grandes, espaciado generoso y caractéres fáciles de reconocer individualmente&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/0*DRcoyMX3o-_lh5RH.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Una gran cualidad de esta fuente es que es completamente personalizable. Se pueden personalizar carácteres como &lt;strong&gt;i&lt;/strong&gt;, &lt;strong&gt;a&lt;/strong&gt;, &lt;strong&gt;l&lt;/strong&gt;, &lt;strong&gt;0&lt;/strong&gt; (cero) y también se puede escoger que tan condensada (espacio horizontal) está la fuente, este es muy valioso en el caso de tener una pantalla pequeña con líneas de código largas.&lt;/p&gt;
-
-&lt;p&gt;En su &lt;a href=&quot;http://input.fontbureau.com&quot;&gt;página oficial&lt;/a&gt; pueden encontrar una muestra, esto es un ejemplo de cómo puede llegar a verse:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/0*iuA1UTTDs1xqUjBY.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;El ejemplo anterior es con fuente monoespaciada, a mí me sigue gustando más.&lt;/p&gt;
-
-&lt;p&gt;En la &lt;a href=&quot;http://input.fontbureau.com/download/?customize&quot;&gt;página de personalización&lt;/a&gt; pueden descargarla completamente gratis para uso personal, en el caso de usarse en publicaciones y en web se tiene que pagar por ella.&lt;/p&gt;
-
-&lt;h3 id=&quot;operator-mono&quot;&gt;Operator Mono&lt;/h3&gt;
-
-&lt;p&gt;Esta fuente la vi usada en un tutorial &lt;a href=&quot;http://laracasts.com&quot;&gt;Laracasts&lt;/a&gt; y me enamoré de ella, es una fuente monoespaciada sans-serif, diseñada para progrmadores y diseñadores, que tiene una característica que la hace muy notable: el estilo itálico cambia completamente del normal, se vuelve una fuente más estilizada, simulando las letras manuscritas.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2046/0*Jf0p8R5uMnhStfHR.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Sus creadores pusieron &lt;a href=&quot;http://www.typography.com/blog/tag/Monospace&quot;&gt;especial énfasis en las llaves y los corchetes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Esta fuente no tiene ligaduras (aunque hay un proyecto que se las pone: &lt;a href=&quot;https://github.com/kiliman/operator-mono-lig&quot;&gt;aquí&lt;/a&gt;), no es Open Source y tiene un costo de $199 USD por los 10 estilos básicos. Se puede comprar en su &lt;a href=&quot;http://www.typography.com/fonts/operator/overview/&quot;&gt;sitio oficial&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Si el tema de resaltado de sintaxis que usas hace buen uso de las cursivas esta fuente luce absolutamente hermosa.&lt;/p&gt;
-
-&lt;h2 id=&quot;proggy-fonts&quot;&gt;Proggy Fonts&lt;/h2&gt;
-
-&lt;p&gt;Este sitio tiene varias fuentes de la familia Proggy, lucen con un toque retro pero se ven muy bien, sobre todo si te gusta el estilo de 8 bits.&lt;/p&gt;
-
-&lt;p&gt;Aquí un ejemplo:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn.proggyfonts.net/wp-content/uploads/2017/08/26195436/code_proggysquaresz.png&quot; alt=&quot;Ejemplo Proggy Square&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;En el sitio puedes encontrar otras fuentes exclusivas para progrmar, todas gratis.&lt;/p&gt;
-
-&lt;h2 id=&quot;bonus&quot;&gt;Bonus&lt;/h2&gt;
-
-&lt;p&gt;En &lt;a href=&quot;http://programmingfonts.org/&quot;&gt;Programming Fonts&lt;/a&gt; puedes encontrar más opciones si no te convenció ninguna de las que mostramos aquí. También puedes probar muchos &lt;a href=&quot;https://app.programmingfonts.org/&quot;&gt;estilos diferentes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;En &lt;a href=&quot;https://github.com/chrissimpkins/codeface&quot;&gt;este repo de Github&lt;/a&gt; puedes encontrar más ejemplos.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Nota: Este post es una actualización &lt;a href=&quot;https://medium.com/@HectorIP/fuentes-tipogr%C3%A1ficas-para-programadores-7d93c55f1223&quot;&gt;de otro&lt;/a&gt; que hice tiempo.&lt;/em&gt;&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="fuente" /><category term="editor" /><category term="ide" /><summary type="html">Las mejores fuentes para tu editor de código.</summary></entry></feed>
+&lt;p&gt;Esta aplicación nos permitirá poner en práctica y aprender de todos los puntos antes mencionados y otros. No te pierdas el siguiente artículo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="apis" /><category term="rest" /><category term="soap" /><summary type="html">El primer artículo de la serie. ¿Por qué es importante diseñar de antemano tu API? Compararemos dos de los estilos más populares: SOAP vs REST</summary></entry></feed>
