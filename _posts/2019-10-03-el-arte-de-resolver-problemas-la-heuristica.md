@@ -10,7 +10,6 @@ header:
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1551506016/photo-1551267881-f198ba4aba07_dfxmjj.jpg
   overlay_mask: rgba(0, 0, 0, 0.5)
 ---
-
 > La heurística habla del **comportamiento humano** frente a los problemas. - George Polya
 
 En un [artículo anterior](/2019/09/27/tecnicas-para-resolver-problemas.html) analizamos la estructura básica de un problema y la estructura de resolución que George Polya propone para intentar resolverlos.
@@ -21,7 +20,7 @@ Polya analiza a fondo la estructura del proceso de resolución de problemas. Aqu
 
 La palabra heurística viene de una raíz griega que transmite la idea de **descubrimiento o invención**. La heurística históricamente ha estado relacionada con **estudiar los medios por los que se descubre o inventa algo**. Su campo de estudio abarca la lógica, la psicología y la filosofía, pero no se puede acotar a ninguna de las tres áreas.
 
-Polya estudia y define la heurística moderna _el arte de resolver problemas_, porque en eso consiste el proceso: descubrir una solución(en los problemas en los que hay que _encontrar algo_) o inventar algo (en los problemas en los que hay que _crear una demostración_).
+Polya estudia y define la heurística moderna como _el arte de resolver problemas_, porque en eso consiste el proceso: descubrir una solución(en los problemas en los que hay que _encontrar algo_) o inventar algo (en los problemas en los que hay que _crear una demostración_).
 
 Podemos echar mano de lo que nos enseña al atacar problemas muy difíciles de los que no tenemos la mínima idea de cómo resolver o no podemos idear un plan confiable para resolverlos (recuerda que crear un plan es el punto medular de la resolución de un problema).
 
