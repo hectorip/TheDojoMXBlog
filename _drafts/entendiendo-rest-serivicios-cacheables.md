@@ -12,8 +12,7 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.6)
 ---
 
-
-La tercera característica de los sistemas **REST** es la capacidad de que su información es cacheable. Veamos lo que esto significa. De las demás hablamos por aquí:
+La tercera característica que Thomas R. Fielding establece para los sistemas **REST** es la capacidad de que su información sea cacheable. Veamos lo que esto significa. Empecemos por definir el cahché.
 
 ## Qué es _el caché_
 
@@ -23,11 +22,18 @@ La memoria caché de los procesadores tiene una gran desventaja: **es muy muy pe
 
 - ¿Qué guardo aquí para maximizar la eficacia de este espacio de almacenamiento?
 - ¿Cómo decido cuándo borrar o sobre-escribir la información que tengo aquí?
-- ¿Qué pasa si la información original cambia mientras estoy ocupando los datos guardados en la memoria caché?
+- ¿Qué pasa si la información original cambia mientras estoy ocupando los datos guardados en la memoria caché? A final de cuentas esta información es una copia.
 
 Hablaremos más adelante de estas preguntas en nuestro propio contexto, pero hay técnicas para poder contestar con cierta eficacia estas preguntas.
 
+Así que puedes pensar en el caché como en una memoria que es más rápida que la que normalmente se utiliza con el objetivo de hacer un sistema más rápido y a veces más eficiente.
+
+## Caché en los sistemas REST
+
+Esta característica se basa en las dos de las que ya hablamos: [servicios sin estado](/) y [arquitectura cliente-servidor](/).
 ## Ventajas del caché
+
+
 
 Permite responder más rápidamente.
 Menos procesamiento.
