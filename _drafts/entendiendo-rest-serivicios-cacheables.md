@@ -30,7 +30,7 @@ Así que puedes pensar en el caché como en una memoria que es más rápida que 
 
 ## Caché en los sistemas REST
 
-Esta característica se basa en las dos de las que ya hablamos: [servicios sin estado](/) y [arquitectura cliente-servidor](/).
+Esta característica se basa en las dos de las que ya hablamos: [servicios sin estado](/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor) y [arquitectura cliente-servidor](/).
 ## Ventajas del caché
 
 
