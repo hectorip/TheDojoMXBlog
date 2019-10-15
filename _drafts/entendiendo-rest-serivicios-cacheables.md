@@ -30,7 +30,7 @@ Así que puedes pensar en el caché como en una memoria que es más rápida que 
 
 ## Caché en los sistemas REST
 
-Esta característica se basa en las dos de las que ya hablamos: [servicios sin estado](/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor) y [arquitectura cliente-servidor](/).
+Esta característica se basa en las dos de las que ya hablamos: [servicios sin estado](/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor) y [arquitectura cliente-servidor](/). Lo que se define como "cacheabilidad" en los sistemas REST es la capacidad de estos sistemas para etiquetar de alguna forma las respuestas para que sistemas intermedios (muchas veces transparentes para los desarrolladores de las funcionalidades y para los usuarios).
 
 ## Ventajas del caché
 
@@ -38,10 +38,15 @@ El caché se establece como una de las características de REST porque proporcio
 
 ### Aumenta la percepción de velocidad
 
+Al guardar las respuestas que es más probable que vuelvan a salir, un sistema REST puede contestar una gran cantidad de sus peticiones a la velocidad que el caché lo permita, es decir, muy rápido generalmente.
 
 
-Menos procesamiento.
-Sistemas más escalables y resistentes.
+
+### Consumo de recursos reducido
+
+
+
+### Sistemas más fáciles de escalar
 
 ## Retos de cachear
 
