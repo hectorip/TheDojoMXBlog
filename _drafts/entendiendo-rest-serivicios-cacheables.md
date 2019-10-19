@@ -52,9 +52,11 @@ El uso caché se parece mucho a una técnica de programación llamada **dynamic 
 Toda solución tecnológica implica ventajas y desventajas. Entonces ¿qué desventajas o retos implica usar un sistema de caché?
 
 ### Frescura
-> There are only two hard things in Computer Science: cache invalidation and naming things - Phil Karlton
 
-### Tamaño total
+> Sólo hay dos cosas difíciles en Ciencias de Computación: invalidación de caché y nombrar cosas. - Phil Karlton
+
+El reto más grande e importante de tener un sistema de caché es lograr un equilibrio entre mantener la información el mayor tiempo posible y tener información correcta y actualizada.
+
 
 ## Conclusión
 
