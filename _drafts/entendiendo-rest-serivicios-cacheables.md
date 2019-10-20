@@ -12,25 +12,33 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.6)
 ---
 
-La tercera característica que Thomas R. Fielding establece para los sistemas **REST** es la capacidad de que su información sea cacheable. Veamos lo que esto significa. Empecemos por definir el cahché.
+La tercera característica que [Thomas R. Fielding](https://twitter.com/fielding) (Roy Fielding a partir de ahora) establece para los sistemas **REST** es la capacidad de que su información sea cacheable. Veamos lo que esto significa y por qué es una característica importante. Empecemos por definir el caché.
 
-## Qué es _el caché_
+## ¿Qué es _el caché_?
 
-Originalmente el caché se refiere a un tipo especial de memoria _muy rápida_ en los procesadores, que guarda temporalmente información que tiene gran probabilidad de volver a ser utilizada _dentro de poco tiempo_. Al evitar que el procesador volviera a consultar la RAM (muy lenta en comparación con la memoria caché), las operaciones se realizan a mucha mayor velocidad.
+Originalmente el caché se refiere a un tipo especial de memoria _muy rápida_ en los procesadores, que guarda _temporalmente_ información que tiene gran probabilidad de volver a ser utilizada _dentro de poco tiempo_ (en los procesadores hablamos de nano-segundos).
+
+Al evitar que el procesador vuelva a consultar la RAM (muy lenta en [comparación con la memoria caché](https://gist.github.com/jboner/2841832)), las operaciones se realizan a mucha mayor velocidad.
+
+![Latencia de diferentes tipos de memoria](https://i.imgur.com/k0t1e.png)
 
 La memoria caché de los procesadores tiene una gran desventaja: **es muy muy pequeña**. Esto presenta retos:
 
 - ¿Qué guardo aquí para maximizar la eficacia de este espacio de almacenamiento?
 - ¿Cómo decido cuándo borrar o sobre-escribir la información que tengo aquí?
-- ¿Qué pasa si la información original cambia mientras estoy ocupando los datos guardados en la memoria caché? A final de cuentas esta información es una copia.
+- ¿Qué pasa si la información original cambia mientras estoy ocupando los datos guardados en la memoria caché?
 
-Hablaremos más adelante de estas preguntas en nuestro propio contexto, pero hay técnicas para poder contestar con cierta eficacia estas preguntas.
+Hablaremos más adelante de estas preguntas en nuestro propio contexto, pero hay técnicas para poder contestar con cierta eficacia estas preguntas, que los [procesadores han logrado implementar](http://user.it.uu.se/~yi/pdf-files/2014/euc14.pdf).
 
-Así que puedes pensar en el caché como en una memoria que es más rápida que la que normalmente se utiliza con el objetivo de hacer un sistema más rápido y a veces más eficiente.
+Así que puedes pensar en el caché como en una memoria que es más rápida (aunque más limitada). Se utiliza con el objetivo de hacer un sistema más rápido y a veces más eficiente.
 
 ## Caché en los sistemas REST
 
-Esta característica se basa en las dos de las que ya hablamos: [servicios sin estado](/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor) y [arquitectura cliente-servidor](/). Lo que se define como "cacheabilidad" en los sistemas REST es la capacidad de estos sistemas para etiquetar de alguna forma las respuestas para que sistemas intermedios (muchas veces transparentes para los desarrolladores de las funcionalidades y para los usuarios).
+Esta característica se basa en las dos de las que ya hablamos: [servicios sin estado](/2019/08/03/entendiendo-rest-servidor-sin-estado.html) y [arquitectura cliente-servidor](/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html).
+
+Lo que se define como "cacheabilidad" en los sistemas REST es la capacidad de estos sistemas para _etiquetar_ de alguna forma las respuestas para que sistemas intermedios funcionen como un caché.
+
+Estos sistemas o mecanismos intermedios (entre el cliente y el servidor) deben ser por lo general transparentes para los desarrolladores, es decir no deben afectar la manera en que los servicios se consumen.
 
 
 ## Ventajas del caché
@@ -56,7 +64,6 @@ Toda solución tecnológica implica ventajas y desventajas. Entonces ¿qué desv
 > Sólo hay dos cosas difíciles en Ciencias de Computación: invalidación de caché y nombrar cosas. - Phil Karlton
 
 El reto más grande e importante de tener un sistema de caché es lograr un equilibrio entre mantener la información el mayor tiempo posible y tener información correcta y actualizada.
-
 
 ## Conclusión
 
