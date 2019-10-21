@@ -34,12 +34,17 @@ Así que puedes pensar en el caché como en una memoria que es más rápida (aun
 
 ## Caché en los sistemas REST
 
-Esta característica se basa en las dos de las que ya hablamos: [servicios sin estado](/2019/08/03/entendiendo-rest-servidor-sin-estado.html) y [arquitectura cliente-servidor](/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html).
+Esta característica se basa en las dos que ya hablamos: [servicios sin estado](/2019/08/03/entendiendo-rest-servidor-sin-estado.html) y [arquitectura cliente-servidor](/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html).
 
-Lo que se define como "cacheabilidad" en los sistemas REST es la capacidad de estos sistemas para _etiquetar_ de alguna forma las respuestas para que sistemas intermedios funcionen como un caché.
+Lo que se define como "cacheabilidad" en los sistemas REST es la capacidad de estos sistemas para _etiquetar_ de alguna forma las respuestas para que otros mecanismos intermedios funcionen como un caché. Así el sistema puede atender más peticiones, en menos tiempo, con menos recursos (comparado con un sistema sin caché).
 
-Estos sistemas o mecanismos intermedios (entre el cliente y el servidor) deben ser por lo general transparentes para los desarrolladores, es decir no deben afectar la manera en que los servicios se consumen.
+Estos sistemas o mecanismos intermedios (entre el cliente y el servidor)
+deben ser por lo general transparentes para los desarrolladores, no deben
+afectar la manera en que los servicios se consumen.
 
+En sistemas web que usan HTTP para comunicarse el sistema de "etiquetado" que permite que una respuesta sea cacheada son **las cabeceras**. Estas permiten a los diferentes actores en el proceso de comunicación (servidor local, proxy, proxy reverso, navegador o cliente final, entre otros), quién debería cachear la información y por cuánto tiempo o cómo decidir si deben renovar la información. Las cabeceras HTTP comúnmente usadas para esto son:
+
+- `Cache-control`
 
 ## Ventajas del caché
 
