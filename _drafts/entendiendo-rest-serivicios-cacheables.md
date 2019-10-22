@@ -44,7 +44,10 @@ afectar la manera en que los servicios se consumen.
 
 En sistemas web que usan HTTP para comunicarse el sistema de "etiquetado" que permite que una respuesta sea cacheada son **las cabeceras**. Estas permiten a los diferentes actores en el proceso de comunicación (servidor local, proxy, proxy reverso, navegador o cliente final, entre otros), quién debería cachear la información y por cuánto tiempo o cómo decidir si deben renovar la información. Las cabeceras HTTP comúnmente usadas para esto son:
 
-- `Cache-control`
+- `cache-control`
+- `modified-since`
+- `vary`
+- `another thing`
 
 ## Ventajas del caché
 
