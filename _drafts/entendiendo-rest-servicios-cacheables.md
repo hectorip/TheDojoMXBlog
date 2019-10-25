@@ -1,5 +1,5 @@
 ---
-title: "Entendiendo REST: Serivicios cacheables"
+title: "Entendiendo REST: Servicios cacheables"
 date: 2019-08-04
 author: Héctor Patricio
 tags:
@@ -47,8 +47,6 @@ En sistemas web que usan HTTP para comunicarse el sistema de "etiquetado" que pe
 - `cache-control`
 - `modified-since`
 - `vary`
-- `another thing`
-
 ## Ventajas del caché
 
 El caché se establece como una de las características de REST porque proporciona ventajas para el uso y la escalabilidad de los sistemas.
