@@ -1,4 +1,109 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-05T08:08:29-05:00</updated><id>/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">El arte de resolver problemas: la heurística</title><link href="/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html" rel="alternate" type="text/html" title="El arte de resolver problemas: la heurística" /><published>2019-10-03T00:00:00-05:00</published><updated>2019-10-03T00:00:00-05:00</updated><id>/2019/10/03/el-arte-de-resolver-problemas-la-heuristica</id><content type="html" xml:base="/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-27T00:32:10-05:00</updated><id>/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Entendiendo REST: Servicios cacheables</title><link href="/2019/10/27/entendiendo-rest-servicios-cacheables.html" rel="alternate" type="text/html" title="Entendiendo REST: Servicios cacheables" /><published>2019-10-27T00:00:00-05:00</published><updated>2019-10-27T00:00:00-05:00</updated><id>/2019/10/27/entendiendo-rest-servicios-cacheables</id><content type="html" xml:base="/2019/10/27/entendiendo-rest-servicios-cacheables.html">&lt;p&gt;La tercera característica que &lt;a href=&quot;https://twitter.com/fielding&quot;&gt;Thomas R. Fielding&lt;/a&gt; (Roy Fielding a partir de ahora) establece para los sistemas &lt;strong&gt;REST&lt;/strong&gt; es la capacidad de que su información sea cacheable. Veamos lo que esto significa y por qué es una característica importante. Empecemos por definir el caché.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-el-caché&quot;&gt;¿Qué es &lt;em&gt;el caché&lt;/em&gt;?&lt;/h2&gt;
+
+&lt;p&gt;Originalmente el caché se refiere a un tipo especial de memoria &lt;em&gt;muy rápida&lt;/em&gt; en los procesadores, que guarda &lt;em&gt;temporalmente&lt;/em&gt; información que tiene gran probabilidad de volver a ser utilizada &lt;em&gt;dentro de poco tiempo&lt;/em&gt; (en los procesadores hablamos de nano-segundos).&lt;/p&gt;
+
+&lt;p&gt;Al evitar que el procesador vuelva a consultar la RAM (muy lenta en &lt;a href=&quot;https://gist.github.com/jboner/2841832&quot;&gt;comparación con la memoria caché&lt;/a&gt;), las operaciones se realizan a mucha mayor velocidad.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/k0t1e.png&quot; alt=&quot;Latencia de diferentes tipos de memoria&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La memoria caché de los procesadores tiene una gran desventaja: &lt;strong&gt;es muy muy pequeña&lt;/strong&gt;. Esto presenta retos:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;¿Qué guardo aquí para maximizar la eficacia de este espacio de almacenamiento?&lt;/li&gt;
+  &lt;li&gt;¿Cómo decido cuándo borrar o sobre-escribir la información que tengo aquí?&lt;/li&gt;
+  &lt;li&gt;¿Qué pasa si la información original cambia mientras estoy ocupando los datos guardados en la memoria caché?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hablaremos más adelante de estas preguntas en nuestro propio contexto, pero hay técnicas para poder contestarlas con cierta eficacia, que los &lt;a href=&quot;http://user.it.uu.se/~yi/pdf-files/2014/euc14.pdf&quot;&gt;procesadores han logrado implementar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Así que puedes pensar en el caché como en una memoria que es más rápida (aunque más limitada). Se utiliza con el objetivo de hacer un sistema más rápido y a veces más eficiente.&lt;/p&gt;
+
+&lt;h2 id=&quot;caché-en-los-sistemas-rest&quot;&gt;Caché en los sistemas REST&lt;/h2&gt;
+
+&lt;p&gt;Esta característica se basa en las dos que ya hablamos: &lt;a href=&quot;/2019/08/03/entendiendo-rest-servidor-sin-estado.html&quot;&gt;servicios sin estado&lt;/a&gt; y &lt;a href=&quot;/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html&quot;&gt;arquitectura cliente-servidor&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Lo que se define como “cacheabilidad” en los sistemas REST es la capacidad
+de estos sistemas para &lt;em&gt;etiquetar&lt;/em&gt; de alguna forma las respuestas para que
+otros mecanismos intermedios funcionen como un caché.&lt;/p&gt;
+
+&lt;p&gt;Así el sistema puede atender más peticiones, en menos tiempo, con menos
+recursos (comparado con un sistema sin caché).&lt;/p&gt;
+
+&lt;p&gt;Estos sistemas o mecanismos intermedios (existen entre el cliente y el servidor) deben ser por lo general transparentes para los desarrolladores,
+no deben afectar la manera en que los servicios se consumen.&lt;/p&gt;
+
+&lt;p&gt;En sistemas web que usan &lt;strong&gt;HTTP&lt;/strong&gt; para comunicarse el sistema de “etiquetado” que permite que una respuesta sea cacheada son &lt;strong&gt;las cabeceras&lt;/strong&gt;. Estas permiten a los diferentes actores en el proceso de comunicación (servidor local, proxy, proxy reverso, navegador o cliente final, entre otros), saber quién debería cachear la información y por cuánto tiempo o cómo decidir si deben renovar la información. Las cabeceras HTTP comúnmente usadas para esto son:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt;: especifica hasta cuándo se puede considerar fresca o válida la información.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-control&lt;/code&gt;: Es usado para especificar directivas de caché que deben ser respetadas por todos lo puntos por los que pasa la información. Puedes ver los posibles valores y su especifacación aquí: &lt;a href=&quot;https://tools.ietf.org/html/rfc2616#section-14.9&quot;&gt;Cache-Control Header&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Vary&lt;/code&gt;: es usada para indicar qué otras cabeceras se deben tomar en cuenta para decidir si el servidor puede reutilizar una respuesta o no.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Etag&lt;/code&gt;: identifica a una respueste de manera única, puede usarse para pedir una respuesta nueva de un mismo endpoint, y en combinación con la cabecera &lt;code class=&quot;highlighter-rouge&quot;&gt;If-None-Match&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Existen otras cabeceras usadas para lograr un control correcto del caché como &lt;code class=&quot;highlighter-rouge&quot;&gt;If-Modified-Since&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;ventajas-del-caché&quot;&gt;Ventajas del caché&lt;/h2&gt;
+
+&lt;p&gt;El caché se establece como una de las características de REST porque proporciona ventajas para el uso y la escalabilidad de los sistemas. Veamos algunas de ellas.&lt;/p&gt;
+
+&lt;h3 id=&quot;aumenta-la-percepción-de-velocidad&quot;&gt;Aumenta la percepción de velocidad&lt;/h3&gt;
+
+&lt;p&gt;Al guardar las respuestas que es más probable que vuelvan a salir, un sistema REST puede contestar una gran cantidad de sus peticiones a la velocidad que el caché lo permita, es decir, muy rápido.&lt;/p&gt;
+
+&lt;h3 id=&quot;consumo-de-recursos-reducido&quot;&gt;Consumo de recursos reducido&lt;/h3&gt;
+
+&lt;p&gt;El uso caché se parece mucho a una técnica de programación llamada &lt;strong&gt;dynamic programming&lt;/strong&gt; que consiste en guardar temporalmente los resultados de operaciones costosas en tiempo. Esto permite que
+nos ahorremos el procesamiento de muchas respuestas que no se necesitan
+de nuevo porque están almacendas. Además se reduce el ancho de banda
+consumido porque muchas peticiones ni siquiera tienen que llegar al servidor.&lt;/p&gt;
+
+&lt;h3 id=&quot;sistemas-más-fáciles-de-escalar&quot;&gt;Sistemas más fáciles de escalar&lt;/h3&gt;
+
+&lt;p&gt;Los sistemas que usan caché son capaces de aguantar más peticiones
+simultáneas por la razón que vimos anteriormente: se reduce el consumo de recursos. Además, si se require crecer el sistema se deben poner menos recursos. Para algunos sistemas, el caché es lo único que tiene que crecer
+cuando se requiere atender a más usuarios simultáneos.&lt;/p&gt;
+
+&lt;h2 id=&quot;retos-de-cachear&quot;&gt;Retos de cachear&lt;/h2&gt;
+
+&lt;p&gt;Toda solución tecnológica implica ventajas y desventajas. Entonces ¿qué desventajas o retos implica usar un sistema de caché?&lt;/p&gt;
+
+&lt;h3 id=&quot;frescura&quot;&gt;Frescura&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sólo hay dos cosas difíciles en Ciencias de Computación: invalidación de caché y nombrar cosas. - Phil Karlton&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;El reto más grande e importante de tener un sistema de caché es lograr un
+equilibrio entre mantener la información el mayor tiempo posible y tener
+información correcta y actualizada. Si se almacena en caché por demasiado
+tiempo algo, esta información se vuelve vieja y por lo tanto puede estar desactualizada. Por el otro lado si se guarda por muy poco tiempo puede 
+llevar a que los sistemas de caché se sub-utilicen y provean pocos
+beneficios.&lt;/p&gt;
+
+&lt;h3 id=&quot;diseño-del-sistema&quot;&gt;Diseño del sistema&lt;/h3&gt;
+
+&lt;p&gt;Designar qué partes del sistema pueden ser cacheables y asignar los
+etiquetados de las respuestas correctamente puede aumentar la complejidad del sistema en general.&lt;/p&gt;
+
+&lt;h3 id=&quot;inconsistencia&quot;&gt;Inconsistencia&lt;/h3&gt;
+
+&lt;p&gt;El uso de caché puede llevar a inconsistencias de información entre diferentes clientes por periodos de tiempo de diferente duración. Esto es en parte consecuencia de la dificultad de mantener el caché fresco, pero además tiene que ver con la manera en que los clientes piden la información. &lt;strong&gt;Si tus clientes no pueden soportar la mínima variación en la información porque tendría consecuencias graves, es mejor no cachear.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;El caché es una parte olvidada de los sistemas REST, el constraint menos mencionado. Pero es importante que les permite funcionar mejor cuando tenemos bastante carga. Mantenerlo funcionando bien es un reto, pero los sistemas que quieren ser escalables y resistentes deben implementar alguna forma de cachear.&lt;/p&gt;
+
+&lt;p&gt;Roy Fielding menciona que es importante porque cualquier
+sistema expuesto a clientes desconocidos tiene el peligro de recibir una
+gran cantidad de carga súbitamente, y si tu servicio no está preparado o es
+fácil de escalar, fallarás.&lt;/p&gt;
+
+&lt;p&gt;Si quieres leer un artículo más completo con otras referencias sobre el caché en REST y en HTTP te recomiendo &lt;a href=&quot;https://odino.org/rest-better-http-cache/&quot;&gt;REST better: HTTP Cache&lt;/a&gt;, en inglés.&lt;/p&gt;
+
+&lt;p&gt;En el siguiente artículo veremos la cuarta restricción de los sistemas REST: la interfaz uniforme, la más amplia de las restricciones, pero una de las más útiles.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo.</summary></entry><entry><title type="html">El arte de resolver problemas: la heurística</title><link href="/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html" rel="alternate" type="text/html" title="El arte de resolver problemas: la heurística" /><published>2019-10-03T00:00:00-05:00</published><updated>2019-10-03T00:00:00-05:00</updated><id>/2019/10/03/el-arte-de-resolver-problemas-la-heuristica</id><content type="html" xml:base="/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html">&lt;blockquote&gt;
   &lt;p&gt;La heurística habla del &lt;strong&gt;comportamiento humano&lt;/strong&gt; frente a los problemas. - George Polya&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -1295,112 +1400,4 @@ La principal herramienta para desarrollo en Elixir es &lt;a href=&quot;https://e
 
 &lt;p&gt;Conviene aprender Elixir por muchas razones. Te divertirás creando programas en él. En este blog vamos a ir compartiendo artículos para que puedas aprender más de él.&lt;/p&gt;
 
-&lt;p&gt;No dudes en comentarnos tus dudas y podemos compartir nuestras experiencias.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="elixir" /><category term="fp" /><category term="programación-funcional" /><summary type="html">Elixir es un lenguaje que recientemente ha estado haciendo ruido. Aquí te contamos algunas cosas de él para que te animes a aprenderlo.</summary></entry><entry><title type="html">Diseño y desarrollo de una API RESTful desde cero - La importancia de diseñar tu API</title><link href="/2019/05/06/diseno-y-desarrollo-de-una-api-desde-cero.html" rel="alternate" type="text/html" title="Diseño y desarrollo de una API RESTful desde cero - La importancia de diseñar tu API" /><published>2019-05-06T00:00:00-05:00</published><updated>2019-05-06T00:00:00-05:00</updated><id>/2019/05/06/diseno-y-desarrollo-de-una-api-desde-cero</id><content type="html" xml:base="/2019/05/06/diseno-y-desarrollo-de-una-api-desde-cero.html">&lt;p&gt;En este post explicaré &lt;strong&gt;los principios básicos de diseño de una API&lt;/strong&gt;. Esta primera parte es bastante teórica, empezaremos con la práctica (no con la programación, sino con el diseño) en un post posterior.&lt;/p&gt;
-
-&lt;p&gt;Primero hablemos de la importancia del diseño o la arquitectura de la API. En la serie de posts hablaremos de API’s para consumo web, a través de HTTP, ya que son las de mayor uso y popularidad.&lt;/p&gt;
-
-&lt;h2 id=&quot;la-importancia-de-diseñar-tu-api&quot;&gt;La importancia de diseñar tu API&lt;/h2&gt;
-
-&lt;p&gt;Aunque parezca una tarea aburrida, innecesaria o burocrática, elegir un estilo de diseño de API’s te servirá de las siguientes maneras:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Mayor facilidad de desarrollo&lt;/strong&gt;. Tener una forma de nombrar los endpoints (los links con los que los sistemas externos interactúan), una estrucutra de respuesta, un estándar de errores y otras cuestiones definidas de antemano te permitirá pasar directo al diseño e implementación de las funcionalidades cuando llegue el momento. Si escoges usar una estructura de diseño común y popular puede que incluso haya herramientas que te faciliten la tarea. Nuestra API estará preparada para ser mantenible y escalable.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Familiariadad&lt;/strong&gt;. Si sigues un patrón de diseño común, cuando otros desarrolladores usen tu API la entenderán más fácil y podrán comenzar a sacarle provecho más rápido.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Menos documentación&lt;/strong&gt;. Aprovechando lo anterior, puede que gran parte de la estructura y prácticas comunes del patrón que escogiste ya estén documentadas, por lo que normalmente tendrás que documentar sólamente las partes que son especeificas de tu API.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;El trabajo extra que pongas en diseñar tu API o por lo menos escoger un patrón de diseño común te ahorrará trabajo en el futuro, a tu equipo y a otros desarrolladores.&lt;/p&gt;
-
-&lt;p&gt;Dependiendo de la época y las necesidades han surgido varios estilos o patrones de diseño comunes. Aquí hablaremos de dos de los más usados a lo largo del tiempo y de los más populares.&lt;/p&gt;
-
-&lt;h2 id=&quot;soap-simple-object-access-protocol&quot;&gt;SOAP (Simple Object Access Protocol)&lt;/h2&gt;
-
-&lt;p&gt;Este es el estilo de servicios más usado en el mundo empresarial. En realidad es un protocolo que establece desde la manera de comunicación hasta el lenguaje usado para transferir datos, entre otras cosas.
-Su nombre es un acrónimo que signfica &lt;em&gt;Simple Object Access Protocol (Protocolo simple de acceso a objetos)&lt;/em&gt; y fue desarrollado por Microsoft inicialmente. El lenguaje que se usa para transferir datos es &lt;a href=&quot;https://www.w3schools.com/xml/xml_whatis.asp&quot;&gt;XML&lt;/a&gt; y tiene varios estándares que definen cada aspecto de la comunicación, por lo que no se queda en sólo un estilo de diseño de API’s. Su objetivo original era definir cómo acceder y usar servicios web.&lt;/p&gt;
-
-&lt;p&gt;Una de las partes más fuertes del protocolo es la manera en que establece un contrato con el cliente acerca de la forma de usar los serivicios que expone. El archivo &lt;a href=&quot;https://www.w3.org/TR/2001/NOTE-wsdl-20010315&quot;&gt;WSDL&lt;/a&gt; contiene la descripción de los serivcios expuestos en un lenguaje exclusivamente creado para eso, el &lt;em&gt;Web Service Description Language&lt;/em&gt;, que se vale de XML. En este archivo define los servicios que la API provee, mediante la definición de una colección de endpoints, mensajes y tipos de datos. Este documento permite automatizar la creación de clientes mediante código.&lt;/p&gt;
-
-&lt;h3 id=&quot;ventajas-de-soap&quot;&gt;Ventajas de SOAP&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Pensado para transacciones complejas&lt;/strong&gt;. Una parte de SOAP está pensada para usarse con &lt;strong&gt;transacciones&lt;/strong&gt;. Si lo que requieres es que tu API realice transacciones &lt;a href=&quot;https://en.wikipedia.org/wiki/ACID_(computer_science)&quot;&gt;ACID&lt;/a&gt;, trabajar con SOAP te facilitará la vida.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Establece cada parte de la comunicación&lt;/strong&gt;. Esto puede ser una ventaja o una desventaja, pero si estás con una tecnología que lo permite y aprovecha, trabajar con SOAP puede ser rápido y sin dolor, ya que los estándares estarán implementados en la platafoma/lenguaje y las herramientas de programación pueden aprovecharse de los estándares para facilitarte la vida.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Interfaz definida&lt;/strong&gt;. Mediante el documento WSDL, SOAP permite la lectura de la interfaz (los endpoints), los tipos de datos y sus mensajes, así como las acciones que se pueden realizar de manera automatizada, lo que hace sencillo entender y consumir la API, incluso de manera automatizada mediante una herramienta que cree el cliente automáticamente o un paquete de tu lenguaje que te facilite la vida.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;desventajas-de-soap&quot;&gt;Desventajas de SOAP.&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;XML&lt;/strong&gt;. Parsear y procesar XML es en geneal más difícil y requiere más pasos que hacer con otros lenguajes de transmisión de datos usados con otros estilos de API’s, pero esta deventaja sólo aplica si tu lenguaje y herramientas de desarrollo no soportan completamente los protocolos establecidos por SOAP. Así que la experiencia que tengas con SOAP depende en gran medida de las cosas implementadas por los lenguajes y herramientas en que programarás en el lenguaje (por ejmplo, los IDE’s para C# y Java soportan recibir el WSDL para automatizar gran parte del proceso de crear un cliente)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Velocidad&lt;/strong&gt;. Al ser un protocolo más complejo, aumenta la cantidad de procesamiento y transferencia de datos requerido para funcionar, lo que lo hace más lento que otras alternativas. Además, no es fácilmente cacheable, por lo que cada respuesta tiene que ser única y por lo tanto requiere mayores recursos.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;conclusión-acerca-de-soap&quot;&gt;Conclusión acerca de SOAP&lt;/h3&gt;
-
-&lt;p&gt;Muchos desarrolladores, sobre todo con poca experiencia, se escandalizan cuando tienen que trabajar en un API SOAP, sobre todo las generaciones recientes, y sí es un problema cuando tus herramientas no hacen fácil trabajar con este tipo de API’s (como con cualquier otro tipo de desarrollo, tecnología o protocolo). Sin embargo, sus características las hacen ideales para API’s transaccionales, por lo que es conveniente escorger este tipo de API’s en los casos adecuados. Además, puedes beneficiarte de su forma de establecer la interfaz de manera clara y estricta. &lt;strong&gt;Cada herramienta fue creada con un propósito y tiene sus usos adecuados.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;apis-restful&quot;&gt;API’s RESTful&lt;/h2&gt;
-
-&lt;p&gt;Una API REST aprovecha el diseño de las peticiones HTTP para crear servicios web con interfaces intuitivas.
-REST son las siglas de “Representational State Transfer” (Transferencia de Estado Representacional), que es un estilo de arquitectura de sistemas distribuidos (podemos pensar en la web como un sistema distribuido). 
-Este estilo establece 6 características que se deben de cumplir para que un sistema sea considerado RESTful:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Arquitectura cliente-servidor. Existe un programa encargado de hacer peticiones (cliente) y uno encargado de responderlas (servidor).&lt;/li&gt;
-  &lt;li&gt;Interfaz uniforme. Todos los clientes deberían acceder a la misma interfaz. Si el servidor cumple con la interfaz, puede haber un número ilimitado de clientes independientes que cambian sin dependencias entre ellos o con la implementación del servidor. &lt;em&gt;Esta es una de las razones principales por las que las API’s REST son tan usadas actualmente.&lt;/em&gt; Este punto lo trataremos más a profundidad en el siguiente artículo. Pero para cumplir esto mencionemos brevemente qué principios debe seguir esta interfaz para que cumpla con este propósito:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Basada en &lt;em&gt;recursos&lt;/em&gt;&lt;/strong&gt;. Las URL’s de los endpoints hacen referencia a &lt;em&gt;recursos&lt;/em&gt;, es decir, a elementos de datos que pueden ser representados como objetos con un tipo, datos asociados, relaciones con otros objetos y las operaciones que se pueden realizar sobre él.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Manipulación de recursos mediante &lt;em&gt;representaciones&lt;/em&gt;&lt;/strong&gt;. La API no devuelve nunca el recurso original al cliente que lo solicita o solicita una operación sobre él, sino que lo hace a través de alguna &lt;em&gt;representación&lt;/em&gt; de este recurso. Una representación es un subconjunto de los datos de recurso transmitido en un lenguaje adecuado: HTML, XML, JSON, MessagePack, etc.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Mensajes autodescriptivos&lt;/strong&gt;. Cada mensaje tiene suficiente información en sí mismo para ser procesado.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;HATEOAS&lt;/strong&gt;. Estas son las siglas de &lt;strong&gt;Hypermedia As The Engine Of Applicaton State&lt;/strong&gt; (Hypermedia como el motor del estado de la aplicación). La palabra &lt;a href=&quot;https://smartbear.com/learn/api-design/what-is-hypermedia/&quot;&gt;hypermedia&lt;/a&gt; se refiere a un formato de texto (o hypertexto) que contiene links hacia otros documentos, imágenes, video y audio. Es una forma de mostrar las relaciones que existen conceptualmente en una red de información, incluyendo formatos más allá del texto. Por lo tanto, este punto se refiere a que la API debería ser navegable con la información expuesta en cada respuesta, las relaciones con otros recursos, los links a otros documentos y achivos. &lt;a href=&quot;https://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven&quot;&gt;El autor&lt;/a&gt; de la deficinición de API’s REST hace enfásis en que no está casada con ningúna forma de transporte o protocolo de comunicación, pero su implementación bien puede depender de que el protocolo de comunicación tenga las características básicas como el usar URI’s para identificación. Todo el estado de la aplicación necesaria para funcionar será transmitido a partir de hypermedia. En el caso del HTTP, se usan las URL’s con su cadena da consulta (query string), las cabeceras y los cuerpos de petición y respuesta para mantener este estado.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Sistema sin estado. Las conexiones entre los sistemas (cliente y servidor) no deberían dependender de un estado creado o mantenido a través de peticiones anteiores. Todo lo necesario para generar una respuesta se encuentra en la petición actual.&lt;/li&gt;
-  &lt;li&gt;Cacheable. Las respuestas pueden ser guardadas para ser contestadas más rápidamente por el mismo servidor o por un sistema intermedio.&lt;/li&gt;
-  &lt;li&gt;Sistema en capas. El sistema puede estar construido por varias capas de servicio y esto debe ser transparente para los clientes (no tienen que modificar sus llamadas).&lt;/li&gt;
-  &lt;li&gt;Código bajo demanda. El servidor debe ser capaz de envíar código a cliente para que sea ejecutado.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;ventajas-de-rest&quot;&gt;Ventajas de REST&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Flexibilidad&lt;/strong&gt;. REST no define el lenguaje de transferencia de datos, el tipo de autenticación y otros detalles de la comunicación que se dejan a discreción de los implementadores. En la actualidad, la mayoría de las API’s REST usan JSON como lenguaje de transeferencia, pero bien podrían usar XML o MessagePack, incluso un lenguaje propietario.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Popularidad&lt;/strong&gt;. La extensión de uso de API’s RESTful ha hecho que proliferen herramientas para construirlas, probarlas y ponerlas en producción, por le que es muy sencillo desarrollarlas, aunque no deja de presentar retos.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Escalabilidad&lt;/strong&gt;. Esta es una de las razones por las que las API rest se han vuelto tan populares. Incrementar la cantidad de usuarios que se pueden atender con una API RESTful es más sencillo que son SOAP debido a la cacheabilidad y a que las conexiones sin estado permiten escalamiento horizontal (replicación de servidores) y por lo tanto los costos se abaratan. La mayoría de las API’s grandes conocidas siguen este estilo.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;desventajas-de-rest&quot;&gt;Desventajas de REST&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Flexibilidad&lt;/strong&gt;. La flexibilidad es un don y maldición. Cuando a las personas se les permite hacer lo que sea, harán hasta lo inimaginable, por lo que se pueden encontrar implementaciones horribles y sin una guía definida nuestra propia API puede quedar hecha un asco.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Transacciones&lt;/strong&gt;. REST no establece una manera de manejar operaciones transaccionales, por lo que la implementación queda completamente del lado del diseño. Hay que tener en cuenta el manejo del estado, replicación de servidores, consistencia y &lt;a href=&quot;https://es.wikipedia.org/wiki/Condici%C3%B3n_de_carrera&quot;&gt;condiciones de carrera&lt;/a&gt;. Esto no hace sencillo trabajar con transacciones en API’s REST.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Seguridad&lt;/strong&gt;. No estamos diciendo que REST sea más inseguro que SOAP, sino REST no establece los medios de protección de interacciones e información, por lo que queda completamente como decisión de los desarrolladores y arquitectos del sistema. Sin una implementación adecuada tu API quedará vulnerable.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;otros-estilos&quot;&gt;Otros estilos&lt;/h2&gt;
-
-&lt;p&gt;Han surgido nuevas maneras de consumir y diseñar API’s como &lt;a href=&quot;https://graphql.org/learn/&quot;&gt;GraphQL&lt;/a&gt; y &lt;a href=&quot;https://grpc.io/&quot;&gt;gRPC&lt;/a&gt;, pero cada una merece su propio artículo.&lt;/p&gt;
-
-&lt;h2 id=&quot;nuestra-api&quot;&gt;Nuestra API&lt;/h2&gt;
-
-&lt;p&gt;Para crear nuestra API elegiremos el estilo RESTful, por su popularidad y porque lo que aprendamos tendrá aplicaciones útiles inmeditas y en el futuro.&lt;/p&gt;
-
-&lt;p&gt;En el camino aprenderemos:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Cómo dieseñar una API RESTful&lt;/li&gt;
-  &lt;li&gt;Buenas prácticas de transferencia de datos y de estado&lt;/li&gt;
-  &lt;li&gt;Cómo comunicar errores&lt;/li&gt;
-  &lt;li&gt;Crear una estructura de mensajes intuitiva&lt;/li&gt;
-  &lt;li&gt;Versionamiento de nuestra API&lt;/li&gt;
-  &lt;li&gt;Nombrado de los endpoints&lt;/li&gt;
-  &lt;li&gt;Seguridad&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;El ejercicio será el siguiente:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Crear una API que permita crear listas de vocabularios. Un usuario se registra y puede crear tantos vocabularios como desee. Un vocabulario consiste de una lista de palabras ordenadas por tiempo de inserción y su definción, que puede ser tomada del diccionario (fija) o definida por el usuario. Además una palabra puede tener imágenes adjuntas.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Esta aplicación nos permitirá poner en práctica y aprender de todos los puntos antes mencionados y otros. No te pierdas el siguiente artículo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="apis" /><category term="rest" /><category term="soap" /><summary type="html">El primer artículo de la serie. ¿Por qué es importante diseñar de antemano tu API? Compararemos dos de los estilos más populares: SOAP vs REST</summary></entry></feed>
+&lt;p&gt;No dudes en comentarnos tus dudas y podemos compartir nuestras experiencias.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="elixir" /><category term="fp" /><category term="programación-funcional" /><summary type="html">Elixir es un lenguaje que recientemente ha estado haciendo ruido. Aquí te contamos algunas cosas de él para que te animes a aprenderlo.</summary></entry></feed>

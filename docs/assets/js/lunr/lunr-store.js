@@ -103,4 +103,9 @@ var store = [{
         "excerpt":"La heurística habla del comportamiento humano frente a los problemas. - George Polya En un artículo anterior analizamos la estructura básica de un problema y la estructura de resolución que George Polya propone para intentar resolverlos. Polya analiza a fondo la estructura del proceso de resolución de problemas. Aquí hablaremos...","categories": [],
         "tags": ["polya","problemas","how_to_solve_it","heurística","heuristics"],
         "url": "/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1551506016/photo-1551267881-f198ba4aba07_dfxmjj.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1551506016/photo-1551267881-f198ba4aba07_dfxmjj.jpg"},{
+        "title": "Entendiendo REST: Servicios cacheables",
+        "excerpt":"La tercera característica que Thomas R. Fielding (Roy Fielding a partir de ahora) establece para los sistemas REST es la capacidad de que su información sea cacheable. Veamos lo que esto significa y por qué es una característica importante. Empecemos por definir el caché. ¿Qué es el caché? Originalmente el...","categories": [],
+        "tags": [],
+        "url": "/2019/10/27/entendiendo-rest-servicios-cacheables.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1570679826/laura-ockel-nIEHqGSymRU-unsplash_gsspla.jpg"}]
