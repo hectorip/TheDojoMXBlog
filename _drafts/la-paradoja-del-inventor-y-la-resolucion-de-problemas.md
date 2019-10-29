@@ -37,6 +37,7 @@ Lo difícil de la inducción es encontrar qué principios, teoremas o formas
 de resolución de problemas aplican para el problema que tenemos que resolver. Para esto nos pueden ayudar las técnicas platicadas en los artículos anteriores: ¿He resuelto un problema similar? ¿Qué técnica fue usada? ¿Qué principios sirvieron para la resolución de ese problema?
 
 ### Deducción
+
 Específico -> General
 La deducción es uno de los mecanismos de resolución de problemas más difíciles de llevar a la práctica.
 
@@ -46,8 +47,9 @@ Polya usa las descripciones de los antiguos Griegos para explicar las dos fases 
 
 ### Análisis
 Resultados -> Estado actual
-El proceso que Polya llama análisis.
+El proceso que Polya llama análisis se refiere a la descomposición del problema y a la generación de los planes.
 
 ### Síntesis
 
 Estado actual -> Resultados
+Este paso consiste en llevar a cabo los pasos que se encontraron durante la etapa de análisis.
