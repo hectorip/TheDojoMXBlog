@@ -31,7 +31,8 @@ General -> Específico
 Tratar de resolver problemas por inducción significa aplicar principios o
 conocimiento general a un caso específico. Por ejemplo para un problema
 práctico en el que tenemos encontrar la longitud de un cable tensor para una
-antena, sabemos que podemos aplicar el teorema de Pitágoras.
+antena, sabemos que podemos aplicar el teorema de
+Pitágoras.
 
 Lo difícil de la inducción es encontrar qué principios, teoremas o formas 
 de resolución de problemas aplican para el problema que tenemos que resolver. Para esto nos pueden ayudar las técnicas platicadas en los artículos anteriores: ¿He resuelto un problema similar? ¿Qué técnica fue usada? ¿Qué principios sirvieron para la resolución de ese problema?
@@ -52,4 +53,9 @@ El proceso que Polya llama análisis se refiere a la descomposición del problem
 ### Síntesis
 
 Estado actual -> Resultados
-Este paso consiste en llevar a cabo los pasos que se encontraron durante la etapa de análisis.
+Este paso consiste en llevar a cabo los pasos que se encontraron durante la etapa de análisis. Implica transformar nuestros datos actuales, paso a paso hasta llevarlos al resultado deseado, de acuerdo con las transformaciones que descubrimos que eran necesarias en la etapa de análisis.
+
+
+## Conclusión
+
+Si quieres mejorar tus habilidades para resolver problemas "How To Solve It" de George E. Polya es un gran recurso, que por medio de la repetición, detallado y profundización en los temas enseña.
