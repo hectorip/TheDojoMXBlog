@@ -39,7 +39,6 @@ de resolución de problemas aplican para el problema que tenemos que resolver. P
 
 ### Deducción
 
-Específico -> General
 La deducción es uno de los mecanismos de resolución de problemas más difíciles de llevar a la práctica.
 
 ## Análisis y síntesis
@@ -47,7 +46,7 @@ La deducción es uno de los mecanismos de resolución de problemas más difícil
 Polya usa las descripciones de los antiguos Griegos para explicar las dos fases de las que puede consistir la resolución de un problema. Hablemos primero de la forma en que "encontramos" la solución.
 
 ### Análisis
-Resultados -> Estado actual
+
 El proceso que Polya llama análisis se refiere a la descomposición del problema y a la generación de los planes.
 
 ### Síntesis
@@ -59,3 +58,5 @@ Este paso consiste en llevar a cabo los pasos que se encontraron durante la etap
 ## Conclusión
 
 Si quieres mejorar tus habilidades para resolver problemas "How To Solve It" de George E. Polya es un gran recurso, que por medio de la repetición, detallado y profundización en los temas enseña.
+
+Lee Polya
