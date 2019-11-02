@@ -40,6 +40,7 @@ de resolución de problemas aplican para el problema que tenemos que resolver. P
 ### Deducción
 
 La deducción es uno de los mecanismos de resolución de problemas más difíciles de llevar a la práctica.
+Consiste en a partir de observaciones específicas.
 
 ## Análisis y síntesis
 
@@ -58,5 +59,3 @@ Este paso consiste en llevar a cabo los pasos que se encontraron durante la etap
 ## Conclusión
 
 Si quieres mejorar tus habilidades para resolver problemas "How To Solve It" de George E. Polya es un gran recurso, que por medio de la repetición, detallado y profundización en los temas enseña.
-
-Lee Polya
