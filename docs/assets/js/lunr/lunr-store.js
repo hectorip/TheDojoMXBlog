@@ -108,4 +108,9 @@ var store = [{
         "excerpt":"La tercera característica que Thomas R. Fielding (Roy Fielding a partir de ahora) establece para los sistemas REST es la capacidad de que su información sea cacheable. Veamos lo que esto significa y por qué es una característica importante. Empecemos por definir el caché. ¿Qué es el caché? Originalmente el...","categories": [],
         "tags": [],
         "url": "/2019/10/27/entendiendo-rest-servicios-cacheables.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1570679826/laura-ockel-nIEHqGSymRU-unsplash_gsspla.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1570679826/laura-ockel-nIEHqGSymRU-unsplash_gsspla.jpg"},{
+        "title": "Criptografía básica para programadores: ¿Qué es la criptografía?",
+        "excerpt":"Es muy común escuchar de “encriptación” (la palabra correcta en español es cifrado), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain. Uno de los temas menos tratados por programadores de software común (para usuarios y sistemas que no impliquen el uso de seguridad...","categories": [],
+        "tags": ["criptografía","esteganografía","seguridad"],
+        "url": "/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1573540452/jacob-campbell-ri83DTadRto-unsplash_fb7xgx.jpg"}]
