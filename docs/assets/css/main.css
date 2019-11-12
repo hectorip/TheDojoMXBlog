@@ -1732,6 +1732,7 @@ article.page { font-family: 'Source Sans Pro', sans-serif; font-weight: 300; }
 @media (max-width: 640px) { .grid__item .archive__item-excerpt { display: block; }
   .archive__item-teaser { max-height: 267px; }
   .grid__item { margin-top: 10px; }
-  .grid__item .archive__item-title { font-size: 1.3em; } }
+  .grid__item .archive__item-title { font-size: 1.3em; }
+  article.page { font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-size: 1.3em; } }
 
 /*# sourceMappingURL=main.css.map */
