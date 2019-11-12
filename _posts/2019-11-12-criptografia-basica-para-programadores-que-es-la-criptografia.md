@@ -1,9 +1,8 @@
 ---
 title: "Criptografía básica para programadores: ¿Qué es la criptografía?"
-date: 2019-11-01
+date: 2019-11-12
 author: Héctor Patricio
-tags:
-categories: 
+tags: criptografía esteganografía seguridad
 comments: true
 excerpt: "Aprende las bases de la criptografía para tenerla en cuenta en tus programas."
 header:
