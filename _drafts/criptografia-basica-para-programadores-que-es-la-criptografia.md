@@ -12,9 +12,9 @@ header:
 
 Es muy común escuchar de "encriptación" (la palabra correcta en español es _cifrado_), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain.
 
-Uno de los temas menos tratados programadores de software común (para usuarios y sistemas que no impliquen el uso de seguridad a medida), es el correcto uso de los algoritmos criptográficos y muchas veces ni siquiera conocemos lo suficiente de ellos, sino que confiamos en lo que las herramientas pre-establecen (que gran parte de las veces fue diseñado po expertos y está bien).
+Uno de los temas menos tratados por programadores de software común (para usuarios y sistemas que no impliquen el uso de seguridad a medida), es el correcto uso de los algoritmos criptográficos y muchas veces ni siquiera conocemos lo suficiente de ellos, sino que confiamos en lo que las herramientas pre-establecen (que gran parte de las veces fue diseñado por expertos y eso está bien).
 
-Pero un poco de conocimiento sobre criptografía no te hará daño sobre todo si programas sistemas que necesiten seguridad y sí puede evitarte errores fatales.
+Pero un poco de conocimiento sobre criptografía no te hará daño, sobre todo si programas sistemas que necesiten seguridad (todos), y sí puede evitarte errores fatales.
 
 Esta serie de artículos tratará de todo lo que un programador debe saber acerca de la aplicación correcta de algoritmos criptográficos a sus desarrollos, y un poco de su funcionamiento interno.
 
@@ -22,15 +22,17 @@ Empecemos por lo más básico. ¿Qué es exactamente la criptografía?
 
 ## Definición de Criptografía
 
-La criptografía moderna es un campo de las matemáticas (_otra vez_) y la computación enfocado en encontrar y crear formas de convertir información clara y con algún significado en información imposible de entender por entidades que no cuenten con la autorización para hacerlo, aunque la tengan en su poder.
+La criptografía moderna se puede considerar una rama de las matemáticas (_otra vez_) y la computación enfocada en encontrar y crear formas de convertir información clara y con algún significado en _información imposible de entender por entidades que no cuenten con la autorización para hacerlo, aunque la tengan en su poder_.
 
-Esto es en cierta forma _esconder_ información explícitamente, de manera que quien tenga la información correcta (que les concede la autorización) pueda obtener la información original desde lso datos ininteligibles.
+La palabra quiere decir literalmente **"escritura oculta"**. Y también se puede definir el campo como el encargado de encontrar algoritmos o procedimientos que permitan ocultar mensajes que sólo puedan ser descifrados por aquellos que tengan la llave.
 
-Este proceso de ocultar la información se llama **cifrado** (también se usa _encriptado_, como un barbarismo), mientras que el proceso de regresar la información se llama **descifrado** (o _desencriptado_ 🙄).
+La criptografía implica _esconder_ información explícitamente (los atacantes pueden saber que esa información está oculta e incluso hasta tener los mensajes ocultos en su poder), de manera que quien tenga la información correcta (que les concede la autorización) pueda obtener la información original desde los datos ininteligibles.
+
+Este proceso de ocultar la información se llama **cifrado** (también se usa _encriptado_, como un barbarismo), mientras que el proceso de recuperar la información se llama **descifrado** (o _desencriptado_ 🙄).
 
 Los procesos de cifrado modernos requieren generalmente **una llave o conjunto de llaves**, para realizar los procesos de cifrado y descifrado.
 
-La criptografía es la base de todos los mecanismos de seguridad informática modernos, y a
+La criptografía es la base de todos los mecanismos de seguridad informática modernos, y a menudo se usa una conbinación de ellos para proteger un sistema.
 
 ## Uso en el software actual
 
