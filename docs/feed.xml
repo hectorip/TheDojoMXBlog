@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-11-12T10:46:56-06:00</updated><id>/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Criptografía básica para programadores: ¿Qué es la criptografía?</title><link href="/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html" rel="alternate" type="text/html" title="Criptografía básica para programadores: ¿Qué es la criptografía?" /><published>2019-11-12T00:00:00-06:00</published><updated>2019-11-12T00:00:00-06:00</updated><id>/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia</id><content type="html" xml:base="/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html">&lt;p&gt;Es muy común escuchar de “encriptación” (la palabra correcta en español es &lt;em&gt;cifrado&lt;/em&gt;), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-11-12T23:36:16-06:00</updated><id>/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Criptografía básica para programadores: ¿Qué es la criptografía?</title><link href="/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html" rel="alternate" type="text/html" title="Criptografía básica para programadores: ¿Qué es la criptografía?" /><published>2019-11-12T00:00:00-06:00</published><updated>2019-11-12T00:00:00-06:00</updated><id>/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia</id><content type="html" xml:base="/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html">&lt;p&gt;Es muy común escuchar de “encriptación” (la palabra correcta en español es &lt;em&gt;cifrado&lt;/em&gt;), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain.&lt;/p&gt;
 
 &lt;p&gt;Uno de los temas menos tratados por programadores de software común (para usuarios y sistemas que no impliquen el uso de seguridad a medida), es el correcto uso de los algoritmos criptográficos y muchas veces ni siquiera conocemos lo suficiente de ellos, sino que confiamos en lo que las herramientas pre-establecen (que gran parte de las veces fue diseñado por expertos y eso está bien).&lt;/p&gt;
 
@@ -24,20 +24,20 @@
 
 &lt;h2 id=&quot;uso-en-el-software-actual&quot;&gt;Uso en el software actual&lt;/h2&gt;
 
-&lt;p&gt;Los algoritmos criptográficos se usan literalmente en todos lados en los sistemas modernos. Son los algoritmos que la información viaje segura en internet (usando HTTPS, que se basa en TLS/SSL), por ejemplo. Algunos otros casos en los que son usados:&lt;/p&gt;
+&lt;p&gt;Los algoritmos criptográficos se usan en todos lados en los sistemas modernos. Son los algoritmos que permiten que la información viaje segura en internet (usando HTTPS, que se basa en TLS/SSL), por ejemplo. Algunos otros casos en los que son usados:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;En la protección de la información que viaja en las redes inalámbricas, sean WiFi o Celulares (3G, 4G, 5G).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Almacenamiento de datos sensibles como passwords (mediante hashes)e información personal (cifrados con password).&lt;/p&gt;
+    &lt;p&gt;Almacenamiento de datos sensibles como passwords (mediante hash) e información personal (cifrados con password).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Protección de archivos.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Cifrado en reposo (al estar almacenados en los discos duros) de los datos para evitar su robo en caso de robo físico o de dispositivos virtuales.&lt;/p&gt;
+    &lt;p&gt;Cifrado de datos en reposo (al estar almacenados en los discos duros) de los datos para evitar su robo en caso de robo físico o de dispositivos virtuales.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Tarjetas de crédito y seguridad bancaria en general.&lt;/p&gt;
@@ -76,7 +76,7 @@
 
 &lt;p&gt;En este artículo sólo hemos tocado la definición de criptografía y hemos mencionado por qué es importante. En los siguientes empezaremos a hablar de las bases que nos permitirán comprender cómo funciona la criptografía y qué mecanismos son los que permiten que brinde seguridad mediante ocultar la información.&lt;/p&gt;
 
-&lt;p&gt;En el próximo artículo hablaremos de la base de todos los sitemas criptográficos. Los números (pseudo) aleatorios y sus generadores.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="criptografía" /><category term="esteganografía" /><category term="seguridad" /><summary type="html">Aprende las bases de la criptografía para tenerla en cuenta en tus programas.</summary></entry><entry><title type="html">Entendiendo REST: Servicios cacheables</title><link href="/2019/10/27/entendiendo-rest-servicios-cacheables.html" rel="alternate" type="text/html" title="Entendiendo REST: Servicios cacheables" /><published>2019-10-27T00:00:00-05:00</published><updated>2019-10-27T00:00:00-05:00</updated><id>/2019/10/27/entendiendo-rest-servicios-cacheables</id><content type="html" xml:base="/2019/10/27/entendiendo-rest-servicios-cacheables.html">&lt;p&gt;La tercera característica que &lt;a href=&quot;https://twitter.com/fielding&quot;&gt;Thomas R. Fielding&lt;/a&gt; (Roy Fielding a partir de ahora) establece para los sistemas &lt;strong&gt;REST&lt;/strong&gt; es la capacidad de que su información sea cacheable. Veamos lo que esto significa y por qué es una característica importante. Empecemos por definir el caché.&lt;/p&gt;
+&lt;p&gt;En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo) aleatorios y sus generadores.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="criptografía" /><category term="esteganografía" /><category term="seguridad" /><summary type="html">Aprende las bases de la criptografía para tenerla en cuenta en tus programas.</summary></entry><entry><title type="html">Entendiendo REST: Servicios cacheables</title><link href="/2019/10/27/entendiendo-rest-servicios-cacheables.html" rel="alternate" type="text/html" title="Entendiendo REST: Servicios cacheables" /><published>2019-10-27T00:00:00-05:00</published><updated>2019-10-27T00:00:00-05:00</updated><id>/2019/10/27/entendiendo-rest-servicios-cacheables</id><content type="html" xml:base="/2019/10/27/entendiendo-rest-servicios-cacheables.html">&lt;p&gt;La tercera característica que &lt;a href=&quot;https://twitter.com/fielding&quot;&gt;Thomas R. Fielding&lt;/a&gt; (Roy Fielding a partir de ahora) establece para los sistemas &lt;strong&gt;REST&lt;/strong&gt; es la capacidad de que su información sea cacheable. Veamos lo que esto significa y por qué es una característica importante. Empecemos por definir el caché.&lt;/p&gt;
 
 &lt;h2 id=&quot;qué-es-el-caché&quot;&gt;¿Qué es &lt;em&gt;el caché&lt;/em&gt;?&lt;/h2&gt;
 

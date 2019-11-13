@@ -9,6 +9,7 @@ header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1573540452/jacob-campbell-ri83DTadRto-unsplash_fb7xgx.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1573540452/jacob-campbell-ri83DTadRto-unsplash_fb7xgx.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
+toc: true
 ---
 
 Es muy común escuchar de "encriptación" (la palabra correcta en español es _cifrado_), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain.
@@ -37,15 +38,15 @@ La criptografía es la base de todos los mecanismos de seguridad informática mo
 
 ## Uso en el software actual
 
-Los algoritmos criptográficos se usan literalmente en todos lados en los sistemas modernos. Son los algoritmos que la información viaje segura en internet (usando HTTPS, que se basa en TLS/SSL), por ejemplo. Algunos otros casos en los que son usados:
+Los algoritmos criptográficos se usan en todos lados en los sistemas modernos. Son los algoritmos que permiten que la información viaje segura en internet (usando HTTPS, que se basa en TLS/SSL), por ejemplo. Algunos otros casos en los que son usados:
 
 - En la protección de la información que viaja en las redes inalámbricas, sean WiFi o Celulares (3G, 4G, 5G).
 
-- Almacenamiento de datos sensibles como passwords (mediante hashes)e información personal (cifrados con password).
+- Almacenamiento de datos sensibles como passwords (mediante hash) e información personal (cifrados con password).
 
 - Protección de archivos.
 
-- Cifrado en reposo (al estar almacenados en los discos duros) de los datos para evitar su robo en caso de robo físico o de dispositivos virtuales.
+- Cifrado de datos en reposo (al estar almacenados en los discos duros) de los datos para evitar su robo en caso de robo físico o de dispositivos virtuales.
 
 - Tarjetas de crédito y seguridad bancaria en general.
 
@@ -75,10 +76,8 @@ Conocer temas como los siguientes, te permitirá subir la calidad de tus desarro
 - ¿Cuáles son las principales características y diferencias de los algoritmos más usados?
 - ¿Qué algoritmos nunca más debería usar en la vida?
 
-
-
 ## Conclusión
 
 En este artículo sólo hemos tocado la definición de criptografía y hemos mencionado por qué es importante. En los siguientes empezaremos a hablar de las bases que nos permitirán comprender cómo funciona la criptografía y qué mecanismos son los que permiten que brinde seguridad mediante ocultar la información.
 
-En el próximo artículo hablaremos de la base de todos los sitemas criptográficos. Los números (pseudo) aleatorios y sus generadores.
+En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo) aleatorios y sus generadores.

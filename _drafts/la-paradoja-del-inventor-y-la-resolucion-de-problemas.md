@@ -11,7 +11,7 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5) 
 ---
 
-Este es el tercer y último artículo acerca del libro "How to Solve It"
+Este es el tercer y último artículo acerca del libro ["How to Solve It"]()
 de George Polya. Puedes ver los otros dos artículos aquí:
 
 - [Técnicas para resolver problemas](/2019/09/01/?)
@@ -20,6 +20,9 @@ de George Polya. Puedes ver los otros dos artículos aquí:
 <!-- Ahora hablemos del paradoja del inventor que de seguro has visto: hay
 problemas que mientras más información desconocida haya, más probable
 es que se llegue a la solución. -->
+
+Con este artículo cerraremos las ideas que George Polya desarrolló para resolver problemas.
+
 
 ## Inducción y Deducción
 
