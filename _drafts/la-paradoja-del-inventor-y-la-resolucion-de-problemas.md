@@ -1,6 +1,6 @@
 ---
 title: "La paradoja del inventor y la resolución de problemas"
-date: 2019-09-29
+date: 2019-11-22
 author: Héctor Patricio
 tags: polya problem-solving how-to-solve-it
 comments: true
@@ -21,12 +21,11 @@ de George Polya. Puedes ver los otros dos artículos aquí:
 problemas que mientras más información desconocida haya, más probable
 es que se llegue a la solución. -->
 
-Con este artículo cerraremos las ideas que George Polya desarrolló para resolver problemas.
-
+Con este artículo cerraremos con las ideas que George Polya desarrolló para resolver problemas.
 
 ## Inducción y Deducción
 
-Hablemos ahora de las fases de resolución de problemas, algunas partes inspiradas por los antoguos griegos (Pappus, por ejemplo)
+Hablemos ahora de las fases de resolución de problemas, algunas partes inspiradas por los antiguos griegos (Pappus, por ejemplo).
 
 ### Inducción
 General -> Específico
