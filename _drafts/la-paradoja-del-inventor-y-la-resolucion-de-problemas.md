@@ -57,7 +57,6 @@ El proceso que Polya llama análisis se refiere a la descomposición del problem
 Estado actual -> Resultados
 Este paso consiste en llevar a cabo los pasos que se encontraron durante la etapa de análisis. Implica transformar nuestros datos actuales, paso a paso hasta llevarlos al resultado deseado, de acuerdo con las transformaciones que descubrimos que eran necesarias en la etapa de análisis.
 
-
 ## Conclusión
 
 Si quieres mejorar tus habilidades para resolver problemas "How To Solve It" de George E. Polya es un gran recurso, que por medio de la repetición, detallado y profundización en los temas enseña.

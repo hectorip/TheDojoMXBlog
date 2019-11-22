@@ -14,10 +14,12 @@ Cuando se habla de **matemáticas** mucha gente empieza a sentirse fastidiada y 
 Pero para programar con eficacia no necesitas saber muchas matemáticas, de hecho con el entendimiento básico es suficiente. En este artículo hablaremos de aquello que debes dominar.
 
 # Matemáticas Básicas
-
-### Contar
+Empecemos hablando brevemente de las matemáticas que debes conocer como programador y como ser humano.
 ### Operaciones básicas
+Saber operar con números en la vida cotidiana es una habilidad que todos necesitamos. Pero más importante aún es entender el significado de estas operaciones.
+
 ### Combinaciones y permutaciones
+Esto puede no sonar tan básico pero el entendimiento del significado de estas operaciones es necesario para muchas operaciones dentro de las ciencias de la computación y la programación.
 ### Probabilidad y estadística
 
 # Lógica (Matemáticas discretas)
