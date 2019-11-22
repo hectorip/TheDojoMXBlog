@@ -4,6 +4,7 @@ En este blog hablamos de:
 
 - Desarrollo de software en general
 - Lenguajes de programación
+- Documentación, pruebas y buenas prácticas de mantenimiento
 - Desarrollo de productos digitales
 - Análisis de datos
 - Inteligencia artificial
