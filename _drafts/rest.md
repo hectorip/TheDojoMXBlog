@@ -40,8 +40,6 @@ Esta separación en capas hace que el servicio web sea más confiable y tenga me
 
 ### Interfaz uniforme
 
-
-
 ### No mantiene el estado
 
 ### Cacheable
