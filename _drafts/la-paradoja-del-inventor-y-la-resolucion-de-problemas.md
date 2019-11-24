@@ -14,7 +14,7 @@ header:
 Este es el tercer y último artículo acerca del libro ["How to Solve It"]()
 de George Polya. Puedes ver los otros dos artículos aquí:
 
-- [Técnicas para resolver problemas](/2019/09/01/?)
+- [Técnicas para resolver problemas](/2019/09/01/)
 - [Heurística](/2019/09/30/)
 
 <!-- Ahora hablemos del paradoja del inventor que de seguro has visto: hay
