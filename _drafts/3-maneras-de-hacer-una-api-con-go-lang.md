@@ -22,10 +22,39 @@ Puedes ver algunas de las comparativas en los siguientes artículos:
 ![Comparativa de microframworks Web](https://res.cloudinary.com/hectorip/image/upload/v1574629781/Screenshot_2019-11-24_15.09.25_ozqwcu.png)
 
 
-Ahora sí, hablemos de tres formas de crear una API sobre HTTP para tu próximo proyecto.
+Ahora sí, hablemos de tres (4) formas de crear una API sobre HTTP para tu próximo proyecto. Pero antes hablemos de una opción simple que no cubre muchos casos pero que se oye recomendada muchas veces.
 
 ## La biblioteca estándar
 
 Cuando hice mi primer proyecto en Go, gran parte de la investigación sobre qué usar para crear un proyecto web apuntaba los paquetes nativos de Go son el camino.
 
-Go tiene una biblioteca estándar que cubre muchas de las necesidades de un desarrollador moderno.
+Go tiene una biblioteca estándar que cubre muchas de las necesidades de un desarrollador moderno, si has programado en él podrás estar de acuerdo en que se siente como subirte en hombros de gigantes para programar, debido a que los que lo  diseñaron y construyeron son las mismas personas que sentaron las bases para los sistemas operativos modernos. _Imagínate cuánta experiencia tienen_.
+
+En la biblioteca estándar podemos encontrar un paquete que se llama `net/http` con el que puedes hacer muy pocas líneas de código lo que único un servidor web (la base de tu API): recibir peticiones HTTP, procesarlas (mejor dicho: hacer que algúna otra pieza más de tu sistema la procese) y devolver una respuesta HTTP. El ciclo básico request-response.
+
+Aquí hay un ejemplo:
+
+```go
+package main
+
+import (
+	"fmt"
+	"net/http"
+)
+
+// Implementando un servidor HTTP básico, que responde con
+func main() {
+	http.HandleFunc("/", handler)
+	http.ListenAndServe("localhost:8080", nil) // iniciando el servidor
+}
+
+// handler recibe la petición http y la procesa para devolver una respuesta http
+func handler(response http.ResponseWriter, request *http.Request) {
+	fmt.Fprintf(response, "Hola Go API's")
+}
+```
+Si tu API es muy sencilla, expone muy pocas URL's y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la librería estándar es una solución excelente, pero para otros casos se queda un poco corta.
+
+Por eso te presentamos las opciones más comunes y algunos ejemplos.
+
+## Gorilla Toolkit
