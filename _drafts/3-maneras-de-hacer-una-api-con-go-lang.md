@@ -57,10 +57,17 @@ Si tu API es muy sencilla, expone muy pocas URL's y sabes que no requerirás muc
 
 Por eso te presentamos las opciones más comunes y algunos ejemplos.
 
-## Gorilla Toolkit
+## Gorilla Web Toolkit
+
+![Gorilla Web Toolkit logo](https://avatars2.githubusercontent.com/u/489566?s=200&v=4)
+
+[Gorilla Toolkit](https://www.gorillatoolkit.org/) es una conjunto de herramientas para Go en web que entre otras cosas tiene un web router llamado Gorilla Mux que podríamos pensar como la parte principal de nuestro servidor web y que cubre la mayoría de funciones que la biblioteca estándar deja sin cubrir.
+
 
 ## Gin
 
+Parace que es uno de los mejores.
 ## Beego
 
+Esta alternativa para crear API's en go es muy buena, parece de origen chino.
 ## Conclusión
