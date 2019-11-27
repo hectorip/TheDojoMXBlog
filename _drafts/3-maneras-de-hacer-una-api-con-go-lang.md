@@ -63,11 +63,14 @@ Por eso te presentamos las opciones más comunes y algunos ejemplos.
 
 [Gorilla Toolkit](https://www.gorillatoolkit.org/) es una conjunto de herramientas para Go en web que entre otras cosas tiene un web router llamado Gorilla Mux que podríamos pensar como la parte principal de nuestro servidor web y que cubre la mayoría de funciones que la biblioteca estándar deja sin cubrir.
 
-
 ## Gin
 
-Parace que es uno de los mejores.
+Gin es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go.
+
 ## Beego
 
 Esta alternativa para crear API's en go es muy buena, parece de origen chino.
+
 ## Conclusión
+
+Existen múltiples opciones para crear tu API en Go. Cada una tiene puntos específicos por los que podrías decidir usarla, pero en nuestra experiencia la que se adapta a la mayor cantidad de circunstancias es Gin, que además tiene más componentes que las demás. Esta es una opinión basada en los casos en los que lo hemos usado.
