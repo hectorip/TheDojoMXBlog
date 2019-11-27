@@ -1,7 +1,7 @@
 theme: minimal-mistakes-jekyll
 locale: es
 plugins:
-    - jekyll-feed
+    # - jekyll-feed
     - jekyll-archives
     - jekyll-redirect-from
     - jekyll-seo-tag
