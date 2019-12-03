@@ -17,10 +17,6 @@ de George Polya. Puedes ver los otros dos artículos aquí:
 - [Técnicas para resolver problemas](/2019/09/01/)
 - [Heurística](/2019/09/30/)
 
-<!-- Ahora hablemos del paradoja del inventor que de seguro has visto: hay
-problemas que mientras más información desconocida haya, más probable
-es que se llegue a la solución. -->
-
 Con este artículo cerraremos con las ideas que George Polya desarrolló para resolver problemas.
 
 ## Inducción y Deducción
@@ -28,7 +24,6 @@ Con este artículo cerraremos con las ideas que George Polya desarrolló para re
 Hablemos ahora de las fases de resolución de problemas, algunas partes inspiradas por los antiguos griegos (Pappus, por ejemplo).
 
 ### Inducción
-General -> Específico
 
 Tratar de resolver problemas por inducción significa aplicar principios o
 conocimiento general a un caso específico. Por ejemplo para un problema

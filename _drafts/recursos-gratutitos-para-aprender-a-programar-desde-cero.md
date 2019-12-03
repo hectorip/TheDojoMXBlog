@@ -22,7 +22,7 @@ Para ser un buen programador es importante conocer las bases, pero para eso ante
 
 ## Crea algo real
 
-## Especialízate
+## Has una especialización
 
 ## Notas finales
 
