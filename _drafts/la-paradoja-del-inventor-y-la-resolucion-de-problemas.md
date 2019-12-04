@@ -11,7 +11,7 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5) 
 ---
 
-Este es el tercer y último artículo acerca del libro ["How to Solve It"]()
+Este es el tercer y último artículo acerca del libro ["How to Solve It"](https://amzn.to/2P8HJA8)
 de George Polya. Puedes ver los otros dos artículos aquí:
 
 - [Técnicas para resolver problemas](/2019/09/01/)
@@ -49,9 +49,8 @@ El proceso que Polya llama análisis se refiere a la descomposición del problem
 
 ### Síntesis
 
-Estado actual -> Resultados
 Este paso consiste en llevar a cabo los pasos que se encontraron durante la etapa de análisis. Implica transformar nuestros datos actuales, paso a paso hasta llevarlos al resultado deseado, de acuerdo con las transformaciones que descubrimos que eran necesarias en la etapa de análisis.
 
 ## Conclusión
 
-Si quieres mejorar tus habilidades para resolver problemas "How To Solve It" de George E. Polya es un gran recurso, que por medio de la repetición, detallado y profundización en los temas enseña.
+Si quieres mejorar tus habilidades para resolver problemas "How To Solve It" de George E. Polya es un gran recurso, que por medio de la repetición, detallado y profundización en los temas enseña. 

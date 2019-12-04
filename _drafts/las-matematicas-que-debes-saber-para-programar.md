@@ -20,7 +20,10 @@ Saber operar con números en la vida cotidiana es una habilidad que todos necesi
 
 ### Combinaciones y permutaciones
 Esto puede no sonar tan básico pero el entendimiento del significado de estas operaciones es necesario para muchas operaciones dentro de las ciencias de la computación y la programación.
+
 ### Probabilidad y estadística
+
+
 
 # Lógica (Matemáticas discretas)
 
