@@ -28,8 +28,7 @@ Hablemos ahora de las fases de resolución de problemas, algunas partes inspirad
 Tratar de resolver problemas por inducción significa aplicar principios o
 conocimiento general a un caso específico. Por ejemplo para un problema
 práctico en el que tenemos encontrar la longitud de un cable tensor para una
-antena, sabemos que podemos aplicar el teorema de
-Pitágoras.
+antena, sabemos que podemos aplicar el teorema de Pitágoras.
 
 Lo difícil de la inducción es encontrar qué principios, teoremas o formas 
 de resolución de problemas aplican para el problema que tenemos que resolver. Para esto nos pueden ayudar las técnicas platicadas en los artículos anteriores: ¿He resuelto un problema similar? ¿Qué técnica fue usada? ¿Qué principios sirvieron para la resolución de ese problema?
@@ -45,7 +44,7 @@ Polya usa las descripciones de los antiguos Griegos para explicar las dos fases 
 
 ### Análisis
 
-El proceso que Polya llama análisis se refiere a la descomposición del problema y a la generación de los planes.
+El proceso que Polya llama análisis se refiere a la descomposición del problema y a la generación de los planes. Es la parte más importante.
 
 ### Síntesis
 
