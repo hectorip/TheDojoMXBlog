@@ -11,11 +11,10 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5) 
 ---
 
-Este es el tercer y último artículo acerca del libro ["How to Solve It"](https://amzn.to/2P8HJA8)
-de George Polya. Puedes ver los otros dos artículos aquí:
+Este es el tercer y último artículo acerca del libro ["How to Solve It"](https://amzn.to/2P8HJA8) de George Polya. Puedes ver los otros dos artículos aquí:
 
-- [Técnicas para resolver problemas](/2019/09/01/)
-- [Heurística](/2019/09/30/)
+- [Técnicas para resolver problemas](/2019/09/27/tecnicas-para-resolver-problemas.html)
+- [Heurística](/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html)
 
 Con este artículo cerraremos con las ideas que George Polya desarrolló para resolver problemas.
 
@@ -52,4 +51,5 @@ Este paso consiste en llevar a cabo los pasos que se encontraron durante la etap
 
 ## Conclusión
 
-Si quieres mejorar tus habilidades para resolver problemas "How To Solve It" de George E. Polya es un gran recurso, que por medio de la repetición, detallado y profundización en los temas enseña. 
+Si quieres mejorar tus habilidades para resolver problemas "How To Solve It" de George E. Polya es un gran recurso, que por medio de la repetición y profundización en los temas enseña técnicas útiles para resolverlos.
+
