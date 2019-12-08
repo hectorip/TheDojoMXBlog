@@ -6,9 +6,9 @@ tags: polya problem-solving how-to-solve-it
 comments: true
 excerpt: "Ciertos problemas son más fáciles de resolver mientras más ambiciosos sean. Hablemos de esto."
 header:
-  overlay_image: 
-  overlay_image: 
-  overlay_filter: rgba(0, 0, 0, 0.5) 
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1575746191/verne-ho-0LAJfSNa-xQ-unsplash_prh7gv.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1575746191/verne-ho-0LAJfSNa-xQ-unsplash_prh7gv.jpg
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 Este es el tercer y último artículo acerca del libro ["How to Solve It"](https://amzn.to/2P8HJA8) de George Polya. Puedes ver los otros dos artículos aquí:
@@ -20,14 +20,18 @@ Con este artículo cerraremos con las ideas que George Polya desarrolló para re
 
 ## Inducción y Deducción
 
-Hablemos ahora de las fases de resolución de problemas, algunas partes inspiradas por los antiguos griegos (Pappus, por ejemplo).
+Hablemos ahora de las fases de resolución de problemas, algunas partes inspiradas por los antiguos griegos (*Pappus*, por ejemplo).
 
 ### Inducción
 
-Tratar de resolver problemas por inducción significa aplicar principios o
-conocimiento general a un caso específico. Por ejemplo para un problema
+Tratar de resolver problemas por inducción significa **aplicar principios o
+conocimiento general a un caso específico**. Por ejemplo para un problema
 práctico en el que tenemos encontrar la longitud de un cable tensor para una
 antena, sabemos que podemos aplicar el teorema de Pitágoras.
+
+Algunos ejemplos para los programadores:
+
+- Encontrar el mayor elemento en una lista. 
 
 Lo difícil de la inducción es encontrar qué principios, teoremas o formas 
 de resolución de problemas aplican para el problema que tenemos que resolver. Para esto nos pueden ayudar las técnicas platicadas en los artículos anteriores: ¿He resuelto un problema similar? ¿Qué técnica fue usada? ¿Qué principios sirvieron para la resolución de ese problema?
@@ -35,7 +39,8 @@ de resolución de problemas aplican para el problema que tenemos que resolver. P
 ### Deducción
 
 La deducción es uno de los mecanismos de resolución de problemas más difíciles de llevar a la práctica.
-Consiste en a partir de observaciones específicas.
+
+Consiste en a partir de observaciones específicas y llevarlas a generalizaciones que puedan ser aplicadas en otros casos o que apliquen en muchas situaciones.
 
 ## Análisis y síntesis
 
@@ -52,4 +57,3 @@ Este paso consiste en llevar a cabo los pasos que se encontraron durante la etap
 ## Conclusión
 
 Si quieres mejorar tus habilidades para resolver problemas "How To Solve It" de George E. Polya es un gran recurso, que por medio de la repetición y profundización en los temas enseña técnicas útiles para resolverlos.
-
