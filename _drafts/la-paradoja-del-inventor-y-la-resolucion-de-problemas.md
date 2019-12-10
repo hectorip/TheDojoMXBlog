@@ -31,7 +31,7 @@ antena, sabemos que podemos aplicar el teorema de Pitágoras.
 
 Algunos ejemplos para los programadores:
 
-- Encontrar el mayor elemento en una lista. 
+- Encontrar el mayor elemento en una lista. (Una forma de resolverlo para algunos)
 
 Lo difícil de la inducción es encontrar qué principios, teoremas o formas 
 de resolución de problemas aplican para el problema que tenemos que resolver. Para esto nos pueden ayudar las técnicas platicadas en los artículos anteriores: ¿He resuelto un problema similar? ¿Qué técnica fue usada? ¿Qué principios sirvieron para la resolución de ese problema?
@@ -44,7 +44,7 @@ Consiste en a partir de observaciones específicas y llevarlas a generalizacione
 
 ## Análisis y síntesis
 
-Polya usa las descripciones de los antiguos Griegos para explicar las dos fases de las que puede consistir la resolución de un problema. Hablemos primero de la forma en que "encontramos" la solución.
+Polya usa las descripciones de otros para explicar las dos fases de las que puede consistir la resolución de un problema. Hablemos primero de la forma en que "encontramos" la solución.
 
 ### Análisis
 
