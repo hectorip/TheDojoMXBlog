@@ -48,7 +48,7 @@ Polya usa las descripciones de otros para explicar las dos fases de las que pued
 
 ### Análisis
 
-El proceso que Polya llama análisis se refiere a la descomposición del problema y a la generación de los planes. Es la parte más importante.
+El proceso que Polya llama análisis se refiere a la descomposición del problema y a la generación de los planes.
 
 ### Síntesis
 
