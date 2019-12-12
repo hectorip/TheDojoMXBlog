@@ -31,10 +31,11 @@ antena, sabemos que podemos aplicar el teorema de Pitágoras.
 
 Algunos ejemplos para los programadores:
 
-- Encontrar el mayor elemento en una lista. (Una forma de resolverlo para algunos)
+- Encontrar el elemento más grande o más pequeño en una lista. (Una forma de resolverlo es ordenar los elementos).
+- 
 
 Lo difícil de la inducción es encontrar qué principios, teoremas o formas 
-de resolución de problemas aplican para el problema que tenemos que resolver. Para esto nos pueden ayudar las técnicas platicadas en los artículos anteriores: ¿He resuelto un problema similar? ¿Qué técnica fue usada? ¿Qué principios sirvieron para la resolución de ese problema?
+de resolución de problemas aplican para el problema que tenemos que resolver. Para esto nos pueden ayudar las técnicas platicadas en los artículos anteriores: ¿He resuelto un problema similar? *¿Qué técnica fue usada?* ¿Qué principios sirvieron para la resolución de ese problema?
 
 ### Deducción
 
