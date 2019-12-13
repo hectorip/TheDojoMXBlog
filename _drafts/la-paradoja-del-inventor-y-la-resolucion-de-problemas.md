@@ -20,11 +20,11 @@ Con este artículo cerraremos con las ideas que George Polya desarrolló para re
 
 ## Inducción y Deducción
 
-Hablemos ahora de las fases de resolución de problemas, algunas partes inspiradas por los antiguos griegos (*Pappus*, por ejemplo).
+Hablemos ahora de algunas formas de resolver problemas, algunas partes inspiradas por los antiguos griegos (*Pappus*, por ejemplo).
 
-### Inducción
+### Deducción
 
-Tratar de resolver problemas por inducción significa **aplicar principios o
+Tratar de resolver problemas por deducción significa **aplicar principios o
 conocimiento general a un caso específico**. Por ejemplo para un problema
 práctico en el que tenemos encontrar la longitud de un cable tensor para una
 antena, sabemos que podemos aplicar el teorema de Pitágoras.
@@ -32,16 +32,23 @@ antena, sabemos que podemos aplicar el teorema de Pitágoras.
 Algunos ejemplos para los programadores:
 
 - Encontrar el elemento más grande o más pequeño en una lista. (Una forma de resolverlo es ordenar los elementos).
-- 
+- Revisar que un elemento no está repetido en una colección de elementos. (Indexado)
+- Asegurarse de que las operaciones son atendidas en el orden en que se solicitaron en un entorno con múltiples ejecutores. (Colas)
 
-Lo difícil de la inducción es encontrar qué principios, teoremas o formas 
-de resolución de problemas aplican para el problema que tenemos que resolver. Para esto nos pueden ayudar las técnicas platicadas en los artículos anteriores: ¿He resuelto un problema similar? *¿Qué técnica fue usada?* ¿Qué principios sirvieron para la resolución de ese problema?
+Lo difícil de la deducción es encontrar *qué principios, teoremas o formas 
+de resolución de problemas aplican para el problema que tenemos que resolver*. Para esto nos pueden ayudar las técnicas platicadas en los artículos anteriores: ¿He resuelto un problema similar? *¿Qué técnica fue usada?* ¿Qué principios sirvieron para la resolución de ese problema? Y, a mi parecer la más útil: ¿puedo usar el resultado o el proceso de resolución?
 
-### Deducción
+<!-- Polya dice que aunque se dice que Sherlock Holmes "deduce", en realidad aplica la inducción para llegar a conclusiones, ya que aplica conocimiento general a casos concretos. -->
 
-La deducción es uno de los mecanismos de resolución de problemas más difíciles de llevar a la práctica.
+### Inducción
 
-Consiste en a partir de observaciones específicas y llevarlas a generalizaciones que puedan ser aplicadas en otros casos o que apliquen en muchas situaciones.
+> La inducción es el proceso de descubrir leyes generales mediante la observación y combinación de casos particulares. - *George Polya*
+
+La inducción es uno de los mecanismos de resolución de problemas más difíciles de llevar a la práctica. Funciona en forma inversa a la deducción.
+
+Consiste en partir de observaciones específicas (ejemplos y contra-ejemplos) y llevarlas a **generalizaciones** que puedan ser aplicadas en otros casos o que apliquen en muchas otras situaciones situaciones.
+
+La deducción es el generador de conocimiento detrás de grandes descubrimientos.
 
 ## Análisis y síntesis
 
