@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-12-04T00:44:11-06:00</updated><id>/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Criptografía básica para programadores: ¿Qué es la criptografía?</title><link href="/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html" rel="alternate" type="text/html" title="Criptografía básica para programadores: ¿Qué es la criptografía?" /><published>2019-11-12T00:00:00-06:00</published><updated>2019-11-12T00:00:00-06:00</updated><id>/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia</id><content type="html" xml:base="/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html">&lt;p&gt;Es muy común escuchar de “encriptación” (la palabra correcta en español es &lt;em&gt;cifrado&lt;/em&gt;), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-12-14T11:04:19-06:00</updated><id>/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">La paradoja del inventor y la resolución de problemas</title><link href="/2019/12/14/induccion-y-deduccion-segun-polya.html" rel="alternate" type="text/html" title="La paradoja del inventor y la resolución de problemas" /><published>2019-12-14T00:00:00-06:00</published><updated>2019-12-14T00:00:00-06:00</updated><id>/2019/12/14/induccion-y-deduccion-segun-polya</id><content type="html" xml:base="/2019/12/14/induccion-y-deduccion-segun-polya.html">&lt;p&gt;Este es el tercer artículo acerca del libro &lt;a href=&quot;https://amzn.to/2P8HJA8&quot;&gt;“How to Solve It”&lt;/a&gt; de George Polya. Puedes ver los dos artículos anteriores aquí:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/2019/09/27/tecnicas-para-resolver-problemas.html&quot;&gt;Técnicas para resolver problemas&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html&quot;&gt;Heurística&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Con este artículo cerraremos con las ideas que George Polya desarrolló para resolver problemas.&lt;/p&gt;
+
+&lt;h2 id=&quot;inducción-y-deducción&quot;&gt;Inducción y Deducción&lt;/h2&gt;
+
+&lt;p&gt;Hablemos ahora de algunas formas de resolver problemas.&lt;/p&gt;
+
+&lt;h3 id=&quot;deducción&quot;&gt;Deducción&lt;/h3&gt;
+
+&lt;p&gt;Tratar de resolver problemas por deducción significa &lt;strong&gt;aplicar principios o
+conocimiento general a un caso específico&lt;/strong&gt;. Por ejemplo para un problema
+práctico en el que tenemos encontrar la longitud de un cable tensor para una
+antena, sabemos que podemos aplicar el teorema de Pitágoras.&lt;/p&gt;
+
+&lt;p&gt;Algunos ejemplos para los programadores:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Encontrar el elemento más grande o más pequeño en una lista. (Una forma de resolverlo es ordenar los elementos).&lt;/li&gt;
+  &lt;li&gt;Revisar que un elemento no está repetido en una colección de elementos. (Indexado)&lt;/li&gt;
+  &lt;li&gt;Asegurarse de que las operaciones son atendidas en el orden en que se solicitaron en un entorno con múltiples ejecutores. (Colas)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lo difícil de la deducción es encontrar &lt;em&gt;qué principios, teoremas o formas 
+de resolución de problemas aplican para el problema que tenemos que resolver&lt;/em&gt;. Para esto nos pueden ayudar las técnicas platicadas en los artículos anteriores: ¿He resuelto un problema similar? &lt;em&gt;¿Qué técnica fue usada?&lt;/em&gt; ¿Qué principios sirvieron para la resolución de ese problema? Y, a mi parecer la más útil: ¿puedo usar el resultado o el proceso de resolución?&lt;/p&gt;
+
+&lt;!-- Polya dice que aunque se dice que Sherlock Holmes &quot;deduce&quot;, en realidad aplica la inducción para llegar a conclusiones, ya que aplica conocimiento general a casos concretos. --&gt;
+
+&lt;h3 id=&quot;inducción&quot;&gt;Inducción&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;La inducción es el proceso de descubrir leyes generales mediante la observación y combinación de casos particulares. - &lt;em&gt;George Polya&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;La inducción es uno de los mecanismos de resolución de problemas más difíciles de llevar a la práctica. Funciona en forma inversa a la deducción.&lt;/p&gt;
+
+&lt;p&gt;Consiste en partir de observaciones específicas (ejemplos y contra-ejemplos) y llevarlas a &lt;strong&gt;generalizaciones&lt;/strong&gt; que puedan ser aplicadas en otros casos o que apliquen en muchas otras situaciones situaciones.&lt;/p&gt;
+
+&lt;h3 id=&quot;en-el-desarrollo-de-software&quot;&gt;En el desarrollo de software&lt;/h3&gt;
+
+&lt;p&gt;Seguro te has encontrado con este tipo problemas (o te vas a encontrar) si ya llevas tiempo desarrollando: ya que el desarrollo de software no es un área que viva aislada de las demás áreas, los que requieren el software llevan &lt;em&gt;ejemplos&lt;/em&gt; de  problemas que regularmente tienen que resolver. Nuestros clientes, en general, no se han dado a la tarea de establecer las reglas por las que algo funciona de la manera en que lo hace, ni las excepciones ni los casos únicos. Es nuestra tarea casi siempre descubrir las reglas que subyacen a las operaciones comunes. Esto es una forma de inducción.&lt;/p&gt;
+
+&lt;h3 id=&quot;inducción-matemática&quot;&gt;Inducción matemática&lt;/h3&gt;
+
+&lt;p&gt;Polya habla de otro tipo de inducción de la que opina que no debería llamarse así, y que comparte muy poco con el proceso que acabamos de descubrir y puede llegar a confundir a la gente: la &lt;strong&gt;inducción matemática&lt;/strong&gt;. Este tipo de inducción se refiere al método que los matemáticos emplean para demostrar que cierta aserción es un teorema o no.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problem-solving" /><category term="how-to-solve-it" /><summary type="html">Inducción y Deducción según Polya</summary></entry><entry><title type="html">Criptografía básica para programadores: ¿Qué es la criptografía?</title><link href="/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html" rel="alternate" type="text/html" title="Criptografía básica para programadores: ¿Qué es la criptografía?" /><published>2019-11-12T00:00:00-06:00</published><updated>2019-11-12T00:00:00-06:00</updated><id>/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia</id><content type="html" xml:base="/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html">&lt;p&gt;Es muy común escuchar de “encriptación” (la palabra correcta en español es &lt;em&gt;cifrado&lt;/em&gt;), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain.&lt;/p&gt;
 
 &lt;p&gt;Uno de los temas menos tratados por programadores de software común (para usuarios y sistemas que no impliquen el uso de seguridad a medida), es el correcto uso de los algoritmos criptográficos y muchas veces ni siquiera conocemos lo suficiente de ellos, sino que confiamos en lo que las herramientas pre-establecen (que gran parte de las veces fue diseñado por expertos y eso está bien).&lt;/p&gt;
 
@@ -1170,139 +1219,4 @@ Escuela Johns Hopkins Bloomberg de Salud Pública. Tiene varios cursos en Course
 
 &lt;p&gt;Si sabes inglés, hay más material del que podríamos leer decentemente en un buen tiempo sin tener que gastar un solo peso directamente en esta información. ¿Por qué no aprovecharla?&lt;/p&gt;
 
-&lt;p&gt;Cuéantanos si ya leíste uno de ellos y qué te pareció.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="Machine Learning" /><category term="python" /><category term="r" /><summary type="html">Encuentra una colección de libros gratuitos para aprender acerca de estadística, análisis de datos y machine learning usando tanto Python como R.</summary></entry><entry><title type="html">Entendiendo REST. El estilo de Arquitectura.</title><link href="/2019/06/15/entendiendo-rest-estilo-de-arquitectura.html" rel="alternate" type="text/html" title="Entendiendo REST. El estilo de Arquitectura." /><published>2019-06-15T00:00:00-05:00</published><updated>2019-06-15T00:00:00-05:00</updated><id>/2019/06/15/entendiendo-rest-estilo-de-arquitectura</id><content type="html" xml:base="/2019/06/15/entendiendo-rest-estilo-de-arquitectura.html">&lt;p&gt;En el &lt;a href=&quot;/2019/05/06/diseno-y-desarrollo-de-una-api-desde-cero.html&quot;&gt;artículo anterior de la serie&lt;/a&gt; hablamos un poco de lo que es una API REST. En este artículo empezaremos a ver qué es REST y por qué surgió.&lt;/p&gt;
-
-&lt;p&gt;Antes de empezar con lo nuestro, hablemos de lo que NO es una API REST.&lt;/p&gt;
-
-&lt;h2 id=&quot;esto-no-es-rest&quot;&gt;Esto no es REST&lt;/h2&gt;
-
-&lt;p&gt;Actualmente, muchos desarrolladores (yo me contaba entre ellos), llaman API REST a cualquier servicio Web que corra sobre HTTP, sirva recursos (objetos o elementos que representan un objeto) o cosas parecidas y use JSON como lenguaje de transferencia de datos.
-De estas cosas, sólo la parte de servir recursos (en realidad &lt;em&gt;representaciones&lt;/em&gt; de recursos) tiene que ver con una API REST. El estilo arquitectural REST no obliga el uso de HTTP y mucho menos de JSON.&lt;/p&gt;
-
-&lt;p&gt;Dada esta tendencia de llamar API REST a cualquier cosa que funcione sobre HTTP, debemos estar de acuerdo en que la mayoría de las API’s ni siquiera &lt;em&gt;intenta&lt;/em&gt; ser REST.
-Algunas son RPC (Remote Procedure Call) sobre HTTP simplemente. Otro mal uso que he escuchado es que cualquier cosa que sirva JSON es llamada API REST, pero como ya dijimos el estilo arquitectural REST ni siquiera fuerza el uso de JSON (y no todas las API’s que sirven XML son SOAP).&lt;/p&gt;
-
-&lt;p&gt;Con esto no queremos decir que el que un servicio no sea REST lo haga malo o de mala calidad, de hecho, muchas veces (la mayoría) no se necesita cumplir con las características de REST y con cumplir con algunas de las características o principios de diseño de REST es suficiente.&lt;/p&gt;
-
-&lt;p&gt;En artículos posteriores vamos a hablar de las seis características que &lt;strong&gt;sí&lt;/strong&gt; definen una arquitectura REST, las vamos a cambiar un poco del orden tradicional que se explica en la mayoría de los tutoriales (y seguiremos el de la tesis original) para que tenga más sentido la forma en que las explicamos.&lt;/p&gt;
-
-&lt;p&gt;Las características de las que hablaremos son en cierto modo &lt;em&gt;restricciones&lt;/em&gt; (constraints, como lo dice la tesis original): una cosa es definida por las cosas que &lt;em&gt;no&lt;/em&gt; puede o &lt;em&gt;no&lt;/em&gt; debe hacer.&lt;/p&gt;
-
-&lt;h2 id=&quot;arquitectura&quot;&gt;Arquitectura&lt;/h2&gt;
-
-&lt;p&gt;Cuando hablamos de REST (REpresentational State Transfer) estamos hablando se un &lt;strong&gt;estilo de arquitectura&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;La definición del estilo de arquitectura REST la hizo &lt;a href=&quot;https://www.ics.uci.edu/~fielding/&quot;&gt;Thomas Fielding&lt;/a&gt; en su tesis doctoral, que puedes descargar y leer completa &lt;a href=&quot;https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm&quot;&gt;aquí&lt;/a&gt;, en ella explica lo que lo llevó a definirla y diseñarla tal como es.&lt;/p&gt;
-
-&lt;p&gt;Fielding hace la distinción entre tres conceptos que parecerían lo mismo a simple vista.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Estilo de arquitectura o estilo arquitectural&lt;/strong&gt;: Es un conjunto de restricciones que limitan cómo los elementos de una arquitectura (componentes del software, conectores y datos) pueden interactuar entre sí y las características que deben tener. En la arquitectura de espacios físicos podemos pensar en los estilos más amplios que a veces escuchamos mencionados: Barroco, Moderno, Post-moderno. En la arquitectura de software, &lt;strong&gt;REST cae en esta categoría&lt;/strong&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Diseño arquitectural&lt;/strong&gt;: Es la aplicación de un estilo de arquitectura. Podemos pensar en esto como las guías que definen cómo una arquitectura se implementará. El diseño arquitectural en los edificios podría pensarse en la aplicación de las reglas del diseño arquitectural a un tipo de edificio específico tu catedral o castillo 🤔.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Arquitectura&lt;/strong&gt;: Fielding la define como una abstracción del estado de un sistema en un momento determinado. La arquitectura es la concreción de un diseño arquitectural. En el ejemplo de los edificios puedes pensar en esto como en los planos de la catedral barroca.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Hablando de arquitectura &lt;a href=&quot;https://simonbrown.je/&quot;&gt;Simon Brown&lt;/a&gt;, que es actualmente una da las grandes mentes en el campo de la arquitectura de software, la define como la &lt;em&gt;todo lo relacionado con el diseño de un sistema de software, desde la estructura del código hasta cómo funciona a alto nivel, pasando por cómo el software es puesto en producción&lt;/em&gt;. Es responsabilidad de la arquitectura definir las siguientes características y funciones del sistema:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Tareas que abarquen todo el sistema: Logging, manejo de errores, etc.&lt;/li&gt;
-  &lt;li&gt;Seguridad&lt;/li&gt;
-  &lt;li&gt;Rendimiento&lt;/li&gt;
-  &lt;li&gt;Escalabilidad&lt;/li&gt;
-  &lt;li&gt;Disponibilidad&lt;/li&gt;
-  &lt;li&gt;Auditorías y cumplimiento de regulaciones&lt;/li&gt;
-  &lt;li&gt;Limitaciones del entorno&lt;/li&gt;
-  &lt;li&gt;Interoperatividad e integración con otros sistemas&lt;/li&gt;
-  &lt;li&gt;Consistencia de soluciones a través de toda la base de código&lt;/li&gt;
-  &lt;li&gt;Evaluación de cumplimiento de los entregables&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Como podemos ver, la arquitectura de software tiene muchas cosas de preocuparse. Pues bueno, el estilo de arquitectura ayuda a resolver varias de estas preocupaciones predefiniendo algunas cosas la estructura y el comportamiento del sistema mediante las características y limitaciones que establece.&lt;/p&gt;
-
-&lt;p&gt;¿Qué de estas cosas ataca REST? Hablemos de ellas.&lt;/p&gt;
-
-&lt;h2 id=&quot;cosas-que-rest-intenta-resolver&quot;&gt;Cosas que REST intenta resolver&lt;/h2&gt;
-
-&lt;p&gt;Todo este embrollo de arquitectura-diseño-estilos fue definido con un fin en mente: estudiar los estilos y las características de las arquitecturas para poder llegar a la resolución de los problemas concretos que los sistemas tienen.&lt;/p&gt;
-
-&lt;p&gt;Las cosas que REST intenta ayudar a resolver concretamente son las siguientes.&lt;/p&gt;
-
-&lt;h3 id=&quot;rendimiento&quot;&gt;Rendimiento&lt;/h3&gt;
-
-&lt;p&gt;Una de las principales cosas que este estilo de arquitectura quiere atacar es el rendimiento de las aplicaciones. El rendimiento se refiere tanto a la capacidad real como percibida de cumplir con &lt;strong&gt;lo que se espera de un sistema de software&lt;/strong&gt; en términos de velocidad de respuesta.&lt;/p&gt;
-
-&lt;p&gt;Esto implica que tanto la aplicación como la red (recordemos que siempre estamos hablando de aplicaciones web) debe responder en un tiempo razonable.&lt;/p&gt;
-
-&lt;p&gt;Varias de las restricciones y características que REST establece están relacionadas directamente con este punto.&lt;/p&gt;
-
-&lt;h3 id=&quot;facilidad-de-modificación&quot;&gt;Facilidad de Modificación&lt;/h3&gt;
-
-&lt;p&gt;Fielding elabora esto como uno de los puntos más grandes que las arquitecturas deben atender. A final de cuentas un sistema no se puede quedar estático, y facilitar el trabajo para nosotros mismos en el futuro o para otras personas debería ser una prioridad.&lt;/p&gt;
-
-&lt;p&gt;Los cinco puntos que Fielding considera que definen la facilidad de modifición son:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Facilidad de evolución&lt;/strong&gt;. Es la capacidad que tiene un sistema de que sus componentes cambien sin afectar directamente negativamente a los demás y por lo tanto el estado general del sistema.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Extensibilidad&lt;/strong&gt;. Es la capacidad de agregar funcionalidades o capacidades a un sistema.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Facilidad de personalización&lt;/strong&gt;. Es la capacidad de un elemento de poder adaptarse temporalmente para dar un servicio que no siempre da, sin afectar negativamente el sistema en general.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Facilidad de configuración&lt;/strong&gt;. Se refiere a poder cambiar la configuración o modificar un sistema en producción mediante configuraciones, es decir, sin cambios en el código.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Facilidad de reutilización&lt;/strong&gt;. Se puede explicar como la capacidad de los componentes de un sistema de ser usados sin modificaciones en otros sistemas.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;visibilidad&quot;&gt;Visibilidad&lt;/h3&gt;
-
-&lt;p&gt;La visibilidad es la capacidad de monitorear un componente del sistema e incluso mediar la interacción entre dos componentes. Este tipo específico de visibilidad (recientemente llamado observabilidad), puede mejorar el sistema de muchas maneras como mediante cachés, capas intermedias para mejorar la escalabilidad, monitoreo activo y la seguridad al observar la comunicación de los componentes y actuar, tal como un firewall lo hace.&lt;/p&gt;
-
-&lt;h3 id=&quot;portabilidad&quot;&gt;Portabilidad&lt;/h3&gt;
-
-&lt;p&gt;Uno de los puntos que se necesita resolver de algunas aplicaciones, es que la solución pueda correr en diferentes entornos. A esto se refiere la portabilidad para Fielding, que un sistema pueda correr sin cambios en diferentes instalaciones y sin grandes cambios.&lt;/p&gt;
-
-&lt;h3 id=&quot;escalabilidad&quot;&gt;Escalabilidad&lt;/h3&gt;
-
-&lt;p&gt;¿Cuántos usuarios al mismo tiempo puede soportar tu aplicación? ¿Qué pasa si de repente llegan diez veces más usuarios de los que esperabas? La respuesta a estas preguntas está directamente relacionada con la escalabilidad de la aplicación.&lt;/p&gt;
-
-&lt;p&gt;Fielding la define como la capacidad de los componentes de soportar un número grande de interacciones, que se ve impactada no sólo por la cantidad sino por la frecuencia de interacciones.&lt;/p&gt;
-
-&lt;h3 id=&quot;simplicidad&quot;&gt;Simplicidad&lt;/h3&gt;
-
-&lt;p&gt;Un buen desarrollo debe ser tan simple como sea posible. Si se añade complejidad extra a la innata del problema en cuestión será más difícil de mantener.&lt;/p&gt;
-
-&lt;p&gt;Estas cuestiones y cosas importantes acerca de todas las aplicaciones son lo que llevó a Fielding a definir REST y a agregar las características/restricciones que puso.&lt;/p&gt;
-
-&lt;p&gt;Fielding resume tres características en lo que el llama simplicidad:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Complejidad&lt;/strong&gt;. Es la cantidad de componentes interconectados. Mientras menos sea, mejor.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Facilidad de comprensión&lt;/strong&gt;. ¿Qué tan preparado está el sistema para poder ser entendido fácilmente?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Verificabilidad&lt;/strong&gt;. ¿Se puede verificar que la solución y los datos que entrega el sistema sean correctos?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Todas estas características y necesidades de un sistema de software de fácil mantenimiento son las que llevaron a la creación de el estilo arquitectural REST. Sirven para entender por qué definió las 6 restricciones que un sistema REST debe cumplir, pero algo interesante que se menciona a través de su tesis es que cada una de las decisiones es un intercambio de valor que hay que sopesar.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;¿Por qué deberías elegir REST?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;El estilo arquitectural REST te ayuda a resolver problemas que pueden empezar a dar dolores de cabeza desde el principio, al dar una guía de cómo debería comportarse tu aplicación para cumplir con las cualidades mencionadas arriba.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;No debemos olvidar que toda selección es &lt;strong&gt;necesariamente&lt;/strong&gt; un intercambio de valor. Se pierde algo por ganar otra cosa. La pregunta que siempre hay que tener en mente es:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;¿Qué me conviene más en este caso?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;En el siguiente artículo analizaremos la primera restricción de  REST: la arquitectura cliente-servidor.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="api" /><category term="rest" /><category term="restful" /><category term="arquitectura" /><summary type="html">Empieza a entender qué es REST y por qué ha sido tan importante en la web moderna. Hablemos de la motivación que llevó a crearlo</summary></entry></feed>
+&lt;p&gt;Cuéantanos si ya leíste uno de ellos y qué te pareció.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="Machine Learning" /><category term="python" /><category term="r" /><summary type="html">Encuentra una colección de libros gratuitos para aprender acerca de estadística, análisis de datos y machine learning usando tanto Python como R.</summary></entry></feed>

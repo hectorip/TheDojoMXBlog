@@ -1,17 +1,17 @@
 ---
 title: "La paradoja del inventor y la resolución de problemas"
-date: 2019-11-22
+date: 2019-12-14
 author: Héctor Patricio
 tags: polya problem-solving how-to-solve-it
 comments: true
-excerpt: "Ciertos problemas son más fáciles de resolver mientras más ambiciosos sean. Hablemos de esto."
+excerpt: "Inducción y Deducción según Polya"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1575746191/verne-ho-0LAJfSNa-xQ-unsplash_prh7gv.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1575746191/verne-ho-0LAJfSNa-xQ-unsplash_prh7gv.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Este es el tercer y último artículo acerca del libro ["How to Solve It"](https://amzn.to/2P8HJA8) de George Polya. Puedes ver los otros dos artículos aquí:
+Este es el tercer artículo acerca del libro ["How to Solve It"](https://amzn.to/2P8HJA8) de George Polya. Puedes ver los dos artículos anteriores aquí:
 
 - [Técnicas para resolver problemas](/2019/09/27/tecnicas-para-resolver-problemas.html)
 - [Heurística](/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html)
@@ -20,7 +20,7 @@ Con este artículo cerraremos con las ideas que George Polya desarrolló para re
 
 ## Inducción y Deducción
 
-Hablemos ahora de algunas formas de resolver problemas, algunas partes inspiradas por los antiguos griegos (*Pappus*, por ejemplo).
+Hablemos ahora de algunas formas de resolver problemas.
 
 ### Deducción
 
@@ -48,18 +48,11 @@ La inducción es uno de los mecanismos de resolución de problemas más difícil
 
 Consiste en partir de observaciones específicas (ejemplos y contra-ejemplos) y llevarlas a **generalizaciones** que puedan ser aplicadas en otros casos o que apliquen en muchas otras situaciones situaciones.
 
-## Análisis y síntesis
+### En el desarrollo de software
 
-Polya usa las descripciones de otros para explicar las dos fases de las que puede consistir la resolución de un problema. Hablemos primero de la forma en que "encontramos" la solución.
+Seguro te has encontrado con este tipo problemas (o te vas a encontrar) si ya llevas tiempo desarrollando: ya que el desarrollo de software no es un área que viva aislada de las demás áreas, los que requieren el software llevan _ejemplos_ de  problemas que regularmente tienen que resolver. Nuestros clientes, en general, no se han dado a la tarea de establecer las reglas por las que algo funciona de la manera en que lo hace, ni las excepciones ni los casos únicos. Es nuestra tarea casi siempre descubrir las reglas que subyacen a las operaciones comunes. Esto es una forma de inducción.
 
-### Análisis
+### Inducción matemática
 
-El proceso que Polya llama análisis se refiere a la descomposición del problema y a la generación de los planes.
+Polya habla de otro tipo de inducción de la que opina que no debería llamarse así, y que comparte muy poco con el proceso que acabamos de descubrir y puede llegar a confundir a la gente: la **inducción matemática**. Este tipo de inducción se refiere al método que los matemáticos emplean para demostrar que cierta aserción es un teorema o no.
 
-### Síntesis
-
-Este paso consiste en llevar a cabo los pasos que se encontraron durante la etapa de análisis. Implica transformar nuestros datos actuales, paso a paso hasta llevarlos al resultado deseado, de acuerdo con las transformaciones que descubrimos que eran necesarias en la etapa de análisis.
-
-## Conclusión
-
-Si quieres mejorar tus habilidades para resolver problemas "How To Solve It" de George E. Polya es un gran recurso, que por medio de la repetición y profundización en los temas enseña técnicas útiles para resolverlos.

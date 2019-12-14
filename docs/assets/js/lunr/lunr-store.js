@@ -113,4 +113,9 @@ var store = [{
         "excerpt":"Es muy común escuchar de “encriptación” (la palabra correcta en español es cifrado), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain. Uno de los temas menos tratados por programadores de software común (para usuarios y sistemas que no impliquen el uso de seguridad...","categories": [],
         "tags": ["criptografía","esteganografía","seguridad"],
         "url": "/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1573540452/jacob-campbell-ri83DTadRto-unsplash_fb7xgx.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1573540452/jacob-campbell-ri83DTadRto-unsplash_fb7xgx.jpg"},{
+        "title": "La paradoja del inventor y la resolución de problemas",
+        "excerpt":"Este es el tercer artículo acerca del libro “How to Solve It” de George Polya. Puedes ver los dos artículos anteriores aquí: Técnicas para resolver problemas Heurística Con este artículo cerraremos con las ideas que George Polya desarrolló para resolver problemas. Inducción y Deducción Hablemos ahora de algunas formas de...","categories": [],
+        "tags": ["polya","problem-solving","how-to-solve-it"],
+        "url": "/2019/12/14/induccion-y-deduccion-segun-polya.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1575746191/verne-ho-0LAJfSNa-xQ-unsplash_prh7gv.jpg"}]
