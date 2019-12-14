@@ -48,8 +48,6 @@ La inducción es uno de los mecanismos de resolución de problemas más difícil
 
 Consiste en partir de observaciones específicas (ejemplos y contra-ejemplos) y llevarlas a **generalizaciones** que puedan ser aplicadas en otros casos o que apliquen en muchas otras situaciones situaciones.
 
-La deducción es el generador de conocimiento detrás de grandes descubrimientos.
-
 ## Análisis y síntesis
 
 Polya usa las descripciones de otros para explicar las dos fases de las que puede consistir la resolución de un problema. Hablemos primero de la forma en que "encontramos" la solución.
