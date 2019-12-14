@@ -1,10 +1,10 @@
 ---
-title: "La paradoja del inventor y la resolución de problemas"
+title: "Inducción y Deducción según Polya"
 date: 2019-12-14
 author: Héctor Patricio
 tags: polya problem-solving how-to-solve-it
 comments: true
-excerpt: "Inducción y Deducción según Polya"
+excerpt: "Aprende de los conceptos de inducción y deducción según George Polya los explica en How to Solve It"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1575746191/verne-ho-0LAJfSNa-xQ-unsplash_prh7gv.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1575746191/verne-ho-0LAJfSNa-xQ-unsplash_prh7gv.jpg

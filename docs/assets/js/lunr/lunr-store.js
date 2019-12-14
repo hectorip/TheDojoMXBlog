@@ -114,7 +114,7 @@ var store = [{
         "tags": ["criptografía","esteganografía","seguridad"],
         "url": "/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html",
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1573540452/jacob-campbell-ri83DTadRto-unsplash_fb7xgx.jpg"},{
-        "title": "La paradoja del inventor y la resolución de problemas",
+        "title": "Inducción y Deducción según Polya",
         "excerpt":"Este es el tercer artículo acerca del libro “How to Solve It” de George Polya. Puedes ver los dos artículos anteriores aquí: Técnicas para resolver problemas Heurística Con este artículo cerraremos con las ideas que George Polya desarrolló para resolver problemas. Inducción y Deducción Hablemos ahora de algunas formas de...","categories": [],
         "tags": ["polya","problem-solving","how-to-solve-it"],
         "url": "/2019/12/14/induccion-y-deduccion-segun-polya.html",
