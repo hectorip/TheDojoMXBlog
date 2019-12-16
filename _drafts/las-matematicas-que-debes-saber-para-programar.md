@@ -19,10 +19,10 @@ Empecemos hablando brevemente de las matemáticas que debes conocer como program
 Saber operar con números en la vida cotidiana es una habilidad que todos necesitamos. Pero más importante aún es entender el significado de estas operaciones.
 
 ### Combinaciones y permutaciones
+
 Esto puede no sonar tan básico pero el entendimiento del significado de estas operaciones es necesario para muchas operaciones dentro de las ciencias de la computación y la programación.
 
 ### Probabilidad y estadística
-
 
 
 # Lógica (Matemáticas discretas)

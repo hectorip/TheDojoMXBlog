@@ -14,9 +14,10 @@ header:
 
 En este post te daremos algunos recursos que puedes seguir para aprender a programar desde lo más básico hasta tener un conocimiento razonable de programación con el que podrías empezar a trabajar como becario.
 
-## Emociónate
+## Motívate
 
-Para ser un buen programador es importante conocer las bases, pero para eso antes hay que tener motivación y mantenerla. Así que empecemos por algo que te mostrará el poder de la programación y de lo que puedes hacer con un poco de conocimiento.
+Para ser un buen programador es importante conocer las bases, pero para eso antes hay que tener motivación y _mantenerla_. Así que empecemos por algo que te mostrará el poder de la programación y de lo que puedes hacer con un poco de conocimiento.
+
 
 ## Ahora sí, las bases
 
