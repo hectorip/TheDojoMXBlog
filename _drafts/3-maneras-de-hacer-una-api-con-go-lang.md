@@ -67,7 +67,6 @@ Por eso te presentamos las opciones más comunes y algunos ejemplos.
 
 Gin es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go.
 
-
 ## Beego
 
 ## Conclusión
