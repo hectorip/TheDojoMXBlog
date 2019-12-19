@@ -14,7 +14,7 @@ header:
 
 Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el formateo y embellecimiento de documento.
 
-En este artículo te platicaré de **cuatro alternativas** que pueden hacer tu vida más fácil: Markdown, ReStructured Text, AsciiDoc y LaTeX.
+En este artículo te platicaré de **tres alternativas** que pueden hacer tu vida más fácil: Markdown, reStructuredText, AsciiDoc.
 
 Todos estos lenguajes pueden producir múltiples formatos de salida: HTML, PDF, Word, entre otros. Y lo mejor es que estas salidas son personalizables.
 
@@ -38,7 +38,13 @@ De hecho, esta entrada está escrita con Markdown. Markdown es tan popular que e
 
 Si aún no lo sabes usar, vale la pena que le eches un ojo: (Guía de Markdown en español)[http://bit.ly/38S2l8G]. Tardarás unos minutos en aprender lo básico que es muy útil para el 80% de los casos en los que lo ocuparas.
 
-## ReStructured Text
-Markdown es muy bueno para crear documentos individuales, pero qué pasa si el texto que quieres escribir es más extenso? Tal vez el texto está compuesto por muchas partes, como un libro. Tal vez necesites incluir un índice.
+Markdown es muy bueno para crear documentos individuales pero, ¿qué pasa si el texto que quieres escribir es más extenso? Tal vez el texto está compuesto por muchas partes, como un libro. Tal vez necesites incluir un índice de temas o de palabras.
+
+Las siguientes herramientas están mejor que preparadas que Markdown para eso, permiten crear cuerpos de textos más.
+
+## reStructuredText
+
+Este formato de texto es adecuado para crear cuerpos de texto más complejos que Markdown
+
 
 
