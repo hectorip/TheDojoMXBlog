@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.16.6 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.17.2 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -76,7 +76,7 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<!--[if IE ]>
+<!--[if IE]>
   <style>
     /* old IE unsupported flexbox fixes */
     .greedy-nav .site-title {
@@ -130,7 +130,7 @@
       "headline": "El arte de resolver problemas: la heurística",
       "keywords": "polya,problemas,how_to_solve_it,heurística,heuristics",
       "description": "La heurística te ayudará a resolver mejor los problemas que se te presentan como programador. Veamosla más detenidamente.",
-      "articleBody": "\n  La heurística habla del comportamiento humano frente a los problemas. - George Polya\n\n\nEn un artículo anterior analizamos la estructura básica de un problema y la estructura de resolución que George Polya propone para intentar resolverlos.\n\nPolya analiza a fondo la estructura del proceso de resolución de problemas. Aquí hablaremos de la heurística, de la que escribió en “How to solve it”, un compendio que pensó originalmente como un análisis de esta.\n\nDefinición\n\nLa palabra heurística viene de una raíz griega que transmite la idea de descubrimiento o invención. La heurística históricamente ha estado relacionada con estudiar los medios por los que se descubre o inventa algo. Su campo de estudio abarca la lógica, la psicología y la filosofía, pero no se puede acotar a ninguna de las tres áreas.\n\nPolya estudia y define la heurística moderna el arte de resolver problemas, porque en eso consiste el proceso: descubrir una solución(en los problemas en los que hay que encontrar algo) o inventar algo (en los problemas en los que hay que crear una demostración).\n\nPodemos echar mano de lo que nos enseña al atacar problemas muy difíciles de los que no tenemos la mínima idea de cómo resolver o no podemos idear un plan confiable para resolverlos (recuerda que crear un plan es el punto medular de la resolución de un problema).\n\nHeurística moderna\n\nLa heurística actualmente busca entender el proceso de resolución de problemas, pero particularmente las operaciones mentales relacionadas con ese proceso.\n\n\n  La experiencia en la resolución de problemas u observar a otros resolver problemas debe ser la base de la heurística. - G. Polya\n\n\nSe busca encontrar patrones y propiedades comunes en una gran variedad de problemas, por lo que se puede decir que la heurística tiende a la generalidad, estudia procedimientos que son independientes del dominio del problema.\nPolya habla de múltiples métodos y procedimientos para avanzar en la resolución de un problema complicado.\n\nAnalicemos algunos de ellos:\n\n\n  \n    Variación del problema. ¿Puedo variar por lo menos temporalmente alguna de las partes del problema? ¿Puedo cambiar los datos, las condiciones o la solución?\n  \n  \n    Descomposición y recombinación. Esta operación mental implica entender y separar las partes esenciales de un problema y tratar de re-crearlo con un nuevo entendimiento o crear un problema ligeramente diferente.\n  \n  \n    Regresar a las definiciones. Comprender los términos usados en cada parte del problema a veces implicará que busquemos lo que algo significa desde sus raíces. Esto nos puede ayudar a entender mejor el problema así como a introducir elementos auxiliares que ayuden en la resolución.\n  \n  \n    Generalización, especialización y analogías. Estas tres operaciones son una forma de variar un problema. ¿Puedo hacer el problema más amplio, para resolver un caso más general y después aplicar los resultados o el método a mi problema original? ¿Existe un problema similar al que estoy resolviendo que pueda resolver más fácilmente?\n  \n  \n    Notación adecuada. Una vez entendido el problema, sobre todo para problemas matemáticos, es muy importante introducir notación que nos pueda ayudar a trabajar sobre el problema. Para los problemas matemáticos y en ciencias en general, ya existen estas notaciones estándar. Para nuestros problemas tenemos que inventar una que la mayoría de los implicados puede entender y usar.\n  \n  \n    Suponer, pero comprobar las suposiciones. Para avanzar en la resolución de un problema muchas veces hay que dar cosas por supuesto, como en el caso de las comprobaciones por reducción al absurdo. Polya afirma que no está mal suponer cosas temporalmente mientras más adelante encontremos una forma de comprobar o rechazar esas suposiciones.\n  \n  \n    Trabajar en reversa. Muchas veces sabemos como luce la solución, o tenemos que comprobar que una solución supuesta es correcta. Trabajar en reversa significa avanzar de la solución hasta nuestro estado actual, trabajando paso por paso hasta poder encontrar la cadena de transformaciones necesarias para conectar esos estados.\n  \n  \n    Aspectos psicológicos: determinación, esperanza y éxito. Al principio mencionamos que la heurística es también trataba con aspectos psicológicos. Polya afirma que sería un error considerar que los problemas son ejercicios puramente intelectuales. En el proceso de resolución influye mucho los sentimientos y emocionses. Los tres puntos mencionados aquí son muy importantes para la resolución de un problema. Primero, debemos desear resolver el problema, esto es la determinación. Segundo, debemos creer que somos capaces de resolver el problema y que este tiene solución. Y tercero, en lo relacionado con problemas intelectuales es muy difícil perseverar si no se experimenta una razonable dosis de éxito de vez en cuando. Para esto es necesario aplicar algunas de las técnicas mencionadas arriba.\n  \n\n\nComo puedes ver, la heurística es práctica. Además la heurística aplicada a la enseñanza y a la puede tener efectos positivos, ya que ayuda a las personas a aprender a pensar mejor.\n\nRazonamiento Heurístico\n\nAplicar las técnicas antes mencionadas tiene un efecto en la forma de resolver los problemas: en algunos de los pasos de la solución aceptamos soluciones supuestas, incompletas, relacionadas vagamente con el problema o parcialmente erróneas con tal de avanzar en la solución y el entendimiento del problema y de generar nuevas ideas/éxitos para mantener y aumentar la motivación.\n\nEsto no quiere decir que la heurística acepte soluciones erróneas, estos pasos son temporales, y las soluciones finales deben ser comprobadas con el mayor rigor posible.\n\nAlgoritmos heurísticos\n\nAhora hablemos de aprovechar estas ideas para la programación, con una clase de algoritmos conocidos como algoritmos heurísticos.\n\nUn algoritmo heurístico en vez de garantizar siempre la mejor solución en cada paso del programa, acepta soluciones parciales o suficientemente buenas. Este tipo de algoritmos funciona muy bien en casos donde hay demasiadas soluciones posibles como para probarlas todas (fuerza bruta) o muchas de ellas (como los algoritmos de backtracking) y no hay ningún algoritmo establecido conocido que resuleva el problema  o se haya demostrado que esta solución es imposible.\n\nLa principal diferencia a tener en cuenta cuando hablamos o tratamos con este tipo de algoritmos es que no garantizan la respuesta correcta o la respuesta óptima, aunque en algunos casos son la mejor forma de lograrlo. Fuera de la programación, la heurística nos ayuda a llegar a la respuesta correcta aceptando temporalmente soluciones intermedias no óptimas, semi-erróneas o incompletas, pero con soluciones finales *que se pueden verificar como correctas rigurosamente. No es así con los algoritmos heurísticos en la programación, y he aquí por lo que el nombre puede confundirnos.\n\nConclusión\n\nLa heurística es un campo de estudio valioso sobre todo para la vida moderna y para el desarrollo de software porque puede ayudarnos a estructurar nuestros esfuerzos en la resolución de los problemas que nos enfrentamos.\n\nEn el siguiente y último artículo de la serie analizaremos más técnicas usadas en la resolución de problemas de las que Polya habla en el libro “How to Solve It”.\n",
+      "articleBody": "\n  La heurística habla del comportamiento humano frente a los problemas. - George Polya\n\n\nEn un artículo anterior analizamos la estructura básica de un problema y la estructura de resolución que George Polya propone para intentar resolverlos.\n\nPolya analiza a fondo la estructura del proceso de resolución de problemas. Aquí hablaremos de la heurística, de la que escribió en “How to solve it”, un compendio que pensó originalmente como un análisis de esta.\n\nDefinición\n\nLa palabra heurística viene de una raíz griega que transmite la idea de descubrimiento o invención. La heurística históricamente ha estado relacionada con estudiar los medios por los que se descubre o inventa algo. Su campo de estudio abarca la lógica, la psicología y la filosofía, pero no se puede acotar a ninguna de las tres áreas.\n\nPolya estudia y define la heurística moderna como el arte de resolver problemas, porque en eso consiste el proceso: descubrir una solución(en los problemas en los que hay que encontrar algo) o inventar algo (en los problemas en los que hay que crear una demostración).\n\nPodemos echar mano de lo que nos enseña al atacar problemas muy difíciles de los que no tenemos la mínima idea de cómo resolver o no podemos idear un plan confiable para resolverlos (recuerda que crear un plan es el punto medular de la resolución de un problema).\n\nHeurística moderna\n\nLa heurística actualmente busca entender el proceso de resolución de problemas, pero particularmente las operaciones mentales relacionadas con ese proceso.\n\n\n  La experiencia en la resolución de problemas u observar a otros resolver problemas debe ser la base de la heurística. - G. Polya\n\n\nSe busca encontrar patrones y propiedades comunes en una gran variedad de problemas, por lo que se puede decir que la heurística tiende a la generalidad, estudia procedimientos que son independientes del dominio del problema.\nPolya habla de múltiples métodos y procedimientos para avanzar en la resolución de un problema complicado.\n\nAnalicemos algunos de ellos:\n\n\n  \n    Variación del problema. ¿Puedo variar por lo menos temporalmente alguna de las partes del problema? ¿Puedo cambiar los datos, las condiciones o la solución?\n  \n  \n    Descomposición y recombinación. Esta operación mental implica entender y separar las partes esenciales de un problema y tratar de re-crearlo con un nuevo entendimiento o crear un problema ligeramente diferente.\n  \n  \n    Regresar a las definiciones. Comprender los términos usados en cada parte del problema a veces implicará que busquemos lo que algo significa desde sus raíces. Esto nos puede ayudar a entender mejor el problema así como a introducir elementos auxiliares que ayuden en la resolución.\n  \n  \n    Generalización, especialización y analogías. Estas tres operaciones son una forma de variar un problema. ¿Puedo hacer el problema más amplio, para resolver un caso más general y después aplicar los resultados o el método a mi problema original? ¿Existe un problema similar al que estoy resolviendo que pueda resolver más fácilmente?\n  \n  \n    Notación adecuada. Una vez entendido el problema, sobre todo para problemas matemáticos, es muy importante introducir notación que nos pueda ayudar a trabajar sobre el problema. Para los problemas matemáticos y en ciencias en general, ya existen estas notaciones estándar. Para nuestros problemas tenemos que inventar una que la mayoría de los implicados puede entender y usar.\n  \n  \n    Suponer, pero comprobar las suposiciones. Para avanzar en la resolución de un problema muchas veces hay que dar cosas por supuesto, como en el caso de las comprobaciones por reducción al absurdo. Polya afirma que no está mal suponer cosas temporalmente mientras más adelante encontremos una forma de comprobar o rechazar esas suposiciones.\n  \n  \n    Trabajar en reversa. Muchas veces sabemos como luce la solución, o tenemos que comprobar que una solución supuesta es correcta. Trabajar en reversa significa avanzar de la solución hasta nuestro estado actual, trabajando paso por paso hasta poder encontrar la cadena de transformaciones necesarias para conectar esos estados.\n  \n  \n    Aspectos psicológicos: determinación, esperanza y éxito. Al principio mencionamos que la heurística es también trataba con aspectos psicológicos. Polya afirma que sería un error considerar que los problemas son ejercicios puramente intelectuales. En el proceso de resolución influye mucho los sentimientos y emocionses. Los tres puntos mencionados aquí son muy importantes para la resolución de un problema. Primero, debemos desear resolver el problema, esto es la determinación. Segundo, debemos creer que somos capaces de resolver el problema y que este tiene solución. Y tercero, en lo relacionado con problemas intelectuales es muy difícil perseverar si no se experimenta una razonable dosis de éxito de vez en cuando. Para esto es necesario aplicar algunas de las técnicas mencionadas arriba.\n  \n\n\nComo puedes ver, la heurística es práctica. Además la heurística aplicada a la enseñanza y a la puede tener efectos positivos, ya que ayuda a las personas a aprender a pensar mejor.\n\nRazonamiento Heurístico\n\nAplicar las técnicas antes mencionadas tiene un efecto en la forma de resolver los problemas: en algunos de los pasos de la solución aceptamos soluciones supuestas, incompletas, relacionadas vagamente con el problema o parcialmente erróneas con tal de avanzar en la solución y el entendimiento del problema y de generar nuevas ideas/éxitos para mantener y aumentar la motivación.\n\nEsto no quiere decir que la heurística acepte soluciones erróneas, estos pasos son temporales, y las soluciones finales deben ser comprobadas con el mayor rigor posible.\n\nAlgoritmos heurísticos\n\nAhora hablemos de aprovechar estas ideas para la programación, con una clase de algoritmos conocidos como algoritmos heurísticos.\n\nUn algoritmo heurístico en vez de garantizar siempre la mejor solución en cada paso del programa, acepta soluciones parciales o suficientemente buenas. Este tipo de algoritmos funciona muy bien en casos donde hay demasiadas soluciones posibles como para probarlas todas (fuerza bruta) o muchas de ellas (como los algoritmos de backtracking) y no hay ningún algoritmo establecido conocido que resuleva el problema  o se haya demostrado que esta solución es imposible.\n\nLa principal diferencia a tener en cuenta cuando hablamos o tratamos con este tipo de algoritmos es que no garantizan la respuesta correcta o la respuesta óptima, aunque en algunos casos son la mejor forma de lograrlo. Fuera de la programación, la heurística nos ayuda a llegar a la respuesta correcta aceptando temporalmente soluciones intermedias no óptimas, semi-erróneas o incompletas, pero con soluciones finales *que se pueden verificar como correctas rigurosamente. No es así con los algoritmos heurísticos en la programación, y he aquí por lo que el nombre puede confundirnos.\n\nConclusión\n\nLa heurística es un campo de estudio valioso sobre todo para la vida moderna y para el desarrollo de software porque puede ayudarnos a estructurar nuestros esfuerzos en la resolución de los problemas que nos enfrentamos.\n\nEn el siguiente y último artículo de la serie analizaremos más técnicas usadas en la resolución de problemas de las que Polya habla en el libro “How to Solve It”.\n",
       "datePublished": "2019-10-03 00:00:00 -0500",
       "dateModified": "2019-10-03 00:00:00 -0500",
       "author": {
@@ -414,7 +414,7 @@
 
 <p>La palabra heurística viene de una raíz griega que transmite la idea de <strong>descubrimiento o invención</strong>. La heurística históricamente ha estado relacionada con <strong>estudiar los medios por los que se descubre o inventa algo</strong>. Su campo de estudio abarca la lógica, la psicología y la filosofía, pero no se puede acotar a ninguna de las tres áreas.</p>
 
-<p>Polya estudia y define la heurística moderna <em>el arte de resolver problemas</em>, porque en eso consiste el proceso: descubrir una solución(en los problemas en los que hay que <em>encontrar algo</em>) o inventar algo (en los problemas en los que hay que <em>crear una demostración</em>).</p>
+<p>Polya estudia y define la heurística moderna como <em>el arte de resolver problemas</em>, porque en eso consiste el proceso: descubrir una solución(en los problemas en los que hay que <em>encontrar algo</em>) o inventar algo (en los problemas en los que hay que <em>crear una demostración</em>).</p>
 
 <p>Podemos echar mano de lo que nos enseña al atacar problemas muy difíciles de los que no tenemos la mínima idea de cómo resolver o no podemos idear un plan confiable para resolverlos (recuerda que crear un plan es el punto medular de la resolución de un problema).</p>
 
@@ -548,7 +548,8 @@ Polya habla de múltiples métodos y procedimientos para avanzar en la resoluci�
 ">Anterior</a>
     
     
-      <a href="#" class="pagination--pager disabled">Siguiente</a>
+      <a href="/2019/10/27/entendiendo-rest-servicios-cacheables.html" class="pagination--pager" title="Entendiendo REST: Servicios cacheables
+">Siguiente</a>
     
   </nav>
 
@@ -571,6 +572,114 @@ Polya habla de múltiples métodos y procedimientos para avanzar en la resoluci�
     <div class="page__related">
       <h4 class="page__related-title">Podrías ver también</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1575746191/verne-ho-0LAJfSNa-xQ-unsplash_prh7gv.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2019/12/14/induccion-y-deduccion-segun-polya.html" rel="permalink">Inducción y Deducción según Polya
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 14-12-2019
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Aprende de los conceptos de inducción y deducción según George Polya los explica en How to Solve It
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1573540452/jacob-campbell-ri83DTadRto-unsplash_fb7xgx.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html" rel="permalink">Criptografía básica para programadores: ¿Qué es la criptografía?
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 12-11-2019
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Aprende las bases de la criptografía para tenerla en cuenta en tus programas.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1570679826/laura-ockel-nIEHqGSymRU-unsplash_gsspla.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2019/10/27/entendiendo-rest-servicios-cacheables.html" rel="permalink">Entendiendo REST: Servicios cacheables
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 27-10-2019
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo.
+</p>
+  </article>
+</div>
+
         
           
 
@@ -603,114 +712,6 @@ Polya habla de múltiples métodos y procedimientos para avanzar en la resoluci�
 </p>
     
     <p class="archive__item-excerpt" itemprop="description">¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 19...</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/v1567376344/google-servers-datacenter_bs7xzt.png" alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2019/09/01/por-que-deberias-aprender-go.html" rel="permalink">¿Por qué deberías aprender Go?
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  8 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 01-09-2019
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Go es un lenguaje muy relevante en algunas áreas del desarrollo de software. Aprende para qué deberías usarlo y por qué te conviene aprenderlo.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1565702060/annie-spratt-kZO9xqmO_TA-unsplash_swtrj6.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto.html" rel="permalink">Ultralearning: el arte del aprendizaje profundo
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  10 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 13-08-2019
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Todos queremos aprender muchas cosas. Aprende un método que te permitirá mejorar tus habilidades para adquirir conocimiento.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1564879566/nick-hillier-yD5rv8_WzxA-unsplash_cthqzt.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2019/08/03/entendiendo-rest-servidor-sin-estado.html" rel="permalink">Entendiendo REST: conexión sin estado
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  6 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 03-08-2019
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">¿Cómo mantener la información entre peticiones en un sistema REST? Entendamos las ventajas y desventajas
-</p>
   </article>
 </div>
 

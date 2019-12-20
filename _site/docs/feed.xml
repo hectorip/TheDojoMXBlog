@@ -1,4 +1,236 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-10-03T08:23:46-05:00</updated><id>/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">El arte de resolver problemas: la heurística</title><link href="/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html" rel="alternate" type="text/html" title="El arte de resolver problemas: la heurística" /><published>2019-10-03T00:00:00-05:00</published><updated>2019-10-03T00:00:00-05:00</updated><id>/2019/10/03/el-arte-de-resolver-problemas-la-heuristica</id><content type="html" xml:base="/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-12-20T11:21:58-06:00</updated><id>/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Inducción y Deducción según Polya</title><link href="/2019/12/14/induccion-y-deduccion-segun-polya.html" rel="alternate" type="text/html" title="Inducción y Deducción según Polya" /><published>2019-12-14T00:00:00-06:00</published><updated>2019-12-14T00:00:00-06:00</updated><id>/2019/12/14/induccion-y-deduccion-segun-polya</id><content type="html" xml:base="/2019/12/14/induccion-y-deduccion-segun-polya.html">&lt;p&gt;Este es el tercer artículo acerca del libro &lt;a href=&quot;https://amzn.to/2P8HJA8&quot;&gt;“How to Solve It”&lt;/a&gt; de George Polya. Puedes ver los dos artículos anteriores aquí:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/2019/09/27/tecnicas-para-resolver-problemas.html&quot;&gt;Técnicas para resolver problemas&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html&quot;&gt;Heurística&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Con este artículo cerraremos con las ideas que George Polya desarrolló para resolver problemas.&lt;/p&gt;
+
+&lt;h2 id=&quot;inducción-y-deducción&quot;&gt;Inducción y Deducción&lt;/h2&gt;
+
+&lt;p&gt;Hablemos ahora de algunas formas de resolver problemas.&lt;/p&gt;
+
+&lt;h3 id=&quot;deducción&quot;&gt;Deducción&lt;/h3&gt;
+
+&lt;p&gt;Tratar de resolver problemas por deducción significa &lt;strong&gt;aplicar principios o
+conocimiento general a un caso específico&lt;/strong&gt;. Por ejemplo para un problema
+práctico en el que tenemos encontrar la longitud de un cable tensor para una
+antena, sabemos que podemos aplicar el teorema de Pitágoras.&lt;/p&gt;
+
+&lt;p&gt;Algunos ejemplos para los programadores:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Encontrar el elemento más grande o más pequeño en una lista. (Una forma de resolverlo es ordenar los elementos).&lt;/li&gt;
+  &lt;li&gt;Revisar que un elemento no está repetido en una colección de elementos. (Indexado)&lt;/li&gt;
+  &lt;li&gt;Asegurarse de que las operaciones son atendidas en el orden en que se solicitaron en un entorno con múltiples ejecutores. (Colas)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lo difícil de la deducción es encontrar &lt;em&gt;qué principios, teoremas o formas 
+de resolución de problemas aplican para el problema que tenemos que resolver&lt;/em&gt;. Para esto nos pueden ayudar las técnicas platicadas en los artículos anteriores: ¿He resuelto un problema similar? &lt;em&gt;¿Qué técnica fue usada?&lt;/em&gt; ¿Qué principios sirvieron para la resolución de ese problema? Y, a mi parecer la más útil: ¿puedo usar el resultado o el proceso de resolución?&lt;/p&gt;
+
+&lt;!-- Polya dice que aunque se dice que Sherlock Holmes &quot;deduce&quot;, en realidad aplica la inducción para llegar a conclusiones, ya que aplica conocimiento general a casos concretos. --&gt;
+
+&lt;h3 id=&quot;inducción&quot;&gt;Inducción&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;La inducción es el proceso de descubrir leyes generales mediante la observación y combinación de casos particulares. - &lt;em&gt;George Polya&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;La inducción es uno de los mecanismos de resolución de problemas más difíciles de llevar a la práctica. Funciona en forma inversa a la deducción.&lt;/p&gt;
+
+&lt;p&gt;Consiste en partir de observaciones específicas (ejemplos y contra-ejemplos) y llevarlas a &lt;strong&gt;generalizaciones&lt;/strong&gt; que puedan ser aplicadas en otros casos o que apliquen en muchas otras situaciones situaciones.&lt;/p&gt;
+
+&lt;h3 id=&quot;en-el-desarrollo-de-software&quot;&gt;En el desarrollo de software&lt;/h3&gt;
+
+&lt;p&gt;Seguro te has encontrado con este tipo problemas (o te vas a encontrar) si ya llevas tiempo desarrollando: ya que el desarrollo de software no es un área que viva aislada de las demás áreas, los que requieren el software llevan &lt;em&gt;ejemplos&lt;/em&gt; de  problemas que regularmente tienen que resolver. Nuestros clientes, en general, no se han dado a la tarea de establecer las reglas por las que algo funciona de la manera en que lo hace, ni las excepciones ni los casos únicos. Es nuestra tarea casi siempre descubrir las reglas que subyacen a las operaciones comunes. Esto es una forma de inducción.&lt;/p&gt;
+
+&lt;h3 id=&quot;inducción-matemática&quot;&gt;Inducción matemática&lt;/h3&gt;
+
+&lt;p&gt;Polya habla de otro tipo de inducción de la que opina que no debería llamarse así, y que comparte muy poco con el proceso que acabamos de descubrir y puede llegar a confundir a la gente: la &lt;strong&gt;inducción matemática&lt;/strong&gt;. Este tipo de inducción se refiere al método que los matemáticos emplean para demostrar que cierta aserción es un teorema o no.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problem-solving" /><category term="how-to-solve-it" /><summary type="html">Aprende de los conceptos de inducción y deducción según George Polya los explica en How to Solve It</summary></entry><entry><title type="html">Criptografía básica para programadores: ¿Qué es la criptografía?</title><link href="/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html" rel="alternate" type="text/html" title="Criptografía básica para programadores: ¿Qué es la criptografía?" /><published>2019-11-12T00:00:00-06:00</published><updated>2019-11-12T00:00:00-06:00</updated><id>/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia</id><content type="html" xml:base="/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html">&lt;p&gt;Es muy común escuchar de “encriptación” (la palabra correcta en español es &lt;em&gt;cifrado&lt;/em&gt;), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain.&lt;/p&gt;
+
+&lt;p&gt;Uno de los temas menos tratados por programadores de software común (para usuarios y sistemas que no impliquen el uso de seguridad a medida), es el correcto uso de los algoritmos criptográficos y muchas veces ni siquiera conocemos lo suficiente de ellos, sino que confiamos en lo que las herramientas pre-establecen (que gran parte de las veces fue diseñado por expertos y eso está bien).&lt;/p&gt;
+
+&lt;p&gt;Pero un poco de conocimiento sobre criptografía no te hará daño, sobre todo si programas sistemas que necesiten seguridad (todos), y sí puede evitarte errores fatales.&lt;/p&gt;
+
+&lt;p&gt;Esta serie de artículos tratará de todo lo que un programador debe saber acerca de la aplicación correcta de algoritmos criptográficos a sus desarrollos, y un poco de su funcionamiento interno.&lt;/p&gt;
+
+&lt;p&gt;Empecemos por lo más básico. ¿Qué es exactamente la criptografía?&lt;/p&gt;
+
+&lt;h2 id=&quot;definición-de-criptografía&quot;&gt;Definición de Criptografía&lt;/h2&gt;
+
+&lt;p&gt;La criptografía moderna se puede considerar una rama de las matemáticas (&lt;em&gt;otra vez&lt;/em&gt;) y la computación enfocada en encontrar y crear formas de convertir información clara y con algún significado en &lt;em&gt;información imposible de entender por entidades que no cuenten con la autorización para hacerlo, aunque la tengan en su poder&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;La palabra quiere decir literalmente &lt;strong&gt;“escritura oculta”&lt;/strong&gt;. Y también se puede definir el campo como el encargado de encontrar algoritmos o procedimientos que permitan ocultar mensajes que sólo puedan ser descifrados por aquellos que tengan la llave.&lt;/p&gt;
+
+&lt;p&gt;La criptografía implica &lt;em&gt;esconder&lt;/em&gt; información explícitamente (los atacantes pueden saber que esa información está oculta e incluso hasta tener los mensajes ocultos en su poder), de manera que quien tenga la información correcta (que les concede la autorización) pueda obtener la información original desde los datos ininteligibles.&lt;/p&gt;
+
+&lt;p&gt;Este proceso de ocultar la información se llama &lt;strong&gt;cifrado&lt;/strong&gt; (también se usa &lt;em&gt;encriptado&lt;/em&gt;, como un barbarismo), mientras que el proceso de recuperar la información se llama &lt;strong&gt;descifrado&lt;/strong&gt; (o &lt;em&gt;desencriptado&lt;/em&gt; 🙄).&lt;/p&gt;
+
+&lt;p&gt;Los procesos de cifrado modernos requieren generalmente &lt;strong&gt;una llave o conjunto de llaves&lt;/strong&gt;, para realizar los procesos de cifrado y descifrado.&lt;/p&gt;
+
+&lt;p&gt;La criptografía es la base de todos los mecanismos de seguridad informática modernos, y a menudo se usa una conbinación de ellos para proteger un sistema.&lt;/p&gt;
+
+&lt;h2 id=&quot;uso-en-el-software-actual&quot;&gt;Uso en el software actual&lt;/h2&gt;
+
+&lt;p&gt;Los algoritmos criptográficos se usan en todos lados en los sistemas modernos. Son los algoritmos que permiten que la información viaje segura en internet (usando HTTPS, que se basa en TLS/SSL), por ejemplo. Algunos otros casos en los que son usados:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;En la protección de la información que viaja en las redes inalámbricas, sean WiFi o Celulares (3G, 4G, 5G).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Almacenamiento de datos sensibles como passwords (mediante hash) e información personal (cifrados con password).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Protección de archivos.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Cifrado de datos en reposo (al estar almacenados en los discos duros) de los datos para evitar su robo en caso de robo físico o de dispositivos virtuales.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tarjetas de crédito y seguridad bancaria en general.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Estos son tan sólo algunos ejemplos de los lugares en los que la criptografía juega un papel &lt;strong&gt;muy importante&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;esteganografía&quot;&gt;Esteganografía&lt;/h3&gt;
+
+&lt;p&gt;La esteganografía es la técnica, relacionada con la criptografía, &lt;strong&gt;de hacer la información invisible&lt;/strong&gt;, generalmente ocultándola dentro de otro tipo de información.&lt;/p&gt;
+
+&lt;p&gt;Con técnicas criptográficas comunes el que un atacante tenga disponible la información cifrada no hace necesariamente que nuestra información quede expuesta, a menos que el algoritmo criptográfico sea débil y el atacante tenga suficientes recursos para romperlo. En muchos casos incluso suponemos que los atacantes tienen acceso a esta información, como en el caso de la comunicación en internet en la que en cualquier parte de la red puede haber alguien interceptando nuestra información.&lt;/p&gt;
+
+&lt;p&gt;Las técnicas esteganográficas buscan “desaparecer” completamente la información, hacerla invisible a través de ocultarla dentro de otros tipos de mensajes. En la antigüedad, por ejemplo en un libro que parecía hablar de magia, se ocultó un tratado acerca de criptografía y esteganografía, que sólo fue revelado hasta que se encontró la llave correcta.&lt;/p&gt;
+
+&lt;p&gt;Con la llegada de los medios digitales, en la que todo puede ser representado por medio de bits, en realidad se puede ocultar información de cualquier tipo en cualquier otro tipo de mensajes, pero también se siguen usando medios físicos para ocultar información. Un ejemplo son los micro-puntos de algunas impresiones de manuscritos o información sensible repartido a personas de confianza que permiten identificar cada una de las copias entregadas a diferentes personas.&lt;/p&gt;
+
+&lt;p&gt;Aunque la esteganografía y la criptografía son técnicas relacionadas, la más importante actualmente es la criptografía por su uso en la mayoría de los sistemas informáticos de la actualidad.&lt;/p&gt;
+
+&lt;h2 id=&quot;por-qué-deberías-aprender-criptografía&quot;&gt;¿Por qué deberías aprender criptografía?&lt;/h2&gt;
+
+&lt;p&gt;Ya mencionamos lo importante que es en los sistemas actuales. La mayoría de los lenguajes de programación, los desarrollos open source, como los frameworks web, muchas librerías, plataformas como servicio, etc. vienen con funciona de seguridad y criptográficas incluídas. Pero no es suficiente con &lt;em&gt;ser usuario&lt;/em&gt; de estas cosas, ya que hasta los mecanismos y algoritmos mejor diseñados se pueden ser mal usados y minados por la mala utilización.&lt;/p&gt;
+
+&lt;p&gt;Conocer temas como los siguientes, te permitirá subir la calidad de tus desarrollos:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;¿Qué determina la seguridad de un algoritmo criptográfico?&lt;/li&gt;
+  &lt;li&gt;¿Por qué es importante tener una llave de un tamaño correcto?&lt;/li&gt;
+  &lt;li&gt;¿Qué algoritmo debo escoger para esta característica que tengo que desarrollar?&lt;/li&gt;
+  &lt;li&gt;¿Cuáles son las principales características y diferencias de los algoritmos más usados?&lt;/li&gt;
+  &lt;li&gt;¿Qué algoritmos nunca más debería usar en la vida?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;En este artículo sólo hemos tocado la definición de criptografía y hemos mencionado por qué es importante. En los siguientes empezaremos a hablar de las bases que nos permitirán comprender cómo funciona la criptografía y qué mecanismos son los que permiten que brinde seguridad mediante ocultar la información.&lt;/p&gt;
+
+&lt;p&gt;En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo) aleatorios y sus generadores.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="criptografía" /><category term="esteganografía" /><category term="seguridad" /><summary type="html">Aprende las bases de la criptografía para tenerla en cuenta en tus programas.</summary></entry><entry><title type="html">Entendiendo REST: Servicios cacheables</title><link href="/2019/10/27/entendiendo-rest-servicios-cacheables.html" rel="alternate" type="text/html" title="Entendiendo REST: Servicios cacheables" /><published>2019-10-27T00:00:00-05:00</published><updated>2019-10-27T00:00:00-05:00</updated><id>/2019/10/27/entendiendo-rest-servicios-cacheables</id><content type="html" xml:base="/2019/10/27/entendiendo-rest-servicios-cacheables.html">&lt;p&gt;La tercera característica que &lt;a href=&quot;https://twitter.com/fielding&quot;&gt;Thomas R. Fielding&lt;/a&gt; (Roy Fielding a partir de ahora) establece para los sistemas &lt;strong&gt;REST&lt;/strong&gt; es la capacidad de que su información sea cacheable. Veamos lo que esto significa y por qué es una característica importante. Empecemos por definir el caché.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-el-caché&quot;&gt;¿Qué es &lt;em&gt;el caché&lt;/em&gt;?&lt;/h2&gt;
+
+&lt;p&gt;Originalmente el caché se refiere a un tipo especial de memoria &lt;em&gt;muy rápida&lt;/em&gt; en los procesadores, que guarda &lt;em&gt;temporalmente&lt;/em&gt; información que tiene gran probabilidad de volver a ser utilizada &lt;em&gt;dentro de poco tiempo&lt;/em&gt; (en los procesadores hablamos de nano-segundos).&lt;/p&gt;
+
+&lt;p&gt;Al evitar que el procesador vuelva a consultar la RAM (muy lenta en &lt;a href=&quot;https://gist.github.com/jboner/2841832&quot;&gt;comparación con la memoria caché&lt;/a&gt;), las operaciones se realizan a mucha mayor velocidad.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/k0t1e.png&quot; alt=&quot;Latencia de diferentes tipos de memoria&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La memoria caché de los procesadores tiene una gran desventaja: &lt;strong&gt;es muy muy pequeña&lt;/strong&gt;. Esto presenta retos:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;¿Qué guardo aquí para maximizar la eficacia de este espacio de almacenamiento?&lt;/li&gt;
+  &lt;li&gt;¿Cómo decido cuándo borrar o sobre-escribir la información que tengo aquí?&lt;/li&gt;
+  &lt;li&gt;¿Qué pasa si la información original cambia mientras estoy ocupando los datos guardados en la memoria caché?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hablaremos más adelante de estas preguntas en nuestro propio contexto, pero hay técnicas para poder contestarlas con cierta eficacia, que los &lt;a href=&quot;http://user.it.uu.se/~yi/pdf-files/2014/euc14.pdf&quot;&gt;procesadores han logrado implementar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Así que puedes pensar en el caché como en una memoria que es más rápida (aunque más limitada). Se utiliza con el objetivo de hacer un sistema más rápido y a veces más eficiente.&lt;/p&gt;
+
+&lt;h2 id=&quot;caché-en-los-sistemas-rest&quot;&gt;Caché en los sistemas REST&lt;/h2&gt;
+
+&lt;p&gt;Esta característica se basa en las dos que ya hablamos: &lt;a href=&quot;/2019/08/03/entendiendo-rest-servidor-sin-estado.html&quot;&gt;servicios sin estado&lt;/a&gt; y &lt;a href=&quot;/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html&quot;&gt;arquitectura cliente-servidor&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Lo que se define como “cacheabilidad” en los sistemas REST es la capacidad
+de estos sistemas para &lt;em&gt;etiquetar&lt;/em&gt; de alguna forma las respuestas para que
+otros mecanismos intermedios funcionen como un caché.&lt;/p&gt;
+
+&lt;p&gt;Así el sistema puede atender más peticiones, en menos tiempo, con menos
+recursos (comparado con un sistema sin caché).&lt;/p&gt;
+
+&lt;p&gt;Estos sistemas o mecanismos intermedios (existen entre el cliente y el servidor) deben ser por lo general transparentes para los desarrolladores,
+no deben afectar la manera en que los servicios se consumen.&lt;/p&gt;
+
+&lt;p&gt;En sistemas web que usan &lt;strong&gt;HTTP&lt;/strong&gt; para comunicarse el sistema de “etiquetado” que permite que una respuesta sea cacheada son &lt;strong&gt;las cabeceras&lt;/strong&gt;. Estas permiten a los diferentes actores en el proceso de comunicación (servidor local, proxy, proxy reverso, navegador o cliente final, entre otros), saber quién debería cachear la información y por cuánto tiempo o cómo decidir si deben renovar la información. Las cabeceras HTTP comúnmente usadas para esto son:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt;: especifica hasta cuándo se puede considerar fresca o válida la información.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-control&lt;/code&gt;: Es usado para especificar directivas de caché que deben ser respetadas por todos lo puntos por los que pasa la información. Puedes ver los posibles valores y su especifacación aquí: &lt;a href=&quot;https://tools.ietf.org/html/rfc2616#section-14.9&quot;&gt;Cache-Control Header&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Vary&lt;/code&gt;: es usada para indicar qué otras cabeceras se deben tomar en cuenta para decidir si el servidor puede reutilizar una respuesta o no.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Etag&lt;/code&gt;: identifica a una respueste de manera única, puede usarse para pedir una respuesta nueva de un mismo endpoint, y en combinación con la cabecera &lt;code class=&quot;highlighter-rouge&quot;&gt;If-None-Match&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Existen otras cabeceras usadas para lograr un control correcto del caché como &lt;code class=&quot;highlighter-rouge&quot;&gt;If-Modified-Since&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;ventajas-del-caché&quot;&gt;Ventajas del caché&lt;/h2&gt;
+
+&lt;p&gt;El caché se establece como una de las características de REST porque proporciona ventajas para el uso y la escalabilidad de los sistemas. Veamos algunas de ellas.&lt;/p&gt;
+
+&lt;h3 id=&quot;aumenta-la-percepción-de-velocidad&quot;&gt;Aumenta la percepción de velocidad&lt;/h3&gt;
+
+&lt;p&gt;Al guardar las respuestas que es más probable que vuelvan a salir, un sistema REST puede contestar una gran cantidad de sus peticiones a la velocidad que el caché lo permita, es decir, muy rápido.&lt;/p&gt;
+
+&lt;h3 id=&quot;consumo-de-recursos-reducido&quot;&gt;Consumo de recursos reducido&lt;/h3&gt;
+
+&lt;p&gt;El uso caché se parece mucho a una técnica de programación llamada &lt;strong&gt;dynamic programming&lt;/strong&gt; que consiste en guardar temporalmente los resultados de operaciones costosas en tiempo. Esto permite que
+nos ahorremos el procesamiento de muchas respuestas que no se necesitan
+de nuevo porque están almacendas. Además se reduce el ancho de banda
+consumido porque muchas peticiones ni siquiera tienen que llegar al servidor.&lt;/p&gt;
+
+&lt;h3 id=&quot;sistemas-más-fáciles-de-escalar&quot;&gt;Sistemas más fáciles de escalar&lt;/h3&gt;
+
+&lt;p&gt;Los sistemas que usan caché son capaces de aguantar más peticiones
+simultáneas por la razón que vimos anteriormente: se reduce el consumo de recursos. Además, si se require crecer el sistema se deben poner menos recursos. Para algunos sistemas, el caché es lo único que tiene que crecer
+cuando se requiere atender a más usuarios simultáneos.&lt;/p&gt;
+
+&lt;h2 id=&quot;retos-de-cachear&quot;&gt;Retos de cachear&lt;/h2&gt;
+
+&lt;p&gt;Toda solución tecnológica implica ventajas y desventajas. Entonces ¿qué desventajas o retos implica usar un sistema de caché?&lt;/p&gt;
+
+&lt;h3 id=&quot;frescura&quot;&gt;Frescura&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sólo hay dos cosas difíciles en Ciencias de Computación: invalidación de caché y nombrar cosas. - Phil Karlton&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;El reto más grande e importante de tener un sistema de caché es lograr un
+equilibrio entre mantener la información el mayor tiempo posible y tener
+información correcta y actualizada. Si se almacena en caché por demasiado
+tiempo algo, esta información se vuelve vieja y por lo tanto puede estar desactualizada. Por el otro lado si se guarda por muy poco tiempo puede 
+llevar a que los sistemas de caché se sub-utilicen y provean pocos
+beneficios.&lt;/p&gt;
+
+&lt;h3 id=&quot;diseño-del-sistema&quot;&gt;Diseño del sistema&lt;/h3&gt;
+
+&lt;p&gt;Designar qué partes del sistema pueden ser cacheables y asignar los
+etiquetados de las respuestas correctamente puede aumentar la complejidad del sistema en general.&lt;/p&gt;
+
+&lt;h3 id=&quot;inconsistencia&quot;&gt;Inconsistencia&lt;/h3&gt;
+
+&lt;p&gt;El uso de caché puede llevar a inconsistencias de información entre diferentes clientes por periodos de tiempo de diferente duración. Esto es en parte consecuencia de la dificultad de mantener el caché fresco, pero además tiene que ver con la manera en que los clientes piden la información. &lt;strong&gt;Si tus clientes no pueden soportar la mínima variación en la información porque tendría consecuencias graves, es mejor no cachear.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;El caché es una parte olvidada de los sistemas REST, el constraint menos mencionado. Pero es importante que les permite funcionar mejor cuando tenemos bastante carga. Mantenerlo funcionando bien es un reto, pero los sistemas que quieren ser escalables y resistentes deben implementar alguna forma de cachear.&lt;/p&gt;
+
+&lt;p&gt;Roy Fielding menciona que es importante porque cualquier
+sistema expuesto a clientes desconocidos tiene el peligro de recibir una
+gran cantidad de carga súbitamente, y si tu servicio no está preparado o es
+fácil de escalar, fallarás.&lt;/p&gt;
+
+&lt;p&gt;Si quieres leer un artículo más completo con otras referencias sobre el caché en REST y en HTTP te recomiendo &lt;a href=&quot;https://odino.org/rest-better-http-cache/&quot;&gt;REST better: HTTP Cache&lt;/a&gt;, en inglés.&lt;/p&gt;
+
+&lt;p&gt;En el siguiente artículo veremos la cuarta restricción de los sistemas REST: la interfaz uniforme, la más amplia de las restricciones, pero una de las más útiles.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo.</summary></entry><entry><title type="html">El arte de resolver problemas: la heurística</title><link href="/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html" rel="alternate" type="text/html" title="El arte de resolver problemas: la heurística" /><published>2019-10-03T00:00:00-05:00</published><updated>2019-10-03T00:00:00-05:00</updated><id>/2019/10/03/el-arte-de-resolver-problemas-la-heuristica</id><content type="html" xml:base="/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html">&lt;blockquote&gt;
   &lt;p&gt;La heurística habla del &lt;strong&gt;comportamiento humano&lt;/strong&gt; frente a los problemas. - George Polya&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -10,7 +242,7 @@
 
 &lt;p&gt;La palabra heurística viene de una raíz griega que transmite la idea de &lt;strong&gt;descubrimiento o invención&lt;/strong&gt;. La heurística históricamente ha estado relacionada con &lt;strong&gt;estudiar los medios por los que se descubre o inventa algo&lt;/strong&gt;. Su campo de estudio abarca la lógica, la psicología y la filosofía, pero no se puede acotar a ninguna de las tres áreas.&lt;/p&gt;
 
-&lt;p&gt;Polya estudia y define la heurística moderna &lt;em&gt;el arte de resolver problemas&lt;/em&gt;, porque en eso consiste el proceso: descubrir una solución(en los problemas en los que hay que &lt;em&gt;encontrar algo&lt;/em&gt;) o inventar algo (en los problemas en los que hay que &lt;em&gt;crear una demostración&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;Polya estudia y define la heurística moderna como &lt;em&gt;el arte de resolver problemas&lt;/em&gt;, porque en eso consiste el proceso: descubrir una solución(en los problemas en los que hay que &lt;em&gt;encontrar algo&lt;/em&gt;) o inventar algo (en los problemas en los que hay que &lt;em&gt;crear una demostración&lt;/em&gt;).&lt;/p&gt;
 
 &lt;p&gt;Podemos echar mano de lo que nos enseña al atacar problemas muy difíciles de los que no tenemos la mínima idea de cómo resolver o no podemos idear un plan confiable para resolverlos (recuerda que crear un plan es el punto medular de la resolución de un problema).&lt;/p&gt;
 
@@ -429,7 +661,7 @@ En Go puedes hacer muchas cosas que haces con C razonablemente bien, sin tanta c
 
 &lt;p&gt;&lt;strong&gt;¿Cuántas cosas están en tu lista de aprendizaje?&lt;/strong&gt; Todos tenemos una lista larga de temas, habilidades y curiosidades por aprender. Pero tenemos una cantidad igual de grande de obstáculos para lograrlo: la falta de acceso a recursos de aprendizaje, la falta de tiempo, falta de motivación, dificultad en estructura, entre muchas otras cosas.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.scotthyoung.com/&quot;&gt;Scott Young&lt;/a&gt; el autor de &lt;a href=&quot;https://www.scotthyoung.com/blog/ultralearning/&quot;&gt;Ultralearning&lt;/a&gt; fue muy amable al proporcionarme una copia de revisión antes de que saliera el libro que &lt;a href=&quot;https://www.amazon.com.mx/Ultralearning-Master-Outsmart-Competition-Accelerate/dp/006285268X/ref=tmm_hrd_swatch_0?_encoding=UTF8&amp;amp;qid=1565413014&amp;amp;sr=8-1&quot;&gt;ya está a la venta&lt;/a&gt;, y en este artículo quiero sintetizar las principales técnicas que enseña para que puedas lograr aprender mejor.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.scotthyoung.com/&quot;&gt;Scott Young&lt;/a&gt; el autor de &lt;a href=&quot;https://www.scotthyoung.com/blog/ultralearning/&quot;&gt;Ultralearning&lt;/a&gt; fue muy amable al proporcionarme una copia de revisión antes de que saliera el libro que &lt;a href=&quot;https://amzn.to/361v2hu&quot;&gt;ya está a la venta&lt;/a&gt;, y en este artículo quiero sintetizar las principales técnicas que enseña para que puedas lograr aprender mejor.&lt;/p&gt;
 
 &lt;p&gt;Pero primero, ¿quién es Scott Young y por qué deberíamos escucharlo? Se hizo famoso por estudiar el temario completo (o casi completo) del MIT para Computer Science que normalmente se cursa en 4 años &lt;strong&gt;en sólo 1&lt;/strong&gt;. Este proyecto ocupaba todo su tiempo, un montón de concentración y técnicas para aprender. Aquí es donde empezó a desarrollar el concepto que presenta en el libro (me tomaré la libertad de traducirlo): Ultra-aprendizaje. A partir de ahí ha aprendido muchas más cosas con el mismo estilo agresivo de aprendizaje y ha ayudado a otros a hacer lo mismo.&lt;/p&gt;
 
@@ -987,420 +1219,4 @@ Escuela Johns Hopkins Bloomberg de Salud Pública. Tiene varios cursos en Course
 
 &lt;p&gt;Si sabes inglés, hay más material del que podríamos leer decentemente en un buen tiempo sin tener que gastar un solo peso directamente en esta información. ¿Por qué no aprovecharla?&lt;/p&gt;
 
-&lt;p&gt;Cuéantanos si ya leíste uno de ellos y qué te pareció.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="Machine Learning" /><category term="python" /><category term="r" /><summary type="html">Encuentra una colección de libros gratuitos para aprender acerca de estadística, análisis de datos y machine learning usando tanto Python como R.</summary></entry><entry><title type="html">Entendiendo REST. El estilo de Arquitectura.</title><link href="/2019/06/15/entendiendo-rest-estilo-de-arquitectura.html" rel="alternate" type="text/html" title="Entendiendo REST. El estilo de Arquitectura." /><published>2019-06-15T00:00:00-05:00</published><updated>2019-06-15T00:00:00-05:00</updated><id>/2019/06/15/entendiendo-rest-estilo-de-arquitectura</id><content type="html" xml:base="/2019/06/15/entendiendo-rest-estilo-de-arquitectura.html">&lt;p&gt;En el &lt;a href=&quot;/2019/05/06/diseno-y-desarrollo-de-una-api-desde-cero.html&quot;&gt;artículo anterior de la serie&lt;/a&gt; hablamos un poco de lo que es una API REST. En este artículo empezaremos a ver qué es REST y por qué surgió.&lt;/p&gt;
-
-&lt;p&gt;Antes de empezar con lo nuestro, hablemos de lo que NO es una API REST.&lt;/p&gt;
-
-&lt;h2 id=&quot;esto-no-es-rest&quot;&gt;Esto no es REST&lt;/h2&gt;
-
-&lt;p&gt;Actualmente, muchos desarrolladores (yo me contaba entre ellos), llaman API REST a cualquier servicio Web que corra sobre HTTP, sirva recursos (objetos o elementos que representan un objeto) o cosas parecidas y use JSON como lenguaje de transferencia de datos.
-De estas cosas, sólo la parte de servir recursos (en realidad &lt;em&gt;representaciones&lt;/em&gt; de recursos) tiene que ver con una API REST. El estilo arquitectural REST no obliga el uso de HTTP y mucho menos de JSON.&lt;/p&gt;
-
-&lt;p&gt;Dada esta tendencia de llamar API REST a cualquier cosa que funcione sobre HTTP, debemos estar de acuerdo en que la mayoría de las API’s ni siquiera &lt;em&gt;intenta&lt;/em&gt; ser REST.
-Algunas son RPC (Remote Procedure Call) sobre HTTP simplemente. Otro mal uso que he escuchado es que cualquier cosa que sirva JSON es llamada API REST, pero como ya dijimos el estilo arquitectural REST ni siquiera fuerza el uso de JSON (y no todas las API’s que sirven XML son SOAP).&lt;/p&gt;
-
-&lt;p&gt;Con esto no queremos decir que el que un servicio no sea REST lo haga malo o de mala calidad, de hecho, muchas veces (la mayoría) no se necesita cumplir con las características de REST y con cumplir con algunas de las características o principios de diseño de REST es suficiente.&lt;/p&gt;
-
-&lt;p&gt;En artículos posteriores vamos a hablar de las seis características que &lt;strong&gt;sí&lt;/strong&gt; definen una arquitectura REST, las vamos a cambiar un poco del orden tradicional que se explica en la mayoría de los tutoriales (y seguiremos el de la tesis original) para que tenga más sentido la forma en que las explicamos.&lt;/p&gt;
-
-&lt;p&gt;Las características de las que hablaremos son en cierto modo &lt;em&gt;restricciones&lt;/em&gt; (constraints, como lo dice la tesis original): una cosa es definida por las cosas que &lt;em&gt;no&lt;/em&gt; puede o &lt;em&gt;no&lt;/em&gt; debe hacer.&lt;/p&gt;
-
-&lt;h2 id=&quot;arquitectura&quot;&gt;Arquitectura&lt;/h2&gt;
-
-&lt;p&gt;Cuando hablamos de REST (REpresentational State Transfer) estamos hablando se un &lt;strong&gt;estilo de arquitectura&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;La definición del estilo de arquitectura REST la hizo &lt;a href=&quot;https://www.ics.uci.edu/~fielding/&quot;&gt;Thomas Fielding&lt;/a&gt; en su tesis doctoral, que puedes descargar y leer completa &lt;a href=&quot;https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm&quot;&gt;aquí&lt;/a&gt;, en ella explica lo que lo llevó a definirla y diseñarla tal como es.&lt;/p&gt;
-
-&lt;p&gt;Fielding hace la distinción entre tres conceptos que parecerían lo mismo a simple vista.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Estilo de arquitectura o estilo arquitectural&lt;/strong&gt;: Es un conjunto de restricciones que limitan cómo los elementos de una arquitectura (componentes del software, conectores y datos) pueden interactuar entre sí y las características que deben tener. En la arquitectura de espacios físicos podemos pensar en los estilos más amplios que a veces escuchamos mencionados: Barroco, Moderno, Post-moderno. En la arquitectura de software, &lt;strong&gt;REST cae en esta categoría&lt;/strong&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Diseño arquitectural&lt;/strong&gt;: Es la aplicación de un estilo de arquitectura. Podemos pensar en esto como las guías que definen cómo una arquitectura se implementará. El diseño arquitectural en los edificios podría pensarse en la aplicación de las reglas del diseño arquitectural a un tipo de edificio específico tu catedral o castillo 🤔.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Arquitectura&lt;/strong&gt;: Fielding la define como una abstracción del estado de un sistema en un momento determinado. La arquitectura es la concreción de un diseño arquitectural. En el ejemplo de los edificios puedes pensar en esto como en los planos de la catedral barroca.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Hablando de arquitectura &lt;a href=&quot;https://simonbrown.je/&quot;&gt;Simon Brown&lt;/a&gt;, que es actualmente una da las grandes mentes en el campo de la arquitectura de software, la define como la &lt;em&gt;todo lo relacionado con el diseño de un sistema de software, desde la estructura del código hasta cómo funciona a alto nivel, pasando por cómo el software es puesto en producción&lt;/em&gt;. Es responsabilidad de la arquitectura definir las siguientes características y funciones del sistema:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Tareas que abarquen todo el sistema: Logging, manejo de errores, etc.&lt;/li&gt;
-  &lt;li&gt;Seguridad&lt;/li&gt;
-  &lt;li&gt;Rendimiento&lt;/li&gt;
-  &lt;li&gt;Escalabilidad&lt;/li&gt;
-  &lt;li&gt;Disponibilidad&lt;/li&gt;
-  &lt;li&gt;Auditorías y cumplimiento de regulaciones&lt;/li&gt;
-  &lt;li&gt;Limitaciones del entorno&lt;/li&gt;
-  &lt;li&gt;Interoperatividad e integración con otros sistemas&lt;/li&gt;
-  &lt;li&gt;Consistencia de soluciones a través de toda la base de código&lt;/li&gt;
-  &lt;li&gt;Evaluación de cumplimiento de los entregables&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Como podemos ver, la arquitectura de software tiene muchas cosas de preocuparse. Pues bueno, el estilo de arquitectura ayuda a resolver varias de estas preocupaciones predefiniendo algunas cosas la estructura y el comportamiento del sistema mediante las características y limitaciones que establece.&lt;/p&gt;
-
-&lt;p&gt;¿Qué de estas cosas ataca REST? Hablemos de ellas.&lt;/p&gt;
-
-&lt;h2 id=&quot;cosas-que-rest-intenta-resolver&quot;&gt;Cosas que REST intenta resolver&lt;/h2&gt;
-
-&lt;p&gt;Todo este embrollo de arquitectura-diseño-estilos fue definido con un fin en mente: estudiar los estilos y las características de las arquitecturas para poder llegar a la resolución de los problemas concretos que los sistemas tienen.&lt;/p&gt;
-
-&lt;p&gt;Las cosas que REST intenta ayudar a resolver concretamente son las siguientes.&lt;/p&gt;
-
-&lt;h3 id=&quot;rendimiento&quot;&gt;Rendimiento&lt;/h3&gt;
-
-&lt;p&gt;Una de las principales cosas que este estilo de arquitectura quiere atacar es el rendimiento de las aplicaciones. El rendimiento se refiere tanto a la capacidad real como percibida de cumplir con &lt;strong&gt;lo que se espera de un sistema de software&lt;/strong&gt; en términos de velocidad de respuesta.&lt;/p&gt;
-
-&lt;p&gt;Esto implica que tanto la aplicación como la red (recordemos que siempre estamos hablando de aplicaciones web) debe responder en un tiempo razonable.&lt;/p&gt;
-
-&lt;p&gt;Varias de las restricciones y características que REST establece están relacionadas directamente con este punto.&lt;/p&gt;
-
-&lt;h3 id=&quot;facilidad-de-modificación&quot;&gt;Facilidad de Modificación&lt;/h3&gt;
-
-&lt;p&gt;Fielding elabora esto como uno de los puntos más grandes que las arquitecturas deben atender. A final de cuentas un sistema no se puede quedar estático, y facilitar el trabajo para nosotros mismos en el futuro o para otras personas debería ser una prioridad.&lt;/p&gt;
-
-&lt;p&gt;Los cinco puntos que Fielding considera que definen la facilidad de modifición son:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Facilidad de evolución&lt;/strong&gt;. Es la capacidad que tiene un sistema de que sus componentes cambien sin afectar directamente negativamente a los demás y por lo tanto el estado general del sistema.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Extensibilidad&lt;/strong&gt;. Es la capacidad de agregar funcionalidades o capacidades a un sistema.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Facilidad de personalización&lt;/strong&gt;. Es la capacidad de un elemento de poder adaptarse temporalmente para dar un servicio que no siempre da, sin afectar negativamente el sistema en general.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Facilidad de configuración&lt;/strong&gt;. Se refiere a poder cambiar la configuración o modificar un sistema en producción mediante configuraciones, es decir, sin cambios en el código.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Facilidad de reutilización&lt;/strong&gt;. Se puede explicar como la capacidad de los componentes de un sistema de ser usados sin modificaciones en otros sistemas.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;visibilidad&quot;&gt;Visibilidad&lt;/h3&gt;
-
-&lt;p&gt;La visibilidad es la capacidad de monitorear un componente del sistema e incluso mediar la interacción entre dos componentes. Este tipo específico de visibilidad (recientemente llamado observabilidad), puede mejorar el sistema de muchas maneras como mediante cachés, capas intermedias para mejorar la escalabilidad, monitoreo activo y la seguridad al observar la comunicación de los componentes y actuar, tal como un firewall lo hace.&lt;/p&gt;
-
-&lt;h3 id=&quot;portabilidad&quot;&gt;Portabilidad&lt;/h3&gt;
-
-&lt;p&gt;Uno de los puntos que se necesita resolver de algunas aplicaciones, es que la solución pueda correr en diferentes entornos. A esto se refiere la portabilidad para Fielding, que un sistema pueda correr sin cambios en diferentes instalaciones y sin grandes cambios.&lt;/p&gt;
-
-&lt;h3 id=&quot;escalabilidad&quot;&gt;Escalabilidad&lt;/h3&gt;
-
-&lt;p&gt;¿Cuántos usuarios al mismo tiempo puede soportar tu aplicación? ¿Qué pasa si de repente llegan diez veces más usuarios de los que esperabas? La respuesta a estas preguntas está directamente relacionada con la escalabilidad de la aplicación.&lt;/p&gt;
-
-&lt;p&gt;Fielding la define como la capacidad de los componentes de soportar un número grande de interacciones, que se ve impactada no sólo por la cantidad sino por la frecuencia de interacciones.&lt;/p&gt;
-
-&lt;h3 id=&quot;simplicidad&quot;&gt;Simplicidad&lt;/h3&gt;
-
-&lt;p&gt;Un buen desarrollo debe ser tan simple como sea posible. Si se añade complejidad extra a la innata del problema en cuestión será más difícil de mantener.&lt;/p&gt;
-
-&lt;p&gt;Estas cuestiones y cosas importantes acerca de todas las aplicaciones son lo que llevó a Fielding a definir REST y a agregar las características/restricciones que puso.&lt;/p&gt;
-
-&lt;p&gt;Fielding resume tres características en lo que el llama simplicidad:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Complejidad&lt;/strong&gt;. Es la cantidad de componentes interconectados. Mientras menos sea, mejor.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Facilidad de comprensión&lt;/strong&gt;. ¿Qué tan preparado está el sistema para poder ser entendido fácilmente?&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Verificabilidad&lt;/strong&gt;. ¿Se puede verificar que la solución y los datos que entrega el sistema sean correctos?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Todas estas características y necesidades de un sistema de software de fácil mantenimiento son las que llevaron a la creación de el estilo arquitectural REST. Sirven para entender por qué definió las 6 restricciones que un sistema REST debe cumplir, pero algo interesante que se menciona a través de su tesis es que cada una de las decisiones es un intercambio de valor que hay que sopesar.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;¿Por qué deberías elegir REST?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;El estilo arquitectural REST te ayuda a resolver problemas que pueden empezar a dar dolores de cabeza desde el principio, al dar una guía de cómo debería comportarse tu aplicación para cumplir con las cualidades mencionadas arriba.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;No debemos olvidar que toda selección es &lt;strong&gt;necesariamente&lt;/strong&gt; un intercambio de valor. Se pierde algo por ganar otra cosa. La pregunta que siempre hay que tener en mente es:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;¿Qué me conviene más en este caso?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;En el siguiente artículo analizaremos la primera restricción de  REST: la arquitectura cliente-servidor.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="api" /><category term="rest" /><category term="restful" /><category term="arquitectura" /><summary type="html">Empieza a entender qué es REST y por qué ha sido tan importante en la web moderna. Hablemos de la motivación que llevó a crearlo</summary></entry><entry><title type="html">¿Por qué deberías aprender Elixir?</title><link href="/2019/06/02/por-que-deberias-aprender-elixir.html" rel="alternate" type="text/html" title="¿Por qué deberías aprender Elixir?" /><published>2019-06-02T00:00:00-05:00</published><updated>2019-06-02T00:00:00-05:00</updated><id>/2019/06/02/por-que-deberias-aprender-elixir</id><content type="html" xml:base="/2019/06/02/por-que-deberias-aprender-elixir.html">&lt;p&gt;Elixir es un lenguaje de programación bastante reciente (creado cerca de 2012), pero que está haciendo mucho ruido y más considerando que no tiene ninguno de los nombres legendarios del área de sistemas atrás ni a alguna empresa prominente.&lt;/p&gt;
-
-&lt;p&gt;En este post vamos a hablar de por qué es buena idea aprender Elixir en 2019.&lt;/p&gt;
-
-&lt;h2 id=&quot;un-poco-de-historia&quot;&gt;Un poco de historia&lt;/h2&gt;
-
-&lt;p&gt;Elixir es un lenguaje de programación creado por José Valim, que empezó a ser programado en 2011 y su versión 1.0 salió a la luz en 2014. Ahora en Junio 2019 va en su &lt;strong&gt;versión 1.8&lt;/strong&gt;. &lt;em&gt;Nació con la idea de mejorar el rendimiento de los programas sin afectar la productividad de los programadores&lt;/em&gt;. José Valim era un contribuidor al núcleo de Rails, hasta que se dio cuenta de que no podría escalar hasta el grado que necesitaba, sobre todo por Ruby y sus limitaciones. Ahí empieza la historia de Elixir y el aprovechamiento de la concurrencia provista por Erlang y su máquina virtual, &lt;strong&gt;BEAM&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;En el siguiente documental explican por qué se creó y cómo es que resuelve algunos problemas para diferentes empresas:&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/lxYFOM3UJzo&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Elixir es como el hijo de Erlang y Ruby. La belleza de Ruby y el poder de Erlang.&lt;/p&gt;
-
-&lt;h2 id=&quot;características-de-elixir&quot;&gt;Características de Elixir&lt;/h2&gt;
-
-&lt;p&gt;Platiquemos un poco de las características de este lenguaje que lo hacen muy adecuado para crear programas modernos, aunque aprovecha tecnología de hace 30 años.&lt;/p&gt;
-
-&lt;h3 id=&quot;funcional&quot;&gt;Funcional&lt;/h3&gt;
-
-&lt;p&gt;Una de las primeras cosas que resalta de Elixir es que es un lenguaje funcional, como Erlang. En &lt;a href=&quot;/&quot;&gt;otro post&lt;/a&gt; explicamos las ventajas y características de la programación funcional pero recordemos un poco las dos principales:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Se basan en funciones puras&lt;/li&gt;
-  &lt;li&gt;Los valores son inmutables&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;A partir de estas dos características se desprenden muchas otras que llevan a una mejor descomposición de los problemas, mejor rendimiento y mantenibilidad para los problemas adecuados:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Funciones de orden superior (o tratar las funciones como cualquier otro valor)&lt;/li&gt;
-  &lt;li&gt;Evaluación retardada o perezosa&lt;/li&gt;
-  &lt;li&gt;Transparencia referencial&lt;/li&gt;
-  &lt;li&gt;Independencia de contexto de ejecución&lt;/li&gt;
-  &lt;li&gt;Pipelines para transformación de datos&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Debemos tener presente que la programación funcional no es la mejor opción para todos los casos, sobre todo presenta dificultades cuando se tienen que mantener estructuras de datos muy grandes que se tengan que modificar constantemente, algunos lenguajes tiene trucos inteligentes pero sigue sin ser lo óptimo.&lt;/p&gt;
-
-&lt;h3 id=&quot;beam---erlang&quot;&gt;BEAM - Erlang&lt;/h3&gt;
-
-&lt;p&gt;La tecnología que está atrás de Elixir es Erlang y su máquina virtual, la &lt;a href=&quot;http://erlang.org/faq/implementations.html&quot;&gt;BEAM&lt;/a&gt;. Esto quiere decir que los programas hechos con Elixir corren como su fuera un programa hecho en Erlang sobre el entorno de ejecución que originalmente fue creado para él. Además al correr sobre el mismo entorno, Elixir puede aprovechar todo lo que ya existe en Erlang, desde sus librerías hasta varias de las herramientas de desarrollo.&lt;/p&gt;
-
-&lt;p&gt;¿Por qué es tan importante la máquina virtual? La BEAM es la encargada de la ejecución de los programas creados con Erlang y &lt;a href=&quot;https://github.com/llaisdy/beam_languages&quot;&gt;muchos otros lenguajes&lt;/a&gt;, entre ellos Elixir. Se encarga de distribuir el procesamiento y administrar la memoria, así como conectarse con los nodos necesarios para la ejecución del programa. Además administra y levanta los procesos que los programas requieren. La BEAM es el soporte para las características que vienen.&lt;/p&gt;
-
-&lt;h3 id=&quot;distribuido&quot;&gt;Distribuido&lt;/h3&gt;
-
-&lt;p&gt;La BEAM está pensada para trabajar con sistemas distribuidos, específicamente puede funcionar a través de una red de computadoras y distribuir el programa y la carga a través de todos los nodos que la componen. De esta manera puedes crear aplicaciones que aprovechen la memoria y el procesamiento de toda una red de computadoras.&lt;/p&gt;
-
-&lt;p&gt;Así nació Erlang y ahora puedes aprovechar estas características con Elixir. Por ejemplo, puedes llamar y mandar mensajes a un proceso que vive en una computadora al otro lado del mundo justo como si estuviera viviendo en tu misma computadora, siempre y cuando la BEAM tenga conectados los nodos.&lt;/p&gt;
-
-&lt;p&gt;Esto es una de las características que suma a una característica de la que vamos a hablar más tarde: &lt;strong&gt;resiliencia&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;concurrente&quot;&gt;Concurrente&lt;/h3&gt;
-
-&lt;p&gt;Elixir y Erlang permiten crear programas concurrentes de manera sencilla. Su modelo de concurrencia está basado en &lt;strong&gt;actores&lt;/strong&gt;, que son pequeños procesos muy ligeros que no comparten memoria entre ellos y se comunican mediante mensajes colocados en un &lt;em&gt;mailbox&lt;/em&gt;. Este tipo de concurrencia permite crear también supervisores, que son procesos que “vigilan” a otros procesos y toman acciones cuando terminan o fallan.&lt;/p&gt;
-
-&lt;p&gt;Todo esto permite crear estructuras de procesos complejas que nos habilitan para lograr diferentes objetivos. Un ejemplo son los &lt;strong&gt;árboles de supervisión&lt;/strong&gt; (en realidad todas las aplicaciones de Erlang y Elixir lo tienen), que es una estructura de procesos que permite crear un programa resistente a fallos.&lt;/p&gt;
-
-&lt;p&gt;Siendo uno de los puntos principales del lenguaje y la BEAM, existe un conjunto de patrones, librerías y procesos diseñados para aprovechar las características concurrentes llamado &lt;strong&gt;OTP&lt;/strong&gt;, que es uno de los puntos más fuertes de la plataforma completa.&lt;/p&gt;
-
-&lt;h3 id=&quot;resiliente&quot;&gt;Resiliente&lt;/h3&gt;
-
-&lt;p&gt;Las características de las que hemos platicado llevan al lenguaje a una característica muy importante. Las aplicaciones hechas en Elixir pueden llegar ser muy, muy resilientes. Es decir, puede aguantar mucho tiempo sin caerse e incluso problemas inesperados. Las aplicaciones hechas en Erlang pueden ofrecer &lt;strong&gt;99.9999999%&lt;/strong&gt; de disponibilidad, lo que quiere decir que sólamente van a estar indisponibles 32ms en un año. A esta resiliencia contribuyen tres de las características antes mencionadas: la distribución de al computación y la memoria, la concurrencia y los árboles de supervisión.&lt;/p&gt;
-
-&lt;h3 id=&quot;velocidad&quot;&gt;Velocidad&lt;/h3&gt;
-
-&lt;p&gt;Al ser un lenguaje compilado y gracias a la BEAM, que aprovecha todos los núcleos de procesamiento disponibles, Elixir es un lenguaje muy rápido en general. Aquí una muesta del tiempo que tarda en responder una petición web usando un framework llamado Phoenix:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1559515060/Screenshot_2019-06-02_17.36.52_sx8dgs.png&quot; alt=&quot;Tiempo de respuesta de Phoenix&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;fácil-para-empezar-a-programar&quot;&gt;Fácil para empezar a programar&lt;/h3&gt;
-
-&lt;p&gt;Elixir fue creado con el objetivo de ser divertido y fácil de aprender aún siendo un lenguaje funcional. Sigue la filosofía de Ruby. Hereda gran parte de la sintaxis y las ideas de Ruby (a final de cuentas de allí nació). Ruby nació para ser un lenguaje disfrutable y lo mismo Elixir. La sintaxis y operadores lo hacen fácil de entender una vez que entiendes que no está basado en la sintaxis de C.&lt;/p&gt;
-
-&lt;p&gt;Por ejemplo, uno de los operadores más usados, el pipe, permite hacer cosas bastante legibles:&lt;/p&gt;
-
-&lt;div class=&quot;language-elixir highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Enum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;only:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;map:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;sum:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;zip:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;calculados&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;reales&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;5.9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calculados&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;zip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reales&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Elixir es de &lt;strong&gt;tipado dinámico&lt;/strong&gt;, es decir, no necesitas declarar y mantener los tipos de las variables y de cada operación.&lt;/p&gt;
-
-&lt;p&gt;Lo anterior no quiere decir que todo sea fácil en Elixir. El modelo de programación que lo respalda (funcional), la sintaxis no basada en C y el modelo de &lt;a href=&quot;/2019/04/17/la-diferencia-entre-concurrencia-y-paralelismo.html&quot;&gt;concurrencia&lt;/a&gt; basado en actores no son cosas con las que tratemos todos los días si venimos de la programción no concurrente y en su mayor parte basada en la herencia de C.&lt;/p&gt;
-
-&lt;h3 id=&quot;grandes-herramientas&quot;&gt;Grandes herramientas&lt;/h3&gt;
-
-&lt;p&gt;Una característica que resalta de Elixir son las herramientas para desarrollo con las que cuenta. Primero, puede aprovecharse de todas las que Erlang provee y segundo porque los creadores pusieron especial atención en esto.
-La principal herramienta para desarrollo en Elixir es &lt;a href=&quot;https://elixir-lang.org/getting-started/mix-otp/introduction-to-mix.html&quot;&gt;mix&lt;/a&gt; que permite desde iniciar un proyecto hasta monitorear tu código en producción mediante conectarse a la máquina virtual que lo está corriendo.&lt;/p&gt;
-
-&lt;p&gt;Otra de las herramientas/características que la BEAM tiene son &lt;strong&gt;actualización de código en vivo&lt;/strong&gt; (hot code swapping). Esto es especialmente difícil de lograr con sistemas que mantienen un estado en memoria, pero por lo menos es posible y permitido por la máquina virtual.&lt;/p&gt;
-
-&lt;p&gt;Hablando por ejemplo de monitorear un programa que está corriendo, la BEAM permite examinarlo hasta de manera visual:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1559505687/Screenshot_2019-06-02_15.00.01_u1xiwd.png&quot; alt=&quot;Visualizador de procesos de Erlang&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;(por cierto, esto es un árbol de supervisión).&lt;/p&gt;
-
-&lt;h3 id=&quot;metaporgramación&quot;&gt;Metaporgramación&lt;/h3&gt;
-
-&lt;p&gt;La metagprogramación se refiere a la capacidad de algunos lenguajes de crear código (o su representación interna) con un programa hecho en el mismo lenguaje. Gran parte (casi todo) en Elixir está hecho con esta técnica, es decir, Elixir está implementado en Elixir.&lt;/p&gt;
-
-&lt;p&gt;Pero lo mejor es que el equipo deicidió darle estas capacidades a los usuarios del lenguaje. Así que, gracias a esto, podemos manejar el AST (Abstract Syntax Tree o Árbol de Sintaxis abstracta), que es la representación interna del lenguaje, como si fuera un estructura común de datos y crear nuestras propias macros y estructuras sintácticas.&lt;/p&gt;
-
-&lt;p&gt;Esta habilidad permite por ejemplo la creación de macros para crear tu propio mini-lenguaje adentro de Elixir, lo que generalmente se conoce como un DSL (Domain Specific Language), adaptado a lo que necesitas en el sistema que estés programando.&lt;/p&gt;
-
-&lt;p&gt;La siguiente imagen da un ejemplo de cómo puede lucir un lenguaje para un domino específico.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1559509232/20180416_1_rlvoac.png&quot; alt=&quot;Ejemplo de DSL en Elixir&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Como puedes ver es mucho más adecuado para el problema específico que si sólamente creáramos funciones.&lt;/p&gt;
-
-&lt;h3 id=&quot;gran-comunidad&quot;&gt;Gran comunidad&lt;/h3&gt;
-
-&lt;p&gt;La comunidad alrededor de Elixir es uno de los puntos más fuertes. Grandes programadores de otras comunidades y con mucha experiencia están apoyándolo y desarrollando el mismo lenguaje, librerías y herramientas para él, pero más importante, son muy abiertos y fomentan el trabajo de comunidad contestando dudas directamente y apoyando a programadores más inexpertos.&lt;/p&gt;
-
-&lt;p&gt;Esto ha hecho que la comunidad de Elixir sea muy receptiva, cordial y que las herramientas y librerías estén creciendo mucho en el poco tiempo de vida que tiene.&lt;/p&gt;
-
-&lt;h2 id=&quot;desventajas&quot;&gt;Desventajas&lt;/h2&gt;
-
-&lt;p&gt;Nada es perfecto. Al empezar a programar en Elixir te puedes topar con algunas problemas, de los que ahora hablaremos.&lt;/p&gt;
-
-&lt;h3 id=&quot;reciente-creación&quot;&gt;Reciente creación&lt;/h3&gt;
-
-&lt;p&gt;Su juventud como lenguaje hace que muchos de los problemas que te enfrentas sean recientes, no haya tantos programadores experimentados y la comunidad sea más pequeña (aunque está creciendo). Esto también implica que encontrarás menos librerías y algunas tendrán aún fallas de algún tipo por no haber sido probadas completamente por una gran cantidad de usuarios.&lt;/p&gt;
-
-&lt;p&gt;Si vas a iniciar un proyecto que requiera muchos programadores, conseguir programadores de Elixir será más difícil que con otros lenguajes más longevos. Pero siempre puedes enseñarles 😉.&lt;/p&gt;
-
-&lt;h3 id=&quot;rendimiento-crudo-bajo-en-comparación-con-otras-soluciones&quot;&gt;Rendimiento crudo bajo en comparación con otras soluciones&lt;/h3&gt;
-
-&lt;p&gt;La BEAM no es tan poderosa en procesamiento numérico como lo son otras máquinas virtuales (como la JVM) o como soluciones que compilan directamente a código máquina (Rust o Go). Es mucho mucho más lenta que estos últimos, lo cuál no la hace una solución especialmente buena cuando se trata de procesar grandes cantidades de información por sí sola (procesamiento de imágenes, análisis y transformación de datos). Para solventar esto, la BEAM soporta “plugins” llamados NIF’s, escritos en otros lenguajes que permiten delegar esta tarea a módulos y funciones escritas en otro lenguaje más adecuado para la tarea en cuestión.&lt;/p&gt;
-
-&lt;h2 id=&quot;casos-de-uso&quot;&gt;Casos de Uso&lt;/h2&gt;
-
-&lt;p&gt;Con las características mencionadas anteriormente te podrás dar una idea de para qué es bueno elixir:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Sistemas de misión crítica&lt;/strong&gt;. Si necesitas un sistema que no se muera con nada y sea capaz de aguantar muchos tipos diferentes de fallas (incluso desconocidas) Elixir es una gran elección.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Sistemas web&lt;/strong&gt;. La naturaleza de uso de la web actual hace que Elixir sea una gran elección si quieres que tu sistema ocupe pocos recursos, sea confiable, escale fácilmente y aguante una cantidad brutal de usuario simultáneamente.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Sistemas en tiempo real ligero (soft real-time)&lt;/strong&gt;. Las características de Elixir lo hacen adecuado para manejar interacciones en tiempo real con muy muy poco atraso en la comunicación. Es adecuado para juegos, salas de chat, sistemas de notificaciones e incluso IoT.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Sistemas que tienen que trabajar sobre muchas máquinas&lt;/strong&gt;. La BEAM está especialmente hecha para eso.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Programas embebidos&lt;/strong&gt;. La ligereza de sus procesos y la capacidad de crear árboles de supervisión lo hacen muy adecuado para crear software embebido. Hay un proyecto específicamente creado para eso, llamado &lt;a href=&quot;https://nerves-project.org/&quot;&gt;Nerves&lt;/a&gt;. Con él podrás crear software a prueba de balas.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;en-dónde-evitarlo&quot;&gt;En dónde evitarlo&lt;/h2&gt;
-
-&lt;p&gt;Las limitantes en cuanto al procesamiento de información cruda (number crunching) pueden hacer que Elixir no sea la mejor elección si la función principal de tu programa es algo que incluya muchas operaciones matemáticas sobre grandes cantidades de números: procesamiento y transformación de imágenes, análisis de video, etc.&lt;/p&gt;
-
-&lt;h2 id=&quot;recursos-de-aprendizaje&quot;&gt;Recursos de aprendizaje.&lt;/h2&gt;
-
-&lt;p&gt;En este post puedes ver unos cuantos recursos de aprendizaje: &lt;a href=&quot;https://hectorip.com/2018/12/27/aprendiendo-elixir.html&quot;&gt;Recursos de aprendizaje de Elixir&lt;/a&gt;, pero en este blog vamos a ir subiendo algunos ejercicios para que puedas aprender más de él.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Conviene aprender Elixir por muchas razones. Te divertirás creando programas en él. En este blog vamos a ir compartiendo artículos para que puedas aprender más de él.&lt;/p&gt;
-
-&lt;p&gt;No dudes en comentarnos tus dudas y podemos compartir nuestras experiencias.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="elixir" /><category term="fp" /><category term="programación-funcional" /><summary type="html">Elixir es un lenguaje que recientemente ha estado haciendo ruido. Aquí te contamos algunas cosas de él para que te animes a aprenderlo.</summary></entry><entry><title type="html">Diseño y desarrollo de una API RESTful desde cero - La importancia de diseñar tu API</title><link href="/2019/05/06/diseno-y-desarrollo-de-una-api-desde-cero.html" rel="alternate" type="text/html" title="Diseño y desarrollo de una API RESTful desde cero - La importancia de diseñar tu API" /><published>2019-05-06T00:00:00-05:00</published><updated>2019-05-06T00:00:00-05:00</updated><id>/2019/05/06/diseno-y-desarrollo-de-una-api-desde-cero</id><content type="html" xml:base="/2019/05/06/diseno-y-desarrollo-de-una-api-desde-cero.html">&lt;p&gt;En este post explicaré &lt;strong&gt;los principios básicos de diseño de una API&lt;/strong&gt;. Esta primera parte es bastante teórica, empezaremos con la práctica (no con la programación, sino con el diseño) en un post posterior.&lt;/p&gt;
-
-&lt;p&gt;Primero hablemos de la importancia del diseño o la arquitectura de la API. En la serie de posts hablaremos de API’s para consumo web, a través de HTTP, ya que son las de mayor uso y popularidad.&lt;/p&gt;
-
-&lt;h2 id=&quot;la-importancia-de-diseñar-tu-api&quot;&gt;La importancia de diseñar tu API&lt;/h2&gt;
-
-&lt;p&gt;Aunque parezca una tarea aburrida, innecesaria o burocrática, elegir un estilo de diseño de API’s te servirá de las siguientes maneras:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Mayor facilidad de desarrollo&lt;/strong&gt;. Tener una forma de nombrar los endpoints (los links con los que los sistemas externos interactúan), una estrucutra de respuesta, un estándar de errores y otras cuestiones definidas de antemano te permitirá pasar directo al diseño e implementación de las funcionalidades cuando llegue el momento. Si escoges usar una estructura de diseño común y popular puede que incluso haya herramientas que te faciliten la tarea. Nuestra API estará preparada para ser mantenible y escalable.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Familiariadad&lt;/strong&gt;. Si sigues un patrón de diseño común, cuando otros desarrolladores usen tu API la entenderán más fácil y podrán comenzar a sacarle provecho más rápido.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Menos documentación&lt;/strong&gt;. Aprovechando lo anterior, puede que gran parte de la estructura y prácticas comunes del patrón que escogiste ya estén documentadas, por lo que normalmente tendrás que documentar sólamente las partes que son especeificas de tu API.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;El trabajo extra que pongas en diseñar tu API o por lo menos escoger un patrón de diseño común te ahorrará trabajo en el futuro, a tu equipo y a otros desarrolladores.&lt;/p&gt;
-
-&lt;p&gt;Dependiendo de la época y las necesidades han surgido varios estilos o patrones de diseño comunes. Aquí hablaremos de dos de los más usados a lo largo del tiempo y de los más populares.&lt;/p&gt;
-
-&lt;h2 id=&quot;soap-simple-object-access-protocol&quot;&gt;SOAP (Simple Object Access Protocol)&lt;/h2&gt;
-
-&lt;p&gt;Este es el estilo de servicios más usado en el mundo empresarial. En realidad es un protocolo que establece desde la manera de comunicación hasta el lenguaje usado para transferir datos, entre otras cosas.
-Su nombre es un acrónimo que signfica &lt;em&gt;Simple Object Access Protocol (Protocolo simple de acceso a objetos)&lt;/em&gt; y fue desarrollado por Microsoft inicialmente. El lenguaje que se usa para transferir datos es &lt;a href=&quot;https://www.w3schools.com/xml/xml_whatis.asp&quot;&gt;XML&lt;/a&gt; y tiene varios estándares que definen cada aspecto de la comunicación, por lo que no se queda en sólo un estilo de diseño de API’s. Su objetivo original era definir cómo acceder y usar servicios web.&lt;/p&gt;
-
-&lt;p&gt;Una de las partes más fuertes del protocolo es la manera en que establece un contrato con el cliente acerca de la forma de usar los serivicios que expone. El archivo &lt;a href=&quot;https://www.w3.org/TR/2001/NOTE-wsdl-20010315&quot;&gt;WSDL&lt;/a&gt; contiene la descripción de los serivcios expuestos en un lenguaje exclusivamente creado para eso, el &lt;em&gt;Web Service Description Language&lt;/em&gt;, que se vale de XML. En este archivo define los servicios que la API provee, mediante la definición de una colección de endpoints, mensajes y tipos de datos. Este documento permite automatizar la creación de clientes mediante código.&lt;/p&gt;
-
-&lt;h3 id=&quot;ventajas-de-soap&quot;&gt;Ventajas de SOAP&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Pensado para transacciones complejas&lt;/strong&gt;. Una parte de SOAP está pensada para usarse con &lt;strong&gt;transacciones&lt;/strong&gt;. Si lo que requieres es que tu API realice transacciones &lt;a href=&quot;https://en.wikipedia.org/wiki/ACID_(computer_science)&quot;&gt;ACID&lt;/a&gt;, trabajar con SOAP te facilitará la vida.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Establece cada parte de la comunicación&lt;/strong&gt;. Esto puede ser una ventaja o una desventaja, pero si estás con una tecnología que lo permite y aprovecha, trabajar con SOAP puede ser rápido y sin dolor, ya que los estándares estarán implementados en la platafoma/lenguaje y las herramientas de programación pueden aprovecharse de los estándares para facilitarte la vida.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Interfaz definida&lt;/strong&gt;. Mediante el documento WSDL, SOAP permite la lectura de la interfaz (los endpoints), los tipos de datos y sus mensajes, así como las acciones que se pueden realizar de manera automatizada, lo que hace sencillo entender y consumir la API, incluso de manera automatizada mediante una herramienta que cree el cliente automáticamente o un paquete de tu lenguaje que te facilite la vida.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;desventajas-de-soap&quot;&gt;Desventajas de SOAP.&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;XML&lt;/strong&gt;. Parsear y procesar XML es en geneal más difícil y requiere más pasos que hacer con otros lenguajes de transmisión de datos usados con otros estilos de API’s, pero esta deventaja sólo aplica si tu lenguaje y herramientas de desarrollo no soportan completamente los protocolos establecidos por SOAP. Así que la experiencia que tengas con SOAP depende en gran medida de las cosas implementadas por los lenguajes y herramientas en que programarás en el lenguaje (por ejmplo, los IDE’s para C# y Java soportan recibir el WSDL para automatizar gran parte del proceso de crear un cliente)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Velocidad&lt;/strong&gt;. Al ser un protocolo más complejo, aumenta la cantidad de procesamiento y transferencia de datos requerido para funcionar, lo que lo hace más lento que otras alternativas. Además, no es fácilmente cacheable, por lo que cada respuesta tiene que ser única y por lo tanto requiere mayores recursos.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;conclusión-acerca-de-soap&quot;&gt;Conclusión acerca de SOAP&lt;/h3&gt;
-
-&lt;p&gt;Muchos desarrolladores, sobre todo con poca experiencia, se escandalizan cuando tienen que trabajar en un API SOAP, sobre todo las generaciones recientes, y sí es un problema cuando tus herramientas no hacen fácil trabajar con este tipo de API’s (como con cualquier otro tipo de desarrollo, tecnología o protocolo). Sin embargo, sus características las hacen ideales para API’s transaccionales, por lo que es conveniente escorger este tipo de API’s en los casos adecuados. Además, puedes beneficiarte de su forma de establecer la interfaz de manera clara y estricta. &lt;strong&gt;Cada herramienta fue creada con un propósito y tiene sus usos adecuados.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;apis-restful&quot;&gt;API’s RESTful&lt;/h2&gt;
-
-&lt;p&gt;Una API REST aprovecha el diseño de las peticiones HTTP para crear servicios web con interfaces intuitivas.
-REST son las siglas de “Representational State Transfer” (Transferencia de Estado Representacional), que es un estilo de arquitectura de sistemas distribuidos (podemos pensar en la web como un sistema distribuido). 
-Este estilo establece 6 características que se deben de cumplir para que un sistema sea considerado RESTful:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Arquitectura cliente-servidor. Existe un programa encargado de hacer peticiones (cliente) y uno encargado de responderlas (servidor).&lt;/li&gt;
-  &lt;li&gt;Interfaz uniforme. Todos los clientes deberían acceder a la misma interfaz. Si el servidor cumple con la interfaz, puede haber un número ilimitado de clientes independientes que cambian sin dependencias entre ellos o con la implementación del servidor. &lt;em&gt;Esta es una de las razones principales por las que las API’s REST son tan usadas actualmente.&lt;/em&gt; Este punto lo trataremos más a profundidad en el siguiente artículo. Pero para cumplir esto mencionemos brevemente qué principios debe seguir esta interfaz para que cumpla con este propósito:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Basada en &lt;em&gt;recursos&lt;/em&gt;&lt;/strong&gt;. Las URL’s de los endpoints hacen referencia a &lt;em&gt;recursos&lt;/em&gt;, es decir, a elementos de datos que pueden ser representados como objetos con un tipo, datos asociados, relaciones con otros objetos y las operaciones que se pueden realizar sobre él.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Manipulación de recursos mediante &lt;em&gt;representaciones&lt;/em&gt;&lt;/strong&gt;. La API no devuelve nunca el recurso original al cliente que lo solicita o solicita una operación sobre él, sino que lo hace a través de alguna &lt;em&gt;representación&lt;/em&gt; de este recurso. Una representación es un subconjunto de los datos de recurso transmitido en un lenguaje adecuado: HTML, XML, JSON, MessagePack, etc.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;Mensajes autodescriptivos&lt;/strong&gt;. Cada mensaje tiene suficiente información en sí mismo para ser procesado.&lt;/li&gt;
-      &lt;li&gt;&lt;strong&gt;HATEOAS&lt;/strong&gt;. Estas son las siglas de &lt;strong&gt;Hypermedia As The Engine Of Applicaton State&lt;/strong&gt; (Hypermedia como el motor del estado de la aplicación). La palabra &lt;a href=&quot;https://smartbear.com/learn/api-design/what-is-hypermedia/&quot;&gt;hypermedia&lt;/a&gt; se refiere a un formato de texto (o hypertexto) que contiene links hacia otros documentos, imágenes, video y audio. Es una forma de mostrar las relaciones que existen conceptualmente en una red de información, incluyendo formatos más allá del texto. Por lo tanto, este punto se refiere a que la API debería ser navegable con la información expuesta en cada respuesta, las relaciones con otros recursos, los links a otros documentos y achivos. &lt;a href=&quot;https://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven&quot;&gt;El autor&lt;/a&gt; de la deficinición de API’s REST hace enfásis en que no está casada con ningúna forma de transporte o protocolo de comunicación, pero su implementación bien puede depender de que el protocolo de comunicación tenga las características básicas como el usar URI’s para identificación. Todo el estado de la aplicación necesaria para funcionar será transmitido a partir de hypermedia. En el caso del HTTP, se usan las URL’s con su cadena da consulta (query string), las cabeceras y los cuerpos de petición y respuesta para mantener este estado.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Sistema sin estado. Las conexiones entre los sistemas (cliente y servidor) no deberían dependender de un estado creado o mantenido a través de peticiones anteiores. Todo lo necesario para generar una respuesta se encuentra en la petición actual.&lt;/li&gt;
-  &lt;li&gt;Cacheable. Las respuestas pueden ser guardadas para ser contestadas más rápidamente por el mismo servidor o por un sistema intermedio.&lt;/li&gt;
-  &lt;li&gt;Sistema en capas. El sistema puede estar construido por varias capas de servicio y esto debe ser transparente para los clientes (no tienen que modificar sus llamadas).&lt;/li&gt;
-  &lt;li&gt;Código bajo demanda. El servidor debe ser capaz de envíar código a cliente para que sea ejecutado.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;ventajas-de-rest&quot;&gt;Ventajas de REST&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Flexibilidad&lt;/strong&gt;. REST no define el lenguaje de transferencia de datos, el tipo de autenticación y otros detalles de la comunicación que se dejan a discreción de los implementadores. En la actualidad, la mayoría de las API’s REST usan JSON como lenguaje de transeferencia, pero bien podrían usar XML o MessagePack, incluso un lenguaje propietario.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Popularidad&lt;/strong&gt;. La extensión de uso de API’s RESTful ha hecho que proliferen herramientas para construirlas, probarlas y ponerlas en producción, por le que es muy sencillo desarrollarlas, aunque no deja de presentar retos.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Escalabilidad&lt;/strong&gt;. Esta es una de las razones por las que las API rest se han vuelto tan populares. Incrementar la cantidad de usuarios que se pueden atender con una API RESTful es más sencillo que son SOAP debido a la cacheabilidad y a que las conexiones sin estado permiten escalamiento horizontal (replicación de servidores) y por lo tanto los costos se abaratan. La mayoría de las API’s grandes conocidas siguen este estilo.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;desventajas-de-rest&quot;&gt;Desventajas de REST&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Flexibilidad&lt;/strong&gt;. La flexibilidad es un don y maldición. Cuando a las personas se les permite hacer lo que sea, harán hasta lo inimaginable, por lo que se pueden encontrar implementaciones horribles y sin una guía definida nuestra propia API puede quedar hecha un asco.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Transacciones&lt;/strong&gt;. REST no establece una manera de manejar operaciones transaccionales, por lo que la implementación queda completamente del lado del diseño. Hay que tener en cuenta el manejo del estado, replicación de servidores, consistencia y &lt;a href=&quot;https://es.wikipedia.org/wiki/Condici%C3%B3n_de_carrera&quot;&gt;condiciones de carrera&lt;/a&gt;. Esto no hace sencillo trabajar con transacciones en API’s REST.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Seguridad&lt;/strong&gt;. No estamos diciendo que REST sea más inseguro que SOAP, sino REST no establece los medios de protección de interacciones e información, por lo que queda completamente como decisión de los desarrolladores y arquitectos del sistema. Sin una implementación adecuada tu API quedará vulnerable.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;otros-estilos&quot;&gt;Otros estilos&lt;/h2&gt;
-
-&lt;p&gt;Han surgido nuevas maneras de consumir y diseñar API’s como &lt;a href=&quot;https://graphql.org/learn/&quot;&gt;GraphQL&lt;/a&gt; y &lt;a href=&quot;https://grpc.io/&quot;&gt;gRPC&lt;/a&gt;, pero cada una merece su propio artículo.&lt;/p&gt;
-
-&lt;h2 id=&quot;nuestra-api&quot;&gt;Nuestra API&lt;/h2&gt;
-
-&lt;p&gt;Para crear nuestra API elegiremos el estilo RESTful, por su popularidad y porque lo que aprendamos tendrá aplicaciones útiles inmeditas y en el futuro.&lt;/p&gt;
-
-&lt;p&gt;En el camino aprenderemos:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Cómo dieseñar una API RESTful&lt;/li&gt;
-  &lt;li&gt;Buenas prácticas de transferencia de datos y de estado&lt;/li&gt;
-  &lt;li&gt;Cómo comunicar errores&lt;/li&gt;
-  &lt;li&gt;Crear una estructura de mensajes intuitiva&lt;/li&gt;
-  &lt;li&gt;Versionamiento de nuestra API&lt;/li&gt;
-  &lt;li&gt;Nombrado de los endpoints&lt;/li&gt;
-  &lt;li&gt;Seguridad&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;El ejercicio será el siguiente:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Crear una API que permita crear listas de vocabularios. Un usuario se registra y puede crear tantos vocabularios como desee. Un vocabulario consiste de una lista de palabras ordenadas por tiempo de inserción y su definción, que puede ser tomada del diccionario (fija) o definida por el usuario. Además una palabra puede tener imágenes adjuntas.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Esta aplicación nos permitirá poner en práctica y aprender de todos los puntos antes mencionados y otros. No te pierdas el siguiente artículo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="apis" /><category term="rest" /><category term="soap" /><summary type="html">El primer artículo de la serie. ¿Por qué es importante diseñar de antemano tu API? Compararemos dos de los estilos más populares: SOAP vs REST</summary></entry></feed>
+&lt;p&gt;Cuéantanos si ya leíste uno de ellos y qué te pareció.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="Machine Learning" /><category term="python" /><category term="r" /><summary type="html">Encuentra una colección de libros gratuitos para aprender acerca de estadística, análisis de datos y machine learning usando tanto Python como R.</summary></entry></feed>

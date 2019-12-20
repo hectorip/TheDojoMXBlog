@@ -103,4 +103,19 @@ var store = [{
         "excerpt":"La heurística habla del comportamiento humano frente a los problemas. - George Polya En un artículo anterior analizamos la estructura básica de un problema y la estructura de resolución que George Polya propone para intentar resolverlos. Polya analiza a fondo la estructura del proceso de resolución de problemas. Aquí hablaremos...","categories": [],
         "tags": ["polya","problemas","how_to_solve_it","heurística","heuristics"],
         "url": "/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1551506016/photo-1551267881-f198ba4aba07_dfxmjj.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1551506016/photo-1551267881-f198ba4aba07_dfxmjj.jpg"},{
+        "title": "Entendiendo REST: Servicios cacheables",
+        "excerpt":"La tercera característica que Thomas R. Fielding (Roy Fielding a partir de ahora) establece para los sistemas REST es la capacidad de que su información sea cacheable. Veamos lo que esto significa y por qué es una característica importante. Empecemos por definir el caché. ¿Qué es el caché? Originalmente el...","categories": [],
+        "tags": [],
+        "url": "/2019/10/27/entendiendo-rest-servicios-cacheables.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1570679826/laura-ockel-nIEHqGSymRU-unsplash_gsspla.jpg"},{
+        "title": "Criptografía básica para programadores: ¿Qué es la criptografía?",
+        "excerpt":"Es muy común escuchar de “encriptación” (la palabra correcta en español es cifrado), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain. Uno de los temas menos tratados por programadores de software común (para usuarios y sistemas que no impliquen el uso de seguridad...","categories": [],
+        "tags": ["criptografía","esteganografía","seguridad"],
+        "url": "/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1573540452/jacob-campbell-ri83DTadRto-unsplash_fb7xgx.jpg"},{
+        "title": "Inducción y Deducción según Polya",
+        "excerpt":"Este es el tercer artículo acerca del libro “How to Solve It” de George Polya. Puedes ver los dos artículos anteriores aquí: Técnicas para resolver problemas Heurística Con este artículo cerraremos con las ideas que George Polya desarrolló para resolver problemas. Inducción y Deducción Hablemos ahora de algunas formas de...","categories": [],
+        "tags": ["polya","problem-solving","how-to-solve-it"],
+        "url": "/2019/12/14/induccion-y-deduccion-segun-polya.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1575746191/verne-ho-0LAJfSNa-xQ-unsplash_prh7gv.jpg"}]
