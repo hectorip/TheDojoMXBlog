@@ -44,7 +44,6 @@ Las siguientes herramientas están mejor que preparadas que Markdown para eso, p
 
 ## reStructuredText
 
-Este formato de texto es adecuado para crear cuerpos de texto más complejos que Markdown
+Este formato de texto es adecuado para crear cuerpos de texto más complejos que con Markdown. Tienes por lo menos las mismas capacidades de formateo de texto que con Markdown: negritas, cursivas, cabeceras, links, imágenes, listas, tablas, etc.
 
-
-
+Pero reST provee más cosas, ya que fue creado para ser el lenguaje de documentación de herramientas de software, específicamente en docutils[](https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#quick-syntax-overview).
