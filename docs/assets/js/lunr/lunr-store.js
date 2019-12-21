@@ -118,4 +118,9 @@ var store = [{
         "excerpt":"Este es el tercer artículo acerca del libro “How to Solve It” de George Polya. Puedes ver los dos artículos anteriores aquí: Técnicas para resolver problemas Heurística Con este artículo cerraremos con las ideas que George Polya desarrolló para resolver problemas. Inducción y Deducción Hablemos ahora de algunas formas de...","categories": [],
         "tags": ["polya","problem-solving","how-to-solve-it"],
         "url": "https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1575746191/verne-ho-0LAJfSNa-xQ-unsplash_prh7gv.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1575746191/verne-ho-0LAJfSNa-xQ-unsplash_prh7gv.jpg"},{
+        "title": "Formatos de marcado de texto que deberías aprender",
+        "excerpt":"Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el...","categories": [],
+        "tags": ["markdown","restructured-text","asciidoc","latex"],
+        "url": "https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1576563210/raychan-QtHYdJsBRFU-unsplash_mpyus4.jpg"}]

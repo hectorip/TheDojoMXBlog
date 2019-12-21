@@ -9,7 +9,7 @@ Esta arquitectura nos permite separar claramente las responsabilidades de cada p
 La arquitectura cliente servidor también define otras cosas, por ejemplo que el servidor nunca inicia la comunicación y sólo responde a peticiones que el cliente le haya hecho, pero no es esencial cumplir con estas para hablar de una API REST, lo más importante es la **separación de responsabilidades** entre cliente y servidor.
 
 
-### Comunicación sin estado
+### Comunicación sin estados
 
 El estado se refiere a toda la información que contiene un sistema programa en un punto del tiempo. Un sistema REST no mantiene esta información _en la comunicación entre cliente y servidor_. 
 

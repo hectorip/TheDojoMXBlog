@@ -76,5 +76,4 @@ pagination:
   sort_reverse: true
 
 paginate_path: '/latest/:num'
-
 url: 'https://blog.thedojo.mx'

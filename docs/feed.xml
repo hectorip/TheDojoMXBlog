@@ -1,4 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2019-12-20T13:57:55-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Inducción y Deducción según Polya</title><link href="https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html" rel="alternate" type="text/html" title="Inducción y Deducción según Polya" /><published>2019-12-14T00:00:00-06:00</published><updated>2019-12-14T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html">&lt;p&gt;Este es el tercer artículo acerca del libro &lt;a href=&quot;https://amzn.to/2P8HJA8&quot;&gt;“How to Solve It”&lt;/a&gt; de George Polya. Puedes ver los dos artículos anteriores aquí:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2019-12-20T23:29:00-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Formatos de marcado de texto que deberías aprender</title><link href="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html" rel="alternate" type="text/html" title="Formatos de marcado de texto que deberías aprender" /><published>2019-12-20T00:00:00-06:00</published><updated>2019-12-20T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html">&lt;p&gt;Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el formateo y embellecimiento de documento.&lt;/p&gt;
+
+&lt;p&gt;En este artículo te platicaré de &lt;strong&gt;tres alternativas&lt;/strong&gt; que pueden hacer tu vida más fácil: Markdown, reStructuredText, AsciiDoc.&lt;/p&gt;
+
+&lt;p&gt;Todos estos lenguajes pueden producir múltiples formatos de salida: HTML, PDF, Word, entre otros. Y lo mejor es que estas salidas son personalizables.&lt;/p&gt;
+
+&lt;h2 id=&quot;markdown&quot;&gt;Markdown&lt;/h2&gt;
+
+&lt;p&gt;Es el formato de marcado de texto simple más conocido por ser el usado en muchos lados (GitHub, por ejemplo) para darle un poco de formato semántico al texto.&lt;/p&gt;
+
+&lt;p&gt;Puedes crear los estilos de texto más comunes directamente:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;negritas&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;cursivas&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/&quot;&gt;enlaces&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Imágenes:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_100/v1559453194/luis-dille-1098834-unsplash_vndt6g.jpg&quot; alt=&quot;Imagen de ejemplo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;También permite crear listas no numeradas, como la anterior, numeradas, tablas (con las sintaxis extendidas pero no con la definición original) y una serie de títulos de diferente jerarquía equivalentes a los headers de HTML (h1, h2… h6).&lt;/p&gt;
+
+&lt;p&gt;De hecho, esta entrada está escrita con Markdown. Markdown es tan popular que existen aplicaciones completamente dedicadas a él como &lt;a href=&quot;http://bit.ly/2M7YmLL&quot;&gt;MacDown&lt;/a&gt;, &lt;a href=&quot;http://bit.ly/38Zhohc&quot;&gt;Focused&lt;/a&gt; y &lt;a href=&quot;http://bit.ly/2S4MX38&quot;&gt;Typora&lt;/a&gt;. Además, diferentes empresas han creado sus propios dialectos o adaptaciones para que sea más fácil de usar en su caso específico.&lt;/p&gt;
+
+&lt;p&gt;Si aún no lo sabes usar, vale la pena que le eches un ojo: (Guía de Markdown en español)[http://bit.ly/38S2l8G]. Tardarás unos minutos en aprender lo básico que es muy útil para el 80% de los casos en los que lo ocuparas.&lt;/p&gt;
+
+&lt;p&gt;Markdown es muy bueno para crear documentos individuales pero, ¿qué pasa si el texto que quieres escribir es más extenso? Tal vez el texto está compuesto por muchas partes, como un libro o una documentación extensa. Hay quienes dicen que &lt;a href=&quot;http://bit.ly/2sOpmJg&quot;&gt;no deberías usar Markdown para crear tu documentación&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Las siguientes herramientas están mejor que preparadas que Markdown para eso, permiten crear cuerpos de textos más extensos.&lt;/p&gt;
+
+&lt;h2 id=&quot;restructuredtext&quot;&gt;reStructuredText&lt;/h2&gt;
+
+&lt;p&gt;Este formato de texto es adecuado para crear cuerpos de texto más complejos que con Markdown. Tienes las mismas capacidades de formateo de texto que con Markdown: negritas, cursivas, cabeceras, links, imágenes, listas, tablas, etc.&lt;/p&gt;
+
+&lt;p&gt;Pero reStructuredText provee &lt;strong&gt;más opciones&lt;/strong&gt; para formatear el texto, ya que fue creado para hacer &lt;em&gt;documentos técnicos&lt;/em&gt; además de documentos de carácter general.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;reStructuredText&lt;/strong&gt; parece ser parte de &lt;a href=&quot;http://bit.ly/2ECmEt2&quot;&gt;docutils&lt;/a&gt; originalmente, creado como una revisión de se &lt;a href=&quot;http://bit.ly/35NkdQk&quot;&gt;StructuredText&lt;/a&gt; y &lt;a href=&quot;http://bit.ly/2PIAdgT&quot;&gt;Setext&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sus herramientas te permitirán crear texto marcado con &lt;strong&gt;mejor semántica&lt;/strong&gt; que Markdown, más estandarizado (RST no tiene ‘sabores’ o dialectos) y con herramientas adaptadas a la documentación de código. Entre otras cosas RST provee:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Más formatos de listas:
+    &lt;ul&gt;
+      &lt;li&gt;Listas de definición&lt;/li&gt;
+      &lt;li&gt;Listas de parámetros&lt;/li&gt;
+      &lt;li&gt;Numeración de listas arbitrariamente&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Bloques de texto pre-formateado (para código)&lt;/li&gt;
+  &lt;li&gt;Bloques de documentación de pruebas&lt;/li&gt;
+  &lt;li&gt;Citas&lt;/li&gt;
+  &lt;li&gt;Notas a pie de página&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Directivas&lt;/strong&gt;, una manera de extender el lenguaje con construcciones propias&lt;/li&gt;
+  &lt;li&gt;Hyperlinks con diferentes destinos: externos, internos, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Esta última característica permite crear documentos interconectados que son muy útiles para textos amplios.&lt;/p&gt;
+
+&lt;p&gt;RST es el formato default de &lt;a href=&quot;http://bit.ly/35Jb6QP&quot;&gt;Spinx&lt;/a&gt; una herramienta de documentación de código creada en Python que te puede ayudar a crear documentación muy bonita.&lt;/p&gt;
+
+&lt;p&gt;Aquí hay una introducción a RST en inglés: &lt;a href=&quot;http://bit.ly/2rdQn8y&quot;&gt;A reStructuredText Primer&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;asciidoc&quot;&gt;AsciiDoc&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Incluso el software más brillante es inútil sin buena documentación. - Documentación de AsciiDoc&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;AsciiDoc&lt;/strong&gt; fue creado para hacer &lt;strong&gt;tan fácil como escribir un email&lt;/strong&gt; la escritura de cualquier tipo de documento, sea este un artículo, un texto en prosa, un libro o documentación técnica.&lt;/p&gt;
+
+&lt;p&gt;El creador asegura que una de las causas de que se nos haga tan difícil escribir está relacionada con que los editores de texto nos distraen con cosas como el formateo o paja que no es necesaria. AsciiDoc se enfoca en que puedas escribir sin preocuparte por el formato, dando una sintaxis natural, fluída y que no estorba, mientras te permite preparar el texto para crear formatos de salida hermosos.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Usa AsciiDoc para marcado de documentos. De verdad. En verdad es legible, fácil de procesar y mucho más flexible que XML. - Linus Torvalds&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Al igual que Markdown y RST, AsciiDoc provee de medios básicos para dar formato al texto. Pero AsciiDoc es el que más herramientas de los tres platicados aquí tiene. Además de ofrecet todo lo de las dos herrmientas anteriores tiene:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Más formatos de párrafo: párrafos de introducción y pre-formateados fáciles.&lt;/li&gt;
+  &lt;li&gt;Secciones prediseñadas: cuadros de aviso, de notas, etc.&lt;/li&gt;
+  &lt;li&gt;Estilos de lista parecidos a los de RST.&lt;/li&gt;
+  &lt;li&gt;Formateo y sintaxis de código con notas, como la siguiente:
+&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_700/v1576905208/Screenshot_2019-12-20_23.12.38_mdhrfj.png&quot; alt=&quot;Ejemplo de notas&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Barras laterales&lt;/li&gt;
+  &lt;li&gt;Macros&lt;/li&gt;
+  &lt;li&gt;Generación de tablas desde CSV&lt;/li&gt;
+  &lt;li&gt;Videos&lt;/li&gt;
+  &lt;li&gt;Muchas muchas cosas más…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sin duda AsciiDoc es el más completo de los formatos que hemos visto en este artículo. Aquí hay una &lt;a href=&quot;http://bit.ly/2PKzdZN&quot;&gt;introducción en inglés&lt;/a&gt; y aquí un &lt;a href=&quot;http://bit.ly/2rgL3Bt&quot;&gt;libro en español&lt;/a&gt;. AsciiDoc es tan completo que varios autores de libros lo han escogido para crear sus escritos.&lt;/p&gt;
+
+&lt;h2 id=&quot;cuál-uso-entonces&quot;&gt;¿Cuál uso, entonces?&lt;/h2&gt;
+
+&lt;p&gt;Mi conclusión personal es la siguiente:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Si tienes que hacer un documento pequeño, sin mucho formato y en el que la velocidad de entrega es lo más importante usa Markdown, ya que su popularidad te permitirá entregar el documento en el menor tiempo posible. Por ejemplo, en GitHub subes un archivo “*.md” y automáticamente lo muestra formateado.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;¿Tienes que hacer documentación de código que posiblemente deba ir en línea o al lado del código? reStructuredText está especializado en eso y con sus herramientas y entonrno te facilitará la vida.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Para todo lo demás, usa &lt;strong&gt;AsciiDoc&lt;/strong&gt;. Una vez que lo sabes usar y combinado con AsciiDoctor (su procesador) y &lt;a href=&quot;http://bit.ly/2Q2zbeE&quot;&gt;Pandoc&lt;/a&gt; (un transformador de formatos) puedes crear cosas muy complejas muy rápidamente.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Si eres como los programadores clásicos, odias usar Word, Docs o lo que sea por el problema que es formatear mientras escribes y amas la simplicidad del texto plano ayudado con herramientas que te permiten crear mejores cosas.&lt;/p&gt;
+
+&lt;p&gt;Estos lenguajes de marcado de texto te dan lo mejor de los dos mundos. Requieren un poco más de trabajo para empezar que los editores &lt;em&gt;“lo que ves es lo que obtienes”&lt;/em&gt;, pero la productividad que te dan después paga con creces.&lt;/p&gt;
+
+&lt;p&gt;¿Qué opinas? ¿Vale la pena aprenderlos?&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="markdown" /><category term="restructured-text" /><category term="asciidoc" /><category term="latex" /><summary type="html">A veces tienes que crear documentos de texto con un algún tipo de formato visual. Aprende lenguajes de marcado que te facilitarán la vida.</summary></entry><entry><title type="html">Inducción y Deducción según Polya</title><link href="https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html" rel="alternate" type="text/html" title="Inducción y Deducción según Polya" /><published>2019-12-14T00:00:00-06:00</published><updated>2019-12-14T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html">&lt;p&gt;Este es el tercer artículo acerca del libro &lt;a href=&quot;https://amzn.to/2P8HJA8&quot;&gt;“How to Solve It”&lt;/a&gt; de George Polya. Puedes ver los dos artículos anteriores aquí:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/2019/09/27/tecnicas-para-resolver-problemas.html&quot;&gt;Técnicas para resolver problemas&lt;/a&gt;&lt;/li&gt;
@@ -1073,150 +1189,4 @@ Veamos los nueve principios necesarios para realizar tu propio proyecto de ultra
 
 &lt;p&gt;Y por último, esta separación permite que el servidor sea fácil de escalar al nivel del servicio requerido.&lt;/p&gt;
 
-&lt;p&gt;Para los propósitos de REST la arquitectura Cliente-servidor es muy adecuada. Sus beneficios superan sus desventajas para este caso de uso particular.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="REST" /><category term="cliente-servidor" /><summary type="html">Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST.</summary></entry><entry><title type="html">Libros gratuitos para aprender análisis de datos</title><link href="https://blog.thedojo.mx/2019/06/22/libros-gratuitos-para-aprender-analisis-de-datos.html" rel="alternate" type="text/html" title="Libros gratuitos para aprender análisis de datos" /><published>2019-06-22T00:00:00-05:00</published><updated>2019-06-22T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/06/22/libros-gratuitos-para-aprender-analisis-de-datos</id><content type="html" xml:base="https://blog.thedojo.mx/2019/06/22/libros-gratuitos-para-aprender-analisis-de-datos.html">&lt;p&gt;¿Quieres aprender análisis de datos y ya eres programador? Los siguientes libros pueden ser de gran ayuda. Este post está basado en &lt;a href=&quot;http://bit.ly/2RjPiol&quot;&gt;un artículo inglés que encontramos&lt;/a&gt;, pero con los recursos que recomienda actualizados y algunos otros de nuestra cosecha.&lt;/p&gt;
-
-&lt;p&gt;Casi todos están en inglés pero incluímos unos cuántos en español y, en los que nos fue posible, tienes descarga directa.&lt;/p&gt;
-
-&lt;h2 id=&quot;0-r-en-español&quot;&gt;0. R en español&lt;/h2&gt;
-
-&lt;p&gt;Empecemos por los pocos recursos en español. Encontré dos libros enfocados en aprender R (ojo: sin profundizar en el análisis de datos) en español.&lt;/p&gt;
-
-&lt;h3 id=&quot;r-para-principiantes-de-juan-bosco-mendoza&quot;&gt;R para principiantes de Juan Bosco Mendoza&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://bookdown.org/jboscomendoza/r-principiantes4/images/r-principiantes-cover.png&quot; alt=&quot;Portada de R para principiantes&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;R para principiantes pretende ser un material introductorio al lenguaje de programación R, dirigído a personas que nunca han usado R o ningún otro lenguaje de programación, ni tiene conocimiento previo de probabilidad y estadística.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Es un libro que te lleva de la mano desde la instalación hasta la exploración visual de los datos, mediante el uso de la gráficas generadas por R, de manos de un practicante asiduo del lenguaje.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2Ru1cvU&quot; target=&quot;_blank&quot;&gt;Lée R para principiantes &lt;strong&gt;aquí&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;r-para-principiantes-de-emmanuel-paradis-traducido-por-jorge-a-ahumada&quot;&gt;R para principiantes de Emmanuel Paradis, traducido por Jorge A. Ahumada.&lt;/h3&gt;
-
-&lt;p&gt;Es una introducción al lenguaje R explicando un poco los detalles de funcionamiento para poder sentar las bases de uso avanzado, para principiantes en programación. Toca algunas nociones muy básicas de estadística para proporcionar ejemplos.&lt;/p&gt;
-
-&lt;p&gt;Puedes &lt;a href=&quot;http://bit.ly/2RuQ02j&quot; target=&quot;_blank&quot;&gt;descargarlo &lt;strong&gt;aquí&lt;/strong&gt;.&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;1-think-stats-segunda-edición&quot;&gt;1. Think Stats, Segunda Edición&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The thesis of this book is that data combined with practical methods can answer questions and guide decisions under uncertainty.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Este libro enseña estadística básica con Python y el proceso de análisis de exploración y análisis de datos básico, con un enfoque en los programas más que en las matemáticas.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2Rlq20V&quot; target=&quot;_blank&quot;&gt;Lee Think Stats, segunda edición.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Extra: La editorial tiene todos sus libros para leer en formatos digitales gratuitos. Una oportunidad que no puedes perderte, sólo que su sitio no es fácil de navegar así que visita la &lt;a href=&quot;https://greenteapress.com/wp/&quot; target=&quot;_blank&quot;&gt;página de inicio&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;2-bayesian-methods-for-hackers&quot;&gt;2. Bayesian Methods for Hackers&lt;/h2&gt;
-
-&lt;p&gt;Este libro explica cómo aplicar métodos de inferencia bayesiana para programadores que no tienen tanto conocimiento de estadística y matemáticas, enfocados en el lado de la programación.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2Rs2TKt&quot; target=&quot;_blank&quot;&gt;Descarga el libro aquí&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;3-undestarding-machine-learning-from-theory-to-algorithms&quot;&gt;3. Undestarding Machine Learning: From Theory to Algorithms&lt;/h2&gt;
-
-&lt;p&gt;Este libro Shai Shalev-Shwartz y Shai Ben-David nos  enseñan los fundamentos de machine learning y cómo transformar estos principios en algoritmos &lt;em&gt;usables&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Este libro incluye un análisis de la complejidad computacional implicada.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2Rr1Nys&quot; target=&quot;_blank&quot;&gt;Descarga Undestarding Machine Learning aquí&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;4-the-elements-of-statistical-learning&quot;&gt;4. The Elements of Statistical Learning&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Estamos inundados de información pero secos de conocimiento” - Rutherford D. Roger&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Esta frase que abre el libro explica la necesidad de entender y aplicar correctamente métodos estadísticos de análisis de datos para entender bien el mundo, dada la explosión de información que estamos viendo gracias a la digitalización de todas las industrias y de las ciencias.&lt;/p&gt;
-
-&lt;p&gt;El libro se enfoca en los métodos de análisis y sus fundamentos conceptuales en vez de en los detalles matemáticos.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://stanford.io/2RtnVrX&quot; target=&quot;_blank&quot;&gt;Descarga The Elements of Statistical Learning&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;5-an-introduction-to-statistical-learning&quot;&gt;5. An Introduction to Statistical Learning&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://www-bcf.usc.edu/~gareth/ISL/ISL%20Cover%202.jpg&quot; alt=&quot;Portada del libro An Introduction to Statistical Learning&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Está dirigido a personas que no estudiaron algo relacionado con matemáticas (como la mayoría de los programadores), para introducirlos a al aprendizaje estadístico práctico, inspirado por el libro del punto 4.&lt;/p&gt;
-
-&lt;p&gt;Este libro es adecuado para personas sin preparación ni en estadística ni en ciencia de la computación. Usa R para aprender los conceptos.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2RqyE6o&quot; target=&quot;_blank&quot;&gt;Descarga An Introduction to Statistical Learning&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;6-foundations-of-data-science&quot;&gt;6. Foundations of Data Science&lt;/h2&gt;
-
-&lt;p&gt;Este libro intenta enseñar los fundamentos de análisis de datos desde una perspectiva computacional, para darles a los lectores un fundamento para los siguientes 40 años de la era de la computación, argumentando que la primera época, la enfocada en compiladores, algoritmos y lenguajes ha pasado y que ahora el foco debería estar en el análisis y procesamiento de datos.&lt;/p&gt;
-
-&lt;p&gt;Empieza estableciendo las bases matemáticas y el entendimiento necesario de los conceptos estadísticos para luego avanzar a la aplicación de estos.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2RtkNMI&quot; target=&quot;_blank&quot;&gt;Puedes descargarlo &lt;strong&gt;aquí&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;7-a-programmers-guide-to-data-mining&quot;&gt;7. A Programmer’s Guide to Data Mining&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_570/v1561237264/mozi_c01gcv.png&quot; alt=&quot;Guide to data mining&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Es una guía práctica para minería de datos y sistema de recomendación, con la técnica de aprender haciendo, con ejercicions en Python. Es libro menos serio (en sentido de seriedad formal) de los que hemos visto hasta ahorita, tiene memes, bromas e imágines divertidas.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1561228640/Screenshot_2019-06-22_13.37.09_igbbp1.png&quot; alt=&quot;Blood, sweat and code&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2RtFCaY&quot; target=&quot;_blank&quot;&gt;Puedes descargar el libro aquí&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;8-mining-of-massive-datasets&quot;&gt;8. Mining of Massive Datasets&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.stanford.edu/~ullman/gifs/mmds2.jpg&quot; alt=&quot;MMDS cover&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Este libro está basado en el curso &lt;a href=&quot;http://cs246.stanford.edu/&quot;&gt;CS246&lt;/a&gt; de Stanford del mismo nombre. Está enfocado en la minería de datos en grandes cantidades, es decir que no puedan ser mantenidos en la memoria principal.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Data mining is about applying algorithms
-to data, rather than using data to “train” a machine-learning engine of some
-sort.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;En enfoque es en e los algoritmos que podemos aplicarle a los datos para obtener información relevante.&lt;/p&gt;
-
-&lt;p&gt;Puedes descargar la &lt;a href=&quot;http://bit.ly/2RsGkoR&quot;&gt;segunda edición&lt;/a&gt; y ver el beta de la &lt;a href=&quot;https://stanford.io/2RAaJ4M&quot;&gt;tercera edición&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;9-deep-learning&quot;&gt;9. Deep Learning&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1561233648/Screenshot_2019-06-22_15.00.27_fxtwob.png&quot; alt=&quot;Deep learning cover book&quot; /&gt;
-Es un recurso introductorio al campo de machine learning específicamente enfocado en deep learning. 
-Es un buen recurso para programadores que no tienen preparación en estadística porque la primera parte del libro está enfocada en dar las bases matemáticas para comprender los algoritmos y técnicas de deep learning.&lt;/p&gt;
-
-&lt;p&gt;Puedes comprar el libro o leerlo directamente desde &lt;a href=&quot;http://bit.ly/2RtKtZK&quot;&gt;su página&lt;/a&gt; de forma gratuita.&lt;/p&gt;
-
-&lt;h2 id=&quot;10-machine-learning-yearning&quot;&gt;10. Machine Learning Yearning&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1561236864/Screenshot_2019-06-22_15.54.12_r585on.png&quot; alt=&quot;ML Yearning&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Está escrito por &lt;a href=&quot;http://bit.ly/2RrkYYS&quot;&gt;Andrew Ng&lt;/a&gt; uno de los fundadores de Coursera y un gigante de la inteligencia artificial. Su enfoque principal es enseñarte cómo organizar un proyecto de Machine Learning, cómo hacer que los algoritmos funcionen y den resultados.&lt;/p&gt;
-
-&lt;p&gt;Te pide suscripción con correo electrónico para que recibir una copia del borrador gratuita. Puedes &lt;a href=&quot;http://bit.ly/2RsPwtv&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;registrarte aquí&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;11-los-libros-openintro&quot;&gt;11. Los libros OpenIntro&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1561234376/Screenshot_2019-06-22_15.11.04_m19ucx.png&quot; alt=&quot;Portadas OpenIntro&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;OpenIntro es una iniciativa para proveer recursos de aprendizaje de alta calidad a un precio razonable.&lt;/p&gt;
-
-&lt;p&gt;Provee todos sus recursos de manera gratuita para descarga. Puedes &lt;a href=&quot;http://bit.ly/2RxUIvZ&quot;&gt;&lt;strong&gt;visitarlos aquí&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;12-los-libros-de-roger-d-peng-y-sus-colegas&quot;&gt;12. Los libros de Roger D. Peng y sus colegas&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1561235101/Screenshot_2019-06-22_15.24.56_xkx1qk.png&quot; alt=&quot;Roger D. Peng libros&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2Rvyg6Y&quot;&gt;Roger D. Peng&lt;/a&gt; es un profesor de bioestadística la 
-Escuela Johns Hopkins Bloomberg de Salud Pública. Tiene varios cursos en Coursera sobre análisis de datos, y también lo podemos considerar uno de los grandes contribuidores a la educación sobre análisis de datos.&lt;/p&gt;
-
-&lt;p&gt;Ha escito numerosos libros sobre análisis de datos y manejo de proyectos de análisis de datos. Su especialidad es R.&lt;/p&gt;
-
-&lt;p&gt;Puedes ver el &lt;a href=&quot;http://bit.ly/2Rrleai&quot;&gt;índice de sus libros &lt;strong&gt;aquí&lt;/strong&gt;&lt;/a&gt;, casi todos ellos gratuitos, aunque puedes continuir monetariamente si gustas.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Si sabes inglés, hay más material del que podríamos leer decentemente en un buen tiempo sin tener que gastar un solo peso directamente en esta información. ¿Por qué no aprovecharla?&lt;/p&gt;
-
-&lt;p&gt;Cuéantanos si ya leíste uno de ellos y qué te pareció.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="Machine Learning" /><category term="python" /><category term="r" /><summary type="html">Encuentra una colección de libros gratuitos para aprender acerca de estadística, análisis de datos y machine learning usando tanto Python como R.</summary></entry></feed>
+&lt;p&gt;Para los propósitos de REST la arquitectura Cliente-servidor es muy adecuada. Sus beneficios superan sus desventajas para este caso de uso particular.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="REST" /><category term="cliente-servidor" /><summary type="html">Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST.</summary></entry></feed>
