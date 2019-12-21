@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2019-12-20T23:29:00-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Formatos de marcado de texto que deberías aprender</title><link href="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html" rel="alternate" type="text/html" title="Formatos de marcado de texto que deberías aprender" /><published>2019-12-20T00:00:00-06:00</published><updated>2019-12-20T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html">&lt;p&gt;Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el formateo y embellecimiento de documento.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2019-12-21T00:23:12-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Formatos de marcado de texto que deberías aprender</title><link href="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html" rel="alternate" type="text/html" title="Formatos de marcado de texto que deberías aprender" /><published>2019-12-20T00:00:00-06:00</published><updated>2019-12-20T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html">&lt;p&gt;Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el formateo y embellecimiento de documento.&lt;/p&gt;
 
 &lt;p&gt;En este artículo te platicaré de &lt;strong&gt;tres alternativas&lt;/strong&gt; que pueden hacer tu vida más fácil: Markdown, reStructuredText, AsciiDoc.&lt;/p&gt;
 
@@ -23,9 +23,9 @@
 
 &lt;p&gt;De hecho, esta entrada está escrita con Markdown. Markdown es tan popular que existen aplicaciones completamente dedicadas a él como &lt;a href=&quot;http://bit.ly/2M7YmLL&quot;&gt;MacDown&lt;/a&gt;, &lt;a href=&quot;http://bit.ly/38Zhohc&quot;&gt;Focused&lt;/a&gt; y &lt;a href=&quot;http://bit.ly/2S4MX38&quot;&gt;Typora&lt;/a&gt;. Además, diferentes empresas han creado sus propios dialectos o adaptaciones para que sea más fácil de usar en su caso específico.&lt;/p&gt;
 
-&lt;p&gt;Si aún no lo sabes usar, vale la pena que le eches un ojo: (Guía de Markdown en español)[http://bit.ly/38S2l8G]. Tardarás unos minutos en aprender lo básico que es muy útil para el 80% de los casos en los que lo ocuparas.&lt;/p&gt;
+&lt;p&gt;Si aún no lo sabes usar, vale la pena que le eches un ojo: &lt;a href=&quot;http://bit.ly/38S2l8G&quot;&gt;Guía de Markdown en español&lt;/a&gt;. Tardarás unos minutos en aprender lo básico que es muy útil para el 80% de los casos en los que lo ocuparas.&lt;/p&gt;
 
-&lt;p&gt;Markdown es muy bueno para crear documentos individuales pero, ¿qué pasa si el texto que quieres escribir es más extenso? Tal vez el texto está compuesto por muchas partes, como un libro o una documentación extensa. Hay quienes dicen que &lt;a href=&quot;http://bit.ly/2sOpmJg&quot;&gt;no deberías usar Markdown para crear tu documentación&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Markdown es muy bueno para crear documentos individuales pero, ¿qué pasa si el texto que quieres escribir es más extenso? Tal vez el texto está compuesto por muchas partes, como un libro o una documentación extensa. Hay quienes dicen que &lt;a href=&quot;http://bit.ly/2sOpmJg&quot;&gt;no deberías usar Markdown para crear tu documentación&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Las siguientes herramientas están mejor que preparadas que Markdown para eso, permiten crear cuerpos de textos más extensos.&lt;/p&gt;
 
@@ -57,9 +57,9 @@
 
 &lt;p&gt;Esta última característica permite crear documentos interconectados que son muy útiles para textos amplios.&lt;/p&gt;
 
-&lt;p&gt;RST es el formato default de &lt;a href=&quot;http://bit.ly/35Jb6QP&quot;&gt;Spinx&lt;/a&gt; una herramienta de documentación de código creada en Python que te puede ayudar a crear documentación muy bonita.&lt;/p&gt;
+&lt;p&gt;RST es el formato default de &lt;a href=&quot;http://bit.ly/35Jb6QP&quot;&gt;Sphinx&lt;/a&gt; una herramienta de documentación de código creada en Python que te puede ayudar a crear documentación muy bonita.&lt;/p&gt;
 
-&lt;p&gt;Aquí hay una introducción a RST en inglés: &lt;a href=&quot;http://bit.ly/2rdQn8y&quot;&gt;A reStructuredText Primer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Aquí hay una introducción a RST en inglés: &lt;a href=&quot;http://bit.ly/2rdQn8y&quot;&gt;A reStructuredText Primer&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;asciidoc&quot;&gt;AsciiDoc&lt;/h2&gt;
 

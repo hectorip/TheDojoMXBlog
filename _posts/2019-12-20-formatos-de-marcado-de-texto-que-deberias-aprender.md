@@ -35,10 +35,9 @@ También permite crear listas no numeradas, como la anterior, numeradas, tablas 
 De hecho, esta entrada está escrita con Markdown. Markdown es tan popular que existen aplicaciones completamente dedicadas a él como [MacDown](http://bit.ly/2M7YmLL
 ), [Focused](http://bit.ly/38Zhohc) y [Typora](http://bit.ly/2S4MX38). Además, diferentes empresas han creado sus propios dialectos o adaptaciones para que sea más fácil de usar en su caso específico.
 
-Si aún no lo sabes usar, vale la pena que le eches un ojo: (Guía de Markdown en español)[http://bit.ly/38S2l8G]. Tardarás unos minutos en aprender lo básico que es muy útil para el 80% de los casos en los que lo ocuparas.
+Si aún no lo sabes usar, vale la pena que le eches un ojo: [Guía de Markdown en español](http://bit.ly/38S2l8G). Tardarás unos minutos en aprender lo básico que es muy útil para el 80% de los casos en los que lo ocuparas.
 
-Markdown es muy bueno para crear documentos individuales pero, ¿qué pasa si el texto que quieres escribir es más extenso? Tal vez el texto está compuesto por muchas partes, como un libro o una documentación extensa. Hay quienes dicen que [no deberías usar Markdown para crear tu documentación](http://bit.ly/2sOpmJg
-)
+Markdown es muy bueno para crear documentos individuales pero, ¿qué pasa si el texto que quieres escribir es más extenso? Tal vez el texto está compuesto por muchas partes, como un libro o una documentación extensa. Hay quienes dicen que [no deberías usar Markdown para crear tu documentación](http://bit.ly/2sOpmJg).
 
 Las siguientes herramientas están mejor que preparadas que Markdown para eso, permiten crear cuerpos de textos más extensos.
 
@@ -65,9 +64,9 @@ Sus herramientas te permitirán crear texto marcado con **mejor semántica** que
 
 Esta última característica permite crear documentos interconectados que son muy útiles para textos amplios.
 
-RST es el formato default de [Spinx](http://bit.ly/35Jb6QP) una herramienta de documentación de código creada en Python que te puede ayudar a crear documentación muy bonita.
+RST es el formato default de [Sphinx](http://bit.ly/35Jb6QP) una herramienta de documentación de código creada en Python que te puede ayudar a crear documentación muy bonita.
 
-Aquí hay una introducción a RST en inglés: [A reStructuredText Primer](http://bit.ly/2rdQn8y)
+Aquí hay una introducción a RST en inglés: [A reStructuredText Primer](http://bit.ly/2rdQn8y).
 
 ## AsciiDoc
 
