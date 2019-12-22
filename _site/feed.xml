@@ -1,4 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-12-20T11:22:24-06:00</updated><id>/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Inducción y Deducción según Polya</title><link href="/2019/12/14/induccion-y-deduccion-segun-polya.html" rel="alternate" type="text/html" title="Inducción y Deducción según Polya" /><published>2019-12-14T00:00:00-06:00</published><updated>2019-12-14T00:00:00-06:00</updated><id>/2019/12/14/induccion-y-deduccion-segun-polya</id><content type="html" xml:base="/2019/12/14/induccion-y-deduccion-segun-polya.html">&lt;p&gt;Este es el tercer artículo acerca del libro &lt;a href=&quot;https://amzn.to/2P8HJA8&quot;&gt;“How to Solve It”&lt;/a&gt; de George Polya. Puedes ver los dos artículos anteriores aquí:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2019-12-21T22:25:38-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Formatos de marcado de texto que deberías aprender</title><link href="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html" rel="alternate" type="text/html" title="Formatos de marcado de texto que deberías aprender" /><published>2019-12-20T00:00:00-06:00</published><updated>2019-12-20T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html">&lt;p&gt;Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el formateo y embellecimiento de documento.&lt;/p&gt;
+
+&lt;p&gt;En este artículo te platicaré de &lt;strong&gt;tres alternativas&lt;/strong&gt; que pueden hacer tu vida más fácil: Markdown, reStructuredText, AsciiDoc.&lt;/p&gt;
+
+&lt;p&gt;Todos estos lenguajes pueden producir múltiples formatos de salida: HTML, PDF, Word, entre otros. Y lo mejor es que estas salidas son personalizables.&lt;/p&gt;
+
+&lt;h2 id=&quot;markdown&quot;&gt;Markdown&lt;/h2&gt;
+
+&lt;p&gt;Es el formato de marcado de texto simple más conocido por ser el usado en muchos lados (GitHub, por ejemplo) para darle un poco de formato semántico al texto.&lt;/p&gt;
+
+&lt;p&gt;Puedes crear los estilos de texto más comunes directamente:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;negritas&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;cursivas&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/&quot;&gt;enlaces&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Imágenes:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_100/v1559453194/luis-dille-1098834-unsplash_vndt6g.jpg&quot; alt=&quot;Imagen de ejemplo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;También permite crear listas no numeradas, como la anterior, numeradas, tablas (con las sintaxis extendidas pero no con la definición original) y una serie de títulos de diferente jerarquía equivalentes a los headers de HTML (h1, h2… h6).&lt;/p&gt;
+
+&lt;p&gt;De hecho, esta entrada está escrita con Markdown. Markdown es tan popular que existen aplicaciones completamente dedicadas a él como &lt;a href=&quot;http://bit.ly/2M7YmLL&quot;&gt;MacDown&lt;/a&gt;, &lt;a href=&quot;http://bit.ly/38Zhohc&quot;&gt;Focused&lt;/a&gt; y &lt;a href=&quot;http://bit.ly/2S4MX38&quot;&gt;Typora&lt;/a&gt;. Además, diferentes empresas han creado sus propios dialectos o adaptaciones para que sea más fácil de usar en su caso específico.&lt;/p&gt;
+
+&lt;p&gt;Si aún no lo sabes usar, vale la pena que le eches un ojo: &lt;a href=&quot;http://bit.ly/38S2l8G&quot;&gt;Guía de Markdown en español&lt;/a&gt;. Tardarás unos minutos en aprender lo básico que es muy útil para el 80% de los casos en los que lo ocuparas.&lt;/p&gt;
+
+&lt;p&gt;Markdown es muy bueno para crear documentos individuales pero, ¿qué pasa si el texto que quieres escribir es más extenso? Tal vez el texto está compuesto por muchas partes, como un libro o una documentación extensa. Hay quienes dicen que &lt;a href=&quot;http://bit.ly/2sOpmJg&quot;&gt;no deberías usar Markdown para crear tu documentación&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Las siguientes herramientas están mejor que preparadas que Markdown para eso, permiten crear cuerpos de textos más extensos.&lt;/p&gt;
+
+&lt;h2 id=&quot;restructuredtext&quot;&gt;reStructuredText&lt;/h2&gt;
+
+&lt;p&gt;Este formato de texto es adecuado para crear cuerpos de texto más complejos que con Markdown. Tienes las mismas capacidades de formateo de texto que con Markdown: negritas, cursivas, cabeceras, links, imágenes, listas, tablas, etc.&lt;/p&gt;
+
+&lt;p&gt;Pero reStructuredText provee &lt;strong&gt;más opciones&lt;/strong&gt; para formatear el texto, ya que fue creado para hacer &lt;em&gt;documentos técnicos&lt;/em&gt; además de documentos de carácter general.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;reStructuredText&lt;/strong&gt; parece ser parte de &lt;a href=&quot;http://bit.ly/2ECmEt2&quot;&gt;docutils&lt;/a&gt; originalmente, creado como una revisión de se &lt;a href=&quot;http://bit.ly/35NkdQk&quot;&gt;StructuredText&lt;/a&gt; y &lt;a href=&quot;http://bit.ly/2PIAdgT&quot;&gt;Setext&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sus herramientas te permitirán crear texto marcado con &lt;strong&gt;mejor semántica&lt;/strong&gt; que Markdown, más estandarizado (RST no tiene ‘sabores’ o dialectos) y con herramientas adaptadas a la documentación de código. Entre otras cosas RST provee:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Más formatos de listas:
+    &lt;ul&gt;
+      &lt;li&gt;Listas de definición&lt;/li&gt;
+      &lt;li&gt;Listas de parámetros&lt;/li&gt;
+      &lt;li&gt;Numeración de listas arbitrariamente&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Bloques de texto pre-formateado (para código)&lt;/li&gt;
+  &lt;li&gt;Bloques de documentación de pruebas&lt;/li&gt;
+  &lt;li&gt;Citas&lt;/li&gt;
+  &lt;li&gt;Notas a pie de página&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Directivas&lt;/strong&gt;, una manera de extender el lenguaje con construcciones propias&lt;/li&gt;
+  &lt;li&gt;Hyperlinks con diferentes destinos: externos, internos, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Esta última característica permite crear documentos interconectados que son muy útiles para textos amplios.&lt;/p&gt;
+
+&lt;p&gt;RST es el formato default de &lt;a href=&quot;http://bit.ly/35Jb6QP&quot;&gt;Sphinx&lt;/a&gt; una herramienta de documentación de código creada en Python que te puede ayudar a crear documentación muy bonita.&lt;/p&gt;
+
+&lt;p&gt;Aquí hay una introducción a RST en inglés: &lt;a href=&quot;http://bit.ly/2rdQn8y&quot;&gt;A reStructuredText Primer&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;asciidoc&quot;&gt;AsciiDoc&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Incluso el software más brillante es inútil sin buena documentación. - Documentación de AsciiDoc&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;AsciiDoc&lt;/strong&gt; fue creado para hacer &lt;strong&gt;tan fácil como escribir un email&lt;/strong&gt; la escritura de cualquier tipo de documento, sea este un artículo, un texto en prosa, un libro o documentación técnica.&lt;/p&gt;
+
+&lt;p&gt;El creador asegura que una de las causas de que se nos haga tan difícil escribir está relacionada con que los editores de texto nos distraen con cosas como el formateo o paja que no es necesaria. AsciiDoc se enfoca en que puedas escribir sin preocuparte por el formato, dando una sintaxis natural, fluída y que no estorba, mientras te permite preparar el texto para crear formatos de salida hermosos.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Usa AsciiDoc para marcado de documentos. De verdad. En verdad es legible, fácil de procesar y mucho más flexible que XML. - Linus Torvalds&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Al igual que Markdown y RST, AsciiDoc provee de medios básicos para dar formato al texto. Pero AsciiDoc es el que más herramientas de los tres platicados aquí tiene. Además de ofrecet todo lo de las dos herrmientas anteriores tiene:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Más formatos de párrafo: párrafos de introducción y pre-formateados fáciles.&lt;/li&gt;
+  &lt;li&gt;Secciones prediseñadas: cuadros de aviso, de notas, etc.&lt;/li&gt;
+  &lt;li&gt;Estilos de lista parecidos a los de RST.&lt;/li&gt;
+  &lt;li&gt;Formateo y sintaxis de código con notas, como la siguiente:
+&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_700/v1576905208/Screenshot_2019-12-20_23.12.38_mdhrfj.png&quot; alt=&quot;Ejemplo de notas&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Barras laterales&lt;/li&gt;
+  &lt;li&gt;Macros&lt;/li&gt;
+  &lt;li&gt;Generación de tablas desde CSV&lt;/li&gt;
+  &lt;li&gt;Videos&lt;/li&gt;
+  &lt;li&gt;Muchas muchas cosas más…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sin duda AsciiDoc es el más completo de los formatos que hemos visto en este artículo. Aquí hay una &lt;a href=&quot;http://bit.ly/2PKzdZN&quot;&gt;introducción en inglés&lt;/a&gt; y aquí un &lt;a href=&quot;http://bit.ly/2rgL3Bt&quot;&gt;libro en español&lt;/a&gt;. AsciiDoc es tan completo que varios autores de libros lo han escogido para crear sus escritos.&lt;/p&gt;
+
+&lt;h2 id=&quot;cuál-uso-entonces&quot;&gt;¿Cuál uso, entonces?&lt;/h2&gt;
+
+&lt;p&gt;Mi conclusión personal es la siguiente:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Si tienes que hacer un documento pequeño, sin mucho formato y en el que la velocidad de entrega es lo más importante usa Markdown, ya que su popularidad te permitirá entregar el documento en el menor tiempo posible. Por ejemplo, en GitHub subes un archivo “*.md” y automáticamente lo muestra formateado.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;¿Tienes que hacer documentación de código que posiblemente deba ir en línea o al lado del código? reStructuredText está especializado en eso y con sus herramientas y entonrno te facilitará la vida.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Para todo lo demás, usa &lt;strong&gt;AsciiDoc&lt;/strong&gt;. Una vez que lo sabes usar y combinado con AsciiDoctor (su procesador) y &lt;a href=&quot;http://bit.ly/2Q2zbeE&quot;&gt;Pandoc&lt;/a&gt; (un transformador de formatos) puedes crear cosas muy complejas muy rápidamente.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Si eres como los programadores clásicos, odias usar Word, Docs o lo que sea por el problema que es formatear mientras escribes y amas la simplicidad del texto plano ayudado con herramientas que te permiten crear mejores cosas.&lt;/p&gt;
+
+&lt;p&gt;Estos lenguajes de marcado de texto te dan lo mejor de los dos mundos. Requieren un poco más de trabajo para empezar que los editores &lt;em&gt;“lo que ves es lo que obtienes”&lt;/em&gt;, pero la productividad que te dan después paga con creces.&lt;/p&gt;
+
+&lt;p&gt;¿Qué opinas? ¿Vale la pena aprenderlos?&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="markdown" /><category term="restructured-text" /><category term="asciidoc" /><category term="latex" /><summary type="html">A veces tienes que crear documentos de texto con un algún tipo de formato visual. Aprende lenguajes de marcado que te facilitarán la vida.</summary></entry><entry><title type="html">Inducción y Deducción según Polya</title><link href="https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html" rel="alternate" type="text/html" title="Inducción y Deducción según Polya" /><published>2019-12-14T00:00:00-06:00</published><updated>2019-12-14T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html">&lt;p&gt;Este es el tercer artículo acerca del libro &lt;a href=&quot;https://amzn.to/2P8HJA8&quot;&gt;“How to Solve It”&lt;/a&gt; de George Polya. Puedes ver los dos artículos anteriores aquí:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/2019/09/27/tecnicas-para-resolver-problemas.html&quot;&gt;Técnicas para resolver problemas&lt;/a&gt;&lt;/li&gt;
@@ -47,7 +163,7 @@ de resolución de problemas aplican para el problema que tenemos que resolver&lt
 
 &lt;h3 id=&quot;inducción-matemática&quot;&gt;Inducción matemática&lt;/h3&gt;
 
-&lt;p&gt;Polya habla de otro tipo de inducción de la que opina que no debería llamarse así, y que comparte muy poco con el proceso que acabamos de descubrir y puede llegar a confundir a la gente: la &lt;strong&gt;inducción matemática&lt;/strong&gt;. Este tipo de inducción se refiere al método que los matemáticos emplean para demostrar que cierta aserción es un teorema o no.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problem-solving" /><category term="how-to-solve-it" /><summary type="html">Aprende de los conceptos de inducción y deducción según George Polya los explica en How to Solve It</summary></entry><entry><title type="html">Criptografía básica para programadores: ¿Qué es la criptografía?</title><link href="/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html" rel="alternate" type="text/html" title="Criptografía básica para programadores: ¿Qué es la criptografía?" /><published>2019-11-12T00:00:00-06:00</published><updated>2019-11-12T00:00:00-06:00</updated><id>/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia</id><content type="html" xml:base="/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html">&lt;p&gt;Es muy común escuchar de “encriptación” (la palabra correcta en español es &lt;em&gt;cifrado&lt;/em&gt;), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain.&lt;/p&gt;
+&lt;p&gt;Polya habla de otro tipo de inducción de la que opina que no debería llamarse así, y que comparte muy poco con el proceso que acabamos de descubrir y puede llegar a confundir a la gente: la &lt;strong&gt;inducción matemática&lt;/strong&gt;. Este tipo de inducción se refiere al método que los matemáticos emplean para demostrar que cierta aserción es un teorema o no.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problem-solving" /><category term="how-to-solve-it" /><summary type="html">Aprende de los conceptos de inducción y deducción según George Polya los explica en How to Solve It</summary></entry><entry><title type="html">Criptografía básica para programadores: ¿Qué es la criptografía?</title><link href="https://blog.thedojo.mx/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html" rel="alternate" type="text/html" title="Criptografía básica para programadores: ¿Qué es la criptografía?" /><published>2019-11-12T00:00:00-06:00</published><updated>2019-11-12T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia</id><content type="html" xml:base="https://blog.thedojo.mx/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html">&lt;p&gt;Es muy común escuchar de “encriptación” (la palabra correcta en español es &lt;em&gt;cifrado&lt;/em&gt;), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain.&lt;/p&gt;
 
 &lt;p&gt;Uno de los temas menos tratados por programadores de software común (para usuarios y sistemas que no impliquen el uso de seguridad a medida), es el correcto uso de los algoritmos criptográficos y muchas veces ni siquiera conocemos lo suficiente de ellos, sino que confiamos en lo que las herramientas pre-establecen (que gran parte de las veces fue diseñado por expertos y eso está bien).&lt;/p&gt;
 
@@ -125,7 +241,7 @@ de resolución de problemas aplican para el problema que tenemos que resolver&lt
 
 &lt;p&gt;En este artículo sólo hemos tocado la definición de criptografía y hemos mencionado por qué es importante. En los siguientes empezaremos a hablar de las bases que nos permitirán comprender cómo funciona la criptografía y qué mecanismos son los que permiten que brinde seguridad mediante ocultar la información.&lt;/p&gt;
 
-&lt;p&gt;En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo) aleatorios y sus generadores.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="criptografía" /><category term="esteganografía" /><category term="seguridad" /><summary type="html">Aprende las bases de la criptografía para tenerla en cuenta en tus programas.</summary></entry><entry><title type="html">Entendiendo REST: Servicios cacheables</title><link href="/2019/10/27/entendiendo-rest-servicios-cacheables.html" rel="alternate" type="text/html" title="Entendiendo REST: Servicios cacheables" /><published>2019-10-27T00:00:00-05:00</published><updated>2019-10-27T00:00:00-05:00</updated><id>/2019/10/27/entendiendo-rest-servicios-cacheables</id><content type="html" xml:base="/2019/10/27/entendiendo-rest-servicios-cacheables.html">&lt;p&gt;La tercera característica que &lt;a href=&quot;https://twitter.com/fielding&quot;&gt;Thomas R. Fielding&lt;/a&gt; (Roy Fielding a partir de ahora) establece para los sistemas &lt;strong&gt;REST&lt;/strong&gt; es la capacidad de que su información sea cacheable. Veamos lo que esto significa y por qué es una característica importante. Empecemos por definir el caché.&lt;/p&gt;
+&lt;p&gt;En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo) aleatorios y sus generadores.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="criptografía" /><category term="esteganografía" /><category term="seguridad" /><summary type="html">Aprende las bases de la criptografía para tenerla en cuenta en tus programas.</summary></entry><entry><title type="html">Entendiendo REST: Servicios cacheables</title><link href="https://blog.thedojo.mx/2019/10/27/entendiendo-rest-servicios-cacheables.html" rel="alternate" type="text/html" title="Entendiendo REST: Servicios cacheables" /><published>2019-10-27T00:00:00-05:00</published><updated>2019-10-27T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/10/27/entendiendo-rest-servicios-cacheables</id><content type="html" xml:base="https://blog.thedojo.mx/2019/10/27/entendiendo-rest-servicios-cacheables.html">&lt;p&gt;La tercera característica que &lt;a href=&quot;https://twitter.com/fielding&quot;&gt;Thomas R. Fielding&lt;/a&gt; (Roy Fielding a partir de ahora) establece para los sistemas &lt;strong&gt;REST&lt;/strong&gt; es la capacidad de que su información sea cacheable. Veamos lo que esto significa y por qué es una característica importante. Empecemos por definir el caché.&lt;/p&gt;
 
 &lt;h2 id=&quot;qué-es-el-caché&quot;&gt;¿Qué es &lt;em&gt;el caché&lt;/em&gt;?&lt;/h2&gt;
 
@@ -230,7 +346,7 @@ fácil de escalar, fallarás.&lt;/p&gt;
 
 &lt;p&gt;Si quieres leer un artículo más completo con otras referencias sobre el caché en REST y en HTTP te recomiendo &lt;a href=&quot;https://odino.org/rest-better-http-cache/&quot;&gt;REST better: HTTP Cache&lt;/a&gt;, en inglés.&lt;/p&gt;
 
-&lt;p&gt;En el siguiente artículo veremos la cuarta restricción de los sistemas REST: la interfaz uniforme, la más amplia de las restricciones, pero una de las más útiles.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo.</summary></entry><entry><title type="html">El arte de resolver problemas: la heurística</title><link href="/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html" rel="alternate" type="text/html" title="El arte de resolver problemas: la heurística" /><published>2019-10-03T00:00:00-05:00</published><updated>2019-10-03T00:00:00-05:00</updated><id>/2019/10/03/el-arte-de-resolver-problemas-la-heuristica</id><content type="html" xml:base="/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html">&lt;blockquote&gt;
+&lt;p&gt;En el siguiente artículo veremos la cuarta restricción de los sistemas REST: la interfaz uniforme, la más amplia de las restricciones, pero una de las más útiles.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo.</summary></entry><entry><title type="html">El arte de resolver problemas: la heurística</title><link href="https://blog.thedojo.mx/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html" rel="alternate" type="text/html" title="El arte de resolver problemas: la heurística" /><published>2019-10-03T00:00:00-05:00</published><updated>2019-10-03T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/10/03/el-arte-de-resolver-problemas-la-heuristica</id><content type="html" xml:base="https://blog.thedojo.mx/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html">&lt;blockquote&gt;
   &lt;p&gt;La heurística habla del &lt;strong&gt;comportamiento humano&lt;/strong&gt; frente a los problemas. - George Polya&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -306,7 +422,7 @@ Polya habla de múltiples métodos y procedimientos para avanzar en la resoluci�
 
 &lt;p&gt;La heurística es un campo de estudio valioso sobre todo para la vida moderna y para el desarrollo de software porque puede ayudarnos a estructurar nuestros esfuerzos en la resolución de los problemas que nos enfrentamos.&lt;/p&gt;
 
-&lt;p&gt;En el siguiente y último artículo de la serie analizaremos más técnicas usadas en la resolución de problemas de las que Polya habla en el libro “How to Solve It”.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problemas" /><category term="how_to_solve_it" /><category term="heurística" /><category term="heuristics" /><summary type="html">La heurística te ayudará a resolver mejor los problemas que se te presentan como programador. Veamosla más detenidamente.</summary></entry><entry><title type="html">Técnicas para resolver problemas</title><link href="/2019/09/27/tecnicas-para-resolver-problemas.html" rel="alternate" type="text/html" title="Técnicas para resolver problemas" /><published>2019-09-27T00:00:00-05:00</published><updated>2019-09-27T00:00:00-05:00</updated><id>/2019/09/27/tecnicas-para-resolver-problemas</id><content type="html" xml:base="/2019/09/27/tecnicas-para-resolver-problemas.html">&lt;p&gt;Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver.&lt;/p&gt;
+&lt;p&gt;En el siguiente y último artículo de la serie analizaremos más técnicas usadas en la resolución de problemas de las que Polya habla en el libro “How to Solve It”.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problemas" /><category term="how_to_solve_it" /><category term="heurística" /><category term="heuristics" /><summary type="html">La heurística te ayudará a resolver mejor los problemas que se te presentan como programador. Veamosla más detenidamente.</summary></entry><entry><title type="html">Técnicas para resolver problemas</title><link href="https://blog.thedojo.mx/2019/09/27/tecnicas-para-resolver-problemas.html" rel="alternate" type="text/html" title="Técnicas para resolver problemas" /><published>2019-09-27T00:00:00-05:00</published><updated>2019-09-27T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/09/27/tecnicas-para-resolver-problemas</id><content type="html" xml:base="https://blog.thedojo.mx/2019/09/27/tecnicas-para-resolver-problemas.html">&lt;p&gt;Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver.&lt;/p&gt;
 
 &lt;p&gt;George Polya fue uno de los matemáticos más prolíficos del Siglo XX, un matemático de primera clase (de esos que descubren e inventan cosas, y para algunos, &lt;strong&gt;el matemático más influyente del siglo&lt;/strong&gt;) pero que, a diferencia de muchos otros, mantenía un interés por la educación y la enseñanza de las matemáticas, algo muy peculiar.&lt;/p&gt;
 
@@ -477,7 +593,7 @@ Además podemos ver si podemos hacer algo diferente, si nuestro resultado cumple
   &lt;li&gt;Aprovecha cualquier idea aunque suene disparatada.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;En el siguiente post hablaremos de 5 cosas más de las que Polya habla en su libro: heurística, inducción, deducción, análisis y síntesis.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="matemáticas" /><category term="maths" /><category term="polya" /><category term="books" /><category term="libros" /><summary type="html">¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 1928. Hablemos de las principales lecciones que podemos sacar.</summary></entry><entry><title type="html">¿Por qué deberías aprender Go?</title><link href="/2019/09/01/por-que-deberias-aprender-go.html" rel="alternate" type="text/html" title="¿Por qué deberías aprender Go?" /><published>2019-09-01T00:00:00-05:00</published><updated>2019-09-01T00:00:00-05:00</updated><id>/2019/09/01/por-que-deberias-aprender-go</id><content type="html" xml:base="/2019/09/01/por-que-deberias-aprender-go.html">&lt;blockquote&gt;
+&lt;p&gt;En el siguiente post hablaremos de 5 cosas más de las que Polya habla en su libro: heurística, inducción, deducción, análisis y síntesis.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="matemáticas" /><category term="maths" /><category term="polya" /><category term="books" /><category term="libros" /><summary type="html">¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 1928. Hablemos de las principales lecciones que podemos sacar.</summary></entry><entry><title type="html">¿Por qué deberías aprender Go?</title><link href="https://blog.thedojo.mx/2019/09/01/por-que-deberias-aprender-go.html" rel="alternate" type="text/html" title="¿Por qué deberías aprender Go?" /><published>2019-09-01T00:00:00-05:00</published><updated>2019-09-01T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/09/01/por-que-deberias-aprender-go</id><content type="html" xml:base="https://blog.thedojo.mx/2019/09/01/por-que-deberias-aprender-go.html">&lt;blockquote&gt;
   &lt;p&gt;Go es &lt;strong&gt;eficiente, escalable y productivo&lt;/strong&gt;. - &lt;em&gt;Rob Pike&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -655,7 +771,7 @@ En Go puedes hacer muchas cosas que haces con C razonablemente bien, sin tanta c
 
 &lt;p&gt;Go es un lenguaje relevante en 2019, 10 años después de haber nacido y lo seguirá siendo por muchos años, sobre todo por los proyectos ya desarrollados en él y las características de las que hablamos en este artículo. Aprenderlo te dará una herramienta más para desarrollar programas que valgan la pena y cumplan con lo esperado.&lt;/p&gt;
 
-&lt;p&gt;Pero como &lt;a href=&quot;https://fs.blog/about/&quot;&gt;Shane Parrish&lt;/a&gt; dice: Go es “simple pero no fácil”. Es sencillo empezar a programar con él, pero dominar sus conceptos requiere estudio y esfuerzo. Go se siente como una herencia de gente muy sabia haciendo un lenguaje para hacer cosas grandes. No te arrepentirás de aprenderlo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="go" /><category term="golang" /><category term="lenguajes-de-programación" /><summary type="html">Go es un lenguaje muy relevante en algunas áreas del desarrollo de software. Aprende para qué deberías usarlo y por qué te conviene aprenderlo.</summary></entry><entry><title type="html">Ultralearning: el arte del aprendizaje profundo</title><link href="/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto.html" rel="alternate" type="text/html" title="Ultralearning: el arte del aprendizaje profundo" /><published>2019-08-13T00:00:00-05:00</published><updated>2019-08-13T00:00:00-05:00</updated><id>/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto</id><content type="html" xml:base="/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto.html">&lt;blockquote&gt;
+&lt;p&gt;Pero como &lt;a href=&quot;https://fs.blog/about/&quot;&gt;Shane Parrish&lt;/a&gt; dice: Go es “simple pero no fácil”. Es sencillo empezar a programar con él, pero dominar sus conceptos requiere estudio y esfuerzo. Go se siente como una herencia de gente muy sabia haciendo un lenguaje para hacer cosas grandes. No te arrepentirás de aprenderlo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="go" /><category term="golang" /><category term="lenguajes-de-programación" /><summary type="html">Go es un lenguaje muy relevante en algunas áreas del desarrollo de software. Aprende para qué deberías usarlo y por qué te conviene aprenderlo.</summary></entry><entry><title type="html">Ultralearning: el arte del aprendizaje profundo</title><link href="https://blog.thedojo.mx/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto.html" rel="alternate" type="text/html" title="Ultralearning: el arte del aprendizaje profundo" /><published>2019-08-13T00:00:00-05:00</published><updated>2019-08-13T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto</id><content type="html" xml:base="https://blog.thedojo.mx/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto.html">&lt;blockquote&gt;
   &lt;p&gt;¿En qué te convertirías si aprendieras todo lo que deseas?&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -833,7 +949,7 @@ Veamos los nueve principios necesarios para realizar tu propio proyecto de ultra
 
 &lt;p&gt;¡A aprender!&lt;/p&gt;
 
-&lt;p&gt;Puedes comprar el libro en &lt;a href=&quot;https://www.amazon.com.mx/Ultralearning-Outsmart-Competition-Accelerate-English-ebook/dp/B07K6MF8MD/&quot;&gt;Amazon&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprendizaje" /><category term="libros" /><category term="lectura" /><category term="reseñas" /><summary type="html">Todos queremos aprender muchas cosas. Aprende un método que te permitirá mejorar tus habilidades para adquirir conocimiento.</summary></entry><entry><title type="html">Entendiendo REST: conexión sin estado</title><link href="/2019/08/03/entendiendo-rest-servidor-sin-estado.html" rel="alternate" type="text/html" title="Entendiendo REST: conexión sin estado" /><published>2019-08-03T00:00:00-05:00</published><updated>2019-08-03T00:00:00-05:00</updated><id>/2019/08/03/entendiendo-rest-servidor-sin-estado</id><content type="html" xml:base="/2019/08/03/entendiendo-rest-servidor-sin-estado.html">&lt;p&gt;Hemos venido hablando de las características que componen a un sistema REST. En el último artículo &lt;a href=&quot;/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html&quot;&gt;hablamos de la arquitectura cliente-servidor&lt;/a&gt;. Esta es la primera característica fundamental de un sistema REST. Ahora pasemos a la siguiente característica-limitante que Thomas Fielding establece para los sistemas REST: &lt;strong&gt;conexión sin estado&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Puedes comprar el libro en &lt;a href=&quot;https://www.amazon.com.mx/Ultralearning-Outsmart-Competition-Accelerate-English-ebook/dp/B07K6MF8MD/&quot;&gt;Amazon&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprendizaje" /><category term="libros" /><category term="lectura" /><category term="reseñas" /><summary type="html">Todos queremos aprender muchas cosas. Aprende un método que te permitirá mejorar tus habilidades para adquirir conocimiento.</summary></entry><entry><title type="html">Entendiendo REST: conexión sin estado</title><link href="https://blog.thedojo.mx/2019/08/03/entendiendo-rest-servidor-sin-estado.html" rel="alternate" type="text/html" title="Entendiendo REST: conexión sin estado" /><published>2019-08-03T00:00:00-05:00</published><updated>2019-08-03T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/08/03/entendiendo-rest-servidor-sin-estado</id><content type="html" xml:base="https://blog.thedojo.mx/2019/08/03/entendiendo-rest-servidor-sin-estado.html">&lt;p&gt;Hemos venido hablando de las características que componen a un sistema REST. En el último artículo &lt;a href=&quot;/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html&quot;&gt;hablamos de la arquitectura cliente-servidor&lt;/a&gt;. Esta es la primera característica fundamental de un sistema REST. Ahora pasemos a la siguiente característica-limitante que Thomas Fielding establece para los sistemas REST: &lt;strong&gt;conexión sin estado&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;qué-es-el-estado-de-un-sistema&quot;&gt;¿Qué es el estado de un sistema?&lt;/h2&gt;
 
@@ -939,7 +1055,7 @@ Veamos los nueve principios necesarios para realizar tu propio proyecto de ultra
 
 &lt;p&gt;La segunda característica definida de los sistemas REST es importante porque permite que los servicios sean más confiables, disponibles y flexibles en tamaño (escalables). Como cada decisión que se toma en el desarrollo, esta viene con sus propias desventajas: al hacer más complejas las peticiones, la base de código es más difícil de mantener en general (del lado del cliente), pero permite características importantes en los sistemas que tienen que atender a una gran cantidad de clientes.&lt;/p&gt;
 
-&lt;p&gt;En el siguiente artículo hablaremos de la tercera característica de los sistemas REST: la capacidad de ser cachear información.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="REST" /><category term="stateless" /><category term="thomas-fielding" /><summary type="html">¿Cómo mantener la información entre peticiones en un sistema REST? Entendamos las ventajas y desventajas</summary></entry><entry><title type="html">Entendiendo REST: Arquitectura cliente-servidor</title><link href="/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html" rel="alternate" type="text/html" title="Entendiendo REST: Arquitectura cliente-servidor" /><published>2019-07-04T00:00:00-05:00</published><updated>2019-07-04T00:00:00-05:00</updated><id>/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor</id><content type="html" xml:base="/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html">&lt;blockquote&gt;
+&lt;p&gt;En el siguiente artículo hablaremos de la tercera característica de los sistemas REST: la capacidad de ser cachear información.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="REST" /><category term="stateless" /><category term="thomas-fielding" /><summary type="html">¿Cómo mantener la información entre peticiones en un sistema REST? Entendamos las ventajas y desventajas</summary></entry><entry><title type="html">Entendiendo REST: Arquitectura cliente-servidor</title><link href="https://blog.thedojo.mx/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html" rel="alternate" type="text/html" title="Entendiendo REST: Arquitectura cliente-servidor" /><published>2019-07-04T00:00:00-05:00</published><updated>2019-07-04T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor</id><content type="html" xml:base="https://blog.thedojo.mx/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html">&lt;blockquote&gt;
   &lt;p&gt;El propósito de construir software no es crear una topología de interacciones específicas, o usar un tipo particular de componente; es crear un sistema que cumpla y exceda las necesidades de la aplicación. - Thomas Fielding&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -1073,150 +1189,4 @@ Veamos los nueve principios necesarios para realizar tu propio proyecto de ultra
 
 &lt;p&gt;Y por último, esta separación permite que el servidor sea fácil de escalar al nivel del servicio requerido.&lt;/p&gt;
 
-&lt;p&gt;Para los propósitos de REST la arquitectura Cliente-servidor es muy adecuada. Sus beneficios superan sus desventajas para este caso de uso particular.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="REST" /><category term="cliente-servidor" /><summary type="html">Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST.</summary></entry><entry><title type="html">Libros gratuitos para aprender análisis de datos</title><link href="/2019/06/22/libros-gratuitos-para-aprender-analisis-de-datos.html" rel="alternate" type="text/html" title="Libros gratuitos para aprender análisis de datos" /><published>2019-06-22T00:00:00-05:00</published><updated>2019-06-22T00:00:00-05:00</updated><id>/2019/06/22/libros-gratuitos-para-aprender-analisis-de-datos</id><content type="html" xml:base="/2019/06/22/libros-gratuitos-para-aprender-analisis-de-datos.html">&lt;p&gt;¿Quieres aprender análisis de datos y ya eres programador? Los siguientes libros pueden ser de gran ayuda. Este post está basado en &lt;a href=&quot;http://bit.ly/2RjPiol&quot;&gt;un artículo inglés que encontramos&lt;/a&gt;, pero con los recursos que recomienda actualizados y algunos otros de nuestra cosecha.&lt;/p&gt;
-
-&lt;p&gt;Casi todos están en inglés pero incluímos unos cuántos en español y, en los que nos fue posible, tienes descarga directa.&lt;/p&gt;
-
-&lt;h2 id=&quot;0-r-en-español&quot;&gt;0. R en español&lt;/h2&gt;
-
-&lt;p&gt;Empecemos por los pocos recursos en español. Encontré dos libros enfocados en aprender R (ojo: sin profundizar en el análisis de datos) en español.&lt;/p&gt;
-
-&lt;h3 id=&quot;r-para-principiantes-de-juan-bosco-mendoza&quot;&gt;R para principiantes de Juan Bosco Mendoza&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://bookdown.org/jboscomendoza/r-principiantes4/images/r-principiantes-cover.png&quot; alt=&quot;Portada de R para principiantes&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;R para principiantes pretende ser un material introductorio al lenguaje de programación R, dirigído a personas que nunca han usado R o ningún otro lenguaje de programación, ni tiene conocimiento previo de probabilidad y estadística.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Es un libro que te lleva de la mano desde la instalación hasta la exploración visual de los datos, mediante el uso de la gráficas generadas por R, de manos de un practicante asiduo del lenguaje.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2Ru1cvU&quot; target=&quot;_blank&quot;&gt;Lée R para principiantes &lt;strong&gt;aquí&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;r-para-principiantes-de-emmanuel-paradis-traducido-por-jorge-a-ahumada&quot;&gt;R para principiantes de Emmanuel Paradis, traducido por Jorge A. Ahumada.&lt;/h3&gt;
-
-&lt;p&gt;Es una introducción al lenguaje R explicando un poco los detalles de funcionamiento para poder sentar las bases de uso avanzado, para principiantes en programación. Toca algunas nociones muy básicas de estadística para proporcionar ejemplos.&lt;/p&gt;
-
-&lt;p&gt;Puedes &lt;a href=&quot;http://bit.ly/2RuQ02j&quot; target=&quot;_blank&quot;&gt;descargarlo &lt;strong&gt;aquí&lt;/strong&gt;.&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;1-think-stats-segunda-edición&quot;&gt;1. Think Stats, Segunda Edición&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The thesis of this book is that data combined with practical methods can answer questions and guide decisions under uncertainty.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Este libro enseña estadística básica con Python y el proceso de análisis de exploración y análisis de datos básico, con un enfoque en los programas más que en las matemáticas.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2Rlq20V&quot; target=&quot;_blank&quot;&gt;Lee Think Stats, segunda edición.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Extra: La editorial tiene todos sus libros para leer en formatos digitales gratuitos. Una oportunidad que no puedes perderte, sólo que su sitio no es fácil de navegar así que visita la &lt;a href=&quot;https://greenteapress.com/wp/&quot; target=&quot;_blank&quot;&gt;página de inicio&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;2-bayesian-methods-for-hackers&quot;&gt;2. Bayesian Methods for Hackers&lt;/h2&gt;
-
-&lt;p&gt;Este libro explica cómo aplicar métodos de inferencia bayesiana para programadores que no tienen tanto conocimiento de estadística y matemáticas, enfocados en el lado de la programación.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2Rs2TKt&quot; target=&quot;_blank&quot;&gt;Descarga el libro aquí&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;3-undestarding-machine-learning-from-theory-to-algorithms&quot;&gt;3. Undestarding Machine Learning: From Theory to Algorithms&lt;/h2&gt;
-
-&lt;p&gt;Este libro Shai Shalev-Shwartz y Shai Ben-David nos  enseñan los fundamentos de machine learning y cómo transformar estos principios en algoritmos &lt;em&gt;usables&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Este libro incluye un análisis de la complejidad computacional implicada.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2Rr1Nys&quot; target=&quot;_blank&quot;&gt;Descarga Undestarding Machine Learning aquí&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;4-the-elements-of-statistical-learning&quot;&gt;4. The Elements of Statistical Learning&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Estamos inundados de información pero secos de conocimiento” - Rutherford D. Roger&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Esta frase que abre el libro explica la necesidad de entender y aplicar correctamente métodos estadísticos de análisis de datos para entender bien el mundo, dada la explosión de información que estamos viendo gracias a la digitalización de todas las industrias y de las ciencias.&lt;/p&gt;
-
-&lt;p&gt;El libro se enfoca en los métodos de análisis y sus fundamentos conceptuales en vez de en los detalles matemáticos.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://stanford.io/2RtnVrX&quot; target=&quot;_blank&quot;&gt;Descarga The Elements of Statistical Learning&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;5-an-introduction-to-statistical-learning&quot;&gt;5. An Introduction to Statistical Learning&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://www-bcf.usc.edu/~gareth/ISL/ISL%20Cover%202.jpg&quot; alt=&quot;Portada del libro An Introduction to Statistical Learning&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Está dirigido a personas que no estudiaron algo relacionado con matemáticas (como la mayoría de los programadores), para introducirlos a al aprendizaje estadístico práctico, inspirado por el libro del punto 4.&lt;/p&gt;
-
-&lt;p&gt;Este libro es adecuado para personas sin preparación ni en estadística ni en ciencia de la computación. Usa R para aprender los conceptos.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2RqyE6o&quot; target=&quot;_blank&quot;&gt;Descarga An Introduction to Statistical Learning&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;6-foundations-of-data-science&quot;&gt;6. Foundations of Data Science&lt;/h2&gt;
-
-&lt;p&gt;Este libro intenta enseñar los fundamentos de análisis de datos desde una perspectiva computacional, para darles a los lectores un fundamento para los siguientes 40 años de la era de la computación, argumentando que la primera época, la enfocada en compiladores, algoritmos y lenguajes ha pasado y que ahora el foco debería estar en el análisis y procesamiento de datos.&lt;/p&gt;
-
-&lt;p&gt;Empieza estableciendo las bases matemáticas y el entendimiento necesario de los conceptos estadísticos para luego avanzar a la aplicación de estos.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2RtkNMI&quot; target=&quot;_blank&quot;&gt;Puedes descargarlo &lt;strong&gt;aquí&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;7-a-programmers-guide-to-data-mining&quot;&gt;7. A Programmer’s Guide to Data Mining&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_570/v1561237264/mozi_c01gcv.png&quot; alt=&quot;Guide to data mining&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Es una guía práctica para minería de datos y sistema de recomendación, con la técnica de aprender haciendo, con ejercicions en Python. Es libro menos serio (en sentido de seriedad formal) de los que hemos visto hasta ahorita, tiene memes, bromas e imágines divertidas.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1561228640/Screenshot_2019-06-22_13.37.09_igbbp1.png&quot; alt=&quot;Blood, sweat and code&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2RtFCaY&quot; target=&quot;_blank&quot;&gt;Puedes descargar el libro aquí&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;8-mining-of-massive-datasets&quot;&gt;8. Mining of Massive Datasets&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.stanford.edu/~ullman/gifs/mmds2.jpg&quot; alt=&quot;MMDS cover&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Este libro está basado en el curso &lt;a href=&quot;http://cs246.stanford.edu/&quot;&gt;CS246&lt;/a&gt; de Stanford del mismo nombre. Está enfocado en la minería de datos en grandes cantidades, es decir que no puedan ser mantenidos en la memoria principal.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Data mining is about applying algorithms
-to data, rather than using data to “train” a machine-learning engine of some
-sort.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;En enfoque es en e los algoritmos que podemos aplicarle a los datos para obtener información relevante.&lt;/p&gt;
-
-&lt;p&gt;Puedes descargar la &lt;a href=&quot;http://bit.ly/2RsGkoR&quot;&gt;segunda edición&lt;/a&gt; y ver el beta de la &lt;a href=&quot;https://stanford.io/2RAaJ4M&quot;&gt;tercera edición&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;9-deep-learning&quot;&gt;9. Deep Learning&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1561233648/Screenshot_2019-06-22_15.00.27_fxtwob.png&quot; alt=&quot;Deep learning cover book&quot; /&gt;
-Es un recurso introductorio al campo de machine learning específicamente enfocado en deep learning. 
-Es un buen recurso para programadores que no tienen preparación en estadística porque la primera parte del libro está enfocada en dar las bases matemáticas para comprender los algoritmos y técnicas de deep learning.&lt;/p&gt;
-
-&lt;p&gt;Puedes comprar el libro o leerlo directamente desde &lt;a href=&quot;http://bit.ly/2RtKtZK&quot;&gt;su página&lt;/a&gt; de forma gratuita.&lt;/p&gt;
-
-&lt;h2 id=&quot;10-machine-learning-yearning&quot;&gt;10. Machine Learning Yearning&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1561236864/Screenshot_2019-06-22_15.54.12_r585on.png&quot; alt=&quot;ML Yearning&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Está escrito por &lt;a href=&quot;http://bit.ly/2RrkYYS&quot;&gt;Andrew Ng&lt;/a&gt; uno de los fundadores de Coursera y un gigante de la inteligencia artificial. Su enfoque principal es enseñarte cómo organizar un proyecto de Machine Learning, cómo hacer que los algoritmos funcionen y den resultados.&lt;/p&gt;
-
-&lt;p&gt;Te pide suscripción con correo electrónico para que recibir una copia del borrador gratuita. Puedes &lt;a href=&quot;http://bit.ly/2RsPwtv&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;registrarte aquí&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;11-los-libros-openintro&quot;&gt;11. Los libros OpenIntro&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1561234376/Screenshot_2019-06-22_15.11.04_m19ucx.png&quot; alt=&quot;Portadas OpenIntro&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;OpenIntro es una iniciativa para proveer recursos de aprendizaje de alta calidad a un precio razonable.&lt;/p&gt;
-
-&lt;p&gt;Provee todos sus recursos de manera gratuita para descarga. Puedes &lt;a href=&quot;http://bit.ly/2RxUIvZ&quot;&gt;&lt;strong&gt;visitarlos aquí&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;12-los-libros-de-roger-d-peng-y-sus-colegas&quot;&gt;12. Los libros de Roger D. Peng y sus colegas&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1561235101/Screenshot_2019-06-22_15.24.56_xkx1qk.png&quot; alt=&quot;Roger D. Peng libros&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bit.ly/2Rvyg6Y&quot;&gt;Roger D. Peng&lt;/a&gt; es un profesor de bioestadística la 
-Escuela Johns Hopkins Bloomberg de Salud Pública. Tiene varios cursos en Coursera sobre análisis de datos, y también lo podemos considerar uno de los grandes contribuidores a la educación sobre análisis de datos.&lt;/p&gt;
-
-&lt;p&gt;Ha escito numerosos libros sobre análisis de datos y manejo de proyectos de análisis de datos. Su especialidad es R.&lt;/p&gt;
-
-&lt;p&gt;Puedes ver el &lt;a href=&quot;http://bit.ly/2Rrleai&quot;&gt;índice de sus libros &lt;strong&gt;aquí&lt;/strong&gt;&lt;/a&gt;, casi todos ellos gratuitos, aunque puedes continuir monetariamente si gustas.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Si sabes inglés, hay más material del que podríamos leer decentemente en un buen tiempo sin tener que gastar un solo peso directamente en esta información. ¿Por qué no aprovecharla?&lt;/p&gt;
-
-&lt;p&gt;Cuéantanos si ya leíste uno de ellos y qué te pareció.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="Machine Learning" /><category term="python" /><category term="r" /><summary type="html">Encuentra una colección de libros gratuitos para aprender acerca de estadística, análisis de datos y machine learning usando tanto Python como R.</summary></entry></feed>
+&lt;p&gt;Para los propósitos de REST la arquitectura Cliente-servidor es muy adecuada. Sus beneficios superan sus desventajas para este caso de uso particular.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="REST" /><category term="cliente-servidor" /><summary type="html">Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST.</summary></entry></feed>

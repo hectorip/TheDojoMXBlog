@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>La forma fácil de colaborar en The Dojo MX Blog -</title>
-<meta name="description" content="¿Quieres escribir un artículo para este blog? Este artículo explica la manera más sencilla.">
+<!-- begin _includes/seo.html --><title>Rest -</title>
+<meta name="description" content="Arquitectura cliente-servidor.">
 
 
   <meta name="author" content="Héctor Patricio">
@@ -19,28 +19,26 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es">
 <meta property="og:site_name" content="">
-<meta property="og:title" content="La forma fácil de colaborar en The Dojo MX Blog">
-<meta property="og:url" content="https://blog.thedojo.mx/2019/03/03/la-forma-facil-de-colaborar-en-the-dojo-mx-blog.html">
+<meta property="og:title" content="Rest">
+<meta property="og:url" content="https://blog.thedojo.mx/2019/12/20/rest.html">
 
 
-  <meta property="og:description" content="¿Quieres escribir un artículo para este blog? Este artículo explica la manera más sencilla.">
-
-
-
-  <meta property="og:image" content="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1551246660/camille-orgel-58391-unsplash_jvqz1c.jpg">
-
-
-
-
-
-  <meta property="article:published_time" content="2019-03-03T00:00:00-06:00">
+  <meta property="og:description" content="Arquitectura cliente-servidor.">
 
 
 
 
 
 
-<link rel="canonical" href="https://blog.thedojo.mx/2019/03/03/la-forma-facil-de-colaborar-en-the-dojo-mx-blog.html">
+
+  <meta property="article:published_time" content="2019-12-20T14:40:15-06:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://blog.thedojo.mx/2019/12/20/rest.html">
 
 
 
@@ -125,18 +123,18 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "url": "https://blog.thedojo.mx/2019/03/03/la-forma-facil-de-colaborar-en-the-dojo-mx-blog.html",
-      "name": "La forma fácil de colaborar en The Dojo MX Blog",
-      "headline": "La forma fácil de colaborar en The Dojo MX Blog",
+      "url": "https://blog.thedojo.mx/2019/12/20/rest.html",
+      "name": "Rest",
+      "headline": "Rest",
       "keywords": "",
-      "description": "¿Quieres escribir un artículo para este blog? Este artículo explica la manera más sencilla.",
-      "articleBody": "¿Quieres empezar a escribir? Contribuye con tus artículos a la comunidad. En este post encontrarás una guía detallada para la instalación del repositorio y ver tus posts de manera local, así como la convenciones que seguimos antes de publicar un post.\nComo verás, todo está por desarrolladores y para desarrolladores.\n\nEl único paso\n\nSi no quieres complicarte mucho la vida, has un fork del repositorio, y crea un archivo nombrado como YYYY-MM-DD-tu-titulo-como-slug.md en la carpeta _posts. Una vez que lo tengas listo, has un Pull Request y nosotros lo revisaremos, te daremos nuestros comentarios sobre el contenido, gramática, estilo, etc. y si lo aprobamos mezclaremos tu branch en el master para que tu artículo aparezca publicado.\n\nPero puede que quieras correr el sitio en tu local, ver tu artículo como un borrador antes de publicarlo y probar diferentes imágenes, para eso necesitas instalar el repositorio localmente. A continuación hablaremos de eso.\n\nAlgunos requisitos para aprobar tu artículo:\n\n\n  Debe ser un tema relacionado con desarrollo, útil para la comunidad en general\n  No se aceptan artículos de opinión\n  Ortográfica y gramaticalmente correcto\n  Tu estilo es ameno, amigable e invita a la gente seguirte leyendo\n\n\nAlgunos puntos extra:\n\n\n  Una buena imagen como cabecera (las imágenes generalmente se hostean externamente, puedes usar un serivicio como Cloudinary), pero también podrías subirla a la carpeta assets/images\n  Tu escritura es entretenida\n  Es un tema del que se ha escrito poco\n\n\nGracias por contribuir a que la comunidad sea más fuerte.\n",
-      "datePublished": "2019-03-03 00:00:00 -0600",
-      "dateModified": "2019-03-03 00:00:00 -0600",
+      "description": "<h3 id=\"arquitectura-cliente-servidor\">Arquitectura cliente-servidor.</h3>",
+      "articleBody": "Arquitectura cliente-servidor.\n\nEsta característica normalmente es algo que ya hacemos normalmente con nuestros servicios web en general.\n\nUna API REST debe ser ejecutada como un servidor, que sea encargado de contestar las peticiones de un cliente. El cliente es el programa que usa los servicios que la API provee, pide datos u operaciones y estas son ejecutadas. Fielding pensaba en el cliente como en la interfaz de usuario, pero en nuestros días un cliente podría ser fácilmente otro servidor.\n\nEsta arquitectura nos permite separar claramente las responsabilidades de cada programa y esto a su vez permite que tanto el cliente como el servidor puedan cambiar y evolucionar por su cuenta, sin depender mutuamente uno del otro.\n\nLa arquitectura cliente servidor también define otras cosas, por ejemplo que el servidor nunca inicia la comunicación y sólo responde a peticiones que el cliente le haya hecho, pero no es esencial cumplir con estas para hablar de una API REST, lo más importante es la separación de responsabilidades entre cliente y servidor.\n\nComunicación sin estados\n\nEl estado se refiere a toda la información que contiene un sistema programa en un punto del tiempo. Un sistema REST no mantiene esta información en la comunicación entre cliente y servidor.\n\nEsto quiere decir que no se mantiene una conexión que mantenga un sesión en el servidor que contenga los datos del cliente actual. Cada vez que el cliente haga una petición deberá envíar todos los datos necesarios para que el servidor genere y obtenga la información que se está pidiendo.\n\nEsto tiene ventajas y desventajas. Primero, desacopla completamente el cliente y la implementación del servidor, ya que un cliente se podría comunicar con cualquier instancia del servidor actual. Esto a su vez permite crear servicios replicados y balanceados que son capaces de soportar mucho mejor cargas grandes de trabajo generadas por muchos clientes, ya que no se casa un cliente con un servidor.\n\nUna de las desventajas de este tipo de comunicación es que el estado se tiene que recrear en cada llamada, por lo que la transferencia de información repetida y el procesamiento de esta genera una carga extra que se podría evitar en una conexión que mantenga el estado.\n\nConocer estos detalles nos permitirá decidir si REST es lo adecuado para nuestro proyecto.\n\nInterfaz uniforme\n\nEsta es la característica más distintiva de un sistema REST. Quier\n\nSistema en capas\n\nLas funciones del servidor y la comunicación con el cliente podrían (normalmente, deberían) estar separadas en capas con diferentes funciones cada una. Por ejemplo, el servicio podría estar compuesto por:\n\n\n  Una red de entrega de contenido (CDN)\n  Un balanceador de carga\n  Un firewall\n  Un servidor de autenticación\n  El servidor de web\n  El servidor de aplicaciones\n\n\nEsta separación en capas hace que el servicio web sea más confiable y tenga mejor comportamiento en general. Lo importante de\n\nInterfaz uniforme\n\nNo mantiene el estado\n\nCacheable\n\nCódigo bajo demanda [opcional]\n\nImplementación de las restricciones de REST\n\nDocumentación\n\nConclusión\n",
+      "datePublished": "2019-12-20 14:40:15 -0600",
+      "dateModified": "2019-12-20 14:40:15 -0600",
       "author": {
         "@type": "Person",
-        "name": "Héctor Patricio",
-        "givenName": "Héctor Patricio",
+        "name": null,
+        "givenName": null,
         "email": null
       },
       "publisher": {
@@ -152,13 +150,13 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://blog.thedojo.mx/2019/03/03/la-forma-facil-de-colaborar-en-the-dojo-mx-blog.html"
+        "@id": "https://blog.thedojo.mx/2019/12/20/rest.html"
       },
       "image": {
         "@type": "ImageObject",
         "width": 1200,
         "height": 400,
-        "url": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1551246660/camille-orgel-58391-unsplash_jvqz1c.jpg"
+        "url": ""
       }
     }
 </script>
@@ -223,52 +221,6 @@
 
     <div class="initial-content">
       
-  
-
-
-
-
-
-
-
-
-
-
-
-<div class="page__hero--overlay" style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1551246660/camille-orgel-58391-unsplash_jvqz1c.jpg');">
-  
-    <div class="wrapper">
-      <h1 id="page-title" class="page__title" itemprop="headline">
-        
-          La forma fácil de colaborar en The Dojo MX Blog
-
-        
-      </h1>
-      
-        <p class="page__lead">¿Quieres escribir un artículo para este blog? Este artículo explica la manera más sencilla.
-</p>
-      
-      
-        <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  1 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 03-03-2019
-</p>
-      
-      
-      
-    </div>
-  
-  
-</div>
-
-
 
 
 
@@ -296,7 +248,7 @@
     
     
       <div class="author__bio" itemprop="description">
-        <p>Tech Leader en HAL</p>
+        <p>Desarrollador de software, tech lead @ HAL y The Dojo MX</p>
 
       </div>
     
@@ -318,22 +270,9 @@
       
 
       
-        <li>
-          <a href="mailto:hectorivanpatriciomoreno@gmail.com">
-            <meta itemprop="email" content="hectorivanpatriciomoreno@gmail.com">
-            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
-          </a>
-        </li>
-      
 
       
 
-      
-        <li>
-          <a href="https://twitter.com/hectorip" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
-          </a>
-        </li>
       
 
       
@@ -392,44 +331,88 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="La forma fácil de colaborar en The Dojo MX Blog">
-    <meta itemprop="description" content="¿Quieres escribir un artículo para este blog? Este artículo explica la manera más sencilla.">
-    <meta itemprop="datePublished" content="March 03, 2019">
+    <meta itemprop="headline" content="Rest">
+    <meta itemprop="description" content="Arquitectura cliente-servidor.">
+    <meta itemprop="datePublished" content="December 20, 2019">
     
 
     <div class="page__inner-wrap">
       
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Rest
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 20-12-2019
+</p>
+          
+        </header>
+      
 
       <section class="page__content" itemprop="text">
         
-        <p>¿Quieres empezar a escribir? Contribuye con tus artículos a la comunidad. En este post encontrarás una guía detallada para la instalación del repositorio y ver tus posts de manera local, así como la convenciones que seguimos antes de publicar un post.
-Como verás, todo está por desarrolladores y para desarrolladores.</p>
+        <h3 id="arquitectura-cliente-servidor">Arquitectura cliente-servidor.</h3>
 
-<h2 id="el-único-paso">El único paso</h2>
+<p>Esta característica normalmente es algo que ya hacemos normalmente con nuestros servicios web en general.</p>
 
-<p>Si no quieres complicarte mucho la vida, has un <a href="https://help.github.com/en/articles/fork-a-repo">fork</a> del <a href="https://github.com/TheDojoMX/TheDojoMXBlog">repositorio</a>, y crea un archivo nombrado como <code class="highlighter-rouge">YYYY-MM-DD-tu-titulo-como-slug.md</code> en la carpeta <code class="highlighter-rouge">_posts</code>. Una vez que lo tengas listo, has un <a href="https://github.com/AeroPython/PyFME/wiki/Tutorial-paso-a-paso:-contribuyendo-a-un-pull-request">Pull Request</a> y nosotros lo revisaremos, te daremos nuestros comentarios sobre el contenido, gramática, estilo, etc. y si lo aprobamos mezclaremos tu branch en el master para que tu artículo aparezca publicado.</p>
+<p>Una API REST debe ser ejecutada como un <strong>servidor</strong>, que sea encargado de contestar las peticiones de un <strong>cliente</strong>. El cliente es el programa que usa los servicios que la API provee, pide datos u operaciones y estas son ejecutadas. Fielding pensaba en el cliente como en la interfaz de usuario, pero en nuestros días un cliente podría ser fácilmente otro servidor.</p>
 
-<p>Pero puede que quieras correr el sitio en tu local, ver tu artículo como un borrador antes de publicarlo y probar diferentes imágenes, para eso necesitas instalar el repositorio localmente. A continuación hablaremos de eso.</p>
+<p>Esta arquitectura nos permite separar claramente las responsabilidades de cada programa y esto a su vez <em>permite que tanto el cliente como el servidor puedan cambiar y evolucionar por su cuenta</em>, sin depender mutuamente uno del otro.</p>
 
-<p>Algunos requisitos para aprobar tu artículo:</p>
+<p>La arquitectura cliente servidor también define otras cosas, por ejemplo que el servidor nunca inicia la comunicación y sólo responde a peticiones que el cliente le haya hecho, pero no es esencial cumplir con estas para hablar de una API REST, lo más importante es la <strong>separación de responsabilidades</strong> entre cliente y servidor.</p>
 
-<ol>
-  <li>Debe ser un tema relacionado con desarrollo, útil para la comunidad en general</li>
-  <li>No se aceptan artículos de opinión</li>
-  <li>Ortográfica y gramaticalmente correcto</li>
-  <li>Tu estilo es ameno, amigable e invita a la gente seguirte leyendo</li>
-</ol>
+<h3 id="comunicación-sin-estados">Comunicación sin estados</h3>
 
-<p>Algunos puntos extra:</p>
+<p>El estado se refiere a toda la información que contiene un sistema programa en un punto del tiempo. Un sistema REST no mantiene esta información <em>en la comunicación entre cliente y servidor</em>.</p>
 
-<ol>
-  <li>Una buena imagen como cabecera (las imágenes generalmente se hostean externamente, puedes usar un serivicio como <a href="https://cloudinary.com/">Cloudinary</a>), pero también podrías subirla a la carpeta <code class="highlighter-rouge">assets/images</code>
-</li>
-  <li>Tu escritura es entretenida</li>
-  <li>Es un tema del que se ha escrito poco</li>
-</ol>
+<p>Esto quiere decir que no se mantiene una conexión que mantenga un sesión en el servidor que contenga los datos del cliente actual. Cada vez que el cliente haga una petición deberá envíar todos los datos necesarios para que el servidor genere y obtenga la información que se está pidiendo.</p>
 
-<p>Gracias por contribuir a que la comunidad sea más fuerte.</p>
+<p>Esto tiene ventajas y desventajas. Primero, desacopla completamente el cliente y la implementación del servidor, ya que un cliente se podría comunicar con <em>cualquier instancia</em> del servidor actual. Esto a su vez permite crear servicios replicados y balanceados que son capaces de soportar mucho mejor cargas grandes de trabajo generadas por muchos clientes, ya que no se casa un cliente con un servidor.</p>
+
+<p>Una de las desventajas de este tipo de comunicación es que el estado se tiene que recrear en cada llamada, por lo que la transferencia de información repetida y el procesamiento de esta genera una carga extra que se podría evitar en una conexión que mantenga el estado.</p>
+
+<p>Conocer estos detalles nos permitirá decidir si REST es lo adecuado para nuestro proyecto.</p>
+
+<h3 id="interfaz-uniforme">Interfaz uniforme</h3>
+
+<p>Esta es la característica más distintiva de un sistema REST. Quier</p>
+
+<h3 id="sistema-en-capas">Sistema en capas</h3>
+
+<p>Las funciones del servidor y la comunicación con el cliente podrían (normalmente, <em>deberían</em>) estar separadas en capas con diferentes funciones cada una. Por ejemplo, el servicio podría estar compuesto por:</p>
+
+<ul>
+  <li>Una red de entrega de contenido (CDN)</li>
+  <li>Un balanceador de carga</li>
+  <li>Un firewall</li>
+  <li>Un servidor de autenticación</li>
+  <li>El servidor de web</li>
+  <li>El servidor de aplicaciones</li>
+</ul>
+
+<p>Esta separación en capas hace que el servicio web sea más confiable y tenga mejor comportamiento en general. Lo importante de</p>
+
+<h3 id="interfaz-uniforme-1">Interfaz uniforme</h3>
+
+<h3 id="no-mantiene-el-estado">No mantiene el estado</h3>
+
+<h3 id="cacheable">Cacheable</h3>
+
+<h3 id="código-bajo-demanda-opcional">Código bajo demanda [opcional]</h3>
+
+<h2 id="implementación-de-las-restricciones-de-rest">Implementación de las restricciones de REST</h2>
+
+<h2 id="documentación">Documentación</h2>
+
+<h2 id="conclusión">Conclusión</h2>
 
         
       </section>
@@ -440,7 +423,7 @@ Como verás, todo está por desarrolladores y para desarrolladores.</p>
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2019-03-03T00:00:00-06:00">March 03, 2019</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2019-12-20T14:40:15-06:00">December 20, 2019</time></p>
         
       </footer>
 
@@ -449,23 +432,22 @@ Como verás, todo está por desarrolladores y para desarrolladores.</p>
     <h4 class="page__share-title">Compartir</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=La+forma+f%C3%A1cil+de+colaborar+en+The+Dojo+MX+Blog%20https%3A%2F%2Fblog.thedojo.mx%2F2019%2F03%2F03%2Fla-forma-facil-de-colaborar-en-the-dojo-mx-blog.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Rest%20https%3A%2F%2Fblog.thedojo.mx%2F2019%2F12%2F20%2Frest.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.thedojo.mx%2F2019%2F03%2F03%2Fla-forma-facil-de-colaborar-en-the-dojo-mx-blog.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.thedojo.mx%2F2019%2F12%2F20%2Frest.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog.thedojo.mx%2F2019%2F03%2F03%2Fla-forma-facil-de-colaborar-en-the-dojo-mx-blog.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog.thedojo.mx%2F2019%2F12%2F20%2Frest.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/2019/02/23/patrones-de-diseno-que-son-y-cuando-usarlos.html" class="pagination--pager" title="Patrones de diseño: qué son y cuándo usarlos
+      <a href="/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html" class="pagination--pager" title="Formatos de marcado de texto que deberías aprender
 ">Anterior</a>
     
     
-      <a href="/2019/03/09/produccion-y-desarollo-en-django.html" class="pagination--pager" title="Producción y desarollo en Django
-">Siguiente</a>
+      <a href="#" class="pagination--pager disabled">Siguiente</a>
     
   </nav>
 
@@ -488,38 +470,6 @@ Como verás, todo está por desarrolladores y para desarrolladores.</p>
     <div class="page__related">
       <h4 class="page__related-title">Podrías ver también</h4>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2019/12/20/rest.html" rel="permalink">Rest
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  2 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 20-12-2019
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Arquitectura cliente-servidor.
-</p>
-  </article>
-</div>
-
         
           
 
@@ -624,6 +574,42 @@ Como verás, todo está por desarrolladores y para desarrolladores.</p>
 </p>
     
     <p class="archive__item-excerpt" itemprop="description">Escribe aquí un buen resumen de tu artículo
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1573540452/jacob-campbell-ri83DTadRto-unsplash_fb7xgx.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html" rel="permalink">Criptografía básica para programadores: ¿Qué es la criptografía?
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 12-11-2019
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Aprende las bases de la criptografía para tenerla en cuenta en tus programas.
 </p>
   </article>
 </div>
@@ -741,8 +727,8 @@ Como verás, todo está por desarrolladores y para desarrolladores.</p>
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://blog.thedojo.mx/2019/03/03/la-forma-facil-de-colaborar-en-the-dojo-mx-blog.html";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/2019/03/03/la-forma-facil-de-colaborar-en-the-dojo-mx-blog"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "https://blog.thedojo.mx/2019/12/20/rest.html";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/2019/12/20/rest"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');

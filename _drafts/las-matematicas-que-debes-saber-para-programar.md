@@ -28,6 +28,7 @@ Esto puede no sonar tan básico pero el entendimiento del significado de estas o
 # Lógica (Matemáticas discretas)
 
 ### Preposiciones
+
 ### Conjuntos
 ### Demostraciones
 
