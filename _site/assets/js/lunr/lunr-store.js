@@ -79,11 +79,6 @@ var store = [{
         "tags": ["REST","cliente-servidor"],
         "url": "https://blog.thedojo.mx/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html",
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1260/v1562217908/krzysztof-kowalik-KiH2-tdGQRY-unsplash_v0vf7l.jpg"},{
-        "title": "Las matemáticas que debes saber para programar",
-        "excerpt":"Cuando se habla de matemáticas mucha gente empieza a sentirse fastidiada y a temer, porque generalmente se habla de cosas que no son de su agrado. Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la...","categories": [],
-        "tags": ["math,","matemáticas,","aprender"],
-        "url": "https://blog.thedojo.mx/2019/07/18/las-matematicas-que-debes-saber-para-programar.html",
-        "teaser":null},{
         "title": "Entendiendo REST: conexión sin estado",
         "excerpt":"Hemos venido hablando de las características que componen a un sistema REST. En el último artículo hablamos de la arquitectura cliente-servidor. Esta es la primera característica fundamental de un sistema REST. Ahora pasemos a la siguiente característica-limitante que Thomas Fielding establece para los sistemas REST: conexión sin estado. ¿Qué es...","categories": [],
         "tags": ["REST","stateless","thomas-fielding"],
@@ -143,4 +138,9 @@ var store = [{
         "excerpt":"Arquitectura cliente-servidor. Esta característica normalmente es algo que ya hacemos normalmente con nuestros servicios web en general. Una API REST debe ser ejecutada como un servidor, que sea encargado de contestar las peticiones de un cliente. El cliente es el programa que usa los servicios que la API provee, pide...","categories": [],
         "tags": [],
         "url": "https://blog.thedojo.mx/2019/12/20/rest.html",
-        "teaser":null}]
+        "teaser":null},{
+        "title": "Las matemáticas que debes saber para programar",
+        "excerpt":"Cuando se habla de matemáticas mucha gente empieza a sentirse fastidiada y a temer, porque generalmente se habla de cosas que no son de su agrado. Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la...","categories": [],
+        "tags": ["math,","matemáticas,","aprender"],
+        "url": "https://blog.thedojo.mx/2019/12/21/las-matematicas-que-debes-saber-para-programar.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1576990677/franck-v-tOjIx_NyzFo-unsplash_iu91kg.jpg"}]
