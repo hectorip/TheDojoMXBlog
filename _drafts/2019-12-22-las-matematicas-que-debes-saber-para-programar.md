@@ -53,5 +53,5 @@ Un ejemplo es la **criptografía**: los algoritmos de cifrado como el AES actual
 
 ## No te preocupes :)
 
-Fuera de las matemáticas básicas y un control decente e intuitivo de la lógica, no es necesario que seas experto en alguno de los temas más adelante, a menos que el campo en el que estés trabajando esté directamente relacionado con eso, tal
+Fuera de las matemáticas básicas y un control decente e intuitivo de la lógica, no es necesario que seas [Terence Tao](http://bit.ly/2StKLCz), a menos que el campo en el que estés trabajando esté directamente relacionado con eso, tal
 como tendrías que saber lo suficiente de finanzas si estuvieras haciendo una app financiera o de administración de empresas si estuvieras haciendo una aplicación o plataforma para este campo.
