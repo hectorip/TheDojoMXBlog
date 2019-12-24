@@ -16,6 +16,7 @@ Cuando se habla de **matemáticas** mucha gente empieza a sentirse fastidiada y 
 Pero para programar con eficacia no necesitas saber muchas matemáticas, de hecho con el entendimiento básico es suficiente. En este artículo hablaremos de aquello que debes dominar.
 
 ## Matemáticas Básicas
+
 Empecemos hablando brevemente de las matemáticas que debes conocer como programador y como ser humano.
 
 ### Operaciones básicas
@@ -32,11 +33,16 @@ Entender esto te ayudará a **resolver problemas** que es la actividad principal
 
 Tener las nociones de estas áreas es una las herramientas más útiles a la hora de resolver problemas y sobre todo atacarlos prácticamente. Varias de las áreas de la ciencia de la computación basan sus resultados y procesos en estas dos áreas.
 
-Un ejemplo es la **criptografía**: los algoritmos de cifrado como el AES actual trabajan con una llave que es usada para cifrar y descifrar el mensaje. Asignar el tamaño de la llave depende totalmente de la _probabilidad_ de que un atacante sea capaz de adivinar la llave en un conjunto de intentos razonable. Ahora imagina que la llave tiene 128 bits de longitud. Aquí entra otro par de conceptos importantes para la computación.
+Un ejemplo es la **criptografía**: los algoritmos de cifrado como el AES actual trabajan con una llave que es usada para cifrar y descifrar el mensaje. Asignar el tamaño de la llave depende totalmente de la _probabilidad_ de que un atacante sea capaz de adivinar la llave en un número de intentos razonable. Ahora imagina que la llave tiene 128 bits de longitud. Aquí entra otro par de conceptos importantes para la computación.
 
 ### Combinaciones y permutaciones
 
+¿Cuál es el número de llaves diferentes que se pueden generar con 128 bits? La respuesta es: 2^128. ¿Cómo llegamos a esa respuesta?
+¿Qué probabilidad hay de que alguien encuentre esa llave por suerte en el primer intento?
+La respuesta es 1/2^128. Es
+
 # Lógica (Matemáticas discretas)
+
 
 ### Preposiciones
 
