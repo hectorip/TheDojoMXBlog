@@ -123,4 +123,9 @@ var store = [{
         "excerpt":"Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el...","categories": [],
         "tags": ["markdown","restructured-text","asciidoc","latex"],
         "url": "https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1576563210/raychan-QtHYdJsBRFU-unsplash_mpyus4.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1576563210/raychan-QtHYdJsBRFU-unsplash_mpyus4.jpg"},{
+        "title": "Las matemáticas que debes saber para programar",
+        "excerpt":"Cuando se habla de matemáticas mucha gente empieza a sentirse fastidiada y a temer, porque generalmente se habla de cosas que no son de su agrado. Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la...","categories": [],
+        "tags": ["math,","matemáticas,","aprender"],
+        "url": "https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1576990677/franck-v-tOjIx_NyzFo-unsplash_iu91kg.jpg"}]

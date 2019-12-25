@@ -1,4 +1,94 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2019-12-21T00:23:12-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Formatos de marcado de texto que deberías aprender</title><link href="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html" rel="alternate" type="text/html" title="Formatos de marcado de texto que deberías aprender" /><published>2019-12-20T00:00:00-06:00</published><updated>2019-12-20T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html">&lt;p&gt;Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el formateo y embellecimiento de documento.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2019-12-25T01:59:53-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Las matemáticas que debes saber para programar</title><link href="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html" rel="alternate" type="text/html" title="Las matemáticas que debes saber para programar" /><published>2019-12-25T00:00:00-06:00</published><updated>2019-12-25T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html">&lt;p&gt;Cuando se habla de &lt;strong&gt;matemáticas&lt;/strong&gt; mucha gente empieza a sentirse fastidiada y a temer, porque generalmente se habla de cosas que no son de su agrado. Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como &lt;strong&gt;una rama de las matemáticas&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pero para programar con eficacia no necesitas saber muchas matemáticas, de hecho con el entendimiento básico es suficiente. En este artículo hablaremos de aquello que debes dominar.&lt;/p&gt;
+
+&lt;h2 id=&quot;matemáticas-básicas&quot;&gt;Matemáticas Básicas&lt;/h2&gt;
+
+&lt;p&gt;Empecemos hablando brevemente de las matemáticas que debes conocer como programador y como ser humano.&lt;/p&gt;
+
+&lt;h3 id=&quot;operaciones-básicas&quot;&gt;Operaciones básicas&lt;/h3&gt;
+
+&lt;p&gt;Saber operar con números en la vida cotidiana es una habilidad que todos necesitamos. Pero más importante aún es entender el significado de estas operaciones:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;¿Qué significa una multiplicación?&lt;/li&gt;
+  &lt;li&gt;¿Qué significa una división?&lt;/li&gt;
+  &lt;li&gt;¿Qué significado tiene el elevar un número a una potencia?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Entender esto te ayudará a &lt;strong&gt;resolver problemas&lt;/strong&gt; que es la actividad principal que se realiza cuando programas. Todo lo demás está alrededor de esto.&lt;/p&gt;
+
+&lt;h3 id=&quot;probabilidad-y-estadística&quot;&gt;Probabilidad y estadística&lt;/h3&gt;
+
+&lt;p&gt;Tener las nociones de estas áreas es una las herramientas más útiles a la hora de resolver problemas y sobre todo atacarlos prácticamente. Varias de las áreas de la ciencia de la computación basan sus resultados y procesos en estas dos áreas.&lt;/p&gt;
+
+&lt;p&gt;Un ejemplo es la &lt;strong&gt;criptografía&lt;/strong&gt;: los algoritmos de cifrado como el AES actual trabajan con una llave que es usada para cifrar y descifrar el mensaje. Asignar el tamaño de la llave depende totalmente de la &lt;em&gt;probabilidad&lt;/em&gt; de que un atacante sea capaz de adivinar la llave en un número de intentos razonable. Ahora imagina que la llave tiene 128 bits de longitud. Aquí entra otro par de conceptos importantes para la computación.&lt;/p&gt;
+
+&lt;h3 id=&quot;combinaciones-y-permutaciones&quot;&gt;Combinaciones y permutaciones&lt;/h3&gt;
+
+&lt;p&gt;¿Cuál es el número de llaves diferentes que se pueden generar con 128 bits? La respuesta es: 2^128 (2 elevado a la potencia 128). &lt;em&gt;¿Cómo llegamos a esa respuesta?&lt;/em&gt; Esto se conoce como &lt;strong&gt;conteo&lt;/strong&gt; en matamáticas y las bases son la &lt;strong&gt;permutación&lt;/strong&gt; y la &lt;strong&gt;combinación&lt;/strong&gt; de elementos. En este caso es la permutación es de 2 elementos que permiten repetición en 128 lugares.&lt;/p&gt;
+
+&lt;p&gt;¿Qué probabilidad hay de que alguien encuentre esa llave por suerte en el primer intento?&lt;/p&gt;
+
+&lt;p&gt;La respuesta es 1/2^128.&lt;/p&gt;
+
+&lt;p&gt;La criptografía y varias áreas están llenas de probabilidad y estadística (como el aprendizaje automático y el análisis de datos, aunque más avanzadas).&lt;/p&gt;
+
+&lt;p&gt;Si sientes que necesitas un recordatorio de esto Khan Academy tiene cursos en español que enseñan desde lo más básico: &lt;a href=&quot;http://bit.ly/2rrL4mb&quot;&gt;Conteo, combinaciones y permutaciones en Khan Academy&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;lógica-matemáticas-discretas&quot;&gt;Lógica (Matemáticas discretas)&lt;/h2&gt;
+
+&lt;p&gt;Las matemáticas discretas son una de las áreas más abstractas de las matemáticas cuando las vemos en papel pero en realidad tratamos con ellas a diario. Podemos definir las matemáticas discretas como el estudio de las cosas que se pueden contar, sean finitas o infinitas.&lt;/p&gt;
+
+&lt;p&gt;La &lt;strong&gt;lógica&lt;/strong&gt; es uno de los campos de estudio de las matemáticas discretas. La lógica se enfoca en estudiar &lt;strong&gt;el razonamiento&lt;/strong&gt; y sobre todo si el razonamiento es &lt;em&gt;correcto&lt;/em&gt;.
+Para lograr esto la lógica se vale del estudio de las &lt;strong&gt;proposiciones&lt;/strong&gt; (o afirmaciones) y sus relaciones. Una proposición es un enunciado que dice algo que puede ser &lt;em&gt;verdadero&lt;/em&gt; o &lt;em&gt;falso&lt;/em&gt;. En matemáticas se dice que tiene un &lt;strong&gt;valor de verdad&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Dos proposiciones se pueden relacionar mediante un &lt;em&gt;conector&lt;/em&gt; (en electrónica: compuertas lógicas, en programación son operadores booleanos). Los conectores más conocidos son el &lt;strong&gt;or&lt;/strong&gt; (o) y el &lt;strong&gt;and&lt;/strong&gt;(y).&lt;/p&gt;
+
+&lt;p&gt;Esto da origen a demostraciones tanto matemáticas como prácticas. En el desarrollo de sistemas se pueden usar para demostrar que tu algoritmo o solución es correcto, es decir, va a funcionar con los datos de entrada propuestos que cumplan con los valores de verdad.&lt;/p&gt;
+
+&lt;p&gt;¿Son absolutamente necesarias para programar? Las demostraciones no, pero serán útiles si quieres crear demostraciones de que un algoritmo funciona sin tener que crear miles de ejemplos que convenzan a alguien. &lt;strong&gt;Lo que sí es necesario entender es el funcionamiento de los conectores lógicos, no hay programa que se escape de ellos.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;conjuntos&quot;&gt;Conjuntos&lt;/h3&gt;
+
+&lt;p&gt;El estudio de los conjuntos es una parte de las matemáticas discretas que se enfoca en estudiar elementos (objetos) que se agrupan por alguna característica en común. Los conjuntos son de gran utilidad para resolver muchos problemas matemáticos y la criptografía actual esta fuertemente basada en algunos problemas que tienen que ver con el cálculo de ciertos conjuntos.&lt;/p&gt;
+
+&lt;p&gt;¿Me srive para trabajar en el día a día? Para cierto tipo de problemas es más cómodo trabajar con conjuntos que con los tipos de datos comunes de colecciones a los que estamos acostumbrados los programadores. Tratar tu colección (lista, tupla, etc.) como un conjunto matemático te permitirá efectuar operaciones como la &lt;strong&gt;intersección de conjuntos&lt;/strong&gt; (elementos en común), la &lt;strong&gt;unión&lt;/strong&gt; (todos los elementos únicos encontrados en dos o más conjuntos). Si el lenguaje de programación tiene este tipo de dato te va a dar un buen empujón.&lt;/p&gt;
+
+&lt;p&gt;Por cierto, el resultado de las consultas en SQL (lenguaje de manejo de datos para la mayoría de las bases de datos) se comortan como conjuntos matemáticos.&lt;/p&gt;
+
+&lt;p&gt;¿Quieres aprender matemáticas discretas? Aquí tienes un pequeño curso: &lt;a href=&quot;http://bit.ly/2EWToND&quot;&gt;Curso de matemáticas discretas&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Eso es todo lo que necesitas para programar básicamente. Mientras mejor seas en estos campos, mejor podrás aprovecharlos para progrmar mejor o para entender mejor los programas de otros.&lt;/p&gt;
+
+&lt;h1 id=&quot;matemáticas-avanzadas-y-especificas&quot;&gt;Matemáticas avanzadas y especificas&lt;/h1&gt;
+
+&lt;p&gt;En muchas áreas de la programación se usan matemáticas más avanzadas, sobre todo en áreas que están sonando mucho recientemente: análisis de datos e inteligencia artificial. Si quieres entender a fondo estas y otras áreas del desarrollo de sistemas, es conveniente tener un conocimiento amplio en algunas de las siguientes áreas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Probabilidad y estadística avanzada&lt;/strong&gt;. Saber acerca de variables aleaterias, distribuciones de probabilidad, análisis bayesiano, etc. Esto te permitirá analizar datos tanto exploratoria como predictivamente.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Álgebra lineal&lt;/strong&gt;. El álgebra y la resolución de ecuaciones que representan líneas en el plano cartesiano. Esto te ayudará a tratar con conjuntos de datos. Muchas de los resultados de los algoritmos de Machine Learning son ecuaciones lineales.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ecuaciones diferenciales&lt;/strong&gt;. Esto es la resolución de sistemas de ecuaciones y sus derivadas. Esto tiene aplicaciones en todo lo que tenga que ver con cambios respecto a alguna variable, como el tiempo.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hablé de los campos finales pero para entender esto debes saber antes cosas como:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Geometría Analítica&lt;/li&gt;
+  &lt;li&gt;Álgebra&lt;/li&gt;
+  &lt;li&gt;Trigonometría&lt;/li&gt;
+  &lt;li&gt;Cálculo Integral y diferencial&lt;/li&gt;
+  &lt;li&gt;Cálculo Vectorial&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Por suerte, para los campos de los que hablá arriba no tienes que saber todo esto, a menos que quieras ser el desarrollador de los algoritmos originales. Generalmente somos usuarios de bibliotecas creadas por genios que ya hacen lo que necesitamos.&lt;/p&gt;
+
+&lt;h2 id=&quot;no-te-preocupes-&quot;&gt;No te preocupes :)&lt;/h2&gt;
+
+&lt;p&gt;Fuera de las matemáticas básicas y un control decente e intuitivo de la lógica, no es necesario que seas &lt;a href=&quot;http://bit.ly/2StKLCz&quot;&gt;Terence Tao&lt;/a&gt;, a menos que el campo en el que estés trabajando esté directamente relacionado con eso, tal
+como tendrías que saber lo suficiente de finanzas si estuvieras haciendo una app financiera o de administración de empresas si estuvieras haciendo una aplicación o plataforma para este campo.&lt;/p&gt;
+
+&lt;p&gt;Aquí hay un video curso en el que se explican más ampliamente lo que algunos llaman &lt;a href=&quot;http://bit.ly/2rvD6Zi&quot;&gt;“matemáticas para programadores”&lt;/a&gt;&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="math," /><category term="matemáticas," /><category term="aprender" /><summary type="html">¿Qué tantas matemáticas necesitas para programar? En este artículo lo veremos.</summary></entry><entry><title type="html">Formatos de marcado de texto que deberías aprender</title><link href="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html" rel="alternate" type="text/html" title="Formatos de marcado de texto que deberías aprender" /><published>2019-12-20T00:00:00-06:00</published><updated>2019-12-20T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html">&lt;p&gt;Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el formateo y embellecimiento de documento.&lt;/p&gt;
 
 &lt;p&gt;En este artículo te platicaré de &lt;strong&gt;tres alternativas&lt;/strong&gt; que pueden hacer tu vida más fácil: Markdown, reStructuredText, AsciiDoc.&lt;/p&gt;
 
@@ -1055,138 +1145,4 @@ Veamos los nueve principios necesarios para realizar tu propio proyecto de ultra
 
 &lt;p&gt;La segunda característica definida de los sistemas REST es importante porque permite que los servicios sean más confiables, disponibles y flexibles en tamaño (escalables). Como cada decisión que se toma en el desarrollo, esta viene con sus propias desventajas: al hacer más complejas las peticiones, la base de código es más difícil de mantener en general (del lado del cliente), pero permite características importantes en los sistemas que tienen que atender a una gran cantidad de clientes.&lt;/p&gt;
 
-&lt;p&gt;En el siguiente artículo hablaremos de la tercera característica de los sistemas REST: la capacidad de ser cachear información.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="REST" /><category term="stateless" /><category term="thomas-fielding" /><summary type="html">¿Cómo mantener la información entre peticiones en un sistema REST? Entendamos las ventajas y desventajas</summary></entry><entry><title type="html">Entendiendo REST: Arquitectura cliente-servidor</title><link href="https://blog.thedojo.mx/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html" rel="alternate" type="text/html" title="Entendiendo REST: Arquitectura cliente-servidor" /><published>2019-07-04T00:00:00-05:00</published><updated>2019-07-04T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor</id><content type="html" xml:base="https://blog.thedojo.mx/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html">&lt;blockquote&gt;
-  &lt;p&gt;El propósito de construir software no es crear una topología de interacciones específicas, o usar un tipo particular de componente; es crear un sistema que cumpla y exceda las necesidades de la aplicación. - Thomas Fielding&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Ya hablamos de las &lt;a href=&quot;/2019/06/15/entendiendo-rest-estilo-de-arquitectura.html&quot;&gt;motivaciones detrás del estilo arquitectural REST&lt;/a&gt;. Ahora empecemos con la primera de sus características o restricciones, que la empieza a definir: la arquitectura cliente-servidor.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-la-arquitectura-cliente-servidor&quot;&gt;¿Qué es la arquitectura cliente-servidor?&lt;/h2&gt;
-
-&lt;p&gt;Esta arquitectura de aplicación divide un sistema en dos componentes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Cliente&lt;/strong&gt;: Es un programa o proceso que solicita un servicio y usa la información provista para sus propios objetivos.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Servidor&lt;/strong&gt;: Programa o proceso que ofrece un conjunto de servicios y espera por peticiones para ejecutar o dar estos servicios.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;La principal característica de la arquitectura cliente-servidor es que logra una &lt;em&gt;separación de responsabilidades clara&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;En palabras de &lt;a href=&quot;https://homepages.cwi.nl/~marcello/SAPapers/And91.pdf&quot;&gt;Gregory R. Andrews&lt;/a&gt;, el cliente es un proceso desencadenante mientras que el servidor es un proceso reactivo. Es decir el servidor no puede envíar datos o empezar procesos que un cliente no le ha solicitado.&lt;/p&gt;
-
-&lt;p&gt;La arquitectura básica de un sistema cliente-servidor es esta:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1562699566/PNG_image-ABC17A5C0944-1_wpyk2e.png&quot; alt=&quot;Esquema cliente-servidor&quot; /&gt;&lt;/p&gt;
-
-&lt;!-- Recordemos que todos los diseños o arquitecturas implican un intercambio de valor entre varias características, en este caso un poco de simplicidad por la separación de responsabilidades claras. --&gt;
-
-&lt;p&gt;Veamos sus ventajas y desventajas.&lt;/p&gt;
-
-&lt;h2 id=&quot;ventajas&quot;&gt;Ventajas&lt;/h2&gt;
-
-&lt;p&gt;Hablemos de los beneficios que trae usar la arquitectura cliente-servidor.&lt;/p&gt;
-
-&lt;h3 id=&quot;separación-clara-de-responsabilidades&quot;&gt;Separación clara de responsabilidades&lt;/h3&gt;
-
-&lt;p&gt;La funcionalidad del sistema se divide en dos partes (por lo menos), como el nombre lo indica en parte de dar los servicios (generalmente de datos) y la parte de atender al usuario (humanos o programa) final.&lt;/p&gt;
-
-&lt;p&gt;El cliente y el servidor tienen funciones completamente distintas y cada uno puede cambiar por su lado sin afectar al otro, a esto le podemos llamar “evolución independiente”.&lt;/p&gt;
-
-&lt;p&gt;El ejemplo que tenemos es el del navegador y las páginas que visitamos normalmente en internet. Mientras sigan cumpliendo con el protocolo establecido de comunicación (HTTP) van a poder seguir comunicándose y transfiriendo información, sin interferir la manera en que estén implementados sus procesos internos.&lt;/p&gt;
-
-&lt;h3 id=&quot;división-de-complejidad&quot;&gt;División de complejidad&lt;/h3&gt;
-
-&lt;p&gt;La misma división de la que hablamos en el punto anterior permite dividir la complejidad en dos partes por lo que cada una por su lado es más fácil de entender y desarrollar que el sistema completo.&lt;/p&gt;
-
-&lt;p&gt;Por lo tanto, se sigue el mismo principio que se usa para desarrollar software complejo en general: &lt;strong&gt;divide y vencerás&lt;/strong&gt;. Esto permite que podamos dividir el trabajo limpiamente en diferentes etapas de desarrollo o entre diferentes equipos, que lo único que requieren es una interfaz de comunicación clara.&lt;/p&gt;
-
-&lt;p&gt;Esto no quiere decir que la complejidad &lt;em&gt;general&lt;/em&gt; se reduzca. De esto hablaremos en las desventajas.&lt;/p&gt;
-
-&lt;h3 id=&quot;múltiples-versiones-y-reusabilidad&quot;&gt;Múltiples versiones y reusabilidad&lt;/h3&gt;
-
-&lt;p&gt;La implementación de la interfaz de comunicación es el único requisito indispensable para que un sistema cliente-servidor pueda seguir funcionando. Esto permite que un servidor pueda tener un número indefinido de clientes diferentes que puedan consumir su interfaz y viceversa. En el caso de REST implementar el servidor con la API permite crear tantos clientes como se necesite:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;página web&lt;/li&gt;
-  &lt;li&gt;aplicación móvil&lt;/li&gt;
-  &lt;li&gt;sistema embebido&lt;/li&gt;
-  &lt;li&gt;SDK para servidores&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Sólo para ilustrar:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1562294072/PNG_image-5618E8EA3C0D-1_vk18wv.png&quot; alt=&quot;Ilustración de cliente-servidor multi-cliente&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Tener N versiones de los clientes o poder crear una sin tener que volver a a replicar la funcionalidad del servidor ha hecho que las API’s se vuelvan sumamente populares.&lt;/p&gt;
-
-&lt;h3 id=&quot;simplificación-de-escalamiento&quot;&gt;Simplificación de escalamiento&lt;/h3&gt;
-
-&lt;p&gt;Poder tener separado el servidor permite que podamos escalarlo de forma independiente dependiendo del número de clientes a los que va a atender. Si necesitamos dar un servicio a escala mundial podemos replicar nuestros servidores (usando las arquitecturas adecuadas para esto) sin afectar a los clientes y sin que ellos se enteren y por lo tanto tengan que hacer algún cambio.&lt;/p&gt;
-
-&lt;h2 id=&quot;desventajas&quot;&gt;Desventajas&lt;/h2&gt;
-
-&lt;p&gt;Todo en la vida viene con desventajas asociadas y generalmente directamente proporcionales a sus ventajas. Y otra vez: intercambiamos valor entre diferentes partes de la aplicación. Analicemos algunas de estos intercambios que hacemos al aplicar la arquitectura cliente-servidor.&lt;/p&gt;
-
-&lt;h3 id=&quot;complejidad-general-aumentada&quot;&gt;Complejidad general aumentada&lt;/h3&gt;
-
-&lt;p&gt;Cuando dividimos la aplicación y funciones completas en dos partes, aunque la complejidad de cada parte es menos que la general, la complejidad general aumenta porque hay que agregar elementos al sistema:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Interfaces de comunicación entre cliente y servidor&lt;/li&gt;
-  &lt;li&gt;Mantenimiento o forma de recuperación del estado general de la aplicación&lt;/li&gt;
-  &lt;li&gt;Protocolos de comunicación de red cuando es el caso&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;centralización-de-la-información&quot;&gt;Centralización de la información&lt;/h3&gt;
-
-&lt;p&gt;El servidor es el responsable de almacenar la información y procesarla para darle servicio a los diferentes clientes que los soliciten, lo cual, aunque hace más fácil su administración, representa la desventaja de tener la información centralizada en el sistema que actúa como servidor. Si este sistema se corrompe de alguna forma, los clientes necesitan otras fuentes de información para eliminar este problema.&lt;/p&gt;
-
-&lt;p&gt;Combinar cliente-servidor con otra arquitecturas ayuda a mitigar esta falla. Por ejemplo, se puede implementar el patrón de replicación de repositorio en el lado de los proveedores de servicio.&lt;/p&gt;
-
-&lt;p&gt;Pero, un momento, ¿acaso no es cliente-servidor la única arquitectura que existe para sistemas web o sistemas distribuidos?&lt;/p&gt;
-
-&lt;h2 id=&quot;otras-arquitecturas&quot;&gt;Otras arquitecturas&lt;/h2&gt;
-
-&lt;p&gt;La arquitectura para aplicaciones distribuidas más escuchada es la cliente-servidor, pero no es ni de lejos la única. Analicemos otras dos arquitecturas comunes y dónde se usan. Si quieres ver la lista completa que Fielding analiza puedes revisar la sección 2 de &lt;a href=&quot;https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf&quot;&gt;su tesis doctoral&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;peer-to-peer&quot;&gt;Peer to Peer&lt;/h3&gt;
-
-&lt;p&gt;En este estilo está compuesta por nodos equivalentes, es decir, que tiene la misma función (aunque pueden tener diferente información) y que se distribuyen la carga que soporta el sistema entero según las capacidades de cada uno y a veces se proporcionan servicios entre ellos. Un mismo nodo puede cambiar entre funciones o roles en la red dependiendo de la demanda.&lt;/p&gt;
-
-&lt;p&gt;En esta arquitectura no hay por definición un nodo más importante que otro y si alguno de toda la red falla, puede ser sustituido por otro si tiene la información replicada.&lt;/p&gt;
-
-&lt;p&gt;Las redes de torrents, el blockchain y programas como Ares o LimeWire funcionaban de esta forma.&lt;/p&gt;
-
-&lt;p&gt;Una red peer-to-peer puede lucir así:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_871/v1561266301/PNG_image-CC8B051C8851-1_r78hfc.png&quot; alt=&quot;Ejemplo de red peer to peer&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Las redes peer-to-peer son una de las mejores formas de crear sistemas distribuidos resistentes y descentralizados, es decir, que no concentran la información en un sólo punto que se vuelve el más delicado e importante de todos.&lt;/p&gt;
-
-&lt;h3 id=&quot;pipe-and-filter&quot;&gt;Pipe and Filter&lt;/h3&gt;
-
-&lt;p&gt;En este patrón, la información pasa por una series de “filtros” o nodos que la procesan y van dejando la información en un nuevo estado o con nuevas propiedades y que pasan la información al siguiente nodo. Este patrón es el que siguen los pipelines de datos normalmente, en el que la información que es producida por una fuente externa es procesada a través de una serie de pasos, que pueden incluir la recolección, limpieza, almacenamiento, etc.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1562217820/PNG_image-C00985E33227-1_mevaqa.png&quot; alt=&quot;Ilustración de pipe and filter&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Los estilos arquitectónicos el diseño de un sistema deben adecuarse a las necesidades de ese sistema, no al revés. - Thomas Fielding&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;¿A qué necesidades nos adaptamos?&lt;/p&gt;
-
-&lt;p&gt;A la necesidad de tener una separación clara entre las funciones de datos y procesos de negocio y las interfaces de usuario: sean usuarios finales humanos u otros programas que consumen información.&lt;/p&gt;
-
-&lt;p&gt;La arquitectura cliente-servidor permite simplificar el trabajo del lado del servidor al no tener que preocuparse por todas las distintas situaciones en las que sus datos o procesos van a ser usados.&lt;/p&gt;
-
-&lt;p&gt;Esto nos lleva a que sus procesos sean &lt;strong&gt;reutilizables&lt;/strong&gt; por todos los clientes que sepan comunicarse con el servidor (léase: usar su interfaz). A su vez los clientes son más fáciles de crear por no tener en ellos mismos toda la lógica del negocio y poder enfocarse en las funcionalidades de la entidad al que le van servir.&lt;/p&gt;
-
-&lt;p&gt;Y por último, esta separación permite que el servidor sea fácil de escalar al nivel del servicio requerido.&lt;/p&gt;
-
-&lt;p&gt;Para los propósitos de REST la arquitectura Cliente-servidor es muy adecuada. Sus beneficios superan sus desventajas para este caso de uso particular.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="REST" /><category term="cliente-servidor" /><summary type="html">Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST.</summary></entry></feed>
+&lt;p&gt;En el siguiente artículo hablaremos de la tercera característica de los sistemas REST: la capacidad de ser cachear información.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="REST" /><category term="stateless" /><category term="thomas-fielding" /><summary type="html">¿Cómo mantener la información entre peticiones en un sistema REST? Entendamos las ventajas y desventajas</summary></entry></feed>
