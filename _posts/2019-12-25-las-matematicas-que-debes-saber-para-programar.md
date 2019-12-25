@@ -11,9 +11,31 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Cuando se habla de **matemáticas** mucha gente empieza a sentirse fastidiada y a temer, porque generalmente se habla de cosas que no son de su agrado. Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como **una rama de las matemáticas**.
+Cuando se habla de **matemáticas** mucha gente empieza a sentirse fastidiada y a temer porque creen que son cosas difíciles de entender.
 
-Pero para programar con eficacia no necesitas saber muchas matemáticas, de hecho con el entendimiento básico es suficiente. En este artículo hablaremos de aquello que debes dominar.
+Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como **una rama de las matemáticas**.
+
+Pero para programar con eficacia no necesitas saber muchas matemáticas, de hecho, con el entendimiento básico es suficiente. En este artículo hablaremos de aquello que debes dominar.
+
+## ¿Qué son las matemáticas?
+
+Definir las matemáticas es difícil. Según lo que (de manera muy irresponsable) nos han enseañado en la escuela, las matemáticas es el tratamiento de los **números**. Eso está muy lejos de la realidad, y ya te habás dado cuenta si has avanzado lo suficiente en matemáticas. 
+
+Es cierto, las matemáticas más elementales se pueden reducir a números, pero no es su centro, el espíritu de su estudio.
+
+Algunas definiciones que encontré útiles:
+
+> Las matemáticas son la manera que tenemos de elevar a la categoría de un arte nuestros **esfuerzos cognoscotivos**. - Fausto Ongay
+
+Ongay también menciona que la etimología de la palabra matmáticas tiene que ver con conocer o saber. Así, en cirta medida las matmáticas se pueden pensar como la ciencia o el arte **de la certidumbre**. Es decir, de saber algo con certeza y poder verificarlo.
+
+> La matemática, como una expresión de la mente humana, refleja la voluntad activa, la razón contemplativa, y el deseo de la perfección. Sus elementos básicos son: lógica e intuición, análisis y construcción, generalidad y particularidad. - Richard Courant
+
+En esta definción un poco más poética y abstracta se mencionan los elementos usados para lograr su cometido: lógica, intución, análisis, constucción (o síntesis), generailidad (inducción), particularidad (deducción). Ya hablamos un poco de esto en los artículos acerca de las idea de [George Polya](http://bit.ly/39madQm).
+
+Si quieres adentrarte en esto el libro [**¿Qué son las matemáticas?**](http://bit.ly/2F4Dn8N) habla de ello a fondo.
+
+Pero no estamos aquí para filosofar acerca de las matemáticas. Lo único que quiero quede claro con esto es que las matemáticas no tienen que ver con **números**, sino con el *razonamiento*, *certidumbre* y resolución de problemas.
 
 ## Matemáticas Básicas
 
@@ -31,9 +53,11 @@ Entender esto te ayudará a **resolver problemas** que es la actividad principal
 
 ### Probabilidad y estadística
 
-Tener las nociones de estas áreas es una las herramientas más útiles a la hora de resolver problemas y sobre todo atacarlos prácticamente. Varias de las áreas de la ciencia de la computación basan sus resultados y procesos en estas dos áreas.
+Tener las nociones de estas áreas es una de las herramientas más útiles a la hora de resolver problemas y sobre todo atacarlos prácticamente. Varias de las áreas de la ciencia de la computación basan sus resultados y procesos en estas dos áreas.
 
-Un ejemplo es la **criptografía**: los algoritmos de cifrado como el AES actual trabajan con una llave que es usada para cifrar y descifrar el mensaje. Asignar el tamaño de la llave depende totalmente de la _probabilidad_ de que un atacante sea capaz de adivinar la llave en un número de intentos razonable. Ahora imagina que la llave tiene 128 bits de longitud. Aquí entra otro par de conceptos importantes para la computación.
+Un ejemplo es la **criptografía**: los algoritmos de cifrado como **AES** trabajan con una llave que es usada para cifrar y descifrar el mensaje. Asignar el tamaño de la llave depende totalmente de la _probabilidad_ de que un atacante sea capaz de adivinar la llave en un número de intentos razonable. 
+
+Ahora imagina que la llave tiene 128 bits de longitud. Aquí entra otro par de conceptos importantes para la computación.
 
 ### Combinaciones y permutaciones
 
@@ -71,6 +95,19 @@ Por cierto, el resultado de las consultas en SQL (lenguaje de manejo de datos pa
 ¿Quieres aprender matemáticas discretas? Aquí tienes un pequeño curso: [Curso de matemáticas discretas](http://bit.ly/2EWToND).
 
 Eso es todo lo que necesitas para programar básicamente. Mientras mejor seas en estos campos, mejor podrás aprovecharlos para progrmar mejor o para entender mejor los programas de otros.
+
+### Sistemas numéricos
+
+Los sistemas numéricos son un tipo de conjuntos que se conforman de todas las cifras que pueden formarse con una cantidad determinada de símbolos que representan los números. El número de símbolos le da nombre al sistema: si hay dos símbolos (0, 1) es binario, si hay tres (0, 1, 2), terniario, etc.
+
+Para programar es muy conveniente que entiendas básicamente cómo se define un sistema numérico y que conozcas por lo menos cuatro:
+
+- **Decimal**. Incluye los símbolos que conocemos como dígitos (0, 1, 2,.., 9). Su base es el 10.
+- **Binario**. Es el sistema numérico con el que los microprocesadores pueden trabajar. Por eso es importante conocerlos. Sólo se pueden usar dos valores: 0 y 1.  Su base es el 2.
+- **Hexadecimal**. Se usa por conveniencia para representar números binarios de manera abreviada, por su compatibilidad entre bases (16 = 2^4). Su base es el 16 y los símbolos o valores extra que incluye a parte de los dígitos comunes son las letras de la A a la F.
+- **Octal**. Su base es el 8 y también se usa para abreviar números decimales. Usa los dígitos del 0 al 7.
+
+El sistema decimal lo usamos en la vida diaria. Con entender básicamente el binario y hexadecimal estarás bien.
 
 # Matemáticas avanzadas y especificas
 

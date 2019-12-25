@@ -125,7 +125,7 @@ var store = [{
         "url": "https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html",
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1576563210/raychan-QtHYdJsBRFU-unsplash_mpyus4.jpg"},{
         "title": "Las matemáticas que debes saber para programar",
-        "excerpt":"Cuando se habla de matemáticas mucha gente empieza a sentirse fastidiada y a temer, porque generalmente se habla de cosas que no son de su agrado. Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la...","categories": [],
+        "excerpt":"Cuando se habla de matemáticas mucha gente empieza a sentirse fastidiada y a temer porque creen que son cosas difíciles de entender. Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como una rama...","categories": [],
         "tags": ["math,","matemáticas,","aprender"],
         "url": "https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html",
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1576990677/franck-v-tOjIx_NyzFo-unsplash_iu91kg.jpg"}]

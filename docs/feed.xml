@@ -1,6 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2019-12-25T01:59:53-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Las matemáticas que debes saber para programar</title><link href="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html" rel="alternate" type="text/html" title="Las matemáticas que debes saber para programar" /><published>2019-12-25T00:00:00-06:00</published><updated>2019-12-25T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html">&lt;p&gt;Cuando se habla de &lt;strong&gt;matemáticas&lt;/strong&gt; mucha gente empieza a sentirse fastidiada y a temer, porque generalmente se habla de cosas que no son de su agrado. Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como &lt;strong&gt;una rama de las matemáticas&lt;/strong&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2019-12-25T16:29:42-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Las matemáticas que debes saber para programar</title><link href="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html" rel="alternate" type="text/html" title="Las matemáticas que debes saber para programar" /><published>2019-12-25T00:00:00-06:00</published><updated>2019-12-25T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html">&lt;p&gt;Cuando se habla de &lt;strong&gt;matemáticas&lt;/strong&gt; mucha gente empieza a sentirse fastidiada y a temer porque creen que son cosas difíciles de entender.&lt;/p&gt;
 
-&lt;p&gt;Pero para programar con eficacia no necesitas saber muchas matemáticas, de hecho con el entendimiento básico es suficiente. En este artículo hablaremos de aquello que debes dominar.&lt;/p&gt;
+&lt;p&gt;Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como &lt;strong&gt;una rama de las matemáticas&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pero para programar con eficacia no necesitas saber muchas matemáticas, de hecho, con el entendimiento básico es suficiente. En este artículo hablaremos de aquello que debes dominar.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-son-las-matemáticas&quot;&gt;¿Qué son las matemáticas?&lt;/h2&gt;
+
+&lt;p&gt;Definir las matemáticas es difícil. Según lo que (de manera muy irresponsable) nos han enseañado en la escuela, las matemáticas es el tratamiento de los &lt;strong&gt;números&lt;/strong&gt;. Eso está muy lejos de la realidad, y ya te habás dado cuenta si has avanzado lo suficiente en matemáticas.&lt;/p&gt;
+
+&lt;p&gt;Es cierto, las matemáticas más elementales se pueden reducir a números, pero no es su centro, el espíritu de su estudio.&lt;/p&gt;
+
+&lt;p&gt;Algunas definiciones que encontré útiles:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Las matemáticas son la manera que tenemos de elevar a la categoría de un arte nuestros &lt;strong&gt;esfuerzos cognoscotivos&lt;/strong&gt;. - Fausto Ongay&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ongay también menciona que la etimología de la palabra matmáticas tiene que ver con conocer o saber. Así, en cirta medida las matmáticas se pueden pensar como la ciencia o el arte &lt;strong&gt;de la certidumbre&lt;/strong&gt;. Es decir, de saber algo con certeza y poder verificarlo.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;La matemática, como una expresión de la mente humana, refleja la voluntad activa, la razón contemplativa, y el deseo de la perfección. Sus elementos básicos son: lógica e intuición, análisis y construcción, generalidad y particularidad. - Richard Courant&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;En esta definción un poco más poética y abstracta se mencionan los elementos usados para lograr su cometido: lógica, intución, análisis, constucción (o síntesis), generailidad (inducción), particularidad (deducción). Ya hablamos un poco de esto en los artículos acerca de las idea de &lt;a href=&quot;http://bit.ly/39madQm&quot;&gt;George Polya&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si quieres adentrarte en esto el libro &lt;a href=&quot;http://bit.ly/2F4Dn8N&quot;&gt;&lt;strong&gt;¿Qué son las matemáticas?&lt;/strong&gt;&lt;/a&gt; habla de ello a fondo.&lt;/p&gt;
+
+&lt;p&gt;Pero no estamos aquí para filosofar acerca de las matemáticas. Lo único que quiero quede claro con esto es que las matemáticas no tienen que ver con &lt;strong&gt;números&lt;/strong&gt;, sino con el &lt;em&gt;razonamiento&lt;/em&gt;, &lt;em&gt;certidumbre&lt;/em&gt; y resolución de problemas.&lt;/p&gt;
 
 &lt;h2 id=&quot;matemáticas-básicas&quot;&gt;Matemáticas Básicas&lt;/h2&gt;
 
@@ -20,9 +46,11 @@
 
 &lt;h3 id=&quot;probabilidad-y-estadística&quot;&gt;Probabilidad y estadística&lt;/h3&gt;
 
-&lt;p&gt;Tener las nociones de estas áreas es una las herramientas más útiles a la hora de resolver problemas y sobre todo atacarlos prácticamente. Varias de las áreas de la ciencia de la computación basan sus resultados y procesos en estas dos áreas.&lt;/p&gt;
+&lt;p&gt;Tener las nociones de estas áreas es una de las herramientas más útiles a la hora de resolver problemas y sobre todo atacarlos prácticamente. Varias de las áreas de la ciencia de la computación basan sus resultados y procesos en estas dos áreas.&lt;/p&gt;
 
-&lt;p&gt;Un ejemplo es la &lt;strong&gt;criptografía&lt;/strong&gt;: los algoritmos de cifrado como el AES actual trabajan con una llave que es usada para cifrar y descifrar el mensaje. Asignar el tamaño de la llave depende totalmente de la &lt;em&gt;probabilidad&lt;/em&gt; de que un atacante sea capaz de adivinar la llave en un número de intentos razonable. Ahora imagina que la llave tiene 128 bits de longitud. Aquí entra otro par de conceptos importantes para la computación.&lt;/p&gt;
+&lt;p&gt;Un ejemplo es la &lt;strong&gt;criptografía&lt;/strong&gt;: los algoritmos de cifrado como &lt;strong&gt;AES&lt;/strong&gt; trabajan con una llave que es usada para cifrar y descifrar el mensaje. Asignar el tamaño de la llave depende totalmente de la &lt;em&gt;probabilidad&lt;/em&gt; de que un atacante sea capaz de adivinar la llave en un número de intentos razonable.&lt;/p&gt;
+
+&lt;p&gt;Ahora imagina que la llave tiene 128 bits de longitud. Aquí entra otro par de conceptos importantes para la computación.&lt;/p&gt;
 
 &lt;h3 id=&quot;combinaciones-y-permutaciones&quot;&gt;Combinaciones y permutaciones&lt;/h3&gt;
 
@@ -60,6 +88,21 @@ Para lograr esto la lógica se vale del estudio de las &lt;strong&gt;proposicion
 &lt;p&gt;¿Quieres aprender matemáticas discretas? Aquí tienes un pequeño curso: &lt;a href=&quot;http://bit.ly/2EWToND&quot;&gt;Curso de matemáticas discretas&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Eso es todo lo que necesitas para programar básicamente. Mientras mejor seas en estos campos, mejor podrás aprovecharlos para progrmar mejor o para entender mejor los programas de otros.&lt;/p&gt;
+
+&lt;h3 id=&quot;sistemas-numéricos&quot;&gt;Sistemas numéricos&lt;/h3&gt;
+
+&lt;p&gt;Los sistemas numéricos son un tipo de conjuntos que se conforman de todas las cifras que pueden formarse con una cantidad determinada de símbolos que representan los números. El número de símbolos le da nombre al sistema: si hay dos símbolos (0, 1) es binario, si hay tres (0, 1, 2), terniario, etc.&lt;/p&gt;
+
+&lt;p&gt;Para programar es muy conveniente que entiendas básicamente cómo se define un sistema numérico y que conozcas por lo menos cuatro:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Decimal&lt;/strong&gt;. Incluye los símbolos que conocemos como dígitos (0, 1, 2,.., 9). Su base es el 10.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Binario&lt;/strong&gt;. Es el sistema numérico con el que los microprocesadores pueden trabajar. Por eso es importante conocerlos. Sólo se pueden usar dos valores: 0 y 1.  Su base es el 2.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Hexadecimal&lt;/strong&gt;. Se usa por conveniencia para representar números binarios de manera abreviada, por su compatibilidad entre bases (16 = 2^4). Su base es el 16 y los símbolos o valores extra que incluye a parte de los dígitos comunes son las letras de la A a la F.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Octal&lt;/strong&gt;. Su base es el 8 y también se usa para abreviar números decimales. Usa los dígitos del 0 al 7.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;El sistema decimal lo usamos en la vida diaria. Con entender básicamente el binario y hexadecimal estarás bien.&lt;/p&gt;
 
 &lt;h1 id=&quot;matemáticas-avanzadas-y-especificas&quot;&gt;Matemáticas avanzadas y especificas&lt;/h1&gt;
 
