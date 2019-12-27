@@ -11,7 +11,7 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Cuando se habla de **matemáticas** mucha gente empieza a sentirse fastidiada y a temer porque creen que son cosas difíciles de entender.
+Cuando se habla de **matemáticas** mucha gente empieza a sentirse fastidiada porque creen que son cosas difíciles de entender.
 
 Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como **una rama de las matemáticas**.
 
@@ -19,19 +19,19 @@ Pero para programar con eficacia no necesitas saber muchas matemáticas, de hech
 
 ## ¿Qué son las matemáticas?
 
-Definir las matemáticas es difícil. Según lo que (de manera muy irresponsable) nos han enseañado en la escuela, las matemáticas es el tratamiento de los **números**. Eso está muy lejos de la realidad, y ya te habás dado cuenta si has avanzado lo suficiente en matemáticas. 
+Definir las matemáticas es difícil. Según lo que (de manera muy irresponsable) nos han enseñado en la escuela, las matemáticas es el tratamiento de los **números**. Eso está muy lejos de la realidad, y ya te habás dado cuenta si has avanzado lo suficiente en matemáticas.
 
 Es cierto, las matemáticas más elementales se pueden reducir a números, pero no es su centro, el espíritu de su estudio.
 
 Algunas definiciones que encontré útiles:
 
-> Las matemáticas son la manera que tenemos de elevar a la categoría de un arte nuestros **esfuerzos cognoscotivos**. - Fausto Ongay
+> Las matemáticas son la manera que tenemos de elevar a la categoría de un arte nuestros **esfuerzos cognoscitivos**. - Fausto Ongay
 
-Ongay también menciona que la etimología de la palabra matmáticas tiene que ver con conocer o saber. Así, en cirta medida las matmáticas se pueden pensar como la ciencia o el arte **de la certidumbre**. Es decir, de saber algo con certeza y poder verificarlo.
+Ongay también menciona que la etimología de la palabra matemáticas tiene que ver con conocer o saber. Así, en cierta medida las matemáticas se pueden pensar como la ciencia o el arte **de la certidumbre**. Es decir, de saber algo con certeza y poder verificarlo.
 
 > La matemática, como una expresión de la mente humana, refleja la voluntad activa, la razón contemplativa, y el deseo de la perfección. Sus elementos básicos son: lógica e intuición, análisis y construcción, generalidad y particularidad. - Richard Courant
 
-En esta definción un poco más poética y abstracta se mencionan los elementos usados para lograr su cometido: lógica, intución, análisis, constucción (o síntesis), generailidad (inducción), particularidad (deducción). Ya hablamos un poco de esto en los artículos acerca de las idea de [George Polya](http://bit.ly/39madQm).
+En esta definición un poco más poética y abstracta se mencionan los elementos usados para lograr su cometido: lógica, intuición, análisis, construcción (o síntesis), generalidad (inducción), particularidad (deducción). Ya hablamos un poco de esto en los artículos acerca de las idea de [George Polya](http://bit.ly/39madQm).
 
 Si quieres adentrarte en esto el libro [**¿Qué son las matemáticas?**](http://bit.ly/2F4Dn8N) habla de ello a fondo.
 
@@ -61,7 +61,7 @@ Ahora imagina que la llave tiene 128 bits de longitud. Aquí entra otro par de c
 
 ### Combinaciones y permutaciones
 
-¿Cuál es el número de llaves diferentes que se pueden generar con 128 bits? La respuesta es: 2^128 (2 elevado a la potencia 128). *¿Cómo llegamos a esa respuesta?* Esto se conoce como **conteo** en matamáticas y las bases son la **permutación** y la **combinación** de elementos. En este caso es la permutación es de 2 elementos que permiten repetición en 128 lugares.
+¿Cuál es el número de llaves diferentes que se pueden generar con 128 bits? La respuesta es: 2^128 (2 elevado a la potencia 128). *¿Cómo llegamos a esa respuesta?* Esto se conoce como **conteo** en matemáticas y las bases son la **permutación** y la **combinación** de elementos. En este caso es la permutación es de 2 elementos que permiten repetición en 128 lugares.
 
 ¿Qué probabilidad hay de que alguien encuentre esa llave por suerte en el primer intento?
 
@@ -69,7 +69,7 @@ La respuesta es 1/2^128.
 
 La criptografía y varias áreas están llenas de probabilidad y estadística (como el aprendizaje automático y el análisis de datos, aunque más avanzadas).
 
-Si sientes que necesitas un recordatorio de esto Khan Academy tiene cursos en español que enseñan desde lo más básico: [Conteo, combinaciones y permutaciones en Khan Academy](http://bit.ly/2rrL4mb).
+Si sientes que necesitas un recordatorio aquí hay un curso que enseña desde lo más básico: [Conteo, combinaciones y permutaciones en Khan Academy](http://bit.ly/2rrL4mb). Este también es un
 
 ## Lógica (Matemáticas discretas)
 
@@ -88,17 +88,17 @@ Esto da origen a demostraciones tanto matemáticas como prácticas. En el desarr
 
 El estudio de los conjuntos es una parte de las matemáticas discretas que se enfoca en estudiar elementos (objetos) que se agrupan por alguna característica en común. Los conjuntos son de gran utilidad para resolver muchos problemas matemáticos y la criptografía actual esta fuertemente basada en algunos problemas que tienen que ver con el cálculo de ciertos conjuntos.
 
-¿Me srive para trabajar en el día a día? Para cierto tipo de problemas es más cómodo trabajar con conjuntos que con los tipos de datos comunes de colecciones a los que estamos acostumbrados los programadores. Tratar tu colección (lista, tupla, etc.) como un conjunto matemático te permitirá efectuar operaciones como la **intersección de conjuntos** (elementos en común), la **unión** (todos los elementos únicos encontrados en dos o más conjuntos). Si el lenguaje de programación tiene este tipo de dato te va a dar un buen empujón.
+¿Me sirve para trabajar en el día a día? Para cierto tipo de problemas es más cómodo trabajar con conjuntos que con los tipos de datos comunes de colecciones a los que estamos acostumbrados los programadores. Tratar tu colección (lista, tupla, etc.) como un conjunto matemático te permitirá efectuar operaciones como la **intersección de conjuntos** (elementos en común), la **unión** (todos los elementos únicos encontrados en dos o más conjuntos). Si el lenguaje de programación tiene este tipo de dato te va a dar un buen empujón.
 
-Por cierto, el resultado de las consultas en SQL (lenguaje de manejo de datos para la mayoría de las bases de datos) se comortan como conjuntos matemáticos.
+Por cierto, el resultado de las consultas en SQL (lenguaje de manejo de datos para la mayoría de las bases de datos) se comportan como conjuntos matemáticos.
 
 ¿Quieres aprender matemáticas discretas? Aquí tienes un pequeño curso: [Curso de matemáticas discretas](http://bit.ly/2EWToND).
 
-Eso es todo lo que necesitas para programar básicamente. Mientras mejor seas en estos campos, mejor podrás aprovecharlos para progrmar mejor o para entender mejor los programas de otros.
+Eso es todo lo que necesitas para programar básicamente. Mientras mejor seas en estos campos, mejor podrás aprovecharlos para programar mejor o para entender mejor los programas de otros.
 
 ### Sistemas numéricos
 
-Los sistemas numéricos son un tipo de conjuntos que se conforman de todas las cifras que pueden formarse con una cantidad determinada de símbolos que representan los números. El número de símbolos le da nombre al sistema: si hay dos símbolos (0, 1) es binario, si hay tres (0, 1, 2), terniario, etc.
+Los sistemas numéricos son un tipo de conjuntos que se conforman de todas las cifras que pueden formarse con una cantidad determinada de símbolos que representan los números. El número de símbolos le da nombre al sistema: si hay dos símbolos (0, 1) es binario, si hay tres (0, 1, 2), ternario, etc.
 
 Para programar es muy conveniente que entiendas básicamente cómo se define un sistema numérico y que conozcas por lo menos cuatro:
 
@@ -113,7 +113,7 @@ El sistema decimal lo usamos en la vida diaria. Con entender básicamente el bin
 
 En muchas áreas de la programación se usan matemáticas más avanzadas, sobre todo en áreas que están sonando mucho recientemente: análisis de datos e inteligencia artificial. Si quieres entender a fondo estas y otras áreas del desarrollo de sistemas, es conveniente tener un conocimiento amplio en algunas de las siguientes áreas:
 
-- **Probabilidad y estadística avanzada**. Saber acerca de variables aleaterias, distribuciones de probabilidad, análisis bayesiano, etc. Esto te permitirá analizar datos tanto exploratoria como predictivamente.
+- **Probabilidad y estadística avanzada**. Saber acerca de variables aleaterias, distribuciones de probabilidad, análisis Bayesiano, etc. Esto te permitirá analizar datos tanto exploratoria como predictivamente.
 - **Álgebra lineal**. El álgebra y la resolución de ecuaciones que representan líneas en el plano cartesiano. Esto te ayudará a tratar con conjuntos de datos. Muchas de los resultados de los algoritmos de Machine Learning son ecuaciones lineales.
 - **Ecuaciones diferenciales**. Esto es la resolución de sistemas de ecuaciones y sus derivadas. Esto tiene aplicaciones en todo lo que tenga que ver con cambios respecto a alguna variable, como el tiempo.
 
@@ -132,4 +132,4 @@ Por suerte, para los campos de los que hablá arriba no tienes que saber todo es
 Fuera de las matemáticas básicas y un control decente e intuitivo de la lógica, no es necesario que seas [Terence Tao](http://bit.ly/2StKLCz), a menos que el campo en el que estés trabajando esté directamente relacionado con eso, tal
 como tendrías que saber lo suficiente de finanzas si estuvieras haciendo una app financiera o de administración de empresas si estuvieras haciendo una aplicación o plataforma para este campo.
 
-Aquí hay un video curso en el que se explican más ampliamente lo que algunos llaman ["matemáticas para programadores"](http://bit.ly/2rvD6Zi)
+Aquí hay un video curso en el que se explican más ampliamente lo que algunos llaman ["matemáticas para programadores"](http://bit.ly/2rvD6Zi).
