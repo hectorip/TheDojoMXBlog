@@ -61,15 +61,15 @@ Ahora imagina que la llave tiene 128 bits de longitud. Aquí entra otro par de c
 
 ### Combinaciones y permutaciones
 
-¿Cuál es el número de llaves diferentes que se pueden generar con 128 bits? La respuesta es: 2^128 (2 elevado a la potencia 128). *¿Cómo llegamos a esa respuesta?* Esto se conoce como **conteo** en matemáticas y las bases son la **permutación** y la **combinación** de elementos. En este caso es la permutación es de 2 elementos que permiten repetición en 128 lugares.
+¿Cuál es el número de llaves diferentes que se pueden generar con 128 bits? La respuesta es: 2^128 (2 elevado a la potencia 128). *¿Cómo llegamos a esa respuesta?* Esto se conoce como **conteo** en matemáticas y las bases son la **permutación** y la **combinación** de elementos. En este caso es la permutación de 2 elementos que permiten repetición en 128 lugares.
 
 ¿Qué probabilidad hay de que alguien encuentre esa llave por suerte en el primer intento?
 
-La respuesta es 1/2^128.
+La respuesta es 1/2^128. Tan cerca de cero para ser considerada prácticamente imposible de adivinar incluso en un número de intentos razonable.
 
 La criptografía y varias áreas están llenas de probabilidad y estadística (como el aprendizaje automático y el análisis de datos, aunque más avanzadas).
 
-Si sientes que necesitas un recordatorio aquí hay un curso que enseña desde lo más básico: [Conteo, combinaciones y permutaciones en Khan Academy](http://bit.ly/2rrL4mb). Este también es un
+Si sientes que necesitas un recordatorio aquí hay un curso que enseña desde lo más básico: [Conteo, combinaciones y permutaciones en Khan Academy](http://bit.ly/2rrL4mb). Este también es un curso que enseña probabilidad y estadística desde cero.
 
 ## Lógica (Matemáticas discretas)
 

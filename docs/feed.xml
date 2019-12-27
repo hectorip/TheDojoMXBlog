@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2019-12-26T18:36:40-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Las matemáticas que debes saber para programar</title><link href="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html" rel="alternate" type="text/html" title="Las matemáticas que debes saber para programar" /><published>2019-12-25T00:00:00-06:00</published><updated>2019-12-25T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html">&lt;p&gt;Cuando se habla de &lt;strong&gt;matemáticas&lt;/strong&gt; mucha gente empieza a sentirse fastidiada porque creen que son cosas difíciles de entender.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2019-12-26T22:04:29-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Las matemáticas que debes saber para programar</title><link href="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html" rel="alternate" type="text/html" title="Las matemáticas que debes saber para programar" /><published>2019-12-25T00:00:00-06:00</published><updated>2019-12-25T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html">&lt;p&gt;Cuando se habla de &lt;strong&gt;matemáticas&lt;/strong&gt; mucha gente empieza a sentirse fastidiada porque creen que son cosas difíciles de entender.&lt;/p&gt;
 
 &lt;p&gt;Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como &lt;strong&gt;una rama de las matemáticas&lt;/strong&gt;.&lt;/p&gt;
 
@@ -54,15 +54,15 @@
 
 &lt;h3 id=&quot;combinaciones-y-permutaciones&quot;&gt;Combinaciones y permutaciones&lt;/h3&gt;
 
-&lt;p&gt;¿Cuál es el número de llaves diferentes que se pueden generar con 128 bits? La respuesta es: 2^128 (2 elevado a la potencia 128). &lt;em&gt;¿Cómo llegamos a esa respuesta?&lt;/em&gt; Esto se conoce como &lt;strong&gt;conteo&lt;/strong&gt; en matemáticas y las bases son la &lt;strong&gt;permutación&lt;/strong&gt; y la &lt;strong&gt;combinación&lt;/strong&gt; de elementos. En este caso es la permutación es de 2 elementos que permiten repetición en 128 lugares.&lt;/p&gt;
+&lt;p&gt;¿Cuál es el número de llaves diferentes que se pueden generar con 128 bits? La respuesta es: 2^128 (2 elevado a la potencia 128). &lt;em&gt;¿Cómo llegamos a esa respuesta?&lt;/em&gt; Esto se conoce como &lt;strong&gt;conteo&lt;/strong&gt; en matemáticas y las bases son la &lt;strong&gt;permutación&lt;/strong&gt; y la &lt;strong&gt;combinación&lt;/strong&gt; de elementos. En este caso es la permutación de 2 elementos que permiten repetición en 128 lugares.&lt;/p&gt;
 
 &lt;p&gt;¿Qué probabilidad hay de que alguien encuentre esa llave por suerte en el primer intento?&lt;/p&gt;
 
-&lt;p&gt;La respuesta es 1/2^128.&lt;/p&gt;
+&lt;p&gt;La respuesta es 1/2^128. Tan cerca de cero para ser considerada prácticamente imposible de adivinar incluso en un número de intentos razonable.&lt;/p&gt;
 
 &lt;p&gt;La criptografía y varias áreas están llenas de probabilidad y estadística (como el aprendizaje automático y el análisis de datos, aunque más avanzadas).&lt;/p&gt;
 
-&lt;p&gt;Si sientes que necesitas un recordatorio aquí hay un curso que enseña desde lo más básico: &lt;a href=&quot;http://bit.ly/2rrL4mb&quot;&gt;Conteo, combinaciones y permutaciones en Khan Academy&lt;/a&gt;. Este también es un&lt;/p&gt;
+&lt;p&gt;Si sientes que necesitas un recordatorio aquí hay un curso que enseña desde lo más básico: &lt;a href=&quot;http://bit.ly/2rrL4mb&quot;&gt;Conteo, combinaciones y permutaciones en Khan Academy&lt;/a&gt;. Este también es un curso que enseña probabilidad y estadística desde cero.&lt;/p&gt;
 
 &lt;h2 id=&quot;lógica-matemáticas-discretas&quot;&gt;Lógica (Matemáticas discretas)&lt;/h2&gt;
 
