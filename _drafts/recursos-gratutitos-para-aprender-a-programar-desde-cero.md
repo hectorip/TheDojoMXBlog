@@ -33,16 +33,16 @@ Con estos es suficiente, aunque si quieres reforzar aún más y aprender otro le
 
 ## Crea algo real
 
-Es hora de aplicar y extender el conocimiento que has adquirido hasta ahora. La mejor manera es hacer algo que tenga utilidad práctica aplicable a un problema que tengas a diario.
+Es hora de aplicar y extender el conocimiento que has adquirido hasta ahora. La mejor manera es hacer algo que tenga utilidad práctica aplicable a un problema que tú o alguien cercano vea directamente.
 
 
 ## Has una especialización
 
-Ha llegado el momento de escoger tu especialización.
+El desarrollo de sistemas es un campo muy grande. 
 
 ## Notas finales
 
-Lo que acabas de aprender después de terminar esto son sólo las bases. Igual que muchas otras carreras, en esta
+Lo que acabas de aprender después de terminar esto son sólo las bases. Igual que muchas otras carreras, en ésta tienes que poder seguir aprendiendo constantemente. El desarrollo de software, sin embargo, se caracteriza por ciclos más cortos aún, en los que las habilidades se 
 
 ### Aprende inglés
 Si tu deseo es poder programar o desarrollar software profesionalmente, una de las cosas que tienes que hacer sí o sí es por lo menos aprender a **leer inglés**. Esto te ayudará a cubrir el 83.5% (número inventado) de las situaciones para aprender más.
@@ -52,3 +52,5 @@ Si tu deseo es poder programar o desarrollar software profesionalmente, una de l
 Esto suena un poco raro, pero claro que lo puedes hacer y es de las maneras más eficaces de aprender. Lo mejor de todo es que no necesitas ni siquiera que tue mentor viva.
 
 ### Sigue practicando
+
+Todo es práctica. 
