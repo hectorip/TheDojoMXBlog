@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2019-12-28T23:51:00-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Las matemáticas que debes saber para programar</title><link href="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html" rel="alternate" type="text/html" title="Las matemáticas que debes saber para programar" /><published>2019-12-25T00:00:00-06:00</published><updated>2019-12-25T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html">&lt;p&gt;Cuando se habla de &lt;strong&gt;matemáticas&lt;/strong&gt; mucha gente empieza a sentirse fastidiada porque creen que son cosas difíciles de entender.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2019-12-29T00:01:06-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Recursos gratutitos para aprender a programar desde cero</title><link href="https://blog.thedojo.mx/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html" rel="alternate" type="text/html" title="Recursos gratutitos para aprender a programar desde cero" /><published>2019-12-29T00:00:00-06:00</published><updated>2019-12-29T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html">&lt;p&gt;¿Quieres aprender a programar y no sabes por dónde empezar?&lt;/p&gt;
+
+&lt;p&gt;En este post te daremos algunos recursos que puedes seguir para aprender a programar desde lo más básico hasta tener un conocimiento razonable de programación con el que podrías empezar a trabajar como becario.&lt;/p&gt;
+
+&lt;h2 id=&quot;motívate&quot;&gt;Motívate&lt;/h2&gt;
+
+&lt;p&gt;Para ser un buen programador es importante conocer las bases, pero para eso antes hay que tener motivación y &lt;em&gt;mantenerla&lt;/em&gt;. Así que empecemos por algo que te mostrará el poder de la programación y de lo que puedes hacer con un poco de conocimiento.&lt;/p&gt;
+
+&lt;p&gt;Puedes empezar con la creación de una página de internet. Si buscas “Crear página web desde cero” vas a encontrar un montón de opciones, pero aquí tienes una &lt;a href=&quot;http://bit.ly/2Mq1aE0&quot;&gt;Creando una página&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;También existe el &lt;a href=&quot;http://bit.ly/34VCbyM&quot;&gt;curso para aprender programar de Platzi&lt;/a&gt;, que comienza desde los básico y con algunos ejemplos te enseña lo que se puede lograr con la programación. Este curso&lt;/p&gt;
+
+&lt;h2 id=&quot;ahora-sí-las-bases&quot;&gt;Ahora sí, las bases&lt;/h2&gt;
+
+&lt;p&gt;El legendario &lt;a href=&quot;http://bit.ly/39miPqa&quot;&gt;CS50&lt;/a&gt; de Harvard te ayudará a entender las bases de las ciencias de la computación, afortunadamente ya está con subtítulos en español y es completamente gratuito. Si quieres obtener un certificado puedes pagar por él en la plataforma de cursos edX. Este curso te dará bases sólidas para poder más adelante programar lo que quieras. Aprenderás varios lenguajes: Python, C++, HTML y CSS, entre otros.
+Es un curso que no puedes perder si quieres ser un autodidacta de la programación.&lt;/p&gt;
+
+&lt;p&gt;Si prefieres contenido con audio en español, este, y los que le siguen te puede ayudar: &lt;a href=&quot;http://bit.ly/2Sqj1OV&quot;&gt;Curso de introducción a Python I&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Con estos es suficiente, aunque si quieres reforzar aún más y aprender otro lenguaje te recomiendo el siguiente curso de de Uniwebsidad: &lt;a href=&quot;http://bit.ly/2PYLwSh&quot;&gt;Introducción a JavaScript&lt;/a&gt;. Este curso es bastante viejo, pero la manera de explicar del autor, la sencillez y la forma en la que avanza te hará comprender muchas cosas que te servirán para el futuro.&lt;/p&gt;
+
+&lt;h2 id=&quot;crea-algo-real&quot;&gt;Crea algo real&lt;/h2&gt;
+
+&lt;p&gt;Es hora de aplicar y extender el conocimiento que has adquirido hasta ahora. La mejor manera es hacer algo que tenga utilidad práctica aplicable a un problema que tú o alguien cercano vea directamente.&lt;/p&gt;
+
+&lt;p&gt;La mejor manera de hacerlo es crear una descripción del problema que tienes, hacer una lista de las cosas que necesitas que haga y empezar a programarlo, investigando en el camino cualquier cosa que no sepas hacer. Para este punto es probable que ya seas hábil con los mejores amigos de aprendizaje del desarrollador: Google, Stack Overflow y YouTube.&lt;/p&gt;
+
+&lt;p&gt;Si siente que aún no tienes lo suficiente aquí te dejo algunos ejemplos de cursos creando aplicaciones aunque sea pequeñas completas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2Zv5Cqk&quot;&gt;Usando Flask y MySQL para hacer una aplicación&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/356feZM&quot;&gt;Creando aplicaciones Multi-tenant con Django&lt;/a&gt;. Este curso no es gratis pero es bastante accesible.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;has-una-especialización&quot;&gt;Has una especialización&lt;/h2&gt;
+
+&lt;p&gt;El desarrollo de sistemas es un campo muy grande. Aunque está muy bien saber las bases y aunque sea un poco de diferentes campos (podríamos decir que es esencial), lograrás lo mejor en tu carrera si te especializas en algo:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Frontend&lt;/strong&gt; si disfrutas de las cosas visuales y tienes paciencia para luchar contra los distintos navegadores. Trabajarás con HTML, CSS y sobre todo JavaScript y sus millones de librerías.&lt;/li&gt;
+  &lt;li&gt;Desarrollador de &lt;strong&gt;aplicaciones móviles&lt;/strong&gt;. Es un caso parecido al de frontend, tienes que crear las interfaces con las que los clientes van a interactuar, pero tu programa será instalado en un celular y tendrás que programarlo en Swift o Kotlin, teniendo consideraciones diferentes.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Backend&lt;/strong&gt;: si prefieres manejar datos, crear los sistemas que mantienen la información y los medios de comunicación (generalmente API’s) con clientes consumidores y productores de información. Elegir el lenguaje es difícil porque hay muchos, pero los más usados son Python, JavaScript, PHP, Java y C#.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Administrador de infraestructura&lt;/strong&gt;. Tendrás que aprender a manejar los servidores y a instalar y configurar las aplicaciones que permiten que los programas corran allí. Harás programas para automatizar varios de los pasos. Podrías programar en Bash, Go, Python, entre otros.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ingeniero de datos&lt;/strong&gt;. Aprenderás a manejar programas relacionados con la captura, tratamiento y almacenamiento de grandes cantidades de datos.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sólo mencioné algunas áreas pero hay varias más y combinaciones entre ellas.&lt;/p&gt;
+
+&lt;p&gt;Si quieres empezar a buscar por donde te recomiendo que busques cursos en las siguientes plataformas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2Q3rl5I&quot;&gt;Udacity&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/354mUff&quot;&gt;Coursera&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2Zw09j0&quot;&gt;edX&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Estas tres plataformas tienen cursos gratuitos en español (por lo menos subtitulados) casi sobre cualquier cosa que quieras aprender, incluído los mencionados. No te olvides de YouTube.&lt;/p&gt;
+
+&lt;h3 id=&quot;aprende-inglés&quot;&gt;Aprende inglés&lt;/h3&gt;
+
+&lt;p&gt;Si tu deseo es poder programar o desarrollar software profesionalmente, una de las cosas que tienes que hacer sí o sí es por lo menos aprender a &lt;strong&gt;leer inglés&lt;/strong&gt;. Esto te ayudará a cubrir el 83.5% (número inventado) de las situaciones para aprender más. Muy probablemente si sabes leer en inglés sabrás escribirlo a un grado razonable para &lt;strong&gt;programar en inglés&lt;/strong&gt;, es decir, crear los comentarios, los nombres y otros textos requeridos en inglés, ya que hará tu código de más fácil acceso a un mayor número de personas.&lt;/p&gt;
+
+&lt;p&gt;Una vez dominado esto se te abre la puerta al 80% de recursos de aprendizaje de internet. Y las posibilidades son ilimitadas.&lt;/p&gt;
+
+&lt;h3 id=&quot;obliga-a-alguien-a-ser-tu-mentor&quot;&gt;Obliga a alguien a ser tu mentor&lt;/h3&gt;
+
+&lt;p&gt;Esto suena un poco raro, pero claro que lo puedes hacer y es de las maneras más eficaces de aprender. Lo mejor de todo es que no necesitas ni siquiera que tue mentor esté vivo. Hacer a alguien tu mentor significa aprender de él y muchas personas nos han preparado el camino para que los tomemos como mentores: mediante sus libros. Busca ejemplos de personas como las que quisieras ser e inspírate en sus escritos, charlas, conferencias, entrevistas, podcasts y todo contenido que produzca para ver como puedes recorrer un camino parecido al de esa persona.&lt;/p&gt;
+
+&lt;h2 id=&quot;notas-finales&quot;&gt;Notas finales&lt;/h2&gt;
+
+&lt;p&gt;Lo que acabas de aprender después de terminar esto son sólo las bases. Igual que muchas otras carreras, en ésta tienes que poder seguir aprendiendo constantemente. El desarrollo de software, sin embargo, se caracteriza por ciclos más cortos aún, en los que las habilidades se quedan obsoletas en mucho menos tiempo así que debes afinar tus habilidades de aprendizaje.&lt;/p&gt;
+
+&lt;p&gt;Una de las mejores maneras de solidificar tu conocimiento después de practicarlo, es enseñándolo a otros. No te quedes con lo aprendiste y devuelve algo a la comunidad: enseña siempre que puedas mediante conferencias, videos o artículos en un blog. De esto es algo de lo que no te arrepentirás.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprender" /><category term="programar" /><category term="recursos-aprendizaje" /><summary type="html">Hemos escrito una lista de recursos que te pueden ayudar a aprender a programar en tiempo record.</summary></entry><entry><title type="html">Las matemáticas que debes saber para programar</title><link href="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html" rel="alternate" type="text/html" title="Las matemáticas que debes saber para programar" /><published>2019-12-25T00:00:00-06:00</published><updated>2019-12-25T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html">&lt;p&gt;Cuando se habla de &lt;strong&gt;matemáticas&lt;/strong&gt; mucha gente empieza a sentirse fastidiada porque creen que son cosas difíciles de entender.&lt;/p&gt;
 
 &lt;p&gt;Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como &lt;strong&gt;una rama de las matemáticas&lt;/strong&gt;.&lt;/p&gt;
 
@@ -1082,110 +1154,4 @@ Veamos los nueve principios necesarios para realizar tu propio proyecto de ultra
 
 &lt;p&gt;¡A aprender!&lt;/p&gt;
 
-&lt;p&gt;Puedes comprar el libro en &lt;a href=&quot;https://www.amazon.com.mx/Ultralearning-Outsmart-Competition-Accelerate-English-ebook/dp/B07K6MF8MD/&quot;&gt;Amazon&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprendizaje" /><category term="libros" /><category term="lectura" /><category term="reseñas" /><summary type="html">Todos queremos aprender muchas cosas. Aprende un método que te permitirá mejorar tus habilidades para adquirir conocimiento.</summary></entry><entry><title type="html">Entendiendo REST: conexión sin estado</title><link href="https://blog.thedojo.mx/2019/08/03/entendiendo-rest-servidor-sin-estado.html" rel="alternate" type="text/html" title="Entendiendo REST: conexión sin estado" /><published>2019-08-03T00:00:00-05:00</published><updated>2019-08-03T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/08/03/entendiendo-rest-servidor-sin-estado</id><content type="html" xml:base="https://blog.thedojo.mx/2019/08/03/entendiendo-rest-servidor-sin-estado.html">&lt;p&gt;Hemos venido hablando de las características que componen a un sistema REST. En el último artículo &lt;a href=&quot;/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html&quot;&gt;hablamos de la arquitectura cliente-servidor&lt;/a&gt;. Esta es la primera característica fundamental de un sistema REST. Ahora pasemos a la siguiente característica-limitante que Thomas Fielding establece para los sistemas REST: &lt;strong&gt;conexión sin estado&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-el-estado-de-un-sistema&quot;&gt;¿Qué es el estado de un sistema?&lt;/h2&gt;
-
-&lt;p&gt;El estado de una aplicación son todos los datos que usa para operar en un momento determinado.&lt;/p&gt;
-
-&lt;p&gt;Como ejemplo podemos pensar en una aplicación de ventas en línea. El estado de esta aplicación, para un usuario específico son sus datos de identificación, su bolsa de compras y los productos que ha estado viendo o que tiene en su lista de deseos, así como datos que no son identificables directamente desde la interfaz de usuario como los tokens de sesión, su historial de visita de las páginas y productos (piensa en Amazon) y los productos que ha comprado anteriormente en esta página.&lt;/p&gt;
-
-&lt;p&gt;Todos estos datos necesarios para operar tanto a nivel interno como para la interfaz de usuario son el estado de la aplicación para este usuario. &lt;strong&gt;Puedes entender el estado como el contexto de una aplicación&lt;/strong&gt;. Todas las aplicaciones y programas usables tienen uno. Entonces, ¿a qué nos referimos con conexiones sin estado?&lt;/p&gt;
-
-&lt;h2 id=&quot;conexión-sin-estado&quot;&gt;Conexión sin estado&lt;/h2&gt;
-
-&lt;p&gt;Dando por supuesto que estamos trabajando en un sistema con arquitectura de red &lt;a href=&quot;/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html&quot;&gt;cliente-servidor&lt;/a&gt;, las dos partes comparten la información (el estado) necesaria para realizar las operaciones. La pregunta es: ¿en qué lado mantengo esta información durante la operación? Damos por supuesto que el almacenamiento de información a largo plazo está localizado en algún lado del servidor. Pero en el momento de la operación, ¿quién mantiene estos datos memoria operativa?&lt;/p&gt;
-
-&lt;p&gt;En el ejemplo del que hablamos: ¿quién mantiene en memoria la bolsa de compras del usuario, el cliente (el navegador web) o el servidor? Cualquiera de los dos podría llevarlo a cabo. Veamos los dos casos, empecemos por una conexión que “recuerda” el estado.&lt;/p&gt;
-
-&lt;p&gt;Imagínate la siguiente conversación:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Cliente(C): Vamos a empezar a trabajar con el usuario &lt;em&gt;hectorip&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Servidor(S): De acuerdo&lt;/li&gt;
-  &lt;li&gt;C: Dame su bolsa de compras&lt;/li&gt;
-  &lt;li&gt;S: Tiene estos 5 artículos guardados&lt;/li&gt;
-  &lt;li&gt;C: Comprar todos los artículos de su bolsa&lt;/li&gt;
-  &lt;li&gt;S: Ok, serán $500&lt;/li&gt;
-  &lt;li&gt;C: el cliente quiere pagar&lt;/li&gt;
-  &lt;li&gt;S: le he cobrado todo lo de su bolsa&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;El tipo de conversación que acabamos de ver sería una &lt;strong&gt;conexión con estado&lt;/strong&gt;: cada uno de los mensajes depende del mensaje anterior para poder entender de qué estábamos hablando. Intenta leerla de regreso y lo notarás.&lt;/p&gt;
-
-&lt;p&gt;Ahora veamos cómo sería un conversación que no recuerda los mensajes anteriores:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;C: Dame la bolsa de compra de &lt;em&gt;hectorip&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;S: hectorip tiene estos 5 artículos en su bolsa&lt;/li&gt;
-  &lt;li&gt;C: hectorip quiere comprar todos los artículos de su bolsa&lt;/li&gt;
-  &lt;li&gt;S: Ok, serán $500 por todos los artículos de la bolsa de compra&lt;/li&gt;
-  &lt;li&gt;C: hectorip quiere realizar un pago por $500 por los artículos en su bolsa de compras&lt;/li&gt;
-  &lt;li&gt;S: He cobrado $500 a hectorip por el pedido de los artículos en su bolsa de compras&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Si revisamos la conversación anterior, podemos entender cada mensaje leído individualmente, sin necesitar el contexto completo de la conversación.&lt;/p&gt;
-
-&lt;p&gt;La primera conversación (conexión con estado) tiene algunas ventajas claras:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Los mensajes son más cortos&lt;/li&gt;
-  &lt;li&gt;La conversación es más fluída&lt;/li&gt;
-  &lt;li&gt;Se transfiere menos información de un lado a otro&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Pero también tiene desventajas. ¿Qué pasa si esta conversación se interrumpe y se intenta retomar? &lt;em&gt;Hay que empezar la conversación desde cero.&lt;/em&gt; ¿Qué pasa si el servidor, por algún error olvida de lo que estábamos hablando? &lt;em&gt;Hay que reiniciar la conversación.&lt;/em&gt; ¿Qué pasa si quiero continuar la compra en otro servidor? &lt;em&gt;Hay que reiniciar la conversación con el nuevo servidor.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;características-de-conexión-sin-estado&quot;&gt;Características de conexión sin estado&lt;/h1&gt;
-
-&lt;p&gt;Hablemos de las características de una conexión sin estado.&lt;/p&gt;
-
-&lt;p&gt;La primera característica es que &lt;em&gt;no necesitamos&lt;/em&gt; que la conexión a nivel de sesión de red sea persistente, es decir, que se mantenga un canal de comunicación abierto que pueda mantener en memoria la información de los procesos actuales.&lt;/p&gt;
-
-&lt;p&gt;Segundo, no podemos (ni debemos) asumir que el servidor mantendrá los datos del cliente automáticamente por medio de reconocer al cliente. En cada una de las peticiones que se hacen al servidor, &lt;strong&gt;deben venir todos los datos necesarios para que el servidor mantenga realice la operación&lt;/strong&gt;, no se puede confiar en que las peticiones anteriores transfirieron esa información y no es necesario repetirla.&lt;/p&gt;
-
-&lt;p&gt;Hasta ahora parece que esto presenta más problemas que ventajas. Revisemos por qué alguien querría trabajar con un sistema así.&lt;/p&gt;
-
-&lt;h2 id=&quot;ventajas-de-mantener-el-servidor-sin-estado&quot;&gt;Ventajas de mantener el servidor sin estado&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Replicación de servidores&lt;/strong&gt;. Al no tener que mantener el estado o conexiones persistentes con una instancia del servidor, una conexión sin estado puede permitir que la petición sea atendida por cualquier instancia del código del servidor que tenga el mismo código que las peticiones anteriores, ya que toda la información necesaria para atender esas peticiones estará incluida.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Escalabilidad&lt;/strong&gt;. Esto es una consecuencia inmediata de la ventaja anterior: poder replicar los servidores permite distribuir la carga entre muchas computadoras y aplicar técnicas de balanceo para poder atender a muchos más clientes de lo que se podría en un sistema que requiera mantener estados.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Servicios más sencillos&lt;/strong&gt;. Quitarle la responsabilidad de mantener el contexto de las operaciones actuales a los servicios hace que su código sea más sencillo y por lo tanto más mantenible.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Menos carga en los servidores&lt;/strong&gt;. Al no tener que mantener conexiones persistentes, ni tener que mantener procesos o memoria relacionada con los clientes con los que está operando, se reduce la carga en memoria operativa de los servidores (teóricamente). Esto también implica que el servidor ni siquiera tiene que estar corriendo mientras no esté activamente respondiendo una petición (como las funciones lambda).&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;La siguiente imagen ilustra una técnica común para atender a muchos clientes.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1564887852/PNG_image-428CDB12FF65-1_ojrpoo.png&quot; alt=&quot;Diagrama de replicación de servidores&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;desventajas&quot;&gt;Desventajas&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Complejidad de las peticiones&lt;/strong&gt;. La complejidad de las peticiones aumenta al necesitar mantener en el cliente toda la información necesaria para reconstruir el estado en cada petición en un servidor desde cero. Por lo tanto, la complejidad de los clientes aumenta. y el tamaño de las peticiones se incrementa.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Mayor carga en la red&lt;/strong&gt;. Como las peticiones son más complejas y generalmente contienen más información para poder recuperar el contexto efectivamente, el viaje de información en la red es mayor en tamaño.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;conexiones-que-mantienen-estado&quot;&gt;Conexiones que mantienen estado&lt;/h2&gt;
-
-&lt;p&gt;En los últimos años la mayoría de las conexiones que se levantan en programas creados con la arquitectura cliente-servidor son creados con conexiones que no mantienen el estado. Sin embargo, también se puede mantener una conexión con estado en la arquitectura cliente-servidor. Hay varias formas de lograr esto, pero la principal característica es que debe haber una manera de relacionar al cliente que está solicitando los servicios con el servidor que está atendiéndolo, por lo general la manera de hacerlo es con conexiones persistentes que se mantienen abiertas mientras el proceso de uso de los servicios dura.&lt;/p&gt;
-
-&lt;p&gt;Esto viene con sus propios retos, pero tecnologías actuales como &lt;a href=&quot;/2019/06/02/por-que-deberias-aprender-elixir.html&quot;&gt;Elixir&lt;/a&gt;, Phoenix y los WebSockets hacen el camino más fácil. En otro post hablaremos de cómo podemos aprovechar esta arquitectura y en qué casos nos conviene.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;La segunda característica definida de los sistemas REST es importante porque permite que los servicios sean más confiables, disponibles y flexibles en tamaño (escalables). Como cada decisión que se toma en el desarrollo, esta viene con sus propias desventajas: al hacer más complejas las peticiones, la base de código es más difícil de mantener en general (del lado del cliente), pero permite características importantes en los sistemas que tienen que atender a una gran cantidad de clientes.&lt;/p&gt;
-
-&lt;p&gt;En el siguiente artículo hablaremos de la tercera característica de los sistemas REST: la capacidad de ser cachear información.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="REST" /><category term="stateless" /><category term="thomas-fielding" /><summary type="html">¿Cómo mantener la información entre peticiones en un sistema REST? Entendamos las ventajas y desventajas</summary></entry></feed>
+&lt;p&gt;Puedes comprar el libro en &lt;a href=&quot;https://www.amazon.com.mx/Ultralearning-Outsmart-Competition-Accelerate-English-ebook/dp/B07K6MF8MD/&quot;&gt;Amazon&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprendizaje" /><category term="libros" /><category term="lectura" /><category term="reseñas" /><summary type="html">Todos queremos aprender muchas cosas. Aprende un método que te permitirá mejorar tus habilidades para adquirir conocimiento.</summary></entry></feed>

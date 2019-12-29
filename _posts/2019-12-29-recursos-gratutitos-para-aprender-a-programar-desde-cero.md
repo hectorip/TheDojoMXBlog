@@ -1,6 +1,9 @@
 ---
 title: "Recursos gratutitos para aprender a programar desde cero"
 date: 2019-12-29
+toc: true
+toc_label: Contenido
+toc_sticky: true
 author: Héctor Patricio
 tags: aprender programar recursos-aprendizaje
 comments: true
