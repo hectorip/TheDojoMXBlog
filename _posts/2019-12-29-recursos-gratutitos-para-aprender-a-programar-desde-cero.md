@@ -67,6 +67,8 @@ Estas tres plataformas tienen cursos gratuitos en español (por lo menos subtitu
 
 Si tu deseo es poder programar o desarrollar software profesionalmente, una de las cosas que tienes que hacer sí o sí es por lo menos aprender a **leer inglés**. Esto te ayudará a cubrir el 83.5% (número inventado) de las situaciones para aprender más. Muy probablemente si sabes leer en inglés sabrás escribirlo a un grado razonable para **programar en inglés**, es decir, crear los comentarios, los nombres y otros textos requeridos en inglés, ya que hará tu código de más fácil acceso a un mayor número de personas.
 
+Una vez dominado esto se te abre la puerta al 80% de recursos de aprendizaje de internet. Y las posibilidades son ilimitadas.
+
 ### Obliga a alguien a ser tu mentor
 
 Esto suena un poco raro, pero claro que lo puedes hacer y es de las maneras más eficaces de aprender. Lo mejor de todo es que no necesitas ni siquiera que tue mentor esté vivo. Hacer a alguien tu mentor significa aprender de él y muchas personas nos han preparado el camino para que los tomemos como mentores: mediante sus libros. Busca ejemplos de personas como las que quisieras ser e inspírate en sus escritos, charlas, conferencias, entrevistas, podcasts y todo contenido que produzca para ver como puedes recorrer un camino parecido al de esa persona.
