@@ -24,7 +24,7 @@ Para ser un buen programador es importante conocer las bases, pero para eso ante
 
 Puedes empezar con la creación de una página de internet. Si buscas "Crear página web desde cero" vas a encontrar un montón de opciones, pero aquí tienes una [Creando una página](http://bit.ly/2Mq1aE0).
 
-También existe el [curso para aprender programar de Platzi](http://bit.ly/34VCbyM), que comienza desde los básico y con algunos ejemplos te enseña lo que se puede lograr con la programación. Este curso 
+También existe el [curso para aprender programar de Platzi](http://bit.ly/34VCbyM), que comienza desde los básico y con algunos ejemplos te enseña lo que se puede lograr con la programación.
 
 ## Ahora sí, las bases
 
