@@ -2,8 +2,7 @@
 title: "3 maneras de hacer una API con Go Lang"
 date: 2019-11-23
 author: Héctor Patricio
-tags:
-categories: 
+tags: go apis beego gorilla-mux gin-go
 comments: true
 excerpt: "Escribe aquí un buen resumen de tu artículo"
 header:
@@ -18,10 +17,10 @@ Ahora hablemos de un caso de uso práctico: **úsalo para crear una API**. En es
 
 Puedes ver algunas de las comparativas en los siguientes artículos:
 
-- [Comparando el rendimiento de Go, NodeJS y Elixir](https://stressgrid.com/blog/benchmarking_go_vs_node_vs_elixir/). TL;DR: Go y Elixir llegana  manejar más de 100k conexiones sin ningún problema, Node empieza con problemas desde las 30k y el más eficiente en cómputo y memoria utilizda por mucho es Go.
+- [Comparando el rendimiento de Go, NodeJS y Elixir](https://stressgrid.com/blog/benchmarking_go_vs_node_vs_elixir/). TL;DR: Go y Elixir llegan a manejar más de 100k conexiones sin ningún problema, Node empieza con problemas desde las 30k y el más eficiente en cómputo y memoria utilizada por mucho es Go.
 - [Comparación de frameworks web ligeros](https://github.com/mroth/phoenix-showdown). Este artículo es un poco viejo, pero el resumen es que Gin (un framework web ligero de Go) es el que más peticiones soporta por segundo y con una consistencia excelente.
 
-![Comparativa de microframworks Web](https://res.cloudinary.com/hectorip/image/upload/v1574629781/Screenshot_2019-11-24_15.09.25_ozqwcu.png)
+![Comparativa de micro-frameworks Web](https://res.cloudinary.com/hectorip/image/upload/v1574629781/Screenshot_2019-11-24_15.09.25_ozqwcu.png)
 
 Ahora sí, hablemos de tres (4) formas de crear una API sobre HTTP para tu próximo proyecto. Pero antes hablemos de una opción simple que no cubre muchos casos pero que se oye recomendada muchas veces.
 
@@ -43,7 +42,7 @@ import (
 	"net/http"
 )
 
-// Implementando un servidor HTTP básico, que responde con
+// Implementando un servidor HTTP
 func main() {
 	http.HandleFunc("/", handler)
 	http.ListenAndServe("localhost:8080", nil) // iniciando el servidor
@@ -69,7 +68,6 @@ Por eso te presentamos las opciones más comunes y algunos ejemplos.
 Gin es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go.
 
 ## Beego
-
 
 ## Conclusión
 
