@@ -38,7 +38,26 @@ Todos estos problemas son lo que DevOps ataca con 3 principios o "tres caminos".
 
 ## Todos los involucrados trabajan para lo mismo
 
+Sobre todo en empresas grandes, donde es más común dividir en departamentos debido a la gran cantidad de trabajo disponible, es normal que **cada departamento busque sólo sus propios intereses** y cumplir con sus métricas de desempeño sin poner en primer lugar lo más importante: la producción de valor para el negocio en general.
+
+Así que la primera precondición para que se pueda alcanzar verdadera productividad es que los involucrados comprendan que todos trabajan con el fin de crear cosas de valor para que el negocio siga funcionando y pueda hacerlo cada vez mejor. Esto implica eliminar la burocracia, las guerras entre departamentos y la reducción de trabajo que sólo se hace por demostrar que se tiene algo que hacer como tristemente ha estado marcado por este estigma el departamento de Seguridad de la Información o su equivalente.
+
+Si la actividad qu se está haciendo no contribuye de alguna forma a crear valor para el negocio debería ser eliminada.
+
+Esta condición por sí misma es difícil de cumplir y sin ella no es posible lograr las demás. ¿Quiénes son los encargados poner las condiciones para que se cumpla? La dirección. La dirección de la empresa tiene la responsabilidad de elegir personas razonables, buenas en sus campos y dispuestas a cooperar para que la empresa o el proyecto progresen más allá de su ego. Repito, **sin esto lo demás es imposible o inútil**.
+
+Una vez cumplida la precondición de cooperación con personas dispuestas y hábiles a su nivel podemos hablar de los tres caminos.
+
 ## El primer camino: Flujo
+
+El primer principio de DevOps establece que debe haber un flujo constante de valor desde que se solicita el trabajo hasta que se entrega al cliente final.
+
+El objetivo es minimizar el tiempo que tarda una característica/producto o cualquier otra unidad de valor entregarse desde que solicita hasta que empieza a cumplir con su función.
+
+Debido a que el desarrollo de software es una actividad poco predecible, DevOps se enfoca en la parte de la cadena de entrega de valor que va desde que el área de desarrollo termina algo hasta que es puesto en manos de los usuarios finales. Aunque como veremos más adelante, acelerar esta entrega beneficia en gran manera a la forma en que se produce software de calidad.
+
+Si estás en una empresa pequeña o en una start-up puede que seas tú mismo el que desarrolle y tenga que mantener los programas en operación (producción).
+
 ## El segundo camino: Retroalimentación rápida
 ## El tercer camino: Cultura de aprendizaje y experimentación
 
