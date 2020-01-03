@@ -5,14 +5,18 @@ author: Héctor Patricio
 tags:
 categories: 
 comments: true
-excerpt: "Escribe aquí un buen resumen de tu artículo"
+excerpt: ""
 header:
-  overlay_image: #image
+  overlay_image: #
   teaser: #image
   overlay_filer: rgba(0, 0, 0, 0.5)
 ---
 
-**DevOps** es un término de recientemente creación (2013) que representa un cultura de trabajo enfocada en resolver los problemas que han sido persistentes en la entrega y servicio en el área de productos tecnológicos. En este artículo platicaremos de qué significa y sus fundamentos. Adelanto: DevOps no es un rol y mucho menos automatización de servidores.
+**DevOps** es un término de recientemente creación (2013) que representa un cultura de trabajo enfocada en resolver los problemas que han sido persistentes en la entrega y servicio en el área de productos tecnológicos.
+
+En este artículo platicaremos qué significa y sus fundamentos.
+
+Adelanto: DevOps no es un rol, una palabra mágica y mucho menos automatización de servidores.
 
 ## ¿Por qué importa?
 
@@ -20,7 +24,7 @@ header:
 
 Ahora todas las empresas son empresas de tecnología. Las que no aprovechan la tecnología ya están siendo superadas por las que sí lo hacen. Y las que lo hacen mal en su momento serán superadas por las que usan mejor la tecnología.
 
-> "Cada industria y compañía que no traiga el software al corazón de su negocio será cambiada radicalmente sin previo aviso." - Jeffrey Immelt
+> Cada industria y compañía que no traiga el software al corazón de su negocio será cambiada radicalmente sin previo aviso. - Jeffrey Immelt
 
 Así que es importante que las empresas aprendan a manejar lo mejor posible la tecnología y a crear valor o aumentar el valor que producen mediante ella.
 
@@ -50,15 +54,27 @@ Una vez cumplida la precondición de cooperación con personas dispuestas y háb
 
 ## El primer camino: Flujo
 
-El primer principio de DevOps establece que debe haber un flujo constante de valor desde que se solicita el trabajo hasta que se entrega al cliente final.
+El primer principio de DevOps establece que debe haber un flujo constante de valor en el área de tecnología de información o de sistemas, como lo quieras llamar. Algo de valor es todo aquello que permite al negocio seguir operando o incrementar los beneficios que obtiene de las operaciones.
 
-El objetivo es minimizar el tiempo que tarda una característica/producto o cualquier otra unidad de valor entregarse desde que solicita hasta que empieza a cumplir con su función.
+El objetivo principal es **minimizar el tiempo** que tarda una característica/producto/servicio en entregarse desde que solicita hasta que empieza a cumplir con su función.
 
-Debido a que el desarrollo de software es una actividad poco predecible, DevOps se enfoca en la parte de la cadena de entrega de valor que va desde que el área de desarrollo termina algo hasta que es puesto en manos de los usuarios finales. Aunque como veremos más adelante, acelerar esta entrega beneficia en gran manera a la forma en que se produce software de calidad.
+Debido a que el desarrollo de software es una actividad poco predecible, DevOps se enfoca en la parte de la cadena de entrega de valor que va desde que el área de desarrollo termina algo hasta que es puesto en manos de los usuarios finales. Pero no le interesa sólo eso, ya que las personas encargadas del desarrollo deben seguir ciertas prácticas para facilitar el resto del camino.
 
-Si estás en una empresa pequeña o en una start-up puede que seas tú mismo el que desarrolle y tenga que mantener los programas en operación (producción).
+Acelerar esta entrega beneficia en gran manera a la forma en que se desarrolla software de calidad.
+
+Si estás en una empresa pequeña o en una _startup_ puede que seas tú mismo el que desarrolle y tenga que mantener los programas en operación (producción). Así que reducir la fricción entre estas dos actividades te beneficiará aún más.
+
+¿Qué prácticas permiten lograrlo? 
+
+- **Reducir el trabajo en progreso.** Es decir, mientras menos actividades..
+
+Algo que notar de las prácticas de DevOps es que están extraídas de los movimientos de Lean Manufacturing. 
 
 ## El segundo camino: Retroalimentación rápida
+
+
 ## El tercer camino: Cultura de aprendizaje y experimentación
 
 ## Conclusión
+
+[http://bit.ly/36t59HK](DevOps no es un rol en la empresa) por Domingo Suárez
