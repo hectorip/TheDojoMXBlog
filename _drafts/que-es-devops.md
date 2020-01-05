@@ -66,9 +66,9 @@ Si estás en una empresa pequeña o en una _startup_ puede que seas tú mismo el
 
 ¿Qué prácticas permiten lograrlo? 
 
-- **Reducir el trabajo en progreso.** Es decir, mientras menos actividades..
+- **Reducir el trabajo en progreso.** Mientras menos actividades sin terminar existan, más difícil es administrarlas y notar todo el trabajo pendiente. Tener pocas actividades en progreso permite calcular mejor cuánto tardará en terminarse un nuevo requerimiento y atender los errores más rápidamente.
 
-Algo que notar de las prácticas de DevOps es que están extraídas de los movimientos de Lean Manufacturing. 
+Algo que notar de las prácticas de DevOps es que muchas están extraídas de los movimientos de _Lean Manufacturing_.
 
 ## El segundo camino: Retroalimentación rápida
 
