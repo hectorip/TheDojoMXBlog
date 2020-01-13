@@ -72,8 +72,24 @@ Algo que notar de las prácticas de DevOps es que muchas están extraídas de lo
 
 ## El segundo camino: Retroalimentación rápida
 
+El segundo camino por el que el valor fluye en las organizaciones que implementan devops es de regreso: Debe existir un flujo de  información
 
 ## El tercer camino: Cultura de aprendizaje y experimentación
+
+Después de implementar el camino hacia el cliente y de regreso, DevOps establece que se tiene que crear un cultura de aprendizaje que permita mediante ciclos de retroalimentación mejorar la forma general en la que se trabaja.
+
+La siguiente imagen completa los tres caminos de deveops:
+
+
+![Los tres caminos de devops]()
+
+La empresa debe asegurarse de que los equipos de trabajo están mejorando constantemente mediante el aprendizaje continuo.
+
+Esto puede lograrse mediante varias práctiacas:
+
+- Experimentación.
+- introducción de fallas intencionalmente (chaos engineering)
+- Mediciones cada vez más precisas
 
 ## Conclusión
 
