@@ -7,7 +7,7 @@ categories:
 comments: true
 excerpt: ""
 header:
-  overlay_image: #
+  overlay_image: 
   teaser: #image
   overlay_filer: rgba(0, 0, 0, 0.5)
 ---
@@ -54,6 +54,8 @@ Una vez cumplida la precondición de cooperación con personas dispuestas y háb
 
 ## El primer camino: Flujo
 
+![Primer camino de DevOps](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1579042628/4E94ED23-0268-4F59-A101-1CF009540E01_pssljp.jpg){:align-center}
+
 El primer principio de DevOps establece que debe haber un flujo constante de valor en el área de tecnología de información o de sistemas, como lo quieras llamar. Algo de valor es todo aquello que permite al negocio seguir operando o incrementar los beneficios que obtiene de las operaciones.
 
 El objetivo principal es **minimizar el tiempo** que tarda una característica/producto/servicio en entregarse desde que solicita hasta que empieza a cumplir con su función.
@@ -64,7 +66,7 @@ Acelerar esta entrega beneficia en gran manera a la forma en que se desarrolla s
 
 Si estás en una empresa pequeña o en una _startup_ puede que seas tú mismo el que desarrolle y tenga que mantener los programas en operación (producción). Así que reducir la fricción entre estas dos actividades te beneficiará aún más.
 
-¿Qué prácticas permiten lograrlo? 
+¿Qué prácticas permiten lograrlo?
 
 - **Reducir el trabajo en progreso.** Mientras menos actividades sin terminar existan, más difícil es administrarlas y notar todo el trabajo pendiente. Tener pocas actividades en progreso permite calcular mejor cuánto tardará en terminarse un nuevo requerimiento y atender los errores más rápidamente.
 
@@ -72,24 +74,30 @@ Algo que notar de las prácticas de DevOps es que muchas están extraídas de lo
 
 ## El segundo camino: Retroalimentación rápida
 
-El segundo camino por el que el valor fluye en las organizaciones que implementan devops es de regreso: Debe existir un flujo de  información
+![Segundo camino de DevOps](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1579042628/F68161CA-BF97-4E71-B78B-9310C00CD254_sjiled.jpg){:align-center}
+
+El segundo camino por el que el valor fluye en las organizaciones que implementan DevOps es de regreso: Debe existir un flujo de información desde los sistemas en producción hacia los equipos que están desarrollando los productos y los demás equipos relacionados con esta tarea.
+
 
 ## El tercer camino: Cultura de aprendizaje y experimentación
 
 Después de implementar el camino hacia el cliente y de regreso, DevOps establece que se tiene que crear un cultura de aprendizaje que permita mediante ciclos de retroalimentación mejorar la forma general en la que se trabaja.
 
-La siguiente imagen completa los tres caminos de deveops:
+La siguiente imagen completa los tres caminos de DevOps:
 
 
-![Los tres caminos de devops]()
+![Los tres caminos de devops](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1579042629/0548901A-3BF6-49BF-8556-B0B12D45F0A9_zgljnk.jpg){:align-center}
 
 La empresa debe asegurarse de que los equipos de trabajo están mejorando constantemente mediante el aprendizaje continuo.
 
-Esto puede lograrse mediante varias práctiacas:
+Esto puede lograrse mediante varias prácticas:
 
-- Experimentación.
-- introducción de fallas intencionalmente (chaos engineering)
-- Mediciones cada vez más precisas
+- Experimentación, por ejemplo pruebas A/B
+- Introducción de fallas intencionalmente (_chaos engineering_)
+- Mediciones cada vez más precisas mediante software especializado
+- Agendar tiempo para actividades dedicadas a mejorar el equipo como _Improvement Katas_
+
+Este paso depende de que los dos anteriores se hayan logrado, ya que
 
 ## Conclusión
 
