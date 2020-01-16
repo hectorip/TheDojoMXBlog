@@ -1,14 +1,13 @@
 ---
 title: "¿Qué es DevOps?"
-date: 2019-12-31
+date: 202o-01-16
 author: Héctor Patricio
-tags:
-categories: 
+tags: devops servers culture
 comments: true
-excerpt: ""
+excerpt: "Hablemos de qué es de DevOps y como puede beneficiar a tu empresa aplicarlo"
 header:
-  overlay_image: 
-  teaser: #image
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1579160215/serge-kutuzov-_Y-8SdEn-WI-unsplash_csauhr.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1579160215/serge-kutuzov-_Y-8SdEn-WI-unsplash_csauhr.jpg
   overlay_filer: rgba(0, 0, 0, 0.5)
 ---
 
@@ -68,23 +67,37 @@ Si estás en una empresa pequeña o en una _startup_ puede que seas tú mismo el
 
 ¿Qué prácticas permiten lograrlo?
 
-- **Reducir el trabajo en progreso.** Mientras menos actividades sin terminar existan, más difícil es administrarlas y notar todo el trabajo pendiente. Tener pocas actividades en progreso permite calcular mejor cuánto tardará en terminarse un nuevo requerimiento y atender los errores más rápidamente.
+- **Hacer el trabajo visible.** La mayoría del trabajo que realizamos al hacer productos digitales es muy difícil de estimar, tanto en dificultad como en cantidad.
+Es por eso que debe haber una manera física de ver el trabajo, como lo habría en un fábrica que realiza productos físicos: si una estación de trabajo tiene demasiado material inmediatamente se notará.
 
-Algo que notar de las prácticas de DevOps es que muchas están extraídas de los movimientos de _Lean Manufacturing_.
+- **Reducir y limitar el trabajo en progreso.** Mientras menos actividades sin terminar existan, más difícil es administrarlas y notar todo el trabajo pendiente. Tener pocas actividades en progreso permite **calcular mejor** cuánto tardará en terminarse un nuevo requerimiento y atender los errores más rápidamente. Siguiendo con el ejemplo de la fábrica física: existe un límite físico para el material que puede esperar en una estación de trabajo.
+
+- **Establecer procesos**. Cada uno de los cambios o actividades solicitadas debe pasar por un proceso de revisión que determine si provee valor para el negocio en caso de completarse. Esto implica mantener en algún lado el registro de las tareas solicitadas y su estado actual.
+
+- **Reducir el tamaño del lote trabajo**. Cuando vamos a entregar algo generalmente agrupamos varias piezas de trabajo para "entregarlas más eficientemente". Pero en realidad mientras más pequeño sea este lote de trabajo (idealmente de una tarea) mejor se hace la entrega.
+
+- **Identificar y mejorar las limitantes**. En todo proceso de trabajo hay puntos que hacen que toda la cadena de entrega de valor sea más lenta. Estos puntos son las limitantes. Para mejorar toda la cadena primero hay que identificarlos y después mejorar su eficiencia para mejorar todo el proceso de producción de valor.
+
+- **Eliminar características no necesarias.** Mientras más grande sea el producto más difícil será de manejar. Por lo tanto, so alguna característica no aporta valor al usuario final, necesariamente está restando valor a la compañía entera.
+
+Algo que notar de las prácticas de DevOps es que muchas están extraídas de los movimientos de _Lean Manufacturing_. Existen otra prácticas, pero personalmente considero que estas son las esenciales.
 
 ## El segundo camino: Retroalimentación rápida
 
 ![Segundo camino de DevOps](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1579042628/F68161CA-BF97-4E71-B78B-9310C00CD254_sjiled.jpg){:align-center}
 
-El segundo camino por el que el valor fluye en las organizaciones que implementan DevOps es de regreso: Debe existir un flujo de información desde los sistemas en producción hacia los equipos que están desarrollando los productos y los demás equipos relacionados con esta tarea.
+El segundo camino por el que el valor fluye en las organizaciones que implementan DevOps es de regreso: **debe existir un flujo de información desde los sistemas en producción** hacia los equipos que están desarrollando los productos y los demás equipos relacionados con esta tarea.
+
+Esto permite que los problemas sean resueltos según se van encontrando, primeramente. En segundo lugar habilita un flujo de retroalimentación rápido que permitirá crear mejores productos más rápido.
+
+_Lean Manufactruing_ recomienda que la línea de producción no debe continuar si hay algún problema con una sola de las estaciones de trabajo. Lo mismo debería pasar en los equipos de desarrollo y operaciones. Si un problema no puede ser resuelto por los encargados de ello, todo el equipo debería juntarse a resolver el problema hasta que terminen. Lo sé, esto suena contra-intuitivo y poco productivo, pero la experiencia de las fábricas japonesas demuestra que es mucho mejor resolver un problema inmediatamente en vez de dejarlo avanzar en la cadena de producción, para evitar retrabajo.
 
 
 ## El tercer camino: Cultura de aprendizaje y experimentación
 
-Después de implementar el camino hacia el cliente y de regreso, DevOps establece que se tiene que crear un cultura de aprendizaje que permita mediante ciclos de retroalimentación mejorar la forma general en la que se trabaja.
+Después de implementar el camino hacia el cliente y de regreso, DevOps establece que se tiene que crear un cultura de aprendizaje que permita mediante **ciclos de retroalimentación** mejorar la forma general en la que se trabaja.
 
 La siguiente imagen completa los tres caminos de DevOps:
-
 
 ![Los tres caminos de devops](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1579042629/0548901A-3BF6-49BF-8556-B0B12D45F0A9_zgljnk.jpg){:align-center}
 
@@ -97,8 +110,12 @@ Esto puede lograrse mediante varias prácticas:
 - Mediciones cada vez más precisas mediante software especializado
 - Agendar tiempo para actividades dedicadas a mejorar el equipo como _Improvement Katas_
 
-Este paso depende de que los dos anteriores se hayan logrado, ya que
+Este paso depende de que los dos anteriores se hayan logrado, ya que requieren de tiempo y energías, que no se tendrán si no se tiene una forma confiable de liberar el producto y de monitorearlo para saber que no está pasando.
 
 ## Conclusión
 
-[http://bit.ly/36t59HK](DevOps no es un rol en la empresa) por Domingo Suárez
+Estos pilares fundamentales de DevOps nos pueden ayudar entender las bases de la cultura, pero ponerlos en práctica no es fácil. El libro [Devops Handbook](https://amzn.to/3a91Bgl) explica qué otra prácticas se deben seguir y da consejos prácticos que permiten lograrlo. 
+
+Perfeccionar estas prácticas es algo que nunca se termina y lleva tiempo ver los resultados. Así que ¿qué esperas para empezar?
+
+Con este pequeño artículo esperamos que quede claro que [DevOps no es un rol en la empresa](http://bit.ly/36t59HK).
