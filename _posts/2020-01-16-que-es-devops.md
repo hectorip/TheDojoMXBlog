@@ -1,6 +1,6 @@
 ---
 title: "¿Qué es DevOps?"
-date: 202o-01-16
+date: 2020-01-16
 author: Héctor Patricio
 tags: devops servers culture
 comments: true

@@ -133,4 +133,9 @@ var store = [{
         "excerpt":"¿Quieres aprender a programar y no sabes por dónde empezar? En este post te daremos algunos recursos que puedes seguir para aprender a programar desde lo más básico hasta tener un conocimiento razonable de programación con el que podrías empezar a trabajar como becario. Motívate Para ser un buen programador...","categories": [],
         "tags": ["aprender","programar","recursos-aprendizaje"],
         "url": "https://blog.thedojo.mx/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1577598219/siora-photography-hgFY1mZY-Y0-unsplash_brzlus.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1577598219/siora-photography-hgFY1mZY-Y0-unsplash_brzlus.jpg"},{
+        "title": "¿Qué es DevOps?",
+        "excerpt":"DevOps es un término de recientemente creación (2013) que representa un cultura de trabajo enfocada en resolver los problemas que han sido persistentes en la entrega y servicio en el área de productos tecnológicos. En este artículo platicaremos qué significa y sus fundamentos. Adelanto: DevOps no es un rol, una...","categories": [],
+        "tags": ["devops","servers","culture"],
+        "url": "https://blog.thedojo.mx/2020/01/16/que-es-devops.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1579160215/serge-kutuzov-_Y-8SdEn-WI-unsplash_csauhr.jpg"}]

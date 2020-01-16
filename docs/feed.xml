@@ -1,4 +1,125 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-01-16T01:45:51-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Recursos gratutitos para aprender a programar desde cero</title><link href="https://blog.thedojo.mx/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html" rel="alternate" type="text/html" title="Recursos gratutitos para aprender a programar desde cero" /><published>2019-12-29T00:00:00-06:00</published><updated>2019-12-29T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html">&lt;p&gt;¿Quieres aprender a programar y no sabes por dónde empezar?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-01-16T01:49:00-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">¿Qué es DevOps?</title><link href="https://blog.thedojo.mx/2020/01/16/que-es-devops.html" rel="alternate" type="text/html" title="¿Qué es DevOps?" /><published>2020-01-16T00:00:00-06:00</published><updated>2020-01-16T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/01/16/que-es-devops</id><content type="html" xml:base="https://blog.thedojo.mx/2020/01/16/que-es-devops.html">&lt;p&gt;&lt;strong&gt;DevOps&lt;/strong&gt; es un término de recientemente creación (2013) que representa un cultura de trabajo enfocada en resolver los problemas que han sido persistentes en la entrega y servicio en el área de productos tecnológicos.&lt;/p&gt;
+
+&lt;p&gt;En este artículo platicaremos qué significa y sus fundamentos.&lt;/p&gt;
+
+&lt;p&gt;Adelanto: DevOps no es un rol, una palabra mágica y mucho menos automatización de servidores.&lt;/p&gt;
+
+&lt;h2 id=&quot;por-qué-importa&quot;&gt;¿Por qué importa?&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;En las eras económicas anteriores, los negocios creaban valor moviendo átomos. Ahora crean valor moviendo bits. - Jeffrey Snover&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ahora todas las empresas son empresas de tecnología. Las que no aprovechan la tecnología ya están siendo superadas por las que sí lo hacen. Y las que lo hacen mal en su momento serán superadas por las que usan mejor la tecnología.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Cada industria y compañía que no traiga el software al corazón de su negocio será cambiada radicalmente sin previo aviso. - Jeffrey Immelt&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Así que es importante que las empresas aprendan a manejar lo mejor posible la tecnología y a crear valor o aumentar el valor que producen mediante ella.&lt;/p&gt;
+
+&lt;h2 id=&quot;los-problemas&quot;&gt;Los problemas&lt;/h2&gt;
+
+&lt;p&gt;Si has trabajado en desarrollo de software, infraestructura o en el área de IT de alguna empresa tal vez no necesito contarte esto. Todo lo relacionado con productos digitales está plagado de proyectos no cumplidos en tiempo, nunca terminados, pasados de presupuesto, atención a clientes internos extremadamente deficiente, etc.&lt;/p&gt;
+
+&lt;p&gt;No conforme con eso hay millones de historias de terror de cómo los negocios no se interesan en lo mínimo por mejorar estas áreas, sólo exigiendo cada vez más cosas y poniendo fechas irrazonables.&lt;/p&gt;
+
+&lt;p&gt;Otras historias cuentan los actos heróicos que las personas que trabajamos en estas áreas hemos tenido que hacer para cumplir con los compromisos adquiridos: trabajar toda la noche por varios días seguidos, cambios de último momentos, largas horas en despliegues y re-establecimiento de servicios, etc. O se descubre que el sistema no cumple con los requerimientos legales de protección información y ahora hay que trabajar horas extras para cumplirlo.&lt;/p&gt;
+
+&lt;p&gt;Y por último la vista del lado de la operación del negocio: cada que se va a poner en producción un cambio, un nuevo producto o se va a actualizar algo todos temen que algo catastrófico pase con cierta razón. Ha pasado que por culpa de estos cambios los sistemas que soportan la operación diaria se caen por horas haciendo perder al negocio clientes, dinero y reputación.&lt;/p&gt;
+
+&lt;p&gt;Todos estos problemas son lo que DevOps ataca con 3 principios o “tres caminos”. Pero para habilitar esto antes se necesita algo de la organización.&lt;/p&gt;
+
+&lt;h2 id=&quot;todos-los-involucrados-trabajan-para-lo-mismo&quot;&gt;Todos los involucrados trabajan para lo mismo&lt;/h2&gt;
+
+&lt;p&gt;Sobre todo en empresas grandes, donde es más común dividir en departamentos debido a la gran cantidad de trabajo disponible, es normal que &lt;strong&gt;cada departamento busque sólo sus propios intereses&lt;/strong&gt; y cumplir con sus métricas de desempeño sin poner en primer lugar lo más importante: la producción de valor para el negocio en general.&lt;/p&gt;
+
+&lt;p&gt;Así que la primera precondición para que se pueda alcanzar verdadera productividad es que los involucrados comprendan que todos trabajan con el fin de crear cosas de valor para que el negocio siga funcionando y pueda hacerlo cada vez mejor. Esto implica eliminar la burocracia, las guerras entre departamentos y la reducción de trabajo que sólo se hace por demostrar que se tiene algo que hacer como tristemente ha estado marcado por este estigma el departamento de Seguridad de la Información o su equivalente.&lt;/p&gt;
+
+&lt;p&gt;Si la actividad qu se está haciendo no contribuye de alguna forma a crear valor para el negocio debería ser eliminada.&lt;/p&gt;
+
+&lt;p&gt;Esta condición por sí misma es difícil de cumplir y sin ella no es posible lograr las demás. ¿Quiénes son los encargados poner las condiciones para que se cumpla? La dirección. La dirección de la empresa tiene la responsabilidad de elegir personas razonables, buenas en sus campos y dispuestas a cooperar para que la empresa o el proyecto progresen más allá de su ego. Repito, &lt;strong&gt;sin esto lo demás es imposible o inútil&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Una vez cumplida la precondición de cooperación con personas dispuestas y hábiles a su nivel podemos hablar de los tres caminos.&lt;/p&gt;
+
+&lt;h2 id=&quot;el-primer-camino-flujo&quot;&gt;El primer camino: Flujo&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1579042628/4E94ED23-0268-4F59-A101-1CF009540E01_pssljp.jpg&quot; alt=&quot;Primer camino de DevOps&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;El primer principio de DevOps establece que debe haber un flujo constante de valor en el área de tecnología de información o de sistemas, como lo quieras llamar. Algo de valor es todo aquello que permite al negocio seguir operando o incrementar los beneficios que obtiene de las operaciones.&lt;/p&gt;
+
+&lt;p&gt;El objetivo principal es &lt;strong&gt;minimizar el tiempo&lt;/strong&gt; que tarda una característica/producto/servicio en entregarse desde que solicita hasta que empieza a cumplir con su función.&lt;/p&gt;
+
+&lt;p&gt;Debido a que el desarrollo de software es una actividad poco predecible, DevOps se enfoca en la parte de la cadena de entrega de valor que va desde que el área de desarrollo termina algo hasta que es puesto en manos de los usuarios finales. Pero no le interesa sólo eso, ya que las personas encargadas del desarrollo deben seguir ciertas prácticas para facilitar el resto del camino.&lt;/p&gt;
+
+&lt;p&gt;Acelerar esta entrega beneficia en gran manera a la forma en que se desarrolla software de calidad.&lt;/p&gt;
+
+&lt;p&gt;Si estás en una empresa pequeña o en una &lt;em&gt;startup&lt;/em&gt; puede que seas tú mismo el que desarrolle y tenga que mantener los programas en operación (producción). Así que reducir la fricción entre estas dos actividades te beneficiará aún más.&lt;/p&gt;
+
+&lt;p&gt;¿Qué prácticas permiten lograrlo?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Hacer el trabajo visible.&lt;/strong&gt; La mayoría del trabajo que realizamos al hacer productos digitales es muy difícil de estimar, tanto en dificultad como en cantidad.
+Es por eso que debe haber una manera física de ver el trabajo, como lo habría en un fábrica que realiza productos físicos: si una estación de trabajo tiene demasiado material inmediatamente se notará.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Reducir y limitar el trabajo en progreso.&lt;/strong&gt; Mientras menos actividades sin terminar existan, más difícil es administrarlas y notar todo el trabajo pendiente. Tener pocas actividades en progreso permite &lt;strong&gt;calcular mejor&lt;/strong&gt; cuánto tardará en terminarse un nuevo requerimiento y atender los errores más rápidamente. Siguiendo con el ejemplo de la fábrica física: existe un límite físico para el material que puede esperar en una estación de trabajo.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Establecer procesos&lt;/strong&gt;. Cada uno de los cambios o actividades solicitadas debe pasar por un proceso de revisión que determine si provee valor para el negocio en caso de completarse. Esto implica mantener en algún lado el registro de las tareas solicitadas y su estado actual.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Reducir el tamaño del lote trabajo&lt;/strong&gt;. Cuando vamos a entregar algo generalmente agrupamos varias piezas de trabajo para “entregarlas más eficientemente”. Pero en realidad mientras más pequeño sea este lote de trabajo (idealmente de una tarea) mejor se hace la entrega.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Identificar y mejorar las limitantes&lt;/strong&gt;. En todo proceso de trabajo hay puntos que hacen que toda la cadena de entrega de valor sea más lenta. Estos puntos son las limitantes. Para mejorar toda la cadena primero hay que identificarlos y después mejorar su eficiencia para mejorar todo el proceso de producción de valor.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Eliminar características no necesarias.&lt;/strong&gt; Mientras más grande sea el producto más difícil será de manejar. Por lo tanto, so alguna característica no aporta valor al usuario final, necesariamente está restando valor a la compañía entera.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Algo que notar de las prácticas de DevOps es que muchas están extraídas de los movimientos de &lt;em&gt;Lean Manufacturing&lt;/em&gt;. Existen otra prácticas, pero personalmente considero que estas son las esenciales.&lt;/p&gt;
+
+&lt;h2 id=&quot;el-segundo-camino-retroalimentación-rápida&quot;&gt;El segundo camino: Retroalimentación rápida&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1579042628/F68161CA-BF97-4E71-B78B-9310C00CD254_sjiled.jpg&quot; alt=&quot;Segundo camino de DevOps&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;El segundo camino por el que el valor fluye en las organizaciones que implementan DevOps es de regreso: &lt;strong&gt;debe existir un flujo de información desde los sistemas en producción&lt;/strong&gt; hacia los equipos que están desarrollando los productos y los demás equipos relacionados con esta tarea.&lt;/p&gt;
+
+&lt;p&gt;Esto permite que los problemas sean resueltos según se van encontrando, primeramente. En segundo lugar habilita un flujo de retroalimentación rápido que permitirá crear mejores productos más rápido.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Lean Manufactruing&lt;/em&gt; recomienda que la línea de producción no debe continuar si hay algún problema con una sola de las estaciones de trabajo. Lo mismo debería pasar en los equipos de desarrollo y operaciones. Si un problema no puede ser resuelto por los encargados de ello, todo el equipo debería juntarse a resolver el problema hasta que terminen. Lo sé, esto suena contra-intuitivo y poco productivo, pero la experiencia de las fábricas japonesas demuestra que es mucho mejor resolver un problema inmediatamente en vez de dejarlo avanzar en la cadena de producción, para evitar retrabajo.&lt;/p&gt;
+
+&lt;h2 id=&quot;el-tercer-camino-cultura-de-aprendizaje-y-experimentación&quot;&gt;El tercer camino: Cultura de aprendizaje y experimentación&lt;/h2&gt;
+
+&lt;p&gt;Después de implementar el camino hacia el cliente y de regreso, DevOps establece que se tiene que crear un cultura de aprendizaje que permita mediante &lt;strong&gt;ciclos de retroalimentación&lt;/strong&gt; mejorar la forma general en la que se trabaja.&lt;/p&gt;
+
+&lt;p&gt;La siguiente imagen completa los tres caminos de DevOps:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1579042629/0548901A-3BF6-49BF-8556-B0B12D45F0A9_zgljnk.jpg&quot; alt=&quot;Los tres caminos de devops&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La empresa debe asegurarse de que los equipos de trabajo están mejorando constantemente mediante el aprendizaje continuo.&lt;/p&gt;
+
+&lt;p&gt;Esto puede lograrse mediante varias prácticas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Experimentación, por ejemplo pruebas A/B&lt;/li&gt;
+  &lt;li&gt;Introducción de fallas intencionalmente (&lt;em&gt;chaos engineering&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;Mediciones cada vez más precisas mediante software especializado&lt;/li&gt;
+  &lt;li&gt;Agendar tiempo para actividades dedicadas a mejorar el equipo como &lt;em&gt;Improvement Katas&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Este paso depende de que los dos anteriores se hayan logrado, ya que requieren de tiempo y energías, que no se tendrán si no se tiene una forma confiable de liberar el producto y de monitorearlo para saber que no está pasando.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Estos pilares fundamentales de DevOps nos pueden ayudar entender las bases de la cultura, pero ponerlos en práctica no es fácil. El libro &lt;a href=&quot;https://amzn.to/3a91Bgl&quot;&gt;Devops Handbook&lt;/a&gt; explica qué otra prácticas se deben seguir y da consejos prácticos que permiten lograrlo.&lt;/p&gt;
+
+&lt;p&gt;Perfeccionar estas prácticas es algo que nunca se termina y lleva tiempo ver los resultados. Así que ¿qué esperas para empezar?&lt;/p&gt;
+
+&lt;p&gt;Con este pequeño artículo esperamos que quede claro que &lt;a href=&quot;http://bit.ly/36t59HK&quot;&gt;DevOps no es un rol en la empresa&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="devops" /><category term="servers" /><category term="culture" /><summary type="html">Hablemos de qué es de DevOps y como puede beneficiar a tu empresa aplicarlo</summary></entry><entry><title type="html">Recursos gratutitos para aprender a programar desde cero</title><link href="https://blog.thedojo.mx/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html" rel="alternate" type="text/html" title="Recursos gratutitos para aprender a programar desde cero" /><published>2019-12-29T00:00:00-06:00</published><updated>2019-12-29T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html">&lt;p&gt;¿Quieres aprender a programar y no sabes por dónde empezar?&lt;/p&gt;
 
 &lt;p&gt;En este post te daremos algunos recursos que puedes seguir para aprender a programar desde lo más básico hasta tener un conocimiento razonable de programación con el que podrías empezar a trabajar como becario.&lt;/p&gt;
 
@@ -976,182 +1097,4 @@ En Go puedes hacer muchas cosas que haces con C razonablemente bien, sin tanta c
 
 &lt;p&gt;Go es un lenguaje relevante en 2019, 10 años después de haber nacido y lo seguirá siendo por muchos años, sobre todo por los proyectos ya desarrollados en él y las características de las que hablamos en este artículo. Aprenderlo te dará una herramienta más para desarrollar programas que valgan la pena y cumplan con lo esperado.&lt;/p&gt;
 
-&lt;p&gt;Pero como &lt;a href=&quot;https://fs.blog/about/&quot;&gt;Shane Parrish&lt;/a&gt; dice: Go es “simple pero no fácil”. Es sencillo empezar a programar con él, pero dominar sus conceptos requiere estudio y esfuerzo. Go se siente como una herencia de gente muy sabia haciendo un lenguaje para hacer cosas grandes. No te arrepentirás de aprenderlo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="go" /><category term="golang" /><category term="lenguajes-de-programación" /><summary type="html">Go es un lenguaje muy relevante en algunas áreas del desarrollo de software. Aprende para qué deberías usarlo y por qué te conviene aprenderlo.</summary></entry><entry><title type="html">Ultralearning: el arte del aprendizaje profundo</title><link href="https://blog.thedojo.mx/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto.html" rel="alternate" type="text/html" title="Ultralearning: el arte del aprendizaje profundo" /><published>2019-08-13T00:00:00-05:00</published><updated>2019-08-13T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto</id><content type="html" xml:base="https://blog.thedojo.mx/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto.html">&lt;blockquote&gt;
-  &lt;p&gt;¿En qué te convertirías si aprendieras todo lo que deseas?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;¿Cuántas cosas están en tu lista de aprendizaje?&lt;/strong&gt; Todos tenemos una lista larga de temas, habilidades y curiosidades por aprender. Pero tenemos una cantidad igual de grande de obstáculos para lograrlo: la falta de acceso a recursos de aprendizaje, la falta de tiempo, falta de motivación, dificultad en estructura, entre muchas otras cosas.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.scotthyoung.com/&quot;&gt;Scott Young&lt;/a&gt; el autor de &lt;a href=&quot;https://www.scotthyoung.com/blog/ultralearning/&quot;&gt;Ultralearning&lt;/a&gt; fue muy amable al proporcionarme una copia de revisión antes de que saliera el libro que &lt;a href=&quot;https://amzn.to/361v2hu&quot;&gt;ya está a la venta&lt;/a&gt;, y en este artículo quiero sintetizar las principales técnicas que enseña para que puedas lograr aprender mejor.&lt;/p&gt;
-
-&lt;p&gt;Pero primero, ¿quién es Scott Young y por qué deberíamos escucharlo? Se hizo famoso por estudiar el temario completo (o casi completo) del MIT para Computer Science que normalmente se cursa en 4 años &lt;strong&gt;en sólo 1&lt;/strong&gt;. Este proyecto ocupaba todo su tiempo, un montón de concentración y técnicas para aprender. Aquí es donde empezó a desarrollar el concepto que presenta en el libro (me tomaré la libertad de traducirlo): Ultra-aprendizaje. A partir de ahí ha aprendido muchas más cosas con el mismo estilo agresivo de aprendizaje y ha ayudado a otros a hacer lo mismo.&lt;/p&gt;
-
-&lt;p&gt;Un proyecto de ultra-aprendizaje se define como un periodo de concentración intensa que permite aprender de manera acelerada y profunda el tema que hayas elegido. Para realizar estos proyectos, Scott propone &lt;strong&gt;nueve principios&lt;/strong&gt;, tomando como base lo que aprendió de otras personas que han realizado proyectos similares a los de él pero también los estudios más recientes sobre el tema.&lt;/p&gt;
-
-&lt;p&gt;Este libro te servirá tanto si eres tú el que desea aprender como si quieres enseñarle a otras personas.
-Veamos los nueve principios necesarios para realizar tu propio proyecto de ultra-aprendizaje.&lt;/p&gt;
-
-&lt;h2 id=&quot;1-meta-aprendizaje&quot;&gt;1: Meta-aprendizaje&lt;/h2&gt;
-
-&lt;p&gt;Podemos pensar en este principio como la etapa de planeación. Tienes que investigar cómo esto que quieres aprender lo han aprendido otras personas, que ruta de aprendizaje han seguido, cuáles eran sus conocimientos previos, cuánto les tomó, etc. Para esto puedes investigar en internet o incluso conseguir una entrevista con una persona que tenga los conocimientos que tú quieres.Todo lo que puedas obtener de esta información es útil.&lt;/p&gt;
-
-&lt;p&gt;También tienes que buscar y entender la estructura del tema que quieres aprender, los subtemas principales, cuáles son buenos recursos para aprender. Si encontraste un experto que te ayudara ya tienes cubierto gran parte de esto.&lt;/p&gt;
-
-&lt;p&gt;Es entonces que tienes que reunir todos los recursos posibles de aprendizaje y &lt;strong&gt;trazar un plan, un mapa de aprendizaje&lt;/strong&gt;. En este periodo decidirás cuánto tiempo vas a dedicarle al proyecto y hasta dónde llegarás. Muy importante porque un poco de investigación te puede ahorrar mucho tiempo de ejecución. Este principio te invita a reducir al máximo posible lo que no sabes que no sabes sobre el tema.&lt;/p&gt;
-
-&lt;h2 id=&quot;2-enfoque&quot;&gt;2: Enfoque&lt;/h2&gt;
-
-&lt;p&gt;Este principio establece que para poder aprender efectivamente antes tenemos que agudizar nuestra capacidad de concentrarnos en un tema.&lt;/p&gt;
-
-&lt;p&gt;El enfoque puede trabajarse en tres momentos diferentes:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Empezar a enfocarse en algo&lt;/li&gt;
-  &lt;li&gt;Mantener el enfoque&lt;/li&gt;
-  &lt;li&gt;Mejorar la calidad de nuestra concentración&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Muchos autores coinciden en que la calidad y capacidad par concentrarse es uno de las claves para poder progresar en cualquier cosa, no sólo en el aprendizaje.&lt;/p&gt;
-
-&lt;p&gt;En el libro se dan sugerencias prácticas para poder mejorar en las tres etapas de enfoque.&lt;/p&gt;
-
-&lt;h2 id=&quot;3-aprendizaje-directo&quot;&gt;3: Aprendizaje directo&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Aquel que puede ir a la fuente no va sólo por la jarra.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Es bueno aprender cosas leyendo, pero es mucho mejor aprenderlas aplicando lo que leemos o practicando directamente. Si quieres aprender a programar tienes que crear programas reales que funcionen. Si quieres aprender un idioma tienes que hablar o comunicarte con otras personas en ese idioma. Haciendo esto aprenderás mucho más rápido de lo que harías sólamente leyendo libros que relaten la experiencia de otros, o usando Duolingo.&lt;/p&gt;
-
-&lt;p&gt;Practicar la habilidad directamente o poner en acción el conocimiento hará que este sea más profundo, útil y que lo recuerdes mejor.&lt;/p&gt;
-
-&lt;p&gt;Este principio es muy importante y muchos de nosotros lo hemos vivido en nuestra experiencia escolar: nada de lo que no es enseñaron es aplicable en el mundo real porque las habilidades necesarias para realizar el trabajo de verdad son muy diferentes a lo que se ve en los libros. Aunque el conocimiento adquirido puede servir como base, &lt;strong&gt;la práctica hace al maestro&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;4-ensayo&quot;&gt;4: Ensayo&lt;/h2&gt;
-
-&lt;p&gt;Esta parte es una de las que a las personas en general menos le gusta: practicar o ensayar partes de la habilidad que sean difíciles, laboriosas o aburridas.&lt;/p&gt;
-
-&lt;p&gt;Muchas veces nuestras habilidades están topadas o detenidas por cierta parte del proceso, como si fuera un embudo deteniendo el flujo de líquido. Para acabar con esto hay que practicar con la parte más incómoda de la habilidad.&lt;/p&gt;
-
-&lt;p&gt;Esto incluye que descompongas la habilidad en diferentes sub-procesos que puedan ejecutarse individualmente y practicar cada uno por separado hasta que lo domines de manera razonable, uno tras otro, cada de los sub-procesos hasta terminarlos todos. Después hay que practicar de nuevo el proceso completo y medir nuestro desempeño.&lt;/p&gt;
-
-&lt;p&gt;Esto es conveniente porque al trabajar sobre una parte específica del proceso completo puedes liberar recursos mentales para mejorar de manera más profunda y significativa en esa parte de la habilidad.&lt;/p&gt;
-
-&lt;h2 id=&quot;5-recuperación-de-la-información&quot;&gt;5: Recuperación de la información&lt;/h2&gt;
-
-&lt;p&gt;El principio de “retrieval” consiste en intentar poner en práctica y ver si de verdad entendiste lo que acabas de aprender mediante pruebas reales, por ejemplo: usar las palabras de un nuevo idioma en conversación, contestar preguntas de un examen o usar una nueva técnica aprendida para programar.&lt;/p&gt;
-
-&lt;p&gt;Esto ayudará a que recuerdes mejor lo aprendido y a que no te quedes con la sensación de que has aprendido algo cuando no es la realidad. Poner a prueba tu conocimiento es la mejor manera de saber que sí existe y de qué calidad es.&lt;/p&gt;
-
-&lt;p&gt;Este principio pone de relieve algo: es mucho más incómodo “probarse” a uno mismo mediante imponerse algún obstáculo, es una fuente de cansancio e incomodidad mental, lo cuál nos puede dejar con la sensación de que no estamos aprendiendo o avanzando mucho. Pero estudios sobre esto demuestran que aunque sólo leer puede dejar la sensación de que entendimos y aprendimos mucho, la forma más efectiva de aprender es poner a prueba el conocimiento y la sensación de aprendizaje no está directamente ligada a cuánto aprendimos de verdad.&lt;/p&gt;
-
-&lt;h2 id=&quot;6-retroalimentación&quot;&gt;6: Retroalimentación&lt;/h2&gt;
-
-&lt;p&gt;Una forma importante de mejorar y aprender es tener a alguien o algo que te ayude a encontrar lo que está fallando en tu desempeño del tema de lo que estés aprendiendo.&lt;/p&gt;
-
-&lt;p&gt;El ejemplo que Scott usa de una persona que aprendió a hablar en público como su proyecto de ultra-aprendizaje y que recibía retroalimentación de un mentor que le decía exactamente dónde fallaba. Al atacar estos puntos que una persona con más experiencia le marcaba pudo llegar a ser un orador de clase mundial en muy poco tiempo.&lt;/p&gt;
-
-&lt;p&gt;A nadie nos gusta escuchar nuestras fallas, pero es una parte  muy importante de aprender de manera efectiva.&lt;/p&gt;
-
-&lt;p&gt;Pero no todo tipo de retroalimentación es útil. Cuando esta información es sobre alguna cualidad personal o sobre tu persona directamente, en general es más perjudicial que benéfico, puede llevarte hasta a abandonar la habilidad que estabas intentando aprender.&lt;/p&gt;
-
-&lt;p&gt;Muy probablemente todos hemos experimentado este tipo de comentarios: “Eres muy inteligente”, “No eres bueno para esto”, “Mejor dedícate a otra cosa”. Este tipo de comentarios no aportan nada relevante y atacan o inflan el ego de la persona.&lt;/p&gt;
-
-&lt;p&gt;Para que la retroalimentación sea útil debe proveer información que guíe las siguientes etapas de aprendizaje. Para lograr esto debe ser muy específico y si es posible decirte cómo mejorar en ese aspecto.&lt;/p&gt;
-
-&lt;h2 id=&quot;7-retención&quot;&gt;7: Retención&lt;/h2&gt;
-
-&lt;p&gt;No deberíamos echar agua en una bote con fugas. De igual manera, no vale la pena que leas y aprendas muchas cosas que después no podrás recordar porque las olvidaste rápidamente.&lt;/p&gt;
-
-&lt;p&gt;En este principio Scott explica que tenemos que aprender y reconocer por qué olvidamos y atacar esas causas específicas.&lt;/p&gt;
-
-&lt;p&gt;¿Cómo hacer para no olvidar el valioso conocimiento que con tanto trabajo ganamos?&lt;/p&gt;
-
-&lt;p&gt;Scott propone varios métodos:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Repetición espaciada&lt;/strong&gt;. Es un método que consiste en repasar la información un poco de tiempo después de haberla estudiado o aprendido por primera vez y repetir el proceso con cada vez más tiempo de espacio.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Automatización&lt;/strong&gt;. Cuando aprendemos algo a tal grado que podamos decir que tenemos automatizada la habilidad (como andar en bicicleta), es muy poco probable que lo olvidemos.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Sobre-aprendizaje&lt;/strong&gt;. Practicar más allá de lo que es requerido para volverse bueno en algo o competente hará que las cosas sean mucho más difíciles de olvidar. Esto se puede hacer practicando hasta el cansancio una actividad clave o aprendiendo algo más difícil que construya sobre la actividad principal, por ejemplo: aprender y practicar cálculo diferencial hará que sobre-aprendas álgebra.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Mnemónicos&lt;/strong&gt;. Estas es un técnica que consiste en crear imágenes vívidas o palabras relacionadas con lo que estemos buscando aprender para poder recordarlo. Los mejores memoristas del mundo aplican esta técnica para poder recordar grandes cantidades de información en poco tiempo.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Poder retener información es uno de los requisitos para que tu proyecto de ultra-aprendizaje valga la pena.&lt;/p&gt;
-
-&lt;h2 id=&quot;8-intuición&quot;&gt;8: Intuición&lt;/h2&gt;
-
-&lt;p&gt;La intuición es el producto una gran cantidad de experiencia acumulada. Para verdaderamente entender algo tenemos que desarrollar nuestra intuición en el tema. ¿Qué podemos hacer para desarrollarla?&lt;/p&gt;
-
-&lt;p&gt;En esta sección del libro se habla de cómo personas como Richard Feynman parecen hacer magia al resolver problemas de física y de matemáticas. La principal característica de Feynman usada para resolver los problemas es su capacidad de identificar &lt;em&gt;los principios que están en juego&lt;/em&gt;, además de la gran cantidad de información almacenada obtenida de otros problemas resueltos con anterioridad.&lt;/p&gt;
-
-&lt;p&gt;¿Cómo puedes desarrollar una intuición similar?&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Resolver problemas difíciles. Muchas veces huímos de los problemas que nos parecen demasiado difíciles para nosotros, pero resolver problemas que rebasen nuestra habilidad puede darnos un entendimiento muy profundo del tema tratado.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Comprueba la información para entenderla. No te quedes sólamente con la explicación del libro, sino trata de demostrar que lo que estás aprendiendo es cierto.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Usa ejemplos concretos. Cuando trates con conceptos o temas abstractos, desde el principio establece un ejemplo al que le puedas ir aplicando los puntos que se van explicando. Esta concreción permitirá desarrollar un mejor entendimiento del tema.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;No te engañes a ti mismo. Cuando te falta conocimiento sobre un tema, generalmente también te falta conocimiento para saber qué tan hábil eres. Esto quiere decir que el que no tengas dudas sobre un tema significa que lo sabes todo, sino más bien que sabes muy poco. Hacer muchas preguntas es una manera de hacerle frente a este problema, aunque parezcan tontas.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Una forma muy efectiva de desarrollar un entendimiento real: la técnica de Feynman. Esta consiste en intentar explicar el problema, solución o concepto de la manera más clara posible como para alguien que nunca ha visto nada relacionado con el tema.&lt;/p&gt;
-&lt;h2 id=&quot;9-experimentación&quot;&gt;9: Experimentación&lt;/h2&gt;
-
-&lt;p&gt;El verdadero conocimiento no se queda en llegar al punto en que otros te dijeron que debías llegar sino en ir más allá.&lt;/p&gt;
-
-&lt;p&gt;Además, mientras más aprendas de algo menos guía podrás recibir ya que hay menos personas y recursos en ese nivel, por lo que es algo requerido aprender a experimentar con maneras de generar conocimiento.&lt;/p&gt;
-
-&lt;p&gt;Para experimentar en tu aprendizaje y resultados puedes intentar tres cosas:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Variar los &lt;strong&gt;recursos de aprendizaje&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Experimentar la &lt;strong&gt;técnica de aprendizaje&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Experimentar con tu &lt;strong&gt;estilo de trabajo y aprendizaje&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Experimentar te permitirá convertirte en verdadero experto en el tema que estés queriendo dominar.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Completar un proyecto de este tamaño te demuestra que tienes la habilidad de mejorarte y de sacarle buen provecho a tu vida. Te da la confianza de que puedes lograr cosas ambiciosas.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Esta es una de las frases más inspiradoras del libro y creo que te da buenos motivos para empezar a pensar en tus propio proyecto de ultra-aprendizaje, además de los beneficios asociados al tema mismo que quieras aprender:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Te ayudará a conseguir un mejor trabajo o puesto?&lt;/li&gt;
-  &lt;li&gt;¿Podrás ser más útil a tu familia, comunidad o amigos?&lt;/li&gt;
-  &lt;li&gt;¿Disfrutarás más de tu tiempo libre o tendrás más a consecuencia de esto?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Sin duda todas estas razones son suficientes para intentarlo por lo menos.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Hacer cosas difíciles, sobre todo cosas que tienen que ver con aprender, puede crecer el concepto que tienes de ti mismo”.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Esto a su vez, tendrá efectos en otros campos de tu vida.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;¿Quién te podrías volver?&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;¡A aprender!&lt;/p&gt;
-
-&lt;p&gt;Puedes comprar el libro en &lt;a href=&quot;https://www.amazon.com.mx/Ultralearning-Outsmart-Competition-Accelerate-English-ebook/dp/B07K6MF8MD/&quot;&gt;Amazon&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprendizaje" /><category term="libros" /><category term="lectura" /><category term="reseñas" /><summary type="html">Todos queremos aprender muchas cosas. Aprende un método que te permitirá mejorar tus habilidades para adquirir conocimiento.</summary></entry></feed>
+&lt;p&gt;Pero como &lt;a href=&quot;https://fs.blog/about/&quot;&gt;Shane Parrish&lt;/a&gt; dice: Go es “simple pero no fácil”. Es sencillo empezar a programar con él, pero dominar sus conceptos requiere estudio y esfuerzo. Go se siente como una herencia de gente muy sabia haciendo un lenguaje para hacer cosas grandes. No te arrepentirás de aprenderlo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="go" /><category term="golang" /><category term="lenguajes-de-programación" /><summary type="html">Go es un lenguaje muy relevante en algunas áreas del desarrollo de software. Aprende para qué deberías usarlo y por qué te conviene aprenderlo.</summary></entry></feed>
