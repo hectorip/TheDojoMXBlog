@@ -99,7 +99,7 @@ Después de implementar el camino hacia el cliente y de regreso, DevOps establec
 
 La siguiente imagen completa los tres caminos de DevOps:
 
-![Los tres caminos de devops](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1579042629/0548901A-3BF6-49BF-8556-B0B12D45F0A9_zgljnk.jpg){:align-center}
+![Los tres caminos de DevOps](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1579042629/0548901A-3BF6-49BF-8556-B0B12D45F0A9_zgljnk.jpg){:align-center}
 
 La empresa debe asegurarse de que los equipos de trabajo están mejorando constantemente mediante el aprendizaje continuo.
 
@@ -110,7 +110,7 @@ Esto puede lograrse mediante varias prácticas:
 - Mediciones cada vez más precisas mediante software especializado
 - Agendar tiempo para actividades dedicadas a mejorar el equipo como _Improvement Katas_
 
-Este paso depende de que los dos anteriores se hayan logrado, ya que requieren de tiempo y energías, que no se tendrán si no se tiene una forma confiable de liberar el producto y de monitorearlo para saber que no está pasando.
+Este paso depende de que los dos anteriores se hayan logrado, ya que requieren de tiempo y energías, que no se tendrán si no se tiene una forma confiable de liberar el producto y de monitorear para saber que no está pasando.
 
 ## Conclusión
 
