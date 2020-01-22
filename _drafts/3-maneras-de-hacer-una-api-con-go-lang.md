@@ -53,7 +53,7 @@ func handler(response http.ResponseWriter, request *http.Request) {
 	fmt.Fprintf(response, "Hola Go API's")
 }
 ```
-Si tu API es muy sencilla, expone muy pocas URL's y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la librería estándar es una solución excelente, pero para otros casos se queda un poco corta.
+Si tu API es muy sencilla, expone muy pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la librería estándar es una solución excelente, pero para otros casos se queda un poco corta.
 
 Por eso te presentamos las opciones más comunes y algunos ejemplos.
 
@@ -68,6 +68,8 @@ Por eso te presentamos las opciones más comunes y algunos ejemplos.
 Gin es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go.
 
 ## Beego
+
+## Extra: 
 
 ## Conclusión
 
