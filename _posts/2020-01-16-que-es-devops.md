@@ -35,9 +35,9 @@ No conforme con eso hay millones de historias de terror de cómo los negocios no
 
 Otras historias cuentan los actos heróicos que las personas que trabajamos en estas áreas hemos tenido que hacer para cumplir con los compromisos adquiridos: trabajar toda la noche por varios días seguidos, cambios de último momentos, largas horas en despliegues y re-establecimiento de servicios, etc. O se descubre que el sistema no cumple con los requerimientos legales de protección información y ahora hay que trabajar horas extras para cumplirlo.
 
-Y por último la vista del lado de la operación del negocio: cada que se va a poner en producción un cambio, un nuevo producto o se va a actualizar algo todos temen que algo catastrófico pase con cierta razón. Ha pasado que por culpa de estos cambios los sistemas que soportan la operación diaria se caen por horas haciendo perder al negocio clientes, dinero y reputación.
+Y por último la vista del lado de la operación del negocio: cada que se va a poner en producción un cambio, un nuevo producto o se va a actualizar algo todos temen que algo catastrófico pase con cierta razón. Ha pasado que, por culpa de estos cambios, los sistemas que soportan la operación diaria se caen por horas haciendo perder al negocio clientes, dinero y reputación.
 
-Todos estos problemas son lo que DevOps ataca con 3 principios o "tres caminos". Pero para habilitar esto antes se necesita algo de la organización.
+Todos estos problemas son lo que DevOps ataca con 3 principios o "tres caminos". Pero para habilitar esto, se necesita algo de la organización.
 
 ## Todos los involucrados trabajan para lo mismo
 
@@ -70,7 +70,7 @@ Si estás en una empresa pequeña o en una _startup_ puede que seas tú mismo el
 - **Hacer el trabajo visible.** La mayoría del trabajo que realizamos al hacer productos digitales es muy difícil de estimar, tanto en dificultad como en cantidad.
 Es por eso que debe haber una manera física de ver el trabajo, como lo habría en un fábrica que realiza productos físicos: si una estación de trabajo tiene demasiado material inmediatamente se notará.
 
-- **Reducir y limitar el trabajo en progreso.** Mientras menos actividades sin terminar existan, más difícil es administrarlas y notar todo el trabajo pendiente. Tener pocas actividades en progreso permite **calcular mejor** cuánto tardará en terminarse un nuevo requerimiento y atender los errores más rápidamente. Siguiendo con el ejemplo de la fábrica física: existe un límite físico para el material que puede esperar en una estación de trabajo.
+- **Reducir y limitar el trabajo en progreso.** Mientras más actividades sin terminar existan, más difícil es administrarlas y notar todo el trabajo pendiente. Tener pocas actividades en progreso permite **calcular mejor** cuánto tardará en terminarse un nuevo requerimiento y atender los errores más rápidamente. Siguiendo con el ejemplo de la fábrica física: existe un límite físico para el material que puede esperar en una estación de trabajo.
 
 - **Establecer procesos**. Cada uno de los cambios o actividades solicitadas debe pasar por un proceso de revisión que determine si provee valor para el negocio en caso de completarse. Esto implica mantener en algún lado el registro de las tareas solicitadas y su estado actual.
 
@@ -78,7 +78,7 @@ Es por eso que debe haber una manera física de ver el trabajo, como lo habría 
 
 - **Identificar y mejorar las limitantes**. En todo proceso de trabajo hay puntos que hacen que toda la cadena de entrega de valor sea más lenta. Estos puntos son las limitantes. Para mejorar toda la cadena primero hay que identificarlos y después mejorar su eficiencia para mejorar todo el proceso de producción de valor.
 
-- **Eliminar características no necesarias.** Mientras más grande sea el producto más difícil será de manejar. Por lo tanto, so alguna característica no aporta valor al usuario final, necesariamente está restando valor a la compañía entera.
+- **Eliminar características no necesarias.** Mientras más grande sea el producto más difícil será de manejar. Por lo tanto, si alguna característica no aporta valor al usuario final, necesariamente está restando valor a la compañía entera.
 
 Algo que notar de las prácticas de DevOps es que muchas están extraídas de los movimientos de _Lean Manufacturing_. Existen otra prácticas, pero personalmente considero que estas son las esenciales.
 
