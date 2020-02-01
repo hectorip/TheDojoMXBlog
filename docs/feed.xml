@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-01-16T01:49:00-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">¿Qué es DevOps?</title><link href="https://blog.thedojo.mx/2020/01/16/que-es-devops.html" rel="alternate" type="text/html" title="¿Qué es DevOps?" /><published>2020-01-16T00:00:00-06:00</published><updated>2020-01-16T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/01/16/que-es-devops</id><content type="html" xml:base="https://blog.thedojo.mx/2020/01/16/que-es-devops.html">&lt;p&gt;&lt;strong&gt;DevOps&lt;/strong&gt; es un término de recientemente creación (2013) que representa un cultura de trabajo enfocada en resolver los problemas que han sido persistentes en la entrega y servicio en el área de productos tecnológicos.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-02-01T00:01:18-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">¿Qué es DevOps?</title><link href="https://blog.thedojo.mx/2020/01/16/que-es-devops.html" rel="alternate" type="text/html" title="¿Qué es DevOps?" /><published>2020-01-16T00:00:00-06:00</published><updated>2020-01-16T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/01/16/que-es-devops</id><content type="html" xml:base="https://blog.thedojo.mx/2020/01/16/que-es-devops.html">&lt;p&gt;&lt;strong&gt;DevOps&lt;/strong&gt; es un término de recientemente creación (2013) que representa un cultura de trabajo enfocada en resolver los problemas que han sido persistentes en la entrega y servicio en el área de productos tecnológicos.&lt;/p&gt;
 
 &lt;p&gt;En este artículo platicaremos qué significa y sus fundamentos.&lt;/p&gt;
 
@@ -26,9 +26,9 @@
 
 &lt;p&gt;Otras historias cuentan los actos heróicos que las personas que trabajamos en estas áreas hemos tenido que hacer para cumplir con los compromisos adquiridos: trabajar toda la noche por varios días seguidos, cambios de último momentos, largas horas en despliegues y re-establecimiento de servicios, etc. O se descubre que el sistema no cumple con los requerimientos legales de protección información y ahora hay que trabajar horas extras para cumplirlo.&lt;/p&gt;
 
-&lt;p&gt;Y por último la vista del lado de la operación del negocio: cada que se va a poner en producción un cambio, un nuevo producto o se va a actualizar algo todos temen que algo catastrófico pase con cierta razón. Ha pasado que por culpa de estos cambios los sistemas que soportan la operación diaria se caen por horas haciendo perder al negocio clientes, dinero y reputación.&lt;/p&gt;
+&lt;p&gt;Y por último la vista del lado de la operación del negocio: cada que se va a poner en producción un cambio, un nuevo producto o se va a actualizar algo todos temen que algo catastrófico pase con cierta razón. Ha pasado que, por culpa de estos cambios, los sistemas que soportan la operación diaria se caen por horas haciendo perder al negocio clientes, dinero y reputación.&lt;/p&gt;
 
-&lt;p&gt;Todos estos problemas son lo que DevOps ataca con 3 principios o “tres caminos”. Pero para habilitar esto antes se necesita algo de la organización.&lt;/p&gt;
+&lt;p&gt;Todos estos problemas son lo que DevOps ataca con 3 principios o “tres caminos”. Pero para habilitar esto, se necesita algo de la organización.&lt;/p&gt;
 
 &lt;h2 id=&quot;todos-los-involucrados-trabajan-para-lo-mismo&quot;&gt;Todos los involucrados trabajan para lo mismo&lt;/h2&gt;
 
@@ -40,7 +40,7 @@
 
 &lt;p&gt;Esta condición por sí misma es difícil de cumplir y sin ella no es posible lograr las demás. ¿Quiénes son los encargados poner las condiciones para que se cumpla? La dirección. La dirección de la empresa tiene la responsabilidad de elegir personas razonables, buenas en sus campos y dispuestas a cooperar para que la empresa o el proyecto progresen más allá de su ego. Repito, &lt;strong&gt;sin esto lo demás es imposible o inútil&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Una vez cumplida la precondición de cooperación con personas dispuestas y hábiles a su nivel podemos hablar de los tres caminos.&lt;/p&gt;
+&lt;p&gt;Una vez cumplida la precondición de cooperación con personas dispuestas y hábiles, podemos hablar de los tres caminos.&lt;/p&gt;
 
 &lt;h2 id=&quot;el-primer-camino-flujo&quot;&gt;El primer camino: Flujo&lt;/h2&gt;
 
@@ -64,7 +64,7 @@
 Es por eso que debe haber una manera física de ver el trabajo, como lo habría en un fábrica que realiza productos físicos: si una estación de trabajo tiene demasiado material inmediatamente se notará.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Reducir y limitar el trabajo en progreso.&lt;/strong&gt; Mientras menos actividades sin terminar existan, más difícil es administrarlas y notar todo el trabajo pendiente. Tener pocas actividades en progreso permite &lt;strong&gt;calcular mejor&lt;/strong&gt; cuánto tardará en terminarse un nuevo requerimiento y atender los errores más rápidamente. Siguiendo con el ejemplo de la fábrica física: existe un límite físico para el material que puede esperar en una estación de trabajo.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Reducir y limitar el trabajo en progreso.&lt;/strong&gt; Mientras más actividades sin terminar existan, más difícil es administrarlas y notar todo el trabajo pendiente. Tener pocas actividades en progreso permite &lt;strong&gt;calcular mejor&lt;/strong&gt; cuánto tardará en terminarse un nuevo requerimiento y atender los errores más rápidamente. Siguiendo con el ejemplo de la fábrica física: existe un límite físico para el material que puede esperar en una estación de trabajo.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Establecer procesos&lt;/strong&gt;. Cada uno de los cambios o actividades solicitadas debe pasar por un proceso de revisión que determine si provee valor para el negocio en caso de completarse. Esto implica mantener en algún lado el registro de las tareas solicitadas y su estado actual.&lt;/p&gt;
@@ -76,7 +76,7 @@ Es por eso que debe haber una manera física de ver el trabajo, como lo habría 
     &lt;p&gt;&lt;strong&gt;Identificar y mejorar las limitantes&lt;/strong&gt;. En todo proceso de trabajo hay puntos que hacen que toda la cadena de entrega de valor sea más lenta. Estos puntos son las limitantes. Para mejorar toda la cadena primero hay que identificarlos y después mejorar su eficiencia para mejorar todo el proceso de producción de valor.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Eliminar características no necesarias.&lt;/strong&gt; Mientras más grande sea el producto más difícil será de manejar. Por lo tanto, so alguna característica no aporta valor al usuario final, necesariamente está restando valor a la compañía entera.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Eliminar características no necesarias.&lt;/strong&gt; Mientras más grande sea el producto más difícil será de manejar. Por lo tanto, si alguna característica no aporta valor al usuario final, necesariamente está restando valor a la compañía entera.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -98,7 +98,7 @@ Es por eso que debe haber una manera física de ver el trabajo, como lo habría 
 
 &lt;p&gt;La siguiente imagen completa los tres caminos de DevOps:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1579042629/0548901A-3BF6-49BF-8556-B0B12D45F0A9_zgljnk.jpg&quot; alt=&quot;Los tres caminos de devops&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1579042629/0548901A-3BF6-49BF-8556-B0B12D45F0A9_zgljnk.jpg&quot; alt=&quot;Los tres caminos de DevOps&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;La empresa debe asegurarse de que los equipos de trabajo están mejorando constantemente mediante el aprendizaje continuo.&lt;/p&gt;
 
@@ -111,7 +111,7 @@ Es por eso que debe haber una manera física de ver el trabajo, como lo habría 
   &lt;li&gt;Agendar tiempo para actividades dedicadas a mejorar el equipo como &lt;em&gt;Improvement Katas&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Este paso depende de que los dos anteriores se hayan logrado, ya que requieren de tiempo y energías, que no se tendrán si no se tiene una forma confiable de liberar el producto y de monitorearlo para saber que no está pasando.&lt;/p&gt;
+&lt;p&gt;Este paso depende de que los dos anteriores se hayan logrado, ya que requieren de tiempo y energías, que no se tendrán si no se tiene una forma confiable de liberar el producto y de monitorear para saber que no está pasando.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
 

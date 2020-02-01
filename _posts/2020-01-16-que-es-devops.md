@@ -49,7 +49,7 @@ Si la actividad qu se está haciendo no contribuye de alguna forma a crear valor
 
 Esta condición por sí misma es difícil de cumplir y sin ella no es posible lograr las demás. ¿Quiénes son los encargados poner las condiciones para que se cumpla? La dirección. La dirección de la empresa tiene la responsabilidad de elegir personas razonables, buenas en sus campos y dispuestas a cooperar para que la empresa o el proyecto progresen más allá de su ego. Repito, **sin esto lo demás es imposible o inútil**.
 
-Una vez cumplida la precondición de cooperación con personas dispuestas y hábiles a su nivel podemos hablar de los tres caminos.
+Una vez cumplida la precondición de cooperación con personas dispuestas y hábiles, podemos hablar de los tres caminos.
 
 ## El primer camino: Flujo
 
