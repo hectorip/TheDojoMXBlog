@@ -20,7 +20,7 @@
 <meta property="og:locale" content="es">
 <meta property="og:site_name" content="">
 <meta property="og:title" content="Criptografía básica para programadores: ¿Qué es la criptografía?">
-<meta property="og:url" content="http://localhost:4000/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html">
+<meta property="og:url" content="https://blog.thedojo.mx/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html">
 
 
   <meta property="og:description" content="Aprende las bases de la criptografía para tenerla en cuenta en tus programas.">
@@ -40,7 +40,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html">
+<link rel="canonical" href="https://blog.thedojo.mx/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html">
 
 
 
@@ -51,7 +51,7 @@
     
       "@type": "Person",
       "name": null,
-      "url": "http://localhost:4000/"
+      "url": "https://blog.thedojo.mx/"
     
   }
 </script>
@@ -125,12 +125,12 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "url": "http://localhost:4000/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html",
+      "url": "https://blog.thedojo.mx/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html",
       "name": "Criptografía básica para programadores: ¿Qué es la criptografía?",
       "headline": "Criptografía básica para programadores: ¿Qué es la criptografía?",
       "keywords": "criptografía,esteganografía,seguridad",
       "description": "Aprende las bases de la criptografía para tenerla en cuenta en tus programas.",
-      "articleBody": "Es muy común escuchar de “encriptación” (la palabra correcta en español es cifrado), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain.\n\nUno de los temas menos tratados por programadores de software común (para usuarios y sistemas que no impliquen el uso de seguridad a medida), es el correcto uso de los algoritmos criptográficos y muchas veces ni siquiera conocemos lo suficiente de ellos, sino que confiamos en lo que las herramientas pre-establecen (que gran parte de las veces fue diseñado por expertos y eso está bien).\n\nPero un poco de conocimiento sobre criptografía no te hará daño, sobre todo si programas sistemas que necesiten seguridad (todos), y sí puede evitarte errores fatales.\n\nEsta serie de artículos tratará de todo lo que un programador debe saber acerca de la aplicación correcta de algoritmos criptográficos a sus desarrollos, y un poco de su funcionamiento interno.\n\nEmpecemos por lo más básico. ¿Qué es exactamente la criptografía?\n\nDefinición de Criptografía\n\nLa criptografía moderna se puede considerar una rama de las matemáticas (otra vez) y la computación enfocada en encontrar y crear formas de convertir información clara y con algún significado en información imposible de entender por entidades que no cuenten con la autorización para hacerlo, aunque la tengan en su poder.\n\nLa palabra quiere decir literalmente “escritura oculta”. Y también se puede definir el campo como el encargado de encontrar algoritmos o procedimientos que permitan ocultar mensajes que sólo puedan ser descifrados por aquellos que tengan la llave.\n\nLa criptografía implica esconder información explícitamente (los atacantes pueden saber que esa información está oculta e incluso hasta tener los mensajes ocultos en su poder), de manera que quien tenga la información correcta (que les concede la autorización) pueda obtener la información original desde los datos ininteligibles.\n\nEste proceso de ocultar la información se llama cifrado (también se usa encriptado, como un barbarismo), mientras que el proceso de recuperar la información se llama descifrado (o desencriptado 🙄).\n\nLos procesos de cifrado modernos requieren generalmente una llave o conjunto de llaves, para realizar los procesos de cifrado y descifrado.\n\nLa criptografía es la base de todos los mecanismos de seguridad informática modernos, y a menudo se usa una conbinación de ellos para proteger un sistema.\n\nUso en el software actual\n\nLos algoritmos criptográficos se usan en todos lados en los sistemas modernos. Son los algoritmos que permiten que la información viaje segura en internet (usando HTTPS, que se basa en TLS/SSL), por ejemplo. Algunos otros casos en los que son usados:\n\n\n  \n    En la protección de la información que viaja en las redes inalámbricas, sean WiFi o Celulares (3G, 4G, 5G).\n  \n  \n    Almacenamiento de datos sensibles como passwords (mediante hash) e información personal (cifrados con password).\n  \n  \n    Protección de archivos.\n  \n  \n    Cifrado de datos en reposo (al estar almacenados en los discos duros) de los datos para evitar su robo en caso de robo físico o de dispositivos virtuales.\n  \n  \n    Tarjetas de crédito y seguridad bancaria en general.\n  \n\n\nEstos son tan sólo algunos ejemplos de los lugares en los que la criptografía juega un papel muy importante.\n\nEsteganografía\n\nLa esteganografía es la técnica, relacionada con la criptografía, de hacer la información invisible, generalmente ocultándola dentro de otro tipo de información.\n\nCon técnicas criptográficas comunes el que un atacante tenga disponible la información cifrada no hace necesariamente que nuestra información quede expuesta, a menos que el algoritmo criptográfico sea débil y el atacante tenga suficientes recursos para romperlo. En muchos casos incluso suponemos que los atacantes tienen acceso a esta información, como en el caso de la comunicación en internet en la que en cualquier parte de la red puede haber alguien interceptando nuestra información.\n\nLas técnicas esteganográficas buscan “desaparecer” completamente la información, hacerla invisible a través de ocultarla dentro de otros tipos de mensajes. En la antigüedad, por ejemplo en un libro que parecía hablar de magia, se ocultó un tratado acerca de criptografía y esteganografía, que sólo fue revelado hasta que se encontró la llave correcta.\n\nCon la llegada de los medios digitales, en la que todo puede ser representado por medio de bits, en realidad se puede ocultar información de cualquier tipo en cualquier otro tipo de mensajes, pero también se siguen usando medios físicos para ocultar información. Un ejemplo son los micro-puntos de algunas impresiones de manuscritos o información sensible repartido a personas de confianza que permiten identificar cada una de las copias entregadas a diferentes personas.\n\nAunque la esteganografía y la criptografía son técnicas relacionadas, la más importante actualmente es la criptografía por su uso en la mayoría de los sistemas informáticos de la actualidad.\n\n¿Por qué deberías aprender criptografía?\n\nYa mencionamos lo importante que es en los sistemas actuales. La mayoría de los lenguajes de programación, los desarrollos open source, como los frameworks web, muchas librerías, plataformas como servicio, etc. vienen con funciona de seguridad y criptográficas incluídas. Pero no es suficiente con ser usuario de estas cosas, ya que hasta los mecanismos y algoritmos mejor diseñados se pueden ser mal usados y minados por la mala utilización.\n\nConocer temas como los siguientes, te permitirá subir la calidad de tus desarrollos:\n\n\n  ¿Qué determina la seguridad de un algoritmo criptográfico?\n  ¿Por qué es importante tener una llave de un tamaño correcto?\n  ¿Qué algoritmo debo escoger para esta característica que tengo que desarrollar?\n  ¿Cuáles son las principales características y diferencias de los algoritmos más usados?\n  ¿Qué algoritmos nunca más debería usar en la vida?\n\n\nConclusión\n\nEn este artículo sólo hemos tocado la definición de criptografía y hemos mencionado por qué es importante. En los siguientes empezaremos a hablar de las bases que nos permitirán comprender cómo funciona la criptografía y qué mecanismos son los que permiten que brinde seguridad mediante ocultar la información.\n\nEn el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo) aleatorios y sus generadores.\n",
+      "articleBody": "Es muy común escuchar de “encriptación” (la palabra correcta en español es cifrado), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain.\n\nUno de los temas menos tratados por programadores de software común (para usuarios y sistemas que no impliquen el uso de seguridad a medida), es el correcto uso de los algoritmos criptográficos y muchas veces ni siquiera conocemos lo suficiente de ellos, sino que confiamos en lo que las herramientas pre-establecen (que gran parte de las veces fue diseñado por expertos y eso está bien).\n\nPero un poco de conocimiento sobre criptografía no te hará daño, sobre todo si programas sistemas que necesiten seguridad (todos), y sí puede evitarte errores fatales.\n\nEsta serie de artículos tratará de todo lo que un programador debe saber acerca de la aplicación correcta de algoritmos criptográficos a sus desarrollos, y un poco de su funcionamiento interno.\n\nEmpecemos por lo más básico. ¿Qué es exactamente la criptografía?\n\nDefinición de Criptografía\n\nLa criptografía moderna se puede considerar una rama de las matemáticas (otra vez) y la computación enfocada en encontrar y crear formas de convertir información clara y con algún significado en información imposible de entender por entidades que no cuenten con la autorización para hacerlo, aunque la tengan en su poder.\n\nLa palabra quiere decir literalmente “escritura oculta”. Y también se puede definir el campo como el encargado de encontrar algoritmos o procedimientos que permitan ocultar mensajes que sólo puedan ser descifrados por aquellos que tengan la llave.\n\nLa criptografía implica esconder información explícitamente (los atacantes pueden saber que esa información está oculta e incluso hasta tener los mensajes ocultos en su poder), de manera que quien tenga la información correcta (que les concede la autorización) pueda obtener la información original desde los datos ininteligibles.\n\nEste proceso de ocultar la información se llama cifrado (también se usa encriptado, como un barbarismo), mientras que el proceso de recuperar la información se llama descifrado (o desencriptado 🙄).\n\nLos procesos de cifrado modernos requieren generalmente una llave o conjunto de llaves, para realizar los procesos de cifrado y descifrado.\n\nLa criptografía es la base de todos los mecanismos de seguridad informática modernos, y a menudo se usa una conbinación de ellos para proteger un sistema.\n\nUso en el software actual\n\nLos algoritmos criptográficos se usan en todos lados en los sistemas modernos. Son los algoritmos que permiten que la información viaje segura en internet (usando HTTPS, que se basa en TLS/SSL), por ejemplo. Algunos otros casos en los que son usados:\n\n\n  \n    En la protección de la información que viaja en las redes inalámbricas, sean WiFi o Celulares (3G, 4G, 5G).\n  \n  \n    Almacenamiento de datos sensibles como passwords (mediante hash) e información personal (cifrados con password).\n  \n  \n    Protección de archivos.\n  \n  \n    Cifrado de datos en reposo (al estar almacenados en los discos duros) de los datos para evitar su robo en caso de robo físico o de dispositivos virtuales.\n  \n  \n    Tarjetas de crédito y seguridad bancaria en general.\n  \n\n\nEstos son tan sólo algunos ejemplos de los lugares en los que la criptografía juega un papel muy importante.\n\nEsteganografía\n\nLa esteganografía es la técnica, relacionada con la criptografía, de hacer la información invisible, generalmente ocultándola dentro de otro tipo de información.\n\nCon técnicas criptográficas comunes el que un atacante tenga disponible la información cifrada no hace necesariamente que nuestra información quede expuesta, a menos que el algoritmo criptográfico sea débil y el atacante tenga suficientes recursos para romperlo. En muchos casos incluso suponemos que los atacantes tienen acceso a esta información, como en el caso de la comunicación en internet en la que en cualquier parte de la red puede haber alguien interceptando nuestra información.\n\nLas técnicas esteganográficas buscan “desaparecer” completamente la información, hacerla invisible a través de ocultarla dentro de otros tipos de mensajes. En la antigüedad, por ejemplo en un libro que parecía hablar de magia, se ocultó un tratado acerca de criptografía y esteganografía, que sólo fue revelado hasta que se encontró la llave correcta.\n\nCon la llegada de los medios digitales, en la que todo puede ser representado por medio de bits, en realidad se puede ocultar información de cualquier tipo en cualquier otro tipo de mensajes, pero también se siguen usando medios físicos para ocultar información. Un ejemplo son los micro-puntos de algunas impresiones de manuscritos o información sensible repartido a personas de confianza que permiten identificar cada una de las copias entregadas a diferentes personas.\n\nAunque la esteganografía y la criptografía son técnicas relacionadas, la más importante actualmente es la criptografía por su uso en la mayoría de los sistemas informáticos de la actualidad.\n\n¿Por qué deberías aprender criptografía?\n\nYa mencionamos lo importante que es en los sistemas actuales. La mayoría de los lenguajes de programación, los desarrollos open source, como los frameworks web, muchas librerías, plataformas como servicio, etc. tienen funciones de seguridad y criptográficas incluídas.\n\nPero no es suficiente con ser usuario de estas cosas, ya que hasta los mecanismos y algoritmos mejor diseñados se pueden ser mal usados y hechos inseguros por la mala utilización.\n\nConocer temas como los siguientes te permitirá elevar la calidad de tus desarrollos:\n\n\n  ¿Qué determina la seguridad de un algoritmo criptográfico?\n  ¿Por qué es importante tener una llave de un tamaño correcto?\n  ¿Qué algoritmo debo escoger para esta característica que tengo que desarrollar?\n  ¿Cuáles son las principales características y diferencias de los algoritmos más usados?\n  ¿Qué algoritmos nunca más debería usar?\n\n\nConclusión\n\nEn este artículo sólo hemos tocado la definición de criptografía y hemos mencionado por qué es importante. En los siguientes empezaremos a hablar de las bases que nos permitirán comprender cómo funciona la criptografía y qué mecanismos son los que permiten que brinde seguridad mediante ocultar la información.\n\nEn el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo)aleatorios y sus generadores.\n",
       "datePublished": "2019-11-12 00:00:00 -0600",
       "dateModified": "2019-11-12 00:00:00 -0600",
       "author": {
@@ -142,17 +142,17 @@
       "publisher": {
         "@type": "Organization",
         "name": null,
-        "url": "http://localhost:4000",
+        "url": "https://blog.thedojo.mx",
         "logo": {
           "@type": "ImageObject",
           "width": 32,
           "height": 32,
-          "url": "http://localhost:4000/icon/favicon.ico"
+          "url": "https://blog.thedojo.mx/icon/favicon.ico"
         }
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html"
+        "@id": "https://blog.thedojo.mx/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html"
       },
       "image": {
         "@type": "ImageObject",
@@ -482,23 +482,25 @@
 
 <h2 id="por-qué-deberías-aprender-criptografía">¿Por qué deberías aprender criptografía?</h2>
 
-<p>Ya mencionamos lo importante que es en los sistemas actuales. La mayoría de los lenguajes de programación, los desarrollos open source, como los frameworks web, muchas librerías, plataformas como servicio, etc. vienen con funciona de seguridad y criptográficas incluídas. Pero no es suficiente con <em>ser usuario</em> de estas cosas, ya que hasta los mecanismos y algoritmos mejor diseñados se pueden ser mal usados y minados por la mala utilización.</p>
+<p>Ya mencionamos lo importante que es en los sistemas actuales. La mayoría de los lenguajes de programación, los desarrollos open source, como los frameworks web, muchas librerías, plataformas como servicio, etc. tienen funciones de seguridad y criptográficas incluídas.</p>
 
-<p>Conocer temas como los siguientes, te permitirá subir la calidad de tus desarrollos:</p>
+<p>Pero no es suficiente con <em>ser usuario</em> de estas cosas, ya que hasta los mecanismos y algoritmos mejor diseñados se pueden ser mal usados y hechos inseguros por la mala utilización.</p>
+
+<p>Conocer temas como los siguientes te permitirá elevar la calidad de tus desarrollos:</p>
 
 <ul>
   <li>¿Qué determina la seguridad de un algoritmo criptográfico?</li>
   <li>¿Por qué es importante tener una llave de un tamaño correcto?</li>
   <li>¿Qué algoritmo debo escoger para esta característica que tengo que desarrollar?</li>
   <li>¿Cuáles son las principales características y diferencias de los algoritmos más usados?</li>
-  <li>¿Qué algoritmos nunca más debería usar en la vida?</li>
+  <li>¿Qué algoritmos nunca más debería usar?</li>
 </ul>
 
 <h2 id="conclusión">Conclusión</h2>
 
 <p>En este artículo sólo hemos tocado la definición de criptografía y hemos mencionado por qué es importante. En los siguientes empezaremos a hablar de las bases que nos permitirán comprender cómo funciona la criptografía y qué mecanismos son los que permiten que brinde seguridad mediante ocultar la información.</p>
 
-<p>En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo) aleatorios y sus generadores.</p>
+<p>En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo)aleatorios y sus generadores.</p>
 
         
       </section>
@@ -545,11 +547,11 @@
     <h4 class="page__share-title">Compartir</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Criptograf%C3%ADa+b%C3%A1sica+para+programadores%3A+%C2%BFQu%C3%A9+es+la+criptograf%C3%ADa%3F%20http%3A%2F%2Flocalhost%3A4000%2F2019%2F11%2F12%2Fcriptografia-basica-para-programadores-que-es-la-criptografia.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Criptograf%C3%ADa+b%C3%A1sica+para+programadores%3A+%C2%BFQu%C3%A9+es+la+criptograf%C3%ADa%3F%20https%3A%2F%2Fblog.thedojo.mx%2F2019%2F11%2F12%2Fcriptografia-basica-para-programadores-que-es-la-criptografia.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2019%2F11%2F12%2Fcriptografia-basica-para-programadores-que-es-la-criptografia.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.thedojo.mx%2F2019%2F11%2F12%2Fcriptografia-basica-para-programadores-que-es-la-criptografia.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A4000%2F2019%2F11%2F12%2Fcriptografia-basica-para-programadores-que-es-la-criptografia.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog.thedojo.mx%2F2019%2F11%2F12%2Fcriptografia-basica-para-programadores-que-es-la-criptografia.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -566,6 +568,15 @@
   </nav>
 
     </div>
+
+    
+      <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Comentar</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
 
     
   </article>
@@ -811,10 +822,28 @@
 
 
 
+  <script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-127437335-2']);
+  
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.url = "https://blog.thedojo.mx/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html";  // Replace PAGE_URL with your page's canonical URL variable
       this.page.identifier = "/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE

@@ -66,18 +66,20 @@ Aunque la esteganografía y la criptografía son técnicas relacionadas, la más
 
 ## ¿Por qué deberías aprender criptografía?
 
-Ya mencionamos lo importante que es en los sistemas actuales. La mayoría de los lenguajes de programación, los desarrollos open source, como los frameworks web, muchas librerías, plataformas como servicio, etc. vienen con funciona de seguridad y criptográficas incluídas. Pero no es suficiente con _ser usuario_ de estas cosas, ya que hasta los mecanismos y algoritmos mejor diseñados se pueden ser mal usados y minados por la mala utilización.
+Ya mencionamos lo importante que es en los sistemas actuales. La mayoría de los lenguajes de programación, los desarrollos open source, como los frameworks web, muchas librerías, plataformas como servicio, etc. tienen funciones de seguridad y criptográficas incluídas.
 
-Conocer temas como los siguientes, te permitirá subir la calidad de tus desarrollos:
+Pero no es suficiente con _ser usuario_ de estas cosas, ya que hasta los mecanismos y algoritmos mejor diseñados se pueden ser mal usados y hechos inseguros por la mala utilización.
+
+Conocer temas como los siguientes te permitirá elevar la calidad de tus desarrollos:
 
 - ¿Qué determina la seguridad de un algoritmo criptográfico?
 - ¿Por qué es importante tener una llave de un tamaño correcto?
 - ¿Qué algoritmo debo escoger para esta característica que tengo que desarrollar?
 - ¿Cuáles son las principales características y diferencias de los algoritmos más usados?
-- ¿Qué algoritmos nunca más debería usar en la vida?
+- ¿Qué algoritmos nunca más debería usar?
 
 ## Conclusión
 
 En este artículo sólo hemos tocado la definición de criptografía y hemos mencionado por qué es importante. En los siguientes empezaremos a hablar de las bases que nos permitirán comprender cómo funciona la criptografía y qué mecanismos son los que permiten que brinde seguridad mediante ocultar la información.
 
-En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo) aleatorios y sus generadores.
+En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo)aleatorios y sus generadores.
