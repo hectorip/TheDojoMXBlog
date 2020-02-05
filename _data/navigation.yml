@@ -1,5 +1,5 @@
 main:
-  - title: "Últimos Posts"
+  - title: "Todos los posts"
     url: /latest
   - title: "Acerca de"
     url: /about

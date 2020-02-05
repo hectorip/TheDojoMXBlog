@@ -1,4 +1,330 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2019-12-21T23:27:59-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Formatos de marcado de texto que deberías aprender</title><link href="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html" rel="alternate" type="text/html" title="Formatos de marcado de texto que deberías aprender" /><published>2019-12-20T00:00:00-06:00</published><updated>2019-12-20T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html">&lt;p&gt;Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el formateo y embellecimiento de documento.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-04T18:19:44-06:00</updated><id>http://localhost:4000/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">¿Qué es DevOps?</title><link href="http://localhost:4000/2020/01/16/que-es-devops.html" rel="alternate" type="text/html" title="¿Qué es DevOps?" /><published>2020-01-16T00:00:00-06:00</published><updated>2020-01-16T00:00:00-06:00</updated><id>http://localhost:4000/2020/01/16/que-es-devops</id><content type="html" xml:base="http://localhost:4000/2020/01/16/que-es-devops.html">&lt;p&gt;&lt;strong&gt;DevOps&lt;/strong&gt; es un término de recientemente creación (2013) que representa un cultura de trabajo enfocada en resolver los problemas que han sido persistentes en la entrega y servicio en el área de productos tecnológicos.&lt;/p&gt;
+
+&lt;p&gt;En este artículo platicaremos qué significa y sus fundamentos.&lt;/p&gt;
+
+&lt;p&gt;Adelanto: DevOps no es un rol, una palabra mágica y mucho menos automatización de servidores.&lt;/p&gt;
+
+&lt;h2 id=&quot;por-qué-importa&quot;&gt;¿Por qué importa?&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;En las eras económicas anteriores, los negocios creaban valor moviendo átomos. Ahora crean valor moviendo bits. - Jeffrey Snover&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ahora todas las empresas son empresas de tecnología. Las que no aprovechan la tecnología ya están siendo superadas por las que sí lo hacen. Y las que lo hacen mal en su momento serán superadas por las que usan mejor la tecnología.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Cada industria y compañía que no traiga el software al corazón de su negocio será cambiada radicalmente sin previo aviso. - Jeffrey Immelt&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Así que es importante que las empresas aprendan a manejar lo mejor posible la tecnología y a crear valor o aumentar el valor que producen mediante ella.&lt;/p&gt;
+
+&lt;h2 id=&quot;los-problemas&quot;&gt;Los problemas&lt;/h2&gt;
+
+&lt;p&gt;Si has trabajado en desarrollo de software, infraestructura o en el área de IT de alguna empresa tal vez no necesito contarte esto. Todo lo relacionado con productos digitales está plagado de proyectos no cumplidos en tiempo, nunca terminados, pasados de presupuesto, atención a clientes internos extremadamente deficiente, etc.&lt;/p&gt;
+
+&lt;p&gt;No conforme con eso hay millones de historias de terror de cómo los negocios no se interesan en lo mínimo por mejorar estas áreas, sólo exigiendo cada vez más cosas y poniendo fechas irrazonables.&lt;/p&gt;
+
+&lt;p&gt;Otras historias cuentan los actos heróicos que las personas que trabajamos en estas áreas hemos tenido que hacer para cumplir con los compromisos adquiridos: trabajar toda la noche por varios días seguidos, cambios de último momentos, largas horas en despliegues y re-establecimiento de servicios, etc. O se descubre que el sistema no cumple con los requerimientos legales de protección información y ahora hay que trabajar horas extras para cumplirlo.&lt;/p&gt;
+
+&lt;p&gt;Y por último la vista del lado de la operación del negocio: cada que se va a poner en producción un cambio, un nuevo producto o se va a actualizar algo todos temen que algo catastrófico pase con cierta razón. Ha pasado que, por culpa de estos cambios, los sistemas que soportan la operación diaria se caen por horas haciendo perder al negocio clientes, dinero y reputación.&lt;/p&gt;
+
+&lt;p&gt;Todos estos problemas son lo que DevOps ataca con 3 principios o “tres caminos”. Pero para habilitar esto, se necesita algo de la organización.&lt;/p&gt;
+
+&lt;h2 id=&quot;todos-los-involucrados-trabajan-para-lo-mismo&quot;&gt;Todos los involucrados trabajan para lo mismo&lt;/h2&gt;
+
+&lt;p&gt;Sobre todo en empresas grandes, donde es más común dividir en departamentos debido a la gran cantidad de trabajo disponible, es normal que &lt;strong&gt;cada departamento busque sólo sus propios intereses&lt;/strong&gt; y cumplir con sus métricas de desempeño sin poner en primer lugar lo más importante: la producción de valor para el negocio en general.&lt;/p&gt;
+
+&lt;p&gt;Así que la primera precondición para que se pueda alcanzar verdadera productividad es que los involucrados comprendan que todos trabajan con el fin de crear cosas de valor para que el negocio siga funcionando y pueda hacerlo cada vez mejor. Esto implica eliminar la burocracia, las guerras entre departamentos y la reducción de trabajo que sólo se hace por demostrar que se tiene algo que hacer como tristemente ha estado marcado por este estigma el departamento de Seguridad de la Información o su equivalente.&lt;/p&gt;
+
+&lt;p&gt;Si la actividad qu se está haciendo no contribuye de alguna forma a crear valor para el negocio debería ser eliminada.&lt;/p&gt;
+
+&lt;p&gt;Esta condición por sí misma es difícil de cumplir y sin ella no es posible lograr las demás. ¿Quiénes son los encargados poner las condiciones para que se cumpla? La dirección. La dirección de la empresa tiene la responsabilidad de elegir personas razonables, buenas en sus campos y dispuestas a cooperar para que la empresa o el proyecto progresen más allá de su ego. Repito, &lt;strong&gt;sin esto lo demás es imposible o inútil&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Una vez cumplida la precondición de cooperación con personas dispuestas y hábiles, podemos hablar de los tres caminos.&lt;/p&gt;
+
+&lt;h2 id=&quot;el-primer-camino-flujo&quot;&gt;El primer camino: Flujo&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1579042628/4E94ED23-0268-4F59-A101-1CF009540E01_pssljp.jpg&quot; alt=&quot;Primer camino de DevOps&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;El primer principio de DevOps establece que debe haber un flujo constante de valor en el área de tecnología de información o de sistemas, como lo quieras llamar. Algo de valor es todo aquello que permite al negocio seguir operando o incrementar los beneficios que obtiene de las operaciones.&lt;/p&gt;
+
+&lt;p&gt;El objetivo principal es &lt;strong&gt;minimizar el tiempo&lt;/strong&gt; que tarda una característica/producto/servicio en entregarse desde que solicita hasta que empieza a cumplir con su función.&lt;/p&gt;
+
+&lt;p&gt;Debido a que el desarrollo de software es una actividad poco predecible, DevOps se enfoca en la parte de la cadena de entrega de valor que va desde que el área de desarrollo termina algo hasta que es puesto en manos de los usuarios finales. Pero no le interesa sólo eso, ya que las personas encargadas del desarrollo deben seguir ciertas prácticas para facilitar el resto del camino.&lt;/p&gt;
+
+&lt;p&gt;Acelerar esta entrega beneficia en gran manera a la forma en que se desarrolla software de calidad.&lt;/p&gt;
+
+&lt;p&gt;Si estás en una empresa pequeña o en una &lt;em&gt;startup&lt;/em&gt; puede que seas tú mismo el que desarrolle y tenga que mantener los programas en operación (producción). Así que reducir la fricción entre estas dos actividades te beneficiará aún más.&lt;/p&gt;
+
+&lt;p&gt;¿Qué prácticas permiten lograrlo?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Hacer el trabajo visible.&lt;/strong&gt; La mayoría del trabajo que realizamos al hacer productos digitales es muy difícil de estimar, tanto en dificultad como en cantidad.
+Es por eso que debe haber una manera física de ver el trabajo, como lo habría en un fábrica que realiza productos físicos: si una estación de trabajo tiene demasiado material inmediatamente se notará.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Reducir y limitar el trabajo en progreso.&lt;/strong&gt; Mientras más actividades sin terminar existan, más difícil es administrarlas y notar todo el trabajo pendiente. Tener pocas actividades en progreso permite &lt;strong&gt;calcular mejor&lt;/strong&gt; cuánto tardará en terminarse un nuevo requerimiento y atender los errores más rápidamente. Siguiendo con el ejemplo de la fábrica física: existe un límite físico para el material que puede esperar en una estación de trabajo.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Establecer procesos&lt;/strong&gt;. Cada uno de los cambios o actividades solicitadas debe pasar por un proceso de revisión que determine si provee valor para el negocio en caso de completarse. Esto implica mantener en algún lado el registro de las tareas solicitadas y su estado actual.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Reducir el tamaño del lote trabajo&lt;/strong&gt;. Cuando vamos a entregar algo generalmente agrupamos varias piezas de trabajo para “entregarlas más eficientemente”. Pero en realidad mientras más pequeño sea este lote de trabajo (idealmente de una tarea) mejor se hace la entrega.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Identificar y mejorar las limitantes&lt;/strong&gt;. En todo proceso de trabajo hay puntos que hacen que toda la cadena de entrega de valor sea más lenta. Estos puntos son las limitantes. Para mejorar toda la cadena primero hay que identificarlos y después mejorar su eficiencia para mejorar todo el proceso de producción de valor.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Eliminar características no necesarias.&lt;/strong&gt; Mientras más grande sea el producto más difícil será de manejar. Por lo tanto, si alguna característica no aporta valor al usuario final, necesariamente está restando valor a la compañía entera.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Algo que notar de las prácticas de DevOps es que muchas están extraídas de los movimientos de &lt;em&gt;Lean Manufacturing&lt;/em&gt;. Existen otra prácticas, pero personalmente considero que estas son las esenciales.&lt;/p&gt;
+
+&lt;h2 id=&quot;el-segundo-camino-retroalimentación-rápida&quot;&gt;El segundo camino: Retroalimentación rápida&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1579042628/F68161CA-BF97-4E71-B78B-9310C00CD254_sjiled.jpg&quot; alt=&quot;Segundo camino de DevOps&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;El segundo camino por el que el valor fluye en las organizaciones que implementan DevOps es de regreso: &lt;strong&gt;debe existir un flujo de información desde los sistemas en producción&lt;/strong&gt; hacia los equipos que están desarrollando los productos y los demás equipos relacionados con esta tarea.&lt;/p&gt;
+
+&lt;p&gt;Esto permite que los problemas sean resueltos según se van encontrando, primeramente. En segundo lugar habilita un flujo de retroalimentación rápido que permitirá crear mejores productos más rápido.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Lean Manufactruing&lt;/em&gt; recomienda que la línea de producción no debe continuar si hay algún problema con una sola de las estaciones de trabajo. Lo mismo debería pasar en los equipos de desarrollo y operaciones. Si un problema no puede ser resuelto por los encargados de ello, todo el equipo debería juntarse a resolver el problema hasta que terminen. Lo sé, esto suena contra-intuitivo y poco productivo, pero la experiencia de las fábricas japonesas demuestra que es mucho mejor resolver un problema inmediatamente en vez de dejarlo avanzar en la cadena de producción, para evitar retrabajo.&lt;/p&gt;
+
+&lt;h2 id=&quot;el-tercer-camino-cultura-de-aprendizaje-y-experimentación&quot;&gt;El tercer camino: Cultura de aprendizaje y experimentación&lt;/h2&gt;
+
+&lt;p&gt;Después de implementar el camino hacia el cliente y de regreso, DevOps establece que se tiene que crear un cultura de aprendizaje que permita mediante &lt;strong&gt;ciclos de retroalimentación&lt;/strong&gt; mejorar la forma general en la que se trabaja.&lt;/p&gt;
+
+&lt;p&gt;La siguiente imagen completa los tres caminos de DevOps:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1579042629/0548901A-3BF6-49BF-8556-B0B12D45F0A9_zgljnk.jpg&quot; alt=&quot;Los tres caminos de DevOps&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La empresa debe asegurarse de que los equipos de trabajo están mejorando constantemente mediante el aprendizaje continuo.&lt;/p&gt;
+
+&lt;p&gt;Esto puede lograrse mediante varias prácticas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Experimentación, por ejemplo pruebas A/B&lt;/li&gt;
+  &lt;li&gt;Introducción de fallas intencionalmente (&lt;em&gt;chaos engineering&lt;/em&gt;)&lt;/li&gt;
+  &lt;li&gt;Mediciones cada vez más precisas mediante software especializado&lt;/li&gt;
+  &lt;li&gt;Agendar tiempo para actividades dedicadas a mejorar el equipo como &lt;em&gt;Improvement Katas&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Este paso depende de que los dos anteriores se hayan logrado, ya que requieren de tiempo y energías, que no se tendrán si no se tiene una forma confiable de liberar el producto y de monitorear para saber que no está pasando.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Estos pilares fundamentales de DevOps nos pueden ayudar entender las bases de la cultura, pero ponerlos en práctica no es fácil. El libro &lt;a href=&quot;https://amzn.to/3a91Bgl&quot;&gt;Devops Handbook&lt;/a&gt; explica qué otra prácticas se deben seguir y da consejos prácticos que permiten lograrlo.&lt;/p&gt;
+
+&lt;p&gt;Perfeccionar estas prácticas es algo que nunca se termina y lleva tiempo ver los resultados. Así que ¿qué esperas para empezar?&lt;/p&gt;
+
+&lt;p&gt;Con este pequeño artículo esperamos que quede claro que &lt;a href=&quot;http://bit.ly/36t59HK&quot;&gt;DevOps no es un rol en la empresa&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="devops" /><category term="servers" /><category term="culture" /><summary type="html">Hablemos de qué es de DevOps y como puede beneficiar a tu empresa aplicarlo</summary></entry><entry><title type="html">Recursos gratutitos para aprender a programar desde cero</title><link href="http://localhost:4000/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html" rel="alternate" type="text/html" title="Recursos gratutitos para aprender a programar desde cero" /><published>2019-12-29T00:00:00-06:00</published><updated>2019-12-29T00:00:00-06:00</updated><id>http://localhost:4000/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero</id><content type="html" xml:base="http://localhost:4000/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html">&lt;p&gt;¿Quieres aprender a programar y no sabes por dónde empezar?&lt;/p&gt;
+
+&lt;p&gt;En este post te daremos algunos recursos que puedes seguir para aprender a programar desde lo más básico hasta tener un conocimiento razonable de programación con el que podrías empezar a trabajar como becario.&lt;/p&gt;
+
+&lt;h2 id=&quot;motívate&quot;&gt;Motívate&lt;/h2&gt;
+
+&lt;p&gt;Para ser un buen programador es importante conocer las bases, pero para eso antes hay que tener motivación y &lt;em&gt;mantenerla&lt;/em&gt;. Así que empecemos por algo que te mostrará el poder de la programación y de lo que puedes hacer con un poco de conocimiento.&lt;/p&gt;
+
+&lt;p&gt;Puedes empezar con la creación de una página de internet. Si buscas “Crear página web desde cero” vas a encontrar un montón de opciones, pero aquí tienes una &lt;a href=&quot;http://bit.ly/2Mq1aE0&quot;&gt;Creando una página&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;También existe el &lt;a href=&quot;http://bit.ly/34VCbyM&quot;&gt;curso para aprender programar de Platzi&lt;/a&gt;, que comienza desde los básico y con algunos ejemplos te enseña lo que se puede lograr con la programación.&lt;/p&gt;
+
+&lt;h2 id=&quot;ahora-sí-las-bases&quot;&gt;Ahora sí, las bases&lt;/h2&gt;
+
+&lt;p&gt;El legendario &lt;a href=&quot;http://bit.ly/39miPqa&quot;&gt;CS50&lt;/a&gt; de Harvard te ayudará a entender las bases de las ciencias de la computación, afortunadamente ya está con subtítulos en español y es completamente gratuito. Si quieres obtener un certificado puedes pagar por él en la plataforma de cursos edX. Este curso te dará bases sólidas para poder más adelante programar lo que quieras. Aprenderás varios lenguajes: Python, C++, HTML y CSS, entre otros.
+Es un curso que no puedes perder si quieres ser un autodidacta de la programación.&lt;/p&gt;
+
+&lt;p&gt;Si prefieres contenido con audio en español, este, y los que le siguen te puede ayudar: &lt;a href=&quot;http://bit.ly/2Sqj1OV&quot;&gt;Curso de introducción a Python I&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Con estos es suficiente, aunque si quieres reforzar aún más y aprender otro lenguaje te recomiendo el siguiente curso de de Uniwebsidad: &lt;a href=&quot;http://bit.ly/2PYLwSh&quot;&gt;Introducción a JavaScript&lt;/a&gt;. Este curso es bastante viejo, pero la manera de explicar del autor, la sencillez y la forma en la que avanza te hará comprender muchas cosas que te servirán para el futuro.&lt;/p&gt;
+
+&lt;h2 id=&quot;crea-algo-real&quot;&gt;Crea algo real&lt;/h2&gt;
+
+&lt;p&gt;Es hora de aplicar y extender el conocimiento que has adquirido hasta ahora. La mejor manera es hacer algo que tenga utilidad práctica aplicable a un problema que tú o alguien cercano vea directamente.&lt;/p&gt;
+
+&lt;p&gt;La mejor manera de hacerlo es crear una descripción del problema que tienes, hacer una lista de las cosas que necesitas que haga y empezar a programarlo, investigando en el camino cualquier cosa que no sepas hacer. Para este punto es probable que ya seas hábil con los mejores amigos de aprendizaje del desarrollador: Google, Stack Overflow y YouTube.&lt;/p&gt;
+
+&lt;p&gt;Si siente que aún no tienes lo suficiente aquí te dejo algunos ejemplos de cursos creando aplicaciones aunque sea pequeñas completas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2Zv5Cqk&quot;&gt;Usando Flask y MySQL para hacer una aplicación&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/356feZM&quot;&gt;Creando aplicaciones Multi-tenant con Django&lt;/a&gt;. Este curso no es gratis pero es bastante accesible.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;has-una-especialización&quot;&gt;Has una especialización&lt;/h2&gt;
+
+&lt;p&gt;El desarrollo de sistemas es un campo muy grande. Aunque está muy bien saber las bases y aunque sea un poco de diferentes campos (podríamos decir que es esencial), lograrás lo mejor en tu carrera si te especializas en algo:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Frontend&lt;/strong&gt; si disfrutas de las cosas visuales y tienes paciencia para luchar contra los distintos navegadores. Trabajarás con HTML, CSS y sobre todo JavaScript y sus millones de librerías.&lt;/li&gt;
+  &lt;li&gt;Desarrollador de &lt;strong&gt;aplicaciones móviles&lt;/strong&gt;. Es un caso parecido al de frontend, tienes que crear las interfaces con las que los clientes van a interactuar, pero tu programa será instalado en un celular y tendrás que programarlo en Swift o Kotlin, teniendo consideraciones diferentes.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Backend&lt;/strong&gt;: si prefieres manejar datos, crear los sistemas que mantienen la información y los medios de comunicación (generalmente API’s) con clientes consumidores y productores de información. Elegir el lenguaje es difícil porque hay muchos, pero los más usados son Python, JavaScript, PHP, Java y C#.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Administrador de infraestructura&lt;/strong&gt;. Tendrás que aprender a manejar los servidores y a instalar y configurar las aplicaciones que permiten que los programas corran allí. Harás programas para automatizar varios de los pasos. Podrías programar en Bash, Go, Python, entre otros.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ingeniero de datos&lt;/strong&gt;. Aprenderás a manejar programas relacionados con la captura, tratamiento y almacenamiento de grandes cantidades de datos.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sólo mencioné algunas áreas pero hay varias más y combinaciones entre ellas.&lt;/p&gt;
+
+&lt;p&gt;Si quieres empezar a buscar por donde te recomiendo que busques cursos en las siguientes plataformas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2Q3rl5I&quot;&gt;Udacity&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/354mUff&quot;&gt;Coursera&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bit.ly/2Zw09j0&quot;&gt;edX&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Estas tres plataformas tienen cursos gratuitos en español (por lo menos subtitulados) casi sobre cualquier cosa que quieras aprender, incluído los mencionados. No te olvides de YouTube.&lt;/p&gt;
+
+&lt;h3 id=&quot;aprende-inglés&quot;&gt;Aprende inglés&lt;/h3&gt;
+
+&lt;p&gt;Si tu deseo es poder programar o desarrollar software profesionalmente, una de las cosas que tienes que hacer sí o sí es por lo menos aprender a &lt;strong&gt;leer inglés&lt;/strong&gt;. Esto te ayudará a cubrir el 83.5% (número inventado) de las situaciones para aprender más. Muy probablemente si sabes leer en inglés sabrás escribirlo a un grado razonable para &lt;strong&gt;programar en inglés&lt;/strong&gt;, es decir, crear los comentarios, los nombres y otros textos requeridos en inglés, ya que hará tu código de más fácil acceso a un mayor número de personas.&lt;/p&gt;
+
+&lt;p&gt;Una vez dominado esto se te abre la puerta al 80% de recursos de aprendizaje de internet. Y las posibilidades son ilimitadas.&lt;/p&gt;
+
+&lt;h3 id=&quot;obliga-a-alguien-a-ser-tu-mentor&quot;&gt;Obliga a alguien a ser tu mentor&lt;/h3&gt;
+
+&lt;p&gt;Esto suena un poco raro, pero claro que lo puedes hacer y es de las maneras más eficaces de aprender. Lo mejor de todo es que no necesitas ni siquiera que tue mentor esté vivo. Hacer a alguien tu mentor significa aprender de él y muchas personas nos han preparado el camino para que los tomemos como mentores: mediante sus libros. Busca ejemplos de personas como las que quisieras ser e inspírate en sus escritos, charlas, conferencias, entrevistas, podcasts y todo contenido que produzca para ver como puedes recorrer un camino parecido al de esa persona.&lt;/p&gt;
+
+&lt;h2 id=&quot;notas-finales&quot;&gt;Notas finales&lt;/h2&gt;
+
+&lt;p&gt;Lo que acabas de aprender después de terminar esto son sólo las bases. Igual que muchas otras carreras, en ésta tienes que poder seguir aprendiendo constantemente. El desarrollo de software, sin embargo, se caracteriza por ciclos más cortos aún, en los que las habilidades se quedan obsoletas en mucho menos tiempo así que debes afinar tus habilidades de aprendizaje.&lt;/p&gt;
+
+&lt;p&gt;Una de las mejores maneras de solidificar tu conocimiento después de practicarlo, es enseñándolo a otros. No te quedes con lo aprendiste y devuelve algo a la comunidad: enseña siempre que puedas mediante conferencias, videos o artículos en un blog. De esto es algo de lo que no te arrepentirás.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprender" /><category term="programar" /><category term="recursos-aprendizaje" /><summary type="html">Hemos escrito una lista de recursos que te pueden ayudar a aprender a programar en tiempo record.</summary></entry><entry><title type="html">Las matemáticas que debes saber para programar</title><link href="http://localhost:4000/2019/12/25/las-matematicas-que-debes-saber-para-programar.html" rel="alternate" type="text/html" title="Las matemáticas que debes saber para programar" /><published>2019-12-25T00:00:00-06:00</published><updated>2019-12-25T00:00:00-06:00</updated><id>http://localhost:4000/2019/12/25/las-matematicas-que-debes-saber-para-programar</id><content type="html" xml:base="http://localhost:4000/2019/12/25/las-matematicas-que-debes-saber-para-programar.html">&lt;p&gt;Cuando se habla de &lt;strong&gt;matemáticas&lt;/strong&gt; mucha gente empieza a sentirse fastidiada porque creen que son cosas difíciles de entender.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como &lt;strong&gt;una rama de las matemáticas&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pero para programar con eficacia no necesitas saber muchas matemáticas, de hecho, con el entendimiento básico es suficiente. En este artículo hablaremos de aquello que debes dominar.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-son-las-matemáticas&quot;&gt;¿Qué son las matemáticas?&lt;/h2&gt;
+
+&lt;p&gt;Definir las matemáticas es difícil. Según lo que (de manera muy irresponsable) nos han enseñado en la escuela, las matemáticas es el tratamiento de los &lt;strong&gt;números&lt;/strong&gt;. Eso está muy lejos de la realidad, y ya te habás dado cuenta si has avanzado lo suficiente en matemáticas.&lt;/p&gt;
+
+&lt;p&gt;Es cierto, las matemáticas más elementales se pueden reducir a números, pero no es su centro, el espíritu de su estudio.&lt;/p&gt;
+
+&lt;p&gt;Algunas definiciones que encontré útiles:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Las matemáticas son la manera que tenemos de elevar a la categoría de un arte nuestros &lt;strong&gt;esfuerzos cognoscitivos&lt;/strong&gt;. - Fausto Ongay&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ongay también menciona que la etimología de la palabra matemáticas tiene que ver con conocer o saber. Así, en cierta medida las matemáticas se pueden pensar como la ciencia o el arte &lt;strong&gt;de la certidumbre&lt;/strong&gt;. Es decir, de saber algo con certeza y poder verificarlo.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;La matemática, como una expresión de la mente humana, refleja la voluntad activa, la razón contemplativa, y el deseo de la perfección. Sus elementos básicos son: lógica e intuición, análisis y construcción, generalidad y particularidad. - Richard Courant&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;En esta definición un poco más poética y abstracta se mencionan los elementos usados para lograr su cometido: lógica, intuición, análisis, construcción (o síntesis), generalidad (inducción), particularidad (deducción). Ya hablamos un poco de esto en los artículos acerca de las idea de &lt;a href=&quot;http://bit.ly/39madQm&quot;&gt;George Polya&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si quieres adentrarte en esto el libro &lt;a href=&quot;http://bit.ly/2F4Dn8N&quot;&gt;&lt;strong&gt;¿Qué son las matemáticas?&lt;/strong&gt;&lt;/a&gt; habla de ello a fondo.&lt;/p&gt;
+
+&lt;p&gt;Pero no estamos aquí para filosofar acerca de las matemáticas. Lo único que quiero quede claro con esto es que las matemáticas no tienen que ver con &lt;strong&gt;números&lt;/strong&gt;, sino con el &lt;em&gt;razonamiento&lt;/em&gt;, &lt;em&gt;certidumbre&lt;/em&gt; y resolución de problemas.&lt;/p&gt;
+
+&lt;h2 id=&quot;matemáticas-básicas&quot;&gt;Matemáticas Básicas&lt;/h2&gt;
+
+&lt;p&gt;Empecemos hablando brevemente de las matemáticas que debes conocer como programador y como ser humano.&lt;/p&gt;
+
+&lt;h3 id=&quot;operaciones-básicas&quot;&gt;Operaciones básicas&lt;/h3&gt;
+
+&lt;p&gt;Saber operar con números en la vida cotidiana es una habilidad que todos necesitamos. Pero más importante aún es entender el significado de estas operaciones:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;¿Qué significa una multiplicación?&lt;/li&gt;
+  &lt;li&gt;¿Qué significa una división?&lt;/li&gt;
+  &lt;li&gt;¿Qué significado tiene el elevar un número a una potencia?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Entender esto te ayudará a &lt;strong&gt;resolver problemas&lt;/strong&gt; que es la actividad principal que se realiza cuando programas. Todo lo demás está alrededor de esto.&lt;/p&gt;
+
+&lt;h3 id=&quot;probabilidad-y-estadística&quot;&gt;Probabilidad y estadística&lt;/h3&gt;
+
+&lt;p&gt;Tener las nociones de estas áreas es una de las herramientas más útiles a la hora de resolver problemas y sobre todo atacarlos prácticamente. Varias de las áreas de la ciencia de la computación basan sus resultados y procesos en estas dos áreas.&lt;/p&gt;
+
+&lt;p&gt;Un ejemplo es la &lt;strong&gt;criptografía&lt;/strong&gt;: los algoritmos de cifrado como &lt;strong&gt;AES&lt;/strong&gt; trabajan con una llave que es usada para cifrar y descifrar el mensaje. Asignar el tamaño de la llave depende totalmente de la &lt;em&gt;probabilidad&lt;/em&gt; de que un atacante sea capaz de adivinar la llave en un número de intentos razonable.&lt;/p&gt;
+
+&lt;p&gt;Ahora imagina que la llave tiene 128 bits de longitud. Aquí entra otro par de conceptos importantes para la computación.&lt;/p&gt;
+
+&lt;h3 id=&quot;combinaciones-y-permutaciones&quot;&gt;Combinaciones y permutaciones&lt;/h3&gt;
+
+&lt;p&gt;¿Cuál es el número de llaves diferentes que se pueden generar con 128 bits? La respuesta es: 2^128 (2 elevado a la potencia 128). &lt;em&gt;¿Cómo llegamos a esa respuesta?&lt;/em&gt; Esto se conoce como &lt;strong&gt;conteo&lt;/strong&gt; en matemáticas y las bases son la &lt;strong&gt;permutación&lt;/strong&gt; y la &lt;strong&gt;combinación&lt;/strong&gt; de elementos. En este caso es la permutación de 2 elementos que permiten repetición en 128 lugares.&lt;/p&gt;
+
+&lt;p&gt;¿Qué probabilidad hay de que alguien encuentre esa llave por suerte en el primer intento?&lt;/p&gt;
+
+&lt;p&gt;La respuesta es 1/2^128. Tan cerca de cero para ser considerada prácticamente imposible de adivinar incluso en un número de intentos razonable.&lt;/p&gt;
+
+&lt;p&gt;La criptografía y varias áreas están llenas de probabilidad y estadística (como el aprendizaje automático y el análisis de datos, aunque más avanzadas).&lt;/p&gt;
+
+&lt;p&gt;Si sientes que necesitas un recordatorio aquí hay un curso que enseña desde lo más básico: &lt;a href=&quot;http://bit.ly/2rrL4mb&quot;&gt;Conteo, combinaciones y permutaciones en Khan Academy&lt;/a&gt;. Este también es un curso que enseña probabilidad y estadística desde cero.&lt;/p&gt;
+
+&lt;h2 id=&quot;lógica-matemáticas-discretas&quot;&gt;Lógica (Matemáticas discretas)&lt;/h2&gt;
+
+&lt;p&gt;Las matemáticas discretas son una de las áreas más abstractas de las matemáticas cuando las vemos en papel pero en realidad tratamos con ellas a diario. Podemos definir las matemáticas discretas como el estudio de las cosas que se pueden contar, sean finitas o infinitas.&lt;/p&gt;
+
+&lt;p&gt;La &lt;strong&gt;lógica&lt;/strong&gt; es uno de los campos de estudio de las matemáticas discretas. La lógica se enfoca en estudiar &lt;strong&gt;el razonamiento&lt;/strong&gt; y sobre todo si el razonamiento es &lt;em&gt;correcto&lt;/em&gt;.
+Para lograr esto la lógica se vale del estudio de las &lt;strong&gt;proposiciones&lt;/strong&gt; (o afirmaciones) y sus relaciones. Una proposición es un enunciado que dice algo que puede ser &lt;em&gt;verdadero&lt;/em&gt; o &lt;em&gt;falso&lt;/em&gt;. En matemáticas se dice que tiene un &lt;strong&gt;valor de verdad&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Dos proposiciones se pueden relacionar mediante un &lt;em&gt;conector&lt;/em&gt; (en electrónica: compuertas lógicas, en programación son operadores booleanos). Los conectores más conocidos son el &lt;strong&gt;or&lt;/strong&gt; (o) y el &lt;strong&gt;and&lt;/strong&gt;(y).&lt;/p&gt;
+
+&lt;p&gt;Esto da origen a demostraciones tanto matemáticas como prácticas. En el desarrollo de sistemas se pueden usar para demostrar que tu algoritmo o solución es correcto, es decir, va a funcionar con los datos de entrada propuestos que cumplan con los valores de verdad.&lt;/p&gt;
+
+&lt;p&gt;¿Son absolutamente necesarias para programar? Las demostraciones no, pero serán útiles si quieres crear demostraciones de que un algoritmo funciona sin tener que crear miles de ejemplos que convenzan a alguien. &lt;strong&gt;Lo que sí es necesario entender es el funcionamiento de los conectores lógicos, no hay programa que se escape de ellos.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;conjuntos&quot;&gt;Conjuntos&lt;/h3&gt;
+
+&lt;p&gt;El estudio de los conjuntos es una parte de las matemáticas discretas que se enfoca en estudiar elementos (objetos) que se agrupan por alguna característica en común. Los conjuntos son de gran utilidad para resolver muchos problemas matemáticos y la criptografía actual esta fuertemente basada en algunos problemas que tienen que ver con el cálculo de ciertos conjuntos.&lt;/p&gt;
+
+&lt;p&gt;¿Me sirve para trabajar en el día a día? Para cierto tipo de problemas es más cómodo trabajar con conjuntos que con los tipos de datos comunes de colecciones a los que estamos acostumbrados los programadores. Tratar tu colección (lista, tupla, etc.) como un conjunto matemático te permitirá efectuar operaciones como la &lt;strong&gt;intersección de conjuntos&lt;/strong&gt; (elementos en común), la &lt;strong&gt;unión&lt;/strong&gt; (todos los elementos únicos encontrados en dos o más conjuntos). Si el lenguaje de programación tiene este tipo de dato te va a dar un buen empujón.&lt;/p&gt;
+
+&lt;p&gt;Por cierto, el resultado de las consultas en SQL (lenguaje de manejo de datos para la mayoría de las bases de datos) se comportan como conjuntos matemáticos.&lt;/p&gt;
+
+&lt;p&gt;¿Quieres aprender matemáticas discretas? Aquí tienes un pequeño curso: &lt;a href=&quot;http://bit.ly/2EWToND&quot;&gt;Curso de matemáticas discretas&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Eso es todo lo que necesitas para programar básicamente. Mientras mejor seas en estos campos, mejor podrás aprovecharlos para programar mejor o para entender mejor los programas de otros.&lt;/p&gt;
+
+&lt;h3 id=&quot;sistemas-numéricos&quot;&gt;Sistemas numéricos&lt;/h3&gt;
+
+&lt;p&gt;Los sistemas numéricos son un tipo de conjuntos que se conforman de todas las cifras que pueden formarse con una cantidad determinada de símbolos que representan los números. El número de símbolos le da nombre al sistema: si hay dos símbolos (0, 1) es binario, si hay tres (0, 1, 2), ternario, etc.&lt;/p&gt;
+
+&lt;p&gt;Para programar es muy conveniente que entiendas básicamente cómo se define un sistema numérico y que conozcas por lo menos cuatro:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Decimal&lt;/strong&gt;. Incluye los símbolos que conocemos como dígitos (0, 1, 2,.., 9). Su base es el 10.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Binario&lt;/strong&gt;. Es el sistema numérico con el que los microprocesadores pueden trabajar. Por eso es importante conocerlos. Sólo se pueden usar dos valores: 0 y 1.  Su base es el 2.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Hexadecimal&lt;/strong&gt;. Se usa por conveniencia para representar números binarios de manera abreviada, por su compatibilidad entre bases (16 = 2^4). Su base es el 16 y los símbolos o valores extra que incluye a parte de los dígitos comunes son las letras de la A a la F.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Octal&lt;/strong&gt;. Su base es el 8 y también se usa para abreviar números decimales. Usa los dígitos del 0 al 7.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;El sistema decimal lo usamos en la vida diaria. Con entender básicamente el binario y hexadecimal estarás bien.&lt;/p&gt;
+
+&lt;h1 id=&quot;matemáticas-avanzadas-y-especificas&quot;&gt;Matemáticas avanzadas y especificas&lt;/h1&gt;
+
+&lt;p&gt;En muchas áreas de la programación se usan matemáticas más avanzadas, sobre todo en áreas que están sonando mucho recientemente: análisis de datos e inteligencia artificial. Si quieres entender a fondo estas y otras áreas del desarrollo de sistemas, es conveniente tener un conocimiento amplio en algunas de las siguientes áreas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Probabilidad y estadística avanzada&lt;/strong&gt;. Saber acerca de variables aleaterias, distribuciones de probabilidad, análisis Bayesiano, etc. Esto te permitirá analizar datos tanto exploratoria como predictivamente.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Álgebra lineal&lt;/strong&gt;. El álgebra y la resolución de ecuaciones que representan líneas en el plano cartesiano. Esto te ayudará a tratar con conjuntos de datos. Muchas de los resultados de los algoritmos de Machine Learning son ecuaciones lineales.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ecuaciones diferenciales&lt;/strong&gt;. Esto es la resolución de sistemas de ecuaciones y sus derivadas. Esto tiene aplicaciones en todo lo que tenga que ver con cambios respecto a alguna variable, como el tiempo.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hablé de los campos finales pero para entender esto debes saber antes cosas como:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Geometría Analítica&lt;/li&gt;
+  &lt;li&gt;Álgebra&lt;/li&gt;
+  &lt;li&gt;Trigonometría&lt;/li&gt;
+  &lt;li&gt;Cálculo Integral y diferencial&lt;/li&gt;
+  &lt;li&gt;Cálculo Vectorial&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Por suerte, para los campos de los que hablá arriba no tienes que saber todo esto, a menos que quieras ser el desarrollador de los algoritmos originales. Generalmente somos usuarios de bibliotecas creadas por genios que ya hacen lo que necesitamos.&lt;/p&gt;
+
+&lt;h2 id=&quot;no-te-preocupes-&quot;&gt;No te preocupes :)&lt;/h2&gt;
+
+&lt;p&gt;Fuera de las matemáticas básicas y un control decente e intuitivo de la lógica, no es necesario que seas &lt;a href=&quot;http://bit.ly/2StKLCz&quot;&gt;Terence Tao&lt;/a&gt;, a menos que el campo en el que estés trabajando esté directamente relacionado con eso, tal
+como tendrías que saber lo suficiente de finanzas si estuvieras haciendo una app financiera o de administración de empresas si estuvieras haciendo una aplicación o plataforma para este campo.&lt;/p&gt;
+
+&lt;p&gt;Aquí hay un video curso en el que se explican más ampliamente lo que algunos llaman &lt;a href=&quot;http://bit.ly/2rvD6Zi&quot;&gt;“matemáticas para programadores”&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="math," /><category term="matemáticas," /><category term="aprender" /><summary type="html">¿Qué tantas matemáticas necesitas para programar? En este artículo lo veremos.</summary></entry><entry><title type="html">Formatos de marcado de texto que deberías aprender</title><link href="http://localhost:4000/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html" rel="alternate" type="text/html" title="Formatos de marcado de texto que deberías aprender" /><published>2019-12-20T00:00:00-06:00</published><updated>2019-12-20T00:00:00-06:00</updated><id>http://localhost:4000/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender</id><content type="html" xml:base="http://localhost:4000/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html">&lt;p&gt;Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el formateo y embellecimiento de documento.&lt;/p&gt;
 
 &lt;p&gt;En este artículo te platicaré de &lt;strong&gt;tres alternativas&lt;/strong&gt; que pueden hacer tu vida más fácil: Markdown, reStructuredText, AsciiDoc.&lt;/p&gt;
 
@@ -114,7 +440,7 @@
 
 &lt;p&gt;Estos lenguajes de marcado de texto te dan lo mejor de los dos mundos. Requieren un poco más de trabajo para empezar que los editores &lt;em&gt;“lo que ves es lo que obtienes”&lt;/em&gt;, pero la productividad que te dan después paga con creces.&lt;/p&gt;
 
-&lt;p&gt;¿Qué opinas? ¿Vale la pena aprenderlos?&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="markdown" /><category term="restructured-text" /><category term="asciidoc" /><category term="latex" /><summary type="html">A veces tienes que crear documentos de texto con un algún tipo de formato visual. Aprende lenguajes de marcado que te facilitarán la vida.</summary></entry><entry><title type="html">Inducción y Deducción según Polya</title><link href="https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html" rel="alternate" type="text/html" title="Inducción y Deducción según Polya" /><published>2019-12-14T00:00:00-06:00</published><updated>2019-12-14T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html">&lt;p&gt;Este es el tercer artículo acerca del libro &lt;a href=&quot;https://amzn.to/2P8HJA8&quot;&gt;“How to Solve It”&lt;/a&gt; de George Polya. Puedes ver los dos artículos anteriores aquí:&lt;/p&gt;
+&lt;p&gt;¿Qué opinas? ¿Vale la pena aprenderlos?&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="markdown" /><category term="restructured-text" /><category term="asciidoc" /><category term="latex" /><summary type="html">A veces tienes que crear documentos de texto con un algún tipo de formato visual. Aprende lenguajes de marcado que te facilitarán la vida.</summary></entry><entry><title type="html">Inducción y Deducción según Polya</title><link href="http://localhost:4000/2019/12/14/induccion-y-deduccion-segun-polya.html" rel="alternate" type="text/html" title="Inducción y Deducción según Polya" /><published>2019-12-14T00:00:00-06:00</published><updated>2019-12-14T00:00:00-06:00</updated><id>http://localhost:4000/2019/12/14/induccion-y-deduccion-segun-polya</id><content type="html" xml:base="http://localhost:4000/2019/12/14/induccion-y-deduccion-segun-polya.html">&lt;p&gt;Este es el tercer artículo acerca del libro &lt;a href=&quot;https://amzn.to/2P8HJA8&quot;&gt;“How to Solve It”&lt;/a&gt; de George Polya. Puedes ver los dos artículos anteriores aquí:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/2019/09/27/tecnicas-para-resolver-problemas.html&quot;&gt;Técnicas para resolver problemas&lt;/a&gt;&lt;/li&gt;
@@ -163,7 +489,7 @@ de resolución de problemas aplican para el problema que tenemos que resolver&lt
 
 &lt;h3 id=&quot;inducción-matemática&quot;&gt;Inducción matemática&lt;/h3&gt;
 
-&lt;p&gt;Polya habla de otro tipo de inducción de la que opina que no debería llamarse así, y que comparte muy poco con el proceso que acabamos de descubrir y puede llegar a confundir a la gente: la &lt;strong&gt;inducción matemática&lt;/strong&gt;. Este tipo de inducción se refiere al método que los matemáticos emplean para demostrar que cierta aserción es un teorema o no.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problem-solving" /><category term="how-to-solve-it" /><summary type="html">Aprende de los conceptos de inducción y deducción según George Polya los explica en How to Solve It</summary></entry><entry><title type="html">Criptografía básica para programadores: ¿Qué es la criptografía?</title><link href="https://blog.thedojo.mx/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html" rel="alternate" type="text/html" title="Criptografía básica para programadores: ¿Qué es la criptografía?" /><published>2019-11-12T00:00:00-06:00</published><updated>2019-11-12T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia</id><content type="html" xml:base="https://blog.thedojo.mx/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html">&lt;p&gt;Es muy común escuchar de “encriptación” (la palabra correcta en español es &lt;em&gt;cifrado&lt;/em&gt;), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain.&lt;/p&gt;
+&lt;p&gt;Polya habla de otro tipo de inducción de la que opina que no debería llamarse así, y que comparte muy poco con el proceso que acabamos de descubrir y puede llegar a confundir a la gente: la &lt;strong&gt;inducción matemática&lt;/strong&gt;. Este tipo de inducción se refiere al método que los matemáticos emplean para demostrar que cierta aserción es un teorema o no.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problem-solving" /><category term="how-to-solve-it" /><summary type="html">Aprende de los conceptos de inducción y deducción según George Polya los explica en How to Solve It</summary></entry><entry><title type="html">Criptografía básica para programadores: ¿Qué es la criptografía?</title><link href="http://localhost:4000/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html" rel="alternate" type="text/html" title="Criptografía básica para programadores: ¿Qué es la criptografía?" /><published>2019-11-12T00:00:00-06:00</published><updated>2019-11-12T00:00:00-06:00</updated><id>http://localhost:4000/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia</id><content type="html" xml:base="http://localhost:4000/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html">&lt;p&gt;Es muy común escuchar de “encriptación” (la palabra correcta en español es &lt;em&gt;cifrado&lt;/em&gt;), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain.&lt;/p&gt;
 
 &lt;p&gt;Uno de los temas menos tratados por programadores de software común (para usuarios y sistemas que no impliquen el uso de seguridad a medida), es el correcto uso de los algoritmos criptográficos y muchas veces ni siquiera conocemos lo suficiente de ellos, sino que confiamos en lo que las herramientas pre-establecen (que gran parte de las veces fue diseñado por expertos y eso está bien).&lt;/p&gt;
 
@@ -241,7 +567,7 @@ de resolución de problemas aplican para el problema que tenemos que resolver&lt
 
 &lt;p&gt;En este artículo sólo hemos tocado la definición de criptografía y hemos mencionado por qué es importante. En los siguientes empezaremos a hablar de las bases que nos permitirán comprender cómo funciona la criptografía y qué mecanismos son los que permiten que brinde seguridad mediante ocultar la información.&lt;/p&gt;
 
-&lt;p&gt;En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo) aleatorios y sus generadores.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="criptografía" /><category term="esteganografía" /><category term="seguridad" /><summary type="html">Aprende las bases de la criptografía para tenerla en cuenta en tus programas.</summary></entry><entry><title type="html">Entendiendo REST: Servicios cacheables</title><link href="https://blog.thedojo.mx/2019/10/27/entendiendo-rest-servicios-cacheables.html" rel="alternate" type="text/html" title="Entendiendo REST: Servicios cacheables" /><published>2019-10-27T00:00:00-05:00</published><updated>2019-10-27T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/10/27/entendiendo-rest-servicios-cacheables</id><content type="html" xml:base="https://blog.thedojo.mx/2019/10/27/entendiendo-rest-servicios-cacheables.html">&lt;p&gt;La tercera característica que &lt;a href=&quot;https://twitter.com/fielding&quot;&gt;Thomas R. Fielding&lt;/a&gt; (Roy Fielding a partir de ahora) establece para los sistemas &lt;strong&gt;REST&lt;/strong&gt; es la capacidad de que su información sea cacheable. Veamos lo que esto significa y por qué es una característica importante. Empecemos por definir el caché.&lt;/p&gt;
+&lt;p&gt;En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo) aleatorios y sus generadores.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="criptografía" /><category term="esteganografía" /><category term="seguridad" /><summary type="html">Aprende las bases de la criptografía para tenerla en cuenta en tus programas.</summary></entry><entry><title type="html">Entendiendo REST: Servicios cacheables</title><link href="http://localhost:4000/2019/10/27/entendiendo-rest-servicios-cacheables.html" rel="alternate" type="text/html" title="Entendiendo REST: Servicios cacheables" /><published>2019-10-27T00:00:00-05:00</published><updated>2019-10-27T00:00:00-05:00</updated><id>http://localhost:4000/2019/10/27/entendiendo-rest-servicios-cacheables</id><content type="html" xml:base="http://localhost:4000/2019/10/27/entendiendo-rest-servicios-cacheables.html">&lt;p&gt;La tercera característica que &lt;a href=&quot;https://twitter.com/fielding&quot;&gt;Thomas R. Fielding&lt;/a&gt; (Roy Fielding a partir de ahora) establece para los sistemas &lt;strong&gt;REST&lt;/strong&gt; es la capacidad de que su información sea cacheable. Veamos lo que esto significa y por qué es una característica importante. Empecemos por definir el caché.&lt;/p&gt;
 
 &lt;h2 id=&quot;qué-es-el-caché&quot;&gt;¿Qué es &lt;em&gt;el caché&lt;/em&gt;?&lt;/h2&gt;
 
@@ -346,7 +672,7 @@ fácil de escalar, fallarás.&lt;/p&gt;
 
 &lt;p&gt;Si quieres leer un artículo más completo con otras referencias sobre el caché en REST y en HTTP te recomiendo &lt;a href=&quot;https://odino.org/rest-better-http-cache/&quot;&gt;REST better: HTTP Cache&lt;/a&gt;, en inglés.&lt;/p&gt;
 
-&lt;p&gt;En el siguiente artículo veremos la cuarta restricción de los sistemas REST: la interfaz uniforme, la más amplia de las restricciones, pero una de las más útiles.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo.</summary></entry><entry><title type="html">El arte de resolver problemas: la heurística</title><link href="https://blog.thedojo.mx/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html" rel="alternate" type="text/html" title="El arte de resolver problemas: la heurística" /><published>2019-10-03T00:00:00-05:00</published><updated>2019-10-03T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/10/03/el-arte-de-resolver-problemas-la-heuristica</id><content type="html" xml:base="https://blog.thedojo.mx/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html">&lt;blockquote&gt;
+&lt;p&gt;En el siguiente artículo veremos la cuarta restricción de los sistemas REST: la interfaz uniforme, la más amplia de las restricciones, pero una de las más útiles.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo.</summary></entry><entry><title type="html">El arte de resolver problemas: la heurística</title><link href="http://localhost:4000/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html" rel="alternate" type="text/html" title="El arte de resolver problemas: la heurística" /><published>2019-10-03T00:00:00-05:00</published><updated>2019-10-03T00:00:00-05:00</updated><id>http://localhost:4000/2019/10/03/el-arte-de-resolver-problemas-la-heuristica</id><content type="html" xml:base="http://localhost:4000/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html">&lt;blockquote&gt;
   &lt;p&gt;La heurística habla del &lt;strong&gt;comportamiento humano&lt;/strong&gt; frente a los problemas. - George Polya&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -422,7 +748,7 @@ Polya habla de múltiples métodos y procedimientos para avanzar en la resoluci�
 
 &lt;p&gt;La heurística es un campo de estudio valioso sobre todo para la vida moderna y para el desarrollo de software porque puede ayudarnos a estructurar nuestros esfuerzos en la resolución de los problemas que nos enfrentamos.&lt;/p&gt;
 
-&lt;p&gt;En el siguiente y último artículo de la serie analizaremos más técnicas usadas en la resolución de problemas de las que Polya habla en el libro “How to Solve It”.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problemas" /><category term="how_to_solve_it" /><category term="heurística" /><category term="heuristics" /><summary type="html">La heurística te ayudará a resolver mejor los problemas que se te presentan como programador. Veamosla más detenidamente.</summary></entry><entry><title type="html">Técnicas para resolver problemas</title><link href="https://blog.thedojo.mx/2019/09/27/tecnicas-para-resolver-problemas.html" rel="alternate" type="text/html" title="Técnicas para resolver problemas" /><published>2019-09-27T00:00:00-05:00</published><updated>2019-09-27T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/09/27/tecnicas-para-resolver-problemas</id><content type="html" xml:base="https://blog.thedojo.mx/2019/09/27/tecnicas-para-resolver-problemas.html">&lt;p&gt;Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver.&lt;/p&gt;
+&lt;p&gt;En el siguiente y último artículo de la serie analizaremos más técnicas usadas en la resolución de problemas de las que Polya habla en el libro “How to Solve It”.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problemas" /><category term="how_to_solve_it" /><category term="heurística" /><category term="heuristics" /><summary type="html">La heurística te ayudará a resolver mejor los problemas que se te presentan como programador. Veamosla más detenidamente.</summary></entry><entry><title type="html">Técnicas para resolver problemas</title><link href="http://localhost:4000/2019/09/27/tecnicas-para-resolver-problemas.html" rel="alternate" type="text/html" title="Técnicas para resolver problemas" /><published>2019-09-27T00:00:00-05:00</published><updated>2019-09-27T00:00:00-05:00</updated><id>http://localhost:4000/2019/09/27/tecnicas-para-resolver-problemas</id><content type="html" xml:base="http://localhost:4000/2019/09/27/tecnicas-para-resolver-problemas.html">&lt;p&gt;Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver.&lt;/p&gt;
 
 &lt;p&gt;George Polya fue uno de los matemáticos más prolíficos del Siglo XX, un matemático de primera clase (de esos que descubren e inventan cosas, y para algunos, &lt;strong&gt;el matemático más influyente del siglo&lt;/strong&gt;) pero que, a diferencia de muchos otros, mantenía un interés por la educación y la enseñanza de las matemáticas, algo muy peculiar.&lt;/p&gt;
 
@@ -593,7 +919,7 @@ Además podemos ver si podemos hacer algo diferente, si nuestro resultado cumple
   &lt;li&gt;Aprovecha cualquier idea aunque suene disparatada.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;En el siguiente post hablaremos de 5 cosas más de las que Polya habla en su libro: heurística, inducción, deducción, análisis y síntesis.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="matemáticas" /><category term="maths" /><category term="polya" /><category term="books" /><category term="libros" /><summary type="html">¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 1928. Hablemos de las principales lecciones que podemos sacar.</summary></entry><entry><title type="html">¿Por qué deberías aprender Go?</title><link href="https://blog.thedojo.mx/2019/09/01/por-que-deberias-aprender-go.html" rel="alternate" type="text/html" title="¿Por qué deberías aprender Go?" /><published>2019-09-01T00:00:00-05:00</published><updated>2019-09-01T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/09/01/por-que-deberias-aprender-go</id><content type="html" xml:base="https://blog.thedojo.mx/2019/09/01/por-que-deberias-aprender-go.html">&lt;blockquote&gt;
+&lt;p&gt;En el siguiente post hablaremos de 5 cosas más de las que Polya habla en su libro: heurística, inducción, deducción, análisis y síntesis.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="matemáticas" /><category term="maths" /><category term="polya" /><category term="books" /><category term="libros" /><summary type="html">¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 1928. Hablemos de las principales lecciones que podemos sacar.</summary></entry><entry><title type="html">¿Por qué deberías aprender Go?</title><link href="http://localhost:4000/2019/09/01/por-que-deberias-aprender-go.html" rel="alternate" type="text/html" title="¿Por qué deberías aprender Go?" /><published>2019-09-01T00:00:00-05:00</published><updated>2019-09-01T00:00:00-05:00</updated><id>http://localhost:4000/2019/09/01/por-que-deberias-aprender-go</id><content type="html" xml:base="http://localhost:4000/2019/09/01/por-que-deberias-aprender-go.html">&lt;blockquote&gt;
   &lt;p&gt;Go es &lt;strong&gt;eficiente, escalable y productivo&lt;/strong&gt;. - &lt;em&gt;Rob Pike&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -771,422 +1097,4 @@ En Go puedes hacer muchas cosas que haces con C razonablemente bien, sin tanta c
 
 &lt;p&gt;Go es un lenguaje relevante en 2019, 10 años después de haber nacido y lo seguirá siendo por muchos años, sobre todo por los proyectos ya desarrollados en él y las características de las que hablamos en este artículo. Aprenderlo te dará una herramienta más para desarrollar programas que valgan la pena y cumplan con lo esperado.&lt;/p&gt;
 
-&lt;p&gt;Pero como &lt;a href=&quot;https://fs.blog/about/&quot;&gt;Shane Parrish&lt;/a&gt; dice: Go es “simple pero no fácil”. Es sencillo empezar a programar con él, pero dominar sus conceptos requiere estudio y esfuerzo. Go se siente como una herencia de gente muy sabia haciendo un lenguaje para hacer cosas grandes. No te arrepentirás de aprenderlo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="go" /><category term="golang" /><category term="lenguajes-de-programación" /><summary type="html">Go es un lenguaje muy relevante en algunas áreas del desarrollo de software. Aprende para qué deberías usarlo y por qué te conviene aprenderlo.</summary></entry><entry><title type="html">Ultralearning: el arte del aprendizaje profundo</title><link href="https://blog.thedojo.mx/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto.html" rel="alternate" type="text/html" title="Ultralearning: el arte del aprendizaje profundo" /><published>2019-08-13T00:00:00-05:00</published><updated>2019-08-13T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto</id><content type="html" xml:base="https://blog.thedojo.mx/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto.html">&lt;blockquote&gt;
-  &lt;p&gt;¿En qué te convertirías si aprendieras todo lo que deseas?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;¿Cuántas cosas están en tu lista de aprendizaje?&lt;/strong&gt; Todos tenemos una lista larga de temas, habilidades y curiosidades por aprender. Pero tenemos una cantidad igual de grande de obstáculos para lograrlo: la falta de acceso a recursos de aprendizaje, la falta de tiempo, falta de motivación, dificultad en estructura, entre muchas otras cosas.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.scotthyoung.com/&quot;&gt;Scott Young&lt;/a&gt; el autor de &lt;a href=&quot;https://www.scotthyoung.com/blog/ultralearning/&quot;&gt;Ultralearning&lt;/a&gt; fue muy amable al proporcionarme una copia de revisión antes de que saliera el libro que &lt;a href=&quot;https://amzn.to/361v2hu&quot;&gt;ya está a la venta&lt;/a&gt;, y en este artículo quiero sintetizar las principales técnicas que enseña para que puedas lograr aprender mejor.&lt;/p&gt;
-
-&lt;p&gt;Pero primero, ¿quién es Scott Young y por qué deberíamos escucharlo? Se hizo famoso por estudiar el temario completo (o casi completo) del MIT para Computer Science que normalmente se cursa en 4 años &lt;strong&gt;en sólo 1&lt;/strong&gt;. Este proyecto ocupaba todo su tiempo, un montón de concentración y técnicas para aprender. Aquí es donde empezó a desarrollar el concepto que presenta en el libro (me tomaré la libertad de traducirlo): Ultra-aprendizaje. A partir de ahí ha aprendido muchas más cosas con el mismo estilo agresivo de aprendizaje y ha ayudado a otros a hacer lo mismo.&lt;/p&gt;
-
-&lt;p&gt;Un proyecto de ultra-aprendizaje se define como un periodo de concentración intensa que permite aprender de manera acelerada y profunda el tema que hayas elegido. Para realizar estos proyectos, Scott propone &lt;strong&gt;nueve principios&lt;/strong&gt;, tomando como base lo que aprendió de otras personas que han realizado proyectos similares a los de él pero también los estudios más recientes sobre el tema.&lt;/p&gt;
-
-&lt;p&gt;Este libro te servirá tanto si eres tú el que desea aprender como si quieres enseñarle a otras personas.
-Veamos los nueve principios necesarios para realizar tu propio proyecto de ultra-aprendizaje.&lt;/p&gt;
-
-&lt;h2 id=&quot;1-meta-aprendizaje&quot;&gt;1: Meta-aprendizaje&lt;/h2&gt;
-
-&lt;p&gt;Podemos pensar en este principio como la etapa de planeación. Tienes que investigar cómo esto que quieres aprender lo han aprendido otras personas, que ruta de aprendizaje han seguido, cuáles eran sus conocimientos previos, cuánto les tomó, etc. Para esto puedes investigar en internet o incluso conseguir una entrevista con una persona que tenga los conocimientos que tú quieres.Todo lo que puedas obtener de esta información es útil.&lt;/p&gt;
-
-&lt;p&gt;También tienes que buscar y entender la estructura del tema que quieres aprender, los subtemas principales, cuáles son buenos recursos para aprender. Si encontraste un experto que te ayudara ya tienes cubierto gran parte de esto.&lt;/p&gt;
-
-&lt;p&gt;Es entonces que tienes que reunir todos los recursos posibles de aprendizaje y &lt;strong&gt;trazar un plan, un mapa de aprendizaje&lt;/strong&gt;. En este periodo decidirás cuánto tiempo vas a dedicarle al proyecto y hasta dónde llegarás. Muy importante porque un poco de investigación te puede ahorrar mucho tiempo de ejecución. Este principio te invita a reducir al máximo posible lo que no sabes que no sabes sobre el tema.&lt;/p&gt;
-
-&lt;h2 id=&quot;2-enfoque&quot;&gt;2: Enfoque&lt;/h2&gt;
-
-&lt;p&gt;Este principio establece que para poder aprender efectivamente antes tenemos que agudizar nuestra capacidad de concentrarnos en un tema.&lt;/p&gt;
-
-&lt;p&gt;El enfoque puede trabajarse en tres momentos diferentes:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Empezar a enfocarse en algo&lt;/li&gt;
-  &lt;li&gt;Mantener el enfoque&lt;/li&gt;
-  &lt;li&gt;Mejorar la calidad de nuestra concentración&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Muchos autores coinciden en que la calidad y capacidad par concentrarse es uno de las claves para poder progresar en cualquier cosa, no sólo en el aprendizaje.&lt;/p&gt;
-
-&lt;p&gt;En el libro se dan sugerencias prácticas para poder mejorar en las tres etapas de enfoque.&lt;/p&gt;
-
-&lt;h2 id=&quot;3-aprendizaje-directo&quot;&gt;3: Aprendizaje directo&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Aquel que puede ir a la fuente no va sólo por la jarra.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Es bueno aprender cosas leyendo, pero es mucho mejor aprenderlas aplicando lo que leemos o practicando directamente. Si quieres aprender a programar tienes que crear programas reales que funcionen. Si quieres aprender un idioma tienes que hablar o comunicarte con otras personas en ese idioma. Haciendo esto aprenderás mucho más rápido de lo que harías sólamente leyendo libros que relaten la experiencia de otros, o usando Duolingo.&lt;/p&gt;
-
-&lt;p&gt;Practicar la habilidad directamente o poner en acción el conocimiento hará que este sea más profundo, útil y que lo recuerdes mejor.&lt;/p&gt;
-
-&lt;p&gt;Este principio es muy importante y muchos de nosotros lo hemos vivido en nuestra experiencia escolar: nada de lo que no es enseñaron es aplicable en el mundo real porque las habilidades necesarias para realizar el trabajo de verdad son muy diferentes a lo que se ve en los libros. Aunque el conocimiento adquirido puede servir como base, &lt;strong&gt;la práctica hace al maestro&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;4-ensayo&quot;&gt;4: Ensayo&lt;/h2&gt;
-
-&lt;p&gt;Esta parte es una de las que a las personas en general menos le gusta: practicar o ensayar partes de la habilidad que sean difíciles, laboriosas o aburridas.&lt;/p&gt;
-
-&lt;p&gt;Muchas veces nuestras habilidades están topadas o detenidas por cierta parte del proceso, como si fuera un embudo deteniendo el flujo de líquido. Para acabar con esto hay que practicar con la parte más incómoda de la habilidad.&lt;/p&gt;
-
-&lt;p&gt;Esto incluye que descompongas la habilidad en diferentes sub-procesos que puedan ejecutarse individualmente y practicar cada uno por separado hasta que lo domines de manera razonable, uno tras otro, cada de los sub-procesos hasta terminarlos todos. Después hay que practicar de nuevo el proceso completo y medir nuestro desempeño.&lt;/p&gt;
-
-&lt;p&gt;Esto es conveniente porque al trabajar sobre una parte específica del proceso completo puedes liberar recursos mentales para mejorar de manera más profunda y significativa en esa parte de la habilidad.&lt;/p&gt;
-
-&lt;h2 id=&quot;5-recuperación-de-la-información&quot;&gt;5: Recuperación de la información&lt;/h2&gt;
-
-&lt;p&gt;El principio de “retrieval” consiste en intentar poner en práctica y ver si de verdad entendiste lo que acabas de aprender mediante pruebas reales, por ejemplo: usar las palabras de un nuevo idioma en conversación, contestar preguntas de un examen o usar una nueva técnica aprendida para programar.&lt;/p&gt;
-
-&lt;p&gt;Esto ayudará a que recuerdes mejor lo aprendido y a que no te quedes con la sensación de que has aprendido algo cuando no es la realidad. Poner a prueba tu conocimiento es la mejor manera de saber que sí existe y de qué calidad es.&lt;/p&gt;
-
-&lt;p&gt;Este principio pone de relieve algo: es mucho más incómodo “probarse” a uno mismo mediante imponerse algún obstáculo, es una fuente de cansancio e incomodidad mental, lo cuál nos puede dejar con la sensación de que no estamos aprendiendo o avanzando mucho. Pero estudios sobre esto demuestran que aunque sólo leer puede dejar la sensación de que entendimos y aprendimos mucho, la forma más efectiva de aprender es poner a prueba el conocimiento y la sensación de aprendizaje no está directamente ligada a cuánto aprendimos de verdad.&lt;/p&gt;
-
-&lt;h2 id=&quot;6-retroalimentación&quot;&gt;6: Retroalimentación&lt;/h2&gt;
-
-&lt;p&gt;Una forma importante de mejorar y aprender es tener a alguien o algo que te ayude a encontrar lo que está fallando en tu desempeño del tema de lo que estés aprendiendo.&lt;/p&gt;
-
-&lt;p&gt;El ejemplo que Scott usa de una persona que aprendió a hablar en público como su proyecto de ultra-aprendizaje y que recibía retroalimentación de un mentor que le decía exactamente dónde fallaba. Al atacar estos puntos que una persona con más experiencia le marcaba pudo llegar a ser un orador de clase mundial en muy poco tiempo.&lt;/p&gt;
-
-&lt;p&gt;A nadie nos gusta escuchar nuestras fallas, pero es una parte  muy importante de aprender de manera efectiva.&lt;/p&gt;
-
-&lt;p&gt;Pero no todo tipo de retroalimentación es útil. Cuando esta información es sobre alguna cualidad personal o sobre tu persona directamente, en general es más perjudicial que benéfico, puede llevarte hasta a abandonar la habilidad que estabas intentando aprender.&lt;/p&gt;
-
-&lt;p&gt;Muy probablemente todos hemos experimentado este tipo de comentarios: “Eres muy inteligente”, “No eres bueno para esto”, “Mejor dedícate a otra cosa”. Este tipo de comentarios no aportan nada relevante y atacan o inflan el ego de la persona.&lt;/p&gt;
-
-&lt;p&gt;Para que la retroalimentación sea útil debe proveer información que guíe las siguientes etapas de aprendizaje. Para lograr esto debe ser muy específico y si es posible decirte cómo mejorar en ese aspecto.&lt;/p&gt;
-
-&lt;h2 id=&quot;7-retención&quot;&gt;7: Retención&lt;/h2&gt;
-
-&lt;p&gt;No deberíamos echar agua en una bote con fugas. De igual manera, no vale la pena que leas y aprendas muchas cosas que después no podrás recordar porque las olvidaste rápidamente.&lt;/p&gt;
-
-&lt;p&gt;En este principio Scott explica que tenemos que aprender y reconocer por qué olvidamos y atacar esas causas específicas.&lt;/p&gt;
-
-&lt;p&gt;¿Cómo hacer para no olvidar el valioso conocimiento que con tanto trabajo ganamos?&lt;/p&gt;
-
-&lt;p&gt;Scott propone varios métodos:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Repetición espaciada&lt;/strong&gt;. Es un método que consiste en repasar la información un poco de tiempo después de haberla estudiado o aprendido por primera vez y repetir el proceso con cada vez más tiempo de espacio.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Automatización&lt;/strong&gt;. Cuando aprendemos algo a tal grado que podamos decir que tenemos automatizada la habilidad (como andar en bicicleta), es muy poco probable que lo olvidemos.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Sobre-aprendizaje&lt;/strong&gt;. Practicar más allá de lo que es requerido para volverse bueno en algo o competente hará que las cosas sean mucho más difíciles de olvidar. Esto se puede hacer practicando hasta el cansancio una actividad clave o aprendiendo algo más difícil que construya sobre la actividad principal, por ejemplo: aprender y practicar cálculo diferencial hará que sobre-aprendas álgebra.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Mnemónicos&lt;/strong&gt;. Estas es un técnica que consiste en crear imágenes vívidas o palabras relacionadas con lo que estemos buscando aprender para poder recordarlo. Los mejores memoristas del mundo aplican esta técnica para poder recordar grandes cantidades de información en poco tiempo.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Poder retener información es uno de los requisitos para que tu proyecto de ultra-aprendizaje valga la pena.&lt;/p&gt;
-
-&lt;h2 id=&quot;8-intuición&quot;&gt;8: Intuición&lt;/h2&gt;
-
-&lt;p&gt;La intuición es el producto una gran cantidad de experiencia acumulada. Para verdaderamente entender algo tenemos que desarrollar nuestra intuición en el tema. ¿Qué podemos hacer para desarrollarla?&lt;/p&gt;
-
-&lt;p&gt;En esta sección del libro se habla de cómo personas como Richard Feynman parecen hacer magia al resolver problemas de física y de matemáticas. La principal característica de Feynman usada para resolver los problemas es su capacidad de identificar &lt;em&gt;los principios que están en juego&lt;/em&gt;, además de la gran cantidad de información almacenada obtenida de otros problemas resueltos con anterioridad.&lt;/p&gt;
-
-&lt;p&gt;¿Cómo puedes desarrollar una intuición similar?&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Resolver problemas difíciles. Muchas veces huímos de los problemas que nos parecen demasiado difíciles para nosotros, pero resolver problemas que rebasen nuestra habilidad puede darnos un entendimiento muy profundo del tema tratado.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Comprueba la información para entenderla. No te quedes sólamente con la explicación del libro, sino trata de demostrar que lo que estás aprendiendo es cierto.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Usa ejemplos concretos. Cuando trates con conceptos o temas abstractos, desde el principio establece un ejemplo al que le puedas ir aplicando los puntos que se van explicando. Esta concreción permitirá desarrollar un mejor entendimiento del tema.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;No te engañes a ti mismo. Cuando te falta conocimiento sobre un tema, generalmente también te falta conocimiento para saber qué tan hábil eres. Esto quiere decir que el que no tengas dudas sobre un tema significa que lo sabes todo, sino más bien que sabes muy poco. Hacer muchas preguntas es una manera de hacerle frente a este problema, aunque parezcan tontas.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Una forma muy efectiva de desarrollar un entendimiento real: la técnica de Feynman. Esta consiste en intentar explicar el problema, solución o concepto de la manera más clara posible como para alguien que nunca ha visto nada relacionado con el tema.&lt;/p&gt;
-&lt;h2 id=&quot;9-experimentación&quot;&gt;9: Experimentación&lt;/h2&gt;
-
-&lt;p&gt;El verdadero conocimiento no se queda en llegar al punto en que otros te dijeron que debías llegar sino en ir más allá.&lt;/p&gt;
-
-&lt;p&gt;Además, mientras más aprendas de algo menos guía podrás recibir ya que hay menos personas y recursos en ese nivel, por lo que es algo requerido aprender a experimentar con maneras de generar conocimiento.&lt;/p&gt;
-
-&lt;p&gt;Para experimentar en tu aprendizaje y resultados puedes intentar tres cosas:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Variar los &lt;strong&gt;recursos de aprendizaje&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Experimentar la &lt;strong&gt;técnica de aprendizaje&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Experimentar con tu &lt;strong&gt;estilo de trabajo y aprendizaje&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Experimentar te permitirá convertirte en verdadero experto en el tema que estés queriendo dominar.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Completar un proyecto de este tamaño te demuestra que tienes la habilidad de mejorarte y de sacarle buen provecho a tu vida. Te da la confianza de que puedes lograr cosas ambiciosas.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Esta es una de las frases más inspiradoras del libro y creo que te da buenos motivos para empezar a pensar en tus propio proyecto de ultra-aprendizaje, además de los beneficios asociados al tema mismo que quieras aprender:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Te ayudará a conseguir un mejor trabajo o puesto?&lt;/li&gt;
-  &lt;li&gt;¿Podrás ser más útil a tu familia, comunidad o amigos?&lt;/li&gt;
-  &lt;li&gt;¿Disfrutarás más de tu tiempo libre o tendrás más a consecuencia de esto?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Sin duda todas estas razones son suficientes para intentarlo por lo menos.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Hacer cosas difíciles, sobre todo cosas que tienen que ver con aprender, puede crecer el concepto que tienes de ti mismo”.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Esto a su vez, tendrá efectos en otros campos de tu vida.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;¿Quién te podrías volver?&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;¡A aprender!&lt;/p&gt;
-
-&lt;p&gt;Puedes comprar el libro en &lt;a href=&quot;https://www.amazon.com.mx/Ultralearning-Outsmart-Competition-Accelerate-English-ebook/dp/B07K6MF8MD/&quot;&gt;Amazon&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprendizaje" /><category term="libros" /><category term="lectura" /><category term="reseñas" /><summary type="html">Todos queremos aprender muchas cosas. Aprende un método que te permitirá mejorar tus habilidades para adquirir conocimiento.</summary></entry><entry><title type="html">Entendiendo REST: conexión sin estado</title><link href="https://blog.thedojo.mx/2019/08/03/entendiendo-rest-servidor-sin-estado.html" rel="alternate" type="text/html" title="Entendiendo REST: conexión sin estado" /><published>2019-08-03T00:00:00-05:00</published><updated>2019-08-03T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/08/03/entendiendo-rest-servidor-sin-estado</id><content type="html" xml:base="https://blog.thedojo.mx/2019/08/03/entendiendo-rest-servidor-sin-estado.html">&lt;p&gt;Hemos venido hablando de las características que componen a un sistema REST. En el último artículo &lt;a href=&quot;/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html&quot;&gt;hablamos de la arquitectura cliente-servidor&lt;/a&gt;. Esta es la primera característica fundamental de un sistema REST. Ahora pasemos a la siguiente característica-limitante que Thomas Fielding establece para los sistemas REST: &lt;strong&gt;conexión sin estado&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-el-estado-de-un-sistema&quot;&gt;¿Qué es el estado de un sistema?&lt;/h2&gt;
-
-&lt;p&gt;El estado de una aplicación son todos los datos que usa para operar en un momento determinado.&lt;/p&gt;
-
-&lt;p&gt;Como ejemplo podemos pensar en una aplicación de ventas en línea. El estado de esta aplicación, para un usuario específico son sus datos de identificación, su bolsa de compras y los productos que ha estado viendo o que tiene en su lista de deseos, así como datos que no son identificables directamente desde la interfaz de usuario como los tokens de sesión, su historial de visita de las páginas y productos (piensa en Amazon) y los productos que ha comprado anteriormente en esta página.&lt;/p&gt;
-
-&lt;p&gt;Todos estos datos necesarios para operar tanto a nivel interno como para la interfaz de usuario son el estado de la aplicación para este usuario. &lt;strong&gt;Puedes entender el estado como el contexto de una aplicación&lt;/strong&gt;. Todas las aplicaciones y programas usables tienen uno. Entonces, ¿a qué nos referimos con conexiones sin estado?&lt;/p&gt;
-
-&lt;h2 id=&quot;conexión-sin-estado&quot;&gt;Conexión sin estado&lt;/h2&gt;
-
-&lt;p&gt;Dando por supuesto que estamos trabajando en un sistema con arquitectura de red &lt;a href=&quot;/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html&quot;&gt;cliente-servidor&lt;/a&gt;, las dos partes comparten la información (el estado) necesaria para realizar las operaciones. La pregunta es: ¿en qué lado mantengo esta información durante la operación? Damos por supuesto que el almacenamiento de información a largo plazo está localizado en algún lado del servidor. Pero en el momento de la operación, ¿quién mantiene estos datos memoria operativa?&lt;/p&gt;
-
-&lt;p&gt;En el ejemplo del que hablamos: ¿quién mantiene en memoria la bolsa de compras del usuario, el cliente (el navegador web) o el servidor? Cualquiera de los dos podría llevarlo a cabo. Veamos los dos casos, empecemos por una conexión que “recuerda” el estado.&lt;/p&gt;
-
-&lt;p&gt;Imagínate la siguiente conversación:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Cliente(C): Vamos a empezar a trabajar con el usuario &lt;em&gt;hectorip&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;Servidor(S): De acuerdo&lt;/li&gt;
-  &lt;li&gt;C: Dame su bolsa de compras&lt;/li&gt;
-  &lt;li&gt;S: Tiene estos 5 artículos guardados&lt;/li&gt;
-  &lt;li&gt;C: Comprar todos los artículos de su bolsa&lt;/li&gt;
-  &lt;li&gt;S: Ok, serán $500&lt;/li&gt;
-  &lt;li&gt;C: el cliente quiere pagar&lt;/li&gt;
-  &lt;li&gt;S: le he cobrado todo lo de su bolsa&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;El tipo de conversación que acabamos de ver sería una &lt;strong&gt;conexión con estado&lt;/strong&gt;: cada uno de los mensajes depende del mensaje anterior para poder entender de qué estábamos hablando. Intenta leerla de regreso y lo notarás.&lt;/p&gt;
-
-&lt;p&gt;Ahora veamos cómo sería un conversación que no recuerda los mensajes anteriores:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;C: Dame la bolsa de compra de &lt;em&gt;hectorip&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;S: hectorip tiene estos 5 artículos en su bolsa&lt;/li&gt;
-  &lt;li&gt;C: hectorip quiere comprar todos los artículos de su bolsa&lt;/li&gt;
-  &lt;li&gt;S: Ok, serán $500 por todos los artículos de la bolsa de compra&lt;/li&gt;
-  &lt;li&gt;C: hectorip quiere realizar un pago por $500 por los artículos en su bolsa de compras&lt;/li&gt;
-  &lt;li&gt;S: He cobrado $500 a hectorip por el pedido de los artículos en su bolsa de compras&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Si revisamos la conversación anterior, podemos entender cada mensaje leído individualmente, sin necesitar el contexto completo de la conversación.&lt;/p&gt;
-
-&lt;p&gt;La primera conversación (conexión con estado) tiene algunas ventajas claras:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Los mensajes son más cortos&lt;/li&gt;
-  &lt;li&gt;La conversación es más fluída&lt;/li&gt;
-  &lt;li&gt;Se transfiere menos información de un lado a otro&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Pero también tiene desventajas. ¿Qué pasa si esta conversación se interrumpe y se intenta retomar? &lt;em&gt;Hay que empezar la conversación desde cero.&lt;/em&gt; ¿Qué pasa si el servidor, por algún error olvida de lo que estábamos hablando? &lt;em&gt;Hay que reiniciar la conversación.&lt;/em&gt; ¿Qué pasa si quiero continuar la compra en otro servidor? &lt;em&gt;Hay que reiniciar la conversación con el nuevo servidor.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;características-de-conexión-sin-estado&quot;&gt;Características de conexión sin estado&lt;/h1&gt;
-
-&lt;p&gt;Hablemos de las características de una conexión sin estado.&lt;/p&gt;
-
-&lt;p&gt;La primera característica es que &lt;em&gt;no necesitamos&lt;/em&gt; que la conexión a nivel de sesión de red sea persistente, es decir, que se mantenga un canal de comunicación abierto que pueda mantener en memoria la información de los procesos actuales.&lt;/p&gt;
-
-&lt;p&gt;Segundo, no podemos (ni debemos) asumir que el servidor mantendrá los datos del cliente automáticamente por medio de reconocer al cliente. En cada una de las peticiones que se hacen al servidor, &lt;strong&gt;deben venir todos los datos necesarios para que el servidor mantenga realice la operación&lt;/strong&gt;, no se puede confiar en que las peticiones anteriores transfirieron esa información y no es necesario repetirla.&lt;/p&gt;
-
-&lt;p&gt;Hasta ahora parece que esto presenta más problemas que ventajas. Revisemos por qué alguien querría trabajar con un sistema así.&lt;/p&gt;
-
-&lt;h2 id=&quot;ventajas-de-mantener-el-servidor-sin-estado&quot;&gt;Ventajas de mantener el servidor sin estado&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Replicación de servidores&lt;/strong&gt;. Al no tener que mantener el estado o conexiones persistentes con una instancia del servidor, una conexión sin estado puede permitir que la petición sea atendida por cualquier instancia del código del servidor que tenga el mismo código que las peticiones anteriores, ya que toda la información necesaria para atender esas peticiones estará incluida.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Escalabilidad&lt;/strong&gt;. Esto es una consecuencia inmediata de la ventaja anterior: poder replicar los servidores permite distribuir la carga entre muchas computadoras y aplicar técnicas de balanceo para poder atender a muchos más clientes de lo que se podría en un sistema que requiera mantener estados.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Servicios más sencillos&lt;/strong&gt;. Quitarle la responsabilidad de mantener el contexto de las operaciones actuales a los servicios hace que su código sea más sencillo y por lo tanto más mantenible.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Menos carga en los servidores&lt;/strong&gt;. Al no tener que mantener conexiones persistentes, ni tener que mantener procesos o memoria relacionada con los clientes con los que está operando, se reduce la carga en memoria operativa de los servidores (teóricamente). Esto también implica que el servidor ni siquiera tiene que estar corriendo mientras no esté activamente respondiendo una petición (como las funciones lambda).&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;La siguiente imagen ilustra una técnica común para atender a muchos clientes.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1564887852/PNG_image-428CDB12FF65-1_ojrpoo.png&quot; alt=&quot;Diagrama de replicación de servidores&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;desventajas&quot;&gt;Desventajas&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Complejidad de las peticiones&lt;/strong&gt;. La complejidad de las peticiones aumenta al necesitar mantener en el cliente toda la información necesaria para reconstruir el estado en cada petición en un servidor desde cero. Por lo tanto, la complejidad de los clientes aumenta. y el tamaño de las peticiones se incrementa.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Mayor carga en la red&lt;/strong&gt;. Como las peticiones son más complejas y generalmente contienen más información para poder recuperar el contexto efectivamente, el viaje de información en la red es mayor en tamaño.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;conexiones-que-mantienen-estado&quot;&gt;Conexiones que mantienen estado&lt;/h2&gt;
-
-&lt;p&gt;En los últimos años la mayoría de las conexiones que se levantan en programas creados con la arquitectura cliente-servidor son creados con conexiones que no mantienen el estado. Sin embargo, también se puede mantener una conexión con estado en la arquitectura cliente-servidor. Hay varias formas de lograr esto, pero la principal característica es que debe haber una manera de relacionar al cliente que está solicitando los servicios con el servidor que está atendiéndolo, por lo general la manera de hacerlo es con conexiones persistentes que se mantienen abiertas mientras el proceso de uso de los servicios dura.&lt;/p&gt;
-
-&lt;p&gt;Esto viene con sus propios retos, pero tecnologías actuales como &lt;a href=&quot;/2019/06/02/por-que-deberias-aprender-elixir.html&quot;&gt;Elixir&lt;/a&gt;, Phoenix y los WebSockets hacen el camino más fácil. En otro post hablaremos de cómo podemos aprovechar esta arquitectura y en qué casos nos conviene.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;La segunda característica definida de los sistemas REST es importante porque permite que los servicios sean más confiables, disponibles y flexibles en tamaño (escalables). Como cada decisión que se toma en el desarrollo, esta viene con sus propias desventajas: al hacer más complejas las peticiones, la base de código es más difícil de mantener en general (del lado del cliente), pero permite características importantes en los sistemas que tienen que atender a una gran cantidad de clientes.&lt;/p&gt;
-
-&lt;p&gt;En el siguiente artículo hablaremos de la tercera característica de los sistemas REST: la capacidad de ser cachear información.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="REST" /><category term="stateless" /><category term="thomas-fielding" /><summary type="html">¿Cómo mantener la información entre peticiones en un sistema REST? Entendamos las ventajas y desventajas</summary></entry><entry><title type="html">Entendiendo REST: Arquitectura cliente-servidor</title><link href="https://blog.thedojo.mx/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html" rel="alternate" type="text/html" title="Entendiendo REST: Arquitectura cliente-servidor" /><published>2019-07-04T00:00:00-05:00</published><updated>2019-07-04T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor</id><content type="html" xml:base="https://blog.thedojo.mx/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html">&lt;blockquote&gt;
-  &lt;p&gt;El propósito de construir software no es crear una topología de interacciones específicas, o usar un tipo particular de componente; es crear un sistema que cumpla y exceda las necesidades de la aplicación. - Thomas Fielding&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Ya hablamos de las &lt;a href=&quot;/2019/06/15/entendiendo-rest-estilo-de-arquitectura.html&quot;&gt;motivaciones detrás del estilo arquitectural REST&lt;/a&gt;. Ahora empecemos con la primera de sus características o restricciones, que la empieza a definir: la arquitectura cliente-servidor.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-la-arquitectura-cliente-servidor&quot;&gt;¿Qué es la arquitectura cliente-servidor?&lt;/h2&gt;
-
-&lt;p&gt;Esta arquitectura de aplicación divide un sistema en dos componentes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Cliente&lt;/strong&gt;: Es un programa o proceso que solicita un servicio y usa la información provista para sus propios objetivos.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Servidor&lt;/strong&gt;: Programa o proceso que ofrece un conjunto de servicios y espera por peticiones para ejecutar o dar estos servicios.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;La principal característica de la arquitectura cliente-servidor es que logra una &lt;em&gt;separación de responsabilidades clara&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;En palabras de &lt;a href=&quot;https://homepages.cwi.nl/~marcello/SAPapers/And91.pdf&quot;&gt;Gregory R. Andrews&lt;/a&gt;, el cliente es un proceso desencadenante mientras que el servidor es un proceso reactivo. Es decir el servidor no puede envíar datos o empezar procesos que un cliente no le ha solicitado.&lt;/p&gt;
-
-&lt;p&gt;La arquitectura básica de un sistema cliente-servidor es esta:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1562699566/PNG_image-ABC17A5C0944-1_wpyk2e.png&quot; alt=&quot;Esquema cliente-servidor&quot; /&gt;&lt;/p&gt;
-
-&lt;!-- Recordemos que todos los diseños o arquitecturas implican un intercambio de valor entre varias características, en este caso un poco de simplicidad por la separación de responsabilidades claras. --&gt;
-
-&lt;p&gt;Veamos sus ventajas y desventajas.&lt;/p&gt;
-
-&lt;h2 id=&quot;ventajas&quot;&gt;Ventajas&lt;/h2&gt;
-
-&lt;p&gt;Hablemos de los beneficios que trae usar la arquitectura cliente-servidor.&lt;/p&gt;
-
-&lt;h3 id=&quot;separación-clara-de-responsabilidades&quot;&gt;Separación clara de responsabilidades&lt;/h3&gt;
-
-&lt;p&gt;La funcionalidad del sistema se divide en dos partes (por lo menos), como el nombre lo indica en parte de dar los servicios (generalmente de datos) y la parte de atender al usuario (humanos o programa) final.&lt;/p&gt;
-
-&lt;p&gt;El cliente y el servidor tienen funciones completamente distintas y cada uno puede cambiar por su lado sin afectar al otro, a esto le podemos llamar “evolución independiente”.&lt;/p&gt;
-
-&lt;p&gt;El ejemplo que tenemos es el del navegador y las páginas que visitamos normalmente en internet. Mientras sigan cumpliendo con el protocolo establecido de comunicación (HTTP) van a poder seguir comunicándose y transfiriendo información, sin interferir la manera en que estén implementados sus procesos internos.&lt;/p&gt;
-
-&lt;h3 id=&quot;división-de-complejidad&quot;&gt;División de complejidad&lt;/h3&gt;
-
-&lt;p&gt;La misma división de la que hablamos en el punto anterior permite dividir la complejidad en dos partes por lo que cada una por su lado es más fácil de entender y desarrollar que el sistema completo.&lt;/p&gt;
-
-&lt;p&gt;Por lo tanto, se sigue el mismo principio que se usa para desarrollar software complejo en general: &lt;strong&gt;divide y vencerás&lt;/strong&gt;. Esto permite que podamos dividir el trabajo limpiamente en diferentes etapas de desarrollo o entre diferentes equipos, que lo único que requieren es una interfaz de comunicación clara.&lt;/p&gt;
-
-&lt;p&gt;Esto no quiere decir que la complejidad &lt;em&gt;general&lt;/em&gt; se reduzca. De esto hablaremos en las desventajas.&lt;/p&gt;
-
-&lt;h3 id=&quot;múltiples-versiones-y-reusabilidad&quot;&gt;Múltiples versiones y reusabilidad&lt;/h3&gt;
-
-&lt;p&gt;La implementación de la interfaz de comunicación es el único requisito indispensable para que un sistema cliente-servidor pueda seguir funcionando. Esto permite que un servidor pueda tener un número indefinido de clientes diferentes que puedan consumir su interfaz y viceversa. En el caso de REST implementar el servidor con la API permite crear tantos clientes como se necesite:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;página web&lt;/li&gt;
-  &lt;li&gt;aplicación móvil&lt;/li&gt;
-  &lt;li&gt;sistema embebido&lt;/li&gt;
-  &lt;li&gt;SDK para servidores&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Sólo para ilustrar:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1562294072/PNG_image-5618E8EA3C0D-1_vk18wv.png&quot; alt=&quot;Ilustración de cliente-servidor multi-cliente&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Tener N versiones de los clientes o poder crear una sin tener que volver a a replicar la funcionalidad del servidor ha hecho que las API’s se vuelvan sumamente populares.&lt;/p&gt;
-
-&lt;h3 id=&quot;simplificación-de-escalamiento&quot;&gt;Simplificación de escalamiento&lt;/h3&gt;
-
-&lt;p&gt;Poder tener separado el servidor permite que podamos escalarlo de forma independiente dependiendo del número de clientes a los que va a atender. Si necesitamos dar un servicio a escala mundial podemos replicar nuestros servidores (usando las arquitecturas adecuadas para esto) sin afectar a los clientes y sin que ellos se enteren y por lo tanto tengan que hacer algún cambio.&lt;/p&gt;
-
-&lt;h2 id=&quot;desventajas&quot;&gt;Desventajas&lt;/h2&gt;
-
-&lt;p&gt;Todo en la vida viene con desventajas asociadas y generalmente directamente proporcionales a sus ventajas. Y otra vez: intercambiamos valor entre diferentes partes de la aplicación. Analicemos algunas de estos intercambios que hacemos al aplicar la arquitectura cliente-servidor.&lt;/p&gt;
-
-&lt;h3 id=&quot;complejidad-general-aumentada&quot;&gt;Complejidad general aumentada&lt;/h3&gt;
-
-&lt;p&gt;Cuando dividimos la aplicación y funciones completas en dos partes, aunque la complejidad de cada parte es menos que la general, la complejidad general aumenta porque hay que agregar elementos al sistema:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Interfaces de comunicación entre cliente y servidor&lt;/li&gt;
-  &lt;li&gt;Mantenimiento o forma de recuperación del estado general de la aplicación&lt;/li&gt;
-  &lt;li&gt;Protocolos de comunicación de red cuando es el caso&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;centralización-de-la-información&quot;&gt;Centralización de la información&lt;/h3&gt;
-
-&lt;p&gt;El servidor es el responsable de almacenar la información y procesarla para darle servicio a los diferentes clientes que los soliciten, lo cual, aunque hace más fácil su administración, representa la desventaja de tener la información centralizada en el sistema que actúa como servidor. Si este sistema se corrompe de alguna forma, los clientes necesitan otras fuentes de información para eliminar este problema.&lt;/p&gt;
-
-&lt;p&gt;Combinar cliente-servidor con otra arquitecturas ayuda a mitigar esta falla. Por ejemplo, se puede implementar el patrón de replicación de repositorio en el lado de los proveedores de servicio.&lt;/p&gt;
-
-&lt;p&gt;Pero, un momento, ¿acaso no es cliente-servidor la única arquitectura que existe para sistemas web o sistemas distribuidos?&lt;/p&gt;
-
-&lt;h2 id=&quot;otras-arquitecturas&quot;&gt;Otras arquitecturas&lt;/h2&gt;
-
-&lt;p&gt;La arquitectura para aplicaciones distribuidas más escuchada es la cliente-servidor, pero no es ni de lejos la única. Analicemos otras dos arquitecturas comunes y dónde se usan. Si quieres ver la lista completa que Fielding analiza puedes revisar la sección 2 de &lt;a href=&quot;https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf&quot;&gt;su tesis doctoral&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;peer-to-peer&quot;&gt;Peer to Peer&lt;/h3&gt;
-
-&lt;p&gt;En este estilo está compuesta por nodos equivalentes, es decir, que tiene la misma función (aunque pueden tener diferente información) y que se distribuyen la carga que soporta el sistema entero según las capacidades de cada uno y a veces se proporcionan servicios entre ellos. Un mismo nodo puede cambiar entre funciones o roles en la red dependiendo de la demanda.&lt;/p&gt;
-
-&lt;p&gt;En esta arquitectura no hay por definición un nodo más importante que otro y si alguno de toda la red falla, puede ser sustituido por otro si tiene la información replicada.&lt;/p&gt;
-
-&lt;p&gt;Las redes de torrents, el blockchain y programas como Ares o LimeWire funcionaban de esta forma.&lt;/p&gt;
-
-&lt;p&gt;Una red peer-to-peer puede lucir así:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_871/v1561266301/PNG_image-CC8B051C8851-1_r78hfc.png&quot; alt=&quot;Ejemplo de red peer to peer&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Las redes peer-to-peer son una de las mejores formas de crear sistemas distribuidos resistentes y descentralizados, es decir, que no concentran la información en un sólo punto que se vuelve el más delicado e importante de todos.&lt;/p&gt;
-
-&lt;h3 id=&quot;pipe-and-filter&quot;&gt;Pipe and Filter&lt;/h3&gt;
-
-&lt;p&gt;En este patrón, la información pasa por una series de “filtros” o nodos que la procesan y van dejando la información en un nuevo estado o con nuevas propiedades y que pasan la información al siguiente nodo. Este patrón es el que siguen los pipelines de datos normalmente, en el que la información que es producida por una fuente externa es procesada a través de una serie de pasos, que pueden incluir la recolección, limpieza, almacenamiento, etc.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1562217820/PNG_image-C00985E33227-1_mevaqa.png&quot; alt=&quot;Ilustración de pipe and filter&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Los estilos arquitectónicos el diseño de un sistema deben adecuarse a las necesidades de ese sistema, no al revés. - Thomas Fielding&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;¿A qué necesidades nos adaptamos?&lt;/p&gt;
-
-&lt;p&gt;A la necesidad de tener una separación clara entre las funciones de datos y procesos de negocio y las interfaces de usuario: sean usuarios finales humanos u otros programas que consumen información.&lt;/p&gt;
-
-&lt;p&gt;La arquitectura cliente-servidor permite simplificar el trabajo del lado del servidor al no tener que preocuparse por todas las distintas situaciones en las que sus datos o procesos van a ser usados.&lt;/p&gt;
-
-&lt;p&gt;Esto nos lleva a que sus procesos sean &lt;strong&gt;reutilizables&lt;/strong&gt; por todos los clientes que sepan comunicarse con el servidor (léase: usar su interfaz). A su vez los clientes son más fáciles de crear por no tener en ellos mismos toda la lógica del negocio y poder enfocarse en las funcionalidades de la entidad al que le van servir.&lt;/p&gt;
-
-&lt;p&gt;Y por último, esta separación permite que el servidor sea fácil de escalar al nivel del servicio requerido.&lt;/p&gt;
-
-&lt;p&gt;Para los propósitos de REST la arquitectura Cliente-servidor es muy adecuada. Sus beneficios superan sus desventajas para este caso de uso particular.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="REST" /><category term="cliente-servidor" /><summary type="html">Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST.</summary></entry></feed>
+&lt;p&gt;Pero como &lt;a href=&quot;https://fs.blog/about/&quot;&gt;Shane Parrish&lt;/a&gt; dice: Go es “simple pero no fácil”. Es sencillo empezar a programar con él, pero dominar sus conceptos requiere estudio y esfuerzo. Go se siente como una herencia de gente muy sabia haciendo un lenguaje para hacer cosas grandes. No te arrepentirás de aprenderlo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="go" /><category term="golang" /><category term="lenguajes-de-programación" /><summary type="html">Go es un lenguaje muy relevante en algunas áreas del desarrollo de software. Aprende para qué deberías usarlo y por qué te conviene aprenderlo.</summary></entry></feed>
