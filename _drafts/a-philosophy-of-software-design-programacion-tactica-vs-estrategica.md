@@ -26,9 +26,7 @@ Una vez que empiezas a programar un sistema de esta forma, es muy difícil cambi
 
 ## Desarrollo Estratégico
 
-
-
-
+Este tipo de desarrollo se caracteriza por poner atención en el diseño y la calidad _del código_.
 
 Este y los siguientes artículos están basados en el libro ["A Philosophy of Software Design"](https://amzn.to/2H92nwA) de John K. Ousterhout.
 
