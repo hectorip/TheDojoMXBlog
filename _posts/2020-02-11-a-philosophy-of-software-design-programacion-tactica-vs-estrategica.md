@@ -64,6 +64,6 @@ Como se puede ver, el desarrollo estratégico tarda más en entregar resultados,
 
 Muchas veces aquí está la diferencia entre si algo "escala" o "no escala", no en la tecnología elegida. Es obvio que a una choza no le puedes construir un segundo piso.
 
-Pero no seamos puristas y pensemos que si noi es de la forma estratégica no vale la pena, la pregunta es: _¿Qué tipo de desarrollo conviene para tu proyecto según su tiempo de vida?_
+Pero no seamos puristas y pensemos que si no es de la forma estratégica no vale la pena, la pregunta es: _¿Qué tipo de desarrollo conviene para tu proyecto según su tiempo de vida?_
 
 Este y los siguientes artículos están basados en el libro ["A Philosophy of Software Design"](https://amzn.to/2H92nwA) de John K. Ousterhout.
