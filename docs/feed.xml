@@ -1,36 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-02-11T01:08:31-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Desarrollo Táctico vs Estratégico</title><link href="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Desarrollo Táctico vs Estratégico" /><published>2020-02-11T00:00:00-06:00</published><updated>2020-02-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html">&lt;p&gt;Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada uno.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-02-11T14:18:38-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Desarrollo Táctico vs Estratégico</title><link href="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Desarrollo Táctico vs Estratégico" /><published>2020-02-11T00:00:00-06:00</published><updated>2020-02-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html">&lt;p&gt;Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada uno.&lt;/p&gt;
 
 &lt;h2 id=&quot;desarrollo-táctico&quot;&gt;Desarrollo táctico&lt;/h2&gt;
 
-&lt;p&gt;Está caracterizado por la alta velocidad inicial con la que empiezas a desarrollar y crear las funciones de tu programa. Con esta actitud, tu principal objetivo es tener &lt;em&gt;código que funcione&lt;/em&gt;. Con esta forma de trabajo no gastas mucho tiempo buscando el mejor diseño para tu programa sino que te enfocas en terminas lo más rápido posible. Tu vista está en el corto plazo.&lt;/p&gt;
+&lt;p&gt;Está caracterizado por la alta velocidad inicial con la que empiezas a desarrollar y crear las funciones de tu programa. Con esta actitud, tu principal objetivo es tener &lt;em&gt;código que funcione&lt;/em&gt;. Con esta forma de trabajo no gastas mucho tiempo buscando el mejor diseño para tu programa sino que te enfocas en terminar lo más rápido posible. Tu vista está en el &lt;strong&gt;corto plazo&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Con tal de terminar con la tarea lo más pronto posible no importa si agregas algo de complejidad al sistema: código duro por aquí, duplicación por allá, manejo de excepciones deficiente(envolver todo en un try/catch), etc.&lt;/p&gt;
+&lt;p&gt;Con tal de terminar con la tarea lo más pronto posible, no importa si agregas algo de complejidad al sistema.&lt;/p&gt;
 
 &lt;p&gt;Este tipo de desarrollo es alentado por los negocios que quieren que su código o programa esté tan pronto como sea posible sin importar el costo. ¿Tiene uso este código y esta forma de pensar? Por supuesto: cuando se quiere construir un producto muy muy rápido y se tiene conciencia de que &lt;em&gt;será desechable&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pero otra cosa que te puede llevar a desarrollar de esta manera es la falta de planeación: estimar en mucho menos tiempo una tarea o malgastar el tiempo que tenías disponible.&lt;/p&gt;
 
 &lt;p&gt;El desarrollo táctico produce programas que con el tiempo se van haciendo más y más difíciles de mantener, hasta que es tan impráctico que parece más fácil volver a hacerlo. &lt;strong&gt;La velocidad de desarrollo se va reduciendo.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Una vez que empiezas a programar un sistema de esta forma, es muy difícil cambiar. Y lo más triste es que la mayoría de las organizaciones y programadores prefieren este método.&lt;/p&gt;
 
+&lt;p&gt;Algunos ejemplos de desarrollo táctico:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hard-coding de parámetros que deberían ser configurables&lt;/li&gt;
+  &lt;li&gt;Duplicación innecesaria&lt;/li&gt;
+  &lt;li&gt;Abstracciones deficientes o complicadas en extremo&lt;/li&gt;
+  &lt;li&gt;Código difícil de entender&lt;/li&gt;
+  &lt;li&gt;Manejo de excepciones deficiente(envolver todo en un try/catch, no manejar excepciones)&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h2 id=&quot;desarrollo-estratégico&quot;&gt;Desarrollo Estratégico&lt;/h2&gt;
 
-&lt;p&gt;Este tipo de desarrollo se caracteriza por poner atención en el diseño y la calidad del código. Lo más importante no es directamente terminar la tarea pendiente sino también hacerlo de manera que facilite las tareas futuras y mantenga la complejidad bajo control. La tarea principal es &lt;em&gt;crear un muy buen diseño&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Este tipo de desarrollo se caracteriza por poner atención en el diseño y la calidad del código. Lo más importante no es directamente terminar la tarea pendiente, sino también hacerlo de manera que facilite las tareas futuras y mantenga la complejidad bajo control. La tarea principal es &lt;em&gt;crear un muy buen diseño&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Para el desarrollo estratégico &lt;strong&gt;código que funciona no es suficiente&lt;/strong&gt;. En vez de introducir partes que hagan más complejo el código, buscas mejorar aunque sea una pequeña parte del código cada que trabajas en él.&lt;/p&gt;
 
 &lt;p&gt;Esto no quiere decir que harás todo el diseño por adelantado, sino que se va a ir creando un buen diseño de las partes que se vayan necesitando.&lt;/p&gt;
 
-&lt;p&gt;En pocas palabras, es tener una actitud de inversión en la base de código.&lt;/p&gt;
+&lt;p&gt;Es tener una actitud de inversión en la base de código.&lt;/p&gt;
 
 &lt;p&gt;Esta actitud te hará ir más lento al principio, pero con el tiempo el equipo acelerará y podrá crear nuevas funciones muy rápido.&lt;/p&gt;
 
-&lt;p&gt;Ejemplos de desarrollo estratégico: probar varias implementaciones hasta encontrar la más limpia, documentar y comentar el código, limpiar y mejorar el código cada que sea posible.&lt;/p&gt;
+&lt;p&gt;Ejemplos de prácticas desarrollo estratégico:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Probar varias implementaciones hasta encontrar la más limpia&lt;/li&gt;
+  &lt;li&gt;Documentar y comentar el código&lt;/li&gt;
+  &lt;li&gt;Limpiar y mejorar el código cada que sea posible (cada que lo toques)&lt;/li&gt;
+  &lt;li&gt;Crear pruebas unitarias&lt;/li&gt;
+  &lt;li&gt;Revisión de código&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;La siguiente imagen ilustra cómo se comporta el avance total en las dos formas de programar:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581404091/Untitled_Artwork_2_op8k0e.jpg&quot; alt=&quot;Comparación desarrollo táctico vs estratégico&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;¿Qué tipo de desarrollo conviene para tu proyecto según su tiempo de vida?&lt;/p&gt;
+&lt;p&gt;Como se puede ver, el desarrollo estratégico tarda más en entregar resultados, pero vale la pena si es un proyecto importante con un tiempo de vida esperado largo. Puedes pensarlo como la diferencia entre construir una choza o construcción sin ningún tipo de diseño contra una casa bien diseñada y con buenos materiales, como en la historia de los tres cochinitos. ¿Cuál aguantará más?&lt;/p&gt;
+
+&lt;p&gt;Muchas veces aquí está la diferencia entre si algo “escala” o “no escala”, no en la tecnología elegida. Es obvio que a una choza no le puedes construir un segundo piso.&lt;/p&gt;
+
+&lt;p&gt;Pero no seamos puristas y pensemos que si noi es de la forma estratégica no vale la pena, la pregunta es: &lt;em&gt;¿Qué tipo de desarrollo conviene para tu proyecto según su tiempo de vida?&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;Este y los siguientes artículos están basados en el libro &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;“A Philosophy of Software Design”&lt;/a&gt; de John K. Ousterhout.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="a-philosophy-of-software-design" /><category term="complejidad" /><summary type="html">Dos diferentes formas de desarrollar sistemas de software</summary></entry><entry><title type="html">¿Qué es DevOps?</title><link href="https://blog.thedojo.mx/2020/01/16/que-es-devops.html" rel="alternate" type="text/html" title="¿Qué es DevOps?" /><published>2020-01-16T00:00:00-06:00</published><updated>2020-01-16T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/01/16/que-es-devops</id><content type="html" xml:base="https://blog.thedojo.mx/2020/01/16/que-es-devops.html">&lt;p&gt;&lt;strong&gt;DevOps&lt;/strong&gt; es un término de recientemente creación (2013) que representa un cultura de trabajo enfocada en resolver los problemas que han sido persistentes en la entrega y servicio en el área de productos tecnológicos.&lt;/p&gt;
 
