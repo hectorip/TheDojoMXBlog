@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-02-04T19:48:10-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">¿Qué es DevOps?</title><link href="https://blog.thedojo.mx/2020/01/16/que-es-devops.html" rel="alternate" type="text/html" title="¿Qué es DevOps?" /><published>2020-01-16T00:00:00-06:00</published><updated>2020-01-16T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/01/16/que-es-devops</id><content type="html" xml:base="https://blog.thedojo.mx/2020/01/16/que-es-devops.html">&lt;p&gt;&lt;strong&gt;DevOps&lt;/strong&gt; es un término de recientemente creación (2013) que representa un cultura de trabajo enfocada en resolver los problemas que han sido persistentes en la entrega y servicio en el área de productos tecnológicos.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-02-11T01:08:31-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Desarrollo Táctico vs Estratégico</title><link href="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Desarrollo Táctico vs Estratégico" /><published>2020-02-11T00:00:00-06:00</published><updated>2020-02-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html">&lt;p&gt;Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada uno.&lt;/p&gt;
+
+&lt;h2 id=&quot;desarrollo-táctico&quot;&gt;Desarrollo táctico&lt;/h2&gt;
+
+&lt;p&gt;Está caracterizado por la alta velocidad inicial con la que empiezas a desarrollar y crear las funciones de tu programa. Con esta actitud, tu principal objetivo es tener &lt;em&gt;código que funcione&lt;/em&gt;. Con esta forma de trabajo no gastas mucho tiempo buscando el mejor diseño para tu programa sino que te enfocas en terminas lo más rápido posible. Tu vista está en el corto plazo.&lt;/p&gt;
+
+&lt;p&gt;Con tal de terminar con la tarea lo más pronto posible no importa si agregas algo de complejidad al sistema: código duro por aquí, duplicación por allá, manejo de excepciones deficiente(envolver todo en un try/catch), etc.&lt;/p&gt;
+
+&lt;p&gt;Este tipo de desarrollo es alentado por los negocios que quieren que su código o programa esté tan pronto como sea posible sin importar el costo. ¿Tiene uso este código y esta forma de pensar? Por supuesto: cuando se quiere construir un producto muy muy rápido y se tiene conciencia de que &lt;em&gt;será desechable&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;El desarrollo táctico produce programas que con el tiempo se van haciendo más y más difíciles de mantener, hasta que es tan impráctico que parece más fácil volver a hacerlo. &lt;strong&gt;La velocidad de desarrollo se va reduciendo.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez que empiezas a programar un sistema de esta forma, es muy difícil cambiar. Y lo más triste es que la mayoría de las organizaciones y programadores prefieren este método.&lt;/p&gt;
+
+&lt;h2 id=&quot;desarrollo-estratégico&quot;&gt;Desarrollo Estratégico&lt;/h2&gt;
+
+&lt;p&gt;Este tipo de desarrollo se caracteriza por poner atención en el diseño y la calidad del código. Lo más importante no es directamente terminar la tarea pendiente sino también hacerlo de manera que facilite las tareas futuras y mantenga la complejidad bajo control. La tarea principal es &lt;em&gt;crear un muy buen diseño&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para el desarrollo estratégico &lt;strong&gt;código que funciona no es suficiente&lt;/strong&gt;. En vez de introducir partes que hagan más complejo el código, buscas mejorar aunque sea una pequeña parte del código cada que trabajas en él.&lt;/p&gt;
+
+&lt;p&gt;Esto no quiere decir que harás todo el diseño por adelantado, sino que se va a ir creando un buen diseño de las partes que se vayan necesitando.&lt;/p&gt;
+
+&lt;p&gt;En pocas palabras, es tener una actitud de inversión en la base de código.&lt;/p&gt;
+
+&lt;p&gt;Esta actitud te hará ir más lento al principio, pero con el tiempo el equipo acelerará y podrá crear nuevas funciones muy rápido.&lt;/p&gt;
+
+&lt;p&gt;Ejemplos de desarrollo estratégico: probar varias implementaciones hasta encontrar la más limpia, documentar y comentar el código, limpiar y mejorar el código cada que sea posible.&lt;/p&gt;
+
+&lt;p&gt;La siguiente imagen ilustra cómo se comporta el avance total en las dos formas de programar:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581404091/Untitled_Artwork_2_op8k0e.jpg&quot; alt=&quot;Comparación desarrollo táctico vs estratégico&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;¿Qué tipo de desarrollo conviene para tu proyecto según su tiempo de vida?&lt;/p&gt;
+
+&lt;p&gt;Este y los siguientes artículos están basados en el libro &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;“A Philosophy of Software Design”&lt;/a&gt; de John K. Ousterhout.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="a-philosophy-of-software-design" /><category term="complejidad" /><summary type="html">Dos diferentes formas de desarrollar sistemas de software</summary></entry><entry><title type="html">¿Qué es DevOps?</title><link href="https://blog.thedojo.mx/2020/01/16/que-es-devops.html" rel="alternate" type="text/html" title="¿Qué es DevOps?" /><published>2020-01-16T00:00:00-06:00</published><updated>2020-01-16T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/01/16/que-es-devops</id><content type="html" xml:base="https://blog.thedojo.mx/2020/01/16/que-es-devops.html">&lt;p&gt;&lt;strong&gt;DevOps&lt;/strong&gt; es un término de recientemente creación (2013) que representa un cultura de trabajo enfocada en resolver los problemas que han sido persistentes en la entrega y servicio en el área de productos tecnológicos.&lt;/p&gt;
 
 &lt;p&gt;En este artículo platicaremos qué significa y sus fundamentos.&lt;/p&gt;
 
@@ -921,182 +955,4 @@ Además podemos ver si podemos hacer algo diferente, si nuestro resultado cumple
   &lt;li&gt;Aprovecha cualquier idea aunque suene disparatada.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;En el siguiente post hablaremos de 5 cosas más de las que Polya habla en su libro: heurística, inducción, deducción, análisis y síntesis.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="matemáticas" /><category term="maths" /><category term="polya" /><category term="books" /><category term="libros" /><summary type="html">¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 1928. Hablemos de las principales lecciones que podemos sacar.</summary></entry><entry><title type="html">¿Por qué deberías aprender Go?</title><link href="https://blog.thedojo.mx/2019/09/01/por-que-deberias-aprender-go.html" rel="alternate" type="text/html" title="¿Por qué deberías aprender Go?" /><published>2019-09-01T00:00:00-05:00</published><updated>2019-09-01T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/09/01/por-que-deberias-aprender-go</id><content type="html" xml:base="https://blog.thedojo.mx/2019/09/01/por-que-deberias-aprender-go.html">&lt;blockquote&gt;
-  &lt;p&gt;Go es &lt;strong&gt;eficiente, escalable y productivo&lt;/strong&gt;. - &lt;em&gt;Rob Pike&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Go es un lenguaje que llama la atención por algunos rumores que hay acerca de él, como, por ejemplo, que es el lenguaje que va a matar a C, o que es muy muy rápido y poderoso. En este artículo vamos a hablar de qué cosas son ciertas y en qué casos te conviene aprender Go.&lt;/p&gt;
-
-&lt;p&gt;Empecemos hablando de cómo y por qué nació.&lt;/p&gt;
-
-&lt;h2 id=&quot;historia-de-go&quot;&gt;Historia de Go&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Go fue diseñado por Google para resolver sus problemas, y Google tiene &lt;em&gt;grandes&lt;/em&gt; problemas. - &lt;em&gt;Rob Pike&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Go fue creado dentro de Google por un grupo de desarrolladores de software y científicos de la computación &lt;strong&gt;MUY experimentados&lt;/strong&gt;. Las tres personas que lo iniciaron a pensar y diseñar en 2007 fueron Robert Griesemer, Rob Pike y &lt;strong&gt;Ken Thompson&lt;/strong&gt; (sí, el co-creador de UNIX, grep y muchas cosas más). De ese tamaño son las personas que lo diseñaron, y así se siente el lenguaje cuando lo usas.&lt;/p&gt;
-
-&lt;p&gt;Después de una serie de correos y discusiones sobre el diseño, empezaron a trabajar en él y &lt;a href=&quot;https://www.youtube.com/watch?v=rKnDgT73v8s&quot;&gt;lo presentaron como proyecto Open Source en 2009&lt;/a&gt;, a partir de ahí muchas personas tanto de dentro como de fuera de Google han contribuido a su desarrollo.&lt;/p&gt;
-
-&lt;h2 id=&quot;características-de--go&quot;&gt;Características de  Go&lt;/h2&gt;
-
-&lt;p&gt;Go fue concebido pensando en los problemas que los diseñadores veían en los sistemas de Google: su proceso de desarrollo estaba entorpecido por las herramientas que usaban. Según Rob Pike, todo era demasiado lento: demasiado lento de compilar, demasiado lento de construir, demasiado lento de pensar. Cuando decimos que el tiempo de compilación era demasiado largo nos referimos a que podía llegar a tomar &lt;em&gt;varias horas&lt;/em&gt; para compilar un sistema.&lt;/p&gt;
-
-&lt;p&gt;También había una “explosión de complejidad”. Así que Go fue pensado para ser simple, de una “simplicidad radical”. Por lo tanto, carece de características que otros lenguajes sí tienen, pero hacen que los programas sean complejos.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;La simplicidad es la clave del buen software. - &lt;em&gt;The Go Programming Language&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Analicemos las características de Go, un lenguaje pensado para trabajar en sistemas muy grandes de manera simple.&lt;/p&gt;
-
-&lt;h3 id=&quot;procedural-con-flexibilidad-para-orientación-a-objetos&quot;&gt;Procedural, con flexibilidad para orientación a objetos&lt;/h3&gt;
-
-&lt;p&gt;El paradigma principal de Go es el procedural se parece mucho a C en este aspecto. Sus principales medios de organización son las funciones y los paquetes, aunque permite crear un tipo débil de organización muy parecida a los objetos mediante &lt;code class=&quot;highlighter-rouge&quot;&gt;structs&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Aquí puedes ver un ‘Hello world’:&lt;/p&gt;
-
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;¡Hola Go!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;tipado-estático-y-fuerte&quot;&gt;Tipado estático y fuerte&lt;/h3&gt;
-
-&lt;p&gt;Go es un lenguaje fuertemente tipado, lo cuál quiere implica varias cosas:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;La declaración de variables implica el tipo de valor que estará asociado a esta instancia del nombre, por lo que no puede usarse para guardar otro tipo de valor. En Go no necesariamente se tiene que decir explícitamente el tipo de valor a usarse, puede ser inferido:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;n&quot;&gt;miNombre&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Héctor&quot;&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;// La variable es un string&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Esto es verificado en tiempo de compilación, por lo que podrás estar tranquilo de que Go no te dejará correr programas usando variables como lo que no son.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;No existe la conversión o forzamiento de tipos automática e implícita, como en JS, que intenta realizar la operación aunque los tipos de valor usados no tengan sentido en la operación. En Go, si intentas hacer una operación con tipos no compatibles el programa puede no compilar o fallar en tiempo de ejecución.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;rápida-compilación&quot;&gt;Rápida compilación&lt;/h3&gt;
-
-&lt;p&gt;Pensado para sistemas muy grandes, justo como los desarrollados en Google, Go se toma en serio el tiempo de complicación y es muy rápido al compilar los programas, a diferencia de Java, C o C++. Esto está apoyado por tres pilares:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Las dependencias están puestas al principio de cada archivo, por lo que no hay que buscar en todo el programa por dependencias perdidas.&lt;/li&gt;
-  &lt;li&gt;Las dependencias no forman ciclos, por lo que pueden organizarse para que sean compiladas independientemente, incluso de manera paralela.&lt;/li&gt;
-  &lt;li&gt;El programa objeto compilado de cada paquete exporta información útil para sus dependencias que puede ser usada sin tener que leer todo el paquete.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;manejo-de-dependencias-y-paquetes&quot;&gt;Manejo de dependencias y paquetes&lt;/h3&gt;
-&lt;p&gt;Go tiene en su biblioteca estándar más de 100 paquetes y la comunidad de Go cada vez contribuye más paquetes. Go viene con la herramienta para la línea de comandos &lt;code class=&quot;highlighter-rouge&quot;&gt;go&lt;/code&gt; que es fácil de usar para manejar proyectos creados con Go. La herramienta &lt;code class=&quot;highlighter-rouge&quot;&gt;go&lt;/code&gt; nos ayuda a administrar nuestras dependencias: descargarlas, limpiarlas e instalarlas.&lt;/p&gt;
-
-&lt;h3 id=&quot;manejo-de-memoria&quot;&gt;Manejo de memoria&lt;/h3&gt;
-&lt;p&gt;Go tiene manejo automático de memoria, lo que quiere decir que tal como en Java o Python, no tienes que preocuparte de liberar la memoria manualmente. Sin embargo, esta característica lo hace poco práctico para sistemas que requieran tratamiento de datos en tiempo real demasiado fuerte y preciso.&lt;/p&gt;
-
-&lt;h2 id=&quot;concurrencia&quot;&gt;Concurrencia&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1567320490/Go-routines-gopher_vgcpbt.jpg&quot; alt=&quot;La mascota de Go haciendo el trabajo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;A esta característica decidimos dedicarle un poco más de espacio. Debido a que el mundo de la computación ha cambiado desde que se escribieron los primeros programas, en los que se contaba con un sólo procesador, el equipo de Go le dio gran importancia a la capacidad de &lt;strong&gt;crear programas con un muy buen diseño concurrente&lt;/strong&gt;. Eventualmente estos programas podrían correr en paralelo aprovechando los sistemas de computación que existen actualmente, con múltiples procesadores.&lt;/p&gt;
-
-&lt;p&gt;Go permite crear procesos concurrente de manera muy sencilla:&lt;/p&gt;
-
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;k&quot;&gt;go&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Eso es todo. Go ejecutará la función &lt;code class=&quot;highlighter-rouge&quot;&gt;myFunc&lt;/code&gt; de manera concurrente (se ejecuta de manera independiente al programa principal o a otras funciones concurrentes). Esto es una &lt;strong&gt;gorutine&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Go soporta dos modelos de concurrencia:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Comunicación de procesos secuenciales&lt;/strong&gt; (Communicating Sequential Processes - CSP), en la que cada proceso tiene sus propias variables, y se transfieren información entre ellos mediante mensajes. En el caso de Go es a través de &lt;em&gt;canales&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Multihilo con memoria compartida&lt;/strong&gt;. En este tipo de concurrencia todos los procesos escriben sobre el mismo espacio de memoria, es decir, comparten variables, pero debe haber algúna forma de coordinación entre ellos para que no choquen ni se bloqueen mutuamente al tomar un recurso.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;La concurrencia es uno de los puntos más fuertes de Go.&lt;/p&gt;
-
-&lt;h2 id=&quot;ventajas-de-go-sobre-otros-lenguajes&quot;&gt;Ventajas de Go sobre otros lenguajes&lt;/h2&gt;
-
-&lt;p&gt;Hablemos de en qué casos querrías usar Go.&lt;/p&gt;
-
-&lt;h3 id=&quot;eficiencia-al-correr&quot;&gt;Eficiencia al correr&lt;/h3&gt;
-&lt;p&gt;Go no corre sobre ninguna máquina virtual. Crea ejecutables para los sistemas operativos a los que apunta, que contienen todo lo necesario para poder ejecutarse sin necesidad de tener algo instalado allí. Al ser compilado, Go es mucho más eficiente para correr que otros lenguajes interpretados, como JS, Python o Ruby. Consume menos memoria y su velocidad se acerca a la de C.&lt;/p&gt;
-
-&lt;h3 id=&quot;legibilidad&quot;&gt;Legibilidad&lt;/h3&gt;
-&lt;p&gt;Go fue pensado para ser &lt;em&gt;simple&lt;/em&gt;. Sus estructuras, su sintaxis y su filosofía lo hacen fácil de leer y de aprender. Es cierto que no es tan legible como Python o Ruby, por ejemplo, pero es mucho más legible que otros lenguajes con características similares como C++ o Java.&lt;/p&gt;
-
-&lt;h3 id=&quot;usable-para-los-programadores&quot;&gt;Usable para los programadores&lt;/h3&gt;
-
-&lt;p&gt;Una de las promesas de Go desde el principio era poder hacer mucho con poco. Y es algo que cumple completamente. Su librería estándar está diseñada y construida por verdaderos titanes de la ingeniería del software, practicantes de esto por más tiempo que la vida de muchos de los que leerán este artículo. El siguiente ejemplo es un servidor web con una ruta, sin usar ningún framework o biblioteca extra, sino sólo la pura biblioteca estándar de Go.&lt;/p&gt;
-
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&quot;net/http&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HandleFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HelloServer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ListenAndServe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;:8080&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HelloServer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ResponseWriter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Fprintf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello, %s!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;// te saluda de regreso&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;desventajas&quot;&gt;Desventajas&lt;/h2&gt;
-
-&lt;h3 id=&quot;sistema-de-tipos&quot;&gt;Sistema de tipos&lt;/h3&gt;
-&lt;p&gt;Esta no es una desventaja como tal de Go, sino una creada por el ecosistema de desarrollo actual: al haber tantos lenguajes que hacen manejo de valores y tipos de dato automáticamente, al programar en &lt;em&gt;cualquier&lt;/em&gt; lenguaje tipado, incluyendo Go, muchos sienten que están desperdiciando su tiempo.&lt;/p&gt;
-
-&lt;h2 id=&quot;relativamente-joven&quot;&gt;Relativamente joven&lt;/h2&gt;
-
-&lt;p&gt;Go tiene a penas 10 años de haber salido a la luz, 12 desde que se empezó a diseñar. El tiempo de vida de un lenguaje influye en su usabilidad y la conveniencia de varias formas:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;La comunidad que ha desarrollado&lt;/li&gt;
-  &lt;li&gt;Las herramientas disponibles&lt;/li&gt;
-  &lt;li&gt;Los errores encontrados&lt;/li&gt;
-  &lt;li&gt;Experiencias de otros desarrolladores con diferentes tipos y tamaños de sistemas&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Considera esto si tienes que hacer un proyecto grande.&lt;/p&gt;
-
-&lt;h2 id=&quot;proyectos-que-lo-usan&quot;&gt;Proyectos que lo usan&lt;/h2&gt;
-
-&lt;p&gt;Muchos proyectos importantes del mundo de la infraestructura, orquestación de servidores, contenedores, bases de datos y herramientas para programadores lo usan. Algunos ejemplos:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Docker&lt;/li&gt;
-  &lt;li&gt;Kubernetes&lt;/li&gt;
-  &lt;li&gt;Terraform y Vault (casi todos las herramientas de HashiCorp)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.influxdata.com/&quot;&gt;InfluxDB&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/caddyserver/caddy&quot;&gt;Caddy&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Esto te debería dar una idea de la importancia de Go en el ecosistema de desarrollo. Grandes proyectos lo usan, grandes empresas lo usan.&lt;/p&gt;
-
-&lt;h2 id=&quot;go-vs-rust&quot;&gt;Go vs Rust&lt;/h2&gt;
-
-&lt;p&gt;Una discusión reciente es cuál de los dos lenguajes va a lograr efectivamente reemplazar a C, con características más modernas y como un lenguaje más adaptado a las necesidades actuales. Esto es pura opinión: Rust es un mejor candidato para reemplazar a C por sus características de manejo de memoria. Pero Rust no es un lenguaje tan fácil de aprender o empezar com Go.
-En Go puedes hacer muchas cosas que haces con C razonablemente bien, sin tanta complicación y sin tener que manejar la memoria manualmente o semi-manualmente. La prueba está en todos los proyectos que manejan cosas de bajo nivel.&lt;/p&gt;
-
-&lt;p&gt;Más adelante tendremos un artículo de por qué deberías aprender Rust.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Go es un lenguaje relevante en 2019, 10 años después de haber nacido y lo seguirá siendo por muchos años, sobre todo por los proyectos ya desarrollados en él y las características de las que hablamos en este artículo. Aprenderlo te dará una herramienta más para desarrollar programas que valgan la pena y cumplan con lo esperado.&lt;/p&gt;
-
-&lt;p&gt;Pero como &lt;a href=&quot;https://fs.blog/about/&quot;&gt;Shane Parrish&lt;/a&gt; dice: Go es “simple pero no fácil”. Es sencillo empezar a programar con él, pero dominar sus conceptos requiere estudio y esfuerzo. Go se siente como una herencia de gente muy sabia haciendo un lenguaje para hacer cosas grandes. No te arrepentirás de aprenderlo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="go" /><category term="golang" /><category term="lenguajes-de-programación" /><summary type="html">Go es un lenguaje muy relevante en algunas áreas del desarrollo de software. Aprende para qué deberías usarlo y por qué te conviene aprenderlo.</summary></entry></feed>
+&lt;p&gt;En el siguiente post hablaremos de 5 cosas más de las que Polya habla en su libro: heurística, inducción, deducción, análisis y síntesis.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="matemáticas" /><category term="maths" /><category term="polya" /><category term="books" /><category term="libros" /><summary type="html">¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 1928. Hablemos de las principales lecciones que podemos sacar.</summary></entry></feed>
