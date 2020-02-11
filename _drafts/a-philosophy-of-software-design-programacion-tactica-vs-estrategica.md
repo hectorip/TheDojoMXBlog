@@ -20,13 +20,16 @@ Está caracterizado por la alta velocidad inicial con la que empiezas a desarrol
 
 Con tal de terminar con la tarea lo más pronto posible no importa si agregas algo de complejidad al sistema: código duro por aquí, duplicación por allá, manejo de excepciones deficiente(envolver todo en un try/catch), etc.
 
-Este tipo de desarrollo es alentado por los negocios que quieren que su código o programa esté tan pronto como sea posible sin importar el costo. ¿Tiene uso este código y esta forma de pensar?
+Este tipo de desarrollo es alentado por los negocios que quieren que su código o programa esté tan pronto como sea posible sin importar el costo. ¿Tiene uso este código y esta forma de pensar? Por supuesto: cuando se quiere construir un producto muy rápido y se tiene la consciencia de que será desechable.
 
 Una vez que empiezas a programar un sistema de esta forma, es muy difícil cambiar. Y lo más triste es que la mayoría de las organizaciones y programadores prefieren este método.
 
 ## Desarrollo Estratégico
 
-Este tipo de desarrollo se caracteriza por poner atención en el diseño y la calidad _del código_.
+Este tipo de desarrollo se caracteriza por poner atención en el diseño y la calidad _del código_. Lo más importante no es directamente terminar la tarea a la mano sino también hacerlo de manera que facilite las tareas futuras y mantenga la complejidad bajo control.
+
+El desarrollo estratégico em
+ 
 
 Este y los siguientes artículos están basados en el libro ["A Philosophy of Software Design"](https://amzn.to/2H92nwA) de John K. Ousterhout.
 
