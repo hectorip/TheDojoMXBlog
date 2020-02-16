@@ -16,4 +16,4 @@ header:
 
 Muchas mentes brillantes dedicadas al desarrollo de software han estado de acurdo en que el principal problema al crear y mantener programas es el manejo de la complejidad.
 
-podemos decir que algo complejo es aquello que está compuesto por muchas piezas relacionadas entre ellas.
+Podemos decir que algo complejo es aquello que está compuesto por muchas piezas relacionadas entre ellas. [Ousterhout](http://web.stanford.edu/~ouster/cgi-bin/home.php) lo define de manera práctica como todo aquello que hace difícil que el software sea difícil de entender, escribir o mantener.
