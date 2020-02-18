@@ -5,7 +5,7 @@ author: Héctor Patricio
 tags:
 categories: 
 comments: true
-excerpt: ""
+excerpt: "Aprende a descubrir la complejidad en tus proyectos"
 header:
   overlay_image: #image
   teaser: #image
@@ -17,3 +17,11 @@ header:
 Muchas mentes brillantes dedicadas al desarrollo de software han estado de acurdo en que el principal problema al crear y mantener programas es el manejo de la complejidad.
 
 Podemos decir que algo complejo es aquello que está compuesto por muchas piezas relacionadas entre ellas. [Ousterhout](http://web.stanford.edu/~ouster/cgi-bin/home.php) lo define de manera práctica como todo aquello que hace difícil que el software sea difícil de entender, escribir o mantener.
+
+Además, da 3 formas de identificarla que ayudarán a que la mantengas bajo control.
+
+## Amplificación de cambios
+## Carga cognitiva
+## Desconocidos desconocidos
+
+
