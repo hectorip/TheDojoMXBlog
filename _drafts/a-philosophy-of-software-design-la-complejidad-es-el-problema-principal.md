@@ -21,7 +21,7 @@ Podemos decir que algo complejo es aquello que está compuesto por muchas piezas
 Además, da 3 formas de identificarla que ayudarán a que la mantengas bajo control.
 
 ## Amplificación de cambios
+
 ## Carga cognitiva
+
 ## Desconocidos desconocidos
-
-
