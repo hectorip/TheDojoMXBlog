@@ -18,7 +18,7 @@
 /* Other ========================================================================== */
 /* Mixins and functions */
 /* Magnific Popup CSS */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,700i,900&Poppins:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700,700i,900,900i&display=swap");
 .mfp-counter { font-family: Georgia, Times, serif; }
 
 .mfp-bg { top: 0; left: 0; width: 100%; height: 100%; z-index: 1042; overflow: hidden; position: fixed; background: #000; opacity: 0.8; filter: alpha(opacity=80); }
@@ -192,7 +192,7 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 /* Prevents modern browsers from displaying 'audio' without controls */
 audio:not([controls]) { display: none; }
 
-a { color: #0000ee; }
+a { color: #C23534; }
 
 /* Apply focus state */
 /* Remove outline from links */
@@ -273,9 +273,9 @@ blockquote cite { font-style: italic; }
 blockquote cite:before { content: "\2014"; padding-right: 5px; }
 
 /* links */
-a:visited { color: #2626f1; }
+a:visited { color: #cb5352; }
 
-a:hover { color: #0000b3; outline: 0; }
+a:hover { color: #922827; outline: 0; }
 
 /* buttons */
 /* code */
@@ -318,7 +318,7 @@ figcaption { margin-bottom: 0.5em; color: #898c8f; font-family: Georgia, Times, 
 
 figcaption a { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
-figcaption a:hover { color: #0000b3; }
+figcaption a:hover { color: #922827; }
 
 /* Fix IE9 SVG bug */
 svg:not(:root) { overflow: hidden; }
@@ -730,7 +730,7 @@ tr, td, th { vertical-align: middle; }
 
 .pagination li a { display: block; margin-bottom: 0.25em; padding: 0.5em 1em; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 1.5; text-align: center; text-decoration: none; color: #898c8f; border: 1px solid #b6b6b6; border-radius: 0; }
 
-.pagination li a:hover { color: #0000b3; }
+.pagination li a:hover { color: #922827; }
 
 .pagination li a.current, .pagination li a.current.disabled { color: #fff; background: #6f777d; }
 
@@ -1368,7 +1368,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 .page__taxonomy-item { display: inline-block; margin-right: 5px; margin-bottom: 8px; padding: 5px 10px; text-decoration: none; border: 1px solid #b6b6b6; border-radius: 4px; }
 
-.page__taxonomy-item:hover { text-decoration: none; color: #0000b3; }
+.page__taxonomy-item:hover { text-decoration: none; color: #922827; }
 
 .taxonomy__section { margin-bottom: 2em; padding-bottom: 1em; }
 
@@ -1731,11 +1731,9 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
   /* Hide the following elements on print ========================================================================== */
   .masthead, .toc, .page__share, .page__related, .pagination, .ads, .page__footer, .page__comments-form, .author__avatar, .author__content, .author__urls-wrapper, .nav__list, .sidebar, .adsbygoogle { display: none !important; height: 1px !important; } }
 
-a { text-decoration: none; font-weight: 600; }
+a { text-decoration: none; font-weight: 400; }
 
 article.page { font-family: 'Source Sans Pro', sans-serif; font-weight: 300; }
-
-h1, h2, h3, h4, h5, h6 { font-family: "Poppins", sans-serif; }
 
 .custom-grid { max-width: 100%; }
 

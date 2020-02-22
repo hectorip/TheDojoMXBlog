@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-02-04T19:48:16-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">¿Qué es DevOps?</title><link href="https://blog.thedojo.mx/2020/01/16/que-es-devops.html" rel="alternate" type="text/html" title="¿Qué es DevOps?" /><published>2020-01-16T00:00:00-06:00</published><updated>2020-01-16T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/01/16/que-es-devops</id><content type="html" xml:base="https://blog.thedojo.mx/2020/01/16/que-es-devops.html">&lt;p&gt;&lt;strong&gt;DevOps&lt;/strong&gt; es un término de recientemente creación (2013) que representa un cultura de trabajo enfocada en resolver los problemas que han sido persistentes en la entrega y servicio en el área de productos tecnológicos.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-21T18:28:37-06:00</updated><id>http://localhost:4000/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Desarrollo Táctico vs Estratégico</title><link href="http://localhost:4000/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Desarrollo Táctico vs Estratégico" /><published>2020-02-11T00:00:00-06:00</published><updated>2020-02-11T00:00:00-06:00</updated><id>http://localhost:4000/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica</id><content type="html" xml:base="http://localhost:4000/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html">&lt;p&gt;Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada uno.&lt;/p&gt;
+
+&lt;h2 id=&quot;desarrollo-táctico&quot;&gt;Desarrollo táctico&lt;/h2&gt;
+
+&lt;p&gt;Está caracterizado por la alta velocidad inicial con la que empiezas a desarrollar y crear las funciones de tu programa. Con esta actitud, tu principal objetivo es tener &lt;em&gt;código que funcione&lt;/em&gt;. Con esta forma de trabajo no gastas mucho tiempo buscando el mejor diseño para tu programa sino que te enfocas en terminar lo más rápido posible. Tu vista está en el &lt;strong&gt;corto plazo&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Con tal de terminar con la tarea lo más pronto posible, no importa si agregas algo de complejidad al sistema.&lt;/p&gt;
+
+&lt;p&gt;Este tipo de desarrollo es alentado por los negocios que quieren que su código o programa esté tan pronto como sea posible sin importar el costo. ¿Tiene uso este código y esta forma de pensar? Por supuesto: cuando se quiere construir un producto muy muy rápido y se tiene conciencia de que &lt;em&gt;será desechable&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pero otra cosa que te puede llevar a desarrollar de esta manera es la falta de planeación: estimar en mucho menos tiempo una tarea o malgastar el tiempo que tenías disponible.&lt;/p&gt;
+
+&lt;p&gt;El desarrollo táctico produce programas que con el tiempo se van haciendo más y más difíciles de mantener, hasta que es tan impráctico que parece más fácil volver a hacerlo. &lt;strong&gt;La velocidad de desarrollo se va reduciendo.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez que empiezas a programar un sistema de esta forma, es muy difícil cambiar. Y lo más triste es que la mayoría de las organizaciones y programadores prefieren este método.&lt;/p&gt;
+
+&lt;p&gt;Algunos ejemplos de desarrollo táctico:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hard-coding de parámetros que deberían ser configurables&lt;/li&gt;
+  &lt;li&gt;Duplicación innecesaria&lt;/li&gt;
+  &lt;li&gt;Abstracciones deficientes o complicadas en extremo&lt;/li&gt;
+  &lt;li&gt;Código difícil de entender&lt;/li&gt;
+  &lt;li&gt;Manejo de excepciones deficiente(envolver todo en un try/catch, no manejar excepciones)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;desarrollo-estratégico&quot;&gt;Desarrollo Estratégico&lt;/h2&gt;
+
+&lt;p&gt;Este tipo de desarrollo se caracteriza por poner atención en el diseño y la calidad del código. Lo más importante no es directamente terminar la tarea pendiente, sino también hacerlo de manera que facilite las tareas futuras y mantenga la complejidad bajo control. La tarea principal es &lt;em&gt;crear un muy buen diseño&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para el desarrollo estratégico &lt;strong&gt;código que funciona no es suficiente&lt;/strong&gt;. En vez de introducir partes que hagan más complejo el código, buscas mejorar aunque sea una pequeña parte del código cada que trabajas en él.&lt;/p&gt;
+
+&lt;p&gt;Esto no quiere decir que harás todo el diseño por adelantado, sino que se va a ir creando un buen diseño de las partes que se vayan necesitando.&lt;/p&gt;
+
+&lt;p&gt;Es tener una actitud de inversión en la base de código.&lt;/p&gt;
+
+&lt;p&gt;Esta actitud te hará ir más lento al principio, pero con el tiempo el equipo acelerará y podrá crear nuevas funciones muy rápido.&lt;/p&gt;
+
+&lt;p&gt;Ejemplos de prácticas desarrollo estratégico:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Probar varias implementaciones hasta encontrar la más limpia&lt;/li&gt;
+  &lt;li&gt;Documentar y comentar el código&lt;/li&gt;
+  &lt;li&gt;Limpiar y mejorar el código cada que sea posible (cada que lo toques)&lt;/li&gt;
+  &lt;li&gt;Crear pruebas unitarias&lt;/li&gt;
+  &lt;li&gt;Revisión de código&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La siguiente imagen ilustra cómo se comporta el avance total en las dos formas de programar:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581404091/Untitled_Artwork_2_op8k0e.jpg&quot; alt=&quot;Comparación desarrollo táctico vs estratégico&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Como se puede ver, el desarrollo estratégico tarda más en entregar resultados, pero vale la pena si es un proyecto importante con un tiempo de vida esperado largo. Puedes pensarlo como la diferencia entre construir una choza o construcción sin ningún tipo de diseño contra una casa bien diseñada y con buenos materiales, como en la historia de los tres cochinitos. ¿Cuál aguantará más?&lt;/p&gt;
+
+&lt;p&gt;Muchas veces aquí está la diferencia entre si algo “escala” o “no escala”, no en la tecnología elegida. Es obvio que a una choza no le puedes construir un segundo piso.&lt;/p&gt;
+
+&lt;p&gt;Pero no seamos puristas y pensemos que si no es de la forma estratégica no vale la pena, la pregunta es: &lt;em&gt;¿Qué tipo de desarrollo conviene para tu proyecto según su tiempo de vida?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Este y los siguientes artículos están basados en el libro &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;“A Philosophy of Software Design”&lt;/a&gt; de John K. Ousterhout.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="a-philosophy-of-software-design" /><category term="complejidad" /><summary type="html">Dos diferentes formas de desarrollar sistemas de software</summary></entry><entry><title type="html">¿Qué es DevOps?</title><link href="http://localhost:4000/2020/01/16/que-es-devops.html" rel="alternate" type="text/html" title="¿Qué es DevOps?" /><published>2020-01-16T00:00:00-06:00</published><updated>2020-01-16T00:00:00-06:00</updated><id>http://localhost:4000/2020/01/16/que-es-devops</id><content type="html" xml:base="http://localhost:4000/2020/01/16/que-es-devops.html">&lt;p&gt;&lt;strong&gt;DevOps&lt;/strong&gt; es un término de recientemente creación (2013) que representa un cultura de trabajo enfocada en resolver los problemas que han sido persistentes en la entrega y servicio en el área de productos tecnológicos.&lt;/p&gt;
 
 &lt;p&gt;En este artículo platicaremos qué significa y sus fundamentos.&lt;/p&gt;
 
@@ -119,7 +177,7 @@ Es por eso que debe haber una manera física de ver el trabajo, como lo habría 
 
 &lt;p&gt;Perfeccionar estas prácticas es algo que nunca se termina y lleva tiempo ver los resultados. Así que ¿qué esperas para empezar?&lt;/p&gt;
 
-&lt;p&gt;Con este pequeño artículo esperamos que quede claro que &lt;a href=&quot;http://bit.ly/36t59HK&quot;&gt;DevOps no es un rol en la empresa&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="devops" /><category term="servers" /><category term="culture" /><summary type="html">Hablemos de qué es de DevOps y como puede beneficiar a tu empresa aplicarlo</summary></entry><entry><title type="html">Recursos gratutitos para aprender a programar desde cero</title><link href="https://blog.thedojo.mx/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html" rel="alternate" type="text/html" title="Recursos gratutitos para aprender a programar desde cero" /><published>2019-12-29T00:00:00-06:00</published><updated>2019-12-29T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html">&lt;p&gt;¿Quieres aprender a programar y no sabes por dónde empezar?&lt;/p&gt;
+&lt;p&gt;Con este pequeño artículo esperamos que quede claro que &lt;a href=&quot;http://bit.ly/36t59HK&quot;&gt;DevOps no es un rol en la empresa&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="devops" /><category term="servers" /><category term="culture" /><summary type="html">Hablemos de qué es de DevOps y como puede beneficiar a tu empresa aplicarlo</summary></entry><entry><title type="html">Recursos gratutitos para aprender a programar desde cero</title><link href="http://localhost:4000/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html" rel="alternate" type="text/html" title="Recursos gratutitos para aprender a programar desde cero" /><published>2019-12-29T00:00:00-06:00</published><updated>2019-12-29T00:00:00-06:00</updated><id>http://localhost:4000/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero</id><content type="html" xml:base="http://localhost:4000/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html">&lt;p&gt;¿Quieres aprender a programar y no sabes por dónde empezar?&lt;/p&gt;
 
 &lt;p&gt;En este post te daremos algunos recursos que puedes seguir para aprender a programar desde lo más básico hasta tener un conocimiento razonable de programación con el que podrías empezar a trabajar como becario.&lt;/p&gt;
 
@@ -191,7 +249,7 @@ Es un curso que no puedes perder si quieres ser un autodidacta de la programaci�
 
 &lt;p&gt;Lo que acabas de aprender después de terminar esto son sólo las bases. Igual que muchas otras carreras, en ésta tienes que poder seguir aprendiendo constantemente. El desarrollo de software, sin embargo, se caracteriza por ciclos más cortos aún, en los que las habilidades se quedan obsoletas en mucho menos tiempo así que debes afinar tus habilidades de aprendizaje.&lt;/p&gt;
 
-&lt;p&gt;Una de las mejores maneras de solidificar tu conocimiento después de practicarlo, es enseñándolo a otros. No te quedes con lo aprendiste y devuelve algo a la comunidad: enseña siempre que puedas mediante conferencias, videos o artículos en un blog. De esto es algo de lo que no te arrepentirás.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprender" /><category term="programar" /><category term="recursos-aprendizaje" /><summary type="html">Hemos escrito una lista de recursos que te pueden ayudar a aprender a programar en tiempo record.</summary></entry><entry><title type="html">Las matemáticas que debes saber para programar</title><link href="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html" rel="alternate" type="text/html" title="Las matemáticas que debes saber para programar" /><published>2019-12-25T00:00:00-06:00</published><updated>2019-12-25T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html">&lt;p&gt;Cuando se habla de &lt;strong&gt;matemáticas&lt;/strong&gt; mucha gente empieza a sentirse fastidiada porque creen que son cosas difíciles de entender.&lt;/p&gt;
+&lt;p&gt;Una de las mejores maneras de solidificar tu conocimiento después de practicarlo, es enseñándolo a otros. No te quedes con lo aprendiste y devuelve algo a la comunidad: enseña siempre que puedas mediante conferencias, videos o artículos en un blog. De esto es algo de lo que no te arrepentirás.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprender" /><category term="programar" /><category term="recursos-aprendizaje" /><summary type="html">Hemos escrito una lista de recursos que te pueden ayudar a aprender a programar en tiempo record.</summary></entry><entry><title type="html">Las matemáticas que debes saber para programar</title><link href="http://localhost:4000/2019/12/25/las-matematicas-que-debes-saber-para-programar.html" rel="alternate" type="text/html" title="Las matemáticas que debes saber para programar" /><published>2019-12-25T00:00:00-06:00</published><updated>2019-12-25T00:00:00-06:00</updated><id>http://localhost:4000/2019/12/25/las-matematicas-que-debes-saber-para-programar</id><content type="html" xml:base="http://localhost:4000/2019/12/25/las-matematicas-que-debes-saber-para-programar.html">&lt;p&gt;Cuando se habla de &lt;strong&gt;matemáticas&lt;/strong&gt; mucha gente empieza a sentirse fastidiada porque creen que son cosas difíciles de entender.&lt;/p&gt;
 
 &lt;p&gt;Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como &lt;strong&gt;una rama de las matemáticas&lt;/strong&gt;.&lt;/p&gt;
 
@@ -324,7 +382,7 @@ Para lograr esto la lógica se vale del estudio de las &lt;strong&gt;proposicion
 &lt;p&gt;Fuera de las matemáticas básicas y un control decente e intuitivo de la lógica, no es necesario que seas &lt;a href=&quot;http://bit.ly/2StKLCz&quot;&gt;Terence Tao&lt;/a&gt;, a menos que el campo en el que estés trabajando esté directamente relacionado con eso, tal
 como tendrías que saber lo suficiente de finanzas si estuvieras haciendo una app financiera o de administración de empresas si estuvieras haciendo una aplicación o plataforma para este campo.&lt;/p&gt;
 
-&lt;p&gt;Aquí hay un video curso en el que se explican más ampliamente lo que algunos llaman &lt;a href=&quot;http://bit.ly/2rvD6Zi&quot;&gt;“matemáticas para programadores”&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="math," /><category term="matemáticas," /><category term="aprender" /><summary type="html">¿Qué tantas matemáticas necesitas para programar? En este artículo lo veremos.</summary></entry><entry><title type="html">Formatos de marcado de texto que deberías aprender</title><link href="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html" rel="alternate" type="text/html" title="Formatos de marcado de texto que deberías aprender" /><published>2019-12-20T00:00:00-06:00</published><updated>2019-12-20T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html">&lt;p&gt;Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el formateo y embellecimiento de documento.&lt;/p&gt;
+&lt;p&gt;Aquí hay un video curso en el que se explican más ampliamente lo que algunos llaman &lt;a href=&quot;http://bit.ly/2rvD6Zi&quot;&gt;“matemáticas para programadores”&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="math," /><category term="matemáticas," /><category term="aprender" /><summary type="html">¿Qué tantas matemáticas necesitas para programar? En este artículo lo veremos.</summary></entry><entry><title type="html">Formatos de marcado de texto que deberías aprender</title><link href="http://localhost:4000/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html" rel="alternate" type="text/html" title="Formatos de marcado de texto que deberías aprender" /><published>2019-12-20T00:00:00-06:00</published><updated>2019-12-20T00:00:00-06:00</updated><id>http://localhost:4000/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender</id><content type="html" xml:base="http://localhost:4000/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html">&lt;p&gt;Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el formateo y embellecimiento de documento.&lt;/p&gt;
 
 &lt;p&gt;En este artículo te platicaré de &lt;strong&gt;tres alternativas&lt;/strong&gt; que pueden hacer tu vida más fácil: Markdown, reStructuredText, AsciiDoc.&lt;/p&gt;
 
@@ -440,7 +498,7 @@ como tendrías que saber lo suficiente de finanzas si estuvieras haciendo una ap
 
 &lt;p&gt;Estos lenguajes de marcado de texto te dan lo mejor de los dos mundos. Requieren un poco más de trabajo para empezar que los editores &lt;em&gt;“lo que ves es lo que obtienes”&lt;/em&gt;, pero la productividad que te dan después paga con creces.&lt;/p&gt;
 
-&lt;p&gt;¿Qué opinas? ¿Vale la pena aprenderlos?&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="markdown" /><category term="restructured-text" /><category term="asciidoc" /><category term="latex" /><summary type="html">A veces tienes que crear documentos de texto con un algún tipo de formato visual. Aprende lenguajes de marcado que te facilitarán la vida.</summary></entry><entry><title type="html">Inducción y Deducción según Polya</title><link href="https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html" rel="alternate" type="text/html" title="Inducción y Deducción según Polya" /><published>2019-12-14T00:00:00-06:00</published><updated>2019-12-14T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html">&lt;p&gt;Este es el tercer artículo acerca del libro &lt;a href=&quot;https://amzn.to/2P8HJA8&quot;&gt;“How to Solve It”&lt;/a&gt; de George Polya. Puedes ver los dos artículos anteriores aquí:&lt;/p&gt;
+&lt;p&gt;¿Qué opinas? ¿Vale la pena aprenderlos?&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="markdown" /><category term="restructured-text" /><category term="asciidoc" /><category term="latex" /><summary type="html">A veces tienes que crear documentos de texto con un algún tipo de formato visual. Aprende lenguajes de marcado que te facilitarán la vida.</summary></entry><entry><title type="html">Inducción y Deducción según Polya</title><link href="http://localhost:4000/2019/12/14/induccion-y-deduccion-segun-polya.html" rel="alternate" type="text/html" title="Inducción y Deducción según Polya" /><published>2019-12-14T00:00:00-06:00</published><updated>2019-12-14T00:00:00-06:00</updated><id>http://localhost:4000/2019/12/14/induccion-y-deduccion-segun-polya</id><content type="html" xml:base="http://localhost:4000/2019/12/14/induccion-y-deduccion-segun-polya.html">&lt;p&gt;Este es el tercer artículo acerca del libro &lt;a href=&quot;https://amzn.to/2P8HJA8&quot;&gt;“How to Solve It”&lt;/a&gt; de George Polya. Puedes ver los dos artículos anteriores aquí:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/2019/09/27/tecnicas-para-resolver-problemas.html&quot;&gt;Técnicas para resolver problemas&lt;/a&gt;&lt;/li&gt;
@@ -489,7 +547,7 @@ de resolución de problemas aplican para el problema que tenemos que resolver&lt
 
 &lt;h3 id=&quot;inducción-matemática&quot;&gt;Inducción matemática&lt;/h3&gt;
 
-&lt;p&gt;Polya habla de otro tipo de inducción de la que opina que no debería llamarse así, y que comparte muy poco con el proceso que acabamos de descubrir y puede llegar a confundir a la gente: la &lt;strong&gt;inducción matemática&lt;/strong&gt;. Este tipo de inducción se refiere al método que los matemáticos emplean para demostrar que cierta aserción es un teorema o no.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problem-solving" /><category term="how-to-solve-it" /><summary type="html">Aprende de los conceptos de inducción y deducción según George Polya los explica en How to Solve It</summary></entry><entry><title type="html">Criptografía básica para programadores: ¿Qué es la criptografía?</title><link href="https://blog.thedojo.mx/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html" rel="alternate" type="text/html" title="Criptografía básica para programadores: ¿Qué es la criptografía?" /><published>2019-11-12T00:00:00-06:00</published><updated>2019-11-12T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia</id><content type="html" xml:base="https://blog.thedojo.mx/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html">&lt;p&gt;Es muy común escuchar de “encriptación” (la palabra correcta en español es &lt;em&gt;cifrado&lt;/em&gt;), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain.&lt;/p&gt;
+&lt;p&gt;Polya habla de otro tipo de inducción de la que opina que no debería llamarse así, y que comparte muy poco con el proceso que acabamos de descubrir y puede llegar a confundir a la gente: la &lt;strong&gt;inducción matemática&lt;/strong&gt;. Este tipo de inducción se refiere al método que los matemáticos emplean para demostrar que cierta aserción es un teorema o no.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problem-solving" /><category term="how-to-solve-it" /><summary type="html">Aprende de los conceptos de inducción y deducción según George Polya los explica en How to Solve It</summary></entry><entry><title type="html">Criptografía básica para programadores: ¿Qué es la criptografía?</title><link href="http://localhost:4000/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html" rel="alternate" type="text/html" title="Criptografía básica para programadores: ¿Qué es la criptografía?" /><published>2019-11-12T00:00:00-06:00</published><updated>2019-11-12T00:00:00-06:00</updated><id>http://localhost:4000/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia</id><content type="html" xml:base="http://localhost:4000/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html">&lt;p&gt;Es muy común escuchar de “encriptación” (la palabra correcta en español es &lt;em&gt;cifrado&lt;/em&gt;), llaves, algoritmos criptográficos y cosas parecidas, sobre todo con el surgimiento de Bitcoin y Blockchain.&lt;/p&gt;
 
 &lt;p&gt;Uno de los temas menos tratados por programadores de software común (para usuarios y sistemas que no impliquen el uso de seguridad a medida), es el correcto uso de los algoritmos criptográficos y muchas veces ni siquiera conocemos lo suficiente de ellos, sino que confiamos en lo que las herramientas pre-establecen (que gran parte de las veces fue diseñado por expertos y eso está bien).&lt;/p&gt;
 
@@ -569,7 +627,7 @@ de resolución de problemas aplican para el problema que tenemos que resolver&lt
 
 &lt;p&gt;En este artículo sólo hemos tocado la definición de criptografía y hemos mencionado por qué es importante. En los siguientes empezaremos a hablar de las bases que nos permitirán comprender cómo funciona la criptografía y qué mecanismos son los que permiten que brinde seguridad mediante ocultar la información.&lt;/p&gt;
 
-&lt;p&gt;En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo)aleatorios y sus generadores.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="criptografía" /><category term="esteganografía" /><category term="seguridad" /><summary type="html">Aprende las bases de la criptografía para tenerla en cuenta en tus programas.</summary></entry><entry><title type="html">Entendiendo REST: Servicios cacheables</title><link href="https://blog.thedojo.mx/2019/10/27/entendiendo-rest-servicios-cacheables.html" rel="alternate" type="text/html" title="Entendiendo REST: Servicios cacheables" /><published>2019-10-27T00:00:00-05:00</published><updated>2019-10-27T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/10/27/entendiendo-rest-servicios-cacheables</id><content type="html" xml:base="https://blog.thedojo.mx/2019/10/27/entendiendo-rest-servicios-cacheables.html">&lt;p&gt;La tercera característica que &lt;a href=&quot;https://twitter.com/fielding&quot;&gt;Thomas R. Fielding&lt;/a&gt; (Roy Fielding a partir de ahora) establece para los sistemas &lt;strong&gt;REST&lt;/strong&gt; es la capacidad de que su información sea cacheable. Veamos lo que esto significa y por qué es una característica importante. Empecemos por definir el caché.&lt;/p&gt;
+&lt;p&gt;En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo)aleatorios y sus generadores.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="criptografía" /><category term="esteganografía" /><category term="seguridad" /><summary type="html">Aprende las bases de la criptografía para tenerla en cuenta en tus programas.</summary></entry><entry><title type="html">Entendiendo REST: Servicios cacheables</title><link href="http://localhost:4000/2019/10/27/entendiendo-rest-servicios-cacheables.html" rel="alternate" type="text/html" title="Entendiendo REST: Servicios cacheables" /><published>2019-10-27T00:00:00-05:00</published><updated>2019-10-27T00:00:00-05:00</updated><id>http://localhost:4000/2019/10/27/entendiendo-rest-servicios-cacheables</id><content type="html" xml:base="http://localhost:4000/2019/10/27/entendiendo-rest-servicios-cacheables.html">&lt;p&gt;La tercera característica que &lt;a href=&quot;https://twitter.com/fielding&quot;&gt;Thomas R. Fielding&lt;/a&gt; (Roy Fielding a partir de ahora) establece para los sistemas &lt;strong&gt;REST&lt;/strong&gt; es la capacidad de que su información sea cacheable. Veamos lo que esto significa y por qué es una característica importante. Empecemos por definir el caché.&lt;/p&gt;
 
 &lt;h2 id=&quot;qué-es-el-caché&quot;&gt;¿Qué es &lt;em&gt;el caché&lt;/em&gt;?&lt;/h2&gt;
 
@@ -674,7 +732,7 @@ fácil de escalar, fallarás.&lt;/p&gt;
 
 &lt;p&gt;Si quieres leer un artículo más completo con otras referencias sobre el caché en REST y en HTTP te recomiendo &lt;a href=&quot;https://odino.org/rest-better-http-cache/&quot;&gt;REST better: HTTP Cache&lt;/a&gt;, en inglés.&lt;/p&gt;
 
-&lt;p&gt;En el siguiente artículo veremos la cuarta restricción de los sistemas REST: la interfaz uniforme, la más amplia de las restricciones, pero una de las más útiles.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo.</summary></entry><entry><title type="html">El arte de resolver problemas: la heurística</title><link href="https://blog.thedojo.mx/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html" rel="alternate" type="text/html" title="El arte de resolver problemas: la heurística" /><published>2019-10-03T00:00:00-05:00</published><updated>2019-10-03T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/10/03/el-arte-de-resolver-problemas-la-heuristica</id><content type="html" xml:base="https://blog.thedojo.mx/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html">&lt;blockquote&gt;
+&lt;p&gt;En el siguiente artículo veremos la cuarta restricción de los sistemas REST: la interfaz uniforme, la más amplia de las restricciones, pero una de las más útiles.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo.</summary></entry><entry><title type="html">El arte de resolver problemas: la heurística</title><link href="http://localhost:4000/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html" rel="alternate" type="text/html" title="El arte de resolver problemas: la heurística" /><published>2019-10-03T00:00:00-05:00</published><updated>2019-10-03T00:00:00-05:00</updated><id>http://localhost:4000/2019/10/03/el-arte-de-resolver-problemas-la-heuristica</id><content type="html" xml:base="http://localhost:4000/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html">&lt;blockquote&gt;
   &lt;p&gt;La heurística habla del &lt;strong&gt;comportamiento humano&lt;/strong&gt; frente a los problemas. - George Polya&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -750,7 +808,7 @@ Polya habla de múltiples métodos y procedimientos para avanzar en la resoluci�
 
 &lt;p&gt;La heurística es un campo de estudio valioso sobre todo para la vida moderna y para el desarrollo de software porque puede ayudarnos a estructurar nuestros esfuerzos en la resolución de los problemas que nos enfrentamos.&lt;/p&gt;
 
-&lt;p&gt;En el siguiente y último artículo de la serie analizaremos más técnicas usadas en la resolución de problemas de las que Polya habla en el libro “How to Solve It”.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problemas" /><category term="how_to_solve_it" /><category term="heurística" /><category term="heuristics" /><summary type="html">La heurística te ayudará a resolver mejor los problemas que se te presentan como programador. Veamosla más detenidamente.</summary></entry><entry><title type="html">Técnicas para resolver problemas</title><link href="https://blog.thedojo.mx/2019/09/27/tecnicas-para-resolver-problemas.html" rel="alternate" type="text/html" title="Técnicas para resolver problemas" /><published>2019-09-27T00:00:00-05:00</published><updated>2019-09-27T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/09/27/tecnicas-para-resolver-problemas</id><content type="html" xml:base="https://blog.thedojo.mx/2019/09/27/tecnicas-para-resolver-problemas.html">&lt;p&gt;Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver.&lt;/p&gt;
+&lt;p&gt;En el siguiente y último artículo de la serie analizaremos más técnicas usadas en la resolución de problemas de las que Polya habla en el libro “How to Solve It”.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problemas" /><category term="how_to_solve_it" /><category term="heurística" /><category term="heuristics" /><summary type="html">La heurística te ayudará a resolver mejor los problemas que se te presentan como programador. Veamosla más detenidamente.</summary></entry><entry><title type="html">Técnicas para resolver problemas</title><link href="http://localhost:4000/2019/09/27/tecnicas-para-resolver-problemas.html" rel="alternate" type="text/html" title="Técnicas para resolver problemas" /><published>2019-09-27T00:00:00-05:00</published><updated>2019-09-27T00:00:00-05:00</updated><id>http://localhost:4000/2019/09/27/tecnicas-para-resolver-problemas</id><content type="html" xml:base="http://localhost:4000/2019/09/27/tecnicas-para-resolver-problemas.html">&lt;p&gt;Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver.&lt;/p&gt;
 
 &lt;p&gt;George Polya fue uno de los matemáticos más prolíficos del Siglo XX, un matemático de primera clase (de esos que descubren e inventan cosas, y para algunos, &lt;strong&gt;el matemático más influyente del siglo&lt;/strong&gt;) pero que, a diferencia de muchos otros, mantenía un interés por la educación y la enseñanza de las matemáticas, algo muy peculiar.&lt;/p&gt;
 
@@ -921,182 +979,4 @@ Además podemos ver si podemos hacer algo diferente, si nuestro resultado cumple
   &lt;li&gt;Aprovecha cualquier idea aunque suene disparatada.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;En el siguiente post hablaremos de 5 cosas más de las que Polya habla en su libro: heurística, inducción, deducción, análisis y síntesis.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="matemáticas" /><category term="maths" /><category term="polya" /><category term="books" /><category term="libros" /><summary type="html">¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 1928. Hablemos de las principales lecciones que podemos sacar.</summary></entry><entry><title type="html">¿Por qué deberías aprender Go?</title><link href="https://blog.thedojo.mx/2019/09/01/por-que-deberias-aprender-go.html" rel="alternate" type="text/html" title="¿Por qué deberías aprender Go?" /><published>2019-09-01T00:00:00-05:00</published><updated>2019-09-01T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/09/01/por-que-deberias-aprender-go</id><content type="html" xml:base="https://blog.thedojo.mx/2019/09/01/por-que-deberias-aprender-go.html">&lt;blockquote&gt;
-  &lt;p&gt;Go es &lt;strong&gt;eficiente, escalable y productivo&lt;/strong&gt;. - &lt;em&gt;Rob Pike&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Go es un lenguaje que llama la atención por algunos rumores que hay acerca de él, como, por ejemplo, que es el lenguaje que va a matar a C, o que es muy muy rápido y poderoso. En este artículo vamos a hablar de qué cosas son ciertas y en qué casos te conviene aprender Go.&lt;/p&gt;
-
-&lt;p&gt;Empecemos hablando de cómo y por qué nació.&lt;/p&gt;
-
-&lt;h2 id=&quot;historia-de-go&quot;&gt;Historia de Go&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Go fue diseñado por Google para resolver sus problemas, y Google tiene &lt;em&gt;grandes&lt;/em&gt; problemas. - &lt;em&gt;Rob Pike&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Go fue creado dentro de Google por un grupo de desarrolladores de software y científicos de la computación &lt;strong&gt;MUY experimentados&lt;/strong&gt;. Las tres personas que lo iniciaron a pensar y diseñar en 2007 fueron Robert Griesemer, Rob Pike y &lt;strong&gt;Ken Thompson&lt;/strong&gt; (sí, el co-creador de UNIX, grep y muchas cosas más). De ese tamaño son las personas que lo diseñaron, y así se siente el lenguaje cuando lo usas.&lt;/p&gt;
-
-&lt;p&gt;Después de una serie de correos y discusiones sobre el diseño, empezaron a trabajar en él y &lt;a href=&quot;https://www.youtube.com/watch?v=rKnDgT73v8s&quot;&gt;lo presentaron como proyecto Open Source en 2009&lt;/a&gt;, a partir de ahí muchas personas tanto de dentro como de fuera de Google han contribuido a su desarrollo.&lt;/p&gt;
-
-&lt;h2 id=&quot;características-de--go&quot;&gt;Características de  Go&lt;/h2&gt;
-
-&lt;p&gt;Go fue concebido pensando en los problemas que los diseñadores veían en los sistemas de Google: su proceso de desarrollo estaba entorpecido por las herramientas que usaban. Según Rob Pike, todo era demasiado lento: demasiado lento de compilar, demasiado lento de construir, demasiado lento de pensar. Cuando decimos que el tiempo de compilación era demasiado largo nos referimos a que podía llegar a tomar &lt;em&gt;varias horas&lt;/em&gt; para compilar un sistema.&lt;/p&gt;
-
-&lt;p&gt;También había una “explosión de complejidad”. Así que Go fue pensado para ser simple, de una “simplicidad radical”. Por lo tanto, carece de características que otros lenguajes sí tienen, pero hacen que los programas sean complejos.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;La simplicidad es la clave del buen software. - &lt;em&gt;The Go Programming Language&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Analicemos las características de Go, un lenguaje pensado para trabajar en sistemas muy grandes de manera simple.&lt;/p&gt;
-
-&lt;h3 id=&quot;procedural-con-flexibilidad-para-orientación-a-objetos&quot;&gt;Procedural, con flexibilidad para orientación a objetos&lt;/h3&gt;
-
-&lt;p&gt;El paradigma principal de Go es el procedural se parece mucho a C en este aspecto. Sus principales medios de organización son las funciones y los paquetes, aunque permite crear un tipo débil de organización muy parecida a los objetos mediante &lt;code class=&quot;highlighter-rouge&quot;&gt;structs&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Aquí puedes ver un ‘Hello world’:&lt;/p&gt;
-
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;¡Hola Go!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;tipado-estático-y-fuerte&quot;&gt;Tipado estático y fuerte&lt;/h3&gt;
-
-&lt;p&gt;Go es un lenguaje fuertemente tipado, lo cuál quiere implica varias cosas:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;La declaración de variables implica el tipo de valor que estará asociado a esta instancia del nombre, por lo que no puede usarse para guardar otro tipo de valor. En Go no necesariamente se tiene que decir explícitamente el tipo de valor a usarse, puede ser inferido:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;n&quot;&gt;miNombre&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Héctor&quot;&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;// La variable es un string&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Esto es verificado en tiempo de compilación, por lo que podrás estar tranquilo de que Go no te dejará correr programas usando variables como lo que no son.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;No existe la conversión o forzamiento de tipos automática e implícita, como en JS, que intenta realizar la operación aunque los tipos de valor usados no tengan sentido en la operación. En Go, si intentas hacer una operación con tipos no compatibles el programa puede no compilar o fallar en tiempo de ejecución.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;rápida-compilación&quot;&gt;Rápida compilación&lt;/h3&gt;
-
-&lt;p&gt;Pensado para sistemas muy grandes, justo como los desarrollados en Google, Go se toma en serio el tiempo de complicación y es muy rápido al compilar los programas, a diferencia de Java, C o C++. Esto está apoyado por tres pilares:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Las dependencias están puestas al principio de cada archivo, por lo que no hay que buscar en todo el programa por dependencias perdidas.&lt;/li&gt;
-  &lt;li&gt;Las dependencias no forman ciclos, por lo que pueden organizarse para que sean compiladas independientemente, incluso de manera paralela.&lt;/li&gt;
-  &lt;li&gt;El programa objeto compilado de cada paquete exporta información útil para sus dependencias que puede ser usada sin tener que leer todo el paquete.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;manejo-de-dependencias-y-paquetes&quot;&gt;Manejo de dependencias y paquetes&lt;/h3&gt;
-&lt;p&gt;Go tiene en su biblioteca estándar más de 100 paquetes y la comunidad de Go cada vez contribuye más paquetes. Go viene con la herramienta para la línea de comandos &lt;code class=&quot;highlighter-rouge&quot;&gt;go&lt;/code&gt; que es fácil de usar para manejar proyectos creados con Go. La herramienta &lt;code class=&quot;highlighter-rouge&quot;&gt;go&lt;/code&gt; nos ayuda a administrar nuestras dependencias: descargarlas, limpiarlas e instalarlas.&lt;/p&gt;
-
-&lt;h3 id=&quot;manejo-de-memoria&quot;&gt;Manejo de memoria&lt;/h3&gt;
-&lt;p&gt;Go tiene manejo automático de memoria, lo que quiere decir que tal como en Java o Python, no tienes que preocuparte de liberar la memoria manualmente. Sin embargo, esta característica lo hace poco práctico para sistemas que requieran tratamiento de datos en tiempo real demasiado fuerte y preciso.&lt;/p&gt;
-
-&lt;h2 id=&quot;concurrencia&quot;&gt;Concurrencia&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1567320490/Go-routines-gopher_vgcpbt.jpg&quot; alt=&quot;La mascota de Go haciendo el trabajo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;A esta característica decidimos dedicarle un poco más de espacio. Debido a que el mundo de la computación ha cambiado desde que se escribieron los primeros programas, en los que se contaba con un sólo procesador, el equipo de Go le dio gran importancia a la capacidad de &lt;strong&gt;crear programas con un muy buen diseño concurrente&lt;/strong&gt;. Eventualmente estos programas podrían correr en paralelo aprovechando los sistemas de computación que existen actualmente, con múltiples procesadores.&lt;/p&gt;
-
-&lt;p&gt;Go permite crear procesos concurrente de manera muy sencilla:&lt;/p&gt;
-
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;k&quot;&gt;go&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Eso es todo. Go ejecutará la función &lt;code class=&quot;highlighter-rouge&quot;&gt;myFunc&lt;/code&gt; de manera concurrente (se ejecuta de manera independiente al programa principal o a otras funciones concurrentes). Esto es una &lt;strong&gt;gorutine&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Go soporta dos modelos de concurrencia:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Comunicación de procesos secuenciales&lt;/strong&gt; (Communicating Sequential Processes - CSP), en la que cada proceso tiene sus propias variables, y se transfieren información entre ellos mediante mensajes. En el caso de Go es a través de &lt;em&gt;canales&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Multihilo con memoria compartida&lt;/strong&gt;. En este tipo de concurrencia todos los procesos escriben sobre el mismo espacio de memoria, es decir, comparten variables, pero debe haber algúna forma de coordinación entre ellos para que no choquen ni se bloqueen mutuamente al tomar un recurso.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;La concurrencia es uno de los puntos más fuertes de Go.&lt;/p&gt;
-
-&lt;h2 id=&quot;ventajas-de-go-sobre-otros-lenguajes&quot;&gt;Ventajas de Go sobre otros lenguajes&lt;/h2&gt;
-
-&lt;p&gt;Hablemos de en qué casos querrías usar Go.&lt;/p&gt;
-
-&lt;h3 id=&quot;eficiencia-al-correr&quot;&gt;Eficiencia al correr&lt;/h3&gt;
-&lt;p&gt;Go no corre sobre ninguna máquina virtual. Crea ejecutables para los sistemas operativos a los que apunta, que contienen todo lo necesario para poder ejecutarse sin necesidad de tener algo instalado allí. Al ser compilado, Go es mucho más eficiente para correr que otros lenguajes interpretados, como JS, Python o Ruby. Consume menos memoria y su velocidad se acerca a la de C.&lt;/p&gt;
-
-&lt;h3 id=&quot;legibilidad&quot;&gt;Legibilidad&lt;/h3&gt;
-&lt;p&gt;Go fue pensado para ser &lt;em&gt;simple&lt;/em&gt;. Sus estructuras, su sintaxis y su filosofía lo hacen fácil de leer y de aprender. Es cierto que no es tan legible como Python o Ruby, por ejemplo, pero es mucho más legible que otros lenguajes con características similares como C++ o Java.&lt;/p&gt;
-
-&lt;h3 id=&quot;usable-para-los-programadores&quot;&gt;Usable para los programadores&lt;/h3&gt;
-
-&lt;p&gt;Una de las promesas de Go desde el principio era poder hacer mucho con poco. Y es algo que cumple completamente. Su librería estándar está diseñada y construida por verdaderos titanes de la ingeniería del software, practicantes de esto por más tiempo que la vida de muchos de los que leerán este artículo. El siguiente ejemplo es un servidor web con una ruta, sin usar ningún framework o biblioteca extra, sino sólo la pura biblioteca estándar de Go.&lt;/p&gt;
-
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&quot;net/http&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HandleFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HelloServer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ListenAndServe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;:8080&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HelloServer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ResponseWriter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Fprintf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello, %s!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;// te saluda de regreso&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;desventajas&quot;&gt;Desventajas&lt;/h2&gt;
-
-&lt;h3 id=&quot;sistema-de-tipos&quot;&gt;Sistema de tipos&lt;/h3&gt;
-&lt;p&gt;Esta no es una desventaja como tal de Go, sino una creada por el ecosistema de desarrollo actual: al haber tantos lenguajes que hacen manejo de valores y tipos de dato automáticamente, al programar en &lt;em&gt;cualquier&lt;/em&gt; lenguaje tipado, incluyendo Go, muchos sienten que están desperdiciando su tiempo.&lt;/p&gt;
-
-&lt;h2 id=&quot;relativamente-joven&quot;&gt;Relativamente joven&lt;/h2&gt;
-
-&lt;p&gt;Go tiene a penas 10 años de haber salido a la luz, 12 desde que se empezó a diseñar. El tiempo de vida de un lenguaje influye en su usabilidad y la conveniencia de varias formas:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;La comunidad que ha desarrollado&lt;/li&gt;
-  &lt;li&gt;Las herramientas disponibles&lt;/li&gt;
-  &lt;li&gt;Los errores encontrados&lt;/li&gt;
-  &lt;li&gt;Experiencias de otros desarrolladores con diferentes tipos y tamaños de sistemas&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Considera esto si tienes que hacer un proyecto grande.&lt;/p&gt;
-
-&lt;h2 id=&quot;proyectos-que-lo-usan&quot;&gt;Proyectos que lo usan&lt;/h2&gt;
-
-&lt;p&gt;Muchos proyectos importantes del mundo de la infraestructura, orquestación de servidores, contenedores, bases de datos y herramientas para programadores lo usan. Algunos ejemplos:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Docker&lt;/li&gt;
-  &lt;li&gt;Kubernetes&lt;/li&gt;
-  &lt;li&gt;Terraform y Vault (casi todos las herramientas de HashiCorp)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.influxdata.com/&quot;&gt;InfluxDB&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/caddyserver/caddy&quot;&gt;Caddy&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Esto te debería dar una idea de la importancia de Go en el ecosistema de desarrollo. Grandes proyectos lo usan, grandes empresas lo usan.&lt;/p&gt;
-
-&lt;h2 id=&quot;go-vs-rust&quot;&gt;Go vs Rust&lt;/h2&gt;
-
-&lt;p&gt;Una discusión reciente es cuál de los dos lenguajes va a lograr efectivamente reemplazar a C, con características más modernas y como un lenguaje más adaptado a las necesidades actuales. Esto es pura opinión: Rust es un mejor candidato para reemplazar a C por sus características de manejo de memoria. Pero Rust no es un lenguaje tan fácil de aprender o empezar com Go.
-En Go puedes hacer muchas cosas que haces con C razonablemente bien, sin tanta complicación y sin tener que manejar la memoria manualmente o semi-manualmente. La prueba está en todos los proyectos que manejan cosas de bajo nivel.&lt;/p&gt;
-
-&lt;p&gt;Más adelante tendremos un artículo de por qué deberías aprender Rust.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Go es un lenguaje relevante en 2019, 10 años después de haber nacido y lo seguirá siendo por muchos años, sobre todo por los proyectos ya desarrollados en él y las características de las que hablamos en este artículo. Aprenderlo te dará una herramienta más para desarrollar programas que valgan la pena y cumplan con lo esperado.&lt;/p&gt;
-
-&lt;p&gt;Pero como &lt;a href=&quot;https://fs.blog/about/&quot;&gt;Shane Parrish&lt;/a&gt; dice: Go es “simple pero no fácil”. Es sencillo empezar a programar con él, pero dominar sus conceptos requiere estudio y esfuerzo. Go se siente como una herencia de gente muy sabia haciendo un lenguaje para hacer cosas grandes. No te arrepentirás de aprenderlo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="go" /><category term="golang" /><category term="lenguajes-de-programación" /><summary type="html">Go es un lenguaje muy relevante en algunas áreas del desarrollo de software. Aprende para qué deberías usarlo y por qué te conviene aprenderlo.</summary></entry></feed>
+&lt;p&gt;En el siguiente post hablaremos de 5 cosas más de las que Polya habla en su libro: heurística, inducción, deducción, análisis y síntesis.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="matemáticas" /><category term="maths" /><category term="polya" /><category term="books" /><category term="libros" /><summary type="html">¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 1928. Hablemos de las principales lecciones que podemos sacar.</summary></entry></feed>

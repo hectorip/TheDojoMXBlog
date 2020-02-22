@@ -138,4 +138,9 @@ var store = [{
         "excerpt":"DevOps es un término de recientemente creación (2013) que representa un cultura de trabajo enfocada en resolver los problemas que han sido persistentes en la entrega y servicio en el área de productos tecnológicos. En este artículo platicaremos qué significa y sus fundamentos. Adelanto: DevOps no es un rol, una...","categories": [],
         "tags": ["devops","servers","culture"],
         "url": "https://blog.thedojo.mx/2020/01/16/que-es-devops.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1579160215/serge-kutuzov-_Y-8SdEn-WI-unsplash_csauhr.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1579160215/serge-kutuzov-_Y-8SdEn-WI-unsplash_csauhr.jpg"},{
+        "title": "A Philosophy of Software Design: Desarrollo Táctico vs Estratégico",
+        "excerpt":"Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada...","categories": [],
+        "tags": ["a-philosophy-of-software-design","complejidad"],
+        "url": "https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581404404/will-francis-Rm3nWQiDTzg-unsplash_cxpkvl.jpg"}]
