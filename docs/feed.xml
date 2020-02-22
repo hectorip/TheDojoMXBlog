@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-02-21T18:29:29-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Desarrollo Táctico vs Estratégico</title><link href="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Desarrollo Táctico vs Estratégico" /><published>2020-02-11T00:00:00-06:00</published><updated>2020-02-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html">&lt;p&gt;Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada uno.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-02-21T19:41:45-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Eloquent JavaScript en Español</title><link href="https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol.html" rel="alternate" type="text/html" title="Eloquent JavaScript en Español" /><published>2020-02-21T00:00:00-06:00</published><updated>2020-02-21T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol.html">&lt;blockquote&gt;
+  &lt;p&gt;TL;DR: Estamos trabajando en una nueva traducción de Eloquent JavaScript al español, en su tercera edición. La puedes encontrar aquí: &lt;a href=&quot;https://eloquentjs-es.thedojo.mx/&quot;&gt;Eloquent JavaScript en Español&lt;/a&gt;. Está la versión en PDF, que actualizamos cada capítulo. Si quieres contribuir puedes ponerte de acuerdo a través de este foro o en GitHub.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;!-- --- --&gt;
+
+&lt;p&gt;Desde el 2015 intentamos empezar a traducir la 2da edición de Eloquent JavaScript. Puedes ver el post en Medium aquí: &lt;a href=&quot;http://bit.ly/39W8qAH&quot;&gt;Traducción de Eloquent JavaScript al Español&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pasó el tiempo y tradujimos &lt;a href=&quot;http://bit.ly/2T3FLCZ&quot;&gt;algunos capítulos&lt;/a&gt;, pero luego salió la tercera edición.&lt;/p&gt;
+
+&lt;p&gt;Decidimos esperar a que se terminara para traducirlo completo, y hemos empezado de nuevo con los esfuerzos de traducción. Esta vez hemos empezados basados en la traducción de &lt;a href=&quot;https://github.com/CodeKommissar&quot;&gt;Luis Rodríguez&lt;/a&gt; quien tradujo los primeros 12 capítulos pero no pudimos contactar para ponernos de acuerdo.&lt;/p&gt;
+
+&lt;p&gt;La primera etapa de la traducción consiste en una revisión rápida de los capítulos ya traducidos, la segunda en completar los capítulos que faltan y la tercera en una revisión profunda de los 12 primeros capítulos.&lt;/p&gt;
+
+&lt;p&gt;Puedes ver la página oficial del libro aquí: &lt;a href=&quot;https://eloquentjs-es.thedojo.mx/&quot;&gt;Eloquent JavaScript ES&lt;/a&gt;.
+Puedes leer el libro en línea o descargarlo en PDF, próximamente en EPUB y Mobi. También estamos trabajando en una portada exclusiva para la versión en español.&lt;/p&gt;
+
+&lt;p&gt;¿Por qué lo hacemos?&lt;/p&gt;
+
+&lt;h2 id=&quot;la-importancia-del-contenido-en-tu-idioma-nativo&quot;&gt;La importancia del contenido en tu idioma nativo&lt;/h2&gt;
+
+&lt;p&gt;Es cierto que si quieres ser un buen desarrollador de software &lt;strong&gt;tienes&lt;/strong&gt; que aprender inglés. Si quieres ganar un mejor sueldo por poder trabajar para equipos remotos también es un requisito.&lt;/p&gt;
+
+&lt;p&gt;Pero es aceptado que se aprende mucho mejor en la lengua materna, así que si confías en que lo que tienes que estudiar es una buena traducción, no deberías dudar en estudiar en la lengua con la que creciste y que mejor conoces, el idioma de tus pensamientos.&lt;/p&gt;
+
+&lt;p&gt;Otras veces, hay personas que no tienen otra opción y principalmente por ellas que se está realizando esta traducción. No debería sumarse la barrera del lenguaje a la carga de aprender a programar que ya es fuerte.&lt;/p&gt;
+
+&lt;p&gt;Este es, esperamos, el primero de varios libros que queremos traducir al español.&lt;/p&gt;
+
+&lt;h2 id=&quot;contribuciones&quot;&gt;Contribuciones&lt;/h2&gt;
+
+&lt;p&gt;Si dominas el inglés (sobre todo técnico) y tienes buena ortografía, necesitamos tu ayuda para traducción. También necesitamos revisores, personas que lean el contenido y hagan comentarios (o Pull Requests) sobre frases poco claras, errores de ortografía o gramática. Si tienes habilidades de diseño gráfico necesitamos ayuda para traducir las ilustraciones.&lt;/p&gt;
+
+&lt;p&gt;Finalmente, en el futuro habilitaremos algún medio para contribuciones monetarias, para acelerar la traducción mediante la contratación de traductores y diseñadores profesionales.&lt;/p&gt;
+
+&lt;p&gt;No dudes en ponerte en contacto en &lt;a href=&quot;https://github.com/Eloquent-JavaScript-Espanol/Eloquent-JavaScript-ES&quot;&gt;GitHub&lt;/a&gt; o a través de este artículo, en los comentarios.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Traudcción del Eloquent JavaScript al español, 3ra edición</summary></entry><entry><title type="html">A Philosophy of Software Design: Desarrollo Táctico vs Estratégico</title><link href="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Desarrollo Táctico vs Estratégico" /><published>2020-02-11T00:00:00-06:00</published><updated>2020-02-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html">&lt;p&gt;Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada uno.&lt;/p&gt;
 
 &lt;h2 id=&quot;desarrollo-táctico&quot;&gt;Desarrollo táctico&lt;/h2&gt;
 
@@ -808,175 +843,4 @@ Polya habla de múltiples métodos y procedimientos para avanzar en la resoluci�
 
 &lt;p&gt;La heurística es un campo de estudio valioso sobre todo para la vida moderna y para el desarrollo de software porque puede ayudarnos a estructurar nuestros esfuerzos en la resolución de los problemas que nos enfrentamos.&lt;/p&gt;
 
-&lt;p&gt;En el siguiente y último artículo de la serie analizaremos más técnicas usadas en la resolución de problemas de las que Polya habla en el libro “How to Solve It”.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problemas" /><category term="how_to_solve_it" /><category term="heurística" /><category term="heuristics" /><summary type="html">La heurística te ayudará a resolver mejor los problemas que se te presentan como programador. Veamosla más detenidamente.</summary></entry><entry><title type="html">Técnicas para resolver problemas</title><link href="https://blog.thedojo.mx/2019/09/27/tecnicas-para-resolver-problemas.html" rel="alternate" type="text/html" title="Técnicas para resolver problemas" /><published>2019-09-27T00:00:00-05:00</published><updated>2019-09-27T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/09/27/tecnicas-para-resolver-problemas</id><content type="html" xml:base="https://blog.thedojo.mx/2019/09/27/tecnicas-para-resolver-problemas.html">&lt;p&gt;Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver.&lt;/p&gt;
-
-&lt;p&gt;George Polya fue uno de los matemáticos más prolíficos del Siglo XX, un matemático de primera clase (de esos que descubren e inventan cosas, y para algunos, &lt;strong&gt;el matemático más influyente del siglo&lt;/strong&gt;) pero que, a diferencia de muchos otros, mantenía un interés por la educación y la enseñanza de las matemáticas, algo muy peculiar.&lt;/p&gt;
-
-&lt;p&gt;Escribió varios libros, entre ellos está &lt;strong&gt;“How to solve it”&lt;/strong&gt; un tratado de 4 partes en el que explica de manera muy detallada cómo resolver problemas matemáticos principalmente, pero también cómo aplicar este conocimiento a otras áreas de la vida.&lt;/p&gt;
-
-&lt;p&gt;Las técnicas explicadas por Polya te pueden ayudar a desarrollar tus capacidades de resolución de problemas.&lt;/p&gt;
-
-&lt;p&gt;Empecemos por hablar de la estructura los problemas de los que Polya habla en su libro.&lt;/p&gt;
-
-&lt;h2 id=&quot;estructura-de-un-problema&quot;&gt;Estructura de un problema&lt;/h2&gt;
-
-&lt;p&gt;Polya enseña que un problema tiene tres partes:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Los datos&lt;/strong&gt;. Es la información que tenemos disponible para resolver el problema.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Las condiciones&lt;/strong&gt;. Describen la relación que existe entre los datos y la solución, pero también la forma, los límites y características de la solución buscada.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;La incógnita o lo desconocido&lt;/strong&gt;. Es la información que buscamos y que cumple con las condiciones del problema.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Es muy importante conocer la composición de un problema para poder aplicar las técnicas descritas en el libro. Cualquier problema matemático &lt;strong&gt;debería cumplir con estas características&lt;/strong&gt;, pero no todos los problemas de la vida real cumplen con esta estructura tal y como la necesitamos; por esta razón deberíamos desarrollar la capacidad de entender los problemas que se nos presentan y estructurarlos lo mejor posible según esta definición para facilitarnos la vida posteriormente.&lt;/p&gt;
-
-&lt;p&gt;Para resolver un problema deberías ser capaz de contestar las siguientes preguntas:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Qué estoy buscando? -&amp;gt; &lt;strong&gt;¿Cuál es la incógnita?&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;¿Qué datos tengo disponibles? -&amp;gt; &lt;strong&gt;¿Son suficientes los datos que tengo para resolver el problema?&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;¿Qué condiciones tiene que cumplir la incógnita? -&amp;gt; &lt;strong&gt;¿Es posible cumplir con esta condición?&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;¿Qué relación hay entre los datos y la incógnita?&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Esta estructura sienta las bases para lo que viene. Ahora hablemos de de los tipos de problemas de los que Polya hace distinción.&lt;/p&gt;
-
-&lt;h2 id=&quot;tipos-de-problemas&quot;&gt;Tipos de problemas&lt;/h2&gt;
-
-&lt;p&gt;Polya hace la distinción entre dos tipos diferentes de problemas que hay que tratar de resolver de manera ligeramente diferente aunque la estructura sea la misma.&lt;/p&gt;
-
-&lt;h3 id=&quot;1-problemas-para-encontrar&quot;&gt;1. Problemas para encontrar&lt;/h3&gt;
-
-&lt;p&gt;Estos son los problemas básicos que nos ponían en la escuela primaria: “&lt;strong&gt;Hallar&lt;/strong&gt; el área de un terreno cuadrado de 10m por lado”, “&lt;strong&gt;Encuentra&lt;/strong&gt; la diámetro de una circunferencia con un perímetro de 12cm”.&lt;/p&gt;
-
-&lt;p&gt;En este tipo de problemas hay que encontrar un resultado, que puede ser numérico o no. Estos son los problemas con los que nos encontramos mayormente en áreas del conocimiento muy exploradas.&lt;/p&gt;
-
-&lt;p&gt;Como programadores podríamos tener estos ejemplos de este tipo de problemas:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Qué complejidad tiene este algoritmo que acabo de programar?&lt;/li&gt;
-  &lt;li&gt;¿A cuántos usuarios simultáneos podré atender con este servidor con 4GB de RAM?&lt;/li&gt;
-  &lt;li&gt;¿Cuánto tiempo va a tardar en subir mi millón de archivos si lo vuelvo paralelo? ¿Cuánto va a tardar si no lo paralelizo?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Varios de estos problemas suenan demasiado simples porque ya los tenemos bien trabajados a base de repetición. Pero otros que no tienen una respuesta numérica pueden ser un poco más complicados:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Qué base de datos debería usar para servir notificaciones en tiempo real?&lt;/li&gt;
-  &lt;li&gt;¿Qué lenguaje de programación debo usar para un sistema que estará emebebido en un millón de dispositivos electrónicos mandando notificaciones críticas cada segundo?&lt;/li&gt;
-  &lt;li&gt;¿Qué sistema de comunicación puedo usar entre dos dispositivos que no cuentan con una conexión confiable a internet?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;En los ejemplos anteriores encontrar una solución concreta a las preguntas planteadas permite avanzar.&lt;/p&gt;
-
-&lt;h3 id=&quot;2-problemas-para-demostrar&quot;&gt;2. Problemas para demostrar&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Demuestre que la línea de mayor longitud que toca dos puntos de una circunferencia pasa por el centro del círculo”.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Esto es un ejemplo de un problema para demostrar. Estos implican la comprobación o refutación de una aserción (&lt;em&gt;hipótesis&lt;/em&gt;) enunciada en el problema. Estos problemas generalmente nos los ponían en la preparatoria o universidad, por su naturaleza son un poco más difíciles en general.&lt;/p&gt;
-
-&lt;p&gt;Para un desarrollador podríamos poner problemas para demostrar como:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;“Demuestra que es imposible un bloqueo mutuo entre procesos con el algoritmo usado actualmente”.&lt;/li&gt;
-  &lt;li&gt;“¿Cómo sabemos que evitamos todas las condiciones de carrera en el sistema actual?”&lt;/li&gt;
-  &lt;li&gt;“Comprueba que el máximo tiempo que puede tardar el sistema en responder es menor que X.”&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Estos problemas requieren soluciones más generales y abstractas en general. Espero que con estos ejemplos haya quedado clara la diferencia entre los diferentes tipos de problemas.&lt;/p&gt;
-
-&lt;h3 id=&quot;problemas-matemáticos-acertijos-y-problemas-de-la-vida-real&quot;&gt;Problemas matemáticos, acertijos y problemas de la vida real&lt;/h3&gt;
-
-&lt;p&gt;Polya habla en sus libro sobre todo de un tipo específico de problemas: &lt;strong&gt;los problemas matemáticos&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Un problema matemático bien definido cuenta con:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Datos suficientes para resolución&lt;/li&gt;
-  &lt;li&gt;No tiene datos sobrantes&lt;/li&gt;
-  &lt;li&gt;Condiciones no contradictorias o imposibles de cumplir&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Por extensión, &lt;strong&gt;los acertijos&lt;/strong&gt; cumplen con las mismas características, y se dan algunos de ejemplos de ellos en el libro.
-Pero los problemas de la vida real son muy diferentes, ya que estos pueden no cumplir con las características completas
-de un problema bien definido. Así que uno de los pasos previos para resolver un problema de la vida real es intentar definir lo mejor posible el problema por resolver y completarlo en caso de que falte algo.&lt;/p&gt;
-
-&lt;h2 id=&quot;cómo-empezar-a-resolver-un-problema&quot;&gt;Cómo empezar a resolver un problema&lt;/h2&gt;
-&lt;p&gt;Polya plantea cuatro etapas de resolución de un problema:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Entendimiento&lt;/li&gt;
-  &lt;li&gt;Planeación&lt;/li&gt;
-  &lt;li&gt;Ejecución&lt;/li&gt;
-  &lt;li&gt;Retrospectiva&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Hablemos de cada una, para entender claramente cómo podemos mejorar nuestras posibilidades de resolución de un problema.&lt;/p&gt;
-
-&lt;h3 id=&quot;entendimiento&quot;&gt;Entendimiento&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Es tonto contestar una pregunta que no entiendes. Es triste trabajar por un fin que no deseas. - &lt;strong&gt;G. Polya&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;El entendimiento del problema consiste primero en asegurarnos de que &lt;strong&gt;entendemos el planteamiento verbal del problema&lt;/strong&gt;, si no tenemos ni siquiera un planteamiento verbal, debemos empezar por crearlo.&lt;/p&gt;
-
-&lt;p&gt;Para decir que comprendemos el problema, tenemos que conocer los datos que se dan, las condiciones a satisfacer y la incógnita o lo que hay que demostrar.&lt;/p&gt;
-
-&lt;p&gt;Esta parte puede llevar gran parte del tiempo total dedicado al problema, ya que es el fundamento de los próximos pasos, sin la que no se puede continuar.&lt;/p&gt;
-
-&lt;p&gt;### Planeación&lt;/p&gt;
-
-&lt;p&gt;El siguiente paso es trazar un plan para atacar el problema. El plan consiste en saber que transformaciones, derivaciones y combinaciones tenemos que hacer con los datos para llegar a la solución esperada.&lt;/p&gt;
-
-&lt;p&gt;Esta es la parte más difícil, ya que implica conocimiento profundo del problema. Para Polya, concebir un plan es el mayor logro en la resolución de un problema. Cuando lo concebimos parece que tenemos una “idea brillante”.&lt;/p&gt;
-
-&lt;p&gt;Pero es casi imposible tener una idea brillante cuando sabemos muy poco del tema. Las buenas ideas están basadas en conocimiento y experiencia previa. Por eso conviene preguntarse: &lt;strong&gt;¿Conozco o resuelto un problema relacionado o similar?&lt;/strong&gt;. Hablaremos de otras preguntas que nos pueden ayudar a concebir un plan más adelante.&lt;/p&gt;
-
-&lt;p&gt;### Ejecución&lt;/p&gt;
-
-&lt;p&gt;Es hora de llevar a cabo los pasos establecidos en la planeación. En esta etapa hay que ejecutar cada uno de los pasos que establecimos en la planeación de ejecución del problema. Polya dice que aquí es donde &lt;strong&gt;hay que ser rigurosos con lo que hacemos&lt;/strong&gt;, verificando que lo que hacemos tenga sentido y sea estrictamente correcto. ¿Puedes comprobar en cada paso que es correcto lo que estás haciendo?&lt;/p&gt;
-
-&lt;p&gt;### Retrospectiva&lt;/p&gt;
-
-&lt;p&gt;En este paso hay que &lt;strong&gt;examinar el resultado&lt;/strong&gt;. ¿Puedes probar que el resultado final es correcto?
-Además podemos ver si podemos hacer algo diferente, si nuestro resultado cumple con todo lo esperado y si podemos encontrar o derivar el resultado de alguna otra forma ahora que ya sabemos cuál es.&lt;/p&gt;
-
-&lt;p&gt;Este paso también sirve para verificar si el resultado o el método que usamos para resolverlo nues puede ayudar con algún otro problema que tengamos que resolver.&lt;/p&gt;
-
-&lt;h3 id=&quot;las-preguntas-de-polya&quot;&gt;Las preguntas de Polya&lt;/h3&gt;
-
-&lt;p&gt;Polya estableció una serie de preguntas que pueden guiarte en la solución de un problema, muy relacionadas con los pasos de los que acabamos de hablar. Estas preguntas las repite vez tras vez en el libro y en verdad son iluminadoras si estás atorado en algún problema que no puedes resolver. A continuación las listamos.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿He resuelto un problema &lt;strong&gt;relacionado&lt;/strong&gt;? ¿Conozco un &lt;strong&gt;problema que se aproxime&lt;/strong&gt;?&lt;/li&gt;
-  &lt;li&gt;¿Estoy usando todos los datos?&lt;/li&gt;
-  &lt;li&gt;¿Puedo cambiar algo del problema para hacerlo más fácil?
-    &lt;ul&gt;
-      &lt;li&gt;¿Puedo cambiar los datos?&lt;/li&gt;
-      &lt;li&gt;¿Puedo cambiar las condiciones?&lt;/li&gt;
-      &lt;li&gt;¿Puedo cambiar la incógnita?&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;para-recordar&quot;&gt;Para recordar&lt;/h2&gt;
-
-&lt;p&gt;Para resolver un problema:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Asegúrate de entender el problema completamente: qué datos tienes, qué relación hay entre los datos y la incógnita y lo que tienes que encontrar.&lt;/li&gt;
-  &lt;li&gt;Planea cómo vas a atacar el problema&lt;/li&gt;
-  &lt;li&gt;Si estás detenido en la resolución de un problema puedes:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Variar los datos&lt;/strong&gt;, las condiciones o el resultado esperado.&lt;/li&gt;
-      &lt;li&gt;Pensar en otros problemas que se le parezcan: puedes usar el método que usaste para resolverlos o el resultado.&lt;/li&gt;
-      &lt;li&gt;Aceptar soluciones parciales, parcialmente erróneas o asumidas.&lt;/li&gt;
-      &lt;li&gt;Genera nuevas ideas y re-evalúa el problema y el plan a la luz de cada nuevo paso.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Aprovecha cualquier idea aunque suene disparatada.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;En el siguiente post hablaremos de 5 cosas más de las que Polya habla en su libro: heurística, inducción, deducción, análisis y síntesis.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="matemáticas" /><category term="maths" /><category term="polya" /><category term="books" /><category term="libros" /><summary type="html">¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 1928. Hablemos de las principales lecciones que podemos sacar.</summary></entry></feed>
+&lt;p&gt;En el siguiente y último artículo de la serie analizaremos más técnicas usadas en la resolución de problemas de las que Polya habla en el libro “How to Solve It”.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problemas" /><category term="how_to_solve_it" /><category term="heurística" /><category term="heuristics" /><summary type="html">La heurística te ayudará a resolver mejor los problemas que se te presentan como programador. Veamosla más detenidamente.</summary></entry></feed>
