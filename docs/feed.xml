@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-02-21T19:41:45-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Eloquent JavaScript en Español</title><link href="https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol.html" rel="alternate" type="text/html" title="Eloquent JavaScript en Español" /><published>2020-02-21T00:00:00-06:00</published><updated>2020-02-21T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-02-26T00:32:26-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Tres formas de identificar la complejidad</title><link href="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Tres formas de identificar la complejidad" /><published>2020-02-26T00:00:00-06:00</published><updated>2020-02-26T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html">&lt;blockquote&gt;
+  &lt;p&gt;“Controlar la complejidad es la esencia de la programación” - Brian W. Kernighan&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Muchas mentes brillantes dedicadas al desarrollo de software han estado de acuerdo en que el principal problema al crear y mantener programas es el manejo de la complejidad.&lt;/p&gt;
+
+&lt;p&gt;Podemos decir que algo complejo es aquello que está compuesto por muchas piezas relacionadas entre ellas. &lt;a href=&quot;http://web.stanford.edu/~ouster/cgi-bin/home.php&quot;&gt;Ousterhout&lt;/a&gt; lo define de manera práctica &lt;em&gt;como todo aquello que el software sea difícil de entender, escribir o mantener&lt;/em&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;La complejidad es más visible para los lectores que para los escritores [del código]. Si escribes una pieza de código que parece siemple para ti, pero otras personas piensan que es compleja, entonces es &lt;strong&gt;compleja&lt;/strong&gt;. - John Ousterhout&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Philosophy of Software Design habla de tres formas de identificar un programa más complejo de lo que debería ser:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Amplificación de cambios&lt;/li&gt;
+  &lt;li&gt;Carga cognitiva&lt;/li&gt;
+  &lt;li&gt;Desconocidos desconocidos&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Identificar la complejidad es una habilidad crítica para el buen diseño de software, ter permitirá crear sistemas más simples y evitará que gastes recursos en desarrollar soluciones que son demasiado complejas.&lt;/p&gt;
+
+&lt;h2 id=&quot;amplificación-de-cambios&quot;&gt;Amplificación de cambios&lt;/h2&gt;
+
+&lt;p&gt;Este síntoma de la complejidad se hace obvio cuando estás haciendo un cambio que debió haber sido sencillo y tienes que tocar 7 archivos, 3 clases y 4 funciones. Se refiere a que una funcionalidad que parece sencilla del programa está repartida en muchos lados y para lograr hacer un cambio hay que tocar muchas partes del sistema.&lt;/p&gt;
+
+&lt;p&gt;Esto se pude dar cuando parámetros o valores que pueden estar centralizados o referenciados se ponen fijos a través de muchos archivos. También cuando código que se podría reutilizar se copia y pega.&lt;/p&gt;
+
+&lt;h2 id=&quot;carga-cognitiva&quot;&gt;Carga cognitiva&lt;/h2&gt;
+
+&lt;p&gt;Si tienes que mantener muchas cosas en la cabeza para poder entender el sistema, es complejo. Puede que tengas que entender y aprender muchas cosas acerca del funcionamiento del programa para usarlo bien y no causar un desastre. Cuando algo no tiene una interfaz simple, causa carga cognitiva.&lt;/p&gt;
+
+&lt;p&gt;El ejemplo son las funciones de lenguajes de programación que nunca aprendemos a usar porque tienen parámetros que aunque siempre son los mismos son requeridos por no tener un default decente. O por ejemplo, aquellas funciones que no recuerdas si cambian los parámetros o devuelven uno nuevo.&lt;/p&gt;
+
+&lt;p&gt;Aunqe programas más cortos están relacionados con baja carga cognitiva, no siempre es el caso debido a que ese poco código que existe dsea difícil de entender.&lt;/p&gt;
+
+&lt;h2 id=&quot;desconocidos-desconocidos&quot;&gt;Desconocidos desconocidos&lt;/h2&gt;
+
+&lt;p&gt;¿Tienes miedo de cambiar algo porque no sabes lo que pueda pasar y no hay ni documentación a la que puedas referirte? En este caso el sistema tiene información &lt;strong&gt;que no sabes que no sabes&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Un desconocido desconocido es aquella información que ni siquiera sabemos que estaba ahí y que no conocíamos, como algunas características del código, parámetros ocultos y comportamientos que no son fáciles de detectar ni están documentados.&lt;/p&gt;
+
+&lt;p&gt;¿Recuerdas la broma que dice: “Cuando escribí este código sólo Dios y yo sabíamos lo que hacía, ahora sólo Dios sabe”? Muchas veces nos pasa así con el código y es el ejemplo perfecto de los desconocidos desconocidos, sobre todo para otros programadores.&lt;/p&gt;
+
+&lt;h2 id=&quot;medición-de-la-complejidad&quot;&gt;Medición de la complejidad&lt;/h2&gt;
+
+&lt;p&gt;Un sistema puede ser complejo independientemente de su tamaño, es decir, hay sistemas no tan grandes que son muy complejos.&lt;/p&gt;
+
+&lt;p&gt;Para determinar la complejidad se puede pensar en la siguiente fórmula.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581460560/Untitled_Artwork_3_oljybd.jpg&quot; alt=&quot;Fórmual para calcular la complejidad&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Esto lo podríamos explicar como:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;La complejidad total de un sistema es la sumatoria de la complejidad de cada una de sus partes multiplicada por el tiempo que los desarrolladores pasan en esa parte del código.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Esta complejidad puede evitar que avances tanto como deberías, pero el primer paso es identificarla como lo viste aquí. En los siguientes artículos hablaremos de técnicas para reducir la complejidad.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="ousterhout" /><category term="complejidad" /><category term="diseño-de-software" /><category term="posd" /><summary type="html">Aprende a descubrir y medir la complejidad en tus proyectos</summary></entry><entry><title type="html">Eloquent JavaScript en Español</title><link href="https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol.html" rel="alternate" type="text/html" title="Eloquent JavaScript en Español" /><published>2020-02-21T00:00:00-06:00</published><updated>2020-02-21T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol.html">&lt;blockquote&gt;
   &lt;p&gt;TL;DR: Estamos trabajando en una nueva traducción de Eloquent JavaScript al español, en su tercera edición. La puedes encontrar aquí: &lt;a href=&quot;https://eloquentjs-es.thedojo.mx/&quot;&gt;Eloquent JavaScript en Español&lt;/a&gt;. Está la versión en PDF, que actualizamos cada capítulo. Si quieres contribuir puedes ponerte de acuerdo a través de este foro o en GitHub.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -767,80 +825,4 @@ fácil de escalar, fallarás.&lt;/p&gt;
 
 &lt;p&gt;Si quieres leer un artículo más completo con otras referencias sobre el caché en REST y en HTTP te recomiendo &lt;a href=&quot;https://odino.org/rest-better-http-cache/&quot;&gt;REST better: HTTP Cache&lt;/a&gt;, en inglés.&lt;/p&gt;
 
-&lt;p&gt;En el siguiente artículo veremos la cuarta restricción de los sistemas REST: la interfaz uniforme, la más amplia de las restricciones, pero una de las más útiles.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo.</summary></entry><entry><title type="html">El arte de resolver problemas: la heurística</title><link href="https://blog.thedojo.mx/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html" rel="alternate" type="text/html" title="El arte de resolver problemas: la heurística" /><published>2019-10-03T00:00:00-05:00</published><updated>2019-10-03T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/10/03/el-arte-de-resolver-problemas-la-heuristica</id><content type="html" xml:base="https://blog.thedojo.mx/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html">&lt;blockquote&gt;
-  &lt;p&gt;La heurística habla del &lt;strong&gt;comportamiento humano&lt;/strong&gt; frente a los problemas. - George Polya&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;En un &lt;a href=&quot;/2019/09/27/tecnicas-para-resolver-problemas.html&quot;&gt;artículo anterior&lt;/a&gt; analizamos la estructura básica de un problema y la estructura de resolución que George Polya propone para intentar resolverlos.&lt;/p&gt;
-
-&lt;p&gt;Polya analiza a fondo la estructura del proceso de resolución de problemas. Aquí hablaremos de &lt;strong&gt;la heurística&lt;/strong&gt;, de la que escribió en &lt;a href=&quot;https://math.hawaii.edu/home/pdf/putnam/PolyaHowToSolveIt.pdf&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;“How to solve it”&lt;/strong&gt;&lt;/a&gt;, un compendio que pensó originalmente como un análisis de esta.&lt;/p&gt;
-
-&lt;h2 id=&quot;definición&quot;&gt;Definición&lt;/h2&gt;
-
-&lt;p&gt;La palabra heurística viene de una raíz griega que transmite la idea de &lt;strong&gt;descubrimiento o invención&lt;/strong&gt;. La heurística históricamente ha estado relacionada con &lt;strong&gt;estudiar los medios por los que se descubre o inventa algo&lt;/strong&gt;. Su campo de estudio abarca la lógica, la psicología y la filosofía, pero no se puede acotar a ninguna de las tres áreas.&lt;/p&gt;
-
-&lt;p&gt;Polya estudia y define la heurística moderna como &lt;em&gt;el arte de resolver problemas&lt;/em&gt;, porque en eso consiste el proceso: descubrir una solución(en los problemas en los que hay que &lt;em&gt;encontrar algo&lt;/em&gt;) o inventar algo (en los problemas en los que hay que &lt;em&gt;crear una demostración&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;Podemos echar mano de lo que nos enseña al atacar problemas muy difíciles de los que no tenemos la mínima idea de cómo resolver o no podemos idear un plan confiable para resolverlos (recuerda que crear un plan es el punto medular de la resolución de un problema).&lt;/p&gt;
-
-&lt;h2 id=&quot;heurística-moderna&quot;&gt;Heurística moderna&lt;/h2&gt;
-
-&lt;p&gt;La heurística actualmente busca entender el proceso de resolución de problemas, pero particularmente las operaciones mentales relacionadas con ese proceso.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;La experiencia en la resolución de problemas u observar a otros resolver problemas debe ser la base de la heurística. - G. Polya&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Se busca encontrar patrones y propiedades comunes en una gran variedad de problemas, por lo que se puede decir que la heurística tiende a la generalidad, estudia procedimientos que son independientes del dominio del problema.
-Polya habla de múltiples métodos y procedimientos para avanzar en la resolución de un problema complicado.&lt;/p&gt;
-
-&lt;p&gt;Analicemos algunos de ellos:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Variación del problema&lt;/strong&gt;. ¿Puedo variar por lo menos temporalmente alguna de las partes del problema? ¿Puedo cambiar los datos, las condiciones o la solución?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Descomposición y recombinación&lt;/strong&gt;. Esta operación mental implica entender y separar las partes esenciales de un problema y tratar de re-crearlo con un nuevo entendimiento o crear un problema ligeramente diferente.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Regresar a las definiciones&lt;/strong&gt;. Comprender los términos usados en cada parte del problema a veces implicará que busquemos lo que algo significa desde sus raíces. Esto nos puede ayudar a entender mejor el problema así como a introducir elementos auxiliares que ayuden en la resolución.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Generalización, especialización y analogías&lt;/strong&gt;. Estas tres operaciones son una forma de variar un problema. ¿Puedo hacer el problema más amplio, para resolver un caso más general y después aplicar los resultados o el método a mi problema original? ¿Existe un problema similar al que estoy resolviendo que pueda resolver más fácilmente?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Notación adecuada&lt;/strong&gt;. Una vez entendido el problema, sobre todo para problemas matemáticos, es muy importante introducir notación que nos pueda ayudar a trabajar sobre el problema. Para los problemas matemáticos y en ciencias en general, ya existen estas notaciones estándar. Para nuestros problemas tenemos que inventar una que la mayoría de los implicados puede entender y usar.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Suponer, pero comprobar las suposiciones&lt;/strong&gt;. Para avanzar en la resolución de un problema muchas veces hay que dar cosas por supuesto, como en el caso de las comprobaciones por reducción al absurdo. Polya afirma que no está mal suponer cosas temporalmente mientras más adelante encontremos una forma de comprobar o rechazar esas suposiciones.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Trabajar en reversa&lt;/strong&gt;. Muchas veces sabemos &lt;em&gt;como luce&lt;/em&gt; la solución, o tenemos que comprobar que una solución supuesta es correcta. Trabajar en reversa significa avanzar de la solución hasta nuestro estado actual, trabajando paso por paso hasta poder encontrar la cadena de transformaciones necesarias para conectar esos estados.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Aspectos psicológicos: determinación, esperanza y éxito&lt;/strong&gt;. Al principio mencionamos que la heurística es también trataba con aspectos psicológicos. Polya afirma que sería un error considerar que los problemas son ejercicios puramente intelectuales. En el proceso de resolución influye mucho los sentimientos y emocionses. Los tres puntos mencionados aquí son muy importantes para la resolución de un problema. Primero, debemos &lt;em&gt;desear&lt;/em&gt; resolver el problema, esto es la determinación. Segundo, debemos creer que somos &lt;em&gt;capaces&lt;/em&gt; de resolver el problema y que este tiene solución. Y tercero, en lo relacionado con problemas intelectuales es muy difícil perseverar si no se experimenta una razonable dosis de éxito de vez en cuando. Para esto es necesario aplicar algunas de las técnicas mencionadas arriba.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Como puedes ver, la heurística es práctica. Además la heurística aplicada a la enseñanza y a la puede tener efectos positivos, ya que ayuda a las personas a aprender a pensar mejor.&lt;/p&gt;
-
-&lt;h2 id=&quot;razonamiento-heurístico&quot;&gt;Razonamiento Heurístico&lt;/h2&gt;
-
-&lt;p&gt;Aplicar las técnicas antes mencionadas tiene un efecto en la forma de resolver los problemas: en algunos de los pasos de la solución aceptamos soluciones supuestas, incompletas, relacionadas vagamente con el problema o parcialmente erróneas con tal de avanzar en la solución y el entendimiento del problema y de generar nuevas ideas/éxitos para mantener y aumentar la motivación.&lt;/p&gt;
-
-&lt;p&gt;Esto no quiere decir que la heurística acepte soluciones erróneas, estos pasos son temporales, y las soluciones finales deben ser comprobadas con el mayor rigor posible.&lt;/p&gt;
-
-&lt;h2 id=&quot;algoritmos-heurísticos&quot;&gt;Algoritmos heurísticos&lt;/h2&gt;
-
-&lt;p&gt;Ahora hablemos de aprovechar estas ideas para la programación, con una clase de algoritmos conocidos como algoritmos heurísticos.&lt;/p&gt;
-
-&lt;p&gt;Un algoritmo heurístico en vez de garantizar siempre la mejor solución en cada paso del programa, acepta soluciones parciales o suficientemente buenas. Este tipo de algoritmos funciona muy bien en casos donde hay demasiadas soluciones posibles como para probarlas todas (fuerza bruta) o muchas de ellas (como los algoritmos de &lt;em&gt;backtracking&lt;/em&gt;) y no hay ningún algoritmo establecido conocido que resuleva el problema  o se haya demostrado que esta solución es imposible.&lt;/p&gt;
-
-&lt;p&gt;La principal diferencia a tener en cuenta cuando hablamos o tratamos con este tipo de algoritmos es que &lt;strong&gt;no garantizan la respuesta correcta o la respuesta óptima&lt;/strong&gt;, aunque en algunos casos son la mejor forma de lograrlo. Fuera de la programación, la heurística nos ayuda a llegar a la respuesta correcta aceptando temporalmente soluciones intermedias no óptimas, semi-erróneas o incompletas, pero con soluciones finales &lt;em&gt;*que se pueden verificar como correctas rigurosamente&lt;/em&gt;. No es así con los algoritmos heurísticos en la programación, y he aquí por lo que el nombre puede confundirnos.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;La heurística es un campo de estudio valioso sobre todo para la vida moderna y para el desarrollo de software porque puede ayudarnos a estructurar nuestros esfuerzos en la resolución de los problemas que nos enfrentamos.&lt;/p&gt;
-
-&lt;p&gt;En el siguiente y último artículo de la serie analizaremos más técnicas usadas en la resolución de problemas de las que Polya habla en el libro “How to Solve It”.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problemas" /><category term="how_to_solve_it" /><category term="heurística" /><category term="heuristics" /><summary type="html">La heurística te ayudará a resolver mejor los problemas que se te presentan como programador. Veamosla más detenidamente.</summary></entry></feed>
+&lt;p&gt;En el siguiente artículo veremos la cuarta restricción de los sistemas REST: la interfaz uniforme, la más amplia de las restricciones, pero una de las más útiles.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo.</summary></entry></feed>

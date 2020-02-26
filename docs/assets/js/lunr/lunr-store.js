@@ -148,4 +148,9 @@ var store = [{
         "excerpt":"TL;DR: Estamos trabajando en una nueva traducción de Eloquent JavaScript al español, en su tercera edición. La puedes encontrar aquí: Eloquent JavaScript en Español. Está la versión en PDF, que actualizamos cada capítulo. Si quieres contribuir puedes ponerte de acuerdo a través de este foro o en GitHub. Desde el...","categories": [],
         "tags": [],
         "url": "https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582331007/24af113fe16c9bbc5aa1ef012758aac8_ytglzc.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582331007/24af113fe16c9bbc5aa1ef012758aac8_ytglzc.jpg"},{
+        "title": "A Philosophy of Software Design: Tres formas de identificar la complejidad",
+        "excerpt":"“Controlar la complejidad es la esencia de la programación” - Brian W. Kernighan Muchas mentes brillantes dedicadas al desarrollo de software han estado de acuerdo en que el principal problema al crear y mantener programas es el manejo de la complejidad. Podemos decir que algo complejo es aquello que está...","categories": [],
+        "tags": ["ousterhout","complejidad","diseño-de-software","posd"],
+        "url": "https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582698547/scott-webb-186119-unsplash_hholsr.jpg"}]
