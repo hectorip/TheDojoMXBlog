@@ -15,9 +15,9 @@ header:
 
 Muchas mentes brillantes dedicadas al desarrollo de software han estado de acuerdo en que el principal problema al crear y mantener programas es el manejo de la complejidad.
 
-Podemos decir que algo complejo es aquello que está compuesto por muchas piezas relacionadas entre ellas. [Ousterhout](http://web.stanford.edu/~ouster/cgi-bin/home.php) lo define de manera práctica _como todo aquello que el software sea difícil de entender, escribir o mantener_.
+Podemos decir que algo complejo es aquello que está **compuesto por muchas piezas relacionadas entre ellas**. [Ousterhout](http://web.stanford.edu/~ouster/cgi-bin/home.php) lo define de manera práctica _como todo aquello que el software sea difícil de entender, escribir o mantener_.
 
-> La complejidad es más visible para los lectores que para los escritores [del código]. Si escribes una pieza de código que parece siemple para ti, pero otras personas piensan que es compleja, entonces es **compleja**. - John Ousterhout
+> La complejidad es más visible para los lectores que para los escritores [del código]. Si escribes una pieza de código que parece simple para ti, pero otras personas piensan que es compleja, entonces es **compleja**. - John Ousterhout
 
 Philosophy of Software Design habla de tres formas de identificar un programa más complejo de lo que debería ser:
 
@@ -25,7 +25,7 @@ Philosophy of Software Design habla de tres formas de identificar un programa m�
 2. Carga cognitiva
 3. Desconocidos desconocidos
 
-Identificar la complejidad es una habilidad crítica para el buen diseño de software, ter permitirá crear sistemas más simples y evitará que gastes recursos en desarrollar soluciones que son demasiado complejas.
+Identificar la complejidad es una **habilidad crítica para el buen diseño de software**, te permitirá crear sistemas más simples y evitará que gastes recursos en desarrollar soluciones que son demasiado complejas.
 
 ## Amplificación de cambios
 
@@ -39,7 +39,7 @@ Si tienes que mantener muchas cosas en la cabeza para poder entender el sistema,
 
 El ejemplo son las funciones de lenguajes de programación que nunca aprendemos a usar porque tienen parámetros que aunque siempre son los mismos son requeridos por no tener un default decente. O por ejemplo, aquellas funciones que no recuerdas si cambian los parámetros o devuelven uno nuevo.
 
-Aunqe programas más cortos están relacionados con baja carga cognitiva, no siempre es el caso debido a que ese poco código que existe dsea difícil de entender.
+Aunque programas más cortos están relacionados con baja carga cognitiva, no siempre es el caso debido a que ese poco código que existe sea difícil de entender.
 
 ## Desconocidos desconocidos
 
