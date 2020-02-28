@@ -2,8 +2,7 @@
 title: "Eloquent JavaScript en Español"
 date: 2020-02-21
 author: Héctor Patricio
-tags:
-categories: 
+tags: eloquentjs-español eloquent-js eloquent javascript eloquent-javascript-pdf
 comments: true
 excerpt: "Traudcción del Eloquent JavaScript al español, 3ra edición"
 header:
@@ -12,9 +11,8 @@ header:
   overlay_filer: rgba(0, 0, 0, 0.5)
 ---
 
-> TL;DR: Estamos trabajando en una nueva traducción de Eloquent JavaScript al español, en su tercera edición. La puedes encontrar aquí: [Eloquent JavaScript en Español](https://eloquentjs-es.thedojo.mx/). Está la versión en PDF, que actualizamos cada capítulo. Si quieres contribuir puedes ponerte de acuerdo a través de este foro o en GitHub.
+> TL;DR: Estamos trabajando en una nueva traducción de Eloquent JavaScript al español, en su tercera edición. La puedes encontrar aquí: [Eloquent JavaScript en Español](https://eloquentjs-es.thedojo.mx/). Está la versión en [Eloquent JavaScript en Español en PDF](https://eloquentjs-es.thedojo.mx/Eloquent_JavaScript.pdf), que actualizamos cada capítulo. Si quieres contribuir puedes ponerte de acuerdo a través de este foro o en GitHub.
 
-<!-- --- -->
 
 Desde el 2015 intentamos empezar a traducir la 2da edición de Eloquent JavaScript. Puedes ver el post en Medium aquí: [Traducción de Eloquent JavaScript al Español](http://bit.ly/39W8qAH).
 
@@ -45,4 +43,4 @@ Si dominas el inglés (sobre todo técnico) y tienes buena ortografía, necesita
 
 Finalmente, en el futuro habilitaremos algún medio para contribuciones monetarias, para acelerar la traducción mediante la contratación de traductores y diseñadores profesionales.
 
-No dudes en ponerte en contacto en [GitHub](https://github.com/Eloquent-JavaScript-Espanol/Eloquent-JavaScript-ES) o a través de este artículo, en los comentarios. 
+No dudes en ponerte en contacto en [GitHub](https://github.com/Eloquent-JavaScript-Espanol/Eloquent-JavaScript-ES) o a través de este artículo, en los comentarios.
