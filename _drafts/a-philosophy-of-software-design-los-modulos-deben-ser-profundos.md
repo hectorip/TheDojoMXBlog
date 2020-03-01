@@ -11,7 +11,7 @@ header:
   overlay_filer: rgba(0, 0, 0, 0.5)
 ---
 
-Para atacar la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es cómo deberías organizar el código en los módulos.
+Para reducir la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es la organización y separación de código a alto nivel, es decir separación en módulos.
 
 Una definición fácil y amplia de "módulo" dada por ["A Philosophy of Software Design"](https://amzn.to/2H92nwA) es: _todo aquello que agrupe código, proveyendo encapsulamiento_, es decir que agrupe comportamiento en detrás de una interfaz.
 
@@ -19,4 +19,5 @@ Un módulo puede ser una función, una clase, un paquete o cosas similares depen
 
 Como resumen: **un módulo permite hacer _algo_ mediante una interfaz.**
 
-## Int
+## Interfaces
+
