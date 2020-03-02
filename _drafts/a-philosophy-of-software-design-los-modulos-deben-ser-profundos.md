@@ -21,3 +21,4 @@ Como resumen: **un módulo permite hacer _algo_ mediante una interfaz.**
 
 ## Interfaces
 
+Ya hablamos antes de lo que es una interfaz, pero para resumir es el medio...
