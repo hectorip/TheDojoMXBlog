@@ -1,4 +1,164 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-02-11T14:25:17-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Desarrollo Táctico vs Estratégico</title><link href="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Desarrollo Táctico vs Estratégico" /><published>2020-02-11T00:00:00-06:00</published><updated>2020-02-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html">&lt;p&gt;Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada uno.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-03T00:04:13-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Los módulos deben ser profundos</title><link href="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Los módulos deben ser profundos" /><published>2020-03-02T00:00:00-06:00</published><updated>2020-03-02T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html">&lt;p&gt;Para reducir la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es la organización y separación de código a alto nivel, es decir separación en módulos.&lt;/p&gt;
+
+&lt;h2 id=&quot;por-qué-es-importante-la-separación&quot;&gt;Por qué es importante la separación&lt;/h2&gt;
+
+&lt;p&gt;Antes de empezar a hablar de cómo deberíamos diseñar nuestros módulos hablemos de por qué es importante la separación.&lt;/p&gt;
+
+&lt;p&gt;La mejor forma de resolver un problema complejo es mediante &lt;em&gt;la descomposición&lt;/em&gt; del problema en problemas más sencillos. Estos problemas se resuelven individualmente, idealmente de de manera independiente en un módulo por separado para cada uno. De esta manera podemos hacer software más mantenible y fácil de entender. Incluso se puede dividir mejor el trabajo.&lt;/p&gt;
+
+&lt;p&gt;La división del problema permite además &lt;strong&gt;ocultar&lt;/strong&gt; información no relevante para el problema en cuestión.&lt;/p&gt;
+
+&lt;p&gt;Esta división del trabajo es diferente dependiendo del paradigma del lenguaje de programación que usemos, así que veamos a qué nos referimos con un &lt;strong&gt;módulo&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-un-módulo&quot;&gt;¿Qué es un módulo?&lt;/h2&gt;
+
+&lt;p&gt;Una definición fácil y amplia de “módulo” dada por &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;“A Philosophy of Software Design”&lt;/a&gt; es: &lt;em&gt;todo aquello que agrupe código, proveyendo separación de funcionalidad&lt;/em&gt;, es decir que agrupe comportamiento en detrás de una &lt;em&gt;interfaz&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Un módulo puede ser una función, una clase, un paquete o cosas similares dependiendo del lenguaje de programación. Un módulo incluso puede ser una API HTTP u otro programa.&lt;/p&gt;
+
+&lt;p&gt;Como resumen: &lt;strong&gt;un módulo permite hacer &lt;em&gt;algo&lt;/em&gt; mediante una interfaz.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora bien, ¿qué es la interfaz de un módulo?&lt;/p&gt;
+
+&lt;h2 id=&quot;interfaces&quot;&gt;Interfaces&lt;/h2&gt;
+
+&lt;p&gt;Ya hemos hablado sobre &lt;a href=&quot;https://www.youtube.com/watch?v=n8MxyHG0j3Q&amp;amp;t&quot;&gt;lo que es una interfaz&lt;/a&gt;, pero para resumir: es el punto en donde un sistema, en este caso específico, un módulo, se encuentra con otro (otro módulo o código que lo usa).&lt;/p&gt;
+
+&lt;p&gt;Un módulo tiene una interfaz que permite a otras partes del sistema usarlo. Usaremos el caso más sencillo, una función. La interfaz de una función es su firma: su nombre, los parámetros que recibe y lo que devuelve.&lt;/p&gt;
+
+&lt;p&gt;Veamos un ejemplo:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;archivo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;my_file.md&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;w&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Devuelve un apuntador a un archivo abierto
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;La interfaz de la función es su nombre &lt;code class=&quot;highlighter-rouge&quot;&gt;open&lt;/code&gt; (nos permite identificarla y comunica información sobre lo que hace), el nombre del archivo como primer parámetro y el modo de operación en el segundo.&lt;/p&gt;
+
+&lt;p&gt;Dependiendo de la forma de agrupar la interfaz de los módulos varía, pero recuerda esto: &lt;strong&gt;la interfaz es la parte visible del módulo hacia otros módulos&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;diseño-de-módulos&quot;&gt;Diseño de módulos&lt;/h2&gt;
+
+&lt;p&gt;Aquí entramos en lo importante: los módulos deberían ser lo más profundos posible.&lt;/p&gt;
+
+&lt;p&gt;¿A qué nos referimos con un módulo profundo?&lt;/p&gt;
+
+&lt;p&gt;Observa el siguiente diagrama:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1583213511/IMG_0058_xm2b6w.jpg&quot; alt=&quot;Módulos profundos vs superficiales&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Un módulo profundo tiene una &lt;strong&gt;interfaz sencilla&lt;/strong&gt; o fácil de usar para la mayoría de los casos de uso y provee de mucha funcionalidad, hace mucho por ti.&lt;/p&gt;
+
+&lt;p&gt;Un módulo superficial tiene una interfaz compleja o difícil de usar y provee poca funcionalidad.&lt;/p&gt;
+
+&lt;p&gt;Esto no es absoluto: la relación entre la complejidad de la interfaz es relativa a la funcionalidad que provee, por ejemplo, si un módulo hace muchas cosas por ti, puede que requiera muchos datos. La relación interfaz/funcionalidad debe ser razonable para considerar que el módulo es profundo.&lt;/p&gt;
+
+&lt;p&gt;Abrir archivos en la mayoría de los lenguajes es un ejemplo de una función profunda: con una interfaz muy pequeña (el nombre y el modo), la función se encarga de todos los detalles de implementación de apertura y creación del archivo. No te debes de preocupar por cosas como el sistema de archivos, el guardado físico en el disco, por verificar si hay memoria, etc.&lt;/p&gt;
+
+&lt;p&gt;En el caso contrario, los getters y setters que se acostumbra usar en algunos lenguajes de programación (Java) son ejemplo de funciones poco profundas, generalmente no hacen algo más que devolver el valor de la propiedad.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo: Piensa en un aparato electrónico. En una televisión, sus control remoto te permiten acceder a las funcionalidades de encender el panel de iluminación, captar la señal del canal, decodificarlo y saltar entre diferentes canales, todo sin preocuparte tú por los detalles. Sólo la usas y ya. Mientras más detalles de implementación oculte es más fácil de usar.&lt;/p&gt;
+
+&lt;h2 id=&quot;ventajas-de-los-módulos-profundos&quot;&gt;Ventajas de los módulos profundos&lt;/h2&gt;
+
+&lt;p&gt;Encontrar un equilibrio entre la cantidad de código que metes en un módulo y la interfaz que expone tiene varias ventajas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;El código se puede re-usar en otras partes del sistema&lt;/li&gt;
+  &lt;li&gt;Evitas la acumulación de interfaces, es decir, tener demasiadas interfaces (funciones, clases o módulos) que tienes que aprender a usar y que hacen poco por ti&lt;/li&gt;
+  &lt;li&gt;La expansión de cambios (tener que tocar muchos lados del sistema para hacer un cambio relativamente pequeño)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Finalmente, recuerda que una de las funciones que proveen los módulos es &lt;em&gt;ocultar&lt;/em&gt; la complejidad. ¿Cuántas veces has visto lo que hacen las funciones prefabricadas de tu lenguaje de programación? Es probable que ninguna. Los módulos profundos y bien hechos permiten ocultar mayor cantidad de información y hace más fácil trabajar con ellos y simplifica el sistema en general.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="módulo" /><category term="PoSD" /><category term="ousterhout" /><category term="complejidad" /><category term="función" /><summary type="html">Veamos algunos lineamientos para el diseño de funciones/clases/módulos que ayudarán a reducir la complejidad de tus sistemas de software.</summary></entry><entry><title type="html">A Philosophy of Software Design: Tres formas de identificar la complejidad</title><link href="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Tres formas de identificar la complejidad" /><published>2020-02-26T00:00:00-06:00</published><updated>2020-02-26T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html">&lt;blockquote&gt;
+  &lt;p&gt;“Controlar la complejidad es la esencia de la programación” - Brian W. Kernighan&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Muchas mentes brillantes dedicadas al desarrollo de software han estado de acuerdo en que el principal problema al crear y mantener programas es el manejo de la complejidad.&lt;/p&gt;
+
+&lt;p&gt;Podemos decir que algo complejo es aquello que está &lt;strong&gt;compuesto por muchas piezas relacionadas entre ellas&lt;/strong&gt;. &lt;a href=&quot;http://web.stanford.edu/~ouster/cgi-bin/home.php&quot;&gt;Ousterhout&lt;/a&gt; lo define de manera práctica &lt;em&gt;como todo aquello que hace que el software sea difícil de entender, escribir o mantener&lt;/em&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;La complejidad es más visible para los lectores que para los escritores [del código]. Si escribes una pieza de código que parece simple para ti, pero otras personas piensan que es compleja, entonces es &lt;strong&gt;compleja&lt;/strong&gt;. - John Ousterhout&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Philosophy of Software Design habla de tres formas de identificar un programa más complejo de lo que debería ser:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Amplificación de cambios&lt;/li&gt;
+  &lt;li&gt;Carga cognitiva&lt;/li&gt;
+  &lt;li&gt;Desconocidos desconocidos&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Identificar la complejidad es una &lt;strong&gt;habilidad crítica para el buen diseño de software&lt;/strong&gt;, te permitirá crear sistemas más simples y evitará que gastes recursos en desarrollar soluciones que son demasiado complejas.&lt;/p&gt;
+
+&lt;h2 id=&quot;amplificación-de-cambios&quot;&gt;Amplificación de cambios&lt;/h2&gt;
+
+&lt;p&gt;Este síntoma de la complejidad se hace obvio cuando estás haciendo un cambio que debió haber sido sencillo y tienes que tocar 7 archivos, 3 clases y 4 funciones. Se refiere a que una funcionalidad que parece sencilla del programa está repartida en muchos lados y para lograr hacer un cambio hay que tocar muchas partes del sistema.&lt;/p&gt;
+
+&lt;p&gt;Esto se pude dar cuando parámetros o valores que pueden estar centralizados o referenciados se ponen fijos a través de muchos archivos. También cuando código que se podría reutilizar se copia y pega.&lt;/p&gt;
+
+&lt;h2 id=&quot;carga-cognitiva&quot;&gt;Carga cognitiva&lt;/h2&gt;
+
+&lt;p&gt;Si tienes que mantener muchas cosas en la cabeza para poder entender el sistema, es complejo. Puede que tengas que entender y aprender muchas cosas acerca del funcionamiento del programa para usarlo bien y no causar un desastre. Cuando algo no tiene una interfaz simple, causa carga cognitiva.&lt;/p&gt;
+
+&lt;p&gt;El ejemplo son las funciones de lenguajes de programación que nunca aprendemos a usar porque tienen parámetros que aunque siempre son los mismos son requeridos por no tener un default decente. O por ejemplo, aquellas funciones que no recuerdas si cambian los parámetros o devuelven uno nuevo.&lt;/p&gt;
+
+&lt;p&gt;Aunque programas más cortos están relacionados con baja carga cognitiva, no siempre es el caso debido a que ese poco código que existe sea difícil de entender.&lt;/p&gt;
+
+&lt;h2 id=&quot;desconocidos-desconocidos&quot;&gt;Desconocidos desconocidos&lt;/h2&gt;
+
+&lt;p&gt;¿Tienes miedo de cambiar algo porque no sabes lo que pueda pasar y no hay ni documentación a la que puedas referirte? En este caso el sistema tiene información &lt;strong&gt;que no sabes que no sabes&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Un desconocido desconocido es aquella información que ni siquiera sabemos que estaba ahí y que no conocíamos, como algunas características del código, parámetros ocultos y comportamientos que no son fáciles de detectar ni están documentados.&lt;/p&gt;
+
+&lt;p&gt;¿Recuerdas la broma que dice: &lt;em&gt;“Cuando escribí este código sólo Dios y yo sabíamos lo que hacía, ahora sólo Dios sabe”&lt;/em&gt;? Muchas veces nos pasa así con el código y es el ejemplo perfecto de los desconocidos desconocidos, sobre todo para otros programadores.&lt;/p&gt;
+
+&lt;h2 id=&quot;medición-de-la-complejidad&quot;&gt;Medición de la complejidad&lt;/h2&gt;
+
+&lt;p&gt;Un sistema puede ser complejo independientemente de su tamaño, es decir, hay sistemas no tan grandes que son muy complejos.&lt;/p&gt;
+
+&lt;p&gt;Para determinar la complejidad se puede pensar en la siguiente fórmula.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581460560/Untitled_Artwork_3_oljybd.jpg&quot; alt=&quot;Fórmula para calcular la complejidad&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Esto lo podríamos explicar como:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;La complejidad total de un sistema es la sumatoria de la complejidad de cada una de sus partes multiplicada por el tiempo que los desarrolladores pasan en esa parte del código.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Esta complejidad puede evitar que avances tanto como deberías, pero el primer paso es identificarla como lo viste aquí. En los siguientes artículos hablaremos de técnicas para reducir la complejidad.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="ousterhout" /><category term="complejidad" /><category term="diseño-de-software" /><category term="posd" /><summary type="html">Aprende a descubrir y medir la complejidad en tus proyectos</summary></entry><entry><title type="html">Eloquent JavaScript en Español</title><link href="https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol.html" rel="alternate" type="text/html" title="Eloquent JavaScript en Español" /><published>2020-02-21T00:00:00-06:00</published><updated>2020-02-21T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol.html">&lt;blockquote&gt;
+  &lt;p&gt;TL;DR: Estamos trabajando en una nueva traducción de Eloquent JavaScript al español, en su tercera edición. La puedes encontrar aquí: &lt;a href=&quot;https://eloquentjs-es.thedojo.mx/&quot;&gt;Eloquent JavaScript en Español&lt;/a&gt;. Está la versión en &lt;a href=&quot;https://eloquentjs-es.thedojo.mx/Eloquent_JavaScript.pdf&quot;&gt;Eloquent JavaScript en Español en PDF&lt;/a&gt;, que actualizamos cada capítulo. Si quieres contribuir puedes ponerte de acuerdo a través de este foro o en GitHub.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Desde el 2015 intentamos empezar a traducir la 2da edición de Eloquent JavaScript. Puedes ver el post en Medium aquí: &lt;a href=&quot;http://bit.ly/39W8qAH&quot;&gt;Traducción de Eloquent JavaScript al Español&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pasó el tiempo y tradujimos &lt;a href=&quot;http://bit.ly/2T3FLCZ&quot;&gt;algunos capítulos&lt;/a&gt;, pero luego salió la tercera edición.&lt;/p&gt;
+
+&lt;p&gt;Decidimos esperar a que se terminara para traducirlo completo, y hemos empezado de nuevo con los esfuerzos de traducción. Esta vez hemos empezados basados en la traducción de &lt;a href=&quot;https://github.com/CodeKommissar&quot;&gt;Luis Rodríguez&lt;/a&gt; quien tradujo los primeros 12 capítulos pero no pudimos contactar para ponernos de acuerdo.&lt;/p&gt;
+
+&lt;p&gt;La primera etapa de la traducción consiste en una revisión rápida de los capítulos ya traducidos, la segunda en completar los capítulos que faltan y la tercera en una revisión profunda de los 12 primeros capítulos.&lt;/p&gt;
+
+&lt;p&gt;Puedes ver la página oficial del libro aquí: &lt;a href=&quot;https://eloquentjs-es.thedojo.mx/&quot;&gt;Eloquent JavaScript ES&lt;/a&gt;.
+Puedes leer el libro en línea o descargarlo en PDF, próximamente en EPUB y Mobi. También estamos trabajando en una portada exclusiva para la versión en español.&lt;/p&gt;
+
+&lt;p&gt;¿Por qué lo hacemos?&lt;/p&gt;
+
+&lt;h2 id=&quot;la-importancia-del-contenido-en-tu-idioma-nativo&quot;&gt;La importancia del contenido en tu idioma nativo&lt;/h2&gt;
+
+&lt;p&gt;Es cierto que si quieres ser un buen desarrollador de software &lt;strong&gt;tienes&lt;/strong&gt; que aprender inglés. Si quieres ganar un mejor sueldo por poder trabajar para equipos remotos también es un requisito.&lt;/p&gt;
+
+&lt;p&gt;Pero es aceptado que se aprende mucho mejor en la lengua materna, así que si confías en que lo que tienes que estudiar es una buena traducción, no deberías dudar en estudiar en la lengua con la que creciste y que mejor conoces, el idioma de tus pensamientos.&lt;/p&gt;
+
+&lt;p&gt;Otras veces, hay personas que no tienen otra opción y principalmente por ellas que se está realizando esta traducción. No debería sumarse la barrera del lenguaje a la carga de aprender a programar que ya es fuerte.&lt;/p&gt;
+
+&lt;p&gt;Este es, esperamos, el primero de varios libros que queremos traducir al español.&lt;/p&gt;
+
+&lt;h2 id=&quot;contribuciones&quot;&gt;Contribuciones&lt;/h2&gt;
+
+&lt;p&gt;Si dominas el inglés (sobre todo técnico) y tienes buena ortografía, necesitamos tu ayuda para traducción. También necesitamos revisores, personas que lean el contenido y hagan comentarios (o Pull Requests) sobre frases poco claras, errores de ortografía o gramática. Si tienes habilidades de diseño gráfico necesitamos ayuda para traducir las ilustraciones.&lt;/p&gt;
+
+&lt;p&gt;Finalmente, en el futuro habilitaremos algún medio para contribuciones monetarias, para acelerar la traducción mediante la contratación de traductores y diseñadores profesionales.&lt;/p&gt;
+
+&lt;p&gt;No dudes en ponerte en contacto en &lt;a href=&quot;https://github.com/Eloquent-JavaScript-Espanol/Eloquent-JavaScript-ES&quot;&gt;GitHub&lt;/a&gt; o a través de este artículo, en los comentarios.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="eloquentjs-español" /><category term="eloquent-js" /><category term="eloquent" /><category term="javascript" /><category term="eloquent-javascript-pdf" /><summary type="html">Traudcción del Eloquent JavaScript al español, 3ra edición</summary></entry><entry><title type="html">A Philosophy of Software Design: Desarrollo Táctico vs Estratégico</title><link href="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Desarrollo Táctico vs Estratégico" /><published>2020-02-11T00:00:00-06:00</published><updated>2020-02-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html">&lt;p&gt;Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada uno.&lt;/p&gt;
 
 &lt;h2 id=&quot;desarrollo-táctico&quot;&gt;Desarrollo táctico&lt;/h2&gt;
 
@@ -627,356 +787,4 @@ de resolución de problemas aplican para el problema que tenemos que resolver&lt
 
 &lt;p&gt;En este artículo sólo hemos tocado la definición de criptografía y hemos mencionado por qué es importante. En los siguientes empezaremos a hablar de las bases que nos permitirán comprender cómo funciona la criptografía y qué mecanismos son los que permiten que brinde seguridad mediante ocultar la información.&lt;/p&gt;
 
-&lt;p&gt;En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo)aleatorios y sus generadores.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="criptografía" /><category term="esteganografía" /><category term="seguridad" /><summary type="html">Aprende las bases de la criptografía para tenerla en cuenta en tus programas.</summary></entry><entry><title type="html">Entendiendo REST: Servicios cacheables</title><link href="https://blog.thedojo.mx/2019/10/27/entendiendo-rest-servicios-cacheables.html" rel="alternate" type="text/html" title="Entendiendo REST: Servicios cacheables" /><published>2019-10-27T00:00:00-05:00</published><updated>2019-10-27T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/10/27/entendiendo-rest-servicios-cacheables</id><content type="html" xml:base="https://blog.thedojo.mx/2019/10/27/entendiendo-rest-servicios-cacheables.html">&lt;p&gt;La tercera característica que &lt;a href=&quot;https://twitter.com/fielding&quot;&gt;Thomas R. Fielding&lt;/a&gt; (Roy Fielding a partir de ahora) establece para los sistemas &lt;strong&gt;REST&lt;/strong&gt; es la capacidad de que su información sea cacheable. Veamos lo que esto significa y por qué es una característica importante. Empecemos por definir el caché.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-el-caché&quot;&gt;¿Qué es &lt;em&gt;el caché&lt;/em&gt;?&lt;/h2&gt;
-
-&lt;p&gt;Originalmente el caché se refiere a un tipo especial de memoria &lt;em&gt;muy rápida&lt;/em&gt; en los procesadores, que guarda &lt;em&gt;temporalmente&lt;/em&gt; información que tiene gran probabilidad de volver a ser utilizada &lt;em&gt;dentro de poco tiempo&lt;/em&gt; (en los procesadores hablamos de nano-segundos).&lt;/p&gt;
-
-&lt;p&gt;Al evitar que el procesador vuelva a consultar la RAM (muy lenta en &lt;a href=&quot;https://gist.github.com/jboner/2841832&quot;&gt;comparación con la memoria caché&lt;/a&gt;), las operaciones se realizan a mucha mayor velocidad.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/k0t1e.png&quot; alt=&quot;Latencia de diferentes tipos de memoria&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;La memoria caché de los procesadores tiene una gran desventaja: &lt;strong&gt;es muy muy pequeña&lt;/strong&gt;. Esto presenta retos:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Qué guardo aquí para maximizar la eficacia de este espacio de almacenamiento?&lt;/li&gt;
-  &lt;li&gt;¿Cómo decido cuándo borrar o sobre-escribir la información que tengo aquí?&lt;/li&gt;
-  &lt;li&gt;¿Qué pasa si la información original cambia mientras estoy ocupando los datos guardados en la memoria caché?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Hablaremos más adelante de estas preguntas en nuestro propio contexto, pero hay técnicas para poder contestarlas con cierta eficacia, que los &lt;a href=&quot;http://user.it.uu.se/~yi/pdf-files/2014/euc14.pdf&quot;&gt;procesadores han logrado implementar&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Así que puedes pensar en el caché como en una memoria que es más rápida (aunque más limitada). Se utiliza con el objetivo de hacer un sistema más rápido y a veces más eficiente.&lt;/p&gt;
-
-&lt;h2 id=&quot;caché-en-los-sistemas-rest&quot;&gt;Caché en los sistemas REST&lt;/h2&gt;
-
-&lt;p&gt;Esta característica se basa en las dos que ya hablamos: &lt;a href=&quot;/2019/08/03/entendiendo-rest-servidor-sin-estado.html&quot;&gt;servicios sin estado&lt;/a&gt; y &lt;a href=&quot;/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html&quot;&gt;arquitectura cliente-servidor&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Lo que se define como “cacheabilidad” en los sistemas REST es la capacidad
-de estos sistemas para &lt;em&gt;etiquetar&lt;/em&gt; de alguna forma las respuestas para que
-otros mecanismos intermedios funcionen como un caché.&lt;/p&gt;
-
-&lt;p&gt;Así el sistema puede atender más peticiones, en menos tiempo, con menos
-recursos (comparado con un sistema sin caché).&lt;/p&gt;
-
-&lt;p&gt;Estos sistemas o mecanismos intermedios (existen entre el cliente y el servidor) deben ser por lo general transparentes para los desarrolladores,
-no deben afectar la manera en que los servicios se consumen.&lt;/p&gt;
-
-&lt;p&gt;En sistemas web que usan &lt;strong&gt;HTTP&lt;/strong&gt; para comunicarse el sistema de “etiquetado” que permite que una respuesta sea cacheada son &lt;strong&gt;las cabeceras&lt;/strong&gt;. Estas permiten a los diferentes actores en el proceso de comunicación (servidor local, proxy, proxy reverso, navegador o cliente final, entre otros), saber quién debería cachear la información y por cuánto tiempo o cómo decidir si deben renovar la información. Las cabeceras HTTP comúnmente usadas para esto son:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt;: especifica hasta cuándo se puede considerar fresca o válida la información.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-control&lt;/code&gt;: Es usado para especificar directivas de caché que deben ser respetadas por todos lo puntos por los que pasa la información. Puedes ver los posibles valores y su especifacación aquí: &lt;a href=&quot;https://tools.ietf.org/html/rfc2616#section-14.9&quot;&gt;Cache-Control Header&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Vary&lt;/code&gt;: es usada para indicar qué otras cabeceras se deben tomar en cuenta para decidir si el servidor puede reutilizar una respuesta o no.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Etag&lt;/code&gt;: identifica a una respueste de manera única, puede usarse para pedir una respuesta nueva de un mismo endpoint, y en combinación con la cabecera &lt;code class=&quot;highlighter-rouge&quot;&gt;If-None-Match&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Existen otras cabeceras usadas para lograr un control correcto del caché como &lt;code class=&quot;highlighter-rouge&quot;&gt;If-Modified-Since&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;ventajas-del-caché&quot;&gt;Ventajas del caché&lt;/h2&gt;
-
-&lt;p&gt;El caché se establece como una de las características de REST porque proporciona ventajas para el uso y la escalabilidad de los sistemas. Veamos algunas de ellas.&lt;/p&gt;
-
-&lt;h3 id=&quot;aumenta-la-percepción-de-velocidad&quot;&gt;Aumenta la percepción de velocidad&lt;/h3&gt;
-
-&lt;p&gt;Al guardar las respuestas que es más probable que vuelvan a salir, un sistema REST puede contestar una gran cantidad de sus peticiones a la velocidad que el caché lo permita, es decir, muy rápido.&lt;/p&gt;
-
-&lt;h3 id=&quot;consumo-de-recursos-reducido&quot;&gt;Consumo de recursos reducido&lt;/h3&gt;
-
-&lt;p&gt;El uso caché se parece mucho a una técnica de programación llamada &lt;strong&gt;dynamic programming&lt;/strong&gt; que consiste en guardar temporalmente los resultados de operaciones costosas en tiempo. Esto permite que
-nos ahorremos el procesamiento de muchas respuestas que no se necesitan
-de nuevo porque están almacendas. Además se reduce el ancho de banda
-consumido porque muchas peticiones ni siquiera tienen que llegar al servidor.&lt;/p&gt;
-
-&lt;h3 id=&quot;sistemas-más-fáciles-de-escalar&quot;&gt;Sistemas más fáciles de escalar&lt;/h3&gt;
-
-&lt;p&gt;Los sistemas que usan caché son capaces de aguantar más peticiones
-simultáneas por la razón que vimos anteriormente: se reduce el consumo de recursos. Además, si se require crecer el sistema se deben poner menos recursos. Para algunos sistemas, el caché es lo único que tiene que crecer
-cuando se requiere atender a más usuarios simultáneos.&lt;/p&gt;
-
-&lt;h2 id=&quot;retos-de-cachear&quot;&gt;Retos de cachear&lt;/h2&gt;
-
-&lt;p&gt;Toda solución tecnológica implica ventajas y desventajas. Entonces ¿qué desventajas o retos implica usar un sistema de caché?&lt;/p&gt;
-
-&lt;h3 id=&quot;frescura&quot;&gt;Frescura&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Sólo hay dos cosas difíciles en Ciencias de Computación: invalidación de caché y nombrar cosas. - Phil Karlton&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;El reto más grande e importante de tener un sistema de caché es lograr un
-equilibrio entre mantener la información el mayor tiempo posible y tener
-información correcta y actualizada. Si se almacena en caché por demasiado
-tiempo algo, esta información se vuelve vieja y por lo tanto puede estar desactualizada. Por el otro lado si se guarda por muy poco tiempo puede 
-llevar a que los sistemas de caché se sub-utilicen y provean pocos
-beneficios.&lt;/p&gt;
-
-&lt;h3 id=&quot;diseño-del-sistema&quot;&gt;Diseño del sistema&lt;/h3&gt;
-
-&lt;p&gt;Designar qué partes del sistema pueden ser cacheables y asignar los
-etiquetados de las respuestas correctamente puede aumentar la complejidad del sistema en general.&lt;/p&gt;
-
-&lt;h3 id=&quot;inconsistencia&quot;&gt;Inconsistencia&lt;/h3&gt;
-
-&lt;p&gt;El uso de caché puede llevar a inconsistencias de información entre diferentes clientes por periodos de tiempo de diferente duración. Esto es en parte consecuencia de la dificultad de mantener el caché fresco, pero además tiene que ver con la manera en que los clientes piden la información. &lt;strong&gt;Si tus clientes no pueden soportar la mínima variación en la información porque tendría consecuencias graves, es mejor no cachear.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;El caché es una parte olvidada de los sistemas REST, el constraint menos mencionado. Pero es importante que les permite funcionar mejor cuando tenemos bastante carga. Mantenerlo funcionando bien es un reto, pero los sistemas que quieren ser escalables y resistentes deben implementar alguna forma de cachear.&lt;/p&gt;
-
-&lt;p&gt;Roy Fielding menciona que es importante porque cualquier
-sistema expuesto a clientes desconocidos tiene el peligro de recibir una
-gran cantidad de carga súbitamente, y si tu servicio no está preparado o es
-fácil de escalar, fallarás.&lt;/p&gt;
-
-&lt;p&gt;Si quieres leer un artículo más completo con otras referencias sobre el caché en REST y en HTTP te recomiendo &lt;a href=&quot;https://odino.org/rest-better-http-cache/&quot;&gt;REST better: HTTP Cache&lt;/a&gt;, en inglés.&lt;/p&gt;
-
-&lt;p&gt;En el siguiente artículo veremos la cuarta restricción de los sistemas REST: la interfaz uniforme, la más amplia de las restricciones, pero una de las más útiles.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo.</summary></entry><entry><title type="html">El arte de resolver problemas: la heurística</title><link href="https://blog.thedojo.mx/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html" rel="alternate" type="text/html" title="El arte de resolver problemas: la heurística" /><published>2019-10-03T00:00:00-05:00</published><updated>2019-10-03T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/10/03/el-arte-de-resolver-problemas-la-heuristica</id><content type="html" xml:base="https://blog.thedojo.mx/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html">&lt;blockquote&gt;
-  &lt;p&gt;La heurística habla del &lt;strong&gt;comportamiento humano&lt;/strong&gt; frente a los problemas. - George Polya&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;En un &lt;a href=&quot;/2019/09/27/tecnicas-para-resolver-problemas.html&quot;&gt;artículo anterior&lt;/a&gt; analizamos la estructura básica de un problema y la estructura de resolución que George Polya propone para intentar resolverlos.&lt;/p&gt;
-
-&lt;p&gt;Polya analiza a fondo la estructura del proceso de resolución de problemas. Aquí hablaremos de &lt;strong&gt;la heurística&lt;/strong&gt;, de la que escribió en &lt;a href=&quot;https://math.hawaii.edu/home/pdf/putnam/PolyaHowToSolveIt.pdf&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;“How to solve it”&lt;/strong&gt;&lt;/a&gt;, un compendio que pensó originalmente como un análisis de esta.&lt;/p&gt;
-
-&lt;h2 id=&quot;definición&quot;&gt;Definición&lt;/h2&gt;
-
-&lt;p&gt;La palabra heurística viene de una raíz griega que transmite la idea de &lt;strong&gt;descubrimiento o invención&lt;/strong&gt;. La heurística históricamente ha estado relacionada con &lt;strong&gt;estudiar los medios por los que se descubre o inventa algo&lt;/strong&gt;. Su campo de estudio abarca la lógica, la psicología y la filosofía, pero no se puede acotar a ninguna de las tres áreas.&lt;/p&gt;
-
-&lt;p&gt;Polya estudia y define la heurística moderna como &lt;em&gt;el arte de resolver problemas&lt;/em&gt;, porque en eso consiste el proceso: descubrir una solución(en los problemas en los que hay que &lt;em&gt;encontrar algo&lt;/em&gt;) o inventar algo (en los problemas en los que hay que &lt;em&gt;crear una demostración&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;Podemos echar mano de lo que nos enseña al atacar problemas muy difíciles de los que no tenemos la mínima idea de cómo resolver o no podemos idear un plan confiable para resolverlos (recuerda que crear un plan es el punto medular de la resolución de un problema).&lt;/p&gt;
-
-&lt;h2 id=&quot;heurística-moderna&quot;&gt;Heurística moderna&lt;/h2&gt;
-
-&lt;p&gt;La heurística actualmente busca entender el proceso de resolución de problemas, pero particularmente las operaciones mentales relacionadas con ese proceso.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;La experiencia en la resolución de problemas u observar a otros resolver problemas debe ser la base de la heurística. - G. Polya&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Se busca encontrar patrones y propiedades comunes en una gran variedad de problemas, por lo que se puede decir que la heurística tiende a la generalidad, estudia procedimientos que son independientes del dominio del problema.
-Polya habla de múltiples métodos y procedimientos para avanzar en la resolución de un problema complicado.&lt;/p&gt;
-
-&lt;p&gt;Analicemos algunos de ellos:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Variación del problema&lt;/strong&gt;. ¿Puedo variar por lo menos temporalmente alguna de las partes del problema? ¿Puedo cambiar los datos, las condiciones o la solución?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Descomposición y recombinación&lt;/strong&gt;. Esta operación mental implica entender y separar las partes esenciales de un problema y tratar de re-crearlo con un nuevo entendimiento o crear un problema ligeramente diferente.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Regresar a las definiciones&lt;/strong&gt;. Comprender los términos usados en cada parte del problema a veces implicará que busquemos lo que algo significa desde sus raíces. Esto nos puede ayudar a entender mejor el problema así como a introducir elementos auxiliares que ayuden en la resolución.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Generalización, especialización y analogías&lt;/strong&gt;. Estas tres operaciones son una forma de variar un problema. ¿Puedo hacer el problema más amplio, para resolver un caso más general y después aplicar los resultados o el método a mi problema original? ¿Existe un problema similar al que estoy resolviendo que pueda resolver más fácilmente?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Notación adecuada&lt;/strong&gt;. Una vez entendido el problema, sobre todo para problemas matemáticos, es muy importante introducir notación que nos pueda ayudar a trabajar sobre el problema. Para los problemas matemáticos y en ciencias en general, ya existen estas notaciones estándar. Para nuestros problemas tenemos que inventar una que la mayoría de los implicados puede entender y usar.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Suponer, pero comprobar las suposiciones&lt;/strong&gt;. Para avanzar en la resolución de un problema muchas veces hay que dar cosas por supuesto, como en el caso de las comprobaciones por reducción al absurdo. Polya afirma que no está mal suponer cosas temporalmente mientras más adelante encontremos una forma de comprobar o rechazar esas suposiciones.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Trabajar en reversa&lt;/strong&gt;. Muchas veces sabemos &lt;em&gt;como luce&lt;/em&gt; la solución, o tenemos que comprobar que una solución supuesta es correcta. Trabajar en reversa significa avanzar de la solución hasta nuestro estado actual, trabajando paso por paso hasta poder encontrar la cadena de transformaciones necesarias para conectar esos estados.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Aspectos psicológicos: determinación, esperanza y éxito&lt;/strong&gt;. Al principio mencionamos que la heurística es también trataba con aspectos psicológicos. Polya afirma que sería un error considerar que los problemas son ejercicios puramente intelectuales. En el proceso de resolución influye mucho los sentimientos y emocionses. Los tres puntos mencionados aquí son muy importantes para la resolución de un problema. Primero, debemos &lt;em&gt;desear&lt;/em&gt; resolver el problema, esto es la determinación. Segundo, debemos creer que somos &lt;em&gt;capaces&lt;/em&gt; de resolver el problema y que este tiene solución. Y tercero, en lo relacionado con problemas intelectuales es muy difícil perseverar si no se experimenta una razonable dosis de éxito de vez en cuando. Para esto es necesario aplicar algunas de las técnicas mencionadas arriba.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Como puedes ver, la heurística es práctica. Además la heurística aplicada a la enseñanza y a la puede tener efectos positivos, ya que ayuda a las personas a aprender a pensar mejor.&lt;/p&gt;
-
-&lt;h2 id=&quot;razonamiento-heurístico&quot;&gt;Razonamiento Heurístico&lt;/h2&gt;
-
-&lt;p&gt;Aplicar las técnicas antes mencionadas tiene un efecto en la forma de resolver los problemas: en algunos de los pasos de la solución aceptamos soluciones supuestas, incompletas, relacionadas vagamente con el problema o parcialmente erróneas con tal de avanzar en la solución y el entendimiento del problema y de generar nuevas ideas/éxitos para mantener y aumentar la motivación.&lt;/p&gt;
-
-&lt;p&gt;Esto no quiere decir que la heurística acepte soluciones erróneas, estos pasos son temporales, y las soluciones finales deben ser comprobadas con el mayor rigor posible.&lt;/p&gt;
-
-&lt;h2 id=&quot;algoritmos-heurísticos&quot;&gt;Algoritmos heurísticos&lt;/h2&gt;
-
-&lt;p&gt;Ahora hablemos de aprovechar estas ideas para la programación, con una clase de algoritmos conocidos como algoritmos heurísticos.&lt;/p&gt;
-
-&lt;p&gt;Un algoritmo heurístico en vez de garantizar siempre la mejor solución en cada paso del programa, acepta soluciones parciales o suficientemente buenas. Este tipo de algoritmos funciona muy bien en casos donde hay demasiadas soluciones posibles como para probarlas todas (fuerza bruta) o muchas de ellas (como los algoritmos de &lt;em&gt;backtracking&lt;/em&gt;) y no hay ningún algoritmo establecido conocido que resuleva el problema  o se haya demostrado que esta solución es imposible.&lt;/p&gt;
-
-&lt;p&gt;La principal diferencia a tener en cuenta cuando hablamos o tratamos con este tipo de algoritmos es que &lt;strong&gt;no garantizan la respuesta correcta o la respuesta óptima&lt;/strong&gt;, aunque en algunos casos son la mejor forma de lograrlo. Fuera de la programación, la heurística nos ayuda a llegar a la respuesta correcta aceptando temporalmente soluciones intermedias no óptimas, semi-erróneas o incompletas, pero con soluciones finales &lt;em&gt;*que se pueden verificar como correctas rigurosamente&lt;/em&gt;. No es así con los algoritmos heurísticos en la programación, y he aquí por lo que el nombre puede confundirnos.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;La heurística es un campo de estudio valioso sobre todo para la vida moderna y para el desarrollo de software porque puede ayudarnos a estructurar nuestros esfuerzos en la resolución de los problemas que nos enfrentamos.&lt;/p&gt;
-
-&lt;p&gt;En el siguiente y último artículo de la serie analizaremos más técnicas usadas en la resolución de problemas de las que Polya habla en el libro “How to Solve It”.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problemas" /><category term="how_to_solve_it" /><category term="heurística" /><category term="heuristics" /><summary type="html">La heurística te ayudará a resolver mejor los problemas que se te presentan como programador. Veamosla más detenidamente.</summary></entry><entry><title type="html">Técnicas para resolver problemas</title><link href="https://blog.thedojo.mx/2019/09/27/tecnicas-para-resolver-problemas.html" rel="alternate" type="text/html" title="Técnicas para resolver problemas" /><published>2019-09-27T00:00:00-05:00</published><updated>2019-09-27T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/09/27/tecnicas-para-resolver-problemas</id><content type="html" xml:base="https://blog.thedojo.mx/2019/09/27/tecnicas-para-resolver-problemas.html">&lt;p&gt;Todos los desarrolladores nos hemos encontrado con problemas que nos dejan perplejos y que no tenemos idea de por dónde empezar a resolver.&lt;/p&gt;
-
-&lt;p&gt;George Polya fue uno de los matemáticos más prolíficos del Siglo XX, un matemático de primera clase (de esos que descubren e inventan cosas, y para algunos, &lt;strong&gt;el matemático más influyente del siglo&lt;/strong&gt;) pero que, a diferencia de muchos otros, mantenía un interés por la educación y la enseñanza de las matemáticas, algo muy peculiar.&lt;/p&gt;
-
-&lt;p&gt;Escribió varios libros, entre ellos está &lt;strong&gt;“How to solve it”&lt;/strong&gt; un tratado de 4 partes en el que explica de manera muy detallada cómo resolver problemas matemáticos principalmente, pero también cómo aplicar este conocimiento a otras áreas de la vida.&lt;/p&gt;
-
-&lt;p&gt;Las técnicas explicadas por Polya te pueden ayudar a desarrollar tus capacidades de resolución de problemas.&lt;/p&gt;
-
-&lt;p&gt;Empecemos por hablar de la estructura los problemas de los que Polya habla en su libro.&lt;/p&gt;
-
-&lt;h2 id=&quot;estructura-de-un-problema&quot;&gt;Estructura de un problema&lt;/h2&gt;
-
-&lt;p&gt;Polya enseña que un problema tiene tres partes:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Los datos&lt;/strong&gt;. Es la información que tenemos disponible para resolver el problema.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Las condiciones&lt;/strong&gt;. Describen la relación que existe entre los datos y la solución, pero también la forma, los límites y características de la solución buscada.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;La incógnita o lo desconocido&lt;/strong&gt;. Es la información que buscamos y que cumple con las condiciones del problema.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Es muy importante conocer la composición de un problema para poder aplicar las técnicas descritas en el libro. Cualquier problema matemático &lt;strong&gt;debería cumplir con estas características&lt;/strong&gt;, pero no todos los problemas de la vida real cumplen con esta estructura tal y como la necesitamos; por esta razón deberíamos desarrollar la capacidad de entender los problemas que se nos presentan y estructurarlos lo mejor posible según esta definición para facilitarnos la vida posteriormente.&lt;/p&gt;
-
-&lt;p&gt;Para resolver un problema deberías ser capaz de contestar las siguientes preguntas:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Qué estoy buscando? -&amp;gt; &lt;strong&gt;¿Cuál es la incógnita?&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;¿Qué datos tengo disponibles? -&amp;gt; &lt;strong&gt;¿Son suficientes los datos que tengo para resolver el problema?&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;¿Qué condiciones tiene que cumplir la incógnita? -&amp;gt; &lt;strong&gt;¿Es posible cumplir con esta condición?&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;¿Qué relación hay entre los datos y la incógnita?&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Esta estructura sienta las bases para lo que viene. Ahora hablemos de de los tipos de problemas de los que Polya hace distinción.&lt;/p&gt;
-
-&lt;h2 id=&quot;tipos-de-problemas&quot;&gt;Tipos de problemas&lt;/h2&gt;
-
-&lt;p&gt;Polya hace la distinción entre dos tipos diferentes de problemas que hay que tratar de resolver de manera ligeramente diferente aunque la estructura sea la misma.&lt;/p&gt;
-
-&lt;h3 id=&quot;1-problemas-para-encontrar&quot;&gt;1. Problemas para encontrar&lt;/h3&gt;
-
-&lt;p&gt;Estos son los problemas básicos que nos ponían en la escuela primaria: “&lt;strong&gt;Hallar&lt;/strong&gt; el área de un terreno cuadrado de 10m por lado”, “&lt;strong&gt;Encuentra&lt;/strong&gt; la diámetro de una circunferencia con un perímetro de 12cm”.&lt;/p&gt;
-
-&lt;p&gt;En este tipo de problemas hay que encontrar un resultado, que puede ser numérico o no. Estos son los problemas con los que nos encontramos mayormente en áreas del conocimiento muy exploradas.&lt;/p&gt;
-
-&lt;p&gt;Como programadores podríamos tener estos ejemplos de este tipo de problemas:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Qué complejidad tiene este algoritmo que acabo de programar?&lt;/li&gt;
-  &lt;li&gt;¿A cuántos usuarios simultáneos podré atender con este servidor con 4GB de RAM?&lt;/li&gt;
-  &lt;li&gt;¿Cuánto tiempo va a tardar en subir mi millón de archivos si lo vuelvo paralelo? ¿Cuánto va a tardar si no lo paralelizo?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Varios de estos problemas suenan demasiado simples porque ya los tenemos bien trabajados a base de repetición. Pero otros que no tienen una respuesta numérica pueden ser un poco más complicados:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Qué base de datos debería usar para servir notificaciones en tiempo real?&lt;/li&gt;
-  &lt;li&gt;¿Qué lenguaje de programación debo usar para un sistema que estará emebebido en un millón de dispositivos electrónicos mandando notificaciones críticas cada segundo?&lt;/li&gt;
-  &lt;li&gt;¿Qué sistema de comunicación puedo usar entre dos dispositivos que no cuentan con una conexión confiable a internet?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;En los ejemplos anteriores encontrar una solución concreta a las preguntas planteadas permite avanzar.&lt;/p&gt;
-
-&lt;h3 id=&quot;2-problemas-para-demostrar&quot;&gt;2. Problemas para demostrar&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Demuestre que la línea de mayor longitud que toca dos puntos de una circunferencia pasa por el centro del círculo”.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Esto es un ejemplo de un problema para demostrar. Estos implican la comprobación o refutación de una aserción (&lt;em&gt;hipótesis&lt;/em&gt;) enunciada en el problema. Estos problemas generalmente nos los ponían en la preparatoria o universidad, por su naturaleza son un poco más difíciles en general.&lt;/p&gt;
-
-&lt;p&gt;Para un desarrollador podríamos poner problemas para demostrar como:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;“Demuestra que es imposible un bloqueo mutuo entre procesos con el algoritmo usado actualmente”.&lt;/li&gt;
-  &lt;li&gt;“¿Cómo sabemos que evitamos todas las condiciones de carrera en el sistema actual?”&lt;/li&gt;
-  &lt;li&gt;“Comprueba que el máximo tiempo que puede tardar el sistema en responder es menor que X.”&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Estos problemas requieren soluciones más generales y abstractas en general. Espero que con estos ejemplos haya quedado clara la diferencia entre los diferentes tipos de problemas.&lt;/p&gt;
-
-&lt;h3 id=&quot;problemas-matemáticos-acertijos-y-problemas-de-la-vida-real&quot;&gt;Problemas matemáticos, acertijos y problemas de la vida real&lt;/h3&gt;
-
-&lt;p&gt;Polya habla en sus libro sobre todo de un tipo específico de problemas: &lt;strong&gt;los problemas matemáticos&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Un problema matemático bien definido cuenta con:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Datos suficientes para resolución&lt;/li&gt;
-  &lt;li&gt;No tiene datos sobrantes&lt;/li&gt;
-  &lt;li&gt;Condiciones no contradictorias o imposibles de cumplir&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Por extensión, &lt;strong&gt;los acertijos&lt;/strong&gt; cumplen con las mismas características, y se dan algunos de ejemplos de ellos en el libro.
-Pero los problemas de la vida real son muy diferentes, ya que estos pueden no cumplir con las características completas
-de un problema bien definido. Así que uno de los pasos previos para resolver un problema de la vida real es intentar definir lo mejor posible el problema por resolver y completarlo en caso de que falte algo.&lt;/p&gt;
-
-&lt;h2 id=&quot;cómo-empezar-a-resolver-un-problema&quot;&gt;Cómo empezar a resolver un problema&lt;/h2&gt;
-&lt;p&gt;Polya plantea cuatro etapas de resolución de un problema:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Entendimiento&lt;/li&gt;
-  &lt;li&gt;Planeación&lt;/li&gt;
-  &lt;li&gt;Ejecución&lt;/li&gt;
-  &lt;li&gt;Retrospectiva&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Hablemos de cada una, para entender claramente cómo podemos mejorar nuestras posibilidades de resolución de un problema.&lt;/p&gt;
-
-&lt;h3 id=&quot;entendimiento&quot;&gt;Entendimiento&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Es tonto contestar una pregunta que no entiendes. Es triste trabajar por un fin que no deseas. - &lt;strong&gt;G. Polya&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;El entendimiento del problema consiste primero en asegurarnos de que &lt;strong&gt;entendemos el planteamiento verbal del problema&lt;/strong&gt;, si no tenemos ni siquiera un planteamiento verbal, debemos empezar por crearlo.&lt;/p&gt;
-
-&lt;p&gt;Para decir que comprendemos el problema, tenemos que conocer los datos que se dan, las condiciones a satisfacer y la incógnita o lo que hay que demostrar.&lt;/p&gt;
-
-&lt;p&gt;Esta parte puede llevar gran parte del tiempo total dedicado al problema, ya que es el fundamento de los próximos pasos, sin la que no se puede continuar.&lt;/p&gt;
-
-&lt;p&gt;### Planeación&lt;/p&gt;
-
-&lt;p&gt;El siguiente paso es trazar un plan para atacar el problema. El plan consiste en saber que transformaciones, derivaciones y combinaciones tenemos que hacer con los datos para llegar a la solución esperada.&lt;/p&gt;
-
-&lt;p&gt;Esta es la parte más difícil, ya que implica conocimiento profundo del problema. Para Polya, concebir un plan es el mayor logro en la resolución de un problema. Cuando lo concebimos parece que tenemos una “idea brillante”.&lt;/p&gt;
-
-&lt;p&gt;Pero es casi imposible tener una idea brillante cuando sabemos muy poco del tema. Las buenas ideas están basadas en conocimiento y experiencia previa. Por eso conviene preguntarse: &lt;strong&gt;¿Conozco o resuelto un problema relacionado o similar?&lt;/strong&gt;. Hablaremos de otras preguntas que nos pueden ayudar a concebir un plan más adelante.&lt;/p&gt;
-
-&lt;p&gt;### Ejecución&lt;/p&gt;
-
-&lt;p&gt;Es hora de llevar a cabo los pasos establecidos en la planeación. En esta etapa hay que ejecutar cada uno de los pasos que establecimos en la planeación de ejecución del problema. Polya dice que aquí es donde &lt;strong&gt;hay que ser rigurosos con lo que hacemos&lt;/strong&gt;, verificando que lo que hacemos tenga sentido y sea estrictamente correcto. ¿Puedes comprobar en cada paso que es correcto lo que estás haciendo?&lt;/p&gt;
-
-&lt;p&gt;### Retrospectiva&lt;/p&gt;
-
-&lt;p&gt;En este paso hay que &lt;strong&gt;examinar el resultado&lt;/strong&gt;. ¿Puedes probar que el resultado final es correcto?
-Además podemos ver si podemos hacer algo diferente, si nuestro resultado cumple con todo lo esperado y si podemos encontrar o derivar el resultado de alguna otra forma ahora que ya sabemos cuál es.&lt;/p&gt;
-
-&lt;p&gt;Este paso también sirve para verificar si el resultado o el método que usamos para resolverlo nues puede ayudar con algún otro problema que tengamos que resolver.&lt;/p&gt;
-
-&lt;h3 id=&quot;las-preguntas-de-polya&quot;&gt;Las preguntas de Polya&lt;/h3&gt;
-
-&lt;p&gt;Polya estableció una serie de preguntas que pueden guiarte en la solución de un problema, muy relacionadas con los pasos de los que acabamos de hablar. Estas preguntas las repite vez tras vez en el libro y en verdad son iluminadoras si estás atorado en algún problema que no puedes resolver. A continuación las listamos.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿He resuelto un problema &lt;strong&gt;relacionado&lt;/strong&gt;? ¿Conozco un &lt;strong&gt;problema que se aproxime&lt;/strong&gt;?&lt;/li&gt;
-  &lt;li&gt;¿Estoy usando todos los datos?&lt;/li&gt;
-  &lt;li&gt;¿Puedo cambiar algo del problema para hacerlo más fácil?
-    &lt;ul&gt;
-      &lt;li&gt;¿Puedo cambiar los datos?&lt;/li&gt;
-      &lt;li&gt;¿Puedo cambiar las condiciones?&lt;/li&gt;
-      &lt;li&gt;¿Puedo cambiar la incógnita?&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;para-recordar&quot;&gt;Para recordar&lt;/h2&gt;
-
-&lt;p&gt;Para resolver un problema:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Asegúrate de entender el problema completamente: qué datos tienes, qué relación hay entre los datos y la incógnita y lo que tienes que encontrar.&lt;/li&gt;
-  &lt;li&gt;Planea cómo vas a atacar el problema&lt;/li&gt;
-  &lt;li&gt;Si estás detenido en la resolución de un problema puedes:
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;Variar los datos&lt;/strong&gt;, las condiciones o el resultado esperado.&lt;/li&gt;
-      &lt;li&gt;Pensar en otros problemas que se le parezcan: puedes usar el método que usaste para resolverlos o el resultado.&lt;/li&gt;
-      &lt;li&gt;Aceptar soluciones parciales, parcialmente erróneas o asumidas.&lt;/li&gt;
-      &lt;li&gt;Genera nuevas ideas y re-evalúa el problema y el plan a la luz de cada nuevo paso.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Aprovecha cualquier idea aunque suene disparatada.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;En el siguiente post hablaremos de 5 cosas más de las que Polya habla en su libro: heurística, inducción, deducción, análisis y síntesis.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="matemáticas" /><category term="maths" /><category term="polya" /><category term="books" /><category term="libros" /><summary type="html">¿Cuántas veces te has enfrentado a problemas de los que no tienes ni idea de cómo empezar a resolver? George Polya escribió un libro completo sobre eso en 1928. Hablemos de las principales lecciones que podemos sacar.</summary></entry></feed>
+&lt;p&gt;En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo)aleatorios y sus generadores.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="criptografía" /><category term="esteganografía" /><category term="seguridad" /><summary type="html">Aprende las bases de la criptografía para tenerla en cuenta en tus programas.</summary></entry></feed>

@@ -143,4 +143,19 @@ var store = [{
         "excerpt":"Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada...","categories": [],
         "tags": ["a-philosophy-of-software-design","complejidad"],
         "url": "https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581404404/will-francis-Rm3nWQiDTzg-unsplash_cxpkvl.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581404404/will-francis-Rm3nWQiDTzg-unsplash_cxpkvl.jpg"},{
+        "title": "Eloquent JavaScript en Español",
+        "excerpt":"TL;DR: Estamos trabajando en una nueva traducción de Eloquent JavaScript al español, en su tercera edición. La puedes encontrar aquí: Eloquent JavaScript en Español. Está la versión en Eloquent JavaScript en Español en PDF, que actualizamos cada capítulo. Si quieres contribuir puedes ponerte de acuerdo a través de este foro...","categories": [],
+        "tags": ["eloquentjs-español","eloquent-js","eloquent","javascript","eloquent-javascript-pdf"],
+        "url": "https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582331007/24af113fe16c9bbc5aa1ef012758aac8_ytglzc.jpg"},{
+        "title": "A Philosophy of Software Design: Tres formas de identificar la complejidad",
+        "excerpt":"“Controlar la complejidad es la esencia de la programación” - Brian W. Kernighan Muchas mentes brillantes dedicadas al desarrollo de software han estado de acuerdo en que el principal problema al crear y mantener programas es el manejo de la complejidad. Podemos decir que algo complejo es aquello que está...","categories": [],
+        "tags": ["ousterhout","complejidad","diseño-de-software","posd"],
+        "url": "https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582698547/scott-webb-186119-unsplash_hholsr.jpg"},{
+        "title": "A Philosophy of Software Design: Los módulos deben ser profundos",
+        "excerpt":"Para reducir la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es la organización y separación de código a alto nivel, es decir separación en módulos. Por qué es importante la separación Antes de empezar a hablar de cómo deberíamos diseñar nuestros módulos...","categories": [],
+        "tags": ["módulo","PoSD","ousterhout","complejidad","función"],
+        "url": "https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583214655/IMG_3431_xcydpt.jpg"}]

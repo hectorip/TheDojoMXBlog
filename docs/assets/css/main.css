@@ -19,6 +19,7 @@
 /* Mixins and functions */
 /* Magnific Popup CSS */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700,700i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap");
 .mfp-counter { font-family: Georgia, Times, serif; }
 
 .mfp-bg { top: 0; left: 0; width: 100%; height: 100%; z-index: 1042; overflow: hidden; position: fixed; background: #000; opacity: 0.8; filter: alpha(opacity=80); }
@@ -192,7 +193,7 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 /* Prevents modern browsers from displaying 'audio' without controls */
 audio:not([controls]) { display: none; }
 
-a { color: #C23534; }
+a { color: #0064ee; }
 
 /* Apply focus state */
 /* Remove outline from links */
@@ -273,9 +274,9 @@ blockquote cite { font-style: italic; }
 blockquote cite:before { content: "\2014"; padding-right: 5px; }
 
 /* links */
-a:visited { color: #cb5352; }
+a:visited { color: #267bf1; }
 
-a:hover { color: #922827; outline: 0; }
+a:hover { color: #004bb3; outline: 0; }
 
 /* buttons */
 /* code */
@@ -318,7 +319,7 @@ figcaption { margin-bottom: 0.5em; color: #898c8f; font-family: Georgia, Times, 
 
 figcaption a { -webkit-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
-figcaption a:hover { color: #922827; }
+figcaption a:hover { color: #004bb3; }
 
 /* Fix IE9 SVG bug */
 svg:not(:root) { overflow: hidden; }
@@ -730,7 +731,7 @@ tr, td, th { vertical-align: middle; }
 
 .pagination li a { display: block; margin-bottom: 0.25em; padding: 0.5em 1em; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 1.5; text-align: center; text-decoration: none; color: #898c8f; border: 1px solid #b6b6b6; border-radius: 0; }
 
-.pagination li a:hover { color: #922827; }
+.pagination li a:hover { color: #004bb3; }
 
 .pagination li a.current, .pagination li a.current.disabled { color: #fff; background: #6f777d; }
 
@@ -1368,7 +1369,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 .page__taxonomy-item { display: inline-block; margin-right: 5px; margin-bottom: 8px; padding: 5px 10px; text-decoration: none; border: 1px solid #b6b6b6; border-radius: 4px; }
 
-.page__taxonomy-item:hover { text-decoration: none; color: #922827; }
+.page__taxonomy-item:hover { text-decoration: none; color: #004bb3; }
 
 .taxonomy__section { margin-bottom: 2em; padding-bottom: 1em; }
 
@@ -1734,6 +1735,8 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 a { text-decoration: none; font-weight: 400; }
 
 article.page { font-family: 'Source Sans Pro', sans-serif; font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6, h2 > a { font-family: "Raleway", sans-serif; font-weight: 600; }
 
 .custom-grid { max-width: 100%; }
 

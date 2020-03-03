@@ -12,11 +12,19 @@ intro:
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
+<div style="width: 100%; text-align: center">
+  <a href="/latest" title="Ver todos los posts">
+    Ver todos los posts >>
+  </a>
+</div>
+
 <div class="custom-grid">
   {% for post in site.posts limit: 20 %}
     {% include archive-single.html type="grid" %}
   {% endfor %}
 </div>
+
+
 <div style="width: 100%; text-align: center">
   <a href="/latest" title="Ver todos los posts">
     Ver todos los posts >>
