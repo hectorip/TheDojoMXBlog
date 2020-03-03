@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-02T23:52:02-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Los módulos deben ser profundos</title><link href="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Los módulos deben ser profundos" /><published>2020-03-02T00:00:00-06:00</published><updated>2020-03-02T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html">&lt;p&gt;Para reducir la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es la organización y separación de código a alto nivel, es decir separación en módulos.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-03T00:04:13-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Los módulos deben ser profundos</title><link href="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Los módulos deben ser profundos" /><published>2020-03-02T00:00:00-06:00</published><updated>2020-03-02T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html">&lt;p&gt;Para reducir la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es la organización y separación de código a alto nivel, es decir separación en módulos.&lt;/p&gt;
 
 &lt;h2 id=&quot;por-qué-es-importante-la-separación&quot;&gt;Por qué es importante la separación&lt;/h2&gt;
 
 &lt;p&gt;Antes de empezar a hablar de cómo deberíamos diseñar nuestros módulos hablemos de por qué es importante la separación.&lt;/p&gt;
 
 &lt;p&gt;La mejor forma de resolver un problema complejo es mediante &lt;em&gt;la descomposición&lt;/em&gt; del problema en problemas más sencillos. Estos problemas se resuelven individualmente, idealmente de de manera independiente en un módulo por separado para cada uno. De esta manera podemos hacer software más mantenible y fácil de entender. Incluso se puede dividir mejor el trabajo.&lt;/p&gt;
+
+&lt;p&gt;La división del problema permite además &lt;strong&gt;ocultar&lt;/strong&gt; información no relevante para el problema en cuestión.&lt;/p&gt;
 
 &lt;p&gt;Esta división del trabajo es diferente dependiendo del paradigma del lenguaje de programación que usemos, así que veamos a qué nos referimos con un &lt;strong&gt;módulo&lt;/strong&gt;.&lt;/p&gt;
 
@@ -22,14 +24,14 @@
 
 &lt;p&gt;Ya hemos hablado sobre &lt;a href=&quot;https://www.youtube.com/watch?v=n8MxyHG0j3Q&amp;amp;t&quot;&gt;lo que es una interfaz&lt;/a&gt;, pero para resumir: es el punto en donde un sistema, en este caso específico, un módulo, se encuentra con otro (otro módulo o código que lo usa).&lt;/p&gt;
 
-&lt;p&gt;Un módulo tiene una interfaz que permite a otras partes del sistema usarlo. Usaremos el caso más sencillo: una función. La interfaz de una función es su firma: su nombre, los parámetros que recibe y lo que devuelve.&lt;/p&gt;
+&lt;p&gt;Un módulo tiene una interfaz que permite a otras partes del sistema usarlo. Usaremos el caso más sencillo, una función. La interfaz de una función es su firma: su nombre, los parámetros que recibe y lo que devuelve.&lt;/p&gt;
 
 &lt;p&gt;Veamos un ejemplo:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;archivo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;my_file.md&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;w&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Devuelve un apuntador a un archivo abierto
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;La interfaz de la función es su &lt;code class=&quot;highlighter-rouge&quot;&gt;open&lt;/code&gt; (nos permite identificarla y comunica información sobre lo que hace), el nombre del archivo como primer parámetro y el modo de operación en el segundo.&lt;/p&gt;
+&lt;p&gt;La interfaz de la función es su nombre &lt;code class=&quot;highlighter-rouge&quot;&gt;open&lt;/code&gt; (nos permite identificarla y comunica información sobre lo que hace), el nombre del archivo como primer parámetro y el modo de operación en el segundo.&lt;/p&gt;
 
 &lt;p&gt;Dependiendo de la forma de agrupar la interfaz de los módulos varía, pero recuerda esto: &lt;strong&gt;la interfaz es la parte visible del módulo hacia otros módulos&lt;/strong&gt;.&lt;/p&gt;
 
@@ -45,13 +47,15 @@
 
 &lt;p&gt;Un módulo profundo tiene una &lt;strong&gt;interfaz sencilla&lt;/strong&gt; o fácil de usar para la mayoría de los casos de uso y provee de mucha funcionalidad, hace mucho por ti.&lt;/p&gt;
 
-&lt;p&gt;Un módulo superficial tiene una interfaz compleja o difícil de usar (clases de buffers y archivos en Java, por ejemplo) y provee poca funcionalidad.&lt;/p&gt;
+&lt;p&gt;Un módulo superficial tiene una interfaz compleja o difícil de usar y provee poca funcionalidad.&lt;/p&gt;
 
 &lt;p&gt;Esto no es absoluto: la relación entre la complejidad de la interfaz es relativa a la funcionalidad que provee, por ejemplo, si un módulo hace muchas cosas por ti, puede que requiera muchos datos. La relación interfaz/funcionalidad debe ser razonable para considerar que el módulo es profundo.&lt;/p&gt;
 
 &lt;p&gt;Abrir archivos en la mayoría de los lenguajes es un ejemplo de una función profunda: con una interfaz muy pequeña (el nombre y el modo), la función se encarga de todos los detalles de implementación de apertura y creación del archivo. No te debes de preocupar por cosas como el sistema de archivos, el guardado físico en el disco, por verificar si hay memoria, etc.&lt;/p&gt;
 
-&lt;p&gt;En el caso contrario, los getters y setters que se acostumbra usar en algunos lenguajes de programación (Java, por ejemplo) son ejemplo de funciones poco profundas, generalmente no hacen algo más que devolver el valor de la propiedad.&lt;/p&gt;
+&lt;p&gt;En el caso contrario, los getters y setters que se acostumbra usar en algunos lenguajes de programación (Java) son ejemplo de funciones poco profundas, generalmente no hacen algo más que devolver el valor de la propiedad.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo: Piensa en un aparato electrónico. En una televisión, sus control remoto te permiten acceder a las funcionalidades de encender el panel de iluminación, captar la señal del canal, decodificarlo y saltar entre diferentes canales, todo sin preocuparte tú por los detalles. Sólo la usas y ya. Mientras más detalles de implementación oculte es más fácil de usar.&lt;/p&gt;
 
 &lt;h2 id=&quot;ventajas-de-los-módulos-profundos&quot;&gt;Ventajas de los módulos profundos&lt;/h2&gt;
 

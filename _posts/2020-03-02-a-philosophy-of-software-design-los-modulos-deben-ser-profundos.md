@@ -19,6 +19,8 @@ Antes de empezar a hablar de cómo deberíamos diseñar nuestros módulos hablem
 
 La mejor forma de resolver un problema complejo es mediante _la descomposición_ del problema en problemas más sencillos. Estos problemas se resuelven individualmente, idealmente de de manera independiente en un módulo por separado para cada uno. De esta manera podemos hacer software más mantenible y fácil de entender. Incluso se puede dividir mejor el trabajo.
 
+La división del problema permite además **ocultar** información no relevante para el problema en cuestión.
+
 Esta división del trabajo es diferente dependiendo del paradigma del lenguaje de programación que usemos, así que veamos a qué nos referimos con un **módulo**.
 
 ## ¿Qué es un módulo?
@@ -35,7 +37,7 @@ Ahora bien, ¿qué es la interfaz de un módulo?
 
 Ya hemos hablado sobre [lo que es una interfaz](https://www.youtube.com/watch?v=n8MxyHG0j3Q&t), pero para resumir: es el punto en donde un sistema, en este caso específico, un módulo, se encuentra con otro (otro módulo o código que lo usa).
 
-Un módulo tiene una interfaz que permite a otras partes del sistema usarlo. Usaremos el caso más sencillo: una función. La interfaz de una función es su firma: su nombre, los parámetros que recibe y lo que devuelve.
+Un módulo tiene una interfaz que permite a otras partes del sistema usarlo. Usaremos el caso más sencillo, una función. La interfaz de una función es su firma: su nombre, los parámetros que recibe y lo que devuelve.
 
 Veamos un ejemplo:
 
@@ -43,7 +45,7 @@ Veamos un ejemplo:
 archivo = open("my_file.md", "w") # Devuelve un apuntador a un archivo abierto
 ```
 
-La interfaz de la función es su `open` (nos permite identificarla y comunica información sobre lo que hace), el nombre del archivo como primer parámetro y el modo de operación en el segundo.
+La interfaz de la función es su nombre `open` (nos permite identificarla y comunica información sobre lo que hace), el nombre del archivo como primer parámetro y el modo de operación en el segundo.
 
 Dependiendo de la forma de agrupar la interfaz de los módulos varía, pero recuerda esto: **la interfaz es la parte visible del módulo hacia otros módulos**.
 
@@ -59,13 +61,15 @@ Observa el siguiente diagrama:
 
 Un módulo profundo tiene una **interfaz sencilla** o fácil de usar para la mayoría de los casos de uso y provee de mucha funcionalidad, hace mucho por ti.
 
-Un módulo superficial tiene una interfaz compleja o difícil de usar (clases de buffers y archivos en Java, por ejemplo) y provee poca funcionalidad.
+Un módulo superficial tiene una interfaz compleja o difícil de usar y provee poca funcionalidad.
 
 Esto no es absoluto: la relación entre la complejidad de la interfaz es relativa a la funcionalidad que provee, por ejemplo, si un módulo hace muchas cosas por ti, puede que requiera muchos datos. La relación interfaz/funcionalidad debe ser razonable para considerar que el módulo es profundo.
 
 Abrir archivos en la mayoría de los lenguajes es un ejemplo de una función profunda: con una interfaz muy pequeña (el nombre y el modo), la función se encarga de todos los detalles de implementación de apertura y creación del archivo. No te debes de preocupar por cosas como el sistema de archivos, el guardado físico en el disco, por verificar si hay memoria, etc.
 
-En el caso contrario, los getters y setters que se acostumbra usar en algunos lenguajes de programación (Java, por ejemplo) son ejemplo de funciones poco profundas, generalmente no hacen algo más que devolver el valor de la propiedad.
+En el caso contrario, los getters y setters que se acostumbra usar en algunos lenguajes de programación (Java) son ejemplo de funciones poco profundas, generalmente no hacen algo más que devolver el valor de la propiedad.
+
+Ejemplo: Piensa en un aparato electrónico. En una televisión, sus control remoto te permiten acceder a las funcionalidades de encender el panel de iluminación, captar la señal del canal, decodificarlo y saltar entre diferentes canales, todo sin preocuparte tú por los detalles. Sólo la usas y ya. Mientras más detalles de implementación oculte es más fácil de usar.
 
 ## Ventajas de los módulos profundos
 
