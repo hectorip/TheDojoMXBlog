@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-02-26T11:07:15-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Tres formas de identificar la complejidad</title><link href="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Tres formas de identificar la complejidad" /><published>2020-02-26T00:00:00-06:00</published><updated>2020-02-26T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-02T23:52:02-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Los módulos deben ser profundos</title><link href="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Los módulos deben ser profundos" /><published>2020-03-02T00:00:00-06:00</published><updated>2020-03-02T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html">&lt;p&gt;Para reducir la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es la organización y separación de código a alto nivel, es decir separación en módulos.&lt;/p&gt;
+
+&lt;h2 id=&quot;por-qué-es-importante-la-separación&quot;&gt;Por qué es importante la separación&lt;/h2&gt;
+
+&lt;p&gt;Antes de empezar a hablar de cómo deberíamos diseñar nuestros módulos hablemos de por qué es importante la separación.&lt;/p&gt;
+
+&lt;p&gt;La mejor forma de resolver un problema complejo es mediante &lt;em&gt;la descomposición&lt;/em&gt; del problema en problemas más sencillos. Estos problemas se resuelven individualmente, idealmente de de manera independiente en un módulo por separado para cada uno. De esta manera podemos hacer software más mantenible y fácil de entender. Incluso se puede dividir mejor el trabajo.&lt;/p&gt;
+
+&lt;p&gt;Esta división del trabajo es diferente dependiendo del paradigma del lenguaje de programación que usemos, así que veamos a qué nos referimos con un &lt;strong&gt;módulo&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-un-módulo&quot;&gt;¿Qué es un módulo?&lt;/h2&gt;
+
+&lt;p&gt;Una definición fácil y amplia de “módulo” dada por &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;“A Philosophy of Software Design”&lt;/a&gt; es: &lt;em&gt;todo aquello que agrupe código, proveyendo separación de funcionalidad&lt;/em&gt;, es decir que agrupe comportamiento en detrás de una &lt;em&gt;interfaz&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Un módulo puede ser una función, una clase, un paquete o cosas similares dependiendo del lenguaje de programación. Un módulo incluso puede ser una API HTTP u otro programa.&lt;/p&gt;
+
+&lt;p&gt;Como resumen: &lt;strong&gt;un módulo permite hacer &lt;em&gt;algo&lt;/em&gt; mediante una interfaz.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora bien, ¿qué es la interfaz de un módulo?&lt;/p&gt;
+
+&lt;h2 id=&quot;interfaces&quot;&gt;Interfaces&lt;/h2&gt;
+
+&lt;p&gt;Ya hemos hablado sobre &lt;a href=&quot;https://www.youtube.com/watch?v=n8MxyHG0j3Q&amp;amp;t&quot;&gt;lo que es una interfaz&lt;/a&gt;, pero para resumir: es el punto en donde un sistema, en este caso específico, un módulo, se encuentra con otro (otro módulo o código que lo usa).&lt;/p&gt;
+
+&lt;p&gt;Un módulo tiene una interfaz que permite a otras partes del sistema usarlo. Usaremos el caso más sencillo: una función. La interfaz de una función es su firma: su nombre, los parámetros que recibe y lo que devuelve.&lt;/p&gt;
+
+&lt;p&gt;Veamos un ejemplo:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;archivo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;my_file.md&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;w&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Devuelve un apuntador a un archivo abierto
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;La interfaz de la función es su &lt;code class=&quot;highlighter-rouge&quot;&gt;open&lt;/code&gt; (nos permite identificarla y comunica información sobre lo que hace), el nombre del archivo como primer parámetro y el modo de operación en el segundo.&lt;/p&gt;
+
+&lt;p&gt;Dependiendo de la forma de agrupar la interfaz de los módulos varía, pero recuerda esto: &lt;strong&gt;la interfaz es la parte visible del módulo hacia otros módulos&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;diseño-de-módulos&quot;&gt;Diseño de módulos&lt;/h2&gt;
+
+&lt;p&gt;Aquí entramos en lo importante: los módulos deberían ser lo más profundos posible.&lt;/p&gt;
+
+&lt;p&gt;¿A qué nos referimos con un módulo profundo?&lt;/p&gt;
+
+&lt;p&gt;Observa el siguiente diagrama:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1583213511/IMG_0058_xm2b6w.jpg&quot; alt=&quot;Módulos profundos vs superficiales&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Un módulo profundo tiene una &lt;strong&gt;interfaz sencilla&lt;/strong&gt; o fácil de usar para la mayoría de los casos de uso y provee de mucha funcionalidad, hace mucho por ti.&lt;/p&gt;
+
+&lt;p&gt;Un módulo superficial tiene una interfaz compleja o difícil de usar (clases de buffers y archivos en Java, por ejemplo) y provee poca funcionalidad.&lt;/p&gt;
+
+&lt;p&gt;Esto no es absoluto: la relación entre la complejidad de la interfaz es relativa a la funcionalidad que provee, por ejemplo, si un módulo hace muchas cosas por ti, puede que requiera muchos datos. La relación interfaz/funcionalidad debe ser razonable para considerar que el módulo es profundo.&lt;/p&gt;
+
+&lt;p&gt;Abrir archivos en la mayoría de los lenguajes es un ejemplo de una función profunda: con una interfaz muy pequeña (el nombre y el modo), la función se encarga de todos los detalles de implementación de apertura y creación del archivo. No te debes de preocupar por cosas como el sistema de archivos, el guardado físico en el disco, por verificar si hay memoria, etc.&lt;/p&gt;
+
+&lt;p&gt;En el caso contrario, los getters y setters que se acostumbra usar en algunos lenguajes de programación (Java, por ejemplo) son ejemplo de funciones poco profundas, generalmente no hacen algo más que devolver el valor de la propiedad.&lt;/p&gt;
+
+&lt;h2 id=&quot;ventajas-de-los-módulos-profundos&quot;&gt;Ventajas de los módulos profundos&lt;/h2&gt;
+
+&lt;p&gt;Encontrar un equilibrio entre la cantidad de código que metes en un módulo y la interfaz que expone tiene varias ventajas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;El código se puede re-usar en otras partes del sistema&lt;/li&gt;
+  &lt;li&gt;Evitas la acumulación de interfaces, es decir, tener demasiadas interfaces (funciones, clases o módulos) que tienes que aprender a usar y que hacen poco por ti&lt;/li&gt;
+  &lt;li&gt;La expansión de cambios (tener que tocar muchos lados del sistema para hacer un cambio relativamente pequeño)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Finalmente, recuerda que una de las funciones que proveen los módulos es &lt;em&gt;ocultar&lt;/em&gt; la complejidad. ¿Cuántas veces has visto lo que hacen las funciones prefabricadas de tu lenguaje de programación? Es probable que ninguna. Los módulos profundos y bien hechos permiten ocultar mayor cantidad de información y hace más fácil trabajar con ellos y simplifica el sistema en general.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="módulo" /><category term="PoSD" /><category term="ousterhout" /><category term="complejidad" /><category term="función" /><summary type="html">Veamos algunos lineamientos para el diseño de funciones/clases/módulos que ayudarán a reducir la complejidad de tus sistemas de software.</summary></entry><entry><title type="html">A Philosophy of Software Design: Tres formas de identificar la complejidad</title><link href="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Tres formas de identificar la complejidad" /><published>2020-02-26T00:00:00-06:00</published><updated>2020-02-26T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html">&lt;blockquote&gt;
   &lt;p&gt;“Controlar la complejidad es la esencia de la programación” - Brian W. Kernighan&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -40,7 +105,7 @@
 
 &lt;p&gt;Un desconocido desconocido es aquella información que ni siquiera sabemos que estaba ahí y que no conocíamos, como algunas características del código, parámetros ocultos y comportamientos que no son fáciles de detectar ni están documentados.&lt;/p&gt;
 
-&lt;p&gt;¿Recuerdas la broma que dice: “Cuando escribí este código sólo Dios y yo sabíamos lo que hacía, ahora sólo Dios sabe”? Muchas veces nos pasa así con el código y es el ejemplo perfecto de los desconocidos desconocidos, sobre todo para otros programadores.&lt;/p&gt;
+&lt;p&gt;¿Recuerdas la broma que dice: &lt;em&gt;“Cuando escribí este código sólo Dios y yo sabíamos lo que hacía, ahora sólo Dios sabe”&lt;/em&gt;? Muchas veces nos pasa así con el código y es el ejemplo perfecto de los desconocidos desconocidos, sobre todo para otros programadores.&lt;/p&gt;
 
 &lt;h2 id=&quot;medición-de-la-complejidad&quot;&gt;Medición de la complejidad&lt;/h2&gt;
 
@@ -57,10 +122,8 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;Esta complejidad puede evitar que avances tanto como deberías, pero el primer paso es identificarla como lo viste aquí. En los siguientes artículos hablaremos de técnicas para reducir la complejidad.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="ousterhout" /><category term="complejidad" /><category term="diseño-de-software" /><category term="posd" /><summary type="html">Aprende a descubrir y medir la complejidad en tus proyectos</summary></entry><entry><title type="html">Eloquent JavaScript en Español</title><link href="https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol.html" rel="alternate" type="text/html" title="Eloquent JavaScript en Español" /><published>2020-02-21T00:00:00-06:00</published><updated>2020-02-21T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol.html">&lt;blockquote&gt;
-  &lt;p&gt;TL;DR: Estamos trabajando en una nueva traducción de Eloquent JavaScript al español, en su tercera edición. La puedes encontrar aquí: &lt;a href=&quot;https://eloquentjs-es.thedojo.mx/&quot;&gt;Eloquent JavaScript en Español&lt;/a&gt;. Está la versión en PDF, que actualizamos cada capítulo. Si quieres contribuir puedes ponerte de acuerdo a través de este foro o en GitHub.&lt;/p&gt;
+  &lt;p&gt;TL;DR: Estamos trabajando en una nueva traducción de Eloquent JavaScript al español, en su tercera edición. La puedes encontrar aquí: &lt;a href=&quot;https://eloquentjs-es.thedojo.mx/&quot;&gt;Eloquent JavaScript en Español&lt;/a&gt;. Está la versión en &lt;a href=&quot;https://eloquentjs-es.thedojo.mx/Eloquent_JavaScript.pdf&quot;&gt;Eloquent JavaScript en Español en PDF&lt;/a&gt;, que actualizamos cada capítulo. Si quieres contribuir puedes ponerte de acuerdo a través de este foro o en GitHub.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;!-- --- --&gt;
 
 &lt;p&gt;Desde el 2015 intentamos empezar a traducir la 2da edición de Eloquent JavaScript. Puedes ver el post en Medium aquí: &lt;a href=&quot;http://bit.ly/39W8qAH&quot;&gt;Traducción de Eloquent JavaScript al Español&lt;/a&gt;.&lt;/p&gt;
 
@@ -91,7 +154,7 @@ Puedes leer el libro en línea o descargarlo en PDF, próximamente en EPUB y Mob
 
 &lt;p&gt;Finalmente, en el futuro habilitaremos algún medio para contribuciones monetarias, para acelerar la traducción mediante la contratación de traductores y diseñadores profesionales.&lt;/p&gt;
 
-&lt;p&gt;No dudes en ponerte en contacto en &lt;a href=&quot;https://github.com/Eloquent-JavaScript-Espanol/Eloquent-JavaScript-ES&quot;&gt;GitHub&lt;/a&gt; o a través de este artículo, en los comentarios.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Traudcción del Eloquent JavaScript al español, 3ra edición</summary></entry><entry><title type="html">A Philosophy of Software Design: Desarrollo Táctico vs Estratégico</title><link href="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Desarrollo Táctico vs Estratégico" /><published>2020-02-11T00:00:00-06:00</published><updated>2020-02-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html">&lt;p&gt;Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada uno.&lt;/p&gt;
+&lt;p&gt;No dudes en ponerte en contacto en &lt;a href=&quot;https://github.com/Eloquent-JavaScript-Espanol/Eloquent-JavaScript-ES&quot;&gt;GitHub&lt;/a&gt; o a través de este artículo, en los comentarios.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="eloquentjs-español" /><category term="eloquent-js" /><category term="eloquent" /><category term="javascript" /><category term="eloquent-javascript-pdf" /><summary type="html">Traudcción del Eloquent JavaScript al español, 3ra edición</summary></entry><entry><title type="html">A Philosophy of Software Design: Desarrollo Táctico vs Estratégico</title><link href="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Desarrollo Táctico vs Estratégico" /><published>2020-02-11T00:00:00-06:00</published><updated>2020-02-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html">&lt;p&gt;Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada uno.&lt;/p&gt;
 
 &lt;h2 id=&quot;desarrollo-táctico&quot;&gt;Desarrollo táctico&lt;/h2&gt;
 
@@ -720,109 +783,4 @@ de resolución de problemas aplican para el problema que tenemos que resolver&lt
 
 &lt;p&gt;En este artículo sólo hemos tocado la definición de criptografía y hemos mencionado por qué es importante. En los siguientes empezaremos a hablar de las bases que nos permitirán comprender cómo funciona la criptografía y qué mecanismos son los que permiten que brinde seguridad mediante ocultar la información.&lt;/p&gt;
 
-&lt;p&gt;En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo)aleatorios y sus generadores.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="criptografía" /><category term="esteganografía" /><category term="seguridad" /><summary type="html">Aprende las bases de la criptografía para tenerla en cuenta en tus programas.</summary></entry><entry><title type="html">Entendiendo REST: Servicios cacheables</title><link href="https://blog.thedojo.mx/2019/10/27/entendiendo-rest-servicios-cacheables.html" rel="alternate" type="text/html" title="Entendiendo REST: Servicios cacheables" /><published>2019-10-27T00:00:00-05:00</published><updated>2019-10-27T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2019/10/27/entendiendo-rest-servicios-cacheables</id><content type="html" xml:base="https://blog.thedojo.mx/2019/10/27/entendiendo-rest-servicios-cacheables.html">&lt;p&gt;La tercera característica que &lt;a href=&quot;https://twitter.com/fielding&quot;&gt;Thomas R. Fielding&lt;/a&gt; (Roy Fielding a partir de ahora) establece para los sistemas &lt;strong&gt;REST&lt;/strong&gt; es la capacidad de que su información sea cacheable. Veamos lo que esto significa y por qué es una característica importante. Empecemos por definir el caché.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-el-caché&quot;&gt;¿Qué es &lt;em&gt;el caché&lt;/em&gt;?&lt;/h2&gt;
-
-&lt;p&gt;Originalmente el caché se refiere a un tipo especial de memoria &lt;em&gt;muy rápida&lt;/em&gt; en los procesadores, que guarda &lt;em&gt;temporalmente&lt;/em&gt; información que tiene gran probabilidad de volver a ser utilizada &lt;em&gt;dentro de poco tiempo&lt;/em&gt; (en los procesadores hablamos de nano-segundos).&lt;/p&gt;
-
-&lt;p&gt;Al evitar que el procesador vuelva a consultar la RAM (muy lenta en &lt;a href=&quot;https://gist.github.com/jboner/2841832&quot;&gt;comparación con la memoria caché&lt;/a&gt;), las operaciones se realizan a mucha mayor velocidad.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/k0t1e.png&quot; alt=&quot;Latencia de diferentes tipos de memoria&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;La memoria caché de los procesadores tiene una gran desventaja: &lt;strong&gt;es muy muy pequeña&lt;/strong&gt;. Esto presenta retos:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Qué guardo aquí para maximizar la eficacia de este espacio de almacenamiento?&lt;/li&gt;
-  &lt;li&gt;¿Cómo decido cuándo borrar o sobre-escribir la información que tengo aquí?&lt;/li&gt;
-  &lt;li&gt;¿Qué pasa si la información original cambia mientras estoy ocupando los datos guardados en la memoria caché?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Hablaremos más adelante de estas preguntas en nuestro propio contexto, pero hay técnicas para poder contestarlas con cierta eficacia, que los &lt;a href=&quot;http://user.it.uu.se/~yi/pdf-files/2014/euc14.pdf&quot;&gt;procesadores han logrado implementar&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Así que puedes pensar en el caché como en una memoria que es más rápida (aunque más limitada). Se utiliza con el objetivo de hacer un sistema más rápido y a veces más eficiente.&lt;/p&gt;
-
-&lt;h2 id=&quot;caché-en-los-sistemas-rest&quot;&gt;Caché en los sistemas REST&lt;/h2&gt;
-
-&lt;p&gt;Esta característica se basa en las dos que ya hablamos: &lt;a href=&quot;/2019/08/03/entendiendo-rest-servidor-sin-estado.html&quot;&gt;servicios sin estado&lt;/a&gt; y &lt;a href=&quot;/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html&quot;&gt;arquitectura cliente-servidor&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Lo que se define como “cacheabilidad” en los sistemas REST es la capacidad
-de estos sistemas para &lt;em&gt;etiquetar&lt;/em&gt; de alguna forma las respuestas para que
-otros mecanismos intermedios funcionen como un caché.&lt;/p&gt;
-
-&lt;p&gt;Así el sistema puede atender más peticiones, en menos tiempo, con menos
-recursos (comparado con un sistema sin caché).&lt;/p&gt;
-
-&lt;p&gt;Estos sistemas o mecanismos intermedios (existen entre el cliente y el servidor) deben ser por lo general transparentes para los desarrolladores,
-no deben afectar la manera en que los servicios se consumen.&lt;/p&gt;
-
-&lt;p&gt;En sistemas web que usan &lt;strong&gt;HTTP&lt;/strong&gt; para comunicarse el sistema de “etiquetado” que permite que una respuesta sea cacheada son &lt;strong&gt;las cabeceras&lt;/strong&gt;. Estas permiten a los diferentes actores en el proceso de comunicación (servidor local, proxy, proxy reverso, navegador o cliente final, entre otros), saber quién debería cachear la información y por cuánto tiempo o cómo decidir si deben renovar la información. Las cabeceras HTTP comúnmente usadas para esto son:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt;: especifica hasta cuándo se puede considerar fresca o válida la información.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-control&lt;/code&gt;: Es usado para especificar directivas de caché que deben ser respetadas por todos lo puntos por los que pasa la información. Puedes ver los posibles valores y su especifacación aquí: &lt;a href=&quot;https://tools.ietf.org/html/rfc2616#section-14.9&quot;&gt;Cache-Control Header&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Vary&lt;/code&gt;: es usada para indicar qué otras cabeceras se deben tomar en cuenta para decidir si el servidor puede reutilizar una respuesta o no.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Etag&lt;/code&gt;: identifica a una respueste de manera única, puede usarse para pedir una respuesta nueva de un mismo endpoint, y en combinación con la cabecera &lt;code class=&quot;highlighter-rouge&quot;&gt;If-None-Match&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Existen otras cabeceras usadas para lograr un control correcto del caché como &lt;code class=&quot;highlighter-rouge&quot;&gt;If-Modified-Since&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;ventajas-del-caché&quot;&gt;Ventajas del caché&lt;/h2&gt;
-
-&lt;p&gt;El caché se establece como una de las características de REST porque proporciona ventajas para el uso y la escalabilidad de los sistemas. Veamos algunas de ellas.&lt;/p&gt;
-
-&lt;h3 id=&quot;aumenta-la-percepción-de-velocidad&quot;&gt;Aumenta la percepción de velocidad&lt;/h3&gt;
-
-&lt;p&gt;Al guardar las respuestas que es más probable que vuelvan a salir, un sistema REST puede contestar una gran cantidad de sus peticiones a la velocidad que el caché lo permita, es decir, muy rápido.&lt;/p&gt;
-
-&lt;h3 id=&quot;consumo-de-recursos-reducido&quot;&gt;Consumo de recursos reducido&lt;/h3&gt;
-
-&lt;p&gt;El uso caché se parece mucho a una técnica de programación llamada &lt;strong&gt;dynamic programming&lt;/strong&gt; que consiste en guardar temporalmente los resultados de operaciones costosas en tiempo. Esto permite que
-nos ahorremos el procesamiento de muchas respuestas que no se necesitan
-de nuevo porque están almacendas. Además se reduce el ancho de banda
-consumido porque muchas peticiones ni siquiera tienen que llegar al servidor.&lt;/p&gt;
-
-&lt;h3 id=&quot;sistemas-más-fáciles-de-escalar&quot;&gt;Sistemas más fáciles de escalar&lt;/h3&gt;
-
-&lt;p&gt;Los sistemas que usan caché son capaces de aguantar más peticiones
-simultáneas por la razón que vimos anteriormente: se reduce el consumo de recursos. Además, si se require crecer el sistema se deben poner menos recursos. Para algunos sistemas, el caché es lo único que tiene que crecer
-cuando se requiere atender a más usuarios simultáneos.&lt;/p&gt;
-
-&lt;h2 id=&quot;retos-de-cachear&quot;&gt;Retos de cachear&lt;/h2&gt;
-
-&lt;p&gt;Toda solución tecnológica implica ventajas y desventajas. Entonces ¿qué desventajas o retos implica usar un sistema de caché?&lt;/p&gt;
-
-&lt;h3 id=&quot;frescura&quot;&gt;Frescura&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Sólo hay dos cosas difíciles en Ciencias de Computación: invalidación de caché y nombrar cosas. - Phil Karlton&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;El reto más grande e importante de tener un sistema de caché es lograr un
-equilibrio entre mantener la información el mayor tiempo posible y tener
-información correcta y actualizada. Si se almacena en caché por demasiado
-tiempo algo, esta información se vuelve vieja y por lo tanto puede estar desactualizada. Por el otro lado si se guarda por muy poco tiempo puede 
-llevar a que los sistemas de caché se sub-utilicen y provean pocos
-beneficios.&lt;/p&gt;
-
-&lt;h3 id=&quot;diseño-del-sistema&quot;&gt;Diseño del sistema&lt;/h3&gt;
-
-&lt;p&gt;Designar qué partes del sistema pueden ser cacheables y asignar los
-etiquetados de las respuestas correctamente puede aumentar la complejidad del sistema en general.&lt;/p&gt;
-
-&lt;h3 id=&quot;inconsistencia&quot;&gt;Inconsistencia&lt;/h3&gt;
-
-&lt;p&gt;El uso de caché puede llevar a inconsistencias de información entre diferentes clientes por periodos de tiempo de diferente duración. Esto es en parte consecuencia de la dificultad de mantener el caché fresco, pero además tiene que ver con la manera en que los clientes piden la información. &lt;strong&gt;Si tus clientes no pueden soportar la mínima variación en la información porque tendría consecuencias graves, es mejor no cachear.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;El caché es una parte olvidada de los sistemas REST, el constraint menos mencionado. Pero es importante que les permite funcionar mejor cuando tenemos bastante carga. Mantenerlo funcionando bien es un reto, pero los sistemas que quieren ser escalables y resistentes deben implementar alguna forma de cachear.&lt;/p&gt;
-
-&lt;p&gt;Roy Fielding menciona que es importante porque cualquier
-sistema expuesto a clientes desconocidos tiene el peligro de recibir una
-gran cantidad de carga súbitamente, y si tu servicio no está preparado o es
-fácil de escalar, fallarás.&lt;/p&gt;
-
-&lt;p&gt;Si quieres leer un artículo más completo con otras referencias sobre el caché en REST y en HTTP te recomiendo &lt;a href=&quot;https://odino.org/rest-better-http-cache/&quot;&gt;REST better: HTTP Cache&lt;/a&gt;, en inglés.&lt;/p&gt;
-
-&lt;p&gt;En el siguiente artículo veremos la cuarta restricción de los sistemas REST: la interfaz uniforme, la más amplia de las restricciones, pero una de las más útiles.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo.</summary></entry></feed>
+&lt;p&gt;En el próximo artículo hablaremos de la base de todos los sistemas criptográficos. Los números (pseudo)aleatorios y sus generadores.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="criptografía" /><category term="esteganografía" /><category term="seguridad" /><summary type="html">Aprende las bases de la criptografía para tenerla en cuenta en tus programas.</summary></entry></feed>

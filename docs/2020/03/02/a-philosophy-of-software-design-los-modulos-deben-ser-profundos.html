@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>A Philosophy of Software Design: Tres formas de identificar la complejidad -</title>
-<meta name="description" content="Aprende a descubrir y medir la complejidad en tus proyectos">
+<!-- begin _includes/seo.html --><title>A Philosophy of Software Design: Los módulos deben ser profundos -</title>
+<meta name="description" content="Veamos algunos lineamientos para el diseño de funciones/clases/módulos que ayudarán a reducir la complejidad de tus sistemas de software.">
 
 
   <meta name="author" content="Héctor Patricio">
@@ -19,28 +19,28 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es">
 <meta property="og:site_name" content="">
-<meta property="og:title" content="A Philosophy of Software Design: Tres formas de identificar la complejidad">
-<meta property="og:url" content="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html">
+<meta property="og:title" content="A Philosophy of Software Design: Los módulos deben ser profundos">
+<meta property="og:url" content="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html">
 
 
-  <meta property="og:description" content="Aprende a descubrir y medir la complejidad en tus proyectos">
-
-
-
-  <meta property="og:image" content="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582698547/scott-webb-186119-unsplash_hholsr.jpg">
+  <meta property="og:description" content="Veamos algunos lineamientos para el diseño de funciones/clases/módulos que ayudarán a reducir la complejidad de tus sistemas de software.">
 
 
 
-
-
-  <meta property="article:published_time" content="2020-02-26T00:00:00-06:00">
+  <meta property="og:image" content="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583214655/IMG_3431_xcydpt.jpg">
 
 
 
 
 
+  <meta property="article:published_time" content="2020-03-02T00:00:00-06:00">
 
-<link rel="canonical" href="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html">
+
+
+
+
+
+<link rel="canonical" href="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html">
 
 
 
@@ -125,14 +125,14 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "url": "https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html",
-      "name": "A Philosophy of Software Design: Tres formas de identificar la complejidad",
-      "headline": "A Philosophy of Software Design: Tres formas de identificar la complejidad",
-      "keywords": "ousterhout,complejidad,diseño-de-software,posd",
-      "description": "Aprende a descubrir y medir la complejidad en tus proyectos",
-      "articleBody": "\n  “Controlar la complejidad es la esencia de la programación” - Brian W. Kernighan\n\n\nMuchas mentes brillantes dedicadas al desarrollo de software han estado de acuerdo en que el principal problema al crear y mantener programas es el manejo de la complejidad.\n\nPodemos decir que algo complejo es aquello que está compuesto por muchas piezas relacionadas entre ellas. Ousterhout lo define de manera práctica como todo aquello que hace que el software sea difícil de entender, escribir o mantener.\n\n\n  La complejidad es más visible para los lectores que para los escritores [del código]. Si escribes una pieza de código que parece simple para ti, pero otras personas piensan que es compleja, entonces es compleja. - John Ousterhout\n\n\nPhilosophy of Software Design habla de tres formas de identificar un programa más complejo de lo que debería ser:\n\n\n  Amplificación de cambios\n  Carga cognitiva\n  Desconocidos desconocidos\n\n\nIdentificar la complejidad es una habilidad crítica para el buen diseño de software, te permitirá crear sistemas más simples y evitará que gastes recursos en desarrollar soluciones que son demasiado complejas.\n\nAmplificación de cambios\n\nEste síntoma de la complejidad se hace obvio cuando estás haciendo un cambio que debió haber sido sencillo y tienes que tocar 7 archivos, 3 clases y 4 funciones. Se refiere a que una funcionalidad que parece sencilla del programa está repartida en muchos lados y para lograr hacer un cambio hay que tocar muchas partes del sistema.\n\nEsto se pude dar cuando parámetros o valores que pueden estar centralizados o referenciados se ponen fijos a través de muchos archivos. También cuando código que se podría reutilizar se copia y pega.\n\nCarga cognitiva\n\nSi tienes que mantener muchas cosas en la cabeza para poder entender el sistema, es complejo. Puede que tengas que entender y aprender muchas cosas acerca del funcionamiento del programa para usarlo bien y no causar un desastre. Cuando algo no tiene una interfaz simple, causa carga cognitiva.\n\nEl ejemplo son las funciones de lenguajes de programación que nunca aprendemos a usar porque tienen parámetros que aunque siempre son los mismos son requeridos por no tener un default decente. O por ejemplo, aquellas funciones que no recuerdas si cambian los parámetros o devuelven uno nuevo.\n\nAunque programas más cortos están relacionados con baja carga cognitiva, no siempre es el caso debido a que ese poco código que existe sea difícil de entender.\n\nDesconocidos desconocidos\n\n¿Tienes miedo de cambiar algo porque no sabes lo que pueda pasar y no hay ni documentación a la que puedas referirte? En este caso el sistema tiene información que no sabes que no sabes.\n\nUn desconocido desconocido es aquella información que ni siquiera sabemos que estaba ahí y que no conocíamos, como algunas características del código, parámetros ocultos y comportamientos que no son fáciles de detectar ni están documentados.\n\n¿Recuerdas la broma que dice: “Cuando escribí este código sólo Dios y yo sabíamos lo que hacía, ahora sólo Dios sabe”? Muchas veces nos pasa así con el código y es el ejemplo perfecto de los desconocidos desconocidos, sobre todo para otros programadores.\n\nMedición de la complejidad\n\nUn sistema puede ser complejo independientemente de su tamaño, es decir, hay sistemas no tan grandes que son muy complejos.\n\nPara determinar la complejidad se puede pensar en la siguiente fórmula.\n\n\n\nEsto lo podríamos explicar como:\n\n\n  La complejidad total de un sistema es la sumatoria de la complejidad de cada una de sus partes multiplicada por el tiempo que los desarrolladores pasan en esa parte del código.\n\n\nEsta complejidad puede evitar que avances tanto como deberías, pero el primer paso es identificarla como lo viste aquí. En los siguientes artículos hablaremos de técnicas para reducir la complejidad.\n",
-      "datePublished": "2020-02-26 00:00:00 -0600",
-      "dateModified": "2020-02-26 00:00:00 -0600",
+      "url": "https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html",
+      "name": "A Philosophy of Software Design: Los módulos deben ser profundos",
+      "headline": "A Philosophy of Software Design: Los módulos deben ser profundos",
+      "keywords": "módulo,PoSD,ousterhout,complejidad,función",
+      "description": "Veamos algunos lineamientos para el diseño de funciones/clases/módulos que ayudarán a reducir la complejidad de tus sistemas de software.",
+      "articleBody": "Para reducir la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es la organización y separación de código a alto nivel, es decir separación en módulos.\n\nPor qué es importante la separación\n\nAntes de empezar a hablar de cómo deberíamos diseñar nuestros módulos hablemos de por qué es importante la separación.\n\nLa mejor forma de resolver un problema complejo es mediante la descomposición del problema en problemas más sencillos. Estos problemas se resuelven individualmente, idealmente de de manera independiente en un módulo por separado para cada uno. De esta manera podemos hacer software más mantenible y fácil de entender. Incluso se puede dividir mejor el trabajo.\n\nEsta división del trabajo es diferente dependiendo del paradigma del lenguaje de programación que usemos, así que veamos a qué nos referimos con un módulo.\n\n¿Qué es un módulo?\n\nUna definición fácil y amplia de “módulo” dada por “A Philosophy of Software Design” es: todo aquello que agrupe código, proveyendo separación de funcionalidad, es decir que agrupe comportamiento en detrás de una interfaz.\n\nUn módulo puede ser una función, una clase, un paquete o cosas similares dependiendo del lenguaje de programación. Un módulo incluso puede ser una API HTTP u otro programa.\n\nComo resumen: un módulo permite hacer algo mediante una interfaz.\n\nAhora bien, ¿qué es la interfaz de un módulo?\n\nInterfaces\n\nYa hemos hablado sobre lo que es una interfaz, pero para resumir: es el punto en donde un sistema, en este caso específico, un módulo, se encuentra con otro (otro módulo o código que lo usa).\n\nUn módulo tiene una interfaz que permite a otras partes del sistema usarlo. Usaremos el caso más sencillo: una función. La interfaz de una función es su firma: su nombre, los parámetros que recibe y lo que devuelve.\n\nVeamos un ejemplo:\n\narchivo = open(\"my_file.md\", \"w\") # Devuelve un apuntador a un archivo abierto\n\n\nLa interfaz de la función es su open (nos permite identificarla y comunica información sobre lo que hace), el nombre del archivo como primer parámetro y el modo de operación en el segundo.\n\nDependiendo de la forma de agrupar la interfaz de los módulos varía, pero recuerda esto: la interfaz es la parte visible del módulo hacia otros módulos.\n\nDiseño de módulos\n\nAquí entramos en lo importante: los módulos deberían ser lo más profundos posible.\n\n¿A qué nos referimos con un módulo profundo?\n\nObserva el siguiente diagrama:\n\n\n\nUn módulo profundo tiene una interfaz sencilla o fácil de usar para la mayoría de los casos de uso y provee de mucha funcionalidad, hace mucho por ti.\n\nUn módulo superficial tiene una interfaz compleja o difícil de usar (clases de buffers y archivos en Java, por ejemplo) y provee poca funcionalidad.\n\nEsto no es absoluto: la relación entre la complejidad de la interfaz es relativa a la funcionalidad que provee, por ejemplo, si un módulo hace muchas cosas por ti, puede que requiera muchos datos. La relación interfaz/funcionalidad debe ser razonable para considerar que el módulo es profundo.\n\nAbrir archivos en la mayoría de los lenguajes es un ejemplo de una función profunda: con una interfaz muy pequeña (el nombre y el modo), la función se encarga de todos los detalles de implementación de apertura y creación del archivo. No te debes de preocupar por cosas como el sistema de archivos, el guardado físico en el disco, por verificar si hay memoria, etc.\n\nEn el caso contrario, los getters y setters que se acostumbra usar en algunos lenguajes de programación (Java, por ejemplo) son ejemplo de funciones poco profundas, generalmente no hacen algo más que devolver el valor de la propiedad.\n\nVentajas de los módulos profundos\n\nEncontrar un equilibrio entre la cantidad de código que metes en un módulo y la interfaz que expone tiene varias ventajas:\n\n\n  El código se puede re-usar en otras partes del sistema\n  Evitas la acumulación de interfaces, es decir, tener demasiadas interfaces (funciones, clases o módulos) que tienes que aprender a usar y que hacen poco por ti\n  La expansión de cambios (tener que tocar muchos lados del sistema para hacer un cambio relativamente pequeño)\n\n\nFinalmente, recuerda que una de las funciones que proveen los módulos es ocultar la complejidad. ¿Cuántas veces has visto lo que hacen las funciones prefabricadas de tu lenguaje de programación? Es probable que ninguna. Los módulos profundos y bien hechos permiten ocultar mayor cantidad de información y hace más fácil trabajar con ellos y simplifica el sistema en general.\n",
+      "datePublished": "2020-03-02 00:00:00 -0600",
+      "dateModified": "2020-03-02 00:00:00 -0600",
       "author": {
         "@type": "Person",
         "name": "Héctor Patricio",
@@ -152,13 +152,13 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html"
+        "@id": "https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html"
       },
       "image": {
         "@type": "ImageObject",
         "width": 1200,
         "height": 400,
-        "url": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582698547/scott-webb-186119-unsplash_hholsr.jpg"
+        "url": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583214655/IMG_3431_xcydpt.jpg"
       }
     }
 </script>
@@ -235,17 +235,17 @@
 
 
 
-<div class="page__hero--overlay" style=" background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582698547/scott-webb-186119-unsplash_hholsr.jpg');">
+<div class="page__hero--overlay" style=" background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583214655/IMG_3431_xcydpt.jpg');">
   
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          A Philosophy of Software Design: Tres formas de identificar la complejidad
+          A Philosophy of Software Design: Los módulos deben ser profundos
 
         
       </h1>
       
-        <p class="page__lead">Aprende a descubrir y medir la complejidad en tus proyectos
+        <p class="page__lead">Veamos algunos lineamientos para el diseño de funciones/clases/módulos que ayudarán a reducir la complejidad de tus sistemas de software.
 </p>
       
       
@@ -258,7 +258,7 @@
 
 
 
-| <i class="far fa-calendar" aria-hidden="true"></i> 26-02-2020
+| <i class="far fa-calendar" aria-hidden="true"></i> 02-03-2020
 </p>
       
       
@@ -392,9 +392,9 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="A Philosophy of Software Design: Tres formas de identificar la complejidad">
-    <meta itemprop="description" content="Aprende a descubrir y medir la complejidad en tus proyectos">
-    <meta itemprop="datePublished" content="February 26, 2020">
+    <meta itemprop="headline" content="A Philosophy of Software Design: Los módulos deben ser profundos">
+    <meta itemprop="description" content="Veamos algunos lineamientos para el diseño de funciones/clases/módulos que ayudarán a reducir la complejidad de tus sistemas de software.">
+    <meta itemprop="datePublished" content="March 02, 2020">
     
 
     <div class="page__inner-wrap">
@@ -402,65 +402,72 @@
 
       <section class="page__content" itemprop="text">
         
-        <blockquote>
-  <p>“Controlar la complejidad es la esencia de la programación” - Brian W. Kernighan</p>
-</blockquote>
+        <p>Para reducir la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es la organización y separación de código a alto nivel, es decir separación en módulos.</p>
 
-<p>Muchas mentes brillantes dedicadas al desarrollo de software han estado de acuerdo en que el principal problema al crear y mantener programas es el manejo de la complejidad.</p>
+<h2 id="por-qué-es-importante-la-separación">Por qué es importante la separación</h2>
 
-<p>Podemos decir que algo complejo es aquello que está <strong>compuesto por muchas piezas relacionadas entre ellas</strong>. <a href="http://web.stanford.edu/~ouster/cgi-bin/home.php">Ousterhout</a> lo define de manera práctica <em>como todo aquello que hace que el software sea difícil de entender, escribir o mantener</em>.</p>
+<p>Antes de empezar a hablar de cómo deberíamos diseñar nuestros módulos hablemos de por qué es importante la separación.</p>
 
-<blockquote>
-  <p>La complejidad es más visible para los lectores que para los escritores [del código]. Si escribes una pieza de código que parece simple para ti, pero otras personas piensan que es compleja, entonces es <strong>compleja</strong>. - John Ousterhout</p>
-</blockquote>
+<p>La mejor forma de resolver un problema complejo es mediante <em>la descomposición</em> del problema en problemas más sencillos. Estos problemas se resuelven individualmente, idealmente de de manera independiente en un módulo por separado para cada uno. De esta manera podemos hacer software más mantenible y fácil de entender. Incluso se puede dividir mejor el trabajo.</p>
 
-<p>Philosophy of Software Design habla de tres formas de identificar un programa más complejo de lo que debería ser:</p>
+<p>Esta división del trabajo es diferente dependiendo del paradigma del lenguaje de programación que usemos, así que veamos a qué nos referimos con un <strong>módulo</strong>.</p>
 
-<ol>
-  <li>Amplificación de cambios</li>
-  <li>Carga cognitiva</li>
-  <li>Desconocidos desconocidos</li>
-</ol>
+<h2 id="qué-es-un-módulo">¿Qué es un módulo?</h2>
 
-<p>Identificar la complejidad es una <strong>habilidad crítica para el buen diseño de software</strong>, te permitirá crear sistemas más simples y evitará que gastes recursos en desarrollar soluciones que son demasiado complejas.</p>
+<p>Una definición fácil y amplia de “módulo” dada por <a href="https://amzn.to/2H92nwA">“A Philosophy of Software Design”</a> es: <em>todo aquello que agrupe código, proveyendo separación de funcionalidad</em>, es decir que agrupe comportamiento en detrás de una <em>interfaz</em>.</p>
 
-<h2 id="amplificación-de-cambios">Amplificación de cambios</h2>
+<p>Un módulo puede ser una función, una clase, un paquete o cosas similares dependiendo del lenguaje de programación. Un módulo incluso puede ser una API HTTP u otro programa.</p>
 
-<p>Este síntoma de la complejidad se hace obvio cuando estás haciendo un cambio que debió haber sido sencillo y tienes que tocar 7 archivos, 3 clases y 4 funciones. Se refiere a que una funcionalidad que parece sencilla del programa está repartida en muchos lados y para lograr hacer un cambio hay que tocar muchas partes del sistema.</p>
+<p>Como resumen: <strong>un módulo permite hacer <em>algo</em> mediante una interfaz.</strong></p>
 
-<p>Esto se pude dar cuando parámetros o valores que pueden estar centralizados o referenciados se ponen fijos a través de muchos archivos. También cuando código que se podría reutilizar se copia y pega.</p>
+<p>Ahora bien, ¿qué es la interfaz de un módulo?</p>
 
-<h2 id="carga-cognitiva">Carga cognitiva</h2>
+<h2 id="interfaces">Interfaces</h2>
 
-<p>Si tienes que mantener muchas cosas en la cabeza para poder entender el sistema, es complejo. Puede que tengas que entender y aprender muchas cosas acerca del funcionamiento del programa para usarlo bien y no causar un desastre. Cuando algo no tiene una interfaz simple, causa carga cognitiva.</p>
+<p>Ya hemos hablado sobre <a href="https://www.youtube.com/watch?v=n8MxyHG0j3Q&amp;t">lo que es una interfaz</a>, pero para resumir: es el punto en donde un sistema, en este caso específico, un módulo, se encuentra con otro (otro módulo o código que lo usa).</p>
 
-<p>El ejemplo son las funciones de lenguajes de programación que nunca aprendemos a usar porque tienen parámetros que aunque siempre son los mismos son requeridos por no tener un default decente. O por ejemplo, aquellas funciones que no recuerdas si cambian los parámetros o devuelven uno nuevo.</p>
+<p>Un módulo tiene una interfaz que permite a otras partes del sistema usarlo. Usaremos el caso más sencillo: una función. La interfaz de una función es su firma: su nombre, los parámetros que recibe y lo que devuelve.</p>
 
-<p>Aunque programas más cortos están relacionados con baja carga cognitiva, no siempre es el caso debido a que ese poco código que existe sea difícil de entender.</p>
+<p>Veamos un ejemplo:</p>
 
-<h2 id="desconocidos-desconocidos">Desconocidos desconocidos</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"my_file.md"</span><span class="p">,</span> <span class="s">"w"</span><span class="p">)</span> <span class="c1"># Devuelve un apuntador a un archivo abierto
+</span></code></pre></div></div>
 
-<p>¿Tienes miedo de cambiar algo porque no sabes lo que pueda pasar y no hay ni documentación a la que puedas referirte? En este caso el sistema tiene información <strong>que no sabes que no sabes</strong>.</p>
+<p>La interfaz de la función es su <code class="highlighter-rouge">open</code> (nos permite identificarla y comunica información sobre lo que hace), el nombre del archivo como primer parámetro y el modo de operación en el segundo.</p>
 
-<p>Un desconocido desconocido es aquella información que ni siquiera sabemos que estaba ahí y que no conocíamos, como algunas características del código, parámetros ocultos y comportamientos que no son fáciles de detectar ni están documentados.</p>
+<p>Dependiendo de la forma de agrupar la interfaz de los módulos varía, pero recuerda esto: <strong>la interfaz es la parte visible del módulo hacia otros módulos</strong>.</p>
 
-<p>¿Recuerdas la broma que dice: <em>“Cuando escribí este código sólo Dios y yo sabíamos lo que hacía, ahora sólo Dios sabe”</em>? Muchas veces nos pasa así con el código y es el ejemplo perfecto de los desconocidos desconocidos, sobre todo para otros programadores.</p>
+<h2 id="diseño-de-módulos">Diseño de módulos</h2>
 
-<h2 id="medición-de-la-complejidad">Medición de la complejidad</h2>
+<p>Aquí entramos en lo importante: los módulos deberían ser lo más profundos posible.</p>
 
-<p>Un sistema puede ser complejo independientemente de su tamaño, es decir, hay sistemas no tan grandes que son muy complejos.</p>
+<p>¿A qué nos referimos con un módulo profundo?</p>
 
-<p>Para determinar la complejidad se puede pensar en la siguiente fórmula.</p>
+<p>Observa el siguiente diagrama:</p>
 
-<p><img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581460560/Untitled_Artwork_3_oljybd.jpg" alt="Fórmula para calcular la complejidad"></p>
+<p><img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1583213511/IMG_0058_xm2b6w.jpg" alt="Módulos profundos vs superficiales"></p>
 
-<p>Esto lo podríamos explicar como:</p>
+<p>Un módulo profundo tiene una <strong>interfaz sencilla</strong> o fácil de usar para la mayoría de los casos de uso y provee de mucha funcionalidad, hace mucho por ti.</p>
 
-<blockquote>
-  <p>La complejidad total de un sistema es la sumatoria de la complejidad de cada una de sus partes multiplicada por el tiempo que los desarrolladores pasan en esa parte del código.</p>
-</blockquote>
+<p>Un módulo superficial tiene una interfaz compleja o difícil de usar (clases de buffers y archivos en Java, por ejemplo) y provee poca funcionalidad.</p>
 
-<p>Esta complejidad puede evitar que avances tanto como deberías, pero el primer paso es identificarla como lo viste aquí. En los siguientes artículos hablaremos de técnicas para reducir la complejidad.</p>
+<p>Esto no es absoluto: la relación entre la complejidad de la interfaz es relativa a la funcionalidad que provee, por ejemplo, si un módulo hace muchas cosas por ti, puede que requiera muchos datos. La relación interfaz/funcionalidad debe ser razonable para considerar que el módulo es profundo.</p>
+
+<p>Abrir archivos en la mayoría de los lenguajes es un ejemplo de una función profunda: con una interfaz muy pequeña (el nombre y el modo), la función se encarga de todos los detalles de implementación de apertura y creación del archivo. No te debes de preocupar por cosas como el sistema de archivos, el guardado físico en el disco, por verificar si hay memoria, etc.</p>
+
+<p>En el caso contrario, los getters y setters que se acostumbra usar en algunos lenguajes de programación (Java, por ejemplo) son ejemplo de funciones poco profundas, generalmente no hacen algo más que devolver el valor de la propiedad.</p>
+
+<h2 id="ventajas-de-los-módulos-profundos">Ventajas de los módulos profundos</h2>
+
+<p>Encontrar un equilibrio entre la cantidad de código que metes en un módulo y la interfaz que expone tiene varias ventajas:</p>
+
+<ul>
+  <li>El código se puede re-usar en otras partes del sistema</li>
+  <li>Evitas la acumulación de interfaces, es decir, tener demasiadas interfaces (funciones, clases o módulos) que tienes que aprender a usar y que hacen poco por ti</li>
+  <li>La expansión de cambios (tener que tocar muchos lados del sistema para hacer un cambio relativamente pequeño)</li>
+</ul>
+
+<p>Finalmente, recuerda que una de las funciones que proveen los módulos es <em>ocultar</em> la complejidad. ¿Cuántas veces has visto lo que hacen las funciones prefabricadas de tu lenguaje de programación? Es probable que ninguna. Los módulos profundos y bien hechos permiten ocultar mayor cantidad de información y hace más fácil trabajar con ellos y simplifica el sistema en general.</p>
 
         
       </section>
@@ -485,7 +492,11 @@
     
       
       
-      <a href="/tags/#dise%C3%B1o-de-software" class="page__taxonomy-item" rel="tag">diseño-de-software</a><span class="sep">, </span>
+      <a href="/tags/#funci%C3%B3n" class="page__taxonomy-item" rel="tag">función</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#m%C3%B3dulo" class="page__taxonomy-item" rel="tag">módulo</a><span class="sep">, </span>
     
       
       
@@ -493,7 +504,7 @@
     
       
       
-      <a href="/tags/#posd" class="page__taxonomy-item" rel="tag">posd</a>
+      <a href="/tags/#posd" class="page__taxonomy-item" rel="tag">PoSD</a>
     
     </span>
   </p>
@@ -502,7 +513,7 @@
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2020-02-26T00:00:00-06:00">February 26, 2020</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2020-03-02T00:00:00-06:00">March 02, 2020</time></p>
         
       </footer>
 
@@ -511,23 +522,22 @@
     <h4 class="page__share-title">Compartir</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=A+Philosophy+of+Software+Design%3A+Tres+formas+de+identificar+la+complejidad%20https%3A%2F%2Fblog.thedojo.mx%2F2020%2F02%2F26%2Ftres-formas-de-identificar-la-caomplejidad-posd6.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=A+Philosophy+of+Software+Design%3A+Los+m%C3%B3dulos+deben+ser+profundos%20https%3A%2F%2Fblog.thedojo.mx%2F2020%2F03%2F02%2Fa-philosophy-of-software-design-los-modulos-deben-ser-profundos.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.thedojo.mx%2F2020%2F02%2F26%2Ftres-formas-de-identificar-la-caomplejidad-posd6.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.thedojo.mx%2F2020%2F03%2F02%2Fa-philosophy-of-software-design-los-modulos-deben-ser-profundos.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog.thedojo.mx%2F2020%2F02%2F26%2Ftres-formas-de-identificar-la-caomplejidad-posd6.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog.thedojo.mx%2F2020%2F03%2F02%2Fa-philosophy-of-software-design-los-modulos-deben-ser-profundos.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/2020/02/21/eloquent-javascript-en-espanol.html" class="pagination--pager" title="Eloquent JavaScript en Español
+      <a href="/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html" class="pagination--pager" title="A Philosophy of Software Design: Tres formas de identificar la complejidad
 ">Anterior</a>
     
     
-      <a href="/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html" class="pagination--pager" title="A Philosophy of Software Design: Los módulos deben ser profundos
-">Siguiente</a>
+      <a href="#" class="pagination--pager disabled">Siguiente</a>
     
   </nav>
 
@@ -559,12 +569,12 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583214655/IMG_3431_xcydpt.jpg" alt="">
+        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582698547/scott-webb-186119-unsplash_hholsr.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html" rel="permalink">A Philosophy of Software Design: Los módulos deben ser profundos
+        <a href="/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html" rel="permalink">A Philosophy of Software Design: Tres formas de identificar la complejidad
 </a>
       
     </h2>
@@ -578,10 +588,10 @@
 
 
 
-| <i class="far fa-calendar" aria-hidden="true"></i> 02-03-2020
+| <i class="far fa-calendar" aria-hidden="true"></i> 26-02-2020
 </p>
     
-    <p class="archive__item-excerpt" itemprop="description">Veamos algunos lineamientos para el diseño de funciones/clases/módulos que ayudarán a reducir la complejidad de tus sistemas de software.
+    <p class="archive__item-excerpt" itemprop="description">Aprende a descubrir y medir la complejidad en tus proyectos
 </p>
   </article>
 </div>
@@ -807,8 +817,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
