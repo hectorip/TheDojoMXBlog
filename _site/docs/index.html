@@ -128,7 +128,7 @@
       "headline": "The Dojo :: Blog",
       "keywords": "",
       "description": "Mejoremos el estado del arte de desarrollo de software en México.",
-      "articleBody": "{{ site.data.ui-text[site.locale].recent_posts | default: \"Recent Posts\" }}\n\n\n  {% for post in site.posts limit: 20 %}\n    {% include archive-single.html type=\"grid\" %}\n  {% endfor %}\n\n\n  \n    Ver todos los posts >>\n  \n",
+      "articleBody": "{{ site.data.ui-text[site.locale].recent_posts | default: \"Recent Posts\" }}\n\n\n  \n    Ver todos los posts >>\n  \n\n\n\n  {% for post in site.posts limit: 20 %}\n    {% include archive-single.html type=\"grid\" %}\n  {% endfor %}\n\n\n\n\n  \n    Ver todos los posts >>\n  \n",
       "datePublished": null,
       "dateModified": null,
       "author": {
@@ -265,6 +265,12 @@
 
     <section class="page__content" itemprop="text">
       <h3 class="archive__subtitle">Entradas recientes</h3>
+
+<div style="width: 100%; text-align: center">
+  <a href="/latest" title="Ver todos los posts">
+    Ver todos los posts &gt;&gt;
+  </a>
+</div>
 
 <div class="custom-grid">
   
@@ -988,6 +994,8 @@
 
   
 </div>
+
+
 <div style="width: 100%; text-align: center">
   <a href="/latest" title="Ver todos los posts">
     Ver todos los posts &gt;&gt;
