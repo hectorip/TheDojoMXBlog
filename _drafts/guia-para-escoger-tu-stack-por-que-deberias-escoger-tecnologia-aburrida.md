@@ -6,8 +6,8 @@ tags: arquitectura infraestructura
 comments: true
 excerpt: "Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología aburrida."
 header:
-  overlay_image: #image
-  teaser: #image
+  overlay_image: 
+  teaser: 
   overlay_filer: rgba(0, 0, 0, 0.5)
 ---
 
@@ -23,14 +23,26 @@ Piensa en que tu empresa o producto tiene una capacidad limitada de resolver pro
 
 ### Pirámide de Maslow
 
+Abraham Maslow propuso en los 60's un [jerarquía de necesidades humanas](https://es.wikipedia.org/wiki/Pir%C3%A1mide_de_Maslow), conocida como la Pirámide de Maslow, en la que se habla de diferentes tipos de necesidades desde las fisiológicas hasta las emocionales y su tesis principal es que tienen que cumplirse las de la base de la pirámide (fisiológicas; comer, dormir, respirar) antes de cumplirse las de la punta (moralidad, creatividad, etc).
+
+Lo que explica Maslow acerca la satisfacción de las necesidades tiene lógica: no puedes preocuparte por cosas como si la filosofía de los estoicos es correcta si estás no tienes lo suficiente para comer hoy, o no has dormido en tres días.
+
+Lo mismo pasa a nivel tecnológico en las empresas o proyectos: no puedes pensar en formas de beneficiar a tu cliente si te estás pelando con mantener viva en producción una base de datos.
+
 ## La tecnología aburrida es más segura
+
+
 
 ### Cosas que no sabes que no sabes
 
+Cuando una tecnología lleva tiempo siendo usada se conocen muchos bugs que puede tener o que están latentes. También se conocen los riesgos que implica usar esa tecnología.
+
 ## Integración
 
+
 ### Producción
-### Mastering
+
+### Maestría
 
 ## Cuando integrar nueva tecnología
 
