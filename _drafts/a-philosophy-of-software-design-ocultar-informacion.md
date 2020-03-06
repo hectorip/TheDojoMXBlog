@@ -21,3 +21,20 @@ Para saber cómo esconder la información debemos entender por dónde se escapa,
 
 ## Fugas de información
 
+Una fuga de información se entiende como revelar información que no deberíamos, porque se rompe el propósito del encapsulamiento en el módulo.
+
+Recuerda la cita del principio: un módulo tiene que ocultar y mantener _decisiones de diseño_. Cuando esta decisión cambia y tienes que modificar varios módulos, tienes una fuga de información. En otras palabras, **una fuga de información sucede cuando una decisión de diseño se ve reflejada en varios módulos**.
+
+Ejemplo. Piensa en una clase se conecte a una API para obtener información relacionada con los códigos postales. Para todos los usuarios de esta clase, debería ser **irrelevante** qué API se está usando, si es una API HTTP externa, un archivo gigantesco con todos los datos, una base de datos o lo que sea, mientras la clase cumpla con su trabajo.
+
+Si al hacer cambios en esta decisión de diseño tienes que cambiar otras cosas a parte de esta clase, tienes algún tipo de fuga de información. ¿Ya pensaste en las formas en las que se puede escapar la información?
+
+John Ousterhout sugiere hacerte la siguiente pregunta:
+
+> ¿Cómo puedo reorganizar estas clases para que esta parte del conocimiento general sólo afecte a esta clase?
+
+Hablemos de tres formas de crear fugas de información en nuestras clases, funciones o paquetes.
+
+### Descomposición temporal
+
+###
