@@ -31,7 +31,7 @@ Ongay también menciona que la etimología de la palabra matemáticas tiene que 
 
 > La matemática, como una expresión de la mente humana, refleja la voluntad activa, la razón contemplativa, y el deseo de la perfección. Sus elementos básicos son: lógica e intuición, análisis y construcción, generalidad y particularidad. - Richard Courant
 
-En esta definición un poco más poética y abstracta se mencionan los elementos usados para lograr su cometido: lógica, intuición, análisis, construcción (o síntesis), generalidad (inducción), particularidad (deducción). Ya hablamos un poco de esto en los artículos acerca de las idea de [George Polya](http://bit.ly/39madQm).
+En esta definición más abstracta se mencionan los elementos usados para lograr su cometido: lógica, intuición, análisis, construcción (o síntesis), generalidad (inducción), particularidad (deducción). Ya hablamos un poco de esto en los artículos acerca de las idea de [George Polya](http://bit.ly/39madQm).
 
 Si quieres adentrarte en esto el libro [**¿Qué son las matemáticas?**](http://bit.ly/2F4Dn8N) habla de ello a fondo.
 
@@ -73,9 +73,10 @@ Si sientes que necesitas un recordatorio aquí hay un curso que enseña desde lo
 
 ## Lógica (Matemáticas discretas)
 
-Las matemáticas discretas son una de las áreas más abstractas de las matemáticas cuando las vemos en papel pero en realidad tratamos con ellas a diario. Podemos definir las matemáticas discretas como el estudio de las cosas que se pueden contar, sean finitas o infinitas.
+Las matemáticas discretas son una de las áreas más abstractas de las matemáticas cuando las vemos en papel pero en realidad tratamos con ellas a diario. Podemos definir las matemáticas discretas como _el estudio de las cosas que se pueden contar, sean finitas o infinitas_.
 
-La **lógica** es uno de los campos de estudio de las matemáticas discretas. La lógica se enfoca en estudiar **el razonamiento** y sobre todo si el razonamiento es *correcto*.
+La **lógica** es uno de los campos de estudio de las matemáticas discretas. Se enfoca en estudiar **el razonamiento** y sobre todo _si el razonamiento es **correcto**_.
+
 Para lograr esto la lógica se vale del estudio de las **proposiciones** (o afirmaciones) y sus relaciones. Una proposición es un enunciado que dice algo que puede ser *verdadero* o *falso*. En matemáticas se dice que tiene un **valor de verdad**.
 
 Dos proposiciones se pueden relacionar mediante un *conector* (en electrónica: compuertas lógicas, en programación son operadores booleanos). Los conectores más conocidos son el **or** (o) y el **and**(y).
@@ -113,11 +114,11 @@ El sistema decimal lo usamos en la vida diaria. Con entender básicamente el bin
 
 En muchas áreas de la programación se usan matemáticas más avanzadas, sobre todo en áreas que están sonando mucho recientemente: análisis de datos e inteligencia artificial. Si quieres entender a fondo estas y otras áreas del desarrollo de sistemas, es conveniente tener un conocimiento amplio en algunas de las siguientes áreas:
 
-- **Probabilidad y estadística avanzada**. Saber acerca de variables aleaterias, distribuciones de probabilidad, análisis Bayesiano, etc. Esto te permitirá analizar datos tanto exploratoria como predictivamente.
+- **Probabilidad y estadística avanzada**. Saber acerca de variables aleatorias, distribuciones de probabilidad, análisis Bayesiano, etc. Esto te permitirá analizar datos tanto exploratoria como predictivamente.
 - **Álgebra lineal**. El álgebra y la resolución de ecuaciones que representan líneas en el plano cartesiano. Esto te ayudará a tratar con conjuntos de datos. Muchas de los resultados de los algoritmos de Machine Learning son ecuaciones lineales.
 - **Ecuaciones diferenciales**. Esto es la resolución de sistemas de ecuaciones y sus derivadas. Esto tiene aplicaciones en todo lo que tenga que ver con cambios respecto a alguna variable, como el tiempo.
 
-Hablé de los campos finales pero para entender esto debes saber antes cosas como:
+Hablé de los campos finales pero para entender esto debes tener conocimiento previo:
 
 - Geometría Analítica
 - Álgebra
@@ -128,6 +129,8 @@ Hablé de los campos finales pero para entender esto debes saber antes cosas com
 Por suerte, para los campos de los que hablá arriba no tienes que saber todo esto, a menos que quieras ser el desarrollador de los algoritmos originales. Generalmente somos usuarios de bibliotecas creadas por genios que ya hacen lo que necesitamos.
 
 ## No te preocupes :)
+
+Saber matemáticas avanzadas no es necesario para ser ser un programador exitoso si tu campo de desarrollo no lo necesita dentro de su dominio. Por supuesto que aprender cosas así de difíciles te hará más hábil para resolver problemas, tal como saber física o química avanzada te harían más hábil.
 
 Fuera de las matemáticas básicas y un control decente e intuitivo de la lógica, no es necesario que seas [Terence Tao](http://bit.ly/2StKLCz), a menos que el campo en el que estés trabajando esté directamente relacionado con eso, tal
 como tendrías que saber lo suficiente de finanzas si estuvieras haciendo una app financiera o de administración de empresas si estuvieras haciendo una aplicación o plataforma para este campo.
