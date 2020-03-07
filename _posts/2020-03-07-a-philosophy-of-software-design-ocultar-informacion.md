@@ -1,6 +1,6 @@
 ---
 title: "A Philosophy of Software Design: Ocultar información"
-date: 2020-03-03
+date: 2020-03-07
 author: Héctor Patricio
 tags: PoSD interfaces módulo complejidad diseño-de-software
 comments: true
@@ -33,8 +33,22 @@ John Ousterhout sugiere hacerte la siguiente pregunta:
 
 > ¿Cómo puedo reorganizar estas clases para que esta parte del conocimiento general sólo afecte a esta clase?
 
-Hablemos de tres formas de crear fugas de información en nuestras clases, funciones o paquetes.
+Veamos un ejemplo de una fuga de información. Piensa en una aplicación en la que la principal tarea sea obtener el estado del clima y mostrarlo al usuario. Para esto usaremos una API que nos dará los datos y nosotros seremos los encargados de mostrarla.
 
-### Descomposición temporal
+Una pieza de información importante para obtener el clima es ala ubicación. Considera que la API actual recibe el nombre de la ciudad para devolver las predicciones meteorológicas. 
 
-###
+Veamos dos diseños:
+
+1. En este escenario hacemos que la inicialización de la clase o cada una de las llamadas a sus métodos para obtener los diferentes valores manden el nombre de la ciudad de los datos que buscamos. Así, si buscamos los datos acerca de México mandamos "México" como parámetro para obtener la temperatura.
+
+2. En otro escenario decidimos que aunque la API reciba el nombre de la ciudad, nuestra clase recibirá las coordenadas e internamente obtendremos el nombre de la ciudad de esas coordenadas y lo mandaremos a la API. Es probable que para esta transformación usemos otra clase u otro paquete.
+
+¿Qué diseño te parece correcto?
+
+En el diseño 1 estamos revelando información acerca de  _la implementación_ de esta API específicamente. ¿Qué pasaría si tenemos que cambiar de API y la próxima necesita las coordenadas en vez de el nombre de la ciudad? Tendríamos que cambiar el diseño en la clase de la API y en los lugares en los que se usa.
+
+En el segundo diseño estamos ocultando más detalles detalles de implementación, ya que las coordenadas son una forma más natural de comunicar lugares y es probable que se lo que se obtenga del usuario (por ejemplo, desde su geolocalización por dispositivo). La transformación de las coordenadas en un nombre de ciudad quita carga del usuario de nuestra clase.
+
+¿Puedes pensar en otros ejemplos? En el libro [PoSD](https://amzn.to/2H92nwA) vienen más ejemplos.
+
+En el próximo artículo hablaremos de otra forma de fugas de información: la descomposición temporal.

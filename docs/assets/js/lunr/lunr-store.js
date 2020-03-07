@@ -158,4 +158,9 @@ var store = [{
         "excerpt":"Para reducir la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es la organización y separación de código a alto nivel, es decir separación en módulos. Por qué es importante la separación Antes de empezar a hablar de cómo deberíamos diseñar nuestros módulos...","categories": [],
         "tags": ["módulo","PoSD","ousterhout","complejidad","función"],
         "url": "https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583214655/IMG_3431_xcydpt.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583214655/IMG_3431_xcydpt.jpg"},{
+        "title": "A Philosophy of Software Design: Ocultar información",
+        "excerpt":"La idea básica es que cada módulo debería encapsular algunas piezas de conocimiento, que representen decisiones de diseño. - John Ousterhout En el artículo anterior vimos por qué es bueno que los módulos sean profundos, es decir, oculten detalles de implementación y funcionalidades detrás de una interfaz lo más sencilla...","categories": [],
+        "tags": ["PoSD","interfaces","módulo","complejidad","diseño-de-software"],
+        "url": "https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1800/v1583357998/IMG_3866_owfbzj.jpg"}]
