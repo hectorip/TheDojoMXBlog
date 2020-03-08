@@ -128,7 +128,7 @@ Hablé de los campos finales pero para entender esto debes tener conocimiento pr
 
 Por suerte, para los campos de los que hablá arriba no tienes que saber todo esto, a menos que quieras ser el desarrollador de los algoritmos originales. Generalmente somos usuarios de bibliotecas creadas por genios que ya hacen lo que necesitamos.
 
-## No te preocupes :)
+## No te preocupes
 
 Saber matemáticas avanzadas no es necesario para ser ser un programador exitoso si tu campo de desarrollo no lo necesita dentro de su dominio. Por supuesto que aprender cosas así de difíciles te hará más hábil para resolver problemas, tal como saber física o química avanzada te harían más hábil.
 
