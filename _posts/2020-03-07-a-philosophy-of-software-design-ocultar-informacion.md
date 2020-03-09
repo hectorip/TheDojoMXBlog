@@ -17,13 +17,13 @@ En [el artículo anterior](https://blog.thedojo.mx/2020/03/02/a-philosophy-of-so
 
 En este artículo hablaremos de cómo **ocultar información** que no es necesaria saber para usar los módulos, ya que complicaría su uso, creando [carga cognitiva](https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html#carga-cognitiva), uno de los síntomas y consecuencias de la complejidad innecesaria.
 
-Para saber cómo esconder la información debemos entender por dónde se escapa, prácticas comunes que llevan a un mal diseño y que pueden hacer que
+Para saber cómo esconder la información debemos entender por dónde se escapa, prácticas comunes que llevan a un mal diseño y que pueden hacer que nuestro programa sea difícil de entender y mantener.
 
 ## Fugas de información
 
-Una fuga de información se entiende como revelar información que no deberíamos, porque se rompe el propósito del encapsulamiento en el módulo.
+Tener fuga de información es revelar información que no deberíamos, porque se rompe el propósito del encapsulamiento en el módulo.
 
-Recuerda la cita del principio: un módulo tiene que ocultar y mantener _decisiones de diseño_. Cuando esta decisión cambia y tienes que modificar varios módulos, tienes una fuga de información. En otras palabras, **una fuga de información sucede cuando una decisión de diseño se ve reflejada en varios módulos**.
+Recuerda la cita del principio: un módulo tiene que ocultar y mantener _decisiones de diseño_. Si esta decisión cambia y tienes que modificar varios módulos, tienes una fuga de información. En otras palabras, **una fuga de información sucede cuando una decisión de diseño se ve reflejada en varios módulos**.
 
 Ejemplo. Piensa en una clase se conecte a una API para obtener información relacionada con los códigos postales. Para todos los usuarios de esta clase, debería ser **irrelevante** qué API se está usando, si es una API HTTP externa, un archivo gigantesco con todos los datos, una base de datos o lo que sea, mientras la clase cumpla con su trabajo.
 
@@ -49,6 +49,6 @@ En el diseño 1 estamos revelando información acerca de  _la implementación_ d
 
 En el segundo diseño estamos ocultando más detalles detalles de implementación, ya que las coordenadas son una forma más natural de comunicar lugares y es probable que se lo que se obtenga del usuario (por ejemplo, desde su geolocalización por dispositivo). La transformación de las coordenadas en un nombre de ciudad quita carga del usuario de nuestra clase.
 
-¿Puedes pensar en otros ejemplos? En el libro [PoSD](https://amzn.to/2H92nwA) vienen más ejemplos.
+¿Puedes pensar en otros ejemplos? En el libro [PoSD](https://amzn.to/2H92nwA) vienen algunos.
 
 En el próximo artículo hablaremos de otra forma de fugas de información: la descomposición temporal.

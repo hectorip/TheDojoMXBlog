@@ -2,7 +2,7 @@
 title: "Guía para escoger tu stack: por qué deberías escoger tecnología aburrida"
 date: 2020-03-04
 author: Héctor Patricio
-tags: arquitectura infraestructura 
+tags: arquitectura infraestructura decisiones-técnicas
 comments: true
 excerpt: "Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología aburrida."
 header:
@@ -31,8 +31,7 @@ Lo mismo pasa a nivel tecnológico en las empresas o proyectos: no puedes pensar
 
 ## La tecnología 'aburrida' es más segura
 
-
-
+La tecnología como los lenguajes, librerías, bases de datos y en general software y hardware que lleva mucho tiempo existiendo es más confiable en el sentido de que conocemos sus fallas.
 
 ### Cosas que no sabes que no sabes
 
@@ -42,6 +41,8 @@ Cuando una tecnología lleva tiempo siendo usada se conocen muchos bugs que pued
 
 
 ### Producción
+
+La
 
 ### Maestría
 

@@ -166,7 +166,7 @@ var store = [{
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583214655/IMG_3431_xcydpt.jpg"},{
         "title": "Guía para escoger tu stack: por qué deberías escoger tecnología aburrida",
         "excerpt":"Este artículo está basado en la presentación Choose Boring Technology de Dan McKinley. No hay nada que haga más feliz a un programador que trabajar con el último de los frameworks, lenguaje de programación o herramienta que salió el mes pasado. Este problema se incrementa si trabajas en web, específicamente...","categories": [],
-        "tags": ["arquitectura","infraestructura"],
+        "tags": ["arquitectura","infraestructura","decisiones-técnicas"],
         "url": "https://blog.thedojo.mx/2020/03/04/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html",
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583644548/9641A743-5E78-4719-9F90-6D77F1CD4E1E_xhawu6.jpg"},{
         "title": "A Philosophy of Software Design: Ocultar información",

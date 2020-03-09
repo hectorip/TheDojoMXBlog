@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-07T00:17:51-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Ocultar información</title><link href="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Ocultar información" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-08T23:43:48-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Ocultar información</title><link href="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Ocultar información" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html">&lt;blockquote&gt;
   &lt;p&gt;La idea básica es que cada módulo debería encapsular algunas piezas de conocimiento, que representen decisiones de diseño. - &lt;strong&gt;John Ousterhout&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -6,13 +6,13 @@
 
 &lt;p&gt;En este artículo hablaremos de cómo &lt;strong&gt;ocultar información&lt;/strong&gt; que no es necesaria saber para usar los módulos, ya que complicaría su uso, creando &lt;a href=&quot;https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html#carga-cognitiva&quot;&gt;carga cognitiva&lt;/a&gt;, uno de los síntomas y consecuencias de la complejidad innecesaria.&lt;/p&gt;
 
-&lt;p&gt;Para saber cómo esconder la información debemos entender por dónde se escapa, prácticas comunes que llevan a un mal diseño y que pueden hacer que&lt;/p&gt;
+&lt;p&gt;Para saber cómo esconder la información debemos entender por dónde se escapa, prácticas comunes que llevan a un mal diseño y que pueden hacer que nuestro programa sea difícil de entender y mantener.&lt;/p&gt;
 
 &lt;h2 id=&quot;fugas-de-información&quot;&gt;Fugas de información&lt;/h2&gt;
 
-&lt;p&gt;Una fuga de información se entiende como revelar información que no deberíamos, porque se rompe el propósito del encapsulamiento en el módulo.&lt;/p&gt;
+&lt;p&gt;Tener fuga de información es revelar información que no deberíamos, porque se rompe el propósito del encapsulamiento en el módulo.&lt;/p&gt;
 
-&lt;p&gt;Recuerda la cita del principio: un módulo tiene que ocultar y mantener &lt;em&gt;decisiones de diseño&lt;/em&gt;. Cuando esta decisión cambia y tienes que modificar varios módulos, tienes una fuga de información. En otras palabras, &lt;strong&gt;una fuga de información sucede cuando una decisión de diseño se ve reflejada en varios módulos&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Recuerda la cita del principio: un módulo tiene que ocultar y mantener &lt;em&gt;decisiones de diseño&lt;/em&gt;. Si esta decisión cambia y tienes que modificar varios módulos, tienes una fuga de información. En otras palabras, &lt;strong&gt;una fuga de información sucede cuando una decisión de diseño se ve reflejada en varios módulos&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Ejemplo. Piensa en una clase se conecte a una API para obtener información relacionada con los códigos postales. Para todos los usuarios de esta clase, debería ser &lt;strong&gt;irrelevante&lt;/strong&gt; qué API se está usando, si es una API HTTP externa, un archivo gigantesco con todos los datos, una base de datos o lo que sea, mientras la clase cumpla con su trabajo.&lt;/p&gt;
 
@@ -45,7 +45,7 @@
 
 &lt;p&gt;En el segundo diseño estamos ocultando más detalles detalles de implementación, ya que las coordenadas son una forma más natural de comunicar lugares y es probable que se lo que se obtenga del usuario (por ejemplo, desde su geolocalización por dispositivo). La transformación de las coordenadas en un nombre de ciudad quita carga del usuario de nuestra clase.&lt;/p&gt;
 
-&lt;p&gt;¿Puedes pensar en otros ejemplos? En el libro &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;PoSD&lt;/a&gt; vienen más ejemplos.&lt;/p&gt;
+&lt;p&gt;¿Puedes pensar en otros ejemplos? En el libro &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;PoSD&lt;/a&gt; vienen algunos.&lt;/p&gt;
 
 &lt;p&gt;En el próximo artículo hablaremos de otra forma de fugas de información: la descomposición temporal.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="interfaces" /><category term="módulo" /><category term="complejidad" /><category term="diseño-de-software" /><summary type="html">Ocultar información es una de las claves para reducir la complejidad, veamos algunas maneras de lograrlo.</summary></entry><entry><title type="html">A Philosophy of Software Design: Los módulos deben ser profundos</title><link href="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Los módulos deben ser profundos" /><published>2020-03-02T00:00:00-06:00</published><updated>2020-03-02T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html">&lt;p&gt;Para reducir la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es la organización y separación de código a alto nivel, es decir separación en módulos.&lt;/p&gt;
 
@@ -482,7 +482,7 @@ Es un curso que no puedes perder si quieres ser un autodidacta de la programaci�
   &lt;p&gt;La matemática, como una expresión de la mente humana, refleja la voluntad activa, la razón contemplativa, y el deseo de la perfección. Sus elementos básicos son: lógica e intuición, análisis y construcción, generalidad y particularidad. - Richard Courant&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;En esta definición un poco más poética y abstracta se mencionan los elementos usados para lograr su cometido: lógica, intuición, análisis, construcción (o síntesis), generalidad (inducción), particularidad (deducción). Ya hablamos un poco de esto en los artículos acerca de las idea de &lt;a href=&quot;http://bit.ly/39madQm&quot;&gt;George Polya&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;En esta definición más abstracta se mencionan los elementos usados para lograr su cometido: lógica, intuición, análisis, construcción (o síntesis), generalidad (inducción), particularidad (deducción). Ya hablamos un poco de esto en los artículos acerca de las idea de &lt;a href=&quot;http://bit.ly/39madQm&quot;&gt;George Polya&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Si quieres adentrarte en esto el libro &lt;a href=&quot;http://bit.ly/2F4Dn8N&quot;&gt;&lt;strong&gt;¿Qué son las matemáticas?&lt;/strong&gt;&lt;/a&gt; habla de ello a fondo.&lt;/p&gt;
 
@@ -526,10 +526,11 @@ Es un curso que no puedes perder si quieres ser un autodidacta de la programaci�
 
 &lt;h2 id=&quot;lógica-matemáticas-discretas&quot;&gt;Lógica (Matemáticas discretas)&lt;/h2&gt;
 
-&lt;p&gt;Las matemáticas discretas son una de las áreas más abstractas de las matemáticas cuando las vemos en papel pero en realidad tratamos con ellas a diario. Podemos definir las matemáticas discretas como el estudio de las cosas que se pueden contar, sean finitas o infinitas.&lt;/p&gt;
+&lt;p&gt;Las matemáticas discretas son una de las áreas más abstractas de las matemáticas cuando las vemos en papel pero en realidad tratamos con ellas a diario. Podemos definir las matemáticas discretas como &lt;em&gt;el estudio de las cosas que se pueden contar, sean finitas o infinitas&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;La &lt;strong&gt;lógica&lt;/strong&gt; es uno de los campos de estudio de las matemáticas discretas. La lógica se enfoca en estudiar &lt;strong&gt;el razonamiento&lt;/strong&gt; y sobre todo si el razonamiento es &lt;em&gt;correcto&lt;/em&gt;.
-Para lograr esto la lógica se vale del estudio de las &lt;strong&gt;proposiciones&lt;/strong&gt; (o afirmaciones) y sus relaciones. Una proposición es un enunciado que dice algo que puede ser &lt;em&gt;verdadero&lt;/em&gt; o &lt;em&gt;falso&lt;/em&gt;. En matemáticas se dice que tiene un &lt;strong&gt;valor de verdad&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;La &lt;strong&gt;lógica&lt;/strong&gt; es uno de los campos de estudio de las matemáticas discretas. Se enfoca en estudiar &lt;strong&gt;el razonamiento&lt;/strong&gt; y sobre todo &lt;em&gt;si el razonamiento es &lt;strong&gt;correcto&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para lograr esto la lógica se vale del estudio de las &lt;strong&gt;proposiciones&lt;/strong&gt; (o afirmaciones) y sus relaciones. Una proposición es un enunciado que dice algo que puede ser &lt;em&gt;verdadero&lt;/em&gt; o &lt;em&gt;falso&lt;/em&gt;. En matemáticas se dice que tiene un &lt;strong&gt;valor de verdad&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Dos proposiciones se pueden relacionar mediante un &lt;em&gt;conector&lt;/em&gt; (en electrónica: compuertas lógicas, en programación son operadores booleanos). Los conectores más conocidos son el &lt;strong&gt;or&lt;/strong&gt; (o) y el &lt;strong&gt;and&lt;/strong&gt;(y).&lt;/p&gt;
 
@@ -569,12 +570,12 @@ Para lograr esto la lógica se vale del estudio de las &lt;strong&gt;proposicion
 &lt;p&gt;En muchas áreas de la programación se usan matemáticas más avanzadas, sobre todo en áreas que están sonando mucho recientemente: análisis de datos e inteligencia artificial. Si quieres entender a fondo estas y otras áreas del desarrollo de sistemas, es conveniente tener un conocimiento amplio en algunas de las siguientes áreas:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Probabilidad y estadística avanzada&lt;/strong&gt;. Saber acerca de variables aleaterias, distribuciones de probabilidad, análisis Bayesiano, etc. Esto te permitirá analizar datos tanto exploratoria como predictivamente.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Probabilidad y estadística avanzada&lt;/strong&gt;. Saber acerca de variables aleatorias, distribuciones de probabilidad, análisis Bayesiano, etc. Esto te permitirá analizar datos tanto exploratoria como predictivamente.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Álgebra lineal&lt;/strong&gt;. El álgebra y la resolución de ecuaciones que representan líneas en el plano cartesiano. Esto te ayudará a tratar con conjuntos de datos. Muchas de los resultados de los algoritmos de Machine Learning son ecuaciones lineales.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Ecuaciones diferenciales&lt;/strong&gt;. Esto es la resolución de sistemas de ecuaciones y sus derivadas. Esto tiene aplicaciones en todo lo que tenga que ver con cambios respecto a alguna variable, como el tiempo.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Hablé de los campos finales pero para entender esto debes saber antes cosas como:&lt;/p&gt;
+&lt;p&gt;Hablé de los campos finales pero para entender esto debes tener conocimiento previo:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Geometría Analítica&lt;/li&gt;
@@ -586,7 +587,9 @@ Para lograr esto la lógica se vale del estudio de las &lt;strong&gt;proposicion
 
 &lt;p&gt;Por suerte, para los campos de los que hablá arriba no tienes que saber todo esto, a menos que quieras ser el desarrollador de los algoritmos originales. Generalmente somos usuarios de bibliotecas creadas por genios que ya hacen lo que necesitamos.&lt;/p&gt;
 
-&lt;h2 id=&quot;no-te-preocupes-&quot;&gt;No te preocupes :)&lt;/h2&gt;
+&lt;h2 id=&quot;no-te-preocupes&quot;&gt;No te preocupes&lt;/h2&gt;
+
+&lt;p&gt;Saber matemáticas avanzadas no es necesario para ser ser un programador exitoso si tu campo de desarrollo no lo necesita dentro de su dominio. Por supuesto que aprender cosas así de difíciles te hará más hábil para resolver problemas, tal como saber física o química avanzada te harían más hábil.&lt;/p&gt;
 
 &lt;p&gt;Fuera de las matemáticas básicas y un control decente e intuitivo de la lógica, no es necesario que seas &lt;a href=&quot;http://bit.ly/2StKLCz&quot;&gt;Terence Tao&lt;/a&gt;, a menos que el campo en el que estés trabajando esté directamente relacionado con eso, tal
 como tendrías que saber lo suficiente de finanzas si estuvieras haciendo una app financiera o de administración de empresas si estuvieras haciendo una aplicación o plataforma para este campo.&lt;/p&gt;
