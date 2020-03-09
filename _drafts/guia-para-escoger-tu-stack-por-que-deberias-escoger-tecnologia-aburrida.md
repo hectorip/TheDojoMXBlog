@@ -35,14 +35,12 @@ La tecnología como los lenguajes, librerías, bases de datos y en general softw
 
 ### Cosas que no sabes que no sabes
 
-Cuando una tecnología lleva tiempo siendo usada se conocen muchos bugs que puede tener o que están latentes. También se conocen los riesgos que implica usar esa tecnología.
+Cuando una tecnología lleva tiempo siendo usada se encuentran muchos bugs que se arreglan o se crea una forma de darles la vuelta. También se conocen los riesgos que implica usar esa tecnología y se crea un entorno alrededor.
 
 ## Integración
 
 
 ### Producción
-
-La
 
 ### Maestría
 

@@ -13,13 +13,15 @@ header:
 
 Cuando se habla de **matemáticas** mucha gente empieza a sentirse fastidiada porque creen que son cosas difíciles de entender.
 
-Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como **una rama de las matemáticas**.
+Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como **una rama de las matemáticas**, pero han divergido tanto que ya no se pueden considerar matemáticas solamente.
 
 Pero para programar con eficacia no necesitas saber muchas matemáticas, de hecho, con el entendimiento básico es suficiente. En este artículo hablaremos de aquello que debes dominar.
 
+De hecho, si ya programas _usas_ matemáticas. Saber más te ayudará a programar mejor, pero del tipo correcto.
+
 ## ¿Qué son las matemáticas?
 
-Definir las matemáticas es difícil. Según lo que (de manera muy irresponsable) nos han enseñado en la escuela, las matemáticas es el tratamiento de los **números**. Eso está muy lejos de la realidad, y ya te habás dado cuenta si has avanzado lo suficiente en matemáticas.
+Definir las matemáticas es difícil. Según lo que (de manera muy irresponsable) nos han enseñado en la escuela, las matemáticas es el tratamiento de los **números**. Eso está muy lejos de la realidad, y ya te habrás dado cuenta si has avanzado lo suficiente en matemáticas.
 
 Es cierto, las matemáticas más elementales se pueden reducir a números, pero no es su centro, el espíritu de su estudio.
 
