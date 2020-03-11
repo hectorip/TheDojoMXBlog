@@ -2,7 +2,7 @@
 title: "Las matemáticas que debes saber para programar"
 date: 2019-12-25
 author: Héctor Patricio
-tags: math, matemáticas, aprender
+tags: math matemáticas aprender
 comments: true
 excerpt: "¿Qué tantas matemáticas necesitas para programar? En este artículo lo veremos."
 header:
