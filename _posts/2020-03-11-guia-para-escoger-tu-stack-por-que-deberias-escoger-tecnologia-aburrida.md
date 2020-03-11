@@ -68,7 +68,7 @@ Todas las cosas que son capaces de ser aprehendidas por la mente humana caen en 
 
 - **Cosas que no sabes que no sabes.** Cosas que estás consciente de no saber, como física cuántica o análisis de variable compleja. Mientras más sepas de algo, más probable es que te des cuenta que no sabes otras muchas cosas de ese mismo tema. De ahí la frase: "Sólo sé que no sé nada".
 
-- **Cosas que no sabes que no sabes.** Esto es lo que nos pone en riesgo. Aquí caen muchos eventos futuros y la mayor parte del conocimiento disponible está en esta área para cualquier persona. Por ejemplo, no sabemos que no sabemos las causas de un desplome económico. De esto ni siquiera podemos hablar porque _no sabemos_ que existe. Esto es lo que podemos nombrar como incertidumbre.
+- **Cosas que no sabes que no sabes.** Esto es lo que nos pone en riesgo. Aquí caen muchos eventos futuros y la mayor parte del conocimiento disponible está en esta área para cualquier persona. Por ejemplo, no sabemos que no sabemos las causas de un desplome económico. De esto ni siquiera podemos hablar porque _no sabemos_ que existe. Esto es lo que podemos nombrar como _incertidumbre_.
 
 La quinta categoría, que [N. N. Taleb](https://www.fooledbyrandomness.com/) describe en su libro [Cisne Negro](https://amzn.to/2xqIzmH), son las cosas que no podemos saber, como el futuro o las causas de algo en el pasado.
 

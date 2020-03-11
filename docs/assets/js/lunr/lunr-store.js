@@ -126,7 +126,7 @@ var store = [{
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1576563210/raychan-QtHYdJsBRFU-unsplash_mpyus4.jpg"},{
         "title": "Las matemáticas que debes saber para programar",
         "excerpt":"Cuando se habla de matemáticas mucha gente empieza a sentirse fastidiada porque creen que son cosas difíciles de entender. Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como una rama de las matemáticas,...","categories": [],
-        "tags": ["math,","matemáticas,","aprender"],
+        "tags": ["math","matemáticas","aprender"],
         "url": "https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html",
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1576990677/franck-v-tOjIx_NyzFo-unsplash_iu91kg.jpg"},{
         "title": "Recursos gratutitos para aprender a programar desde cero",
@@ -163,4 +163,9 @@ var store = [{
         "excerpt":"La idea básica es que cada módulo debería encapsular algunas piezas de conocimiento, que representen decisiones de diseño. - John Ousterhout En el artículo anterior vimos por qué es bueno que los módulos sean profundos, es decir, oculten detalles de implementación y funcionalidades detrás de una interfaz lo más sencilla...","categories": [],
         "tags": ["PoSD","interfaces","módulo","complejidad","diseño-de-software"],
         "url": "https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1800/v1583357998/IMG_3866_owfbzj.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1800/v1583357998/IMG_3866_owfbzj.jpg"},{
+        "title": "Guía para escoger tu stack: por qué deberías escoger tecnología aburrida",
+        "excerpt":"Este artículo está basado en la presentación Choose Boring Technology de Dan McKinley. No hay nada que haga más feliz a un programador que trabajar con el último de los frameworks, lenguaje de programación o herramienta que salió el mes pasado. Este problema se incrementa si trabajas en web, específicamente...","categories": [],
+        "tags": ["arquitectura","infraestructura","decisiones-técnicas"],
+        "url": "https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583644548/9641A743-5E78-4719-9F90-6D77F1CD4E1E_xhawu6.jpg"}]
