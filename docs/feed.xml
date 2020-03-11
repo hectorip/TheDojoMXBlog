@@ -1,26 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-11T00:07:32-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Guía para escoger tu stack: por qué deberías escoger tecnología aburrida</title><link href="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" rel="alternate" type="text/html" title="Guía para escoger tu stack: por qué deberías escoger tecnología aburrida" /><published>2020-03-11T00:00:00-06:00</published><updated>2020-03-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html">&lt;p&gt;Este artículo está basado en la presentación &lt;a href=&quot;http://boringtechnology.club&quot;&gt;Choose Boring Technology&lt;/a&gt; de &lt;a href=&quot;https://mcfunley.com/&quot;&gt;Dan McKinley&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-11T11:17:26-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Guía para escoger tu stack: por qué deberías escoger tecnología aburrida</title><link href="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" rel="alternate" type="text/html" title="Guía para escoger tu stack: por qué deberías escoger tecnología aburrida" /><published>2020-03-11T00:00:00-06:00</published><updated>2020-03-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html">&lt;p&gt;Este artículo está basado en la presentación &lt;a href=&quot;http://boringtechnology.club&quot;&gt;Choose Boring Technology&lt;/a&gt; de &lt;a href=&quot;https://mcfunley.com/&quot;&gt;Dan McKinley&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;No hay nada que haga más feliz a un programador que trabajar con el último de los frameworks, lenguaje de programación o herramienta que salió el mes pasado. Este problema se incrementa si trabajas en web, específicamente en JavaScript, donde cada semana tenemos un framework nuevo.&lt;/p&gt;
+&lt;p&gt;No hay nada que haga más feliz a un desarrollador que trabajar con el último de los frameworks, lenguaje de programación o herramienta que salió el mes pasado.&lt;/p&gt;
+
+&lt;p&gt;Este problema se incrementa si trabajas en web, específicamente en JavaScript, donde cada semana tenemos un framework nuevo.&lt;/p&gt;
 
 &lt;p&gt;Pero hacer esto puede llevar a tu empresa o producto al desastre, como ha pasado muchas veces. Veamos algunas de las razones.&lt;/p&gt;
 
 &lt;h2 id=&quot;qué-es-la-tecnología-aburrida&quot;&gt;Qué es la tecnología &lt;em&gt;aburrida&lt;/em&gt;&lt;/h2&gt;
 
-&lt;p&gt;Cuando hablamos de tecnología &lt;em&gt;aburrida&lt;/em&gt; en este artículo nos referimos a aquello que no es nuevo y brillante como el último framework: cosas que se han usado por mucho tiempo y que a nadie le emocionaría trabajar con ellos porque no es novedoso.&lt;/p&gt;
+&lt;p&gt;Cuando hablamos de tecnología &lt;em&gt;aburrida&lt;/em&gt; en este artículo nos referimos a aquello que no es nuevo y brillante como el último framework: cosas que se han usado por mucho tiempo y que a nadie le emocionaría usar porque no es novedoso.&lt;/p&gt;
 
 &lt;h3 id=&quot;ejemplos&quot;&gt;Ejemplos&lt;/h3&gt;
 
-&lt;p&gt;Tecnología brillante: El último lenguaje de programación para hacer concurrencia Crystal o aunque tenga tiempo exitiendo, la cosa que casi nadie en el mundo usa OCaml o Iris.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tecnología brillante&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;p&gt;Tecnología aburrida: una modesta instalación de Python, Django y PostgreSQL.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;El último lenguaje de programación para hacer concurrencia (Crystal, Pony o algo así)&lt;/li&gt;
+  &lt;li&gt;Aunque tenga tiempo existiendo, la cosa que casi nadie en el mundo usa (como OCaml o Ío)&lt;/li&gt;
+  &lt;li&gt;La base de datos, servidor web, etc. en la que no has trabajado antes pero quieres usar para complementar tu stack (“Vamos a agregarle CouchDB, creo que puede resolver el problema mejor”).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;No tiene que ser completamente nuevo, puede ser novedoso sólo &lt;em&gt;para ti y tu equipo&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tecnología aburrida&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Una modesta instalación de Python, Django y PostgreSQL&lt;/li&gt;
+  &lt;li&gt;La instalación común de PHP con Laravel y las tecnologías asociadas&lt;/li&gt;
+  &lt;li&gt;Java con Spring&lt;/li&gt;
+  &lt;li&gt;El framework y lenguaje con el que trabajas normalmente y tienes más experiencia&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Con tecnología aburrida &lt;em&gt;no nos referimos a cosas malas&lt;/em&gt;, sino a cosas que no son emocionantes por nuevas.&lt;/p&gt;
 
 &lt;p&gt;Hablemos ahora de por qué es casi siempre más provechoso escoger “tecnología aburrida”.&lt;/p&gt;
 
 &lt;h2 id=&quot;la-capacidad-de-innovar-es-limitada&quot;&gt;La capacidad de innovar es limitada&lt;/h2&gt;
 
-&lt;p&gt;Piensa en que tu empresa o producto tiene una capacidad limitada de resolver problemas, generalmente determinada por el tiempo para salir al mercado (o aprovechar una nueva oportunidad de negocio) y por el dinero disponible. El autor de la presentación facilita pensarlo diciendo que tienes unas cuántas “Innovation tokens” o &lt;em&gt;monedas de innovación&lt;/em&gt;. Mientras más limitantes tengas, como el tiempo o el dinero, menos de monedas de innovación tienes.&lt;/p&gt;
+&lt;p&gt;Piensa que tu empresa o producto tiene una capacidad limitada de resolver problemas, generalmente determinada por el tiempo para salir al mercado (o aprovechar una nueva oportunidad de negocio) y por el dinero disponible. El autor de la presentación facilita pensarlo diciendo que tienes unas cuántas “Innovation tokens” o &lt;em&gt;monedas de innovación&lt;/em&gt;. Mientras más limitantes tengas, como el tiempo o el dinero, menos de monedas de innovación tienes.&lt;/p&gt;
 
 &lt;p&gt;Si quieres resolver un problema de manera novedosa, puede que eso requiera todas tus moneditas, o incluso más. Y generalmente es aquí donde &lt;em&gt;cualquier negocio&lt;/em&gt; quiere gastar sus energías. Esto se explica con un viendo a las empresas como si fueran humanos.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Si piensas en la innovación como un recurso escaso, empieza a perder sentido también estar en las líneas frontales de innovación en bases de datos. O de paradigmas de programación. El punto no es que esas no puedan funcionar. Claro que pueden funcionar. &lt;strong&gt;Pero el software que ha existido por más tiempo tiende a necesitar menos cuidado y atención que el software que acaba de salir&lt;/strong&gt;. - Dan McKinley&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h3 id=&quot;pirámide-de-maslow&quot;&gt;Pirámide de Maslow&lt;/h3&gt;
 
@@ -81,13 +104,13 @@
 
 &lt;h3 id=&quot;sistemas-en-producción-y-número-de-piezas&quot;&gt;Sistemas en producción y número de piezas&lt;/h3&gt;
 
-&lt;p&gt;Mantener algo en producción es difícil y requiere trabajo y planeación. No porque puedas empezar a usar Neo4J en cinco minutos significa que debas usarla en tu próximo proyecto, ya que el número de elementos diferentes que uses tu sistema está directamente relacionado con mantener tu sistema en producción y estable.&lt;/p&gt;
+&lt;p&gt;Mantener algo en producción es difícil y requiere trabajo y planeación. No porque puedas empezar a usar Neo4J en cinco minutos significa que debas usarla en tu próximo proyecto, ya que el número de elementos diferentes que uses en tu sistema está &lt;em&gt;directamente relacionado con la dificultad de mantener tu sistema en producción y estable&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Deberías buscar &lt;em&gt;resolver el mayor número de problemas con el menor número de tecnologías posible.&lt;/em&gt; Hacerlo te evitará crear una maraña de sistemas imposible de entender y &lt;strong&gt;mantener&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;ecosistema&quot;&gt;Ecosistema&lt;/h2&gt;
 
-&lt;p&gt;Escoger tecnología que ha sido usada por mucho tiempo y que ya no es “novedosa”, permite que te aproveches de un cuerpo de conocimiento que ya está disponible para que aprendas, un montón de problemas resueltos y compartidos por otros y un ecosistema maduro que te permitirá avanzar en tus problemas específicos más rápido.&lt;/p&gt;
+&lt;p&gt;Escoger tecnología que ha sido usada por mucho tiempo y que ya no es novedosa, permite que te aproveches de un cuerpo de conocimiento que ya está disponible para que aprendas, un montón de problemas resueltos y compartidos por otros y un ecosistema maduro que te permitirá avanzar en tus problemas específicos más rápido.&lt;/p&gt;
 
 &lt;p&gt;No hay nada peor cuando estás desarrollando que encontrarte con un problema incomprensible (y una pregunta sin respuestas en StackOverflow) o con un bug que no ha sido resuelto en tu lenguaje o herramienta. No estoy diciendo que es el fin del mundo, pero seguramente algo que te pudo tomar 10 minutos con la ayuda de otros ahora te costará dos días resolviendo ese obscuro problema.&lt;/p&gt;
 
@@ -103,7 +126,13 @@
 
 &lt;p&gt;El caso principal en el que conviene integrar una nueva tecnología tiene que ver con un equilibrio en los costos. La principal pregunta que debes hacer es: ¿facilita mis tareas TANTO esta tecnología que equilibra el trabajo extra que tendré que hacer?&lt;/p&gt;
 
-&lt;p&gt;Con “trabajo extra” nos referimos a todo lo mencionado en los puntos anteriores, la curva de aprendizaje, la carga añadida de nueva infraestructura, las dificultades no encontradas aún, etc. Puede haber casos en los que una tecnología nueva supere todo esto, dándote una productividad mayor o permitiéndote hacer cosas que son muy muy difíciles de lograr con la tecnología actual.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="arquitectura" /><category term="infraestructura" /><category term="decisiones-técnicas" /><summary type="html">Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología probada.</summary></entry><entry><title type="html">A Philosophy of Software Design: Ocultar información</title><link href="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Ocultar información" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html">&lt;blockquote&gt;
+&lt;p&gt;Con “trabajo extra” nos referimos a todo lo mencionado en los puntos anteriores, la curva de aprendizaje, la carga añadida de nueva infraestructura, las dificultades no encontradas aún, etc. Puede haber casos en los que una tecnología nueva supere todo esto, dándote una productividad mayor o permitiéndote hacer cosas que son muy muy difíciles de lograr con la tecnología actual.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Es más conveniente tanto para ti como para el negocio que tus golpes de dopamina vengan por el lado de resolver problemas emocionantes &lt;em&gt;útiles para algún cliente y para el negocio&lt;/em&gt;, que por andar resolviendo problemas oscuros que nadie le proveen mucho valor (tal vez aprendizaje, pero se puede obtener de otras formas).&lt;/p&gt;
+
+&lt;p&gt;Enfoca tus esfuerzos en cosas útiles para el negocio.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="arquitectura" /><category term="infraestructura" /><category term="decisiones-técnicas" /><summary type="html">Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología probada.</summary></entry><entry><title type="html">A Philosophy of Software Design: Ocultar información</title><link href="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Ocultar información" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html">&lt;blockquote&gt;
   &lt;p&gt;La idea básica es que cada módulo debería encapsular algunas piezas de conocimiento, que representen decisiones de diseño. - &lt;strong&gt;John Ousterhout&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 

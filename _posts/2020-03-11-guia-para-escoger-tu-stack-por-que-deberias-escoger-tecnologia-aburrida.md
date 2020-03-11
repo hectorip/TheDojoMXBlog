@@ -13,27 +13,45 @@ header:
 
 Este artículo está basado en la presentación [Choose Boring Technology](http://boringtechnology.club) de [Dan McKinley](https://mcfunley.com/).
 
-No hay nada que haga más feliz a un programador que trabajar con el último de los frameworks, lenguaje de programación o herramienta que salió el mes pasado. Este problema se incrementa si trabajas en web, específicamente en JavaScript, donde cada semana tenemos un framework nuevo.
+No hay nada que haga más feliz a un desarrollador que trabajar con el último de los frameworks, lenguaje de programación o herramienta que salió el mes pasado.
+
+Este problema se incrementa si trabajas en web, específicamente en JavaScript, donde cada semana tenemos un framework nuevo.
 
 Pero hacer esto puede llevar a tu empresa o producto al desastre, como ha pasado muchas veces. Veamos algunas de las razones.
 
 ## Qué es la tecnología _aburrida_
 
-Cuando hablamos de tecnología _aburrida_ en este artículo nos referimos a aquello que no es nuevo y brillante como el último framework: cosas que se han usado por mucho tiempo y que a nadie le emocionaría trabajar con ellos porque no es novedoso.
+Cuando hablamos de tecnología _aburrida_ en este artículo nos referimos a aquello que no es nuevo y brillante como el último framework: cosas que se han usado por mucho tiempo y que a nadie le emocionaría usar porque no es novedoso.
 
 ### Ejemplos
 
-Tecnología brillante: El último lenguaje de programación para hacer concurrencia Crystal o aunque tenga tiempo exitiendo, la cosa que casi nadie en el mundo usa OCaml o Iris.
+**Tecnología brillante**: 
 
-Tecnología aburrida: una modesta instalación de Python, Django y PostgreSQL.
+* El último lenguaje de programación para hacer concurrencia (Crystal, Pony o algo así)
+* Aunque tenga tiempo existiendo, la cosa que casi nadie en el mundo usa (como OCaml o Ío)
+* La base de datos, servidor web, etc. en la que no has trabajado antes pero quieres usar para complementar tu stack ("Vamos a agregarle CouchDB, creo que puede resolver el problema mejor").
+
+No tiene que ser completamente nuevo, puede ser novedoso sólo _para ti y tu equipo_.
+
+**Tecnología aburrida**: 
+
+* Una modesta instalación de Python, Django y PostgreSQL
+* La instalación común de PHP con Laravel y las tecnologías asociadas
+* Java con Spring
+* El framework y lenguaje con el que trabajas normalmente y tienes más experiencia
+
+Con tecnología aburrida _no nos referimos a cosas malas_, sino a cosas que no son emocionantes por nuevas.
 
 Hablemos ahora de por qué es casi siempre más provechoso escoger "tecnología aburrida".
 
 ## La capacidad de innovar es limitada
 
-Piensa en que tu empresa o producto tiene una capacidad limitada de resolver problemas, generalmente determinada por el tiempo para salir al mercado (o aprovechar una nueva oportunidad de negocio) y por el dinero disponible. El autor de la presentación facilita pensarlo diciendo que tienes unas cuántas "Innovation tokens" o _monedas de innovación_. Mientras más limitantes tengas, como el tiempo o el dinero, menos de monedas de innovación tienes.
+Piensa que tu empresa o producto tiene una capacidad limitada de resolver problemas, generalmente determinada por el tiempo para salir al mercado (o aprovechar una nueva oportunidad de negocio) y por el dinero disponible. El autor de la presentación facilita pensarlo diciendo que tienes unas cuántas "Innovation tokens" o _monedas de innovación_. Mientras más limitantes tengas, como el tiempo o el dinero, menos de monedas de innovación tienes.
 
 Si quieres resolver un problema de manera novedosa, puede que eso requiera todas tus moneditas, o incluso más. Y generalmente es aquí donde _cualquier negocio_ quiere gastar sus energías. Esto se explica con un viendo a las empresas como si fueran humanos.
+
+
+> Si piensas en la innovación como un recurso escaso, empieza a perder sentido también estar en las líneas frontales de innovación en bases de datos. O de paradigmas de programación. El punto no es que esas no puedan funcionar. Claro que pueden funcionar. **Pero el software que ha existido por más tiempo tiende a necesitar menos cuidado y atención que el software que acaba de salir**. - Dan McKinley
 
 ### Pirámide de Maslow
 
@@ -86,13 +104,13 @@ Una dificultad extra de usar la tecnología más nueva es que es probable que la
 
 ### Sistemas en producción y número de piezas
 
-Mantener algo en producción es difícil y requiere trabajo y planeación. No porque puedas empezar a usar Neo4J en cinco minutos significa que debas usarla en tu próximo proyecto, ya que el número de elementos diferentes que uses tu sistema está directamente relacionado con mantener tu sistema en producción y estable.
+Mantener algo en producción es difícil y requiere trabajo y planeación. No porque puedas empezar a usar Neo4J en cinco minutos significa que debas usarla en tu próximo proyecto, ya que el número de elementos diferentes que uses en tu sistema está _directamente relacionado con la dificultad de mantener tu sistema en producción y estable_.
 
 Deberías buscar _resolver el mayor número de problemas con el menor número de tecnologías posible._ Hacerlo te evitará crear una maraña de sistemas imposible de entender y **mantener**.
 
 ## Ecosistema
 
-Escoger tecnología que ha sido usada por mucho tiempo y que ya no es "novedosa", permite que te aproveches de un cuerpo de conocimiento que ya está disponible para que aprendas, un montón de problemas resueltos y compartidos por otros y un ecosistema maduro que te permitirá avanzar en tus problemas específicos más rápido.
+Escoger tecnología que ha sido usada por mucho tiempo y que ya no es novedosa, permite que te aproveches de un cuerpo de conocimiento que ya está disponible para que aprendas, un montón de problemas resueltos y compartidos por otros y un ecosistema maduro que te permitirá avanzar en tus problemas específicos más rápido.
 
 No hay nada peor cuando estás desarrollando que encontrarte con un problema incomprensible (y una pregunta sin respuestas en StackOverflow) o con un bug que no ha sido resuelto en tu lenguaje o herramienta. No estoy diciendo que es el fin del mundo, pero seguramente algo que te pudo tomar 10 minutos con la ayuda de otros ahora te costará dos días resolviendo ese obscuro problema.
 
@@ -109,3 +127,9 @@ Después de pensar en todo esto, aún hay veces que conviene integrar ya sea una
 El caso principal en el que conviene integrar una nueva tecnología tiene que ver con un equilibrio en los costos. La principal pregunta que debes hacer es: ¿facilita mis tareas TANTO esta tecnología que equilibra el trabajo extra que tendré que hacer?
 
 Con "trabajo extra" nos referimos a todo lo mencionado en los puntos anteriores, la curva de aprendizaje, la carga añadida de nueva infraestructura, las dificultades no encontradas aún, etc. Puede haber casos en los que una tecnología nueva supere todo esto, dándote una productividad mayor o permitiéndote hacer cosas que son muy muy difíciles de lograr con la tecnología actual.
+
+## Conclusión
+
+Es más conveniente tanto para ti como para el negocio que tus golpes de dopamina vengan por el lado de resolver problemas emocionantes _útiles para algún cliente y para el negocio_, que por andar resolviendo problemas oscuros que nadie le proveen mucho valor (tal vez aprendizaje, pero se puede obtener de otras formas).
+
+Enfoca tus esfuerzos en cosas útiles para el negocio.
