@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-11T11:17:26-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Guía para escoger tu stack: por qué deberías escoger tecnología aburrida</title><link href="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" rel="alternate" type="text/html" title="Guía para escoger tu stack: por qué deberías escoger tecnología aburrida" /><published>2020-03-11T00:00:00-06:00</published><updated>2020-03-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html">&lt;p&gt;Este artículo está basado en la presentación &lt;a href=&quot;http://boringtechnology.club&quot;&gt;Choose Boring Technology&lt;/a&gt; de &lt;a href=&quot;https://mcfunley.com/&quot;&gt;Dan McKinley&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-13T18:29:29-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Guía para escoger tu stack: por qué deberías escoger tecnología aburrida</title><link href="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" rel="alternate" type="text/html" title="Guía para escoger tu stack: por qué deberías escoger tecnología aburrida" /><published>2020-03-11T00:00:00-06:00</published><updated>2020-03-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html">&lt;p&gt;Este artículo está basado en la presentación &lt;a href=&quot;http://boringtechnology.club&quot;&gt;Choose Boring Technology&lt;/a&gt; de &lt;a href=&quot;https://mcfunley.com/&quot;&gt;Dan McKinley&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;No hay nada que haga más feliz a un desarrollador que trabajar con el último de los frameworks, lenguaje de programación o herramienta que salió el mes pasado.&lt;/p&gt;
 
@@ -39,10 +39,10 @@
 
 &lt;p&gt;Piensa que tu empresa o producto tiene una capacidad limitada de resolver problemas, generalmente determinada por el tiempo para salir al mercado (o aprovechar una nueva oportunidad de negocio) y por el dinero disponible. El autor de la presentación facilita pensarlo diciendo que tienes unas cuántas “Innovation tokens” o &lt;em&gt;monedas de innovación&lt;/em&gt;. Mientras más limitantes tengas, como el tiempo o el dinero, menos de monedas de innovación tienes.&lt;/p&gt;
 
-&lt;p&gt;Si quieres resolver un problema de manera novedosa, puede que eso requiera todas tus moneditas, o incluso más. Y generalmente es aquí donde &lt;em&gt;cualquier negocio&lt;/em&gt; quiere gastar sus energías. Esto se explica con un viendo a las empresas como si fueran humanos.&lt;/p&gt;
+&lt;p&gt;Si quieres resolver un problema de manera novedosa, puede que eso requiera todas tus moneditas, o incluso más. Y generalmente es aquí donde &lt;em&gt;cualquier negocio&lt;/em&gt; quiere gastar sus energías. Esto se explica viendo a las empresas como si fueran humanos.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Si piensas en la innovación como un recurso escaso, empieza a perder sentido también estar en las líneas frontales de innovación en bases de datos. O de paradigmas de programación. El punto no es que esas no puedan funcionar. Claro que pueden funcionar. &lt;strong&gt;Pero el software que ha existido por más tiempo tiende a necesitar menos cuidado y atención que el software que acaba de salir&lt;/strong&gt;. - Dan McKinley&lt;/p&gt;
+  &lt;p&gt;Si piensas en la innovación como un recurso escaso, empieza a perder sentido también estar en las líneas frontales de innovación en bases de datos. O de paradigmas de programación. El punto no es que esas cosas no puedan funcionar. Claro que pueden funcionar. &lt;strong&gt;Pero el software que ha existido por más tiempo tiende a necesitar menos cuidado y atención que el software que acaba de salir&lt;/strong&gt;. - Dan McKinley&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h3 id=&quot;pirámide-de-maslow&quot;&gt;Pirámide de Maslow&lt;/h3&gt;
@@ -51,11 +51,15 @@
 
 &lt;p&gt;Su tesis principal es que tienen que cumplirse las de la base de la pirámide (fisiológicas; comer, dormir, respirar) &lt;strong&gt;antes&lt;/strong&gt; de cumplirse las de la punta (moralidad, creatividad, etc).&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584127283/6D71EA5B-8CC6-454B-B342-6287A9845189_edyfje.png&quot; alt=&quot;Pirmámide de Maslow&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Lo que explica Maslow acerca la satisfacción de las necesidades tiene lógica: &lt;em&gt;no puedes&lt;/em&gt; preocuparte por cosas como si la filosofía de los estoicos es correcta si no tienes lo suficiente para comer hoy, o no has dormido en tres días. O peor aún, no puedes pensar en tu movimiento siguiente si te estás quedando sin aire.&lt;/p&gt;
 
 &lt;p&gt;Lo mismo pasa a nivel tecnológico y de supervivencia en las empresas o proyectos: no puedes pensar en formas de beneficiar a tu cliente, de resolver ese problema tan difícil de manera innovadora si te estás pelando con mantener viva en producción una base de datos.&lt;/p&gt;
 
 &lt;p&gt;Así que desde el punto de vista económico tiene completo sentido: escoger tecnología lo más fácil de entender, en la que tengas experiencia o sea fácil encontrar expertos que te guíen, tiene más lógica que escoger lo más nuevo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584127281/604612EB-0432-4D88-B1B4-CBAAEFF7042D_hyfu6z.png&quot; alt=&quot;Pirámide de necesidades Tenológicas&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;la-tecnología-aburrida-es-más-segura&quot;&gt;La tecnología ‘aburrida’ es más segura&lt;/h2&gt;
 

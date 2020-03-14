@@ -48,10 +48,10 @@ Hablemos ahora de por qué es casi siempre más provechoso escoger "tecnología 
 
 Piensa que tu empresa o producto tiene una capacidad limitada de resolver problemas, generalmente determinada por el tiempo para salir al mercado (o aprovechar una nueva oportunidad de negocio) y por el dinero disponible. El autor de la presentación facilita pensarlo diciendo que tienes unas cuántas "Innovation tokens" o _monedas de innovación_. Mientras más limitantes tengas, como el tiempo o el dinero, menos de monedas de innovación tienes.
 
-Si quieres resolver un problema de manera novedosa, puede que eso requiera todas tus moneditas, o incluso más. Y generalmente es aquí donde _cualquier negocio_ quiere gastar sus energías. Esto se explica con un viendo a las empresas como si fueran humanos.
+Si quieres resolver un problema de manera novedosa, puede que eso requiera todas tus moneditas, o incluso más. Y generalmente es aquí donde _cualquier negocio_ quiere gastar sus energías. Esto se explica viendo a las empresas como si fueran humanos.
 
 
-> Si piensas en la innovación como un recurso escaso, empieza a perder sentido también estar en las líneas frontales de innovación en bases de datos. O de paradigmas de programación. El punto no es que esas no puedan funcionar. Claro que pueden funcionar. **Pero el software que ha existido por más tiempo tiende a necesitar menos cuidado y atención que el software que acaba de salir**. - Dan McKinley
+> Si piensas en la innovación como un recurso escaso, empieza a perder sentido también estar en las líneas frontales de innovación en bases de datos. O de paradigmas de programación. El punto no es que esas cosas no puedan funcionar. Claro que pueden funcionar. **Pero el software que ha existido por más tiempo tiende a necesitar menos cuidado y atención que el software que acaba de salir**. - Dan McKinley
 
 ### Pirámide de Maslow
 
@@ -59,12 +59,15 @@ Abraham Maslow propuso en los 60's una [jerarquía de las necesidades humanas](h
 
 Su tesis principal es que tienen que cumplirse las de la base de la pirámide (fisiológicas; comer, dormir, respirar) **antes** de cumplirse las de la punta (moralidad, creatividad, etc).
 
+![Pirmámide de Maslow](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584127283/6D71EA5B-8CC6-454B-B342-6287A9845189_edyfje.png)
 
 Lo que explica Maslow acerca la satisfacción de las necesidades tiene lógica: _no puedes_ preocuparte por cosas como si la filosofía de los estoicos es correcta si no tienes lo suficiente para comer hoy, o no has dormido en tres días. O peor aún, no puedes pensar en tu movimiento siguiente si te estás quedando sin aire.
 
 Lo mismo pasa a nivel tecnológico y de supervivencia en las empresas o proyectos: no puedes pensar en formas de beneficiar a tu cliente, de resolver ese problema tan difícil de manera innovadora si te estás pelando con mantener viva en producción una base de datos.
 
 Así que desde el punto de vista económico tiene completo sentido: escoger tecnología lo más fácil de entender, en la que tengas experiencia o sea fácil encontrar expertos que te guíen, tiene más lógica que escoger lo más nuevo.
+
+![Pirámide de necesidades Tenológicas](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584127281/604612EB-0432-4D88-B1B4-CBAAEFF7042D_hyfu6z.png)
 
 ## La tecnología 'aburrida' es más segura
 
