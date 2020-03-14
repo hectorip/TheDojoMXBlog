@@ -93,6 +93,8 @@ Todas las cosas que son capaces de ser aprehendidas por la mente humana caen en 
 
 La quinta categoría, que [N. N. Taleb](https://www.fooledbyrandomness.com/) describe en su libro [Cisne Negro](https://amzn.to/2xqIzmH), son las cosas que no podemos saber, como el futuro o las causas de algo en el pasado.
 
+![Teoría del conocimiento](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584164642/CEA9E5D1-1E77-4543-8256-DB6C195CBCFB_dwvf1j.png)
+
 ¿Por qué es importante esto? La cantidad de cosas que _sabemos_ que no sabemos o que fallan de un proyecto "aburrido" o probado pueden ser muchas, pero _sabemos_ que ahí están y nos podemos proteger contra ellas. Aún hay cosas que no sabemos que no sabemos, la incertidumbre nunca se elimina, pero son menores al tener más experiencia colectiva sobre algo.
 
 En las tecnologías de reciente creación hay mucha información que _no sabemos que no sabemos_. La cantidad de incertidumbre es mucho mayor, incluso con cosas no relacionadas directamente con la tecnología, como el entorno en el que se está creando. ¿Matarán mañana al proyecto?
@@ -111,11 +113,13 @@ Mantener algo en producción es difícil y requiere trabajo y planeación. No po
 
 Deberías buscar _resolver el mayor número de problemas con el menor número de tecnologías posible._ Hacerlo te evitará crear una maraña de sistemas imposible de entender y **mantener**.
 
+![Comparación entre un sistema simple y uno complejo](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584168893/71161A7B-26AA-4A71-9318-CC74AD810385_yivlr9.png)
+
 ## Ecosistema
 
 Escoger tecnología que ha sido usada por mucho tiempo y que ya no es novedosa, permite que te aproveches de un cuerpo de conocimiento que ya está disponible para que aprendas, un montón de problemas resueltos y compartidos por otros y un ecosistema maduro que te permitirá avanzar en tus problemas específicos más rápido.
 
-No hay nada peor cuando estás desarrollando que encontrarte con un problema incomprensible (y una pregunta sin respuestas en StackOverflow) o con un bug que no ha sido resuelto en tu lenguaje o herramienta. No estoy diciendo que es el fin del mundo, pero seguramente algo que te pudo tomar 10 minutos con la ayuda de otros ahora te costará dos días resolviendo ese obscuro problema.
+No hay nada peor cuando estás desarrollando que encontrarte con un problema incomprensible (y una pregunta sin respuestas en Stack Overflow) o con un bug que no ha sido resuelto en tu lenguaje o herramienta. No estoy diciendo que es el fin del mundo, pero seguramente algo que te pudo tomar 10 minutos con la ayuda de otros ahora te costará dos días resolviendo ese obscuro problema.
 
 ### Dominio de la tecnología
 
