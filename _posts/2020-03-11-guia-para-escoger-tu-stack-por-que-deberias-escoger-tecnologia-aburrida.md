@@ -139,4 +139,4 @@ Con "trabajo extra" nos referimos a todo lo mencionado en los puntos anteriores,
 
 Es más conveniente tanto para ti como para el negocio que tus golpes de dopamina vengan por el lado de resolver problemas emocionantes _útiles para algún cliente y para el negocio_, que por andar resolviendo problemas oscuros que nadie le proveen mucho valor (tal vez aprendizaje, pero se puede obtener de otras formas).
 
-Enfoca tus esfuerzos en cosas útiles para el negocio.
+**Enfoca tus esfuerzos en cosas útiles para el negocio.**
