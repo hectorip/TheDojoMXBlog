@@ -25,12 +25,14 @@ La descomposición temporal implica repetir o separar una decisión de diseño p
 
 ## Ejemplos
 
-John Ousterhout menciona un ejercicio que puso a sus alumnos en el que tenían que crear un programa implementando el protocolo HTTP. Algunos equipos crearon una clase para recibir el mensaje desde la red y otra clase para leerlo, creando así un caso claro de descomposición temporal: como las operaciones sucedían en diferentes momentos (primero recibes y luego lees y procesas) los separaron lógicamente en dos clases que se usaban siempre una detrás de otra. La fuga de información se dio porque para recibir un de HTTP _tienes_ que leer parte del mensaje y entonces la lógica de lectura del mensaje está en _ambas clases_.
+John Ousterhout menciona un ejercicio que puso a sus alumnos en el que tenían que crear un programa implementando el protocolo HTTP. 
+
+Algunos equipos crearon una clase para recibir el mensaje desde la red y _otra clase para leerlo_, creando así un caso claro de descomposición temporal: como las operaciones sucedían en diferentes momentos (primero recibes y luego lees y procesas) los separaron lógicamente en dos clases que se usaban siempre una detrás de otra. La fuga de información se dio porque para recibir un de HTTP _tienes que leer_ parte del mensaje y entonces la lógica de lectura del mensaje está en _ambas clases_.
 
 Otro ejemplo más o menos obvio es la lectura y escritura de archivos. Si quieres trabajar con archivos, el orden de las operaciones es la siguiente: 
 
-1. Abrir
-2. Leer y operar con información del archivo
+1. Abrir y leer
+2. Operar con información del archivo
 3. Escribir el archivo
 
 Un diseño que deja escapar información sería tener dos clases diferentes para la parte de escritura y lectura, cada una con código repetido que sabe leer el formato del archivo.

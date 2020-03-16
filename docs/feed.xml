@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-16T01:02:04-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Descomposición Temporal</title><link href="https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Descomposición Temporal" /><published>2020-03-16T00:00:00-06:00</published><updated>2020-03-16T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal.html">&lt;p&gt;En el artículo pasado hablamos de una forma de evitar una fuga de información, que consiste en encapsular una decisión de diseño en un módulo.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-16T08:55:38-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Descomposición Temporal</title><link href="https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Descomposición Temporal" /><published>2020-03-16T00:00:00-06:00</published><updated>2020-03-16T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal.html">&lt;p&gt;En el artículo pasado hablamos de una forma de evitar una fuga de información, que consiste en encapsular una decisión de diseño en un módulo.&lt;/p&gt;
 
 &lt;p&gt;Otra forma de dejar escapar información no relevante para los usuarios de una pieza de software es mediante obligarlos a usarla siempre de la misma forma, con el mismo orden de operaciones reglas de operación implícita. Esto se llama descomposición temporal. Hablemos más de ella.&lt;/p&gt;
 
@@ -10,15 +10,19 @@
 
 &lt;p&gt;La descomposición temporal implica repetir o separar una decisión de diseño por causa del &lt;em&gt;orden en que se usan diferentes partes del sistema&lt;/em&gt;.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584345818/A85931E4-BBF3-4301-98D3-ACE20942AF9E_hugdbz.png&quot; alt=&quot;Descomposición temporal&quot; /&gt;&lt;/p&gt;
+
 &lt;h2 id=&quot;ejemplos&quot;&gt;Ejemplos&lt;/h2&gt;
 
-&lt;p&gt;John Ousterhout menciona un ejercicio que puso a sus alumnos en el que tenían que crear un programa implementando el protocolo HTTP. Algunos equipos crearon una clase para recibir el mensaje desde la red y otra clase para leerlo, creando así un caso claro de descomposición temporal: como las operaciones sucedían en diferentes momentos (primero recibes y luego lees y procesas) los separaron lógicamente en dos clases que se usaban siempre una detrás de otra. La fuga de información se dio porque para recibir un de HTTP &lt;em&gt;tienes&lt;/em&gt; que leer parte del mensaje y entonces la lógica de lectura del mensaje está en &lt;em&gt;ambas clases&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;John Ousterhout menciona un ejercicio que puso a sus alumnos en el que tenían que crear un programa implementando el protocolo HTTP.&lt;/p&gt;
+
+&lt;p&gt;Algunos equipos crearon una clase para recibir el mensaje desde la red y &lt;em&gt;otra clase para leerlo&lt;/em&gt;, creando así un caso claro de descomposición temporal: como las operaciones sucedían en diferentes momentos (primero recibes y luego lees y procesas) los separaron lógicamente en dos clases que se usaban siempre una detrás de otra. La fuga de información se dio porque para recibir un de HTTP &lt;em&gt;tienes que leer&lt;/em&gt; parte del mensaje y entonces la lógica de lectura del mensaje está en &lt;em&gt;ambas clases&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Otro ejemplo más o menos obvio es la lectura y escritura de archivos. Si quieres trabajar con archivos, el orden de las operaciones es la siguiente:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Abrir&lt;/li&gt;
-  &lt;li&gt;Leer y operar con información del archivo&lt;/li&gt;
+  &lt;li&gt;Abrir y leer&lt;/li&gt;
+  &lt;li&gt;Operar con información del archivo&lt;/li&gt;
   &lt;li&gt;Escribir el archivo&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -32,9 +36,10 @@
 
 &lt;h2 id=&quot;composición-de-funciones&quot;&gt;Composición de funciones&lt;/h2&gt;
 
-&lt;p&gt;En los lenguajes funcionales es común usar una serie de funciones aplicadas a una entidad de datos. Por ejemplo en Elixir es común hacer lo siguiente&lt;/p&gt;
+&lt;p&gt;En los lenguajes funcionales es común usar una serie de funciones aplicadas a una entidad de datos. Por ejemplo en Elixir es común hacer lo siguiente.&lt;/p&gt;
 
-&lt;div class=&quot;language-elixir highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# El operador |&amp;gt; Toma el resultado de la función o valor de la expresión anterior (o a su izquierda) y lo manda como primer parámetro a la función a la derecha, parecido a una redirección de salida de Unix&lt;/span&gt;
+&lt;div class=&quot;language-elixir highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# El operador |&amp;gt; Toma el resultado de la función o valor de la expresión&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# anterior (o a su izquierda) y lo manda como primer parámetro a la función # a la derecha, parecido a una redirección de salida de Unix&lt;/span&gt;
 
 &lt;span class=&quot;s2&quot;&gt;&quot; the dojo &quot;&lt;/span&gt;
   &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trim&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Limpiar los espacios sobrante a la cadena &quot; the dojo &quot;&lt;/span&gt;
@@ -47,17 +52,25 @@
 
 &lt;p&gt;Este ejemplo es un poco exagerado para la función que realiza: poner un texto con capitalización estilo título, Todas Las Iniciales En Mayúsculas.&lt;/p&gt;
 
-&lt;p&gt;La idea se viene de las matemáticas y se llama “composición funcional” y como se puede ver es excelente para usar funciones &lt;em&gt;existentes&lt;/em&gt; en la creación de procesos más complejos. Una de las virtudes de esta técnica es la &lt;strong&gt;reutilización&lt;/strong&gt; de las funciones.&lt;/p&gt;
+&lt;p&gt;La idea viene de las matemáticas y se llama “composición funcional” y como se puede ver es excelente para usar funciones &lt;em&gt;existentes&lt;/em&gt; en la creación de procesos más complejos. Una de las virtudes de esta técnica es la &lt;strong&gt;reutilización&lt;/strong&gt; de las funciones.&lt;/p&gt;
 
-&lt;p&gt;Sin embargo, queriendo aplicar esta idea puedes modificar tus módulos (en lenguajes funcionales: funciones), para aplicar esta técnica y terminar con funciones que siempre se usen una tras otra, esperando la entrada siempre de la misma función y mandando su resultado siempre a la misma función.&lt;/p&gt;
+&lt;p&gt;Sin embargo, queriendo aplicar esta idea, puedes cometer el error modificar tus módulos (en lenguajes funcionales: funciones), para aplicar esta técnica y &lt;em&gt;terminar con funciones que siempre se usen una tras otra&lt;/em&gt;, esperando la entrada de la misma función y mandando su resultado siempre a la misma función. Algo así:&lt;/p&gt;
 
-&lt;p&gt;Esto es un error que yo he cometido y que ha hecho mi código muy difícil de mantener, ya que al cambiar una función de esta cadena tengo que cambiar las demás, haciéndolas además no reutilizables.&lt;/p&gt;
+&lt;div class=&quot;language-elixir highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;datos&quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MiModulo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mi_funcion_1&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MiModulo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mi_funcion_2&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MiModulo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mi_funcion_3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Esto es un error que yo he cometido y que ha hecho mi código &lt;em&gt;muy difícil de mantener&lt;/em&gt;, ya que al cambiar una función de esta cadena tengo que cambiar las demás, haciéndolas no reutilizables.&lt;/p&gt;
 
 &lt;h2 id=&quot;solución-a-la-descomposición-temporal&quot;&gt;Solución a la descomposición temporal&lt;/h2&gt;
 
-&lt;p&gt;La solución propuesta por &lt;a href=&quot;https://amzn.to/3ba4MEj&quot;&gt;A Philosophy of Software Design&lt;/a&gt; es muy sencilla: &lt;strong&gt;concentra todas las operaciones relacionadas con una decisión de diseño en un módulo&lt;/strong&gt;. Si nada de esto necesita ser conocido fuera de este módulo, has logrado un diseño más limpio. Esto puede implicar que la clase se haga más grande, pero es una mejor solución a tener información repartida por todos lados.&lt;/p&gt;
+&lt;p&gt;La solución propuesta por &lt;a href=&quot;https://amzn.to/3ba4MEj&quot;&gt;A Philosophy of Software Design&lt;/a&gt; es muy sencilla: &lt;strong&gt;concentra todas las operaciones relacionadas con una decisión de diseño en un módulo&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Así, si la decisión de diseño cambia sólo tienes que cambiar la implementación y no la interfaz ni mucho menos &lt;em&gt;su uso&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Si nada necesita ser conocido fuera de este módulo (ni detalles de la implementación, ni el orden de operación), has logrado un diseño más limpio. Esto puede implicar que la clase se haga más grande, pero es una mejor solución comparada con tener información repartida por todos lados.&lt;/p&gt;
+
+&lt;p&gt;Así, si la decisión de diseño cambia, &lt;em&gt;sólo tienes que cambiar la implementación&lt;/em&gt; y no la interfaz ni mucho menos su uso.&lt;/p&gt;
 
 &lt;p&gt;En el siguiente artículo veremos finalmente una serie de recomendaciones para evitar las fugas de información y como no llevarlo demasiado lejos.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="descomposición-temporal" /><category term="software-design" /><category term="complexity" /><category term="interfaces" /><summary type="html">Una forma de dejar escapar información es mediante forzar el orden de las operaciones de un módulo. Veamos cómo evitarlo.</summary></entry><entry><title type="html">Guía para escoger tu stack: por qué deberías escoger tecnología aburrida</title><link href="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" rel="alternate" type="text/html" title="Guía para escoger tu stack: por qué deberías escoger tecnología aburrida" /><published>2020-03-11T00:00:00-06:00</published><updated>2020-03-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html">&lt;p&gt;Este artículo está basado en la presentación &lt;a href=&quot;http://boringtechnology.club&quot;&gt;Choose Boring Technology&lt;/a&gt; de &lt;a href=&quot;https://mcfunley.com/&quot;&gt;Dan McKinley&lt;/a&gt;.&lt;/p&gt;
 
