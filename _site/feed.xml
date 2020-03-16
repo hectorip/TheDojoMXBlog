@@ -1,4 +1,146 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-08T23:34:05-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Ocultar información</title><link href="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Ocultar información" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-15T23:22:54-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Guía para escoger tu stack: por qué deberías escoger tecnología aburrida</title><link href="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" rel="alternate" type="text/html" title="Guía para escoger tu stack: por qué deberías escoger tecnología aburrida" /><published>2020-03-11T00:00:00-06:00</published><updated>2020-03-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html">&lt;p&gt;Este artículo está basado en la presentación &lt;a href=&quot;http://boringtechnology.club&quot;&gt;Choose Boring Technology&lt;/a&gt; de &lt;a href=&quot;https://mcfunley.com/&quot;&gt;Dan McKinley&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;No hay nada que haga más feliz a un desarrollador que trabajar con el último de los frameworks, lenguaje de programación o herramienta que salió el mes pasado.&lt;/p&gt;
+
+&lt;p&gt;Este problema se incrementa si trabajas en web, específicamente en JavaScript, donde cada semana tenemos un framework nuevo.&lt;/p&gt;
+
+&lt;p&gt;Pero hacer esto puede llevar a tu empresa o producto al desastre, como ha pasado muchas veces. Veamos algunas de las razones.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-la-tecnología-aburrida&quot;&gt;Qué es la tecnología &lt;em&gt;aburrida&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;Cuando hablamos de tecnología &lt;em&gt;aburrida&lt;/em&gt; en este artículo nos referimos a aquello que no es nuevo y brillante como el último framework: cosas que se han usado por mucho tiempo y que a nadie le emocionaría usar porque no es novedoso.&lt;/p&gt;
+
+&lt;h3 id=&quot;ejemplos&quot;&gt;Ejemplos&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Tecnología brillante&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;El último lenguaje de programación para hacer concurrencia (Crystal, Pony o algo así)&lt;/li&gt;
+  &lt;li&gt;Aunque tenga tiempo existiendo, la cosa que casi nadie en el mundo usa (como OCaml o Ío)&lt;/li&gt;
+  &lt;li&gt;La base de datos, servidor web, etc. en la que no has trabajado antes pero quieres usar para complementar tu stack (“Vamos a agregarle CouchDB, creo que puede resolver el problema mejor”).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;No tiene que ser completamente nuevo, puede ser novedoso sólo &lt;em&gt;para ti y tu equipo&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tecnología aburrida&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Una modesta instalación de Python, Django y PostgreSQL&lt;/li&gt;
+  &lt;li&gt;La instalación común de PHP con Laravel y las tecnologías asociadas&lt;/li&gt;
+  &lt;li&gt;Java con Spring&lt;/li&gt;
+  &lt;li&gt;El framework y lenguaje con el que trabajas normalmente y tienes más experiencia&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Con tecnología aburrida &lt;em&gt;no nos referimos a cosas malas&lt;/em&gt;, sino a cosas que no son emocionantes por nuevas.&lt;/p&gt;
+
+&lt;p&gt;Hablemos ahora de por qué es casi siempre más provechoso escoger “tecnología aburrida”.&lt;/p&gt;
+
+&lt;h2 id=&quot;la-capacidad-de-innovar-es-limitada&quot;&gt;La capacidad de innovar es limitada&lt;/h2&gt;
+
+&lt;p&gt;Piensa que tu empresa o producto tiene una capacidad limitada de resolver problemas, generalmente determinada por el tiempo para salir al mercado (o aprovechar una nueva oportunidad de negocio) y por el dinero disponible. El autor de la presentación facilita pensarlo diciendo que tienes unas cuántas “Innovation tokens” o &lt;em&gt;monedas de innovación&lt;/em&gt;. Mientras más limitantes tengas, como el tiempo o el dinero, menos de monedas de innovación tienes.&lt;/p&gt;
+
+&lt;p&gt;Si quieres resolver un problema de manera novedosa, puede que eso requiera todas tus moneditas, o incluso más. Y generalmente es aquí donde &lt;em&gt;cualquier negocio&lt;/em&gt; quiere gastar sus energías. Esto se explica viendo a las empresas como si fueran humanos.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Si piensas en la innovación como un recurso escaso, empieza a perder sentido también estar en las líneas frontales de innovación en bases de datos. O de paradigmas de programación. El punto no es que esas cosas no puedan funcionar. Claro que pueden funcionar. &lt;strong&gt;Pero el software que ha existido por más tiempo tiende a necesitar menos cuidado y atención que el software que acaba de salir&lt;/strong&gt;. - Dan McKinley&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;pirámide-de-maslow&quot;&gt;Pirámide de Maslow&lt;/h3&gt;
+
+&lt;p&gt;Abraham Maslow propuso en los 60’s una &lt;a href=&quot;https://es.wikipedia.org/wiki/Pir%C3%A1mide_de_Maslow&quot;&gt;jerarquía de las necesidades humanas&lt;/a&gt;, conocida como la Pirámide de Maslow, en la que se habla de diferentes tipos de necesidades jerarquizadas, desde las fisiológicas hasta las emocionales.&lt;/p&gt;
+
+&lt;p&gt;Su tesis principal es que tienen que cumplirse las de la base de la pirámide (fisiológicas; comer, dormir, respirar) &lt;strong&gt;antes&lt;/strong&gt; de cumplirse las de la punta (moralidad, creatividad, etc).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584127283/6D71EA5B-8CC6-454B-B342-6287A9845189_edyfje.png&quot; alt=&quot;Pirmámide de Maslow&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lo que explica Maslow acerca la satisfacción de las necesidades tiene lógica: &lt;em&gt;no puedes&lt;/em&gt; preocuparte por cosas como si la filosofía de los estoicos es correcta si no tienes lo suficiente para comer hoy, o no has dormido en tres días. O peor aún, no puedes pensar en tu movimiento siguiente si te estás quedando sin aire.&lt;/p&gt;
+
+&lt;p&gt;Lo mismo pasa a nivel tecnológico y de supervivencia en las empresas o proyectos: no puedes pensar en formas de beneficiar a tu cliente, de resolver ese problema tan difícil de manera innovadora si te estás pelando con mantener viva en producción una base de datos.&lt;/p&gt;
+
+&lt;p&gt;Así que desde el punto de vista económico tiene completo sentido: escoger tecnología lo más fácil de entender, en la que tengas experiencia o sea fácil encontrar expertos que te guíen, tiene más lógica que escoger lo más nuevo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584127281/604612EB-0432-4D88-B1B4-CBAAEFF7042D_hyfu6z.png&quot; alt=&quot;Pirámide de necesidades Tenológicas&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;la-tecnología-aburrida-es-más-segura&quot;&gt;La tecnología ‘aburrida’ es más segura&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Existen sólo dos tipos de lenguajes: de los que la gente se queja y los que nadie usa. - Bjarne Stroustrup&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;La tecnología como los lenguajes, librerías, bases de datos y en general software y hardware que lleva mucho tiempo existiendo es más confiable en el sentido de que conocemos sus fallas, sus limitantes y existen personas que nos pueden contar sus usos y malos usos.&lt;/p&gt;
+
+&lt;p&gt;Todos los proyectos de software respetables tienen una lista de errores conocidos, que puedes consultar en su documentación y el tiempo estimado en que se resolverá, si no se resolverá y las formas de darle la vuelta. En pocas palabras ya sabes que esa tecnología apesta y sabes &lt;em&gt;por qué&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Una tecnología nueva no tiene esto, y las sorpresas que la esperan pueden ser muy grandes y desagradables. Pero aquí entramos en el campo del riesgo y el conocimiento humano.&lt;/p&gt;
+
+&lt;h3 id=&quot;cosas-que-no-sabes-que-no-sabes&quot;&gt;Cosas que no sabes que no sabes&lt;/h3&gt;
+
+&lt;p&gt;Todas las cosas que son capaces de ser aprehendidas por la mente humana caen en una de cuatro categorías:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Cosas que no sabes que sabes.&lt;/strong&gt; Son cosas que sabes inconscientemente, como caminar, respirar, mover tus manos, etc. Puede haber otras menos automáticas, que se pueden descubrir con un poco de razonamiento, como la ortografía de una palabra o gramática. Por ejemplo, sabes conjugar en modo subjuntivo la mayoría de los verbos de tu idioma pero si no has estudiado la gramática del lenguaje tal vez ni siquiera sabes que existía el modo subjuntivo.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Cosas que sabes que sabes.&lt;/strong&gt; Este es lo que entendemos como “conocimiento” cuando hablamos de él. Por ejemplo sabes que escribir está dentro de tus habilidades. O sabes que puedes sumar.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Cosas que no sabes que no sabes.&lt;/strong&gt; Cosas que estás consciente de no saber, como física cuántica o análisis de variable compleja. Mientras más sepas de algo, más probable es que te des cuenta que no sabes otras muchas cosas de ese mismo tema. De ahí la frase: “Sólo sé que no sé nada”.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Cosas que no sabes que no sabes.&lt;/strong&gt; Esto es lo que nos pone en riesgo. Aquí caen muchos eventos futuros y la mayor parte del conocimiento disponible está en esta área para cualquier persona. Por ejemplo, no sabemos que no sabemos las causas de un desplome económico. De esto ni siquiera podemos hablar porque &lt;em&gt;no sabemos&lt;/em&gt; que existe. Esto es lo que podemos nombrar como &lt;em&gt;incertidumbre&lt;/em&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La quinta categoría, que &lt;a href=&quot;https://www.fooledbyrandomness.com/&quot;&gt;N. N. Taleb&lt;/a&gt; describe en su libro &lt;a href=&quot;https://amzn.to/2xqIzmH&quot;&gt;Cisne Negro&lt;/a&gt;, son las cosas que no podemos saber, como el futuro o las causas de algo en el pasado.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584164642/CEA9E5D1-1E77-4543-8256-DB6C195CBCFB_dwvf1j.png&quot; alt=&quot;Teoría del conocimiento&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;¿Por qué es importante esto? La cantidad de cosas que &lt;em&gt;sabemos&lt;/em&gt; que no sabemos o que fallan de un proyecto “aburrido” o probado pueden ser muchas, pero &lt;em&gt;sabemos&lt;/em&gt; que ahí están y nos podemos proteger contra ellas. Aún hay cosas que no sabemos que no sabemos, la incertidumbre nunca se elimina, pero son menores al tener más experiencia colectiva sobre algo.&lt;/p&gt;
+
+&lt;p&gt;En las tecnologías de reciente creación hay mucha información que &lt;em&gt;no sabemos que no sabemos&lt;/em&gt;. La cantidad de incertidumbre es mucho mayor, incluso con cosas no relacionadas directamente con la tecnología, como el entorno en el que se está creando. ¿Matarán mañana al proyecto?&lt;/p&gt;
+
+&lt;p&gt;Reducir la incertidumbre al máximo posible debe ser uno de los objetivos de cualquier buen arquitecto o diseñador de software.&lt;/p&gt;
+
+&lt;h2 id=&quot;integración&quot;&gt;Integración&lt;/h2&gt;
+
+&lt;p&gt;Cuando hablamos de tecnología probada, no sólo nos referimos a componentes individuales sino a conjuntos de tecnologías usados para resolver un problema comúnmente. Piensa en PHP + MySQL + Memcache, Python (Django) + PostgreSQL + Redis.&lt;/p&gt;
+
+&lt;p&gt;Una dificultad extra de usar la tecnología más nueva es que es probable que la tecnología que ya estamos usando no se lleve bien, pero no lo sabremos hasta que la probemos y encontremos las nuevas dificultades.&lt;/p&gt;
+
+&lt;h3 id=&quot;sistemas-en-producción-y-número-de-piezas&quot;&gt;Sistemas en producción y número de piezas&lt;/h3&gt;
+
+&lt;p&gt;Mantener algo en producción es difícil y requiere trabajo y planeación. No porque puedas empezar a usar Neo4J en cinco minutos significa que debas usarla en tu próximo proyecto, ya que el número de elementos diferentes que uses en tu sistema está &lt;em&gt;directamente relacionado con la dificultad de mantener tu sistema en producción y estable&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Deberías buscar &lt;em&gt;resolver el mayor número de problemas con el menor número de tecnologías posible.&lt;/em&gt; Hacerlo te evitará crear una maraña de sistemas imposible de entender y &lt;strong&gt;mantener&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584168893/71161A7B-26AA-4A71-9318-CC74AD810385_yivlr9.png&quot; alt=&quot;Comparación entre un sistema simple y uno complejo&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ecosistema&quot;&gt;Ecosistema&lt;/h2&gt;
+
+&lt;p&gt;Escoger tecnología que ha sido usada por mucho tiempo y que ya no es novedosa, permite que te aproveches de un cuerpo de conocimiento que ya está disponible para que aprendas, un montón de problemas resueltos y compartidos por otros y un ecosistema maduro que te permitirá avanzar en tus problemas específicos más rápido.&lt;/p&gt;
+
+&lt;p&gt;No hay nada peor cuando estás desarrollando que encontrarte con un problema incomprensible (y una pregunta sin respuestas en Stack Overflow) o con un bug que no ha sido resuelto en tu lenguaje o herramienta. No estoy diciendo que es el fin del mundo, pero seguramente algo que te pudo tomar 10 minutos con la ayuda de otros ahora te costará dos días resolviendo ese obscuro problema.&lt;/p&gt;
+
+&lt;h3 id=&quot;dominio-de-la-tecnología&quot;&gt;Dominio de la tecnología&lt;/h3&gt;
+
+&lt;p&gt;Trabajar con la misma tecnología repetidamente hará que tu conocimiento en esa tecnología se vuelva como andar en bicicleta: pasarás al campo de la competencia inconsciente, la usarás casi como si fuera parte de tu cuerpo y podrás enfocarte más rápido en resolver tus problemas específicos.&lt;/p&gt;
+
+&lt;p&gt;Una desventaja que viene con esto es la famosa frase “Aquel con un martillo piensa que todo es un clavo”, pero se puede evitar manteniéndote al pendiente de los avances tecnológicos en proyectos de juguete y empapándote de nuevas cosas mediante el estudio continuo, para que no se pierda la frescura de lo que haces.&lt;/p&gt;
+
+&lt;p&gt;Después de pensar en todo esto, aún hay veces que conviene integrar ya sea una tecnología que no se estaba manteniendo en el proyecto o lo más nuevo.&lt;/p&gt;
+
+&lt;h2 id=&quot;cuando-integrar-nueva-tecnología&quot;&gt;Cuando integrar nueva tecnología&lt;/h2&gt;
+
+&lt;p&gt;El caso principal en el que conviene integrar una nueva tecnología tiene que ver con un equilibrio en los costos. La principal pregunta que debes hacer es: ¿facilita mis tareas TANTO esta tecnología que equilibra el trabajo extra que tendré que hacer?&lt;/p&gt;
+
+&lt;p&gt;Con “trabajo extra” nos referimos a todo lo mencionado en los puntos anteriores, la curva de aprendizaje, la carga añadida de nueva infraestructura, las dificultades no encontradas aún, etc. Puede haber casos en los que una tecnología nueva supere todo esto, dándote una productividad mayor o permitiéndote hacer cosas que son muy muy difíciles de lograr con la tecnología actual.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Es más conveniente tanto para ti como para el negocio que tus golpes de dopamina vengan por el lado de resolver problemas emocionantes &lt;em&gt;útiles para algún cliente y para el negocio&lt;/em&gt;, que por andar resolviendo problemas oscuros que nadie le proveen mucho valor (tal vez aprendizaje, pero se puede obtener de otras formas).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Enfoca tus esfuerzos en cosas útiles para el negocio.&lt;/strong&gt;&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="arquitectura" /><category term="infraestructura" /><category term="decisiones-técnicas" /><summary type="html">Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología probada.</summary></entry><entry><title type="html">A Philosophy of Software Design: Ocultar información</title><link href="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Ocultar información" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html">&lt;blockquote&gt;
   &lt;p&gt;La idea básica es que cada módulo debería encapsular algunas piezas de conocimiento, que representen decisiones de diseño. - &lt;strong&gt;John Ousterhout&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -10,9 +152,9 @@
 
 &lt;h2 id=&quot;fugas-de-información&quot;&gt;Fugas de información&lt;/h2&gt;
 
-&lt;p&gt;Una fuga de información se entiende como revelar información que no deberíamos, porque se rompe el propósito del encapsulamiento en el módulo.&lt;/p&gt;
+&lt;p&gt;Tener fuga de información es revelar información que no deberíamos, porque se rompe el propósito del encapsulamiento en el módulo.&lt;/p&gt;
 
-&lt;p&gt;Recuerda la cita del principio: un módulo tiene que ocultar y mantener &lt;em&gt;decisiones de diseño&lt;/em&gt;. Cuando esta decisión cambia y tienes que modificar varios módulos, tienes una fuga de información. En otras palabras, &lt;strong&gt;una fuga de información sucede cuando una decisión de diseño se ve reflejada en varios módulos&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Recuerda la cita del principio: un módulo tiene que ocultar y mantener &lt;em&gt;decisiones de diseño&lt;/em&gt;. Si esta decisión cambia y tienes que modificar varios módulos, tienes una fuga de información. En otras palabras, &lt;strong&gt;una fuga de información sucede cuando una decisión de diseño se ve reflejada en varios módulos&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Ejemplo. Piensa en una clase se conecte a una API para obtener información relacionada con los códigos postales. Para todos los usuarios de esta clase, debería ser &lt;strong&gt;irrelevante&lt;/strong&gt; qué API se está usando, si es una API HTTP externa, un archivo gigantesco con todos los datos, una base de datos o lo que sea, mientras la clase cumpla con su trabajo.&lt;/p&gt;
 
@@ -45,7 +187,7 @@
 
 &lt;p&gt;En el segundo diseño estamos ocultando más detalles detalles de implementación, ya que las coordenadas son una forma más natural de comunicar lugares y es probable que se lo que se obtenga del usuario (por ejemplo, desde su geolocalización por dispositivo). La transformación de las coordenadas en un nombre de ciudad quita carga del usuario de nuestra clase.&lt;/p&gt;
 
-&lt;p&gt;¿Puedes pensar en otros ejemplos? En el libro &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;PoSD&lt;/a&gt; vienen más ejemplos.&lt;/p&gt;
+&lt;p&gt;¿Puedes pensar en otros ejemplos? En el libro &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;PoSD&lt;/a&gt; vienen algunos.&lt;/p&gt;
 
 &lt;p&gt;En el próximo artículo hablaremos de otra forma de fugas de información: la descomposición temporal.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="interfaces" /><category term="módulo" /><category term="complejidad" /><category term="diseño-de-software" /><summary type="html">Ocultar información es una de las claves para reducir la complejidad, veamos algunas maneras de lograrlo.</summary></entry><entry><title type="html">A Philosophy of Software Design: Los módulos deben ser profundos</title><link href="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Los módulos deben ser profundos" /><published>2020-03-02T00:00:00-06:00</published><updated>2020-03-02T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html">&lt;p&gt;Para reducir la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es la organización y separación de código a alto nivel, es decir separación en módulos.&lt;/p&gt;
 
@@ -460,13 +602,15 @@ Es un curso que no puedes perder si quieres ser un autodidacta de la programaci�
 
 &lt;p&gt;Una de las mejores maneras de solidificar tu conocimiento después de practicarlo, es enseñándolo a otros. No te quedes con lo aprendiste y devuelve algo a la comunidad: enseña siempre que puedas mediante conferencias, videos o artículos en un blog. De esto es algo de lo que no te arrepentirás.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprender" /><category term="programar" /><category term="recursos-aprendizaje" /><summary type="html">Hemos escrito una lista de recursos que te pueden ayudar a aprender a programar en tiempo record.</summary></entry><entry><title type="html">Las matemáticas que debes saber para programar</title><link href="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html" rel="alternate" type="text/html" title="Las matemáticas que debes saber para programar" /><published>2019-12-25T00:00:00-06:00</published><updated>2019-12-25T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html">&lt;p&gt;Cuando se habla de &lt;strong&gt;matemáticas&lt;/strong&gt; mucha gente empieza a sentirse fastidiada porque creen que son cosas difíciles de entender.&lt;/p&gt;
 
-&lt;p&gt;Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como &lt;strong&gt;una rama de las matemáticas&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como &lt;strong&gt;una rama de las matemáticas&lt;/strong&gt;, pero han divergido tanto que ya no se pueden considerar matemáticas solamente.&lt;/p&gt;
 
 &lt;p&gt;Pero para programar con eficacia no necesitas saber muchas matemáticas, de hecho, con el entendimiento básico es suficiente. En este artículo hablaremos de aquello que debes dominar.&lt;/p&gt;
 
+&lt;p&gt;De hecho, si ya programas &lt;em&gt;usas&lt;/em&gt; matemáticas. Saber más te ayudará a programar mejor, pero del tipo correcto.&lt;/p&gt;
+
 &lt;h2 id=&quot;qué-son-las-matemáticas&quot;&gt;¿Qué son las matemáticas?&lt;/h2&gt;
 
-&lt;p&gt;Definir las matemáticas es difícil. Según lo que (de manera muy irresponsable) nos han enseñado en la escuela, las matemáticas es el tratamiento de los &lt;strong&gt;números&lt;/strong&gt;. Eso está muy lejos de la realidad, y ya te habás dado cuenta si has avanzado lo suficiente en matemáticas.&lt;/p&gt;
+&lt;p&gt;Definir las matemáticas es difícil. Según lo que (de manera muy irresponsable) nos han enseñado en la escuela, las matemáticas es el tratamiento de los &lt;strong&gt;números&lt;/strong&gt;. Eso está muy lejos de la realidad, y ya te habrás dado cuenta si has avanzado lo suficiente en matemáticas.&lt;/p&gt;
 
 &lt;p&gt;Es cierto, las matemáticas más elementales se pueden reducir a números, pero no es su centro, el espíritu de su estudio.&lt;/p&gt;
 
@@ -594,7 +738,7 @@ Es un curso que no puedes perder si quieres ser un autodidacta de la programaci�
 &lt;p&gt;Fuera de las matemáticas básicas y un control decente e intuitivo de la lógica, no es necesario que seas &lt;a href=&quot;http://bit.ly/2StKLCz&quot;&gt;Terence Tao&lt;/a&gt;, a menos que el campo en el que estés trabajando esté directamente relacionado con eso, tal
 como tendrías que saber lo suficiente de finanzas si estuvieras haciendo una app financiera o de administración de empresas si estuvieras haciendo una aplicación o plataforma para este campo.&lt;/p&gt;
 
-&lt;p&gt;Aquí hay un video curso en el que se explican más ampliamente lo que algunos llaman &lt;a href=&quot;http://bit.ly/2rvD6Zi&quot;&gt;“matemáticas para programadores”&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="math," /><category term="matemáticas," /><category term="aprender" /><summary type="html">¿Qué tantas matemáticas necesitas para programar? En este artículo lo veremos.</summary></entry><entry><title type="html">Formatos de marcado de texto que deberías aprender</title><link href="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html" rel="alternate" type="text/html" title="Formatos de marcado de texto que deberías aprender" /><published>2019-12-20T00:00:00-06:00</published><updated>2019-12-20T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html">&lt;p&gt;Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el formateo y embellecimiento de documento.&lt;/p&gt;
+&lt;p&gt;Aquí hay un video curso en el que se explican más ampliamente lo que algunos llaman &lt;a href=&quot;http://bit.ly/2rvD6Zi&quot;&gt;“matemáticas para programadores”&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="math" /><category term="matemáticas" /><category term="aprender" /><summary type="html">¿Qué tantas matemáticas necesitas para programar? En este artículo lo veremos.</summary></entry><entry><title type="html">Formatos de marcado de texto que deberías aprender</title><link href="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html" rel="alternate" type="text/html" title="Formatos de marcado de texto que deberías aprender" /><published>2019-12-20T00:00:00-06:00</published><updated>2019-12-20T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html">&lt;p&gt;Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el formateo y embellecimiento de documento.&lt;/p&gt;
 
 &lt;p&gt;En este artículo te platicaré de &lt;strong&gt;tres alternativas&lt;/strong&gt; que pueden hacer tu vida más fácil: Markdown, reStructuredText, AsciiDoc.&lt;/p&gt;
 
@@ -710,53 +854,4 @@ como tendrías que saber lo suficiente de finanzas si estuvieras haciendo una ap
 
 &lt;p&gt;Estos lenguajes de marcado de texto te dan lo mejor de los dos mundos. Requieren un poco más de trabajo para empezar que los editores &lt;em&gt;“lo que ves es lo que obtienes”&lt;/em&gt;, pero la productividad que te dan después paga con creces.&lt;/p&gt;
 
-&lt;p&gt;¿Qué opinas? ¿Vale la pena aprenderlos?&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="markdown" /><category term="restructured-text" /><category term="asciidoc" /><category term="latex" /><summary type="html">A veces tienes que crear documentos de texto con un algún tipo de formato visual. Aprende lenguajes de marcado que te facilitarán la vida.</summary></entry><entry><title type="html">Inducción y Deducción según Polya</title><link href="https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html" rel="alternate" type="text/html" title="Inducción y Deducción según Polya" /><published>2019-12-14T00:00:00-06:00</published><updated>2019-12-14T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html">&lt;p&gt;Este es el tercer artículo acerca del libro &lt;a href=&quot;https://amzn.to/2P8HJA8&quot;&gt;“How to Solve It”&lt;/a&gt; de George Polya. Puedes ver los dos artículos anteriores aquí:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/2019/09/27/tecnicas-para-resolver-problemas.html&quot;&gt;Técnicas para resolver problemas&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html&quot;&gt;Heurística&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Con este artículo cerraremos con las ideas que George Polya desarrolló para resolver problemas.&lt;/p&gt;
-
-&lt;h2 id=&quot;inducción-y-deducción&quot;&gt;Inducción y Deducción&lt;/h2&gt;
-
-&lt;p&gt;Hablemos ahora de algunas formas de resolver problemas.&lt;/p&gt;
-
-&lt;h3 id=&quot;deducción&quot;&gt;Deducción&lt;/h3&gt;
-
-&lt;p&gt;Tratar de resolver problemas por deducción significa &lt;strong&gt;aplicar principios o
-conocimiento general a un caso específico&lt;/strong&gt;. Por ejemplo para un problema
-práctico en el que tenemos encontrar la longitud de un cable tensor para una
-antena, sabemos que podemos aplicar el teorema de Pitágoras.&lt;/p&gt;
-
-&lt;p&gt;Algunos ejemplos para los programadores:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Encontrar el elemento más grande o más pequeño en una lista. (Una forma de resolverlo es ordenar los elementos).&lt;/li&gt;
-  &lt;li&gt;Revisar que un elemento no está repetido en una colección de elementos. (Indexado)&lt;/li&gt;
-  &lt;li&gt;Asegurarse de que las operaciones son atendidas en el orden en que se solicitaron en un entorno con múltiples ejecutores. (Colas)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Lo difícil de la deducción es encontrar &lt;em&gt;qué principios, teoremas o formas 
-de resolución de problemas aplican para el problema que tenemos que resolver&lt;/em&gt;. Para esto nos pueden ayudar las técnicas platicadas en los artículos anteriores: ¿He resuelto un problema similar? &lt;em&gt;¿Qué técnica fue usada?&lt;/em&gt; ¿Qué principios sirvieron para la resolución de ese problema? Y, a mi parecer la más útil: ¿puedo usar el resultado o el proceso de resolución?&lt;/p&gt;
-
-&lt;!-- Polya dice que aunque se dice que Sherlock Holmes &quot;deduce&quot;, en realidad aplica la inducción para llegar a conclusiones, ya que aplica conocimiento general a casos concretos. --&gt;
-
-&lt;h3 id=&quot;inducción&quot;&gt;Inducción&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;La inducción es el proceso de descubrir leyes generales mediante la observación y combinación de casos particulares. - &lt;em&gt;George Polya&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;La inducción es uno de los mecanismos de resolución de problemas más difíciles de llevar a la práctica. Funciona en forma inversa a la deducción.&lt;/p&gt;
-
-&lt;p&gt;Consiste en partir de observaciones específicas (ejemplos y contra-ejemplos) y llevarlas a &lt;strong&gt;generalizaciones&lt;/strong&gt; que puedan ser aplicadas en otros casos o que apliquen en muchas otras situaciones situaciones.&lt;/p&gt;
-
-&lt;h3 id=&quot;en-el-desarrollo-de-software&quot;&gt;En el desarrollo de software&lt;/h3&gt;
-
-&lt;p&gt;Seguro te has encontrado con este tipo problemas (o te vas a encontrar) si ya llevas tiempo desarrollando: ya que el desarrollo de software no es un área que viva aislada de las demás áreas, los que requieren el software llevan &lt;em&gt;ejemplos&lt;/em&gt; de  problemas que regularmente tienen que resolver. Nuestros clientes, en general, no se han dado a la tarea de establecer las reglas por las que algo funciona de la manera en que lo hace, ni las excepciones ni los casos únicos. Es nuestra tarea casi siempre descubrir las reglas que subyacen a las operaciones comunes. Esto es una forma de inducción.&lt;/p&gt;
-
-&lt;h3 id=&quot;inducción-matemática&quot;&gt;Inducción matemática&lt;/h3&gt;
-
-&lt;p&gt;Polya habla de otro tipo de inducción de la que opina que no debería llamarse así, y que comparte muy poco con el proceso que acabamos de descubrir y puede llegar a confundir a la gente: la &lt;strong&gt;inducción matemática&lt;/strong&gt;. Este tipo de inducción se refiere al método que los matemáticos emplean para demostrar que cierta aserción es un teorema o no.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="problem-solving" /><category term="how-to-solve-it" /><summary type="html">Aprende de los conceptos de inducción y deducción según George Polya los explica en How to Solve It</summary></entry></feed>
+&lt;p&gt;¿Qué opinas? ¿Vale la pena aprenderlos?&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="markdown" /><category term="restructured-text" /><category term="asciidoc" /><category term="latex" /><summary type="html">A veces tienes que crear documentos de texto con un algún tipo de formato visual. Aprende lenguajes de marcado que te facilitarán la vida.</summary></entry></feed>

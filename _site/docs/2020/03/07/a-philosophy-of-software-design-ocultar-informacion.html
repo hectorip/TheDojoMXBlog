@@ -130,7 +130,7 @@
       "headline": "A Philosophy of Software Design: Ocultar información",
       "keywords": "PoSD,interfaces,módulo,complejidad,diseño-de-software",
       "description": "Ocultar información es una de las claves para reducir la complejidad, veamos algunas maneras de lograrlo.",
-      "articleBody": "\n  La idea básica es que cada módulo debería encapsular algunas piezas de conocimiento, que representen decisiones de diseño. - John Ousterhout\n\n\nEn el artículo anterior vimos por qué es bueno que los módulos sean profundos, es decir, oculten detalles de implementación y funcionalidades detrás de una interfaz lo más sencilla posible. En este y los siguientes artículos vamos a ver maneras prácticas de lograr esto, basado en ejemplos de “A Philosophy of Software Design”.\n\nEn este artículo hablaremos de cómo ocultar información que no es necesaria saber para usar los módulos, ya que complicaría su uso, creando carga cognitiva, uno de los síntomas y consecuencias de la complejidad innecesaria.\n\nPara saber cómo esconder la información debemos entender por dónde se escapa, prácticas comunes que llevan a un mal diseño y que pueden hacer que\n\nFugas de información\n\nUna fuga de información se entiende como revelar información que no deberíamos, porque se rompe el propósito del encapsulamiento en el módulo.\n\nRecuerda la cita del principio: un módulo tiene que ocultar y mantener decisiones de diseño. Cuando esta decisión cambia y tienes que modificar varios módulos, tienes una fuga de información. En otras palabras, una fuga de información sucede cuando una decisión de diseño se ve reflejada en varios módulos.\n\nEjemplo. Piensa en una clase se conecte a una API para obtener información relacionada con los códigos postales. Para todos los usuarios de esta clase, debería ser irrelevante qué API se está usando, si es una API HTTP externa, un archivo gigantesco con todos los datos, una base de datos o lo que sea, mientras la clase cumpla con su trabajo.\n\nSi al hacer cambios en esta decisión de diseño tienes que cambiar otras cosas a parte de esta clase, tienes algún tipo de fuga de información. ¿Ya pensaste en las formas en las que se puede escapar la información?\n\nJohn Ousterhout sugiere hacerte la siguiente pregunta:\n\n\n  ¿Cómo puedo reorganizar estas clases para que esta parte del conocimiento general sólo afecte a esta clase?\n\n\nVeamos un ejemplo de una fuga de información. Piensa en una aplicación en la que la principal tarea sea obtener el estado del clima y mostrarlo al usuario. Para esto usaremos una API que nos dará los datos y nosotros seremos los encargados de mostrarla.\n\nUna pieza de información importante para obtener el clima es ala ubicación. Considera que la API actual recibe el nombre de la ciudad para devolver las predicciones meteorológicas.\n\nVeamos dos diseños:\n\n\n  \n    En este escenario hacemos que la inicialización de la clase o cada una de las llamadas a sus métodos para obtener los diferentes valores manden el nombre de la ciudad de los datos que buscamos. Así, si buscamos los datos acerca de México mandamos “México” como parámetro para obtener la temperatura.\n  \n  \n    En otro escenario decidimos que aunque la API reciba el nombre de la ciudad, nuestra clase recibirá las coordenadas e internamente obtendremos el nombre de la ciudad de esas coordenadas y lo mandaremos a la API. Es probable que para esta transformación usemos otra clase u otro paquete.\n  \n\n\n¿Qué diseño te parece correcto?\n\nEn el diseño 1 estamos revelando información acerca de  la implementación de esta API específicamente. ¿Qué pasaría si tenemos que cambiar de API y la próxima necesita las coordenadas en vez de el nombre de la ciudad? Tendríamos que cambiar el diseño en la clase de la API y en los lugares en los que se usa.\n\nEn el segundo diseño estamos ocultando más detalles detalles de implementación, ya que las coordenadas son una forma más natural de comunicar lugares y es probable que se lo que se obtenga del usuario (por ejemplo, desde su geolocalización por dispositivo). La transformación de las coordenadas en un nombre de ciudad quita carga del usuario de nuestra clase.\n\n¿Puedes pensar en otros ejemplos? En el libro PoSD vienen más ejemplos.\n\nEn el próximo artículo hablaremos de otra forma de fugas de información: la descomposición temporal.\n",
+      "articleBody": "\n  La idea básica es que cada módulo debería encapsular algunas piezas de conocimiento, que representen decisiones de diseño. - John Ousterhout\n\n\nEn el artículo anterior vimos por qué es bueno que los módulos sean profundos, es decir, oculten detalles de implementación y funcionalidades detrás de una interfaz lo más sencilla posible. En este y los siguientes artículos vamos a ver maneras prácticas de lograr esto, basado en ejemplos de “A Philosophy of Software Design”.\n\nEn este artículo hablaremos de cómo ocultar información que no es necesaria saber para usar los módulos, ya que complicaría su uso, creando carga cognitiva, uno de los síntomas y consecuencias de la complejidad innecesaria.\n\nPara saber cómo esconder la información debemos entender por dónde se escapa, prácticas comunes que llevan a un mal diseño y que pueden hacer que nuestro programa sea difícil de entender y mantener.\n\nFugas de información\n\nTener fuga de información es revelar información que no deberíamos, porque se rompe el propósito del encapsulamiento en el módulo.\n\nRecuerda la cita del principio: un módulo tiene que ocultar y mantener decisiones de diseño. Si esta decisión cambia y tienes que modificar varios módulos, tienes una fuga de información. En otras palabras, una fuga de información sucede cuando una decisión de diseño se ve reflejada en varios módulos.\n\nEjemplo. Piensa en una clase se conecte a una API para obtener información relacionada con los códigos postales. Para todos los usuarios de esta clase, debería ser irrelevante qué API se está usando, si es una API HTTP externa, un archivo gigantesco con todos los datos, una base de datos o lo que sea, mientras la clase cumpla con su trabajo.\n\nSi al hacer cambios en esta decisión de diseño tienes que cambiar otras cosas a parte de esta clase, tienes algún tipo de fuga de información. ¿Ya pensaste en las formas en las que se puede escapar la información?\n\nJohn Ousterhout sugiere hacerte la siguiente pregunta:\n\n\n  ¿Cómo puedo reorganizar estas clases para que esta parte del conocimiento general sólo afecte a esta clase?\n\n\nVeamos un ejemplo de una fuga de información. Piensa en una aplicación en la que la principal tarea sea obtener el estado del clima y mostrarlo al usuario. Para esto usaremos una API que nos dará los datos y nosotros seremos los encargados de mostrarla.\n\nUna pieza de información importante para obtener el clima es ala ubicación. Considera que la API actual recibe el nombre de la ciudad para devolver las predicciones meteorológicas.\n\nVeamos dos diseños:\n\n\n  \n    En este escenario hacemos que la inicialización de la clase o cada una de las llamadas a sus métodos para obtener los diferentes valores manden el nombre de la ciudad de los datos que buscamos. Así, si buscamos los datos acerca de México mandamos “México” como parámetro para obtener la temperatura.\n  \n  \n    En otro escenario decidimos que aunque la API reciba el nombre de la ciudad, nuestra clase recibirá las coordenadas e internamente obtendremos el nombre de la ciudad de esas coordenadas y lo mandaremos a la API. Es probable que para esta transformación usemos otra clase u otro paquete.\n  \n\n\n¿Qué diseño te parece correcto?\n\nEn el diseño 1 estamos revelando información acerca de  la implementación de esta API específicamente. ¿Qué pasaría si tenemos que cambiar de API y la próxima necesita las coordenadas en vez de el nombre de la ciudad? Tendríamos que cambiar el diseño en la clase de la API y en los lugares en los que se usa.\n\nEn el segundo diseño estamos ocultando más detalles detalles de implementación, ya que las coordenadas son una forma más natural de comunicar lugares y es probable que se lo que se obtenga del usuario (por ejemplo, desde su geolocalización por dispositivo). La transformación de las coordenadas en un nombre de ciudad quita carga del usuario de nuestra clase.\n\n¿Puedes pensar en otros ejemplos? En el libro PoSD vienen algunos.\n\nEn el próximo artículo hablaremos de otra forma de fugas de información: la descomposición temporal.\n",
       "datePublished": "2020-03-07 00:00:00 -0600",
       "dateModified": "2020-03-07 00:00:00 -0600",
       "author": {
@@ -410,13 +410,13 @@
 
 <p>En este artículo hablaremos de cómo <strong>ocultar información</strong> que no es necesaria saber para usar los módulos, ya que complicaría su uso, creando <a href="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html#carga-cognitiva">carga cognitiva</a>, uno de los síntomas y consecuencias de la complejidad innecesaria.</p>
 
-<p>Para saber cómo esconder la información debemos entender por dónde se escapa, prácticas comunes que llevan a un mal diseño y que pueden hacer que</p>
+<p>Para saber cómo esconder la información debemos entender por dónde se escapa, prácticas comunes que llevan a un mal diseño y que pueden hacer que nuestro programa sea difícil de entender y mantener.</p>
 
 <h2 id="fugas-de-información">Fugas de información</h2>
 
-<p>Una fuga de información se entiende como revelar información que no deberíamos, porque se rompe el propósito del encapsulamiento en el módulo.</p>
+<p>Tener fuga de información es revelar información que no deberíamos, porque se rompe el propósito del encapsulamiento en el módulo.</p>
 
-<p>Recuerda la cita del principio: un módulo tiene que ocultar y mantener <em>decisiones de diseño</em>. Cuando esta decisión cambia y tienes que modificar varios módulos, tienes una fuga de información. En otras palabras, <strong>una fuga de información sucede cuando una decisión de diseño se ve reflejada en varios módulos</strong>.</p>
+<p>Recuerda la cita del principio: un módulo tiene que ocultar y mantener <em>decisiones de diseño</em>. Si esta decisión cambia y tienes que modificar varios módulos, tienes una fuga de información. En otras palabras, <strong>una fuga de información sucede cuando una decisión de diseño se ve reflejada en varios módulos</strong>.</p>
 
 <p>Ejemplo. Piensa en una clase se conecte a una API para obtener información relacionada con los códigos postales. Para todos los usuarios de esta clase, debería ser <strong>irrelevante</strong> qué API se está usando, si es una API HTTP externa, un archivo gigantesco con todos los datos, una base de datos o lo que sea, mientras la clase cumpla con su trabajo.</p>
 
@@ -449,7 +449,7 @@
 
 <p>En el segundo diseño estamos ocultando más detalles detalles de implementación, ya que las coordenadas son una forma más natural de comunicar lugares y es probable que se lo que se obtenga del usuario (por ejemplo, desde su geolocalización por dispositivo). La transformación de las coordenadas en un nombre de ciudad quita carga del usuario de nuestra clase.</p>
 
-<p>¿Puedes pensar en otros ejemplos? En el libro <a href="https://amzn.to/2H92nwA">PoSD</a> vienen más ejemplos.</p>
+<p>¿Puedes pensar en otros ejemplos? En el libro <a href="https://amzn.to/2H92nwA">PoSD</a> vienen algunos.</p>
 
 <p>En el próximo artículo hablaremos de otra forma de fugas de información: la descomposición temporal.</p>
 
@@ -521,7 +521,8 @@
 ">Anterior</a>
     
     
-      <a href="#" class="pagination--pager disabled">Siguiente</a>
+      <a href="/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" class="pagination--pager" title="Guía para escoger tu stack: por qué deberías escoger tecnología aburrida
+">Siguiente</a>
     
   </nav>
 
@@ -544,6 +545,41 @@
     <div class="page__related">
       <h4 class="page__related-title">Podrías ver también</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583644548/9641A743-5E78-4719-9F90-6D77F1CD4E1E_xhawu6.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" rel="permalink">Guía para escoger tu stack: por qué deberías escoger tecnología aburrida
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  9 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 11-03-2020
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología proba...</p>
+  </article>
+</div>
+
         
           
 
@@ -648,42 +684,6 @@
 </p>
     
     <p class="archive__item-excerpt" itemprop="description">Traudcción del Eloquent JavaScript al español, 3ra edición
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581404404/will-francis-Rm3nWQiDTzg-unsplash_cxpkvl.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html" rel="permalink">A Philosophy of Software Design: Desarrollo Táctico vs Estratégico
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  3 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 11-02-2020
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Dos diferentes formas de desarrollar sistemas de software
 </p>
   </article>
 </div>

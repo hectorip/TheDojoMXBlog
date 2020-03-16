@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Guía para escoger tu stack: por qué deberías escoger tecnología aburrida -</title>
-<meta name="description" content="Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología aburrida.">
+<!-- begin _includes/seo.html --><title>A Philosophy of Software Design: Descomposición Temporal -</title>
+<meta name="description" content="Una forma de dejar escapar información es mediante forzar el orden de las operaciones de un módulo. Veamos cómo evitarlo.">
 
 
   <meta name="author" content="Héctor Patricio">
@@ -19,28 +19,28 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es">
 <meta property="og:site_name" content="">
-<meta property="og:title" content="Guía para escoger tu stack: por qué deberías escoger tecnología aburrida">
-<meta property="og:url" content="https://blog.thedojo.mx/2020/03/04/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html">
+<meta property="og:title" content="A Philosophy of Software Design: Descomposición Temporal">
+<meta property="og:url" content="https://blog.thedojo.mx/2020/03/14/a-philosophy-of-software-design-descomposicion-temporal.html">
 
 
-  <meta property="og:description" content="Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología aburrida.">
-
-
-
-  <meta property="og:image" content="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583644548/9641A743-5E78-4719-9F90-6D77F1CD4E1E_xhawu6.jpg">
+  <meta property="og:description" content="Una forma de dejar escapar información es mediante forzar el orden de las operaciones de un módulo. Veamos cómo evitarlo.">
 
 
 
-
-
-  <meta property="article:published_time" content="2020-03-04T00:00:00-06:00">
+  <meta property="og:image" content="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584251653/A240034B-230E-4BA2-843D-32357D921811_mwdnzk.jpg">
 
 
 
 
 
+  <meta property="article:published_time" content="2020-03-14T00:00:00-06:00">
 
-<link rel="canonical" href="https://blog.thedojo.mx/2020/03/04/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html">
+
+
+
+
+
+<link rel="canonical" href="https://blog.thedojo.mx/2020/03/14/a-philosophy-of-software-design-descomposicion-temporal.html">
 
 
 
@@ -125,14 +125,14 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "url": "https://blog.thedojo.mx/2020/03/04/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html",
-      "name": "Guía para escoger tu stack: por qué deberías escoger tecnología aburrida",
-      "headline": "Guía para escoger tu stack: por qué deberías escoger tecnología aburrida",
-      "keywords": "arquitectura,infraestructura,decisiones-técnicas",
-      "description": "Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología aburrida.",
-      "articleBody": "Este artículo está basado en la presentación Choose Boring Technology de Dan McKinley.\n\nNo hay nada que haga más feliz a un programador que trabajar con el último de los frameworks, lenguaje de programación o herramienta que salió el mes pasado. Este problema se incrementa si trabajas en web, específicamente en JavaScript, donde cada semana tenemos un framework nuevo.\n\nPero hacer esto puede llevar a tu empresa o producto al desastre, hablemos de por qué.\n\nLa capacidad de innovar es limitada\n\nPiensa en que tu empresa o producto tiene una capacidad limitada de resolver problemas, generalmente determinada por el tiempo para salir al mercado (o aprovechar una nueva oportunidad de negocio) y por el dinero disponible.\n\nPirámide de Maslow\n\nAbraham Maslow propuso en los 60’s una jerarquía de necesidades humanas, conocida como la Pirámide de Maslow, en la que se habla de diferentes tipos de necesidades, desde las fisiológicas hasta las emocionales y su tesis principal es que tienen que cumplirse las de la base de la pirámide (fisiológicas; comer, dormir, respirar) antes de cumplirse las de la punta (moralidad, creatividad, etc).\n\nLo que explica Maslow acerca la satisfacción de las necesidades tiene lógica: no puedes preocuparte por cosas como si la filosofía de los estoicos es correcta si estás no tienes lo suficiente para comer hoy, o no has dormido en tres días.\n\nLo mismo pasa a nivel tecnológico en las empresas o proyectos: no puedes pensar en formas de beneficiar a tu cliente si te estás pelando con mantener viva en producción una base de datos.\n\nLa tecnología ‘aburrida’ es más segura\n\nLa tecnología como los lenguajes, librerías, bases de datos y en general software y hardware que lleva mucho tiempo existiendo es más confiable en el sentido de que conocemos sus fallas.\n\nCosas que no sabes que no sabes\n\nCuando una tecnología lleva tiempo siendo usada se conocen muchos bugs que puede tener o que están latentes. También se conocen los riesgos que implica usar esa tecnología.\n\nIntegración\n\nProducción\n\nLa\n\nMaestría\n\nCuando integrar nueva tecnología\n\n",
-      "datePublished": "2020-03-04 00:00:00 -0600",
-      "dateModified": "2020-03-04 00:00:00 -0600",
+      "url": "https://blog.thedojo.mx/2020/03/14/a-philosophy-of-software-design-descomposicion-temporal.html",
+      "name": "A Philosophy of Software Design: Descomposición Temporal",
+      "headline": "A Philosophy of Software Design: Descomposición Temporal",
+      "keywords": "PoSD,descomposición-temporal,software-design,complexity,interfaces",
+      "description": "Una forma de dejar escapar información es mediante forzar el orden de las operaciones de un módulo. Veamos cómo evitarlo.",
+      "articleBody": "En el artículo pasado hablamos de una forma de evitar una fuga de información, que consiste en encapsular una decisión de diseño en un módulo.\n\nOtra forma de dejar escapar información no relevante para los usuarios de una pieza de software es mediante obligarlos a usarla siempre de la misma forma, con el mismo orden de operaciones reglas de operación implícita. Esto se llama descomposición temporal. Hablemos más de ella.\n\nQué es la descomposición temporal\n\n\n  En descomposición temporal, la estructura de un sistema corresponde al orden en el tiempo en el que las operaciones ocurrirán. - John Ousterhout\n\n\nLa descomposición temporal implica repetir o separar una decisión de diseño por causa del orden en que se usan diferentes partes del sistema.\n\nEjemplos\n\nJohn Ousterhout menciona un ejercicio que puso a sus alumnos en el que tenían que crear un programa implementando el protocolo HTTP. Algunos equipos crearon una clase para recibir el mensaje desde la red y otra clase para leerlo, creando así un caso claro de descomposición temporal: como las operaciones sucedían en diferentes momentos (primero recibes y luego lees y procesas) los separaron lógicamente en dos clases que se usaban siempre una detrás de otra. La fuga de información se dio porque para recibir un de HTTP tienes que leer parte del mensaje y entonces la lógica de lectura del mensaje está en ambas clases.\n\nOtro ejemplo más o menos obvio es la lectura y escritura de archivos. Si quieres trabajar con archivos, el orden de las operaciones es la siguiente:\n\n\n  Abrir\n  Leer y operar con información del archivo\n  Escribir el archivo\n\n\nUn muy mal diseño\n",
+      "datePublished": "2020-03-14 00:00:00 -0600",
+      "dateModified": "2020-03-14 00:00:00 -0600",
       "author": {
         "@type": "Person",
         "name": "Héctor Patricio",
@@ -152,13 +152,13 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://blog.thedojo.mx/2020/03/04/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html"
+        "@id": "https://blog.thedojo.mx/2020/03/14/a-philosophy-of-software-design-descomposicion-temporal.html"
       },
       "image": {
         "@type": "ImageObject",
         "width": 1200,
         "height": 400,
-        "url": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583644548/9641A743-5E78-4719-9F90-6D77F1CD4E1E_xhawu6.jpg"
+        "url": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584251653/A240034B-230E-4BA2-843D-32357D921811_mwdnzk.jpg"
       }
     }
 </script>
@@ -235,17 +235,17 @@
 
 
 
-<div class="page__hero--overlay" style=" background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583644548/9641A743-5E78-4719-9F90-6D77F1CD4E1E_xhawu6.jpg');">
+<div class="page__hero--overlay" style=" background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584251653/A240034B-230E-4BA2-843D-32357D921811_mwdnzk.jpg');">
   
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          Guía para escoger tu stack: por qué deberías escoger tecnología aburrida
+          A Philosophy of Software Design: Descomposición Temporal
 
         
       </h1>
       
-        <p class="page__lead">Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología aburrida.
+        <p class="page__lead">Una forma de dejar escapar información es mediante forzar el orden de las operaciones de un módulo. Veamos cómo evitarlo.
 </p>
       
       
@@ -258,7 +258,7 @@
 
 
 
-| <i class="far fa-calendar" aria-hidden="true"></i> 04-03-2020
+| <i class="far fa-calendar" aria-hidden="true"></i> 14-03-2020
 </p>
       
       
@@ -392,9 +392,9 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Guía para escoger tu stack: por qué deberías escoger tecnología aburrida">
-    <meta itemprop="description" content="Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología aburrida.">
-    <meta itemprop="datePublished" content="March 04, 2020">
+    <meta itemprop="headline" content="A Philosophy of Software Design: Descomposición Temporal">
+    <meta itemprop="description" content="Una forma de dejar escapar información es mediante forzar el orden de las operaciones de un módulo. Veamos cómo evitarlo.">
+    <meta itemprop="datePublished" content="March 14, 2020">
     
 
     <div class="page__inner-wrap">
@@ -402,42 +402,31 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>Este artículo está basado en la presentación <a href="http://boringtechnology.club">Choose Boring Technology</a> de <a href="https://mcfunley.com/">Dan McKinley</a>.</p>
+        <p>En el artículo pasado hablamos de una forma de evitar una fuga de información, que consiste en encapsular una decisión de diseño en un módulo.</p>
 
-<p>No hay nada que haga más feliz a un programador que trabajar con el último de los frameworks, lenguaje de programación o herramienta que salió el mes pasado. Este problema se incrementa si trabajas en web, específicamente en JavaScript, donde cada semana tenemos un framework nuevo.</p>
+<p>Otra forma de dejar escapar información no relevante para los usuarios de una pieza de software es mediante obligarlos a usarla siempre de la misma forma, con el mismo orden de operaciones reglas de operación implícita. Esto se llama descomposición temporal. Hablemos más de ella.</p>
 
-<p>Pero hacer esto puede llevar a tu empresa o producto al desastre, hablemos de por qué.</p>
+<h2 id="qué-es-la-descomposición-temporal">Qué es la descomposición temporal</h2>
 
-<h2 id="la-capacidad-de-innovar-es-limitada">La capacidad de innovar es limitada</h2>
+<blockquote>
+  <p>En descomposición temporal, la estructura de un sistema corresponde <strong>al orden en el tiempo</strong> en el que las operaciones <strong>ocurrirán</strong>. - John Ousterhout</p>
+</blockquote>
 
-<p>Piensa en que tu empresa o producto tiene una capacidad limitada de resolver problemas, generalmente determinada por el tiempo para salir al mercado (o aprovechar una nueva oportunidad de negocio) y por el dinero disponible.</p>
+<p>La descomposición temporal implica repetir o separar una decisión de diseño por causa del <em>orden en que se usan diferentes partes del sistema</em>.</p>
 
-<h3 id="pirámide-de-maslow">Pirámide de Maslow</h3>
+<h2 id="ejemplos">Ejemplos</h2>
 
-<p>Abraham Maslow propuso en los 60’s una <a href="https://es.wikipedia.org/wiki/Pir%C3%A1mide_de_Maslow">jerarquía de necesidades humanas</a>, conocida como la Pirámide de Maslow, en la que se habla de diferentes tipos de necesidades, desde las fisiológicas hasta las emocionales y su tesis principal es que tienen que cumplirse las de la base de la pirámide (fisiológicas; comer, dormir, respirar) antes de cumplirse las de la punta (moralidad, creatividad, etc).</p>
+<p>John Ousterhout menciona un ejercicio que puso a sus alumnos en el que tenían que crear un programa implementando el protocolo HTTP. Algunos equipos crearon una clase para recibir el mensaje desde la red y otra clase para leerlo, creando así un caso claro de descomposición temporal: como las operaciones sucedían en diferentes momentos (primero recibes y luego lees y procesas) los separaron lógicamente en dos clases que se usaban siempre una detrás de otra. La fuga de información se dio porque para recibir un de HTTP <em>tienes</em> que leer parte del mensaje y entonces la lógica de lectura del mensaje está en <em>ambas clases</em>.</p>
 
-<p>Lo que explica Maslow acerca la satisfacción de las necesidades tiene lógica: no puedes preocuparte por cosas como si la filosofía de los estoicos es correcta si estás no tienes lo suficiente para comer hoy, o no has dormido en tres días.</p>
+<p>Otro ejemplo más o menos obvio es la lectura y escritura de archivos. Si quieres trabajar con archivos, el orden de las operaciones es la siguiente:</p>
 
-<p>Lo mismo pasa a nivel tecnológico en las empresas o proyectos: no puedes pensar en formas de beneficiar a tu cliente si te estás pelando con mantener viva en producción una base de datos.</p>
+<ol>
+  <li>Abrir</li>
+  <li>Leer y operar con información del archivo</li>
+  <li>Escribir el archivo</li>
+</ol>
 
-<h2 id="la-tecnología-aburrida-es-más-segura">La tecnología ‘aburrida’ es más segura</h2>
-
-<p>La tecnología como los lenguajes, librerías, bases de datos y en general software y hardware que lleva mucho tiempo existiendo es más confiable en el sentido de que conocemos sus fallas.</p>
-
-<h3 id="cosas-que-no-sabes-que-no-sabes">Cosas que no sabes que no sabes</h3>
-
-<p>Cuando una tecnología lleva tiempo siendo usada se conocen muchos bugs que puede tener o que están latentes. También se conocen los riesgos que implica usar esa tecnología.</p>
-
-<h2 id="integración">Integración</h2>
-
-<h3 id="producción">Producción</h3>
-
-<p>La</p>
-
-<h3 id="maestría">Maestría</h3>
-
-<h2 id="cuando-integrar-nueva-tecnología">Cuando integrar nueva tecnología</h2>
-
+<p>Un muy mal diseño</p>
 
         
       </section>
@@ -458,15 +447,23 @@
     
       
       
-      <a href="/tags/#arquitectura" class="page__taxonomy-item" rel="tag">arquitectura</a><span class="sep">, </span>
+      <a href="/tags/#complexity" class="page__taxonomy-item" rel="tag">complexity</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#decisiones-t%C3%A9cnicas" class="page__taxonomy-item" rel="tag">decisiones-técnicas</a><span class="sep">, </span>
+      <a href="/tags/#descomposici%C3%B3n-temporal" class="page__taxonomy-item" rel="tag">descomposición-temporal</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#infraestructura" class="page__taxonomy-item" rel="tag">infraestructura</a>
+      <a href="/tags/#interfaces" class="page__taxonomy-item" rel="tag">interfaces</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#posd" class="page__taxonomy-item" rel="tag">PoSD</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#software-design" class="page__taxonomy-item" rel="tag">software-design</a>
     
     </span>
   </p>
@@ -475,7 +472,7 @@
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2020-03-04T00:00:00-06:00">March 04, 2020</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2020-03-14T00:00:00-06:00">March 14, 2020</time></p>
         
       </footer>
 
@@ -484,23 +481,22 @@
     <h4 class="page__share-title">Compartir</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Gu%C3%ADa+para+escoger+tu+stack%3A+por+qu%C3%A9+deber%C3%ADas+escoger+tecnolog%C3%ADa+aburrida%20https%3A%2F%2Fblog.thedojo.mx%2F2020%2F03%2F04%2Fguia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=A+Philosophy+of+Software+Design%3A+Descomposici%C3%B3n+Temporal%20https%3A%2F%2Fblog.thedojo.mx%2F2020%2F03%2F14%2Fa-philosophy-of-software-design-descomposicion-temporal.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.thedojo.mx%2F2020%2F03%2F04%2Fguia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.thedojo.mx%2F2020%2F03%2F14%2Fa-philosophy-of-software-design-descomposicion-temporal.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog.thedojo.mx%2F2020%2F03%2F04%2Fguia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog.thedojo.mx%2F2020%2F03%2F14%2Fa-philosophy-of-software-design-descomposicion-temporal.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html" class="pagination--pager" title="A Philosophy of Software Design: Los módulos deben ser profundos
+      <a href="/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" class="pagination--pager" title="Guía para escoger tu stack: por qué deberías escoger tecnología aburrida
 ">Anterior</a>
     
     
-      <a href="/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html" class="pagination--pager" title="A Philosophy of Software Design: Ocultar información
-">Siguiente</a>
+      <a href="#" class="pagination--pager disabled">Siguiente</a>
     
   </nav>
 
@@ -523,6 +519,41 @@
     <div class="page__related">
       <h4 class="page__related-title">Podrías ver también</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583644548/9641A743-5E78-4719-9F90-6D77F1CD4E1E_xhawu6.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" rel="permalink">Guía para escoger tu stack: por qué deberías escoger tecnología aburrida
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  9 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 11-03-2020
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología proba...</p>
+  </article>
+</div>
+
         
           
 
@@ -627,42 +658,6 @@
 </p>
     
     <p class="archive__item-excerpt" itemprop="description">Aprende a descubrir y medir la complejidad en tus proyectos
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582331007/24af113fe16c9bbc5aa1ef012758aac8_ytglzc.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/02/21/eloquent-javascript-en-espanol.html" rel="permalink">Eloquent JavaScript en Español
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  2 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 21-02-2020
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Traudcción del Eloquent JavaScript al español, 3ra edición
 </p>
   </article>
 </div>
@@ -780,8 +775,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://blog.thedojo.mx/2020/03/04/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/2020/03/04/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "https://blog.thedojo.mx/2020/03/14/a-philosophy-of-software-design-descomposicion-temporal.html";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/2020/03/14/a-philosophy-of-software-design-descomposicion-temporal"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
