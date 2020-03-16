@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-14T00:56:00-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Guía para escoger tu stack: por qué deberías escoger tecnología aburrida</title><link href="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" rel="alternate" type="text/html" title="Guía para escoger tu stack: por qué deberías escoger tecnología aburrida" /><published>2020-03-11T00:00:00-06:00</published><updated>2020-03-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html">&lt;p&gt;Este artículo está basado en la presentación &lt;a href=&quot;http://boringtechnology.club&quot;&gt;Choose Boring Technology&lt;/a&gt; de &lt;a href=&quot;https://mcfunley.com/&quot;&gt;Dan McKinley&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-16T01:02:04-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Descomposición Temporal</title><link href="https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Descomposición Temporal" /><published>2020-03-16T00:00:00-06:00</published><updated>2020-03-16T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal.html">&lt;p&gt;En el artículo pasado hablamos de una forma de evitar una fuga de información, que consiste en encapsular una decisión de diseño en un módulo.&lt;/p&gt;
+
+&lt;p&gt;Otra forma de dejar escapar información no relevante para los usuarios de una pieza de software es mediante obligarlos a usarla siempre de la misma forma, con el mismo orden de operaciones reglas de operación implícita. Esto se llama descomposición temporal. Hablemos más de ella.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-la-descomposición-temporal&quot;&gt;Qué es la descomposición temporal&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;En descomposición temporal, la estructura de un sistema corresponde &lt;strong&gt;al orden en el tiempo&lt;/strong&gt; en el que las operaciones &lt;strong&gt;ocurrirán&lt;/strong&gt;. - John Ousterhout&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;La descomposición temporal implica repetir o separar una decisión de diseño por causa del &lt;em&gt;orden en que se usan diferentes partes del sistema&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;ejemplos&quot;&gt;Ejemplos&lt;/h2&gt;
+
+&lt;p&gt;John Ousterhout menciona un ejercicio que puso a sus alumnos en el que tenían que crear un programa implementando el protocolo HTTP. Algunos equipos crearon una clase para recibir el mensaje desde la red y otra clase para leerlo, creando así un caso claro de descomposición temporal: como las operaciones sucedían en diferentes momentos (primero recibes y luego lees y procesas) los separaron lógicamente en dos clases que se usaban siempre una detrás de otra. La fuga de información se dio porque para recibir un de HTTP &lt;em&gt;tienes&lt;/em&gt; que leer parte del mensaje y entonces la lógica de lectura del mensaje está en &lt;em&gt;ambas clases&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Otro ejemplo más o menos obvio es la lectura y escritura de archivos. Si quieres trabajar con archivos, el orden de las operaciones es la siguiente:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Abrir&lt;/li&gt;
+  &lt;li&gt;Leer y operar con información del archivo&lt;/li&gt;
+  &lt;li&gt;Escribir el archivo&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Un diseño que deja escapar información sería tener dos clases diferentes para la parte de escritura y lectura, cada una con código repetido que sabe leer el formato del archivo.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo 3: imagina las diferentes situaciones en las que un elemento de datos cambia &lt;em&gt;de estado&lt;/em&gt; a través de su ciclo de vida. Puede ser una solicitud de crédito, un reporte, un blogpost, etc.&lt;/p&gt;
+
+&lt;p&gt;Es tentador crear diferentes entidades de datos y clases para representar algún estado en específico, ya que podría hacer que nuestro código fuera un poco más explícito cuando llamamos las clases o métodos.&lt;/p&gt;
+
+&lt;p&gt;Pero si no hay operaciones especiales que correspondan a ese estado, o datos únicos para esta etapa, crear un módulo específico implicaría descomposición temporal: estarías dividiendo o duplicando conocimiento a través de diferentes módulos debido al orden en que suceden los eventos.&lt;/p&gt;
+
+&lt;h2 id=&quot;composición-de-funciones&quot;&gt;Composición de funciones&lt;/h2&gt;
+
+&lt;p&gt;En los lenguajes funcionales es común usar una serie de funciones aplicadas a una entidad de datos. Por ejemplo en Elixir es común hacer lo siguiente&lt;/p&gt;
+
+&lt;div class=&quot;language-elixir highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# El operador |&amp;gt; Toma el resultado de la función o valor de la expresión anterior (o a su izquierda) y lo manda como primer parámetro a la función a la derecha, parecido a una redirección de salida de Unix&lt;/span&gt;
+
+&lt;span class=&quot;s2&quot;&gt;&quot; the dojo &quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trim&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Limpiar los espacios sobrante a la cadena &quot; the dojo &quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# Separar la cadena&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Enum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;capitalize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&amp;amp;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# Poner en mayúsculas cada uno de los elementos&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Enum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# Volver a juntar la cadena&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Resultado: &quot;The Dojo&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Este ejemplo es un poco exagerado para la función que realiza: poner un texto con capitalización estilo título, Todas Las Iniciales En Mayúsculas.&lt;/p&gt;
+
+&lt;p&gt;La idea se viene de las matemáticas y se llama “composición funcional” y como se puede ver es excelente para usar funciones &lt;em&gt;existentes&lt;/em&gt; en la creación de procesos más complejos. Una de las virtudes de esta técnica es la &lt;strong&gt;reutilización&lt;/strong&gt; de las funciones.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, queriendo aplicar esta idea puedes modificar tus módulos (en lenguajes funcionales: funciones), para aplicar esta técnica y terminar con funciones que siempre se usen una tras otra, esperando la entrada siempre de la misma función y mandando su resultado siempre a la misma función.&lt;/p&gt;
+
+&lt;p&gt;Esto es un error que yo he cometido y que ha hecho mi código muy difícil de mantener, ya que al cambiar una función de esta cadena tengo que cambiar las demás, haciéndolas además no reutilizables.&lt;/p&gt;
+
+&lt;h2 id=&quot;solución-a-la-descomposición-temporal&quot;&gt;Solución a la descomposición temporal&lt;/h2&gt;
+
+&lt;p&gt;La solución propuesta por &lt;a href=&quot;https://amzn.to/3ba4MEj&quot;&gt;A Philosophy of Software Design&lt;/a&gt; es muy sencilla: &lt;strong&gt;concentra todas las operaciones relacionadas con una decisión de diseño en un módulo&lt;/strong&gt;. Si nada de esto necesita ser conocido fuera de este módulo, has logrado un diseño más limpio. Esto puede implicar que la clase se haga más grande, pero es una mejor solución a tener información repartida por todos lados.&lt;/p&gt;
+
+&lt;p&gt;Así, si la decisión de diseño cambia sólo tienes que cambiar la implementación y no la interfaz ni mucho menos &lt;em&gt;su uso&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;En el siguiente artículo veremos finalmente una serie de recomendaciones para evitar las fugas de información y como no llevarlo demasiado lejos.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="descomposición-temporal" /><category term="software-design" /><category term="complexity" /><category term="interfaces" /><summary type="html">Una forma de dejar escapar información es mediante forzar el orden de las operaciones de un módulo. Veamos cómo evitarlo.</summary></entry><entry><title type="html">Guía para escoger tu stack: por qué deberías escoger tecnología aburrida</title><link href="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" rel="alternate" type="text/html" title="Guía para escoger tu stack: por qué deberías escoger tecnología aburrida" /><published>2020-03-11T00:00:00-06:00</published><updated>2020-03-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html">&lt;p&gt;Este artículo está basado en la presentación &lt;a href=&quot;http://boringtechnology.club&quot;&gt;Choose Boring Technology&lt;/a&gt; de &lt;a href=&quot;https://mcfunley.com/&quot;&gt;Dan McKinley&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;No hay nada que haga más feliz a un desarrollador que trabajar con el último de los frameworks, lenguaje de programación o herramienta que salió el mes pasado.&lt;/p&gt;
 
@@ -140,7 +201,7 @@
 
 &lt;p&gt;Es más conveniente tanto para ti como para el negocio que tus golpes de dopamina vengan por el lado de resolver problemas emocionantes &lt;em&gt;útiles para algún cliente y para el negocio&lt;/em&gt;, que por andar resolviendo problemas oscuros que nadie le proveen mucho valor (tal vez aprendizaje, pero se puede obtener de otras formas).&lt;/p&gt;
 
-&lt;p&gt;Enfoca tus esfuerzos en cosas útiles para el negocio.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="arquitectura" /><category term="infraestructura" /><category term="decisiones-técnicas" /><summary type="html">Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología probada.</summary></entry><entry><title type="html">A Philosophy of Software Design: Ocultar información</title><link href="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Ocultar información" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html">&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Enfoca tus esfuerzos en cosas útiles para el negocio.&lt;/strong&gt;&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="arquitectura" /><category term="infraestructura" /><category term="decisiones-técnicas" /><summary type="html">Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología probada.</summary></entry><entry><title type="html">A Philosophy of Software Design: Ocultar información</title><link href="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Ocultar información" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html">&lt;blockquote&gt;
   &lt;p&gt;La idea básica es que cada módulo debería encapsular algunas piezas de conocimiento, que representen decisiones de diseño. - &lt;strong&gt;John Ousterhout&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -738,120 +799,4 @@ Es un curso que no puedes perder si quieres ser un autodidacta de la programaci�
 &lt;p&gt;Fuera de las matemáticas básicas y un control decente e intuitivo de la lógica, no es necesario que seas &lt;a href=&quot;http://bit.ly/2StKLCz&quot;&gt;Terence Tao&lt;/a&gt;, a menos que el campo en el que estés trabajando esté directamente relacionado con eso, tal
 como tendrías que saber lo suficiente de finanzas si estuvieras haciendo una app financiera o de administración de empresas si estuvieras haciendo una aplicación o plataforma para este campo.&lt;/p&gt;
 
-&lt;p&gt;Aquí hay un video curso en el que se explican más ampliamente lo que algunos llaman &lt;a href=&quot;http://bit.ly/2rvD6Zi&quot;&gt;“matemáticas para programadores”&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="math" /><category term="matemáticas" /><category term="aprender" /><summary type="html">¿Qué tantas matemáticas necesitas para programar? En este artículo lo veremos.</summary></entry><entry><title type="html">Formatos de marcado de texto que deberías aprender</title><link href="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html" rel="alternate" type="text/html" title="Formatos de marcado de texto que deberías aprender" /><published>2019-12-20T00:00:00-06:00</published><updated>2019-12-20T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html">&lt;p&gt;Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el formateo y embellecimiento de documento.&lt;/p&gt;
-
-&lt;p&gt;En este artículo te platicaré de &lt;strong&gt;tres alternativas&lt;/strong&gt; que pueden hacer tu vida más fácil: Markdown, reStructuredText, AsciiDoc.&lt;/p&gt;
-
-&lt;p&gt;Todos estos lenguajes pueden producir múltiples formatos de salida: HTML, PDF, Word, entre otros. Y lo mejor es que estas salidas son personalizables.&lt;/p&gt;
-
-&lt;h2 id=&quot;markdown&quot;&gt;Markdown&lt;/h2&gt;
-
-&lt;p&gt;Es el formato de marcado de texto simple más conocido por ser el usado en muchos lados (GitHub, por ejemplo) para darle un poco de formato semántico al texto.&lt;/p&gt;
-
-&lt;p&gt;Puedes crear los estilos de texto más comunes directamente:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;negritas&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;cursivas&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/&quot;&gt;enlaces&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Imágenes:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_100/v1559453194/luis-dille-1098834-unsplash_vndt6g.jpg&quot; alt=&quot;Imagen de ejemplo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;También permite crear listas no numeradas, como la anterior, numeradas, tablas (con las sintaxis extendidas pero no con la definición original) y una serie de títulos de diferente jerarquía equivalentes a los headers de HTML (h1, h2… h6).&lt;/p&gt;
-
-&lt;p&gt;De hecho, esta entrada está escrita con Markdown. Markdown es tan popular que existen aplicaciones completamente dedicadas a él como &lt;a href=&quot;http://bit.ly/2M7YmLL&quot;&gt;MacDown&lt;/a&gt;, &lt;a href=&quot;http://bit.ly/38Zhohc&quot;&gt;Focused&lt;/a&gt; y &lt;a href=&quot;http://bit.ly/2S4MX38&quot;&gt;Typora&lt;/a&gt;. Además, diferentes empresas han creado sus propios dialectos o adaptaciones para que sea más fácil de usar en su caso específico.&lt;/p&gt;
-
-&lt;p&gt;Si aún no lo sabes usar, vale la pena que le eches un ojo: &lt;a href=&quot;http://bit.ly/38S2l8G&quot;&gt;Guía de Markdown en español&lt;/a&gt;. Tardarás unos minutos en aprender lo básico que es muy útil para el 80% de los casos en los que lo ocuparas.&lt;/p&gt;
-
-&lt;p&gt;Markdown es muy bueno para crear documentos individuales pero, ¿qué pasa si el texto que quieres escribir es más extenso? Tal vez el texto está compuesto por muchas partes, como un libro o una documentación extensa. Hay quienes dicen que &lt;a href=&quot;http://bit.ly/2sOpmJg&quot;&gt;no deberías usar Markdown para crear tu documentación&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Las siguientes herramientas están mejor que preparadas que Markdown para eso, permiten crear cuerpos de textos más extensos.&lt;/p&gt;
-
-&lt;h2 id=&quot;restructuredtext&quot;&gt;reStructuredText&lt;/h2&gt;
-
-&lt;p&gt;Este formato de texto es adecuado para crear cuerpos de texto más complejos que con Markdown. Tienes las mismas capacidades de formateo de texto que con Markdown: negritas, cursivas, cabeceras, links, imágenes, listas, tablas, etc.&lt;/p&gt;
-
-&lt;p&gt;Pero reStructuredText provee &lt;strong&gt;más opciones&lt;/strong&gt; para formatear el texto, ya que fue creado para hacer &lt;em&gt;documentos técnicos&lt;/em&gt; además de documentos de carácter general.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;reStructuredText&lt;/strong&gt; parece ser parte de &lt;a href=&quot;http://bit.ly/2ECmEt2&quot;&gt;docutils&lt;/a&gt; originalmente, creado como una revisión de se &lt;a href=&quot;http://bit.ly/35NkdQk&quot;&gt;StructuredText&lt;/a&gt; y &lt;a href=&quot;http://bit.ly/2PIAdgT&quot;&gt;Setext&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Sus herramientas te permitirán crear texto marcado con &lt;strong&gt;mejor semántica&lt;/strong&gt; que Markdown, más estandarizado (RST no tiene ‘sabores’ o dialectos) y con herramientas adaptadas a la documentación de código. Entre otras cosas RST provee:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Más formatos de listas:
-    &lt;ul&gt;
-      &lt;li&gt;Listas de definición&lt;/li&gt;
-      &lt;li&gt;Listas de parámetros&lt;/li&gt;
-      &lt;li&gt;Numeración de listas arbitrariamente&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Bloques de texto pre-formateado (para código)&lt;/li&gt;
-  &lt;li&gt;Bloques de documentación de pruebas&lt;/li&gt;
-  &lt;li&gt;Citas&lt;/li&gt;
-  &lt;li&gt;Notas a pie de página&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Directivas&lt;/strong&gt;, una manera de extender el lenguaje con construcciones propias&lt;/li&gt;
-  &lt;li&gt;Hyperlinks con diferentes destinos: externos, internos, etc.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Esta última característica permite crear documentos interconectados que son muy útiles para textos amplios.&lt;/p&gt;
-
-&lt;p&gt;RST es el formato default de &lt;a href=&quot;http://bit.ly/35Jb6QP&quot;&gt;Sphinx&lt;/a&gt; una herramienta de documentación de código creada en Python que te puede ayudar a crear documentación muy bonita.&lt;/p&gt;
-
-&lt;p&gt;Aquí hay una introducción a RST en inglés: &lt;a href=&quot;http://bit.ly/2rdQn8y&quot;&gt;A reStructuredText Primer&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;asciidoc&quot;&gt;AsciiDoc&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Incluso el software más brillante es inútil sin buena documentación. - Documentación de AsciiDoc&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;AsciiDoc&lt;/strong&gt; fue creado para hacer &lt;strong&gt;tan fácil como escribir un email&lt;/strong&gt; la escritura de cualquier tipo de documento, sea este un artículo, un texto en prosa, un libro o documentación técnica.&lt;/p&gt;
-
-&lt;p&gt;El creador asegura que una de las causas de que se nos haga tan difícil escribir está relacionada con que los editores de texto nos distraen con cosas como el formateo o paja que no es necesaria. AsciiDoc se enfoca en que puedas escribir sin preocuparte por el formato, dando una sintaxis natural, fluída y que no estorba, mientras te permite preparar el texto para crear formatos de salida hermosos.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Usa AsciiDoc para marcado de documentos. De verdad. En verdad es legible, fácil de procesar y mucho más flexible que XML. - Linus Torvalds&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Al igual que Markdown y RST, AsciiDoc provee de medios básicos para dar formato al texto. Pero AsciiDoc es el que más herramientas de los tres platicados aquí tiene. Además de ofrecet todo lo de las dos herrmientas anteriores tiene:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Más formatos de párrafo: párrafos de introducción y pre-formateados fáciles.&lt;/li&gt;
-  &lt;li&gt;Secciones prediseñadas: cuadros de aviso, de notas, etc.&lt;/li&gt;
-  &lt;li&gt;Estilos de lista parecidos a los de RST.&lt;/li&gt;
-  &lt;li&gt;Formateo y sintaxis de código con notas, como la siguiente:
-&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_700/v1576905208/Screenshot_2019-12-20_23.12.38_mdhrfj.png&quot; alt=&quot;Ejemplo de notas&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;Barras laterales&lt;/li&gt;
-  &lt;li&gt;Macros&lt;/li&gt;
-  &lt;li&gt;Generación de tablas desde CSV&lt;/li&gt;
-  &lt;li&gt;Videos&lt;/li&gt;
-  &lt;li&gt;Muchas muchas cosas más…&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Sin duda AsciiDoc es el más completo de los formatos que hemos visto en este artículo. Aquí hay una &lt;a href=&quot;http://bit.ly/2PKzdZN&quot;&gt;introducción en inglés&lt;/a&gt; y aquí un &lt;a href=&quot;http://bit.ly/2rgL3Bt&quot;&gt;libro en español&lt;/a&gt;. AsciiDoc es tan completo que varios autores de libros lo han escogido para crear sus escritos.&lt;/p&gt;
-
-&lt;h2 id=&quot;cuál-uso-entonces&quot;&gt;¿Cuál uso, entonces?&lt;/h2&gt;
-
-&lt;p&gt;Mi conclusión personal es la siguiente:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Si tienes que hacer un documento pequeño, sin mucho formato y en el que la velocidad de entrega es lo más importante usa Markdown, ya que su popularidad te permitirá entregar el documento en el menor tiempo posible. Por ejemplo, en GitHub subes un archivo “*.md” y automáticamente lo muestra formateado.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;¿Tienes que hacer documentación de código que posiblemente deba ir en línea o al lado del código? reStructuredText está especializado en eso y con sus herramientas y entonrno te facilitará la vida.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Para todo lo demás, usa &lt;strong&gt;AsciiDoc&lt;/strong&gt;. Una vez que lo sabes usar y combinado con AsciiDoctor (su procesador) y &lt;a href=&quot;http://bit.ly/2Q2zbeE&quot;&gt;Pandoc&lt;/a&gt; (un transformador de formatos) puedes crear cosas muy complejas muy rápidamente.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Si eres como los programadores clásicos, odias usar Word, Docs o lo que sea por el problema que es formatear mientras escribes y amas la simplicidad del texto plano ayudado con herramientas que te permiten crear mejores cosas.&lt;/p&gt;
-
-&lt;p&gt;Estos lenguajes de marcado de texto te dan lo mejor de los dos mundos. Requieren un poco más de trabajo para empezar que los editores &lt;em&gt;“lo que ves es lo que obtienes”&lt;/em&gt;, pero la productividad que te dan después paga con creces.&lt;/p&gt;
-
-&lt;p&gt;¿Qué opinas? ¿Vale la pena aprenderlos?&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="markdown" /><category term="restructured-text" /><category term="asciidoc" /><category term="latex" /><summary type="html">A veces tienes que crear documentos de texto con un algún tipo de formato visual. Aprende lenguajes de marcado que te facilitarán la vida.</summary></entry></feed>
+&lt;p&gt;Aquí hay un video curso en el que se explican más ampliamente lo que algunos llaman &lt;a href=&quot;http://bit.ly/2rvD6Zi&quot;&gt;“matemáticas para programadores”&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="math" /><category term="matemáticas" /><category term="aprender" /><summary type="html">¿Qué tantas matemáticas necesitas para programar? En este artículo lo veremos.</summary></entry></feed>

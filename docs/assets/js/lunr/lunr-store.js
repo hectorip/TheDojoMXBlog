@@ -168,4 +168,9 @@ var store = [{
         "excerpt":"Este artículo está basado en la presentación Choose Boring Technology de Dan McKinley. No hay nada que haga más feliz a un desarrollador que trabajar con el último de los frameworks, lenguaje de programación o herramienta que salió el mes pasado. Este problema se incrementa si trabajas en web, específicamente...","categories": [],
         "tags": ["arquitectura","infraestructura","decisiones-técnicas"],
         "url": "https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583644548/9641A743-5E78-4719-9F90-6D77F1CD4E1E_xhawu6.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583644548/9641A743-5E78-4719-9F90-6D77F1CD4E1E_xhawu6.jpg"},{
+        "title": "A Philosophy of Software Design: Descomposición Temporal",
+        "excerpt":"En el artículo pasado hablamos de una forma de evitar una fuga de información, que consiste en encapsular una decisión de diseño en un módulo. Otra forma de dejar escapar información no relevante para los usuarios de una pieza de software es mediante obligarlos a usarla siempre de la misma...","categories": [],
+        "tags": ["PoSD","descomposición-temporal","software-design","complexity","interfaces"],
+        "url": "https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584251653/A240034B-230E-4BA2-843D-32357D921811_mwdnzk.jpg"}]
