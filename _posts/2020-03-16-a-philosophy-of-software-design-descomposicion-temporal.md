@@ -48,8 +48,10 @@ Pero si no hay operaciones especiales que correspondan a ese estado, o datos ún
 En los lenguajes funcionales es común usar una serie de funciones aplicadas a una entidad de datos. Por ejemplo en Elixir es común hacer lo siguiente.
 
 ```elixir
-# El operador |> Toma el resultado de la función o valor de la expresión
-# anterior (o a su izquierda) y lo manda como primer parámetro a la función # a la derecha, parecido a una redirección de salida de Unix
+# El operador |> Toma el resultado de la función o valor
+# de la expresión anterior (o a su izquierda) y lo manda
+# como primer parámetro a la función a la derecha, parecido
+# a una redirección de salida de Unix
 
 " the dojo "
   |> String.trim # Limpiar los espacios sobrante a la cadena " the dojo "
