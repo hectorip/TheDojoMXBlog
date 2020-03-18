@@ -173,4 +173,9 @@ var store = [{
         "excerpt":"En el artículo pasado hablamos de una forma de evitar una fuga de información, que consiste en encapsular una decisión de diseño en un módulo. Otra forma de dejar escapar información no relevante para los usuarios de una pieza de software es mediante obligarlos a usarla siempre de la misma...","categories": [],
         "tags": ["PoSD","descomposición-temporal","software-design","complexity","interfaces"],
         "url": "https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584251653/A240034B-230E-4BA2-843D-32357D921811_mwdnzk.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584251653/A240034B-230E-4BA2-843D-32357D921811_mwdnzk.jpg"},{
+        "title": "A Philosophy of Software Design: Recomendaciones de diseño modular",
+        "excerpt":"En los artículos anteriores hemos estado hablando de cómo evitar la complejidad mediante ocultar información. En este daremos algunas recomendaciones más y hablaremos de cómo no llevar este principio al extremo. Hablemos primero de consejos que te ayudarán a mantener oculta la información que debe de estarlo. Exponer lo menos...","categories": [],
+        "tags": ["PoSD","software-design","complexity","interfaces","defaults"],
+        "url": "https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-recomendaciones-disenio-modular.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584519537/2E4D3407-0447-4034-BEFA-188831BF5971_x4th6g.jpg"}]
