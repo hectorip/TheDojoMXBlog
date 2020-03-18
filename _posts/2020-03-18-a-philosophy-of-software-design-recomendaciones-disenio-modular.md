@@ -19,7 +19,7 @@ Hablemos primero de consejos que te ayudarán a mantener oculta la información 
 
 ## Exponer lo menos posible estructuras de datos
 
-Un error común cuando creamos un módulo es exponer las estructuras de datos internas hacia otros módulos. Esto hace el código que usa tu módulo sea dependiente de detalles de implementación que no le conciernen y, como hemos repetido hasta el cansancio, que una decisión de diseño se vea reflejada en varios lugares.
+Un error común cuando creamos un módulo es exponer las estructuras de datos internas hacia otros módulos. Esto hace el código que usa tu módulo sea _dependiente de detalles de implementación_ que no le conciernen y, como hemos repetido hasta el cansancio, que una decisión de diseño se vea reflejada en varios lugares.
 
 Transforma las estructuras de datos internas en estructuras de uso general que no dependan de la implementación de tu módulo. Por ejemplo, si estás haciendo una conexión con una API de la que extraes información para otros lados del sistema, comunica esa información en una estructura de datos diseñada para tu sistema no dependiente de la API.
 
@@ -35,17 +35,17 @@ John Ousterhout habla como ejemplo de lo mal diseñada que está la interfaz de 
 
 **Los módulos deberían hacer lo normal o lo correcto siempre que sea posible, sin que se tenga que pedir explícitamente.** Es decir, tus módulos deberían estar diseñados para hacer el _caso más común_ muy fácil de usar.
 
-> Las mejores funciones son las que obtienes sin siquiera saber qu existen. - **John Ousterhout**
+> Las mejores funciones son las que obtienes sin siquiera saber que existen. - **John Ousterhout**
 
 Un ejemplo de buen diseño son los lenguajes modernos con la codificación de las cadenas: son `utf-8` por default, ya que es 'lo correcto' y lo común.
 
 Otro ejemplo son las funciones `split` (separar una cadena) y `join` (juntar los elementos de un array o lista en una cadena) de Python, Elixir y otros lenguajes: si no le pasas el carácter que usarán para dividir o pegar, lo harán por la cadena vacía, _facilitando un caso de uso muy común_.
 
-Podemos aprender de estos buenos diseños para crear los propios. Por ejemplo, imagina que tienes un módulo que usa la fecha y hora para registrar algo. El caso común es que registres algo en el momento inmediato que sucedió. Un buen default sería que el módulo automáticamente registrara la hora actual sin esperarla del usuario, pero dando la opción de configurarla en caso de que se necesite.
+Podemos aprender de estos buenos diseños para crear los propios. Por ejemplo, imagina que tienes un módulo que usa la fecha y hora para registrar algo. El caso _común_ es que registres algo en el momento inmediato que sucedió. Un buen default sería que el módulo _automáticamente_ registrara la hora actual sin esperarla del usuario, pero dando la opción de modificarla en caso de que se necesite. Un programa que hace esto es **Git**, registra automáticamente un commit con la hora en que lo hiciste pero tiene la opción de que la especifiques o modifiques.
 
 ## Aisla dentro de las clases y paquetes
 
-Cuando trabajas con clases, es buena idea crear métodos independientes y privados en caso de ser posible que oculten información del resto de la clase. Piensa en esto como en aplicar los principios anteriores a nivel de clase. Además las variables de clase o de instancia deberían ser usadas en el **menor número de lugares posible**.
+Cuando trabajas con clases, es buena idea crear métodos independientes (privados en caso de ser posible), que oculten información _del resto de la clase_. Piensa en esto como en aplicar los principios anteriores a nivel de clase. Además las variables de clase o de instancia deberían ser usadas en el **menor número de lugares posible**.
 
 Si estás usando un lenguaje funcional o procedural, _aplica este principio al nivel de tus paquetes_ (y definitivamente evita variables globales lo más que puedas).
 

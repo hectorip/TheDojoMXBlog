@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-18T02:20:43-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Recomendaciones de diseño modular</title><link href="https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-recomendaciones-disenio-modular.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Recomendaciones de diseño modular" /><published>2020-03-16T00:00:00-06:00</published><updated>2020-03-16T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-recomendaciones-disenio-modular</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-recomendaciones-disenio-modular.html">&lt;p&gt;En los artículos anteriores hemos estado hablando de cómo evitar la complejidad mediante ocultar información.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-18T10:36:18-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Recomendaciones de diseño modular</title><link href="https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-recomendaciones-disenio-modular.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Recomendaciones de diseño modular" /><published>2020-03-16T00:00:00-06:00</published><updated>2020-03-16T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-recomendaciones-disenio-modular</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-recomendaciones-disenio-modular.html">&lt;p&gt;En los artículos anteriores hemos estado hablando de cómo evitar la complejidad mediante ocultar información.&lt;/p&gt;
 
 &lt;p&gt;En este daremos algunas recomendaciones más y hablaremos de cómo no llevar este principio al extremo.&lt;/p&gt;
 
@@ -6,7 +6,7 @@
 
 &lt;h2 id=&quot;exponer-lo-menos-posible-estructuras-de-datos&quot;&gt;Exponer lo menos posible estructuras de datos&lt;/h2&gt;
 
-&lt;p&gt;Un error común cuando creamos un módulo es exponer las estructuras de datos internas hacia otros módulos. Esto hace el código que usa tu módulo sea dependiente de detalles de implementación que no le conciernen y, como hemos repetido hasta el cansancio, que una decisión de diseño se vea reflejada en varios lugares.&lt;/p&gt;
+&lt;p&gt;Un error común cuando creamos un módulo es exponer las estructuras de datos internas hacia otros módulos. Esto hace el código que usa tu módulo sea &lt;em&gt;dependiente de detalles de implementación&lt;/em&gt; que no le conciernen y, como hemos repetido hasta el cansancio, que una decisión de diseño se vea reflejada en varios lugares.&lt;/p&gt;
 
 &lt;p&gt;Transforma las estructuras de datos internas en estructuras de uso general que no dependan de la implementación de tu módulo. Por ejemplo, si estás haciendo una conexión con una API de la que extraes información para otros lados del sistema, comunica esa información en una estructura de datos diseñada para tu sistema no dependiente de la API.&lt;/p&gt;
 
@@ -23,18 +23,18 @@
 &lt;p&gt;&lt;strong&gt;Los módulos deberían hacer lo normal o lo correcto siempre que sea posible, sin que se tenga que pedir explícitamente.&lt;/strong&gt; Es decir, tus módulos deberían estar diseñados para hacer el &lt;em&gt;caso más común&lt;/em&gt; muy fácil de usar.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Las mejores funciones son las que obtienes sin siquiera saber qu existen. - &lt;strong&gt;John Ousterhout&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;Las mejores funciones son las que obtienes sin siquiera saber que existen. - &lt;strong&gt;John Ousterhout&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Un ejemplo de buen diseño son los lenguajes modernos con la codificación de las cadenas: son &lt;code class=&quot;highlighter-rouge&quot;&gt;utf-8&lt;/code&gt; por default, ya que es ‘lo correcto’ y lo común.&lt;/p&gt;
 
 &lt;p&gt;Otro ejemplo son las funciones &lt;code class=&quot;highlighter-rouge&quot;&gt;split&lt;/code&gt; (separar una cadena) y &lt;code class=&quot;highlighter-rouge&quot;&gt;join&lt;/code&gt; (juntar los elementos de un array o lista en una cadena) de Python, Elixir y otros lenguajes: si no le pasas el carácter que usarán para dividir o pegar, lo harán por la cadena vacía, &lt;em&gt;facilitando un caso de uso muy común&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;Podemos aprender de estos buenos diseños para crear los propios. Por ejemplo, imagina que tienes un módulo que usa la fecha y hora para registrar algo. El caso común es que registres algo en el momento inmediato que sucedió. Un buen default sería que el módulo automáticamente registrara la hora actual sin esperarla del usuario, pero dando la opción de configurarla en caso de que se necesite.&lt;/p&gt;
+&lt;p&gt;Podemos aprender de estos buenos diseños para crear los propios. Por ejemplo, imagina que tienes un módulo que usa la fecha y hora para registrar algo. El caso &lt;em&gt;común&lt;/em&gt; es que registres algo en el momento inmediato que sucedió. Un buen default sería que el módulo &lt;em&gt;automáticamente&lt;/em&gt; registrara la hora actual sin esperarla del usuario, pero dando la opción de modificarla en caso de que se necesite. Un programa que hace esto es &lt;strong&gt;Git&lt;/strong&gt;, registra automáticamente un commit con la hora en que lo hiciste pero tiene la opción de que la especifiques o modifiques.&lt;/p&gt;
 
 &lt;h2 id=&quot;aisla-dentro-de-las-clases-y-paquetes&quot;&gt;Aisla dentro de las clases y paquetes&lt;/h2&gt;
 
-&lt;p&gt;Cuando trabajas con clases, es buena idea crear métodos independientes y privados en caso de ser posible que oculten información del resto de la clase. Piensa en esto como en aplicar los principios anteriores a nivel de clase. Además las variables de clase o de instancia deberían ser usadas en el &lt;strong&gt;menor número de lugares posible&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Cuando trabajas con clases, es buena idea crear métodos independientes (privados en caso de ser posible), que oculten información &lt;em&gt;del resto de la clase&lt;/em&gt;. Piensa en esto como en aplicar los principios anteriores a nivel de clase. Además las variables de clase o de instancia deberían ser usadas en el &lt;strong&gt;menor número de lugares posible&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Si estás usando un lenguaje funcional o procedural, &lt;em&gt;aplica este principio al nivel de tus paquetes&lt;/em&gt; (y definitivamente evita variables globales lo más que puedas).&lt;/p&gt;
 
