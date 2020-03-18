@@ -177,5 +177,5 @@ var store = [{
         "title": "A Philosophy of Software Design: Recomendaciones de diseño modular",
         "excerpt":"En los artículos anteriores hemos estado hablando de cómo evitar la complejidad mediante ocultar información. En este daremos algunas recomendaciones más y hablaremos de cómo no llevar este principio al extremo. Hablemos primero de consejos que te ayudarán a mantener oculta la información que debe de estarlo. Exponer lo menos...","categories": [],
         "tags": ["PoSD","software-design","complexity","interfaces","defaults"],
-        "url": "https://blog.thedojo.mx/2020/03/16/a-philosophy-of-software-design-recomendaciones-disenio-modular.html",
+        "url": "https://blog.thedojo.mx/2020/03/18/a-philosophy-of-software-design-recomendaciones-disenio-modular.html",
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584519537/2E4D3407-0447-4034-BEFA-188831BF5971_x4th6g.jpg"}]

@@ -1,6 +1,6 @@
 ---
 title: "A Philosophy of Software Design: Recomendaciones de diseño modular"
-date: 2020-03-16
+date: 2020-03-18
 author: Héctor Patricio
 tags: PoSD software-design complexity interfaces defaults
 comments: true
