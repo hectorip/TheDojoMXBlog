@@ -1,4 +1,142 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-03-15T23:22:54-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Guía para escoger tu stack: por qué deberías escoger tecnología aburrida</title><link href="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" rel="alternate" type="text/html" title="Guía para escoger tu stack: por qué deberías escoger tecnología aburrida" /><published>2020-03-11T00:00:00-06:00</published><updated>2020-03-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html">&lt;p&gt;Este artículo está basado en la presentación &lt;a href=&quot;http://boringtechnology.club&quot;&gt;Choose Boring Technology&lt;/a&gt; de &lt;a href=&quot;https://mcfunley.com/&quot;&gt;Dan McKinley&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-20T23:48:54-06:00</updated><id>http://localhost:4000/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Recomendaciones de diseño modular</title><link href="http://localhost:4000/2020/03/18/a-philosophy-of-software-design-recomendaciones-disenio-modular.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Recomendaciones de diseño modular" /><published>2020-03-18T00:00:00-06:00</published><updated>2020-03-18T00:00:00-06:00</updated><id>http://localhost:4000/2020/03/18/a-philosophy-of-software-design-recomendaciones-disenio-modular</id><content type="html" xml:base="http://localhost:4000/2020/03/18/a-philosophy-of-software-design-recomendaciones-disenio-modular.html">&lt;p&gt;En los artículos anteriores hemos estado hablando de cómo evitar la complejidad mediante ocultar información.&lt;/p&gt;
+
+&lt;p&gt;En este daremos algunas recomendaciones más y hablaremos de cómo no llevar este principio al extremo.&lt;/p&gt;
+
+&lt;p&gt;Hablemos primero de consejos que te ayudarán a mantener oculta la información que debe de estarlo.&lt;/p&gt;
+
+&lt;h2 id=&quot;exponer-lo-menos-posible-estructuras-de-datos&quot;&gt;Exponer lo menos posible estructuras de datos&lt;/h2&gt;
+
+&lt;p&gt;Un error común cuando creamos un módulo es exponer las estructuras de datos internas hacia otros módulos. Esto hace el código que usa tu módulo sea &lt;em&gt;dependiente de detalles de implementación&lt;/em&gt; que no le conciernen y, como hemos repetido hasta el cansancio, que una decisión de diseño se vea reflejada en varios lugares.&lt;/p&gt;
+
+&lt;p&gt;Transforma las estructuras de datos internas en estructuras de uso general que no dependan de la implementación de tu módulo. Por ejemplo, si estás haciendo una conexión con una API de la que extraes información para otros lados del sistema, comunica esa información en una estructura de datos diseñada para tu sistema no dependiente de la API.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Imagina un módulo de comunicación con diferentes API’s de mensajería como WhatsApp, Messenger, etc. Cada una las API’s avisa de la entrada de un nuevo mensaje con sus datos específicos y en su formato. Para que to módulo encapsule la mayo cantidad de decisiones de diseño posible debería crear una estructura de mensajes que los demás módulos &lt;em&gt;recibieran independientemente del medio por el que llegó el mensaje&lt;/em&gt;. Lo mismo para responder: la función encargada de la respuesta debería recibir &lt;em&gt;siempre los mismos datos independientemente del mensajero que se esté usando&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;defaults-útiles&quot;&gt;Defaults útiles&lt;/h2&gt;
+
+&lt;p&gt;Tal vez este punto merezca su propio artículo pero tratemos de resumirlo.&lt;/p&gt;
+
+&lt;p&gt;La idea de crear un módulo es, a parte de ocultar complejidad, crear un pieza de código que pueda ser &lt;em&gt;reutilizable&lt;/em&gt;. Como la operación no es siempre exactamente igual, a veces hay que incluir parámetros que permitan modificar el comportamiento del módulo. Los parámetros pueden llegar a revelar detalles de implementación, así que es conveniente saber diseñarlos, primero &lt;em&gt;para no contaminar la interfaz&lt;/em&gt; y segundo &lt;em&gt;para mantener la interfaz fácil de usar&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;John Ousterhout habla como ejemplo de lo mal diseñada que está la interfaz de la clase &lt;code class=&quot;highlighter-rouge&quot;&gt;FileInputStream&lt;/code&gt; de Java, que no es capaz de realizar una lectura con buffer sin que le pases una clase que lo hace explícitamente. La lectura de un archivo con un buffer &lt;strong&gt;es normal&lt;/strong&gt;, generalmente no quieres leer un archivo sin tener el buffer disponible. Entonces el default de esta clase debería ser la lectura con buffer, &lt;em&gt;sin que se lo tengas que pedir explícitamente&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Los módulos deberían hacer lo normal o lo correcto siempre que sea posible, sin que se tenga que pedir explícitamente.&lt;/strong&gt; Es decir, tus módulos deberían estar diseñados para hacer el &lt;em&gt;caso más común&lt;/em&gt; muy fácil de usar.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Las mejores funciones son las que obtienes sin siquiera saber que existen. - &lt;strong&gt;John Ousterhout&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Un ejemplo de buen diseño son los lenguajes modernos con la codificación de las cadenas: son &lt;code class=&quot;highlighter-rouge&quot;&gt;utf-8&lt;/code&gt; por default, ya que es ‘lo correcto’ y lo común.&lt;/p&gt;
+
+&lt;p&gt;Otro ejemplo son las funciones &lt;code class=&quot;highlighter-rouge&quot;&gt;split&lt;/code&gt; (separar una cadena) y &lt;code class=&quot;highlighter-rouge&quot;&gt;join&lt;/code&gt; (juntar los elementos de un array o lista en una cadena) de Python, Elixir y otros lenguajes: si no le pasas el carácter que usarán para dividir o pegar, lo harán por la cadena vacía, &lt;em&gt;facilitando un caso de uso muy común&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Podemos aprender de estos buenos diseños para crear los propios. Por ejemplo, imagina que tienes un módulo que usa la fecha y hora para registrar algo. El caso &lt;em&gt;común&lt;/em&gt; es que registres algo en el momento inmediato que sucedió. Un buen default sería que el módulo &lt;em&gt;automáticamente&lt;/em&gt; registrara la hora actual sin esperarla del usuario, pero dando la opción de modificarla en caso de que se necesite. Un programa que hace esto es &lt;strong&gt;Git&lt;/strong&gt;, registra automáticamente un commit con la hora en que lo hiciste pero tiene la opción de que la especifiques o modifiques.&lt;/p&gt;
+
+&lt;h2 id=&quot;aisla-dentro-de-las-clases-y-paquetes&quot;&gt;Aisla dentro de las clases y paquetes&lt;/h2&gt;
+
+&lt;p&gt;Cuando trabajas con clases, es buena idea crear métodos independientes (privados en caso de ser posible), que oculten información &lt;em&gt;del resto de la clase&lt;/em&gt;. Piensa en esto como en aplicar los principios anteriores a nivel de clase. Además las variables de clase o de instancia deberían ser usadas en el &lt;strong&gt;menor número de lugares posible&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si estás usando un lenguaje funcional o procedural, &lt;em&gt;aplica este principio al nivel de tus paquetes&lt;/em&gt; (y definitivamente evita variables globales lo más que puedas).&lt;/p&gt;
+
+&lt;p&gt;Finalmente hablemos de cómo llevar todo esto demasiado lejos.&lt;/p&gt;
+
+&lt;h2 id=&quot;la-clase-dios&quot;&gt;La clase dios&lt;/h2&gt;
+
+&lt;p&gt;En artículos pasados hablamos un poco de que es mejor crear clases grandes que encapsulen decisiones de diseño completas en vez de dividir esas decisiones de diseño. Pero si no tenemos cuidado, esto nos puede llevar a crear lo que algunos conoce como &lt;em&gt;‘the God Class’&lt;/em&gt; o la clase dios.&lt;/p&gt;
+
+&lt;p&gt;Esta infame clase es la que en muchos sistemas se ha creado para mantener la mayoría de la información y operación, es decir, es una clase que lo &lt;em&gt;sabe&lt;/em&gt; y lo &lt;em&gt;puede&lt;/em&gt; todo. Crearla romería el propósito de ocultar información: &lt;strong&gt;pasarías la mayor parte del tiempo trabajando en esta clase&lt;/strong&gt;, que por lo general sería muy complicada, teniendo tantas cosas que hacer. Así que &lt;em&gt;evítala a toda costa&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;ocultar-información-que-sí-se-usa-afuera&quot;&gt;Ocultar información que sí se usa afuera&lt;/h2&gt;
+
+&lt;p&gt;Sería un error grave de diseño hacer inaccesible (en lenguajes que lo permiten), o difícil de encontrar, información que se usa afuera de tu módulo. Un ejemplo que da &lt;a href=&quot;https://amzn.to/3ba4MEj&quot;&gt;A Philosophy of Software Design&lt;/a&gt; es en el caso de parámetros de configuración que afecten el rendimiento de una pieza de software y que sea absolutamente necesario conocer para operar bien (podría ser el método de conexión en una red, por ejemplo).&lt;/p&gt;
+
+&lt;p&gt;En el ejemplo de las API’s de mensajería del que hablamos arriba, piensa por ejemplo que la parte del código encargada de generar un mensaje &lt;em&gt;necesita&lt;/em&gt; saber de dónde viene el mensaje para generar un mensaje adecuado al medio (si viene de SMS hará un mensaje mejor de 100 carácteres, por ejemplo).&lt;/p&gt;
+
+&lt;p&gt;O algo a lo que la mayoría de los lenguajes de programación nos obligan: especificar el modo de apertura de u archivo.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, tu trabajo como diseñador de software consiste en &lt;strong&gt;minimizar&lt;/strong&gt; la información que se necesita fuera del módulo, para que sea lo más fácil de usar dentro de los límites.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Este y los artículos anteriores quieren dejar claro algo: el trabajo principal de un módulo es ocultar información. Hay varias formas de lograrlo y detalles a los cuáles ponerles atención. Hacerlo creará código que sea más fácil de &lt;strong&gt;entender y mantener&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;En el próximo artículo hablaremos de por qué es mejor crear módulos de propósito general.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="software-design" /><category term="complexity" /><category term="interfaces" /><category term="defaults" /><summary type="html">Hablemos de algunos consejos para lograr ocultar la mayor cantidad de información posible en tus módulos, pero también de cómo no llevarlo demasiado lejos</summary></entry><entry><title type="html">A Philosophy of Software Design: Descomposición Temporal</title><link href="http://localhost:4000/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Descomposición Temporal" /><published>2020-03-16T00:00:00-06:00</published><updated>2020-03-16T00:00:00-06:00</updated><id>http://localhost:4000/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal</id><content type="html" xml:base="http://localhost:4000/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal.html">&lt;p&gt;En el artículo pasado hablamos de una forma de evitar una fuga de información, que consiste en encapsular una decisión de diseño en un módulo.&lt;/p&gt;
+
+&lt;p&gt;Otra forma de dejar escapar información no relevante para los usuarios de una pieza de software es mediante obligarlos a usarla siempre de la misma forma, con el mismo orden de operaciones reglas de operación implícita. Esto se llama descomposición temporal. Hablemos más de ella.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-la-descomposición-temporal&quot;&gt;Qué es la descomposición temporal&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;En descomposición temporal, la estructura de un sistema corresponde &lt;strong&gt;al orden en el tiempo&lt;/strong&gt; en el que las operaciones &lt;strong&gt;ocurrirán&lt;/strong&gt;. - John Ousterhout&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;La descomposición temporal implica repetir o separar una decisión de diseño por causa del &lt;em&gt;orden en que se usan diferentes partes del sistema&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584345818/A85931E4-BBF3-4301-98D3-ACE20942AF9E_hugdbz.png&quot; alt=&quot;Descomposición temporal&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ejemplos&quot;&gt;Ejemplos&lt;/h2&gt;
+
+&lt;p&gt;John Ousterhout menciona un ejercicio que puso a sus alumnos en el que tenían que crear un programa implementando el protocolo HTTP.&lt;/p&gt;
+
+&lt;p&gt;Algunos equipos crearon una clase para recibir el mensaje desde la red y &lt;em&gt;otra clase para leerlo&lt;/em&gt;, creando así un caso claro de descomposición temporal: como las operaciones sucedían en diferentes momentos (primero recibes y luego lees y procesas) los separaron lógicamente en dos clases que se usaban siempre una detrás de otra. La fuga de información se dio porque para recibir un paquete HTTP &lt;em&gt;tienes que leer&lt;/em&gt; parte del mensaje y entonces la lógica de lectura del mensaje está en &lt;em&gt;ambas clases&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Otro ejemplo más o menos obvio es la lectura y escritura de archivos. Si quieres trabajar con archivos, el orden de las operaciones es la siguiente:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Abrir y leer&lt;/li&gt;
+  &lt;li&gt;Operar con información del archivo&lt;/li&gt;
+  &lt;li&gt;Escribir el archivo&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Un diseño que deja escapar información sería tener dos clases diferentes para la parte de escritura y lectura, cada una con código repetido que sabe leer el formato del archivo.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo 3: imagina las diferentes situaciones en las que un elemento de datos cambia &lt;em&gt;de estado&lt;/em&gt; a través de su ciclo de vida. Puede ser una solicitud de crédito, un reporte, un blogpost, etc.&lt;/p&gt;
+
+&lt;p&gt;Es tentador crear diferentes entidades de datos y clases para representar algún estado en específico, ya que podría hacer que nuestro código fuera un poco más explícito cuando llamamos las clases o métodos.&lt;/p&gt;
+
+&lt;p&gt;Pero si no hay operaciones especiales que correspondan a ese estado, o datos únicos para esta etapa, crear un módulo específico implicaría descomposición temporal: estarías dividiendo o duplicando conocimiento a través de diferentes módulos debido al orden en que suceden los eventos.&lt;/p&gt;
+
+&lt;h2 id=&quot;composición-de-funciones&quot;&gt;Composición de funciones&lt;/h2&gt;
+
+&lt;p&gt;En los lenguajes funcionales es común usar una serie de funciones aplicadas a una entidad de datos. Por ejemplo en Elixir es común hacer lo siguiente.&lt;/p&gt;
+
+&lt;div class=&quot;language-elixir highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# El operador |&amp;gt; Toma el resultado de la función o valor&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# de la expresión anterior (o a su izquierda) y lo manda&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# como primer parámetro a la función a la derecha, parecido&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# a una redirección de salida de Unix&lt;/span&gt;
+
+&lt;span class=&quot;s2&quot;&gt;&quot; the dojo &quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trim&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Limpiar los espacios sobrante a la cadena &quot; the dojo &quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# Separar la cadena&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Enum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;capitalize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&amp;amp;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# Poner en mayúsculas cada uno de los elementos&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Enum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# Volver a juntar la cadena&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Resultado: &quot;The Dojo&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Este ejemplo es un poco exagerado para la función que realiza: poner un texto con capitalización estilo título, Todas Las Iniciales En Mayúsculas.&lt;/p&gt;
+
+&lt;p&gt;La idea viene de las matemáticas y se llama “composición funcional” y como se puede ver es excelente para usar funciones &lt;em&gt;existentes&lt;/em&gt; en la creación de procesos más complejos. Una de las virtudes de esta técnica es la &lt;strong&gt;reutilización&lt;/strong&gt; de las funciones.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, queriendo aplicar esta idea, puedes cometer el error modificar tus módulos (en lenguajes funcionales: funciones), para aplicar esta técnica y &lt;em&gt;terminar con funciones que siempre se usen una tras otra&lt;/em&gt;, esperando la entrada de la misma función y mandando su resultado siempre a la misma función. Algo así:&lt;/p&gt;
+
+&lt;div class=&quot;language-elixir highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;datos&quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MiModulo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mi_funcion_1&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MiModulo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mi_funcion_2&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MiModulo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mi_funcion_3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Esto es un error que yo he cometido y que ha hecho mi código &lt;em&gt;muy difícil de mantener&lt;/em&gt;, ya que al cambiar una función de esta cadena tengo que cambiar las demás, haciéndolas no reutilizables.&lt;/p&gt;
+
+&lt;h2 id=&quot;solución-a-la-descomposición-temporal&quot;&gt;Solución a la descomposición temporal&lt;/h2&gt;
+
+&lt;p&gt;La solución propuesta por &lt;a href=&quot;https://amzn.to/3ba4MEj&quot;&gt;A Philosophy of Software Design&lt;/a&gt; es muy sencilla: &lt;strong&gt;concentra todas las operaciones relacionadas con una decisión de diseño en un módulo&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si nada necesita ser conocido fuera de este módulo (ni detalles de la implementación, ni el orden de operación), has logrado un diseño más limpio. Esto puede implicar que la clase se haga más grande, pero es una mejor solución comparada con tener información repartida por todos lados.&lt;/p&gt;
+
+&lt;p&gt;Así, si la decisión de diseño cambia, &lt;em&gt;sólo tienes que cambiar la implementación&lt;/em&gt; y no la interfaz ni mucho menos su uso.&lt;/p&gt;
+
+&lt;p&gt;En el siguiente artículo veremos finalmente una serie de recomendaciones para evitar las fugas de información y como no llevarlo demasiado lejos.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="descomposición-temporal" /><category term="software-design" /><category term="complexity" /><category term="interfaces" /><summary type="html">Una forma de dejar escapar información es mediante forzar el orden de las operaciones de un módulo. Veamos cómo evitarlo.</summary></entry><entry><title type="html">Guía para escoger tu stack: por qué deberías escoger tecnología aburrida</title><link href="http://localhost:4000/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" rel="alternate" type="text/html" title="Guía para escoger tu stack: por qué deberías escoger tecnología aburrida" /><published>2020-03-11T00:00:00-06:00</published><updated>2020-03-11T00:00:00-06:00</updated><id>http://localhost:4000/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida</id><content type="html" xml:base="http://localhost:4000/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html">&lt;p&gt;Este artículo está basado en la presentación &lt;a href=&quot;http://boringtechnology.club&quot;&gt;Choose Boring Technology&lt;/a&gt; de &lt;a href=&quot;https://mcfunley.com/&quot;&gt;Dan McKinley&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;No hay nada que haga más feliz a un desarrollador que trabajar con el último de los frameworks, lenguaje de programación o herramienta que salió el mes pasado.&lt;/p&gt;
 
@@ -140,7 +278,7 @@
 
 &lt;p&gt;Es más conveniente tanto para ti como para el negocio que tus golpes de dopamina vengan por el lado de resolver problemas emocionantes &lt;em&gt;útiles para algún cliente y para el negocio&lt;/em&gt;, que por andar resolviendo problemas oscuros que nadie le proveen mucho valor (tal vez aprendizaje, pero se puede obtener de otras formas).&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Enfoca tus esfuerzos en cosas útiles para el negocio.&lt;/strong&gt;&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="arquitectura" /><category term="infraestructura" /><category term="decisiones-técnicas" /><summary type="html">Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología probada.</summary></entry><entry><title type="html">A Philosophy of Software Design: Ocultar información</title><link href="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Ocultar información" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html">&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Enfoca tus esfuerzos en cosas útiles para el negocio.&lt;/strong&gt;&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="arquitectura" /><category term="infraestructura" /><category term="decisiones-técnicas" /><summary type="html">Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología probada.</summary></entry><entry><title type="html">A Philosophy of Software Design: Ocultar información</title><link href="http://localhost:4000/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Ocultar información" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>http://localhost:4000/2020/03/07/a-philosophy-of-software-design-ocultar-informacion</id><content type="html" xml:base="http://localhost:4000/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html">&lt;blockquote&gt;
   &lt;p&gt;La idea básica es que cada módulo debería encapsular algunas piezas de conocimiento, que representen decisiones de diseño. - &lt;strong&gt;John Ousterhout&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -189,7 +327,7 @@
 
 &lt;p&gt;¿Puedes pensar en otros ejemplos? En el libro &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;PoSD&lt;/a&gt; vienen algunos.&lt;/p&gt;
 
-&lt;p&gt;En el próximo artículo hablaremos de otra forma de fugas de información: la descomposición temporal.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="interfaces" /><category term="módulo" /><category term="complejidad" /><category term="diseño-de-software" /><summary type="html">Ocultar información es una de las claves para reducir la complejidad, veamos algunas maneras de lograrlo.</summary></entry><entry><title type="html">A Philosophy of Software Design: Los módulos deben ser profundos</title><link href="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Los módulos deben ser profundos" /><published>2020-03-02T00:00:00-06:00</published><updated>2020-03-02T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html">&lt;p&gt;Para reducir la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es la organización y separación de código a alto nivel, es decir separación en módulos.&lt;/p&gt;
+&lt;p&gt;En el próximo artículo hablaremos de otra forma de fugas de información: la descomposición temporal.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="interfaces" /><category term="módulo" /><category term="complejidad" /><category term="diseño-de-software" /><summary type="html">Ocultar información es una de las claves para reducir la complejidad, veamos algunas maneras de lograrlo.</summary></entry><entry><title type="html">A Philosophy of Software Design: Los módulos deben ser profundos</title><link href="http://localhost:4000/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Los módulos deben ser profundos" /><published>2020-03-02T00:00:00-06:00</published><updated>2020-03-02T00:00:00-06:00</updated><id>http://localhost:4000/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos</id><content type="html" xml:base="http://localhost:4000/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html">&lt;p&gt;Para reducir la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es la organización y separación de código a alto nivel, es decir separación en módulos.&lt;/p&gt;
 
 &lt;h2 id=&quot;por-qué-es-importante-la-separación&quot;&gt;Por qué es importante la separación&lt;/h2&gt;
 
@@ -258,7 +396,7 @@
   &lt;li&gt;La expansión de cambios (tener que tocar muchos lados del sistema para hacer un cambio relativamente pequeño)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Finalmente, recuerda que una de las funciones que proveen los módulos es &lt;em&gt;ocultar&lt;/em&gt; la complejidad. ¿Cuántas veces has visto lo que hacen las funciones prefabricadas de tu lenguaje de programación? Es probable que ninguna. Los módulos profundos y bien hechos permiten ocultar mayor cantidad de información y hace más fácil trabajar con ellos y simplifica el sistema en general.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="módulo" /><category term="PoSD" /><category term="ousterhout" /><category term="complejidad" /><category term="función" /><summary type="html">Veamos algunos lineamientos para el diseño de funciones/clases/módulos que ayudarán a reducir la complejidad de tus sistemas de software.</summary></entry><entry><title type="html">A Philosophy of Software Design: Tres formas de identificar la complejidad</title><link href="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Tres formas de identificar la complejidad" /><published>2020-02-26T00:00:00-06:00</published><updated>2020-02-26T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html">&lt;blockquote&gt;
+&lt;p&gt;Finalmente, recuerda que una de las funciones que proveen los módulos es &lt;em&gt;ocultar&lt;/em&gt; la complejidad. ¿Cuántas veces has visto lo que hacen las funciones prefabricadas de tu lenguaje de programación? Es probable que ninguna. Los módulos profundos y bien hechos permiten ocultar mayor cantidad de información y hace más fácil trabajar con ellos y simplifica el sistema en general.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="módulo" /><category term="PoSD" /><category term="ousterhout" /><category term="complejidad" /><category term="función" /><summary type="html">Veamos algunos lineamientos para el diseño de funciones/clases/módulos que ayudarán a reducir la complejidad de tus sistemas de software.</summary></entry><entry><title type="html">A Philosophy of Software Design: Tres formas de identificar la complejidad</title><link href="http://localhost:4000/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Tres formas de identificar la complejidad" /><published>2020-02-26T00:00:00-06:00</published><updated>2020-02-26T00:00:00-06:00</updated><id>http://localhost:4000/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6</id><content type="html" xml:base="http://localhost:4000/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html">&lt;blockquote&gt;
   &lt;p&gt;“Controlar la complejidad es la esencia de la programación” - Brian W. Kernighan&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -316,7 +454,7 @@
   &lt;p&gt;La complejidad total de un sistema es la sumatoria de la complejidad de cada una de sus partes multiplicada por el tiempo que los desarrolladores pasan en esa parte del código.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Esta complejidad puede evitar que avances tanto como deberías, pero el primer paso es identificarla como lo viste aquí. En los siguientes artículos hablaremos de técnicas para reducir la complejidad.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="ousterhout" /><category term="complejidad" /><category term="diseño-de-software" /><category term="posd" /><summary type="html">Aprende a descubrir y medir la complejidad en tus proyectos</summary></entry><entry><title type="html">Eloquent JavaScript en Español</title><link href="https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol.html" rel="alternate" type="text/html" title="Eloquent JavaScript en Español" /><published>2020-02-21T00:00:00-06:00</published><updated>2020-02-21T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol.html">&lt;blockquote&gt;
+&lt;p&gt;Esta complejidad puede evitar que avances tanto como deberías, pero el primer paso es identificarla como lo viste aquí. En los siguientes artículos hablaremos de técnicas para reducir la complejidad.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="ousterhout" /><category term="complejidad" /><category term="diseño-de-software" /><category term="posd" /><summary type="html">Aprende a descubrir y medir la complejidad en tus proyectos</summary></entry><entry><title type="html">Eloquent JavaScript en Español</title><link href="http://localhost:4000/2020/02/21/eloquent-javascript-en-espanol.html" rel="alternate" type="text/html" title="Eloquent JavaScript en Español" /><published>2020-02-21T00:00:00-06:00</published><updated>2020-02-21T00:00:00-06:00</updated><id>http://localhost:4000/2020/02/21/eloquent-javascript-en-espanol</id><content type="html" xml:base="http://localhost:4000/2020/02/21/eloquent-javascript-en-espanol.html">&lt;blockquote&gt;
   &lt;p&gt;TL;DR: Estamos trabajando en una nueva traducción de Eloquent JavaScript al español, en su tercera edición. La puedes encontrar aquí: &lt;a href=&quot;https://eloquentjs-es.thedojo.mx/&quot;&gt;Eloquent JavaScript en Español&lt;/a&gt;. Está la versión en &lt;a href=&quot;https://eloquentjs-es.thedojo.mx/Eloquent_JavaScript.pdf&quot;&gt;Eloquent JavaScript en Español en PDF&lt;/a&gt;, que actualizamos cada capítulo. Si quieres contribuir puedes ponerte de acuerdo a través de este foro o en GitHub.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -349,7 +487,7 @@ Puedes leer el libro en línea o descargarlo en PDF, próximamente en EPUB y Mob
 
 &lt;p&gt;Finalmente, en el futuro habilitaremos algún medio para contribuciones monetarias, para acelerar la traducción mediante la contratación de traductores y diseñadores profesionales.&lt;/p&gt;
 
-&lt;p&gt;No dudes en ponerte en contacto en &lt;a href=&quot;https://github.com/Eloquent-JavaScript-Espanol/Eloquent-JavaScript-ES&quot;&gt;GitHub&lt;/a&gt; o a través de este artículo, en los comentarios.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="eloquentjs-español" /><category term="eloquent-js" /><category term="eloquent" /><category term="javascript" /><category term="eloquent-javascript-pdf" /><summary type="html">Traudcción del Eloquent JavaScript al español, 3ra edición</summary></entry><entry><title type="html">A Philosophy of Software Design: Desarrollo Táctico vs Estratégico</title><link href="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Desarrollo Táctico vs Estratégico" /><published>2020-02-11T00:00:00-06:00</published><updated>2020-02-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html">&lt;p&gt;Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada uno.&lt;/p&gt;
+&lt;p&gt;No dudes en ponerte en contacto en &lt;a href=&quot;https://github.com/Eloquent-JavaScript-Espanol/Eloquent-JavaScript-ES&quot;&gt;GitHub&lt;/a&gt; o a través de este artículo, en los comentarios.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="eloquentjs-español" /><category term="eloquent-js" /><category term="eloquent" /><category term="javascript" /><category term="eloquent-javascript-pdf" /><summary type="html">Traudcción del Eloquent JavaScript al español, 3ra edición</summary></entry><entry><title type="html">A Philosophy of Software Design: Desarrollo Táctico vs Estratégico</title><link href="http://localhost:4000/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Desarrollo Táctico vs Estratégico" /><published>2020-02-11T00:00:00-06:00</published><updated>2020-02-11T00:00:00-06:00</updated><id>http://localhost:4000/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica</id><content type="html" xml:base="http://localhost:4000/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html">&lt;p&gt;Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada uno.&lt;/p&gt;
 
 &lt;h2 id=&quot;desarrollo-táctico&quot;&gt;Desarrollo táctico&lt;/h2&gt;
 
@@ -407,7 +545,7 @@ Puedes leer el libro en línea o descargarlo en PDF, próximamente en EPUB y Mob
 
 &lt;p&gt;Pero no seamos puristas y pensemos que si no es de la forma estratégica no vale la pena, la pregunta es: &lt;em&gt;¿Qué tipo de desarrollo conviene para tu proyecto según su tiempo de vida?&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Este y los siguientes artículos están basados en el libro &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;“A Philosophy of Software Design”&lt;/a&gt; de John K. Ousterhout.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="a-philosophy-of-software-design" /><category term="complejidad" /><summary type="html">Dos diferentes formas de desarrollar sistemas de software</summary></entry><entry><title type="html">¿Qué es DevOps?</title><link href="https://blog.thedojo.mx/2020/01/16/que-es-devops.html" rel="alternate" type="text/html" title="¿Qué es DevOps?" /><published>2020-01-16T00:00:00-06:00</published><updated>2020-01-16T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/01/16/que-es-devops</id><content type="html" xml:base="https://blog.thedojo.mx/2020/01/16/que-es-devops.html">&lt;p&gt;&lt;strong&gt;DevOps&lt;/strong&gt; es un término de recientemente creación (2013) que representa un cultura de trabajo enfocada en resolver los problemas que han sido persistentes en la entrega y servicio en el área de productos tecnológicos.&lt;/p&gt;
+&lt;p&gt;Este y los siguientes artículos están basados en el libro &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;“A Philosophy of Software Design”&lt;/a&gt; de John K. Ousterhout.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="a-philosophy-of-software-design" /><category term="complejidad" /><summary type="html">Dos diferentes formas de desarrollar sistemas de software</summary></entry><entry><title type="html">¿Qué es DevOps?</title><link href="http://localhost:4000/2020/01/16/que-es-devops.html" rel="alternate" type="text/html" title="¿Qué es DevOps?" /><published>2020-01-16T00:00:00-06:00</published><updated>2020-01-16T00:00:00-06:00</updated><id>http://localhost:4000/2020/01/16/que-es-devops</id><content type="html" xml:base="http://localhost:4000/2020/01/16/que-es-devops.html">&lt;p&gt;&lt;strong&gt;DevOps&lt;/strong&gt; es un término de recientemente creación (2013) que representa un cultura de trabajo enfocada en resolver los problemas que han sido persistentes en la entrega y servicio en el área de productos tecnológicos.&lt;/p&gt;
 
 &lt;p&gt;En este artículo platicaremos qué significa y sus fundamentos.&lt;/p&gt;
 
@@ -528,7 +666,7 @@ Es por eso que debe haber una manera física de ver el trabajo, como lo habría 
 
 &lt;p&gt;Perfeccionar estas prácticas es algo que nunca se termina y lleva tiempo ver los resultados. Así que ¿qué esperas para empezar?&lt;/p&gt;
 
-&lt;p&gt;Con este pequeño artículo esperamos que quede claro que &lt;a href=&quot;http://bit.ly/36t59HK&quot;&gt;DevOps no es un rol en la empresa&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="devops" /><category term="servers" /><category term="culture" /><summary type="html">Hablemos de qué es de DevOps y como puede beneficiar a tu empresa aplicarlo</summary></entry><entry><title type="html">Recursos gratutitos para aprender a programar desde cero</title><link href="https://blog.thedojo.mx/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html" rel="alternate" type="text/html" title="Recursos gratutitos para aprender a programar desde cero" /><published>2019-12-29T00:00:00-06:00</published><updated>2019-12-29T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html">&lt;p&gt;¿Quieres aprender a programar y no sabes por dónde empezar?&lt;/p&gt;
+&lt;p&gt;Con este pequeño artículo esperamos que quede claro que &lt;a href=&quot;http://bit.ly/36t59HK&quot;&gt;DevOps no es un rol en la empresa&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="devops" /><category term="servers" /><category term="culture" /><summary type="html">Hablemos de qué es de DevOps y como puede beneficiar a tu empresa aplicarlo</summary></entry><entry><title type="html">Recursos gratutitos para aprender a programar desde cero</title><link href="http://localhost:4000/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html" rel="alternate" type="text/html" title="Recursos gratutitos para aprender a programar desde cero" /><published>2019-12-29T00:00:00-06:00</published><updated>2019-12-29T00:00:00-06:00</updated><id>http://localhost:4000/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero</id><content type="html" xml:base="http://localhost:4000/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html">&lt;p&gt;¿Quieres aprender a programar y no sabes por dónde empezar?&lt;/p&gt;
 
 &lt;p&gt;En este post te daremos algunos recursos que puedes seguir para aprender a programar desde lo más básico hasta tener un conocimiento razonable de programación con el que podrías empezar a trabajar como becario.&lt;/p&gt;
 
@@ -600,258 +738,4 @@ Es un curso que no puedes perder si quieres ser un autodidacta de la programaci�
 
 &lt;p&gt;Lo que acabas de aprender después de terminar esto son sólo las bases. Igual que muchas otras carreras, en ésta tienes que poder seguir aprendiendo constantemente. El desarrollo de software, sin embargo, se caracteriza por ciclos más cortos aún, en los que las habilidades se quedan obsoletas en mucho menos tiempo así que debes afinar tus habilidades de aprendizaje.&lt;/p&gt;
 
-&lt;p&gt;Una de las mejores maneras de solidificar tu conocimiento después de practicarlo, es enseñándolo a otros. No te quedes con lo aprendiste y devuelve algo a la comunidad: enseña siempre que puedas mediante conferencias, videos o artículos en un blog. De esto es algo de lo que no te arrepentirás.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprender" /><category term="programar" /><category term="recursos-aprendizaje" /><summary type="html">Hemos escrito una lista de recursos que te pueden ayudar a aprender a programar en tiempo record.</summary></entry><entry><title type="html">Las matemáticas que debes saber para programar</title><link href="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html" rel="alternate" type="text/html" title="Las matemáticas que debes saber para programar" /><published>2019-12-25T00:00:00-06:00</published><updated>2019-12-25T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html">&lt;p&gt;Cuando se habla de &lt;strong&gt;matemáticas&lt;/strong&gt; mucha gente empieza a sentirse fastidiada porque creen que son cosas difíciles de entender.&lt;/p&gt;
-
-&lt;p&gt;Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como &lt;strong&gt;una rama de las matemáticas&lt;/strong&gt;, pero han divergido tanto que ya no se pueden considerar matemáticas solamente.&lt;/p&gt;
-
-&lt;p&gt;Pero para programar con eficacia no necesitas saber muchas matemáticas, de hecho, con el entendimiento básico es suficiente. En este artículo hablaremos de aquello que debes dominar.&lt;/p&gt;
-
-&lt;p&gt;De hecho, si ya programas &lt;em&gt;usas&lt;/em&gt; matemáticas. Saber más te ayudará a programar mejor, pero del tipo correcto.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-son-las-matemáticas&quot;&gt;¿Qué son las matemáticas?&lt;/h2&gt;
-
-&lt;p&gt;Definir las matemáticas es difícil. Según lo que (de manera muy irresponsable) nos han enseñado en la escuela, las matemáticas es el tratamiento de los &lt;strong&gt;números&lt;/strong&gt;. Eso está muy lejos de la realidad, y ya te habrás dado cuenta si has avanzado lo suficiente en matemáticas.&lt;/p&gt;
-
-&lt;p&gt;Es cierto, las matemáticas más elementales se pueden reducir a números, pero no es su centro, el espíritu de su estudio.&lt;/p&gt;
-
-&lt;p&gt;Algunas definiciones que encontré útiles:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Las matemáticas son la manera que tenemos de elevar a la categoría de un arte nuestros &lt;strong&gt;esfuerzos cognoscitivos&lt;/strong&gt;. - Fausto Ongay&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Ongay también menciona que la etimología de la palabra matemáticas tiene que ver con conocer o saber. Así, en cierta medida las matemáticas se pueden pensar como la ciencia o el arte &lt;strong&gt;de la certidumbre&lt;/strong&gt;. Es decir, de saber algo con certeza y poder verificarlo.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;La matemática, como una expresión de la mente humana, refleja la voluntad activa, la razón contemplativa, y el deseo de la perfección. Sus elementos básicos son: lógica e intuición, análisis y construcción, generalidad y particularidad. - Richard Courant&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;En esta definición más abstracta se mencionan los elementos usados para lograr su cometido: lógica, intuición, análisis, construcción (o síntesis), generalidad (inducción), particularidad (deducción). Ya hablamos un poco de esto en los artículos acerca de las idea de &lt;a href=&quot;http://bit.ly/39madQm&quot;&gt;George Polya&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Si quieres adentrarte en esto el libro &lt;a href=&quot;http://bit.ly/2F4Dn8N&quot;&gt;&lt;strong&gt;¿Qué son las matemáticas?&lt;/strong&gt;&lt;/a&gt; habla de ello a fondo.&lt;/p&gt;
-
-&lt;p&gt;Pero no estamos aquí para filosofar acerca de las matemáticas. Lo único que quiero quede claro con esto es que las matemáticas no tienen que ver con &lt;strong&gt;números&lt;/strong&gt;, sino con el &lt;em&gt;razonamiento&lt;/em&gt;, &lt;em&gt;certidumbre&lt;/em&gt; y resolución de problemas.&lt;/p&gt;
-
-&lt;h2 id=&quot;matemáticas-básicas&quot;&gt;Matemáticas Básicas&lt;/h2&gt;
-
-&lt;p&gt;Empecemos hablando brevemente de las matemáticas que debes conocer como programador y como ser humano.&lt;/p&gt;
-
-&lt;h3 id=&quot;operaciones-básicas&quot;&gt;Operaciones básicas&lt;/h3&gt;
-
-&lt;p&gt;Saber operar con números en la vida cotidiana es una habilidad que todos necesitamos. Pero más importante aún es entender el significado de estas operaciones:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Qué significa una multiplicación?&lt;/li&gt;
-  &lt;li&gt;¿Qué significa una división?&lt;/li&gt;
-  &lt;li&gt;¿Qué significado tiene el elevar un número a una potencia?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Entender esto te ayudará a &lt;strong&gt;resolver problemas&lt;/strong&gt; que es la actividad principal que se realiza cuando programas. Todo lo demás está alrededor de esto.&lt;/p&gt;
-
-&lt;h3 id=&quot;probabilidad-y-estadística&quot;&gt;Probabilidad y estadística&lt;/h3&gt;
-
-&lt;p&gt;Tener las nociones de estas áreas es una de las herramientas más útiles a la hora de resolver problemas y sobre todo atacarlos prácticamente. Varias de las áreas de la ciencia de la computación basan sus resultados y procesos en estas dos áreas.&lt;/p&gt;
-
-&lt;p&gt;Un ejemplo es la &lt;strong&gt;criptografía&lt;/strong&gt;: los algoritmos de cifrado como &lt;strong&gt;AES&lt;/strong&gt; trabajan con una llave que es usada para cifrar y descifrar el mensaje. Asignar el tamaño de la llave depende totalmente de la &lt;em&gt;probabilidad&lt;/em&gt; de que un atacante sea capaz de adivinar la llave en un número de intentos razonable.&lt;/p&gt;
-
-&lt;p&gt;Ahora imagina que la llave tiene 128 bits de longitud. Aquí entra otro par de conceptos importantes para la computación.&lt;/p&gt;
-
-&lt;h3 id=&quot;combinaciones-y-permutaciones&quot;&gt;Combinaciones y permutaciones&lt;/h3&gt;
-
-&lt;p&gt;¿Cuál es el número de llaves diferentes que se pueden generar con 128 bits? La respuesta es: 2^128 (2 elevado a la potencia 128). &lt;em&gt;¿Cómo llegamos a esa respuesta?&lt;/em&gt; Esto se conoce como &lt;strong&gt;conteo&lt;/strong&gt; en matemáticas y las bases son la &lt;strong&gt;permutación&lt;/strong&gt; y la &lt;strong&gt;combinación&lt;/strong&gt; de elementos. En este caso es la permutación de 2 elementos que permiten repetición en 128 lugares.&lt;/p&gt;
-
-&lt;p&gt;¿Qué probabilidad hay de que alguien encuentre esa llave por suerte en el primer intento?&lt;/p&gt;
-
-&lt;p&gt;La respuesta es 1/2^128. Tan cerca de cero para ser considerada prácticamente imposible de adivinar incluso en un número de intentos razonable.&lt;/p&gt;
-
-&lt;p&gt;La criptografía y varias áreas están llenas de probabilidad y estadística (como el aprendizaje automático y el análisis de datos, aunque más avanzadas).&lt;/p&gt;
-
-&lt;p&gt;Si sientes que necesitas un recordatorio aquí hay un curso que enseña desde lo más básico: &lt;a href=&quot;http://bit.ly/2rrL4mb&quot;&gt;Conteo, combinaciones y permutaciones en Khan Academy&lt;/a&gt;. Este también es un curso que enseña probabilidad y estadística desde cero.&lt;/p&gt;
-
-&lt;h2 id=&quot;lógica-matemáticas-discretas&quot;&gt;Lógica (Matemáticas discretas)&lt;/h2&gt;
-
-&lt;p&gt;Las matemáticas discretas son una de las áreas más abstractas de las matemáticas cuando las vemos en papel pero en realidad tratamos con ellas a diario. Podemos definir las matemáticas discretas como &lt;em&gt;el estudio de las cosas que se pueden contar, sean finitas o infinitas&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;La &lt;strong&gt;lógica&lt;/strong&gt; es uno de los campos de estudio de las matemáticas discretas. Se enfoca en estudiar &lt;strong&gt;el razonamiento&lt;/strong&gt; y sobre todo &lt;em&gt;si el razonamiento es &lt;strong&gt;correcto&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Para lograr esto la lógica se vale del estudio de las &lt;strong&gt;proposiciones&lt;/strong&gt; (o afirmaciones) y sus relaciones. Una proposición es un enunciado que dice algo que puede ser &lt;em&gt;verdadero&lt;/em&gt; o &lt;em&gt;falso&lt;/em&gt;. En matemáticas se dice que tiene un &lt;strong&gt;valor de verdad&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Dos proposiciones se pueden relacionar mediante un &lt;em&gt;conector&lt;/em&gt; (en electrónica: compuertas lógicas, en programación son operadores booleanos). Los conectores más conocidos son el &lt;strong&gt;or&lt;/strong&gt; (o) y el &lt;strong&gt;and&lt;/strong&gt;(y).&lt;/p&gt;
-
-&lt;p&gt;Esto da origen a demostraciones tanto matemáticas como prácticas. En el desarrollo de sistemas se pueden usar para demostrar que tu algoritmo o solución es correcto, es decir, va a funcionar con los datos de entrada propuestos que cumplan con los valores de verdad.&lt;/p&gt;
-
-&lt;p&gt;¿Son absolutamente necesarias para programar? Las demostraciones no, pero serán útiles si quieres crear demostraciones de que un algoritmo funciona sin tener que crear miles de ejemplos que convenzan a alguien. &lt;strong&gt;Lo que sí es necesario entender es el funcionamiento de los conectores lógicos, no hay programa que se escape de ellos.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;conjuntos&quot;&gt;Conjuntos&lt;/h3&gt;
-
-&lt;p&gt;El estudio de los conjuntos es una parte de las matemáticas discretas que se enfoca en estudiar elementos (objetos) que se agrupan por alguna característica en común. Los conjuntos son de gran utilidad para resolver muchos problemas matemáticos y la criptografía actual esta fuertemente basada en algunos problemas que tienen que ver con el cálculo de ciertos conjuntos.&lt;/p&gt;
-
-&lt;p&gt;¿Me sirve para trabajar en el día a día? Para cierto tipo de problemas es más cómodo trabajar con conjuntos que con los tipos de datos comunes de colecciones a los que estamos acostumbrados los programadores. Tratar tu colección (lista, tupla, etc.) como un conjunto matemático te permitirá efectuar operaciones como la &lt;strong&gt;intersección de conjuntos&lt;/strong&gt; (elementos en común), la &lt;strong&gt;unión&lt;/strong&gt; (todos los elementos únicos encontrados en dos o más conjuntos). Si el lenguaje de programación tiene este tipo de dato te va a dar un buen empujón.&lt;/p&gt;
-
-&lt;p&gt;Por cierto, el resultado de las consultas en SQL (lenguaje de manejo de datos para la mayoría de las bases de datos) se comportan como conjuntos matemáticos.&lt;/p&gt;
-
-&lt;p&gt;¿Quieres aprender matemáticas discretas? Aquí tienes un pequeño curso: &lt;a href=&quot;http://bit.ly/2EWToND&quot;&gt;Curso de matemáticas discretas&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Eso es todo lo que necesitas para programar básicamente. Mientras mejor seas en estos campos, mejor podrás aprovecharlos para programar mejor o para entender mejor los programas de otros.&lt;/p&gt;
-
-&lt;h3 id=&quot;sistemas-numéricos&quot;&gt;Sistemas numéricos&lt;/h3&gt;
-
-&lt;p&gt;Los sistemas numéricos son un tipo de conjuntos que se conforman de todas las cifras que pueden formarse con una cantidad determinada de símbolos que representan los números. El número de símbolos le da nombre al sistema: si hay dos símbolos (0, 1) es binario, si hay tres (0, 1, 2), ternario, etc.&lt;/p&gt;
-
-&lt;p&gt;Para programar es muy conveniente que entiendas básicamente cómo se define un sistema numérico y que conozcas por lo menos cuatro:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Decimal&lt;/strong&gt;. Incluye los símbolos que conocemos como dígitos (0, 1, 2,.., 9). Su base es el 10.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Binario&lt;/strong&gt;. Es el sistema numérico con el que los microprocesadores pueden trabajar. Por eso es importante conocerlos. Sólo se pueden usar dos valores: 0 y 1.  Su base es el 2.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Hexadecimal&lt;/strong&gt;. Se usa por conveniencia para representar números binarios de manera abreviada, por su compatibilidad entre bases (16 = 2^4). Su base es el 16 y los símbolos o valores extra que incluye a parte de los dígitos comunes son las letras de la A a la F.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Octal&lt;/strong&gt;. Su base es el 8 y también se usa para abreviar números decimales. Usa los dígitos del 0 al 7.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;El sistema decimal lo usamos en la vida diaria. Con entender básicamente el binario y hexadecimal estarás bien.&lt;/p&gt;
-
-&lt;h1 id=&quot;matemáticas-avanzadas-y-especificas&quot;&gt;Matemáticas avanzadas y especificas&lt;/h1&gt;
-
-&lt;p&gt;En muchas áreas de la programación se usan matemáticas más avanzadas, sobre todo en áreas que están sonando mucho recientemente: análisis de datos e inteligencia artificial. Si quieres entender a fondo estas y otras áreas del desarrollo de sistemas, es conveniente tener un conocimiento amplio en algunas de las siguientes áreas:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Probabilidad y estadística avanzada&lt;/strong&gt;. Saber acerca de variables aleatorias, distribuciones de probabilidad, análisis Bayesiano, etc. Esto te permitirá analizar datos tanto exploratoria como predictivamente.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Álgebra lineal&lt;/strong&gt;. El álgebra y la resolución de ecuaciones que representan líneas en el plano cartesiano. Esto te ayudará a tratar con conjuntos de datos. Muchas de los resultados de los algoritmos de Machine Learning son ecuaciones lineales.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Ecuaciones diferenciales&lt;/strong&gt;. Esto es la resolución de sistemas de ecuaciones y sus derivadas. Esto tiene aplicaciones en todo lo que tenga que ver con cambios respecto a alguna variable, como el tiempo.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Hablé de los campos finales pero para entender esto debes tener conocimiento previo:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Geometría Analítica&lt;/li&gt;
-  &lt;li&gt;Álgebra&lt;/li&gt;
-  &lt;li&gt;Trigonometría&lt;/li&gt;
-  &lt;li&gt;Cálculo Integral y diferencial&lt;/li&gt;
-  &lt;li&gt;Cálculo Vectorial&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Por suerte, para los campos de los que hablá arriba no tienes que saber todo esto, a menos que quieras ser el desarrollador de los algoritmos originales. Generalmente somos usuarios de bibliotecas creadas por genios que ya hacen lo que necesitamos.&lt;/p&gt;
-
-&lt;h2 id=&quot;no-te-preocupes&quot;&gt;No te preocupes&lt;/h2&gt;
-
-&lt;p&gt;Saber matemáticas avanzadas no es necesario para ser ser un programador exitoso si tu campo de desarrollo no lo necesita dentro de su dominio. Por supuesto que aprender cosas así de difíciles te hará más hábil para resolver problemas, tal como saber física o química avanzada te harían más hábil.&lt;/p&gt;
-
-&lt;p&gt;Fuera de las matemáticas básicas y un control decente e intuitivo de la lógica, no es necesario que seas &lt;a href=&quot;http://bit.ly/2StKLCz&quot;&gt;Terence Tao&lt;/a&gt;, a menos que el campo en el que estés trabajando esté directamente relacionado con eso, tal
-como tendrías que saber lo suficiente de finanzas si estuvieras haciendo una app financiera o de administración de empresas si estuvieras haciendo una aplicación o plataforma para este campo.&lt;/p&gt;
-
-&lt;p&gt;Aquí hay un video curso en el que se explican más ampliamente lo que algunos llaman &lt;a href=&quot;http://bit.ly/2rvD6Zi&quot;&gt;“matemáticas para programadores”&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="math" /><category term="matemáticas" /><category term="aprender" /><summary type="html">¿Qué tantas matemáticas necesitas para programar? En este artículo lo veremos.</summary></entry><entry><title type="html">Formatos de marcado de texto que deberías aprender</title><link href="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html" rel="alternate" type="text/html" title="Formatos de marcado de texto que deberías aprender" /><published>2019-12-20T00:00:00-06:00</published><updated>2019-12-20T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender</id><content type="html" xml:base="https://blog.thedojo.mx/2019/12/20/formatos-de-marcado-de-texto-que-deberias-aprender.html">&lt;p&gt;Parte del trabajo de un desarrollador es crear documentos con un formato fácil de entender y agradable a la vista, para crear documentación, registrar decisiones, escribir manuales, etc. La forma común de hacerlos es un procesador de textos como Word o Google Docs, pero generalmente batallamos sobre todo con el formateo y embellecimiento de documento.&lt;/p&gt;
-
-&lt;p&gt;En este artículo te platicaré de &lt;strong&gt;tres alternativas&lt;/strong&gt; que pueden hacer tu vida más fácil: Markdown, reStructuredText, AsciiDoc.&lt;/p&gt;
-
-&lt;p&gt;Todos estos lenguajes pueden producir múltiples formatos de salida: HTML, PDF, Word, entre otros. Y lo mejor es que estas salidas son personalizables.&lt;/p&gt;
-
-&lt;h2 id=&quot;markdown&quot;&gt;Markdown&lt;/h2&gt;
-
-&lt;p&gt;Es el formato de marcado de texto simple más conocido por ser el usado en muchos lados (GitHub, por ejemplo) para darle un poco de formato semántico al texto.&lt;/p&gt;
-
-&lt;p&gt;Puedes crear los estilos de texto más comunes directamente:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;negritas&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;cursivas&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/&quot;&gt;enlaces&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Imágenes:&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_100/v1559453194/luis-dille-1098834-unsplash_vndt6g.jpg&quot; alt=&quot;Imagen de ejemplo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;También permite crear listas no numeradas, como la anterior, numeradas, tablas (con las sintaxis extendidas pero no con la definición original) y una serie de títulos de diferente jerarquía equivalentes a los headers de HTML (h1, h2… h6).&lt;/p&gt;
-
-&lt;p&gt;De hecho, esta entrada está escrita con Markdown. Markdown es tan popular que existen aplicaciones completamente dedicadas a él como &lt;a href=&quot;http://bit.ly/2M7YmLL&quot;&gt;MacDown&lt;/a&gt;, &lt;a href=&quot;http://bit.ly/38Zhohc&quot;&gt;Focused&lt;/a&gt; y &lt;a href=&quot;http://bit.ly/2S4MX38&quot;&gt;Typora&lt;/a&gt;. Además, diferentes empresas han creado sus propios dialectos o adaptaciones para que sea más fácil de usar en su caso específico.&lt;/p&gt;
-
-&lt;p&gt;Si aún no lo sabes usar, vale la pena que le eches un ojo: &lt;a href=&quot;http://bit.ly/38S2l8G&quot;&gt;Guía de Markdown en español&lt;/a&gt;. Tardarás unos minutos en aprender lo básico que es muy útil para el 80% de los casos en los que lo ocuparas.&lt;/p&gt;
-
-&lt;p&gt;Markdown es muy bueno para crear documentos individuales pero, ¿qué pasa si el texto que quieres escribir es más extenso? Tal vez el texto está compuesto por muchas partes, como un libro o una documentación extensa. Hay quienes dicen que &lt;a href=&quot;http://bit.ly/2sOpmJg&quot;&gt;no deberías usar Markdown para crear tu documentación&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Las siguientes herramientas están mejor que preparadas que Markdown para eso, permiten crear cuerpos de textos más extensos.&lt;/p&gt;
-
-&lt;h2 id=&quot;restructuredtext&quot;&gt;reStructuredText&lt;/h2&gt;
-
-&lt;p&gt;Este formato de texto es adecuado para crear cuerpos de texto más complejos que con Markdown. Tienes las mismas capacidades de formateo de texto que con Markdown: negritas, cursivas, cabeceras, links, imágenes, listas, tablas, etc.&lt;/p&gt;
-
-&lt;p&gt;Pero reStructuredText provee &lt;strong&gt;más opciones&lt;/strong&gt; para formatear el texto, ya que fue creado para hacer &lt;em&gt;documentos técnicos&lt;/em&gt; además de documentos de carácter general.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;reStructuredText&lt;/strong&gt; parece ser parte de &lt;a href=&quot;http://bit.ly/2ECmEt2&quot;&gt;docutils&lt;/a&gt; originalmente, creado como una revisión de se &lt;a href=&quot;http://bit.ly/35NkdQk&quot;&gt;StructuredText&lt;/a&gt; y &lt;a href=&quot;http://bit.ly/2PIAdgT&quot;&gt;Setext&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Sus herramientas te permitirán crear texto marcado con &lt;strong&gt;mejor semántica&lt;/strong&gt; que Markdown, más estandarizado (RST no tiene ‘sabores’ o dialectos) y con herramientas adaptadas a la documentación de código. Entre otras cosas RST provee:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Más formatos de listas:
-    &lt;ul&gt;
-      &lt;li&gt;Listas de definición&lt;/li&gt;
-      &lt;li&gt;Listas de parámetros&lt;/li&gt;
-      &lt;li&gt;Numeración de listas arbitrariamente&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Bloques de texto pre-formateado (para código)&lt;/li&gt;
-  &lt;li&gt;Bloques de documentación de pruebas&lt;/li&gt;
-  &lt;li&gt;Citas&lt;/li&gt;
-  &lt;li&gt;Notas a pie de página&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Directivas&lt;/strong&gt;, una manera de extender el lenguaje con construcciones propias&lt;/li&gt;
-  &lt;li&gt;Hyperlinks con diferentes destinos: externos, internos, etc.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Esta última característica permite crear documentos interconectados que son muy útiles para textos amplios.&lt;/p&gt;
-
-&lt;p&gt;RST es el formato default de &lt;a href=&quot;http://bit.ly/35Jb6QP&quot;&gt;Sphinx&lt;/a&gt; una herramienta de documentación de código creada en Python que te puede ayudar a crear documentación muy bonita.&lt;/p&gt;
-
-&lt;p&gt;Aquí hay una introducción a RST en inglés: &lt;a href=&quot;http://bit.ly/2rdQn8y&quot;&gt;A reStructuredText Primer&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;asciidoc&quot;&gt;AsciiDoc&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Incluso el software más brillante es inútil sin buena documentación. - Documentación de AsciiDoc&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;AsciiDoc&lt;/strong&gt; fue creado para hacer &lt;strong&gt;tan fácil como escribir un email&lt;/strong&gt; la escritura de cualquier tipo de documento, sea este un artículo, un texto en prosa, un libro o documentación técnica.&lt;/p&gt;
-
-&lt;p&gt;El creador asegura que una de las causas de que se nos haga tan difícil escribir está relacionada con que los editores de texto nos distraen con cosas como el formateo o paja que no es necesaria. AsciiDoc se enfoca en que puedas escribir sin preocuparte por el formato, dando una sintaxis natural, fluída y que no estorba, mientras te permite preparar el texto para crear formatos de salida hermosos.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Usa AsciiDoc para marcado de documentos. De verdad. En verdad es legible, fácil de procesar y mucho más flexible que XML. - Linus Torvalds&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Al igual que Markdown y RST, AsciiDoc provee de medios básicos para dar formato al texto. Pero AsciiDoc es el que más herramientas de los tres platicados aquí tiene. Además de ofrecet todo lo de las dos herrmientas anteriores tiene:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Más formatos de párrafo: párrafos de introducción y pre-formateados fáciles.&lt;/li&gt;
-  &lt;li&gt;Secciones prediseñadas: cuadros de aviso, de notas, etc.&lt;/li&gt;
-  &lt;li&gt;Estilos de lista parecidos a los de RST.&lt;/li&gt;
-  &lt;li&gt;Formateo y sintaxis de código con notas, como la siguiente:
-&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_700/v1576905208/Screenshot_2019-12-20_23.12.38_mdhrfj.png&quot; alt=&quot;Ejemplo de notas&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;Barras laterales&lt;/li&gt;
-  &lt;li&gt;Macros&lt;/li&gt;
-  &lt;li&gt;Generación de tablas desde CSV&lt;/li&gt;
-  &lt;li&gt;Videos&lt;/li&gt;
-  &lt;li&gt;Muchas muchas cosas más…&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Sin duda AsciiDoc es el más completo de los formatos que hemos visto en este artículo. Aquí hay una &lt;a href=&quot;http://bit.ly/2PKzdZN&quot;&gt;introducción en inglés&lt;/a&gt; y aquí un &lt;a href=&quot;http://bit.ly/2rgL3Bt&quot;&gt;libro en español&lt;/a&gt;. AsciiDoc es tan completo que varios autores de libros lo han escogido para crear sus escritos.&lt;/p&gt;
-
-&lt;h2 id=&quot;cuál-uso-entonces&quot;&gt;¿Cuál uso, entonces?&lt;/h2&gt;
-
-&lt;p&gt;Mi conclusión personal es la siguiente:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Si tienes que hacer un documento pequeño, sin mucho formato y en el que la velocidad de entrega es lo más importante usa Markdown, ya que su popularidad te permitirá entregar el documento en el menor tiempo posible. Por ejemplo, en GitHub subes un archivo “*.md” y automáticamente lo muestra formateado.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;¿Tienes que hacer documentación de código que posiblemente deba ir en línea o al lado del código? reStructuredText está especializado en eso y con sus herramientas y entonrno te facilitará la vida.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Para todo lo demás, usa &lt;strong&gt;AsciiDoc&lt;/strong&gt;. Una vez que lo sabes usar y combinado con AsciiDoctor (su procesador) y &lt;a href=&quot;http://bit.ly/2Q2zbeE&quot;&gt;Pandoc&lt;/a&gt; (un transformador de formatos) puedes crear cosas muy complejas muy rápidamente.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Si eres como los programadores clásicos, odias usar Word, Docs o lo que sea por el problema que es formatear mientras escribes y amas la simplicidad del texto plano ayudado con herramientas que te permiten crear mejores cosas.&lt;/p&gt;
-
-&lt;p&gt;Estos lenguajes de marcado de texto te dan lo mejor de los dos mundos. Requieren un poco más de trabajo para empezar que los editores &lt;em&gt;“lo que ves es lo que obtienes”&lt;/em&gt;, pero la productividad que te dan después paga con creces.&lt;/p&gt;
-
-&lt;p&gt;¿Qué opinas? ¿Vale la pena aprenderlos?&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="markdown" /><category term="restructured-text" /><category term="asciidoc" /><category term="latex" /><summary type="html">A veces tienes que crear documentos de texto con un algún tipo de formato visual. Aprende lenguajes de marcado que te facilitarán la vida.</summary></entry></feed>
+&lt;p&gt;Una de las mejores maneras de solidificar tu conocimiento después de practicarlo, es enseñándolo a otros. No te quedes con lo aprendiste y devuelve algo a la comunidad: enseña siempre que puedas mediante conferencias, videos o artículos en un blog. De esto es algo de lo que no te arrepentirás.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprender" /><category term="programar" /><category term="recursos-aprendizaje" /><summary type="html">Hemos escrito una lista de recursos que te pueden ayudar a aprender a programar en tiempo record.</summary></entry></feed>
