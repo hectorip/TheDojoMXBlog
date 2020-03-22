@@ -1,8 +1,8 @@
 ---
 title: "A Philosophy of Software Design: Los módulos de propósito general son más profundos"
-date: 2020-03-18
+date: 2020-03-21
 author: Héctor Patricio
-tags: PoSD módulos generalización
+tags: PoSD módulos generalización module class
 comments: true
 excerpt: "Crear módulos o clases demasiado específicas puede llevar a tu código a ser difícil de mantener, veamos algunas maneras de encontrar el equilibrio"
 header:
@@ -11,16 +11,23 @@ header:
   overlay_filer: rgba(0, 0, 0, 0.6)
 ---
 
-Una burla común hacia los programadores es que todo lo queremos hacer demasiado general, nos piden algo y pensamos en todos los casos en los que podría ser usado en el universo y queremos construir eso.
+Una burla común hacia los programadores es que todo lo queremos hacer _demasiado general_. Nos piden algo y pensamos en todos los casos en los que podría ser usado en el multiverso e intentamos construir eso.
 
-Hay muchos consejos en contra de escribir código que abarque muchos casos. En este artículo vamos a hablar de las ventajas y desventajas de módulos de propósito general. Además hablaremos de algo muy importante: el equilibrio.
+Hay muchos consejos **en contra** de escribir código que abarque muchos casos. En este artículo vamos a hablar de las ventajas y desventajas de módulos de **propósito general**. Además hablaremos de algo muy importante: el equilibrio.
 
-## Grados de especificidad
+## Especificidad de un módulo
 
-Puedes pensar en la especialización de un módulo       
-Un módulo específico está dedicado a cumplir una sola función en el sistema y _su uso está restringido sólo a esa función_.
+Puedes pensar en la especialización de un módulo (o del código en general) como en continuo que va desde lo más general (las bibliotecas estándar) hasta código que sólo sirve para un uso muy acotado.
 
-El caso más extremo del código específico es el que llamamos "hardcoding". Es tan específico que sólamen
+![Gráfica del continuo de especificidad]()
+
+Un módulo específico está dedicado a cumplir una sola función en el sistema y _su uso está restringido sólo a esa función_. Si los pensáramos como conectores para un dispositivo como un celular podrías decir que es la conexión especial que Nokia o Sony Ericsson se inventaron en su tiempo para cargar.
+
+Un módulo de propósito general se puede usar para varios casos con _poca modificación_, o creando un módulo específico a partir de él. En el mismo ejemplo de los dispositivos electrónicos puede compararse al estándar USB que sirve para múltiples cosas y puede ser usado en muchos aparatos diferentes.
+
+El caso más extremo del código específico es el que llamamos _"hardcoding"_. Es tan específico que sirve sólo para una instancia muy pequeña y _no es fácil de modificar en producción_. Se entiende como _hardcoding_ a poner directamente en el código un valor fijo que pudiera variar en el futuro: configuración de IP's, bases de datos, nombres de usuario, etc. Y es uno de los casos extremos de [programación táctica](). Por lo tanto, y esto todos lo sabemos, es una muy mala práctica para crear código mantenible e incluso para la practicidad en el desarrollo.
+
+El siguiente nivel de especificidad y con el que casi todos nos quedamos contentos es cuando creamos un módulo (una clase, por ejemplo), para una función específica de nuestro sistema y que _sólo puede usarse ahí_. Usemos como ejemplo una aplicación para transformar medidas.
 
 ## ¿Por qué hacer módulos de propósito general?
 
@@ -31,7 +38,7 @@ Hacerlo contribuye a que tu código esconda más información y por lo tanto su 
 ## Cuándo hacer módulos específicos
 
 
-
+ 
 ## Conclusión
 
 Crear módulos de "no tan específicos" puede ayudarte a:

@@ -179,13 +179,13 @@ var store = [{
         "tags": ["PoSD","descomposición-temporal","software-design","complexity","interfaces"],
         "url": "http://localhost:4000/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal.html",
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584251653/A240034B-230E-4BA2-843D-32357D921811_mwdnzk.jpg"},{
-        "title": "A Philosophy of Software Design: Los módulos de propósito general son más profundos",
-        "excerpt":"Una burla común hacia los programadores es que todo lo queremos hacer demasiado general, nos piden algo y pensamos en todos los casos en los que podría ser usado en el universo y queremos construir eso. Hay muchos consejos en contra de escribir código que abarque muchos casos. En este...","categories": [],
-        "tags": ["PoSD","módulos","generalización"],
-        "url": "http://localhost:4000/2020/03/18/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726013/D750CDED-7745-4A56-8B3D-5CD33D2893E6_vqdgzb.jpg"},{
         "title": "A Philosophy of Software Design: Recomendaciones de diseño modular",
         "excerpt":"En los artículos anteriores hemos estado hablando de cómo evitar la complejidad mediante ocultar información. En este daremos algunas recomendaciones más y hablaremos de cómo no llevar este principio al extremo. Hablemos primero de consejos que te ayudarán a mantener oculta la información que debe de estarlo. Exponer lo menos...","categories": [],
         "tags": ["PoSD","software-design","complexity","interfaces","defaults"],
         "url": "http://localhost:4000/2020/03/18/a-philosophy-of-software-design-recomendaciones-disenio-modular.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584519537/2E4D3407-0447-4034-BEFA-188831BF5971_x4th6g.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584519537/2E4D3407-0447-4034-BEFA-188831BF5971_x4th6g.jpg"},{
+        "title": "A Philosophy of Software Design: Los módulos de propósito general son más profundos",
+        "excerpt":"Una burla común hacia los programadores es que todo lo queremos hacer demasiado general. Nos piden algo y pensamos en todos los casos en los que podría ser usado en el multiverso e intentamos construir eso. Hay muchos consejos en contra de escribir código que abarque muchos casos. En este...","categories": [],
+        "tags": ["PoSD","módulos","generalización","module","class"],
+        "url": "http://localhost:4000/2020/03/21/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726013/D750CDED-7745-4A56-8B3D-5CD33D2893E6_vqdgzb.jpg"}]

@@ -20,7 +20,7 @@
 <meta property="og:locale" content="es">
 <meta property="og:site_name" content="">
 <meta property="og:title" content="A Philosophy of Software Design: Los módulos de propósito general son más profundos">
-<meta property="og:url" content="http://localhost:4000/2020/03/18/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html">
+<meta property="og:url" content="http://localhost:4000/2020/03/21/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html">
 
 
   <meta property="og:description" content="Crear módulos o clases demasiado específicas puede llevar a tu código a ser difícil de mantener, veamos algunas maneras de encontrar el equilibrio">
@@ -33,14 +33,14 @@
 
 
 
-  <meta property="article:published_time" content="2020-03-18T00:00:00-06:00">
+  <meta property="article:published_time" content="2020-03-21T00:00:00-06:00">
 
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/2020/03/18/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html">
+<link rel="canonical" href="http://localhost:4000/2020/03/21/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html">
 
 
 
@@ -125,14 +125,14 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "url": "http://localhost:4000/2020/03/18/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html",
+      "url": "http://localhost:4000/2020/03/21/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html",
       "name": "A Philosophy of Software Design: Los módulos de propósito general son más profundos",
       "headline": "A Philosophy of Software Design: Los módulos de propósito general son más profundos",
-      "keywords": "PoSD,módulos,generalización",
+      "keywords": "PoSD,módulos,generalización,module,class",
       "description": "Crear módulos o clases demasiado específicas puede llevar a tu código a ser difícil de mantener, veamos algunas maneras de encontrar el equilibrio",
-      "articleBody": "Una burla común hacia los programadores es que todo lo queremos hacer demasiado general, nos piden algo y pensamos en todos los casos en los que podría ser usado en el universo y queremos construir eso.\n\nHay muchos consejos en contra de escribir código que abarque muchos casos. En este artículo vamos a hablar de las ventajas y desventajas de módulos de propósito general. Además hablaremos de algo muy importante: el equilibrio.\n\nGrados de especificidad\n\nPuedes pensar en la especialización de un módulo     \nUn módulo específico está dedicado a cumplir una sola función en el sistema y su uso está restringido sólo a esa función.\n\nEl caso más extremo del código específico es el que llamamos “hardcoding”. Es tan específico que sólamen\n\n¿Por qué hacer módulos de propósito general?\n\nEl principal motivo que A Philosophy of Software Design recomienda es porque los módulos de propósito general son más profundos es decir, encierran más funcionalidad con una interfaz más pequeña.\n\nHacerlo contribuye a que tu código esconda más información y por lo tanto su uso sea más simple.\n\nCuándo hacer módulos específicos\n\nConclusión\n\nCrear módulos de “no tan específicos” puede ayudarte a:\n\n\n  Ocultar mejor la información\n  Crear interfaces más concisas\n  Reutilizar mejor el código\n\n\nTienes que buscar el equilibrio entre crear un módulo tan específico que sólo uses una vez contra un módulo que cubra todos los casos del mundo. El equilibrio está en un módulo que no sea difícil de utilizar para tu problema a la mano pero que puede ser (o este siendo) utilizado en varios lugares si es el caso.\n\nEn el próximo artículo hablaremos de los sistemas en capas y cómo aprovechar sus particularidades para crear diseños que dominen la complejidad.\n",
-      "datePublished": "2020-03-18 00:00:00 -0600",
-      "dateModified": "2020-03-18 00:00:00 -0600",
+      "articleBody": "Una burla común hacia los programadores es que todo lo queremos hacer demasiado general. Nos piden algo y pensamos en todos los casos en los que podría ser usado en el multiverso e intentamos construir eso.\n\nHay muchos consejos en contra de escribir código que abarque muchos casos. En este artículo vamos a hablar de las ventajas y desventajas de módulos de propósito general. Además hablaremos de algo muy importante: el equilibrio.\n\nEspecificidad de un módulo\n\nPuedes pensar en la especialización de un módulo (o del código en general) como en continuo que va desde lo más general (las bibliotecas estándar) hasta código que sólo sirve para un uso muy acotado.\n\n\n\nUn módulo específico está dedicado a cumplir una sola función en el sistema y su uso está restringido sólo a esa función. Si los pensáramos como conectores para un dispositivo como un celular podrías decir que es la conexión especial que Nokia o Sony Ericsson se inventaron en su tiempo para cargar.\n\nUn módulo de propósito general se puede usar para varios casos con poca modificación, o creando un módulo específico a partir de él. En el mismo ejemplo de los dispositivos electrónicos puede compararse al estándar USB que sirve para múltiples cosas y puede ser usado en muchos aparatos diferentes.\n\nEl caso más extremo del código específico es el que llamamos “hardcoding”. Es tan específico que sirve sólo para una instancia muy pequeña y no es fácil de modificar en producción. Se entiende como hardcoding a poner directamente en el código un valor fijo que pudiera variar en el futuro: configuración de IP’s, bases de datos, nombres de usuario, etc. Y es uno de los casos extremos de programación táctica. Por lo tanto, y esto todos lo sabemos, es una muy mala práctica para crear código mantenible e incluso para la practicidad en el desarrollo.\n\nEl siguiente nivel de especificidad y con el que casi todos nos quedamos contentos es cuando creamos un módulo (una clase, por ejemplo), para una función específica de nuestro sistema y que sólo puede usarse ahí. Usemos como ejemplo una aplicación para transformar medidas.\n\n¿Por qué hacer módulos de propósito general?\n\nEl principal motivo que A Philosophy of Software Design recomienda es porque los módulos de propósito general son más profundos es decir, encierran más funcionalidad con una interfaz más pequeña.\n\nHacerlo contribuye a que tu código esconda más información y por lo tanto su uso sea más simple.\n\nCuándo hacer módulos específicos\n\nConclusión\n\nCrear módulos de “no tan específicos” puede ayudarte a:\n\n\n  Ocultar mejor la información\n  Crear interfaces más concisas\n  Reutilizar mejor el código\n\n\nTienes que buscar el equilibrio entre crear un módulo tan específico que sólo uses una vez contra un módulo que cubra todos los casos del mundo. El equilibrio está en un módulo que no sea difícil de utilizar para tu problema a la mano pero que puede ser (o este siendo) utilizado en varios lugares si es el caso.\n\nEn el próximo artículo hablaremos de los sistemas en capas y cómo aprovechar sus particularidades para crear diseños que dominen la complejidad.\n",
+      "datePublished": "2020-03-21 00:00:00 -0600",
+      "dateModified": "2020-03-21 00:00:00 -0600",
       "author": {
         "@type": "Person",
         "name": "Héctor Patricio",
@@ -152,7 +152,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000/2020/03/18/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html"
+        "@id": "http://localhost:4000/2020/03/21/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html"
       },
       "image": {
         "@type": "ImageObject",
@@ -254,11 +254,11 @@
 
 
 
-  1 minutos de lectura
+  2 minutos de lectura
 
 
 
-| <i class="far fa-calendar" aria-hidden="true"></i> 18-03-2020
+| <i class="far fa-calendar" aria-hidden="true"></i> 21-03-2020
 </p>
       
       
@@ -394,7 +394,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="A Philosophy of Software Design: Los módulos de propósito general son más profundos">
     <meta itemprop="description" content="Crear módulos o clases demasiado específicas puede llevar a tu código a ser difícil de mantener, veamos algunas maneras de encontrar el equilibrio">
-    <meta itemprop="datePublished" content="March 18, 2020">
+    <meta itemprop="datePublished" content="March 21, 2020">
     
 
     <div class="page__inner-wrap">
@@ -402,16 +402,23 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>Una burla común hacia los programadores es que todo lo queremos hacer demasiado general, nos piden algo y pensamos en todos los casos en los que podría ser usado en el universo y queremos construir eso.</p>
+        <p>Una burla común hacia los programadores es que todo lo queremos hacer <em>demasiado general</em>. Nos piden algo y pensamos en todos los casos en los que podría ser usado en el multiverso e intentamos construir eso.</p>
 
-<p>Hay muchos consejos en contra de escribir código que abarque muchos casos. En este artículo vamos a hablar de las ventajas y desventajas de módulos de propósito general. Además hablaremos de algo muy importante: el equilibrio.</p>
+<p>Hay muchos consejos <strong>en contra</strong> de escribir código que abarque muchos casos. En este artículo vamos a hablar de las ventajas y desventajas de módulos de <strong>propósito general</strong>. Además hablaremos de algo muy importante: el equilibrio.</p>
 
-<h2 id="grados-de-especificidad">Grados de especificidad</h2>
+<h2 id="especificidad-de-un-módulo">Especificidad de un módulo</h2>
 
-<p>Puedes pensar en la especialización de un módulo     <br>
-Un módulo específico está dedicado a cumplir una sola función en el sistema y <em>su uso está restringido sólo a esa función</em>.</p>
+<p>Puedes pensar en la especialización de un módulo (o del código en general) como en continuo que va desde lo más general (las bibliotecas estándar) hasta código que sólo sirve para un uso muy acotado.</p>
 
-<p>El caso más extremo del código específico es el que llamamos “hardcoding”. Es tan específico que sólamen</p>
+<p><img src="" alt="Gráfica del continuo de especificidad"></p>
+
+<p>Un módulo específico está dedicado a cumplir una sola función en el sistema y <em>su uso está restringido sólo a esa función</em>. Si los pensáramos como conectores para un dispositivo como un celular podrías decir que es la conexión especial que Nokia o Sony Ericsson se inventaron en su tiempo para cargar.</p>
+
+<p>Un módulo de propósito general se puede usar para varios casos con <em>poca modificación</em>, o creando un módulo específico a partir de él. En el mismo ejemplo de los dispositivos electrónicos puede compararse al estándar USB que sirve para múltiples cosas y puede ser usado en muchos aparatos diferentes.</p>
+
+<p>El caso más extremo del código específico es el que llamamos <em>“hardcoding”</em>. Es tan específico que sirve sólo para una instancia muy pequeña y <em>no es fácil de modificar en producción</em>. Se entiende como <em>hardcoding</em> a poner directamente en el código un valor fijo que pudiera variar en el futuro: configuración de IP’s, bases de datos, nombres de usuario, etc. Y es uno de los casos extremos de <a href="">programación táctica</a>. Por lo tanto, y esto todos lo sabemos, es una muy mala práctica para crear código mantenible e incluso para la practicidad en el desarrollo.</p>
+
+<p>El siguiente nivel de especificidad y con el que casi todos nos quedamos contentos es cuando creamos un módulo (una clase, por ejemplo), para una función específica de nuestro sistema y que <em>sólo puede usarse ahí</em>. Usemos como ejemplo una aplicación para transformar medidas.</p>
 
 <h2 id="por-qué-hacer-módulos-de-propósito-general">¿Por qué hacer módulos de propósito general?</h2>
 
@@ -454,7 +461,15 @@ Un módulo específico está dedicado a cumplir una sola función en el sistema 
     
       
       
+      <a href="/tags/#class" class="page__taxonomy-item" rel="tag">class</a><span class="sep">, </span>
+    
+      
+      
       <a href="/tags/#generalizaci%C3%B3n" class="page__taxonomy-item" rel="tag">generalización</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#module" class="page__taxonomy-item" rel="tag">module</a><span class="sep">, </span>
     
       
       
@@ -471,7 +486,7 @@ Un módulo específico está dedicado a cumplir una sola función en el sistema 
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2020-03-18T00:00:00-06:00">March 18, 2020</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2020-03-21T00:00:00-06:00">March 21, 2020</time></p>
         
       </footer>
 
@@ -480,23 +495,22 @@ Un módulo específico está dedicado a cumplir una sola función en el sistema 
     <h4 class="page__share-title">Compartir</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=A+Philosophy+of+Software+Design%3A+Los+m%C3%B3dulos+de+prop%C3%B3sito+general+son+m%C3%A1s+profundos%20http%3A%2F%2Flocalhost%3A4000%2F2020%2F03%2F18%2Fa-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=A+Philosophy+of+Software+Design%3A+Los+m%C3%B3dulos+de+prop%C3%B3sito+general+son+m%C3%A1s+profundos%20http%3A%2F%2Flocalhost%3A4000%2F2020%2F03%2F21%2Fa-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2020%2F03%2F18%2Fa-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2020%2F03%2F21%2Fa-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A4000%2F2020%2F03%2F18%2Fa-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A4000%2F2020%2F03%2F21%2Fa-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal.html" class="pagination--pager" title="A Philosophy of Software Design: Descomposición Temporal
+      <a href="/2020/03/18/a-philosophy-of-software-design-recomendaciones-disenio-modular.html" class="pagination--pager" title="A Philosophy of Software Design: Recomendaciones de diseño modular
 ">Anterior</a>
     
     
-      <a href="/2020/03/18/a-philosophy-of-software-design-recomendaciones-disenio-modular.html" class="pagination--pager" title="A Philosophy of Software Design: Recomendaciones de diseño modular
-">Siguiente</a>
+      <a href="#" class="pagination--pager disabled">Siguiente</a>
     
   </nav>
 
@@ -748,8 +762,8 @@ Un módulo específico está dedicado a cumplir una sola función en el sistema 
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/2020/03/18/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/2020/03/18/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "http://localhost:4000/2020/03/21/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/2020/03/21/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
