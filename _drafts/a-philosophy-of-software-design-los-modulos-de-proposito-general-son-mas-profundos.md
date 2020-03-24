@@ -25,9 +25,11 @@ Un módulo específico está dedicado a cumplir una sola función en el sistema 
 
 Un módulo de propósito general se puede usar para varios casos con _poca modificación_, o creando un módulo específico a partir de él. En el mismo ejemplo de los dispositivos electrónicos puede compararse al estándar USB que sirve para múltiples cosas y puede ser usado en muchos aparatos diferentes.
 
-El caso más extremo del código específico es el que llamamos _"hardcoding"_. Es tan específico que sirve sólo para una instancia muy pequeña y _no es fácil de modificar en producción_. Se entiende como _hardcoding_ a poner directamente en el código un valor fijo que pudiera variar en el futuro: configuración de IP's, bases de datos, nombres de usuario, etc. Y es uno de los casos extremos de [programación táctica](). Por lo tanto, y esto todos lo sabemos, es una muy mala práctica para crear código mantenible e incluso para la practicidad en el desarrollo.
+El caso más extremo del código específico es el que llamamos _"hardcoding"_. Es tan específico que sirve sólo para una instancia muy pequeña y _no es fácil de modificar en producción_. Se entiende como _hardcoding_ a poner directamente en el código un valor fijo que pudiera variar en el futuro: configuración de IP's, bases de datos, nombres de usuario, etc. Y es uno de los casos extremos de [programación táctica](https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html#desarrollo-t%C3%A1ctico). Por lo tanto, y esto todos lo sabemos, es una **muy mala  práctica** para crear código mantenible e incluso para la practicidad en el desarrollo.
 
-El siguiente nivel de especificidad y con el que casi todos nos quedamos contentos es cuando creamos un módulo (una clase, por ejemplo), para una función específica de nuestro sistema y que _sólo puede usarse ahí_. Usemos como ejemplo una aplicación para transformar medidas.
+El siguiente nivel de especificidad y con el que casi todos nos quedamos contentos es cuando creamos un módulo (una clase, por ejemplo), para una función específica de nuestro sistema y que _sólo puede usarse ahí_.
+
+Usemos como ejemplo para entender los niveles de especificidad una aplicación para clasificar libros.
 
 ## ¿Por qué hacer módulos de propósito general?
 
@@ -38,7 +40,6 @@ Hacerlo contribuye a que tu código esconda más información y por lo tanto su 
 ## Cuándo hacer módulos específicos
 
 
- 
 ## Conclusión
 
 Crear módulos de "no tan específicos" puede ayudarte a:
