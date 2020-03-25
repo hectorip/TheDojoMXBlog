@@ -11,9 +11,9 @@ header:
   overlay_filer: rgba(0, 0, 0, 0.6)
 ---
 
-Una burla común hacia los programadores es que todo lo queremos hacer _demasiado general_. Nos piden algo y pensamos en todos los casos en los que podría ser usado en el multiverso e intentamos construir eso.
+Una burla común hacia los programadores es que todo lo queremos hacer _demasiado general_. Nos piden hacer algo y pensamos en todos los casos en los que podría ser usado en el multiverso y queremos programarlo.
 
-Hay muchos consejos **en contra** de escribir código que abarque muchos casos. En este artículo vamos a hablar de las ventajas y desventajas de módulos de **propósito general**. Además hablaremos de algo muy importante: el equilibrio.
+Hay muchos consejos **en contra** de escribir código que abarque muchos casos. En este artículo vamos a hablar de las ventajas y desventajas de módulos de **propósito general**, es decir, vamos a hablar en contra del consejo general. Pero además hablaremos de algo muy importante: el equilibrio.
 
 ## Especificidad de un módulo
 
@@ -36,9 +36,6 @@ Usemos como ejemplo para entender los niveles de especificidad una aplicación p
 El principal motivo que [A Philosophy of Software Design](https://amzn.to/3ba4MEj) recomienda es porque los módulos de propósito general [son más profundos](https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html#dise%C3%B1o-de-m%C3%B3dulos) es decir, encierran más funcionalidad con una interfaz más pequeña.
 
 Hacerlo contribuye a que tu código esconda más información y por lo tanto su uso sea más simple.
-
-## Cuándo hacer módulos específicos
-
 
 ## Conclusión
 
