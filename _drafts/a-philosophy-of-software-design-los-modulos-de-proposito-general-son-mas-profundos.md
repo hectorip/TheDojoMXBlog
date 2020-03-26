@@ -13,7 +13,9 @@ header:
 
 Una burla común hacia los programadores es que todo lo queremos hacer _demasiado general_. Nos piden hacer algo y pensamos en todos los casos en los que podría ser usado en el multiverso y queremos programarlo.
 
-Hay muchos consejos **en contra** de escribir código que abarque muchos casos. En este artículo vamos a hablar de las ventajas y desventajas de módulos de **propósito general**, es decir, vamos a hablar en contra del consejo general. Pero además hablaremos de algo muy importante: el equilibrio.
+Hay muchos consejos **en contra** de escribir código que abarque muchos casos. En este artículo vamos a hablar de las ventajas y desventajas de módulos de **propósito general**, es decir, vamos a hablar en contra del consejo general.
+
+Pero además hablaremos de algo muy importante: **el equilibrio**.
 
 ## Especificidad de un módulo
 
@@ -21,9 +23,11 @@ Puedes pensar en la especialización de un módulo (o del código en general) co
 
 ![Gráfica del continuo de especificidad]()
 
-Un módulo específico está dedicado a cumplir una sola función en el sistema y _su uso está restringido sólo a esa función_. Si los pensáramos como conectores para un dispositivo como un celular podrías decir que es la conexión especial que Nokia o Sony Ericsson se inventaron en su tiempo para cargar.
+Un módulo específico está dedicado a cumplir _una sola función_ en el sistema. Si los pensáramos como conectores para un dispositivo, como un celular, podrías decir que es la conexión especial que Nokia, Apple o Sony Ericsson se inventaron en su tiempo para cargar.
 
-Un módulo de propósito general se puede usar para varios casos con _poca modificación_, o creando un módulo específico a partir de él. En el mismo ejemplo de los dispositivos electrónicos puede compararse al estándar USB que sirve para múltiples cosas y puede ser usado en muchos aparatos diferentes.
+Un módulo de propósito general se puede usar para varios casos con _poca modificación_, o creando un módulo más específico a partir de él. En el mismo ejemplo de los dispositivos electrónicos puede compararse al estándar USB que sirve para múltiples cosas y puede ser usado en muchos aparatos diferentes.
+
+## Módulos específicos
 
 El caso más extremo del código específico es el que llamamos _"hardcoding"_. Es tan específico que sirve sólo para una instancia muy pequeña y _no es fácil de modificar en producción_. Se entiende como _hardcoding_ a poner directamente en el código un valor fijo que pudiera variar en el futuro: configuración de IP's, bases de datos, nombres de usuario, etc. Y es uno de los casos extremos de [programación táctica](https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html#desarrollo-t%C3%A1ctico). Por lo tanto, y esto todos lo sabemos, es una **muy mala  práctica** para crear código mantenible e incluso para la practicidad en el desarrollo.
 
