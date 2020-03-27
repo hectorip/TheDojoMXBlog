@@ -15,13 +15,13 @@ Una burla común hacia los programadores es que todo lo queremos hacer _demasiad
 
 Hay muchos consejos **en contra** de escribir código que abarque muchos casos. En este artículo vamos a hablar de las ventajas y desventajas de módulos de **propósito general**, es decir, vamos a hablar en contra del consejo general.
 
-Pero además hablaremos de algo muy importante: **el equilibrio**.
+Pero además hablaremos de **el equilibrio** y cómo lograrlo.
 
 ## Especificidad de un módulo
 
 Puedes pensar en la especialización de un módulo (o del código en general) como en continuo que va desde lo más general (las bibliotecas estándar) hasta código que sólo sirve para un uso muy acotado.
 
-![Gráfica del continuo de especificidad]()
+![Gráfica del continuo de especificidad](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1585279283/7655B57E-A45D-4832-A0D6-41670C22D6CA_boy7ej.png)
 
 Un módulo específico está dedicado a cumplir _una sola función_ en el sistema. Si los pensáramos como conectores para un dispositivo, como un celular, podrías decir que es la conexión especial que Nokia, Apple o Sony Ericsson se inventaron en su tiempo para cargar.
 
@@ -31,9 +31,9 @@ Un módulo de propósito general se puede usar para varios casos con _poca modif
 
 El caso más extremo del código específico es el que llamamos _"hardcoding"_. Es tan específico que sirve sólo para una instancia muy pequeña y _no es fácil de modificar en producción_. Se entiende como _hardcoding_ a poner directamente en el código un valor fijo que pudiera variar en el futuro: configuración de IP's, bases de datos, nombres de usuario, etc. Y es uno de los casos extremos de [programación táctica](https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html#desarrollo-t%C3%A1ctico). Por lo tanto, y esto todos lo sabemos, es una **muy mala  práctica** para crear código mantenible e incluso para la practicidad en el desarrollo.
 
-El siguiente nivel de especificidad y con el que casi todos nos quedamos contentos es cuando creamos un módulo (una clase, por ejemplo), para una función específica de nuestro sistema y que _sólo puede usarse ahí_.
+El siguiente nivel de especificidad y con el que casi todos nos quedamos contentos es cuando creamos un módulo (una clase, por ejemplo), para una _función específica_ de nuestro sistema y que _sólo puede usarse ahí_.
 
-Usemos como ejemplo para entender los niveles de especificidad una aplicación para clasificar libros.
+Usemos como ejemplo la evolución de Docker Engine.
 
 ## ¿Por qué hacer módulos de propósito general?
 
