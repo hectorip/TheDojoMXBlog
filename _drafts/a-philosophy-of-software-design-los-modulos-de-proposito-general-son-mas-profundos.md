@@ -29,7 +29,9 @@ Un módulo de propósito general se puede usar para varios casos con _poca modif
 
 ## Módulos específicos
 
-El caso más extremo del código específico es el que llamamos _"hardcoding"_. Es tan específico que sirve sólo para una instancia muy pequeña y _no es fácil de modificar en producción_. Se entiende como _hardcoding_ a poner directamente en el código un valor fijo que pudiera variar en el futuro: configuración de IP's, bases de datos, nombres de usuario, etc. Y es uno de los casos extremos de [programación táctica](https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html#desarrollo-t%C3%A1ctico). Por lo tanto, y esto todos lo sabemos, es una **muy mala  práctica** para crear código mantenible e incluso para la practicidad en el desarrollo.
+El caso más extremo del código específico es el que llamamos _hardcoding_. Es tan específico que sirve sólo para una instancia muy pequeña de un problema y _no es fácil de modificar en producción_. 
+
+Se entiende como _hardcoding_ a poner directamente en el código un valor fijo que pudiera variar en el futuro: configuración de IP's, conexión a bases de datos, nombres de usuario, etc. Y es uno de los casos extremos de [programación táctica](https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html#desarrollo-t%C3%A1ctico). Por lo tanto, y esto todos lo sabemos, es una **muy mala  práctica** para crear código mantenible e incluso para la practicidad en el desarrollo.
 
 El siguiente nivel de especificidad y con el que casi todos nos quedamos contentos es cuando creamos un módulo (una clase, por ejemplo), para una _función específica_ de nuestro sistema y que _sólo puede usarse ahí_.
 
@@ -37,7 +39,7 @@ Usemos como ejemplo la evolución de Docker Engine.
 
 ## ¿Por qué hacer módulos de propósito general?
 
-El principal motivo que [A Philosophy of Software Design](https://amzn.to/3ba4MEj) recomienda es porque los módulos de propósito general [son más profundos](https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html#dise%C3%B1o-de-m%C3%B3dulos) es decir, encierran más funcionalidad con una interfaz más pequeña.
+El principal motivo que [A Philosophy of Software Design](https://amzn.to/3ba4MEj) menciona es que los módulos de propósito general [son más profundos](https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html#dise%C3%B1o-de-m%C3%B3dulos) es decir, encierran más funcionalidad con una interfaz pequeña.
 
 Hacerlo contribuye a que tu código esconda más información y por lo tanto su uso sea más simple.
 
