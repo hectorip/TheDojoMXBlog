@@ -35,7 +35,7 @@ Se entiende como _hardcoding_ a poner directamente en el código un valor fijo q
 
 El siguiente nivel de especificidad y con el que casi todos nos quedamos contentos es cuando creamos un módulo (una clase, por ejemplo), para una _función específica_ de nuestro sistema y que _sólo puede usarse ahí_.
 
-Usemos como ejemplo la evolución de Docker Engine.
+Usemos como ejemplo: .
 
 ## ¿Por qué hacer módulos de propósito general?
 
