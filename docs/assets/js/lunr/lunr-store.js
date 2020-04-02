@@ -179,8 +179,8 @@ var store = [{
         "tags": ["PoSD","software-design","complexity","interfaces","defaults"],
         "url": "https://blog.thedojo.mx/2020/03/18/a-philosophy-of-software-design-recomendaciones-disenio-modular.html",
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584519537/2E4D3407-0447-4034-BEFA-188831BF5971_x4th6g.jpg"},{
-        "title": "A Philosophy of Software Design: Los módulos de propósito general son más profundos",
+        "title": "A Philosophy of Software Design: Crea módulos de propósito general",
         "excerpt":"Una burla común hacia los programadores es que todo lo queremos hacer demasiado general. Nos piden una funcionalidad y en ese momento empezamos a pensar en todos los casos en los que podría ser usado en el universo. Hay muchos consejos en contra de escribir código que abarque muchos casos....","categories": [],
         "tags": ["PoSD","módulos","generalización","module","class"],
-        "url": "https://blog.thedojo.mx/2020/04/02/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html",
+        "url": "https://blog.thedojo.mx/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general.html",
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726013/D750CDED-7745-4A56-8B3D-5CD33D2893E6_vqdgzb.jpg"}]
