@@ -11,9 +11,9 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Go es uno de los lenguajes más exitosos de los últimos tiempos. Ya hablamos de [por qué deberías aprenderlo](/2019/09/01/por-que-deberias-aprender-go.html).
+Go es uno de los lenguajes modernos más usados. Ya hablamos de [por qué deberías aprenderlo](/2019/09/01/por-que-deberias-aprender-go.html).
 
-Ahora hablemos de un caso de uso práctico: **úsalo para crear una API**. En este artículo nos enfocaremos en la parte de comunicación. 
+Ahora hablemos de un caso de uso práctico: **úsalo para crear una API HTTP**. En este artículo nos enfocaremos en la parte de comunicación HTTP.
 
 La funcionalidad básica de tu API puede o no adaptarse completamente a Go (no es es tan fácil de escribir como un lenguaje dinámico como Python), pero definitivamente es un lenguaje excelente para crear interfaces de comunicación web, debido a su alto rendimiento y eficiencia.
 
@@ -25,15 +25,15 @@ Puedes ver algunas de las comparativas en los siguientes artículos:
 
 ![Comparativa de micro-frameworks Web](https://res.cloudinary.com/hectorip/image/upload/v1574629781/Screenshot_2019-11-24_15.09.25_ozqwcu.png)
 
-Ahora sí, hablemos de tres (4) formas de crear una API sobre HTTP para tu próximo proyecto. Pero antes hablemos de una opción simple que no cubre muchos casos pero que se oye recomendada muchas veces.
+Hablemos de tres formas de crear una API sobre HTTP para tu próximo proyecto. Pero antes hablemos de una opción simple que no cubre muchos casos pero que se oye recomendada muchas veces.
 
 ## La biblioteca estándar
 
-Cuando hice mi primer proyecto en Go, gran parte de la investigación sobre qué usar para crear un proyecto web apuntaba los paquetes nativos de Go son el camino.
+Cuando hice mi primer proyecto en Go, gran parte de la investigación sobre qué usar para crear un proyecto de una API web apuntaba a los paquetes nativos de Go.
 
-Go tiene una biblioteca estándar que cubre muchas de las necesidades de un desarrollador moderno, si has programado en él podrás estar de acuerdo en que se siente como subirte en hombros de gigantes para programar, debido a que los que lo  diseñaron y construyeron son las mismas personas que sentaron las bases para los sistemas operativos modernos. _Imagínate cuánta experiencia tienen_.
+Go tiene una biblioteca estándar que cubre **muchas** de las necesidades de un desarrollador moderno. Si has programado en él podrás estar de acuerdo en que se siente como subirte en hombros de gigantes, debido a que los que lo diseñaron y construyeron son _las mismas personas que sentaron las bases para los sistemas operativos modernos_. Imagínate cuánta experiencia tienen.
 
-En la biblioteca estándar podemos encontrar un paquete que se llama `net/http` con el que puedes hacer muy pocas líneas de código un servidor web con ruteo sencillo (la base de tu API). Puedes recibir peticiones HTTP, procesarlas (mejor dicho: hacer que algúna otra parte de tu sistema la procese) y devolver una respuesta HTTP. El ciclo básico request-response.
+En la biblioteca estándar podemos encontrar un paquete que se llama `net/http` con el que puedes hacer, en muy pocas líneas de código, un servidor web con ruteo sencillo (la base de tu API). Puedes recibir peticiones HTTP, procesarlas (mejor dicho: hacer que algúna otra parte de tu sistema la procese) y devolver una respuesta HTTP. El ciclo básico request->response.
 
 Aquí hay un ejemplo:
 
@@ -57,8 +57,7 @@ func handler(response http.ResponseWriter, request *http.Request) {
 }
 ```
 
-
-Si tu API es muy sencilla, expone muy pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la librería estándar es una solución excelente, pero para otros casos se queda un poco corta.
+Si tu API es muy sencilla, expone muy pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la biblioteca estándar es una solución excelente, pero para otros casos se queda un poco corta.
 
 Por eso te presentamos las opciones más comunes y algunos ejemplos.
 
