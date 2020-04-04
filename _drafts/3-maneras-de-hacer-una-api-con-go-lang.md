@@ -57,7 +57,9 @@ func handler(response http.ResponseWriter, request *http.Request) {
 }
 ```
 
-Si tu API es **muy** sencilla, expone muy pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la biblioteca estándar es una solución excelente, pero para otros casos se queda un poco corta.
+Si tu API es sencilla, expone muy pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la biblioteca estándar es una solución excelente, pero para otros casos se queda un poco corta.
+
+Su uso es muy sencillo como acabas de ver y usar un framework web viene a costo de agregar complejidad a cambio de funcionalidades que no tienes que desarrollar tú.
 
 Por eso te presentamos las opciones más comunes y algunos ejemplos.
 
@@ -65,16 +67,28 @@ Por eso te presentamos las opciones más comunes y algunos ejemplos.
 
 ![Gorilla Web Toolkit logo](https://avatars2.githubusercontent.com/u/489566?s=200&v=4){: .align-center}
 
-[Gorilla Toolkit](https://www.gorillatoolkit.org/) es una conjunto de herramientas para web que, entre otras cosas, tiene un web router llamado **Gorilla Mux** que es la parte principal del servidor web y que cubre la mayoría de funciones que la biblioteca estándar deja sin cubrir:
+[Gorilla Toolkit](https://www.gorillatoolkit.org/) es un conjunto de herramientas para web que, entre otras cosas tiene:
+
+- Un router más completo que el de la biblioteca estándar: Gorilla Mux
+- Middlewares: Logging, compresión, recuperación
+- 
+- Sub-routers
 
 ## Gin
 
-
-
+[Gin](https://github.com/gin-gonic/gin)
 Gin es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go.
+
 ## Beego
+
+[Beego](https://beego.me/)
+
+
+## Echo
+
+[Echo](https://echo.labstack.com/)
+
 
 ## Conclusión
 
 Existen múltiples opciones para crear tu API en Go. Cada una tiene puntos específicos por los que podrías decidir usarla, pero en nuestra experiencia la que se adapta a la mayor cantidad de circunstancias es Gin, que además tiene más componentes que las demás.
-
