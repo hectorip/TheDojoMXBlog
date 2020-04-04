@@ -76,7 +76,7 @@ Esto permitiría tener una interfaz más sencilla con aplicaciones _más amplias
 
 El ejemplo mencionado por [A Philosophy of Software Design](https://amzn.to/3ba4MEj) es el de un editor de texto con interfaz gráfica. La clase encargada de almacenar el texto en memoria deber tener las capacidades para modificarlo.
 
-Piensa en las operaciones que los editores de texto dan: insertar texto, borrar texto hacia adelante, borrar texto hacia atrás, seleccionar, copiar, pegar. Oustehourt menciona que implementar una función _específica_ para cada una de estas operaciones crea complejidad no necesaria. Un diseño más general permite hacer tres operaciones: insertar texto, borrar texto y mover el cursor. Todas las operaciones se pueden lograr con estas otras tres, teniendo una interfaz más sencilla.
+Piensa en las operaciones que los editores de texto dan: insertar texto, borrar texto hacia adelante, borrar texto hacia atrás, seleccionar, copiar, pegar. Ousterhout menciona que implementar una función _específica_ para cada una de estas operaciones crea complejidad no necesaria. Un diseño más general permite hacer tres operaciones: insertar texto, borrar texto y mover el cursor. Todas las operaciones se pueden lograr con estas otras tres, teniendo una interfaz más sencilla.
 
 Este debería ser nuestro objetivo: crear interfaces sencillas que hagan mucho por nosotros.
 

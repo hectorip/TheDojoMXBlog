@@ -6,8 +6,8 @@ tags: a-philosophy-of-software-design complejidad
 comments: true
 excerpt: "Dos diferentes formas de desarrollar sistemas de software"
 header:
-  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581404404/will-francis-Rm3nWQiDTzg-unsplash_cxpkvl.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581404404/will-francis-Rm3nWQiDTzg-unsplash_cxpkvl.jpg
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1600/v1585958798/877DD1C2-5C29-428A-8FEE-BC9685FE108F_ym4tl1.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1600/v1585958798/877DD1C2-5C29-428A-8FEE-BC9685FE108F_ym4tl1.jpg
   overlay_filer: rgba(0, 0, 0, 0.5)
 ---
 

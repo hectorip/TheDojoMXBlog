@@ -130,7 +130,7 @@
       "headline": "Tres maneras de hacer una API con Go",
       "keywords": "go,apis,beego,gorilla-mux,gin-go,go-lang",
       "description": "Exploramos tres formas en las que puedes crear una API con Go el lenguaje enfocado en la eficiencia de los programas permitiendo productividad para los programadores",
-      "articleBody": "Go es uno de los lenguajes más exitosos de los últimos tiempos. Ya hablamos de por qué deberías aprenderlo.\n\nAhora hablemos de un caso de uso práctico: úsalo para crear una API. En este artículo nos enfocaremos en la parte de comunicación.\n\nLa funcionalidad básica de tu API puede o no adaptarse completamente a Go (no es es tan fácil de escribir como un lenguaje dinámico como Python), pero definitivamente es un lenguaje excelente para crear interfaces de comunicación web, debido a su alto rendimiento y eficiencia.\n\nPuedes ver algunas de las comparativas en los siguientes artículos:\n\n\n  \n    Comparando el rendimiento de Go, NodeJS y Elixir. TL;DR: Go y Elixir llegan a manejar más de 100k conexiones sin ningún problema, Node empieza con problemas desde 30k y el más eficiente en cómputo y memoria utilizada por mucho es Go.\n  \n  \n    Comparación de frameworks web ligeros. Este artículo es un poco viejo, pero el resumen es que Gin (un framework web ligero de Go) es el que más peticiones soporta por segundo y con una consistencia excelente.\n  \n\n\n\n\nAhora sí, hablemos de tres (4) formas de crear una API sobre HTTP para tu próximo proyecto. Pero antes hablemos de una opción simple que no cubre muchos casos pero que se oye recomendada muchas veces.\n\nLa biblioteca estándar\n\nCuando hice mi primer proyecto en Go, gran parte de la investigación sobre qué usar para crear un proyecto web apuntaba los paquetes nativos de Go son el camino.\n\nGo tiene una biblioteca estándar que cubre muchas de las necesidades de un desarrollador moderno, si has programado en él podrás estar de acuerdo en que se siente como subirte en hombros de gigantes para programar, debido a que los que lo  diseñaron y construyeron son las mismas personas que sentaron las bases para los sistemas operativos modernos. Imagínate cuánta experiencia tienen.\n\nEn la biblioteca estándar podemos encontrar un paquete que se llama net/http con el que puedes hacer muy pocas líneas de código un servidor web con ruteo sencillo (la base de tu API). Puedes recibir peticiones HTTP, procesarlas (mejor dicho: hacer que algúna otra parte de tu sistema la procese) y devolver una respuesta HTTP. El ciclo básico request-response.\n\nAquí hay un ejemplo:\n\npackage main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n)\n\n// Implementando un servidor HTTP\nfunc main() {\n\thttp.HandleFunc(\"/\", handler)\n\thttp.ListenAndServe(\"localhost:8080\", nil) // iniciando el servidor\n}\n\n// handler recibe la petición http y la procesa para devolver una respuesta http\nfunc handler(response http.ResponseWriter, request *http.Request) {\n\tfmt.Fprintf(response, \"Hola Go API's\") // Falta responder JSON\n}\n\n\nSi tu API es muy sencilla, expone muy pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la librería estándar es una solución excelente, pero para otros casos se queda un poco corta.\n\nPor eso te presentamos las opciones más comunes y algunos ejemplos.\n\nGorilla Web Toolkit\n\n\n\nGorilla Toolkit es una conjunto de herramientas para Go en web que entre otras cosas tiene un web router llamado Gorilla Mux que podríamos pensar como la parte principal de nuestro servidor web y que cubre la mayoría de funciones que la biblioteca estándar deja sin cubrir.\n\nGin\n\nGin es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go.\n\nBeego\n\nConclusión\n\nExisten múltiples opciones para crear tu API en Go. Cada una tiene puntos específicos por los que podrías decidir usarla, pero en nuestra experiencia la que se adapta a la mayor cantidad de circunstancias es Gin, que además tiene más componentes que las demás.\n",
+      "articleBody": "Go es uno de los lenguajes modernos más usados. Ya hablamos de por qué deberías aprenderlo.\n\nAhora hablemos de un caso de uso práctico: úsalo para crear una API HTTP. En este artículo nos enfocaremos en la parte de comunicación HTTP.\n\nLa funcionalidad básica de tu API puede o no adaptarse completamente a Go (no es es tan fácil de escribir como un lenguaje dinámico como Python), pero definitivamente es un lenguaje excelente para crear interfaces de comunicación web, debido a su alto rendimiento y eficiencia.\n\nPuedes ver algunas de las comparativas en los siguientes artículos:\n\n\n  \n    Comparando el rendimiento de Go, NodeJS y Elixir. TL;DR: Go y Elixir llegan a manejar más de 100k conexiones sin ningún problema, Node empieza con problemas desde 30k y el más eficiente en cómputo y memoria utilizada por mucho es Go.\n  \n  \n    Comparación de frameworks web ligeros. Este artículo es un poco viejo, pero el resumen es que Gin (un framework web ligero de Go) es el que más peticiones soporta por segundo y con una consistencia excelente.\n  \n\n\n\n\nHablemos de tres formas de crear una API sobre HTTP para tu próximo proyecto. Pero antes hablemos de una opción simple que no cubre muchos casos pero que se oye recomendada muchas veces.\n\nLa biblioteca estándar\n\nCuando hice mi primer proyecto en Go, gran parte de la investigación sobre qué usar para crear un proyecto de una API web apuntaba a los paquetes nativos de Go.\n\nGo tiene una biblioteca estándar que cubre muchas de las necesidades de un desarrollador moderno. Si has programado en él podrás estar de acuerdo en que se siente como subirte en hombros de gigantes, debido a que los que lo diseñaron y construyeron son las mismas personas que sentaron las bases para los sistemas operativos modernos. Imagínate cuánta experiencia tienen.\n\nEn la biblioteca estándar podemos encontrar un paquete que se llama net/http con el que puedes hacer, en muy pocas líneas de código, un servidor web con ruteo sencillo (la base de tu API). Puedes recibir peticiones HTTP, procesarlas y devolver una respuesta HTTP. El ciclo básico request-&gt;response.\n\nAquí hay un ejemplo:\n\npackage main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n)\n\n// Implementando un servidor HTTP\nfunc main() {\n\thttp.HandleFunc(\"/\", handler)\n\thttp.ListenAndServe(\"localhost:8080\", nil) // iniciando el servidor\n}\n\n// handler recibe la petición http y la procesa para devolver una respuesta http\nfunc handler(response http.ResponseWriter, request *http.Request) {\n\tfmt.Fprintf(response, \"Hola Go API's\") // Falta responder JSON\n}\n\n\nSi tu API es muy sencilla, expone muy pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la biblioteca estándar es una solución excelente, pero para otros casos se queda un poco corta.\n\nPor eso te presentamos las opciones más comunes y algunos ejemplos.\n\nGorilla Web Toolkit\n\n\n\nGorilla Toolkit es una conjunto de herramientas para web que, entre otras cosas, tiene un web router llamado Gorilla Mux que es la parte principal del servidor web y que cubre la mayoría de funciones que la biblioteca estándar deja sin cubrir:\n\nGin\n\nGin es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go.\nBeego\n\nConclusión\n\nExisten múltiples opciones para crear tu API en Go. Cada una tiene puntos específicos por los que podrías decidir usarla, pero en nuestra experiencia la que se adapta a la mayor cantidad de circunstancias es Gin, que además tiene más componentes que las demás.\n\n",
       "datePublished": "2019-11-23 00:00:00 -0600",
       "dateModified": "2019-11-23 00:00:00 -0600",
       "author": {
@@ -402,9 +402,9 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>Go es uno de los lenguajes más exitosos de los últimos tiempos. Ya hablamos de <a href="/2019/09/01/por-que-deberias-aprender-go.html">por qué deberías aprenderlo</a>.</p>
+        <p>Go es uno de los lenguajes modernos más usados. Ya hablamos de <a href="/2019/09/01/por-que-deberias-aprender-go.html">por qué deberías aprenderlo</a>.</p>
 
-<p>Ahora hablemos de un caso de uso práctico: <strong>úsalo para crear una API</strong>. En este artículo nos enfocaremos en la parte de comunicación.</p>
+<p>Ahora hablemos de un caso de uso práctico: <strong>úsalo para crear una API HTTP</strong>. En este artículo nos enfocaremos en la parte de comunicación HTTP.</p>
 
 <p>La funcionalidad básica de tu API puede o no adaptarse completamente a Go (no es es tan fácil de escribir como un lenguaje dinámico como Python), pero definitivamente es un lenguaje excelente para crear interfaces de comunicación web, debido a su alto rendimiento y eficiencia.</p>
 
@@ -421,15 +421,15 @@
 
 <p><img src="https://res.cloudinary.com/hectorip/image/upload/v1574629781/Screenshot_2019-11-24_15.09.25_ozqwcu.png" alt="Comparativa de micro-frameworks Web"></p>
 
-<p>Ahora sí, hablemos de tres (4) formas de crear una API sobre HTTP para tu próximo proyecto. Pero antes hablemos de una opción simple que no cubre muchos casos pero que se oye recomendada muchas veces.</p>
+<p>Hablemos de tres formas de crear una API sobre HTTP para tu próximo proyecto. Pero antes hablemos de una opción simple que no cubre muchos casos pero que se oye recomendada muchas veces.</p>
 
 <h2 id="la-biblioteca-estándar">La biblioteca estándar</h2>
 
-<p>Cuando hice mi primer proyecto en Go, gran parte de la investigación sobre qué usar para crear un proyecto web apuntaba los paquetes nativos de Go son el camino.</p>
+<p>Cuando hice mi primer proyecto en Go, gran parte de la investigación sobre qué usar para crear un proyecto de una API web apuntaba a los <strong>paquetes nativos</strong> de Go.</p>
 
-<p>Go tiene una biblioteca estándar que cubre muchas de las necesidades de un desarrollador moderno, si has programado en él podrás estar de acuerdo en que se siente como subirte en hombros de gigantes para programar, debido a que los que lo  diseñaron y construyeron son las mismas personas que sentaron las bases para los sistemas operativos modernos. <em>Imagínate cuánta experiencia tienen</em>.</p>
+<p>Go tiene una biblioteca estándar que cubre <strong>muchas</strong> de las necesidades de un desarrollador moderno. Si has programado en él podrás estar de acuerdo en que se siente como subirte en hombros de gigantes, debido a que los que lo diseñaron y construyeron son <em>las mismas personas que sentaron las bases para los sistemas operativos modernos</em>. Imagínate cuánta experiencia tienen.</p>
 
-<p>En la biblioteca estándar podemos encontrar un paquete que se llama <code class="highlighter-rouge">net/http</code> con el que puedes hacer muy pocas líneas de código un servidor web con ruteo sencillo (la base de tu API). Puedes recibir peticiones HTTP, procesarlas (mejor dicho: hacer que algúna otra parte de tu sistema la procese) y devolver una respuesta HTTP. El ciclo básico request-response.</p>
+<p>En la biblioteca estándar podemos encontrar un paquete que se llama <code class="highlighter-rouge">net/http</code> con el que puedes hacer, en muy pocas líneas de código, un servidor web con ruteo sencillo (la base de tu API). Puedes recibir peticiones HTTP, procesarlas y devolver una respuesta HTTP. El ciclo básico request-&gt;response.</p>
 
 <p>Aquí hay un ejemplo:</p>
 
@@ -452,7 +452,7 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>Si tu API es muy sencilla, expone muy pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la librería estándar es una solución excelente, pero para otros casos se queda un poco corta.</p>
+<p>Si tu API es <strong>muy</strong> sencilla, expone muy pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la biblioteca estándar es una solución excelente, pero para otros casos se queda un poco corta.</p>
 
 <p>Por eso te presentamos las opciones más comunes y algunos ejemplos.</p>
 
@@ -460,17 +460,17 @@
 
 <p><img src="https://avatars2.githubusercontent.com/u/489566?s=200&amp;v=4" alt="Gorilla Web Toolkit logo" class="align-center"></p>
 
-<p><a href="https://www.gorillatoolkit.org/">Gorilla Toolkit</a> es una conjunto de herramientas para Go en web que entre otras cosas tiene un web router llamado <strong>Gorilla Mux</strong> que podríamos pensar como la parte principal de nuestro servidor web y que cubre la mayoría de funciones que la biblioteca estándar deja sin cubrir.</p>
+<p><a href="https://www.gorillatoolkit.org/">Gorilla Toolkit</a> es una conjunto de herramientas para web que, entre otras cosas, tiene un web router llamado <strong>Gorilla Mux</strong> que es la parte principal del servidor web y que cubre la mayoría de funciones que la biblioteca estándar deja sin cubrir:</p>
 
 <h2 id="gin">Gin</h2>
 
 <p>Gin es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go.</p>
-
 <h2 id="beego">Beego</h2>
 
 <h2 id="conclusión">Conclusión</h2>
 
 <p>Existen múltiples opciones para crear tu API en Go. Cada una tiene puntos específicos por los que podrías decidir usarla, pero en nuestra experiencia la que se adapta a la mayor cantidad de circunstancias es Gin, que además tiene más componentes que las demás.</p>
+
 
         
       </section>
@@ -582,7 +582,7 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/2020/03/21/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html" rel="permalink">A Philosophy of Software Design: Los módulos de propósito general son más profundos
+        <a href="/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general.html" rel="permalink">A Philosophy of Software Design: Crea módulos de propósito general
 </a>
       
     </h2>
@@ -592,14 +592,14 @@
 
 
 
-  2 minutos de lectura
+  4 minutos de lectura
 
 
 
-| <i class="far fa-calendar" aria-hidden="true"></i> 21-03-2020
+| <i class="far fa-calendar" aria-hidden="true"></i> 02-04-2020
 </p>
     
-    <p class="archive__item-excerpt" itemprop="description">Crear módulos o clases demasiado específicas puede llevar a tu código a ser difícil de mantener, veamos algunas maneras de encontrar el equilibrio
+    <p class="archive__item-excerpt" itemprop="description">Crear módulos o clases demasiado específicas puede llevar a tu código a ser difícil de mantener, veamos por qué te conviene crear módulos de propósito general.
 </p>
   </article>
 </div>

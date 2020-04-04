@@ -115,7 +115,7 @@ var store = [{
         "url": "https://blog.thedojo.mx/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html",
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1573540452/jacob-campbell-ri83DTadRto-unsplash_fb7xgx.jpg"},{
         "title": "Tres maneras de hacer una API con Go",
-        "excerpt":"Go es uno de los lenguajes más exitosos de los últimos tiempos. Ya hablamos de por qué deberías aprenderlo. Ahora hablemos de un caso de uso práctico: úsalo para crear una API. En este artículo nos enfocaremos en la parte de comunicación. La funcionalidad básica de tu API puede o...","categories": [],
+        "excerpt":"Go es uno de los lenguajes modernos más usados. Ya hablamos de por qué deberías aprenderlo. Ahora hablemos de un caso de uso práctico: úsalo para crear una API HTTP. En este artículo nos enfocaremos en la parte de comunicación HTTP. La funcionalidad básica de tu API puede o no...","categories": [],
         "tags": ["go","apis","beego","gorilla-mux","gin-go","go-lang"],
         "url": "https://blog.thedojo.mx/2019/11/23/3-maneras-de-hacer-una-api-con-go-lang.html",
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1576986565/clint-adair-BW0vK-FA3eg-unsplash_iamab8.jpg"},{
@@ -148,7 +148,7 @@ var store = [{
         "excerpt":"Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada...","categories": [],
         "tags": ["a-philosophy-of-software-design","complejidad"],
         "url": "https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581404404/will-francis-Rm3nWQiDTzg-unsplash_cxpkvl.jpg"},{
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1600/v1585958798/877DD1C2-5C29-428A-8FEE-BC9685FE108F_ym4tl1.jpg"},{
         "title": "Eloquent JavaScript en Español",
         "excerpt":"TL;DR: Estamos trabajando en una nueva traducción de Eloquent JavaScript al español, en su tercera edición. La puedes encontrar aquí: Eloquent JavaScript en Español. Está la versión en Eloquent JavaScript en Español en PDF, que actualizamos cada capítulo. Si quieres contribuir puedes ponerte de acuerdo a través de este foro...","categories": [],
         "tags": ["eloquentjs-español","eloquent-js","eloquent","javascript","eloquent-javascript-pdf"],
@@ -184,8 +184,8 @@ var store = [{
         "tags": ["PoSD","software-design","complexity","interfaces","defaults"],
         "url": "https://blog.thedojo.mx/2020/03/18/a-philosophy-of-software-design-recomendaciones-disenio-modular.html",
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584519537/2E4D3407-0447-4034-BEFA-188831BF5971_x4th6g.jpg"},{
-        "title": "A Philosophy of Software Design: Los módulos de propósito general son más profundos",
-        "excerpt":"Una burla común hacia los programadores es que todo lo queremos hacer demasiado general. Nos piden hacer algo y pensamos en todos los casos en los que podría ser usado en el multiverso y queremos programarlo. Hay muchos consejos en contra de escribir código que abarque muchos casos. En este...","categories": [],
+        "title": "A Philosophy of Software Design: Crea módulos de propósito general",
+        "excerpt":"Una burla común hacia los programadores es que todo lo queremos hacer demasiado general. Nos piden una funcionalidad y en ese momento empezamos a pensar en todos los casos en los que podría ser usado en el universo. Hay muchos consejos en contra de escribir código que abarque muchos casos....","categories": [],
         "tags": ["PoSD","módulos","generalización","module","class"],
-        "url": "https://blog.thedojo.mx/2020/03/21/a-philosophy-of-software-design-los-modulos-de-proposito-general-son-mas-profundos.html",
+        "url": "https://blog.thedojo.mx/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general.html",
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726013/D750CDED-7745-4A56-8B3D-5CD33D2893E6_vqdgzb.jpg"}]
