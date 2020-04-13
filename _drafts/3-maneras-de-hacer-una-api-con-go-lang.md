@@ -1,5 +1,5 @@
 ---
-title: "Tres maneras de hacer una API con Go"
+title: "Cuatro formas de hacer una API con Go"
 date: 2019-11-23
 author: Héctor Patricio
 tags: go apis beego gorilla-mux gin-go go-lang
@@ -45,7 +45,7 @@ import (
 	"net/http"
 )
 
-// Implementando un servidor HTTP
+// Implementando rutas HTTP
 func main() {
 	http.HandleFunc("/", handler)
 	http.ListenAndServe("localhost:8080", nil) // iniciando el servidor
@@ -57,7 +57,7 @@ func handler(response http.ResponseWriter, request *http.Request) {
 }
 ```
 
-Si tu API es sencilla, expone muy pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la biblioteca estándar es una solución excelente, pero para otros casos se queda un poco corta.
+Si tu API es sencilla, expone muy pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la biblioteca estándar es una solución excelente, pero para otros casos se queda un poco corta, ya que tendrías que implementar varias cosas a mano.
 
 Su uso es muy sencillo como acabas de ver y usar un framework web viene a costo de agregar complejidad a cambio de funcionalidades que no tienes que desarrollar tú.
 
@@ -69,12 +69,27 @@ Por eso te presentamos las opciones más comunes y algunos ejemplos.
 
 [Gorilla Toolkit](https://www.gorillatoolkit.org/) es un conjunto de herramientas para web que, entre otras cosas tiene:
 
-- Un router más completo que el de la biblioteca estándar: Gorilla Mux
+- Un router más completo que el de la biblioteca estándar: *Gorilla Mux*. Es compatible con el tipo de dato nativo de Go para las peticiones.Además, incluye:
+  - Sub-routers
+  - Reversión de URL's (generar URL's a partir del nombre)
+  - Matches complejos
 - Middlewares: Logging, compresión, recuperación
-- 
-- Sub-routers
+- Manejo de sesiones con cookies seguras
+- Implementación de Websockets y RPC
+- Conversión de valores de entrada en `struct` de Go
 
-## Gin
+Gorilla no es un framework, puedes usar cada de sus herramientas por separado, como las vayas necesitando. Así que puede empezar con la librería estándar y agregar lo que necesitas de Gorilla poco a poco.
+
+Aquí tienes un ejemplo muy básico usando **mux**:
+
+```go
+
+import "gorilla/mux"
+
+
+```
+
+## Gin 
 
 [Gin](https://github.com/gin-gonic/gin)
 Gin es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go.

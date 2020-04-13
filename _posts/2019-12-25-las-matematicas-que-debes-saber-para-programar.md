@@ -6,8 +6,8 @@ tags: math matemáticas aprender
 comments: true
 excerpt: "¿Qué tantas matemáticas necesitas para programar? En este artículo lo veremos."
 header:
-  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1576990677/franck-v-tOjIx_NyzFo-unsplash_iu91kg.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1576990677/franck-v-tOjIx_NyzFo-unsplash_iu91kg.jpg
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_fill,g_custom,h_1000,w_1400,x_0/v1586794249/7CD56C0C-C8F6-448E-891B-348469AAF598_h9jpih.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_fill,g_custom,h_1000,w_1400,x_0/v1586794249/7CD56C0C-C8F6-448E-891B-348469AAF598_h9jpih.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 

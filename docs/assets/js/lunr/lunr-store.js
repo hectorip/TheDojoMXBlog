@@ -128,7 +128,7 @@ var store = [{
         "excerpt":"Cuando se habla de matemáticas mucha gente empieza a sentirse fastidiada porque creen que son cosas difíciles de entender. Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como una rama de las matemáticas,...","categories": [],
         "tags": ["math","matemáticas","aprender"],
         "url": "https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1576990677/franck-v-tOjIx_NyzFo-unsplash_iu91kg.jpg"},{
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_fill,g_custom,h_1000,w_1400,x_0/v1586794249/7CD56C0C-C8F6-448E-891B-348469AAF598_h9jpih.jpg"},{
         "title": "Recursos gratutitos para aprender a programar desde cero",
         "excerpt":"¿Quieres aprender a programar y no sabes por dónde empezar? En este post te daremos algunos recursos que puedes seguir para aprender a programar desde lo más básico hasta tener un conocimiento razonable de programación con el que podrías empezar a trabajar como becario. Motívate Para ser un buen programador...","categories": [],
         "tags": ["aprender","programar","recursos-aprendizaje"],
