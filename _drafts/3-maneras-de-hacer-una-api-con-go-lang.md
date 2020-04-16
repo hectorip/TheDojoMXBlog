@@ -59,7 +59,7 @@ func handler(response http.ResponseWriter, request *http.Request) {
 
 Si tu API es sencilla, expone muy pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la biblioteca estándar es una solución excelente, pero para otros casos se queda un poco corta, ya que tendrías que implementar varias cosas a mano.
 
-Su uso es muy sencillo como acabas de ver y usar un framework web viene a costo de agregar complejidad a cambio de funcionalidades que no tienes que desarrollar tú.
+Su uso es muy sencillo como acabas de ver y usar un framework web viene a costo de agregar complejidad a cambio de funcionalidades que no tienes que desarrollar tú. Pero aquí te compartimos un artículo en el que un experto hablá de por qué _él_ prefiere no usar frameworks: [Why I Don't Use Go Web Frameworks](https://medium.com/code-zen/why-i-don-t-use-go-web-frameworks-1087e1facfa4).
 
 Por eso te presentamos las opciones más comunes y algunos ejemplos.
 
