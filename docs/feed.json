@@ -251,11 +251,11 @@
     
     
     {
-      "id": "https://blog.thedojo.mx/2020/04/15/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html",
-      "url": "https://blog.thedojo.mx/2020/04/15/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html",
-      "title": "A Philosophy of Software Design: Organiza bien los sistemas en capas",
-      "content_html": "<p>Hemos escuchado muchísimo acerca de los sistemas en capas como MVC, MVT, MV*, etc. La mayoría de\nlos sistemas actuales se comportan así.</p>\n\n<p>Hablemos de por qué es efectiva esta forma de organización\nde código, sus características y cómo debemos organizar el código para sacar el máximo provecho.</p>\n\n<h2 id=\"características-de-los-sistemas-en-capas\">Características de los sistemas en capas</h2>\n\n<h2 id=\"qué-evitar\">Qué evitar</h2>\n",
-      "date_published": "Wed, 15 Apr 2020 00:00:00 -0500"
+      "id": "https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html",
+      "url": "https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html",
+      "title": "Entendiendo ES6",
+      "content_html": "<p>Hace tiempo dimos un curso de ES6 o ES2015. Hicimos una investigación acerca de la historia, la nomenclatura, quién lo creo y porque tanta confusión con los nombres.</p>\n\n<p>En este video explicamos eso y más: las características principales que se agregaron y la diferencia entre JavaScript y ECMAScript.</p>\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ZnS37QdoTDA\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe>\n\n<hr />\n\n<p>¿Tienes dudas específicas de JavaScript? Compártelas en los comentarios e intentaremos hacer videos sobre eso.</p>\n",
+      "date_published": "Mon, 27 Apr 2020 00:00:00 -0500"
       },
     
     {

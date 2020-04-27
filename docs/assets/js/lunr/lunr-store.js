@@ -184,8 +184,8 @@ var store = [{
         "tags": ["PoSD","módulos","generalización","module","class"],
         "url": "https://blog.thedojo.mx/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general.html",
         "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726013/D750CDED-7745-4A56-8B3D-5CD33D2893E6_vqdgzb.jpg"},{
-        "title": "A Philosophy of Software Design: Organiza bien los sistemas en capas",
-        "excerpt":"Hemos escuchado muchísimo acerca de los sistemas en capas como MVC, MVT, MV*, etc. La mayoría de los sistemas actuales se comportan así. Hablemos de por qué es efectiva esta forma de organización de código, sus características y cómo debemos organizar el código para sacar el máximo provecho. Características de...","categories": [],
-        "tags": [],
-        "url": "https://blog.thedojo.mx/2020/04/15/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html",
-        "teaser":null}]
+        "title": "Entendiendo ES6",
+        "excerpt":"Hace tiempo dimos un curso de ES6 o ES2015. Hicimos una investigación acerca de la historia, la nomenclatura, quién lo creo y porque tanta confusión con los nombres. En este video explicamos eso y más: las características principales que se agregaron y la diferencia entre JavaScript y ECMAScript. ¿Tienes dudas...","categories": [],
+        "tags": ["es6","js","javascript","videos"],
+        "url": "https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1587973000/6CF7535E-4D2E-4140-A758-32DD166D508C_hztakt.jpg"}]
