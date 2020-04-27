@@ -183,4 +183,9 @@ var store = [{
         "excerpt":"Una burla común hacia los programadores es que todo lo queremos hacer demasiado general. Nos piden una funcionalidad y en ese momento empezamos a pensar en todos los casos en los que podría ser usado en el universo. Hay muchos consejos en contra de escribir código que abarque muchos casos....","categories": [],
         "tags": ["PoSD","módulos","generalización","module","class"],
         "url": "https://blog.thedojo.mx/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726013/D750CDED-7745-4A56-8B3D-5CD33D2893E6_vqdgzb.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726013/D750CDED-7745-4A56-8B3D-5CD33D2893E6_vqdgzb.jpg"},{
+        "title": "A Philosophy of Software Design: Organiza bien los sistemas en capas",
+        "excerpt":"Hemos escuchado muchísimo acerca de los sistemas en capas como MVC, MVT, MV*, etc. La mayoría de los sistemas actuales se comportan así. Hablemos de por qué es efectiva esta forma de organización de código, sus características y cómo debemos organizar el código para sacar el máximo provecho. Características de...","categories": [],
+        "tags": [],
+        "url": "https://blog.thedojo.mx/2020/04/15/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html",
+        "teaser":null}]
