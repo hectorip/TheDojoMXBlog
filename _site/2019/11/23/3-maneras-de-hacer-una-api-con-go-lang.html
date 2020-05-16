@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Tres maneras de hacer una API con Go -</title>
+<!-- begin _includes/seo.html --><title>Cuatro formas de hacer una API con Go -</title>
 <meta name="description" content="Exploramos tres formas en las que puedes crear una API con Go el lenguaje enfocado en la eficiencia de los programas permitiendo productividad para los programadores">
 
 
@@ -19,7 +19,7 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es">
 <meta property="og:site_name" content="">
-<meta property="og:title" content="Tres maneras de hacer una API con Go">
+<meta property="og:title" content="Cuatro formas de hacer una API con Go">
 <meta property="og:url" content="https://blog.thedojo.mx/2019/11/23/3-maneras-de-hacer-una-api-con-go-lang.html">
 
 
@@ -126,11 +126,11 @@
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "url": "https://blog.thedojo.mx/2019/11/23/3-maneras-de-hacer-una-api-con-go-lang.html",
-      "name": "Tres maneras de hacer una API con Go",
-      "headline": "Tres maneras de hacer una API con Go",
+      "name": "Cuatro formas de hacer una API con Go",
+      "headline": "Cuatro formas de hacer una API con Go",
       "keywords": "go,apis,beego,gorilla-mux,gin-go,go-lang",
       "description": "Exploramos tres formas en las que puedes crear una API con Go el lenguaje enfocado en la eficiencia de los programas permitiendo productividad para los programadores",
-      "articleBody": "Go es uno de los lenguajes modernos más usados. Ya hablamos de por qué deberías aprenderlo.\n\nAhora hablemos de un caso de uso práctico: úsalo para crear una API HTTP. En este artículo nos enfocaremos en la parte de comunicación HTTP.\n\nLa funcionalidad básica de tu API puede o no adaptarse completamente a Go (no es es tan fácil de escribir como un lenguaje dinámico como Python), pero definitivamente es un lenguaje excelente para crear interfaces de comunicación web, debido a su alto rendimiento y eficiencia.\n\nPuedes ver algunas de las comparativas en los siguientes artículos:\n\n\n  \n    Comparando el rendimiento de Go, NodeJS y Elixir. TL;DR: Go y Elixir llegan a manejar más de 100k conexiones sin ningún problema, Node empieza con problemas desde 30k y el más eficiente en cómputo y memoria utilizada por mucho es Go.\n  \n  \n    Comparación de frameworks web ligeros. Este artículo es un poco viejo, pero el resumen es que Gin (un framework web ligero de Go) es el que más peticiones soporta por segundo y con una consistencia excelente.\n  \n\n\n\n\nHablemos de tres formas de crear una API sobre HTTP para tu próximo proyecto. Pero antes hablemos de una opción simple que no cubre muchos casos pero que se oye recomendada muchas veces.\n\nLa biblioteca estándar\n\nCuando hice mi primer proyecto en Go, gran parte de la investigación sobre qué usar para crear un proyecto de una API web apuntaba a los paquetes nativos de Go.\n\nGo tiene una biblioteca estándar que cubre muchas de las necesidades de un desarrollador moderno. Si has programado en él podrás estar de acuerdo en que se siente como subirte en hombros de gigantes, debido a que los que lo diseñaron y construyeron son las mismas personas que sentaron las bases para los sistemas operativos modernos. Imagínate cuánta experiencia tienen.\n\nEn la biblioteca estándar podemos encontrar un paquete que se llama net/http con el que puedes hacer, en muy pocas líneas de código, un servidor web con ruteo sencillo (la base de tu API). Puedes recibir peticiones HTTP, procesarlas y devolver una respuesta HTTP. El ciclo básico request-&gt;response.\n\nAquí hay un ejemplo:\n\npackage main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n)\n\n// Implementando un servidor HTTP\nfunc main() {\n\thttp.HandleFunc(\"/\", handler)\n\thttp.ListenAndServe(\"localhost:8080\", nil) // iniciando el servidor\n}\n\n// handler recibe la petición http y la procesa para devolver una respuesta http\nfunc handler(response http.ResponseWriter, request *http.Request) {\n\tfmt.Fprintf(response, \"Hola Go API's\") // Falta responder JSON\n}\n\n\nSi tu API es muy sencilla, expone muy pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la biblioteca estándar es una solución excelente, pero para otros casos se queda un poco corta.\n\nPor eso te presentamos las opciones más comunes y algunos ejemplos.\n\nGorilla Web Toolkit\n\n\n\nGorilla Toolkit es una conjunto de herramientas para web que, entre otras cosas, tiene un web router llamado Gorilla Mux que es la parte principal del servidor web y que cubre la mayoría de funciones que la biblioteca estándar deja sin cubrir:\n\nGin\n\nGin es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go.\nBeego\n\nConclusión\n\nExisten múltiples opciones para crear tu API en Go. Cada una tiene puntos específicos por los que podrías decidir usarla, pero en nuestra experiencia la que se adapta a la mayor cantidad de circunstancias es Gin, que además tiene más componentes que las demás.\n\n",
+      "articleBody": "Go es uno de los lenguajes modernos más usados. Ya hablamos de por qué deberías aprenderlo.\n\nAhora hablemos de un caso de uso práctico: úsalo para crear una API HTTP. En este artículo nos enfocaremos en la parte de comunicación HTTP.\n\nLa funcionalidad básica de tu API puede o no adaptarse completamente a Go (no es es tan fácil de escribir como un lenguaje dinámico como Python), pero definitivamente es un lenguaje excelente para crear interfaces de comunicación web, debido a su alto rendimiento y eficiencia.\n\nPuedes ver algunas de las comparativas en los siguientes artículos:\n\n\n  \n    Comparando el rendimiento de Go, NodeJS y Elixir. TL;DR: Go y Elixir llegan a manejar más de 100k conexiones sin ningún problema, Node empieza con problemas desde 30k y el más eficiente en cómputo y memoria utilizada por mucho es Go.\n  \n  \n    Comparación de frameworks web ligeros. Este artículo es un poco viejo, pero el resumen es que Gin (un framework web ligero de Go) es el que más peticiones soporta por segundo y con una consistencia excelente.\n  \n\n\n\n\nHablemos de tres formas de crear una API sobre HTTP para tu próximo proyecto. Pero antes hablemos de una opción simple que no cubre muchos casos pero que se oye recomendada muchas veces.\n\nLa biblioteca estándar\n\nCuando hice mi primer proyecto en Go, gran parte de la investigación sobre qué usar para crear un proyecto de una API web apuntaba a los paquetes nativos de Go.\n\nGo tiene una biblioteca estándar que cubre muchas de las necesidades de un desarrollador moderno. Si has programado en él podrás estar de acuerdo en que se siente como subirte en hombros de gigantes, debido a que los que lo diseñaron y construyeron son las mismas personas que sentaron las bases para los sistemas operativos modernos. Imagínate cuánta experiencia tienen.\n\nEn la biblioteca estándar podemos encontrar un paquete que se llama net/http con el que puedes hacer, en muy pocas líneas de código, un servidor web con ruteo sencillo (la base de tu API). Puedes recibir peticiones HTTP, procesarlas y devolver una respuesta HTTP. El ciclo básico request-&gt;response.\n\nAquí hay un ejemplo:\n\npackage main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n)\n\n// Implementando rutas HTTP\nfunc main() {\n\thttp.HandleFunc(\"/\", handler)\n\thttp.ListenAndServe(\"localhost:8080\", nil) // iniciando el servidor\n}\n\n// handler recibe la petición http y la procesa para devolver una respuesta http\nfunc handler(response http.ResponseWriter, request *http.Request) {\n\tfmt.Fprintf(response, \"Hola Go API's\") // Falta responder JSON\n}\n\n\nSi tu API es sencilla, expone muy pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la biblioteca estándar es una solución excelente, pero para otros casos se queda un poco corta, ya que tendrías que implementar varias cosas a mano.\n\nSu uso es muy sencillo como acabas de ver y usar un framework web viene a costo de agregar complejidad a cambio de funcionalidades que no tienes que desarrollar tú. Pero aquí te compartimos un artículo en el que un experto hablá de por qué él prefiere no usar frameworks: Why I Don’t Use Go Web Frameworks.\n\nPor eso te presentamos las opciones más comunes y algunos ejemplos.\n\nGorilla Web Toolkit\n\n\n\nGorilla Toolkit es un conjunto de herramientas para web que, entre otras cosas tiene:\n\n\n  Un router más completo que el de la biblioteca estándar: Gorilla Mux. Es compatible con el tipo de dato nativo de Go para las peticiones.Además, incluye:\n    \n      Sub-routers\n      Reversión de URL’s (generar URL’s a partir del nombre)\n      Matches complejos\n    \n  \n  Middlewares: Logging, compresión, recuperación\n  Manejo de sesiones con cookies seguras\n  Implementación de Websockets y RPC\n  Conversión de valores de entrada en struct de Go\n\n\nGorilla no es un framework, puedes usar cada de sus herramientas por separado, como las vayas necesitando. Así que puede empezar con la librería estándar y agregar lo que necesitas de Gorilla poco a poco.\n\nAquí tienes un ejemplo muy básico usando mux:\n\n\nimport \"gorilla/mux\"\n\n\n\n\nGin\n\nGin\nGin es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go.\n\nBeego\n\nBeego\n\nEcho\n\nEcho\n\nConclusión\n\nExisten múltiples opciones para crear tu API en Go. Cada una tiene puntos específicos por los que podrías decidir usarla, pero en nuestra experiencia la que se adapta a la mayor cantidad de circunstancias es Gin, que además tiene más componentes que las demás.\n",
       "datePublished": "2019-11-23 00:00:00 -0600",
       "dateModified": "2019-11-23 00:00:00 -0600",
       "author": {
@@ -240,7 +240,7 @@
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          Tres maneras de hacer una API con Go
+          Cuatro formas de hacer una API con Go
 
         
       </h1>
@@ -254,7 +254,7 @@
 
 
 
-  2 minutos de lectura
+  3 minutos de lectura
 
 
 
@@ -392,7 +392,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Tres maneras de hacer una API con Go">
+    <meta itemprop="headline" content="Cuatro formas de hacer una API con Go">
     <meta itemprop="description" content="Exploramos tres formas en las que puedes crear una API con Go el lenguaje enfocado en la eficiencia de los programas permitiendo productividad para los programadores">
     <meta itemprop="datePublished" content="November 23, 2019">
     
@@ -440,7 +440,7 @@
 	<span class="s">"net/http"</span>
 <span class="p">)</span>
 
-<span class="c">// Implementando un servidor HTTP</span>
+<span class="c">// Implementando rutas HTTP</span>
 <span class="k">func</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
 	<span class="n">http</span><span class="o">.</span><span class="n">HandleFunc</span><span class="p">(</span><span class="s">"/"</span><span class="p">,</span> <span class="n">handler</span><span class="p">)</span>
 	<span class="n">http</span><span class="o">.</span><span class="n">ListenAndServe</span><span class="p">(</span><span class="s">"localhost:8080"</span><span class="p">,</span> <span class="no">nil</span><span class="p">)</span> <span class="c">// iniciando el servidor</span>
@@ -452,7 +452,9 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>Si tu API es <strong>muy</strong> sencilla, expone muy pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la biblioteca estándar es una solución excelente, pero para otros casos se queda un poco corta.</p>
+<p>Si tu API es sencilla, expone muy pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la biblioteca estándar es una solución excelente, pero para otros casos se queda un poco corta, ya que tendrías que implementar varias cosas a mano.</p>
+
+<p>Su uso es muy sencillo como acabas de ver y usar un framework web viene a costo de agregar complejidad a cambio de funcionalidades que no tienes que desarrollar tú. Pero aquí te compartimos un artículo en el que un experto hablá de por qué <em>él</em> prefiere no usar frameworks: <a href="https://medium.com/code-zen/why-i-don-t-use-go-web-frameworks-1087e1facfa4">Why I Don’t Use Go Web Frameworks</a>.</p>
 
 <p>Por eso te presentamos las opciones más comunes y algunos ejemplos.</p>
 
@@ -460,17 +462,48 @@
 
 <p><img src="https://avatars2.githubusercontent.com/u/489566?s=200&amp;v=4" alt="Gorilla Web Toolkit logo" class="align-center"></p>
 
-<p><a href="https://www.gorillatoolkit.org/">Gorilla Toolkit</a> es una conjunto de herramientas para web que, entre otras cosas, tiene un web router llamado <strong>Gorilla Mux</strong> que es la parte principal del servidor web y que cubre la mayoría de funciones que la biblioteca estándar deja sin cubrir:</p>
+<p><a href="https://www.gorillatoolkit.org/">Gorilla Toolkit</a> es un conjunto de herramientas para web que, entre otras cosas tiene:</p>
+
+<ul>
+  <li>Un router más completo que el de la biblioteca estándar: <em>Gorilla Mux</em>. Es compatible con el tipo de dato nativo de Go para las peticiones.Además, incluye:
+    <ul>
+      <li>Sub-routers</li>
+      <li>Reversión de URL’s (generar URL’s a partir del nombre)</li>
+      <li>Matches complejos</li>
+    </ul>
+  </li>
+  <li>Middlewares: Logging, compresión, recuperación</li>
+  <li>Manejo de sesiones con cookies seguras</li>
+  <li>Implementación de Websockets y RPC</li>
+  <li>Conversión de valores de entrada en <code class="highlighter-rouge">struct</code> de Go</li>
+</ul>
+
+<p>Gorilla no es un framework, puedes usar cada de sus herramientas por separado, como las vayas necesitando. Así que puede empezar con la librería estándar y agregar lo que necesitas de Gorilla poco a poco.</p>
+
+<p>Aquí tienes un ejemplo muy básico usando <strong>mux</strong>:</p>
+
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">import</span> <span class="s">"gorilla/mux"</span>
+
+
+</code></pre></div></div>
 
 <h2 id="gin">Gin</h2>
 
-<p>Gin es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go.</p>
+<p><a href="https://github.com/gin-gonic/gin">Gin</a>
+Gin es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go.</p>
+
 <h2 id="beego">Beego</h2>
+
+<p><a href="https://beego.me/">Beego</a></p>
+
+<h2 id="echo">Echo</h2>
+
+<p><a href="https://echo.labstack.com/">Echo</a></p>
 
 <h2 id="conclusión">Conclusión</h2>
 
 <p>Existen múltiples opciones para crear tu API en Go. Cada una tiene puntos específicos por los que podrías decidir usarla, pero en nuestra experiencia la que se adapta a la mayor cantidad de circunstancias es Gin, que además tiene más componentes que las demás.</p>
-
 
         
       </section>
@@ -529,7 +562,7 @@
     <h4 class="page__share-title">Compartir</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Tres+maneras+de+hacer+una+API+con+Go%20https%3A%2F%2Fblog.thedojo.mx%2F2019%2F11%2F23%2F3-maneras-de-hacer-una-api-con-go-lang.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Cuatro+formas+de+hacer+una+API+con+Go%20https%3A%2F%2Fblog.thedojo.mx%2F2019%2F11%2F23%2F3-maneras-de-hacer-una-api-con-go-lang.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.thedojo.mx%2F2019%2F11%2F23%2F3-maneras-de-hacer-una-api-con-go-lang.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -577,12 +610,12 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726013/D750CDED-7745-4A56-8B3D-5CD33D2893E6_vqdgzb.jpg" alt="">
+        <img src="https://res.cloudinary.com/hectorip/image/upload/v1589666287/AE8177CF-C488-4D9E-8D4D-4914B50EB3FC_mbfv0a.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general.html" rel="permalink">A Philosophy of Software Design: Crea módulos de propósito general
+        <a href="/2020/05/16/cursos-certificados-gratuitos.html" rel="permalink">Cursos certificados gratuitos
 </a>
       
     </h2>
@@ -592,14 +625,46 @@
 
 
 
-  4 minutos de lectura
+  1 minutos de lectura
 
 
 
-| <i class="far fa-calendar" aria-hidden="true"></i> 02-04-2020
+| <i class="far fa-calendar" aria-hidden="true"></i> 16-05-2020
 </p>
     
-    <p class="archive__item-excerpt" itemprop="description">Crear módulos o clases demasiado específicas puede llevar a tu código a ser difícil de mantener, veamos por qué te conviene crear módulos de propósito general.
+    <p class="archive__item-excerpt" itemprop="description">Es emocionante todo lo que se puede aprender en internet. Revisa algunos cursos que además te certifcan gratuitamente.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/05/16/que-es-un-engine-de-javascript.html" rel="permalink">¿Qué es un engine de JavaScript?
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  menos de 1 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 16-05-2020
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Escribe aquí un buen resumen de tu artículo
 </p>
   </article>
 </div>
@@ -613,12 +678,12 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584519537/2E4D3407-0447-4034-BEFA-188831BF5971_x4th6g.jpg" alt="">
+        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1587973000/6CF7535E-4D2E-4140-A758-32DD166D508C_hztakt.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/2020/03/18/a-philosophy-of-software-design-recomendaciones-disenio-modular.html" rel="permalink">A Philosophy of Software Design: Recomendaciones de diseño modular
+        <a href="/2020/04/27/entendiendo-es6.html" rel="permalink">Entendiendo ES6
 </a>
       
     </h2>
@@ -628,14 +693,14 @@
 
 
 
-  5 minutos de lectura
+  menos de 1 minutos de lectura
 
 
 
-| <i class="far fa-calendar" aria-hidden="true"></i> 18-03-2020
+| <i class="far fa-calendar" aria-hidden="true"></i> 27-04-2020
 </p>
     
-    <p class="archive__item-excerpt" itemprop="description">Hablemos de algunos consejos para lograr ocultar la mayor cantidad de información posible en tus módulos, pero también de cómo no llevarlo demasiado lejos
+    <p class="archive__item-excerpt" itemprop="description">Lanzamos un video explicando por qué ES6 sonó tanto. Velo aquí.
 </p>
   </article>
 </div>
@@ -648,13 +713,9 @@
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584251653/A240034B-230E-4BA2-843D-32357D921811_mwdnzk.jpg" alt="">
-      </div>
-    
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal.html" rel="permalink">A Philosophy of Software Design: Descomposición Temporal
+        <a href="/2020/04/15/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html" rel="permalink">A Philosophy of Software Design: Organiza bien los sistemas en capas
 </a>
       
     </h2>
@@ -664,50 +725,15 @@
 
 
 
-  4 minutos de lectura
+  menos de 1 minutos de lectura
 
 
 
-| <i class="far fa-calendar" aria-hidden="true"></i> 16-03-2020
+| <i class="far fa-calendar" aria-hidden="true"></i> 15-04-2020
 </p>
     
-    <p class="archive__item-excerpt" itemprop="description">Una forma de dejar escapar información es mediante forzar el orden de las operaciones de un módulo. Veamos cómo evitarlo.
+    <p class="archive__item-excerpt" itemprop="description">Resuelve problemas de organización de código mediante un sistema en capas.
 </p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583644548/9641A743-5E78-4719-9F90-6D77F1CD4E1E_xhawu6.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" rel="permalink">Guía para escoger tu stack: por qué deberías escoger tecnología aburrida
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  9 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 11-03-2020
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología proba...</p>
   </article>
 </div>
 

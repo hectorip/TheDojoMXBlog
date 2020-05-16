@@ -188,4 +188,9 @@ var store = [{
         "excerpt":"Hace tiempo dimos un curso de ES6 o ES2015. Hicimos una investigación acerca de la historia, la nomenclatura, quién lo creo y porque tanta confusión con los nombres. En este video explicamos eso y más: las características principales que se agregaron y la diferencia entre JavaScript y ECMAScript. ¿Tienes dudas...","categories": [],
         "tags": ["es6","js","javascript","videos"],
         "url": "https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1587973000/6CF7535E-4D2E-4140-A758-32DD166D508C_hztakt.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1587973000/6CF7535E-4D2E-4140-A758-32DD166D508C_hztakt.jpg"},{
+        "title": "Cursos certificados gratuitos",
+        "excerpt":"Debido a la emergencia sanitaria mundial, algunas universidades han liberado cursos que además de auditar, puedes cursar para obtener un cetificado. Si quieres mejorar un poco tu perfil del LinkedIn aquí te ponemos unos cursos de tecnología que puedes tomar. Programación Computer Programming For Everyone C++ For C Programmers Code...","categories": [],
+        "tags": ["cursos","aprendizaje","programación","matemáticas","mooc"],
+        "url": "https://blog.thedojo.mx/2020/05/16/cursos-certificados-gratuitos.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/v1589666287/AE8177CF-C488-4D9E-8D4D-4914B50EB3FC_mbfv0a.jpg"}]

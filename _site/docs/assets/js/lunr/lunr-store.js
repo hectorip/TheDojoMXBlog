@@ -128,7 +128,7 @@ var store = [{
         "excerpt":"Cuando se habla de matemáticas mucha gente empieza a sentirse fastidiada porque creen que son cosas difíciles de entender. Sin embargo, las matemáticas son la base de muchas otras ciencias y sobre de todo de la computación. Podríamos considerar las ciencias de la computación como una rama de las matemáticas,...","categories": [],
         "tags": ["math","matemáticas","aprender"],
         "url": "https://blog.thedojo.mx/2019/12/25/las-matematicas-que-debes-saber-para-programar.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1576990677/franck-v-tOjIx_NyzFo-unsplash_iu91kg.jpg"},{
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_fill,g_custom,h_1000,w_1400,x_0/v1586794249/7CD56C0C-C8F6-448E-891B-348469AAF598_h9jpih.jpg"},{
         "title": "Recursos gratutitos para aprender a programar desde cero",
         "excerpt":"¿Quieres aprender a programar y no sabes por dónde empezar? En este post te daremos algunos recursos que puedes seguir para aprender a programar desde lo más básico hasta tener un conocimiento razonable de programación con el que podrías empezar a trabajar como becario. Motívate Para ser un buen programador...","categories": [],
         "tags": ["aprender","programar","recursos-aprendizaje"],
@@ -143,7 +143,7 @@ var store = [{
         "excerpt":"Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada...","categories": [],
         "tags": ["a-philosophy-of-software-design","complejidad"],
         "url": "https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581404404/will-francis-Rm3nWQiDTzg-unsplash_cxpkvl.jpg"},{
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1600/v1585958798/877DD1C2-5C29-428A-8FEE-BC9685FE108F_ym4tl1.jpg"},{
         "title": "Eloquent JavaScript en Español",
         "excerpt":"TL;DR: Estamos trabajando en una nueva traducción de Eloquent JavaScript al español, en su tercera edición. La puedes encontrar aquí: Eloquent JavaScript en Español. Está la versión en Eloquent JavaScript en Español en PDF, que actualizamos cada capítulo. Si quieres contribuir puedes ponerte de acuerdo a través de este foro...","categories": [],
         "tags": ["eloquentjs-español","eloquent-js","eloquent","javascript","eloquent-javascript-pdf"],
@@ -183,4 +183,9 @@ var store = [{
         "excerpt":"Una burla común hacia los programadores es que todo lo queremos hacer demasiado general. Nos piden una funcionalidad y en ese momento empezamos a pensar en todos los casos en los que podría ser usado en el universo. Hay muchos consejos en contra de escribir código que abarque muchos casos....","categories": [],
         "tags": ["PoSD","módulos","generalización","module","class"],
         "url": "https://blog.thedojo.mx/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726013/D750CDED-7745-4A56-8B3D-5CD33D2893E6_vqdgzb.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726013/D750CDED-7745-4A56-8B3D-5CD33D2893E6_vqdgzb.jpg"},{
+        "title": "Entendiendo ES6",
+        "excerpt":"Hace tiempo dimos un curso de ES6 o ES2015. Hicimos una investigación acerca de la historia, la nomenclatura, quién lo creo y porque tanta confusión con los nombres. En este video explicamos eso y más: las características principales que se agregaron y la diferencia entre JavaScript y ECMAScript. ¿Tienes dudas...","categories": [],
+        "tags": ["es6","js","javascript","videos"],
+        "url": "https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1587973000/6CF7535E-4D2E-4140-A758-32DD166D508C_hztakt.jpg"}]

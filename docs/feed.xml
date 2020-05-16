@@ -1,4 +1,126 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-04-27T02:41:16-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Entendiendo ES6</title><link href="https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html" rel="alternate" type="text/html" title="Entendiendo ES6" /><published>2020-04-27T00:00:00-05:00</published><updated>2020-04-27T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/04/27/entendiendo-es6</id><content type="html" xml:base="https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html">&lt;p&gt;Hace tiempo dimos un curso de ES6 o ES2015. Hicimos una investigación acerca de la historia, la nomenclatura, quién lo creo y porque tanta confusión con los nombres.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-05-16T17:26:49-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Cursos certificados gratuitos</title><link href="https://blog.thedojo.mx/2020/05/16/cursos-certificados-gratuitos.html" rel="alternate" type="text/html" title="Cursos certificados gratuitos" /><published>2020-05-16T00:00:00-05:00</published><updated>2020-05-16T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/05/16/cursos-certificados-gratuitos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/05/16/cursos-certificados-gratuitos.html">&lt;p&gt;Debido a la emergencia sanitaria mundial, algunas universidades han liberado cursos
+que además de auditar, puedes cursar para obtener un &lt;strong&gt;cetificado&lt;/strong&gt;. Si quieres mejorar un poco tu perfil del LinkedIn aquí te ponemos unos cursos de tecnología que puedes tomar.&lt;/p&gt;
+
+&lt;h2 id=&quot;programación&quot;&gt;Programación&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/computer-programming-for-everyone-17488&quot;&gt;Computer Programming For Everyone&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/c-plus-plus-a?edocomorp=free-courses-high-school&quot;&gt;C++ For C Programmers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/codeyourself-2938&quot;&gt;Code Yourself! An introduction to Programming&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/android-app-5719&quot;&gt;Build Your First Android App&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/aprogramar-2939&quot;&gt;¡A Programar! Una introducción a la programación&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/robotica-inicial-4659&quot;&gt;Robótica (para niños)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/computer-vision-basics&quot;&gt;Computer Vision Basics&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ia-y-machine-learning&quot;&gt;IA y Machine Learning&lt;/h2&gt;
+
+&lt;h3 id=&quot;español&quot;&gt;Español&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/ai-for-everyone-es-13786&quot;&gt;IA para todos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;inglés&quot;&gt;Inglés&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/datasciencemathskills-7745&quot;&gt;Data Scince Math Skills&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/machine-learning-business-professionals-13415&quot;&gt;Machine Learning for Business Professionals&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;cloud-computing&quot;&gt;Cloud Computing&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/cloud-computing-basics-18069&quot;&gt;Cloud Computing Basics&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/gcp-fundamentals-aws-8614&quot;&gt;Google Cloud Platform Fundamentals for AWS Professionals&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/aws-machine-learning-16924&quot;&gt;Getting Started with AWS Machine Learning&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/cloud-identity-10785&quot;&gt;Introduction to Cloud Identity&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/iiot-google-cloud-platform-12701&quot;&gt;Industrial IoT on Google Cloud Platform&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/developing-ai-applications-azure-17329&quot;&gt;Developing AI Applications on Azure&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/conversational-experiences-dialogflow-12529&quot;&gt;Building Conversational Experiences with Dialogflow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/aws-computer-vision-gluoncv-17327&quot;&gt;AWS Computer Vision: Getting Started with GluonCV&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;matemáticas&quot;&gt;Matemáticas&lt;/h2&gt;
+
+&lt;h3 id=&quot;español-1&quot;&gt;Español&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.coursera.org/learn/estadistica-probabilidad&quot;&gt;Estadística y probabilidad (UNAM)&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/calculo-1-4231&quot;&gt;El Cálculo - Modelo Lineal&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/calculo-2-4226&quot;&gt;El Cálculo - Modelo Cuadrático&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/calculo-3-4284&quot;&gt;El Cálculo - Modelo Cúbico&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/calculo-4-4167&quot;&gt;El Cálculo - Otros Modelos&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;inglés-1&quot;&gt;Inglés&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/matlab&quot;&gt;Introduction to Matlab&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/datasciencemathskills-7745&quot;&gt;Data Scince Math Skills&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/introduccion-al-calculo-4225&quot;&gt;Pre-Calculus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/introduction-to-calculus-12547&quot;&gt;Introduction to Calculus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;diseño&quot;&gt;Diseño&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/design&quot;&gt;Design: Creation of Artifacts in Society&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/design-language-16927&quot;&gt;The Language of Design: Form and Meaning&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;otros-temas&quot;&gt;Otros temas&lt;/h2&gt;
+
+&lt;h3 id=&quot;español-2&quot;&gt;Español&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/pensamiento-sistemico-4332&quot;&gt;Pensamiento Sistémico&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/mindshift-transforma-mente-10619&quot;&gt;Mindshift: Transforma tu mente para superar obstáculos en el aprendizaje y descubrir tu potencial oculto&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/arte-publico-pedagogia-7196&quot;&gt;ART of the MOOC: Arte Público y Pedagogía&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/escritura-esp-13496&quot;&gt;Fundamentos de la Escritura&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/innovacion-734&quot;&gt;Desarrollo rápido de productos innovadores para mercados emergentes&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/hablar-bien-en-publico-10518&quot;&gt;Cómo hablar bien en público&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;inglés-2&quot;&gt;Inglés&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/teamwork-skills-effective-communication-9661&quot;&gt;Teamwork Skills: Communicating Effectively in Groups&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/personal-branding-4865&quot;&gt;Introduction to personal branding&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/understanding-arguments-6620&quot;&gt;Think Again I&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/market-analytics-4868&quot;&gt;Marketing Analytics&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/skills-management-11218&quot;&gt;Introduction to Skills Management&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/how-to-write-a-scientific-paper-5816&quot;&gt;How to Write and Publish a Scientific Paper&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/emerging-technologies-lifelong-learning-10396&quot;&gt;Exploring Emerging Technologies for Lifelong Learning and Success&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/making-architecture-7153&quot;&gt;MAking Architecture&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Puedes ver una lista actualizada de los cursos aquí: &lt;a href=&quot;https://www.classcentral.com/report/free-online-learning-coronavirus/&quot;&gt;Free Learning Due to Coronavirus&lt;/a&gt;. Es emocionante ver todo lo que se puede aprender si uno puede ponerle el tiempo necesario.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cursos" /><category term="aprendizaje" /><category term="programación" /><category term="matemáticas" /><category term="mooc" /><summary type="html">Es emocionante todo lo que se puede aprender en internet. Revisa algunos cursos que además te certifcan gratuitamente.</summary></entry><entry><title type="html">Entendiendo ES6</title><link href="https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html" rel="alternate" type="text/html" title="Entendiendo ES6" /><published>2020-04-27T00:00:00-05:00</published><updated>2020-04-27T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/04/27/entendiendo-es6</id><content type="html" xml:base="https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html">&lt;p&gt;Hace tiempo dimos un curso de ES6 o ES2015. Hicimos una investigación acerca de la historia, la nomenclatura, quién lo creo y porque tanta confusión con los nombres.&lt;/p&gt;
 
 &lt;p&gt;En este video explicamos eso y más: las características principales que se agregaron y la diferencia entre JavaScript y ECMAScript.&lt;/p&gt;
 
@@ -594,62 +716,4 @@ Puedes leer el libro en línea o descargarlo en PDF, próximamente en EPUB y Mob
 
 &lt;p&gt;Finalmente, en el futuro habilitaremos algún medio para contribuciones monetarias, para acelerar la traducción mediante la contratación de traductores y diseñadores profesionales.&lt;/p&gt;
 
-&lt;p&gt;No dudes en ponerte en contacto en &lt;a href=&quot;https://github.com/Eloquent-JavaScript-Espanol/Eloquent-JavaScript-ES&quot;&gt;GitHub&lt;/a&gt; o a través de este artículo, en los comentarios.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="eloquentjs-español" /><category term="eloquent-js" /><category term="eloquent" /><category term="javascript" /><category term="eloquent-javascript-pdf" /><summary type="html">Traudcción del Eloquent JavaScript al español, 3ra edición</summary></entry><entry><title type="html">A Philosophy of Software Design: Desarrollo Táctico vs Estratégico</title><link href="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Desarrollo Táctico vs Estratégico" /><published>2020-02-11T00:00:00-06:00</published><updated>2020-02-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html">&lt;p&gt;Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada uno.&lt;/p&gt;
-
-&lt;h2 id=&quot;desarrollo-táctico&quot;&gt;Desarrollo táctico&lt;/h2&gt;
-
-&lt;p&gt;Está caracterizado por la alta velocidad inicial con la que empiezas a desarrollar y crear las funciones de tu programa. Con esta actitud, tu principal objetivo es tener &lt;em&gt;código que funcione&lt;/em&gt;. Con esta forma de trabajo no gastas mucho tiempo buscando el mejor diseño para tu programa sino que te enfocas en terminar lo más rápido posible. Tu vista está en el &lt;strong&gt;corto plazo&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Con tal de terminar con la tarea lo más pronto posible, no importa si agregas algo de complejidad al sistema.&lt;/p&gt;
-
-&lt;p&gt;Este tipo de desarrollo es alentado por los negocios que quieren que su código o programa esté tan pronto como sea posible sin importar el costo. ¿Tiene uso este código y esta forma de pensar? Por supuesto: cuando se quiere construir un producto muy muy rápido y se tiene conciencia de que &lt;em&gt;será desechable&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Pero otra cosa que te puede llevar a desarrollar de esta manera es la falta de planeación: estimar en mucho menos tiempo una tarea o malgastar el tiempo que tenías disponible.&lt;/p&gt;
-
-&lt;p&gt;El desarrollo táctico produce programas que con el tiempo se van haciendo más y más difíciles de mantener, hasta que es tan impráctico que parece más fácil volver a hacerlo. &lt;strong&gt;La velocidad de desarrollo se va reduciendo.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Una vez que empiezas a programar un sistema de esta forma, es muy difícil cambiar. Y lo más triste es que la mayoría de las organizaciones y programadores prefieren este método.&lt;/p&gt;
-
-&lt;p&gt;Algunos ejemplos de desarrollo táctico:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Hard-coding de parámetros que deberían ser configurables&lt;/li&gt;
-  &lt;li&gt;Duplicación innecesaria&lt;/li&gt;
-  &lt;li&gt;Abstracciones deficientes o complicadas en extremo&lt;/li&gt;
-  &lt;li&gt;Código difícil de entender&lt;/li&gt;
-  &lt;li&gt;Manejo de excepciones deficiente(envolver todo en un try/catch, no manejar excepciones)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;desarrollo-estratégico&quot;&gt;Desarrollo Estratégico&lt;/h2&gt;
-
-&lt;p&gt;Este tipo de desarrollo se caracteriza por poner atención en el diseño y la calidad del código. Lo más importante no es directamente terminar la tarea pendiente, sino también hacerlo de manera que facilite las tareas futuras y mantenga la complejidad bajo control. La tarea principal es &lt;em&gt;crear un muy buen diseño&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Para el desarrollo estratégico &lt;strong&gt;código que funciona no es suficiente&lt;/strong&gt;. En vez de introducir partes que hagan más complejo el código, buscas mejorar aunque sea una pequeña parte del código cada que trabajas en él.&lt;/p&gt;
-
-&lt;p&gt;Esto no quiere decir que harás todo el diseño por adelantado, sino que se va a ir creando un buen diseño de las partes que se vayan necesitando.&lt;/p&gt;
-
-&lt;p&gt;Es tener una actitud de inversión en la base de código.&lt;/p&gt;
-
-&lt;p&gt;Esta actitud te hará ir más lento al principio, pero con el tiempo el equipo acelerará y podrá crear nuevas funciones muy rápido.&lt;/p&gt;
-
-&lt;p&gt;Ejemplos de prácticas desarrollo estratégico:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Probar varias implementaciones hasta encontrar la más limpia&lt;/li&gt;
-  &lt;li&gt;Documentar y comentar el código&lt;/li&gt;
-  &lt;li&gt;Limpiar y mejorar el código cada que sea posible (cada que lo toques)&lt;/li&gt;
-  &lt;li&gt;Crear pruebas unitarias&lt;/li&gt;
-  &lt;li&gt;Revisión de código&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;La siguiente imagen ilustra cómo se comporta el avance total en las dos formas de programar:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581404091/Untitled_Artwork_2_op8k0e.jpg&quot; alt=&quot;Comparación desarrollo táctico vs estratégico&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Como se puede ver, el desarrollo estratégico tarda más en entregar resultados, pero vale la pena si es un proyecto importante con un tiempo de vida esperado largo. Puedes pensarlo como la diferencia entre construir una choza o construcción sin ningún tipo de diseño contra una casa bien diseñada y con buenos materiales, como en la historia de los tres cochinitos. ¿Cuál aguantará más?&lt;/p&gt;
-
-&lt;p&gt;Muchas veces aquí está la diferencia entre si algo “escala” o “no escala”, no en la tecnología elegida. Es obvio que a una choza no le puedes construir un segundo piso.&lt;/p&gt;
-
-&lt;p&gt;Pero no seamos puristas y pensemos que si no es de la forma estratégica no vale la pena, la pregunta es: &lt;em&gt;¿Qué tipo de desarrollo conviene para tu proyecto según su tiempo de vida?&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Este y los siguientes artículos están basados en el libro &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;“A Philosophy of Software Design”&lt;/a&gt; de John K. Ousterhout.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="a-philosophy-of-software-design" /><category term="complejidad" /><summary type="html">Dos diferentes formas de desarrollar sistemas de software</summary></entry></feed>
+&lt;p&gt;No dudes en ponerte en contacto en &lt;a href=&quot;https://github.com/Eloquent-JavaScript-Espanol/Eloquent-JavaScript-ES&quot;&gt;GitHub&lt;/a&gt; o a través de este artículo, en los comentarios.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="eloquentjs-español" /><category term="eloquent-js" /><category term="eloquent" /><category term="javascript" /><category term="eloquent-javascript-pdf" /><summary type="html">Traudcción del Eloquent JavaScript al español, 3ra edición</summary></entry></feed>
