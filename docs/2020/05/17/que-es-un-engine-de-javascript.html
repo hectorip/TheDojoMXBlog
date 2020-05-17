@@ -20,7 +20,7 @@
 <meta property="og:locale" content="es">
 <meta property="og:site_name" content="">
 <meta property="og:title" content="¿Qué es un engine de JavaScript?">
-<meta property="og:url" content="https://blog.thedojo.mx/2020/05/16/que-es-un-engine-de-javascript.html">
+<meta property="og:url" content="https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html">
 
 
   <meta property="og:description" content="Hablemos de qué es y cómo funciona un motor de Javascript.">
@@ -33,14 +33,14 @@
 
 
 
-  <meta property="article:published_time" content="2020-05-16T00:00:00-05:00">
+  <meta property="article:published_time" content="2020-05-17T00:00:00-05:00">
 
 
 
 
 
 
-<link rel="canonical" href="https://blog.thedojo.mx/2020/05/16/que-es-un-engine-de-javascript.html">
+<link rel="canonical" href="https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html">
 
 
 
@@ -125,14 +125,14 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "url": "https://blog.thedojo.mx/2020/05/16/que-es-un-engine-de-javascript.html",
+      "url": "https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html",
       "name": "¿Qué es un engine de JavaScript?",
       "headline": "¿Qué es un engine de JavaScript?",
       "keywords": "js,javascript,compiladores,javascript-engine,v8,chrome",
       "description": "Hablemos de qué es y cómo funciona un motor de Javascript.",
-      "articleBody": "Me llamó mucho la atención  la salida de Deno v1 esta semana y le quise echar un ojito. Pero desde la explicación que de inicialmente, no entiendo qué es exactamente lo que es y hace:\n\n\n  “Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.”\n\n\nAquí me surgió la pregunta: ¿Qué es un runtime para JavaScript?\n\nPero para contestarla, antes tengo que entender qué es V8. La respuesta es: un engine de JavaScript. En este artículo explicaremos qué es exactamente qué es eso.\n\nExplicación rápida\n\nPuedes pensar en un Engine de JavaScript como en el programa encargado de correr el código de JavaScript. Todos los navegadores tienen uno:\n\n\n  \n    \n      Navegador\n      Engine\n    \n  \n  \n    \n      Chrome y Opera\n      V8\n    \n    \n      Firefox\n      SpiderMonkey\n    \n    \n      Safari\n      WebKit JSCore\n    \n    \n      Edge\n      Chakra\n    \n  \n\n\nEste, combinado con el motor web componen la mayor parte de un navegador.\n\n\n  El motor de JavaScript es quien convierte tu código de JavaScript en código ejecutable por la máquina en la que va a correr.\n\n\nTeoría: Compilación contra Interpretación\n\nPara correr un programa en cualquier lenguaje hay que convertirlo en instrucciones que las computadoras puedan entender. Esto es el código máquina.\n\nLos lenguajes compilados transforman todo el código antes de ejecutralo, por lo que pueden hacer optimizaciones generales para que el programa sea más eficiente. Para que el programa compile tiene que estar libre de errores en general y generalmente esa compilación lleva un poco de tiempo, pero va creciendo dependiendo del tamaño y complejidad del programa.\n\nLos lenguajes interpretados van ejecutando línea por línea, más exactamente, sentencia por sentencia. Por esto mismo no pueden hacer optimizaciones generales, pero es más fácil y rápido para el programador empezar a ejecutarlos. Generalmente tienen un REPL (Read - Eval - Print - Loop) que puede servir para jugar con ellos y hacer pruebas.\n\nSe pude pensar que es más fácil desarrollar en lenguajes interpretados que compilados, por lo que su desarrollo es más rápido. Pero como los lenguajes compilados pueden hacer optimizaciones generales, son normalmente más eficientes.\n\nLa ejecución de JavaScript\n\nJavaScript nació como lenguaje interpretado, para correr dentro del navegador Netscape. La idea principal de esto es que no necesitara de un paso de compilación previa, entendida como la generación de un producto intermedio que sea ejecutable.\n\nEl encargado de esta “interpretación”, es decir, de convertir instrucciones de JavaScript en\ninstrucciones de la computadora es el engine o motor.\n\nLos motores modernos de JavaScript están tan optimizados, que la ejecución de este puede a veces compararse con la de lenguajes completamente compilados. Y esto es gracias las optimizaciones de compilación just in time o JIT que pueden hacer.\n\nEn resumen: JavaScript dejó de de ser un lenguaje puramente interpretado para convertirse en un lenguaje compilado JIT. Se comporta como interpretado cuando un programador lo corre, pero el motor compila el código, produciendo algunas veces un producto intermedio (bytecode) que puede ser optimizado para que las siguientes ejecuciones sean mucho más rápidas.\n\nLas etapas de un motor de JavaScript\n\nLs principales etapas son:\n\n\n  \n    Escaneo. Convierte el texto del código que escribes en tokens. Un token es un bloque de caracteres que tienen un significado sintáctico. Ejemplo: x=33 está compuesto por 3 tokens: Un identificador (x), un operador (=) y un número (33). Puedes irte por el hoyo del conejo si quieres entender como funciona el scanner de V8 aquí: Blazingly fast parsing\n  \n  \n    Parseo. No encontré la palabra correcta para traducirlo, pero se puede entender como la ‘lectura’ de transformación de un texto en una estructura de datos. Esta fase convierte el conjunto de tokens generados por el scanner en un Árbol de Sintaxis Abstracta (AST - Abstract Sintax Tree). Este árbol representa tu programa sintácticamente y se le pasa a la siguiente fase de la compilación.\n  \n  \n    Interpretación. En esta fase se toma el AST y se convierte en una primera versión de código que la máquina ya puede ejecutar, sin optimizaciones. Genera además código intermedio (bytecode) que puede ser pasado a la siguiente etapa para optimizarlo. En V8 se llama Igintion\n  \n  \n    Optimización. Esta parte es ejecutada por un compilador JIT, que analiza el código, cómo se comporta, los tipos de datos usados y modifica el bytecode, que puede retroalimentae al int intérprete o ejecutar él mismo. En V8 se llama TurboFan.\n  \n\n\nLas últimas dos etapas son donde el código se ejecuta.\n\nAquí puedes ver un diagrama de la secuencia de operaciones de V8.\n\n\n\nEjecución\n\nDurante la ejecución, el motor de JavaScript debe mantener por lo menos dos cosas:\n\n\n  La información de tu programa\n  En qué parte del programa estamos\n\n\nEsto lo hace mediante dos espacios de memoria organizados específicamente para estas tareas:\n\n\n  Heap. Encargado de mantener la informaición de las variables y todo otro dato ocupado por el programa.\n  Stack. Encargado de llevar un registro de las llamadas a funciones y contextos de ejecución.\n\n\nAdemás necesitamos a alguien que libere memoria para que nuestro programa no crezca infinitamente en la memoria y el heap sea fácil de acceder. Esto es el garbage collector o recolector de basura.\n\nTodo este proceso complejo se explica en mayor profundidad aquí: Visualizing memory management in V8 Engine.\n\nConclusión\n\nEsto es lo básico que necesitamos entender de lo que hace un motor de JavaScript, el encargado de ejecutar el código. Pero no es suficiente contar con alguien que pueda correr el código, necesitamos además algo que nos proporcione el material para trabajar, ya que los programas en general actúan sobre algo, u obtienen información de algún lado. Esto es el Runtime, que explicaremos en el siguiente artículo.\n",
-      "datePublished": "2020-05-16 00:00:00 -0500",
-      "dateModified": "2020-05-16 00:00:00 -0500",
+      "articleBody": "Me llamó mucho la atención  la salida de Deno v1 esta semana y le quise echar un ojito. Pero desde la explicación que da inicialmente, no entiendo exactamente lo que es y hace:\n\n\n  “Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.”\n\n\nAquí me surgió la pregunta: ¿Qué es un runtime para JavaScript?\n\nPero para contestarla, antes tengo que entender qué es V8. La respuesta es: un engine o motor de JavaScript. En este artículo explicaremos qué es y cómo funciona.\n\nExplicación rápida\n\nPuedes pensar en un engine o motor de JavaScript como en el programa encargado de correr el código de JavaScript. Todos los navegadores tienen uno:\n\n\n  \n    \n      Navegador\n      Engine\n    \n  \n  \n    \n      Chrome y Opera\n      V8\n    \n    \n      Firefox\n      SpiderMonkey\n    \n    \n      Safari\n      WebKit JSCore\n    \n    \n      Edge\n      Chakra\n    \n  \n\n\nEste, combinado con el motor web componen la mayor parte de un navegador. Los engines se pueden usar fuera de los navegadores para otras tareas, como en Deno o Node.\n\n\n  El motor de JavaScript es quien convierte tu código de JavaScript en código ejecutable por la máquina en la que va a correr.\n\n\nTeoría: Compilación contra Interpretación\n\nPara correr un programa en cualquier lenguaje, hay que convertirlo en instrucciones que las computadoras puedan entender. Esto es el código máquina.\n\nLos lenguajes compilados transforman todo el código antes de ejecutarlo, por lo que pueden hacer optimizaciones generales para que el programa sea más eficiente.\n\nPara que el programa compile tiene que estar libre de errores. Generalmente esa compilación lleva un poco de tiempo, que va creciendo dependiendo del tamaño y complejidad del programa. Los programas compilados pueden ser más eficientes en ejecución, pero cuesta más empezarlos a correr.\n\nLos lenguajes interpretados van ejecutando línea por línea, sentencia por sentencia. Por esto mismo no pueden hacer optimizaciones generales, pero es más fácil y rápido para el programador empezar a ejecutarlos. Normalmente tienen un REPL (Read - Eval - Print - Loop) que puede servir para jugar con ellos y hacer pruebas.\n\nSe pude pensar que es más fácil desarrollar en lenguajes interpretados que compilados, por lo que su desarrollo es más rápido. Pero como los lenguajes compilados pueden hacer optimizaciones generales, son más eficientes.\n\nLa ejecución de JavaScript\n\nJavaScript nació como lenguaje interpretado, para correr dentro del navegador Netscape. La idea principal de esto es que no necesitara de un paso de compilación previa, entendida como la generación de un producto intermedio que sea ejecutable.\n\nEl encargado de esta “interpretación”, es decir, de convertir instrucciones de JavaScript en\ninstrucciones de la computadora es el engine o motor.\n\nPero los motores modernos de JavaScript están muy optimizados, la ejecución de JS puede a veces compararse con la de lenguajes completamente compilados. Y esto es gracias las optimizaciones de compilación en el momento de la ejecución: just in time o JIT.\n\nEn resumen: JavaScript dejó de de ser un lenguaje puramente interpretado para convertirse en un lenguaje híbrido, con interpretación y compilado JIT. Se comporta como interpretado cuando un programador lo corre, pero el motor compila el código, produciendo algunas veces un producto intermedio (bytecode) que puede ser optimizado para que las siguientes ejecuciones sean mucho más rápidas.\n\nLas etapas de un motor de JavaScript\n\nLs principales etapas son:\n\n\n  \n    Escaneo. Convierte el texto del código que escribes en tokens. Un token es un bloque de carácteres que tienen un significado sintáctico. Ejemplo: x=33 está compuesto por 3 tokens: Un identificador (x), un operador (=) y un número (33). Puedes irte por el hoyo del conejo si quieres entender como funciona el scanner de V8 aquí: Blazingly fast parsing\n  \n  \n    Parseo. No encontré la palabra correcta para traducirlo, pero se puede entender como la ‘lectura’ de un texto que lo transforma en una estructura de datos. Esta fase convierte el conjunto de tokens generados por el scanner en un Árbol de Sintaxis Abstracta (AST - Abstract Sintax Tree). Este árbol representa tu programa sintácticamente y se pasa a la siguiente fase de la compilación.\n  \n  \n    Interpretación. En esta fase se toma el AST y se convierte en una primera versión de código que la máquina ya puede ejecutar, sin optimizaciones. Genera además código intermedio (bytecode) que puede ser pasado a la siguiente etapa para optimizarlo. En V8 se llama Ignition\n  \n  \n    Optimización. Esta parte es ejecutada por un compilador JIT, que analiza el código, cómo se comporta, los tipos de datos usados para crear una versión más optimizada en código máquina. Si las optimizaciones fallan, el bytecode sigue siendo ejecutado por el intérprete. En V8 se llama TurboFan.\n  \n\n\nLas últimas dos etapas son donde el código se ejecuta, una en forma de bytecode interpretado y la otra en forma de código máquina altamente eficiente y optimizado.\n\nAquí puedes ver un diagrama de la secuencia de operaciones de V8.\n\n\n\nEjecución\n\nDurante la ejecución, el motor de JavaScript debe mantener por lo menos dos cosas:\n\n\n  La información de tu programa\n  En qué parte del programa estamos\n\n\nEsto lo hace mediante dos espacios de memoria organizados específicamente para estas tareas:\n\n\n  El Heap. Encargado de mantener la información de las variables y todo otro dato ocupado por el programa.\n  El Stack. Encargado de llevar un registro de las llamadas a funciones y contextos de ejecución.\n\n\nAdemás necesitamos a alguien que libere memoria para que nuestro programa no crezca infinitamente en la memoria y el heap sea fácil de acceder. Esto es el garbage collector o recolector de basura.\n\nTodo este proceso complejo se explica en mayor profundidad aquí: Visualizing memory management in V8 Engine.\n\nConclusión\n\nEsto es lo básico que necesitamos entender de lo que hace un motor de JavaScript, el encargado de ejecutar el código. Pero no es suficiente contar con alguien que pueda correr el código, necesitamos además algo que nos proporcione el material para trabajar, ya que los programas en general actúan sobre algo, u obtienen información de algún lado. Esto es el Runtime, que explicaremos en el siguiente artículo.\n",
+      "datePublished": "2020-05-17 00:00:00 -0500",
+      "dateModified": "2020-05-17 00:00:00 -0500",
       "author": {
         "@type": "Person",
         "name": "Héctor Patricio",
@@ -152,7 +152,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://blog.thedojo.mx/2020/05/16/que-es-un-engine-de-javascript.html"
+        "@id": "https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html"
       },
       "image": {
         "@type": "ImageObject",
@@ -258,7 +258,7 @@
 
 
 
-| <i class="far fa-calendar" aria-hidden="true"></i> 16-05-2020
+| <i class="far fa-calendar" aria-hidden="true"></i> 17-05-2020
 </p>
       
       
@@ -394,7 +394,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="¿Qué es un engine de JavaScript?">
     <meta itemprop="description" content="Hablemos de qué es y cómo funciona un motor de Javascript.">
-    <meta itemprop="datePublished" content="May 16, 2020">
+    <meta itemprop="datePublished" content="May 17, 2020">
     
 
     <div class="page__inner-wrap">
@@ -402,7 +402,7 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>Me llamó mucho la atención  la salida de <a href="https://deno.land/v1">Deno v1 esta semana</a> y le quise echar un ojito. Pero desde la explicación que de inicialmente, no entiendo qué es <em>exactamente</em> lo que es y hace:</p>
+        <p>Me llamó mucho la atención  la salida de <a href="https://deno.land/v1">Deno v1 esta semana</a> y le quise echar un ojito. Pero desde la explicación que da inicialmente, no entiendo <em>exactamente</em> lo que es y hace:</p>
 
 <blockquote>
   <p>“Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.”</p>
@@ -410,11 +410,11 @@
 
 <p>Aquí me surgió la pregunta: ¿Qué es un <strong>runtime</strong> para JavaScript?</p>
 
-<p>Pero para contestarla, antes tengo que entender <strong>qué es V8</strong>. La respuesta es: un <em>engine</em> de JavaScript. En este artículo explicaremos qué es exactamente qué es eso.</p>
+<p>Pero para contestarla, antes tengo que entender <strong>qué es V8</strong>. La respuesta es: un <em>engine</em> o <em>motor</em> de JavaScript. En este artículo explicaremos qué es y cómo funciona.</p>
 
 <h2 id="explicación-rápida">Explicación rápida</h2>
 
-<p>Puedes pensar en un Engine de JavaScript como en el programa encargado de correr el código de JavaScript. Todos los navegadores tienen uno:</p>
+<p>Puedes pensar en un engine o motor de JavaScript como en el programa encargado de correr el código de JavaScript. Todos los navegadores tienen uno:</p>
 
 <table>
   <thead>
@@ -445,7 +445,7 @@
   </tbody>
 </table>
 
-<p>Este, combinado con el motor web componen la mayor parte de un navegador.</p>
+<p>Este, combinado con el motor web componen la mayor parte de un navegador. Los engines se pueden usar fuera de los navegadores para otras tareas, como en Deno o Node.</p>
 
 <blockquote>
   <p>El <strong>motor de JavaScript</strong> es quien convierte tu código de JavaScript en código ejecutable por la máquina en la que va a correr.</p>
@@ -453,13 +453,15 @@
 
 <h2 id="teoría-compilación-contra-interpretación">Teoría: Compilación contra Interpretación</h2>
 
-<p>Para correr un programa en cualquier lenguaje hay que convertirlo en instrucciones que las computadoras puedan entender. Esto es el <strong>código máquina</strong>.</p>
+<p>Para correr un programa en cualquier lenguaje, hay que convertirlo en instrucciones que las computadoras puedan entender. Esto es el <strong>código máquina</strong>.</p>
 
-<p>Los lenguajes compilados transforman todo el código <strong>antes de ejecutralo</strong>, por lo que pueden hacer optimizaciones generales para que el programa sea más eficiente. Para que el programa compile tiene que estar libre de errores en general y generalmente esa compilación lleva un poco de tiempo, pero va creciendo dependiendo del tamaño y complejidad del programa.</p>
+<p>Los lenguajes compilados transforman todo el código <strong>antes de ejecutarlo</strong>, por lo que pueden hacer optimizaciones generales para que el programa sea más eficiente.</p>
 
-<p>Los lenguajes interpretados van ejecutando <strong>línea por línea</strong>, más exactamente, sentencia por sentencia. Por esto mismo no pueden hacer optimizaciones generales, pero es más fácil y rápido para el programador <em>empezar</em> a ejecutarlos. Generalmente tienen un <strong>REPL</strong> (Read - Eval - Print - Loop) que puede servir para jugar con ellos y hacer pruebas.</p>
+<p>Para que el programa compile tiene que estar libre de errores. Generalmente esa compilación lleva un poco de tiempo, que va creciendo dependiendo del tamaño y complejidad del programa. Los programas compilados pueden ser más eficientes en ejecución, pero cuesta más empezarlos a correr.</p>
 
-<p>Se pude pensar que es más fácil desarrollar en lenguajes interpretados que compilados, por lo que su desarrollo es más rápido. Pero como los lenguajes compilados pueden hacer optimizaciones generales, son normalmente más eficientes.</p>
+<p>Los lenguajes interpretados van ejecutando <strong>línea por línea</strong>, sentencia por sentencia. Por esto mismo no pueden hacer optimizaciones generales, pero es más fácil y rápido para el programador <em>empezar</em> a ejecutarlos. Normalmente tienen un <strong>REPL</strong> (Read - Eval - Print - Loop) que puede servir para jugar con ellos y hacer pruebas.</p>
+
+<p>Se pude pensar que es <em>más fácil</em> desarrollar en lenguajes interpretados que compilados, por lo que su desarrollo es <em>más rápido</em>. Pero como los lenguajes compilados pueden hacer optimizaciones generales, son <strong>más eficientes</strong>.</p>
 
 <h2 id="la-ejecución-de-javascript">La ejecución de JavaScript</h2>
 
@@ -468,9 +470,9 @@
 <p>El encargado de esta “interpretación”, es decir, de convertir instrucciones de JavaScript en
 instrucciones de la computadora es el <em>engine o motor</em>.</p>
 
-<p>Los motores modernos de JavaScript están tan optimizados, que la ejecución de este puede a veces compararse con la de lenguajes completamente compilados. Y esto es gracias las optimizaciones de compilación <em>just in time</em> o <strong>JIT</strong> que pueden hacer.</p>
+<p>Pero los motores modernos de JavaScript están muy optimizados, la ejecución de JS puede a veces compararse con la de lenguajes completamente compilados. Y esto es gracias las optimizaciones de compilación en el momento de la ejecución: <em>just in time</em> o <strong>JIT</strong>.</p>
 
-<p>En resumen: JavaScript dejó de de ser un lenguaje puramente interpretado para convertirse en un lenguaje compilado JIT. Se comporta como interpretado cuando un programador lo corre, pero el motor compila el código, produciendo algunas veces un producto intermedio (bytecode) que puede ser optimizado para que las siguientes ejecuciones sean mucho más rápidas.</p>
+<p>En resumen: JavaScript dejó de de ser un lenguaje <em>puramente interpretado</em> para convertirse en un lenguaje híbrido, con interpretación y compilado JIT. Se comporta como interpretado cuando un programador lo corre, pero el motor compila el código, produciendo algunas veces un producto intermedio (bytecode) que puede ser optimizado para que las siguientes ejecuciones sean mucho más rápidas.</p>
 
 <h2 id="las-etapas-de-un-motor-de-javascript">Las etapas de un motor de JavaScript</h2>
 
@@ -478,20 +480,20 @@ instrucciones de la computadora es el <em>engine o motor</em>.</p>
 
 <ol>
   <li>
-    <p><strong>Escaneo</strong>. Convierte el texto del código que escribes en <em>tokens</em>. Un token es un bloque de caracteres que tienen un significado sintáctico. Ejemplo: <code class="highlighter-rouge">x=33</code> está compuesto por 3 tokens: Un identificador (<code class="highlighter-rouge">x</code>), un operador (<code class="highlighter-rouge">=</code>) y un número (<code class="highlighter-rouge">33</code>). Puedes irte por el hoyo del conejo si quieres entender como funciona el scanner de V8 aquí: <a href="https://v8.dev/blog/scanner">Blazingly fast parsing</a></p>
+    <p><strong>Escaneo</strong>. Convierte el texto del código que escribes en <em>tokens</em>. Un token es un bloque de carácteres que tienen un significado sintáctico. Ejemplo: <code class="highlighter-rouge">x=33</code> está compuesto por 3 tokens: Un identificador (<code class="highlighter-rouge">x</code>), un operador (<code class="highlighter-rouge">=</code>) y un número (<code class="highlighter-rouge">33</code>). Puedes irte por el hoyo del conejo si quieres entender como funciona el scanner de V8 aquí: <a href="https://v8.dev/blog/scanner">Blazingly fast parsing</a></p>
   </li>
   <li>
-    <p><strong>Parseo</strong>. No encontré la palabra correcta para traducirlo, pero se puede entender como la ‘lectura’ de transformación de un texto en una estructura de datos. Esta fase convierte el conjunto de tokens generados por el scanner en un Árbol de Sintaxis Abstracta (AST - Abstract Sintax Tree). Este árbol representa tu programa sintácticamente y se le pasa a la siguiente fase de la compilación.</p>
+    <p><strong>Parseo</strong>. No encontré la palabra correcta para traducirlo, pero se puede entender como la ‘lectura’ de un texto que lo transforma en una estructura de datos. Esta fase convierte el conjunto de <em>tokens</em> generados por el scanner en un Árbol de Sintaxis Abstracta (AST - Abstract Sintax Tree). Este árbol representa tu programa sintácticamente y se pasa a la siguiente fase de la compilación.</p>
   </li>
   <li>
-    <p><strong>Interpretación</strong>. En esta fase se toma el AST y se convierte en una primera versión de código que la máquina ya puede ejecutar, sin optimizaciones. Genera además código intermedio (bytecode) que puede ser pasado a la siguiente etapa para optimizarlo. En V8 se llama <a href="https://medium.com/dailyjs/understanding-v8s-bytecode-317d46c94775">Igintion</a></p>
+    <p><strong>Interpretación</strong>. En esta fase se toma el AST y se convierte en una primera versión de código que la máquina ya puede ejecutar, <em>sin optimizaciones</em>. Genera además código intermedio (bytecode) que puede ser pasado a la siguiente etapa para optimizarlo. En V8 se llama <a href="https://medium.com/dailyjs/understanding-v8s-bytecode-317d46c94775">Ignition</a></p>
   </li>
   <li>
-    <p><strong>Optimización</strong>. Esta parte es ejecutada por un compilador JIT, que analiza el código, cómo se comporta, los tipos de datos usados y modifica el bytecode, que puede retroalimentae al int intérprete o ejecutar él mismo. En V8 se llama <a href="https://v8.dev/docs/turbofan">TurboFan</a>.</p>
+    <p><strong>Optimización</strong>. Esta parte es ejecutada por un compilador JIT, que analiza el código, cómo se comporta, los tipos de datos usados para crear una versión más optimizada en código máquina. Si las optimizaciones fallan, el bytecode sigue siendo ejecutado por el intérprete. En V8 se llama <a href="https://v8.dev/docs/turbofan">TurboFan</a>.</p>
   </li>
 </ol>
 
-<p>Las últimas dos etapas son donde el código se ejecuta.</p>
+<p>Las últimas dos etapas son donde el código se ejecuta, una en forma de bytecode interpretado y la otra en forma de código máquina <strong>altamente eficiente y optimizado</strong>.</p>
 
 <p>Aquí puedes ver un diagrama de la secuencia de operaciones de V8.</p>
 
@@ -509,19 +511,17 @@ instrucciones de la computadora es el <em>engine o motor</em>.</p>
 <p>Esto lo hace mediante dos espacios de memoria organizados específicamente para estas tareas:</p>
 
 <ol>
-  <li>
-<strong>Heap</strong>. Encargado de mantener la informaición de las variables y todo otro dato ocupado por el programa.</li>
-  <li>
-<strong>Stack</strong>. Encargado de llevar un registro de las llamadas a funciones y contextos de ejecución.</li>
+  <li>El <strong>Heap</strong>. Encargado de mantener la información de las variables y todo otro dato ocupado por el programa.</li>
+  <li>El <strong>Stack</strong>. Encargado de llevar un registro de las llamadas a funciones y contextos de ejecución.</li>
 </ol>
 
-<p>Además necesitamos a alguien que libere memoria para que nuestro programa no crezca infinitamente en la memoria y el <em>heap</em> sea fácil de acceder. Esto es el <strong>garbage collector</strong> o recolector de basura.</p>
+<p>Además necesitamos a alguien que libere memoria para que nuestro programa no crezca infinitamente en la memoria y el <em>heap</em> sea fácil de acceder. Esto es el <strong>garbage collector</strong> o <em>recolector de basura</em>.</p>
 
 <p>Todo este proceso complejo se explica en mayor profundidad aquí: <a href="https://deepu.tech/memory-management-in-v8/">Visualizing memory management in V8 Engine</a>.</p>
 
 <h2 id="conclusión">Conclusión</h2>
 
-<p>Esto es lo básico que necesitamos entender de lo que hace un motor de JavaScript, el encargado de ejecutar el código. Pero no es suficiente contar con alguien que pueda correr el código, necesitamos además algo que nos proporcione el material para trabajar, ya que los programas en general actúan sobre algo, u obtienen información de algún lado. Esto es el <strong>Runtime</strong>, que explicaremos en el siguiente artículo.</p>
+<p>Esto es lo básico que necesitamos entender de lo que hace un motor de JavaScript, el encargado de ejecutar el código. Pero no es suficiente contar con alguien que pueda correr el código, necesitamos además <strong>algo que nos proporcione el material para trabajar</strong>, ya que los programas en general actúan sobre algo, u obtienen información de algún lado. Esto es el <strong>Runtime</strong>, que explicaremos en el siguiente artículo.</p>
 
         
       </section>
@@ -571,7 +571,7 @@ instrucciones de la computadora es el <em>engine o motor</em>.</p>
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2020-05-16T00:00:00-05:00">May 16, 2020</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2020-05-17T00:00:00-05:00">May 17, 2020</time></p>
         
       </footer>
 
@@ -580,11 +580,11 @@ instrucciones de la computadora es el <em>engine o motor</em>.</p>
     <h4 class="page__share-title">Compartir</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%C2%BFQu%C3%A9+es+un+engine+de+JavaScript%3F%20https%3A%2F%2Fblog.thedojo.mx%2F2020%2F05%2F16%2Fque-es-un-engine-de-javascript.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%C2%BFQu%C3%A9+es+un+engine+de+JavaScript%3F%20https%3A%2F%2Fblog.thedojo.mx%2F2020%2F05%2F17%2Fque-es-un-engine-de-javascript.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.thedojo.mx%2F2020%2F05%2F16%2Fque-es-un-engine-de-javascript.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.thedojo.mx%2F2020%2F05%2F17%2Fque-es-un-engine-de-javascript.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog.thedojo.mx%2F2020%2F05%2F16%2Fque-es-un-engine-de-javascript.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog.thedojo.mx%2F2020%2F05%2F17%2Fque-es-un-engine-de-javascript.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -875,8 +875,8 @@ instrucciones de la computadora es el <em>engine o motor</em>.</p>
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://blog.thedojo.mx/2020/05/16/que-es-un-engine-de-javascript.html";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/2020/05/16/que-es-un-engine-de-javascript"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/2020/05/17/que-es-un-engine-de-javascript"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
