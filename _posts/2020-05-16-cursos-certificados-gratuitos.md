@@ -61,7 +61,6 @@ que además de auditar, puedes cursar para obtener un **cetificado**. Si quieres
 * [El Cálculo - Modelo Cuadrático](https://www.classcentral.com/course/calculo-2-4226)
 * [El Cálculo - Modelo Cúbico](https://www.classcentral.com/course/calculo-3-4284)
 * [El Cálculo - Otros Modelos](https://www.classcentral.com/course/calculo-4-4167)
-* []()
 
 ### Inglés
 

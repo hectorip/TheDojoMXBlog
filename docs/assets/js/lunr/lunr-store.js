@@ -193,4 +193,9 @@ var store = [{
         "excerpt":"Debido a la emergencia sanitaria mundial, algunas universidades han liberado cursos que además de auditar, puedes cursar para obtener un cetificado. Si quieres mejorar un poco tu perfil del LinkedIn aquí te ponemos unos cursos de tecnología que puedes tomar. Programación Computer Programming For Everyone C++ For C Programmers Code...","categories": [],
         "tags": ["cursos","aprendizaje","programación","matemáticas","mooc"],
         "url": "https://blog.thedojo.mx/2020/05/16/cursos-certificados-gratuitos.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/v1589666287/AE8177CF-C488-4D9E-8D4D-4914B50EB3FC_mbfv0a.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/v1589666287/AE8177CF-C488-4D9E-8D4D-4914B50EB3FC_mbfv0a.jpg"},{
+        "title": "¿Qué es un engine de JavaScript?",
+        "excerpt":"Me llamó mucho la atención la salida de Deno v1 esta semana y le quise echar un ojito. Pero desde la explicación que de inicialmente, no entiendo qué es exactamente lo que es y hace: “Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8...","categories": [],
+        "tags": ["js","javascript","compiladores","javascript-engine","v8","chrome"],
+        "url": "https://blog.thedojo.mx/2020/05/16/que-es-un-engine-de-javascript.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1589701068/538FF576-00FA-4723-9142-920622E07743_djzuh4.jpg"}]
