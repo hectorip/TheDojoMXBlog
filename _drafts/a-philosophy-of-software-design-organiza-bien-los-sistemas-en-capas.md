@@ -20,7 +20,6 @@ de código, sus características y cómo debemos organizar el código para sacar
 
 Sabemos que naturalmente la mejor forma de organización de un proyecto es **descomponerlo** en partes independientes que **oculten** información de otras.
 
-La comunicación entre las diferentes partes se da por medio de una **interfaz**.
+La comunicación entre las diferentes partes se da por medio de una **interfaz**. Esta interfaz, cómo hemos mencionado, es la **API**.
 
 ## Qué evitar
-
