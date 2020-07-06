@@ -40,14 +40,21 @@ Gran parte del trabajo que se ha realizado está dedicado a que los cálculos se
 
 ## Máquinas
 
+La computación está casada con un _medio_ que ejecute los cálculos. Estas son las computadoras, que han variado con el paso del tiempo.
+
 ## Educación computacional
+
+Difundir el conocimiento para crear
 
 ## Ingeniería del Software
 
+La construcción de software es
+
 ## Diseño de Software
+
 
 ## Ciencia computacional
 
-
+La ciencia ha sido
 ---
 Este artículo está basado en el libro [Computational Thinking](https://mitpress.mit.edu/books/computational-thinking) de Peter J. Denning y Matti Tedre.
