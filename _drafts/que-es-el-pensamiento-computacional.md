@@ -55,6 +55,7 @@ La construcción de software es
 
 ## Ciencia computacional
 
-La ciencia ha sido
+La ciencia ha sido completamente revolucionada por lo que la computación electrónica automática permite, desde grandes cantidades de cálculos en poco tiempo hasta
+
 ---
 Este artículo está basado en el libro [Computational Thinking](https://mitpress.mit.edu/books/computational-thinking) de Peter J. Denning y Matti Tedre.
