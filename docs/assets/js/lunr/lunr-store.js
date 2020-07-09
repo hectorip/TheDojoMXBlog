@@ -198,4 +198,9 @@ var store = [{
         "excerpt":"Me llamó mucho la atención la salida de Deno v1 esta semana y le quise echar un ojito. Pero desde la explicación que da inicialmente, no entiendo exactamente lo que es y hace: “Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is...","categories": [],
         "tags": ["js","javascript","compiladores","javascript-engine","v8","chrome"],
         "url": "https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1589701068/538FF576-00FA-4723-9142-920622E07743_djzuh4.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1589701068/538FF576-00FA-4723-9142-920622E07743_djzuh4.jpg"},{
+        "title": "¿Qué es el pensamiento computacional?",
+        "excerpt":"Todo lo relacionado con el pensamiento computacional (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad porque vivimos en un mundo en el que cada aspecto de la vida se ha visto influenciado por lo que permite. En varios lugares del mundo...","categories": [],
+        "tags": ["cs","computational-thinking","pensamiento-computacional","libros","mit"],
+        "url": "https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1594271708/BA7B68D6-CB97-4E54-8D9D-B3D2530A8A84_ovfgob.jpg"}]

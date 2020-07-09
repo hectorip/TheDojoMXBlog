@@ -1,4 +1,145 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-05-19T13:40:49-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">¿Qué es un engine de JavaScript?</title><link href="https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html" rel="alternate" type="text/html" title="¿Qué es un engine de JavaScript?" /><published>2020-05-17T00:00:00-05:00</published><updated>2020-05-17T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript</id><content type="html" xml:base="https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html">&lt;p&gt;Me llamó mucho la atención  la salida de &lt;a href=&quot;https://deno.land/v1&quot;&gt;Deno v1 esta semana&lt;/a&gt; y le quise echar un ojito. Pero desde la explicación que da inicialmente, no entiendo &lt;em&gt;exactamente&lt;/em&gt; lo que es y hace:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-07-09T02:10:13-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">¿Qué es el pensamiento computacional?</title><link href="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html" rel="alternate" type="text/html" title="¿Qué es el pensamiento computacional?" /><published>2020-07-09T00:00:00-05:00</published><updated>2020-07-09T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html">&lt;p&gt;Todo lo relacionado con el pensamiento computacional (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad porque vivimos en un mundo en el que cada aspecto de la vida se ha visto influenciado por lo que permite.&lt;/p&gt;
+
+&lt;p&gt;En varios lugares del mundo se ha pensado que se debe agregar el pensamiento computacional a la educación básica que todos reciben, bajo la promesa de que mejorará en general la capacidad de pensar y resolver problemas.&lt;/p&gt;
+
+&lt;p&gt;Hablemos de qué es el pensamiento computacional y cómo te puede ayudar a comprender mejor el mundo creado con la ayuda de las computadoras.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-el-pensamiento-computacional&quot;&gt;¿Qué es el pensamiento computacional?&lt;/h2&gt;
+
+&lt;p&gt;No hay una definición clara, y todo el tiempo está cambiando lo que se entiende por este término, pero podemos dar una definición decente como la &lt;strong&gt;habilidad mental&lt;/strong&gt; y las prácticas que nos permiten &lt;em&gt;diseñar cálculos&lt;/em&gt; para que las computadoras realicen un trabajo.&lt;/p&gt;
+
+&lt;p&gt;Otra acepción es la capacidad de entender el mundo como un &lt;strong&gt;complejo de procesos de información&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Estas dos habilidades combinadas pueden ayudarte a resolver muchos problemas y a navegar mejor el mundo moderno.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, para tener la capacidad de diseñar algoritmos para las computadoras modernas debes entender las bases del funcionamiento y eso necesariamente te llevará a entender sus &lt;strong&gt;limitaciones y fortalezas&lt;/strong&gt;, lo cuál te llevará a evitar que te engañen fácilmente.&lt;/p&gt;
+
+&lt;p&gt;Tener conocimiento de las capacidades además nos hace conscientes de lo que una empresa o gobierno con los suficientes recursos puede lograr en los campo de manipulación y colección de datos, inteligencia artificial, &lt;strong&gt;vigilancia&lt;/strong&gt;, seguridad e influencia sobre los pensamientos colectivos.&lt;/p&gt;
+
+&lt;p&gt;El pensamiento computacional ha avanzado en por lo menos &lt;strong&gt;seis áreas&lt;/strong&gt;. Veamos lo que estas abarcan.&lt;/p&gt;
+
+&lt;h2 id=&quot;métodos-computacionales&quot;&gt;Métodos computacionales&lt;/h2&gt;
+
+&lt;p&gt;Los matemáticos e ingenieros a lo largo de la historia han buscado desarrollar métodos para hacer más eficientes los cálculos y poder calcular más cosas automáticamente. Esto ha permitido que calculemos cosas que en cierto tiempo se creían imposibles.&lt;/p&gt;
+
+&lt;p&gt;Gran parte del trabajo que se ha realizado está dedicado a que los cálculos se puedan realizar sin entendimiento e intuición. Es por eso que se han ido desarrollando áreas de las matemáticas que tienen que ver directamente con esto:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;La lógica&lt;/li&gt;
+  &lt;li&gt;El álgebra booleana&lt;/li&gt;
+  &lt;li&gt;La teoría de automátas.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Todo esto es con el objetivo de realizar &lt;strong&gt;cálculos libres de errores&lt;/strong&gt; lo más rápidamente posible. Algunas de las tareas principales que los métodos de cómputo incluyen son:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Descomposición de problemas en problemas más sencillos&lt;/li&gt;
+  &lt;li&gt;Distribución de la ejecución de los cálculos en diferentes tiempos y ejecutores&lt;/li&gt;
+  &lt;li&gt;Chequeo y corrección de errores&lt;/li&gt;
+  &lt;li&gt;Representación de información&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;máquinas&quot;&gt;Máquinas&lt;/h2&gt;
+
+&lt;p&gt;La computación está casada con un &lt;em&gt;medio&lt;/em&gt; que ejecute los cálculos. Estas son las computadoras, que han variado con el paso del tiempo.&lt;/p&gt;
+
+&lt;p&gt;La principal motivación de buscar máquinas automáticas que realizaran los cálculos es eliminar los &lt;strong&gt;problemas inherentes&lt;/strong&gt; a los cálculos realizados por humanos: son lentos y propensos a errores.&lt;/p&gt;
+
+&lt;p&gt;Los medios en los que se ejecutan los cálculos han ido evolucionando hasta llegar a los microprocesadores que tenemos hoy que pueden realizar una infinidad de cálculos en poco tiempo.&lt;/p&gt;
+
+&lt;p&gt;Para diseñar y trabajar con estas máquinas, se tienen que entender muchos conceptos, que el pensamiento computacional trata:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Representación de información difitalmente y señales eléctricas como códigos binarios&lt;/li&gt;
+  &lt;li&gt;Diseño de circuitos&lt;/li&gt;
+  &lt;li&gt;Temporización con reloj de los cálculos&lt;/li&gt;
+  &lt;li&gt;Control de flujo&lt;/li&gt;
+  &lt;li&gt;Loops&lt;/li&gt;
+  &lt;li&gt;Memoria digital&lt;/li&gt;
+  &lt;li&gt;Espacios de memoria&lt;/li&gt;
+  &lt;li&gt;Aislamiento de procesos&lt;/li&gt;
+  &lt;li&gt;Tolerancia a fallos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Todo esto está casado con el concepto de computadora digital que tenemos hoy (el modelo de von Neumann), pero &lt;strong&gt;existen otro tipo de computadoras&lt;/strong&gt; que no ejecutan cálculos en la misma forma.&lt;/p&gt;
+
+&lt;p&gt;Dos ejemplos de esto son las redes neuronales y las computadoras cuánticas, que no necesitan una serie de “pasos” para resolver los cálculos y tienen un tipo de pensamiento computacional completamente diferente.&lt;/p&gt;
+
+&lt;p&gt;Es en este punto en donde la computación deja de ser un campo específicamente de las matemáticas y la lógica, ya que los cálculos y los procedimientos realizados están &lt;strong&gt;estrechamente ligados al medio de ejecución&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;De este apartado lo último que tenemos que mencionar es que toda la revolución del mundo que vemos hoy causada por las computadoras está causada por la &lt;strong&gt;gran velocidad&lt;/strong&gt; que las computadoras han alcanzado. Sin esto, que es difícil de comprender (ve la cita de abajo), no podríamos ver todo lo que las computadoras han causado hoy.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;154,300,000,000 de operaciones por segundo en el procesador del iPhone 11 Pro.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;educación-de-ciencias-de-la-computación&quot;&gt;Educación de ciencias de la computación&lt;/h2&gt;
+
+&lt;p&gt;Difundir el conocimiento para crear procedimientos que las computadoras automáticas puedan ejecutar es una de las principales tareas y &lt;em&gt;responsabilidades&lt;/em&gt; del pensamiento computacional.&lt;/p&gt;
+
+&lt;p&gt;Al ser una combinación de ingeniería, matemáticas y ciencia la computación nació como un campo nuevo de estudios que tomó tiempo en ser reconocido y abrazado como una ciencia más.&lt;/p&gt;
+
+&lt;p&gt;Las ciencias de la computación han sido entendidas de diferentes formas a lo largo del tiempo:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Como los fenómenos que rodean a las computadoras&lt;/li&gt;
+  &lt;li&gt;Entendiendo la programación como un arte y una ciencia&lt;/li&gt;
+  &lt;li&gt;Computación == Automatización&lt;/li&gt;
+  &lt;li&gt;Entendimiento del universo como una computadora gigantezca&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Estas etapas del entendimiento de las ciencias de la computación han modificado la forma en que el pensamiento computacional es entendido.&lt;/p&gt;
+
+&lt;h2 id=&quot;ingeniería-del-software&quot;&gt;Ingeniería del Software&lt;/h2&gt;
+
+&lt;p&gt;El software son los programas que las computadoras digitales modernas ejecutan para realizar los cálculos que les permiten realizar todas las tareas a las que estamos acostumbrados.&lt;/p&gt;
+
+&lt;p&gt;La &lt;strong&gt;construcción de software&lt;/strong&gt; es una da las tareas más importantes que se relacionan con el pensamiento computacional. Lo más importante de esta área es la entrega confiable de software listo para entornos de la vida real (&lt;em&gt;de producción&lt;/em&gt;), que tiene las siguientes características:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Confiable (no falla constantemente)&lt;/li&gt;
+  &lt;li&gt;Usable (cumple con su función, a una velocidad adecuada)&lt;/li&gt;
+  &lt;li&gt;Seguro (no causa daños y no se puede robar información)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hacer software con estas características es una tarea súmamente difícil por la complejidad que implica.&lt;/p&gt;
+
+&lt;p&gt;La ingeniería es “la aplicación de las matemáticas y la ciencia a los problemas de las personas”. Así, la ingeniería de software busca establecer &lt;strong&gt;técnicas y procedimientos para desarrollar software correcto&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Además la ingeniería del software ha buscado desarrollar herramientas que faciliten el desarrollo de software. Es un área muy compleja del pensamiento computacional que está constante evolución y el principal problema de la industria del software actual.&lt;/p&gt;
+
+&lt;h2 id=&quot;diseño-de-software&quot;&gt;Diseño de Software&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;El buen diseño produce un objeto que funciona para las personas en un contexto de necesidades y valores, para producir resultados de calidad y una &lt;strong&gt;experiencia satisfactoria&lt;/strong&gt;. - Terry Winograd&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;El software muchas veces está hecho para interactuar con personas. La tarea del diseñador de software es diseñar programas que &lt;strong&gt;resuelvan los problemas de los usuarios&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Esto tiene que ver con la forma de usuarlo, las interfaces que presentará a los usuarios, las funciones, las actualizaciones, la protección de información, los medios de presentación y muchas más tareas relacionadas con &lt;strong&gt;crear software que deleite al usuario&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;La principal diferencia con la ingeniería de software es que mientras la ingienería está pensada desde el punto de vista &lt;strong&gt;del programador&lt;/strong&gt;, el diseño está pensado desde el punto de vista &lt;strong&gt;del usuario&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Es decir, la ingeniería asegura que el programa funciona como el programador desea, el diseño asegura que el programa hace lo que el usuario necesita.&lt;/p&gt;
+
+&lt;h2 id=&quot;ciencia-computacional&quot;&gt;Ciencia computacional&lt;/h2&gt;
+
+&lt;p&gt;La ciencia ha sido completamente revolucionada por lo que la computación electrónica automática permite, desde grandes cantidades de cálculos en poco tiempo hasta simulaciones de los procesos naturales.&lt;/p&gt;
+
+&lt;p&gt;Desde que la computación automática existe, ha sido una gran ayuda para llegar a lugares que no se había siquiera podido soñar. Incluso se han creado &lt;strong&gt;nuevas ciencias&lt;/strong&gt;, que son la combinación de una ciencia tradicional con la computación como “Biología computacional”.&lt;/p&gt;
+
+&lt;p&gt;Pero la ciencia computacional requiere su &lt;strong&gt;propio tipo de pensamiento computacional&lt;/strong&gt;, desde los métodos hasta el software creado. No se aplican las misma técnicas ni herramientas que para el software no usado en la ciencia. Es por eso que el uso de la computación en las ciencias he hecho &lt;strong&gt;avanzar a la computación&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Otro aspecto del pensamiento computacional en la ciencia es el uso del conocimiento de los procesos de información para &lt;strong&gt;interpretar el mundo natural como una conexión muchos modelos de información&lt;/strong&gt;. Esto nos revela que la computación ha influido incluso en la manera en la que vemos el mundo.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;El pensamiento computacional es mucho más complejo de lo que parece o de los que los medios han entendido (“hacer algoritmos”).&lt;/p&gt;
+
+&lt;p&gt;Este campo del pensamiento es tan grande que no alcanzaría una vida para cubrirlo en su totalidad, pero podemos tener una idea general de los campos que abarca y si nos gusta, especializarnos en uno de ellos.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;Este artículo está basado en el libro &lt;a href=&quot;https://mitpress.mit.edu/books/computational-thinking&quot;&gt;Computational Thinking&lt;/a&gt; de Peter J. Denning y Matti Tedre.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cs" /><category term="computational-thinking" /><category term="pensamiento-computacional" /><category term="libros" /><category term="mit" /><summary type="html">Escribe aquí un buen resumen de tu artículo</summary></entry><entry><title type="html">¿Qué es un engine de JavaScript?</title><link href="https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html" rel="alternate" type="text/html" title="¿Qué es un engine de JavaScript?" /><published>2020-05-17T00:00:00-05:00</published><updated>2020-05-17T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript</id><content type="html" xml:base="https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html">&lt;p&gt;Me llamó mucho la atención  la salida de &lt;a href=&quot;https://deno.land/v1&quot;&gt;Deno v1 esta semana&lt;/a&gt; y le quise echar un ojito. Pero desde la explicación que da inicialmente, no entiendo &lt;em&gt;exactamente&lt;/em&gt; lo que es y hace:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;“Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.”&lt;/p&gt;
@@ -741,62 +882,4 @@ hablar en contra de la sabiduría popular.&lt;/p&gt;
   &lt;li&gt;La expansión de cambios (tener que tocar muchos lados del sistema para hacer un cambio relativamente pequeño)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Finalmente, recuerda que una de las funciones que proveen los módulos es &lt;em&gt;ocultar&lt;/em&gt; la complejidad. ¿Cuántas veces has visto lo que hacen las funciones prefabricadas de tu lenguaje de programación? Es probable que ninguna. Los módulos profundos y bien hechos permiten ocultar mayor cantidad de información y hace más fácil trabajar con ellos y simplifica el sistema en general.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="módulo" /><category term="PoSD" /><category term="ousterhout" /><category term="complejidad" /><category term="función" /><summary type="html">Veamos algunos lineamientos para el diseño de funciones/clases/módulos que ayudarán a reducir la complejidad de tus sistemas de software.</summary></entry><entry><title type="html">A Philosophy of Software Design: Tres formas de identificar la complejidad</title><link href="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Tres formas de identificar la complejidad" /><published>2020-02-26T00:00:00-06:00</published><updated>2020-02-26T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html">&lt;blockquote&gt;
-  &lt;p&gt;“Controlar la complejidad es la esencia de la programación” - Brian W. Kernighan&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Muchas mentes brillantes dedicadas al desarrollo de software han estado de acuerdo en que el principal problema al crear y mantener programas es el manejo de la complejidad.&lt;/p&gt;
-
-&lt;p&gt;Podemos decir que algo complejo es aquello que está &lt;strong&gt;compuesto por muchas piezas relacionadas entre ellas&lt;/strong&gt;. &lt;a href=&quot;http://web.stanford.edu/~ouster/cgi-bin/home.php&quot;&gt;Ousterhout&lt;/a&gt; lo define de manera práctica &lt;em&gt;como todo aquello que hace que el software sea difícil de entender, escribir o mantener&lt;/em&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;La complejidad es más visible para los lectores que para los escritores [del código]. Si escribes una pieza de código que parece simple para ti, pero otras personas piensan que es compleja, entonces es &lt;strong&gt;compleja&lt;/strong&gt;. - John Ousterhout&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Philosophy of Software Design habla de tres formas de identificar un programa más complejo de lo que debería ser:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Amplificación de cambios&lt;/li&gt;
-  &lt;li&gt;Carga cognitiva&lt;/li&gt;
-  &lt;li&gt;Desconocidos desconocidos&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Identificar la complejidad es una &lt;strong&gt;habilidad crítica para el buen diseño de software&lt;/strong&gt;, te permitirá crear sistemas más simples y evitará que gastes recursos en desarrollar soluciones que son demasiado complejas.&lt;/p&gt;
-
-&lt;h2 id=&quot;amplificación-de-cambios&quot;&gt;Amplificación de cambios&lt;/h2&gt;
-
-&lt;p&gt;Este síntoma de la complejidad se hace obvio cuando estás haciendo un cambio que debió haber sido sencillo y tienes que tocar 7 archivos, 3 clases y 4 funciones. Se refiere a que una funcionalidad que parece sencilla del programa está repartida en muchos lados y para lograr hacer un cambio hay que tocar muchas partes del sistema.&lt;/p&gt;
-
-&lt;p&gt;Esto se pude dar cuando parámetros o valores que pueden estar centralizados o referenciados se ponen fijos a través de muchos archivos. También cuando código que se podría reutilizar se copia y pega.&lt;/p&gt;
-
-&lt;h2 id=&quot;carga-cognitiva&quot;&gt;Carga cognitiva&lt;/h2&gt;
-
-&lt;p&gt;Si tienes que mantener muchas cosas en la cabeza para poder entender el sistema, es complejo. Puede que tengas que entender y aprender muchas cosas acerca del funcionamiento del programa para usarlo bien y no causar un desastre. Cuando algo no tiene una interfaz simple, causa carga cognitiva.&lt;/p&gt;
-
-&lt;p&gt;El ejemplo son las funciones de lenguajes de programación que nunca aprendemos a usar porque tienen parámetros que aunque siempre son los mismos son requeridos por no tener un default decente. O por ejemplo, aquellas funciones que no recuerdas si cambian los parámetros o devuelven uno nuevo.&lt;/p&gt;
-
-&lt;p&gt;Aunque programas más cortos están relacionados con baja carga cognitiva, no siempre es el caso debido a que ese poco código que existe sea difícil de entender.&lt;/p&gt;
-
-&lt;h2 id=&quot;desconocidos-desconocidos&quot;&gt;Desconocidos desconocidos&lt;/h2&gt;
-
-&lt;p&gt;¿Tienes miedo de cambiar algo porque no sabes lo que pueda pasar y no hay ni documentación a la que puedas referirte? En este caso el sistema tiene información &lt;strong&gt;que no sabes que no sabes&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Un desconocido desconocido es aquella información que ni siquiera sabemos que estaba ahí y que no conocíamos, como algunas características del código, parámetros ocultos y comportamientos que no son fáciles de detectar ni están documentados.&lt;/p&gt;
-
-&lt;p&gt;¿Recuerdas la broma que dice: &lt;em&gt;“Cuando escribí este código sólo Dios y yo sabíamos lo que hacía, ahora sólo Dios sabe”&lt;/em&gt;? Muchas veces nos pasa así con el código y es el ejemplo perfecto de los desconocidos desconocidos, sobre todo para otros programadores.&lt;/p&gt;
-
-&lt;h2 id=&quot;medición-de-la-complejidad&quot;&gt;Medición de la complejidad&lt;/h2&gt;
-
-&lt;p&gt;Un sistema puede ser complejo independientemente de su tamaño, es decir, hay sistemas no tan grandes que son muy complejos.&lt;/p&gt;
-
-&lt;p&gt;Para determinar la complejidad se puede pensar en la siguiente fórmula.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581460560/Untitled_Artwork_3_oljybd.jpg&quot; alt=&quot;Fórmula para calcular la complejidad&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Esto lo podríamos explicar como:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;La complejidad total de un sistema es la sumatoria de la complejidad de cada una de sus partes multiplicada por el tiempo que los desarrolladores pasan en esa parte del código.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Esta complejidad puede evitar que avances tanto como deberías, pero el primer paso es identificarla como lo viste aquí. En los siguientes artículos hablaremos de técnicas para reducir la complejidad.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="ousterhout" /><category term="complejidad" /><category term="diseño-de-software" /><category term="posd" /><summary type="html">Aprende a descubrir y medir la complejidad en tus proyectos</summary></entry></feed>
+&lt;p&gt;Finalmente, recuerda que una de las funciones que proveen los módulos es &lt;em&gt;ocultar&lt;/em&gt; la complejidad. ¿Cuántas veces has visto lo que hacen las funciones prefabricadas de tu lenguaje de programación? Es probable que ninguna. Los módulos profundos y bien hechos permiten ocultar mayor cantidad de información y hace más fácil trabajar con ellos y simplifica el sistema en general.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="módulo" /><category term="PoSD" /><category term="ousterhout" /><category term="complejidad" /><category term="función" /><summary type="html">Veamos algunos lineamientos para el diseño de funciones/clases/módulos que ayudarán a reducir la complejidad de tus sistemas de software.</summary></entry></feed>
