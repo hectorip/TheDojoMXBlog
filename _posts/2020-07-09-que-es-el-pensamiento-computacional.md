@@ -4,7 +4,7 @@ date: 2020-07-09
 author: Héctor Patricio
 tags: cs computational-thinking pensamiento-computacional libros mit
 comments: true
-excerpt: "Escribe aquí un buen resumen de tu artículo"
+excerpt: "El pensamiento computacional ha sonado mucho en los medios últimamente. Hablemos de lo que es y todo lo que implica."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1594271708/BA7B68D6-CB97-4E54-8D9D-B3D2530A8A84_ovfgob.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1594271708/BA7B68D6-CB97-4E54-8D9D-B3D2530A8A84_ovfgob.jpg
