@@ -44,13 +44,15 @@ La computación está casada con un _medio_ que ejecute los cálculos. Estas son
 
 ## Educación computacional
 
-Difundir el conocimiento para crear
+Difundir el conocimiento para crear procedimientos que las computadoras automáticas puedan ejecutar es una de las principales tareas y _responsabilidades_ del pensamiento computacional.
 
 ## Ingeniería del Software
 
-La construcción de software es
+La construcción de software es una da las tareas más importantes que se relacionan con
 
 ## Diseño de Software
+
+El software muchas veces está hecho para interactuar con personas.
 
 
 ## Ciencia computacional
