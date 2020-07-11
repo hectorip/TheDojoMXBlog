@@ -11,9 +11,9 @@ header:
   overlay_filer: rgba(0, 0, 0, 0.5)
 ---
 
-Todo lo relacionado con el pensamiento computacional (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad porque vivimos en un mundo en el que cada aspecto de la vida se ha visto influenciado por lo que permite.
+Todo lo relacionado con el **pensamiento computacional** (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad, porque vivimos en un mundo en el que _cada aspecto de la vida_ se ha visto influenciado por lo que la computación permite.
 
-En varios lugares del mundo se ha pensado que se debe agregar el pensamiento computacional a la educación básica que todos reciben, bajo la promesa de que mejorará en general la capacidad de pensar y resolver problemas.
+En varios lugares del mundo se ha pensado que se debe agregar el pensamiento computacional a la educación básica que todos reciben, bajo la promesa de que mejorará en general la **capacidad de pensar y resolver problemas**.
 
 Hablemos de qué es el pensamiento computacional y cómo te puede ayudar a comprender mejor el mundo creado con la ayuda de las computadoras.
 
@@ -33,13 +33,13 @@ El pensamiento computacional ha avanzado en por lo menos **seis áreas**. Veamos
 
 ## Métodos computacionales
 
-Los matemáticos e ingenieros a lo largo de la historia han buscado desarrollar métodos para hacer más eficientes los cálculos y poder calcular más cosas automáticamente. Esto ha permitido que calculemos cosas que en cierto tiempo se creían imposibles.
+Los matemáticos e ingenieros a lo largo de la historia han buscado desarrollar métodos para hacer **más eficientes los cálculos y poder calcular más cosas automáticamente**. Esto ha permitido que calculemos cosas que en cierto tiempo se creían imposibles.
 
 Gran parte del trabajo que se ha realizado está dedicado a que los cálculos se puedan realizar sin entendimiento e intuición. Es por eso que se han ido desarrollando áreas de las matemáticas que tienen que ver directamente con esto:
 
 - La lógica
 - El álgebra booleana
-- La teoría de automátas.
+- La teoría de autómatas.
 
 Todo esto es con el objetivo de realizar **cálculos libres de errores** lo más rápidamente posible. Algunas de las tareas principales que los métodos de cómputo incluyen son:
 
@@ -58,7 +58,7 @@ Los medios en los que se ejecutan los cálculos han ido evolucionando hasta lleg
 
 Para diseñar y trabajar con estas máquinas, se tienen que entender muchos conceptos, que el pensamiento computacional trata:
 
-- Representación de información difitalmente y señales eléctricas como códigos binarios
+- Representación de información digitalmente y señales eléctricas como códigos binarios
 - Diseño de circuitos
 - Temporización con reloj de los cálculos
 - Control de flujo
@@ -115,9 +115,9 @@ Además la ingeniería del software ha buscado desarrollar herramientas que faci
 
 El software muchas veces está hecho para interactuar con personas. La tarea del diseñador de software es diseñar programas que **resuelvan los problemas de los usuarios**.
 
-Esto tiene que ver con la forma de usuarlo, las interfaces que presentará a los usuarios, las funciones, las actualizaciones, la protección de información, los medios de presentación y muchas más tareas relacionadas con **crear software que deleite al usuario**.
+Esto tiene que ver con la forma de usarlo, las interfaces que presentará a los usuarios, las funciones, las actualizaciones, la protección de información, los medios de presentación y muchas más tareas relacionadas con **crear software que deleite al usuario**.
 
-La principal diferencia con la ingeniería de software es que mientras la ingienería está pensada desde el punto de vista **del programador**, el diseño está pensado desde el punto de vista **del usuario**.
+La principal diferencia con la ingeniería de software es que mientras la ingeniería está pensada desde el punto de vista **del programador**, el diseño está pensado desde el punto de vista **del usuario**.
 
 Es decir, la ingeniería asegura que el programa funciona como el programador desea, el diseño asegura que el programa hace lo que el usuario necesita.
 

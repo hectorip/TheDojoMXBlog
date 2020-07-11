@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-07-09T02:12:14-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">¿Qué es el pensamiento computacional?</title><link href="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html" rel="alternate" type="text/html" title="¿Qué es el pensamiento computacional?" /><published>2020-07-09T00:00:00-05:00</published><updated>2020-07-09T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html">&lt;p&gt;Todo lo relacionado con el pensamiento computacional (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad porque vivimos en un mundo en el que cada aspecto de la vida se ha visto influenciado por lo que permite.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-07-10T19:57:12-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">¿Qué es el pensamiento computacional?</title><link href="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html" rel="alternate" type="text/html" title="¿Qué es el pensamiento computacional?" /><published>2020-07-09T00:00:00-05:00</published><updated>2020-07-09T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html">&lt;p&gt;Todo lo relacionado con el &lt;strong&gt;pensamiento computacional&lt;/strong&gt; (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad, porque vivimos en un mundo en el que &lt;em&gt;cada aspecto de la vida&lt;/em&gt; se ha visto influenciado por lo que la computación permite.&lt;/p&gt;
 
-&lt;p&gt;En varios lugares del mundo se ha pensado que se debe agregar el pensamiento computacional a la educación básica que todos reciben, bajo la promesa de que mejorará en general la capacidad de pensar y resolver problemas.&lt;/p&gt;
+&lt;p&gt;En varios lugares del mundo se ha pensado que se debe agregar el pensamiento computacional a la educación básica que todos reciben, bajo la promesa de que mejorará en general la &lt;strong&gt;capacidad de pensar y resolver problemas&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Hablemos de qué es el pensamiento computacional y cómo te puede ayudar a comprender mejor el mundo creado con la ayuda de las computadoras.&lt;/p&gt;
 
@@ -20,14 +20,14 @@
 
 &lt;h2 id=&quot;métodos-computacionales&quot;&gt;Métodos computacionales&lt;/h2&gt;
 
-&lt;p&gt;Los matemáticos e ingenieros a lo largo de la historia han buscado desarrollar métodos para hacer más eficientes los cálculos y poder calcular más cosas automáticamente. Esto ha permitido que calculemos cosas que en cierto tiempo se creían imposibles.&lt;/p&gt;
+&lt;p&gt;Los matemáticos e ingenieros a lo largo de la historia han buscado desarrollar métodos para hacer &lt;strong&gt;más eficientes los cálculos y poder calcular más cosas automáticamente&lt;/strong&gt;. Esto ha permitido que calculemos cosas que en cierto tiempo se creían imposibles.&lt;/p&gt;
 
 &lt;p&gt;Gran parte del trabajo que se ha realizado está dedicado a que los cálculos se puedan realizar sin entendimiento e intuición. Es por eso que se han ido desarrollando áreas de las matemáticas que tienen que ver directamente con esto:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;La lógica&lt;/li&gt;
   &lt;li&gt;El álgebra booleana&lt;/li&gt;
-  &lt;li&gt;La teoría de automátas.&lt;/li&gt;
+  &lt;li&gt;La teoría de autómatas.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Todo esto es con el objetivo de realizar &lt;strong&gt;cálculos libres de errores&lt;/strong&gt; lo más rápidamente posible. Algunas de las tareas principales que los métodos de cómputo incluyen son:&lt;/p&gt;
@@ -50,7 +50,7 @@
 &lt;p&gt;Para diseñar y trabajar con estas máquinas, se tienen que entender muchos conceptos, que el pensamiento computacional trata:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Representación de información difitalmente y señales eléctricas como códigos binarios&lt;/li&gt;
+  &lt;li&gt;Representación de información digitalmente y señales eléctricas como códigos binarios&lt;/li&gt;
   &lt;li&gt;Diseño de circuitos&lt;/li&gt;
   &lt;li&gt;Temporización con reloj de los cálculos&lt;/li&gt;
   &lt;li&gt;Control de flujo&lt;/li&gt;
@@ -116,9 +116,9 @@
 
 &lt;p&gt;El software muchas veces está hecho para interactuar con personas. La tarea del diseñador de software es diseñar programas que &lt;strong&gt;resuelvan los problemas de los usuarios&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Esto tiene que ver con la forma de usuarlo, las interfaces que presentará a los usuarios, las funciones, las actualizaciones, la protección de información, los medios de presentación y muchas más tareas relacionadas con &lt;strong&gt;crear software que deleite al usuario&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Esto tiene que ver con la forma de usarlo, las interfaces que presentará a los usuarios, las funciones, las actualizaciones, la protección de información, los medios de presentación y muchas más tareas relacionadas con &lt;strong&gt;crear software que deleite al usuario&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;La principal diferencia con la ingeniería de software es que mientras la ingienería está pensada desde el punto de vista &lt;strong&gt;del programador&lt;/strong&gt;, el diseño está pensado desde el punto de vista &lt;strong&gt;del usuario&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;La principal diferencia con la ingeniería de software es que mientras la ingeniería está pensada desde el punto de vista &lt;strong&gt;del programador&lt;/strong&gt;, el diseño está pensado desde el punto de vista &lt;strong&gt;del usuario&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Es decir, la ingeniería asegura que el programa funciona como el programador desea, el diseño asegura que el programa hace lo que el usuario necesita.&lt;/p&gt;
 
