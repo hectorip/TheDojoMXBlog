@@ -12,11 +12,11 @@ header:
   overlay_filer: rgba(0, 0, 0, 0.5)
 ---
 
-Tuvimos una plática con [Agustín Ramos](https://twitter.com/machinesareus) acerca de la arquitectura de software y lo que debes aprender para practicarla.
+Tuvimos una plática con [Agustín Ramos](https://twitter.com/machinesareus) acerca de la arquitectura de software y lo que debes aprender para practicarla. Este pequeño artículo incluye nuestro resumen y las recomendaciones de Agustín.
 
 ## ¿Qué es la arquitectura de software?
 
-La arquitectura del software incluye tanto el diseño
+La arquitectura del software incluye el diseño del sistema a alto nivel: la descomposición del sistema en módulos, la descripción de las responsabilidades de cada uno
 
 Básicamente tocamos 5 etapas del desarrollo de una arquitectura:
 
@@ -29,5 +29,5 @@ Básicamente tocamos 5 etapas del desarrollo de una arquitectura:
 4. **Comunicación del diseño.** Después de definir la arquitectura
 
 5. **Seguimiento del diseño.** Esto incluye varias cosas:
-  * _Verificación de que el equipo está siguiendo el diseño._ 
+  * _Verificación de que el equipo está siguiendo el diseño._
   * _El diseño nunca está está escrito en piedra_.
