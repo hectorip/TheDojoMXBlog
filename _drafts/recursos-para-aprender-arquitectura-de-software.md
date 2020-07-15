@@ -31,3 +31,34 @@ Básicamente tocamos 5 etapas del desarrollo de una arquitectura:
 5. **Seguimiento del diseño.** Esto incluye varias cosas:
   * _Verificación de que el equipo está siguiendo el diseño._
   * _El diseño nunca está está escrito en piedra_.
+
+
+## Cómo empezar
+
+Agustín nos recomendó algunos recursos para que empieces a aprender
+
+Aquí algunos libros:
+
+- Object Design - Rebecca Wirfs
+- Software Architecture in Practice
+- SEI - Technical Report Software engineering
+- Design it! - Micheal keeling - Pragmatic Programmers
+- Patrones de Diseño - GoF
+- The patterns handbook
+- A pattern language of program design
+- The nature of order
+- Pattern-orinted software architecture series
+- Estilos arquitectónicos
+- The art of Scalability
+- Los arquitectos de software deben encontrar la solución más simple posible porque si no va a ser rígida
+- **Arquitectura**
+    - Documentarla
+    - Exponerla al equipo - Con video
+- **Documentación**
+    - Arquitectura 4 + 1
+        - Componentes
+        - Desarrollo
+        - Procesos
+        - Casos
+    - Architectural decisión Records
+    -
