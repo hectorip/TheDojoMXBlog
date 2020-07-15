@@ -203,4 +203,9 @@ var store = [{
         "excerpt":"Todo lo relacionado con el pensamiento computacional (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad, porque vivimos en un mundo en el que cada aspecto de la vida se ha visto influenciado por lo que la computación permite. En varios lugares...","categories": [],
         "tags": ["cs","computational-thinking","pensamiento-computacional","libros","mit"],
         "url": "https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1594271708/BA7B68D6-CB97-4E54-8D9D-B3D2530A8A84_ovfgob.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1594271708/BA7B68D6-CB97-4E54-8D9D-B3D2530A8A84_ovfgob.jpg"},{
+        "title": "Recursos para aprender Arquitectura de Software",
+        "excerpt":"Tuvimos una plática con Agustín Ramos acerca de la arquitectura de software y lo que debes aprender para practicarla. Este pequeño artículo incluye nuestro resumen y las recomendaciones de Agustín. ¿Qué es la arquitectura de software? La arquitectura del software incluye el diseño del sistema a alto nivel: la descomposición...","categories": [],
+        "tags": ["podcast","thedojomx","arquitectura","arquitectura_de_software","libros"],
+        "url": "https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1594271692/EC077014-9C45-4FCA-A0BA-7CB7B0D25FAB_l9gvh7.jpg"}]

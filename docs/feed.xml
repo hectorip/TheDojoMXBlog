@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-07-10T19:57:12-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">¿Qué es el pensamiento computacional?</title><link href="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html" rel="alternate" type="text/html" title="¿Qué es el pensamiento computacional?" /><published>2020-07-09T00:00:00-05:00</published><updated>2020-07-09T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html">&lt;p&gt;Todo lo relacionado con el &lt;strong&gt;pensamiento computacional&lt;/strong&gt; (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad, porque vivimos en un mundo en el que &lt;em&gt;cada aspecto de la vida&lt;/em&gt; se ha visto influenciado por lo que la computación permite.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-07-15T10:01:22-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Recursos para aprender Arquitectura de Software</title><link href="https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software.html" rel="alternate" type="text/html" title="Recursos para aprender Arquitectura de Software" /><published>2020-07-15T00:00:00-05:00</published><updated>2020-07-15T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software.html">&lt;p&gt;Tuvimos una plática con &lt;a href=&quot;https://twitter.com/machinesareus&quot;&gt;Agustín Ramos&lt;/a&gt; acerca de la arquitectura de software y lo que debes aprender para practicarla. Este pequeño artículo incluye nuestro resumen y las recomendaciones de Agustín.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-la-arquitectura-de-software&quot;&gt;¿Qué es la arquitectura de software?&lt;/h2&gt;
+
+&lt;p&gt;La arquitectura del software incluye el &lt;strong&gt;diseño del sistema&lt;/strong&gt; a alto nivel: la descomposición del sistema en módulos, la descripción de las responsabilidades de cada uno y sus relaciones.&lt;/p&gt;
+
+&lt;p&gt;También incluye las prácticas y herramientas que permitirán que el proyecto cumpla con los &lt;strong&gt;atributos de calidad&lt;/strong&gt; o requerimientos no funcionales.&lt;/p&gt;
+
+&lt;p&gt;Todo lo anterior está basado en un análisis de las &lt;em&gt;funciones&lt;/em&gt; y &lt;em&gt;atributos de calidad&lt;/em&gt; del sistema.&lt;/p&gt;
+
+&lt;h1 id=&quot;el-proceso&quot;&gt;El Proceso&lt;/h1&gt;
+
+&lt;p&gt;En la plática tocamos 5 etapas del desarrollo de una arquitectura:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Descubrimiento y definición de los atributos de calidad.&lt;/strong&gt; Básicamente consiste en entender el problema, escuchar a todos los involucrados en el proyecto y definir los atributos del software que no están directamente relacionados con la funcionalidad, pero que debe de cumplir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Diseño del sistema.&lt;/strong&gt; Generalmente te ayudarás de estilos de arquitectura y patrones de diseño para llegar a los objetivos funcionales y no funcionales.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Validación del diseño.&lt;/strong&gt; Mediante la creación de prototipos se puede validar que las asunciones principales acerca del diseño y su relación con los atributos de calidad se cumplen. Esto puede derivar en &lt;em&gt;cambios&lt;/em&gt; sobre el diseño que lo mejoren.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Comunicación del diseño.&lt;/strong&gt; Después de definir la arquitectura&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Seguimiento del diseño.&lt;/strong&gt; Esto incluye varias cosas:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;em&gt;Verificación de que el equipo está siguiendo el diseño.&lt;/em&gt; Esto se logra con revisiones constantes con el equipo: programación en parejas y revisión de código.&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;El diseño nunca está está escrito en piedra&lt;/em&gt;. Después de las revisiones de código se descubrirán cosas que no están funcionando como se esperaba, por lo que será necesario modificar el diseño y dejar registro de los cambios y las decisiones tomadas.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;consejos-específicos&quot;&gt;Consejos específicos&lt;/h2&gt;
+
+&lt;p&gt;Los arquitectos de software deben encontrar la solución más simple posible porque si no va a ser rígida.&lt;/p&gt;
+
+&lt;p&gt;Acerca de la &lt;strong&gt;documentación&lt;/strong&gt;, Agustín recomienda, exponerla al equipo en una junta y hacer un video de esto, que se le pase a cada integrante del equipo. Se puede seguir el marco llamado &lt;a href=&quot;https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf&quot;&gt;“Arquitectura 4 + 1”&lt;/a&gt; que se compone de:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Vista de Componentes&lt;/li&gt;
+  &lt;li&gt;Vista de Desarrollo&lt;/li&gt;
+  &lt;li&gt;Vista de Procesos&lt;/li&gt;
+  &lt;li&gt;Vista Física&lt;/li&gt;
+  &lt;li&gt;Vista de Casos (Este es el +1)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Además, tenemos que mantener una bitácora de los cambios y los factores que los impulsaron, esto puede ser mediante los &lt;a href=&quot;https://adr.github.io/&quot;&gt;Architectural decisión Records&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;cómo-empezar&quot;&gt;Cómo empezar&lt;/h2&gt;
+
+&lt;p&gt;Agustín nos recomendó algunos recursos para que empieces a aprender:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/179204.Object_Design?from_search=true&amp;amp;from_srp=true&amp;amp;qid=3yFmpRp03n&amp;amp;rank=6&quot;&gt;Object Design - Rebecca Wirfs-Brock&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/70143.Software_Architecture_in_Practice?from_search=true&amp;amp;from_srp=true&amp;amp;qid=mnXRSoVML7&amp;amp;rank=1&quot;&gt;Software Architecture in Practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Como alternativa al libro anterior  se recomienda Technical Report sobre arquitectura del Software Engineering Institute, encontré varios, tienes un ejemplo &lt;a href=&quot;https://pure.au.dk/portal/files/20484966/tech-report-5.pdf&quot;&gt;aquí&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pragprog.com/titles/mkdsa/&quot;&gt;Design it! - Micheal Keeling&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;La serie &lt;a href=&quot;&quot;&gt;Pattern-orinted Software Architecture&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Para aprender patrones de diseño se habló de los siguientes libros:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com.mx/dp/0201633612?tag=amz-mkt-chr-mx-20&amp;amp;ascsubtag=1ba00-01000-a0087-mac00-other-nomod-mx000-pcomp-feature-scomp-wm-5&amp;amp;ref=aa_scomp&quot;&gt;Patrones de Diseño - Erich Gamma, et Al.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Patterns-Handbook-Techniques-Strategies-Applications/dp/0521648181&quot;&gt;The patterns handbook&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;La serie &lt;a href=&quot;https://www.amazon.com.mx/Pattern-Languages-Program-Design-Coplien/dp/0201607344/ref=sr_1_3?dchild=1&amp;amp;keywords=Pattern+Languages+of+Program+Design&amp;amp;qid=1594823984&amp;amp;s=books&amp;amp;sr=1-3&quot;&gt;Pattern language of program design (5 libros)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Y entre los libros que se mencionan como la fuente de las ideas de patrones y diseño:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com.mx/Phenomenon-Life-Building-Nature-Universe/dp/0972652914/ref=pd_sim_14_1/132-2199838-9714154?_encoding=UTF8&amp;amp;pd_rd_i=0972652914&amp;amp;pd_rd_r=43c91cc2-6447-4629-a6d7-fb29dc8fd2d7&amp;amp;pd_rd_w=gNuac&amp;amp;pd_rd_wg=g8gOe&amp;amp;pf_rd_p=a62f455d-612d-4136-9fd7-44067fe2cd11&amp;amp;pf_rd_r=86FX03JZ655BENFVMSC0&amp;amp;psc=1&amp;amp;refRID=86FX03JZ655BENFVMSC0&quot;&gt;The nature of order de Christopher Alexander&lt;/a&gt; y los otros libros de él como &lt;a href=&quot;https://www.amazon.com.mx/Professor-Department-Architecture-Christopher-Alexander/dp/0195024028/ref=pd_sim_14_3/132-2199838-9714154?_encoding=UTF8&amp;amp;pd_rd_i=0195024028&amp;amp;pd_rd_r=c4dd6dad-be5f-4a11-a037-a4ecd8f56915&amp;amp;pd_rd_w=CYjKZ&amp;amp;pd_rd_wg=x61DA&amp;amp;pf_rd_p=a62f455d-612d-4136-9fd7-44067fe2cd11&amp;amp;pf_rd_r=JWAJ48WRNHYPDZ8RC2R1&amp;amp;psc=1&amp;amp;refRID=JWAJ48WRNHYPDZ8RC2R1&quot;&gt;A timeless way of building&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com.mx/Art-Scalability-Architecture-Organizations-Enterprise/dp/0134032802/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;dchild=1&amp;amp;keywords=the+art+of+scalability&amp;amp;qid=1594824264&amp;amp;s=books&amp;amp;sr=1-1&quot;&gt;The art of Scalability&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;el-capítulo&quot;&gt;El capítulo&lt;/h2&gt;
+
+&lt;p&gt;De todos modos no te pierdas el capítulo, que estuvo muy bueno:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vfu5PsSH7us&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="podcast" /><category term="thedojomx" /><category term="arquitectura" /><category term="arquitectura_de_software" /><category term="libros" /><summary type="html">¿Qué es la arquitectura de software y cómo puedes empezar a aprenderla? Aquí te damos un resumen de una plática muy interesante que tuvimos.</summary></entry><entry><title type="html">¿Qué es el pensamiento computacional?</title><link href="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html" rel="alternate" type="text/html" title="¿Qué es el pensamiento computacional?" /><published>2020-07-09T00:00:00-05:00</published><updated>2020-07-09T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html">&lt;p&gt;Todo lo relacionado con el &lt;strong&gt;pensamiento computacional&lt;/strong&gt; (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad, porque vivimos en un mundo en el que &lt;em&gt;cada aspecto de la vida&lt;/em&gt; se ha visto influenciado por lo que la computación permite.&lt;/p&gt;
 
 &lt;p&gt;En varios lugares del mundo se ha pensado que se debe agregar el pensamiento computacional a la educación básica que todos reciben, bajo la promesa de que mejorará en general la &lt;strong&gt;capacidad de pensar y resolver problemas&lt;/strong&gt;.&lt;/p&gt;
 
@@ -813,73 +896,4 @@ hablar en contra de la sabiduría popular.&lt;/p&gt;
 
 &lt;p&gt;¿Puedes pensar en otros ejemplos? En el libro &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;PoSD&lt;/a&gt; vienen algunos.&lt;/p&gt;
 
-&lt;p&gt;En el próximo artículo hablaremos de otra forma de fugas de información: la descomposición temporal.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="interfaces" /><category term="módulo" /><category term="complejidad" /><category term="diseño-de-software" /><summary type="html">Ocultar información es una de las claves para reducir la complejidad, veamos algunas maneras de lograrlo.</summary></entry><entry><title type="html">A Philosophy of Software Design: Los módulos deben ser profundos</title><link href="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Los módulos deben ser profundos" /><published>2020-03-02T00:00:00-06:00</published><updated>2020-03-02T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html">&lt;p&gt;Para reducir la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es la organización y separación de código a alto nivel, es decir separación en módulos.&lt;/p&gt;
-
-&lt;h2 id=&quot;por-qué-es-importante-la-separación&quot;&gt;Por qué es importante la separación&lt;/h2&gt;
-
-&lt;p&gt;Antes de empezar a hablar de cómo deberíamos diseñar nuestros módulos hablemos de por qué es importante la separación.&lt;/p&gt;
-
-&lt;p&gt;La mejor forma de resolver un problema complejo es mediante &lt;em&gt;la descomposición&lt;/em&gt; del problema en problemas más sencillos. Estos problemas se resuelven individualmente, idealmente de de manera independiente en un módulo por separado para cada uno. De esta manera podemos hacer software más mantenible y fácil de entender. Incluso se puede dividir mejor el trabajo.&lt;/p&gt;
-
-&lt;p&gt;La división del problema permite además &lt;strong&gt;ocultar&lt;/strong&gt; información no relevante para el problema en cuestión.&lt;/p&gt;
-
-&lt;p&gt;Esta división del trabajo es diferente dependiendo del paradigma del lenguaje de programación que usemos, así que veamos a qué nos referimos con un &lt;strong&gt;módulo&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-un-módulo&quot;&gt;¿Qué es un módulo?&lt;/h2&gt;
-
-&lt;p&gt;Una definición fácil y amplia de “módulo” dada por &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;“A Philosophy of Software Design”&lt;/a&gt; es: &lt;em&gt;todo aquello que agrupe código, proveyendo separación de funcionalidad&lt;/em&gt;, es decir que agrupe comportamiento en detrás de una &lt;em&gt;interfaz&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Un módulo puede ser una función, una clase, un paquete o cosas similares dependiendo del lenguaje de programación. Un módulo incluso puede ser una API HTTP u otro programa.&lt;/p&gt;
-
-&lt;p&gt;Como resumen: &lt;strong&gt;un módulo permite hacer &lt;em&gt;algo&lt;/em&gt; mediante una interfaz.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Ahora bien, ¿qué es la interfaz de un módulo?&lt;/p&gt;
-
-&lt;h2 id=&quot;interfaces&quot;&gt;Interfaces&lt;/h2&gt;
-
-&lt;p&gt;Ya hemos hablado sobre &lt;a href=&quot;https://www.youtube.com/watch?v=n8MxyHG0j3Q&amp;amp;t&quot;&gt;lo que es una interfaz&lt;/a&gt;, pero para resumir: es el punto en donde un sistema, en este caso específico, un módulo, se encuentra con otro (otro módulo o código que lo usa).&lt;/p&gt;
-
-&lt;p&gt;Un módulo tiene una interfaz que permite a otras partes del sistema usarlo. Usaremos el caso más sencillo, una función. La interfaz de una función es su firma: su nombre, los parámetros que recibe y lo que devuelve.&lt;/p&gt;
-
-&lt;p&gt;Veamos un ejemplo:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;archivo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;my_file.md&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;w&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Devuelve un apuntador a un archivo abierto
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;La interfaz de la función es su nombre &lt;code class=&quot;highlighter-rouge&quot;&gt;open&lt;/code&gt; (nos permite identificarla y comunica información sobre lo que hace), el nombre del archivo como primer parámetro y el modo de operación en el segundo.&lt;/p&gt;
-
-&lt;p&gt;Dependiendo de la forma de agrupar la interfaz de los módulos varía, pero recuerda esto: &lt;strong&gt;la interfaz es la parte visible del módulo hacia otros módulos&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;diseño-de-módulos&quot;&gt;Diseño de módulos&lt;/h2&gt;
-
-&lt;p&gt;Aquí entramos en lo importante: los módulos deberían ser lo más profundos posible.&lt;/p&gt;
-
-&lt;p&gt;¿A qué nos referimos con un módulo profundo?&lt;/p&gt;
-
-&lt;p&gt;Observa el siguiente diagrama:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1583213511/IMG_0058_xm2b6w.jpg&quot; alt=&quot;Módulos profundos vs superficiales&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Un módulo profundo tiene una &lt;strong&gt;interfaz sencilla&lt;/strong&gt; o fácil de usar para la mayoría de los casos de uso y provee de mucha funcionalidad, hace mucho por ti.&lt;/p&gt;
-
-&lt;p&gt;Un módulo superficial tiene una interfaz compleja o difícil de usar y provee poca funcionalidad.&lt;/p&gt;
-
-&lt;p&gt;Esto no es absoluto: la relación entre la complejidad de la interfaz es relativa a la funcionalidad que provee, por ejemplo, si un módulo hace muchas cosas por ti, puede que requiera muchos datos. La relación interfaz/funcionalidad debe ser razonable para considerar que el módulo es profundo.&lt;/p&gt;
-
-&lt;p&gt;Abrir archivos en la mayoría de los lenguajes es un ejemplo de una función profunda: con una interfaz muy pequeña (el nombre y el modo), la función se encarga de todos los detalles de implementación de apertura y creación del archivo. No te debes de preocupar por cosas como el sistema de archivos, el guardado físico en el disco, por verificar si hay memoria, etc.&lt;/p&gt;
-
-&lt;p&gt;En el caso contrario, los getters y setters que se acostumbra usar en algunos lenguajes de programación (Java) son ejemplo de funciones poco profundas, generalmente no hacen algo más que devolver el valor de la propiedad.&lt;/p&gt;
-
-&lt;p&gt;Ejemplo: Piensa en un aparato electrónico. En una televisión, sus control remoto te permiten acceder a las funcionalidades de encender el panel de iluminación, captar la señal del canal, decodificarlo y saltar entre diferentes canales, todo sin preocuparte tú por los detalles. Sólo la usas y ya. Mientras más detalles de implementación oculte es más fácil de usar.&lt;/p&gt;
-
-&lt;h2 id=&quot;ventajas-de-los-módulos-profundos&quot;&gt;Ventajas de los módulos profundos&lt;/h2&gt;
-
-&lt;p&gt;Encontrar un equilibrio entre la cantidad de código que metes en un módulo y la interfaz que expone tiene varias ventajas:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;El código se puede re-usar en otras partes del sistema&lt;/li&gt;
-  &lt;li&gt;Evitas la acumulación de interfaces, es decir, tener demasiadas interfaces (funciones, clases o módulos) que tienes que aprender a usar y que hacen poco por ti&lt;/li&gt;
-  &lt;li&gt;La expansión de cambios (tener que tocar muchos lados del sistema para hacer un cambio relativamente pequeño)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Finalmente, recuerda que una de las funciones que proveen los módulos es &lt;em&gt;ocultar&lt;/em&gt; la complejidad. ¿Cuántas veces has visto lo que hacen las funciones prefabricadas de tu lenguaje de programación? Es probable que ninguna. Los módulos profundos y bien hechos permiten ocultar mayor cantidad de información y hace más fácil trabajar con ellos y simplifica el sistema en general.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="módulo" /><category term="PoSD" /><category term="ousterhout" /><category term="complejidad" /><category term="función" /><summary type="html">Veamos algunos lineamientos para el diseño de funciones/clases/módulos que ayudarán a reducir la complejidad de tus sistemas de software.</summary></entry></feed>
+&lt;p&gt;En el próximo artículo hablaremos de otra forma de fugas de información: la descomposición temporal.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="interfaces" /><category term="módulo" /><category term="complejidad" /><category term="diseño-de-software" /><summary type="html">Ocultar información es una de las claves para reducir la complejidad, veamos algunas maneras de lograrlo.</summary></entry></feed>
