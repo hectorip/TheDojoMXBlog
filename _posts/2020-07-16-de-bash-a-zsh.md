@@ -2,7 +2,7 @@
 title: "De Bash a Zsh"
 date: 2020-07-16
 author: Alejandro Santamaría
-tags: shell zsh bash terminal 
+tags: shell zsh bash terminal
 comments: true
 excerpt: "Zsh es el nuevo shell default de MacOS Catalina. Entiende las principales diferencias entre Bash y Zsh."
 header:
@@ -52,7 +52,7 @@ El programa de shell específico (en este caso Bash o Zsh), definen su interfaz 
 
 ## ¿Porqué razón puede estar cambiando Apple de un shell a otro?
 
-Aunque no hay una razón única, existen varias posibilidades. La primera de ellas es que aunque Apple utiliza Bash desde OSX Jaguar, no había actualizado Bash desde la versión 3.2 liberada en el 2007, es decir casi el mismo año en el que se liberó el primer iPhone. Es probable que una de las razones por las que esto sucedió fue que Bash cambió su licencia de uso de **GNU GPL 2 a una licencia GNU GPLv3**, y dicho cambio incluía restricciones que quizás no fueron del todo favorables a Apple.
+Existen varias posibilidades, la primera de ellas es que aunque Apple utiliza Bash desde OSX Jaguar, no había actualizado Bash desde la versión 3.2 liberada en el 2007, es decir casi el mismo año en el que se liberó el primer iPhone. Es probable que una de las razones por las que esto sucedió fue que Bash cambió su licencia de uso de **GNU GPL 2 a una licencia GNU GPLv3**, y dicho cambio incluía restricciones que quizás no fueron del todo favorables a Apple.
 
 Así que migrar a Zsh es una opción refrescante. La versión que está incluida en Catalina es la 5.7.1 y utiliza una versión de licenciamiento **MIT que es menos restrictiva que la GPLv3**.
 
@@ -60,7 +60,7 @@ Así que migrar a Zsh es una opción refrescante. La versión que está incluida
 
 No necesariamente, aunque Zsh será el shell por default para todas las nuevas cuentas de usuario creadas en macOS Catalina, si tu hiciste un upgrade del Sistema Operativo, tu cuenta seguirá utilizando por default Bash. Pero siempre tendrás opción de configurar el shell que desees por default de manera voluntaria, incluso a alguno distinto a Zsh o Bash.
 
-A nivel general, Bash y Zsh tienen un nivel de compatibilidad bastante alto ya que **ambos están basados en el aún más antiguo Bourne Shell**, de tal forma que la mayoría de los script y comandos existentes funcionarán sin ningún cambio en Zsh.
+A nivel general, Bash y Zsh tienen un nivel de compatibilidad bastante alto ya que **ambos están basados en el aún más antiguo Bourne Shell**, de tal forma que la mayoría de los scripts y comandos existentes funcionarán sin ningún cambio en Zsh.
 
 La ventaja real de Zsh es la inclusión de funcionalidades que hacen trabajar con él más fácil (funcionalidades no incluidas por default en la versión vieja de Bash), entre algunas de mis funcionalidades favoritas están:
 
@@ -122,7 +122,7 @@ setopt autocd
 ### Referencias
 
 * [Bash academy](https://www.bash.academy/)
-* [YCombinstor](https://news.ycombinator.com/item?id=10737639)
+* [Discusión en YCombinator](https://news.ycombinator.com/item?id=10737639)
 * [Zsh tips](http://www.rayninfo.co.uk/tips/zshtips.html?LMCL=bNg6o6)
 * [10 trucos de Zsh](http://leahneukirchen.org/blog/archive/2008/02/10-zsh-tricks-you-may-not-know.html)
 * [Zsh Guide](http://zsh.sourceforge.net/Guide/zshguide.html)
