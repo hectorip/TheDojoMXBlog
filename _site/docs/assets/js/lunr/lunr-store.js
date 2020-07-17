@@ -188,4 +188,24 @@ var store = [{
         "excerpt":"Hace tiempo dimos un curso de ES6 o ES2015. Hicimos una investigación acerca de la historia, la nomenclatura, quién lo creo y porque tanta confusión con los nombres. En este video explicamos eso y más: las características principales que se agregaron y la diferencia entre JavaScript y ECMAScript. ¿Tienes dudas...","categories": [],
         "tags": ["es6","js","javascript","videos"],
         "url": "https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html",
-        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1587973000/6CF7535E-4D2E-4140-A758-32DD166D508C_hztakt.jpg"}]
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1587973000/6CF7535E-4D2E-4140-A758-32DD166D508C_hztakt.jpg"},{
+        "title": "Cursos certificados gratuitos",
+        "excerpt":"Debido a la emergencia sanitaria mundial, algunas universidades han liberado cursos que además de auditar, puedes cursar para obtener un cetificado. Si quieres mejorar un poco tu perfil del LinkedIn aquí te ponemos unos cursos de tecnología que puedes tomar. Programación Computer Programming For Everyone C++ For C Programmers Code...","categories": [],
+        "tags": ["cursos","aprendizaje","programación","matemáticas","mooc"],
+        "url": "https://blog.thedojo.mx/2020/05/16/cursos-certificados-gratuitos.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/v1589666287/AE8177CF-C488-4D9E-8D4D-4914B50EB3FC_mbfv0a.jpg"},{
+        "title": "¿Qué es un engine de JavaScript?",
+        "excerpt":"Me llamó mucho la atención la salida de Deno v1 esta semana y le quise echar un ojito. Pero desde la explicación que da inicialmente, no entiendo exactamente lo que es y hace: “Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is...","categories": [],
+        "tags": ["js","javascript","compiladores","javascript-engine","v8","chrome"],
+        "url": "https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1589701068/538FF576-00FA-4723-9142-920622E07743_djzuh4.jpg"},{
+        "title": "¿Qué es el pensamiento computacional?",
+        "excerpt":"Todo lo relacionado con el pensamiento computacional (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad, porque vivimos en un mundo en el que cada aspecto de la vida se ha visto influenciado por lo que la computación permite. En varios lugares...","categories": [],
+        "tags": ["cs","computational-thinking","pensamiento-computacional","libros","mit"],
+        "url": "https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1594271708/BA7B68D6-CB97-4E54-8D9D-B3D2530A8A84_ovfgob.jpg"},{
+        "title": "Recursos para aprender Arquitectura de Software",
+        "excerpt":"Tuvimos una plática con Agustín Ramos acerca de la arquitectura de software y lo que debes aprender para practicarla. Este pequeño artículo incluye nuestro resumen y las recomendaciones de Agustín. ¿Qué es la arquitectura de software? La arquitectura del software incluye el diseño del sistema a alto nivel: la descomposición...","categories": [],
+        "tags": ["podcast","thedojomx","arquitectura","arquitectura_de_software","libros"],
+        "url": "https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software.html",
+        "teaser":"https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1594271692/EC077014-9C45-4FCA-A0BA-7CB7B0D25FAB_l9gvh7.jpg"}]

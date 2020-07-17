@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.17.2 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -231,10 +231,6 @@
 
 
 
-
-
-
-
 <div class="page__hero--overlay" style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/dg89awi0p/image/upload/c_scale,w_1200/v1552160611/rawpixel-1135756-unsplash.jpg');">
   
     <div class="wrapper">
@@ -282,8 +278,6 @@
 
   
     <div class="author__avatar">
-      
-
       
         <img src="https://res.cloudinary.com/hectorip/image/upload/v1539749539/44147293_251168868909676_2757599841344290816_n_1_zadepv.png" alt="Esteban Galicia" itemprop="image">
       
@@ -372,10 +366,11 @@
   </div>
 
 
+
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Producción y desarollo en Django">
     <meta itemprop="description" content="Una manera para manejar producción y desarrollo sin tanto esfuerzo.">
-    <meta itemprop="datePublished" content="March 09, 2019">
+    <meta itemprop="datePublished" content="2019-03-09T00:00:00-06:00">
     
 
     <div class="page__inner-wrap">
@@ -405,19 +400,19 @@ Para hacer la prueba se ejecuta:</p>
 <span class="o">&gt;</span> all_posts <span class="o">=</span> Post.objects.all<span class="o">()</span>
 </code></pre></div></div>
 
-<p>Todo opera bien hasta que debemos importar múltiples modelos, al modificar un modelo se debe detener la consola <code class="highlighter-rouge">Ctrl+C</code> y ejecutarla de nueva cuenta, y de nueva cuenta cargar todos los modelos.</p>
+<p>Todo opera bien hasta que debemos importar múltiples modelos, al modificar un modelo se debe detener la consola <code class="language-plaintext highlighter-rouge">Ctrl+C</code> y ejecutarla de nueva cuenta, y de nueva cuenta cargar todos los modelos.</p>
 
-<p>A fin de no perder tiempo cargando los modelos en cada detención de la consola se opta por usar una herramienta llamada <a href="https://django-extensions.readthedocs.io/en/latest/"><code class="highlighter-rouge">django-extensions</code></a></p>
+<p>A fin de no perder tiempo cargando los modelos en cada detención de la consola se opta por usar una herramienta llamada <a href="https://django-extensions.readthedocs.io/en/latest/"><code class="language-plaintext highlighter-rouge">django-extensions</code></a></p>
 
 <p>La instalo en mi proyecto usando:</p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> pip <span class="nb">install </span>django-extensions
 </code></pre></div></div>
 
-<p>y agregándola a mis apps en el archivo <code class="highlighter-rouge">settings.py</code></p>
+<p>y agregándola a mis apps en el archivo <code class="language-plaintext highlighter-rouge">settings.py</code></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="o">...</span>
+    <span class="p">...</span>
     <span class="s">'django_extensions'</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div></div>
@@ -429,28 +424,28 @@ Para hacer la prueba se ejecuta:</p>
 
 <p>El siguiente problema que hallé es que esta herramienta no debe estar en producción, solo es para propósitos de desarrollo.</p>
 
-<p>Pero, ¿Qué hacer?, ¿La agrego y quito de <code class="highlighter-rouge">INSTALLED_APPS</code> manualmente a cada push que haga en  mi repositorio?, esa estrategia es muy propensa al error y a la hora de desplegar podemos tener un error por no tener instalada la herramienta.</p>
+<p>Pero, ¿Qué hacer?, ¿La agrego y quito de <code class="language-plaintext highlighter-rouge">INSTALLED_APPS</code> manualmente a cada push que haga en  mi repositorio?, esa estrategia es muy propensa al error y a la hora de desplegar podemos tener un error por no tener instalada la herramienta.</p>
 
-<p>La forma que me ha gustado más hasta ahora es hacer uso del paquete <code class="highlighter-rouge">sys</code> de Python, con el que puedo con uno de sus módulos leer los argumentos con los que se ejecuta la aplicación de Django.</p>
+<p>La forma que me ha gustado más hasta ahora es hacer uso del paquete <code class="language-plaintext highlighter-rouge">sys</code> de Python, con el que puedo con uno de sus módulos leer los argumentos con los que se ejecuta la aplicación de Django.</p>
 
-<p>Vámos como queda el archivo <code class="highlighter-rouge">settings.py</code></p>
+<p>Vámos como queda el archivo <code class="language-plaintext highlighter-rouge">settings.py</code></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
-<span class="o">.</span>
-<span class="o">.</span>
-<span class="o">.</span>
+<span class="p">.</span>
+<span class="p">.</span>
+<span class="p">.</span>
 <span class="n">DEBUG_COMMAND</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="s">'shell_plus'</span><span class="p">,</span> <span class="s">'shell'</span><span class="p">,</span> <span class="s">'runserver'</span><span class="p">)</span>
 
-<span class="n">DJANGO_RUN_ARGS</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
+<span class="n">DJANGO_RUN_ARGS</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">argv</span><span class="p">)</span>
 
-<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">DJANGO_RUN_ARGS</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">DEBUG_COMMAND</span><span class="p">))</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">DJANGO_RUN_ARGS</span><span class="p">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">DEBUG_COMMAND</span><span class="p">))</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
     <span class="c1"># Code executed in develop time
-</span>    <span class="n">INSTALLED_APPS</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">'django_extensions'</span><span class="p">)</span>
+</span>    <span class="n">INSTALLED_APPS</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="s">'django_extensions'</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>En <code class="highlighter-rouge">DEBUG_COMMAND</code> se definen los comandos que se ejecutan solo en desarrollo, hay que recordar que <code class="highlighter-rouge">runserver</code> se agrega también en el set dado que NO se debe pasar a producción la ejecución de Django por medio de dicho mecanismo, para producción lo correcto es pasarlo con un WSGI server diseñado para producción como <a href="https://gunicorn.org">guinicorn</a>.</p>
+<p>En <code class="language-plaintext highlighter-rouge">DEBUG_COMMAND</code> se definen los comandos que se ejecutan solo en desarrollo, hay que recordar que <code class="language-plaintext highlighter-rouge">runserver</code> se agrega también en el set dado que NO se debe pasar a producción la ejecución de Django por medio de dicho mecanismo, para producción lo correcto es pasarlo con un WSGI server diseñado para producción como <a href="https://gunicorn.org">guinicorn</a>.</p>
 
-<p><code class="highlighter-rouge">DJANGO_RUN_ARGS</code> es la variable que guardará los argumentos con los que se ejecuta Django.</p>
+<p><code class="language-plaintext highlighter-rouge">DJANGO_RUN_ARGS</code> es la variable que guardará los argumentos con los que se ejecuta Django.</p>
 
 <p>Ambas variables son un set, así es sencillo comprobar que argumentos serán catalogados como de desarrollo por medio de la intersección de ambas variables, el que haya elementos en la intersección implica que por lo menos uno de los argumentos se cataloga como de desarrollo.</p>
 
@@ -498,8 +493,9 @@ Para hacer la prueba se ejecuta:</p>
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2019-03-09T00:00:00-06:00">March 09, 2019</time></p>
-        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2019-03-09T00:00:00-06:00">March 9, 2019</time></p>
+
+
       </footer>
 
       <section class="page__share">
@@ -546,6 +542,42 @@ Para hacer la prueba se ejecuta:</p>
     <div class="page__related">
       <h4 class="page__related-title">Podrías ver también</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794238/B29C980A-0E0F-444F-9F25-EFAB95FDBD4E_r9qk5v.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/07/16/de-bash-a-zsh.html" rel="permalink">De Bash a Zsh
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 16-07-2020
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Zsh es el nuevo shell default de MacOS Catalina. Entiende las principales diferencias entre Bash y Zsh.
+</p>
+  </article>
+</div>
+
         
           
 
@@ -650,42 +682,6 @@ Para hacer la prueba se ejecuta:</p>
 </p>
     
     <p class="archive__item-excerpt" itemprop="description">Hablemos de qué es y cómo funciona un motor de Javascript.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/v1589666287/AE8177CF-C488-4D9E-8D4D-4914B50EB3FC_mbfv0a.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/05/16/cursos-certificados-gratuitos.html" rel="permalink">Cursos certificados gratuitos
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  1 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 16-05-2020
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Es emocionante todo lo que se puede aprender en internet. Revisa algunos cursos que además te certifcan gratuitamente.
 </p>
   </article>
 </div>
@@ -802,10 +798,10 @@ Para hacer la prueba se ejecuta:</p>
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://blog.thedojo.mx/2019/03/09/produccion-y-desarollo-en-django.html";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/2019/03/09/produccion-y-desarollo-en-django"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "https://blog.thedojo.mx/2019/03/09/produccion-y-desarollo-en-django.html";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/2019/03/09/produccion-y-desarollo-en-django"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
-    (function() { // DON'T EDIT BELOW THIS LINE
+    (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');
       s.src = 'https://the-dojo-mx-blog.disqus.com/embed.js';
       s.setAttribute('data-timestamp', +new Date());

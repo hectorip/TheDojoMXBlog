@@ -1,4 +1,466 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-04-27T02:41:16-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Entendiendo ES6</title><link href="https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html" rel="alternate" type="text/html" title="Entendiendo ES6" /><published>2020-04-27T00:00:00-05:00</published><updated>2020-04-27T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/04/27/entendiendo-es6</id><content type="html" xml:base="https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html">&lt;p&gt;Hace tiempo dimos un curso de ES6 o ES2015. Hicimos una investigación acerca de la historia, la nomenclatura, quién lo creo y porque tanta confusión con los nombres.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-07-15T10:01:22-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Recursos para aprender Arquitectura de Software</title><link href="https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software.html" rel="alternate" type="text/html" title="Recursos para aprender Arquitectura de Software" /><published>2020-07-15T00:00:00-05:00</published><updated>2020-07-15T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software.html">&lt;p&gt;Tuvimos una plática con &lt;a href=&quot;https://twitter.com/machinesareus&quot;&gt;Agustín Ramos&lt;/a&gt; acerca de la arquitectura de software y lo que debes aprender para practicarla. Este pequeño artículo incluye nuestro resumen y las recomendaciones de Agustín.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-la-arquitectura-de-software&quot;&gt;¿Qué es la arquitectura de software?&lt;/h2&gt;
+
+&lt;p&gt;La arquitectura del software incluye el &lt;strong&gt;diseño del sistema&lt;/strong&gt; a alto nivel: la descomposición del sistema en módulos, la descripción de las responsabilidades de cada uno y sus relaciones.&lt;/p&gt;
+
+&lt;p&gt;También incluye las prácticas y herramientas que permitirán que el proyecto cumpla con los &lt;strong&gt;atributos de calidad&lt;/strong&gt; o requerimientos no funcionales.&lt;/p&gt;
+
+&lt;p&gt;Todo lo anterior está basado en un análisis de las &lt;em&gt;funciones&lt;/em&gt; y &lt;em&gt;atributos de calidad&lt;/em&gt; del sistema.&lt;/p&gt;
+
+&lt;h1 id=&quot;el-proceso&quot;&gt;El Proceso&lt;/h1&gt;
+
+&lt;p&gt;En la plática tocamos 5 etapas del desarrollo de una arquitectura:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Descubrimiento y definición de los atributos de calidad.&lt;/strong&gt; Básicamente consiste en entender el problema, escuchar a todos los involucrados en el proyecto y definir los atributos del software que no están directamente relacionados con la funcionalidad, pero que debe de cumplir.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Diseño del sistema.&lt;/strong&gt; Generalmente te ayudarás de estilos de arquitectura y patrones de diseño para llegar a los objetivos funcionales y no funcionales.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Validación del diseño.&lt;/strong&gt; Mediante la creación de prototipos se puede validar que las asunciones principales acerca del diseño y su relación con los atributos de calidad se cumplen. Esto puede derivar en &lt;em&gt;cambios&lt;/em&gt; sobre el diseño que lo mejoren.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Comunicación del diseño.&lt;/strong&gt; Después de definir la arquitectura&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Seguimiento del diseño.&lt;/strong&gt; Esto incluye varias cosas:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;em&gt;Verificación de que el equipo está siguiendo el diseño.&lt;/em&gt; Esto se logra con revisiones constantes con el equipo: programación en parejas y revisión de código.&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;El diseño nunca está está escrito en piedra&lt;/em&gt;. Después de las revisiones de código se descubrirán cosas que no están funcionando como se esperaba, por lo que será necesario modificar el diseño y dejar registro de los cambios y las decisiones tomadas.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;consejos-específicos&quot;&gt;Consejos específicos&lt;/h2&gt;
+
+&lt;p&gt;Los arquitectos de software deben encontrar la solución más simple posible porque si no va a ser rígida.&lt;/p&gt;
+
+&lt;p&gt;Acerca de la &lt;strong&gt;documentación&lt;/strong&gt;, Agustín recomienda, exponerla al equipo en una junta y hacer un video de esto, que se le pase a cada integrante del equipo. Se puede seguir el marco llamado &lt;a href=&quot;https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf&quot;&gt;“Arquitectura 4 + 1”&lt;/a&gt; que se compone de:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Vista de Componentes&lt;/li&gt;
+  &lt;li&gt;Vista de Desarrollo&lt;/li&gt;
+  &lt;li&gt;Vista de Procesos&lt;/li&gt;
+  &lt;li&gt;Vista Física&lt;/li&gt;
+  &lt;li&gt;Vista de Casos (Este es el +1)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Además, tenemos que mantener una bitácora de los cambios y los factores que los impulsaron, esto puede ser mediante los &lt;a href=&quot;https://adr.github.io/&quot;&gt;Architectural decisión Records&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;cómo-empezar&quot;&gt;Cómo empezar&lt;/h2&gt;
+
+&lt;p&gt;Agustín nos recomendó algunos recursos para que empieces a aprender:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/179204.Object_Design?from_search=true&amp;amp;from_srp=true&amp;amp;qid=3yFmpRp03n&amp;amp;rank=6&quot;&gt;Object Design - Rebecca Wirfs-Brock&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/70143.Software_Architecture_in_Practice?from_search=true&amp;amp;from_srp=true&amp;amp;qid=mnXRSoVML7&amp;amp;rank=1&quot;&gt;Software Architecture in Practice&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Como alternativa al libro anterior  se recomienda Technical Report sobre arquitectura del Software Engineering Institute, encontré varios, tienes un ejemplo &lt;a href=&quot;https://pure.au.dk/portal/files/20484966/tech-report-5.pdf&quot;&gt;aquí&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pragprog.com/titles/mkdsa/&quot;&gt;Design it! - Micheal Keeling&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;La serie &lt;a href=&quot;&quot;&gt;Pattern-orinted Software Architecture&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Para aprender patrones de diseño se habló de los siguientes libros:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com.mx/dp/0201633612?tag=amz-mkt-chr-mx-20&amp;amp;ascsubtag=1ba00-01000-a0087-mac00-other-nomod-mx000-pcomp-feature-scomp-wm-5&amp;amp;ref=aa_scomp&quot;&gt;Patrones de Diseño - Erich Gamma, et Al.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Patterns-Handbook-Techniques-Strategies-Applications/dp/0521648181&quot;&gt;The patterns handbook&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;La serie &lt;a href=&quot;https://www.amazon.com.mx/Pattern-Languages-Program-Design-Coplien/dp/0201607344/ref=sr_1_3?dchild=1&amp;amp;keywords=Pattern+Languages+of+Program+Design&amp;amp;qid=1594823984&amp;amp;s=books&amp;amp;sr=1-3&quot;&gt;Pattern language of program design (5 libros)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Y entre los libros que se mencionan como la fuente de las ideas de patrones y diseño:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com.mx/Phenomenon-Life-Building-Nature-Universe/dp/0972652914/ref=pd_sim_14_1/132-2199838-9714154?_encoding=UTF8&amp;amp;pd_rd_i=0972652914&amp;amp;pd_rd_r=43c91cc2-6447-4629-a6d7-fb29dc8fd2d7&amp;amp;pd_rd_w=gNuac&amp;amp;pd_rd_wg=g8gOe&amp;amp;pf_rd_p=a62f455d-612d-4136-9fd7-44067fe2cd11&amp;amp;pf_rd_r=86FX03JZ655BENFVMSC0&amp;amp;psc=1&amp;amp;refRID=86FX03JZ655BENFVMSC0&quot;&gt;The nature of order de Christopher Alexander&lt;/a&gt; y los otros libros de él como &lt;a href=&quot;https://www.amazon.com.mx/Professor-Department-Architecture-Christopher-Alexander/dp/0195024028/ref=pd_sim_14_3/132-2199838-9714154?_encoding=UTF8&amp;amp;pd_rd_i=0195024028&amp;amp;pd_rd_r=c4dd6dad-be5f-4a11-a037-a4ecd8f56915&amp;amp;pd_rd_w=CYjKZ&amp;amp;pd_rd_wg=x61DA&amp;amp;pf_rd_p=a62f455d-612d-4136-9fd7-44067fe2cd11&amp;amp;pf_rd_r=JWAJ48WRNHYPDZ8RC2R1&amp;amp;psc=1&amp;amp;refRID=JWAJ48WRNHYPDZ8RC2R1&quot;&gt;A timeless way of building&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com.mx/Art-Scalability-Architecture-Organizations-Enterprise/dp/0134032802/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;dchild=1&amp;amp;keywords=the+art+of+scalability&amp;amp;qid=1594824264&amp;amp;s=books&amp;amp;sr=1-1&quot;&gt;The art of Scalability&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;el-capítulo&quot;&gt;El capítulo&lt;/h2&gt;
+
+&lt;p&gt;De todos modos no te pierdas el capítulo, que estuvo muy bueno:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vfu5PsSH7us&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="podcast" /><category term="thedojomx" /><category term="arquitectura" /><category term="arquitectura_de_software" /><category term="libros" /><summary type="html">¿Qué es la arquitectura de software y cómo puedes empezar a aprenderla? Aquí te damos un resumen de una plática muy interesante que tuvimos.</summary></entry><entry><title type="html">¿Qué es el pensamiento computacional?</title><link href="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html" rel="alternate" type="text/html" title="¿Qué es el pensamiento computacional?" /><published>2020-07-09T00:00:00-05:00</published><updated>2020-07-09T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html">&lt;p&gt;Todo lo relacionado con el &lt;strong&gt;pensamiento computacional&lt;/strong&gt; (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad, porque vivimos en un mundo en el que &lt;em&gt;cada aspecto de la vida&lt;/em&gt; se ha visto influenciado por lo que la computación permite.&lt;/p&gt;
+
+&lt;p&gt;En varios lugares del mundo se ha pensado que se debe agregar el pensamiento computacional a la educación básica que todos reciben, bajo la promesa de que mejorará en general la &lt;strong&gt;capacidad de pensar y resolver problemas&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hablemos de qué es el pensamiento computacional y cómo te puede ayudar a comprender mejor el mundo creado con la ayuda de las computadoras.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-el-pensamiento-computacional&quot;&gt;¿Qué es el pensamiento computacional?&lt;/h2&gt;
+
+&lt;p&gt;No hay una definición clara, y todo el tiempo está cambiando lo que se entiende por este término, pero podemos dar una definición decente como la &lt;strong&gt;habilidad mental&lt;/strong&gt; y las prácticas que nos permiten &lt;em&gt;diseñar cálculos&lt;/em&gt; para que las computadoras realicen un trabajo.&lt;/p&gt;
+
+&lt;p&gt;Otra acepción es la capacidad de entender el mundo como un &lt;strong&gt;complejo de procesos de información&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Estas dos habilidades combinadas pueden ayudarte a resolver muchos problemas y a navegar mejor el mundo moderno.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, para tener la capacidad de diseñar algoritmos para las computadoras modernas debes entender las bases del funcionamiento y eso necesariamente te llevará a entender sus &lt;strong&gt;limitaciones y fortalezas&lt;/strong&gt;, lo cuál te llevará a evitar que te engañen fácilmente.&lt;/p&gt;
+
+&lt;p&gt;Tener conocimiento de las capacidades además nos hace conscientes de lo que una empresa o gobierno con los suficientes recursos puede lograr en los campo de manipulación y colección de datos, inteligencia artificial, &lt;strong&gt;vigilancia&lt;/strong&gt;, seguridad e influencia sobre los pensamientos colectivos.&lt;/p&gt;
+
+&lt;p&gt;El pensamiento computacional ha avanzado en por lo menos &lt;strong&gt;seis áreas&lt;/strong&gt;. Veamos lo que estas abarcan.&lt;/p&gt;
+
+&lt;h2 id=&quot;métodos-computacionales&quot;&gt;Métodos computacionales&lt;/h2&gt;
+
+&lt;p&gt;Los matemáticos e ingenieros a lo largo de la historia han buscado desarrollar métodos para hacer &lt;strong&gt;más eficientes los cálculos y poder calcular más cosas automáticamente&lt;/strong&gt;. Esto ha permitido que calculemos cosas que en cierto tiempo se creían imposibles.&lt;/p&gt;
+
+&lt;p&gt;Gran parte del trabajo que se ha realizado está dedicado a que los cálculos se puedan realizar sin entendimiento e intuición. Es por eso que se han ido desarrollando áreas de las matemáticas que tienen que ver directamente con esto:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;La lógica&lt;/li&gt;
+  &lt;li&gt;El álgebra booleana&lt;/li&gt;
+  &lt;li&gt;La teoría de autómatas.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Todo esto es con el objetivo de realizar &lt;strong&gt;cálculos libres de errores&lt;/strong&gt; lo más rápidamente posible. Algunas de las tareas principales que los métodos de cómputo incluyen son:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Descomposición de problemas en problemas más sencillos&lt;/li&gt;
+  &lt;li&gt;Distribución de la ejecución de los cálculos en diferentes tiempos y ejecutores&lt;/li&gt;
+  &lt;li&gt;Chequeo y corrección de errores&lt;/li&gt;
+  &lt;li&gt;Representación de información&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;máquinas&quot;&gt;Máquinas&lt;/h2&gt;
+
+&lt;p&gt;La computación está casada con un &lt;em&gt;medio&lt;/em&gt; que ejecute los cálculos. Estas son las computadoras, que han variado con el paso del tiempo.&lt;/p&gt;
+
+&lt;p&gt;La principal motivación de buscar máquinas automáticas que realizaran los cálculos es eliminar los &lt;strong&gt;problemas inherentes&lt;/strong&gt; a los cálculos realizados por humanos: son lentos y propensos a errores.&lt;/p&gt;
+
+&lt;p&gt;Los medios en los que se ejecutan los cálculos han ido evolucionando hasta llegar a los microprocesadores que tenemos hoy que pueden realizar una infinidad de cálculos en poco tiempo.&lt;/p&gt;
+
+&lt;p&gt;Para diseñar y trabajar con estas máquinas, se tienen que entender muchos conceptos, que el pensamiento computacional trata:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Representación de información digitalmente y señales eléctricas como códigos binarios&lt;/li&gt;
+  &lt;li&gt;Diseño de circuitos&lt;/li&gt;
+  &lt;li&gt;Temporización con reloj de los cálculos&lt;/li&gt;
+  &lt;li&gt;Control de flujo&lt;/li&gt;
+  &lt;li&gt;Loops&lt;/li&gt;
+  &lt;li&gt;Memoria digital&lt;/li&gt;
+  &lt;li&gt;Espacios de memoria&lt;/li&gt;
+  &lt;li&gt;Aislamiento de procesos&lt;/li&gt;
+  &lt;li&gt;Tolerancia a fallos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Todo esto está casado con el concepto de computadora digital que tenemos hoy (el modelo de von Neumann), pero &lt;strong&gt;existen otro tipo de computadoras&lt;/strong&gt; que no ejecutan cálculos en la misma forma.&lt;/p&gt;
+
+&lt;p&gt;Dos ejemplos de esto son las redes neuronales y las computadoras cuánticas, que no necesitan una serie de “pasos” para resolver los cálculos y tienen un tipo de pensamiento computacional completamente diferente.&lt;/p&gt;
+
+&lt;p&gt;Es en este punto en donde la computación deja de ser un campo específicamente de las matemáticas y la lógica, ya que los cálculos y los procedimientos realizados están &lt;strong&gt;estrechamente ligados al medio de ejecución&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;De este apartado lo último que tenemos que mencionar es que toda la revolución del mundo que vemos hoy causada por las computadoras está causada por la &lt;strong&gt;gran velocidad&lt;/strong&gt; que las computadoras han alcanzado. Sin esto, que es difícil de comprender (ve la cita de abajo), no podríamos ver todo lo que las computadoras han causado hoy.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;154,300,000,000 de operaciones por segundo en el procesador del iPhone 11 Pro.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;educación-de-ciencias-de-la-computación&quot;&gt;Educación de ciencias de la computación&lt;/h2&gt;
+
+&lt;p&gt;Difundir el conocimiento para crear procedimientos que las computadoras automáticas puedan ejecutar es una de las principales tareas y &lt;em&gt;responsabilidades&lt;/em&gt; del pensamiento computacional.&lt;/p&gt;
+
+&lt;p&gt;Al ser una combinación de ingeniería, matemáticas y ciencia la computación nació como un campo nuevo de estudios que tomó tiempo en ser reconocido y abrazado como una ciencia más.&lt;/p&gt;
+
+&lt;p&gt;Las ciencias de la computación han sido entendidas de diferentes formas a lo largo del tiempo:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Como los fenómenos que rodean a las computadoras&lt;/li&gt;
+  &lt;li&gt;Entendiendo la programación como un arte y una ciencia&lt;/li&gt;
+  &lt;li&gt;Computación == Automatización&lt;/li&gt;
+  &lt;li&gt;Entendimiento del universo como una computadora gigantezca&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Estas etapas del entendimiento de las ciencias de la computación han modificado la forma en que el pensamiento computacional es entendido.&lt;/p&gt;
+
+&lt;h2 id=&quot;ingeniería-del-software&quot;&gt;Ingeniería del Software&lt;/h2&gt;
+
+&lt;p&gt;El software son los programas que las computadoras digitales modernas ejecutan para realizar los cálculos que les permiten realizar todas las tareas a las que estamos acostumbrados.&lt;/p&gt;
+
+&lt;p&gt;La &lt;strong&gt;construcción de software&lt;/strong&gt; es una da las tareas más importantes que se relacionan con el pensamiento computacional. Lo más importante de esta área es la entrega confiable de software listo para entornos de la vida real (&lt;em&gt;de producción&lt;/em&gt;), que tiene las siguientes características:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Confiable (no falla constantemente)&lt;/li&gt;
+  &lt;li&gt;Usable (cumple con su función, a una velocidad adecuada)&lt;/li&gt;
+  &lt;li&gt;Seguro (no causa daños y no se puede robar información)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hacer software con estas características es una tarea súmamente difícil por la complejidad que implica.&lt;/p&gt;
+
+&lt;p&gt;La ingeniería es “la aplicación de las matemáticas y la ciencia a los problemas de las personas”. Así, la ingeniería de software busca establecer &lt;strong&gt;técnicas y procedimientos para desarrollar software correcto&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Además la ingeniería del software ha buscado desarrollar herramientas que faciliten el desarrollo de software. Es un área muy compleja del pensamiento computacional que está constante evolución y el principal problema de la industria del software actual.&lt;/p&gt;
+
+&lt;h2 id=&quot;diseño-de-software&quot;&gt;Diseño de Software&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;El buen diseño produce un objeto que funciona para las personas en un contexto de necesidades y valores, para producir resultados de calidad y una &lt;strong&gt;experiencia satisfactoria&lt;/strong&gt;. - Terry Winograd&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;El software muchas veces está hecho para interactuar con personas. La tarea del diseñador de software es diseñar programas que &lt;strong&gt;resuelvan los problemas de los usuarios&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Esto tiene que ver con la forma de usarlo, las interfaces que presentará a los usuarios, las funciones, las actualizaciones, la protección de información, los medios de presentación y muchas más tareas relacionadas con &lt;strong&gt;crear software que deleite al usuario&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;La principal diferencia con la ingeniería de software es que mientras la ingeniería está pensada desde el punto de vista &lt;strong&gt;del programador&lt;/strong&gt;, el diseño está pensado desde el punto de vista &lt;strong&gt;del usuario&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Es decir, la ingeniería asegura que el programa funciona como el programador desea, el diseño asegura que el programa hace lo que el usuario necesita.&lt;/p&gt;
+
+&lt;h2 id=&quot;ciencia-computacional&quot;&gt;Ciencia computacional&lt;/h2&gt;
+
+&lt;p&gt;La ciencia ha sido completamente revolucionada por lo que la computación electrónica automática permite, desde grandes cantidades de cálculos en poco tiempo hasta simulaciones de los procesos naturales.&lt;/p&gt;
+
+&lt;p&gt;Desde que la computación automática existe, ha sido una gran ayuda para llegar a lugares que no se había siquiera podido soñar. Incluso se han creado &lt;strong&gt;nuevas ciencias&lt;/strong&gt;, que son la combinación de una ciencia tradicional con la computación como “Biología computacional”.&lt;/p&gt;
+
+&lt;p&gt;Pero la ciencia computacional requiere su &lt;strong&gt;propio tipo de pensamiento computacional&lt;/strong&gt;, desde los métodos hasta el software creado. No se aplican las misma técnicas ni herramientas que para el software no usado en la ciencia. Es por eso que el uso de la computación en las ciencias he hecho &lt;strong&gt;avanzar a la computación&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Otro aspecto del pensamiento computacional en la ciencia es el uso del conocimiento de los procesos de información para &lt;strong&gt;interpretar el mundo natural como una conexión muchos modelos de información&lt;/strong&gt;. Esto nos revela que la computación ha influido incluso en la manera en la que vemos el mundo.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;El pensamiento computacional es mucho más complejo de lo que parece o de los que los medios han entendido (“hacer algoritmos”).&lt;/p&gt;
+
+&lt;p&gt;Este campo del pensamiento es tan grande que no alcanzaría una vida para cubrirlo en su totalidad, pero podemos tener una idea general de los campos que abarca y si nos gusta, especializarnos en uno de ellos.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;Este artículo está basado en el libro &lt;a href=&quot;https://mitpress.mit.edu/books/computational-thinking&quot;&gt;Computational Thinking&lt;/a&gt; de Peter J. Denning y Matti Tedre.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cs" /><category term="computational-thinking" /><category term="pensamiento-computacional" /><category term="libros" /><category term="mit" /><summary type="html">El pensamiento computacional ha sonado mucho en los medios últimamente. Hablemos de lo que es y todo lo que implica.</summary></entry><entry><title type="html">¿Qué es un engine de JavaScript?</title><link href="https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html" rel="alternate" type="text/html" title="¿Qué es un engine de JavaScript?" /><published>2020-05-17T00:00:00-05:00</published><updated>2020-05-17T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript</id><content type="html" xml:base="https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html">&lt;p&gt;Me llamó mucho la atención  la salida de &lt;a href=&quot;https://deno.land/v1&quot;&gt;Deno v1 esta semana&lt;/a&gt; y le quise echar un ojito. Pero desde la explicación que da inicialmente, no entiendo &lt;em&gt;exactamente&lt;/em&gt; lo que es y hace:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Aquí me surgió la pregunta: ¿Qué es un &lt;strong&gt;runtime&lt;/strong&gt; para JavaScript?&lt;/p&gt;
+
+&lt;p&gt;Pero para contestarla, antes tengo que entender &lt;strong&gt;qué es V8&lt;/strong&gt;. La respuesta es: un &lt;em&gt;engine&lt;/em&gt; o &lt;em&gt;motor&lt;/em&gt; de JavaScript. En este artículo explicaremos qué es y cómo funciona.&lt;/p&gt;
+
+&lt;h2 id=&quot;explicación-rápida&quot;&gt;Explicación rápida&lt;/h2&gt;
+
+&lt;p&gt;Puedes pensar en un engine o motor de JavaScript como en el programa encargado de correr el código de JavaScript. Todos los navegadores tienen uno:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Navegador&lt;/th&gt;
+      &lt;th&gt;Engine&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Chrome&lt;/strong&gt; y &lt;strong&gt;Opera&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://v8.dev/&quot;&gt;V8&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Firefox&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey&quot;&gt;SpiderMonkey&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Safari&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://trac.webkit.org/wiki/JavaScriptCore&quot;&gt;WebKit JSCore&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Edge&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/microsoft/ChakraCore&quot;&gt;Chakra&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Este, combinado con el motor web componen la mayor parte de un navegador. Los engines se pueden usar fuera de los navegadores para otras tareas, como en Deno o Node.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;El &lt;strong&gt;motor de JavaScript&lt;/strong&gt; es quien convierte tu código de JavaScript en código ejecutable por la máquina en la que va a correr.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;teoría-compilación-contra-interpretación&quot;&gt;Teoría: Compilación contra Interpretación&lt;/h2&gt;
+
+&lt;p&gt;Para correr un programa en cualquier lenguaje, hay que convertirlo en instrucciones que las computadoras puedan entender. Esto es el &lt;strong&gt;código máquina&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Los lenguajes compilados transforman todo el código &lt;strong&gt;antes de ejecutarlo&lt;/strong&gt;, por lo que pueden hacer optimizaciones generales para que el programa sea más eficiente.&lt;/p&gt;
+
+&lt;p&gt;Para que el programa compile tiene que estar libre de errores. Generalmente esa compilación lleva un poco de tiempo, que va creciendo dependiendo del tamaño y complejidad del programa. Los programas compilados pueden ser más eficientes en ejecución, pero cuesta más empezarlos a correr.&lt;/p&gt;
+
+&lt;p&gt;Los lenguajes interpretados van ejecutando &lt;strong&gt;línea por línea&lt;/strong&gt;, sentencia por sentencia. Por esto mismo no pueden hacer optimizaciones generales, pero es más fácil y rápido para el programador &lt;em&gt;empezar&lt;/em&gt; a ejecutarlos. Normalmente tienen un &lt;strong&gt;REPL&lt;/strong&gt; (Read - Eval - Print - Loop) que puede servir para jugar con ellos y hacer pruebas.&lt;/p&gt;
+
+&lt;p&gt;Se pude pensar que es &lt;em&gt;más fácil&lt;/em&gt; desarrollar en lenguajes interpretados que compilados, por lo que su desarrollo es &lt;em&gt;más rápido&lt;/em&gt;. Pero como los lenguajes compilados pueden hacer optimizaciones generales, son &lt;strong&gt;más eficientes&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;la-ejecución-de-javascript&quot;&gt;La ejecución de JavaScript&lt;/h2&gt;
+
+&lt;p&gt;JavaScript &lt;em&gt;nació&lt;/em&gt; como lenguaje &lt;strong&gt;interpretado&lt;/strong&gt;, para correr dentro del navegador Netscape. La idea principal de esto es que no necesitara de un paso de &lt;em&gt;compilación&lt;/em&gt; previa, entendida como la generación de un producto intermedio que sea ejecutable.&lt;/p&gt;
+
+&lt;p&gt;El encargado de esta “interpretación”, es decir, de convertir instrucciones de JavaScript en
+instrucciones de la computadora es el &lt;em&gt;engine o motor&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pero los motores modernos de JavaScript están muy optimizados, la ejecución de JS puede a veces compararse con la de lenguajes completamente compilados. Y esto es gracias las optimizaciones de compilación en el momento de la ejecución: &lt;em&gt;just in time&lt;/em&gt; o &lt;strong&gt;JIT&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;En resumen: JavaScript dejó de de ser un lenguaje &lt;em&gt;puramente interpretado&lt;/em&gt; para convertirse en un lenguaje híbrido, con interpretación y compilado JIT. Se comporta como interpretado cuando un programador lo corre, pero el motor compila el código, produciendo algunas veces un producto intermedio (bytecode) que puede ser optimizado para que las siguientes ejecuciones sean mucho más rápidas.&lt;/p&gt;
+
+&lt;h2 id=&quot;las-etapas-de-un-motor-de-javascript&quot;&gt;Las etapas de un motor de JavaScript&lt;/h2&gt;
+
+&lt;p&gt;Ls principales etapas son:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Escaneo&lt;/strong&gt;. Convierte el texto del código que escribes en &lt;em&gt;tokens&lt;/em&gt;. Un token es un bloque de carácteres que tienen un significado sintáctico. Ejemplo: &lt;code class=&quot;highlighter-rouge&quot;&gt;x=33&lt;/code&gt; está compuesto por 3 tokens: Un identificador (&lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt;), un operador (&lt;code class=&quot;highlighter-rouge&quot;&gt;=&lt;/code&gt;) y un número (&lt;code class=&quot;highlighter-rouge&quot;&gt;33&lt;/code&gt;). Puedes irte por el hoyo del conejo si quieres entender como funciona el scanner de V8 aquí: &lt;a href=&quot;https://v8.dev/blog/scanner&quot;&gt;Blazingly fast parsing&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Parseo&lt;/strong&gt;. No encontré la palabra correcta para traducirlo, pero se puede entender como la ‘lectura’ de un texto que lo transforma en una estructura de datos. Esta fase convierte el conjunto de &lt;em&gt;tokens&lt;/em&gt; generados por el scanner en un Árbol de Sintaxis Abstracta (AST - Abstract Sintax Tree). Este árbol representa tu programa sintácticamente y se pasa a la siguiente fase de la compilación.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Interpretación&lt;/strong&gt;. En esta fase se toma el AST y se convierte en una primera versión de código que la máquina ya puede ejecutar, &lt;em&gt;sin optimizaciones&lt;/em&gt;. Genera además código intermedio (bytecode) que puede ser pasado a la siguiente etapa para optimizarlo. En V8 se llama &lt;a href=&quot;https://medium.com/dailyjs/understanding-v8s-bytecode-317d46c94775&quot;&gt;Ignition&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Optimización&lt;/strong&gt;. Esta parte es ejecutada por un compilador JIT, que analiza el código, cómo se comporta, los tipos de datos usados para crear una versión más optimizada en código máquina. Si las optimizaciones fallan, el bytecode sigue siendo ejecutado por el intérprete. En V8 se llama &lt;a href=&quot;https://v8.dev/docs/turbofan&quot;&gt;TurboFan&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Las últimas dos etapas son donde el código se ejecuta, una en forma de bytecode interpretado y la otra en forma de código máquina &lt;strong&gt;altamente eficiente y optimizado&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Aquí puedes ver un diagrama de la secuencia de operaciones de V8.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1589700777/1_ZIH_wjqDfZn6NRKsDi9mvA_wc08nl.png&quot; alt=&quot;Ejecución de un script de JavaScript&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ejecución&quot;&gt;Ejecución&lt;/h2&gt;
+
+&lt;p&gt;Durante la ejecución, el motor de JavaScript debe mantener por lo menos dos cosas:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;La información de tu programa&lt;/li&gt;
+  &lt;li&gt;En qué parte del programa estamos&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Esto lo hace mediante dos espacios de memoria organizados específicamente para estas tareas:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;El &lt;strong&gt;Heap&lt;/strong&gt;. Encargado de mantener la información de las variables y todo otro dato ocupado por el programa.&lt;/li&gt;
+  &lt;li&gt;El &lt;strong&gt;Stack&lt;/strong&gt;. Encargado de llevar un registro de las llamadas a funciones y contextos de ejecución.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Además necesitamos a alguien que libere memoria para que nuestro programa no crezca infinitamente en la memoria y el &lt;em&gt;heap&lt;/em&gt; sea fácil de acceder. Esto es el &lt;strong&gt;garbage collector&lt;/strong&gt; o &lt;em&gt;recolector de basura&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Todo este proceso complejo se explica en mayor profundidad aquí: &lt;a href=&quot;https://deepu.tech/memory-management-in-v8/&quot;&gt;Visualizing memory management in V8 Engine&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Esto es lo básico que necesitamos entender de lo que hace un motor de JavaScript, el encargado de ejecutar el código. Pero no es suficiente contar con alguien que pueda correr el código, necesitamos además &lt;strong&gt;algo que nos proporcione el material para trabajar&lt;/strong&gt;, ya que los programas en general actúan sobre algo, u obtienen información de algún lado. Esto es el &lt;strong&gt;Runtime&lt;/strong&gt;, que explicaremos en el siguiente artículo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="js" /><category term="javascript" /><category term="compiladores" /><category term="javascript-engine" /><category term="v8" /><category term="chrome" /><summary type="html">Hablemos de qué es y cómo funciona un motor de Javascript.</summary></entry><entry><title type="html">Cursos certificados gratuitos</title><link href="https://blog.thedojo.mx/2020/05/16/cursos-certificados-gratuitos.html" rel="alternate" type="text/html" title="Cursos certificados gratuitos" /><published>2020-05-16T00:00:00-05:00</published><updated>2020-05-16T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/05/16/cursos-certificados-gratuitos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/05/16/cursos-certificados-gratuitos.html">&lt;p&gt;Debido a la emergencia sanitaria mundial, algunas universidades han liberado cursos
+que además de auditar, puedes cursar para obtener un &lt;strong&gt;cetificado&lt;/strong&gt;. Si quieres mejorar un poco tu perfil del LinkedIn aquí te ponemos unos cursos de tecnología que puedes tomar.&lt;/p&gt;
+
+&lt;h2 id=&quot;programación&quot;&gt;Programación&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/computer-programming-for-everyone-17488&quot;&gt;Computer Programming For Everyone&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/c-plus-plus-a?edocomorp=free-courses-high-school&quot;&gt;C++ For C Programmers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/codeyourself-2938&quot;&gt;Code Yourself! An introduction to Programming&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/android-app-5719&quot;&gt;Build Your First Android App&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/aprogramar-2939&quot;&gt;¡A Programar! Una introducción a la programación&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/robotica-inicial-4659&quot;&gt;Robótica (para niños)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/computer-vision-basics&quot;&gt;Computer Vision Basics&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ia-y-machine-learning&quot;&gt;IA y Machine Learning&lt;/h2&gt;
+
+&lt;h3 id=&quot;español&quot;&gt;Español&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/ai-for-everyone-es-13786&quot;&gt;IA para todos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;inglés&quot;&gt;Inglés&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/datasciencemathskills-7745&quot;&gt;Data Scince Math Skills&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/machine-learning-business-professionals-13415&quot;&gt;Machine Learning for Business Professionals&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;cloud-computing&quot;&gt;Cloud Computing&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/cloud-computing-basics-18069&quot;&gt;Cloud Computing Basics&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/gcp-fundamentals-aws-8614&quot;&gt;Google Cloud Platform Fundamentals for AWS Professionals&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/aws-machine-learning-16924&quot;&gt;Getting Started with AWS Machine Learning&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/cloud-identity-10785&quot;&gt;Introduction to Cloud Identity&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/iiot-google-cloud-platform-12701&quot;&gt;Industrial IoT on Google Cloud Platform&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/developing-ai-applications-azure-17329&quot;&gt;Developing AI Applications on Azure&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/conversational-experiences-dialogflow-12529&quot;&gt;Building Conversational Experiences with Dialogflow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/aws-computer-vision-gluoncv-17327&quot;&gt;AWS Computer Vision: Getting Started with GluonCV&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;matemáticas&quot;&gt;Matemáticas&lt;/h2&gt;
+
+&lt;h3 id=&quot;español-1&quot;&gt;Español&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.coursera.org/learn/estadistica-probabilidad&quot;&gt;Estadística y probabilidad (UNAM)&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/calculo-1-4231&quot;&gt;El Cálculo - Modelo Lineal&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/calculo-2-4226&quot;&gt;El Cálculo - Modelo Cuadrático&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/calculo-3-4284&quot;&gt;El Cálculo - Modelo Cúbico&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/calculo-4-4167&quot;&gt;El Cálculo - Otros Modelos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;inglés-1&quot;&gt;Inglés&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/matlab&quot;&gt;Introduction to Matlab&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/datasciencemathskills-7745&quot;&gt;Data Scince Math Skills&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/introduccion-al-calculo-4225&quot;&gt;Pre-Calculus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/introduction-to-calculus-12547&quot;&gt;Introduction to Calculus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;diseño&quot;&gt;Diseño&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/design&quot;&gt;Design: Creation of Artifacts in Society&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/design-language-16927&quot;&gt;The Language of Design: Form and Meaning&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;otros-temas&quot;&gt;Otros temas&lt;/h2&gt;
+
+&lt;h3 id=&quot;español-2&quot;&gt;Español&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/pensamiento-sistemico-4332&quot;&gt;Pensamiento Sistémico&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/mindshift-transforma-mente-10619&quot;&gt;Mindshift: Transforma tu mente para superar obstáculos en el aprendizaje y descubrir tu potencial oculto&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/arte-publico-pedagogia-7196&quot;&gt;ART of the MOOC: Arte Público y Pedagogía&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/escritura-esp-13496&quot;&gt;Fundamentos de la Escritura&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/innovacion-734&quot;&gt;Desarrollo rápido de productos innovadores para mercados emergentes&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/hablar-bien-en-publico-10518&quot;&gt;Cómo hablar bien en público&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;inglés-2&quot;&gt;Inglés&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/teamwork-skills-effective-communication-9661&quot;&gt;Teamwork Skills: Communicating Effectively in Groups&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/personal-branding-4865&quot;&gt;Introduction to personal branding&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/understanding-arguments-6620&quot;&gt;Think Again I&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/market-analytics-4868&quot;&gt;Marketing Analytics&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/skills-management-11218&quot;&gt;Introduction to Skills Management&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/how-to-write-a-scientific-paper-5816&quot;&gt;How to Write and Publish a Scientific Paper&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/emerging-technologies-lifelong-learning-10396&quot;&gt;Exploring Emerging Technologies for Lifelong Learning and Success&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/making-architecture-7153&quot;&gt;MAking Architecture&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Puedes ver una lista actualizada de los cursos aquí: &lt;a href=&quot;https://www.classcentral.com/report/free-online-learning-coronavirus/&quot;&gt;Free Learning Due to Coronavirus&lt;/a&gt;. Es emocionante ver todo lo que se puede aprender si uno puede ponerle el tiempo necesario.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cursos" /><category term="aprendizaje" /><category term="programación" /><category term="matemáticas" /><category term="mooc" /><summary type="html">Es emocionante todo lo que se puede aprender en internet. Revisa algunos cursos que además te certifcan gratuitamente.</summary></entry><entry><title type="html">Entendiendo ES6</title><link href="https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html" rel="alternate" type="text/html" title="Entendiendo ES6" /><published>2020-04-27T00:00:00-05:00</published><updated>2020-04-27T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/04/27/entendiendo-es6</id><content type="html" xml:base="https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html">&lt;p&gt;Hace tiempo dimos un curso de ES6 o ES2015. Hicimos una investigación acerca de la historia, la nomenclatura, quién lo creo y porque tanta confusión con los nombres.&lt;/p&gt;
 
 &lt;p&gt;En este video explicamos eso y más: las características principales que se agregaron y la diferencia entre JavaScript y ECMAScript.&lt;/p&gt;
 
@@ -434,222 +896,4 @@ hablar en contra de la sabiduría popular.&lt;/p&gt;
 
 &lt;p&gt;¿Puedes pensar en otros ejemplos? En el libro &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;PoSD&lt;/a&gt; vienen algunos.&lt;/p&gt;
 
-&lt;p&gt;En el próximo artículo hablaremos de otra forma de fugas de información: la descomposición temporal.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="interfaces" /><category term="módulo" /><category term="complejidad" /><category term="diseño-de-software" /><summary type="html">Ocultar información es una de las claves para reducir la complejidad, veamos algunas maneras de lograrlo.</summary></entry><entry><title type="html">A Philosophy of Software Design: Los módulos deben ser profundos</title><link href="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Los módulos deben ser profundos" /><published>2020-03-02T00:00:00-06:00</published><updated>2020-03-02T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html">&lt;p&gt;Para reducir la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es la organización y separación de código a alto nivel, es decir separación en módulos.&lt;/p&gt;
-
-&lt;h2 id=&quot;por-qué-es-importante-la-separación&quot;&gt;Por qué es importante la separación&lt;/h2&gt;
-
-&lt;p&gt;Antes de empezar a hablar de cómo deberíamos diseñar nuestros módulos hablemos de por qué es importante la separación.&lt;/p&gt;
-
-&lt;p&gt;La mejor forma de resolver un problema complejo es mediante &lt;em&gt;la descomposición&lt;/em&gt; del problema en problemas más sencillos. Estos problemas se resuelven individualmente, idealmente de de manera independiente en un módulo por separado para cada uno. De esta manera podemos hacer software más mantenible y fácil de entender. Incluso se puede dividir mejor el trabajo.&lt;/p&gt;
-
-&lt;p&gt;La división del problema permite además &lt;strong&gt;ocultar&lt;/strong&gt; información no relevante para el problema en cuestión.&lt;/p&gt;
-
-&lt;p&gt;Esta división del trabajo es diferente dependiendo del paradigma del lenguaje de programación que usemos, así que veamos a qué nos referimos con un &lt;strong&gt;módulo&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-un-módulo&quot;&gt;¿Qué es un módulo?&lt;/h2&gt;
-
-&lt;p&gt;Una definición fácil y amplia de “módulo” dada por &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;“A Philosophy of Software Design”&lt;/a&gt; es: &lt;em&gt;todo aquello que agrupe código, proveyendo separación de funcionalidad&lt;/em&gt;, es decir que agrupe comportamiento en detrás de una &lt;em&gt;interfaz&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Un módulo puede ser una función, una clase, un paquete o cosas similares dependiendo del lenguaje de programación. Un módulo incluso puede ser una API HTTP u otro programa.&lt;/p&gt;
-
-&lt;p&gt;Como resumen: &lt;strong&gt;un módulo permite hacer &lt;em&gt;algo&lt;/em&gt; mediante una interfaz.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Ahora bien, ¿qué es la interfaz de un módulo?&lt;/p&gt;
-
-&lt;h2 id=&quot;interfaces&quot;&gt;Interfaces&lt;/h2&gt;
-
-&lt;p&gt;Ya hemos hablado sobre &lt;a href=&quot;https://www.youtube.com/watch?v=n8MxyHG0j3Q&amp;amp;t&quot;&gt;lo que es una interfaz&lt;/a&gt;, pero para resumir: es el punto en donde un sistema, en este caso específico, un módulo, se encuentra con otro (otro módulo o código que lo usa).&lt;/p&gt;
-
-&lt;p&gt;Un módulo tiene una interfaz que permite a otras partes del sistema usarlo. Usaremos el caso más sencillo, una función. La interfaz de una función es su firma: su nombre, los parámetros que recibe y lo que devuelve.&lt;/p&gt;
-
-&lt;p&gt;Veamos un ejemplo:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;archivo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;my_file.md&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;w&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Devuelve un apuntador a un archivo abierto
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;La interfaz de la función es su nombre &lt;code class=&quot;highlighter-rouge&quot;&gt;open&lt;/code&gt; (nos permite identificarla y comunica información sobre lo que hace), el nombre del archivo como primer parámetro y el modo de operación en el segundo.&lt;/p&gt;
-
-&lt;p&gt;Dependiendo de la forma de agrupar la interfaz de los módulos varía, pero recuerda esto: &lt;strong&gt;la interfaz es la parte visible del módulo hacia otros módulos&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;diseño-de-módulos&quot;&gt;Diseño de módulos&lt;/h2&gt;
-
-&lt;p&gt;Aquí entramos en lo importante: los módulos deberían ser lo más profundos posible.&lt;/p&gt;
-
-&lt;p&gt;¿A qué nos referimos con un módulo profundo?&lt;/p&gt;
-
-&lt;p&gt;Observa el siguiente diagrama:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1583213511/IMG_0058_xm2b6w.jpg&quot; alt=&quot;Módulos profundos vs superficiales&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Un módulo profundo tiene una &lt;strong&gt;interfaz sencilla&lt;/strong&gt; o fácil de usar para la mayoría de los casos de uso y provee de mucha funcionalidad, hace mucho por ti.&lt;/p&gt;
-
-&lt;p&gt;Un módulo superficial tiene una interfaz compleja o difícil de usar y provee poca funcionalidad.&lt;/p&gt;
-
-&lt;p&gt;Esto no es absoluto: la relación entre la complejidad de la interfaz es relativa a la funcionalidad que provee, por ejemplo, si un módulo hace muchas cosas por ti, puede que requiera muchos datos. La relación interfaz/funcionalidad debe ser razonable para considerar que el módulo es profundo.&lt;/p&gt;
-
-&lt;p&gt;Abrir archivos en la mayoría de los lenguajes es un ejemplo de una función profunda: con una interfaz muy pequeña (el nombre y el modo), la función se encarga de todos los detalles de implementación de apertura y creación del archivo. No te debes de preocupar por cosas como el sistema de archivos, el guardado físico en el disco, por verificar si hay memoria, etc.&lt;/p&gt;
-
-&lt;p&gt;En el caso contrario, los getters y setters que se acostumbra usar en algunos lenguajes de programación (Java) son ejemplo de funciones poco profundas, generalmente no hacen algo más que devolver el valor de la propiedad.&lt;/p&gt;
-
-&lt;p&gt;Ejemplo: Piensa en un aparato electrónico. En una televisión, sus control remoto te permiten acceder a las funcionalidades de encender el panel de iluminación, captar la señal del canal, decodificarlo y saltar entre diferentes canales, todo sin preocuparte tú por los detalles. Sólo la usas y ya. Mientras más detalles de implementación oculte es más fácil de usar.&lt;/p&gt;
-
-&lt;h2 id=&quot;ventajas-de-los-módulos-profundos&quot;&gt;Ventajas de los módulos profundos&lt;/h2&gt;
-
-&lt;p&gt;Encontrar un equilibrio entre la cantidad de código que metes en un módulo y la interfaz que expone tiene varias ventajas:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;El código se puede re-usar en otras partes del sistema&lt;/li&gt;
-  &lt;li&gt;Evitas la acumulación de interfaces, es decir, tener demasiadas interfaces (funciones, clases o módulos) que tienes que aprender a usar y que hacen poco por ti&lt;/li&gt;
-  &lt;li&gt;La expansión de cambios (tener que tocar muchos lados del sistema para hacer un cambio relativamente pequeño)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Finalmente, recuerda que una de las funciones que proveen los módulos es &lt;em&gt;ocultar&lt;/em&gt; la complejidad. ¿Cuántas veces has visto lo que hacen las funciones prefabricadas de tu lenguaje de programación? Es probable que ninguna. Los módulos profundos y bien hechos permiten ocultar mayor cantidad de información y hace más fácil trabajar con ellos y simplifica el sistema en general.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="módulo" /><category term="PoSD" /><category term="ousterhout" /><category term="complejidad" /><category term="función" /><summary type="html">Veamos algunos lineamientos para el diseño de funciones/clases/módulos que ayudarán a reducir la complejidad de tus sistemas de software.</summary></entry><entry><title type="html">A Philosophy of Software Design: Tres formas de identificar la complejidad</title><link href="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Tres formas de identificar la complejidad" /><published>2020-02-26T00:00:00-06:00</published><updated>2020-02-26T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html">&lt;blockquote&gt;
-  &lt;p&gt;“Controlar la complejidad es la esencia de la programación” - Brian W. Kernighan&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Muchas mentes brillantes dedicadas al desarrollo de software han estado de acuerdo en que el principal problema al crear y mantener programas es el manejo de la complejidad.&lt;/p&gt;
-
-&lt;p&gt;Podemos decir que algo complejo es aquello que está &lt;strong&gt;compuesto por muchas piezas relacionadas entre ellas&lt;/strong&gt;. &lt;a href=&quot;http://web.stanford.edu/~ouster/cgi-bin/home.php&quot;&gt;Ousterhout&lt;/a&gt; lo define de manera práctica &lt;em&gt;como todo aquello que hace que el software sea difícil de entender, escribir o mantener&lt;/em&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;La complejidad es más visible para los lectores que para los escritores [del código]. Si escribes una pieza de código que parece simple para ti, pero otras personas piensan que es compleja, entonces es &lt;strong&gt;compleja&lt;/strong&gt;. - John Ousterhout&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Philosophy of Software Design habla de tres formas de identificar un programa más complejo de lo que debería ser:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Amplificación de cambios&lt;/li&gt;
-  &lt;li&gt;Carga cognitiva&lt;/li&gt;
-  &lt;li&gt;Desconocidos desconocidos&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Identificar la complejidad es una &lt;strong&gt;habilidad crítica para el buen diseño de software&lt;/strong&gt;, te permitirá crear sistemas más simples y evitará que gastes recursos en desarrollar soluciones que son demasiado complejas.&lt;/p&gt;
-
-&lt;h2 id=&quot;amplificación-de-cambios&quot;&gt;Amplificación de cambios&lt;/h2&gt;
-
-&lt;p&gt;Este síntoma de la complejidad se hace obvio cuando estás haciendo un cambio que debió haber sido sencillo y tienes que tocar 7 archivos, 3 clases y 4 funciones. Se refiere a que una funcionalidad que parece sencilla del programa está repartida en muchos lados y para lograr hacer un cambio hay que tocar muchas partes del sistema.&lt;/p&gt;
-
-&lt;p&gt;Esto se pude dar cuando parámetros o valores que pueden estar centralizados o referenciados se ponen fijos a través de muchos archivos. También cuando código que se podría reutilizar se copia y pega.&lt;/p&gt;
-
-&lt;h2 id=&quot;carga-cognitiva&quot;&gt;Carga cognitiva&lt;/h2&gt;
-
-&lt;p&gt;Si tienes que mantener muchas cosas en la cabeza para poder entender el sistema, es complejo. Puede que tengas que entender y aprender muchas cosas acerca del funcionamiento del programa para usarlo bien y no causar un desastre. Cuando algo no tiene una interfaz simple, causa carga cognitiva.&lt;/p&gt;
-
-&lt;p&gt;El ejemplo son las funciones de lenguajes de programación que nunca aprendemos a usar porque tienen parámetros que aunque siempre son los mismos son requeridos por no tener un default decente. O por ejemplo, aquellas funciones que no recuerdas si cambian los parámetros o devuelven uno nuevo.&lt;/p&gt;
-
-&lt;p&gt;Aunque programas más cortos están relacionados con baja carga cognitiva, no siempre es el caso debido a que ese poco código que existe sea difícil de entender.&lt;/p&gt;
-
-&lt;h2 id=&quot;desconocidos-desconocidos&quot;&gt;Desconocidos desconocidos&lt;/h2&gt;
-
-&lt;p&gt;¿Tienes miedo de cambiar algo porque no sabes lo que pueda pasar y no hay ni documentación a la que puedas referirte? En este caso el sistema tiene información &lt;strong&gt;que no sabes que no sabes&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Un desconocido desconocido es aquella información que ni siquiera sabemos que estaba ahí y que no conocíamos, como algunas características del código, parámetros ocultos y comportamientos que no son fáciles de detectar ni están documentados.&lt;/p&gt;
-
-&lt;p&gt;¿Recuerdas la broma que dice: &lt;em&gt;“Cuando escribí este código sólo Dios y yo sabíamos lo que hacía, ahora sólo Dios sabe”&lt;/em&gt;? Muchas veces nos pasa así con el código y es el ejemplo perfecto de los desconocidos desconocidos, sobre todo para otros programadores.&lt;/p&gt;
-
-&lt;h2 id=&quot;medición-de-la-complejidad&quot;&gt;Medición de la complejidad&lt;/h2&gt;
-
-&lt;p&gt;Un sistema puede ser complejo independientemente de su tamaño, es decir, hay sistemas no tan grandes que son muy complejos.&lt;/p&gt;
-
-&lt;p&gt;Para determinar la complejidad se puede pensar en la siguiente fórmula.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581460560/Untitled_Artwork_3_oljybd.jpg&quot; alt=&quot;Fórmula para calcular la complejidad&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Esto lo podríamos explicar como:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;La complejidad total de un sistema es la sumatoria de la complejidad de cada una de sus partes multiplicada por el tiempo que los desarrolladores pasan en esa parte del código.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Esta complejidad puede evitar que avances tanto como deberías, pero el primer paso es identificarla como lo viste aquí. En los siguientes artículos hablaremos de técnicas para reducir la complejidad.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="ousterhout" /><category term="complejidad" /><category term="diseño-de-software" /><category term="posd" /><summary type="html">Aprende a descubrir y medir la complejidad en tus proyectos</summary></entry><entry><title type="html">Eloquent JavaScript en Español</title><link href="https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol.html" rel="alternate" type="text/html" title="Eloquent JavaScript en Español" /><published>2020-02-21T00:00:00-06:00</published><updated>2020-02-21T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/21/eloquent-javascript-en-espanol.html">&lt;blockquote&gt;
-  &lt;p&gt;TL;DR: Estamos trabajando en una nueva traducción de Eloquent JavaScript al español, en su tercera edición. La puedes encontrar aquí: &lt;a href=&quot;https://eloquentjs-es.thedojo.mx/&quot;&gt;Eloquent JavaScript en Español&lt;/a&gt;. Está la versión en &lt;a href=&quot;https://eloquentjs-es.thedojo.mx/Eloquent_JavaScript.pdf&quot;&gt;Eloquent JavaScript en Español en PDF&lt;/a&gt;, que actualizamos cada capítulo. Si quieres contribuir puedes ponerte de acuerdo a través de este foro o en GitHub.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Desde el 2015 intentamos empezar a traducir la 2da edición de Eloquent JavaScript. Puedes ver el post en Medium aquí: &lt;a href=&quot;http://bit.ly/39W8qAH&quot;&gt;Traducción de Eloquent JavaScript al Español&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Pasó el tiempo y tradujimos &lt;a href=&quot;http://bit.ly/2T3FLCZ&quot;&gt;algunos capítulos&lt;/a&gt;, pero luego salió la tercera edición.&lt;/p&gt;
-
-&lt;p&gt;Decidimos esperar a que se terminara para traducirlo completo, y hemos empezado de nuevo con los esfuerzos de traducción. Esta vez hemos empezados basados en la traducción de &lt;a href=&quot;https://github.com/CodeKommissar&quot;&gt;Luis Rodríguez&lt;/a&gt; quien tradujo los primeros 12 capítulos pero no pudimos contactar para ponernos de acuerdo.&lt;/p&gt;
-
-&lt;p&gt;La primera etapa de la traducción consiste en una revisión rápida de los capítulos ya traducidos, la segunda en completar los capítulos que faltan y la tercera en una revisión profunda de los 12 primeros capítulos.&lt;/p&gt;
-
-&lt;p&gt;Puedes ver la página oficial del libro aquí: &lt;a href=&quot;https://eloquentjs-es.thedojo.mx/&quot;&gt;Eloquent JavaScript ES&lt;/a&gt;.
-Puedes leer el libro en línea o descargarlo en PDF, próximamente en EPUB y Mobi. También estamos trabajando en una portada exclusiva para la versión en español.&lt;/p&gt;
-
-&lt;p&gt;¿Por qué lo hacemos?&lt;/p&gt;
-
-&lt;h2 id=&quot;la-importancia-del-contenido-en-tu-idioma-nativo&quot;&gt;La importancia del contenido en tu idioma nativo&lt;/h2&gt;
-
-&lt;p&gt;Es cierto que si quieres ser un buen desarrollador de software &lt;strong&gt;tienes&lt;/strong&gt; que aprender inglés. Si quieres ganar un mejor sueldo por poder trabajar para equipos remotos también es un requisito.&lt;/p&gt;
-
-&lt;p&gt;Pero es aceptado que se aprende mucho mejor en la lengua materna, así que si confías en que lo que tienes que estudiar es una buena traducción, no deberías dudar en estudiar en la lengua con la que creciste y que mejor conoces, el idioma de tus pensamientos.&lt;/p&gt;
-
-&lt;p&gt;Otras veces, hay personas que no tienen otra opción y principalmente por ellas que se está realizando esta traducción. No debería sumarse la barrera del lenguaje a la carga de aprender a programar que ya es fuerte.&lt;/p&gt;
-
-&lt;p&gt;Este es, esperamos, el primero de varios libros que queremos traducir al español.&lt;/p&gt;
-
-&lt;h2 id=&quot;contribuciones&quot;&gt;Contribuciones&lt;/h2&gt;
-
-&lt;p&gt;Si dominas el inglés (sobre todo técnico) y tienes buena ortografía, necesitamos tu ayuda para traducción. También necesitamos revisores, personas que lean el contenido y hagan comentarios (o Pull Requests) sobre frases poco claras, errores de ortografía o gramática. Si tienes habilidades de diseño gráfico necesitamos ayuda para traducir las ilustraciones.&lt;/p&gt;
-
-&lt;p&gt;Finalmente, en el futuro habilitaremos algún medio para contribuciones monetarias, para acelerar la traducción mediante la contratación de traductores y diseñadores profesionales.&lt;/p&gt;
-
-&lt;p&gt;No dudes en ponerte en contacto en &lt;a href=&quot;https://github.com/Eloquent-JavaScript-Espanol/Eloquent-JavaScript-ES&quot;&gt;GitHub&lt;/a&gt; o a través de este artículo, en los comentarios.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="eloquentjs-español" /><category term="eloquent-js" /><category term="eloquent" /><category term="javascript" /><category term="eloquent-javascript-pdf" /><summary type="html">Traudcción del Eloquent JavaScript al español, 3ra edición</summary></entry><entry><title type="html">A Philosophy of Software Design: Desarrollo Táctico vs Estratégico</title><link href="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Desarrollo Táctico vs Estratégico" /><published>2020-02-11T00:00:00-06:00</published><updated>2020-02-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html">&lt;p&gt;Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada uno.&lt;/p&gt;
-
-&lt;h2 id=&quot;desarrollo-táctico&quot;&gt;Desarrollo táctico&lt;/h2&gt;
-
-&lt;p&gt;Está caracterizado por la alta velocidad inicial con la que empiezas a desarrollar y crear las funciones de tu programa. Con esta actitud, tu principal objetivo es tener &lt;em&gt;código que funcione&lt;/em&gt;. Con esta forma de trabajo no gastas mucho tiempo buscando el mejor diseño para tu programa sino que te enfocas en terminar lo más rápido posible. Tu vista está en el &lt;strong&gt;corto plazo&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Con tal de terminar con la tarea lo más pronto posible, no importa si agregas algo de complejidad al sistema.&lt;/p&gt;
-
-&lt;p&gt;Este tipo de desarrollo es alentado por los negocios que quieren que su código o programa esté tan pronto como sea posible sin importar el costo. ¿Tiene uso este código y esta forma de pensar? Por supuesto: cuando se quiere construir un producto muy muy rápido y se tiene conciencia de que &lt;em&gt;será desechable&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Pero otra cosa que te puede llevar a desarrollar de esta manera es la falta de planeación: estimar en mucho menos tiempo una tarea o malgastar el tiempo que tenías disponible.&lt;/p&gt;
-
-&lt;p&gt;El desarrollo táctico produce programas que con el tiempo se van haciendo más y más difíciles de mantener, hasta que es tan impráctico que parece más fácil volver a hacerlo. &lt;strong&gt;La velocidad de desarrollo se va reduciendo.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Una vez que empiezas a programar un sistema de esta forma, es muy difícil cambiar. Y lo más triste es que la mayoría de las organizaciones y programadores prefieren este método.&lt;/p&gt;
-
-&lt;p&gt;Algunos ejemplos de desarrollo táctico:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Hard-coding de parámetros que deberían ser configurables&lt;/li&gt;
-  &lt;li&gt;Duplicación innecesaria&lt;/li&gt;
-  &lt;li&gt;Abstracciones deficientes o complicadas en extremo&lt;/li&gt;
-  &lt;li&gt;Código difícil de entender&lt;/li&gt;
-  &lt;li&gt;Manejo de excepciones deficiente(envolver todo en un try/catch, no manejar excepciones)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;desarrollo-estratégico&quot;&gt;Desarrollo Estratégico&lt;/h2&gt;
-
-&lt;p&gt;Este tipo de desarrollo se caracteriza por poner atención en el diseño y la calidad del código. Lo más importante no es directamente terminar la tarea pendiente, sino también hacerlo de manera que facilite las tareas futuras y mantenga la complejidad bajo control. La tarea principal es &lt;em&gt;crear un muy buen diseño&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Para el desarrollo estratégico &lt;strong&gt;código que funciona no es suficiente&lt;/strong&gt;. En vez de introducir partes que hagan más complejo el código, buscas mejorar aunque sea una pequeña parte del código cada que trabajas en él.&lt;/p&gt;
-
-&lt;p&gt;Esto no quiere decir que harás todo el diseño por adelantado, sino que se va a ir creando un buen diseño de las partes que se vayan necesitando.&lt;/p&gt;
-
-&lt;p&gt;Es tener una actitud de inversión en la base de código.&lt;/p&gt;
-
-&lt;p&gt;Esta actitud te hará ir más lento al principio, pero con el tiempo el equipo acelerará y podrá crear nuevas funciones muy rápido.&lt;/p&gt;
-
-&lt;p&gt;Ejemplos de prácticas desarrollo estratégico:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Probar varias implementaciones hasta encontrar la más limpia&lt;/li&gt;
-  &lt;li&gt;Documentar y comentar el código&lt;/li&gt;
-  &lt;li&gt;Limpiar y mejorar el código cada que sea posible (cada que lo toques)&lt;/li&gt;
-  &lt;li&gt;Crear pruebas unitarias&lt;/li&gt;
-  &lt;li&gt;Revisión de código&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;La siguiente imagen ilustra cómo se comporta el avance total en las dos formas de programar:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581404091/Untitled_Artwork_2_op8k0e.jpg&quot; alt=&quot;Comparación desarrollo táctico vs estratégico&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Como se puede ver, el desarrollo estratégico tarda más en entregar resultados, pero vale la pena si es un proyecto importante con un tiempo de vida esperado largo. Puedes pensarlo como la diferencia entre construir una choza o construcción sin ningún tipo de diseño contra una casa bien diseñada y con buenos materiales, como en la historia de los tres cochinitos. ¿Cuál aguantará más?&lt;/p&gt;
-
-&lt;p&gt;Muchas veces aquí está la diferencia entre si algo “escala” o “no escala”, no en la tecnología elegida. Es obvio que a una choza no le puedes construir un segundo piso.&lt;/p&gt;
-
-&lt;p&gt;Pero no seamos puristas y pensemos que si no es de la forma estratégica no vale la pena, la pregunta es: &lt;em&gt;¿Qué tipo de desarrollo conviene para tu proyecto según su tiempo de vida?&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Este y los siguientes artículos están basados en el libro &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;“A Philosophy of Software Design”&lt;/a&gt; de John K. Ousterhout.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="a-philosophy-of-software-design" /><category term="complejidad" /><summary type="html">Dos diferentes formas de desarrollar sistemas de software</summary></entry></feed>
+&lt;p&gt;En el próximo artículo hablaremos de otra forma de fugas de información: la descomposición temporal.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="interfaces" /><category term="módulo" /><category term="complejidad" /><category term="diseño-de-software" /><summary type="html">Ocultar información es una de las claves para reducir la complejidad, veamos algunas maneras de lograrlo.</summary></entry></feed>

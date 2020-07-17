@@ -2,7 +2,7 @@
 title: "Recursos para aprender Arquitectura de Software"
 date: 2020-07-15
 author: Héctor Patricio
-tags: podcast thedojomx arquitectura arquitectura_de_software libros
+tags: podcast thedojomx arquitecturaarquitectura_de_software libros
 comments: true
 excerpt: "¿Qué es la arquitectura de software y cómo puedes empezar a aprenderla? Aquí te damos un resumen de una plática muy interesante que tuvimos."
 header:
@@ -21,7 +21,7 @@ También incluye las prácticas y herramientas que permitirán que el proyecto c
 
 Todo lo anterior está basado en un análisis de las _funciones_ y _atributos de calidad_ del sistema.
 
-# El Proceso
+# El proceso
 
 En la plática tocamos 5 etapas del desarrollo de una arquitectura:
 

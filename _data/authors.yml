@@ -6,6 +6,14 @@ Héctor Patricio:
   avatar: "/assets/images/me.jpg"
   twitter: "hectorip"
 
+Alejandro Santamaría:
+  name: "Alejandro Santamaría"
+  uri: "https://github.com/alexsmx"
+  email: "alexsmx@gmail.com"
+  bio: "Tech Leader en Yo Amo Media"
+  # avatar: "/assets/images/me.jpg"
+  twitter: "alexsmx"
+
 Esteban Galicia:
   name: "Esteban Galicia"
   # uri: "https://gihub.com/hectorip"

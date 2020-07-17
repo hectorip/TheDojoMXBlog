@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.17.2 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -20,7 +20,7 @@
 <meta property="og:locale" content="es">
 <meta property="og:site_name" content="">
 <meta property="og:title" content="Guía rápida de ReStructuredText">
-<meta property="og:url" content="https://blog.thedojo.mx/guia-rapida-restructuredtext/">
+<meta property="og:url" content="http://localhost:4000/guia-rapida-restructuredtext/">
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<link rel="canonical" href="https://blog.thedojo.mx/guia-rapida-restructuredtext/">
+<link rel="canonical" href="http://localhost:4000/guia-rapida-restructuredtext/">
 
 
 
@@ -45,7 +45,7 @@
     
       "@type": "Person",
       "name": null,
-      "url": "https://blog.thedojo.mx/"
+      "url": "http://localhost:4000/"
     
   }
 </script>
@@ -119,7 +119,7 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "url": "https://blog.thedojo.mx/guia-rapida-restructuredtext/",
+      "url": "http://localhost:4000/guia-rapida-restructuredtext/",
       "name": "Guía rápida de ReStructuredText",
       "headline": "Guía rápida de ReStructuredText",
       "keywords": "",
@@ -136,17 +136,17 @@
       "publisher": {
         "@type": "Organization",
         "name": null,
-        "url": "https://blog.thedojo.mx",
+        "url": "http://localhost:4000",
         "logo": {
           "@type": "ImageObject",
           "width": 32,
           "height": 32,
-          "url": "https://blog.thedojo.mx/icon/favicon.ico"
+          "url": "http://localhost:4000/icon/favicon.ico"
         }
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://blog.thedojo.mx/guia-rapida-restructuredtext/"
+        "@id": "http://localhost:4000/guia-rapida-restructuredtext/"
       },
       "image": {
         "@type": "ImageObject",
@@ -223,6 +223,7 @@
 <div id="main" role="main">
   
 
+
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Guía rápida de ReStructuredText">
     
@@ -250,6 +251,7 @@
   <li><a href="#section-11-title">Section 1.1 Title</a></li>
   <li><a href="#section-12-title">Section 1.2 Title</a></li>
 </ul>
+
             </nav>
           </aside>
         
@@ -298,11 +300,11 @@ This is another one.</p>
 
 <p>Inside paragraphs and other bodies of text, you may additionally mark text for italics with “<em>italics</em>” or bold with “<strong>bold</strong>”. This is called “inline markup”.</p>
 
-<p>If you want something to appear as a fixed-space literal, use “<code class="highlighter-rouge">double back-quotes</code>”. Note that no further fiddling is done inside the double back-quotes – so asterisks “*” etc. are left alone.</p>
+<p>If you want something to appear as a fixed-space literal, use “<code class="language-plaintext highlighter-rouge">double back-quotes</code>”. Note that no further fiddling is done inside the double back-quotes – so asterisks “*” etc. are left alone.</p>
 
 <p>If you find that you want to use one of the “special” characters in text, it will generally be OK – reStructuredText is pretty smart. For example, this lone asterisk * is handled just fine, as is the asterisk in this equation: 5<em>6=30. If you actually want text *surrounded by asterisks</em> to not be italicised, then you need to indicate that the asterisk is not special. You do this by placing a backslash just before it, like so “*” (quickref), or by enclosing it in double back-quotes (inline literals), like this:</p>
 
-<p><code class="highlighter-rouge">*</code>
+<p><code class="language-plaintext highlighter-rouge">*</code>
 Tip</p>
 
 <p>Think of inline markup as a form of (parentheses) and use it the same way: immediately before and after the text being marked up. Inline markup by itself (surrounded by whitespace) or in the middle of a word won’t be recognized. See the markup spec for full details.</p>
@@ -402,7 +404,7 @@ Preformatting (code samples)
 
 <p>An example::</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Whitespace, newlines, blank lines, and all kinds of markup
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Whitespace, newlines, blank lines, and all kinds of markup
   (like *this* or \this) is preserved by literal blocks.   Lookie here, I've dropped an indentation level   (but not far enough)
 </code></pre></div></div>
 
@@ -421,7 +423,7 @@ no more example</p>
 
 <p>::</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is preformatted text, and the
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is preformatted text, and the
 last "::" paragraph is removed Results in:
 </code></pre></div></div>
 
@@ -521,6 +523,7 @@ View document source. Generated on: 2018-06-17 09:05 UTC. Generated by Docutils 
 
 
         
+
       </footer>
 
       
@@ -588,7 +591,6 @@ View document source. Generated on: 2018-06-17 09:05 UTC. Generated by Docutils 
 </script>
 
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"8e502c6ff53aacad881b3629d","lid":"c9486cf5f1","uniqueMethods":true}) })</script>
-
         <div class="page__footer-follow">
   <ul class="social-icons">
     
@@ -616,24 +618,6 @@ View document source. Generated on: 2018-06-17 09:05 UTC. Generated by Docutils 
 <script src="/assets/js/lunr/lunr.min.js"></script>
 <script src="/assets/js/lunr/lunr-store.js"></script>
 <script src="/assets/js/lunr/lunr-en.js"></script>
-
-
-
-
-  <script>
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-127437335-2']);
-  
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
-
 
 
 
