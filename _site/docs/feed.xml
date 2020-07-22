@@ -1,4 +1,247 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-07-15T10:01:22-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Recursos para aprender Arquitectura de Software</title><link href="https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software.html" rel="alternate" type="text/html" title="Recursos para aprender Arquitectura de Software" /><published>2020-07-15T00:00:00-05:00</published><updated>2020-07-15T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software.html">&lt;p&gt;Tuvimos una plática con &lt;a href=&quot;https://twitter.com/machinesareus&quot;&gt;Agustín Ramos&lt;/a&gt; acerca de la arquitectura de software y lo que debes aprender para practicarla. Este pequeño artículo incluye nuestro resumen y las recomendaciones de Agustín.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-07-22T00:29:22-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Traducción automática de textos: un caso práctico</title><link href="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html" rel="alternate" type="text/html" title="Traducción automática de textos: un caso práctico" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-19T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html">&lt;p&gt;Traducir texto es una tarea frecuente y que puede realizarse de diferentes maneras, en este artículo queremos explorar algunas de ellas.&lt;/p&gt;
+
+&lt;p&gt;Existen sitios donde la traducción puede hacerse en línea, como en &lt;a href=&quot;https://translate.google.com.mx/?hl=es&quot;&gt;Google Translate&lt;/a&gt;, sin embargo, en muchos casos existe un límite en la cantidad de texto que puedes traducir.&lt;/p&gt;
+
+&lt;p&gt;También puedes utilizar &lt;strong&gt;APIs que pueden ayudarte a hacer dicho trabajo&lt;/strong&gt;, dichas APIs también tiene límites por traducción.&lt;/p&gt;
+
+&lt;p&gt;Una solución que nos resulta interesante es la traducción utilizando algún modelo de &lt;strong&gt;Aprendizaje de Máquina&lt;/strong&gt; que ya haya sido previamente entrenado.  En este artículo podrás explorar estos diferentes métodos y el código que podrías utilizar para llevarlo a cabo, entendiendo las ventajas y desventajas que cada método ofrece.&lt;/p&gt;
+
+&lt;p&gt;Hablemos de los diferentes métodos.&lt;/p&gt;
+
+&lt;h2 id=&quot;interfaz-gráfica&quot;&gt;Interfaz gráfica&lt;/h2&gt;
+
+&lt;p&gt;Google Translate te permite traducir 5,000 palabras a la vez en su interfaz. Si lo vas a hacer pocas veces y los textos no rebasan esa cantidad de palabras, ¿para qué construir algo?&lt;/p&gt;
+
+&lt;p&gt;Esta opción nos recuerda que a veces la mejor solución es que no programemos nada.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ventajas&lt;/strong&gt;: Inmediata, fácil de usar y sin costo.
+&lt;strong&gt;Desventajas&lt;/strong&gt;: Requiere intervención humana cada que se tenga que traducir algo.&lt;/p&gt;
+
+&lt;h2 id=&quot;apis&quot;&gt;API’s&lt;/h2&gt;
+
+&lt;p&gt;Si quieres automatizar las tareas de traducción para integrarlas en un sistema más grande o generar salidas que se queden almacenadas como en archivos, una solución es crear un programa que consuma una API de traducción.&lt;/p&gt;
+
+&lt;p&gt;Algunas opciones son:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Cloud Translation&lt;/strong&gt; de Google Cloud Platform. Tiene dos niveles de traducción: el básico que soporta el modelo tradicional de traducción y el avanzado que permite customizar los modelos de traducción además de incluir glosarios y otras monerías.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;AutoML Translation&lt;/strong&gt;. Pertenece también a GCP y permite entrenar un modelo mediante el envío de pares de traducción que posteriormente puedes usar para hacer traducciones. Es el que más trabajo implicaría de tu parte pero es el que más flexibilidad de tiene.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ibm.com/watson/services/language-translator/&quot;&gt;Watson Language Translator&lt;/a&gt; permite traducir una gran cantidad de formatos de texto en muchos lenguajes. La únic desventaja es que las API’s&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Otras&lt;/strong&gt;. En &lt;a href=&quot;https://rapidapi.com/collection/google-translate-api-alternatives&quot;&gt;RapidAPI&lt;/a&gt; puedes encontrar una colección actualizada de las alternativas a Google Translation API.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Para desarrollar esta pieza de software, lo más recomendable sería crear un wrapper alrededor de la API y exponer a las demás partes del programa sólo los métodos para poder realizar la tarea de traducción, abstrayendo completamente los detalles de cómo se realiza. De esta manera podrías cambiar de API fácilmente (implementando las llamadas a la nueva API) sin irrumpir en la mayoría del programa.&lt;/p&gt;
+
+&lt;p&gt;Además esta forma de hacerlo también sería compatible con el siguiente método.&lt;/p&gt;
+
+&lt;h3 id=&quot;ventajas&quot;&gt;Ventajas&lt;/h3&gt;
+
+&lt;p&gt;Puedes olvidarte completamente de los detalles de implementación de la traducción, del hosting y mantenimiento de esta parte y probablemente las traducciones son muy precisas, como estamos acostumbrados a las de Google.&lt;/p&gt;
+
+&lt;h3 id=&quot;desventajas&quot;&gt;Desventajas&lt;/h3&gt;
+
+&lt;p&gt;Generalmente esta comodidad viene un costo económico que varía dependiendo del uso. La flexibilidad y capacidad de configuración de las API’s es variada y si no funciona como esperas es muy probable que no puedas hacer nada por mejorar la traducción.&lt;/p&gt;
+
+&lt;h2 id=&quot;modelo-pre-entrenado-de-aprendizaje-de-máquina&quot;&gt;Modelo pre-entrenado de Aprendizaje de Máquina&lt;/h2&gt;
+
+&lt;p&gt;Los modelos de Aprendizaje Profundo que se han desarrollado de manera importante en los últimos años han sustituido los modelos previos que utilizaban el conocimiento de lingüistas y décadas de investigación estadística.&lt;/p&gt;
+
+&lt;p&gt;Una peculiaridad de un modelo de Aprendizaje Profundo es que logra detectar patrones de uso de los lenguajes y utilizar dichos patrones para realizar la traducción de uno a otro. Dichos patrones no tienen una representación equivalente de una palabra en un idioma a otra en un idioma distinto, sino que combinan los patrones internos de uso de las palabras en un idioma y después aplican los patrones que el otro idioma utilizaría. Eso hace que los traductores que utilizan Aprendizaje profundo sean mucho más precisos y que las traducciones sean mucho más naturales, además de que pueden adaptarse a casos de uso específicos que los modelos anteriores no contemplaban. ¿Por qué? Porque podemos entrenarlos utilizando un conjunto de datos de entrenamiento que se enfoquen en un dominio específico del lenguaje (ej. traducción de subtítulos de películas, o traducción de textos técnicos).&lt;/p&gt;
+
+&lt;p&gt;A pesar de ello, uno de los impedimentos más relevantes para su entrenamiento es que hasta hace algunos años, entrenar un modelo requería grandes cantidades de cómputo y memoria, cosa que ha ido cambiando conforme la industria ha ido evolucionando y los principales proveedores de cómputo han puesto a disposición del mundo, plataformas en la nube donde puede adquirirse poder computacional y de procesamiento de manera sencilla (AWS, Google, Microsoft, IBM, Oracle, etc.). De igual forma, las compañías que crean procesadores especializados (NVIDIA, AMD) también han logrado reducir los costos y poner en manos de cada vez más desarrolladores, tarjetas de video con Unidades de Procesamiento Gráfico (GPUs) a precios cada vez más accesibles.&lt;/p&gt;
+
+&lt;p&gt;El modelo genérico de un sistema de traducción basado en Aprendizaje de Máquina consta de dos piezas principales (cada una de ellas una red neuronal por sí misma):&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Un  codificador de secuencias de palabras (que serían oraciones del texto) que aprende a codificar palabras como un arreglo de números que representa el significado de la oración.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Un decodificador de números, que toma un arreglo de números en general y los transforma en oraciones.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;La peculiaridad es que en el paso 1 obtenemos ese arreglo de números utilizando el lenguaje de orígen y la decodificación la hacemos hacia el lenguaje destino.&lt;/p&gt;
+
+&lt;p&gt;Para poder capturar los patrones y relaciones que existen entre las palabras en una oración, es necesario que la red neuronal cuente con la capacidad de recordar las palabras dentro de una oración, ya que las relaciones de una palabra cualquiera serán mucho más fuertes con ciertas palabras que con otras, por ejemplo la relación entre “la” y “relación” será mucho más fuerte que “él” y “relación”, no esperaríamos poder encontrar un texto donde “él” y “relación” estén presentes en dicho orden específico.&lt;/p&gt;
+
+&lt;p&gt;Esta capacidad de “recordar” de una red neuronal no existe en una red neuronal tradicional, donde las entradas pasan y son procesadas por todas las capas de la red sin hacer referencia a las palabras que pasaron antes o las palabras que pasaron después, por ello es que estos algoritmos utilizan un tipo de red neuronal llamado recurrente donde la última entrada influye en la siguiente predicción, esto permite a la red neuronal recurrente “aprender” el “significado” de cada palabra dentro de un contexto.&lt;/p&gt;
+
+&lt;p&gt;En tiempos recientes, se han mejorado los modelos de procesamiento del “significado” de las palabras dentro de un contexto utilizando Transformadores que van incluso más allá del simple contexto de una palabra dentro de una oración, modelando las relaciones cruzadas entre cualquier palabra (previa o posterior) en vez de considerar únicamente el orden.&lt;/p&gt;
+
+&lt;p&gt;Estos modelos requieren mucho más operaciones matemáticas durante su entrenamiento pero los patrones que pueden identificar las hacen mucho más poderosas, aún así los modelos de recurrentes arrojan resultados bastante aceptables.&lt;/p&gt;
+
+&lt;p&gt;Existen casos en particular donde no es necesario entrenar tu propia red neuronal recurrente, ya que es probable que alguien más lo haya hecho ya. Esto puede ahorrarte muchas horas de procesamiento de información y el entrenamiento y validación del proceso de entrenamiento.&lt;/p&gt;
+
+&lt;p&gt;En general, el proceso que se sigue es:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Obtener un corpus o conjunto de datos sobre el problema que quieres resolver (por ejemplo, textos en el idioma de origen y en el idioma destino.&lt;/li&gt;
+  &lt;li&gt;Limpieza y normalización de dicho corpus que remueva errores o piezas de los textos que sean incompletas o por ejemplo se puede decidir utilizar todas las palabras en minúsculas, separar las oraciones por ciertos símbolos de puntuación, etc. estas decisiones deberán tomarse teniendo en cuenta los objetivos para los cuales utilizaremos nuestro modelo de traducción, no es lo mismo un traductor de textos formateados de manera regular a textos que por ejemplo se vayan a utilizar como subtítulos para películas. Los pasos que normalmente se utilizarán tendrán como mínimo, código para separar las oraciones, y normalizar el texto.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;utilizando-un-modelo-de-traducción-prefabricado&quot;&gt;Utilizando un modelo de traducción prefabricado&lt;/h3&gt;
+
+&lt;p&gt;Si quieres experimentar con este tipo de modelos te recomiendo empezar por el uso de un modelo pre-entrenado y dependiendo de los resultados evaluar si es necesario entrenar uno especializado en la tarea que estás buscando resolver.&lt;/p&gt;
+
+&lt;p&gt;Aunque hay varios modelos disponibles, te dejo la liga a un framework hecho en C++ y que tiene un número mínimo de dependencias, se llama &lt;a href=&quot;https://marian-nmt.github.io/quickstart/&quot;&gt;Marian Neural Machine Translation&lt;/a&gt; y como parte de sus peculiaridades es que es eficiente, puede utilizar varios procesadores gráficos para el entrenamiento y soporta el uso de CPU o GPU para la traducción (al poder utilizar sólo CPU hace que el modelo pueda utilizarse en computadoras que no tienen tantos recursos).&lt;/p&gt;
+
+&lt;p&gt;Y aquí hay un modelo pre-entrenado que puede utilizarse para traducciones de español a inglés: &lt;a href=&quot;https://github.com/ageitgey/spanish-to-english-translation&quot;&gt;Spanish to English Translation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Si tuvieras necesidad de entrenar la red neuronal sería necesario que tuvieras datos paralelos, es decir el mismo texto en los dos idiomas entre los cuales quieres hacer la traducción. Aquí te dejamos la liga a uno de ellos: &lt;a href=&quot;http://opus.nlpl.eu/&quot;&gt;The open parallel corpus&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ventajas-1&quot;&gt;Ventajas&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Puede adaptarse mediante el entrenamiento, a un estilo o tipo específico de textos (textos científicos, técnicos, informales, subtítulos, etc.)&lt;/li&gt;
+  &lt;li&gt;Puede utilizarse en modo “offline” sin necesidad de estar conectado a alguna fuente externa de internet.&lt;/li&gt;
+  &lt;li&gt;No tiene costos o límites de uso, más que aquellos resultado de operar el modelo una vez entrenado (y de entrenarlo si fuera necesario hacerlo).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;desventajas-1&quot;&gt;Desventajas&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Entrenarlo requiere una gran cantidad de datos y un proceso de limpieza/normalización que no son técnicamente sencillos.&lt;/li&gt;
+  &lt;li&gt;Es probable que no sea sencillo alcanzar el nivel de entrenamiento que las grandes compañías han utilizado para entrenar sus propios modelos (porque seguramente tienen fuentes bastante grandes de datos/procesadores gráficos/etc).&lt;/li&gt;
+  &lt;li&gt;Escalarlo para su uso masivo puede ser todo un reto.&lt;/li&gt;
+  &lt;li&gt;Las redes neuronales son cajas negras por lo que si se detecta algún error en la traducción normalmente será muy difícil saber en qué parte de los datos de entrenamiento se introdujo el error y por lo tanto será difícil removerlo.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;En el siguiente artículo te contaremos cómo nos fue con las pruebas.&lt;/p&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="apis" /><category term="machine-learning" /><category term="AI" /><summary type="html">Escribe aquí un buen resumen de tu artículo</summary></entry><entry><title type="html">De Bash a Zsh</title><link href="https://blog.thedojo.mx/2020/07/16/de-bash-a-zsh.html" rel="alternate" type="text/html" title="De Bash a Zsh" /><published>2020-07-16T00:00:00-05:00</published><updated>2020-07-16T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/16/de-bash-a-zsh</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/16/de-bash-a-zsh.html">&lt;p&gt;Con la reciente liberación de MacOS Catalina, Apple anunció que entre alguno de los cambios al sistema operativo, se utilizará a partir de esta versión un nuevo &lt;em&gt;shell&lt;/em&gt; que de manera regular se utilizaba en la app Terminal y en otras aplicaciones utilizadas por los desarrolladores para interactuar con la Mac a través de la línea de comandos.&lt;/p&gt;
+
+&lt;p&gt;El shell que se utilizaba previo a esta versión era &lt;strong&gt;Bash&lt;/strong&gt; (&lt;em&gt;Bourne Again Shell&lt;/em&gt;) y el que se utilizará ahora es &lt;strong&gt;Zsh&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-un-shell&quot;&gt;¿Qué es un shell?&lt;/h2&gt;
+
+&lt;p&gt;En resumen, un shell es un programa que permite &lt;strong&gt;controlar la computadora a través de comandos de texto&lt;/strong&gt;, normalmente se trata de interfaces de texto interactivo, donde el usuario podrá ir &lt;strong&gt;tecleando comandos para obtener información&lt;/strong&gt; o ejecutar comandos y obtener resultados a través de la misma interfaz.&lt;/p&gt;
+
+&lt;p&gt;A lo largo de la historia se han creado diferentes shells, cada uno con una serie de comandos que ponen a disposición de los usuarios &lt;strong&gt;funcionalidades específicas&lt;/strong&gt; de sus sistemas operativos. ¿Y porqué estaría alguien interesado en usar un shell y una línea de comandos para controlar una computadora? Para entenderlo hay que viajar un poco en el tiempo.&lt;/p&gt;
+
+&lt;h3 id=&quot;historia&quot;&gt;Historia&lt;/h3&gt;
+
+&lt;p&gt;Inicialmente, controlar una computadora era una tarea difícil, las primeras de ellas se controlaban mediante diferentes dispositivos (interruptores, tarjetas perforadas, etc.) que “cargaban” en memoria las distintas piezas de información que serían procesados en forma de programas. Este proceso era regularmente &lt;strong&gt;tedioso y sujeto a errores&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;En algunos casos, el primer programa que se cargaba en memoria era un programa que permitía cargar instrucciones adicionales a través de la lectura de datos en las mismas tarjetas perforadas. De igual forma, los resultados de la ejecución normalmente se plasmaban en papel o tarjetas similares a las que se utilizaban para su carga.&lt;/p&gt;
+
+&lt;p&gt;Conforme fueron evolucionando los computadores, los programas permitieron el uso de dispositivos de entrada más amigables para el usuario de la computadora, como Teletipos, que permitían enviar comandos desde teclados y terminales remotas al ordenador (remoto en un sentido práctico, quizás de un cuarto a otro). Esta forma de transmitir comandos y obtener resultados era mucho más sencilla que estar cargando información a través de interruptores o tarjetas perforadas.&lt;/p&gt;
+
+&lt;p&gt;La pregunta natural es: si esto fue la primer evolución hacia un uso más sencillo de las computadoras, &lt;strong&gt;¿por qué se sigue utilizando?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Aunque la evolución de las computadoras ha seguido su curso y la interacción Humano-Computador ha avanzado en diferentes vertientes, por ejemplo, &lt;strong&gt;mediante la implementación de interfaces gráficas&lt;/strong&gt;, el uso de la interfaz de línea de comandos se ha mantenido vigente por diversas razones:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Por su &lt;strong&gt;versatilidad&lt;/strong&gt;, es posible utilizarlo para resolver distintos tipos de problemas y con distintos tipos de opciones que harían muy difícil su integración completa en una interfaz gráfica.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Por su &lt;strong&gt;poder&lt;/strong&gt;, al tener acceso a las funciones centrales del sistema operativo, también contempla casos de uso para los cuales las interfaces gráficas no están preparados.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Permite crear programas que hacen uso de las capacidades nativas y extendidas del sistema operativo y ejecutar dichos programas o scripts en distintas modalidades, por ejemplo, de manera repetitiva a través de trabajos programados (cron jobs) o en conjunto con otros programas (por ejemplo con ambientes de desarrollo integrados). A esto le podemos llamar &lt;strong&gt;automatización de tareas&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;El programa de shell específico (en este caso Bash o Zsh), definen su interfaz con el usuario, no sólo en la manera en la que presentarán la linea de comando sino también en las &lt;strong&gt;capacidades y comandos que soportan de manera nativa&lt;/strong&gt;, en general, podemos encontrar algunas de estas características:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Una sintaxis que define los comandos y secuencias de comando que el shell ‘entenderá’.&lt;/li&gt;
+  &lt;li&gt;Comandos que darán acceso a las ‘operaciones’ que el shell puede ejecutar .&lt;/li&gt;
+  &lt;li&gt;Funciones que permiten agrupar comandos para ejecutar labores más complejas.&lt;/li&gt;
+  &lt;li&gt;Parámetros para almacenar valores para su uso durante la ejecución de las funciones y comandos.&lt;/li&gt;
+  &lt;li&gt;Expansión que define la forma en la que los parámetros en un comando son aplicados.&lt;/li&gt;
+  &lt;li&gt;Flujo y redirección que controla las entradas y salidas de y desde los comandos.&lt;/li&gt;
+  &lt;li&gt;Ejecución que define lo que sucede cuando cada comando corre.&lt;/li&gt;
+  &lt;li&gt;Scripting que permite ejecutar archivos que contienen una lista de comandos y/o funciones.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;porqué-razón-puede-estar-cambiando-apple-de-un-shell-a-otro&quot;&gt;¿Porqué razón puede estar cambiando Apple de un shell a otro?&lt;/h2&gt;
+
+&lt;p&gt;Aunque no hay una razón única, existen varias posibilidades. La primera de ellas es que aunque Apple utiliza Bash desde OSX Jaguar, no había actualizado Bash desde la versión 3.2 liberada en el 2007, es decir casi el mismo año en el que se liberó el primer iPhone. Es probable que una de las razones por las que esto sucedió fue que Bash cambió su licencia de uso de &lt;strong&gt;GNU GPL 2 a una licencia GNU GPLv3&lt;/strong&gt;, y dicho cambio incluía restricciones que quizás no fueron del todo favorables a Apple.&lt;/p&gt;
+
+&lt;p&gt;Así que migrar a Zsh es una opción refrescante. La versión que está incluida en Catalina es la 5.7.1 y utiliza una versión de licenciamiento &lt;strong&gt;MIT que es menos restrictiva que la GPLv3&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-sucederá-con-bash-tendré-que-dejar-de-usarlo&quot;&gt;¿Qué sucederá con Bash, tendré que dejar de usarlo?&lt;/h2&gt;
+
+&lt;p&gt;No necesariamente, aunque Zsh será el shell por default para todas las nuevas cuentas de usuario creadas en macOS Catalina, si tu hiciste un upgrade del Sistema Operativo, tu cuenta seguirá utilizando por default Bash. Pero siempre tendrás opción de configurar el shell que desees por default de manera voluntaria, incluso a alguno distinto a Zsh o Bash.&lt;/p&gt;
+
+&lt;p&gt;A nivel general, Bash y Zsh tienen un nivel de compatibilidad bastante alto ya que &lt;strong&gt;ambos están basados en el aún más antiguo Bourne Shell&lt;/strong&gt;, de tal forma que la mayoría de los script y comandos existentes funcionarán sin ningún cambio en Zsh.&lt;/p&gt;
+
+&lt;p&gt;La ventaja real de Zsh es la inclusión de funcionalidades que hacen trabajar con él más fácil (funcionalidades no incluidas por default en la versión vieja de Bash), entre algunas de mis funcionalidades favoritas están:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Auto completado de comandos&lt;/li&gt;
+  &lt;li&gt;Auto corrección de comandos&lt;/li&gt;
+  &lt;li&gt;Integración con algunos sistemas de uso común para desarrolladores (git)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;qué-sucederá-con-mis-scripts-hechos-en-bash&quot;&gt;¿Qué sucederá con mis scripts hechos en Bash?&lt;/h2&gt;
+
+&lt;p&gt;En general, correrán de igual forma a como lo venían haciendo, sin embargo en casos muy peculiares podrías requerir modificarlos o simplemente agregar #!/bin/bash (&lt;em&gt;shebang&lt;/em&gt;) para forzar a que el script utilice el shell de Bash que sigue incluyéndose en MacOS.&lt;/p&gt;
+
+&lt;p&gt;Puedes usar temporalmente uno u otro shell simplemente invocando su nombre en la línea de comandos (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zsh&lt;/code&gt; o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;En la Mac, podrás configurar el shell default en las Preferencias del Sistema, en el panel de Usuarios y Grupos, podrás seleccionar la cuenta de un usuario y en las Opciones Avanzadas podrás seleccionar uno de los shells disponibles.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión-y-referencias&quot;&gt;Conclusión y referencias&lt;/h2&gt;
+
+&lt;p&gt;Dominar tu shell &lt;strong&gt;hará que tu trabajo diario sea más sencillo&lt;/strong&gt; ya que podrás configurar funcionalidades que aumenten tus capacidades como desarrollador y en conjunto con el conocimiento a profundidad de tu interfaz de desarrollo, podrá hacerte mucho más eficiente al momento de administrar y ejecutar comandos que tengan que ver con tus proyectos.&lt;/p&gt;
+
+&lt;p&gt;Algunos recursos que te ayudarán:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;La &lt;a href=&quot;http://zsh.sourceforge.net/&quot;&gt;documentación de Zsh&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Configuración Zsh es mediante &lt;a href=&quot;https://ohmyz.sh/&quot;&gt;Oh My Zsh&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;¿Donde se configuran las funcionalidades de Zsh? En &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.zshrc&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;¿Cómo  saber que shell estoy usando?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;o&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$SHELL&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;¿Cómo configurar Zsh como mi shell default?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chsh &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; /bin/zsh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;¿Cómo activar el autocomplete?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;autoload &lt;span class=&quot;nt&quot;&gt;-U&lt;/span&gt; compinit &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; compinit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;¿Cómo activar la extensión para git?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;autoload &lt;span class=&quot;nt&quot;&gt;-Uz&lt;/span&gt; vcs_info
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;¿Cómo configurar el cambio de directorio automático?
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;setopt autocd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;referencias&quot;&gt;Referencias&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.bash.academy/&quot;&gt;Bash academy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=10737639&quot;&gt;YCombinstor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.rayninfo.co.uk/tips/zshtips.html?LMCL=bNg6o6&quot;&gt;Zsh tips&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://leahneukirchen.org/blog/archive/2008/02/10-zsh-tricks-you-may-not-know.html&quot;&gt;10 trucos de Zsh&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zsh.sourceforge.net/Guide/zshguide.html&quot;&gt;Zsh Guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.tldp.org/LDP/abs/html/&quot;&gt;Advanced Bash-Scripting Guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://matt.might.net/articles/bash-by-example/&quot;&gt;Bash by example&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Libro: &lt;a href=&quot;https://amzn.to/32phs95&quot;&gt;From Bash to Zsh&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="shell" /><category term="zsh" /><category term="bash" /><category term="terminal" /><summary type="html">Zsh es el nuevo shell default de MacOS Catalina. Entiende las principales diferencias entre Bash y Zsh.</summary></entry><entry><title type="html">Recursos para aprender Arquitectura de Software</title><link href="https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software.html" rel="alternate" type="text/html" title="Recursos para aprender Arquitectura de Software" /><published>2020-07-15T00:00:00-05:00</published><updated>2020-07-15T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software.html">&lt;p&gt;Tuvimos una plática con &lt;a href=&quot;https://twitter.com/machinesareus&quot;&gt;Agustín Ramos&lt;/a&gt; acerca de la arquitectura de software y lo que debes aprender para practicarla. Este pequeño artículo incluye nuestro resumen y las recomendaciones de Agustín.&lt;/p&gt;
 
 &lt;h2 id=&quot;qué-es-la-arquitectura-de-software&quot;&gt;¿Qué es la arquitectura de software?&lt;/h2&gt;
 
@@ -8,7 +251,7 @@
 
 &lt;p&gt;Todo lo anterior está basado en un análisis de las &lt;em&gt;funciones&lt;/em&gt; y &lt;em&gt;atributos de calidad&lt;/em&gt; del sistema.&lt;/p&gt;
 
-&lt;h1 id=&quot;el-proceso&quot;&gt;El Proceso&lt;/h1&gt;
+&lt;h1 id=&quot;el-proceso&quot;&gt;El proceso&lt;/h1&gt;
 
 &lt;p&gt;En la plática tocamos 5 etapas del desarrollo de una arquitectura:&lt;/p&gt;
 
@@ -81,7 +324,7 @@
 
 &lt;p&gt;De todos modos no te pierdas el capítulo, que estuvo muy bueno:&lt;/p&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vfu5PsSH7us&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="podcast" /><category term="thedojomx" /><category term="arquitectura" /><category term="arquitectura_de_software" /><category term="libros" /><summary type="html">¿Qué es la arquitectura de software y cómo puedes empezar a aprenderla? Aquí te damos un resumen de una plática muy interesante que tuvimos.</summary></entry><entry><title type="html">¿Qué es el pensamiento computacional?</title><link href="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html" rel="alternate" type="text/html" title="¿Qué es el pensamiento computacional?" /><published>2020-07-09T00:00:00-05:00</published><updated>2020-07-09T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html">&lt;p&gt;Todo lo relacionado con el &lt;strong&gt;pensamiento computacional&lt;/strong&gt; (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad, porque vivimos en un mundo en el que &lt;em&gt;cada aspecto de la vida&lt;/em&gt; se ha visto influenciado por lo que la computación permite.&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vfu5PsSH7us&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="podcast" /><category term="thedojomx" /><category term="arquitecturaarquitectura_de_software" /><category term="libros" /><summary type="html">¿Qué es la arquitectura de software y cómo puedes empezar a aprenderla? Aquí te damos un resumen de una plática muy interesante que tuvimos.</summary></entry><entry><title type="html">¿Qué es el pensamiento computacional?</title><link href="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html" rel="alternate" type="text/html" title="¿Qué es el pensamiento computacional?" /><published>2020-07-09T00:00:00-05:00</published><updated>2020-07-09T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html">&lt;p&gt;Todo lo relacionado con el &lt;strong&gt;pensamiento computacional&lt;/strong&gt; (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad, porque vivimos en un mundo en el que &lt;em&gt;cada aspecto de la vida&lt;/em&gt; se ha visto influenciado por lo que la computación permite.&lt;/p&gt;
 
 &lt;p&gt;En varios lugares del mundo se ha pensado que se debe agregar el pensamiento computacional a la educación básica que todos reciben, bajo la promesa de que mejorará en general la &lt;strong&gt;capacidad de pensar y resolver problemas&lt;/strong&gt;.&lt;/p&gt;
 
@@ -298,7 +541,7 @@ instrucciones de la computadora es el &lt;em&gt;engine o motor&lt;/em&gt;.&lt;/p
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Escaneo&lt;/strong&gt;. Convierte el texto del código que escribes en &lt;em&gt;tokens&lt;/em&gt;. Un token es un bloque de carácteres que tienen un significado sintáctico. Ejemplo: &lt;code class=&quot;highlighter-rouge&quot;&gt;x=33&lt;/code&gt; está compuesto por 3 tokens: Un identificador (&lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt;), un operador (&lt;code class=&quot;highlighter-rouge&quot;&gt;=&lt;/code&gt;) y un número (&lt;code class=&quot;highlighter-rouge&quot;&gt;33&lt;/code&gt;). Puedes irte por el hoyo del conejo si quieres entender como funciona el scanner de V8 aquí: &lt;a href=&quot;https://v8.dev/blog/scanner&quot;&gt;Blazingly fast parsing&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Escaneo&lt;/strong&gt;. Convierte el texto del código que escribes en &lt;em&gt;tokens&lt;/em&gt;. Un token es un bloque de carácteres que tienen un significado sintáctico. Ejemplo: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x=33&lt;/code&gt; está compuesto por 3 tokens: Un identificador (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt;), un operador (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt;) y un número (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;33&lt;/code&gt;). Puedes irte por el hoyo del conejo si quieres entender como funciona el scanner de V8 aquí: &lt;a href=&quot;https://v8.dev/blog/scanner&quot;&gt;Blazingly fast parsing&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Parseo&lt;/strong&gt;. No encontré la palabra correcta para traducirlo, pero se puede entender como la ‘lectura’ de un texto que lo transforma en una estructura de datos. Esta fase convierte el conjunto de &lt;em&gt;tokens&lt;/em&gt; generados por el scanner en un Árbol de Sintaxis Abstracta (AST - Abstract Sintax Tree). Este árbol representa tu programa sintácticamente y se pasa a la siguiente fase de la compilación.&lt;/p&gt;
@@ -498,15 +741,15 @@ hablar en contra de la sabiduría popular.&lt;/p&gt;
 &lt;p&gt;Usemos como ejemplo un programa para registrar publicaciones impresas como libros, revistas, periódicos, panfletos, etc. Una manera de diseñarlo es creando en el módulo una función para cada tipo de publicación:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;registrar_libro&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;registrar_libro&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(...):&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
 
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;registrar_revista&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;registrar_revista&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(...):&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
 
-&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
 
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;registrar_panfleto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;registrar_panfleto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(...):&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -518,11 +761,11 @@ hablar en contra de la sabiduría popular.&lt;/p&gt;
 &lt;p&gt;Un módulo de propósito general puede tener, casi siempre, una interfaz más sencilla que un módulo de propósito específico. Siguiendo con el ejemplo de los libros, en vez de crear una función para cada uno de los tipos de publicación se podría crear una general:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;registrar_publicacion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;registrar_publicacion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(...):&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
 
 
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;registrar_tipo_de_publicacion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;registrar_tipo_de_publicacion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(...):&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -587,7 +830,7 @@ hablar en contra de la sabiduría popular.&lt;/p&gt;
 
 &lt;p&gt;La idea de crear un módulo es, a parte de ocultar complejidad, crear un pieza de código que pueda ser &lt;em&gt;reutilizable&lt;/em&gt;. Como la operación no es siempre exactamente igual, a veces hay que incluir parámetros que permitan modificar el comportamiento del módulo. Los parámetros pueden llegar a revelar detalles de implementación, así que es conveniente saber diseñarlos, primero &lt;em&gt;para no contaminar la interfaz&lt;/em&gt; y segundo &lt;em&gt;para mantener la interfaz fácil de usar&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;John Ousterhout habla como ejemplo de lo mal diseñada que está la interfaz de la clase &lt;code class=&quot;highlighter-rouge&quot;&gt;FileInputStream&lt;/code&gt; de Java, que no es capaz de realizar una lectura con buffer sin que le pases una clase que lo hace explícitamente. La lectura de un archivo con un buffer &lt;strong&gt;es normal&lt;/strong&gt;, generalmente no quieres leer un archivo sin tener el buffer disponible. Entonces el default de esta clase debería ser la lectura con buffer, &lt;em&gt;sin que se lo tengas que pedir explícitamente&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;John Ousterhout habla como ejemplo de lo mal diseñada que está la interfaz de la clase &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FileInputStream&lt;/code&gt; de Java, que no es capaz de realizar una lectura con buffer sin que le pases una clase que lo hace explícitamente. La lectura de un archivo con un buffer &lt;strong&gt;es normal&lt;/strong&gt;, generalmente no quieres leer un archivo sin tener el buffer disponible. Entonces el default de esta clase debería ser la lectura con buffer, &lt;em&gt;sin que se lo tengas que pedir explícitamente&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Los módulos deberían hacer lo normal o lo correcto siempre que sea posible, sin que se tenga que pedir explícitamente.&lt;/strong&gt; Es decir, tus módulos deberían estar diseñados para hacer el &lt;em&gt;caso más común&lt;/em&gt; muy fácil de usar.&lt;/p&gt;
 
@@ -595,9 +838,9 @@ hablar en contra de la sabiduría popular.&lt;/p&gt;
   &lt;p&gt;Las mejores funciones son las que obtienes sin siquiera saber que existen. - &lt;strong&gt;John Ousterhout&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Un ejemplo de buen diseño son los lenguajes modernos con la codificación de las cadenas: son &lt;code class=&quot;highlighter-rouge&quot;&gt;utf-8&lt;/code&gt; por default, ya que es ‘lo correcto’ y lo común.&lt;/p&gt;
+&lt;p&gt;Un ejemplo de buen diseño son los lenguajes modernos con la codificación de las cadenas: son &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;utf-8&lt;/code&gt; por default, ya que es ‘lo correcto’ y lo común.&lt;/p&gt;
 
-&lt;p&gt;Otro ejemplo son las funciones &lt;code class=&quot;highlighter-rouge&quot;&gt;split&lt;/code&gt; (separar una cadena) y &lt;code class=&quot;highlighter-rouge&quot;&gt;join&lt;/code&gt; (juntar los elementos de un array o lista en una cadena) de Python, Elixir y otros lenguajes: si no le pasas el carácter que usarán para dividir o pegar, lo harán por la cadena vacía, &lt;em&gt;facilitando un caso de uso muy común&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Otro ejemplo son las funciones &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;split&lt;/code&gt; (separar una cadena) y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;join&lt;/code&gt; (juntar los elementos de un array o lista en una cadena) de Python, Elixir y otros lenguajes: si no le pasas el carácter que usarán para dividir o pegar, lo harán por la cadena vacía, &lt;em&gt;facilitando un caso de uso muy común&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Podemos aprender de estos buenos diseños para crear los propios. Por ejemplo, imagina que tienes un módulo que usa la fecha y hora para registrar algo. El caso &lt;em&gt;común&lt;/em&gt; es que registres algo en el momento inmediato que sucedió. Un buen default sería que el módulo &lt;em&gt;automáticamente&lt;/em&gt; registrara la hora actual sin esperarla del usuario, pero dando la opción de modificarla en caso de que se necesite. Un programa que hace esto es &lt;strong&gt;Git&lt;/strong&gt;, registra automáticamente un commit con la hora en que lo hiciste pero tiene la opción de que la especifiques o modifiques.&lt;/p&gt;
 
@@ -705,195 +948,4 @@ hablar en contra de la sabiduría popular.&lt;/p&gt;
 
 &lt;p&gt;Así, si la decisión de diseño cambia, &lt;em&gt;sólo tienes que cambiar la implementación&lt;/em&gt; y no la interfaz ni mucho menos su uso.&lt;/p&gt;
 
-&lt;p&gt;En el siguiente artículo veremos finalmente una serie de recomendaciones para evitar las fugas de información y como no llevarlo demasiado lejos.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="descomposición-temporal" /><category term="software-design" /><category term="complexity" /><category term="interfaces" /><summary type="html">Una forma de dejar escapar información es mediante forzar el orden de las operaciones de un módulo. Veamos cómo evitarlo.</summary></entry><entry><title type="html">Guía para escoger tu stack: por qué deberías escoger tecnología aburrida</title><link href="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html" rel="alternate" type="text/html" title="Guía para escoger tu stack: por qué deberías escoger tecnología aburrida" /><published>2020-03-11T00:00:00-06:00</published><updated>2020-03-11T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/11/guia-para-escoger-tu-stack-por-que-deberias-escoger-tecnologia-aburrida.html">&lt;p&gt;Este artículo está basado en la presentación &lt;a href=&quot;http://boringtechnology.club&quot;&gt;Choose Boring Technology&lt;/a&gt; de &lt;a href=&quot;https://mcfunley.com/&quot;&gt;Dan McKinley&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;No hay nada que haga más feliz a un desarrollador que trabajar con el último de los frameworks, lenguaje de programación o herramienta que salió el mes pasado.&lt;/p&gt;
-
-&lt;p&gt;Este problema se incrementa si trabajas en web, específicamente en JavaScript, donde cada semana tenemos un framework nuevo.&lt;/p&gt;
-
-&lt;p&gt;Pero hacer esto puede llevar a tu empresa o producto al desastre, como ha pasado muchas veces. Veamos algunas de las razones.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-la-tecnología-aburrida&quot;&gt;Qué es la tecnología &lt;em&gt;aburrida&lt;/em&gt;&lt;/h2&gt;
-
-&lt;p&gt;Cuando hablamos de tecnología &lt;em&gt;aburrida&lt;/em&gt; en este artículo nos referimos a aquello que no es nuevo y brillante como el último framework: cosas que se han usado por mucho tiempo y que a nadie le emocionaría usar porque no es novedoso.&lt;/p&gt;
-
-&lt;h3 id=&quot;ejemplos&quot;&gt;Ejemplos&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Tecnología brillante&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;El último lenguaje de programación para hacer concurrencia (Crystal, Pony o algo así)&lt;/li&gt;
-  &lt;li&gt;Aunque tenga tiempo existiendo, la cosa que casi nadie en el mundo usa (como OCaml o Ío)&lt;/li&gt;
-  &lt;li&gt;La base de datos, servidor web, etc. en la que no has trabajado antes pero quieres usar para complementar tu stack (“Vamos a agregarle CouchDB, creo que puede resolver el problema mejor”).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;No tiene que ser completamente nuevo, puede ser novedoso sólo &lt;em&gt;para ti y tu equipo&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tecnología aburrida&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Una modesta instalación de Python, Django y PostgreSQL&lt;/li&gt;
-  &lt;li&gt;La instalación común de PHP con Laravel y las tecnologías asociadas&lt;/li&gt;
-  &lt;li&gt;Java con Spring&lt;/li&gt;
-  &lt;li&gt;El framework y lenguaje con el que trabajas normalmente y tienes más experiencia&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Con tecnología aburrida &lt;em&gt;no nos referimos a cosas malas&lt;/em&gt;, sino a cosas que no son emocionantes por nuevas.&lt;/p&gt;
-
-&lt;p&gt;Hablemos ahora de por qué es casi siempre más provechoso escoger “tecnología aburrida”.&lt;/p&gt;
-
-&lt;h2 id=&quot;la-capacidad-de-innovar-es-limitada&quot;&gt;La capacidad de innovar es limitada&lt;/h2&gt;
-
-&lt;p&gt;Piensa que tu empresa o producto tiene una capacidad limitada de resolver problemas, generalmente determinada por el tiempo para salir al mercado (o aprovechar una nueva oportunidad de negocio) y por el dinero disponible. El autor de la presentación facilita pensarlo diciendo que tienes unas cuántas “Innovation tokens” o &lt;em&gt;monedas de innovación&lt;/em&gt;. Mientras más limitantes tengas, como el tiempo o el dinero, menos de monedas de innovación tienes.&lt;/p&gt;
-
-&lt;p&gt;Si quieres resolver un problema de manera novedosa, puede que eso requiera todas tus moneditas, o incluso más. Y generalmente es aquí donde &lt;em&gt;cualquier negocio&lt;/em&gt; quiere gastar sus energías. Esto se explica viendo a las empresas como si fueran humanos.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Si piensas en la innovación como un recurso escaso, empieza a perder sentido también estar en las líneas frontales de innovación en bases de datos. O de paradigmas de programación. El punto no es que esas cosas no puedan funcionar. Claro que pueden funcionar. &lt;strong&gt;Pero el software que ha existido por más tiempo tiende a necesitar menos cuidado y atención que el software que acaba de salir&lt;/strong&gt;. - Dan McKinley&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;pirámide-de-maslow&quot;&gt;Pirámide de Maslow&lt;/h3&gt;
-
-&lt;p&gt;Abraham Maslow propuso en los 60’s una &lt;a href=&quot;https://es.wikipedia.org/wiki/Pir%C3%A1mide_de_Maslow&quot;&gt;jerarquía de las necesidades humanas&lt;/a&gt;, conocida como la Pirámide de Maslow, en la que se habla de diferentes tipos de necesidades jerarquizadas, desde las fisiológicas hasta las emocionales.&lt;/p&gt;
-
-&lt;p&gt;Su tesis principal es que tienen que cumplirse las de la base de la pirámide (fisiológicas; comer, dormir, respirar) &lt;strong&gt;antes&lt;/strong&gt; de cumplirse las de la punta (moralidad, creatividad, etc).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584127283/6D71EA5B-8CC6-454B-B342-6287A9845189_edyfje.png&quot; alt=&quot;Pirmámide de Maslow&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Lo que explica Maslow acerca la satisfacción de las necesidades tiene lógica: &lt;em&gt;no puedes&lt;/em&gt; preocuparte por cosas como si la filosofía de los estoicos es correcta si no tienes lo suficiente para comer hoy, o no has dormido en tres días. O peor aún, no puedes pensar en tu movimiento siguiente si te estás quedando sin aire.&lt;/p&gt;
-
-&lt;p&gt;Lo mismo pasa a nivel tecnológico y de supervivencia en las empresas o proyectos: no puedes pensar en formas de beneficiar a tu cliente, de resolver ese problema tan difícil de manera innovadora si te estás pelando con mantener viva en producción una base de datos.&lt;/p&gt;
-
-&lt;p&gt;Así que desde el punto de vista económico tiene completo sentido: escoger tecnología lo más fácil de entender, en la que tengas experiencia o sea fácil encontrar expertos que te guíen, tiene más lógica que escoger lo más nuevo.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584127281/604612EB-0432-4D88-B1B4-CBAAEFF7042D_hyfu6z.png&quot; alt=&quot;Pirámide de necesidades Tenológicas&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;la-tecnología-aburrida-es-más-segura&quot;&gt;La tecnología ‘aburrida’ es más segura&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Existen sólo dos tipos de lenguajes: de los que la gente se queja y los que nadie usa. - Bjarne Stroustrup&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;La tecnología como los lenguajes, librerías, bases de datos y en general software y hardware que lleva mucho tiempo existiendo es más confiable en el sentido de que conocemos sus fallas, sus limitantes y existen personas que nos pueden contar sus usos y malos usos.&lt;/p&gt;
-
-&lt;p&gt;Todos los proyectos de software respetables tienen una lista de errores conocidos, que puedes consultar en su documentación y el tiempo estimado en que se resolverá, si no se resolverá y las formas de darle la vuelta. En pocas palabras ya sabes que esa tecnología apesta y sabes &lt;em&gt;por qué&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Una tecnología nueva no tiene esto, y las sorpresas que la esperan pueden ser muy grandes y desagradables. Pero aquí entramos en el campo del riesgo y el conocimiento humano.&lt;/p&gt;
-
-&lt;h3 id=&quot;cosas-que-no-sabes-que-no-sabes&quot;&gt;Cosas que no sabes que no sabes&lt;/h3&gt;
-
-&lt;p&gt;Todas las cosas que son capaces de ser aprehendidas por la mente humana caen en una de cuatro categorías:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Cosas que no sabes que sabes.&lt;/strong&gt; Son cosas que sabes inconscientemente, como caminar, respirar, mover tus manos, etc. Puede haber otras menos automáticas, que se pueden descubrir con un poco de razonamiento, como la ortografía de una palabra o gramática. Por ejemplo, sabes conjugar en modo subjuntivo la mayoría de los verbos de tu idioma pero si no has estudiado la gramática del lenguaje tal vez ni siquiera sabes que existía el modo subjuntivo.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Cosas que sabes que sabes.&lt;/strong&gt; Este es lo que entendemos como “conocimiento” cuando hablamos de él. Por ejemplo sabes que escribir está dentro de tus habilidades. O sabes que puedes sumar.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Cosas que no sabes que no sabes.&lt;/strong&gt; Cosas que estás consciente de no saber, como física cuántica o análisis de variable compleja. Mientras más sepas de algo, más probable es que te des cuenta que no sabes otras muchas cosas de ese mismo tema. De ahí la frase: “Sólo sé que no sé nada”.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Cosas que no sabes que no sabes.&lt;/strong&gt; Esto es lo que nos pone en riesgo. Aquí caen muchos eventos futuros y la mayor parte del conocimiento disponible está en esta área para cualquier persona. Por ejemplo, no sabemos que no sabemos las causas de un desplome económico. De esto ni siquiera podemos hablar porque &lt;em&gt;no sabemos&lt;/em&gt; que existe. Esto es lo que podemos nombrar como &lt;em&gt;incertidumbre&lt;/em&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;La quinta categoría, que &lt;a href=&quot;https://www.fooledbyrandomness.com/&quot;&gt;N. N. Taleb&lt;/a&gt; describe en su libro &lt;a href=&quot;https://amzn.to/2xqIzmH&quot;&gt;Cisne Negro&lt;/a&gt;, son las cosas que no podemos saber, como el futuro o las causas de algo en el pasado.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584164642/CEA9E5D1-1E77-4543-8256-DB6C195CBCFB_dwvf1j.png&quot; alt=&quot;Teoría del conocimiento&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;¿Por qué es importante esto? La cantidad de cosas que &lt;em&gt;sabemos&lt;/em&gt; que no sabemos o que fallan de un proyecto “aburrido” o probado pueden ser muchas, pero &lt;em&gt;sabemos&lt;/em&gt; que ahí están y nos podemos proteger contra ellas. Aún hay cosas que no sabemos que no sabemos, la incertidumbre nunca se elimina, pero son menores al tener más experiencia colectiva sobre algo.&lt;/p&gt;
-
-&lt;p&gt;En las tecnologías de reciente creación hay mucha información que &lt;em&gt;no sabemos que no sabemos&lt;/em&gt;. La cantidad de incertidumbre es mucho mayor, incluso con cosas no relacionadas directamente con la tecnología, como el entorno en el que se está creando. ¿Matarán mañana al proyecto?&lt;/p&gt;
-
-&lt;p&gt;Reducir la incertidumbre al máximo posible debe ser uno de los objetivos de cualquier buen arquitecto o diseñador de software.&lt;/p&gt;
-
-&lt;h2 id=&quot;integración&quot;&gt;Integración&lt;/h2&gt;
-
-&lt;p&gt;Cuando hablamos de tecnología probada, no sólo nos referimos a componentes individuales sino a conjuntos de tecnologías usados para resolver un problema comúnmente. Piensa en PHP + MySQL + Memcache, Python (Django) + PostgreSQL + Redis.&lt;/p&gt;
-
-&lt;p&gt;Una dificultad extra de usar la tecnología más nueva es que es probable que la tecnología que ya estamos usando no se lleve bien, pero no lo sabremos hasta que la probemos y encontremos las nuevas dificultades.&lt;/p&gt;
-
-&lt;h3 id=&quot;sistemas-en-producción-y-número-de-piezas&quot;&gt;Sistemas en producción y número de piezas&lt;/h3&gt;
-
-&lt;p&gt;Mantener algo en producción es difícil y requiere trabajo y planeación. No porque puedas empezar a usar Neo4J en cinco minutos significa que debas usarla en tu próximo proyecto, ya que el número de elementos diferentes que uses en tu sistema está &lt;em&gt;directamente relacionado con la dificultad de mantener tu sistema en producción y estable&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Deberías buscar &lt;em&gt;resolver el mayor número de problemas con el menor número de tecnologías posible.&lt;/em&gt; Hacerlo te evitará crear una maraña de sistemas imposible de entender y &lt;strong&gt;mantener&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584168893/71161A7B-26AA-4A71-9318-CC74AD810385_yivlr9.png&quot; alt=&quot;Comparación entre un sistema simple y uno complejo&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;ecosistema&quot;&gt;Ecosistema&lt;/h2&gt;
-
-&lt;p&gt;Escoger tecnología que ha sido usada por mucho tiempo y que ya no es novedosa, permite que te aproveches de un cuerpo de conocimiento que ya está disponible para que aprendas, un montón de problemas resueltos y compartidos por otros y un ecosistema maduro que te permitirá avanzar en tus problemas específicos más rápido.&lt;/p&gt;
-
-&lt;p&gt;No hay nada peor cuando estás desarrollando que encontrarte con un problema incomprensible (y una pregunta sin respuestas en Stack Overflow) o con un bug que no ha sido resuelto en tu lenguaje o herramienta. No estoy diciendo que es el fin del mundo, pero seguramente algo que te pudo tomar 10 minutos con la ayuda de otros ahora te costará dos días resolviendo ese obscuro problema.&lt;/p&gt;
-
-&lt;h3 id=&quot;dominio-de-la-tecnología&quot;&gt;Dominio de la tecnología&lt;/h3&gt;
-
-&lt;p&gt;Trabajar con la misma tecnología repetidamente hará que tu conocimiento en esa tecnología se vuelva como andar en bicicleta: pasarás al campo de la competencia inconsciente, la usarás casi como si fuera parte de tu cuerpo y podrás enfocarte más rápido en resolver tus problemas específicos.&lt;/p&gt;
-
-&lt;p&gt;Una desventaja que viene con esto es la famosa frase “Aquel con un martillo piensa que todo es un clavo”, pero se puede evitar manteniéndote al pendiente de los avances tecnológicos en proyectos de juguete y empapándote de nuevas cosas mediante el estudio continuo, para que no se pierda la frescura de lo que haces.&lt;/p&gt;
-
-&lt;p&gt;Después de pensar en todo esto, aún hay veces que conviene integrar ya sea una tecnología que no se estaba manteniendo en el proyecto o lo más nuevo.&lt;/p&gt;
-
-&lt;h2 id=&quot;cuando-integrar-nueva-tecnología&quot;&gt;Cuando integrar nueva tecnología&lt;/h2&gt;
-
-&lt;p&gt;El caso principal en el que conviene integrar una nueva tecnología tiene que ver con un equilibrio en los costos. La principal pregunta que debes hacer es: ¿facilita mis tareas TANTO esta tecnología que equilibra el trabajo extra que tendré que hacer?&lt;/p&gt;
-
-&lt;p&gt;Con “trabajo extra” nos referimos a todo lo mencionado en los puntos anteriores, la curva de aprendizaje, la carga añadida de nueva infraestructura, las dificultades no encontradas aún, etc. Puede haber casos en los que una tecnología nueva supere todo esto, dándote una productividad mayor o permitiéndote hacer cosas que son muy muy difíciles de lograr con la tecnología actual.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Es más conveniente tanto para ti como para el negocio que tus golpes de dopamina vengan por el lado de resolver problemas emocionantes &lt;em&gt;útiles para algún cliente y para el negocio&lt;/em&gt;, que por andar resolviendo problemas oscuros que nadie le proveen mucho valor (tal vez aprendizaje, pero se puede obtener de otras formas).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Enfoca tus esfuerzos en cosas útiles para el negocio.&lt;/strong&gt;&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="arquitectura" /><category term="infraestructura" /><category term="decisiones-técnicas" /><summary type="html">Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología probada.</summary></entry><entry><title type="html">A Philosophy of Software Design: Ocultar información</title><link href="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Ocultar información" /><published>2020-03-07T00:00:00-06:00</published><updated>2020-03-07T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/07/a-philosophy-of-software-design-ocultar-informacion.html">&lt;blockquote&gt;
-  &lt;p&gt;La idea básica es que cada módulo debería encapsular algunas piezas de conocimiento, que representen decisiones de diseño. - &lt;strong&gt;John Ousterhout&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;En &lt;a href=&quot;https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html&quot;&gt;el artículo anterior&lt;/a&gt; vimos por qué es bueno que los módulos sean profundos, es decir, oculten detalles de implementación y funcionalidades detrás de una interfaz lo más sencilla posible. En este y los siguientes artículos vamos a ver maneras prácticas de lograr esto, basado en ejemplos de &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;“A Philosophy of Software Design”&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;En este artículo hablaremos de cómo &lt;strong&gt;ocultar información&lt;/strong&gt; que no es necesaria saber para usar los módulos, ya que complicaría su uso, creando &lt;a href=&quot;https://blog.thedojo.mx/2020/02/26/tres-formas-de-identificar-la-caomplejidad-posd6.html#carga-cognitiva&quot;&gt;carga cognitiva&lt;/a&gt;, uno de los síntomas y consecuencias de la complejidad innecesaria.&lt;/p&gt;
-
-&lt;p&gt;Para saber cómo esconder la información debemos entender por dónde se escapa, prácticas comunes que llevan a un mal diseño y que pueden hacer que nuestro programa sea difícil de entender y mantener.&lt;/p&gt;
-
-&lt;h2 id=&quot;fugas-de-información&quot;&gt;Fugas de información&lt;/h2&gt;
-
-&lt;p&gt;Tener fuga de información es revelar información que no deberíamos, porque se rompe el propósito del encapsulamiento en el módulo.&lt;/p&gt;
-
-&lt;p&gt;Recuerda la cita del principio: un módulo tiene que ocultar y mantener &lt;em&gt;decisiones de diseño&lt;/em&gt;. Si esta decisión cambia y tienes que modificar varios módulos, tienes una fuga de información. En otras palabras, &lt;strong&gt;una fuga de información sucede cuando una decisión de diseño se ve reflejada en varios módulos&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ejemplo. Piensa en una clase se conecte a una API para obtener información relacionada con los códigos postales. Para todos los usuarios de esta clase, debería ser &lt;strong&gt;irrelevante&lt;/strong&gt; qué API se está usando, si es una API HTTP externa, un archivo gigantesco con todos los datos, una base de datos o lo que sea, mientras la clase cumpla con su trabajo.&lt;/p&gt;
-
-&lt;p&gt;Si al hacer cambios en esta decisión de diseño tienes que cambiar otras cosas a parte de esta clase, tienes algún tipo de fuga de información. ¿Ya pensaste en las formas en las que se puede escapar la información?&lt;/p&gt;
-
-&lt;p&gt;John Ousterhout sugiere hacerte la siguiente pregunta:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;¿Cómo puedo reorganizar estas clases para que esta parte del conocimiento general sólo afecte a esta clase?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Veamos un ejemplo de una fuga de información. Piensa en una aplicación en la que la principal tarea sea obtener el estado del clima y mostrarlo al usuario. Para esto usaremos una API que nos dará los datos y nosotros seremos los encargados de mostrarla.&lt;/p&gt;
-
-&lt;p&gt;Una pieza de información importante para obtener el clima es ala ubicación. Considera que la API actual recibe el nombre de la ciudad para devolver las predicciones meteorológicas.&lt;/p&gt;
-
-&lt;p&gt;Veamos dos diseños:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;En este escenario hacemos que la inicialización de la clase o cada una de las llamadas a sus métodos para obtener los diferentes valores manden el nombre de la ciudad de los datos que buscamos. Así, si buscamos los datos acerca de México mandamos “México” como parámetro para obtener la temperatura.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;En otro escenario decidimos que aunque la API reciba el nombre de la ciudad, nuestra clase recibirá las coordenadas e internamente obtendremos el nombre de la ciudad de esas coordenadas y lo mandaremos a la API. Es probable que para esta transformación usemos otra clase u otro paquete.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;¿Qué diseño te parece correcto?&lt;/p&gt;
-
-&lt;p&gt;En el diseño 1 estamos revelando información acerca de  &lt;em&gt;la implementación&lt;/em&gt; de esta API específicamente. ¿Qué pasaría si tenemos que cambiar de API y la próxima necesita las coordenadas en vez de el nombre de la ciudad? Tendríamos que cambiar el diseño en la clase de la API y en los lugares en los que se usa.&lt;/p&gt;
-
-&lt;p&gt;En el segundo diseño estamos ocultando más detalles detalles de implementación, ya que las coordenadas son una forma más natural de comunicar lugares y es probable que se lo que se obtenga del usuario (por ejemplo, desde su geolocalización por dispositivo). La transformación de las coordenadas en un nombre de ciudad quita carga del usuario de nuestra clase.&lt;/p&gt;
-
-&lt;p&gt;¿Puedes pensar en otros ejemplos? En el libro &lt;a href=&quot;https://amzn.to/2H92nwA&quot;&gt;PoSD&lt;/a&gt; vienen algunos.&lt;/p&gt;
-
-&lt;p&gt;En el próximo artículo hablaremos de otra forma de fugas de información: la descomposición temporal.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="interfaces" /><category term="módulo" /><category term="complejidad" /><category term="diseño-de-software" /><summary type="html">Ocultar información es una de las claves para reducir la complejidad, veamos algunas maneras de lograrlo.</summary></entry></feed>
+&lt;p&gt;En el siguiente artículo veremos finalmente una serie de recomendaciones para evitar las fugas de información y como no llevarlo demasiado lejos.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="descomposición-temporal" /><category term="software-design" /><category term="complexity" /><category term="interfaces" /><summary type="html">Una forma de dejar escapar información es mediante forzar el orden de las operaciones de un módulo. Veamos cómo evitarlo.</summary></entry></feed>
