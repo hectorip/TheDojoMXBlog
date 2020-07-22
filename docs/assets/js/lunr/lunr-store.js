@@ -256,4 +256,10 @@ var store = [{
         "tags": ["shell","zsh","bash","terminal"],
         "url": "https://blog.thedojo.mx/2020/07/16/de-bash-a-zsh.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794238/B29C980A-0E0F-444F-9F25-EFAB95FDBD4E_r9qk5v.jpg"
+      },{
+        "title": "Traducción automática de textos: un caso práctico",
+        "excerpt":"Traducir texto es una tarea frecuente y que puede realizarse de diferentes maneras, en este artículo queremos explorar algunas de ellas. Existen sitios donde la traducción puede hacerse en línea, como en Google Translate, sin embargo, en muchos casos existe un límite en la cantidad de texto que puedes traducir....","categories": [],
+        "tags": ["apis","machine-learning","AI"],
+        "url": "https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg"
       }]
