@@ -6,8 +6,8 @@ tags: apis machine-learning AI
 comments: true
 excerpt: "Escribe aquí un buen resumen de tu artículo"
 header:
-  overlay_image: #image
-  teaser: #image
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg
   overlay_filer: rgba(0, 0, 0, 0.5)
 ---
 
@@ -108,6 +108,4 @@ Si tuvieras necesidad de entrenar la red neuronal sería necesario que tuvieras 
 * Escalarlo para su uso masivo puede ser todo un reto.
 * Las redes neuronales son cajas negras por lo que si se detecta algún error en la traducción normalmente será muy difícil saber en qué parte de los datos de entrenamiento se introdujo el error y por lo tanto será difícil removerlo.
 
-
 En el siguiente artículo te contaremos cómo nos fue con las pruebas.
-
