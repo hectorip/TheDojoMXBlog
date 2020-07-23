@@ -26,3 +26,14 @@ Este es un blog open source. Si quieres participar con un artículo manda un PR.
 - Información práctica, que se pueda aplicar.
 - Información actual pero que aguante el paso del tiempo.
 - Tutoriales bien escritos bienvenidos.
+
+
+### Para publicar
+gem install bundler:2.1.2
+bundle install
+jekyll serve
+
+ jekyll build -d docs
+
+
+export JEKYLL_ENV=production

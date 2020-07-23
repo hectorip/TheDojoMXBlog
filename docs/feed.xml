@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-07-22T23:50:04-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Traducción automática: API’s vs tu propio modelo</title><link href="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html" rel="alternate" type="text/html" title="Traducción automática: API’s vs tu propio modelo" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-19T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html">&lt;p&gt;Traducir texto es una tarea frecuente y que puede realizarse de diferentes maneras, en este artículo queremos explorar algunas de ellas.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-07-23T18:26:42-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Traducción automática: API’s vs tu propio modelo</title><link href="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html" rel="alternate" type="text/html" title="Traducción automática: API’s vs tu propio modelo" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-19T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html">&lt;p&gt;Traducir texto es una tarea frecuente y que puede realizarse de diferentes maneras, en este artículo queremos explorar algunas de ellas.&lt;/p&gt;
 
 &lt;p&gt;Existen sitios donde la traducción puede hacerse en línea, como en &lt;a href=&quot;https://translate.google.com.mx/?hl=es&quot;&gt;Google Translate&lt;/a&gt;, sin embargo, en muchos casos existe un límite en la cantidad de texto que puedes traducir.&lt;/p&gt;
 
@@ -19,20 +19,25 @@
 
 &lt;h2 id=&quot;apis&quot;&gt;API’s&lt;/h2&gt;
 
-&lt;p&gt;Si quieres automatizar las tareas de traducción para integrarlas en un sistema más grande o generar salidas que se queden almacenadas como en archivos, una solución es crear un programa que consuma una API de traducción.&lt;/p&gt;
+&lt;p&gt;Si quieres automatizar las tareas de traducción para integrarlas en un sistema más grande o generar salidas que se queden almacenadas en archivos o bases de datos, una solución es crear un programa que consuma una API de traducción.&lt;/p&gt;
 
 &lt;p&gt;Algunas opciones son:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Cloud Translation&lt;/strong&gt; de Google Cloud Platform. Tiene dos niveles de traducción: el básico que soporta el modelo tradicional de traducción y el avanzado que permite customizar los modelos de traducción además de incluir glosarios y otras monerías.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;AutoML Translation&lt;/strong&gt;. Pertenece también a GCP y permite entrenar un modelo mediante el envío de pares de traducción que posteriormente puedes usar para hacer traducciones. Es el que más trabajo implicaría de tu parte pero es el que más flexibilidad tiene.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Cloud Translation&lt;/strong&gt; de Google Cloud Platform. Tiene dos niveles de traducción: el básico que soporta el modelo tradicional de traducción y el avanzado que permite customizar los modelos de traducción además de incluir glosarios y otras monerías.&lt;/p&gt;
+  &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.ibm.com/watson/services/language-translator/&quot;&gt;Watson Language Translator&lt;/a&gt; permite traducir una gran cantidad de formatos de texto en muchos lenguajes. La únic desventaja es que las API’s&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Otras&lt;/strong&gt;. En &lt;a href=&quot;https://rapidapi.com/collection/google-translate-api-alternatives&quot;&gt;RapidAPI&lt;/a&gt; puedes encontrar una colección actualizada de las alternativas a Google Translation API.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Para desarrollar esta pieza de software, lo más recomendable sería crear un wrapper alrededor de la API y exponer a las demás partes del programa sólo los métodos para poder realizar la tarea de traducción, abstrayendo completamente los detalles de cómo se realiza. De esta manera podrías cambiar de API fácilmente (implementando las llamadas a la nueva API) sin irrumpir en la mayoría del programa.&lt;/p&gt;
 
-&lt;p&gt;Además esta forma de hacerlo también sería compatible con el siguiente método.&lt;/p&gt;
+&lt;p&gt;Además esta forma de hacerlo también sería compatible con el siguiente método:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;AutoML Translation&lt;/strong&gt;. Pertenece también a GCP y permite entrenar un modelo mediante el envío de pares de frases para entrenar un modelo que posteriormente puedes usar para hacer traducciones sobre un dominio específico. Es el que más trabajo implicaría de tu parte pero es el que más flexibilidad de tiene.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;ventajas&quot;&gt;Ventajas&lt;/h3&gt;
 
@@ -46,7 +51,7 @@
 
 &lt;p&gt;Los modelos de Aprendizaje Profundo que se han desarrollado de manera importante en los últimos años han sustituido los modelos previos que utilizaban el conocimiento de lingüistas y décadas de investigación estadística.&lt;/p&gt;
 
-&lt;p&gt;Una peculiaridad de un modelo de Aprendizaje Profundo es que logra detectar patrones de uso de los lenguajes y utilizar dichos patrones para realizar la traducción de uno a otro. Dichos patrones no tienen una representación equivalente de una palabra en un idioma a otra en un idioma distinto, sino que combinan los patrones internos de uso de las palabras en un idioma y después aplican los patrones que el otro idioma utilizaría. Eso hace que los traductores que utilizan Aprendizaje profundo sean mucho más precisos y que las traducciones sean mucho más naturales, además de que pueden adaptarse a casos de uso específicos que los modelos anteriores no contemplaban. ¿Por qué? Porque podemos entrenarlos utilizando un conjunto de datos de entrenamiento que se enfoquen en un dominio específico del lenguaje (ej. traducción de subtítulos de películas, o traducción de textos técnicos).&lt;/p&gt;
+&lt;p&gt;Una peculiaridad de un modelo de Aprendizaje Profundo es que logra detectar patrones de uso de los lenguajes y utilizar dichos patrones para realizar la traducción de uno a otro. Dichos patrones no tienen una representación equivalente de una palabra en un idioma a otra en un idioma distinto, sino que combinan los patrones internos de uso de las palabras en un idioma y después aplican los patrones que el otro idioma utilizaría. Eso hace que los traductores que utilizan aprendizaje profundo sean mucho más precisos y que las traducciones sean mucho más naturales, además de que pueden adaptarse a casos de uso específicos que los modelos anteriores no contemplaban. ¿Por qué? Porque podemos entrenarlos utilizando un conjunto de datos de entrenamiento que se enfoquen en un dominio específico del lenguaje (ej. traducción de subtítulos de películas, o traducción de textos técnicos).&lt;/p&gt;
 
 &lt;p&gt;A pesar de ello, uno de los impedimentos más relevantes para su entrenamiento es que hasta hace algunos años, entrenar un modelo requería grandes cantidades de cómputo y memoria, cosa que ha ido cambiando conforme la industria ha ido evolucionando y los principales proveedores de cómputo han puesto a disposición del mundo, plataformas en la nube donde puede adquirirse poder computacional y de procesamiento de manera sencilla (AWS, Google, Microsoft, IBM, Oracle, etc.). De igual forma, las compañías que crean procesadores especializados (NVIDIA, AMD) también han logrado reducir los costos y poner en manos de cada vez más desarrolladores, tarjetas de video con Unidades de Procesamiento Gráfico (GPUs) a precios cada vez más accesibles.&lt;/p&gt;
 
@@ -73,11 +78,11 @@
 
 &lt;p&gt;Existen casos en particular donde no es necesario entrenar tu propia red neuronal recurrente, ya que es probable que alguien más lo haya hecho ya. Esto puede ahorrarte muchas horas de procesamiento de información y el entrenamiento y validación del proceso de entrenamiento.&lt;/p&gt;
 
-&lt;p&gt;En general, el proceso que se sigue es:&lt;/p&gt;
+&lt;p&gt;El proceso que se sigue es:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Obtener un corpus o conjunto de datos sobre el problema que quieres resolver (por ejemplo, textos en el idioma de origen y en el idioma destino.&lt;/li&gt;
-  &lt;li&gt;Limpieza y normalización de dicho corpus que remueva errores o piezas de los textos que sean incompletas o por ejemplo se puede decidir utilizar todas las palabras en minúsculas, separar las oraciones por ciertos símbolos de puntuación, etc. estas decisiones deberán tomarse teniendo en cuenta los objetivos para los cuales utilizaremos nuestro modelo de traducción, no es lo mismo un traductor de textos formateados de manera regular a textos que por ejemplo se vayan a utilizar como subtítulos para películas. Los pasos que normalmente se utilizarán tendrán como mínimo, código para separar las oraciones, y normalizar el texto.&lt;/li&gt;
+  &lt;li&gt;Limpieza y normalización de este corpus que remueva errores o piezas de los textos que sean incompletas o por ejemplo se puede decidir utilizar todas las palabras en minúsculas, separar las oraciones por ciertos símbolos de puntuación, etc. estas decisiones deberán tomarse teniendo en cuenta los objetivos para los cuales utilizaremos nuestro modelo de traducción, no es lo mismo un traductor de textos formateados de manera regular a textos que por ejemplo se vayan a utilizar como subtítulos para películas. Los pasos que normalmente se utilizarán tendrán como mínimo, código para separar las oraciones, y normalizar el texto.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;utilizando-un-modelo-de-traducción-prefabricado&quot;&gt;Utilizando un modelo de traducción prefabricado&lt;/h3&gt;
@@ -107,7 +112,7 @@
   &lt;li&gt;Las redes neuronales son cajas negras por lo que si se detecta algún error en la traducción normalmente será muy difícil saber en qué parte de los datos de entrenamiento se introdujo el error y por lo tanto será difícil removerlo.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;En el siguiente artículo te contaremos cómo nos fue con las pruebas.&lt;/p&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="apis" /><category term="machine-learning" /><category term="AI" /><summary type="html">EXploremos las opciones que tienes para realizar traducciones automáticas de texto en tus proyectos.</summary></entry><entry><title type="html">De Bash a Zsh</title><link href="https://blog.thedojo.mx/2020/07/16/de-bash-a-zsh.html" rel="alternate" type="text/html" title="De Bash a Zsh" /><published>2020-07-16T00:00:00-05:00</published><updated>2020-07-16T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/16/de-bash-a-zsh</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/16/de-bash-a-zsh.html">&lt;p&gt;Con la reciente liberación de MacOS Catalina, Apple anunció que entre alguno de los cambios al sistema operativo, se utilizará a partir de esta versión un nuevo &lt;em&gt;shell&lt;/em&gt; que de manera regular se utilizaba en la app Terminal y en otras aplicaciones utilizadas por los desarrolladores para interactuar con la Mac a través de la línea de comandos.&lt;/p&gt;
+&lt;p&gt;En el siguiente artículo te contaremos cómo nos fue con las pruebas.&lt;/p&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="apis" /><category term="machine-learning" /><category term="AI" /><summary type="html">Exploremos las opciones que tienes para realizar traducciones automáticas de texto en tus proyectos.</summary></entry><entry><title type="html">De Bash a Zsh</title><link href="https://blog.thedojo.mx/2020/07/16/de-bash-a-zsh.html" rel="alternate" type="text/html" title="De Bash a Zsh" /><published>2020-07-16T00:00:00-05:00</published><updated>2020-07-16T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/16/de-bash-a-zsh</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/16/de-bash-a-zsh.html">&lt;p&gt;Con la reciente liberación de MacOS Catalina, Apple anunció que entre alguno de los cambios al sistema operativo, se utilizará a partir de esta versión un nuevo &lt;em&gt;shell&lt;/em&gt; que de manera regular se utilizaba en la app Terminal y en otras aplicaciones utilizadas por los desarrolladores para interactuar con la Mac a través de la línea de comandos.&lt;/p&gt;
 
 &lt;p&gt;El shell que se utilizaba previo a esta versión era &lt;strong&gt;Bash&lt;/strong&gt; (&lt;em&gt;Bourne Again Shell&lt;/em&gt;) y el que se utilizará ahora es &lt;strong&gt;Zsh&lt;/strong&gt;.&lt;/p&gt;
 
@@ -156,7 +161,7 @@
 
 &lt;h2 id=&quot;porqué-razón-puede-estar-cambiando-apple-de-un-shell-a-otro&quot;&gt;¿Porqué razón puede estar cambiando Apple de un shell a otro?&lt;/h2&gt;
 
-&lt;p&gt;Aunque no hay una razón única, existen varias posibilidades. La primera de ellas es que aunque Apple utiliza Bash desde OSX Jaguar, no había actualizado Bash desde la versión 3.2 liberada en el 2007, es decir casi el mismo año en el que se liberó el primer iPhone. Es probable que una de las razones por las que esto sucedió fue que Bash cambió su licencia de uso de &lt;strong&gt;GNU GPL 2 a una licencia GNU GPLv3&lt;/strong&gt;, y dicho cambio incluía restricciones que quizás no fueron del todo favorables a Apple.&lt;/p&gt;
+&lt;p&gt;Existen varias posibilidades, la primera de ellas es que aunque Apple utiliza Bash desde OSX Jaguar, no había actualizado Bash desde la versión 3.2 liberada en el 2007, es decir casi el mismo año en el que se liberó el primer iPhone. Es probable que una de las razones por las que esto sucedió fue que Bash cambió su licencia de uso de &lt;strong&gt;GNU GPL 2 a una licencia GNU GPLv3&lt;/strong&gt;, y dicho cambio incluía restricciones que quizás no fueron del todo favorables a Apple.&lt;/p&gt;
 
 &lt;p&gt;Así que migrar a Zsh es una opción refrescante. La versión que está incluida en Catalina es la 5.7.1 y utiliza una versión de licenciamiento &lt;strong&gt;MIT que es menos restrictiva que la GPLv3&lt;/strong&gt;.&lt;/p&gt;
 
@@ -164,7 +169,7 @@
 
 &lt;p&gt;No necesariamente, aunque Zsh será el shell por default para todas las nuevas cuentas de usuario creadas en macOS Catalina, si tu hiciste un upgrade del Sistema Operativo, tu cuenta seguirá utilizando por default Bash. Pero siempre tendrás opción de configurar el shell que desees por default de manera voluntaria, incluso a alguno distinto a Zsh o Bash.&lt;/p&gt;
 
-&lt;p&gt;A nivel general, Bash y Zsh tienen un nivel de compatibilidad bastante alto ya que &lt;strong&gt;ambos están basados en el aún más antiguo Bourne Shell&lt;/strong&gt;, de tal forma que la mayoría de los script y comandos existentes funcionarán sin ningún cambio en Zsh.&lt;/p&gt;
+&lt;p&gt;A nivel general, Bash y Zsh tienen un nivel de compatibilidad bastante alto ya que &lt;strong&gt;ambos están basados en el aún más antiguo Bourne Shell&lt;/strong&gt;, de tal forma que la mayoría de los scripts y comandos existentes funcionarán sin ningún cambio en Zsh.&lt;/p&gt;
 
 &lt;p&gt;La ventaja real de Zsh es la inclusión de funcionalidades que hacen trabajar con él más fácil (funcionalidades no incluidas por default en la versión vieja de Bash), entre algunas de mis funcionalidades favoritas están:&lt;/p&gt;
 
@@ -234,7 +239,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.bash.academy/&quot;&gt;Bash academy&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=10737639&quot;&gt;YCombinstor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=10737639&quot;&gt;Discusión en YCombinator&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.rayninfo.co.uk/tips/zshtips.html?LMCL=bNg6o6&quot;&gt;Zsh tips&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://leahneukirchen.org/blog/archive/2008/02/10-zsh-tricks-you-may-not-know.html&quot;&gt;10 trucos de Zsh&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://zsh.sourceforge.net/Guide/zshguide.html&quot;&gt;Zsh Guide&lt;/a&gt;&lt;/li&gt;
