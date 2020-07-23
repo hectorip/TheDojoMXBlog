@@ -1,14 +1,14 @@
 ---
-title: "Traducción automática de textos: un caso práctico"
+title: "Traducción automática: API's vs tu propio modelo"
 date: 2020-07-19
 author: Alejandro Santamaría
 tags: apis machine-learning AI
 comments: true
-excerpt: "Escribe aquí un buen resumen de tu artículo"
+excerpt: "EXploremos las opciones que tienes para realizar traducciones automáticas de texto en tus proyectos."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filer: rgba(0, 0, 0, 0.8)
 ---
 
 Traducir texto es una tarea frecuente y que puede realizarse de diferentes maneras, en este artículo queremos explorar algunas de ellas.
@@ -37,7 +37,7 @@ Si quieres automatizar las tareas de traducción para integrarlas en un sistema 
 Algunas opciones son:
 
 * **Cloud Translation** de Google Cloud Platform. Tiene dos niveles de traducción: el básico que soporta el modelo tradicional de traducción y el avanzado que permite customizar los modelos de traducción además de incluir glosarios y otras monerías.
-* **AutoML Translation**. Pertenece también a GCP y permite entrenar un modelo mediante el envío de pares de traducción que posteriormente puedes usar para hacer traducciones. Es el que más trabajo implicaría de tu parte pero es el que más flexibilidad de tiene.
+* **AutoML Translation**. Pertenece también a GCP y permite entrenar un modelo mediante el envío de pares de traducción que posteriormente puedes usar para hacer traducciones. Es el que más trabajo implicaría de tu parte pero es el que más flexibilidad tiene.
 * [Watson Language Translator](https://www.ibm.com/watson/services/language-translator/) permite traducir una gran cantidad de formatos de texto en muchos lenguajes. La únic desventaja es que las API’s
 * **Otras**. En [RapidAPI](https://rapidapi.com/collection/google-translate-api-alternatives) puedes encontrar una colección actualizada de las alternativas a Google Translation API.
 
