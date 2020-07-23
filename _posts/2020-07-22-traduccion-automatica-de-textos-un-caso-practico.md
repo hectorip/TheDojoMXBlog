@@ -1,14 +1,14 @@
 ---
-title: "Traducción automática de textos: un caso práctico"
+title: "Traducción automática: API's vs tu propio modelo"
 date: 2020-07-19
 author: Alejandro Santamaría
 tags: apis machine-learning AI
 comments: true
-excerpt: "Escribe aquí un buen resumen de tu artículo"
+excerpt: "EXploremos las opciones que tienes para realizar traducciones automáticas de texto en tus proyectos."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filer: rgba(0, 0, 0, 0.8)
 ---
 
 Traducir texto es una tarea frecuente y que puede realizarse de diferentes maneras, en este artículo queremos explorar algunas de ellas.
@@ -60,7 +60,7 @@ Generalmente esta comodidad viene un costo económico que varía dependiendo del
 
 Los modelos de Aprendizaje Profundo que se han desarrollado de manera importante en los últimos años han sustituido los modelos previos que utilizaban el conocimiento de lingüistas y décadas de investigación estadística.
 
-Una peculiaridad de un modelo de Aprendizaje Profundo es que logra detectar patrones de uso de los lenguajes y utilizar dichos patrones para realizar la traducción de uno a otro. Dichos patrones no tienen una representación equivalente de una palabra en un idioma a otra en un idioma distinto, sino que combinan los patrones internos de uso de las palabras en un idioma y después aplican los patrones que el otro idioma utilizaría. Eso hace que los traductores que utilizan Aprendizaje profundo sean mucho más precisos y que las traducciones sean mucho más naturales, además de que pueden adaptarse a casos de uso específicos que los modelos anteriores no contemplaban. ¿Por qué? Porque podemos entrenarlos utilizando un conjunto de datos de entrenamiento que se enfoquen en un dominio específico del lenguaje (ej. traducción de subtítulos de películas, o traducción de textos técnicos).
+Una peculiaridad de un modelo de Aprendizaje Profundo es que logra detectar patrones de uso de los lenguajes y utilizar dichos patrones para realizar la traducción de uno a otro. Dichos patrones no tienen una representación equivalente de una palabra en un idioma a otra en un idioma distinto, sino que combinan los patrones internos de uso de las palabras en un idioma y después aplican los patrones que el otro idioma utilizaría. Eso hace que los traductores que utilizan aprendizaje profundo sean mucho más precisos y que las traducciones sean mucho más naturales, además de que pueden adaptarse a casos de uso específicos que los modelos anteriores no contemplaban. ¿Por qué? Porque podemos entrenarlos utilizando un conjunto de datos de entrenamiento que se enfoquen en un dominio específico del lenguaje (ej. traducción de subtítulos de películas, o traducción de textos técnicos).
 
 A pesar de ello, uno de los impedimentos más relevantes para su entrenamiento es que hasta hace algunos años, entrenar un modelo requería grandes cantidades de cómputo y memoria, cosa que ha ido cambiando conforme la industria ha ido evolucionando y los principales proveedores de cómputo han puesto a disposición del mundo, plataformas en la nube donde puede adquirirse poder computacional y de procesamiento de manera sencilla (AWS, Google, Microsoft, IBM, Oracle, etc.). De igual forma, las compañías que crean procesadores especializados (NVIDIA, AMD) también han logrado reducir los costos y poner en manos de cada vez más desarrolladores, tarjetas de video con Unidades de Procesamiento Gráfico (GPUs) a precios cada vez más accesibles.
 
@@ -82,10 +82,10 @@ Estos modelos requieren mucho más operaciones matemáticas durante su entrenami
 
 Existen casos en particular donde no es necesario entrenar tu propia red neuronal recurrente, ya que es probable que alguien más lo haya hecho ya. Esto puede ahorrarte muchas horas de procesamiento de información y el entrenamiento y validación del proceso de entrenamiento.
 
-En general, el proceso que se sigue es:
+El proceso que se sigue es:
 
 1. Obtener un corpus o conjunto de datos sobre el problema que quieres resolver (por ejemplo, textos en el idioma de origen y en el idioma destino.
-2. Limpieza y normalización de dicho corpus que remueva errores o piezas de los textos que sean incompletas o por ejemplo se puede decidir utilizar todas las palabras en minúsculas, separar las oraciones por ciertos símbolos de puntuación, etc. estas decisiones deberán tomarse teniendo en cuenta los objetivos para los cuales utilizaremos nuestro modelo de traducción, no es lo mismo un traductor de textos formateados de manera regular a textos que por ejemplo se vayan a utilizar como subtítulos para películas. Los pasos que normalmente se utilizarán tendrán como mínimo, código para separar las oraciones, y normalizar el texto.
+2. Limpieza y normalización de este corpus que remueva errores o piezas de los textos que sean incompletas o por ejemplo se puede decidir utilizar todas las palabras en minúsculas, separar las oraciones por ciertos símbolos de puntuación, etc. estas decisiones deberán tomarse teniendo en cuenta los objetivos para los cuales utilizaremos nuestro modelo de traducción, no es lo mismo un traductor de textos formateados de manera regular a textos que por ejemplo se vayan a utilizar como subtítulos para películas. Los pasos que normalmente se utilizarán tendrán como mínimo, código para separar las oraciones, y normalizar el texto.
 
 ### Utilizando un modelo de traducción prefabricado
 
