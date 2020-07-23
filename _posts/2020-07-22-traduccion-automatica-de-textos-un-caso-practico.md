@@ -4,7 +4,7 @@ date: 2020-07-19
 author: Alejandro Santamaría
 tags: apis machine-learning AI
 comments: true
-excerpt: "EXploremos las opciones que tienes para realizar traducciones automáticas de texto en tus proyectos."
+excerpt: "Exploremos las opciones que tienes para realizar traducciones automáticas de texto en tus proyectos."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg
