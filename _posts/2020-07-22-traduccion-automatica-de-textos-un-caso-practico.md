@@ -32,18 +32,21 @@ Esta opción nos recuerda que a veces la mejor solución es que no programemos n
 
 ## API's
 
-Si quieres automatizar las tareas de traducción para integrarlas en un sistema más grande o generar salidas que se queden almacenadas como en archivos, una solución es crear un programa que consuma una API de traducción.
+Si quieres automatizar las tareas de traducción para integrarlas en un sistema más grande o generar salidas que se queden almacenadas en archivos o bases de datos, una solución es crear un programa que consuma una API de traducción.
 
 Algunas opciones son:
 
 * **Cloud Translation** de Google Cloud Platform. Tiene dos niveles de traducción: el básico que soporta el modelo tradicional de traducción y el avanzado que permite customizar los modelos de traducción además de incluir glosarios y otras monerías.
-* **AutoML Translation**. Pertenece también a GCP y permite entrenar un modelo mediante el envío de pares de traducción que posteriormente puedes usar para hacer traducciones. Es el que más trabajo implicaría de tu parte pero es el que más flexibilidad de tiene.
+
 * [Watson Language Translator](https://www.ibm.com/watson/services/language-translator/) permite traducir una gran cantidad de formatos de texto en muchos lenguajes. La únic desventaja es que las API’s
 * **Otras**. En [RapidAPI](https://rapidapi.com/collection/google-translate-api-alternatives) puedes encontrar una colección actualizada de las alternativas a Google Translation API.
 
 Para desarrollar esta pieza de software, lo más recomendable sería crear un wrapper alrededor de la API y exponer a las demás partes del programa sólo los métodos para poder realizar la tarea de traducción, abstrayendo completamente los detalles de cómo se realiza. De esta manera podrías cambiar de API fácilmente (implementando las llamadas a la nueva API) sin irrumpir en la mayoría del programa.
 
-Además esta forma de hacerlo también sería compatible con el siguiente método.
+Además esta forma de hacerlo también sería compatible con el siguiente método:
+
+* **AutoML Translation**. Pertenece también a GCP y permite entrenar un modelo mediante el envío de pares de frases para entrenar un modelo que posteriormente puedes usar para hacer traducciones sobre un dominio específico. Es el que más trabajo implicaría de tu parte pero es el que más flexibilidad de tiene.
+
 
 ### Ventajas
 
@@ -63,7 +66,7 @@ A pesar de ello, uno de los impedimentos más relevantes para su entrenamiento e
 
 El modelo genérico de un sistema de traducción basado en Aprendizaje de Máquina consta de dos piezas principales (cada una de ellas una red neuronal por sí misma):
 
-1. Un  codificador de secuencias de palabras (que serían oraciones del texto) que aprende a codificar palabras como un arreglo de números que representa el significado de la oración. 
+1. Un  codificador de secuencias de palabras (que serían oraciones del texto) que aprende a codificar palabras como un arreglo de números que representa el significado de la oración.
 
 2. Un decodificador de números, que toma un arreglo de números en general y los transforma en oraciones.
 
@@ -98,7 +101,7 @@ Si tuvieras necesidad de entrenar la red neuronal sería necesario que tuvieras 
 ### Ventajas
 
 * Puede adaptarse mediante el entrenamiento, a un estilo o tipo específico de textos (textos científicos, técnicos, informales, subtítulos, etc.)
-* Puede utilizarse en modo “offline” sin necesidad de estar conectado a alguna fuente externa de internet. 
+* Puede utilizarse en modo “offline” sin necesidad de estar conectado a alguna fuente externa de internet.
 * No tiene costos o límites de uso, más que aquellos resultado de operar el modelo una vez entrenado (y de entrenarlo si fuera necesario hacerlo).
 
 ### Desventajas
