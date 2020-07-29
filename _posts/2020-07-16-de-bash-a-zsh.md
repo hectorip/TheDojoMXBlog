@@ -8,7 +8,7 @@ excerpt: "Zsh es el nuevo shell default de MacOS Catalina. Entiende las principa
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1586794238/B29C980A-0E0F-444F-9F25-EFAB95FDBD4E_r9qk5v.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794238/B29C980A-0E0F-444F-9F25-EFAB95FDBD4E_r9qk5v.jpg
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 Con la reciente liberación de MacOS Catalina, Apple anunció que entre alguno de los cambios al sistema operativo, se utilizará a partir de esta versión un nuevo _shell_ que de manera regular se utilizaba en la app Terminal y en otras aplicaciones utilizadas por los desarrolladores para interactuar con la Mac a través de la línea de comandos.

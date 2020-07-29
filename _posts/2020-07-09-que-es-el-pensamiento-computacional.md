@@ -8,7 +8,7 @@ excerpt: "El pensamiento computacional ha sonado mucho en los medios últimament
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1594271708/BA7B68D6-CB97-4E54-8D9D-B3D2530A8A84_ovfgob.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1594271708/BA7B68D6-CB97-4E54-8D9D-B3D2530A8A84_ovfgob.jpg
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 Todo lo relacionado con el **pensamiento computacional** (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad, porque vivimos en un mundo en el que _cada aspecto de la vida_ se ha visto influenciado por lo que la computación permite.

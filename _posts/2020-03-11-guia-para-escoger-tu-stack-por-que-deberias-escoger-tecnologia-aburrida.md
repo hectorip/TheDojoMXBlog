@@ -8,7 +8,7 @@ excerpt: "Si quieres hacer feliz a un desarrollador, dale una tecnología nueva 
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583644548/9641A743-5E78-4719-9F90-6D77F1CD4E1E_xhawu6.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583644548/9641A743-5E78-4719-9F90-6D77F1CD4E1E_xhawu6.jpg
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 Este artículo está basado en la presentación [Choose Boring Technology](http://boringtechnology.club) de [Dan McKinley](https://mcfunley.com/).

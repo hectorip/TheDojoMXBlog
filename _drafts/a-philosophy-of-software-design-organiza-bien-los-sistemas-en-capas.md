@@ -8,7 +8,7 @@ excerpt: "Resuelve problemas de organización de código mediante un sistema en 
 header:
   overlay_image: 
   teaser: 
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filer: "rgba(0, 0, 0, 0.5)"
 ---
 
 Hemos escuchado muchísimo acerca de los sistemas en capas como MVC, MVT, MV*, _MVADFGDFD_ etc. La mayoría de los sistemas actuales se organiza así: **en capas**.

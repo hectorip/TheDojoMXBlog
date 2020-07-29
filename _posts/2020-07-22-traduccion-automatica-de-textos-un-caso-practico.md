@@ -6,9 +6,9 @@ tags: apis machine-learning AI
 comments: true
 excerpt: "Exploremos las opciones que tienes para realizar traducciones automáticas de texto en tus proyectos."
 header:
+  overlay_filter: "rgba(0, 0, 0, 0.8)"
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg
-  overlay_filer: rgba(0, 0, 0, 0.8)
 ---
 
 Traducir texto es una tarea frecuente y que puede realizarse de diferentes maneras, en este artículo queremos explorar algunas de ellas.

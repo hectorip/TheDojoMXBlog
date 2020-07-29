@@ -8,7 +8,7 @@ excerpt: "Hablemos de algunos consejos para lograr ocultar la mayor cantidad de 
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584519537/2E4D3407-0447-4034-BEFA-188831BF5971_x4th6g.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584519537/2E4D3407-0447-4034-BEFA-188831BF5971_x4th6g.jpg
-  overlay_filer: rgba(0, 0, 0, 0.6)
+  overlay_filter: rgba(0, 0, 0, 0.6)
 ---
 
 En los artículos anteriores hemos estado hablando de cómo evitar la complejidad mediante ocultar información.

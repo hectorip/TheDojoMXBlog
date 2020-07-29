@@ -8,7 +8,7 @@ excerpt: "Hablemos de qué es de DevOps y como puede beneficiar a tu empresa apl
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1579160215/serge-kutuzov-_Y-8SdEn-WI-unsplash_csauhr.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1579160215/serge-kutuzov-_Y-8SdEn-WI-unsplash_csauhr.jpg
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 **DevOps** es un término de recientemente creación (2013) que representa un cultura de trabajo enfocada en resolver los problemas que han sido persistentes en la entrega y servicio en el área de productos tecnológicos.

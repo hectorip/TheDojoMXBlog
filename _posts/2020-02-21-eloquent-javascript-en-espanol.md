@@ -8,7 +8,7 @@ excerpt: "Traudcción del Eloquent JavaScript al español, 3ra edición"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582331007/24af113fe16c9bbc5aa1ef012758aac8_ytglzc.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582331007/24af113fe16c9bbc5aa1ef012758aac8_ytglzc.jpg
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 > TL;DR: Estamos trabajando en una nueva traducción de Eloquent JavaScript al español, en su tercera edición. La puedes encontrar aquí: [Eloquent JavaScript en Español](https://eloquentjs-es.thedojo.mx/). Está la versión en [Eloquent JavaScript en Español en PDF](https://eloquentjs-es.thedojo.mx/Eloquent_JavaScript.pdf), que actualizamos cada capítulo. Si quieres contribuir puedes ponerte de acuerdo a través de este foro o en GitHub.

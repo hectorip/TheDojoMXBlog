@@ -8,7 +8,7 @@ excerpt: "Aprende a descubrir y medir la complejidad en tus proyectos"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582698547/scott-webb-186119-unsplash_hholsr.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582698547/scott-webb-186119-unsplash_hholsr.jpg
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 > "Controlar la complejidad es la esencia de la programación" - Brian W. Kernighan

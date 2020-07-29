@@ -8,7 +8,7 @@ excerpt: "Ocultar información es una de las claves para reducir la complejidad,
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1800/v1583357998/IMG_3866_owfbzj.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1800/v1583357998/IMG_3866_owfbzj.jpg
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 > La idea básica es que cada módulo debería encapsular algunas piezas de conocimiento, que representen decisiones de diseño. - **John Ousterhout**

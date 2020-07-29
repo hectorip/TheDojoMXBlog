@@ -8,7 +8,7 @@ excerpt: "Una forma de dejar escapar información es mediante forzar el orden de
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584251653/A240034B-230E-4BA2-843D-32357D921811_mwdnzk.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584251653/A240034B-230E-4BA2-843D-32357D921811_mwdnzk.jpg
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 En el artículo pasado hablamos de una forma de evitar una fuga de información, que consiste en encapsular una decisión de diseño en un módulo.

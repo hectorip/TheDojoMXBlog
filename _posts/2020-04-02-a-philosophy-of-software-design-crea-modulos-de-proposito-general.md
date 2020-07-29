@@ -8,7 +8,7 @@ excerpt: "Crear módulos o clases demasiado específicas puede llevar a tu códi
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726013/D750CDED-7745-4A56-8B3D-5CD33D2893E6_vqdgzb.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726013/D750CDED-7745-4A56-8B3D-5CD33D2893E6_vqdgzb.jpg
-  overlay_filer: rgba(0, 0, 0, 0.6)
+  overlay_filter: rgba(0, 0, 0, 0.6)
 ---
 
 Una burla común hacia los programadores es que todo lo queremos hacer _demasiado general_. Nos piden una funcionalidad y en ese momento empezamos a pensar en todos los casos en los que podría ser usado en el universo.

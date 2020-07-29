@@ -8,7 +8,7 @@ excerpt: "¿Qué es la arquitectura de software y cómo puedes empezar a aprende
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1594271692/EC077014-9C45-4FCA-A0BA-7CB7B0D25FAB_l9gvh7.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1594271692/EC077014-9C45-4FCA-A0BA-7CB7B0D25FAB_l9gvh7.jpg
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 Tuvimos una plática con [Agustín Ramos](https://twitter.com/machinesareus) acerca de la arquitectura de software y lo que debes aprender para practicarla. Este pequeño artículo incluye nuestro resumen y las recomendaciones de Agustín.

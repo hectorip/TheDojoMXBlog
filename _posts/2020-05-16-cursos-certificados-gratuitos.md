@@ -8,7 +8,7 @@ excerpt: "Es emocionante todo lo que se puede aprender en internet. Revisa algun
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/v1589666287/AE8177CF-C488-4D9E-8D4D-4914B50EB3FC_mbfv0a.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/v1589666287/AE8177CF-C488-4D9E-8D4D-4914B50EB3FC_mbfv0a.jpg
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 Debido a la emergencia sanitaria mundial, algunas universidades han liberado cursos

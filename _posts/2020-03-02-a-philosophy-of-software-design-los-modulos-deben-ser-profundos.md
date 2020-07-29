@@ -8,7 +8,7 @@ excerpt: "Veamos algunos lineamientos para el diseño de funciones/clases/módul
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583214655/IMG_3431_xcydpt.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583214655/IMG_3431_xcydpt.jpg
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 Para reducir la complejidad de los programas es importante tener técnicas definidas. La primera que vamos a analizar es la organización y separación de código a alto nivel, es decir separación en módulos.

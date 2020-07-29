@@ -8,7 +8,7 @@ excerpt: "Lanzamos un video explicando por qué ES6 sonó tanto. Velo aquí."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1587973000/6CF7535E-4D2E-4140-A758-32DD166D508C_hztakt.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1587973000/6CF7535E-4D2E-4140-A758-32DD166D508C_hztakt.jpg
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 Hace tiempo dimos un curso de ES6 o ES2015. Hicimos una investigación acerca de la historia, la nomenclatura, quién lo creo y porque tanta confusión con los nombres.

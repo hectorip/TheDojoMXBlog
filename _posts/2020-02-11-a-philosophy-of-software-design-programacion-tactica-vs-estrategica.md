@@ -8,7 +8,7 @@ excerpt: "Dos diferentes formas de desarrollar sistemas de software"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1600/v1585958798/877DD1C2-5C29-428A-8FEE-BC9685FE108F_ym4tl1.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1600/v1585958798/877DD1C2-5C29-428A-8FEE-BC9685FE108F_ym4tl1.jpg
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 Cuando desarrollas software tienes dos actitudes para escoger: desarrollas de forma rápida y sucia (desarrollo táctico) o de forma ordenada, planeada y pensando en el futuro. Cada uno de estos tipos de desarrollo o filosofías de desarrollo tiene ventajas y desventajas. Pero veamos a más detalle de qué trata cada uno.

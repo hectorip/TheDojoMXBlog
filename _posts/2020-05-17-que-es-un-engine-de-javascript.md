@@ -8,7 +8,7 @@ excerpt: "Hablemos de qué es y cómo funciona un motor de Javascript."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1589701068/538FF576-00FA-4723-9142-920622E07743_djzuh4.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1589701068/538FF576-00FA-4723-9142-920622E07743_djzuh4.jpg
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 Me llamó mucho la atención  la salida de [Deno v1 esta semana](https://deno.land/v1) y le quise echar un ojito. Pero desde la explicación que da inicialmente, no entiendo _exactamente_ lo que es y hace:
