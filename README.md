@@ -33,7 +33,7 @@ gem install bundler:2.1.2
 bundle install
 jekyll serve
 
- jekyll build -d docs
+jekyll build -d docs
 
 
 export JEKYLL_ENV=production
