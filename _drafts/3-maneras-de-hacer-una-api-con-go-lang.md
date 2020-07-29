@@ -104,3 +104,5 @@ Gin es un framework web para Go bastante completo que clama ser el más rápido 
 [Echo](https://echo.labstack.com/)
 
 ## Conclusión
+
+Existen múltiples opciones para crear tu API en Go. Hay para escoger dependiendo de tus gustos y de las prioridades de tu proyecto.
