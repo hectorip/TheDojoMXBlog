@@ -6,7 +6,7 @@ tags: apis machine-learning AI
 comments: true
 excerpt: "Exploremos las opciones que tienes para realizar traducciones automáticas de texto en tus proyectos."
 header:
-  overlay_filter: "rgba(0, 0, 0, 0.8)"
+  overlay_filter: "rgba(0, 0, 0, 0.5)"
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg
 ---
@@ -38,7 +38,8 @@ Algunas opciones son:
 
 * **Cloud Translation** de Google Cloud Platform. Tiene dos niveles de traducción: el básico que soporta el modelo tradicional de traducción y el avanzado que permite customizar los modelos de traducción además de incluir glosarios y otras monerías.
 
-* [Watson Language Translator](https://www.ibm.com/watson/services/language-translator/) permite traducir una gran cantidad de formatos de texto en muchos lenguajes. La únic desventaja es que las API’s
+* [Watson Language Translator](https://www.ibm.com/watson/services/language-translator/) permite traducir una gran cantidad de formatos de texto en muchos lenguajes. La única desventaja es que las API’s de IBM no son las más hermosas y en general sus sitemas de administración fallan bastante.
+
 * **Otras**. En [RapidAPI](https://rapidapi.com/collection/google-translate-api-alternatives) puedes encontrar una colección actualizada de las alternativas a Google Translation API.
 
 Para desarrollar esta pieza de software, lo más recomendable sería crear un wrapper alrededor de la API y exponer a las demás partes del programa sólo los métodos para poder realizar la tarea de traducción, abstrayendo completamente los detalles de cómo se realiza. De esta manera podrías cambiar de API fácilmente (implementando las llamadas a la nueva API) sin irrumpir en la mayoría del programa.
@@ -46,7 +47,6 @@ Para desarrollar esta pieza de software, lo más recomendable sería crear un wr
 Además esta forma de hacerlo también sería compatible con el siguiente método:
 
 * **AutoML Translation**. Pertenece también a GCP y permite entrenar un modelo mediante el envío de pares de frases para entrenar un modelo que posteriormente puedes usar para hacer traducciones sobre un dominio específico. Es el que más trabajo implicaría de tu parte pero es el que más flexibilidad de tiene.
-
 
 ### Ventajas
 
@@ -96,7 +96,6 @@ Aunque hay varios modelos disponibles, te dejo la liga a un framework hecho en C
 Y aquí hay un modelo pre-entrenado que puede utilizarse para traducciones de español a inglés: [Spanish to English Translation](https://github.com/ageitgey/spanish-to-english-translation)
 
 Si tuvieras necesidad de entrenar la red neuronal sería necesario que tuvieras datos paralelos, es decir el mismo texto en los dos idiomas entre los cuales quieres hacer la traducción. Aquí te dejamos la liga a uno de ellos: [The open parallel corpus](http://opus.nlpl.eu/)
-
 
 ### Ventajas
 
