@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-29T16:36:41-05:00</updated><id>http://localhost:4000/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Traducción automática: API’s vs tu propio modelo</title><link href="http://localhost:4000/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html" rel="alternate" type="text/html" title="Traducción automática: API’s vs tu propio modelo" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-19T00:00:00-05:00</updated><id>http://localhost:4000/2020/07/19/traduccion-automatica-de-textos-un-caso-practico</id><content type="html" xml:base="http://localhost:4000/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html">&lt;p&gt;Traducir texto es una tarea frecuente y que puede realizarse de diferentes maneras, en este artículo queremos explorar algunas de ellas.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-31T23:51:15-05:00</updated><id>http://localhost:4000/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Traducción automática: API’s vs tu propio modelo</title><link href="http://localhost:4000/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html" rel="alternate" type="text/html" title="Traducción automática: API’s vs tu propio modelo" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-19T00:00:00-05:00</updated><id>http://localhost:4000/2020/07/19/traduccion-automatica-de-textos-un-caso-practico</id><content type="html" xml:base="http://localhost:4000/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html">&lt;p&gt;Traducir texto es una tarea frecuente y que puede realizarse de diferentes maneras, en este artículo queremos explorar algunas de ellas.&lt;/p&gt;
 
 &lt;p&gt;Existen sitios donde la traducción puede hacerse en línea, como en &lt;a href=&quot;https://translate.google.com.mx/?hl=es&quot;&gt;Google Translate&lt;/a&gt;, sin embargo, en muchos casos existe un límite en la cantidad de texto que puedes traducir.&lt;/p&gt;
 
@@ -27,8 +27,12 @@
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Cloud Translation&lt;/strong&gt; de Google Cloud Platform. Tiene dos niveles de traducción: el básico que soporta el modelo tradicional de traducción y el avanzado que permite customizar los modelos de traducción además de incluir glosarios y otras monerías.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.ibm.com/watson/services/language-translator/&quot;&gt;Watson Language Translator&lt;/a&gt; permite traducir una gran cantidad de formatos de texto en muchos lenguajes. La únic desventaja es que las API’s&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Otras&lt;/strong&gt;. En &lt;a href=&quot;https://rapidapi.com/collection/google-translate-api-alternatives&quot;&gt;RapidAPI&lt;/a&gt; puedes encontrar una colección actualizada de las alternativas a Google Translation API.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.ibm.com/watson/services/language-translator/&quot;&gt;Watson Language Translator&lt;/a&gt; permite traducir una gran cantidad de formatos de texto en muchos lenguajes. La única desventaja es que las API’s de IBM no son las más hermosas y en general sus sitemas de administración fallan bastante.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Otras&lt;/strong&gt;. En &lt;a href=&quot;https://rapidapi.com/collection/google-translate-api-alternatives&quot;&gt;RapidAPI&lt;/a&gt; puedes encontrar una colección actualizada de las alternativas a Google Translation API.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Para desarrollar esta pieza de software, lo más recomendable sería crear un wrapper alrededor de la API y exponer a las demás partes del programa sólo los métodos para poder realizar la tarea de traducción, abstrayendo completamente los detalles de cómo se realiza. De esta manera podrías cambiar de API fácilmente (implementando las llamadas a la nueva API) sin irrumpir en la mayoría del programa.&lt;/p&gt;
@@ -470,107 +474,7 @@
 &lt;p&gt;Este campo del pensamiento es tan grande que no alcanzaría una vida para cubrirlo en su totalidad, pero podemos tener una idea general de los campos que abarca y si nos gusta, especializarnos en uno de ellos.&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;Este artículo está basado en el libro &lt;a href=&quot;https://mitpress.mit.edu/books/computational-thinking&quot;&gt;Computational Thinking&lt;/a&gt; de Peter J. Denning y Matti Tedre.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cs" /><category term="computational-thinking" /><category term="pensamiento-computacional" /><category term="libros" /><category term="mit" /><summary type="html">El pensamiento computacional ha sonado mucho en los medios últimamente. Hablemos de lo que es y todo lo que implica.</summary></entry><entry><title type="html">Resumen: Qué hacer para conseguir un buen trabajo como programador</title><link href="http://localhost:4000/2020/06/02/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html" rel="alternate" type="text/html" title="Resumen: Qué hacer para conseguir un buen trabajo como programador" /><published>2020-06-02T00:00:00-05:00</published><updated>2020-06-02T00:00:00-05:00</updated><id>http://localhost:4000/2020/06/02/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador</id><content type="html" xml:base="http://localhost:4000/2020/06/02/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html">&lt;p&gt;= ¿Qué hacer para conseguir un buen trabajo en tecnología?&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Intro por Alex&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Cuente Pablo de su trayectoria
--&amp;gt; Trayectoria de Diego&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; ¿Consideras que donde estás ahora o donde estuviste en tu último trabajo
-es donde querías estar? ¿O en qué punto te diste cuenta?&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Sabemos que los dos han trabajado con gente de otros países. En qué les ha ayudado eso para mejorar como desarrolladores&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Qué diferencias básicas hay entre la cultura de trabajo de empresas exitosas y la general en LATAM.&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Cómo es el día a día de un desarrollador en una FAANG&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Cuáles son las 3 habilidades básicas que creen que todo desarrollador debe tener para mantenerse empleable y cada vez con mejores responsabilidades (y por lo tanto sueldo)&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Qué tanto se ocupan las siguientes herramientas:
-    -&amp;gt; Matemáticas
-    -&amp;gt; Algoritmos
-    -&amp;gt; Estructuras de datos
-    -&amp;gt; Otras bases de CS&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Qué tanto se ocupan las habilidades blandas&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Hay cursos de todo ahora mismo, pero ahora llama curso a todo, cuándo consideran que vale la pena llamar a algo un curso para no devaluar las palabras.&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Cosas de alto nivel contra cosas de bajo nivel. Python vs C++
--&amp;gt; Diego: Qué opinas de JS&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Aprende Inglés
--&amp;gt; Aprende a recibir y dar feedback&lt;/p&gt;
-
-&lt;p&gt;Libros:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Pragmatic Programmer&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;Fundamentos&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Pablo:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Presente en el aprendizaje - 5 why?&lt;/li&gt;
-  &lt;li&gt;Ser crítico&lt;/li&gt;
-  &lt;li&gt;Aprender - ser&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Diego:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Resiliencia: Los problemas nunca van a parar&lt;/li&gt;
-  &lt;li&gt;Resolver problemas: para eso te contrataron&lt;/li&gt;
-  &lt;li&gt;Ser agnóstico&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Tres cosas para Google:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Dificultad&lt;/li&gt;
-  &lt;li&gt;Liderazgo&lt;/li&gt;
-  &lt;li&gt;Impacto&lt;/li&gt;
-  &lt;li&gt;Independencia&lt;/li&gt;
-  &lt;li&gt;Ownership&lt;/li&gt;
-  &lt;li&gt;Estar presente&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Feedback&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Directo&lt;/li&gt;
-  &lt;li&gt;Accionable&lt;/li&gt;
-  &lt;li&gt;Oportuno&lt;/li&gt;
-  &lt;li&gt;Transparente&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The Cherno&lt;/p&gt;
-
-&lt;p&gt;Pablo Trinidad&lt;/p&gt;
-
-&lt;p&gt;Computerphile&lt;/p&gt;
-
-&lt;p&gt;Pablo Trinidad&lt;/p&gt;
-
-&lt;p&gt;Numberphile&lt;/p&gt;
-
-&lt;p&gt;Pablo Trinidad&lt;/p&gt;
-
-&lt;p&gt;Veritasium&lt;/p&gt;
-
-&lt;p&gt;Pablo Trinidad&lt;/p&gt;
-
-&lt;p&gt;Smarter Everyday&lt;/p&gt;
-
-&lt;p&gt;Eric Weinstein
-Joe rogan&lt;/p&gt;
-
-&lt;p&gt;Ben Eater
-3Blue1Brown&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Escribe aquí un buen resumen de tu artículo</summary></entry><entry><title type="html">¿Qué es un engine de JavaScript?</title><link href="http://localhost:4000/2020/05/17/que-es-un-engine-de-javascript.html" rel="alternate" type="text/html" title="¿Qué es un engine de JavaScript?" /><published>2020-05-17T00:00:00-05:00</published><updated>2020-05-17T00:00:00-05:00</updated><id>http://localhost:4000/2020/05/17/que-es-un-engine-de-javascript</id><content type="html" xml:base="http://localhost:4000/2020/05/17/que-es-un-engine-de-javascript.html">&lt;p&gt;Me llamó mucho la atención  la salida de &lt;a href=&quot;https://deno.land/v1&quot;&gt;Deno v1 esta semana&lt;/a&gt; y le quise echar un ojito. Pero desde la explicación que da inicialmente, no entiendo &lt;em&gt;exactamente&lt;/em&gt; lo que es y hace:&lt;/p&gt;
+&lt;p&gt;Este artículo está basado en el libro &lt;a href=&quot;https://mitpress.mit.edu/books/computational-thinking&quot;&gt;Computational Thinking&lt;/a&gt; de Peter J. Denning y Matti Tedre.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cs" /><category term="computational-thinking" /><category term="pensamiento-computacional" /><category term="libros" /><category term="mit" /><summary type="html">El pensamiento computacional ha sonado mucho en los medios últimamente. Hablemos de lo que es y todo lo que implica.</summary></entry><entry><title type="html">¿Qué es un engine de JavaScript?</title><link href="http://localhost:4000/2020/05/17/que-es-un-engine-de-javascript.html" rel="alternate" type="text/html" title="¿Qué es un engine de JavaScript?" /><published>2020-05-17T00:00:00-05:00</published><updated>2020-05-17T00:00:00-05:00</updated><id>http://localhost:4000/2020/05/17/que-es-un-engine-de-javascript</id><content type="html" xml:base="http://localhost:4000/2020/05/17/que-es-un-engine-de-javascript.html">&lt;p&gt;Me llamó mucho la atención  la salida de &lt;a href=&quot;https://deno.land/v1&quot;&gt;Deno v1 esta semana&lt;/a&gt; y le quise echar un ojito. Pero desde la explicación que da inicialmente, no entiendo &lt;em&gt;exactamente&lt;/em&gt; lo que es y hace:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;“Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.”&lt;/p&gt;
@@ -816,18 +720,7 @@ que además de auditar, puedes cursar para obtener un &lt;strong&gt;cetificado&l
 
 &lt;hr /&gt;
 
-&lt;p&gt;¿Tienes dudas específicas de JavaScript? Compártelas en los comentarios e intentaremos hacer videos sobre eso.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="es6" /><category term="js" /><category term="javascript" /><category term="videos" /><summary type="html">Lanzamos un video explicando por qué ES6 sonó tanto. Velo aquí.</summary></entry><entry><title type="html">A Philosophy of Software Design: Organiza bien los sistemas en capas</title><link href="http://localhost:4000/2020/04/15/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Organiza bien los sistemas en capas" /><published>2020-04-15T00:00:00-05:00</published><updated>2020-04-15T00:00:00-05:00</updated><id>http://localhost:4000/2020/04/15/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas</id><content type="html" xml:base="http://localhost:4000/2020/04/15/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html">&lt;p&gt;Hemos escuchado muchísimo acerca de los sistemas en capas como MVC, MVT, MV*, &lt;em&gt;MVADFGDFD&lt;/em&gt; etc. La mayoría de los sistemas actuales se organiza así: &lt;strong&gt;en capas&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Hablemos de por qué es efectiva esta forma de organización
-de código, de sus características y cómo debemos organizar el código para sacar el máximo provecho.&lt;/p&gt;
-
-&lt;h2 id=&quot;características-de-los-sistemas-en-capas&quot;&gt;Características de los sistemas en capas&lt;/h2&gt;
-
-&lt;p&gt;Sabemos que la mejor forma de organización de un proyecto es &lt;strong&gt;descomponerlo&lt;/strong&gt; en partes independientes que &lt;strong&gt;oculten&lt;/strong&gt; información de otras.&lt;/p&gt;
-
-&lt;p&gt;La comunicación entre las diferentes partes se da por medio de una &lt;strong&gt;interfaz&lt;/strong&gt;. Esta interfaz, es la &lt;strong&gt;API&lt;/strong&gt; del componente.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-evitar&quot;&gt;Qué evitar&lt;/h2&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Resuelve problemas de organización de código mediante un sistema en capas.</summary></entry><entry><title type="html">A Philosophy of Software Design: Crea módulos de propósito general</title><link href="http://localhost:4000/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Crea módulos de propósito general" /><published>2020-04-02T00:00:00-06:00</published><updated>2020-04-02T00:00:00-06:00</updated><id>http://localhost:4000/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general</id><content type="html" xml:base="http://localhost:4000/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general.html">&lt;p&gt;Una burla común hacia los programadores es que todo lo queremos hacer &lt;em&gt;demasiado general&lt;/em&gt;. Nos piden una funcionalidad y en ese momento empezamos a pensar en todos los casos en los que podría ser usado en el universo.&lt;/p&gt;
+&lt;p&gt;¿Tienes dudas específicas de JavaScript? Compártelas en los comentarios e intentaremos hacer videos sobre eso.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="es6" /><category term="js" /><category term="javascript" /><category term="videos" /><summary type="html">Lanzamos un video explicando por qué ES6 sonó tanto. Velo aquí.</summary></entry><entry><title type="html">A Philosophy of Software Design: Crea módulos de propósito general</title><link href="http://localhost:4000/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Crea módulos de propósito general" /><published>2020-04-02T00:00:00-06:00</published><updated>2020-04-02T00:00:00-06:00</updated><id>http://localhost:4000/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general</id><content type="html" xml:base="http://localhost:4000/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general.html">&lt;p&gt;Una burla común hacia los programadores es que todo lo queremos hacer &lt;em&gt;demasiado general&lt;/em&gt;. Nos piden una funcionalidad y en ese momento empezamos a pensar en todos los casos en los que podría ser usado en el universo.&lt;/p&gt;
 
 &lt;p&gt;Hay muchos consejos &lt;strong&gt;en contra&lt;/strong&gt; de escribir código que abarque
 muchos casos. En este artículo vamos a hablar de las ventajas y
@@ -926,4 +819,142 @@ hablar en contra de la sabiduría popular.&lt;/p&gt;
 
 &lt;p&gt;Tu “yo” del futuro te agradecerá si logras encontrar el equilibrio, porque podrás crear funcionalidades más rápido, &lt;em&gt;acelerar&lt;/em&gt;: una característica de la programación estratégica.&lt;/p&gt;
 
-&lt;p&gt;En el próximo artículo hablaremos de los sistemas en capas y cómo aprovechar sus particularidades para crear diseños que dominen la complejidad.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="módulos" /><category term="generalización" /><category term="module" /><category term="class" /><summary type="html">Crear módulos o clases demasiado específicas puede llevar a tu código a ser difícil de mantener, veamos por qué te conviene crear módulos de propósito general.</summary></entry></feed>
+&lt;p&gt;En el próximo artículo hablaremos de los sistemas en capas y cómo aprovechar sus particularidades para crear diseños que dominen la complejidad.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="módulos" /><category term="generalización" /><category term="module" /><category term="class" /><summary type="html">Crear módulos o clases demasiado específicas puede llevar a tu código a ser difícil de mantener, veamos por qué te conviene crear módulos de propósito general.</summary></entry><entry><title type="html">A Philosophy of Software Design: Recomendaciones de diseño modular</title><link href="http://localhost:4000/2020/03/18/a-philosophy-of-software-design-recomendaciones-disenio-modular.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Recomendaciones de diseño modular" /><published>2020-03-18T00:00:00-06:00</published><updated>2020-03-18T00:00:00-06:00</updated><id>http://localhost:4000/2020/03/18/a-philosophy-of-software-design-recomendaciones-disenio-modular</id><content type="html" xml:base="http://localhost:4000/2020/03/18/a-philosophy-of-software-design-recomendaciones-disenio-modular.html">&lt;p&gt;En los artículos anteriores hemos estado hablando de cómo evitar la complejidad mediante ocultar información.&lt;/p&gt;
+
+&lt;p&gt;En este daremos algunas recomendaciones más y hablaremos de cómo no llevar este principio al extremo.&lt;/p&gt;
+
+&lt;p&gt;Hablemos primero de consejos que te ayudarán a mantener oculta la información que debe de estarlo.&lt;/p&gt;
+
+&lt;h2 id=&quot;exponer-lo-menos-posible-estructuras-de-datos&quot;&gt;Exponer lo menos posible estructuras de datos&lt;/h2&gt;
+
+&lt;p&gt;Un error común cuando creamos un módulo es exponer las estructuras de datos internas hacia otros módulos. Esto hace el código que usa tu módulo sea &lt;em&gt;dependiente de detalles de implementación&lt;/em&gt; que no le conciernen y, como hemos repetido hasta el cansancio, que una decisión de diseño se vea reflejada en varios lugares.&lt;/p&gt;
+
+&lt;p&gt;Transforma las estructuras de datos internas en estructuras de uso general que no dependan de la implementación de tu módulo. Por ejemplo, si estás haciendo una conexión con una API de la que extraes información para otros lados del sistema, comunica esa información en una estructura de datos diseñada para tu sistema no dependiente de la API.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Imagina un módulo de comunicación con diferentes API’s de mensajería como WhatsApp, Messenger, etc. Cada una las API’s avisa de la entrada de un nuevo mensaje con sus datos específicos y en su formato. Para que to módulo encapsule la mayo cantidad de decisiones de diseño posible debería crear una estructura de mensajes que los demás módulos &lt;em&gt;recibieran independientemente del medio por el que llegó el mensaje&lt;/em&gt;. Lo mismo para responder: la función encargada de la respuesta debería recibir &lt;em&gt;siempre los mismos datos independientemente del mensajero que se esté usando&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;defaults-útiles&quot;&gt;Defaults útiles&lt;/h2&gt;
+
+&lt;p&gt;Tal vez este punto merezca su propio artículo pero tratemos de resumirlo.&lt;/p&gt;
+
+&lt;p&gt;La idea de crear un módulo es, a parte de ocultar complejidad, crear un pieza de código que pueda ser &lt;em&gt;reutilizable&lt;/em&gt;. Como la operación no es siempre exactamente igual, a veces hay que incluir parámetros que permitan modificar el comportamiento del módulo. Los parámetros pueden llegar a revelar detalles de implementación, así que es conveniente saber diseñarlos, primero &lt;em&gt;para no contaminar la interfaz&lt;/em&gt; y segundo &lt;em&gt;para mantener la interfaz fácil de usar&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;John Ousterhout habla como ejemplo de lo mal diseñada que está la interfaz de la clase &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FileInputStream&lt;/code&gt; de Java, que no es capaz de realizar una lectura con buffer sin que le pases una clase que lo hace explícitamente. La lectura de un archivo con un buffer &lt;strong&gt;es normal&lt;/strong&gt;, generalmente no quieres leer un archivo sin tener el buffer disponible. Entonces el default de esta clase debería ser la lectura con buffer, &lt;em&gt;sin que se lo tengas que pedir explícitamente&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Los módulos deberían hacer lo normal o lo correcto siempre que sea posible, sin que se tenga que pedir explícitamente.&lt;/strong&gt; Es decir, tus módulos deberían estar diseñados para hacer el &lt;em&gt;caso más común&lt;/em&gt; muy fácil de usar.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Las mejores funciones son las que obtienes sin siquiera saber que existen. - &lt;strong&gt;John Ousterhout&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Un ejemplo de buen diseño son los lenguajes modernos con la codificación de las cadenas: son &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;utf-8&lt;/code&gt; por default, ya que es ‘lo correcto’ y lo común.&lt;/p&gt;
+
+&lt;p&gt;Otro ejemplo son las funciones &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;split&lt;/code&gt; (separar una cadena) y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;join&lt;/code&gt; (juntar los elementos de un array o lista en una cadena) de Python, Elixir y otros lenguajes: si no le pasas el carácter que usarán para dividir o pegar, lo harán por la cadena vacía, &lt;em&gt;facilitando un caso de uso muy común&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Podemos aprender de estos buenos diseños para crear los propios. Por ejemplo, imagina que tienes un módulo que usa la fecha y hora para registrar algo. El caso &lt;em&gt;común&lt;/em&gt; es que registres algo en el momento inmediato que sucedió. Un buen default sería que el módulo &lt;em&gt;automáticamente&lt;/em&gt; registrara la hora actual sin esperarla del usuario, pero dando la opción de modificarla en caso de que se necesite. Un programa que hace esto es &lt;strong&gt;Git&lt;/strong&gt;, registra automáticamente un commit con la hora en que lo hiciste pero tiene la opción de que la especifiques o modifiques.&lt;/p&gt;
+
+&lt;h2 id=&quot;aisla-dentro-de-las-clases-y-paquetes&quot;&gt;Aisla dentro de las clases y paquetes&lt;/h2&gt;
+
+&lt;p&gt;Cuando trabajas con clases, es buena idea crear métodos independientes (privados en caso de ser posible), que oculten información &lt;em&gt;del resto de la clase&lt;/em&gt;. Piensa en esto como en aplicar los principios anteriores a nivel de clase. Además las variables de clase o de instancia deberían ser usadas en el &lt;strong&gt;menor número de lugares posible&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si estás usando un lenguaje funcional o procedural, &lt;em&gt;aplica este principio al nivel de tus paquetes&lt;/em&gt; (y definitivamente evita variables globales lo más que puedas).&lt;/p&gt;
+
+&lt;p&gt;Finalmente hablemos de cómo llevar todo esto demasiado lejos.&lt;/p&gt;
+
+&lt;h2 id=&quot;la-clase-dios&quot;&gt;La clase dios&lt;/h2&gt;
+
+&lt;p&gt;En artículos pasados hablamos un poco de que es mejor crear clases grandes que encapsulen decisiones de diseño completas en vez de dividir esas decisiones de diseño. Pero si no tenemos cuidado, esto nos puede llevar a crear lo que algunos conoce como &lt;em&gt;‘the God Class’&lt;/em&gt; o la clase dios.&lt;/p&gt;
+
+&lt;p&gt;Esta infame clase es la que en muchos sistemas se ha creado para mantener la mayoría de la información y operación, es decir, es una clase que lo &lt;em&gt;sabe&lt;/em&gt; y lo &lt;em&gt;puede&lt;/em&gt; todo. Crearla romería el propósito de ocultar información: &lt;strong&gt;pasarías la mayor parte del tiempo trabajando en esta clase&lt;/strong&gt;, que por lo general sería muy complicada, teniendo tantas cosas que hacer. Así que &lt;em&gt;evítala a toda costa&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;ocultar-información-que-sí-se-usa-afuera&quot;&gt;Ocultar información que sí se usa afuera&lt;/h2&gt;
+
+&lt;p&gt;Sería un error grave de diseño hacer inaccesible (en lenguajes que lo permiten), o difícil de encontrar, información que se usa afuera de tu módulo. Un ejemplo que da &lt;a href=&quot;https://amzn.to/3ba4MEj&quot;&gt;A Philosophy of Software Design&lt;/a&gt; es en el caso de parámetros de configuración que afecten el rendimiento de una pieza de software y que sea absolutamente necesario conocer para operar bien (podría ser el método de conexión en una red, por ejemplo).&lt;/p&gt;
+
+&lt;p&gt;En el ejemplo de las API’s de mensajería del que hablamos arriba, piensa por ejemplo que la parte del código encargada de generar un mensaje &lt;em&gt;necesita&lt;/em&gt; saber de dónde viene el mensaje para generar un mensaje adecuado al medio (si viene de SMS hará un mensaje mejor de 100 carácteres, por ejemplo).&lt;/p&gt;
+
+&lt;p&gt;O algo a lo que la mayoría de los lenguajes de programación nos obligan: especificar el modo de apertura de u archivo.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, tu trabajo como diseñador de software consiste en &lt;strong&gt;minimizar&lt;/strong&gt; la información que se necesita fuera del módulo, para que sea lo más fácil de usar dentro de los límites.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Este y los artículos anteriores quieren dejar claro algo: el trabajo principal de un módulo es ocultar información. Hay varias formas de lograrlo y detalles a los cuáles ponerles atención. Hacerlo creará código que sea más fácil de &lt;strong&gt;entender y mantener&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;En el próximo artículo hablaremos de por qué es mejor crear módulos de propósito general.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="software-design" /><category term="complexity" /><category term="interfaces" /><category term="defaults" /><summary type="html">Hablemos de algunos consejos para lograr ocultar la mayor cantidad de información posible en tus módulos, pero también de cómo no llevarlo demasiado lejos</summary></entry><entry><title type="html">A Philosophy of Software Design: Descomposición Temporal</title><link href="http://localhost:4000/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Descomposición Temporal" /><published>2020-03-16T00:00:00-06:00</published><updated>2020-03-16T00:00:00-06:00</updated><id>http://localhost:4000/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal</id><content type="html" xml:base="http://localhost:4000/2020/03/16/a-philosophy-of-software-design-descomposicion-temporal.html">&lt;p&gt;En el artículo pasado hablamos de una forma de evitar una fuga de información, que consiste en encapsular una decisión de diseño en un módulo.&lt;/p&gt;
+
+&lt;p&gt;Otra forma de dejar escapar información no relevante para los usuarios de una pieza de software es mediante obligarlos a usarla siempre de la misma forma, con el mismo orden de operaciones reglas de operación implícita. Esto se llama descomposición temporal. Hablemos más de ella.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-la-descomposición-temporal&quot;&gt;Qué es la descomposición temporal&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;En descomposición temporal, la estructura de un sistema corresponde &lt;strong&gt;al orden en el tiempo&lt;/strong&gt; en el que las operaciones &lt;strong&gt;ocurrirán&lt;/strong&gt;. - John Ousterhout&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;La descomposición temporal implica repetir o separar una decisión de diseño por causa del &lt;em&gt;orden en que se usan diferentes partes del sistema&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1584345818/A85931E4-BBF3-4301-98D3-ACE20942AF9E_hugdbz.png&quot; alt=&quot;Descomposición temporal&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ejemplos&quot;&gt;Ejemplos&lt;/h2&gt;
+
+&lt;p&gt;John Ousterhout menciona un ejercicio que puso a sus alumnos en el que tenían que crear un programa implementando el protocolo HTTP.&lt;/p&gt;
+
+&lt;p&gt;Algunos equipos crearon una clase para recibir el mensaje desde la red y &lt;em&gt;otra clase para leerlo&lt;/em&gt;, creando así un caso claro de descomposición temporal: como las operaciones sucedían en diferentes momentos (primero recibes y luego lees y procesas) los separaron lógicamente en dos clases que se usaban siempre una detrás de otra. La fuga de información se dio porque para recibir un paquete HTTP &lt;em&gt;tienes que leer&lt;/em&gt; parte del mensaje y entonces la lógica de lectura del mensaje está en &lt;em&gt;ambas clases&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Otro ejemplo más o menos obvio es la lectura y escritura de archivos. Si quieres trabajar con archivos, el orden de las operaciones es la siguiente:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Abrir y leer&lt;/li&gt;
+  &lt;li&gt;Operar con información del archivo&lt;/li&gt;
+  &lt;li&gt;Escribir el archivo&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Un diseño que deja escapar información sería tener dos clases diferentes para la parte de escritura y lectura, cada una con código repetido que sabe leer el formato del archivo.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo 3: imagina las diferentes situaciones en las que un elemento de datos cambia &lt;em&gt;de estado&lt;/em&gt; a través de su ciclo de vida. Puede ser una solicitud de crédito, un reporte, un blogpost, etc.&lt;/p&gt;
+
+&lt;p&gt;Es tentador crear diferentes entidades de datos y clases para representar algún estado en específico, ya que podría hacer que nuestro código fuera un poco más explícito cuando llamamos las clases o métodos.&lt;/p&gt;
+
+&lt;p&gt;Pero si no hay operaciones especiales que correspondan a ese estado, o datos únicos para esta etapa, crear un módulo específico implicaría descomposición temporal: estarías dividiendo o duplicando conocimiento a través de diferentes módulos debido al orden en que suceden los eventos.&lt;/p&gt;
+
+&lt;h2 id=&quot;composición-de-funciones&quot;&gt;Composición de funciones&lt;/h2&gt;
+
+&lt;p&gt;En los lenguajes funcionales es común usar una serie de funciones aplicadas a una entidad de datos. Por ejemplo en Elixir es común hacer lo siguiente.&lt;/p&gt;
+
+&lt;div class=&quot;language-elixir highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# El operador |&amp;gt; Toma el resultado de la función o valor&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# de la expresión anterior (o a su izquierda) y lo manda&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# como primer parámetro a la función a la derecha, parecido&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# a una redirección de salida de Unix&lt;/span&gt;
+
+&lt;span class=&quot;s2&quot;&gt;&quot; the dojo &quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trim&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Limpiar los espacios sobrante a la cadena &quot; the dojo &quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# Separar la cadena&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Enum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;capitalize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;&amp;amp;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# Poner en mayúsculas cada uno de los elementos&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Enum&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# Volver a juntar la cadena&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Resultado: &quot;The Dojo&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Este ejemplo es un poco exagerado para la función que realiza: poner un texto con capitalización estilo título, Todas Las Iniciales En Mayúsculas.&lt;/p&gt;
+
+&lt;p&gt;La idea viene de las matemáticas y se llama “composición funcional” y como se puede ver es excelente para usar funciones &lt;em&gt;existentes&lt;/em&gt; en la creación de procesos más complejos. Una de las virtudes de esta técnica es la &lt;strong&gt;reutilización&lt;/strong&gt; de las funciones.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, queriendo aplicar esta idea, puedes cometer el error modificar tus módulos (en lenguajes funcionales: funciones), para aplicar esta técnica y &lt;em&gt;terminar con funciones que siempre se usen una tras otra&lt;/em&gt;, esperando la entrada de la misma función y mandando su resultado siempre a la misma función. Algo así:&lt;/p&gt;
+
+&lt;div class=&quot;language-elixir highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;datos&quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MiModulo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mi_funcion_1&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MiModulo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mi_funcion_2&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MiModulo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mi_funcion_3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Esto es un error que yo he cometido y que ha hecho mi código &lt;em&gt;muy difícil de mantener&lt;/em&gt;, ya que al cambiar una función de esta cadena tengo que cambiar las demás, haciéndolas no reutilizables.&lt;/p&gt;
+
+&lt;h2 id=&quot;solución-a-la-descomposición-temporal&quot;&gt;Solución a la descomposición temporal&lt;/h2&gt;
+
+&lt;p&gt;La solución propuesta por &lt;a href=&quot;https://amzn.to/3ba4MEj&quot;&gt;A Philosophy of Software Design&lt;/a&gt; es muy sencilla: &lt;strong&gt;concentra todas las operaciones relacionadas con una decisión de diseño en un módulo&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si nada necesita ser conocido fuera de este módulo (ni detalles de la implementación, ni el orden de operación), has logrado un diseño más limpio. Esto puede implicar que la clase se haga más grande, pero es una mejor solución comparada con tener información repartida por todos lados.&lt;/p&gt;
+
+&lt;p&gt;Así, si la decisión de diseño cambia, &lt;em&gt;sólo tienes que cambiar la implementación&lt;/em&gt; y no la interfaz ni mucho menos su uso.&lt;/p&gt;
+
+&lt;p&gt;En el siguiente artículo veremos finalmente una serie de recomendaciones para evitar las fugas de información y como no llevarlo demasiado lejos.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="descomposición-temporal" /><category term="software-design" /><category term="complexity" /><category term="interfaces" /><summary type="html">Una forma de dejar escapar información es mediante forzar el orden de las operaciones de un módulo. Veamos cómo evitarlo.</summary></entry></feed>

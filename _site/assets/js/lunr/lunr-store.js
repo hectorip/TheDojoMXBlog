@@ -137,12 +137,6 @@ var store = [{
         "url": "http://localhost:4000/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1573540452/jacob-campbell-ri83DTadRto-unsplash_fb7xgx.jpg"
       },{
-        "title": "Cuatro formas de hacer una API con Go",
-        "excerpt":"Go es uno de los lenguajes modernos más usados. Ya hablamos de por qué deberías aprenderlo. Ahora hablemos de un caso de uso práctico: úsalo para crear una API HTTP. En este artículo nos enfocaremos en la parte de comunicación HTTP. La funcionalidad básica de tu API puede o no...","categories": [],
-        "tags": ["go","apis","beego","gorilla-mux","gin-go","go-lang"],
-        "url": "http://localhost:4000/2019/11/23/3-maneras-de-hacer-una-api-con-go-lang.html",
-        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1576986565/clint-adair-BW0vK-FA3eg-unsplash_iamab8.jpg"
-      },{
         "title": "Inducción y Deducción según Polya",
         "excerpt":"Este es el tercer artículo acerca del libro “How to Solve It” de George Polya. Puedes ver los dos artículos anteriores aquí: Técnicas para resolver problemas Heurística Con este artículo cerraremos con las ideas que George Polya desarrolló para resolver problemas. Inducción y Deducción Hablemos ahora de algunas formas de...","categories": [],
         "tags": ["polya","problem-solving","how-to-solve-it"],
@@ -227,12 +221,6 @@ var store = [{
         "url": "http://localhost:4000/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726013/D750CDED-7745-4A56-8B3D-5CD33D2893E6_vqdgzb.jpg"
       },{
-        "title": "A Philosophy of Software Design: Organiza bien los sistemas en capas",
-        "excerpt":"Hemos escuchado muchísimo acerca de los sistemas en capas como MVC, MVT, MV*, MVADFGDFD etc. La mayoría de los sistemas actuales se organiza así: en capas. Hablemos de por qué es efectiva esta forma de organización de código, de sus características y cómo debemos organizar el código para sacar el...","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/2020/04/15/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html",
-        "teaser": null
-      },{
         "title": "Entendiendo ES6",
         "excerpt":"Hace tiempo dimos un curso de ES6 o ES2015. Hicimos una investigación acerca de la historia, la nomenclatura, quién lo creo y porque tanta confusión con los nombres. En este video explicamos eso y más: las características principales que se agregaron y la diferencia entre JavaScript y ECMAScript. ¿Tienes dudas...","categories": [],
         "tags": ["es6","js","javascript","videos"],
@@ -250,12 +238,6 @@ var store = [{
         "tags": ["js","javascript","compiladores","javascript-engine","v8","chrome"],
         "url": "http://localhost:4000/2020/05/17/que-es-un-engine-de-javascript.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1589701068/538FF576-00FA-4723-9142-920622E07743_djzuh4.jpg"
-      },{
-        "title": "Resumen: Qué hacer para conseguir un buen trabajo como programador",
-        "excerpt":"= ¿Qué hacer para conseguir un buen trabajo en tecnología? -&gt; Intro por Alex -&gt; Cuente Pablo de su trayectoria -&gt; Trayectoria de Diego -&gt; ¿Consideras que donde estás ahora o donde estuviste en tu último trabajo es donde querías estar? ¿O en qué punto te diste cuenta? -&gt; Sabemos...","categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/2020/06/02/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html",
-        "teaser": null
       },{
         "title": "¿Qué es el pensamiento computacional?",
         "excerpt":"Todo lo relacionado con el pensamiento computacional (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad, porque vivimos en un mundo en el que cada aspecto de la vida se ha visto influenciado por lo que la computación permite. En varios lugares...","categories": [],
