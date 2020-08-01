@@ -1678,7 +1678,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 a { text-decoration: none; font-weight: 400; }
 
-article.page { font-family: 'Source Sans Pro', sans-serif; font-weight: 300; }
+article.page { font-family: 'Montserrat', sans-serif; font-weight: 300; }
 
 h1, h2, h3, h4, h5, h6, h2 > a { font-family: "Merriweather", sans-serif; font-weight: 800; }
 
