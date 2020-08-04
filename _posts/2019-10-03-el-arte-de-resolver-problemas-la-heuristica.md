@@ -8,7 +8,7 @@ excerpt: "La heurística te ayudará a resolver mejor los problemas que se te pr
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1551506016/photo-1551267881-f198ba4aba07_dfxmjj.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1551506016/photo-1551267881-f198ba4aba07_dfxmjj.jpg
-  overlay_mask: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 > La heurística habla del **comportamiento humano** frente a los problemas. - George Polya
 
