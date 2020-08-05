@@ -31,7 +31,7 @@ En la plática tocamos 5 etapas del desarrollo de una arquitectura:
 
 3. **Validación del diseño.** Mediante la creación de prototipos se puede validar que las asunciones principales acerca del diseño y su relación con los atributos de calidad se cumplen. Esto puede derivar en _cambios_ sobre el diseño que lo mejoren.
 
-4. **Comunicación del diseño.** Después de definir la arquitectura
+4. **Comunicación del diseño.** Después de definir la arquitectura es importante comunicar el diseño al equipo mediante un exposición directa y la documentación. Esta documentación debe incluir la mayor información posible sobre la razón de las decisiones y la evolución de la arquitectura.
 
 5. **Seguimiento del diseño.** Esto incluye varias cosas:
     * _Verificación de que el equipo está siguiendo el diseño._ Esto se logra con revisiones constantes con el equipo: programación en parejas y revisión de código.
