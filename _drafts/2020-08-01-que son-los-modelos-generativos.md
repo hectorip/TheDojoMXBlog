@@ -6,7 +6,7 @@ tags:
 comments: true
 excerpt: "En este artículo exploramos qué es un modelo generativo, cómo te pueden servir y el estado del arte en este campo."
 header:
-  overlay_image: 
+  overlay_image:
   teaser: #image
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---

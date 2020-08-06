@@ -49,7 +49,7 @@ Acerca de la **documentación**, Agustín recomienda, exponerla al equipo en una
 * Vista Física
 * Vista de Casos (Este es el +1)
 
-Además, tenemos que mantener una bitácora de los cambios y los factores que los impulsaron, esto puede ser mediante los [Architectural decisión Records](https://adr.github.io/)
+Además, tenemos que mantener una bitácora de los cambios y los factores que los impulsaron, esto puede ser mediante los [Architectural Decision Records](https://adr.github.io/).
 
 ## Cómo empezar
 
