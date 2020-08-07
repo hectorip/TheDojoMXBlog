@@ -23,4 +23,3 @@ Sabemos que la mejor forma de organización de un proyecto es **descomponerlo** 
 La comunicación entre las diferentes partes se da por medio de una **interfaz**. Esta interfaz, es la **API** del componente.
 
 ## Qué evitar
-

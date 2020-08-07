@@ -7,7 +7,7 @@ comments: true
 excerpt: "En este artículo exploramos qué es un modelo generativo, cómo te pueden servir y el estado del arte en este campo."
 header:
   overlay_image: 
-  teaser: #image
+  teaser: 
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -17,7 +17,7 @@ Mediante este tipo de modelos pueden generarse nuevos datos que tienen distintas
 
 En particular, las Redes Neronales Generativas Adversariales (GANs) pueden generar nuevas imágenes que se parecen o son similares a las imágenes con las que fueron entrenadas, pero que individualmente son distintas a todas ellas. 
 
-El funcionamiento de una Red Neuronal Adversarial consiste en la operación simultánea de dos redes neuronales que son "adversarias", una de dichas redes es la encargada de generar imágenes y la segunda es la encargada de discriminar aquellas imágenes que no se parecen a lo que constituye una imágen real. 
+El funcionamiento de una Red Neuronal Adversarial consiste en la operación simultánea de dos redes neuronales que son "adversarias", una de dichas redes es la encargada de generar imágenes y la segunda es la encargada de discriminar aquellas imágenes que no se parecen a lo que constituye una imágen real.
 
 Algunos modelos avanzados pueden verse en:
 
@@ -31,7 +31,7 @@ Como podemos ver en esta secuencia de imágenes, la calidad de los modelos gener
 
 Algunas de las peculiaridades de estos modelos es que son relativamente sensibles a la uniformidad y el número de imágenes utilizadas, sin embargo, también es cierto que los modelos han ido mejorando y en algunos casos pueden generar imágenes de gran calidad con menos datos de entrenamiento. Por ejemplo, estas imágenes fueron generadas con sólo 500 datos de entrenamiento mediante un Modelo Generador Adversarial Eficiente:
 
-https://github.com/mit-han-lab/data-efficient-gans
+[Data Efficient GANs](https://github.com/mit-han-lab/data-efficient-gans)
 
 ## Usos de los generadores adversariales
 
