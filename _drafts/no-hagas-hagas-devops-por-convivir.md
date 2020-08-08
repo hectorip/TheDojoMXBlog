@@ -5,7 +5,7 @@ author: Héctor Patricio
 tags:
 categories: 
 comments: true
-excerpt: "Escribe aquí un buen resumen de tu artículo"
+excerpt: "En este artículo resumiremos una plática muy interesante que tuvimos con Domingo Suárez sobre DevOps y otras cosas."
 header:
   overlay_image: #image
   teaser: #image

@@ -15,7 +15,7 @@ Los modelos generativos permiten a una máquina "aprender" los patrones que exis
 
 Mediante este tipo de modelos pueden generarse nuevos datos que tienen distintas aplicaciones, entre ellas, generar datos que otros sistemas de aprendizaje podrán utilizar para su entrenamiento, sin necesidad de que dichos datos existan previamente.
 
-En particular, las Redes Neronales Generativas Adversariales (GANs) pueden generar nuevas imágenes que se parecen o son similares a las imágenes con las que fueron entrenadas, pero que individualmente son distintas a todas ellas. 
+En particular, las Redes Neronales Generativas Adversariales (GANs) pueden generar nuevas imágenes que se parecen o son similares a las imágenes con las que fueron entrenadas, pero que individualmente son distintas a todas ellas.
 
 El funcionamiento de una Red Neuronal Adversarial consiste en la operación simultánea de dos redes neuronales que son "adversarias", una de dichas redes es la encargada de generar imágenes y la segunda es la encargada de discriminar aquellas imágenes que no se parecen a lo que constituye una imágen real.
 
