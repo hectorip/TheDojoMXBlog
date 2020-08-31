@@ -28,5 +28,4 @@ Si un sistema tiene 10 capas, cada componente puede comunicarse máximo con 2 ca
 
 En los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la capa intermedia (el controlador, por ejemplo) puede comunicarse con dos capas, mientras que las otras sólo se comunican con la intermedia.
 
-
 ## Qué evitar
