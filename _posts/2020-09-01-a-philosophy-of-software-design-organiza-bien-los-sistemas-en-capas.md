@@ -1,17 +1,17 @@
 ---
 title: "A Philosophy of Software Design: Organiza bien los sistemas en capas"
-date: 2020-04-15
+date: 2020-09-01
 author: Héctor Patricio
 tags:
 comments: true
 excerpt: "Resuelve problemas de organización de código mediante un sistema en capas."
 header:
-  overlay_image: 
-  teaser: 
-  overlay_filer: "rgba(0, 0, 0, 0.5)"
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1598938866/96510D0F-CE11-46AB-9B3D-6EA0F8EA4C23_nfdcvu.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1598938866/96510D0F-CE11-46AB-9B3D-6EA0F8EA4C23_nfdcvu.jpg
+  overlay_filter: "rgba(0, 0, 0, 0.5)"
 ---
 
-Hemos escuchado muchísimo acerca de los sistemas en capas como _Modelo-Vista-Controlador_, _Modelo-Vista-Template, Modelo-Vista-*, _MVADFGDFD_ etc. y eso es poruque la mayoría de los sistemas actuales se organiza así: **en capas**.
+Hemos escuchado muchísimo acerca de los sistemas en capas como _Modelo-Vista-Controlador_, _Modelo-Vista-Template, Modelo-Vista-*, _MVADFGDFD_ etc. y eso es porque la mayoría de los sistemas actuales se organiza así: **en capas**. Además, nuestros módulos se dividen naturalmente en capas con diferentes funciones (como código que usa a otro).
 
 Hablemos de por qué es efectiva esta forma de organización (o patrón de arquitectura)
 de código, de sus características y cómo podemos aprovecharla para sacar el máximo provecho.
@@ -74,5 +74,18 @@ Los decoradores pueden crear un montón de funciones y variables de pasada y agr
 
 ### Abstracciones diferentes entre la interfaz y la implementación
 
-Este consejo no va 
+Tu código debería de exponer en su interfaz la abstracción más conveniente para los usuarios de tu módulo, sin importar las abstracciones más convenientes para manejar los datos internamente.
 
+Por este principio, es muy normal que las abstracciones de la interfaz no sean las mismas interfaces que tu implementación usa.
+
+Un ejemplo: imagina que estás escribiendo un componente que te permite editar texto. **¿Cuál es la unidad básica con la que el usuario de tu módulo interactuará?**
+
+Puede ser un carácter, una línea, un párrafo. Ya que tu la visualización del texto es en líneas, lo más conveniente para la implementación es una abstracción que represente una línea de texto.
+
+Pero para el usuario de la clase que maneja texto lo más conveniente es una interfaz que use carácteres porque es más fácil de usar, se quita la responsabilidad de manejar las líneas.
+
+Entonces tu clase queda así: internamente representa el texto como un conjunto de líneas, pero las interfaces lo usan como si fuera un conjunto de caractéres en los que puedes insertar y borrar sin preocuparte por la organización en líneas.
+
+## Conclusión
+
+La separación en capas permitirá que tu código esté mejor organizado y que sea más fácil de entender. Tener cuidado con la forma en que las capas se organizan, cómo se dividen responsabilidades y las interfaces que cada capa expone hará mucho más mantenible y entendible tu base de código.

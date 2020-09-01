@@ -79,7 +79,7 @@ Esto es un error que yo he cometido y que ha hecho mi código _muy difícil de m
 
 ## Solución a la descomposición temporal
 
-La solución propuesta por [A Philosophy of Software Design](https://amzn.to/3ba4MEj) es muy sencilla: **concentra todas las operaciones relacionadas con una decisión de diseño en un módulo**. 
+La solución propuesta por [A Philosophy of Software Design](https://amzn.to/2GdeHi5) es muy sencilla: **concentra todas las operaciones relacionadas con una decisión de diseño en un módulo**. 
 
 Si nada necesita ser conocido fuera de este módulo (ni detalles de la implementación, ni el orden de operación), has logrado un diseño más limpio. Esto puede implicar que la clase se haga más grande, pero es una mejor solución comparada con tener información repartida por todos lados. 
 

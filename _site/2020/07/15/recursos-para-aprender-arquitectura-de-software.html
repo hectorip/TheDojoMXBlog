@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.20.1 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -75,6 +75,7 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
 
 <!--[if IE]>
   <style>
@@ -130,7 +131,7 @@
       "headline": "Recursos para aprender Arquitectura de Software",
       "keywords": "podcast,thedojomx,arquitecturaarquitectura_de_software,libros",
       "description": "¿Qué es la arquitectura de software y cómo puedes empezar a aprenderla? Aquí te damos un resumen de una plática muy interesante que tuvimos.",
-      "articleBody": "Tuvimos una plática con Agustín Ramos acerca de la arquitectura de software y lo que debes aprender para practicarla. Este pequeño artículo incluye nuestro resumen y las recomendaciones de Agustín.\n\n¿Qué es la arquitectura de software?\n\nLa arquitectura del software incluye el diseño del sistema a alto nivel: la descomposición del sistema en módulos, la descripción de las responsabilidades de cada uno y sus relaciones.\n\nTambién incluye las prácticas y herramientas que permitirán que el proyecto cumpla con los atributos de calidad o requerimientos no funcionales.\n\nTodo lo anterior está basado en un análisis de las funciones y atributos de calidad del sistema.\n\nEl proceso\n\nEn la plática tocamos 5 etapas del desarrollo de una arquitectura:\n\n\n  \n    Descubrimiento y definición de los atributos de calidad. Básicamente consiste en entender el problema, escuchar a todos los involucrados en el proyecto y definir los atributos del software que no están directamente relacionados con la funcionalidad, pero que debe de cumplir.\n  \n  \n    Diseño del sistema. Generalmente te ayudarás de estilos de arquitectura y patrones de diseño para llegar a los objetivos funcionales y no funcionales.\n  \n  \n    Validación del diseño. Mediante la creación de prototipos se puede validar que las asunciones principales acerca del diseño y su relación con los atributos de calidad se cumplen. Esto puede derivar en cambios sobre el diseño que lo mejoren.\n  \n  \n    Comunicación del diseño. Después de definir la arquitectura\n  \n  \n    Seguimiento del diseño. Esto incluye varias cosas:\n    \n      Verificación de que el equipo está siguiendo el diseño. Esto se logra con revisiones constantes con el equipo: programación en parejas y revisión de código.\n      El diseño nunca está está escrito en piedra. Después de las revisiones de código se descubrirán cosas que no están funcionando como se esperaba, por lo que será necesario modificar el diseño y dejar registro de los cambios y las decisiones tomadas.\n    \n  \n\n\nConsejos específicos\n\nLos arquitectos de software deben encontrar la solución más simple posible porque si no va a ser rígida.\n\nAcerca de la documentación, Agustín recomienda, exponerla al equipo en una junta y hacer un video de esto, que se le pase a cada integrante del equipo. Se puede seguir el marco llamado “Arquitectura 4 + 1” que se compone de:\n\n\n  Vista de Componentes\n  Vista de Desarrollo\n  Vista de Procesos\n  Vista Física\n  Vista de Casos (Este es el +1)\n\n\nAdemás, tenemos que mantener una bitácora de los cambios y los factores que los impulsaron, esto puede ser mediante los Architectural decisión Records\n\nCómo empezar\n\nAgustín nos recomendó algunos recursos para que empieces a aprender:\n\n\n  Object Design - Rebecca Wirfs-Brock\n  Software Architecture in Practice\n  Como alternativa al libro anterior  se recomienda Technical Report sobre arquitectura del Software Engineering Institute, encontré varios, tienes un ejemplo aquí.\n  Design it! - Micheal Keeling\n  La serie Pattern-orinted Software Architecture\n\n\nPara aprender patrones de diseño se habló de los siguientes libros:\n\n\n  Patrones de Diseño - Erich Gamma, et Al.\n  The patterns handbook\n  La serie Pattern language of program design (5 libros)\n\n\nY entre los libros que se mencionan como la fuente de las ideas de patrones y diseño:\n\n\n  The nature of order de Christopher Alexander y los otros libros de él como A timeless way of building\n  The art of Scalability\n\n\nEl capítulo\n\nDe todos modos no te pierdas el capítulo, que estuvo muy bueno:\n\n\n\n",
+      "articleBody": "Tuvimos una plática con Agustín Ramos acerca de la arquitectura de software y lo que debes aprender para practicarla. Este pequeño artículo incluye nuestro resumen y las recomendaciones de Agustín.\n\n¿Qué es la arquitectura de software?\n\nLa arquitectura del software incluye el diseño del sistema a alto nivel: la descomposición del sistema en módulos, la descripción de las responsabilidades de cada uno y sus relaciones.\n\nTambién incluye las prácticas y herramientas que permitirán que el proyecto cumpla con los atributos de calidad o requerimientos no funcionales.\n\nTodo lo anterior está basado en un análisis de las funciones y atributos de calidad del sistema.\n\nEl proceso\n\nEn la plática tocamos 5 etapas del desarrollo de una arquitectura:\n\n\n  \n    Descubrimiento y definición de los atributos de calidad. Básicamente consiste en entender el problema, escuchar a todos los involucrados en el proyecto y definir los atributos del software que no están directamente relacionados con la funcionalidad, pero que debe de cumplir.\n  \n  \n    Diseño del sistema. Generalmente te ayudarás de estilos de arquitectura y patrones de diseño para llegar a los objetivos funcionales y no funcionales.\n  \n  \n    Validación del diseño. Mediante la creación de prototipos se puede validar que las asunciones principales acerca del diseño y su relación con los atributos de calidad se cumplen. Esto puede derivar en cambios sobre el diseño que lo mejoren.\n  \n  \n    Comunicación del diseño. Después de definir la arquitectura es importante comunicar el diseño al equipo mediante un exposición directa y la documentación. Esta documentación debe incluir la mayor información posible sobre la razón de las decisiones y la evolución de la arquitectura.\n  \n  \n    Seguimiento del diseño. Esto incluye varias cosas:\n    \n      Verificación de que el equipo está siguiendo el diseño. Esto se logra con revisiones constantes con el equipo: programación en parejas y revisión de código.\n      El diseño nunca está está escrito en piedra. Después de las revisiones de código se descubrirán cosas que no están funcionando como se esperaba, por lo que será necesario modificar el diseño y dejar registro de los cambios y las decisiones tomadas.\n    \n  \n\n\nConsejos específicos\n\nLos arquitectos de software deben encontrar la solución más simple posible porque si no va a ser rígida.\n\nAcerca de la documentación, Agustín recomienda, exponerla al equipo en una junta y hacer un video de esto, que se le pase a cada integrante del equipo. Se puede seguir el marco llamado “Arquitectura 4 + 1” que se compone de:\n\n\n  Vista de Componentes\n  Vista de Desarrollo\n  Vista de Procesos\n  Vista Física\n  Vista de Casos (Este es el +1)\n\n\nAdemás, tenemos que mantener una bitácora de los cambios y los factores que los impulsaron, esto puede ser mediante los Architectural Decision Records.\n\nCómo empezar\n\nAgustín nos recomendó algunos recursos para que empieces a aprender:\n\n\n  Object Design - Rebecca Wirfs-Brock\n  Software Architecture in Practice\n  Como alternativa al libro anterior  se recomienda Technical Report sobre arquitectura del Software Engineering Institute, encontré varios, tienes un ejemplo aquí.\n  Design it! - Micheal Keeling\n  La serie Pattern-orinted Software Architecture\n\n\nPara aprender patrones de diseño se habló de los siguientes libros:\n\n\n  Patrones de Diseño - Erich Gamma, et Al.\n  The patterns handbook\n  La serie Pattern language of program design (5 libros)\n\n\nY entre los libros que se mencionan como la fuente de las ideas de patrones y diseño:\n\n\n  The nature of order de Christopher Alexander y los otros libros de él como A timeless way of building\n  The art of Scalability\n\n\nEl capítulo\n\nDe todos modos no te pierdas el capítulo, que estuvo muy bueno:\n\n\n\n",
       "datePublished": "2020-07-15 00:00:00 -0500",
       "dateModified": "2020-07-15 00:00:00 -0500",
       "author": {
@@ -245,18 +246,26 @@
 </p>
       
       
-        <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
 
 
+  <p class="page__meta">
 
+    
 
-  2 minutos de lectura
+    
 
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 15-07-2020
-</p>
+    
       
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        2 minutos de lectura
+      
+    
+
+  </p>
+
       
       
     </div>
@@ -422,7 +431,7 @@
     <p><strong>Validación del diseño.</strong> Mediante la creación de prototipos se puede validar que las asunciones principales acerca del diseño y su relación con los atributos de calidad se cumplen. Esto puede derivar en <em>cambios</em> sobre el diseño que lo mejoren.</p>
   </li>
   <li>
-    <p><strong>Comunicación del diseño.</strong> Después de definir la arquitectura</p>
+    <p><strong>Comunicación del diseño.</strong> Después de definir la arquitectura es importante comunicar el diseño al equipo mediante un exposición directa y la documentación. Esta documentación debe incluir la mayor información posible sobre la razón de las decisiones y la evolución de la arquitectura.</p>
   </li>
   <li>
     <p><strong>Seguimiento del diseño.</strong> Esto incluye varias cosas:</p>
@@ -449,7 +458,7 @@
   <li>Vista de Casos (Este es el +1)</li>
 </ul>
 
-<p>Además, tenemos que mantener una bitácora de los cambios y los factores que los impulsaron, esto puede ser mediante los <a href="https://adr.github.io/">Architectural decisión Records</a></p>
+<p>Además, tenemos que mantener una bitácora de los cambios y los factores que los impulsaron, esto puede ser mediante los <a href="https://adr.github.io/">Architectural Decision Records</a>.</p>
 
 <h2 id="cómo-empezar">Cómo empezar</h2>
 
@@ -587,6 +596,42 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
+        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1598938866/96510D0F-CE11-46AB-9B3D-6EA0F8EA4C23_nfdcvu.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html" rel="permalink">A Philosophy of Software Design: Organiza bien los sistemas en capas
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 01-09-2020
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Resuelve problemas de organización de código mediante un sistema en capas.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
         <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg" alt="">
       </div>
     
@@ -687,42 +732,6 @@
 </div>
 
         
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1589701068/538FF576-00FA-4723-9142-920622E07743_djzuh4.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/05/17/que-es-un-engine-de-javascript.html" rel="permalink">¿Qué es un engine de JavaScript?
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  4 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 17-05-2020
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Hablemos de qué es y cómo funciona un motor de Javascript.
-</p>
-  </article>
-</div>
-
-        
       </div>
     </div>
   
@@ -801,7 +810,6 @@
 
     
   <script src="/assets/js/main.min.js"></script>
-  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
 
 
 

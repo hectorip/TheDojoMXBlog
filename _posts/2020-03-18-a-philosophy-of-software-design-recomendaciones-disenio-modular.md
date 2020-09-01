@@ -59,7 +59,7 @@ Esta infame clase es la que en muchos sistemas se ha creado para mantener la may
 
 ## Ocultar información que sí se usa afuera
 
-Sería un error grave de diseño hacer inaccesible (en lenguajes que lo permiten), o difícil de encontrar, información que se usa afuera de tu módulo. Un ejemplo que da [A Philosophy of Software Design](https://amzn.to/3ba4MEj) es en el caso de parámetros de configuración que afecten el rendimiento de una pieza de software y que sea absolutamente necesario conocer para operar bien (podría ser el método de conexión en una red, por ejemplo).
+Sería un error grave de diseño hacer inaccesible (en lenguajes que lo permiten), o difícil de encontrar, información que se usa afuera de tu módulo. Un ejemplo que da [A Philosophy of Software Design](https://amzn.to/2GdeHi5) es en el caso de parámetros de configuración que afecten el rendimiento de una pieza de software y que sea absolutamente necesario conocer para operar bien (podría ser el método de conexión en una red, por ejemplo).
 
 En el ejemplo de las API's de mensajería del que hablamos arriba, piensa por ejemplo que la parte del código encargada de generar un mensaje _necesita_ saber de dónde viene el mensaje para generar un mensaje adecuado al medio (si viene de SMS hará un mensaje mejor de 100 carácteres, por ejemplo).
 

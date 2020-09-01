@@ -262,4 +262,10 @@ var store = [{
         "tags": ["apis","machine-learning","AI"],
         "url": "https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg"
+      },{
+        "title": "A Philosophy of Software Design: Organiza bien los sistemas en capas",
+        "excerpt":"Hemos escuchado muchísimo acerca de los sistemas en capas como Modelo-Vista-Controlador, Modelo-Vista-Template, Modelo-Vista-*, _MVADFGDFD etc. y eso es porque la mayoría de los sistemas actuales se organiza así: en capas. Además, nuestros módulos se dividen naturalmente en capas con diferentes funciones (como código que usa a otro). Hablemos de por...","categories": [],
+        "tags": [],
+        "url": "https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1598938866/96510D0F-CE11-46AB-9B3D-6EA0F8EA4C23_nfdcvu.jpg"
       }]

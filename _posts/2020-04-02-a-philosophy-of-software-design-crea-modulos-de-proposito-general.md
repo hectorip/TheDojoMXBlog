@@ -74,7 +74,7 @@ def registrar_tipo_de_publicacion(...):
 
 Esto permitiría tener una interfaz más sencilla con aplicaciones _más amplias_, con más usos.
 
-El ejemplo mencionado por [A Philosophy of Software Design](https://amzn.to/3ba4MEj) es el de un editor de texto con interfaz gráfica. La clase encargada de almacenar el texto en memoria deber tener las capacidades para modificarlo.
+El ejemplo mencionado por [A Philosophy of Software Design](https://amzn.to/2GdeHi5) es el de un editor de texto con interfaz gráfica. La clase encargada de almacenar el texto en memoria deber tener las capacidades para modificarlo.
 
 Piensa en las operaciones que los editores de texto dan: insertar texto, borrar texto hacia adelante, borrar texto hacia atrás, seleccionar, copiar, pegar. Ousterhout menciona que implementar una función _específica_ para cada una de estas operaciones crea complejidad no necesaria. Un diseño más general permite hacer tres operaciones: insertar texto, borrar texto y mover el cursor. Todas las operaciones se pueden lograr con estas otras tres, teniendo una interfaz más sencilla.
 
@@ -82,7 +82,7 @@ Este debería ser nuestro objetivo: crear interfaces sencillas que hagan mucho p
 
 ## ¿Por qué hacer módulos de propósito general?
 
-El principal motivo que [A Philosophy of Software Design](https://amzn.to/3ba4MEj) menciona es que los módulos de propósito general [son más profundos](https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html#dise%C3%B1o-de-m%C3%B3dulos) es decir, encierran más funcionalidad con una interfaz pequeña.
+El principal motivo que [A Philosophy of Software Design](https://amzn.to/2GdeHi5) menciona es que los módulos de propósito general [son más profundos](https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html#dise%C3%B1o-de-m%C3%B3dulos) es decir, encierran más funcionalidad con una interfaz pequeña.
 
 Hacerlo contribuye a que tu código esconda más información y por lo tanto su uso sea más simple.
 
