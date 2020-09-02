@@ -11,3 +11,5 @@ header:
   teaser: #image
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
+
+Hace como un mes, tuvimos una plática con Domingo Suárez([@domix](https://twitter.com/domix?lang=en))

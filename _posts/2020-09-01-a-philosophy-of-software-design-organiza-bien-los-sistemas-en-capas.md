@@ -11,7 +11,7 @@ header:
   overlay_filter: "rgba(0, 0, 0, 0.5)"
 ---
 
-Hemos escuchado muchísimo acerca de los sistemas en capas como _Modelo-Vista-Controlador_, _Modelo-Vista-Template, Modelo-Vista-*, _MVADFGDFD_ etc. y eso es porque la mayoría de los sistemas actuales se organiza así: **en capas**. Además, nuestros módulos se dividen naturalmente en capas con diferentes funciones (como código que usa a otro).
+Hemos escuchado muchísimo acerca de los sistemas en capas como _Modelo-Vista-Controlador_, Modelo-Vista-Template, Modelo-Vista-*, _MV-lo-que-sea_ etc. y eso es porque la mayoría de los sistemas actuales se organiza así: **en capas**. Además, nuestros módulos se dividen naturalmente en capas con diferentes funciones (como código que usa a otro).
 
 Hablemos de por qué es efectiva esta forma de organización (o patrón de arquitectura)
 de código, de sus características y cómo podemos aprovecharla para sacar el máximo provecho.
@@ -25,7 +25,6 @@ La comunicación entre las diferentes partes se da por medio de una **interfaz**
 En un sistema en capas el conjunto de elementos pertenecientes a una capa sólo se puede comunicar con la capa superior y con la capa inferior.
 
 Si un sistema tiene 10 capas, cada componente puede comunicarse máximo con 2 capas.
-
 En los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la capa intermedia (el controlador, por ejemplo) puede comunicarse con dos capas, mientras que las otras sólo se comunican con la intermedia.
 
 [John Ousterhout](https://amzn.to/2GdeHi5) usa la división en capas para explicar cómo se organiza el software con respecto al usuario final: la capa de "hasta arriba" es la que interactúa directamente con el usuario y la de "hasta abajo" es la más alejada del usuario, generalmente el núcleo de tu sistema.
