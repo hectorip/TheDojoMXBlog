@@ -40,9 +40,13 @@ La tercer vía es la repetición de estos dos procesos y la ejecución de ejerci
 
 ## Cómo avanzar en tu carrera como desarrollador
 
-Domingo dejo claras varias cosas: 
+¿Cómo puedes avanzar como desarrollador?
+
+1. Tienes que mantenerte siempre aprendiendo nuevas cosas, no sabes lo que puede servirte más adelante.
+
 ## Puedes elegir no ser administrador
+
 
 ## Aprender Java vale la pena
 
-Después, hablamos de qué tanto vale la pena aprender Java en 2020.
+Después, hablamos de qué tanto vale la pena aprender Java en 2020. La JVM es una pieza de software magnífica.
