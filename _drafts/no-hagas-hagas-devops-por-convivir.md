@@ -38,15 +38,25 @@ La segunda vía es el monitoreo del software en producción, para poder actuar s
 
 La tercer vía es la repetición de estos dos procesos y la ejecución de ejercicios con el objetivo de pulir los procesos y aprender más cosas. Esta vía incluye simulaciones de falla, sesiones de estudio, sesiones de preparación y análisis de fallos, etc.
 
+## Mentoría y aprendizaje
+
+Una de las cosas que Domingo mencionó desde el principio es que tuvo un mentor llamado Humberto. De esto salió que en la industria falta en práctica poner más en práctica esto, ya que nos puede ayudar avanzar y puede ayudar a crear personas más hábiles.
+
+Llegamos a una conclusión: la mentoría es una responsabilidad compartida. El mentor tiene la responsabilidad de guíar al aprendiz de la mejor forma, porque puede influir de formas muy poderosas en su vida, pero la responsabilidad de aprovechar bien esa guía y aplicar los consejos es de la persona que solicitó la mentoría.
+
+Aceptar o pedir una mentoría te hará crecer.
+
 ## Cómo avanzar en tu carrera como desarrollador
 
-¿Cómo puedes avanzar como desarrollador?
+Conectado con el tema anterior, hablamos un poco de cómo puedes volverte mejor desarrollador, alcanzar un nuevo puesto y obtener un mejor sueldo. La conclusión es:
 
 1. Tienes que mantenerte siempre aprendiendo nuevas cosas, no sabes lo que puede servirte más adelante.
 
-## Puedes elegir no ser administrador
-
+2. No estudies sólo lo relacionado con tu tema.
 
 ## Aprender Java vale la pena
 
-Después, hablamos de qué tanto vale la pena aprender Java en 2020. La JVM es una pieza de software magnífica.
+Después, hablamos de qué tanto vale la pena aprender Java en 2020. La JVM es una pieza de software magnífica que tiene optimizaciones para ser muy eficiente, para ayudarte aunque tu código no sea tan bueno y un montón de lenguajes corren sobre ella.
+
+Además Java como lenguaje ha avanzado mucho, adoptando formas de programar más modernas. Además, sus características intrínsecas, como su compilador y el tipado estático lo hacen ideal para cierto tipo de problemas en los que tienes que reducir al mínimo los errores en tiempo de ejecución.
+
