@@ -12,11 +12,18 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Hace como un mes, tuvimos una plática con Domingo Suárez([@domix](https://twitter.com/domix?lang=en)), en la que platicamos de muchas cosas interesantes. En este artículo te vamos a dar un resumen.
+Hace como un mes, tuvimos una plática con Domingo Suárez([@domix](https://twitter.com/domix)), en la que hablamos de muchas cosas interesantes.
+
+En este artículo te vamos a dar un resumen.
 
 ## Cómo nos dejamos influir para adoptar una tecnología
 
-Lo primero de lo que hablamos es de la forma que muchas veces adoptamos la tecnología: por moda. A veces adoptamos la tecnología porque alguien con autoridad o la comunidad la mencionó.
+Lo primero de lo que hablamos es de la forma en que muchas veces adoptamos la tecnología: por moda. A veces adoptamos la tecnología porque alguien con autoridad la mencionó o muchos miembros de la comunidad la están usando.
+
+Generalmente esa decisión tiene un costo bastante alto:
+
+- Te metes en cosas de las que no hay tanta información disponible
+-
 
 La lección: no de lo que todos hablen es lo que tienes que aprender/hacer.
 
@@ -48,11 +55,13 @@ Aceptar o pedir una mentoría te hará crecer.
 
 ## Cómo avanzar en tu carrera como desarrollador
 
-Conectado con el tema anterior, hablamos un poco de cómo puedes volverte mejor desarrollador, alcanzar un nuevo puesto y obtener un mejor sueldo. La conclusión es:
+Conectado con el tema anterior, hablamos un poco de **cómo puedes volverte mejor desarrollador**, alcanzar un nuevo puesto y obtener un mejor sueldo. La conclusión es:
 
 1. Tienes que mantenerte siempre aprendiendo nuevas cosas, no sabes lo que puede servirte más adelante.
 
-2. No estudies sólo lo relacionado con tu tema.
+2. No estudies sólo lo relacionado con tu tema, estudiar cosas que no tienen nada que ver con lo que haces hoy puede abrirte las puertas a nuevas oportunidades.
+
+3. Haz proyectos de las cosas que estás aprendiendo, no sólo leas o veas videos.
 
 ## Aprender Java vale la pena
 
