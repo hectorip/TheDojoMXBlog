@@ -7,8 +7,8 @@ categories:
 comments: true
 excerpt: "En este artículo resumiremos una plática muy interesante que tuvimos con Domingo Suárez sobre DevOps y otras cosas."
 header:
-  overlay_image: #image
-  teaser: #image
+  overlay_image: 
+  teaser: 
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -18,20 +18,21 @@ En este artículo te vamos a dar un resumen.
 
 ## Cómo nos dejamos influir para adoptar una tecnología
 
-Lo primero de lo que hablamos es de la forma en que muchas veces adoptamos la tecnología: por moda. A veces adoptamos la tecnología porque alguien con autoridad la mencionó o muchos miembros de la comunidad la están usando.
+Lo primero de lo que hablamos es de la forma en que muchas veces adoptamos la tecnología: **por moda**. A veces adoptamos la tecnología porque alguien con autoridad la mencionó o muchos miembros de la comunidad la están usando.
 
 Generalmente esa decisión tiene un costo bastante alto:
 
 - Te metes en cosas de las que no hay tanta información disponible
--
+- Te enfrentas con problemas totalmente desconocidos
+- Gastas recursos que podrías gastar mejor en otro lado.
 
-La lección: no de lo que todos hablen es lo que tienes que aprender/hacer.
+**La lección:** no de lo que todo hablen es lo que tienes que aprender/hacer. Usa tecnología _aburrida_: probada por el tiempo, de la que exista mucha información y usada por muchos desarrolladores de los que podrás
 
 ## ¿Qué es DevOps?
 
-Uno de los temas principales que tratamos es la aclaración de lo que de verdad significa este término.
+Uno de los temas principales que tratamos es la aclaración de lo que de verdad significa el término DevOps.
 
-Domingo explicó que DevOps es una _cultura_ que intenta mejorar el flujo de trabajo que existe entre el área de desarrollo y la de operación del software (la encargada de ponerlo en manos de los usuarios y monitorearlo). DevOps intenta mejorar los hilos organizacionales.
+Domingo explicó que DevOps es una _cultura_ que intenta mejorar el flujo de trabajo que existe entre el área de desarrollo y la de operación del software (la encargada de ponerlo en manos de los usuarios y monitorearlo). Intenta **mejorar los hilos organizacionales**.
 
 Nos explicó que el término "DevOps" originalmente era un hashtag de Twitter para hablar de esta cultura en una conferencia organizada por [Patrick Debois](https://blog.newrelic.com/engineering/devops-name/).
 
