@@ -12,7 +12,7 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Hace como un mes, tuvimos una plática con Domingo Suárez([@domix](https://twitter.com/domix)), en la que hablamos de muchas cosas interesantes.
+Tuvimos una plática con Domingo Suárez([@domix](https://twitter.com/domix)) acerca de diferentes temas que le interesan a los desarrolladores.
 
 En este artículo te vamos a dar un resumen.
 
@@ -69,4 +69,3 @@ Conectado con el tema anterior, hablamos un poco de **cómo puedes volverte mejo
 Después, hablamos de qué tanto vale la pena aprender Java en 2020. La JVM es una pieza de software magnífica que tiene optimizaciones para ser muy eficiente, para ayudarte aunque tu código no sea tan bueno y un montón de lenguajes corren sobre ella.
 
 Además Java como lenguaje ha avanzado mucho, adoptando formas de programar más modernas. Además, sus características intrínsecas, como su compilador y el tipado estático lo hacen ideal para cierto tipo de problemas en los que tienes que reducir al mínimo los errores en tiempo de ejecución.
-
