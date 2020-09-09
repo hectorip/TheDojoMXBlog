@@ -42,13 +42,13 @@ Platicamos a además de que DevOps establece "Las 3 vías" que son tres procesos
 
 La primera vía consiste en poner el código en producción lo más rápido posible, con opciones como quitarlo rápidamente si no funciona bien (rollback).
 
-La segunda vía es el monitoreo del software en producción, para poder actuar sobre el software tanto para mejorarlo como para corregir fallas hay que saber cómo se está comportando.
+La segunda vía es **el monitoreo del software en producción**, para poder actuar sobre el software tanto para mejorarlo como para corregir fallas hay que saber cómo se está comportando.
 
 La tercer vía es la repetición de estos dos procesos y la ejecución de ejercicios con el objetivo de pulir los procesos y aprender más cosas. Esta vía incluye simulaciones de falla, sesiones de estudio, sesiones de preparación y análisis de fallos, etc.
 
-## Mentoría y aprendizaje
+## Mentores y aprendizaje
 
-Una de las cosas que Domingo mencionó desde el principio es que tuvo un mentor llamado Humberto. De esto salió que en la industria falta en práctica poner más en práctica esto, ya que nos puede ayudar avanzar y puede ayudar a crear personas más hábiles.
+Una de las cosas que Domingo mencionó desde el principio es que tuvo un mentor que se llama Humberto. De esto salió que en la industria falta en práctica poner más en práctica esto, ya que nos puede ayudar avanzar y puede ayudar a crear personas más hábiles.
 
 Llegamos a una conclusión: la mentoría es una responsabilidad compartida. El mentor tiene la responsabilidad de guíar al aprendiz de la mejor forma, porque puede influir de formas muy poderosas en su vida, pero la responsabilidad de aprovechar bien esa guía y aplicar los consejos es de la persona que solicitó la mentoría.
 
