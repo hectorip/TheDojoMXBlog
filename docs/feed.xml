@@ -1,82 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-09-10T00:44:21-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Organiza bien los sistemas en capas</title><link href="https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Organiza bien los sistemas en capas" /><published>2020-09-01T00:00:00-05:00</published><updated>2020-09-01T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas</id><content type="html" xml:base="https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html">&lt;p&gt;Hemos escuchado muchísimo acerca de los sistemas en capas como &lt;em&gt;Modelo-Vista-Controlador&lt;/em&gt;, Modelo-Vista-Template, Modelo-Vista-*, &lt;em&gt;MV-lo-que-sea&lt;/em&gt; etc. y eso es porque la mayoría de los sistemas actuales se organiza así: &lt;strong&gt;en capas&lt;/strong&gt;. Además, nuestros módulos se dividen naturalmente en capas con diferentes funciones (como código que usa a otro).&lt;/p&gt;
-
-&lt;p&gt;Hablemos de por qué es efectiva esta forma de organización (o patrón de arquitectura)
-de código, de sus características y cómo podemos aprovecharla para sacar el máximo provecho.&lt;/p&gt;
-
-&lt;h2 id=&quot;características-de-los-sistemas-en-capas&quot;&gt;Características de los sistemas en capas&lt;/h2&gt;
-
-&lt;p&gt;Sabemos que la mejor forma de organización de un proyecto es &lt;strong&gt;descomponerlo&lt;/strong&gt; en partes independientes que &lt;strong&gt;oculten&lt;/strong&gt; información de otras.&lt;/p&gt;
-
-&lt;p&gt;La comunicación entre las diferentes partes se da por medio de una &lt;strong&gt;interfaz&lt;/strong&gt;. Esta interfaz, es la &lt;strong&gt;API&lt;/strong&gt; del componente, ya que será usada de manera automática por otra parte del programa.&lt;/p&gt;
-
-&lt;p&gt;En un sistema en capas el conjunto de elementos pertenecientes a una capa sólo se puede comunicar con la capa superior y con la capa inferior.&lt;/p&gt;
-
-&lt;p&gt;Si un sistema tiene 10 capas, cada componente puede comunicarse máximo con 2 capas.
-En los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la capa intermedia (el controlador, por ejemplo) puede comunicarse con dos capas, mientras que las otras sólo se comunican con la intermedia.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://amzn.to/2GdeHi5&quot;&gt;John Ousterhout&lt;/a&gt; usa la división en capas para explicar cómo se organiza el software con respecto al usuario final: la capa de “hasta arriba” es la que interactúa directamente con el usuario y la de “hasta abajo” es la más alejada del usuario, generalmente el núcleo de tu sistema.&lt;/p&gt;
-
-&lt;p&gt;Hablemos ahora de las mejores prácticas según &lt;a href=&quot;https://amzn.to/2GdeHi5&quot;&gt;A Philosphy of Software Design&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;diferente-capa-diferente-abstracción&quot;&gt;Diferente capa, diferente abstracción&lt;/h2&gt;
-
-&lt;p&gt;El concepto que debes tener más claro para descomponer tu software en capas es que cada capa debe tener sus propias abstracciones. Ousterhout da el ejemplo de un sistema de archivos:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;La capa que interactúa con el mundo exterior o la más alta, tiene la abstracción de un archivo&lt;/li&gt;
-  &lt;li&gt;La siguiente capa tiene la abstracción de bloques de memoria y caché&lt;/li&gt;
-  &lt;li&gt;La siguiente capa maneja directamente los bloques en el disco&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Esta abstracción es efectiva porque cada capa trabaja con abstracciones diferentes y no repiten ninguna entre ellas.&lt;/p&gt;
-
-&lt;p&gt;Esta es la idea básica que debes checar en tus diseños, si notas que una abstracción no cambia de una capa a otra, algo está saliendo mal. ¿Cómo puedes identificarlas?&lt;/p&gt;
-
-&lt;h3 id=&quot;funciones-de-paso&quot;&gt;Funciones de paso&lt;/h3&gt;
-
-&lt;p&gt;Estos son funciones que no hacen nada mas que mandar llamar una función de la siguiente capa, normalmente para cumplir con la limitante de comunicación entre capas.&lt;/p&gt;
-
-&lt;p&gt;Esto indica que no hay una división clara de responsabilidad entre clases o módulos. Para resolver este problema tienes que asegurarte de que la interfaz y la funcionalidad de este punto de tu sistema estén en el mismo módulo.&lt;/p&gt;
-
-&lt;p&gt;Evitar este tipo de métodos te evitará complicar la interfaz sin añadir ninguna funcionalidad.&lt;/p&gt;
-
-&lt;h3 id=&quot;variables-pasadas&quot;&gt;Variables pasadas&lt;/h3&gt;
-
-&lt;p&gt;Similar al caso anterior, si tienes una variable que recibes en la llamada de tu módulo y no haces nada con ella mas que pasarla a una capa inferior, estás mezclando las abstracciones entre capas.&lt;/p&gt;
-
-&lt;p&gt;A veces son necesarias, pero el manejarlas crea complejidad. Dependiendo del paradigma y el lenguaje de programación deberías buscar una solución adecuada.&lt;/p&gt;
-
-&lt;p&gt;Por ejemplo, en lenguajes orientados a objetos podrías guardar todos lo valores a los que necesitas constante acceso desde diferentes lugares un una variable de “contexto” y que generalmente está almacenada en un lugar en el que todas tus funciones puedan acceder. Algunos frameworks usan su variable de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;settings&lt;/code&gt; para poner información necesaria ahí.&lt;/p&gt;
-
-&lt;p&gt;Los siguientes dos consejos tratan más los diferentes niveles de código que capas del sistema.&lt;/p&gt;
-
-&lt;h3 id=&quot;evita-lo-más-que-puedas-los-decoradores&quot;&gt;Evita lo más que puedas los decoradores&lt;/h3&gt;
-
-&lt;p&gt;Ousterhout habla en contra del patrón decorador. Este patrón consiste en envolver clases, objetos o funciones con otros, con el fin de extender la funcionalidad. Los decoradores intentan mantener una interfaz muy similar o exactamente igual al elemento original.&lt;/p&gt;
-
-&lt;p&gt;Un ejemplo es la clase de Java &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BufferedInputStream&lt;/code&gt; es un decorador de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;InputStream&lt;/code&gt;, añadiéndole el buffering.&lt;/p&gt;
-
-&lt;p&gt;Los decoradores pueden crear un montón de funciones y variables de pasada y agregar un montón de código de soporte sin de verdad agregar tanta funcionalidad como código.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;APoSD&lt;/strong&gt; (el libro) sugiere crear entidades separadas cuando sea posible y evitar el sobreuso de este patrón, a menos que de verdad tenga sentido, por ejemplo: cuando tienes un módulo muy profundo que con un decorador vas a poder reutilizar todo con muy poco código de soporte.&lt;/p&gt;
-
-&lt;h3 id=&quot;abstracciones-diferentes-entre-la-interfaz-y-la-implementación&quot;&gt;Abstracciones diferentes entre la interfaz y la implementación&lt;/h3&gt;
-
-&lt;p&gt;Tu código debería de exponer en su interfaz la abstracción más conveniente para los usuarios de tu módulo, sin importar las abstracciones más convenientes para manejar los datos internamente.&lt;/p&gt;
-
-&lt;p&gt;Por este principio, es muy normal que las abstracciones de la interfaz no sean las mismas interfaces que tu implementación usa.&lt;/p&gt;
-
-&lt;p&gt;Un ejemplo: imagina que estás escribiendo un componente que te permite editar texto. &lt;strong&gt;¿Cuál es la unidad básica con la que el usuario de tu módulo interactuará?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Puede ser un carácter, una línea, un párrafo. Ya que tu la visualización del texto es en líneas, lo más conveniente para la implementación es una abstracción que represente una línea de texto.&lt;/p&gt;
-
-&lt;p&gt;Pero para el usuario de la clase que maneja texto lo más conveniente es una interfaz que use carácteres porque es más fácil de usar, se quita la responsabilidad de manejar las líneas.&lt;/p&gt;
-
-&lt;p&gt;Entonces tu clase queda así: internamente representa el texto como un conjunto de líneas, pero las interfaces lo usan como si fuera un conjunto de caractéres en los que puedes insertar y borrar sin preocuparte por la organización en líneas.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;La separación en capas permitirá que tu código esté mejor organizado y que sea más fácil de entender. Tener cuidado con la forma en que las capas se organizan, cómo se dividen responsabilidades y las interfaces que cada capa expone hará mucho más mantenible y entendible tu base de código.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Resuelve problemas de organización de código mediante un sistema en capas.</summary></entry><entry><title type="html">No hagas hagas DevOps por convivir</title><link href="https://blog.thedojo.mx/2020/08/05/no-hagas-hagas-devops-por-convivir.html" rel="alternate" type="text/html" title="No hagas hagas DevOps por convivir" /><published>2020-08-05T00:00:00-05:00</published><updated>2020-08-05T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/08/05/no-hagas-hagas-devops-por-convivir</id><content type="html" xml:base="https://blog.thedojo.mx/2020/08/05/no-hagas-hagas-devops-por-convivir.html">&lt;p&gt;Tuvimos una plática con Domingo Suárez(&lt;a href=&quot;https://twitter.com/domix&quot;&gt;@domix&lt;/a&gt;) acerca de diferentes temas que le interesan a los desarrolladores.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-09-10T00:55:38-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">No hagas hagas DevOps por convivir</title><link href="https://blog.thedojo.mx/2020/09/10/no-hagas-hagas-devops-por-convivir.html" rel="alternate" type="text/html" title="No hagas hagas DevOps por convivir" /><published>2020-09-10T00:00:00-05:00</published><updated>2020-09-10T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/09/10/no-hagas-hagas-devops-por-convivir</id><content type="html" xml:base="https://blog.thedojo.mx/2020/09/10/no-hagas-hagas-devops-por-convivir.html">&lt;p&gt;Tuvimos una plática con Domingo Suárez(&lt;a href=&quot;https://twitter.com/domix&quot;&gt;@domix&lt;/a&gt;) acerca de diferentes temas que le interesan a los desarrolladores.&lt;/p&gt;
 
 &lt;p&gt;En este artículo te vamos a dar un resumen.&lt;/p&gt;
 
@@ -183,7 +105,85 @@ En los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la 
 
 &lt;p&gt;Disfrutamos mucho de esta plática y esperamos tenerlo con nosotros de nuevo pronto. La puedes ver aquí:&lt;/p&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/3zQ3qSFDdW0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="live" /><category term="youtube" /><category term="microservicios" /><category term="java" /><category term="domix" /><category term="hype" /><category term="devops" /><summary type="html">En este artículo resumiremos una plática muy interesante que tuvimos con Domingo Suárez sobre DevOps y otras cosas.</summary></entry><entry><title type="html">Traducción automática: API’s vs tu propio modelo</title><link href="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html" rel="alternate" type="text/html" title="Traducción automática: API’s vs tu propio modelo" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-19T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html">&lt;p&gt;Traducir texto es una tarea frecuente y que puede realizarse de diferentes maneras, en este artículo queremos explorar algunas de ellas.&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/3zQ3qSFDdW0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="live" /><category term="youtube" /><category term="microservicios" /><category term="java" /><category term="domix" /><category term="hype" /><category term="devops" /><summary type="html">En este artículo resumiremos una plática muy interesante que tuvimos con Domingo Suárez sobre DevOps y otras cosas.</summary></entry><entry><title type="html">A Philosophy of Software Design: Organiza bien los sistemas en capas</title><link href="https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Organiza bien los sistemas en capas" /><published>2020-09-01T00:00:00-05:00</published><updated>2020-09-01T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas</id><content type="html" xml:base="https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html">&lt;p&gt;Hemos escuchado muchísimo acerca de los sistemas en capas como &lt;em&gt;Modelo-Vista-Controlador&lt;/em&gt;, Modelo-Vista-Template, Modelo-Vista-*, &lt;em&gt;MV-lo-que-sea&lt;/em&gt; etc. y eso es porque la mayoría de los sistemas actuales se organiza así: &lt;strong&gt;en capas&lt;/strong&gt;. Además, nuestros módulos se dividen naturalmente en capas con diferentes funciones (como código que usa a otro).&lt;/p&gt;
+
+&lt;p&gt;Hablemos de por qué es efectiva esta forma de organización (o patrón de arquitectura)
+de código, de sus características y cómo podemos aprovecharla para sacar el máximo provecho.&lt;/p&gt;
+
+&lt;h2 id=&quot;características-de-los-sistemas-en-capas&quot;&gt;Características de los sistemas en capas&lt;/h2&gt;
+
+&lt;p&gt;Sabemos que la mejor forma de organización de un proyecto es &lt;strong&gt;descomponerlo&lt;/strong&gt; en partes independientes que &lt;strong&gt;oculten&lt;/strong&gt; información de otras.&lt;/p&gt;
+
+&lt;p&gt;La comunicación entre las diferentes partes se da por medio de una &lt;strong&gt;interfaz&lt;/strong&gt;. Esta interfaz, es la &lt;strong&gt;API&lt;/strong&gt; del componente, ya que será usada de manera automática por otra parte del programa.&lt;/p&gt;
+
+&lt;p&gt;En un sistema en capas el conjunto de elementos pertenecientes a una capa sólo se puede comunicar con la capa superior y con la capa inferior.&lt;/p&gt;
+
+&lt;p&gt;Si un sistema tiene 10 capas, cada componente puede comunicarse máximo con 2 capas.
+En los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la capa intermedia (el controlador, por ejemplo) puede comunicarse con dos capas, mientras que las otras sólo se comunican con la intermedia.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://amzn.to/2GdeHi5&quot;&gt;John Ousterhout&lt;/a&gt; usa la división en capas para explicar cómo se organiza el software con respecto al usuario final: la capa de “hasta arriba” es la que interactúa directamente con el usuario y la de “hasta abajo” es la más alejada del usuario, generalmente el núcleo de tu sistema.&lt;/p&gt;
+
+&lt;p&gt;Hablemos ahora de las mejores prácticas según &lt;a href=&quot;https://amzn.to/2GdeHi5&quot;&gt;A Philosphy of Software Design&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;diferente-capa-diferente-abstracción&quot;&gt;Diferente capa, diferente abstracción&lt;/h2&gt;
+
+&lt;p&gt;El concepto que debes tener más claro para descomponer tu software en capas es que cada capa debe tener sus propias abstracciones. Ousterhout da el ejemplo de un sistema de archivos:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;La capa que interactúa con el mundo exterior o la más alta, tiene la abstracción de un archivo&lt;/li&gt;
+  &lt;li&gt;La siguiente capa tiene la abstracción de bloques de memoria y caché&lt;/li&gt;
+  &lt;li&gt;La siguiente capa maneja directamente los bloques en el disco&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Esta abstracción es efectiva porque cada capa trabaja con abstracciones diferentes y no repiten ninguna entre ellas.&lt;/p&gt;
+
+&lt;p&gt;Esta es la idea básica que debes checar en tus diseños, si notas que una abstracción no cambia de una capa a otra, algo está saliendo mal. ¿Cómo puedes identificarlas?&lt;/p&gt;
+
+&lt;h3 id=&quot;funciones-de-paso&quot;&gt;Funciones de paso&lt;/h3&gt;
+
+&lt;p&gt;Estos son funciones que no hacen nada mas que mandar llamar una función de la siguiente capa, normalmente para cumplir con la limitante de comunicación entre capas.&lt;/p&gt;
+
+&lt;p&gt;Esto indica que no hay una división clara de responsabilidad entre clases o módulos. Para resolver este problema tienes que asegurarte de que la interfaz y la funcionalidad de este punto de tu sistema estén en el mismo módulo.&lt;/p&gt;
+
+&lt;p&gt;Evitar este tipo de métodos te evitará complicar la interfaz sin añadir ninguna funcionalidad.&lt;/p&gt;
+
+&lt;h3 id=&quot;variables-pasadas&quot;&gt;Variables pasadas&lt;/h3&gt;
+
+&lt;p&gt;Similar al caso anterior, si tienes una variable que recibes en la llamada de tu módulo y no haces nada con ella mas que pasarla a una capa inferior, estás mezclando las abstracciones entre capas.&lt;/p&gt;
+
+&lt;p&gt;A veces son necesarias, pero el manejarlas crea complejidad. Dependiendo del paradigma y el lenguaje de programación deberías buscar una solución adecuada.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, en lenguajes orientados a objetos podrías guardar todos lo valores a los que necesitas constante acceso desde diferentes lugares un una variable de “contexto” y que generalmente está almacenada en un lugar en el que todas tus funciones puedan acceder. Algunos frameworks usan su variable de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;settings&lt;/code&gt; para poner información necesaria ahí.&lt;/p&gt;
+
+&lt;p&gt;Los siguientes dos consejos tratan más los diferentes niveles de código que capas del sistema.&lt;/p&gt;
+
+&lt;h3 id=&quot;evita-lo-más-que-puedas-los-decoradores&quot;&gt;Evita lo más que puedas los decoradores&lt;/h3&gt;
+
+&lt;p&gt;Ousterhout habla en contra del patrón decorador. Este patrón consiste en envolver clases, objetos o funciones con otros, con el fin de extender la funcionalidad. Los decoradores intentan mantener una interfaz muy similar o exactamente igual al elemento original.&lt;/p&gt;
+
+&lt;p&gt;Un ejemplo es la clase de Java &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BufferedInputStream&lt;/code&gt; es un decorador de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;InputStream&lt;/code&gt;, añadiéndole el buffering.&lt;/p&gt;
+
+&lt;p&gt;Los decoradores pueden crear un montón de funciones y variables de pasada y agregar un montón de código de soporte sin de verdad agregar tanta funcionalidad como código.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;APoSD&lt;/strong&gt; (el libro) sugiere crear entidades separadas cuando sea posible y evitar el sobreuso de este patrón, a menos que de verdad tenga sentido, por ejemplo: cuando tienes un módulo muy profundo que con un decorador vas a poder reutilizar todo con muy poco código de soporte.&lt;/p&gt;
+
+&lt;h3 id=&quot;abstracciones-diferentes-entre-la-interfaz-y-la-implementación&quot;&gt;Abstracciones diferentes entre la interfaz y la implementación&lt;/h3&gt;
+
+&lt;p&gt;Tu código debería de exponer en su interfaz la abstracción más conveniente para los usuarios de tu módulo, sin importar las abstracciones más convenientes para manejar los datos internamente.&lt;/p&gt;
+
+&lt;p&gt;Por este principio, es muy normal que las abstracciones de la interfaz no sean las mismas interfaces que tu implementación usa.&lt;/p&gt;
+
+&lt;p&gt;Un ejemplo: imagina que estás escribiendo un componente que te permite editar texto. &lt;strong&gt;¿Cuál es la unidad básica con la que el usuario de tu módulo interactuará?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Puede ser un carácter, una línea, un párrafo. Ya que tu la visualización del texto es en líneas, lo más conveniente para la implementación es una abstracción que represente una línea de texto.&lt;/p&gt;
+
+&lt;p&gt;Pero para el usuario de la clase que maneja texto lo más conveniente es una interfaz que use carácteres porque es más fácil de usar, se quita la responsabilidad de manejar las líneas.&lt;/p&gt;
+
+&lt;p&gt;Entonces tu clase queda así: internamente representa el texto como un conjunto de líneas, pero las interfaces lo usan como si fuera un conjunto de caractéres en los que puedes insertar y borrar sin preocuparte por la organización en líneas.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;La separación en capas permitirá que tu código esté mejor organizado y que sea más fácil de entender. Tener cuidado con la forma en que las capas se organizan, cómo se dividen responsabilidades y las interfaces que cada capa expone hará mucho más mantenible y entendible tu base de código.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Resuelve problemas de organización de código mediante un sistema en capas.</summary></entry><entry><title type="html">Traducción automática: API’s vs tu propio modelo</title><link href="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html" rel="alternate" type="text/html" title="Traducción automática: API’s vs tu propio modelo" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-19T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html">&lt;p&gt;Traducir texto es una tarea frecuente y que puede realizarse de diferentes maneras, en este artículo queremos explorar algunas de ellas.&lt;/p&gt;
 
 &lt;p&gt;Existen sitios donde la traducción puede hacerse en línea, como en &lt;a href=&quot;https://translate.google.com.mx/?hl=es&quot;&gt;Google Translate&lt;/a&gt;, sin embargo, en muchos casos existe un límite en la cantidad de texto que puedes traducir.&lt;/p&gt;
 

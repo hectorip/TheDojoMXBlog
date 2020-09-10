@@ -1,6 +1,6 @@
 ---
 title: "No hagas hagas DevOps por convivir"
-date: 2020-08-05
+date: 2020-09-10
 author: Héctor Patricio
 tags: live youtube microservicios java domix hype devops
 comments: true
@@ -104,4 +104,3 @@ El consejo de domingo es: Si quieres empezar con Java empieza con algún framewo
 Disfrutamos mucho de esta plática y esperamos tenerlo con nosotros de nuevo pronto. La puedes ver aquí:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3zQ3qSFDdW0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
