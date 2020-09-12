@@ -13,7 +13,7 @@ header:
 
 Go es uno de los lenguajes modernos más usados. Ya hablamos de [por qué deberías aprenderlo](/2019/09/01/por-que-deberias-aprender-go.html).
 
-Ahora hablemos de un caso de uso práctico: **úsalo para crear una API HTTP**. En este artículo nos enfocaremos en la parte de comunicación HTTP.
+Ahora hablemos de un caso de uso práctico: **úsalo para crear una API HTTP**. En este artículo nos enfocaremos en la parte de comunicación HTTP y la generación de respuestas adecuadas.
 
 La funcionalidad básica de tu API puede o no adaptarse completamente a Go (no es es tan fácil de escribir como un lenguaje dinámico como Python), pero definitivamente es un **lenguaje excelente** para crear interfaces de comunicación web, debido a su alto rendimiento y eficiencia.
 
@@ -33,7 +33,7 @@ Cuando hice mi primer proyecto en Go, gran parte de la investigación sobre qué
 
 Go tiene una biblioteca estándar que cubre **muchas** de las necesidades de un desarrollador moderno. Si has programado en él podrás estar de acuerdo en que se siente como subirte en hombros de gigantes, debido a que las personas que lo diseñaron y construyeron son _las mismas personas que sentaron las bases para los sistemas operativos modernos_. Imagínate cuánta experiencia tienen.
 
-En la biblioteca estándar podemos encontrar un paquete que se llama `net/http` con el que puedes hacer, un servidor web con ruteo sencillo (la base de tu API) **con muy pocas líneas de código**. Puedes recibir peticiones HTTP, procesarlas y devolver una respuesta HTTP. El ciclo básico request -> response.
+En la biblioteca estándar podemos encontrar un paquete que se llama `net/http` con el que puedes hacer, un servidor web con direccionamiento de rutas sencillo (la base de tu API) **con muy pocas líneas de código**. Puedes recibir peticiones HTTP, procesarlas y devolver una respuesta HTTP. El ciclo básico request -> response.
 
 Aquí hay un ejemplo:
 
@@ -71,11 +71,11 @@ Por eso te presentamos las opciones más comunes y algunos ejemplos.
 
 - Un router más completo que el de la biblioteca estándar: *Gorilla Mux*. Es compatible con el tipo de dato nativo de Go para las peticiones. Además incluye:
   - Sub-routers (para mejor organización)
-  - Reversión de URL's (generar URL's a partir del nombre)
+  - Inversión de URL's (generar URL's a partir del nombre)
   - Matches complejos
 - Middlewares: logging, compresión, recuperación
 - Manejo de sesiones con cookies seguras
-- Implementación de Websockets y RPC
+- Implementación de WebSockets y RPC
 - Conversión de valores de entrada en `struct` de Go
 
 Gorilla Toolkit **no es un framework**, puedes usar cada de sus herramientas por separado, como las vayas necesitando. Así que puede empezar con la librería estándar y agregar lo que necesitas de Gorilla poco a poco.
