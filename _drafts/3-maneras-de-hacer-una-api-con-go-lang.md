@@ -1,10 +1,10 @@
 ---
-title: "Cuatro formas de hacer una API con Go"
+title: "Formas de hacer una API con Go, parte uno"
 date: 2019-11-23
 author: Héctor Patricio
 tags: go apis beego gorilla-mux gin-go go-lang
 comments: true
-excerpt: "Exploramos tres formas en las que puedes crear una API con Go el lenguaje enfocado en la eficiencia de los programas permitiendo productividad para los programadores"
+excerpt: "Exploramos diferentes formas en las que puedes crear una API con Go, el lenguaje enfocado en la eficiencia de los programas permitiendo productividad para los programadores."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1576986565/clint-adair-BW0vK-FA3eg-unsplash_iamab8.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1576986565/clint-adair-BW0vK-FA3eg-unsplash_iamab8.jpg
@@ -89,20 +89,3 @@ import "gorilla/mux"
 
 ```
 
-## Gin
-
-[Gin](https://github.com/gin-gonic/gin)
-Gin es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go.
-
-## Beego
-
-
-[Beego](https://beego.me/)
-
-## Echo
-
-[Echo](https://echo.labstack.com/)
-
-## Conclusión
-
-Existen múltiples opciones para crear tu API en Go. Hay para escoger dependiendo de tus gustos y de las prioridades de tu proyecto.
