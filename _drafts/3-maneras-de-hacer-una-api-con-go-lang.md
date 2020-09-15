@@ -70,8 +70,8 @@ Por eso te presentamos las opciones más comunes y algunos ejemplos.
 [Gorilla Toolkit](https://www.gorillatoolkit.org/) es un conjunto de herramientas para web que, entre otras cosas tiene:
 
 - Un router más completo que el de la biblioteca estándar: *Gorilla Mux*. Es compatible con el tipo de dato nativo de Go para las peticiones. Además incluye:
-  - Sub-routers (para mejor organización)
-  - Inversión de URL's (generar URL's a partir del nombre)
+  - Ruteadores secundarios, para que organices mejor tu código.
+  - Inversión de URL's: te permite generar la URL a partir de un identificador
   - Matches complejos
 - Middlewares: logging, compresión, recuperación
 - Manejo de sesiones con cookies seguras
