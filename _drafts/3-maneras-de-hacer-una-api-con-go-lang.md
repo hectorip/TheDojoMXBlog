@@ -71,7 +71,7 @@ Por eso te presentamos las opciones más comunes y algunos ejemplos.
 
 - Un router más completo que el de la biblioteca estándar: *Gorilla Mux*. Es compatible con el tipo de dato nativo de Go para las peticiones. Además incluye:
   - Ruteadores secundarios, para que organices mejor tu código.
-  - Inversión de URL's: te permite generar la URL a partir de un identificador
+  - Inversión de URL's: te permite generar la URL a partir de un identificador.
   - Matches complejos
 - Middlewares: logging, compresión, recuperación
 - Manejo de sesiones con cookies seguras
@@ -86,6 +86,17 @@ Aquí tienes un ejemplo muy básico usando **mux**:
 
 import "gorilla/mux"
 
+func main(){
+  r := mux.NewRouter()
+  r.HandleFunc("/", HomeHandler)
+  r.HandleFunc("/colors", ColorsHandler)
+}
+
+func HomeHandler(){
+
+}
+func ColorsHanlder(){
+
+}
 
 ```
-
