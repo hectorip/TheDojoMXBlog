@@ -89,16 +89,15 @@ import "gorilla/mux"
 func main(){
   r := mux.NewRouter()
   r.HandleFunc("/", HomeHandler)
-  r.HandleFunc("/colors", ColorsHandler)
+  r.HandleFunc("/color/{name}", ColorsHandler)
 }
 
-func HomeHandler(){
+func HomeHandler(w http.ResponseWriter, r *http.Reques){
 
 }
 
-func ColorsHanlder(){
+func ColorsHandler(w http.ResponseWriter, r *http.Reques){
 
 }
 
 ```
-
