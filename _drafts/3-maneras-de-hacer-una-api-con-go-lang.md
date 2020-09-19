@@ -80,24 +80,26 @@ Por eso te presentamos las opciones más comunes y algunos ejemplos.
 
 Gorilla Toolkit **no es un framework**, puedes usar cada de sus herramientas por separado, como las vayas necesitando. Así que puede empezar con la librería estándar y agregar lo que necesitas de Gorilla poco a poco.
 
-Aquí tienes un ejemplo muy básico usando **mux**:
+## Gin
+![Gin go logo](https://raw.githubusercontent.com/gin-gonic/logo/master/color.png){}
+[Gin](https://github.com/gin-gonic/gin){: .align-center}
 
-```go
+Gin es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go. Ya está en su versión 1, por lo que puedes usarlo con confianza en proyectos serios.
 
-import "gorilla/mux"
+Gin usa [httpRouter](https://github.com/julienschmidt/httprouter) que tiene funciones parecidas a Gorilla Mux, pero que dice escalar mejor que el de la librería estándar incluso.
 
-func main(){
-  r := mux.NewRouter()
-  r.HandleFunc("/", HomeHandler)
-  r.HandleFunc("/color/{name}", ColorsHandler)
-}
+Gin tiene utilidades incluídas para hacer render de XML, JSON, YAML y ProtoBuf, o sea que es perfecto para crear diferentes tipos de API's.
 
-func HomeHandler(w http.ResponseWriter, r *http.Reques){
+Gin tiene un montón de cosas más que puedes explorar en su documentación, que es muy completa y con muchos ejemplos, por si fuera poco.
 
-}
+## Beego
 
-func ColorsHandler(w http.ResponseWriter, r *http.Reques){
+[Beego](https://beego.me/)
 
-}
+## Echo
 
-```
+[Echo](https://echo.labstack.com/)
+
+## Conclusión
+
+Existen múltiples opciones para crear tu API en Go. Hay para escoger dependiendo de tus gustos y de las prioridades de tu proyecto.
