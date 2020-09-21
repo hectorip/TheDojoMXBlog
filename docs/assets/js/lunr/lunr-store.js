@@ -274,4 +274,10 @@ var store = [{
         "tags": ["live","youtube","microservicios","java","domix","hype","devops"],
         "url": "https://blog.thedojo.mx/2020/09/10/no-hagas-hagas-devops-por-convivir.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1599714511/1CF0CA4A-211C-4310-9D85-0C49D92B014D_ymceki.jpg"
+      },{
+        "title": "Formas de hacer una API con Go",
+        "excerpt":"Go es uno de los lenguajes modernos más usados. Ya hablamos de por qué deberías aprenderlo. Ahora hablemos de un caso de uso práctico: úsalo para crear una API HTTP. En este artículo nos enfocaremos en la parte de comunicación HTTP y la generación de respuestas adecuadas. La funcionalidad básica...","categories": [],
+        "tags": ["go","apis","beego","gorilla-mux","gin-go","go-lang"],
+        "url": "https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/v1594271709/CA5123E3-5CCD-4A32-A4D0-2DE9B27A13E8_pfxvrn.jpg"
       }]

@@ -1,13 +1,13 @@
 ---
-title: "Formas de hacer una API con Go, parte uno"
-date: 2019-11-23
+title: "Formas de hacer una API con Go"
+date: 2020-09-20
 author: Héctor Patricio
 tags: go apis beego gorilla-mux gin-go go-lang
 comments: true
 excerpt: "Exploramos diferentes formas en las que puedes crear una API con Go, el lenguaje enfocado en la eficiencia de los programas permitiendo productividad para los programadores."
 header:
-  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1576986565/clint-adair-BW0vK-FA3eg-unsplash_iamab8.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1576986565/clint-adair-BW0vK-FA3eg-unsplash_iamab8.jpg
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/v1594271709/CA5123E3-5CCD-4A32-A4D0-2DE9B27A13E8_pfxvrn.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/v1594271709/CA5123E3-5CCD-4A32-A4D0-2DE9B27A13E8_pfxvrn.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -93,15 +93,28 @@ Además, tiene un montón de cosas más que puedes explorar en su documentación
 
 ## Beego
 
-![Beego logo](https://beego.me/static/img/beego_purple.png)
+![Beego logo](https://beego.me/static/img/beego_purple.png){: .align-center}
 
 [Beego](https://beego.me/) es un framweork que se especializa en API's RESTful e intenta usar lo mejor posibles las características de Go como las interfaces y las estructuras embebidas. Parece que está hecho en China.
 
-Las cuatro características que promociona
+Las cuatro características que resalta son:
+
+1. Fácil de usar: es MVC  y tiene herramientas incluídas para poder desarrollar más fácilmente.
+2. Inteligente: tiene características de ruteo avanzadas junto con monitoreo integrado que te permiten observar el estado de tu API.
+3. Modular: su estructura interna está compuesta por varios módulos que te permiten avanzar rápidamente.
+4. Alto desempeño
+
+Es un framework bastante completo, que cumple con todo lo mínimo necesario para que puedas empezar a desarrollar tu API eficientemente, pero parece que tiene un defecto: al ser hecho en china, la documentación no está pulida completamente y puede que haya poca información en tutoriales y otras páginas.
 
 ## Echo
 
-[Echo](https://echo.labstack.com/)
+![Logo de Echo](https://cdn.labstack.com/images/echo-logo.svg){: .align-center}
+
+[Echo](https://echo.labstack.com/) se promociona como el framework web minimalista. Tiene soporte para HTTP/2, ruteo sin uso de memoria dinámica (para mejor desempeño), TLS automático, middlewares flexibles y funciones utilitarias para responder fácilmente las peticiones web en cualquier formato.
+
+En algunos benchmarks **echo** parece ser más rápido que Gin.
+
+Tiene desarrollo bastante activo y la documentación contiene ejemplos suficientes, junto con algunas recetas y para que logres avanzar rápido.
 
 ## Conclusión
 
