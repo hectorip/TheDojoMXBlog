@@ -65,10 +65,9 @@ Varios de estos problemas suenan demasiado simples porque ya los tenemos bien tr
 
 En los ejemplos anteriores encontrar una solución concreta a las preguntas planteadas permite avanzar.
 
-
 ### 2. Problemas para demostrar
 
-> "Demuestre que la línea de mayor longitud que toca dos puntos de una circunferencia pasa por el centro del círculo". 
+> "Demuestre que la línea de mayor longitud que toca dos puntos de una circunferencia pasa por el centro del círculo".
 
 Esto es un ejemplo de un problema para demostrar. Estos implican la comprobación o refutación de una aserción (_hipótesis_) enunciada en el problema. Estos problemas generalmente nos los ponían en la preparatoria o universidad, por su naturaleza son un poco más difíciles en general.
 
@@ -95,6 +94,7 @@ Pero los problemas de la vida real son muy diferentes, ya que estos pueden no cu
 de un problema bien definido. Así que uno de los pasos previos para resolver un problema de la vida real es intentar definir lo mejor posible el problema por resolver y completarlo en caso de que falte algo.
 
 ## Cómo empezar a resolver un problema
+
 Polya plantea cuatro etapas de resolución de un problema:
 
 1. Entendimiento
@@ -114,7 +114,7 @@ Para decir que comprendemos el problema, tenemos que conocer los datos que se da
 
 Esta parte puede llevar gran parte del tiempo total dedicado al problema, ya que es el fundamento de los próximos pasos, sin la que no se puede continuar.
 
- ### Planeación
+### Planeación
 
 El siguiente paso es trazar un plan para atacar el problema. El plan consiste en saber que transformaciones, derivaciones y combinaciones tenemos que hacer con los datos para llegar a la solución esperada.
 
@@ -122,16 +122,16 @@ Esta es la parte más difícil, ya que implica conocimiento profundo del problem
 
 Pero es casi imposible tener una idea brillante cuando sabemos muy poco del tema. Las buenas ideas están basadas en conocimiento y experiencia previa. Por eso conviene preguntarse: **¿Conozco o resuelto un problema relacionado o similar?**. Hablaremos de otras preguntas que nos pueden ayudar a concebir un plan más adelante.
 
- ### Ejecución
+### Ejecución
 
- Es hora de llevar a cabo los pasos establecidos en la planeación. En esta etapa hay que ejecutar cada uno de los pasos que establecimos en la planeación de ejecución del problema. Polya dice que aquí es donde **hay que ser rigurosos con lo que hacemos**, verificando que lo que hacemos tenga sentido y sea estrictamente correcto. ¿Puedes comprobar en cada paso que es correcto lo que estás haciendo?
+Es hora de llevar a cabo los pasos establecidos en la planeación. En esta etapa hay que ejecutar cada uno de los pasos que establecimos en la planeación de ejecución del problema. Polya dice que aquí es donde **hay que ser rigurosos con lo que hacemos**, verificando que lo que hacemos tenga sentido y sea estrictamente correcto. ¿Puedes comprobar en cada paso que es correcto lo que estás haciendo?
 
- ### Retrospectiva
+### Retrospectiva
 
 En este paso hay que **examinar el resultado**. ¿Puedes probar que el resultado final es correcto?
 Además podemos ver si podemos hacer algo diferente, si nuestro resultado cumple con todo lo esperado y si podemos encontrar o derivar el resultado de alguna otra forma ahora que ya sabemos cuál es.
 
-Este paso también sirve para verificar si el resultado o el método que usamos para resolverlo nues puede ayudar con algún otro problema que tengamos que resolver.
+Este paso también sirve para verificar si el resultado o el método que usamos para resolverlo nos puede ayudar con algún otro problema que tengamos que resolver.
 
 ### Las preguntas de Polya
 
@@ -156,4 +156,4 @@ Para resolver un problema:
     - Genera nuevas ideas y re-evalúa el problema y el plan a la luz de cada nuevo paso.
   - Aprovecha cualquier idea aunque suene disparatada.
 
-En el siguiente post hablaremos de 5 cosas más de las que Polya habla en su libro: heurística, inducción, deducción, análisis y síntesis.
+En el [siguiente post](/2019/10/03/el-arte-de-resolver-problemas-la-heuristica.html) hablaremos de 5 cosas más de las que Polya habla en su libro: heurística, inducción, deducción, análisis y síntesis.
