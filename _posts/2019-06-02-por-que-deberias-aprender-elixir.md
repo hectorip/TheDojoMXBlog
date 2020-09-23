@@ -2,28 +2,41 @@
 title: "¿Por qué deberías aprender Elixir?"
 date: 2019-06-02
 author: Héctor Patricio
-tags: elixir fp programación-funcional
+tags: elixir fp programación-funcional registro-gráfico
 comments: true
-excerpt: "Elixir es un lenguaje que recientemente ha estado haciendo ruido. Aquí te contamos algunas cosas de él para que te animes a aprenderlo."
+excerpt: "Elixir es un lenguaje que deberías aprender por los superpedores que te da. Platiquemos más de ellos."
 header:
-  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1559453191/jr-korpa-1316724-unsplash_f1ujyj.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1559453191/jr-korpa-1316724-unsplash_f1ujyj.jpg
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1559453195/luis-dille-1098834-unsplash_n7ntca.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1559453195/luis-dille-1098834-unsplash_n7ntca.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Elixir es un lenguaje de programación bastante reciente (creado cerca de 2012), pero que está haciendo mucho ruido y más considerando que no tiene ninguno de los nombres legendarios del área de sistemas atrás ni a alguna empresa prominente.
+## TL;DR
 
-En este post vamos a hablar de por qué es buena idea aprender Elixir en 2019.
+¿Por qué deberías considerar aprender Elixir? La respuesta fácil la encuentras en el siguiente gráfica y la plática de la que salió:
+
+![¿Por qué debes aprender Elixir? por Alejandra Bricio](https://res.cloudinary.com/hectorip/image/upload/v1600835203/elixir_yifxdk.jpg){: .align-center}
+
+Este registro visual salió de esta plática:
+
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fhacktabasco%2Fvideos%2F462839184673989%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+Agradecemos a [@loreniuxmr](https://twitter.com/loreniuxmr) por la plática y a [@alebricio](https://twitter.com/alebricio) por el registro visual, así como a [Hack Tabasco](https://twitter.com/HackTabasco) por la organización.
+
+## ¿Todavía no te convences?
+
+Entonces hablemos más profundamente. Elixir es un lenguaje de programación reciente (creado cerca de 2012), pero que está haciendo mucho ruido, aunque considerando que no tiene ninguno de los nombres legendarios del área de sistemas atrás ni a alguna empresa prominente.
+
+En este post vamos a hablar de por qué es buena idea aprender Elixir en 2020.
 
 ## Un poco de historia
 
-Elixir es un lenguaje de programación creado por José Valim, que empezó a ser programado en 2011 y su versión 1.0 salió a la luz en 2014. Ahora en Junio 2019 va en su **versión 1.8**. _Nació con la idea de mejorar el rendimiento de los programas sin afectar la productividad de los programadores_. José Valim era un contribuidor al núcleo de Rails, hasta que se dio cuenta de que no podría escalar hasta el grado que necesitaba, sobre todo por Ruby y sus limitaciones. Ahí empieza la historia de Elixir y el aprovechamiento de la concurrencia provista por Erlang y su máquina virtual, **BEAM**.
+Fue creado por **José Valim**, que empezó a ser programado en 2011 y su versión 1.0 salió a la luz en 2014. Ahora en Junio 2019 va en su **versión 1.8**. _Nació con la idea de mejorar el rendimiento de los programas sin afectar la productividad de los programadores_. José Valim era un contribuidor al núcleo de Rails, hasta que se dio cuenta de que no podría escalar hasta el grado que necesitaba, sobre todo por Ruby y sus limitaciones. Ahí empieza la historia de Elixir y el aprovechamiento de la concurrencia provista por Erlang y su máquina virtual, **BEAM**.
 
 En el siguiente documental explican por qué se creó y cómo es que resuelve algunos problemas para diferentes empresas:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lxYFOM3UJzo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
+---
 Elixir es como el hijo de Erlang y Ruby. La belleza de Ruby y el poder de Erlang.
 
 ## Características de Elixir
@@ -71,7 +84,7 @@ Siendo uno de los puntos principales del lenguaje y la BEAM, existe un conjunto 
 
 ### Resiliente
 
-Las características de las que hemos platicado llevan al lenguaje a una característica muy importante. Las aplicaciones hechas en Elixir pueden llegar ser muy, muy resilientes. Es decir, puede aguantar mucho tiempo sin caerse e incluso problemas inesperados. Las aplicaciones hechas en Erlang pueden ofrecer **99.9999999%** de disponibilidad, lo que quiere decir que sólamente van a estar indisponibles 32ms en un año. A esta resiliencia contribuyen tres de las características antes mencionadas: la distribución de al computación y la memoria, la concurrencia y los árboles de supervisión. 
+Las aplicaciones hechas en Elixir pueden llegar ser muy, muy resilientes. Es decir, puede aguantar mucho tiempo sin caerse y soportar problemas inesperados. Las aplicaciones hechas en Erlang pueden ofrecer **99.9999999%** de disponibilidad, lo que quiere decir que sólamente van a estar indisponibles **32 milisegundos** en un año. A esta resiliencia contribuyen tres de las características antes mencionadas: la distribución de al computación y la memoria, la concurrencia y los árboles de supervisión.
 
 ### Velocidad
 
@@ -92,7 +105,7 @@ calculados = [1, 2, 3, 4]
 reales = [0.5, 0.2., 1.7, 5.9]
 
 error = calculados
-  |> zip(reales) 
+  |> zip(reales)
   |> map(fn {c, r}-> :math.pow(c-r, 2) end)
   |> sum
 ```
@@ -112,7 +125,6 @@ Hablando por ejemplo de monitorear un programa que está corriendo, la BEAM perm
 
 ![Visualizador de procesos de Erlang](https://res.cloudinary.com/hectorip/image/upload/v1559505687/Screenshot_2019-06-02_15.00.01_u1xiwd.png)
 
-
 (por cierto, esto es un árbol de supervisión).
 
 ### Metaporgramación
@@ -126,7 +138,6 @@ Esta habilidad permite por ejemplo la creación de macros para crear tu propio m
 La siguiente imagen da un ejemplo de cómo puede lucir un lenguaje para un domino específico.
 
 ![Ejemplo de DSL en Elixir](https://res.cloudinary.com/hectorip/image/upload/v1559509232/20180416_1_rlvoac.png)
-
 
 Como puedes ver es mucho más adecuado para el problema específico que si sólamente creáramos funciones.
 
@@ -171,7 +182,6 @@ Las limitantes en cuanto al procesamiento de información cruda (number crunchin
 ## Recursos de aprendizaje.
 
 En este post puedes ver unos cuantos recursos de aprendizaje: [Recursos de aprendizaje de Elixir](https://hectorip.com/2018/12/27/aprendiendo-elixir.html), pero en este blog vamos a ir subiendo algunos ejercicios para que puedas aprender más de él.
-
 
 ## Conclusión
 

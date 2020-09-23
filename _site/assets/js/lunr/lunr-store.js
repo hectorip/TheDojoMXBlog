@@ -72,10 +72,10 @@ var store = [{
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1557201862/edho-pratama-149011-unsplash_jlppci.jpg"
       },{
         "title": "¿Por qué deberías aprender Elixir?",
-        "excerpt":"Elixir es un lenguaje de programación bastante reciente (creado cerca de 2012), pero que está haciendo mucho ruido y más considerando que no tiene ninguno de los nombres legendarios del área de sistemas atrás ni a alguna empresa prominente. En este post vamos a hablar de por qué es buena...","categories": [],
-        "tags": ["elixir","fp","programación-funcional"],
+        "excerpt":"TL;DR ¿Por qué deberías considerar aprender Elixir? La respuesta fácil la encuentras en el siguiente gráfica y la plática de la que salió: Este registro visual salió de esta plática: Agradecemos a @loreniuxmr por la plática y a @alebricio por el registro visual, así como a Hack Tabasco por la...","categories": [],
+        "tags": ["elixir","fp","programación-funcional","registro-gráfico"],
         "url": "https://blog.thedojo.mx/2019/06/02/por-que-deberias-aprender-elixir.html",
-        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1559453191/jr-korpa-1316724-unsplash_f1ujyj.jpg"
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1559453195/luis-dille-1098834-unsplash_n7ntca.jpg"
       },{
         "title": "Entendiendo REST. El estilo de Arquitectura.",
         "excerpt":"En el artículo anterior de la serie hablamos un poco de lo que es una API REST. En este artículo empezaremos a ver qué es REST y por qué surgió. Antes de empezar con lo nuestro, hablemos de lo que NO es una API REST. Esto no es REST Actualmente,...","categories": [],
@@ -239,6 +239,12 @@ var store = [{
         "url": "https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1589701068/538FF576-00FA-4723-9142-920622E07743_djzuh4.jpg"
       },{
+        "title": "Resumen: Qué hacer para conseguir un buen trabajo como programador",
+        "excerpt":"= ¿Qué hacer para conseguir un buen trabajo en tecnología? -&gt; Intro por Alex -&gt; Cuente Pablo de su trayectoria -&gt; Trayectoria de Diego -&gt; ¿Consideras que donde estás ahora o donde estuviste en tu último trabajo es donde querías estar? ¿O en qué punto te diste cuenta? -&gt; Sabemos...","categories": [],
+        "tags": [],
+        "url": "https://blog.thedojo.mx/2020/06/02/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html",
+        "teaser": null
+      },{
         "title": "¿Qué es el pensamiento computacional?",
         "excerpt":"Todo lo relacionado con el pensamiento computacional (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad, porque vivimos en un mundo en el que cada aspecto de la vida se ha visto influenciado por lo que la computación permite. En varios lugares...","categories": [],
         "tags": ["cs","computational-thinking","pensamiento-computacional","libros","mit"],
@@ -263,9 +269,27 @@ var store = [{
         "url": "https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg"
       },{
+        "title": "¿Qué son los modelos generativos?",
+        "excerpt":"Los modelos generativos permiten a una máquina “aprender” los patrones que existen en los datos con los que son entrenadas y a partir de dicho aprendizaje, son capaces de generar datos similares que en algunos casos pueden ser casi tan “reales” como los que se utilizaron inicialmente para su entrenamiento....","categories": [],
+        "tags": [],
+        "url": "https://blog.thedojo.mx/2020/08/01/que-son-los-modelos-generativos.html",
+        "teaser": null
+      },{
         "title": "A Philosophy of Software Design: Organiza bien los sistemas en capas",
-        "excerpt":"Hemos escuchado muchísimo acerca de los sistemas en capas como Modelo-Vista-Controlador, Modelo-Vista-Template, Modelo-Vista-*, _MVADFGDFD etc. y eso es porque la mayoría de los sistemas actuales se organiza así: en capas. Además, nuestros módulos se dividen naturalmente en capas con diferentes funciones (como código que usa a otro). Hablemos de por...","categories": [],
+        "excerpt":"Hemos escuchado muchísimo acerca de los sistemas en capas como Modelo-Vista-Controlador, Modelo-Vista-Template, Modelo-Vista-*, MV-lo-que-sea etc. y eso es porque la mayoría de los sistemas actuales se organiza así: en capas. Además, nuestros módulos se dividen naturalmente en capas con diferentes funciones (como código que usa a otro). Hablemos de por...","categories": [],
         "tags": [],
         "url": "https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1598938866/96510D0F-CE11-46AB-9B3D-6EA0F8EA4C23_nfdcvu.jpg"
+      },{
+        "title": "No hagas hagas DevOps por convivir",
+        "excerpt":"Tuvimos una plática con Domingo Suárez(@domix) acerca de diferentes temas que le interesan a los desarrolladores. En este artículo te vamos a dar un resumen. Cómo nos dejamos influir para adoptar una tecnología Lo primero de lo que hablamos es de la forma en que muchas veces adoptamos la tecnología:...","categories": [],
+        "tags": ["live","youtube","microservicios","java","domix","hype","devops"],
+        "url": "https://blog.thedojo.mx/2020/09/10/no-hagas-hagas-devops-por-convivir.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1599714511/1CF0CA4A-211C-4310-9D85-0C49D92B014D_ymceki.jpg"
+      },{
+        "title": "Formas de hacer una API con Go",
+        "excerpt":"Go es uno de los lenguajes modernos más usados. Ya hablamos de por qué deberías aprenderlo. Ahora hablemos de un caso de uso práctico: úsalo para crear una API HTTP. En este artículo nos enfocaremos en la parte de comunicación HTTP y la generación de respuestas adecuadas. La funcionalidad básica...","categories": [],
+        "tags": ["go","apis","beego","gorilla-mux","gin-go","go-lang"],
+        "url": "https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/v1594271709/CA5123E3-5CCD-4A32-A4D0-2DE9B27A13E8_pfxvrn.jpg"
       }]

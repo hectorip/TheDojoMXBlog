@@ -1,4 +1,229 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-09-01T01:06:36-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">A Philosophy of Software Design: Organiza bien los sistemas en capas</title><link href="https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Organiza bien los sistemas en capas" /><published>2020-09-01T00:00:00-05:00</published><updated>2020-09-01T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas</id><content type="html" xml:base="https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html">&lt;p&gt;Hemos escuchado muchísimo acerca de los sistemas en capas como &lt;em&gt;Modelo-Vista-Controlador&lt;/em&gt;, &lt;em&gt;Modelo-Vista-Template, Modelo-Vista-*, _MVADFGDFD&lt;/em&gt; etc. y eso es porque la mayoría de los sistemas actuales se organiza así: &lt;strong&gt;en capas&lt;/strong&gt;. Además, nuestros módulos se dividen naturalmente en capas con diferentes funciones (como código que usa a otro).&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-09-22T23:51:31-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Formas de hacer una API con Go</title><link href="https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang.html" rel="alternate" type="text/html" title="Formas de hacer una API con Go" /><published>2020-09-20T00:00:00-05:00</published><updated>2020-09-20T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang</id><content type="html" xml:base="https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang.html">&lt;p&gt;Go es uno de los lenguajes modernos más usados. Ya hablamos de &lt;a href=&quot;/2019/09/01/por-que-deberias-aprender-go.html&quot;&gt;por qué deberías aprenderlo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ahora hablemos de un caso de uso práctico: &lt;strong&gt;úsalo para crear una API HTTP&lt;/strong&gt;. En este artículo nos enfocaremos en la parte de comunicación HTTP y la generación de respuestas adecuadas.&lt;/p&gt;
+
+&lt;p&gt;La funcionalidad básica de tu API puede o no adaptarse completamente a Go (no es es tan fácil de escribir como un lenguaje dinámico como Python), pero definitivamente es un &lt;strong&gt;lenguaje excelente&lt;/strong&gt; para crear interfaces de comunicación web, debido a su alto rendimiento y eficiencia.&lt;/p&gt;
+
+&lt;p&gt;Puedes ver algunas de las comparativas en los siguientes artículos:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://stressgrid.com/blog/benchmarking_go_vs_node_vs_elixir/&quot;&gt;Comparando el rendimiento de Go, NodeJS y Elixir&lt;/a&gt;. TL;DR: Go y Elixir llegan a manejar más de 100k conexiones sin ningún problema, Node empieza con problemas desde 30k y el más eficiente en cómputo y memoria utilizada &lt;em&gt;por mucho&lt;/em&gt; es &lt;strong&gt;Go&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/mroth/phoenix-showdown&quot;&gt;Comparación de frameworks web ligeros&lt;/a&gt;. Este artículo es un poco viejo, pero el resumen es que Gin (un framework web ligero de Go) es el que más peticiones soporta por segundo y con una consistencia excelente.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1574629781/Screenshot_2019-11-24_15.09.25_ozqwcu.png&quot; alt=&quot;Comparativa de micro-frameworks Web&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hablemos de tres formas de crear una API sobre HTTP para tu próximo proyecto. Pero antes hablemos de una opción simple que no cubre muchos casos pero que se oye recomendada por todo internet.&lt;/p&gt;
+
+&lt;h2 id=&quot;la-biblioteca-estándar&quot;&gt;La biblioteca estándar&lt;/h2&gt;
+
+&lt;p&gt;Cuando hice mi primer proyecto en Go, gran parte de la investigación sobre qué usar para crear un proyecto de una API web apuntaba a los &lt;strong&gt;paquetes nativos&lt;/strong&gt; de Go.&lt;/p&gt;
+
+&lt;p&gt;Go tiene una biblioteca estándar que cubre &lt;strong&gt;muchas&lt;/strong&gt; de las necesidades de un desarrollador moderno. Si has programado en él podrás estar de acuerdo en que se siente como subirte en hombros de gigantes, debido a que las personas que lo diseñaron y construyeron son &lt;em&gt;las mismas personas que sentaron las bases para los sistemas operativos modernos&lt;/em&gt;. Imagínate cuánta experiencia tienen.&lt;/p&gt;
+
+&lt;p&gt;En la biblioteca estándar podemos encontrar un paquete que se llama &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;net/http&lt;/code&gt; con el que puedes hacer, un servidor web con direccionamiento de rutas sencillo (la base de tu API) &lt;strong&gt;con muy pocas líneas de código&lt;/strong&gt;. Puedes recibir peticiones HTTP, procesarlas y devolver una respuesta HTTP. El ciclo básico request -&amp;gt; response.&lt;/p&gt;
+
+&lt;p&gt;Aquí hay un ejemplo:&lt;/p&gt;
+
+&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;
+	&lt;span class=&quot;s&quot;&gt;&quot;net/http&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;// Implementando rutas HTTP&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HandleFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ListenAndServe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;localhost:8080&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;// iniciando el servidor&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;// handler recibe la petición http y la procesa para devolver una respuesta http&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ResponseWriter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Fprintf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hola Go API's&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;// Falta responder JSON&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Si tu API es sencilla, expone pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la biblioteca estándar es una solución buena, pero para otros casos se queda un poco corta, ya que tendrías que implementar varias cosas a mano.&lt;/p&gt;
+
+&lt;p&gt;Su uso es sencillo como acabas de ver. Usar un framework web tiene el costo de agregar complejidad a &lt;strong&gt;cambio de funcionalidades que no tienes que desarrollar tú&lt;/strong&gt;. Pero aquí te compartimos un artículo en el que un experto hablá de por qué &lt;em&gt;él&lt;/em&gt; prefiere no usar frameworks: &lt;a href=&quot;https://medium.com/code-zen/why-i-don-t-use-go-web-frameworks-1087e1facfa4&quot;&gt;Why I Don’t Use Go Web Frameworks&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Por eso te presentamos las opciones más comunes y algunos ejemplos.&lt;/p&gt;
+
+&lt;h2 id=&quot;gorilla-web-toolkit&quot;&gt;Gorilla Web Toolkit&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://avatars2.githubusercontent.com/u/489566?s=200&amp;amp;v=4&quot; alt=&quot;Gorilla Web Toolkit logo&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.gorillatoolkit.org/&quot;&gt;Gorilla Toolkit&lt;/a&gt; es un conjunto de herramientas para web que, entre otras cosas tiene:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Un router más completo que el de la biblioteca estándar: &lt;em&gt;Gorilla Mux&lt;/em&gt;. Es compatible con el tipo de dato nativo de Go para las peticiones. Además incluye:
+    &lt;ul&gt;
+      &lt;li&gt;Ruteadores secundarios, para que organices mejor tu código.&lt;/li&gt;
+      &lt;li&gt;Inversión de URL’s: te permite generar la URL a partir de un identificador.&lt;/li&gt;
+      &lt;li&gt;Matches complejos&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Middlewares: logging, compresión, recuperación&lt;/li&gt;
+  &lt;li&gt;Manejo de sesiones con cookies seguras&lt;/li&gt;
+  &lt;li&gt;Implementación de WebSockets y RPC&lt;/li&gt;
+  &lt;li&gt;Conversión de valores de entrada en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt; de Go&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Gorilla Toolkit &lt;strong&gt;no es un framework&lt;/strong&gt;, puedes usar cada de sus herramientas por separado, como las vayas necesitando. Así que puede empezar con la librería estándar y agregar lo que necesitas de Gorilla poco a poco.&lt;/p&gt;
+
+&lt;h2 id=&quot;gin&quot;&gt;Gin&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_250/v1600730661/color_whycuu.png&quot; alt=&quot;Gin go logo&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/gin-gonic/gin&quot;&gt;Gin&lt;/a&gt; es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go. Ya está en su versión 1, por lo que puedes usarlo con confianza en proyectos serios.&lt;/p&gt;
+
+&lt;p&gt;Gin usa &lt;a href=&quot;https://github.com/julienschmidt/httprouter&quot;&gt;httpRouter&lt;/a&gt; que tiene funciones parecidas a Gorilla Mux, pero que dice escalar mejor que el de la librería estándar incluso.&lt;/p&gt;
+
+&lt;p&gt;Tiene utilidades incluídas para hacer render de XML, JSON, YAML y ProtoBuf, o sea que es perfecto para crear diferentes tipos de API’s.&lt;/p&gt;
+
+&lt;p&gt;Además, tiene un montón de cosas más que puedes explorar en su documentación, que es muy completa y con muchos ejemplos, por si fuera poco.&lt;/p&gt;
+
+&lt;h2 id=&quot;beego&quot;&gt;Beego&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://beego.me/static/img/beego_purple.png&quot; alt=&quot;Beego logo&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://beego.me/&quot;&gt;Beego&lt;/a&gt; es un framweork que se especializa en API’s RESTful e intenta usar lo mejor posibles las características de Go como las interfaces y las estructuras embebidas. Parece que está hecho en China.&lt;/p&gt;
+
+&lt;p&gt;Las cuatro características que resalta son:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Fácil de usar: es MVC  y tiene herramientas incluídas para poder desarrollar más fácilmente.&lt;/li&gt;
+  &lt;li&gt;Inteligente: tiene características de ruteo avanzadas junto con monitoreo integrado que te permiten observar el estado de tu API.&lt;/li&gt;
+  &lt;li&gt;Modular: su estructura interna está compuesta por varios módulos que te permiten avanzar rápidamente.&lt;/li&gt;
+  &lt;li&gt;Alto desempeño&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Es un framework bastante completo, que cumple con todo lo mínimo necesario para que puedas empezar a desarrollar tu API eficientemente, pero parece que tiene un defecto: al ser hecho en china, la documentación no está pulida completamente y puede que haya poca información en tutoriales y otras páginas.&lt;/p&gt;
+
+&lt;h2 id=&quot;echo&quot;&gt;Echo&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.labstack.com/images/echo-logo.svg&quot; alt=&quot;Logo de Echo&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://echo.labstack.com/&quot;&gt;Echo&lt;/a&gt; se promociona como el framework web minimalista. Tiene soporte para HTTP/2, ruteo sin uso de memoria dinámica (para mejor desempeño), TLS automático, middlewares flexibles y funciones utilitarias para responder fácilmente las peticiones web en cualquier formato.&lt;/p&gt;
+
+&lt;p&gt;En algunos benchmarks &lt;strong&gt;echo&lt;/strong&gt; parece ser más rápido que Gin.&lt;/p&gt;
+
+&lt;p&gt;Tiene desarrollo bastante activo y la documentación contiene ejemplos suficientes, junto con algunas recetas y para que logres avanzar rápido.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Existen múltiples opciones para crear tu API en Go. Hay para escoger dependiendo de tus gustos y de lo más importante para tu proyecto.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="go" /><category term="apis" /><category term="beego" /><category term="gorilla-mux" /><category term="gin-go" /><category term="go-lang" /><summary type="html">Exploramos diferentes formas en las que puedes crear una API con Go, el lenguaje enfocado en la eficiencia de los programas permitiendo productividad para los programadores.</summary></entry><entry><title type="html">No hagas hagas DevOps por convivir</title><link href="https://blog.thedojo.mx/2020/09/10/no-hagas-hagas-devops-por-convivir.html" rel="alternate" type="text/html" title="No hagas hagas DevOps por convivir" /><published>2020-09-10T00:00:00-05:00</published><updated>2020-09-10T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/09/10/no-hagas-hagas-devops-por-convivir</id><content type="html" xml:base="https://blog.thedojo.mx/2020/09/10/no-hagas-hagas-devops-por-convivir.html">&lt;p&gt;Tuvimos una plática con Domingo Suárez(&lt;a href=&quot;https://twitter.com/domix&quot;&gt;@domix&lt;/a&gt;) acerca de diferentes temas que le interesan a los desarrolladores.&lt;/p&gt;
+
+&lt;p&gt;En este artículo te vamos a dar un resumen.&lt;/p&gt;
+
+&lt;h2 id=&quot;cómo-nos-dejamos-influir-para-adoptar-una-tecnología&quot;&gt;Cómo nos dejamos influir para adoptar una tecnología&lt;/h2&gt;
+
+&lt;p&gt;Lo primero de lo que hablamos es de la forma en que muchas veces adoptamos la tecnología: &lt;strong&gt;por moda&lt;/strong&gt;. A veces es porque alguien con autoridad la mencionó o muchos miembros de la comunidad la están usando. A los desarrolladores nos gustan las cosas &lt;em&gt;brillantes&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Generalmente esa decisión tiene un costo bastante alto:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Te metes en cosas de las que no hay la suficiente información disponible&lt;/li&gt;
+  &lt;li&gt;Te enfrentas con problemas totalmente desconocidos&lt;/li&gt;
+  &lt;li&gt;Gastas recursos que podrías gastar mejor en otro lado.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;La lección:&lt;/strong&gt; no tienes que aprender y usar todo lo nuevo que sale. Usa tecnología &lt;em&gt;aburrida&lt;/em&gt;: probada por el tiempo, de la que exista mucha información y usada por muchos desarrolladores de los que podrás aprender rápidamente y enfocarte en los verdaderos problemas que &lt;strong&gt;diferencian&lt;/strong&gt; a tu solución.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-devops&quot;&gt;¿Qué es DevOps?&lt;/h2&gt;
+
+&lt;p&gt;Uno de los temas principales que tratamos es la aclaración de lo que de verdad significa el término &lt;strong&gt;DevOps&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Domingo explicó que DevOps es una &lt;strong&gt;cultura&lt;/strong&gt; que intenta mejorar el flujo de trabajo que existe entre el área de desarrollo y la de operación del software (la encargada de ponerlo en manos de los usuarios y monitorearlo). Intenta &lt;strong&gt;mejorar los hilos organizacionales&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Nos explicó que el término “DevOps” originalmente era un hashtag de Twitter para hablar de esta cultura en una conferencia organizada por &lt;a href=&quot;https://blog.newrelic.com/engineering/devops-name/&quot;&gt;Patrick Debois&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Domingo dejó muy claro que &lt;strong&gt;DevOps no es un puesto, ni un rol.&lt;/strong&gt; No lo puedes comprar con una herramienta, sino que es una serie de prácticas y &lt;strong&gt;una forma de pensar&lt;/strong&gt; que &lt;em&gt;tu empresa&lt;/em&gt; debe desarrollar.&lt;/p&gt;
+
+&lt;p&gt;Platicamos a además de que DevOps establece &lt;em&gt;“Las 3 vías”&lt;/em&gt; que son tres procesos o tres formas en las que la información viaja.&lt;/p&gt;
+
+&lt;p&gt;La primera vía consiste en poner el código en producción lo más rápido posible, con opciones como quitarlo rápidamente si no funciona bien (rollback).&lt;/p&gt;
+
+&lt;p&gt;La segunda vía es &lt;strong&gt;el monitoreo del software en producción&lt;/strong&gt;, para poder actuar rápidamente. Puede ser para mejorarlo, para corregir fallas y para aprender del verdadero uso que los usuarios finales le dan.&lt;/p&gt;
+
+&lt;p&gt;La tercer vía es la repetición de estos dos procesos y la ejecución de ejercicios con el objetivo de pulir los procesos y aprender más cosas. Esta vía incluye simulaciones de falla, sesiones de estudio, sesiones de preparación y análisis de fallos, etc.&lt;/p&gt;
+
+&lt;h2 id=&quot;mentores-y-aprendizaje&quot;&gt;Mentores y aprendizaje&lt;/h2&gt;
+
+&lt;p&gt;Un tema repetido desde el principio es que Domingo tuvo un mentor que se llama &lt;strong&gt;Humberto&lt;/strong&gt;.  Una persona que sin darse cuenta le ayudó mucho a adoptar hábitos sanos de aprendizaje y le enseñó muchas cosas directamente.&lt;/p&gt;
+
+&lt;p&gt;De esto salió que en la industria de desarrollo de productos digitales &lt;strong&gt;falta en práctica poner más en práctica la mentoría&lt;/strong&gt;, ya que nos puede ayudar avanzar y puede a crear personas más hábiles.&lt;/p&gt;
+
+&lt;p&gt;Llegamos a una conclusión: &lt;strong&gt;la mentoría es una responsabilidad compartida&lt;/strong&gt;. El mentor tiene la responsabilidad de guíar al aprendiz de la mejor forma, porque puede influir de formas muy poderosas en su vida, pero la responsabilidad de aprovechar bien esa guía y aplicar los consejos es de la persona que está siendo mentoreada.&lt;/p&gt;
+
+&lt;p&gt;En este punto Alex levantó un punto interesante: en lugares como Silicon Valley, los directivos tienen la idea de que preparar gente dentro de su empresa es beneficioso en general para el ecosistema. Si todos adoptan esa mentalidad, la próxima persona que llegue a tu empresa habrá sido entrenada de la mejor manera, &lt;strong&gt;elvando el nivel de la comunidad&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Le lección: Aceptar o pedir una mentoría &lt;strong&gt;te hará crecer&lt;/strong&gt; y adoptar la idea de que preparar a las personas es beneficioso ayudará a todo el ecosistema.&lt;/p&gt;
+
+&lt;h2 id=&quot;cómo-avanzar-en-tu-carrera-como-desarrollador&quot;&gt;Cómo avanzar en tu carrera como desarrollador&lt;/h2&gt;
+
+&lt;p&gt;Conectado con el tema anterior, hablamos un poco de &lt;strong&gt;cómo puedes volverte mejor desarrollador&lt;/strong&gt;, alcanzar un nuevo puesto y obtener un mejor sueldo. La conclusión es:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tienes que mantenerte &lt;strong&gt;siempre aprendiendo&lt;/strong&gt; nuevas cosas, no sabes lo que puede servirte más adelante.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;No estudies sólo lo relacionado con tu trabajo actual&lt;/strong&gt;, estudiar cosas que no tienen nada que ver con lo que haces hoy puede abrirte las puertas a nuevas oportunidades.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Haz proyectos de las cosas que estás aprendiendo, no sólo leas o veas videos.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Has cosas que de verdad disfrutes.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;microservicios&quot;&gt;Microservicios&lt;/h2&gt;
+
+&lt;p&gt;La mayoría de las empresas no los necesita, porque aunque quieran imitar a Netflix o Google o Amazon o Facebook, no tienes sus mismos problemas.&lt;/p&gt;
+
+&lt;p&gt;Además la arquitectura de microservicios tiene retos a los que tal vez no te quieres enfrentar, como las transacciones distribuidas.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;¿Cuándo es buena idea usar microservicios?&lt;/strong&gt; Domingo dio dos criterios:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Tu base de usuarios es muy grande, los microservicios te ayudarán a escalar mejor.&lt;/li&gt;
+  &lt;li&gt;Tu base de código es muy grande. Así la podrás dividir mejor entre tus &lt;em&gt;decenas&lt;/em&gt; de programadores.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;aprender-java-vale-la-pena&quot;&gt;Aprender Java vale la pena&lt;/h2&gt;
+
+&lt;p&gt;Después, hablamos de qué tanto vale la pena aprender Java en 2020, ya que Domingo es un &lt;strong&gt;Java Champion&lt;/strong&gt;, uno de los pocos de México y de LATAM.&lt;/p&gt;
+
+&lt;p&gt;La conclusión: &lt;strong&gt;Java es un lenguaje que vale la pena aprender, por ser una tecnología probada (aburrida) y con muchas cosas desarrolladas&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Algunas de las características que resaltamos de Java:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;La JVM es una pieza de software magnífica que tiene optimizaciones para ser muy eficiente, para ayudarte aunque tu código no sea tan bueno.&lt;/li&gt;
+  &lt;li&gt;Un montón de lenguajes corren sobre la JVM. Si te gusta más otro que Java puedes combinarlos y compartir lo que ya existe en el ecosistema de Java&lt;/li&gt;
+  &lt;li&gt;Java como lenguaje ha avanzado mucho, adoptando formas de programar más modernas.&lt;/li&gt;
+  &lt;li&gt;Sus características intrínsecas, como su compilador y el tipado estático lo hacen ideal para cierto tipo de problemas en los que tienes que reducir al mínimo los errores en tiempo de ejecución.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;El consejo de domingo es: Si quieres empezar con Java empieza con algún framework modernos como &lt;a href=&quot;https://micronaut.io/&quot;&gt;Micronaut&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;recomendaciones-de-libros&quot;&gt;Recomendaciones de libros&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://amzn.to/3jVxLQu&quot;&gt;The Phoenix Project&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://landing.google.com/sre/books/&quot;&gt;Site Reliability Engineering&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://amzn.to/3k2ZTRD&quot;&gt;Joel on Software&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Disfrutamos mucho de esta plática y esperamos tenerlo con nosotros de nuevo pronto. La puedes ver aquí:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/3zQ3qSFDdW0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="live" /><category term="youtube" /><category term="microservicios" /><category term="java" /><category term="domix" /><category term="hype" /><category term="devops" /><summary type="html">En este artículo resumiremos una plática muy interesante que tuvimos con Domingo Suárez sobre DevOps y otras cosas.</summary></entry><entry><title type="html">A Philosophy of Software Design: Organiza bien los sistemas en capas</title><link href="https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Organiza bien los sistemas en capas" /><published>2020-09-01T00:00:00-05:00</published><updated>2020-09-01T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas</id><content type="html" xml:base="https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html">&lt;p&gt;Hemos escuchado muchísimo acerca de los sistemas en capas como &lt;em&gt;Modelo-Vista-Controlador&lt;/em&gt;, Modelo-Vista-Template, Modelo-Vista-*, &lt;em&gt;MV-lo-que-sea&lt;/em&gt; etc. y eso es porque la mayoría de los sistemas actuales se organiza así: &lt;strong&gt;en capas&lt;/strong&gt;. Además, nuestros módulos se dividen naturalmente en capas con diferentes funciones (como código que usa a otro).&lt;/p&gt;
 
 &lt;p&gt;Hablemos de por qué es efectiva esta forma de organización (o patrón de arquitectura)
 de código, de sus características y cómo podemos aprovecharla para sacar el máximo provecho.&lt;/p&gt;
@@ -11,9 +236,8 @@ de código, de sus características y cómo podemos aprovecharla para sacar el m
 
 &lt;p&gt;En un sistema en capas el conjunto de elementos pertenecientes a una capa sólo se puede comunicar con la capa superior y con la capa inferior.&lt;/p&gt;
 
-&lt;p&gt;Si un sistema tiene 10 capas, cada componente puede comunicarse máximo con 2 capas.&lt;/p&gt;
-
-&lt;p&gt;En los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la capa intermedia (el controlador, por ejemplo) puede comunicarse con dos capas, mientras que las otras sólo se comunican con la intermedia.&lt;/p&gt;
+&lt;p&gt;Si un sistema tiene 10 capas, cada componente puede comunicarse máximo con 2 capas.
+En los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la capa intermedia (el controlador, por ejemplo) puede comunicarse con dos capas, mientras que las otras sólo se comunican con la intermedia.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://amzn.to/2GdeHi5&quot;&gt;John Ousterhout&lt;/a&gt; usa la división en capas para explicar cómo se organiza el software con respecto al usuario final: la capa de “hasta arriba” es la que interactúa directamente con el usuario y la de “hasta abajo” es la más alejada del usuario, generalmente el núcleo de tu sistema.&lt;/p&gt;
 
@@ -77,7 +301,47 @@ de código, de sus características y cómo podemos aprovecharla para sacar el m
 
 &lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
 
-&lt;p&gt;La separación en capas permitirá que tu código esté mejor organizado y que sea más fácil de entender. Tener cuidado con la forma en que las capas se organizan, cómo se dividen responsabilidades y las interfaces que cada capa expone hará mucho más mantenible y entendible tu base de código.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Resuelve problemas de organización de código mediante un sistema en capas.</summary></entry><entry><title type="html">Traducción automática: API’s vs tu propio modelo</title><link href="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html" rel="alternate" type="text/html" title="Traducción automática: API’s vs tu propio modelo" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-19T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html">&lt;p&gt;Traducir texto es una tarea frecuente y que puede realizarse de diferentes maneras, en este artículo queremos explorar algunas de ellas.&lt;/p&gt;
+&lt;p&gt;La separación en capas permitirá que tu código esté mejor organizado y que sea más fácil de entender. Tener cuidado con la forma en que las capas se organizan, cómo se dividen responsabilidades y las interfaces que cada capa expone hará mucho más mantenible y entendible tu base de código.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Resuelve problemas de organización de código mediante un sistema en capas.</summary></entry><entry><title type="html">¿Qué son los modelos generativos?</title><link href="https://blog.thedojo.mx/2020/08/01/que-son-los-modelos-generativos.html" rel="alternate" type="text/html" title="¿Qué son los modelos generativos?" /><published>2020-08-01T00:00:00-05:00</published><updated>2020-08-01T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/08/01/que%20son-los-modelos-generativos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/08/01/que-son-los-modelos-generativos.html">&lt;p&gt;Los modelos generativos permiten a una máquina “aprender” los patrones que existen en los datos con los que son entrenadas y a partir de dicho aprendizaje, son capaces de generar datos similares que en algunos casos pueden ser casi tan “reales” como los que se utilizaron inicialmente para su entrenamiento.&lt;/p&gt;
+
+&lt;p&gt;Mediante este tipo de modelos pueden generarse nuevos datos que tienen distintas aplicaciones, entre ellas, generar datos que otros sistemas de aprendizaje podrán utilizar para su entrenamiento, sin necesidad de que dichos datos existan previamente.&lt;/p&gt;
+
+&lt;p&gt;En particular, las Redes Neronales Generativas Adversariales (GANs) pueden generar nuevas imágenes que se parecen o son similares a las imágenes con las que fueron entrenadas, pero que individualmente son distintas a todas ellas.&lt;/p&gt;
+
+&lt;p&gt;El funcionamiento de una Red Neuronal Adversarial consiste en la operación simultánea de dos redes neuronales que son “adversarias”, una de dichas redes es la encargada de generar imágenes y la segunda es la encargada de discriminar aquellas imágenes que no se parecen a lo que constituye una imágen real.&lt;/p&gt;
+
+&lt;p&gt;Algunos modelos avanzados pueden verse en:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://thispersondoesnotexist.com/&quot;&gt;This Person Does Not Exist&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.thiswaifudoesnotexist.net/&quot;&gt;This Waifu Does Not Exist&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://thisfursonadoesnotexist.com/&quot;&gt;This Furson Does Not Exist&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Como parte de un proyecto de investigación, utilizamos una red adversarial para generar imágenes de zapatos, dichas redes utilizan, modelos convolucionales para ir entendiendo las imágenes en segmentos cada vez más pequeños hasta tener una definición y similitud suficiente para reemplazar la imagen original.&lt;/p&gt;
+
+&lt;p&gt;Como podemos ver en esta secuencia de imágenes, la calidad de los modelos generados se incrementa conforme el número de iteraciones va aumentando, en general, se van almacenando nuevas muestras de las imágenes generadas cada cierto número de iteraciones de tal forma se puede observar si el modelo sigue mejorando, si ya se estancó o si se está degradando, aunque existen algunas métricas que pueden ayudar a identificar el punto óptimo donde puede detenerse el entrenamiento.&lt;/p&gt;
+
+&lt;p&gt;Algunas de las peculiaridades de estos modelos es que son relativamente sensibles a la uniformidad y el número de imágenes utilizadas, sin embargo, también es cierto que los modelos han ido mejorando y en algunos casos pueden generar imágenes de gran calidad con menos datos de entrenamiento. Por ejemplo, estas imágenes fueron generadas con sólo 500 datos de entrenamiento mediante un Modelo Generador Adversarial Eficiente:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mit-han-lab/data-efficient-gans&quot;&gt;Data Efficient GANs&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;usos-de-los-generadores-adversariales&quot;&gt;Usos de los generadores adversariales&lt;/h2&gt;
+
+&lt;h3 id=&quot;mejorar-la-seguridad&quot;&gt;Mejorar la seguridad&lt;/h3&gt;
+
+&lt;p&gt;Un discriminador optimiza su capacidad para detectar imágenes que no son reales (las que emite el generador), de tal forma que dicho discriminador adquiere la capacidad de identificar imágenes que no son reales y que pueden estar siendo utilizadas para generar identidades falsas en sistemas que por ejemplo requieren fotografías.&lt;/p&gt;
+
+&lt;h3 id=&quot;en-el-sector-salud&quot;&gt;En el sector salud&lt;/h3&gt;
+
+&lt;p&gt;La capacidad de detectar anomalías (trabajo del discriminador) puede utilizarse para identificar células o formaciones anómalas (como el cáncer) al ser entrenado mediante imágenes de tejidos u órganos saludables.&lt;/p&gt;
+
+&lt;h3 id=&quot;en-el-sector-de-medios-digitales&quot;&gt;En el sector de medios digitales&lt;/h3&gt;
+
+&lt;p&gt;Como hemos visto generadores adversariales pueden utilizarse para generar imágenes que no existían o generar imágenes a partir de un conjunto de imágenes preexistentes, dicha generación puede de igual forma generar modelos en tercera dimensión a partir de imágenes en dos dimensiones o hacer combinaciones de modelos preexistentes. Esto puede usarse como material para la producción de contenido visual e incluso animaciones de video o bien como inspiración para que un diseñador genere nuevos personajes.&lt;/p&gt;
+
+&lt;p&gt;Algunos generadores pueden ayudar a corregir defectos en imágenes, removiendo o completando partes de la imágen que sobraban o que estaban faltantes, o si es el caso, a dar color a imágenes en blanco y negro. De igual forma permiten crear una “interpolación” de imágenes para “regenerarlas” en una mayor resolución. Desde luego la eficacia dependerá de las imágenes utilizadas para su entrenamiento.&lt;/p&gt;
+
+&lt;p&gt;Algunas de estas aplicaciones pueden “traducir” las imágenes de un dominio a otro, por ejemplo, convirtiendo una imágen satelital en un mapa de niveles o generando fotografías a partir de bosquejos.&lt;/p&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><summary type="html">En este artículo exploramos qué es un modelo generativo, cómo te pueden servir y el estado del arte en este campo.</summary></entry><entry><title type="html">Traducción automática: API’s vs tu propio modelo</title><link href="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html" rel="alternate" type="text/html" title="Traducción automática: API’s vs tu propio modelo" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-19T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html">&lt;p&gt;Traducir texto es una tarea frecuente y que puede realizarse de diferentes maneras, en este artículo queremos explorar algunas de ellas.&lt;/p&gt;
 
 &lt;p&gt;Existen sitios donde la traducción puede hacerse en línea, como en &lt;a href=&quot;https://translate.google.com.mx/?hl=es&quot;&gt;Google Translate&lt;/a&gt;, sin embargo, en muchos casos existe un límite en la cantidad de texto que puedes traducir.&lt;/p&gt;
 
@@ -553,7 +817,107 @@ de código, de sus características y cómo podemos aprovecharla para sacar el m
 &lt;p&gt;Este campo del pensamiento es tan grande que no alcanzaría una vida para cubrirlo en su totalidad, pero podemos tener una idea general de los campos que abarca y si nos gusta, especializarnos en uno de ellos.&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;Este artículo está basado en el libro &lt;a href=&quot;https://mitpress.mit.edu/books/computational-thinking&quot;&gt;Computational Thinking&lt;/a&gt; de Peter J. Denning y Matti Tedre.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cs" /><category term="computational-thinking" /><category term="pensamiento-computacional" /><category term="libros" /><category term="mit" /><summary type="html">El pensamiento computacional ha sonado mucho en los medios últimamente. Hablemos de lo que es y todo lo que implica.</summary></entry><entry><title type="html">¿Qué es un engine de JavaScript?</title><link href="https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html" rel="alternate" type="text/html" title="¿Qué es un engine de JavaScript?" /><published>2020-05-17T00:00:00-05:00</published><updated>2020-05-17T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript</id><content type="html" xml:base="https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html">&lt;p&gt;Me llamó mucho la atención  la salida de &lt;a href=&quot;https://deno.land/v1&quot;&gt;Deno v1 esta semana&lt;/a&gt; y le quise echar un ojito. Pero desde la explicación que da inicialmente, no entiendo &lt;em&gt;exactamente&lt;/em&gt; lo que es y hace:&lt;/p&gt;
+&lt;p&gt;Este artículo está basado en el libro &lt;a href=&quot;https://mitpress.mit.edu/books/computational-thinking&quot;&gt;Computational Thinking&lt;/a&gt; de Peter J. Denning y Matti Tedre.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cs" /><category term="computational-thinking" /><category term="pensamiento-computacional" /><category term="libros" /><category term="mit" /><summary type="html">El pensamiento computacional ha sonado mucho en los medios últimamente. Hablemos de lo que es y todo lo que implica.</summary></entry><entry><title type="html">Resumen: Qué hacer para conseguir un buen trabajo como programador</title><link href="https://blog.thedojo.mx/2020/06/02/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html" rel="alternate" type="text/html" title="Resumen: Qué hacer para conseguir un buen trabajo como programador" /><published>2020-06-02T00:00:00-05:00</published><updated>2020-06-02T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/06/02/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador</id><content type="html" xml:base="https://blog.thedojo.mx/2020/06/02/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html">&lt;p&gt;= ¿Qué hacer para conseguir un buen trabajo en tecnología?&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; Intro por Alex&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; Cuente Pablo de su trayectoria
+-&amp;gt; Trayectoria de Diego&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; ¿Consideras que donde estás ahora o donde estuviste en tu último trabajo
+es donde querías estar? ¿O en qué punto te diste cuenta?&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; Sabemos que los dos han trabajado con gente de otros países. En qué les ha ayudado eso para mejorar como desarrolladores&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; Qué diferencias básicas hay entre la cultura de trabajo de empresas exitosas y la general en LATAM.&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; Cómo es el día a día de un desarrollador en una FAANG&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; Cuáles son las 3 habilidades básicas que creen que todo desarrollador debe tener para mantenerse empleable y cada vez con mejores responsabilidades (y por lo tanto sueldo)&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; Qué tanto se ocupan las siguientes herramientas:
+    -&amp;gt; Matemáticas
+    -&amp;gt; Algoritmos
+    -&amp;gt; Estructuras de datos
+    -&amp;gt; Otras bases de CS&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; Qué tanto se ocupan las habilidades blandas&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; Hay cursos de todo ahora mismo, pero ahora llama curso a todo, cuándo consideran que vale la pena llamar a algo un curso para no devaluar las palabras.&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; Cosas de alto nivel contra cosas de bajo nivel. Python vs C++
+-&amp;gt; Diego: Qué opinas de JS&lt;/p&gt;
+
+&lt;p&gt;-&amp;gt; Aprende Inglés
+-&amp;gt; Aprende a recibir y dar feedback&lt;/p&gt;
+
+&lt;p&gt;Libros:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pragmatic Programmer&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+  &lt;li&gt;Fundamentos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pablo:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Presente en el aprendizaje - 5 why?&lt;/li&gt;
+  &lt;li&gt;Ser crítico&lt;/li&gt;
+  &lt;li&gt;Aprender - ser&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Diego:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Resiliencia: Los problemas nunca van a parar&lt;/li&gt;
+  &lt;li&gt;Resolver problemas: para eso te contrataron&lt;/li&gt;
+  &lt;li&gt;Ser agnóstico&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Tres cosas para Google:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Dificultad&lt;/li&gt;
+  &lt;li&gt;Liderazgo&lt;/li&gt;
+  &lt;li&gt;Impacto&lt;/li&gt;
+  &lt;li&gt;Independencia&lt;/li&gt;
+  &lt;li&gt;Ownership&lt;/li&gt;
+  &lt;li&gt;Estar presente&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Feedback&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Directo&lt;/li&gt;
+  &lt;li&gt;Accionable&lt;/li&gt;
+  &lt;li&gt;Oportuno&lt;/li&gt;
+  &lt;li&gt;Transparente&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The Cherno&lt;/p&gt;
+
+&lt;p&gt;Pablo Trinidad&lt;/p&gt;
+
+&lt;p&gt;Computerphile&lt;/p&gt;
+
+&lt;p&gt;Pablo Trinidad&lt;/p&gt;
+
+&lt;p&gt;Numberphile&lt;/p&gt;
+
+&lt;p&gt;Pablo Trinidad&lt;/p&gt;
+
+&lt;p&gt;Veritasium&lt;/p&gt;
+
+&lt;p&gt;Pablo Trinidad&lt;/p&gt;
+
+&lt;p&gt;Smarter Everyday&lt;/p&gt;
+
+&lt;p&gt;Eric Weinstein
+Joe rogan&lt;/p&gt;
+
+&lt;p&gt;Ben Eater
+3Blue1Brown&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Escribe aquí un buen resumen de tu artículo</summary></entry><entry><title type="html">¿Qué es un engine de JavaScript?</title><link href="https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html" rel="alternate" type="text/html" title="¿Qué es un engine de JavaScript?" /><published>2020-05-17T00:00:00-05:00</published><updated>2020-05-17T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript</id><content type="html" xml:base="https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html">&lt;p&gt;Me llamó mucho la atención  la salida de &lt;a href=&quot;https://deno.land/v1&quot;&gt;Deno v1 esta semana&lt;/a&gt; y le quise echar un ojito. Pero desde la explicación que da inicialmente, no entiendo &lt;em&gt;exactamente&lt;/em&gt; lo que es y hace:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;“Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.”&lt;/p&gt;
@@ -670,294 +1034,4 @@ instrucciones de la computadora es el &lt;em&gt;engine o motor&lt;/em&gt;.&lt;/p
 
 &lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
 
-&lt;p&gt;Esto es lo básico que necesitamos entender de lo que hace un motor de JavaScript, el encargado de ejecutar el código. Pero no es suficiente contar con alguien que pueda correr el código, necesitamos además &lt;strong&gt;algo que nos proporcione el material para trabajar&lt;/strong&gt;, ya que los programas en general actúan sobre algo, u obtienen información de algún lado. Esto es el &lt;strong&gt;Runtime&lt;/strong&gt;, que explicaremos en el siguiente artículo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="js" /><category term="javascript" /><category term="compiladores" /><category term="javascript-engine" /><category term="v8" /><category term="chrome" /><summary type="html">Hablemos de qué es y cómo funciona un motor de Javascript.</summary></entry><entry><title type="html">Cursos certificados gratuitos</title><link href="https://blog.thedojo.mx/2020/05/16/cursos-certificados-gratuitos.html" rel="alternate" type="text/html" title="Cursos certificados gratuitos" /><published>2020-05-16T00:00:00-05:00</published><updated>2020-05-16T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/05/16/cursos-certificados-gratuitos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/05/16/cursos-certificados-gratuitos.html">&lt;p&gt;Debido a la emergencia sanitaria mundial, algunas universidades han liberado cursos
-que además de auditar, puedes cursar para obtener un &lt;strong&gt;cetificado&lt;/strong&gt;. Si quieres mejorar un poco tu perfil del LinkedIn aquí te ponemos unos cursos de tecnología que puedes tomar.&lt;/p&gt;
-
-&lt;h2 id=&quot;programación&quot;&gt;Programación&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/computer-programming-for-everyone-17488&quot;&gt;Computer Programming For Everyone&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/c-plus-plus-a?edocomorp=free-courses-high-school&quot;&gt;C++ For C Programmers&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/codeyourself-2938&quot;&gt;Code Yourself! An introduction to Programming&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/android-app-5719&quot;&gt;Build Your First Android App&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/aprogramar-2939&quot;&gt;¡A Programar! Una introducción a la programación&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/robotica-inicial-4659&quot;&gt;Robótica (para niños)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/computer-vision-basics&quot;&gt;Computer Vision Basics&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;ia-y-machine-learning&quot;&gt;IA y Machine Learning&lt;/h2&gt;
-
-&lt;h3 id=&quot;español&quot;&gt;Español&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/ai-for-everyone-es-13786&quot;&gt;IA para todos&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;inglés&quot;&gt;Inglés&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/datasciencemathskills-7745&quot;&gt;Data Scince Math Skills&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/machine-learning-business-professionals-13415&quot;&gt;Machine Learning for Business Professionals&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;cloud-computing&quot;&gt;Cloud Computing&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/cloud-computing-basics-18069&quot;&gt;Cloud Computing Basics&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/gcp-fundamentals-aws-8614&quot;&gt;Google Cloud Platform Fundamentals for AWS Professionals&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/aws-machine-learning-16924&quot;&gt;Getting Started with AWS Machine Learning&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/cloud-identity-10785&quot;&gt;Introduction to Cloud Identity&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/iiot-google-cloud-platform-12701&quot;&gt;Industrial IoT on Google Cloud Platform&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/developing-ai-applications-azure-17329&quot;&gt;Developing AI Applications on Azure&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/conversational-experiences-dialogflow-12529&quot;&gt;Building Conversational Experiences with Dialogflow&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/aws-computer-vision-gluoncv-17327&quot;&gt;AWS Computer Vision: Getting Started with GluonCV&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;matemáticas&quot;&gt;Matemáticas&lt;/h2&gt;
-
-&lt;h3 id=&quot;español-1&quot;&gt;Español&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.coursera.org/learn/estadistica-probabilidad&quot;&gt;Estadística y probabilidad (UNAM)&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/calculo-1-4231&quot;&gt;El Cálculo - Modelo Lineal&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/calculo-2-4226&quot;&gt;El Cálculo - Modelo Cuadrático&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/calculo-3-4284&quot;&gt;El Cálculo - Modelo Cúbico&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/calculo-4-4167&quot;&gt;El Cálculo - Otros Modelos&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;inglés-1&quot;&gt;Inglés&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/matlab&quot;&gt;Introduction to Matlab&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/datasciencemathskills-7745&quot;&gt;Data Scince Math Skills&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/introduccion-al-calculo-4225&quot;&gt;Pre-Calculus&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/introduction-to-calculus-12547&quot;&gt;Introduction to Calculus&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;diseño&quot;&gt;Diseño&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/design&quot;&gt;Design: Creation of Artifacts in Society&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/design-language-16927&quot;&gt;The Language of Design: Form and Meaning&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;otros-temas&quot;&gt;Otros temas&lt;/h2&gt;
-
-&lt;h3 id=&quot;español-2&quot;&gt;Español&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/pensamiento-sistemico-4332&quot;&gt;Pensamiento Sistémico&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/mindshift-transforma-mente-10619&quot;&gt;Mindshift: Transforma tu mente para superar obstáculos en el aprendizaje y descubrir tu potencial oculto&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/arte-publico-pedagogia-7196&quot;&gt;ART of the MOOC: Arte Público y Pedagogía&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/escritura-esp-13496&quot;&gt;Fundamentos de la Escritura&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/innovacion-734&quot;&gt;Desarrollo rápido de productos innovadores para mercados emergentes&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/hablar-bien-en-publico-10518&quot;&gt;Cómo hablar bien en público&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;inglés-2&quot;&gt;Inglés&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/teamwork-skills-effective-communication-9661&quot;&gt;Teamwork Skills: Communicating Effectively in Groups&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/personal-branding-4865&quot;&gt;Introduction to personal branding&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/understanding-arguments-6620&quot;&gt;Think Again I&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/market-analytics-4868&quot;&gt;Marketing Analytics&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/skills-management-11218&quot;&gt;Introduction to Skills Management&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/how-to-write-a-scientific-paper-5816&quot;&gt;How to Write and Publish a Scientific Paper&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/emerging-technologies-lifelong-learning-10396&quot;&gt;Exploring Emerging Technologies for Lifelong Learning and Success&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/making-architecture-7153&quot;&gt;MAking Architecture&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Puedes ver una lista actualizada de los cursos aquí: &lt;a href=&quot;https://www.classcentral.com/report/free-online-learning-coronavirus/&quot;&gt;Free Learning Due to Coronavirus&lt;/a&gt;. Es emocionante ver todo lo que se puede aprender si uno puede ponerle el tiempo necesario.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cursos" /><category term="aprendizaje" /><category term="programación" /><category term="matemáticas" /><category term="mooc" /><summary type="html">Es emocionante todo lo que se puede aprender en internet. Revisa algunos cursos que además te certifcan gratuitamente.</summary></entry><entry><title type="html">Entendiendo ES6</title><link href="https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html" rel="alternate" type="text/html" title="Entendiendo ES6" /><published>2020-04-27T00:00:00-05:00</published><updated>2020-04-27T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/04/27/entendiendo-es6</id><content type="html" xml:base="https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html">&lt;p&gt;Hace tiempo dimos un curso de ES6 o ES2015. Hicimos una investigación acerca de la historia, la nomenclatura, quién lo creo y porque tanta confusión con los nombres.&lt;/p&gt;
-
-&lt;p&gt;En este video explicamos eso y más: las características principales que se agregaron y la diferencia entre JavaScript y ECMAScript.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZnS37QdoTDA&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;¿Tienes dudas específicas de JavaScript? Compártelas en los comentarios e intentaremos hacer videos sobre eso.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="es6" /><category term="js" /><category term="javascript" /><category term="videos" /><summary type="html">Lanzamos un video explicando por qué ES6 sonó tanto. Velo aquí.</summary></entry><entry><title type="html">A Philosophy of Software Design: Crea módulos de propósito general</title><link href="https://blog.thedojo.mx/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Crea módulos de propósito general" /><published>2020-04-02T00:00:00-06:00</published><updated>2020-04-02T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general</id><content type="html" xml:base="https://blog.thedojo.mx/2020/04/02/a-philosophy-of-software-design-crea-modulos-de-proposito-general.html">&lt;p&gt;Una burla común hacia los programadores es que todo lo queremos hacer &lt;em&gt;demasiado general&lt;/em&gt;. Nos piden una funcionalidad y en ese momento empezamos a pensar en todos los casos en los que podría ser usado en el universo.&lt;/p&gt;
-
-&lt;p&gt;Hay muchos consejos &lt;strong&gt;en contra&lt;/strong&gt; de escribir código que abarque
-muchos casos. En este artículo vamos a hablar de las ventajas y
-desventajas de módulos de &lt;strong&gt;propósito general&lt;/strong&gt;, es decir, vamos a
-hablar en contra de la sabiduría popular.&lt;/p&gt;
-
-&lt;p&gt;Pero además hablaremos &lt;strong&gt;del equilibrio&lt;/strong&gt; y cómo lograrlo.&lt;/p&gt;
-
-&lt;h2 id=&quot;especificidad-de-un-módulo&quot;&gt;Especificidad de un módulo&lt;/h2&gt;
-
-&lt;p&gt;Puedes pensar en la especialización de un módulo (o del código en general) como en continuo que va desde algo que se puede utilizar en muchos muchos casos (las bibliotecas estándar) hasta código que sólo sirve para un uso muy acotado y es muy difícil de cambiar.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1585279283/7655B57E-A45D-4832-A0D6-41670C22D6CA_boy7ej.png&quot; alt=&quot;Gráfica del continuo de especificidad&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Un módulo específico está dedicado a cumplir &lt;em&gt;una sola función&lt;/em&gt; en el sistema y sólo se puede usar para eso. Si los pensáramos como conectores para un dispositivo, como un celular, podrías decir que es la conexión especial que Nokia, Apple o Sony Ericsson se inventaron en su tiempo para cargar.&lt;/p&gt;
-
-&lt;p&gt;Un módulo de propósito general se puede usar para varios casos con &lt;em&gt;poca modificación&lt;/em&gt;, o creando un módulo más específico a partir de él. En el mismo ejemplo de los dispositivos electrónicos puede compararse al estándar USB que sirve para múltiples cosas y puede ser usado en muchos aparatos diferentes.&lt;/p&gt;
-
-&lt;h2 id=&quot;módulos-específicos&quot;&gt;Módulos específicos&lt;/h2&gt;
-
-&lt;p&gt;El caso más extremo del código específico es el que llamamos &lt;em&gt;hardcoding&lt;/em&gt;. Es tan específico que sirve sólo para una instancia muy pequeña de un problema y &lt;em&gt;no es fácil de modificar en producción&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Se entiende como &lt;em&gt;hardcoding&lt;/em&gt; a poner directamente en el código un valor fijo que pudiera variar en el futuro: configuración de IP’s, conexión a bases de datos, nombres de usuario, etc. Y es uno de los casos extremos de &lt;a href=&quot;https://blog.thedojo.mx/2020/02/11/a-philosophy-of-software-design-programacion-tactica-vs-estrategica.html#desarrollo-t%C3%A1ctico&quot;&gt;programación táctica&lt;/a&gt;. Por lo tanto, y esto todos lo sabemos, es una &lt;strong&gt;muy mala  práctica&lt;/strong&gt; para crear código mantenible e incluso para la practicidad en el desarrollo.&lt;/p&gt;
-
-&lt;p&gt;El siguiente nivel de especificidad y con el que casi todos nos quedamos contentos es cuando creamos un módulo (una clase, por ejemplo), para una &lt;em&gt;función específica&lt;/em&gt; de nuestro sistema y que &lt;em&gt;sólo puede usarse ahí&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Usemos como ejemplo un programa para registrar publicaciones impresas como libros, revistas, periódicos, panfletos, etc. Una manera de diseñarlo es creando en el módulo una función para cada tipo de publicación:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;registrar_libro&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(...):&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;registrar_revista&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(...):&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;registrar_panfleto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(...):&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Esto nos llevaría a tener una interfaz muy amplia y generalmente funciones o módulos poco profundos. Además, si agregamos un nuevo tipo de publicación se tendría que crear una nueva función para atenderlo.&lt;/p&gt;
-
-&lt;h2 id=&quot;módulos-de-propósito-general&quot;&gt;Módulos de propósito general&lt;/h2&gt;
-
-&lt;p&gt;Un módulo de propósito general puede tener, casi siempre, una interfaz más sencilla que un módulo de propósito específico. Siguiendo con el ejemplo de los libros, en vez de crear una función para cada uno de los tipos de publicación se podría crear una general:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;registrar_publicacion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(...):&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
-
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;registrar_tipo_de_publicacion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(...):&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Esto permitiría tener una interfaz más sencilla con aplicaciones &lt;em&gt;más amplias&lt;/em&gt;, con más usos.&lt;/p&gt;
-
-&lt;p&gt;El ejemplo mencionado por &lt;a href=&quot;https://amzn.to/2GdeHi5&quot;&gt;A Philosophy of Software Design&lt;/a&gt; es el de un editor de texto con interfaz gráfica. La clase encargada de almacenar el texto en memoria deber tener las capacidades para modificarlo.&lt;/p&gt;
-
-&lt;p&gt;Piensa en las operaciones que los editores de texto dan: insertar texto, borrar texto hacia adelante, borrar texto hacia atrás, seleccionar, copiar, pegar. Ousterhout menciona que implementar una función &lt;em&gt;específica&lt;/em&gt; para cada una de estas operaciones crea complejidad no necesaria. Un diseño más general permite hacer tres operaciones: insertar texto, borrar texto y mover el cursor. Todas las operaciones se pueden lograr con estas otras tres, teniendo una interfaz más sencilla.&lt;/p&gt;
-
-&lt;p&gt;Este debería ser nuestro objetivo: crear interfaces sencillas que hagan mucho por nosotros.&lt;/p&gt;
-
-&lt;h2 id=&quot;por-qué-hacer-módulos-de-propósito-general&quot;&gt;¿Por qué hacer módulos de propósito general?&lt;/h2&gt;
-
-&lt;p&gt;El principal motivo que &lt;a href=&quot;https://amzn.to/2GdeHi5&quot;&gt;A Philosophy of Software Design&lt;/a&gt; menciona es que los módulos de propósito general &lt;a href=&quot;https://blog.thedojo.mx/2020/03/02/a-philosophy-of-software-design-los-modulos-deben-ser-profundos.html#dise%C3%B1o-de-m%C3%B3dulos&quot;&gt;son más profundos&lt;/a&gt; es decir, encierran más funcionalidad con una interfaz pequeña.&lt;/p&gt;
-
-&lt;p&gt;Hacerlo contribuye a que tu código esconda más información y por lo tanto su uso sea más simple.&lt;/p&gt;
-
-&lt;p&gt;Además los módulos demasiado específicos crean &lt;strong&gt;acoplamiento&lt;/strong&gt; en el sistema que no es sano: los usuarios del módulo tienen que adaptarse a una interfaz mu específica.&lt;/p&gt;
-
-&lt;p&gt;Los módulos de propósito general te pueden quitar trabajo en el futuro, al requerir menos modificación y poder reutilizar su código para crear nuevas funcionalidades, como en el caso extremo de las bibliotecas estándar.&lt;/p&gt;
-
-&lt;p&gt;Y por último una interfaz demasiado específica puede filtrar información no necesaria.&lt;/p&gt;
-
-&lt;h2 id=&quot;equilibrio&quot;&gt;Equilibrio&lt;/h2&gt;
-
-&lt;p&gt;La clave para elegir qué tan específico es tu módulo es la forma en la que lo vas a utilizar: tu pieza de código tiene que ser &lt;strong&gt;tan general&lt;/strong&gt; como puedas sin que dificulte demasiado su uso actual.&lt;/p&gt;
-
-&lt;p&gt;Tienes que evaluar qué tanto desvía del uso específico inmediato el que modifiques la interfaz para crear algo que pueda ser reutilizado.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Crear módulos de “no tan específicos” puede ayudarte a:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Ocultar mejor la información&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Crear interfaces más concisas&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Reutilizar mejor el código&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Tienes que buscar el equilibrio entre crear un módulo tan específico que sólo uses una vez, contra un módulo que cubra todos los casos del mundo. El equilibrio está en un módulo que no sea difícil de utilizar para tu problema a la mano pero que puede ser (o este siendo) utilizado en varios lugares y de varias formas si es el caso.&lt;/p&gt;
-
-&lt;p&gt;Tu “yo” del futuro te agradecerá si logras encontrar el equilibrio, porque podrás crear funcionalidades más rápido, &lt;em&gt;acelerar&lt;/em&gt;: una característica de la programación estratégica.&lt;/p&gt;
-
-&lt;p&gt;En el próximo artículo hablaremos de los sistemas en capas y cómo aprovechar sus particularidades para crear diseños que dominen la complejidad.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="módulos" /><category term="generalización" /><category term="module" /><category term="class" /><summary type="html">Crear módulos o clases demasiado específicas puede llevar a tu código a ser difícil de mantener, veamos por qué te conviene crear módulos de propósito general.</summary></entry><entry><title type="html">A Philosophy of Software Design: Recomendaciones de diseño modular</title><link href="https://blog.thedojo.mx/2020/03/18/a-philosophy-of-software-design-recomendaciones-disenio-modular.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Recomendaciones de diseño modular" /><published>2020-03-18T00:00:00-06:00</published><updated>2020-03-18T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/03/18/a-philosophy-of-software-design-recomendaciones-disenio-modular</id><content type="html" xml:base="https://blog.thedojo.mx/2020/03/18/a-philosophy-of-software-design-recomendaciones-disenio-modular.html">&lt;p&gt;En los artículos anteriores hemos estado hablando de cómo evitar la complejidad mediante ocultar información.&lt;/p&gt;
-
-&lt;p&gt;En este daremos algunas recomendaciones más y hablaremos de cómo no llevar este principio al extremo.&lt;/p&gt;
-
-&lt;p&gt;Hablemos primero de consejos que te ayudarán a mantener oculta la información que debe de estarlo.&lt;/p&gt;
-
-&lt;h2 id=&quot;exponer-lo-menos-posible-estructuras-de-datos&quot;&gt;Exponer lo menos posible estructuras de datos&lt;/h2&gt;
-
-&lt;p&gt;Un error común cuando creamos un módulo es exponer las estructuras de datos internas hacia otros módulos. Esto hace el código que usa tu módulo sea &lt;em&gt;dependiente de detalles de implementación&lt;/em&gt; que no le conciernen y, como hemos repetido hasta el cansancio, que una decisión de diseño se vea reflejada en varios lugares.&lt;/p&gt;
-
-&lt;p&gt;Transforma las estructuras de datos internas en estructuras de uso general que no dependan de la implementación de tu módulo. Por ejemplo, si estás haciendo una conexión con una API de la que extraes información para otros lados del sistema, comunica esa información en una estructura de datos diseñada para tu sistema no dependiente de la API.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Ejemplo&lt;/strong&gt;. Imagina un módulo de comunicación con diferentes API’s de mensajería como WhatsApp, Messenger, etc. Cada una las API’s avisa de la entrada de un nuevo mensaje con sus datos específicos y en su formato. Para que to módulo encapsule la mayo cantidad de decisiones de diseño posible debería crear una estructura de mensajes que los demás módulos &lt;em&gt;recibieran independientemente del medio por el que llegó el mensaje&lt;/em&gt;. Lo mismo para responder: la función encargada de la respuesta debería recibir &lt;em&gt;siempre los mismos datos independientemente del mensajero que se esté usando&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;defaults-útiles&quot;&gt;Defaults útiles&lt;/h2&gt;
-
-&lt;p&gt;Tal vez este punto merezca su propio artículo pero tratemos de resumirlo.&lt;/p&gt;
-
-&lt;p&gt;La idea de crear un módulo es, a parte de ocultar complejidad, crear un pieza de código que pueda ser &lt;em&gt;reutilizable&lt;/em&gt;. Como la operación no es siempre exactamente igual, a veces hay que incluir parámetros que permitan modificar el comportamiento del módulo. Los parámetros pueden llegar a revelar detalles de implementación, así que es conveniente saber diseñarlos, primero &lt;em&gt;para no contaminar la interfaz&lt;/em&gt; y segundo &lt;em&gt;para mantener la interfaz fácil de usar&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;John Ousterhout habla como ejemplo de lo mal diseñada que está la interfaz de la clase &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FileInputStream&lt;/code&gt; de Java, que no es capaz de realizar una lectura con buffer sin que le pases una clase que lo hace explícitamente. La lectura de un archivo con un buffer &lt;strong&gt;es normal&lt;/strong&gt;, generalmente no quieres leer un archivo sin tener el buffer disponible. Entonces el default de esta clase debería ser la lectura con buffer, &lt;em&gt;sin que se lo tengas que pedir explícitamente&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Los módulos deberían hacer lo normal o lo correcto siempre que sea posible, sin que se tenga que pedir explícitamente.&lt;/strong&gt; Es decir, tus módulos deberían estar diseñados para hacer el &lt;em&gt;caso más común&lt;/em&gt; muy fácil de usar.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Las mejores funciones son las que obtienes sin siquiera saber que existen. - &lt;strong&gt;John Ousterhout&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Un ejemplo de buen diseño son los lenguajes modernos con la codificación de las cadenas: son &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;utf-8&lt;/code&gt; por default, ya que es ‘lo correcto’ y lo común.&lt;/p&gt;
-
-&lt;p&gt;Otro ejemplo son las funciones &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;split&lt;/code&gt; (separar una cadena) y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;join&lt;/code&gt; (juntar los elementos de un array o lista en una cadena) de Python, Elixir y otros lenguajes: si no le pasas el carácter que usarán para dividir o pegar, lo harán por la cadena vacía, &lt;em&gt;facilitando un caso de uso muy común&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Podemos aprender de estos buenos diseños para crear los propios. Por ejemplo, imagina que tienes un módulo que usa la fecha y hora para registrar algo. El caso &lt;em&gt;común&lt;/em&gt; es que registres algo en el momento inmediato que sucedió. Un buen default sería que el módulo &lt;em&gt;automáticamente&lt;/em&gt; registrara la hora actual sin esperarla del usuario, pero dando la opción de modificarla en caso de que se necesite. Un programa que hace esto es &lt;strong&gt;Git&lt;/strong&gt;, registra automáticamente un commit con la hora en que lo hiciste pero tiene la opción de que la especifiques o modifiques.&lt;/p&gt;
-
-&lt;h2 id=&quot;aisla-dentro-de-las-clases-y-paquetes&quot;&gt;Aisla dentro de las clases y paquetes&lt;/h2&gt;
-
-&lt;p&gt;Cuando trabajas con clases, es buena idea crear métodos independientes (privados en caso de ser posible), que oculten información &lt;em&gt;del resto de la clase&lt;/em&gt;. Piensa en esto como en aplicar los principios anteriores a nivel de clase. Además las variables de clase o de instancia deberían ser usadas en el &lt;strong&gt;menor número de lugares posible&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Si estás usando un lenguaje funcional o procedural, &lt;em&gt;aplica este principio al nivel de tus paquetes&lt;/em&gt; (y definitivamente evita variables globales lo más que puedas).&lt;/p&gt;
-
-&lt;p&gt;Finalmente hablemos de cómo llevar todo esto demasiado lejos.&lt;/p&gt;
-
-&lt;h2 id=&quot;la-clase-dios&quot;&gt;La clase dios&lt;/h2&gt;
-
-&lt;p&gt;En artículos pasados hablamos un poco de que es mejor crear clases grandes que encapsulen decisiones de diseño completas en vez de dividir esas decisiones de diseño. Pero si no tenemos cuidado, esto nos puede llevar a crear lo que algunos conoce como &lt;em&gt;‘the God Class’&lt;/em&gt; o la clase dios.&lt;/p&gt;
-
-&lt;p&gt;Esta infame clase es la que en muchos sistemas se ha creado para mantener la mayoría de la información y operación, es decir, es una clase que lo &lt;em&gt;sabe&lt;/em&gt; y lo &lt;em&gt;puede&lt;/em&gt; todo. Crearla romería el propósito de ocultar información: &lt;strong&gt;pasarías la mayor parte del tiempo trabajando en esta clase&lt;/strong&gt;, que por lo general sería muy complicada, teniendo tantas cosas que hacer. Así que &lt;em&gt;evítala a toda costa&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;ocultar-información-que-sí-se-usa-afuera&quot;&gt;Ocultar información que sí se usa afuera&lt;/h2&gt;
-
-&lt;p&gt;Sería un error grave de diseño hacer inaccesible (en lenguajes que lo permiten), o difícil de encontrar, información que se usa afuera de tu módulo. Un ejemplo que da &lt;a href=&quot;https://amzn.to/2GdeHi5&quot;&gt;A Philosophy of Software Design&lt;/a&gt; es en el caso de parámetros de configuración que afecten el rendimiento de una pieza de software y que sea absolutamente necesario conocer para operar bien (podría ser el método de conexión en una red, por ejemplo).&lt;/p&gt;
-
-&lt;p&gt;En el ejemplo de las API’s de mensajería del que hablamos arriba, piensa por ejemplo que la parte del código encargada de generar un mensaje &lt;em&gt;necesita&lt;/em&gt; saber de dónde viene el mensaje para generar un mensaje adecuado al medio (si viene de SMS hará un mensaje mejor de 100 carácteres, por ejemplo).&lt;/p&gt;
-
-&lt;p&gt;O algo a lo que la mayoría de los lenguajes de programación nos obligan: especificar el modo de apertura de u archivo.&lt;/p&gt;
-
-&lt;p&gt;Sin embargo, tu trabajo como diseñador de software consiste en &lt;strong&gt;minimizar&lt;/strong&gt; la información que se necesita fuera del módulo, para que sea lo más fácil de usar dentro de los límites.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Este y los artículos anteriores quieren dejar claro algo: el trabajo principal de un módulo es ocultar información. Hay varias formas de lograrlo y detalles a los cuáles ponerles atención. Hacerlo creará código que sea más fácil de &lt;strong&gt;entender y mantener&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;En el próximo artículo hablaremos de por qué es mejor crear módulos de propósito general.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="PoSD" /><category term="software-design" /><category term="complexity" /><category term="interfaces" /><category term="defaults" /><summary type="html">Hablemos de algunos consejos para lograr ocultar la mayor cantidad de información posible en tus módulos, pero también de cómo no llevarlo demasiado lejos</summary></entry></feed>
+&lt;p&gt;Esto es lo básico que necesitamos entender de lo que hace un motor de JavaScript, el encargado de ejecutar el código. Pero no es suficiente contar con alguien que pueda correr el código, necesitamos además &lt;strong&gt;algo que nos proporcione el material para trabajar&lt;/strong&gt;, ya que los programas en general actúan sobre algo, u obtienen información de algún lado. Esto es el &lt;strong&gt;Runtime&lt;/strong&gt;, que explicaremos en el siguiente artículo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="js" /><category term="javascript" /><category term="compiladores" /><category term="javascript-engine" /><category term="v8" /><category term="chrome" /><summary type="html">Hablemos de qué es y cómo funciona un motor de Javascript.</summary></entry></feed>

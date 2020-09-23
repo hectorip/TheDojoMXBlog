@@ -131,7 +131,7 @@
       "headline": "A Philosophy of Software Design: Organiza bien los sistemas en capas",
       "keywords": "",
       "description": "Resuelve problemas de organización de código mediante un sistema en capas.",
-      "articleBody": "Hemos escuchado muchísimo acerca de los sistemas en capas como Modelo-Vista-Controlador, Modelo-Vista-Template, Modelo-Vista-*, _MVADFGDFD etc. y eso es porque la mayoría de los sistemas actuales se organiza así: en capas. Además, nuestros módulos se dividen naturalmente en capas con diferentes funciones (como código que usa a otro).\n\nHablemos de por qué es efectiva esta forma de organización (o patrón de arquitectura)\nde código, de sus características y cómo podemos aprovecharla para sacar el máximo provecho.\n\nCaracterísticas de los sistemas en capas\n\nSabemos que la mejor forma de organización de un proyecto es descomponerlo en partes independientes que oculten información de otras.\n\nLa comunicación entre las diferentes partes se da por medio de una interfaz. Esta interfaz, es la API del componente, ya que será usada de manera automática por otra parte del programa.\n\nEn un sistema en capas el conjunto de elementos pertenecientes a una capa sólo se puede comunicar con la capa superior y con la capa inferior.\n\nSi un sistema tiene 10 capas, cada componente puede comunicarse máximo con 2 capas.\n\nEn los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la capa intermedia (el controlador, por ejemplo) puede comunicarse con dos capas, mientras que las otras sólo se comunican con la intermedia.\n\nJohn Ousterhout usa la división en capas para explicar cómo se organiza el software con respecto al usuario final: la capa de “hasta arriba” es la que interactúa directamente con el usuario y la de “hasta abajo” es la más alejada del usuario, generalmente el núcleo de tu sistema.\n\nHablemos ahora de las mejores prácticas según A Philosphy of Software Design.\n\nDiferente capa, diferente abstracción\n\nEl concepto que debes tener más claro para descomponer tu software en capas es que cada capa debe tener sus propias abstracciones. Ousterhout da el ejemplo de un sistema de archivos:\n\n\n  La capa que interactúa con el mundo exterior o la más alta, tiene la abstracción de un archivo\n  La siguiente capa tiene la abstracción de bloques de memoria y caché\n  La siguiente capa maneja directamente los bloques en el disco\n\n\nEsta abstracción es efectiva porque cada capa trabaja con abstracciones diferentes y no repiten ninguna entre ellas.\n\nEsta es la idea básica que debes checar en tus diseños, si notas que una abstracción no cambia de una capa a otra, algo está saliendo mal. ¿Cómo puedes identificarlas?\n\nFunciones de paso\n\nEstos son funciones que no hacen nada mas que mandar llamar una función de la siguiente capa, normalmente para cumplir con la limitante de comunicación entre capas.\n\nEsto indica que no hay una división clara de responsabilidad entre clases o módulos. Para resolver este problema tienes que asegurarte de que la interfaz y la funcionalidad de este punto de tu sistema estén en el mismo módulo.\n\nEvitar este tipo de métodos te evitará complicar la interfaz sin añadir ninguna funcionalidad.\n\nVariables pasadas\n\nSimilar al caso anterior, si tienes una variable que recibes en la llamada de tu módulo y no haces nada con ella mas que pasarla a una capa inferior, estás mezclando las abstracciones entre capas.\n\nA veces son necesarias, pero el manejarlas crea complejidad. Dependiendo del paradigma y el lenguaje de programación deberías buscar una solución adecuada.\n\nPor ejemplo, en lenguajes orientados a objetos podrías guardar todos lo valores a los que necesitas constante acceso desde diferentes lugares un una variable de “contexto” y que generalmente está almacenada en un lugar en el que todas tus funciones puedan acceder. Algunos frameworks usan su variable de settings para poner información necesaria ahí.\n\nLos siguientes dos consejos tratan más los diferentes niveles de código que capas del sistema.\n\nEvita lo más que puedas los decoradores\n\nOusterhout habla en contra del patrón decorador. Este patrón consiste en envolver clases, objetos o funciones con otros, con el fin de extender la funcionalidad. Los decoradores intentan mantener una interfaz muy similar o exactamente igual al elemento original.\n\nUn ejemplo es la clase de Java BufferedInputStream es un decorador de InputStream, añadiéndole el buffering.\n\nLos decoradores pueden crear un montón de funciones y variables de pasada y agregar un montón de código de soporte sin de verdad agregar tanta funcionalidad como código.\n\nAPoSD (el libro) sugiere crear entidades separadas cuando sea posible y evitar el sobreuso de este patrón, a menos que de verdad tenga sentido, por ejemplo: cuando tienes un módulo muy profundo que con un decorador vas a poder reutilizar todo con muy poco código de soporte.\n\nAbstracciones diferentes entre la interfaz y la implementación\n\nTu código debería de exponer en su interfaz la abstracción más conveniente para los usuarios de tu módulo, sin importar las abstracciones más convenientes para manejar los datos internamente.\n\nPor este principio, es muy normal que las abstracciones de la interfaz no sean las mismas interfaces que tu implementación usa.\n\nUn ejemplo: imagina que estás escribiendo un componente que te permite editar texto. ¿Cuál es la unidad básica con la que el usuario de tu módulo interactuará?\n\nPuede ser un carácter, una línea, un párrafo. Ya que tu la visualización del texto es en líneas, lo más conveniente para la implementación es una abstracción que represente una línea de texto.\n\nPero para el usuario de la clase que maneja texto lo más conveniente es una interfaz que use carácteres porque es más fácil de usar, se quita la responsabilidad de manejar las líneas.\n\nEntonces tu clase queda así: internamente representa el texto como un conjunto de líneas, pero las interfaces lo usan como si fuera un conjunto de caractéres en los que puedes insertar y borrar sin preocuparte por la organización en líneas.\n\nConclusión\n\nLa separación en capas permitirá que tu código esté mejor organizado y que sea más fácil de entender. Tener cuidado con la forma en que las capas se organizan, cómo se dividen responsabilidades y las interfaces que cada capa expone hará mucho más mantenible y entendible tu base de código.\n",
+      "articleBody": "Hemos escuchado muchísimo acerca de los sistemas en capas como Modelo-Vista-Controlador, Modelo-Vista-Template, Modelo-Vista-*, MV-lo-que-sea etc. y eso es porque la mayoría de los sistemas actuales se organiza así: en capas. Además, nuestros módulos se dividen naturalmente en capas con diferentes funciones (como código que usa a otro).\n\nHablemos de por qué es efectiva esta forma de organización (o patrón de arquitectura)\nde código, de sus características y cómo podemos aprovecharla para sacar el máximo provecho.\n\nCaracterísticas de los sistemas en capas\n\nSabemos que la mejor forma de organización de un proyecto es descomponerlo en partes independientes que oculten información de otras.\n\nLa comunicación entre las diferentes partes se da por medio de una interfaz. Esta interfaz, es la API del componente, ya que será usada de manera automática por otra parte del programa.\n\nEn un sistema en capas el conjunto de elementos pertenecientes a una capa sólo se puede comunicar con la capa superior y con la capa inferior.\n\nSi un sistema tiene 10 capas, cada componente puede comunicarse máximo con 2 capas.\nEn los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la capa intermedia (el controlador, por ejemplo) puede comunicarse con dos capas, mientras que las otras sólo se comunican con la intermedia.\n\nJohn Ousterhout usa la división en capas para explicar cómo se organiza el software con respecto al usuario final: la capa de “hasta arriba” es la que interactúa directamente con el usuario y la de “hasta abajo” es la más alejada del usuario, generalmente el núcleo de tu sistema.\n\nHablemos ahora de las mejores prácticas según A Philosphy of Software Design.\n\nDiferente capa, diferente abstracción\n\nEl concepto que debes tener más claro para descomponer tu software en capas es que cada capa debe tener sus propias abstracciones. Ousterhout da el ejemplo de un sistema de archivos:\n\n\n  La capa que interactúa con el mundo exterior o la más alta, tiene la abstracción de un archivo\n  La siguiente capa tiene la abstracción de bloques de memoria y caché\n  La siguiente capa maneja directamente los bloques en el disco\n\n\nEsta abstracción es efectiva porque cada capa trabaja con abstracciones diferentes y no repiten ninguna entre ellas.\n\nEsta es la idea básica que debes checar en tus diseños, si notas que una abstracción no cambia de una capa a otra, algo está saliendo mal. ¿Cómo puedes identificarlas?\n\nFunciones de paso\n\nEstos son funciones que no hacen nada mas que mandar llamar una función de la siguiente capa, normalmente para cumplir con la limitante de comunicación entre capas.\n\nEsto indica que no hay una división clara de responsabilidad entre clases o módulos. Para resolver este problema tienes que asegurarte de que la interfaz y la funcionalidad de este punto de tu sistema estén en el mismo módulo.\n\nEvitar este tipo de métodos te evitará complicar la interfaz sin añadir ninguna funcionalidad.\n\nVariables pasadas\n\nSimilar al caso anterior, si tienes una variable que recibes en la llamada de tu módulo y no haces nada con ella mas que pasarla a una capa inferior, estás mezclando las abstracciones entre capas.\n\nA veces son necesarias, pero el manejarlas crea complejidad. Dependiendo del paradigma y el lenguaje de programación deberías buscar una solución adecuada.\n\nPor ejemplo, en lenguajes orientados a objetos podrías guardar todos lo valores a los que necesitas constante acceso desde diferentes lugares un una variable de “contexto” y que generalmente está almacenada en un lugar en el que todas tus funciones puedan acceder. Algunos frameworks usan su variable de settings para poner información necesaria ahí.\n\nLos siguientes dos consejos tratan más los diferentes niveles de código que capas del sistema.\n\nEvita lo más que puedas los decoradores\n\nOusterhout habla en contra del patrón decorador. Este patrón consiste en envolver clases, objetos o funciones con otros, con el fin de extender la funcionalidad. Los decoradores intentan mantener una interfaz muy similar o exactamente igual al elemento original.\n\nUn ejemplo es la clase de Java BufferedInputStream es un decorador de InputStream, añadiéndole el buffering.\n\nLos decoradores pueden crear un montón de funciones y variables de pasada y agregar un montón de código de soporte sin de verdad agregar tanta funcionalidad como código.\n\nAPoSD (el libro) sugiere crear entidades separadas cuando sea posible y evitar el sobreuso de este patrón, a menos que de verdad tenga sentido, por ejemplo: cuando tienes un módulo muy profundo que con un decorador vas a poder reutilizar todo con muy poco código de soporte.\n\nAbstracciones diferentes entre la interfaz y la implementación\n\nTu código debería de exponer en su interfaz la abstracción más conveniente para los usuarios de tu módulo, sin importar las abstracciones más convenientes para manejar los datos internamente.\n\nPor este principio, es muy normal que las abstracciones de la interfaz no sean las mismas interfaces que tu implementación usa.\n\nUn ejemplo: imagina que estás escribiendo un componente que te permite editar texto. ¿Cuál es la unidad básica con la que el usuario de tu módulo interactuará?\n\nPuede ser un carácter, una línea, un párrafo. Ya que tu la visualización del texto es en líneas, lo más conveniente para la implementación es una abstracción que represente una línea de texto.\n\nPero para el usuario de la clase que maneja texto lo más conveniente es una interfaz que use carácteres porque es más fácil de usar, se quita la responsabilidad de manejar las líneas.\n\nEntonces tu clase queda así: internamente representa el texto como un conjunto de líneas, pero las interfaces lo usan como si fuera un conjunto de caractéres en los que puedes insertar y borrar sin preocuparte por la organización en líneas.\n\nConclusión\n\nLa separación en capas permitirá que tu código esté mejor organizado y que sea más fácil de entender. Tener cuidado con la forma en que las capas se organizan, cómo se dividen responsabilidades y las interfaces que cada capa expone hará mucho más mantenible y entendible tu base de código.\n",
       "datePublished": "2020-09-01 00:00:00 -0500",
       "dateModified": "2020-09-01 00:00:00 -0500",
       "author": {
@@ -406,7 +406,7 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>Hemos escuchado muchísimo acerca de los sistemas en capas como <em>Modelo-Vista-Controlador</em>, <em>Modelo-Vista-Template, Modelo-Vista-*, _MVADFGDFD</em> etc. y eso es porque la mayoría de los sistemas actuales se organiza así: <strong>en capas</strong>. Además, nuestros módulos se dividen naturalmente en capas con diferentes funciones (como código que usa a otro).</p>
+        <p>Hemos escuchado muchísimo acerca de los sistemas en capas como <em>Modelo-Vista-Controlador</em>, Modelo-Vista-Template, Modelo-Vista-*, <em>MV-lo-que-sea</em> etc. y eso es porque la mayoría de los sistemas actuales se organiza así: <strong>en capas</strong>. Además, nuestros módulos se dividen naturalmente en capas con diferentes funciones (como código que usa a otro).</p>
 
 <p>Hablemos de por qué es efectiva esta forma de organización (o patrón de arquitectura)
 de código, de sus características y cómo podemos aprovecharla para sacar el máximo provecho.</p>
@@ -419,9 +419,8 @@ de código, de sus características y cómo podemos aprovecharla para sacar el m
 
 <p>En un sistema en capas el conjunto de elementos pertenecientes a una capa sólo se puede comunicar con la capa superior y con la capa inferior.</p>
 
-<p>Si un sistema tiene 10 capas, cada componente puede comunicarse máximo con 2 capas.</p>
-
-<p>En los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la capa intermedia (el controlador, por ejemplo) puede comunicarse con dos capas, mientras que las otras sólo se comunican con la intermedia.</p>
+<p>Si un sistema tiene 10 capas, cada componente puede comunicarse máximo con 2 capas.
+En los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la capa intermedia (el controlador, por ejemplo) puede comunicarse con dos capas, mientras que las otras sólo se comunican con la intermedia.</p>
 
 <p><a href="https://amzn.to/2GdeHi5">John Ousterhout</a> usa la división en capas para explicar cómo se organiza el software con respecto al usuario final: la capa de “hasta arriba” es la que interactúa directamente con el usuario y la de “hasta abajo” es la más alejada del usuario, generalmente el núcleo de tu sistema.</p>
 
@@ -517,11 +516,12 @@ de código, de sus características y cómo podemos aprovecharla para sacar el m
       
   <nav class="pagination">
     
-      <a href="/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html" class="pagination--pager" title="Traducción automática: API’s vs tu propio modelo
+      <a href="/2020/08/01/que-son-los-modelos-generativos.html" class="pagination--pager" title="¿Qué son los modelos generativos?
 ">Anterior</a>
     
     
-      <a href="#" class="pagination--pager disabled">Siguiente</a>
+      <a href="/2020/09/10/no-hagas-hagas-devops-por-convivir.html" class="pagination--pager" title="No hagas hagas DevOps por convivir
+">Siguiente</a>
     
   </nav>
 
@@ -544,6 +544,109 @@ de código, de sus características y cómo podemos aprovecharla para sacar el m
     <div class="page__related">
       <h4 class="page__related-title">Podrías ver también</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://res.cloudinary.com/hectorip/image/upload/v1594271709/CA5123E3-5CCD-4A32-A4D0-2DE9B27A13E8_pfxvrn.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/09/20/maneras-de-hacer-una-api-con-go-lang.html" rel="permalink">Formas de hacer una API con Go
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 20-09-2020
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Exploramos diferentes formas en las que puedes crear una API con Go, el lenguaje enfocado en la eficiencia de los programas permitiendo productividad para lo...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1599714511/1CF0CA4A-211C-4310-9D85-0C49D92B014D_ymceki.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/09/10/no-hagas-hagas-devops-por-convivir.html" rel="permalink">No hagas hagas DevOps por convivir
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 10-09-2020
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">En este artículo resumiremos una plática muy interesante que tuvimos con Domingo Suárez sobre DevOps y otras cosas.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/08/01/que-son-los-modelos-generativos.html" rel="permalink">¿Qué son los modelos generativos?
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 01-08-2020
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">En este artículo exploramos qué es un modelo generativo, cómo te pueden servir y el estado del arte en este campo.
+</p>
+  </article>
+</div>
+
         
           
 
@@ -576,114 +679,6 @@ de código, de sus características y cómo podemos aprovecharla para sacar el m
 </p>
     
     <p class="archive__item-excerpt" itemprop="description">Exploremos las opciones que tienes para realizar traducciones automáticas de texto en tus proyectos.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794238/B29C980A-0E0F-444F-9F25-EFAB95FDBD4E_r9qk5v.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/07/16/de-bash-a-zsh.html" rel="permalink">De Bash a Zsh
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  6 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 16-07-2020
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Zsh es el nuevo shell default de MacOS Catalina. Entiende las principales diferencias entre Bash y Zsh.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1594271692/EC077014-9C45-4FCA-A0BA-7CB7B0D25FAB_l9gvh7.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/07/15/recursos-para-aprender-arquitectura-de-software.html" rel="permalink">Recursos para aprender Arquitectura de Software
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  2 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 15-07-2020
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">¿Qué es la arquitectura de software y cómo puedes empezar a aprenderla? Aquí te damos un resumen de una plática muy interesante que tuvimos.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1594271708/BA7B68D6-CB97-4E54-8D9D-B3D2530A8A84_ovfgob.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/07/09/que-es-el-pensamiento-computacional.html" rel="permalink">¿Qué es el pensamiento computacional?
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  7 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 09-07-2020
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">El pensamiento computacional ha sonado mucho en los medios últimamente. Hablemos de lo que es y todo lo que implica.
 </p>
   </article>
 </div>

@@ -8,7 +8,7 @@ excerpt: "Exploramos diferentes formas en las que puedes crear una API con Go, e
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/v1594271709/CA5123E3-5CCD-4A32-A4D0-2DE9B27A13E8_pfxvrn.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/v1594271709/CA5123E3-5CCD-4A32-A4D0-2DE9B27A13E8_pfxvrn.jpg
-  overlay_filter: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.6)
 ---
 
 Go es uno de los lenguajes modernos más usados. Ya hablamos de [por qué deberías aprenderlo](/2019/09/01/por-que-deberias-aprender-go.html).
@@ -81,7 +81,7 @@ Por eso te presentamos las opciones más comunes y algunos ejemplos.
 Gorilla Toolkit **no es un framework**, puedes usar cada de sus herramientas por separado, como las vayas necesitando. Así que puede empezar con la librería estándar y agregar lo que necesitas de Gorilla poco a poco.
 
 ## Gin
-![Gin go logo](https://raw.githubusercontent.com/gin-gonic/logo/master/color.png){: .align-center}
+![Gin go logo](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_250/v1600730661/color_whycuu.png){: .align-center}
 
 [Gin](https://github.com/gin-gonic/gin) es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go. Ya está en su versión 1, por lo que puedes usarlo con confianza en proyectos serios.
 

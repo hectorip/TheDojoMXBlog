@@ -72,10 +72,10 @@ var store = [{
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1557201862/edho-pratama-149011-unsplash_jlppci.jpg"
       },{
         "title": "¿Por qué deberías aprender Elixir?",
-        "excerpt":"Elixir es un lenguaje de programación bastante reciente (creado cerca de 2012), pero que está haciendo mucho ruido y más considerando que no tiene ninguno de los nombres legendarios del área de sistemas atrás ni a alguna empresa prominente. En este post vamos a hablar de por qué es buena...","categories": [],
-        "tags": ["elixir","fp","programación-funcional"],
+        "excerpt":"TL;DR ¿Por qué deberías considerar aprender Elixir? La respuesta fácil la encuentras en el siguiente gráfica y la plática de la que salió: Este registro visual salió de esta plática: Agradecemos a @loreniuxmr por la plática y a @alebricio por el registro visual, así como a Hack Tabasco por la...","categories": [],
+        "tags": ["elixir","fp","programación-funcional","registro-gráfico"],
         "url": "https://blog.thedojo.mx/2019/06/02/por-que-deberias-aprender-elixir.html",
-        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1559453191/jr-korpa-1316724-unsplash_f1ujyj.jpg"
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1559453195/luis-dille-1098834-unsplash_n7ntca.jpg"
       },{
         "title": "Entendiendo REST. El estilo de Arquitectura.",
         "excerpt":"En el artículo anterior de la serie hablamos un poco de lo que es una API REST. En este artículo empezaremos a ver qué es REST y por qué surgió. Antes de empezar con lo nuestro, hablemos de lo que NO es una API REST. Esto no es REST Actualmente,...","categories": [],

@@ -262,4 +262,22 @@ var store = [{
         "tags": ["apis","machine-learning","AI"],
         "url": "https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg"
+      },{
+        "title": "A Philosophy of Software Design: Organiza bien los sistemas en capas",
+        "excerpt":"Hemos escuchado muchísimo acerca de los sistemas en capas como Modelo-Vista-Controlador, Modelo-Vista-Template, Modelo-Vista-*, MV-lo-que-sea etc. y eso es porque la mayoría de los sistemas actuales se organiza así: en capas. Además, nuestros módulos se dividen naturalmente en capas con diferentes funciones (como código que usa a otro). Hablemos de por...","categories": [],
+        "tags": [],
+        "url": "https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1598938866/96510D0F-CE11-46AB-9B3D-6EA0F8EA4C23_nfdcvu.jpg"
+      },{
+        "title": "No hagas hagas DevOps por convivir",
+        "excerpt":"Tuvimos una plática con Domingo Suárez(@domix) acerca de diferentes temas que le interesan a los desarrolladores. En este artículo te vamos a dar un resumen. Cómo nos dejamos influir para adoptar una tecnología Lo primero de lo que hablamos es de la forma en que muchas veces adoptamos la tecnología:...","categories": [],
+        "tags": ["live","youtube","microservicios","java","domix","hype","devops"],
+        "url": "https://blog.thedojo.mx/2020/09/10/no-hagas-hagas-devops-por-convivir.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1599714511/1CF0CA4A-211C-4310-9D85-0C49D92B014D_ymceki.jpg"
+      },{
+        "title": "Formas de hacer una API con Go",
+        "excerpt":"Go es uno de los lenguajes modernos más usados. Ya hablamos de por qué deberías aprenderlo. Ahora hablemos de un caso de uso práctico: úsalo para crear una API HTTP. En este artículo nos enfocaremos en la parte de comunicación HTTP y la generación de respuestas adecuadas. La funcionalidad básica...","categories": [],
+        "tags": ["go","apis","beego","gorilla-mux","gin-go","go-lang"],
+        "url": "https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/v1594271709/CA5123E3-5CCD-4A32-A4D0-2DE9B27A13E8_pfxvrn.jpg"
       }]
