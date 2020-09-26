@@ -32,20 +32,23 @@ Algunos ejemplos para los programadores:
 - Asegurarse de que las operaciones son atendidas en el orden en que se solicitaron en un entorno con múltiples ejecutores. (Colas)
 
 Lo difícil de la deducción es encontrar *qué principios, teoremas o formas
-de resolución de problemas aplican para el problema que tenemos que resolver*. Para esto nos pueden ayudar las técnicas platicadas en los artículos anteriores: ¿He resuelto un problema similar? *¿Qué técnica fue usada?* ¿Qué principios sirvieron para la resolución de ese problema? Y, a mi parecer la más útil: ¿puedo usar el resultado o el proceso de resolución de un problema que pasado?
+de resolución de problemas aplican para el problema que tenemos que resolver*. Para esto nos pueden ayudar las técnicas platicadas en los artículos anteriores: ¿He resuelto un problema similar? *¿Qué técnica fue usada?* ¿Qué principios sirvieron para la resolución de ese problema? Y, a mi parecer la más útil: ¿puedo usar el resultado o el proceso de resolución de un otro problema?
 
+## Inducción
 
-### Inducción
+> La inducción es el proceso de descubrir **leyes generales** mediante la **observación y combinación** de casos particulares. - *George Polya*
 
-> La inducción es el proceso de descubrir leyes generales mediante la observación y combinación de casos particulares. - *George Polya*
-
-La inducción es uno de los mecanismos de resolución de problemas más difíciles de llevar a la práctica. Funciona en forma inversa a la deducción.
+La inducción es uno de los mecanismos de resolución de problemas más difíciles de llevar a la práctica. Funciona en forma inversa a la deducción:
 
 Consiste en partir de observaciones específicas (ejemplos y contra-ejemplos) y llevarlas a **generalizaciones** que puedan ser aplicadas en otros casos o que apliquen en muchas otras situaciones situaciones.
 
+Polya deja claro una cosa: aunque en las ciencias físicas y naturales la inducción es completamente válida y natural, las matemáticas son un área mayormente deductiva, debes poder tener **demostraciones** de que
+
 ### Inducción matemática
 
-Polya habla de otro tipo de inducción de la que opina que no debería llamarse así, y que comparte muy poco con el proceso que acabamos de descubrir y puede llegar a confundir a la gente: la **inducción matemática**. Este tipo de inducción se refiere al método que los matemáticos emplean para demostrar que cierta aserción es un teorema o no.
+Polya habla de otro tipo de inducción de la que opina que no debería llamarse así, y que comparte muy poco con el proceso que acabamos de describir y puede llegar a confundir a la gente: la **inducción matemática**. Este tipo de inducción se refiere al método que los matemáticos emplean para **demostrar** que cierta aserción es un teorema o no.
+
+Si has estudiado matemáticas no la confundas.
 
 ### Inducción en el desarrollo de software
 
@@ -57,4 +60,5 @@ Este paso es completamente necesario para desarrollar software, ya que son **est
 
 Así que tenemos que ser lo más hábiles que nuestras circunstancias lo permitan haciendo inducción. **¿Cómo podemos mejorar?**
 
-##
+## Desarrollando tus capacidades de Inducción
+
