@@ -62,3 +62,4 @@ Así que tenemos que ser lo más hábiles que nuestras circunstancias lo permita
 
 ## Desarrollando tus capacidades de Inducción
 
+Polya da un montón de consejos para aplicar la inducción como el "descubrimiento" de las reglas que están bajo un problema.

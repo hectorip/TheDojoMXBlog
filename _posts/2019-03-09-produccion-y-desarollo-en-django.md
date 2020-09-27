@@ -15,18 +15,19 @@ header:
 
 ## Para no salir herido al combinar desarrollo y producción en Django.
 
-
 > Se usará Django >= 2.0
 
 > Se usará Python >= 3.6
 
-## Problemática.
+## Problemática
 
 Mientras desarrollaba en Django, me encontré con un problema, requería hacer múltiples pruebas con el ORM para generar consultas complejas a base de datos.
 Para hacer la prueba se ejecuta:
+
 ```sh
 > python manage.py shell
 ```
+
 Con lo que se abrirá una consola de Python, en dicha consola se puede importar un modelo y con ese modelo hacer las pruebas requeridas.
 
 ```sh
