@@ -109,3 +109,5 @@ Si lo piensas, se parece mucho al _método científico_ que nos enseñaron cuand
 ## Conclusión
 
 La inducción y la deducción son dos procesos que aplicamos normalmente, sin saberlo, en nuestra resolución diaria de problemas. Identificarlos y formalizar su estructura nos puede ayudar a ser mejor en ellos. No pierdas la oportunidad de aprender y ampliar tus capacidades de resolución de problemas.
+
+Además, la información que encontrarás en "How To Solve It" te ayudará a ser mejor resolviendo problemas, por lo que tu capacidad como desarrollador de software se verá potenciada: **es nuestra principal tarea**.
