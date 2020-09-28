@@ -24,7 +24,7 @@ var store = [{
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1551246660/camille-orgel-58391-unsplash_jvqz1c.jpg"
       },{
         "title": "Producción y desarollo en Django",
-        "excerpt":"Para no salir herido al combinar desarrollo y producción en Django. Se usará Django &gt;= 2.0 Se usará Python &gt;= 3.6 Problemática. Mientras desarrollaba en Django, me encontré con un problema, requería hacer múltiples pruebas con el ORM para generar consultas complejas a base de datos. Para hacer la prueba...","categories": [],
+        "excerpt":"Para no salir herido al combinar desarrollo y producción en Django. Se usará Django &gt;= 2.0 Se usará Python &gt;= 3.6 Problemática Mientras desarrollaba en Django, me encontré con un problema, requería hacer múltiples pruebas con el ORM para generar consultas complejas a base de datos. Para hacer la prueba...","categories": [],
         "tags": ["Django","producción","deploy","despliegue"],
         "url": "https://blog.thedojo.mx/2019/03/09/produccion-y-desarollo-en-django.html",
         "teaser": "https://res.cloudinary.com/dg89awi0p/image/upload/c_scale,w_1200/v1552160611/rawpixel-1135756-unsplash.jpg"
@@ -138,7 +138,7 @@ var store = [{
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1573540452/jacob-campbell-ri83DTadRto-unsplash_fb7xgx.jpg"
       },{
         "title": "Inducción y Deducción según Polya",
-        "excerpt":"Este es el tercer artículo acerca del libro “How to Solve It” de George Polya. Puedes ver los dos artículos anteriores aquí: Técnicas para resolver problemas Heurística Con este artículo cerraremos con las ideas que George Polya desarrolló para resolver problemas. Inducción y Deducción Hablemos ahora de algunas formas de...","categories": [],
+        "excerpt":"Este es el tercer artículo acerca del libro “How to Solve It” de George Polya. Puedes ver los dos artículos anteriores aquí: Técnicas para resolver problemas Heurística Con este artículo cerraremos con las ideas que George Polya desarrolló para resolver problemas. Deducción Tratar de resolver problemas por deducción significa aplicar...","categories": [],
         "tags": ["polya","problem-solving","how-to-solve-it"],
         "url": "https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1575746191/verne-ho-0LAJfSNa-xQ-unsplash_prh7gv.jpg"
