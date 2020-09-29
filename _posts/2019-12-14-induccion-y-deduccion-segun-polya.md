@@ -1,8 +1,8 @@
 ---
-title: "Inducción y Deducción según Polya"
+title: "Inducción y Deducción para desarrolladores de software"
 date: 2019-12-14
 author: Héctor Patricio
-tags: polya problem-solving how-to-solve-it
+tags: polya problem-solving how-to-solve-it problemas libros
 comments: true
 excerpt: "Aprende de los conceptos de inducción y deducción según George Polya los explica en How to Solve It"
 header:
