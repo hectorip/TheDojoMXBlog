@@ -22,10 +22,9 @@ Russ Olsen tiene una plática en la que explica las bases y características pri
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0if71HOyVjY?start=7" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
 ## Las bases
 
-¿Quieres aprender un poco de las bases de la progrmación funcional?
+¿Quieres aprender un poco de las bases de la programación funcional?
 
 Los chicos de Computerphile lo explican de manera sencilla en la siguiente charla:
 
@@ -35,7 +34,6 @@ Los chicos de Computerphile lo explican de manera sencilla en la siguiente charl
 La charla de John Hughes: "Why Functional Programming Matters" es imperdible. Aquí podrás ver algunas aplicaciones de la programación funcional y como es que importa para resolver problemas que de otra manera serían muy difíciles.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1qBHf8DrWR8?start=7" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 ## Cursos
 
@@ -47,8 +45,7 @@ En esta sección te recomendaremos los cursos ofrecidos por varias plataformas e
 
 ¿Quieres más?
 
-Este no es un curso acerca de programción funcional como tal, pero usa un lenguaje funcional para enseñar los conceptos principales del diseño de lenguajes de programación: [Programming Languages](https://www.coursera.org/learn/programming-languages)
-
+Este no es un curso acerca de programación funcional como tal, pero usa un lenguaje funcional para enseñar los conceptos principales del diseño de lenguajes de programación: [Programming Languages](https://www.coursera.org/learn/programming-languages)
 
 ## Libros
 
@@ -64,10 +61,8 @@ La progrmación de funcional está teniendo un fuerte empuje por la comunidad de
 
 - [JavaScript Allongé](https://leanpub.com/javascriptallongesix/read), en este libro, que el autor dice que es un libro acerca de cómo programar con funciones, se explican los conceptos más usados por la progrmación funcional, te ayuda a entender los conceptos más importantes dentro de JavaScript para manejar la funciones de manera correcta y poderosa.
 
-
 ## El clásico
 
 Por último: [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html) es un libro que explica con los conceptos principales de la programación usando el estilo funcional, una joya que no se puede perder.
 
 Esperamos que estos recursos te sean de ayuda para empezar tu camino en la programación funcional.
-
