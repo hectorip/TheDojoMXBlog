@@ -19,6 +19,10 @@ Cada subtítulo es una frase que consideramos que vale la pena analizar más det
 
 ## ¿Tienes todos los datos?
 
-##
+
+
+## Piensa en el fin antes de que empieces.
+
+
 
 ##
