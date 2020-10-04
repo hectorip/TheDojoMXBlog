@@ -17,12 +17,16 @@ Estas ideas son sacadas del apartado "Aforismos y citas", esperemos que pueda ay
 
 Cada subtítulo es una frase que consideramos que vale la pena analizar más detalladamente.
 
-## ¿Tienes todos los datos?
-
-
-
 ## Piensa en el fin antes de que empieces.
 
+> El tonto mira el principio, pero el sabio mira el final.
 
+Estas dos frases nos recuerdan que es muy importante:
+
+1. Entender completamente el problema a resolver antes de empezar a intentar resolverlo.
+2. Tener verdadero interés en el resolver el problema (Polya dice que debemos desear resolver el problema).
+
+En el caso de los problemas prácticos (no matemáticos, ni acertijos), se recalca que incluso hay que definir y aclarar algunas cosas que no se tienen desde el principio.
 
 ##
+
