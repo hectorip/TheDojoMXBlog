@@ -1,4 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-09-27T23:53:12-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Formas de hacer una API con Go</title><link href="https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang.html" rel="alternate" type="text/html" title="Formas de hacer una API con Go" /><published>2020-09-20T00:00:00-05:00</published><updated>2020-09-20T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang</id><content type="html" xml:base="https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang.html">&lt;p&gt;Go es uno de los lenguajes modernos más usados. Ya hablamos de &lt;a href=&quot;/2019/09/01/por-que-deberias-aprender-go.html&quot;&gt;por qué deberías aprenderlo&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-10-04T00:38:07-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Algunas ideas sobre la resolución de problemas</title><link href="https://blog.thedojo.mx/2020/10/04/algunas-ideas-sobre-la-resolucion-de-problemas.html" rel="alternate" type="text/html" title="Algunas ideas sobre la resolución de problemas" /><published>2020-10-04T00:00:00-05:00</published><updated>2020-10-04T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/10/04/algunas-ideas-sobre-la-resolucion-de-problemas</id><content type="html" xml:base="https://blog.thedojo.mx/2020/10/04/algunas-ideas-sobre-la-resolucion-de-problemas.html">&lt;p&gt;En este artículo veremos algunas de las ideas que George Polya presenta en su libro &lt;a href=&quot;https://amzn.to/33qfw07&quot;&gt;How to Solve It&lt;/a&gt; sobre la resolución de problemas.&lt;/p&gt;
+
+&lt;p&gt;Estas ideas son sacadas del apartado “Aforismos y citas”, esperemos que pueda ayudar mejorar tus habilidades de resolución de problemas o que te saque del bache si te encuentras en uno.&lt;/p&gt;
+
+&lt;p&gt;Cada subtítulo es una frase que consideramos que vale la pena analizar más detalladamente.&lt;/p&gt;
+
+&lt;h2 id=&quot;piensa-en-el-fin-antes-de-que-empieces&quot;&gt;Piensa en el fin antes de que empieces.&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;El tonto mira el principio, pero el sabio mira el final.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Estas dos frases nos recuerdan que es muy importante:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Entender completamente el problema a resolver antes de empezar a intentar resolverlo.&lt;/li&gt;
+  &lt;li&gt;Tener verdadero interés en el resolver el problema (Polya dice que debemos desear resolver el problema).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;En el caso de los &lt;em&gt;problemas prácticos&lt;/em&gt;, es decir, a los que nos enfrentamos cada día en el desarrollo de software (no matemáticos, ni acertijos), se recalca que incluso hay que definir y aclarar algunas cosas que no se tienen desde el principio. Es necesario &lt;strong&gt;aclarar conceptos&lt;/strong&gt;, investigar, a veces, el verdadero objetivo y muchas veces descomponer el problema en problemas más pequeños y fáciles de resolver.&lt;/p&gt;
+
+&lt;h2 id=&quot;la-diligencia-es-la-madre-de-la-buena-suerte&quot;&gt;La diligencia es la madre de la buena suerte&lt;/h2&gt;
+
+&lt;p&gt;Muchas veces parece que las ideas de resolución de un problema nos llegan como por arte de magia a la cabeza, por buena suerte o gratis. Polya dice que una precondición para tengamos estas buenas ideas es que &lt;strong&gt;las debemos merecer&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;¿Cómo nos hacemos “merecedores” de tener buenas ideas?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Un roble no cae con la primera estocada.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Debemos persistir en buscar &lt;em&gt;diferentes&lt;/em&gt; maneras de resolver el problema, entenderlo completamente como mencionamos antes ya aplicar diferentes formas y técnicas de resolución, como hemos visto en otros artículos.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Debemos hacer lo que podamos si no podemos hacer lo que debiéramos.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Intentar por diferentes medios incluso después de fallar es una forma de merecer que nos lleguen nuevas ideas.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Un sabio convierte oportunidades en buena fortuna.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Esta última frase se menciona por lo importante que es despreciar ninguna de las ideas que nos vengan a la cabeza. Alguien experimentado en resolver problemas puede que no tenga más ideas en total que alguien no experimentado, pero sabe reconocer mejor ideas prometedoras.&lt;/p&gt;
+
+&lt;h2 id=&quot;un-retraso-sabio-hace-la-carretera-segura&quot;&gt;Un retraso sabio hace la carretera segura&lt;/h2&gt;
+
+&lt;p&gt;Esta frase nos recuerda la importancia de no apresurarnos a ejecutar un plan que parece perfecto para llegar a una solución. Según la propuesta de Polya para resolver problemas (entendimiento, planeación, ejecución, revisión), la parte más difícil de lograr es &lt;em&gt;el plan&lt;/em&gt;, pero la parte en la que más trabajo se lleva es la &lt;strong&gt;ejecución de ese plan&lt;/strong&gt;. Por tu experiencia en desarrollo de software tal vez ya lo sepas.&lt;/p&gt;
+
+&lt;p&gt;Pero al encontrar lo que parece un buen plan no conviene ejecutarlo lo más rápido posible sin darle al menos una segunda revisión. Tenemos que recordar que:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Creemos muy pronto lo que deseamos&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Nuestro juicio puede nublarse si deseamos salir muy rápido de algo y podemos caer en la trampa de creer muy fácilmente en un plan de resolución no tan sólido.&lt;/p&gt;
+
+&lt;p&gt;¿A qué te recuerda esto de pensarlo muy bien antes de comprometerse completamente con una solución? En el desarrollo de software hacer &lt;strong&gt;pruebas de concepto, prototipos y simulaciones&lt;/strong&gt; es una muy buena forma de evaluar un plan de solución antes de comprometer todos los recursos para la creación de esa solución.&lt;/p&gt;
+
+&lt;h2 id=&quot;mira-alrededor-cuando-obtengas-tu-primer-hongo-o-tu-primer-descubrimiento-crecen-en-grupos&quot;&gt;Mira alrededor cuando obtengas tu primer hongo o tu primer descubrimiento: crecen en grupos&lt;/h2&gt;
+
+&lt;p&gt;¿Te suena? Muchas veces las soluciones a diferentes problemas, o a diferentes partes del problema se encuentran muy cerca entre ellas, o son una variación, aplicación del resultado o aplicación del método.&lt;/p&gt;
+
+&lt;h2 id=&quot;pregunta-qué-por-qué-dónde-cuándo-y-cómo&quot;&gt;Pregunta Qué, Por qué, Dónde, Cuándo y cómo&lt;/h2&gt;
+
+&lt;p&gt;Finalmente, esta frase habla de la importancia de hacer el mayor número de preguntas posibles sobre el problema en cuestión, pregunta, pregunta, pregunta hasta que tengas toda la información.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Repasa estas ideas cuando te sientas atorado para resolver algún problema y puede que te ayuden a salir del hoyo. Y sobre todo, lee &lt;a href=&quot;https://amzn.to/33qfw07&quot;&gt;“How to Solve It”&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="how-to-solve-it" /><category term="problemas" /><category term="resolución" /><category term="heurística" /><summary type="html">Hablemos de algunas ideas interesantes y prácticas sobre la resolución de problemas, que te pueden ayudar a salir de un bache contra un problema difícil.</summary></entry><entry><title type="html">Formas de hacer una API con Go</title><link href="https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang.html" rel="alternate" type="text/html" title="Formas de hacer una API con Go" /><published>2020-09-20T00:00:00-05:00</published><updated>2020-09-20T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang</id><content type="html" xml:base="https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang.html">&lt;p&gt;Go es uno de los lenguajes modernos más usados. Ya hablamos de &lt;a href=&quot;/2019/09/01/por-que-deberias-aprender-go.html&quot;&gt;por qué deberías aprenderlo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Ahora hablemos de un caso de uso práctico: &lt;strong&gt;úsalo para crear una API HTTP&lt;/strong&gt;. En este artículo nos enfocaremos en la parte de comunicación HTTP y la generación de respuestas adecuadas.&lt;/p&gt;
 
@@ -1015,12 +1084,4 @@ que además de auditar, puedes cursar para obtener un &lt;strong&gt;cetificado&l
   &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/making-architecture-7153&quot;&gt;MAking Architecture&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Puedes ver una lista actualizada de los cursos aquí: &lt;a href=&quot;https://www.classcentral.com/report/free-online-learning-coronavirus/&quot;&gt;Free Learning Due to Coronavirus&lt;/a&gt;. Es emocionante ver todo lo que se puede aprender si uno puede ponerle el tiempo necesario.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cursos" /><category term="aprendizaje" /><category term="programación" /><category term="matemáticas" /><category term="mooc" /><summary type="html">Es emocionante todo lo que se puede aprender en internet. Revisa algunos cursos que además te certifcan gratuitamente.</summary></entry><entry><title type="html">Entendiendo ES6</title><link href="https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html" rel="alternate" type="text/html" title="Entendiendo ES6" /><published>2020-04-27T00:00:00-05:00</published><updated>2020-04-27T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/04/27/entendiendo-es6</id><content type="html" xml:base="https://blog.thedojo.mx/2020/04/27/entendiendo-es6.html">&lt;p&gt;Hace tiempo dimos un curso de ES6 o ES2015. Hicimos una investigación acerca de la historia, la nomenclatura, quién lo creo y porque tanta confusión con los nombres.&lt;/p&gt;
-
-&lt;p&gt;En este video explicamos eso y más: las características principales que se agregaron y la diferencia entre JavaScript y ECMAScript.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZnS37QdoTDA&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;¿Tienes dudas específicas de JavaScript? Compártelas en los comentarios e intentaremos hacer videos sobre eso.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="es6" /><category term="js" /><category term="javascript" /><category term="videos" /><summary type="html">Lanzamos un video explicando por qué ES6 sonó tanto. Velo aquí.</summary></entry></feed>
+&lt;p&gt;Puedes ver una lista actualizada de los cursos aquí: &lt;a href=&quot;https://www.classcentral.com/report/free-online-learning-coronavirus/&quot;&gt;Free Learning Due to Coronavirus&lt;/a&gt;. Es emocionante ver todo lo que se puede aprender si uno puede ponerle el tiempo necesario.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cursos" /><category term="aprendizaje" /><category term="programación" /><category term="matemáticas" /><category term="mooc" /><summary type="html">Es emocionante todo lo que se puede aprender en internet. Revisa algunos cursos que además te certifcan gratuitamente.</summary></entry></feed>

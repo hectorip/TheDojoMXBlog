@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Inducción y Deducción según Polya -</title>
+<!-- begin _includes/seo.html --><title>Inducción y Deducción para desarrolladores de software -</title>
 <meta name="description" content="Aprende de los conceptos de inducción y deducción según George Polya los explica en How to Solve It">
 
 
@@ -19,7 +19,7 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es">
 <meta property="og:site_name" content="">
-<meta property="og:title" content="Inducción y Deducción según Polya">
+<meta property="og:title" content="Inducción y Deducción para desarrolladores de software">
 <meta property="og:url" content="https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html">
 
 
@@ -127,9 +127,9 @@
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "url": "https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html",
-      "name": "Inducción y Deducción según Polya",
-      "headline": "Inducción y Deducción según Polya",
-      "keywords": "polya,problem-solving,how-to-solve-it",
+      "name": "Inducción y Deducción para desarrolladores de software",
+      "headline": "Inducción y Deducción para desarrolladores de software",
+      "keywords": "polya,problem-solving,how-to-solve-it,problemas,libros",
       "description": "Aprende de los conceptos de inducción y deducción según George Polya los explica en How to Solve It",
       "articleBody": "Este es el tercer artículo acerca del libro “How to Solve It” de George Polya. Puedes ver los dos artículos anteriores aquí:\n\n\n  Técnicas para resolver problemas\n  Heurística\n\n\nCon este artículo cerraremos con las ideas que George Polya desarrolló para resolver problemas.\n\nDeducción\n\nTratar de resolver problemas por deducción significa aplicar principios o\nconocimiento general a un caso específico. Por ejemplo para un problema\npráctico en el que tenemos encontrar la longitud de un cable tensor para una\nantena, sabemos que podemos aplicar el teorema de Pitágoras.\n\nAlgunos ejemplos para los programadores:\n\n\n  Encontrar el elemento más grande o más pequeño en una lista. (Una forma de resolverlo es ordenar los elementos).\n  Revisar que un elemento no está repetido en una colección de elementos. (Indexado)\n  Asegurarse de que las operaciones son atendidas en el orden en que se solicitaron en un entorno con múltiples ejecutores. (Colas)\n\n\nLo difícil de la deducción es encontrar qué principios, teoremas o formas\nde resolución de problemas aplican para el problema que tenemos que resolver. Para esto nos pueden ayudar las técnicas platicadas en los artículos anteriores: ¿He resuelto un problema similar? ¿Qué técnica fue usada? ¿Qué principios sirvieron para la resolución de ese problema? Y, a mi parecer la más útil: ¿puedo usar el resultado o el proceso de resolución de un otro problema?\n\nDeducción en el desarrollo de Software\n\nImagínate un problema que te trae un cliente, como sigue: tienen un proceso que necesita recorrer una lista muy grande de clientes por la noche y tienen algunos errores intermitentes, a veces termina, a veces no y cuándo no termina hay que investigar quién no pudo ser procesado y aplicar el proceso individualmente.\n\nSi has tenido experiencia en procesos parecidos y te has enfrentado con problemas similares, seguro que empezaste a pensar en soluciones. Eso es deducción, aunque las reglas no estén formalmente establecidas en tu mente.\n\n¿Cómo usamos la deducción entonces? Conociendo soluciones o diseño de solución a problemas que se repiten y que podemos aplicar directamente o combinar para resolver el problema actual.\n\n¿Te suena? Esto es algo que se repite vez tras vez: tener las bases de las ciencias de la computación, conocer diferentes algoritmos, estructuras de datos, tipos de datos abstractos, patrones de diseño, principios de diseño de software te ayudará a resolver los problemas de manera eficaz.\n\nAsí que la lección es clara: intenta ampliar tus conocimientos básicos para que puedas hacerte más hábil resolviendo problemas.\n\nTener un registro palpable de tus aprendizajes como una serie de notas te permitirá repasarlos y consultarlos cuando los necesites.\n\nInducción\n\n\n  La inducción es el proceso de descubrir leyes generales mediante la observación y combinación de casos particulares. - George Polya\n\n\nLa inducción es uno de los mecanismos de resolución de problemas más difíciles de llevar a la práctica. Funciona en forma inversa a la deducción:\n\nConsiste en partir de observaciones específicas (ejemplos y contra-ejemplos) y llevarlas a generalizaciones que puedan ser aplicadas en otros casos o que apliquen en muchas otras situaciones situaciones.\n\nPolya deja claro una cosa: aunque en las ciencias físicas y naturales la inducción es completamente válida y natural, y generar conocimiento sólamente basado en esto es aceptable, pero en las matemáticas debes poder tener demostraciones de que lo que propones es cierto.\n\nInducción matemática\n\nPolya habla de otro tipo de inducción de la que opina que no debería llamarse así, y que comparte muy poco con el proceso que acabamos de describir y puede llegar a confundir a la gente: la inducción matemática. Este tipo de inducción se refiere al método que los matemáticos emplean para demostrar que cierta aserción es un teorema o no.\n\nSi has estudiado inducción matemática no la confundas.\n\nInducción en el desarrollo de software\n\nEl desarrollo de software no es un área que viva aislada de las demás áreas y seguro te has encontrado con este tipo problemas si ya llevas tiempo desarrollando: las personas que requieren el software llevan ejemplos de  problemas que regularmente tienen que resolver, en vez de la explicación completa y las reglas completamente establecidas.\n\nNuestros clientes, en general, no se han dado a la tarea de establecer las reglas por las que algo funciona de la manera en que lo hace, ni las excepciones, ni los casos únicos. Es nuestra tarea casi siempre descubrir las reglas que subyacen a la operación del negocio de los clientes. Para esto tenemos que aplicar la inducción.\n\nEste paso es completamente necesario para desarrollar software, ya que son estas reglas las que ponemos en los programas, las probamos con los tests y lo que hace valioso al software.\n\nAsí que tenemos que ser lo más hábiles que nuestras circunstancias lo permitan haciendo inducción. ¿Cómo podemos mejorar?\n\nDesarrollando tus capacidades de Inducción\n\nPolya da varios de consejos para aplicar la inducción, veamos algunos pasos.\n\nLas tres herramientas de la inducción\n\nPrimero entendamos cómo funciona el proceso de inducción. La inducción usa tres procesos para poder llegar a sus descubrimientos:\n\n\n  Generalización. Tomas un ejemplo e intentas quitarle las cosas que lo hacen único para crear una regla general.\n  Analogía. La generalización está basada en analogías: la aplicación de los mismos principios observados a otros casos.\n  Especialización. Aplicas tus descubrimientos a casos particulares y descubres casos especiales que hacen que tengas que ajustar\n\n\nAhora vemos los pasos que podrías seguir para llevar a cabo tu proceso.\n\nReunir ejemplos y ocurrencias\n\nPrimero, tienes que juntar o generar ejemplos del fenómeno o evento que estás resolviendo. En el caso de un sistema tendrías que solicitarle al cliente la mayor cantidad de situaciones que tenga disponibles.\n\n“Generar” ejemplos ciertamente es algo difícil, porque al no conocer las reglas puede que te equivoques varias veces. Justamente es un proceso de prueba y error.\n\nHacer hipótesis\n\nDespués de observar los ejemplos y tratar de descubrir un patrón entre ellos, establece explícitamente una hipótesis: un supuesto plausible que explique la relación entre los ejemplos y que permita generar otros.\n\nComprobar o refutar la hipótesis\n\nDespués de tener una hipótesis, ahora tienes un “problema para probar”, como les llama Polya. Intenta demostrar que la hipótesis es cierta. Polya afirma que en la matemáticas no existe autoridad que una demostración rigurosa, pero en nuestra área, el desarrollo de software, a menudo es impráctico tener dicha demostración, así que podrías comprobar con más ejemplos (o ejemplos sintéticos) que tu hipótesis o propuesta se mantiene cierta en todos los casos conocidos.\n\nSi logras comprobarla, puedes avanzar a lo siguiente. Si encuentras un caso que no esté cubierto por tu hipótesis actual puedes ajustarla. Lo  mejor de este proceso es que es cíclico: no hay un límite de veces que lo puedes aplicar hasta que tengas “las regla0s” lo suficientemente claras.\n\nSi lo piensas, se parece mucho al método científico que nos enseñaron cuando nos hablaban de ciencia: observación -&gt; hipótesis -&gt; experimento -&gt; conclusiones.\n\nConclusión\n\nLa inducción y la deducción son dos procesos que aplicamos normalmente, sin saberlo, en nuestra resolución diaria de problemas. Identificarlos y formalizar su estructura nos puede ayudar a ser mejor en ellos. No pierdas la oportunidad de aprender y ampliar tus capacidades de resolución de problemas.\n\nAdemás, la información que encontrarás en “How To Solve It” te ayudará a ser mejor resolviendo problemas, por lo que tu capacidad como desarrollador de software se verá potenciada: es nuestra principal tarea.\n",
       "datePublished": "2019-12-14 00:00:00 -0600",
@@ -237,7 +237,7 @@
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          Inducción y Deducción según Polya
+          Inducción y Deducción para desarrolladores de software
 
         
       </h1>
@@ -396,7 +396,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Inducción y Deducción según Polya">
+    <meta itemprop="headline" content="Inducción y Deducción para desarrolladores de software">
     <meta itemprop="description" content="Aprende de los conceptos de inducción y deducción según George Polya los explica en How to Solve It">
     <meta itemprop="datePublished" content="2019-12-14T00:00:00-06:00">
     
@@ -541,11 +541,19 @@ de resolución de problemas aplican para el problema que tenemos que resolver</e
     
       
       
+      <a href="/tags/#libros" class="page__taxonomy-item" rel="tag">libros</a><span class="sep">, </span>
+    
+      
+      
       <a href="/tags/#polya" class="page__taxonomy-item" rel="tag">polya</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#problem-solving" class="page__taxonomy-item" rel="tag">problem-solving</a>
+      <a href="/tags/#problem-solving" class="page__taxonomy-item" rel="tag">problem-solving</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#problemas" class="page__taxonomy-item" rel="tag">problemas</a>
     
     </span>
   </p>
@@ -564,7 +572,7 @@ de resolución de problemas aplican para el problema que tenemos que resolver</e
     <h4 class="page__share-title">Compartir</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Inducci%C3%B3n+y+Deducci%C3%B3n+seg%C3%BAn+Polya%20https%3A%2F%2Fblog.thedojo.mx%2F2019%2F12%2F14%2Finduccion-y-deduccion-segun-polya.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Inducci%C3%B3n+y+Deducci%C3%B3n+para+desarrolladores+de+software%20https%3A%2F%2Fblog.thedojo.mx%2F2019%2F12%2F14%2Finduccion-y-deduccion-segun-polya.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.thedojo.mx%2F2019%2F12%2F14%2Finduccion-y-deduccion-segun-polya.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -603,6 +611,42 @@ de resolución de problemas aplican para el problema que tenemos que resolver</e
     <div class="page__related">
       <h4 class="page__related-title">Podrías ver también</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726004/FD195E45-0206-4229-AFC7-11E7AD35DB9C_fbjqje.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/10/04/algunas-ideas-sobre-la-resolucion-de-problemas.html" rel="permalink">Algunas ideas sobre la resolución de problemas
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 04-10-2020
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Hablemos de algunas ideas interesantes y prácticas sobre la resolución de problemas, que te pueden ayudar a salir de un bache contra un problema difícil.
+</p>
+  </article>
+</div>
+
         
           
 
@@ -706,42 +750,6 @@ de resolución de problemas aplican para el problema que tenemos que resolver</e
 </p>
     
     <p class="archive__item-excerpt" itemprop="description">Resuelve problemas de organización de código mediante un sistema en capas.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html" rel="permalink">Traducción automática: API’s vs tu propio modelo
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  8 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 19-07-2020
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Exploremos las opciones que tienes para realizar traducciones automáticas de texto en tus proyectos.
 </p>
   </article>
 </div>

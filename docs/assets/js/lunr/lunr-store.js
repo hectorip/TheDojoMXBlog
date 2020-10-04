@@ -137,9 +137,9 @@ var store = [{
         "url": "https://blog.thedojo.mx/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1573540452/jacob-campbell-ri83DTadRto-unsplash_fb7xgx.jpg"
       },{
-        "title": "Inducción y Deducción según Polya",
+        "title": "Inducción y Deducción para desarrolladores de software",
         "excerpt":"Este es el tercer artículo acerca del libro “How to Solve It” de George Polya. Puedes ver los dos artículos anteriores aquí: Técnicas para resolver problemas Heurística Con este artículo cerraremos con las ideas que George Polya desarrolló para resolver problemas. Deducción Tratar de resolver problemas por deducción significa aplicar...","categories": [],
-        "tags": ["polya","problem-solving","how-to-solve-it"],
+        "tags": ["polya","problem-solving","how-to-solve-it","problemas","libros"],
         "url": "https://blog.thedojo.mx/2019/12/14/induccion-y-deduccion-segun-polya.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1575746191/verne-ho-0LAJfSNa-xQ-unsplash_prh7gv.jpg"
       },{
@@ -280,4 +280,10 @@ var store = [{
         "tags": ["go","apis","beego","gorilla-mux","gin-go","go-lang"],
         "url": "https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/v1594271709/CA5123E3-5CCD-4A32-A4D0-2DE9B27A13E8_pfxvrn.jpg"
+      },{
+        "title": "Algunas ideas sobre la resolución de problemas",
+        "excerpt":"En este artículo veremos algunas de las ideas que George Polya presenta en su libro How to Solve It sobre la resolución de problemas. Estas ideas son sacadas del apartado “Aforismos y citas”, esperemos que pueda ayudar mejorar tus habilidades de resolución de problemas o que te saque del bache...","categories": [],
+        "tags": ["polya","how-to-solve-it","problemas","resolución","heurística"],
+        "url": "https://blog.thedojo.mx/2020/10/04/algunas-ideas-sobre-la-resolucion-de-problemas.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726004/FD195E45-0206-4229-AFC7-11E7AD35DB9C_fbjqje.jpg"
       }]
