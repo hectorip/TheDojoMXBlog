@@ -17,14 +17,16 @@ algoritmos criptográficos que existen, sus características y sus principales d
 
 ## Cifrado Simétrico
 
-Empecemos hablando de los algoritmos que requieren una sóla llave (privada o que hay que mantener secreta), para funcionar: los cifrados simétricos.
+Empecemos hablando de los algoritmos que requieren una sola llave (privada o que hay que mantener secreta), para funcionar: los cifrados simétricos.
 
 ### Cifrados de Bloque
 
+Los cifrados de bloque funcionan como su nombre lo dice: rompe el contenido a cifrar en bloques del mismo tamaño y mediante una combinación de estos bloques (modo de operación) genera el cifrado final.
+
 ### Cifrados de Flujo
 
-## Cifrado Asimétrico
 
+## Cifrado Asimétrico
 
 
 ## Hasheo
