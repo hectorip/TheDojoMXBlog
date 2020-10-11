@@ -1,5 +1,5 @@
 ---
-title: "Tipos de algoritmos criptográficos"
+title: "Tipos de algoritmos criptográficos: cifrados de Bloque"
 date: 2020-10-06
 author: Héctor Patricio
 tags:
@@ -23,11 +23,6 @@ Empecemos hablando de los algoritmos que requieren una sola llave (privada o que
 
 Los cifrados de bloque funcionan como su nombre lo dice: rompe el contenido a cifrar en bloques del mismo tamaño y mediante una combinación de estos bloques (modo de operación) genera el cifrado final.
 
-### Cifrados de Flujo
+Algunos ejemplos de estos algoritmos de cifrado son el DES (Estadounidense), GOST 28147-89 y el actual **AES**.
 
-
-## Cifrado Asimétrico
-
-
-## Hasheo
-
+Un bloque cifrado es una _permutación pseudoaleatoria_ de bits, es decir un conjunto de bits que _parecen_ o son indistinguibles de bits generados completamente de manera aleatoria.
