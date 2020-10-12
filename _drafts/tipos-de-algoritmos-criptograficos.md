@@ -25,4 +25,6 @@ Los cifrados de bloque funcionan como su nombre lo dice: rompe el contenido a ci
 
 Algunos ejemplos de estos algoritmos de cifrado son el DES (Estadounidense), GOST 28147-89 y el actual **AES**.
 
-Un bloque cifrado es una _permutación pseudoaleatoria_ de bits, es decir un conjunto de bits que _parecen_ o son indistinguibles de bits generados completamente de manera aleatoria.
+Un bloque cifrado es una _permutación pseudoaleatoria_ de bits, es decir, un conjunto de bits que son indistinguibles de bits generados completamente de manera aleatoria. Es como si aventaras un montón de bits y dijeras que es es la salida de tu algoritmo.
+
+Esta propiedad evita que un atacante obtenga información sobre la información que fue cifrada.
