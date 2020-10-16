@@ -29,18 +29,13 @@ Esta propiedad evita que un atacante obtenga información sobre la información 
 
 Veamos algunos ejemplos de cifrados de bloque y sus características principales.
 
-
 ### DES
-
 
 ### Triple DES
 
-
 ### Serpent
 
-
 ### Twofish
-
 
 ### AES
 
