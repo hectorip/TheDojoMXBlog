@@ -1,4 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-10-05T23:58:27-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Algunas ideas sobre la resolución de problemas</title><link href="https://blog.thedojo.mx/2020/10/04/algunas-ideas-sobre-la-resolucion-de-problemas.html" rel="alternate" type="text/html" title="Algunas ideas sobre la resolución de problemas" /><published>2020-10-04T00:00:00-05:00</published><updated>2020-10-04T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/10/04/algunas-ideas-sobre-la-resolucion-de-problemas</id><content type="html" xml:base="https://blog.thedojo.mx/2020/10/04/algunas-ideas-sobre-la-resolucion-de-problemas.html">&lt;p&gt;En este artículo veremos algunas de las ideas que George Polya presenta en su libro &lt;a href=&quot;https://amzn.to/33qfw07&quot;&gt;How to Solve It&lt;/a&gt; sobre la resolución de problemas.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-10-19T23:36:59-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Orígenes de la deuda técnica</title><link href="https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica.html" rel="alternate" type="text/html" title="Orígenes de la deuda técnica" /><published>2020-10-19T00:00:00-05:00</published><updated>2020-10-19T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica.html">&lt;p&gt;Tuvimos una plática con &lt;strong&gt;Sagrario Meneses&lt;/strong&gt; sobre la &lt;strong&gt;deuda técnica&lt;/strong&gt; y cómo podemos atacarla. En este artículo te presentamos un pequeño resumen de lo que es y algunas experiencias sobre su manejo.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-la-deuda-técnica&quot;&gt;¿Qué es la deuda técnica?&lt;/h2&gt;
+
+&lt;p&gt;La definición corta de deuda técnica es: &lt;strong&gt;todo aquello que hace que el software sea más difícil de producir y seguir desarrollando&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;La deuda técnica es &lt;strong&gt;invisible&lt;/strong&gt; para los miembros no directamente relacionados con el desarrollo del proyecto y para los que participan en ellos, no siempre es fácil de ver.&lt;/p&gt;
+
+&lt;p&gt;Esto incluye algunas cosas concretas como:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Los valores fijos que pueden cambiar en el futuro y en realidad deberían ser fáciles de cambiar sin tener que modificar el código (&lt;em&gt;hardcoding&lt;/em&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Falta de información: cuando nadie sabe sobre cómo trabaja cierta parte del sistema o qué hace cierta pieza de código&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Falta de distribución de información y conocimiento: cuando muy pocas personas saben sobre una parte del sistema y se convierten en cuello de botella&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Falta de diseño explícito&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Malas elecciones sobre diseño o tecnologías&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Mezcla de diseños y estilos de programación diferente sin guía&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Bugs que nadie conoce&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sagrario comparó la deuda técnica con &lt;strong&gt;deberle dinero a la mafia&lt;/strong&gt;: no la puedes negociar, y cuando te supera estás en grandes problemas. Así que más vale que la aprendamos a controlar porque la deuda técnica puede hacer colapsar tu sistema.&lt;/p&gt;
+
+&lt;h2 id=&quot;formas-de-hacer-visible-la-deuda-técnica&quot;&gt;Formas de hacer visible la deuda técnica&lt;/h2&gt;
+
+&lt;p&gt;Una forma que nos parece súper efectiva para hacer visible (literalmente) la deuda técnica: ponerlo en tablero de control en un espacio, idealmente, &lt;strong&gt;físico&lt;/strong&gt;, que esté a la vista tanto del equipo técnico como del equipo administrativo. Este tablero fosforescente recordará a todos que hay temas importantes que atender antes de que la mafia venga a cobrarte.&lt;/p&gt;
+
+&lt;p&gt;En el caso de equipos remotos, el sustituto es un tablero de la herramienta de control que uses (Jira, Trello, Asana, Monday) que contenga temas importantes con respecto a las cosas que se pueden mejorar del sistema.&lt;/p&gt;
+
+&lt;p&gt;Finalmente, tus herramientas de desarrollo te pueden dar ideas valiosas de las cosas que tienes que mejorar de tu código:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Te ayudan a listar las tareas pendientes (TODO’s)&lt;/li&gt;
+  &lt;li&gt;Te advierten sobre posibles problemas de código&lt;/li&gt;
+  &lt;li&gt;Si tienes una guía de estilo configurada, te dan advertencias sobre este punto también.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;prácticas-para-evitarla-y-dominarla&quot;&gt;Prácticas para evitarla y dominarla&lt;/h2&gt;
+
+&lt;p&gt;Para poder reducir la deuda técnica hacen falta principalmente dos
+cosas:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Pruebas, &lt;strong&gt;principalmente unitarias&lt;/strong&gt;. Esto permitirá encontrar los errores más rápidamente, pero además refactorizar sin miedo.&lt;/li&gt;
+  &lt;li&gt;Lineamientos estrictos respecto a las acciones en el proyecto. Sagrario lo llamó &lt;em&gt;disciplina&lt;/em&gt;, es decir, tener reglas y los procesos necesarios para hacer que estas reglas sean seguidas.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;otros-temas&quot;&gt;Otros temas&lt;/h2&gt;
+
+&lt;p&gt;Finalmente, hablamos de otros temas como el rol de arquitecta de software que tiene en Linio. De esto podemos sacar dos cosas relevantes:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Aunque no se se sentía completamente lista para el puesto, aplicó para obtenerlo, y por eso está en una posición en la que está aprendiendo mucho. Sin miedo al éxito.&lt;/li&gt;
+  &lt;li&gt;A veces la ataca el síndrome del impostor, con el que siente que no pertenece allí, &lt;strong&gt;pero continua trabajando y estudiando&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Mantiene la humildad sabiendo que no por tener el “&lt;em&gt;título&lt;/em&gt;” es todopoderosa y ahora tiene autoridad sobre todos.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Disfrutamos mucho la plática con una experimentada desarrolladora de software que ha ido tomando nuevos roles y responsabilidades en la misma empresa, que también se ha ido transformando. Puedes aprender mucho de ella y de las preguntas que se hicieron en vivo:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/7E_xzjMwZMU&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="deuda-técnica" /><category term="arquitectura" /><category term="diseño-de-software" /><summary type="html">¿Qué es la deuda técnica y cómo podemos hacer para dominarla al máximo?</summary></entry><entry><title type="html">Algunas ideas sobre la resolución de problemas</title><link href="https://blog.thedojo.mx/2020/10/04/algunas-ideas-sobre-la-resolucion-de-problemas.html" rel="alternate" type="text/html" title="Algunas ideas sobre la resolución de problemas" /><published>2020-10-04T00:00:00-05:00</published><updated>2020-10-04T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/10/04/algunas-ideas-sobre-la-resolucion-de-problemas</id><content type="html" xml:base="https://blog.thedojo.mx/2020/10/04/algunas-ideas-sobre-la-resolucion-de-problemas.html">&lt;p&gt;En este artículo veremos algunas de las ideas que George Polya presenta en su libro &lt;a href=&quot;https://amzn.to/33qfw07&quot;&gt;How to Solve It&lt;/a&gt; sobre la resolución de problemas.&lt;/p&gt;
 
 &lt;p&gt;Estas ideas son sacadas del apartado “Aforismos y citas”, esperemos que pueda ayudar mejorar tus habilidades de resolución de problemas o que te saque del bache si te encuentras en uno.&lt;/p&gt;
 
@@ -963,125 +1037,4 @@ instrucciones de la computadora es el &lt;em&gt;engine o motor&lt;/em&gt;.&lt;/p
 
 &lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
 
-&lt;p&gt;Esto es lo básico que necesitamos entender de lo que hace un motor de JavaScript, el encargado de ejecutar el código. Pero no es suficiente contar con alguien que pueda correr el código, necesitamos además &lt;strong&gt;algo que nos proporcione el material para trabajar&lt;/strong&gt;, ya que los programas en general actúan sobre algo, u obtienen información de algún lado. Esto es el &lt;strong&gt;Runtime&lt;/strong&gt;, que explicaremos en el siguiente artículo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="js" /><category term="javascript" /><category term="compiladores" /><category term="javascript-engine" /><category term="v8" /><category term="chrome" /><summary type="html">Hablemos de qué es y cómo funciona un motor de Javascript.</summary></entry><entry><title type="html">Cursos certificados gratuitos</title><link href="https://blog.thedojo.mx/2020/05/16/cursos-certificados-gratuitos.html" rel="alternate" type="text/html" title="Cursos certificados gratuitos" /><published>2020-05-16T00:00:00-05:00</published><updated>2020-05-16T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/05/16/cursos-certificados-gratuitos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/05/16/cursos-certificados-gratuitos.html">&lt;p&gt;Debido a la emergencia sanitaria mundial, algunas universidades han liberado cursos
-que además de auditar, puedes cursar para obtener un &lt;strong&gt;cetificado&lt;/strong&gt;. Si quieres mejorar un poco tu perfil del LinkedIn aquí te ponemos unos cursos de tecnología que puedes tomar.&lt;/p&gt;
-
-&lt;h2 id=&quot;programación&quot;&gt;Programación&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/computer-programming-for-everyone-17488&quot;&gt;Computer Programming For Everyone&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/c-plus-plus-a?edocomorp=free-courses-high-school&quot;&gt;C++ For C Programmers&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/codeyourself-2938&quot;&gt;Code Yourself! An introduction to Programming&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/android-app-5719&quot;&gt;Build Your First Android App&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/aprogramar-2939&quot;&gt;¡A Programar! Una introducción a la programación&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/robotica-inicial-4659&quot;&gt;Robótica (para niños)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/computer-vision-basics&quot;&gt;Computer Vision Basics&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;ia-y-machine-learning&quot;&gt;IA y Machine Learning&lt;/h2&gt;
-
-&lt;h3 id=&quot;español&quot;&gt;Español&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/ai-for-everyone-es-13786&quot;&gt;IA para todos&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;inglés&quot;&gt;Inglés&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/datasciencemathskills-7745&quot;&gt;Data Scince Math Skills&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/machine-learning-business-professionals-13415&quot;&gt;Machine Learning for Business Professionals&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;cloud-computing&quot;&gt;Cloud Computing&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/cloud-computing-basics-18069&quot;&gt;Cloud Computing Basics&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/gcp-fundamentals-aws-8614&quot;&gt;Google Cloud Platform Fundamentals for AWS Professionals&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/aws-machine-learning-16924&quot;&gt;Getting Started with AWS Machine Learning&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/cloud-identity-10785&quot;&gt;Introduction to Cloud Identity&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/iiot-google-cloud-platform-12701&quot;&gt;Industrial IoT on Google Cloud Platform&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/developing-ai-applications-azure-17329&quot;&gt;Developing AI Applications on Azure&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/conversational-experiences-dialogflow-12529&quot;&gt;Building Conversational Experiences with Dialogflow&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/aws-computer-vision-gluoncv-17327&quot;&gt;AWS Computer Vision: Getting Started with GluonCV&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;matemáticas&quot;&gt;Matemáticas&lt;/h2&gt;
-
-&lt;h3 id=&quot;español-1&quot;&gt;Español&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.coursera.org/learn/estadistica-probabilidad&quot;&gt;Estadística y probabilidad (UNAM)&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/calculo-1-4231&quot;&gt;El Cálculo - Modelo Lineal&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/calculo-2-4226&quot;&gt;El Cálculo - Modelo Cuadrático&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/calculo-3-4284&quot;&gt;El Cálculo - Modelo Cúbico&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/calculo-4-4167&quot;&gt;El Cálculo - Otros Modelos&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;inglés-1&quot;&gt;Inglés&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/matlab&quot;&gt;Introduction to Matlab&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/datasciencemathskills-7745&quot;&gt;Data Scince Math Skills&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/introduccion-al-calculo-4225&quot;&gt;Pre-Calculus&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/introduction-to-calculus-12547&quot;&gt;Introduction to Calculus&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;diseño&quot;&gt;Diseño&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/design&quot;&gt;Design: Creation of Artifacts in Society&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/design-language-16927&quot;&gt;The Language of Design: Form and Meaning&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;otros-temas&quot;&gt;Otros temas&lt;/h2&gt;
-
-&lt;h3 id=&quot;español-2&quot;&gt;Español&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/pensamiento-sistemico-4332&quot;&gt;Pensamiento Sistémico&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/mindshift-transforma-mente-10619&quot;&gt;Mindshift: Transforma tu mente para superar obstáculos en el aprendizaje y descubrir tu potencial oculto&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/arte-publico-pedagogia-7196&quot;&gt;ART of the MOOC: Arte Público y Pedagogía&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/escritura-esp-13496&quot;&gt;Fundamentos de la Escritura&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/innovacion-734&quot;&gt;Desarrollo rápido de productos innovadores para mercados emergentes&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/hablar-bien-en-publico-10518&quot;&gt;Cómo hablar bien en público&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;inglés-2&quot;&gt;Inglés&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/teamwork-skills-effective-communication-9661&quot;&gt;Teamwork Skills: Communicating Effectively in Groups&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/personal-branding-4865&quot;&gt;Introduction to personal branding&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/understanding-arguments-6620&quot;&gt;Think Again I&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/market-analytics-4868&quot;&gt;Marketing Analytics&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/skills-management-11218&quot;&gt;Introduction to Skills Management&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/how-to-write-a-scientific-paper-5816&quot;&gt;How to Write and Publish a Scientific Paper&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.classcentral.com/course/emerging-technologies-lifelong-learning-10396&quot;&gt;Exploring Emerging Technologies for Lifelong Learning and Success&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.classcentral.com/course/making-architecture-7153&quot;&gt;MAking Architecture&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Puedes ver una lista actualizada de los cursos aquí: &lt;a href=&quot;https://www.classcentral.com/report/free-online-learning-coronavirus/&quot;&gt;Free Learning Due to Coronavirus&lt;/a&gt;. Es emocionante ver todo lo que se puede aprender si uno puede ponerle el tiempo necesario.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cursos" /><category term="aprendizaje" /><category term="programación" /><category term="matemáticas" /><category term="mooc" /><summary type="html">Es emocionante todo lo que se puede aprender en internet. Revisa algunos cursos que además te certifcan gratuitamente.</summary></entry></feed>
+&lt;p&gt;Esto es lo básico que necesitamos entender de lo que hace un motor de JavaScript, el encargado de ejecutar el código. Pero no es suficiente contar con alguien que pueda correr el código, necesitamos además &lt;strong&gt;algo que nos proporcione el material para trabajar&lt;/strong&gt;, ya que los programas en general actúan sobre algo, u obtienen información de algún lado. Esto es el &lt;strong&gt;Runtime&lt;/strong&gt;, que explicaremos en el siguiente artículo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="js" /><category term="javascript" /><category term="compiladores" /><category term="javascript-engine" /><category term="v8" /><category term="chrome" /><summary type="html">Hablemos de qué es y cómo funciona un motor de Javascript.</summary></entry></feed>
