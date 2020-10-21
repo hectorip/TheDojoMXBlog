@@ -11,13 +11,13 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Tuvimos una plática con **Sagrario Meneses** sobre la **deuda técnica** y cómo podemos atacarla. En este artículo te presentamos un pequeño resumen de lo que es y algunas experiencias sobre su manejo.
+Tuvimos una plática con [Sagrario Meneses](https://twitter.com/sagmmd) sobre la **deuda técnica** y cómo podemos atacarla. En este artículo te presentamos un pequeño resumen de lo que es y algunas experiencias sobre su manejo.
 
 ## ¿Qué es la deuda técnica?
 
-La definición corta de deuda técnica es: **todo aquello que hace que el software sea más difícil de producir y seguir desarrollando**.
+La definición corta de deuda técnica es: **todo aquello que hace que el software sea más difícil de producir y desarrollar**.
 
-La deuda técnica es **invisible** para los miembros no directamente relacionados con el desarrollo del proyecto y para los que participan en ellos, no siempre es fácil de ver.
+La deuda técnica es **invisible** para los miembros no directamente relacionados con el desarrollo del proyecto; para los que participan en ellos no siempre es fácil de ver.
 
 Esto incluye algunas cosas concretas como:
 
