@@ -37,9 +37,16 @@ Veamos algunos ejemplos de cifrados de bloque y sus características principales
 
 ### Twofish
 
+Uno de los autores de
+
 ### AES
 
-El **Adavanced Encryption Standard** (Estándar de cifrado avanzado).
+an unclassified, publicly disclosed encryption algorithm capable of protecting sensitive govern-
+ment information well into the next century,
+
+El **Adavanced Encryption Standard** (Estándar de cifrado avanzado), es en realidad un subconjunto de los cifrados posibles de otro algoritmo llamado [Rijndael](https://csrc.nist.gov/csrc/media/projects/cryptographic-standards-and-guidelines/documents/aes-development/rijndael-ammended.pdf) y que fue el ganador del concurso que la NIST hizo para seleccionar el nuevo algoritmo de cifrado estándar que sustituiría a DES.
+
+Rijndael fue creado por criptanalistas Belgas con objetivos claros: que fuera rápido y simple. Rijndael permite crear
 
 ### Modos de operación
 

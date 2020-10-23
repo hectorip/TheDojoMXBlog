@@ -39,7 +39,7 @@ Sagrario comparó la deuda técnica con **deberle dinero a la mafia**: no la pue
 
 ## Formas de hacer visible la deuda técnica
 
-Una forma que nos parece súper efectiva para hacer visible (literalmente) la deuda técnica: ponerlo en tablero de control en un espacio, idealmente, **físico**, que esté a la vista tanto del equipo técnico como del equipo administrativo. Este tablero fosforescente recordará a todos que hay temas importantes que atender antes de que la mafia venga a cobrarte.
+Una forma que nos parece súper efectiva para hacer visible (literalmente) la deuda técnica: ponerlo en tablero de control en un espacio, idealmente, **físico**, que esté a la vista tanto del equipo técnico como del equipo administrativo. Este tablero fosforescente recordará a todos que hay temas importantes para atender antes de que la mafia venga a cobrarte.
 
 En el caso de equipos remotos, el sustituto es un tablero de la herramienta de control que uses (Jira, Trello, Asana, Monday) que contenga temas importantes con respecto a las cosas que se pueden mejorar del sistema.
 
