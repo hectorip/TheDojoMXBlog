@@ -41,8 +41,7 @@ Uno de los autores de
 
 ### AES
 
-an unclassified, publicly disclosed encryption algorithm capable of protecting sensitive govern-
-ment information well into the next century,
+La NIST quería un algoritmo de cifrado dado a conocer públicamente "capaz de proteger la información sensible del gobierno por los próximos cien años".
 
 El **Adavanced Encryption Standard** (Estándar de cifrado avanzado), es en realidad un subconjunto de los cifrados posibles de otro algoritmo llamado [Rijndael](https://csrc.nist.gov/csrc/media/projects/cryptographic-standards-and-guidelines/documents/aes-development/rijndael-ammended.pdf) y que fue el ganador del concurso que la NIST hizo para seleccionar el nuevo algoritmo de cifrado estándar que sustituiría a DES.
 
