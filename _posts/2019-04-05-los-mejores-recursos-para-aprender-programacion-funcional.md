@@ -49,17 +49,17 @@ Este no es un curso acerca de programación funcional como tal, pero usa un leng
 
 ## Libros
 
-Un buen libro de introducción que recomiendo es [la antología de Pragmatic Programmers](https://pragprog.com/book/ppanth/functional-programming-a-pragpub-anthology) sobre porgramación funcional. En ella podrás encontrar un comprendio de 5 lenguajes funcionales y una prueba de los que es pogramar con ellos, así como la implementación de los conceptos principales. Los lenguajes que encontrarás son: Clojure, Elixir, Haskell, Scala, y Swift.
+Un buen libro de introducción que recomiendo es [la antología de Pragmatic Programmers](https://pragprog.com/book/ppanth/functional-programming-a-pragpub-anthology) sobre porgramación funcional. En ella podrás encontrar un compendio de 5 lenguajes funcionales y una prueba de los que es programar con ellos, así como la implementación de los conceptos principales. Los lenguajes que encontrarás son: Clojure, Elixir, Haskell, Scala, y Swift.
 
 A partir de ahí podrías, por las características de cada lenguaje, decidirte por uno y pasar a estudiar directamente ese lenguaje.
 
 ## Para programadores de JavaScript
 
-La progrmación de funcional está teniendo un fuerte empuje por la comunidad de JavaScript. Hay dos libros que son recomendamos para que aprendas a programar funcionalmente con lo que ya sabes de JavaScript:
+La programación de funcional está teniendo un fuerte empuje por la comunidad de JavaScript. Hay dos libros que son recomendamos para que aprendas a programar funcionalmente con lo que ya sabes de JavaScript:
 
 - [Functional Light JavaScript](https://github.com/getify/Functional-Light-JS), @getify, la misma persona detrás de los libros "You Don't Know JavaScript", explica una forma ligera de escribir programas funcionales sin obsesionarse con la pureza.
 
-- [JavaScript Allongé](https://leanpub.com/javascriptallongesix/read), en este libro, que el autor dice que es un libro acerca de cómo programar con funciones, se explican los conceptos más usados por la progrmación funcional, te ayuda a entender los conceptos más importantes dentro de JavaScript para manejar la funciones de manera correcta y poderosa.
+- [JavaScript Allongé](https://leanpub.com/javascriptallongesix/read), en este libro, que el autor dice que es un libro acerca de cómo programar con funciones, se explican los conceptos más usados por la programación funcional, te ayuda a entender los conceptos más importantes dentro de JavaScript para manejar la funciones de manera correcta y poderosa.
 
 ## El clásico
 
