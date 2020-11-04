@@ -43,9 +43,9 @@ Uno de los autores de
 
 La NIST quería un algoritmo de cifrado dado a conocer públicamente "capaz de proteger la información sensible del gobierno por los próximos cien años".
 
-El **Adavanced Encryption Standard** (Estándar de cifrado avanzado), es en realidad un subconjunto de los cifrados posibles de otro algoritmo llamado [Rijndael](https://csrc.nist.gov/csrc/media/projects/cryptographic-standards-and-guidelines/documents/aes-development/rijndael-ammended.pdf) y que fue el ganador del concurso que la NIST hizo para seleccionar el nuevo algoritmo de cifrado estándar que sustituiría a DES.
+El **Advanced Encryption Standard** (Estándar de cifrado avanzado), es en realidad un subconjunto de los cifrados posibles de otro algoritmo llamado [Rijndael](https://csrc.nist.gov/csrc/media/projects/cryptographic-standards-and-guidelines/documents/aes-development/rijndael-ammended.pdf) y que fue el ganador del concurso que la NIST hizo para seleccionar el nuevo algoritmo de cifrado estándar que sustituiría a DES.
 
-Rijndael fue creado por criptanalistas Belgas con objetivos claros: que fuera rápido y simple. Es una familia de cifrados que permiten cifrar bloques en múltiplos de 32 bits, desde 128 hasta 256 bits (128, 160, 192, 224, 256 bits) y lo mismo para las llaves.
+Rijndael fue creado por analistas criptográficos Belgas con objetivos claros: que fuera rápido y simple. Es una familia de cifrados que permiten cifrar bloques en múltiplos de 32 bits, desde 128 hasta 256 bits (128, 160, 192, 224, 256 bits) y lo mismo para las llaves.
 
 AES es Rijndael con bloques de **128 bits** y llaves que pueden ser de 128, 192 o 256 bits.
 
@@ -53,7 +53,7 @@ AES aplica internamente una misma operación múltiples veces dependiendo del ta
 
 Gracias al diseño concurrente de AES, es fácilmente paralelizable y puede implementarse muy eficientemente en hardware, de hecho los procesadores modernos normalmente traen lo traen implementado en sus circuitos y se puede es parte del conjunto de instrucciones del procesador.
 
-La seguridad de AES según ciertos criptanalistas está completamente rota _teóricamente_, ya que hay ataques que pueden romper el cifrado de 14 ciclos (los ciclos completos que hace el )
+La seguridad de AES según ciertos analistas criptográficos está completamente rota _teóricamente_, ya que hay ataques que pueden romper el cifrado de 14 ciclos (los ciclos completos que hace el )
 
 ### Modos de operación
 
