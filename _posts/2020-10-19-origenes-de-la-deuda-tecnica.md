@@ -11,7 +11,7 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Tuvimos una plática con [Sagrario Meneses](https://twitter.com/sagmmd) sobre la **deuda técnica** y cómo podemos atacarla. En este artículo te presentamos un pequeño resumen de lo que es y algunas experiencias sobre su manejo.
+Tuvimos una plática con [Sagrario Meneses](https://twitter.com/sagmmd) sobre la **deuda técnica** y cómo podemos atacarla. En este artículo te presentamos un pequeño resumen de lo que es y algunas sugerencias sobre su manejo.
 
 ## ¿Qué es la deuda técnica?
 
@@ -51,7 +51,7 @@ Finalmente, tus herramientas de desarrollo te pueden dar ideas valiosas de las c
 
 ## Prácticas para evitarla y dominarla
 
-Para poder reducir la deuda técnica hacen falta principalmente dos
+Para poder reducir la deuda técnica hacen falta dos
 cosas:
 
 1. Pruebas, **principalmente unitarias**. Esto permitirá encontrar los errores más rápidamente, pero además refactorizar sin miedo.
@@ -59,7 +59,7 @@ cosas:
 
 ## Otros temas
 
-Finalmente, hablamos de otros temas como el rol de arquitecta de software que tiene en Linio. De esto podemos sacar dos cosas relevantes:
+También, hablamos de otros temas como el rol de arquitecta de software que tiene en Linio. De esto podemos sacar dos cosas relevantes:
 
 1. Aunque no se se sentía completamente lista para el puesto, aplicó para obtenerlo, y por eso está en una posición en la que está aprendiendo mucho. Sin miedo al éxito.
 2. A veces la ataca el síndrome del impostor, con el que siente que no pertenece allí, **pero continua trabajando y estudiando**.
