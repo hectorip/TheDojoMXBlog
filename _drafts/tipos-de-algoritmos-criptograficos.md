@@ -53,7 +53,8 @@ AES aplica internamente una misma operación múltiples veces dependiendo del ta
 
 Gracias al diseño concurrente de AES, es fácilmente paralelizable y puede implementarse muy eficientemente en hardware, de hecho los procesadores modernos normalmente traen lo traen implementado en sus circuitos y se puede es parte del conjunto de instrucciones del procesador.
 
-La seguridad de AES según ciertos analistas criptográficos está completamente rota _teóricamente_, ya que hay ataques que pueden romper el cifrado de 14 ciclos (los ciclos completos que hace el )
+
+La seguridad de AES según ciertos criptanalistas (por ejemplo, los creadores de Twofish) está completamente rota _teóricamente_, ya que hay ataques que pueden romper el cifrado de 14 ciclos (los ciclos completos que hace la versión de la llave de 256 bits) con ciertas condiciones, con 2^176 operaciones (lo cuál es un ataque que no se puede llevar a la práctica fácilmente).
 
 ### Modos de operación
 
