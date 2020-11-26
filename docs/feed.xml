@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-11-04T11:12:54-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Orígenes de la deuda técnica</title><link href="https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica.html" rel="alternate" type="text/html" title="Orígenes de la deuda técnica" /><published>2020-10-19T00:00:00-05:00</published><updated>2020-10-19T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica.html">&lt;p&gt;Tuvimos una plática con &lt;a href=&quot;https://twitter.com/sagmmd&quot;&gt;Sagrario Meneses&lt;/a&gt; sobre la &lt;strong&gt;deuda técnica&lt;/strong&gt; y cómo podemos atacarla. En este artículo te presentamos un pequeño resumen de lo que es y algunas experiencias sobre su manejo.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-11-25T23:59:28-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Orígenes de la deuda técnica</title><link href="https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica.html" rel="alternate" type="text/html" title="Orígenes de la deuda técnica" /><published>2020-10-19T00:00:00-05:00</published><updated>2020-10-19T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica.html">&lt;p&gt;Tuvimos una plática con &lt;a href=&quot;https://twitter.com/sagmmd&quot;&gt;Sagrario Meneses&lt;/a&gt; sobre la &lt;strong&gt;deuda técnica&lt;/strong&gt; y cómo podemos atacarla. En este artículo te presentamos un pequeño resumen de lo que es y algunas sugerencias sobre su manejo.&lt;/p&gt;
 
 &lt;h2 id=&quot;qué-es-la-deuda-técnica&quot;&gt;¿Qué es la deuda técnica?&lt;/h2&gt;
 
@@ -50,7 +50,7 @@
 
 &lt;h2 id=&quot;prácticas-para-evitarla-y-dominarla&quot;&gt;Prácticas para evitarla y dominarla&lt;/h2&gt;
 
-&lt;p&gt;Para poder reducir la deuda técnica hacen falta principalmente dos
+&lt;p&gt;Para poder reducir la deuda técnica hacen falta dos
 cosas:&lt;/p&gt;
 
 &lt;ol&gt;
@@ -60,7 +60,7 @@ cosas:&lt;/p&gt;
 
 &lt;h2 id=&quot;otros-temas&quot;&gt;Otros temas&lt;/h2&gt;
 
-&lt;p&gt;Finalmente, hablamos de otros temas como el rol de arquitecta de software que tiene en Linio. De esto podemos sacar dos cosas relevantes:&lt;/p&gt;
+&lt;p&gt;También, hablamos de otros temas como el rol de arquitecta de software que tiene en Linio. De esto podemos sacar dos cosas relevantes:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Aunque no se se sentía completamente lista para el puesto, aplicó para obtenerlo, y por eso está en una posición en la que está aprendiendo mucho. Sin miedo al éxito.&lt;/li&gt;

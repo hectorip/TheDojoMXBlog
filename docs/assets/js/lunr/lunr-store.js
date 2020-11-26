@@ -288,7 +288,7 @@ var store = [{
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726004/FD195E45-0206-4229-AFC7-11E7AD35DB9C_fbjqje.jpg"
       },{
         "title": "Orígenes de la deuda técnica",
-        "excerpt":"Tuvimos una plática con Sagrario Meneses sobre la deuda técnica y cómo podemos atacarla. En este artículo te presentamos un pequeño resumen de lo que es y algunas experiencias sobre su manejo. ¿Qué es la deuda técnica? La definición corta de deuda técnica es: todo aquello que hace que el...","categories": [],
+        "excerpt":"Tuvimos una plática con Sagrario Meneses sobre la deuda técnica y cómo podemos atacarla. En este artículo te presentamos un pequeño resumen de lo que es y algunas sugerencias sobre su manejo. ¿Qué es la deuda técnica? La definición corta de deuda técnica es: todo aquello que hace que el...","categories": [],
         "tags": ["deuda-técnica","arquitectura","diseño-de-software"],
         "url": "https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1585958469/17CDCA65-B853-4433-AE63-AACCFF577A3B_ufg1pl.jpg"
