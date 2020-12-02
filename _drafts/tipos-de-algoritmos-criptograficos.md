@@ -33,6 +33,8 @@ Veamos algunos ejemplos de cifrados de bloque y sus características principales
 El **Data Encryption Standard** era el algoritmo que más se usaba en la década de los 90, lo suficientemente seguro para el poder de cómputo de aquel entonces.
 ### Serpent
 
+Este algoritmo fue uno de los finalistas en el concurso para el nuevo AES. Tiene la característica de ser más robusto que AES, pero mucho más lento.
+
 ### Twofish
 
 Uno de los autores de
