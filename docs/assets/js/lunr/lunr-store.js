@@ -292,4 +292,10 @@ var store = [{
         "tags": ["deuda-técnica","arquitectura","diseño-de-software"],
         "url": "https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1585958469/17CDCA65-B853-4433-AE63-AACCFF577A3B_ufg1pl.jpg"
+      },{
+        "title": "Tipos de algoritmos criptográficos: cifrados de bloque",
+        "excerpt":"Ya hablamos de lo que es la criptografía, ahora empecemos a hablar de los tipos de algoritmos criptográficos que existen, sus características y sus principales diferencias. En este artículo hablaremos de los cifrados de bloque. ¿Qué es un cifrado de bloque? Los cifrados de bloque trabajan sobre un conjunto de...","categories": [],
+        "tags": ["cryptografía","cryptography","aes","des","3-des","serpent"],
+        "url": "https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1438/v1606978976/snapbuilder_2_ba3zxt.png"
       }]

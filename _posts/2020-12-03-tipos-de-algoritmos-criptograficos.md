@@ -1,13 +1,13 @@
 ---
-title: "Tipos de algoritmos criptográficos: cifrados de Bloque"
-date: 2020-11-26
+title: "Tipos de algoritmos criptográficos: cifrados de bloque"
+date: 2020-12-03
 author: Héctor Patricio
-tags:
+tags: cryptografía cryptography aes des 3-des serpent
 comments: true
 excerpt: "¿Sabes que es un cifrado de bloque? En este artículo hablamos de eso y te damos algunos ejemplos."
 header:
-  overlay_image: #image
-  teaser: #image
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1438/v1606978976/snapbuilder_2_ba3zxt.png
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1438/v1606978976/snapbuilder_2_ba3zxt.png
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -58,7 +58,26 @@ Como finalistas del concurso de la NIST hay otros algoritmos que vale la pena me
 
 1. **Serpent.** Es un algoritmo de cifrado de bloque que está pensado completamente para ser resistente. Aplicaca una operación repetidamente (rounds) pero a diferencia de AES la aplica 32 veces. Los criptanalistas han logrado romper 12 de esos 32 rounds, por lo que se piensa que tiene bastante espacio de reserva para continuar siendo seguro. La desventaja contra AES es que es 3 veces más lento.
 
-2.
+2. **TwoFish.** Este algoritmo tiene una construcción parecida a DES, y aplica su operación básica 16 veces. Los autores del algoritmo mencionan que es casi tan rápido como AES pero ofreciendo más margen de seguridad.
+
 ### Modos de operación
 
-Un modo de operación es la forma en que se aplica un cifrado de bloque a un texto no cifrado que no es del tamaño exacto del bloque.
+Un modo de operación es la forma en que se aplica un cifrado de bloque a un texto no cifrado que no es del tamaño exacto del bloque. Existen diferentes técnicas para hacer hacer que un algoritmo que acepta bloques de tamaño fijo acepte bloques arbitrarios. Los más conocidos son:
+
+1. **Electronic Codebook (ECB)**. Este modo de operación parte el contenido en bloques del tamaño aceptado (rellenando los bits faltantes para hacer un múltiplo exacto) y manda cada bloque a cifrar de manera independiente. Este modo de operación está completamente prohibido si quieres hacer que tu programa sea seguro, ya que bloques en tu mensaje con el mismo contenido siempre dará el mismo resultado, dando pistas sobre la información subyacente a observadores meticulosos. **NO USES POR NINGÚN MOTIVO AES EN ECB**.
+
+2. **Cypher Block Chaining (CBC)**. Este modo de igual manera parte el contenido en bloques del tamaño aceptado, pero en vez de cifrar cada bloque independientemente cifra el resultado de aplicar la operación XOR con el resultado del bloque anterior. De esta manera "encadena" los bloques haciendo que cada bloque dependa de los anteriores. Para cifrar el primer bloque utiliza un valor inicial generado de manera aleatoria. Para descifrar el valor se tiene que pasar el valor inicial aleatorio junto con el texto cifrado.
+
+3. **Counter mode (CTR)**. En este modo de operación no se cifran los bloques de texto sino la combinación de un número de uso único (_nonce_) y un contador (de ahí su nombre). Después, ese cifrado se combina con un bloque del mensaje. El contador se aumenta en cada bloque del mensaje, mientras que el número de uso único sólo cambia entre cifrados de diferentes mensajes. El modo contador no requiere relleno, ya que la operación XOR se puede realizar con contenido de cualquier tamaño. Este es el modo de operación más rápido y elegante, pero es muy fácil de usar mal ya que la repetición de _nonces_ lo hace vulnerable.
+
+### Completado de bloques
+
+Los modos de operación ECB y CBC siguen requiriendo bloques del tamaño aceptado por el algoritmo, por lo que deben existir técnicas para completar mensajes que no sean del tamaño de un múltiplo del bloque. Hablaremos de dos:
+
+1. Relleno (_padding_). El padding completa el último bloque del contenido que no alcanza el tamaño requerido con bytes que representan el número de bytes que se están rellenando. Ejemplo: Si faltan 15 bytes para rellenar el mensaje agrega 15 bytes con el valor `0f`, si falta un sólo byte agrega un byte con `01`. Esta técnica sólo funciona para mensajes que construído de bytes completos. Puedes ver una especificación aquí: [RFC 5652](https://tools.ietf.org/html/rfc5652)
+
+2. Robo de texto cifrado (cyphertext stealing). Esta técnica es un poco más compleja pero más flexible. Consiste básicamente en tomar los bits faltantes para el último bloque del texto cifrado anterior y dejar los bits no usados de ese mismo mensaje como el último bloque cifrado. Es un poco más complicado que esto, pero la idea básica aquí está. La NIST menciona tres formas de implementarlo [aquí](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a-add.pdf).
+
+## ¿Qué algoritmo debería usar?
+
+La respuesta corta: AES con el mayor de tamaño de llave que tus recursos te permitan. Si tienes restricciones más fuertes de seguridad puedes pensar en TwoFish o Serpent, pero debes tener en cuenta que al no ser tan populares como AES puede que sus implementaciones en el lenguaje de programación de tu elección no estén disponibles o tengan vulnerabilidades no conocidas.

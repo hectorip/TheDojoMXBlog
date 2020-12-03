@@ -1,4 +1,89 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-11-25T23:59:28-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Orígenes de la deuda técnica</title><link href="https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica.html" rel="alternate" type="text/html" title="Orígenes de la deuda técnica" /><published>2020-10-19T00:00:00-05:00</published><updated>2020-10-19T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica.html">&lt;p&gt;Tuvimos una plática con &lt;a href=&quot;https://twitter.com/sagmmd&quot;&gt;Sagrario Meneses&lt;/a&gt; sobre la &lt;strong&gt;deuda técnica&lt;/strong&gt; y cómo podemos atacarla. En este artículo te presentamos un pequeño resumen de lo que es y algunas sugerencias sobre su manejo.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-12-03T01:04:55-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Tipos de algoritmos criptográficos: cifrados de bloque</title><link href="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html" rel="alternate" type="text/html" title="Tipos de algoritmos criptográficos: cifrados de bloque" /><published>2020-12-03T00:00:00-06:00</published><updated>2020-12-03T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html">&lt;p&gt;Ya hablamos de lo que es &lt;a href=&quot;/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html&quot;&gt;la criptografía&lt;/a&gt;, ahora empecemos a hablar de los tipos de
+algoritmos criptográficos que existen, sus características y sus principales diferencias. En este artículo hablaremos de los cifrados de bloque.&lt;/p&gt;
+
+&lt;h3 id=&quot;qué-es-un-cifrado-de-bloque&quot;&gt;¿Qué es un cifrado de bloque?&lt;/h3&gt;
+
+&lt;p&gt;Los cifrados de bloque trabajan sobre un conjunto de bits de tamaño fijo, produciendo un texto cifrado del mismo tamaño. Para cifrar datos de tamaño arbitrario como sucede en la vida real, se utiliza el algoritmo de cifrado de bloque combinado con diferentes técnicas llamadas &lt;strong&gt;Modos de Operación&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Algunos ejemplos de estos algoritmos de cifrado son el DES (Estadounidense), GOST 28147-89 (Ruso) y el actual &lt;strong&gt;AES&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Un bloque cifrado debe ser &lt;em&gt;permutación pseudo-aleatoria&lt;/em&gt; de bits, es decir, un conjunto de bits que sean &lt;em&gt;indistinguibles de bits generados completamente de manera aleatoria&lt;/em&gt;. Es como si aventaras un montón de bits y dijeras que esa es la salida de tu algoritmo.&lt;/p&gt;
+
+&lt;p&gt;Esta propiedad evita que un atacante obtenga información sobre el contenido del mensaje que fue cifrado.&lt;/p&gt;
+
+&lt;h2 id=&quot;ejemplos-de-cifrado-de-bloque&quot;&gt;Ejemplos de Cifrado de Bloque&lt;/h2&gt;
+
+&lt;p&gt;Veamos algunos ejemplos de cifrados de bloque y sus características principales. Algunos se usan mientras que otros ya cayeron en el olvido.&lt;/p&gt;
+
+&lt;h3 id=&quot;des-y-triple-des&quot;&gt;DES y Triple DES&lt;/h3&gt;
+
+&lt;p&gt;El &lt;strong&gt;Data Encryption Standard&lt;/strong&gt; era el algoritmo que más se usaba en la década de los 90, lo suficientemente seguro para el poder de cómputo de aquel entonces. Usa una llave de 56 bits y bloques de 64 bits. Debido a estas características, el poder de cómputo actual hace que sea demasiado fácil de romper con hardware decente, así que su uso está completamente desrecomendado. Por ejemplo, el tamaño de bloque hace que sea vulnerable a ataques de “codebook” en el que&lt;/p&gt;
+
+&lt;p&gt;Su sucesor, el Triple DES realiza tres veces el mismo proceso usando tres llaves diferentes, con un tamaño de llave de 168 bits. Esto evita que sea posible romperlo a base de fuerza bruta, pero este proceso provee sólamente una seguridad de 112 bits, por lo que se considera ineficiente (usas el cómputo de tres DES para obtener seguridad de una llave del doble de tamaño) y por lo tanto su uso no es recomendado también.&lt;/p&gt;
+
+&lt;h3 id=&quot;aes&quot;&gt;AES&lt;/h3&gt;
+
+&lt;p&gt;Debido a las visibles fallas de DES y triple DES, la NIST (National Institute of Standards and Technology de Estados Unidos) quería un algoritmo de cifrado que fuera dado a conocer públicamente y “capaz de proteger la información sensible del gobierno por los próximos cien años”.&lt;/p&gt;
+
+&lt;p&gt;El &lt;strong&gt;Advanced Encryption Standard&lt;/strong&gt; (Estándar de cifrado avanzado), es en realidad un subconjunto de los cifrados posibles de otro algoritmo llamado &lt;a href=&quot;https://csrc.nist.gov/csrc/media/projects/cryptographic-standards-and-guidelines/documents/aes-development/rijndael-ammended.pdf&quot;&gt;Rijndael&lt;/a&gt; y que fue el ganador del concurso que la NIST hizo para seleccionar el nuevo algoritmo de cifrado estándar que sustituiría a DES.&lt;/p&gt;
+
+&lt;p&gt;Rijndael fue creado por analistas criptográficos Belgas con objetivos claros: que fuera rápido y simple. Es una familia de cifrados que permiten cifrar bloques en múltiplos de 32 bits, desde 128 hasta 256 bits (128, 160, 192, 224, 256 bits). Las longitudes de llaves posibles son los mismos desde 128 hasta 256 bits.&lt;/p&gt;
+
+&lt;p&gt;AES es Rijndael con bloques de &lt;strong&gt;128 bits&lt;/strong&gt; y llaves que pueden ser de 128, 192 o 256 bits.&lt;/p&gt;
+
+&lt;p&gt;AES aplica internamente una misma operación múltiples veces dependiendo del tamaño de la llave, y esto le permite se más seguro aumentando el tamaño de la llave. Esto es lo que se conoce como los “rounds” de AES, usando 10 para llaves de 128 bits, 12 para 192 bits y 14 para 256 bits.&lt;/p&gt;
+
+&lt;p&gt;AES tiene un diseño de operaciones concurrentes, que es fácilmente paralelizable y puede implementarse muy eficientemente en hardware, de hecho los procesadores modernos normalmente lo traen implementado en sus circuitos, es parte del conjunto de instrucciones del procesador.&lt;/p&gt;
+
+&lt;p&gt;La seguridad de AES según ciertos criptanalistas (por ejemplo, los creadores de Twofish) está completamente rota &lt;em&gt;teóricamente&lt;/em&gt;, ya que hay ataques que pueden romper el cifrado de 14 ciclos (los ciclos completos que hace la versión de la llave de 256 bits) con ciertas condiciones, con 2^176 operaciones (lo cuál es un ataque que no se puede llevar a la práctica fácilmente).&lt;/p&gt;
+
+&lt;p&gt;Los ataques mencionados anteriormente no tienen nada de prácticos, es decir, no se pueden llevar a la realidad en entornos normales, por lo que no se piensa por ningún lado que la seguridad de AES está comprometida. Si necesitas un algoritmo de cifrado confiable y rápido, con AES no te puedes equivocar.&lt;/p&gt;
+
+&lt;h2 id=&quot;otros-algoritmos&quot;&gt;Otros algoritmos&lt;/h2&gt;
+
+&lt;p&gt;Como finalistas del concurso de la NIST hay otros algoritmos que vale la pena mencionar:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Serpent.&lt;/strong&gt; Es un algoritmo de cifrado de bloque que está pensado completamente para ser resistente. Aplicaca una operación repetidamente (rounds) pero a diferencia de AES la aplica 32 veces. Los criptanalistas han logrado romper 12 de esos 32 rounds, por lo que se piensa que tiene bastante espacio de reserva para continuar siendo seguro. La desventaja contra AES es que es 3 veces más lento.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;TwoFish.&lt;/strong&gt; Este algoritmo tiene una construcción parecida a DES, y aplica su operación básica 16 veces. Los autores del algoritmo mencionan que es casi tan rápido como AES pero ofreciendo más margen de seguridad.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;modos-de-operación&quot;&gt;Modos de operación&lt;/h3&gt;
+
+&lt;p&gt;Un modo de operación es la forma en que se aplica un cifrado de bloque a un texto no cifrado que no es del tamaño exacto del bloque. Existen diferentes técnicas para hacer hacer que un algoritmo que acepta bloques de tamaño fijo acepte bloques arbitrarios. Los más conocidos son:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Electronic Codebook (ECB)&lt;/strong&gt;. Este modo de operación parte el contenido en bloques del tamaño aceptado (rellenando los bits faltantes para hacer un múltiplo exacto) y manda cada bloque a cifrar de manera independiente. Este modo de operación está completamente prohibido si quieres hacer que tu programa sea seguro, ya que bloques en tu mensaje con el mismo contenido siempre dará el mismo resultado, dando pistas sobre la información subyacente a observadores meticulosos. &lt;strong&gt;NO USES POR NINGÚN MOTIVO AES EN ECB&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Cypher Block Chaining (CBC)&lt;/strong&gt;. Este modo de igual manera parte el contenido en bloques del tamaño aceptado, pero en vez de cifrar cada bloque independientemente cifra el resultado de aplicar la operación XOR con el resultado del bloque anterior. De esta manera “encadena” los bloques haciendo que cada bloque dependa de los anteriores. Para cifrar el primer bloque utiliza un valor inicial generado de manera aleatoria. Para descifrar el valor se tiene que pasar el valor inicial aleatorio junto con el texto cifrado.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Counter mode (CTR)&lt;/strong&gt;. En este modo de operación no se cifran los bloques de texto sino la combinación de un número de uso único (&lt;em&gt;nonce&lt;/em&gt;) y un contador (de ahí su nombre). Después, ese cifrado se combina con un bloque del mensaje. El contador se aumenta en cada bloque del mensaje, mientras que el número de uso único sólo cambia entre cifrados de diferentes mensajes. El modo contador no requiere relleno, ya que la operación XOR se puede realizar con contenido de cualquier tamaño. Este es el modo de operación más rápido y elegante, pero es muy fácil de usar mal ya que la repetición de &lt;em&gt;nonces&lt;/em&gt; lo hace vulnerable.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;completado-de-bloques&quot;&gt;Completado de bloques&lt;/h3&gt;
+
+&lt;p&gt;Los modos de operación ECB y CBC siguen requiriendo bloques del tamaño aceptado por el algoritmo, por lo que deben existir técnicas para completar mensajes que no sean del tamaño de un múltiplo del bloque. Hablaremos de dos:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Relleno (&lt;em&gt;padding&lt;/em&gt;). El padding completa el último bloque del contenido que no alcanza el tamaño requerido con bytes que representan el número de bytes que se están rellenando. Ejemplo: Si faltan 15 bytes para rellenar el mensaje agrega 15 bytes con el valor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0f&lt;/code&gt;, si falta un sólo byte agrega un byte con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;01&lt;/code&gt;. Esta técnica sólo funciona para mensajes que construído de bytes completos. Puedes ver una especificación aquí: &lt;a href=&quot;https://tools.ietf.org/html/rfc5652&quot;&gt;RFC 5652&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Robo de texto cifrado (cyphertext stealing). Esta técnica es un poco más compleja pero más flexible. Consiste básicamente en tomar los bits faltantes para el último bloque del texto cifrado anterior y dejar los bits no usados de ese mismo mensaje como el último bloque cifrado. Es un poco más complicado que esto, pero la idea básica aquí está. La NIST menciona tres formas de implementarlo &lt;a href=&quot;https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a-add.pdf&quot;&gt;aquí&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;qué-algoritmo-debería-usar&quot;&gt;¿Qué algoritmo debería usar?&lt;/h2&gt;
+
+&lt;p&gt;La respuesta corta: AES con el mayor de tamaño de llave que tus recursos te permitan. Si tienes restricciones más fuertes de seguridad puedes pensar en TwoFish o Serpent, pero debes tener en cuenta que al no ser tan populares como AES puede que sus implementaciones en el lenguaje de programación de tu elección no estén disponibles o tengan vulnerabilidades no conocidas.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cryptografía" /><category term="cryptography" /><category term="aes" /><category term="des" /><category term="3-des" /><category term="serpent" /><summary type="html">¿Sabes que es un cifrado de bloque? En este artículo hablamos de eso y te damos algunos ejemplos.</summary></entry><entry><title type="html">Orígenes de la deuda técnica</title><link href="https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica.html" rel="alternate" type="text/html" title="Orígenes de la deuda técnica" /><published>2020-10-19T00:00:00-05:00</published><updated>2020-10-19T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica.html">&lt;p&gt;Tuvimos una plática con &lt;a href=&quot;https://twitter.com/sagmmd&quot;&gt;Sagrario Meneses&lt;/a&gt; sobre la &lt;strong&gt;deuda técnica&lt;/strong&gt; y cómo podemos atacarla. En este artículo te presentamos un pequeño resumen de lo que es y algunas sugerencias sobre su manejo.&lt;/p&gt;
 
 &lt;h2 id=&quot;qué-es-la-deuda-técnica&quot;&gt;¿Qué es la deuda técnica?&lt;/h2&gt;
 
@@ -920,121 +1005,4 @@ En los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la 
 &lt;p&gt;Este campo del pensamiento es tan grande que no alcanzaría una vida para cubrirlo en su totalidad, pero podemos tener una idea general de los campos que abarca y si nos gusta, especializarnos en uno de ellos.&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;Este artículo está basado en el libro &lt;a href=&quot;https://mitpress.mit.edu/books/computational-thinking&quot;&gt;Computational Thinking&lt;/a&gt; de Peter J. Denning y Matti Tedre.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cs" /><category term="computational-thinking" /><category term="pensamiento-computacional" /><category term="libros" /><category term="mit" /><summary type="html">El pensamiento computacional ha sonado mucho en los medios últimamente. Hablemos de lo que es y todo lo que implica.</summary></entry><entry><title type="html">¿Qué es un engine de JavaScript?</title><link href="https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html" rel="alternate" type="text/html" title="¿Qué es un engine de JavaScript?" /><published>2020-05-17T00:00:00-05:00</published><updated>2020-05-17T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript</id><content type="html" xml:base="https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html">&lt;p&gt;Me llamó mucho la atención  la salida de &lt;a href=&quot;https://deno.land/v1&quot;&gt;Deno v1 esta semana&lt;/a&gt; y le quise echar un ojito. Pero desde la explicación que da inicialmente, no entiendo &lt;em&gt;exactamente&lt;/em&gt; lo que es y hace:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Aquí me surgió la pregunta: ¿Qué es un &lt;strong&gt;runtime&lt;/strong&gt; para JavaScript?&lt;/p&gt;
-
-&lt;p&gt;Pero para contestarla, antes tengo que entender &lt;strong&gt;qué es V8&lt;/strong&gt;. La respuesta es: un &lt;em&gt;engine&lt;/em&gt; o &lt;em&gt;motor&lt;/em&gt; de JavaScript. En este artículo explicaremos qué es y cómo funciona.&lt;/p&gt;
-
-&lt;h2 id=&quot;explicación-rápida&quot;&gt;Explicación rápida&lt;/h2&gt;
-
-&lt;p&gt;Puedes pensar en un engine o motor de JavaScript como en el programa encargado de correr el código de JavaScript. Todos los navegadores tienen uno:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Navegador&lt;/th&gt;
-      &lt;th&gt;Engine&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Chrome&lt;/strong&gt; y &lt;strong&gt;Opera&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://v8.dev/&quot;&gt;V8&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Firefox&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey&quot;&gt;SpiderMonkey&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Safari&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://trac.webkit.org/wiki/JavaScriptCore&quot;&gt;WebKit JSCore&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Edge&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://github.com/microsoft/ChakraCore&quot;&gt;Chakra&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Este, combinado con el motor web componen la mayor parte de un navegador. Los engines se pueden usar fuera de los navegadores para otras tareas, como en Deno o Node.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;El &lt;strong&gt;motor de JavaScript&lt;/strong&gt; es quien convierte tu código de JavaScript en código ejecutable por la máquina en la que va a correr.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;teoría-compilación-contra-interpretación&quot;&gt;Teoría: Compilación contra Interpretación&lt;/h2&gt;
-
-&lt;p&gt;Para correr un programa en cualquier lenguaje, hay que convertirlo en instrucciones que las computadoras puedan entender. Esto es el &lt;strong&gt;código máquina&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Los lenguajes compilados transforman todo el código &lt;strong&gt;antes de ejecutarlo&lt;/strong&gt;, por lo que pueden hacer optimizaciones generales para que el programa sea más eficiente.&lt;/p&gt;
-
-&lt;p&gt;Para que el programa compile tiene que estar libre de errores. Generalmente esa compilación lleva un poco de tiempo, que va creciendo dependiendo del tamaño y complejidad del programa. Los programas compilados pueden ser más eficientes en ejecución, pero cuesta más empezarlos a correr.&lt;/p&gt;
-
-&lt;p&gt;Los lenguajes interpretados van ejecutando &lt;strong&gt;línea por línea&lt;/strong&gt;, sentencia por sentencia. Por esto mismo no pueden hacer optimizaciones generales, pero es más fácil y rápido para el programador &lt;em&gt;empezar&lt;/em&gt; a ejecutarlos. Normalmente tienen un &lt;strong&gt;REPL&lt;/strong&gt; (Read - Eval - Print - Loop) que puede servir para jugar con ellos y hacer pruebas.&lt;/p&gt;
-
-&lt;p&gt;Se pude pensar que es &lt;em&gt;más fácil&lt;/em&gt; desarrollar en lenguajes interpretados que compilados, por lo que su desarrollo es &lt;em&gt;más rápido&lt;/em&gt;. Pero como los lenguajes compilados pueden hacer optimizaciones generales, son &lt;strong&gt;más eficientes&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;la-ejecución-de-javascript&quot;&gt;La ejecución de JavaScript&lt;/h2&gt;
-
-&lt;p&gt;JavaScript &lt;em&gt;nació&lt;/em&gt; como lenguaje &lt;strong&gt;interpretado&lt;/strong&gt;, para correr dentro del navegador Netscape. La idea principal de esto es que no necesitara de un paso de &lt;em&gt;compilación&lt;/em&gt; previa, entendida como la generación de un producto intermedio que sea ejecutable.&lt;/p&gt;
-
-&lt;p&gt;El encargado de esta “interpretación”, es decir, de convertir instrucciones de JavaScript en
-instrucciones de la computadora es el &lt;em&gt;engine o motor&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Pero los motores modernos de JavaScript están muy optimizados, la ejecución de JS puede a veces compararse con la de lenguajes completamente compilados. Y esto es gracias las optimizaciones de compilación en el momento de la ejecución: &lt;em&gt;just in time&lt;/em&gt; o &lt;strong&gt;JIT&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;En resumen: JavaScript dejó de de ser un lenguaje &lt;em&gt;puramente interpretado&lt;/em&gt; para convertirse en un lenguaje híbrido, con interpretación y compilado JIT. Se comporta como interpretado cuando un programador lo corre, pero el motor compila el código, produciendo algunas veces un producto intermedio (bytecode) que puede ser optimizado para que las siguientes ejecuciones sean mucho más rápidas.&lt;/p&gt;
-
-&lt;h2 id=&quot;las-etapas-de-un-motor-de-javascript&quot;&gt;Las etapas de un motor de JavaScript&lt;/h2&gt;
-
-&lt;p&gt;Ls principales etapas son:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Escaneo&lt;/strong&gt;. Convierte el texto del código que escribes en &lt;em&gt;tokens&lt;/em&gt;. Un token es un bloque de carácteres que tienen un significado sintáctico. Ejemplo: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x=33&lt;/code&gt; está compuesto por 3 tokens: Un identificador (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt;), un operador (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt;) y un número (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;33&lt;/code&gt;). Puedes irte por el hoyo del conejo si quieres entender como funciona el scanner de V8 aquí: &lt;a href=&quot;https://v8.dev/blog/scanner&quot;&gt;Blazingly fast parsing&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Parseo&lt;/strong&gt;. No encontré la palabra correcta para traducirlo, pero se puede entender como la ‘lectura’ de un texto que lo transforma en una estructura de datos. Esta fase convierte el conjunto de &lt;em&gt;tokens&lt;/em&gt; generados por el scanner en un Árbol de Sintaxis Abstracta (AST - Abstract Sintax Tree). Este árbol representa tu programa sintácticamente y se pasa a la siguiente fase de la compilación.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Interpretación&lt;/strong&gt;. En esta fase se toma el AST y se convierte en una primera versión de código que la máquina ya puede ejecutar, &lt;em&gt;sin optimizaciones&lt;/em&gt;. Genera además código intermedio (bytecode) que puede ser pasado a la siguiente etapa para optimizarlo. En V8 se llama &lt;a href=&quot;https://medium.com/dailyjs/understanding-v8s-bytecode-317d46c94775&quot;&gt;Ignition&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Optimización&lt;/strong&gt;. Esta parte es ejecutada por un compilador JIT, que analiza el código, cómo se comporta, los tipos de datos usados para crear una versión más optimizada en código máquina. Si las optimizaciones fallan, el bytecode sigue siendo ejecutado por el intérprete. En V8 se llama &lt;a href=&quot;https://v8.dev/docs/turbofan&quot;&gt;TurboFan&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Las últimas dos etapas son donde el código se ejecuta, una en forma de bytecode interpretado y la otra en forma de código máquina &lt;strong&gt;altamente eficiente y optimizado&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Aquí puedes ver un diagrama de la secuencia de operaciones de V8.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1589700777/1_ZIH_wjqDfZn6NRKsDi9mvA_wc08nl.png&quot; alt=&quot;Ejecución de un script de JavaScript&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;ejecución&quot;&gt;Ejecución&lt;/h2&gt;
-
-&lt;p&gt;Durante la ejecución, el motor de JavaScript debe mantener por lo menos dos cosas:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;La información de tu programa&lt;/li&gt;
-  &lt;li&gt;En qué parte del programa estamos&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Esto lo hace mediante dos espacios de memoria organizados específicamente para estas tareas:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;El &lt;strong&gt;Heap&lt;/strong&gt;. Encargado de mantener la información de las variables y todo otro dato ocupado por el programa.&lt;/li&gt;
-  &lt;li&gt;El &lt;strong&gt;Stack&lt;/strong&gt;. Encargado de llevar un registro de las llamadas a funciones y contextos de ejecución.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Además necesitamos a alguien que libere memoria para que nuestro programa no crezca infinitamente en la memoria y el &lt;em&gt;heap&lt;/em&gt; sea fácil de acceder. Esto es el &lt;strong&gt;garbage collector&lt;/strong&gt; o &lt;em&gt;recolector de basura&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Todo este proceso complejo se explica en mayor profundidad aquí: &lt;a href=&quot;https://deepu.tech/memory-management-in-v8/&quot;&gt;Visualizing memory management in V8 Engine&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Esto es lo básico que necesitamos entender de lo que hace un motor de JavaScript, el encargado de ejecutar el código. Pero no es suficiente contar con alguien que pueda correr el código, necesitamos además &lt;strong&gt;algo que nos proporcione el material para trabajar&lt;/strong&gt;, ya que los programas en general actúan sobre algo, u obtienen información de algún lado. Esto es el &lt;strong&gt;Runtime&lt;/strong&gt;, que explicaremos en el siguiente artículo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="js" /><category term="javascript" /><category term="compiladores" /><category term="javascript-engine" /><category term="v8" /><category term="chrome" /><summary type="html">Hablemos de qué es y cómo funciona un motor de Javascript.</summary></entry></feed>
+&lt;p&gt;Este artículo está basado en el libro &lt;a href=&quot;https://mitpress.mit.edu/books/computational-thinking&quot;&gt;Computational Thinking&lt;/a&gt; de Peter J. Denning y Matti Tedre.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cs" /><category term="computational-thinking" /><category term="pensamiento-computacional" /><category term="libros" /><category term="mit" /><summary type="html">El pensamiento computacional ha sonado mucho en los medios últimamente. Hablemos de lo que es y todo lo que implica.</summary></entry></feed>
