@@ -4,7 +4,7 @@ date: 2020-11-26
 author: Héctor Patricio
 tags:
 comments: true
-excerpt: "Escribe aquí un buen resumen de tu artículo"
+excerpt: "¿Sabes que es un cifrado de bloque? En este artículo hablamos de eso y te damos algunos ejemplos."
 header:
   overlay_image: #image
   teaser: #image
@@ -26,36 +26,39 @@ Esta propiedad evita que un atacante obtenga información sobre el contenido del
 
 ## Ejemplos de Cifrado de Bloque
 
-Veamos algunos ejemplos de cifrados de bloque y sus características principales.
+Veamos algunos ejemplos de cifrados de bloque y sus características principales. Algunos se usan mientras que otros ya cayeron en el olvido.
 
 ### DES y Triple DES
 
-El **Data Encryption Standard** era el algoritmo que más se usaba en la década de los 90, lo suficientemente seguro para el poder de cómputo de aquel entonces.
-### Serpent
+El **Data Encryption Standard** era el algoritmo que más se usaba en la década de los 90, lo suficientemente seguro para el poder de cómputo de aquel entonces. Usa una llave de 56 bits y bloques de 64 bits. Debido a estas características, el poder de cómputo actual hace que sea demasiado fácil de romper con hardware decente, así que su uso está completamente desrecomendado. Por ejemplo, el tamaño de bloque hace que sea vulnerable a ataques de "codebook" en el que
 
-Este algoritmo fue uno de los finalistas en el concurso para el nuevo AES. Tiene la característica de ser más robusto que AES, pero mucho más lento.
-
-### Twofish
-
-Uno de los autores de
+Su sucesor, el Triple DES realiza tres veces el mismo proceso usando tres llaves diferentes, con un tamaño de llave de 168 bits. Esto evita que sea posible romperlo a base de fuerza bruta, pero este proceso provee sólamente una seguridad de 112 bits, por lo que se considera ineficiente (usas el cómputo de tres DES para obtener seguridad de una llave del doble de tamaño) y por lo tanto su uso no es recomendado también.
 
 ### AES
 
-La NIST quería un algoritmo de cifrado dado a conocer públicamente "capaz de proteger la información sensible del gobierno por los próximos cien años".
+Debido a las visibles fallas de DES y triple DES, la NIST (National Institute of Standards and Technology de Estados Unidos) quería un algoritmo de cifrado que fuera dado a conocer públicamente y "capaz de proteger la información sensible del gobierno por los próximos cien años".
 
 El **Advanced Encryption Standard** (Estándar de cifrado avanzado), es en realidad un subconjunto de los cifrados posibles de otro algoritmo llamado [Rijndael](https://csrc.nist.gov/csrc/media/projects/cryptographic-standards-and-guidelines/documents/aes-development/rijndael-ammended.pdf) y que fue el ganador del concurso que la NIST hizo para seleccionar el nuevo algoritmo de cifrado estándar que sustituiría a DES.
 
-Rijndael fue creado por analistas criptográficos Belgas con objetivos claros: que fuera rápido y simple. Es una familia de cifrados que permiten cifrar bloques en múltiplos de 32 bits, desde 128 hasta 256 bits (128, 160, 192, 224, 256 bits) y lo mismo para las llaves.
+Rijndael fue creado por analistas criptográficos Belgas con objetivos claros: que fuera rápido y simple. Es una familia de cifrados que permiten cifrar bloques en múltiplos de 32 bits, desde 128 hasta 256 bits (128, 160, 192, 224, 256 bits). Las longitudes de llaves posibles son los mismos desde 128 hasta 256 bits.
 
 AES es Rijndael con bloques de **128 bits** y llaves que pueden ser de 128, 192 o 256 bits.
 
-AES aplica internamente una misma operación múltiples veces dependiendo del tamaño de la llave, y esto le permite se más seguro aumentando el tamaño de la llave.
+AES aplica internamente una misma operación múltiples veces dependiendo del tamaño de la llave, y esto le permite se más seguro aumentando el tamaño de la llave. Esto es lo que se conoce como los "rounds" de AES, usando 10 para llaves de 128 bits, 12 para 192 bits y 14 para 256 bits.
 
-Gracias al diseño concurrente de AES, es fácilmente paralelizable y puede implementarse muy eficientemente en hardware, de hecho los procesadores modernos normalmente traen lo traen implementado en sus circuitos y se puede es parte del conjunto de instrucciones del procesador.
-
+AES tiene un diseño de operaciones concurrentes, que es fácilmente paralelizable y puede implementarse muy eficientemente en hardware, de hecho los procesadores modernos normalmente lo traen implementado en sus circuitos, es parte del conjunto de instrucciones del procesador.
 
 La seguridad de AES según ciertos criptanalistas (por ejemplo, los creadores de Twofish) está completamente rota _teóricamente_, ya que hay ataques que pueden romper el cifrado de 14 ciclos (los ciclos completos que hace la versión de la llave de 256 bits) con ciertas condiciones, con 2^176 operaciones (lo cuál es un ataque que no se puede llevar a la práctica fácilmente).
 
+Los ataques mencionados anteriormente no tienen nada de prácticos, es decir, no se pueden llevar a la realidad en entornos normales, por lo que no se piensa por ningún lado que la seguridad de AES está comprometida. Si necesitas un algoritmo de cifrado confiable y rápido, con AES no te puedes equivocar.
+
+## Otros algoritmos
+
+Como finalistas del concurso de la NIST hay otros algoritmos que vale la pena mencionar:
+
+1. **Serpent.** Es un algoritmo de cifrado de bloque que está pensado completamente para ser resistente. Aplicaca una operación repetidamente (rounds) pero a diferencia de AES la aplica 32 veces. Los criptanalistas han logrado romper 12 de esos 32 rounds, por lo que se piensa que tiene bastante espacio de reserva para continuar siendo seguro. La desventaja contra AES es que es 3 veces más lento.
+
+2.
 ### Modos de operación
 
 Un modo de operación es la forma en que se aplica un cifrado de bloque a un texto no cifrado que no es del tamaño exacto del bloque.
