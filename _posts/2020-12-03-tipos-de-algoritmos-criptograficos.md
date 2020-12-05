@@ -30,7 +30,7 @@ Veamos algunos ejemplos de cifrados de bloque y sus características principales
 
 ### DES y Triple DES
 
-El **Data Encryption Standard** era el algoritmo que más se usaba en la década de los 90, lo suficientemente seguro para el poder de cómputo de aquel entonces. Usa una llave de 56 bits y bloques de 64 bits. Debido a estas características, el poder de cómputo actual hace que sea demasiado fácil de romper con hardware decente, así que su uso está completamente desrecomendado. Por ejemplo, el tamaño de bloque hace que sea vulnerable a ataques de "codebook" en el que
+El **Data Encryption Standard** era el algoritmo que más se usaba en la década de los 90, lo suficientemente seguro para el poder de cómputo de aquel entonces. Usa una llave de 56 bits y bloques de 64 bits. Debido a estas características, el poder de cómputo actual hace que sea demasiado fácil de romper con el suficiente poder computacional (2^56, el tamaño de la llave, no se considera seguro ya), así que su uso está completamente desrecomendado.
 
 Su sucesor, el Triple DES realiza tres veces el mismo proceso usando tres llaves diferentes, con un tamaño de llave de 168 bits. Esto evita que sea posible romperlo a base de fuerza bruta, pero este proceso provee sólamente una seguridad de 112 bits, por lo que se considera ineficiente (usas el cómputo de tres DES para obtener seguridad de una llave del doble de tamaño) y por lo tanto su uso no es recomendado también.
 
@@ -74,9 +74,9 @@ Un modo de operación es la forma en que se aplica un cifrado de bloque a un tex
 
 Los modos de operación ECB y CBC siguen requiriendo bloques del tamaño aceptado por el algoritmo, por lo que deben existir técnicas para completar mensajes que no sean del tamaño de un múltiplo del bloque. Hablaremos de dos:
 
-1. Relleno (_padding_). El padding completa el último bloque del contenido que no alcanza el tamaño requerido con bytes que representan el número de bytes que se están rellenando. Ejemplo: Si faltan 15 bytes para rellenar el mensaje agrega 15 bytes con el valor `0f`, si falta un sólo byte agrega un byte con `01`. Esta técnica sólo funciona para mensajes que construído de bytes completos. Puedes ver una especificación aquí: [RFC 5652](https://tools.ietf.org/html/rfc5652)
+1. Relleno (_padding_). Esta técnica completa el último bloque del contenido que no alcanza el tamaño requerido con bytes que comunican el número de bytes que se están rellenando. Ejemplo: Si faltan 15 bytes para rellenar el mensaje agrega 15 bytes con el valor `0f`, si falta un sólo byte agrega un byte con `01`. Esta técnica sólo funciona para mensajes que construído de bytes completos. Puedes ver una especificación aquí: [RFC 5652](https://tools.ietf.org/html/rfc5652)
 
-2. Robo de texto cifrado (cyphertext stealing). Esta técnica es un poco más compleja pero más flexible. Consiste básicamente en tomar los bits faltantes para el último bloque del texto cifrado anterior y dejar los bits no usados de ese mismo mensaje como el último bloque cifrado. Es un poco más complicado que esto, pero la idea básica aquí está. La NIST menciona tres formas de implementarlo [aquí](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a-add.pdf).
+2. Robo de texto cifrado (cyphertext stealing). Esta técnica es un poco más compleja pero más flexible. Consiste básicamente en tomar los bits que falten para el último bloque del texto cifrado anterior y dejar los bits no usados de ese mismo mensaje como el último bloque cifrado. Es un poco más complicado que esto, pero la idea básica aquí está. La NIST menciona tres formas de implementarlo [aquí](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a-add.pdf).
 
 ## ¿Qué algoritmo debería usar?
 

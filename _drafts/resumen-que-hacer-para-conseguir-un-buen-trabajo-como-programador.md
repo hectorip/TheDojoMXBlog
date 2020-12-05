@@ -3,13 +3,13 @@ title: "Resumen: Qué hacer para conseguir un buen trabajo como programador"
 date: 2020-06-02
 author: Héctor Patricio
 tags:
-categories: 
+categories:
 comments: true
 excerpt: "Escribe aquí un buen resumen de tu artículo"
 header:
   overlay_image: #image
   teaser: #image
-  overlay_filer: rgba(0, 0, 0, 0.5)
+  overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
 = ¿Qué hacer para conseguir un buen trabajo en tecnología?
@@ -54,7 +54,7 @@ es donde querías estar? ¿O en qué punto te diste cuenta?
 Libros:
 
 * Pragmatic Programmer
-* 
+*
 
 
 * Fundamentos
@@ -64,7 +64,7 @@ Pablo:
 
 * Presente en el aprendizaje - 5 why?
 * Ser crítico
-* Aprender - ser 
+* Aprender - ser
 
 Diego:
 
