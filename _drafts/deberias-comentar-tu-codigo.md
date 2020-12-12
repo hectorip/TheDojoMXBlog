@@ -24,8 +24,13 @@ Como desarrollador estarás de acuerdo que un sistema que no tiene la _suficient
 Los comentarios estarán ahí para
 
 ### Los comentarios son una buena herramienta de diseño
+
 ### El lenguaje de programación no es suficiente para expresar todo lo necesario
 
 ## ¿Cómo usar los comentarios para que sean valiosos?
 
 ### Has los comentarios primero
+
+### Crea comentarios acerca de la interfaz
+
+### Evita los comentarios sobre la implementación
