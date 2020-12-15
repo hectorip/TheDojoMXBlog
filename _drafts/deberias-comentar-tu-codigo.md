@@ -21,7 +21,9 @@ Como desarrollador estarás de acuerdo que un sistema que no tiene la _suficient
 
 ### Los comentarios te pueden ayudar en el futuro
 
-Los comentarios estarán ahí para
+Los comentarios estarán ahí para darte información y recordaste lo que hiciste, pero sobre todo _por qué_ lo hiciste. Recuerda que la mente humana busca la eficiencia máxima de recursos, por lo que es probable que elimine información que no ocupe inmediatemene y que no recuerdas a menudo, como por qué esa variable tenía el valor 730 y no otro.
+
+
 
 ### Los comentarios son una buena herramienta de diseño
 
