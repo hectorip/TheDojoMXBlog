@@ -6,8 +6,8 @@ tags: comments comentarios mantenibilidad código-mantenible ousterhout aposd
 comments: true
 excerpt: "Hay programadores que dice que los comentarios son un mal que se debería evitar al máximo posible. Aquí proponemos lo contrario: usa los comentarios correctamente para crear código mantenible."
 header:
-  overlay_image: #image
-  teaser: #image
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/v1608012314/snapbuilder_ykt2d6.png
+  teaser: https://res.cloudinary.com/hectorip/image/upload/v1608012314/snapbuilder_ykt2d6.png
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
