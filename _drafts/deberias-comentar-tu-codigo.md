@@ -11,14 +11,15 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Cuando se habla de comentarios, hay dos escuelas. La primera dice que debes usar los comentarios para clarificar lo que quisiste expresar con tu código, mientras que la segunda dice que deberías evitarlos al máximo y comentar tu código es algo innecesario que sólo expresa tu falta de habilidad para no hacer código lo suficientemente claro.
+Cuando hablamos de comentarios en el código, hay dos escuelas. La primera dice que debes usar los comentarios para **clarificar lo que quisiste expresar con tu código**, mientras que la segunda dice que deberías **evitarlos al máximo** y comentar tu código es un mal necesario que sólo expresa tu falta de habilidad para no hacer código lo suficientemente claro.
 
-¿A cuál de los dos consejos deberías hacerle caso? En este artículo explicaremos por qué creemos que deberías ver los comentarios como una **herramienta** necesaria y muy útil, y cómo usarlos para no caer en el extremo que ha llevado a ciertas personas a tener una mala actitud hacia ellos.
+¿A cuál de los dos consejos deberías hacerle caso? En este artículo explicaremos por qué creemos que deberías ver los comentarios como una **herramienta** necesaria, valiosa y muy útil, y cómo usarlos para no caer en el extremo que ha llevado a algunas personas a tener una mala actitud hacia ellos.
 
 ## Un sistema sin documentación esta incompleto
 
-Como desarrollador estarás de acuerdo que un sistema que no tiene la _suficiente_ calidad si carece de documentación, es decir, información acerca del sistema que comunique cosas como...
+Como desarrollador estarás de acuerdo que un sistema que no tiene la _calidad suficiente_ si carece de documentación, es decir, información acerca del sistema que comunique cosas como la razón de existir de ciertos módulos, valores y funciones.
 
+Si además, tienes que modificar este sistema, será una pesadilla entender todo lo que los programadores anteriores hicieron. Si tienes que _usar_ algo, es el mismo caso, estudiar el código para saber como usarlo.
 ### Los comentarios te pueden ayudar en el futuro
 
 Los comentarios estarán ahí para darte información y recordaste lo que hiciste, pero sobre todo _por qué_ lo hiciste. Recuerda que la mente humana busca la eficiencia máxima de recursos, por lo que es probable que elimine información que no ocupe inmediatemene y que no recuerdas a menudo, como por qué esa variable tenía el valor 730 y no otro.
