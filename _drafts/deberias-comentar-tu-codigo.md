@@ -22,12 +22,11 @@ Como desarrollador estarás de acuerdo que un sistema que no tiene la _calidad s
 Si además, tienes que modificar este sistema, será una pesadilla entender todo lo que los programadores anteriores hicieron. Si tienes que _usar_ algo, es el mismo caso, estudiar el código para saber como usarlo.
 ### Los comentarios te pueden ayudar en el futuro
 
-Los comentarios estarán ahí para darte información y recordaste lo que hiciste, pero sobre todo _por qué_ lo hiciste. Recuerda que la mente humana busca la eficiencia máxima de recursos, por lo que es probable que elimine información que no ocupe inmediatemene y que no recuerdas a menudo, como por qué esa variable tenía el valor 730 y no otro.
-
-
+Los comentarios estarán ahí para darte información y recordaste lo que hiciste, pero sobre todo **por qué** lo hiciste. Recuerda que la mente humana busca la eficiencia máxima de recursos, por lo que es probable que elimine información que no ocupe inmediatamente y que no recuerdas a menudo, como por qué esa variable tenía el valor 730 y no otro.
 
 ### Los comentarios son una buena herramienta de diseño
 
+John Ousterhout, en A Philosophy of Software Design recomienda **empezar** con los comentarios antes de programar.
 ### El lenguaje de programación no es suficiente para expresar todo lo necesario
 
 ## ¿Cómo usar los comentarios para que sean valiosos?
