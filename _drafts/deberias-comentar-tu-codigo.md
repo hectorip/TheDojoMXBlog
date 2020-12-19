@@ -29,6 +29,7 @@ Los comentarios estarán ahí para darte información y recordaste lo que hicist
 John Ousterhout, en A Philosophy of Software Design recomienda **empezar** con los comentarios antes de programar.
 ### El lenguaje de programación no es suficiente para expresar todo lo necesario
 
+Todos los lenguajes de programación están pensados para ser un subconjunto del lenguaje humano que elimine las ambigüedades, manteniendo el mayor poder expresivo posible. Esto nos lleva a sus limitantes: no puede
 ## ¿Cómo usar los comentarios para que sean valiosos?
 
 ### Has los comentarios primero
