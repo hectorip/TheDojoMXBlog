@@ -53,7 +53,7 @@ func main() {
 
 ### Tipado estático y fuerte
 
-Go es un lenguaje fuertemente tipado, lo cuál quiere implica varias cosas: 
+Go es un lenguaje fuertemente tipado, lo cuál quiere implica varias cosas:
 
 1. La declaración de variables implica el tipo de valor que estará asociado a esta instancia del nombre, por lo que no puede usarse para guardar otro tipo de valor. En Go no necesariamente se tiene que decir explícitamente el tipo de valor a usarse, puede ser inferido:
 
@@ -78,13 +78,14 @@ Pensado para sistemas muy grandes, justo como los desarrollados en Google, Go se
 Go tiene en su biblioteca estándar más de 100 paquetes y la comunidad de Go cada vez contribuye más paquetes. Go viene con la herramienta para la línea de comandos `go` que es fácil de usar para manejar proyectos creados con Go. La herramienta `go` nos ayuda a administrar nuestras dependencias: descargarlas, limpiarlas e instalarlas.
 
 ### Manejo de memoria
+
 Go tiene manejo automático de memoria, lo que quiere decir que tal como en Java o Python, no tienes que preocuparte de liberar la memoria manualmente. Sin embargo, esta característica lo hace poco práctico para sistemas que requieran tratamiento de datos en tiempo real demasiado fuerte y preciso.
 
 ## Concurrencia
 
 ![La mascota de Go haciendo el trabajo](https://res.cloudinary.com/hectorip/image/upload/v1567320490/Go-routines-gopher_vgcpbt.jpg)
 
-A esta característica decidimos dedicarle un poco más de espacio. Debido a que el mundo de la computación ha cambiado desde que se escribieron los primeros programas, en los que se contaba con un sólo procesador, el equipo de Go le dio gran importancia a la capacidad de **crear programas con un muy buen diseño concurrente**. Eventualmente estos programas podrían correr en paralelo aprovechando los sistemas de computación que existen actualmente, con múltiples procesadores.
+A esta característica decidimos dedicarle un poco más de espacio. Debido a que el mundo de la computación ha cambiado desde que se escribieron los primeros programas, en los que se contaba con sólo un procesador, el equipo de Go le dio gran importancia a la capacidad de **crear programas con un muy buen diseño concurrente**. Eventualmente estos programas podrían correr en _paralelo_ aprovechando los sistemas de computación que existen actualmente, con múltiples procesadores.
 
 Go permite crear procesos concurrente de manera muy sencilla:
 
@@ -94,28 +95,31 @@ go myFunc()
 
 ```
 
-Eso es todo. Go ejecutará la función `myFunc` de manera concurrente (se ejecuta de manera independiente al programa principal o a otras funciones concurrentes). Esto es una **gorutine**.
+Eso es todo. Go ejecutará la función `myFunc` de manera concurrente (se ejecuta de manera independiente al programa principal o a otras funciones concurrentes). Esto es una **goroutine**.
 
 Go soporta dos modelos de concurrencia:
 
 - **Comunicación de procesos secuenciales** (Communicating Sequential Processes - CSP), en la que cada proceso tiene sus propias variables, y se transfieren información entre ellos mediante mensajes. En el caso de Go es a través de *canales*.
-- **Multihilo con memoria compartida**. En este tipo de concurrencia todos los procesos escriben sobre el mismo espacio de memoria, es decir, comparten variables, pero debe haber algúna forma de coordinación entre ellos para que no choquen ni se bloqueen mutuamente al tomar un recurso.
 
-La concurrencia es uno de los puntos más fuertes de Go.
+- **Multi-hilo con memoria compartida**. En este tipo de concurrencia todos los procesos escriben sobre el mismo espacio de memoria, es decir, comparten variables, pero debe haber algúna forma de coordinación entre ellos para que no choquen ni se bloqueen mutuamente al tomar un recurso.
+
+**La concurrencia es uno de los puntos más fuertes de Go.**
 
 ## Ventajas de Go sobre otros lenguajes
 
-Hablemos de en qué casos querrías usar Go.
+Hablemos de en qué casos son buenos para usar Go.
 
 ### Eficiencia al correr
+
 Go no corre sobre ninguna máquina virtual. Crea ejecutables para los sistemas operativos a los que apunta, que contienen todo lo necesario para poder ejecutarse sin necesidad de tener algo instalado allí. Al ser compilado, Go es mucho más eficiente para correr que otros lenguajes interpretados, como JS, Python o Ruby. Consume menos memoria y su velocidad se acerca a la de C.
 
 ### Legibilidad
+
 Go fue pensado para ser _simple_. Sus estructuras, su sintaxis y su filosofía lo hacen fácil de leer y de aprender. Es cierto que no es tan legible como Python o Ruby, por ejemplo, pero es mucho más legible que otros lenguajes con características similares como C++ o Java.
 
-### Usable para los programadores
+### Usable
 
-Una de las promesas de Go desde el principio era poder hacer mucho con poco. Y es algo que cumple completamente. Su librería estándar está diseñada y construida por verdaderos titanes de la ingeniería del software, practicantes de esto por más tiempo que la vida de muchos de los que leerán este artículo. El siguiente ejemplo es un servidor web con una ruta, sin usar ningún framework o biblioteca extra, sino sólo la pura biblioteca estándar de Go.
+Una de las promesas de Go desde el principio era poder hacer mucho con poco. Y es algo que cumple completamente. Su librería estándar está diseñada y construida por verdaderos **titanes** de la ingeniería del software, practicantes de esto por más tiempo que la vida de muchos de los que leerán este artículo. El siguiente ejemplo es un servidor web con una ruta, sin usar ningún framework o biblioteca extra, sino la pura biblioteca estándar de Go.
 
 ```go
 package main
@@ -139,6 +143,7 @@ func HelloServer(w http.ResponseWriter, r *http.Request) {
 ## Desventajas
 
 ### Sistema de tipos
+
 Esta no es una desventaja como tal de Go, sino una creada por el ecosistema de desarrollo actual: al haber tantos lenguajes que hacen manejo de valores y tipos de dato automáticamente, al programar en _cualquier_ lenguaje tipado, incluyendo Go, muchos sienten que están desperdiciando su tiempo.
 
 ## Relativamente joven
@@ -175,4 +180,6 @@ Más adelante tendremos un artículo de por qué deberías aprender Rust.
 
 Go es un lenguaje relevante en 2019, 10 años después de haber nacido y lo seguirá siendo por muchos años, sobre todo por los proyectos ya desarrollados en él y las características de las que hablamos en este artículo. Aprenderlo te dará una herramienta más para desarrollar programas que valgan la pena y cumplan con lo esperado.
 
-Pero como [Shane Parrish](https://fs.blog/about/) dice: Go es "simple pero no fácil". Es sencillo empezar a programar con él, pero dominar sus conceptos requiere estudio y esfuerzo. Go se siente como una herencia de gente muy sabia haciendo un lenguaje para hacer cosas grandes. No te arrepentirás de aprenderlo.
+Pero como [Shane Parrish](https://fs.blog/about/) dice: Go es "simple pero no fácil". Es sencillo empezar a programar con él, pero dominar sus conceptos requiere estudio y esfuerzo.
+
+Go se siente como una herencia de **gente muy sabia haciendo un lenguaje para hacer cosas grandes**. No te arrepentirás de aprenderlo.
