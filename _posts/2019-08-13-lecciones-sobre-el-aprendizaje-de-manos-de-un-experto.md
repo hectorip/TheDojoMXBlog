@@ -26,7 +26,7 @@ Veamos los nueve principios necesarios para realizar tu propio proyecto de ultra
 
 ## 1: Meta-aprendizaje
 
-Podemos pensar en este principio como la etapa de planeación. Tienes que investigar cómo esto que quieres aprender lo han aprendido otras personas, que ruta de aprendizaje han seguido, cuáles eran sus conocimientos previos, cuánto les tomó, etc. Para esto puedes investigar en internet o incluso conseguir una entrevista con una persona que tenga los conocimientos que tú quieres.Todo lo que puedas obtener de esta información es útil.
+Podemos pensar en este principio como la etapa de planeación. Tienes que investigar cómo esto que quieres aprender lo han aprendido otras personas, qué ruta de aprendizaje han seguido, cuáles eran sus conocimientos previos, cuánto tiempo les tomó, etc. Para esto puedes investigar en internet o incluso conseguir una entrevista con una persona que tenga los conocimientos que tú quieres.Todo lo que puedas obtener de esta información es útil.
 
 También tienes que buscar y entender la estructura del tema que quieres aprender, los subtemas principales, cuáles son buenos recursos para aprender. Si encontraste un experto que te ayudara ya tienes cubierto gran parte de esto.
 
@@ -34,7 +34,7 @@ Es entonces que tienes que reunir todos los recursos posibles de aprendizaje y *
 
 ## 2: Enfoque
 
-Este principio establece que para poder aprender efectivamente antes tenemos que agudizar nuestra capacidad de concentrarnos en un tema. 
+Este principio establece que para poder aprender efectivamente antes tenemos que agudizar nuestra capacidad de concentrarnos en un tema.
 
 El enfoque puede trabajarse en tres momentos diferentes:
 
@@ -51,17 +51,17 @@ En el libro se dan sugerencias prácticas para poder mejorar en las tres etapas 
 
 > Aquel que puede ir a la fuente no va sólo por la jarra.
 
-Es bueno aprender cosas leyendo, pero es mucho mejor aprenderlas aplicando lo que leemos o practicando directamente. Si quieres aprender a programar tienes que crear programas reales que funcionen. Si quieres aprender un idioma tienes que hablar o comunicarte con otras personas en ese idioma. Haciendo esto aprenderás mucho más rápido de lo que harías sólamente leyendo libros que relaten la experiencia de otros, o usando Duolingo.
+Es bueno aprender cosas leyendo, pero es mucho mejor aprenderlas aplicando lo que leemos, practicando directamente. Si quieres aprender a programar tienes que crear programas reales que funcionen. Si quieres aprender un idioma tienes que hablar o comunicarte con otras personas en ese idioma. Haciendo esto aprenderás mucho más rápido de lo que harías sólamente leyendo libros que relaten la experiencia de otros, o usando Duolingo.
 
-Practicar la habilidad directamente o poner en acción el conocimiento hará que este sea más profundo, útil y que lo recuerdes mejor.
+Practicar la habilidad directamente o **poner en acción el conocimiento** hará que este sea más profundo, útil y que lo recuerdes mejor.
 
 Este principio es muy importante y muchos de nosotros lo hemos vivido en nuestra experiencia escolar: nada de lo que no es enseñaron es aplicable en el mundo real porque las habilidades necesarias para realizar el trabajo de verdad son muy diferentes a lo que se ve en los libros. Aunque el conocimiento adquirido puede servir como base, **la práctica hace al maestro**.
 
 ## 4: Ensayo
 
-Esta parte es una de las que a las personas en general menos le gusta: practicar o ensayar partes de la habilidad que sean difíciles, laboriosas o aburridas.
+Esta parte es una de las que a las personas en general menos le gusta: **practicar o ensayar partes de la habilidad que sean difíciles, laboriosas o aburridas**.
 
-Muchas veces nuestras habilidades están topadas o detenidas por cierta parte del proceso, como si fuera un embudo deteniendo el flujo de líquido. Para acabar con esto hay que practicar con la parte más incómoda de la habilidad.
+Muchas veces nuestras habilidades están topadas o detenidas por cierta parte del proceso, como si fuera un embudo deteniendo el flujo de líquido. Para acabar con esto hay que practicar en la parte más incómoda de la habilidad.
 
 Esto incluye que descompongas la habilidad en diferentes sub-procesos que puedan ejecutarse individualmente y practicar cada uno por separado hasta que lo domines de manera razonable, uno tras otro, cada de los sub-procesos hasta terminarlos todos. Después hay que practicar de nuevo el proceso completo y medir nuestro desempeño.
 
@@ -126,13 +126,14 @@ En esta sección del libro se habla de cómo personas como Richard Feynman parec
 4. No te engañes a ti mismo. Cuando te falta conocimiento sobre un tema, generalmente también te falta conocimiento para saber qué tan hábil eres. Esto quiere decir que el que no tengas dudas sobre un tema significa que lo sabes todo, sino más bien que sabes muy poco. Hacer muchas preguntas es una manera de hacerle frente a este problema, aunque parezcan tontas.
 
 Una forma muy efectiva de desarrollar un entendimiento real: la técnica de Feynman. Esta consiste en intentar explicar el problema, solución o concepto de la manera más clara posible como para alguien que nunca ha visto nada relacionado con el tema.
+
 ## 9: Experimentación
 
 El verdadero conocimiento no se queda en llegar al punto en que otros te dijeron que debías llegar sino en ir más allá.
 
 Además, mientras más aprendas de algo menos guía podrás recibir ya que hay menos personas y recursos en ese nivel, por lo que es algo requerido aprender a experimentar con maneras de generar conocimiento.
- 
-Para experimentar en tu aprendizaje y resultados puedes intentar tres cosas: 
+
+Para experimentar en tu aprendizaje y resultados puedes intentar tres cosas:
 
 1. Variar los **recursos de aprendizaje**.
 2. Experimentar la **técnica de aprendizaje**.
@@ -150,9 +151,9 @@ Esta es una de las frases más inspiradoras del libro y creo que te da buenos mo
 - ¿Podrás ser más útil a tu familia, comunidad o amigos?
 - ¿Disfrutarás más de tu tiempo libre o tendrás más a consecuencia de esto?
 
-Sin duda todas estas razones son suficientes para intentarlo por lo menos. 
+Sin duda todas estas razones son suficientes para intentarlo por lo menos.
 
-> "Hacer cosas difíciles, sobre todo cosas que tienen que ver con aprender, puede crecer el concepto que tienes de ti mismo".
+> "Hacer cosas difíciles, sobre todo cosas que tienen que ver con aprender, puede hacer crecer el concepto que tienes de ti mismo".
 
 Esto a su vez, tendrá efectos en otros campos de tu vida.
 
