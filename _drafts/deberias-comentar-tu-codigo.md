@@ -38,4 +38,5 @@ Todos los lenguajes de programación están pensados para ser un subconjunto del
 
 ### Crea comentarios acerca de la interfaz
 
+La interfaz es el medio de uso que tus módulos o funciones presentan para que las demás partes de tu sistema lo usen. Lo primero que deberías documentar y explicar es esta interfaz, para que más personas a parte de ti puedan usar este pedazo de código.
 ### Evita los comentarios sobre la implementación
