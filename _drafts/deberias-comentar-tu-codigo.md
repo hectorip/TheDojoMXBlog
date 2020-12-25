@@ -39,4 +39,12 @@ Todos los lenguajes de programación están pensados para ser un subconjunto del
 ### Crea comentarios acerca de la interfaz
 
 La interfaz es el medio de uso que tus módulos o funciones presentan para que las demás partes de tu sistema lo usen. Lo primero que deberías documentar y explicar es esta interfaz, para que más personas a parte de ti puedan usar este pedazo de código.
+
+
 ### Evita los comentarios sobre la implementación
+
+Los comentarios sobre la implementación son aquello que describen _qué_ estas haciendo, como por ejemplo, sumar número, abrir un archivo, etc. Estos comentarios normalmente son innecesarios, ya que lo que se está haciendo es obvio si el código es lo suficientemente expresivo y siempre deberíamos buscar que sea así.
+
+De hecho, estos son los comentarios que hacen que la gente odie a los comentarios en general, pues en vez de proporcionar información extra son una carga que hay que mantener y pueden confundir si no son actualizados.
+
+Si realmente sientes que tienes que explicar _qué_ estás haciendo con cierta pieza de código, primero pregúntate si no hay una manera de reescribirlo para que sea obvio. Si no existe o no es práctica esta solución, entonces escribe el comentario de la manera más concisa posible, incluyendo la razón de la existencia de ese código.
