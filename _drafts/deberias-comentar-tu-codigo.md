@@ -38,7 +38,15 @@ Todos los lenguajes de programación están pensados para ser un subconjunto del
 
 ### Crea comentarios acerca de la interfaz
 
-La interfaz es el medio de uso que tus módulos o funciones presentan para que las demás partes de tu sistema lo usen. Lo primero que deberías documentar y explicar es esta interfaz, para que más personas a parte de ti puedan usar este pedazo de código.
+La interfaz es el **medio de uso** que tus módulos o funciones presentan para que las demás partes de tu sistema lo usen. Lo primero que deberías documentar y explicar es **esta interfaz**, para que más personas a parte de ti puedan usar este pedazo de código.
+
+Debes escribir comentarios claros sobre:
+
+* **Cómo usar esa pieza de código**
+* **Por qué existe esa parte del sistema**
+* **Qué efectos tiene usarla**
+
+Este tipo de comentarios son los que aportan mayor valor al sistema y si están lo suficientemente completos, con ejemplos y explicaciones claras, son una documentación válida que está en un muy buen lugar: es fácil de encontrar y no se va a perder enterrada entre otros documentes que después nadie va a consultar.
 
 
 ### Evita los comentarios sobre la implementación
