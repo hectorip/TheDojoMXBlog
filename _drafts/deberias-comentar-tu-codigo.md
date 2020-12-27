@@ -36,6 +36,10 @@ Todos los lenguajes de programación están pensados para ser un subconjunto del
 
 ### Has los comentarios primero
 
+Una de las partes más importantes de los comentarios como documentación es que deben ser concretos, cercanos a la realidad y que proporcionen la mayor cantidad de información útil posible.
+Para lograr esto, se tienen que crear lo más cerca que puedas a la creación del código. Pero como todos sabemos que después de escribir y probar (básicamente) el código vamos a sentir que ya está terminado, es buena práctica obligarte a escribirlos antes, justo como propone TDD con las pruebas.
+
+De esta manera te asegurarás que tu código esté documentado incluso antes de escribirlo y te servirán como una **herramienta de diseño** que te ayudará a pensar mejor en la usabilidad de tus módulos y piezas de software.
 ### Crea comentarios acerca de la interfaz
 
 La interfaz es el **medio de uso** que tus módulos o funciones presentan para que las demás partes de tu sistema lo usen. Lo primero que deberías documentar y explicar es **esta interfaz**, para que más personas a parte de ti puedan usar este pedazo de código.
