@@ -7,7 +7,7 @@ comments: true
 excerpt: "Hay programadores que dice que los comentarios son un mal que se debería evitar al máximo. Aquí proponemos lo contrario: usa los comentarios correctamente para crear código mantenible, basados en las "
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/v1608012314/snapbuilder_ykt2d6.png
-  teaser: https://res.cloudinary.com/hectorip/image/upload/v1608012314/snapbuilder_ykt2d6.png
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1608012314/snapbuilder_ykt2d6.png
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -37,7 +37,7 @@ En la práctica el tiempo y los recursos para lograr algo son limitados, por lo 
 
 ## ¿Cómo usar los comentarios para que sean valiosos?
 
-No todos los comentarios son valiosos, hablemos de algunas formas de aprovecharlos lo mejor posible para que contribuyan positivamente a aumentar la calidad del proyecto.
+No todos los comentarios son valiosos,  hay algunos que pueden estorbar más de lo que ayudan. Hablemos de algunas formas de aprovecharlos lo mejor posible para que contribuyan positivamente a aumentar la calidad del proyecto.
 
 ### Escribe los comentarios primero
 
@@ -58,7 +58,6 @@ Debes escribir comentarios claros sobre:
 * **Qué efectos tiene usarla**
 
 Este tipo de comentarios son los que aportan mayor valor al sistema y si están lo suficientemente completos, con ejemplos y explicaciones claras, son una documentación válida que está en un muy buen lugar: es fácil de encontrar y no se va a perder enterrada entre otros documentes que después nadie va a consultar.
-
 
 ### Evita los comentarios sobre la implementación
 
