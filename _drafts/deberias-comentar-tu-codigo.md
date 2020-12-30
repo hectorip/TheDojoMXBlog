@@ -11,15 +11,24 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Cuando hablamos de comentarios en el código, hay dos escuelas. La primera dice que debes usar los comentarios para **clarificar lo que quisiste expresar con tu código**, mientras que la segunda dice que deberías **evitarlos al máximo** y comentar tu código es un mal necesario que sólo expresa tu falta de habilidad para no hacer código lo suficientemente claro.
+Cuando hablamos de los comentarios en el código, hay dos escuelas. La primera dice que debes usar los comentarios para **clarificar lo que quisiste expresar con tu código**, mientras que la segunda dice que deberías **evitarlos al máximo** y que comentar tu código es un mal necesario que sólo denota tu falta de habilidad para no hacer código lo suficientemente claro.
 
 ¿A cuál de los dos consejos deberías hacerle caso? En este artículo explicaremos por qué creemos que deberías ver los comentarios como una **herramienta necesaria**, valiosa y muy útil, y cómo usarlos para no caer en el extremo que ha llevado a algunas personas a tener una mala actitud hacia ellos.
 
 ## Un sistema sin documentación esta incompleto
 
-Como desarrollador estarás de acuerdo que un sistema que no tiene la _calidad suficiente_ si no tiene documentación, es decir, información acerca del sistema que comunique cosas como la razón de existir de ciertos módulos, valores y funciones.
+Como desarrollador estarás de acuerdo en que un sistema **no** tiene la _calidad suficiente_ si no cuenta con documentación, es decir, información acerca del sistema que comunique cosas como la razón de existir de ciertos módulos, valores y funciones y cómo usarlos.
 
-Si, además, tienes que modificar este sistema, será una pesadilla entender todo lo que los programadores anteriores hicieron o intentaron hacer. Si tienes que _usar_ algo sin documentación, es el mismo caso: tienes estudiar el código para saber como usarlo.
+Si, además, tienes que modificar este sistema, será una pesadilla entender todo lo que los programadores anteriores hicieron o _intentaron_ hacer. Si tienes que _usar_ algo sin documentación, es el mismo caso: **tienes estudiar el código para saber como funciona.**
+
+Así que hemos establecido que la documentación es completamente necesaria para crear programas útiles. Ahora bien, ¿dónde ponemos esa documentación? Muchos desarrolladores y equipos no tienen idea de dónde ponerla y crean documentos que dejan después olvidados en una carpeta en la nube y que nadie encuentra después. Pero, ¿no sería más lógico mantener la documentación lo **más cerca posible del código**? Eso es precisamente lo que los comentarios te permiten hacer.
+
+Puedes usar los comentarios documentar:
+
+* Decisiones de diseño
+* Explicaciones sobre la existencia, funcionamiento o razón de ser de cierta parte del código
+* Las interfaces y su ejemplo de uso
+* Efectos de usar cierto código
 
 ### Los comentarios te pueden ayudar en el futuro
 
