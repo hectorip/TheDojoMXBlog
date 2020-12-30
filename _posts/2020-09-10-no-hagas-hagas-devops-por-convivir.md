@@ -7,7 +7,7 @@ comments: true
 excerpt: "En este artículo resumiremos una plática muy interesante que tuvimos con Domingo Suárez sobre DevOps y otras cosas."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1599714511/1CF0CA4A-211C-4310-9D85-0C49D92B014D_ymceki.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1599714511/1CF0CA4A-211C-4310-9D85-0C49D92B014D_ymceki.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1599714511/1CF0CA4A-211C-4310-9D85-0C49D92B014D_ymceki.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 

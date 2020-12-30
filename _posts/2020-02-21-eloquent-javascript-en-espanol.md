@@ -7,7 +7,7 @@ comments: true
 excerpt: "Traudcción del Eloquent JavaScript al español, 3ra edición"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582331007/24af113fe16c9bbc5aa1ef012758aac8_ytglzc.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582331007/24af113fe16c9bbc5aa1ef012758aac8_ytglzc.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1582331007/24af113fe16c9bbc5aa1ef012758aac8_ytglzc.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 

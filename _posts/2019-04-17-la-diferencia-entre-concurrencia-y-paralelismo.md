@@ -3,13 +3,13 @@ title: "La diferencia entre concurrencia y paralelismo"
 date: 2019-04-17
 author: Héctor Patricio
 tags: concurrencia paralelismo go elixir
-categories: 
+categories:
 comments: true
 excerpt: "Muchos programadores confunden la concurrencia con el paralelismo, aunque son conceptos que se relacionan, no son lo mismo"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1555480885/zhipeng-ya-348674-unsplash_lgerdr.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1555480885/zhipeng-ya-348674-unsplash_lgerdr.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1555480885/zhipeng-ya-348674-unsplash_lgerdr.jpg
 ---
 
 Los términos **concurrencia** y **paralelismo** siempre han sido relevantes en el entorno de la computación y desarrollo de software. Hablemos de la diferencia entre ellos y cómo podemos aplicarlos en nuestros programas.
@@ -113,7 +113,7 @@ Ahora hablemos de algunos ejemplos de programas concurrentes, de la vida real:
 
 2. **Servidor Web**. Los servidores web están diseñados para atender a muchos clientes (usuarios) dentro de un corto espacio de tiempo. Un servidor web está tratando con varios usuarios al mismo tiempo sin que necesariamente todas sus tareas se ejecuten simultáneamente: atiende a cada usuario en muy corto periodo de tiempo y pasarse al siguiente. Puede funcionar en paralelo si cuenta con los recursos computacionales suficiente. Se parece al ajedrecista, "juega" con muchos usuarios al mismo tiempo, dividiendo sus recursos por tiempo.
 
-3. **Navegador**. Un navegador web es un sistema naturalmente concurrente. Cada una las pestañas que tienes abiertas puede contar como una de las tareas con las que el pobre navegador web tiene que trabajar para mantenerte contento. No es necesario que esté corriendo el código de todas al mismo tiempo para funcionar, sino que usa métodos diversos para identificar exactamente qué debe estar ejecutando en cada instante. 
+3. **Navegador**. Un navegador web es un sistema naturalmente concurrente. Cada una las pestañas que tienes abiertas puede contar como una de las tareas con las que el pobre navegador web tiene que trabajar para mantenerte contento. No es necesario que esté corriendo el código de todas al mismo tiempo para funcionar, sino que usa métodos diversos para identificar exactamente qué debe estar ejecutando en cada instante.
 
 Algo que debemos hacer notar es que un sistema concurrente generalmente realiza _**más trabajo**_ que uno secuencial, ya que tiene que coordinar las diversas tareas independientes y la utilización de recursos. Para lograrlo, existen varias técnicas, llamadas [modelos de concurrencia](https://stackoverflow.com/questions/4153118/list-of-concurrency-models).
 
@@ -137,6 +137,6 @@ Por ejemplo, un sistema operativo es concurrente y aplica a diversas técnicas p
 
 La concurrencia permite aprovechar sistemas que permitan ejecución paralela para lograr la tarea a la mano más rápidamente.
 
-Saber crear sistemas concurrentes es una de las habilidades más importantes para un desarrollador moderno, independientemente del área en la que trabajes. 
+Saber crear sistemas concurrentes es una de las habilidades más importantes para un desarrollador moderno, independientemente del área en la que trabajes.
 
 Gran parte del contenido de este post fue extraído de esta charla: [Concurrency is not Parallelism](https://blog.golang.org/concurrency-is-not-parallelism).

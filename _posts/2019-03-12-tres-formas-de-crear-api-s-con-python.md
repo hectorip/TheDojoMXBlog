@@ -9,7 +9,7 @@ excerpt: "¿Vas a hacer una API? Aprende la mejor forma de hacer desde la más s
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1552198393/brian-patrick-tagalog-704059-unsplash_z3kdwg.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1552198393/brian-patrick-tagalog-704059-unsplash_z3kdwg.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1552198393/brian-patrick-tagalog-704059-unsplash_z3kdwg.jpg
 ---
 
 Es una tarea común para un desarrollador el diseñar e implementar una API web. Veremos tres herramientas para desarrollar tu API, de lo más sencillo a lo más completo: Hug, Flask y Django Rest Framework.

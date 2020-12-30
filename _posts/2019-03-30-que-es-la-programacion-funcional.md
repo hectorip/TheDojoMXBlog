@@ -3,13 +3,13 @@ title: "¿Qué es la programación funcional?"
 date: 2019-03-30
 author: Héctor Patricio
 tags: fp functional-programming programación-funcional elixir
-categories: 
+categories:
 comments: true
 excerpt: "¿Por qué se ha escuchado tanto de la programación funcional recientemente? En este artículo la explicamos de manera concisa."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1280/v1553485527/john-moeses-bauan-690280-unsplash_atpm3w.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1280/v1553485527/john-moeses-bauan-690280-unsplash_atpm3w.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1553485527/john-moeses-bauan-690280-unsplash_atpm3w.jpg
 ---
 
 En los últimos años ha estado cobrando relevancia (de nuevo) la **programación funcional**. ¿Qué diferencias tiene con los estilos más usados?
@@ -50,7 +50,7 @@ La primera función, `calcularIVA`, toma una variable que está fuera de ella pa
 * Modificar los datos que están afuera y saber exactamente a todo lo que vamos a afectar cuando el programa crezca es muy difícil.
 * Los más importante: **las funciones no dependen del contexto de ejecución, sólo de sus parámetros**.
 
-En cambio, la función `calcularIVAPura` es una función que no depende de valores que no sabemos de dónde vienen para trabajar. Tiene la característica de que siempre que la llamemos con los mismos argumentos, va a devolver el mismo valor. Tampoco modifica nada en el exterior. Cuando modifiquemos un valor sabemos exactamente a qué vamos a afectar. 
+En cambio, la función `calcularIVAPura` es una función que no depende de valores que no sabemos de dónde vienen para trabajar. Tiene la característica de que siempre que la llamemos con los mismos argumentos, va a devolver el mismo valor. Tampoco modifica nada en el exterior. Cuando modifiquemos un valor sabemos exactamente a qué vamos a afectar.
 
 Veamos ahora una a una de las ventajas que proporciona usar funciones puras.
 
@@ -101,11 +101,11 @@ En general en los lenguajes funcionales todo es una expresión, es decir: *cada 
 
 ### Existencia de funciones puras
 
-Al no permitir que un elemento externo modifique los valores que se han pasado, podemos estar seguros que los datos de la función permanecerán intactos. En lenguajes que permiten la modificación de los tipos de datos compuestos (diccionarios, listas, arrays o tuplas) es posible que alguien modifique un valor que se le pasó a la función sin que nos percatemos, pero la inmutabilidad lo previene. 
+Al no permitir que un elemento externo modifique los valores que se han pasado, podemos estar seguros que los datos de la función permanecerán intactos. En lenguajes que permiten la modificación de los tipos de datos compuestos (diccionarios, listas, arrays o tuplas) es posible que alguien modifique un valor que se le pasó a la función sin que nos percatemos, pero la inmutabilidad lo previene.
 
 ### Independencia de ejecución
 
-Tener valores que no van ser modificados por ninguna razón habilita la independencia de ejecución tanto en tiempo como en espacio. En tiempo de ejecución podemos mandar a ejecutar la función en otro procesador o máquina completamente diferente o diferir su ejecución hasta que sea necesario. 
+Tener valores que no van ser modificados por ninguna razón habilita la independencia de ejecución tanto en tiempo como en espacio. En tiempo de ejecución podemos mandar a ejecutar la función en otro procesador o máquina completamente diferente o diferir su ejecución hasta que sea necesario.
 
 ### Código legible y menos errores
 
@@ -136,7 +136,7 @@ a = 5
 5 = a
 ```
 
-La primera expresión puede parecer una asginación, pero en realidad, lo que está haciendo es "enlazar" el valor `5` a la variable recientemente creada, para hacer posible que tu aserción sea verdadera. 
+La primera expresión puede parecer una asginación, pero en realidad, lo que está haciendo es "enlazar" el valor `5` a la variable recientemente creada, para hacer posible que tu aserción sea verdadera.
 
 En el segundo caso en tiempo de ejecución el programa se limita a verificar que es verdad tu afirmación: si `a` tiene el valor `5`, el programa continuará sin ningún problema, pero si no, surgirá un error en tiempo de ejecución. El pattern matching funciona a nivel también de parámetros:
 
@@ -155,7 +155,7 @@ Cada clausula de la función entrará sólo si se manda a llamar a la función c
 ### Funciones de orden superior
 
 En realidad ya hablamos un poco de ellas. Una función de orden superior puede recibir funciones como parámetros (recuerda que la funciones a final de cuenta simplemente son otro tipo de valores inmutables) o regresar funciones como parámetros.
- 
+
 Un ejemplo en JavaScript:
 
 ```javascript

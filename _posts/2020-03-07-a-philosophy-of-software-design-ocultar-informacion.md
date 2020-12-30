@@ -7,7 +7,7 @@ comments: true
 excerpt: "Ocultar información es una de las claves para reducir la complejidad, veamos algunas maneras de lograrlo."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1800/v1583357998/IMG_3866_owfbzj.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1800/v1583357998/IMG_3866_owfbzj.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1583357998/IMG_3866_owfbzj.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -35,7 +35,7 @@ John Ousterhout sugiere hacerte la siguiente pregunta:
 
 Veamos un ejemplo de una fuga de información. Piensa en una aplicación en la que la principal tarea sea obtener el estado del clima y mostrarlo al usuario. Para esto usaremos una API que nos dará los datos y nosotros seremos los encargados de mostrarla.
 
-Una pieza de información importante para obtener el clima es ala ubicación. Considera que la API actual recibe el nombre de la ciudad para devolver las predicciones meteorológicas. 
+Una pieza de información importante para obtener el clima es ala ubicación. Considera que la API actual recibe el nombre de la ciudad para devolver las predicciones meteorológicas.
 
 Veamos dos diseños:
 

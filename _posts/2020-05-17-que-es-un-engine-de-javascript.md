@@ -7,7 +7,7 @@ comments: true
 excerpt: "Hablemos de qué es y cómo funciona un motor de Javascript."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1589701068/538FF576-00FA-4723-9142-920622E07743_djzuh4.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1589701068/538FF576-00FA-4723-9142-920622E07743_djzuh4.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1589701068/538FF576-00FA-4723-9142-920622E07743_djzuh4.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 

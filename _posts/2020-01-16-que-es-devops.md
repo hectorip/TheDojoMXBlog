@@ -7,7 +7,7 @@ comments: true
 excerpt: "Hablemos de qué es de DevOps y como puede beneficiar a tu empresa aplicarlo"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1579160215/serge-kutuzov-_Y-8SdEn-WI-unsplash_csauhr.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1579160215/serge-kutuzov-_Y-8SdEn-WI-unsplash_csauhr.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1579160215/serge-kutuzov-_Y-8SdEn-WI-unsplash_csauhr.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -114,7 +114,7 @@ Este paso depende de que los dos anteriores se hayan logrado, ya que requieren d
 
 ## Conclusión
 
-Estos pilares fundamentales de DevOps nos pueden ayudar entender las bases de la cultura, pero ponerlos en práctica no es fácil. El libro [Devops Handbook](https://amzn.to/3a91Bgl) explica qué otra prácticas se deben seguir y da consejos prácticos que permiten lograrlo. 
+Estos pilares fundamentales de DevOps nos pueden ayudar entender las bases de la cultura, pero ponerlos en práctica no es fácil. El libro [Devops Handbook](https://amzn.to/3a91Bgl) explica qué otra prácticas se deben seguir y da consejos prácticos que permiten lograrlo.
 
 Perfeccionar estas prácticas es algo que nunca se termina y lleva tiempo ver los resultados. Así que ¿qué esperas para empezar?
 

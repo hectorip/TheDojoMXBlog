@@ -7,7 +7,7 @@ comments: true
 excerpt: "Elixir es un lenguaje que deberías aprender por los superpedores que te da. Platiquemos más de ellos."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1559453195/luis-dille-1098834-unsplash_n7ntca.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1559453195/luis-dille-1098834-unsplash_n7ntca.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1559453195/luis-dille-1098834-unsplash_n7ntca.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 

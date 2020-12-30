@@ -7,7 +7,7 @@ comments: true
 excerpt: "Crear módulos o clases demasiado específicas puede llevar a tu código a ser difícil de mantener, veamos por qué te conviene crear módulos de propósito general."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726013/D750CDED-7745-4A56-8B3D-5CD33D2893E6_vqdgzb.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726013/D750CDED-7745-4A56-8B3D-5CD33D2893E6_vqdgzb.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1584726013/D750CDED-7745-4A56-8B3D-5CD33D2893E6_vqdgzb.jpg
   overlay_filter: rgba(0, 0, 0, 0.6)
 ---
 

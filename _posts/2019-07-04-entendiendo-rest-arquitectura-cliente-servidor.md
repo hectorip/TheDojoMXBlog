@@ -7,7 +7,7 @@ comments: true
 excerpt: "Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1260/v1562217908/krzysztof-kowalik-KiH2-tdGQRY-unsplash_v0vf7l.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1260/v1562217908/krzysztof-kowalik-KiH2-tdGQRY-unsplash_v0vf7l.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1562217908/krzysztof-kowalik-KiH2-tdGQRY-unsplash_v0vf7l.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -89,7 +89,7 @@ Cuando dividimos la aplicación y funciones completas en dos partes, aunque la c
 
 ### Centralización de la información
 
-El servidor es el responsable de almacenar la información y procesarla para darle servicio a los diferentes clientes que los soliciten, lo cual, aunque hace más fácil su administración, representa la desventaja de tener la información centralizada en el sistema que actúa como servidor. Si este sistema se corrompe de alguna forma, los clientes necesitan otras fuentes de información para eliminar este problema. 
+El servidor es el responsable de almacenar la información y procesarla para darle servicio a los diferentes clientes que los soliciten, lo cual, aunque hace más fácil su administración, representa la desventaja de tener la información centralizada en el sistema que actúa como servidor. Si este sistema se corrompe de alguna forma, los clientes necesitan otras fuentes de información para eliminar este problema.
 
 Combinar cliente-servidor con otra arquitecturas ayuda a mitigar esta falla. Por ejemplo, se puede implementar el patrón de replicación de repositorio en el lado de los proveedores de servicio.
 
@@ -124,7 +124,7 @@ En este patrón, la información pasa por una series de "filtros" o nodos que la
 
 > Los estilos arquitectónicos el diseño de un sistema deben adecuarse a las necesidades de ese sistema, no al revés. - Thomas Fielding
 
-¿A qué necesidades nos adaptamos? 
+¿A qué necesidades nos adaptamos?
 
 A la necesidad de tener una separación clara entre las funciones de datos y procesos de negocio y las interfaces de usuario: sean usuarios finales humanos u otros programas que consumen información.
 

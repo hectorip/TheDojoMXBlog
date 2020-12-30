@@ -10,7 +10,7 @@ comments: true
 excerpt: "Hemos escrito una lista de recursos que te pueden ayudar a aprender a programar en tiempo record."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1577598219/siora-photography-hgFY1mZY-Y0-unsplash_brzlus.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1577598219/siora-photography-hgFY1mZY-Y0-unsplash_brzlus.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1577598219/siora-photography-hgFY1mZY-Y0-unsplash_brzlus.jpg
   overlay_filter: rgba(0,0,0,0.5)
 ---
 

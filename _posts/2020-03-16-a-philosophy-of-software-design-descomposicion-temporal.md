@@ -7,7 +7,7 @@ comments: true
 excerpt: "Una forma de dejar escapar información es mediante forzar el orden de las operaciones de un módulo. Veamos cómo evitarlo."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584251653/A240034B-230E-4BA2-843D-32357D921811_mwdnzk.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584251653/A240034B-230E-4BA2-843D-32357D921811_mwdnzk.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1584251653/A240034B-230E-4BA2-843D-32357D921811_mwdnzk.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -25,11 +25,11 @@ La descomposición temporal implica repetir o separar una decisión de diseño p
 
 ## Ejemplos
 
-John Ousterhout menciona un ejercicio que puso a sus alumnos en el que tenían que crear un programa implementando el protocolo HTTP. 
+John Ousterhout menciona un ejercicio que puso a sus alumnos en el que tenían que crear un programa implementando el protocolo HTTP.
 
 Algunos equipos crearon una clase para recibir el mensaje desde la red y _otra clase para leerlo_, creando así un caso claro de descomposición temporal: como las operaciones sucedían en diferentes momentos (primero recibes y luego lees y procesas) los separaron lógicamente en dos clases que se usaban siempre una detrás de otra. La fuga de información se dio porque para recibir un paquete HTTP _tienes que leer_ parte del mensaje y entonces la lógica de lectura del mensaje está en _ambas clases_.
 
-Otro ejemplo más o menos obvio es la lectura y escritura de archivos. Si quieres trabajar con archivos, el orden de las operaciones es la siguiente: 
+Otro ejemplo más o menos obvio es la lectura y escritura de archivos. Si quieres trabajar con archivos, el orden de las operaciones es la siguiente:
 
 1. Abrir y leer
 2. Operar con información del archivo
@@ -79,9 +79,9 @@ Esto es un error que yo he cometido y que ha hecho mi código _muy difícil de m
 
 ## Solución a la descomposición temporal
 
-La solución propuesta por [A Philosophy of Software Design](https://amzn.to/2GdeHi5) es muy sencilla: **concentra todas las operaciones relacionadas con una decisión de diseño en un módulo**. 
+La solución propuesta por [A Philosophy of Software Design](https://amzn.to/2GdeHi5) es muy sencilla: **concentra todas las operaciones relacionadas con una decisión de diseño en un módulo**.
 
-Si nada necesita ser conocido fuera de este módulo (ni detalles de la implementación, ni el orden de operación), has logrado un diseño más limpio. Esto puede implicar que la clase se haga más grande, pero es una mejor solución comparada con tener información repartida por todos lados. 
+Si nada necesita ser conocido fuera de este módulo (ni detalles de la implementación, ni el orden de operación), has logrado un diseño más limpio. Esto puede implicar que la clase se haga más grande, pero es una mejor solución comparada con tener información repartida por todos lados.
 
 Así, si la decisión de diseño cambia, _sólo tienes que cambiar la implementación_ y no la interfaz ni mucho menos su uso.
 

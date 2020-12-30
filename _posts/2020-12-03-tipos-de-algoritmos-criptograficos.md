@@ -7,7 +7,7 @@ comments: true
 excerpt: "¿Sabes que es un cifrado de bloque? En este artículo hablamos de eso y te damos algunos ejemplos."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1438/v1606978976/snapbuilder_2_ba3zxt.png
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1438/v1606978976/snapbuilder_2_ba3zxt.png
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1606978976/snapbuilder_2_ba3zxt.png
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 

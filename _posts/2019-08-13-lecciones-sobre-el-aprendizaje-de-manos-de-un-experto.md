@@ -7,7 +7,7 @@ comments: true
 excerpt: "Todos queremos aprender muchas cosas. Aprende un método que te permitirá mejorar tus habilidades para adquirir conocimiento."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1565702060/annie-spratt-kZO9xqmO_TA-unsplash_swtrj6.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1565702060/annie-spratt-kZO9xqmO_TA-unsplash_swtrj6.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1565702060/annie-spratt-kZO9xqmO_TA-unsplash_swtrj6.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 

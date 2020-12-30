@@ -8,7 +8,7 @@ excerpt: "¿Cuántas veces te has enfrentado a problemas de los que no tienes ni
 George Polya escribió un libro completo sobre eso en 1928. Hablemos de las principales lecciones que podemos sacar."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1569549306/joel-filipe-187166-unsplash_b5p0hv.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1569549306/joel-filipe-187166-unsplash_b5p0hv.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1569549306/joel-filipe-187166-unsplash_b5p0hv.jpg
   overlay_filter: rgba(0, 0, 0, 0.7)
 ---
 

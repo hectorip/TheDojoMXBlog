@@ -7,7 +7,7 @@ comments: true
 excerpt: "Aprende las bases de la criptografía para tenerla en cuenta en tus programas."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1573540452/jacob-campbell-ri83DTadRto-unsplash_fb7xgx.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1573540452/jacob-campbell-ri83DTadRto-unsplash_fb7xgx.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1573540452/jacob-campbell-ri83DTadRto-unsplash_fb7xgx.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 toc: true
 ---

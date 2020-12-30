@@ -7,7 +7,7 @@ comments: true
 excerpt: "Hablemos de algunas ideas interesantes y prácticas sobre la resolución de problemas, que te pueden ayudar a salir de un bache contra un problema difícil."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726004/FD195E45-0206-4229-AFC7-11E7AD35DB9C_fbjqje.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584726004/FD195E45-0206-4229-AFC7-11E7AD35DB9C_fbjqje.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1584726004/FD195E45-0206-4229-AFC7-11E7AD35DB9C_fbjqje.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 

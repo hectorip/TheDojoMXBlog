@@ -7,7 +7,7 @@ comments: true
 excerpt: "Aprende a descubrir y medir la complejidad en tus proyectos"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582698547/scott-webb-186119-unsplash_hholsr.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1582698547/scott-webb-186119-unsplash_hholsr.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1582698547/scott-webb-186119-unsplash_hholsr.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -43,7 +43,7 @@ Aunque programas más cortos están relacionados con baja carga cognitiva, no si
 
 ## Desconocidos desconocidos
 
-¿Tienes miedo de cambiar algo porque no sabes lo que pueda pasar y no hay ni documentación a la que puedas referirte? En este caso el sistema tiene información **que no sabes que no sabes**. 
+¿Tienes miedo de cambiar algo porque no sabes lo que pueda pasar y no hay ni documentación a la que puedas referirte? En este caso el sistema tiene información **que no sabes que no sabes**.
 
 Un desconocido desconocido es aquella información que ni siquiera sabemos que estaba ahí y que no conocíamos, como algunas características del código, parámetros ocultos y comportamientos que no son fáciles de detectar ni están documentados.
 
@@ -58,7 +58,7 @@ Para determinar la complejidad se puede pensar en la siguiente fórmula.
 ![Fórmula para calcular la complejidad](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1581460560/Untitled_Artwork_3_oljybd.jpg)
 
 
-Esto lo podríamos explicar como: 
+Esto lo podríamos explicar como:
 
 > La complejidad total de un sistema es la sumatoria de la complejidad de cada una de sus partes multiplicada por el tiempo que los desarrolladores pasan en esa parte del código.
 

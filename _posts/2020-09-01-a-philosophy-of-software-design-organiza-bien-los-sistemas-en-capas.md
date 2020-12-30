@@ -7,7 +7,7 @@ comments: true
 excerpt: "Resuelve problemas de organización de código mediante un sistema en capas."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1598938866/96510D0F-CE11-46AB-9B3D-6EA0F8EA4C23_nfdcvu.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1598938866/96510D0F-CE11-46AB-9B3D-6EA0F8EA4C23_nfdcvu.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1598938866/96510D0F-CE11-46AB-9B3D-6EA0F8EA4C23_nfdcvu.jpg
   overlay_filter: "rgba(0, 0, 0, 0.5)"
 ---
 

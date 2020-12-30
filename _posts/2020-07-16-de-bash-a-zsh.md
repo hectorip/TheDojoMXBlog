@@ -7,7 +7,7 @@ comments: true
 excerpt: "Zsh es el nuevo shell default de MacOS Catalina. Entiende las principales diferencias entre Bash y Zsh."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1586794238/B29C980A-0E0F-444F-9F25-EFAB95FDBD4E_r9qk5v.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794238/B29C980A-0E0F-444F-9F25-EFAB95FDBD4E_r9qk5v.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1586794238/B29C980A-0E0F-444F-9F25-EFAB95FDBD4E_r9qk5v.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 

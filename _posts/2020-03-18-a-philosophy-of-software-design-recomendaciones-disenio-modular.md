@@ -7,7 +7,7 @@ comments: true
 excerpt: "Hablemos de algunos consejos para lograr ocultar la mayor cantidad de información posible en tus módulos, pero también de cómo no llevarlo demasiado lejos"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584519537/2E4D3407-0447-4034-BEFA-188831BF5971_x4th6g.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1584519537/2E4D3407-0447-4034-BEFA-188831BF5971_x4th6g.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1584519537/2E4D3407-0447-4034-BEFA-188831BF5971_x4th6g.jpg
   overlay_filter: rgba(0, 0, 0, 0.6)
 ---
 

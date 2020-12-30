@@ -7,7 +7,7 @@ comments: true
 excerpt: "A veces tienes que crear documentos de texto con un algún tipo de formato visual. Aprende lenguajes de marcado que te facilitarán la vida."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1576563210/raychan-QtHYdJsBRFU-unsplash_mpyus4.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1576563210/raychan-QtHYdJsBRFU-unsplash_mpyus4.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1576563210/raychan-QtHYdJsBRFU-unsplash_mpyus4.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -21,7 +21,7 @@ Todos estos lenguajes pueden producir múltiples formatos de salida: HTML, PDF, 
 
 Es el formato de marcado de texto simple más conocido por ser el usado en muchos lados (GitHub, por ejemplo) para darle un poco de formato semántico al texto.
 
-Puedes crear los estilos de texto más comunes directamente: 
+Puedes crear los estilos de texto más comunes directamente:
 
 * **negritas**
 * _cursivas_

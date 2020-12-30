@@ -8,7 +8,7 @@ excerpt: "Exploremos las opciones que tienes para realizar traducciones automát
 header:
   overlay_filter: "rgba(0, 0, 0, 0.5)"
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1586794230/B91A9E8E-0A54-490B-AE3B-0A639064716E_iwwqyx.jpg
 ---
 
 Traducir texto es una tarea frecuente y que puede realizarse de diferentes maneras, en este artículo queremos explorar algunas de ellas.

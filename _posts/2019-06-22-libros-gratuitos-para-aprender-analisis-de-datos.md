@@ -7,7 +7,7 @@ comments: true
 excerpt: "Encuentra una colección de libros gratuitos para aprender acerca de estadística, análisis de datos y machine learning usando tanto Python como R."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1561236196/sharon-mccutcheon-532782-unsplash_obsxhd.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1561236196/sharon-mccutcheon-532782-unsplash_obsxhd.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1561236196/sharon-mccutcheon-532782-unsplash_obsxhd.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -67,7 +67,7 @@ Este libro incluye un análisis de la complejidad computacional implicada.
 
 > "Estamos inundados de información pero secos de conocimiento" - Rutherford D. Roger
 
-Esta frase que abre el libro explica la necesidad de entender y aplicar correctamente métodos estadísticos de análisis de datos para entender bien el mundo, dada la explosión de información que estamos viendo gracias a la digitalización de todas las industrias y de las ciencias. 
+Esta frase que abre el libro explica la necesidad de entender y aplicar correctamente métodos estadísticos de análisis de datos para entender bien el mundo, dada la explosión de información que estamos viendo gracias a la digitalización de todas las industrias y de las ciencias.
 
 El libro se enfoca en los métodos de análisis y sus fundamentos conceptuales en vez de en los detalles matemáticos.
 
@@ -106,7 +106,7 @@ Es una guía práctica para minería de datos y sistema de recomendación, con l
 ![MMDS cover](http://i.stanford.edu/~ullman/gifs/mmds2.jpg)
 
 
-Este libro está basado en el curso [CS246](http://cs246.stanford.edu/) de Stanford del mismo nombre. Está enfocado en la minería de datos en grandes cantidades, es decir que no puedan ser mantenidos en la memoria principal. 
+Este libro está basado en el curso [CS246](http://cs246.stanford.edu/) de Stanford del mismo nombre. Está enfocado en la minería de datos en grandes cantidades, es decir que no puedan ser mantenidos en la memoria principal.
 
 >  "Data mining is about applying algorithms
 to data, rather than using data to “train” a machine-learning engine of some
@@ -118,7 +118,7 @@ Puedes descargar la [segunda edición](http://bit.ly/2RsGkoR) y ver el beta de l
 
 ## 9. Deep Learning
 ![Deep learning cover book](https://res.cloudinary.com/hectorip/image/upload/v1561233648/Screenshot_2019-06-22_15.00.27_fxtwob.png)
-Es un recurso introductorio al campo de machine learning específicamente enfocado en deep learning. 
+Es un recurso introductorio al campo de machine learning específicamente enfocado en deep learning.
 Es un buen recurso para programadores que no tienen preparación en estadística porque la primera parte del libro está enfocada en dar las bases matemáticas para comprender los algoritmos y técnicas de deep learning.
 
 Puedes comprar el libro o leerlo directamente desde [su página](http://bit.ly/2RtKtZK) de forma gratuita.
@@ -143,7 +143,7 @@ Provee todos sus recursos de manera gratuita para descarga. Puedes [**visitarlos
 
 ![Roger D. Peng libros](https://res.cloudinary.com/hectorip/image/upload/v1561235101/Screenshot_2019-06-22_15.24.56_xkx1qk.png)
 
-[Roger D. Peng](http://bit.ly/2Rvyg6Y) es un profesor de bioestadística la 
+[Roger D. Peng](http://bit.ly/2Rvyg6Y) es un profesor de bioestadística la
 Escuela Johns Hopkins Bloomberg de Salud Pública. Tiene varios cursos en Coursera sobre análisis de datos, y también lo podemos considerar uno de los grandes contribuidores a la educación sobre análisis de datos.
 
 Ha escito numerosos libros sobre análisis de datos y manejo de proyectos de análisis de datos. Su especialidad es R.

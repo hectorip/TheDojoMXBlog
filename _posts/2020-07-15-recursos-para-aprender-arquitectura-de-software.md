@@ -7,7 +7,7 @@ comments: true
 excerpt: "¿Qué es la arquitectura de software y cómo puedes empezar a aprenderla? Aquí te damos un resumen de una plática muy interesante que tuvimos."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1594271692/EC077014-9C45-4FCA-A0BA-7CB7B0D25FAB_l9gvh7.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1594271692/EC077014-9C45-4FCA-A0BA-7CB7B0D25FAB_l9gvh7.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1594271692/EC077014-9C45-4FCA-A0BA-7CB7B0D25FAB_l9gvh7.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 

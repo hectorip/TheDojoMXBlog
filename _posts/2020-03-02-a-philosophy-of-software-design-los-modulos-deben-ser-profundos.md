@@ -7,7 +7,7 @@ comments: true
 excerpt: "Veamos algunos lineamientos para el diseño de funciones/clases/módulos que ayudarán a reducir la complejidad de tus sistemas de software."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583214655/IMG_3431_xcydpt.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583214655/IMG_3431_xcydpt.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1583214655/IMG_3431_xcydpt.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 

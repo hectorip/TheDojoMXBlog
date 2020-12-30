@@ -3,12 +3,12 @@ title: "Entendiendo REST: Servicios cacheables"
 date: 2019-10-27
 author: Héctor Patricio
 tags:
-categories: 
+categories:
 comments: true
 excerpt: "Los servicios REST deben ser cacheables, aprendamos lo que esto significa y cómo podemos lograrlo."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1570679826/laura-ockel-nIEHqGSymRU-unsplash_gsspla.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1570679826/laura-ockel-nIEHqGSymRU-unsplash_gsspla.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1570679826/laura-ockel-nIEHqGSymRU-unsplash_gsspla.jpg
   overlay_filter: rgba(0, 0, 0, 0.6)
 ---
 
@@ -87,7 +87,7 @@ Toda solución tecnológica implica ventajas y desventajas. Entonces ¿qué desv
 El reto más grande e importante de tener un sistema de caché es lograr un
 equilibrio entre mantener la información el mayor tiempo posible y tener
 información correcta y actualizada. Si se almacena en caché por demasiado
-tiempo algo, esta información se vuelve vieja y por lo tanto puede estar desactualizada. Por el otro lado si se guarda por muy poco tiempo puede 
+tiempo algo, esta información se vuelve vieja y por lo tanto puede estar desactualizada. Por el otro lado si se guarda por muy poco tiempo puede
 llevar a que los sistemas de caché se sub-utilicen y provean pocos
 beneficios.
 

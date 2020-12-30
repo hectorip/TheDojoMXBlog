@@ -7,7 +7,7 @@ comments: true
 excerpt: "Si quieres hacer feliz a un desarrollador, dale una tecnología nueva y brillante. En este artículo hablamos de por qué es mejor idea escoger tecnología probada."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583644548/9641A743-5E78-4719-9F90-6D77F1CD4E1E_xhawu6.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1583644548/9641A743-5E78-4719-9F90-6D77F1CD4E1E_xhawu6.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1583644548/9641A743-5E78-4719-9F90-6D77F1CD4E1E_xhawu6.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -25,7 +25,7 @@ Cuando hablamos de tecnología _aburrida_ en este artículo nos referimos a aque
 
 ### Ejemplos
 
-**Tecnología brillante**: 
+**Tecnología brillante**:
 
 * El último lenguaje de programación para hacer concurrencia (Crystal, Pony o algo así)
 * Aunque tenga tiempo existiendo, la cosa que casi nadie en el mundo usa (como OCaml o Ío)
@@ -33,7 +33,7 @@ Cuando hablamos de tecnología _aburrida_ en este artículo nos referimos a aque
 
 No tiene que ser completamente nuevo, puede ser novedoso sólo _para ti y tu equipo_.
 
-**Tecnología aburrida**: 
+**Tecnología aburrida**:
 
 * Una modesta instalación de Python, Django y PostgreSQL
 * La instalación común de PHP con Laravel y las tecnologías asociadas
@@ -123,7 +123,7 @@ No hay nada peor cuando estás desarrollando que encontrarte con un problema inc
 
 ### Dominio de la tecnología
 
-Trabajar con la misma tecnología repetidamente hará que tu conocimiento en esa tecnología se vuelva como andar en bicicleta: pasarás al campo de la competencia inconsciente, la usarás casi como si fuera parte de tu cuerpo y podrás enfocarte más rápido en resolver tus problemas específicos. 
+Trabajar con la misma tecnología repetidamente hará que tu conocimiento en esa tecnología se vuelva como andar en bicicleta: pasarás al campo de la competencia inconsciente, la usarás casi como si fuera parte de tu cuerpo y podrás enfocarte más rápido en resolver tus problemas específicos.
 
 Una desventaja que viene con esto es la famosa frase "Aquel con un martillo piensa que todo es un clavo", pero se puede evitar manteniéndote al pendiente de los avances tecnológicos en proyectos de juguete y empapándote de nuevas cosas mediante el estudio continuo, para que no se pierda la frescura de lo que haces.
 

@@ -7,7 +7,7 @@ comments: true
 excerpt: "El pensamiento computacional ha sonado mucho en los medios últimamente. Hablemos de lo que es y todo lo que implica."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1594271708/BA7B68D6-CB97-4E54-8D9D-B3D2530A8A84_ovfgob.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1594271708/BA7B68D6-CB97-4E54-8D9D-B3D2530A8A84_ovfgob.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1594271708/BA7B68D6-CB97-4E54-8D9D-B3D2530A8A84_ovfgob.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 

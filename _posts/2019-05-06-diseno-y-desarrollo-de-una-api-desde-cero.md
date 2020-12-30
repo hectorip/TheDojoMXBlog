@@ -7,7 +7,7 @@ comments: true
 excerpt: "El primer artículo de la serie. ¿Por qué es importante diseñar de antemano tu API? Compararemos dos de los estilos más populares: SOAP vs REST"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1557201862/edho-pratama-149011-unsplash_jlppci.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1557201862/edho-pratama-149011-unsplash_jlppci.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1557201862/edho-pratama-149011-unsplash_jlppci.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -52,7 +52,7 @@ Muchos desarrolladores, sobre todo con poca experiencia, se escandalizan cuando 
 ## API's RESTful
 
 Una API REST aprovecha el diseño de las peticiones HTTP para crear servicios web con interfaces intuitivas.
-REST son las siglas de "Representational State Transfer" (Transferencia de Estado Representacional), que es un estilo de arquitectura de sistemas distribuidos (podemos pensar en la web como un sistema distribuido). 
+REST son las siglas de "Representational State Transfer" (Transferencia de Estado Representacional), que es un estilo de arquitectura de sistemas distribuidos (podemos pensar en la web como un sistema distribuido).
 Este estilo establece 6 características que se deben de cumplir para que un sistema sea considerado RESTful:
 
 1. Arquitectura cliente-servidor. Existe un programa encargado de hacer peticiones (cliente) y uno encargado de responderlas (servidor).

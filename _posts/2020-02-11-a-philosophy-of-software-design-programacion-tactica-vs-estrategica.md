@@ -2,12 +2,12 @@
 title: "A Philosophy of Software Design: Desarrollo Táctico vs Estratégico"
 date: 2020-02-11
 author: Héctor Patricio
-tags: a-philosophy-of-software-design complejidad 
+tags: a-philosophy-of-software-design complejidad
 comments: true
 excerpt: "Dos diferentes formas de desarrollar sistemas de software"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1600/v1585958798/877DD1C2-5C29-428A-8FEE-BC9685FE108F_ym4tl1.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1600/v1585958798/877DD1C2-5C29-428A-8FEE-BC9685FE108F_ym4tl1.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1585958798/877DD1C2-5C29-428A-8FEE-BC9685FE108F_ym4tl1.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 

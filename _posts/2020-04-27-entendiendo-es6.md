@@ -7,7 +7,7 @@ comments: true
 excerpt: "Lanzamos un video explicando por qué ES6 sonó tanto. Velo aquí."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1587973000/6CF7535E-4D2E-4140-A758-32DD166D508C_hztakt.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1587973000/6CF7535E-4D2E-4140-A758-32DD166D508C_hztakt.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1587973000/6CF7535E-4D2E-4140-A758-32DD166D508C_hztakt.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 

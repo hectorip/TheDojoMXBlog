@@ -8,7 +8,7 @@ excerpt: "¿Quieres escribir un artículo para este blog? Este artículo explica
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1551246660/camille-orgel-58391-unsplash_jvqz1c.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1551246660/camille-orgel-58391-unsplash_jvqz1c.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1551246660/camille-orgel-58391-unsplash_jvqz1c.jpg
 ---
 
 ¿Quieres empezar a escribir? Contribuye con tus artículos a la comunidad. En este post encontrarás una guía detallada para la instalación del repositorio y ver tus posts de manera local, así como la convenciones que seguimos antes de publicar un post.

@@ -7,7 +7,7 @@ comments: true
 excerpt: "Empieza a entender qué es REST y por qué ha sido tan importante en la web moderna. Hablemos de la motivación que llevó a crearlo"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1560431077/frances-gunn-57430-unsplash_gywlwi.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1560431077/frances-gunn-57430-unsplash_gywlwi.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1560431077/frances-gunn-57430-unsplash_gywlwi.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -62,7 +62,7 @@ Como podemos ver, la arquitectura de software tiene muchas cosas de preocuparse.
 
 ## Cosas que REST intenta resolver
 
-Todo este embrollo de arquitectura-diseño-estilos fue definido con un fin en mente: estudiar los estilos y las características de las arquitecturas para poder llegar a la resolución de los problemas concretos que los sistemas tienen. 
+Todo este embrollo de arquitectura-diseño-estilos fue definido con un fin en mente: estudiar los estilos y las características de las arquitecturas para poder llegar a la resolución de los problemas concretos que los sistemas tienen.
 
 Las cosas que REST intenta ayudar a resolver concretamente son las siguientes.
 
@@ -82,7 +82,7 @@ Los cinco puntos que Fielding considera que definen la facilidad de modifición 
 
 - **Facilidad de evolución**. Es la capacidad que tiene un sistema de que sus componentes cambien sin afectar directamente negativamente a los demás y por lo tanto el estado general del sistema.
 
-- **Extensibilidad**. Es la capacidad de agregar funcionalidades o capacidades a un sistema. 
+- **Extensibilidad**. Es la capacidad de agregar funcionalidades o capacidades a un sistema.
 - **Facilidad de personalización**. Es la capacidad de un elemento de poder adaptarse temporalmente para dar un servicio que no siempre da, sin afectar negativamente el sistema en general.
 
 - **Facilidad de configuración**. Se refiere a poder cambiar la configuración o modificar un sistema en producción mediante configuraciones, es decir, sin cambios en el código.
@@ -99,7 +99,7 @@ Uno de los puntos que se necesita resolver de algunas aplicaciones, es que la so
 
 ### Escalabilidad
 
-¿Cuántos usuarios al mismo tiempo puede soportar tu aplicación? ¿Qué pasa si de repente llegan diez veces más usuarios de los que esperabas? La respuesta a estas preguntas está directamente relacionada con la escalabilidad de la aplicación. 
+¿Cuántos usuarios al mismo tiempo puede soportar tu aplicación? ¿Qué pasa si de repente llegan diez veces más usuarios de los que esperabas? La respuesta a estas preguntas está directamente relacionada con la escalabilidad de la aplicación.
 
 Fielding la define como la capacidad de los componentes de soportar un número grande de interacciones, que se ve impactada no sólo por la cantidad sino por la frecuencia de interacciones.
 

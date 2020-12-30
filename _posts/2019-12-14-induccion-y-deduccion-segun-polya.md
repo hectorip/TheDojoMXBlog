@@ -7,7 +7,7 @@ comments: true
 excerpt: "Aprende de los conceptos de inducción y deducción según George Polya los explica en How to Solve It"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1575746191/verne-ho-0LAJfSNa-xQ-unsplash_prh7gv.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1400/v1575746191/verne-ho-0LAJfSNa-xQ-unsplash_prh7gv.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1575746191/verne-ho-0LAJfSNa-xQ-unsplash_prh7gv.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 

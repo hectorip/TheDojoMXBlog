@@ -8,7 +8,7 @@ excerpt: "Los problemas que tienes hoy, otros los han resuelto antes. Aplica sol
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1220/v1551506407/photo-1456611984355-c05be968ebe9_nwptjx.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1220/v1551506407/photo-1456611984355-c05be968ebe9_nwptjx.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1551506407/photo-1456611984355-c05be968ebe9_nwptjx.jpg
 ---
 
 Parte del conocimiento fundamental de un desarrollador profesional de software son los *Patrones de diseño* (Design Patterns). En este artículo explicamos de manera concisa:
@@ -29,7 +29,7 @@ Es decir, son soluciones que sabemos que funcionan para problemas que sabemos qu
 
 ## Composición
 
-Los patrones de diseño de software, se componen de cuatro partes: 
+Los patrones de diseño de software, se componen de cuatro partes:
 
 1. *Nombre.* Permite referirte al patrón unívocamente y hablar con otras personas sobre esta solución específica sin tener que explicarla.
 2. *Problema.* La situación que resuelve el patrón específico. Incluye el contexto y los _síntomas_ que se tienen que dar para usar este patrón.

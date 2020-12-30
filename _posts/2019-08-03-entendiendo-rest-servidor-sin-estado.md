@@ -7,7 +7,7 @@ comments: true
 excerpt: "¿Cómo mantener la información entre peticiones en un sistema REST? Entendamos las ventajas y desventajas"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1564879566/nick-hillier-yD5rv8_WzxA-unsplash_cthqzt.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1564879566/nick-hillier-yD5rv8_WzxA-unsplash_cthqzt.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1564879566/nick-hillier-yD5rv8_WzxA-unsplash_cthqzt.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -63,7 +63,7 @@ Pero también tiene desventajas. ¿Qué pasa si esta conversación se interrumpe
 
 Hablemos de las características de una conexión sin estado.
 
-La primera característica es que *no necesitamos* que la conexión a nivel de sesión de red sea persistente, es decir, que se mantenga un canal de comunicación abierto que pueda mantener en memoria la información de los procesos actuales. 
+La primera característica es que *no necesitamos* que la conexión a nivel de sesión de red sea persistente, es decir, que se mantenga un canal de comunicación abierto que pueda mantener en memoria la información de los procesos actuales.
 
 Segundo, no podemos (ni debemos) asumir que el servidor mantendrá los datos del cliente automáticamente por medio de reconocer al cliente. En cada una de las peticiones que se hacen al servidor, **deben venir todos los datos necesarios para que el servidor mantenga realice la operación**, no se puede confiar en que las peticiones anteriores transfirieron esa información y no es necesario repetirla.
 
