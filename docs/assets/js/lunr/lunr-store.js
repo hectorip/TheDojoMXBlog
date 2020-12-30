@@ -298,4 +298,10 @@ var store = [{
         "tags": ["cryptografía","cryptography","aes","des","3-des","serpent"],
         "url": "https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1606978976/snapbuilder_2_ba3zxt.png"
+      },{
+        "title": "¿Deberías comentar tu código?",
+        "excerpt":"Cuando hablamos de los comentarios en el código, hay dos escuelas. La primera dice que debes usar los comentarios para clarificar lo que quisiste expresar con tu código, mientras que la segunda dice que deberías evitarlos al máximo y que comentar tu código es un mal necesario que sólo denota...","categories": [],
+        "tags": ["comments","comentarios","mantenibilidad","código-mantenible","ousterhout","aposd"],
+        "url": "https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1608012314/snapbuilder_ykt2d6.png"
       }]
