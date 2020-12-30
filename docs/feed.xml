@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-12-30T01:15:07-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">¿Deberías comentar tu código?</title><link href="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html" rel="alternate" type="text/html" title="¿Deberías comentar tu código?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html">&lt;p&gt;Cuando hablamos de los comentarios en el código, hay dos escuelas. La primera dice que debes usar los comentarios para &lt;strong&gt;clarificar lo que quisiste expresar con tu código&lt;/strong&gt;, mientras que la segunda dice que deberías &lt;strong&gt;evitarlos al máximo&lt;/strong&gt; y que comentar tu código es un mal necesario que sólo denota tu falta de habilidad para no hacer código lo suficientemente claro.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-12-30T01:30:19-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">¿Deberías comentar tu código?</title><link href="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html" rel="alternate" type="text/html" title="¿Deberías comentar tu código?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html">&lt;p&gt;Cuando hablamos de los comentarios en el código, hay dos escuelas. La primera dice que debes usar los comentarios para &lt;strong&gt;clarificar lo que quisiste expresar con tu código&lt;/strong&gt;, mientras que la segunda dice que deberías &lt;strong&gt;evitarlos al máximo&lt;/strong&gt; y que comentar tu código es un mal necesario que sólo denota tu falta de habilidad para no hacer código lo suficientemente claro.&lt;/p&gt;
 
 &lt;p&gt;¿A cuál de los dos consejos deberías hacerle caso? En este artículo explicaremos por qué creemos que deberías ver los comentarios como una &lt;strong&gt;herramienta necesaria&lt;/strong&gt;, valiosa y muy útil, y cómo usarlos para no caer en el extremo que ha llevado a algunas personas a tener una mala actitud hacia ellos.&lt;/p&gt;
 
@@ -92,7 +92,57 @@
 
 &lt;p&gt;Si pones el suficiente esmero en aprender a escribir buenos comentarios y mantenerlos, serán una gran herramienta de diseño y documentación de tu software.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Este artículo está basado en las ideas del “A Philosophy of Software Design de John Ousterhout”, en el que se le dedican &lt;strong&gt;4 capítulos&lt;/strong&gt; al buen uso de los comentarios&lt;/em&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="comments" /><category term="comentarios" /><category term="mantenibilidad" /><category term="código-mantenible" /><category term="ousterhout" /><category term="aposd" /><summary type="html">Hay programadores que dice que los comentarios son un mal que se debería evitar al máximo. Aquí proponemos lo contrario: usa los comentarios correctamente para crear código mantenible, basados en las ideas de 'A Philosophy of Software Design'</summary></entry><entry><title type="html">Tipos de algoritmos criptográficos: cifrados de bloque</title><link href="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html" rel="alternate" type="text/html" title="Tipos de algoritmos criptográficos: cifrados de bloque" /><published>2020-12-03T00:00:00-06:00</published><updated>2020-12-03T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html">&lt;p&gt;Ya hablamos de lo que es &lt;a href=&quot;/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html&quot;&gt;la criptografía&lt;/a&gt;, ahora empecemos a hablar de los tipos de
+&lt;p&gt;&lt;em&gt;Este artículo está basado en las ideas del “A Philosophy of Software Design de John Ousterhout”, en el que se le dedican &lt;strong&gt;4 capítulos&lt;/strong&gt; al buen uso de los comentarios&lt;/em&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="comments" /><category term="comentarios" /><category term="mantenibilidad" /><category term="código-mantenible" /><category term="ousterhout" /><category term="aposd" /><summary type="html">Hay programadores que dice que los comentarios son un mal que se debería evitar al máximo. Aquí proponemos lo contrario: usa los comentarios correctamente para crear código mantenible, basados en las ideas de 'A Philosophy of Software Design'</summary></entry><entry><title type="html">¿Qué son los modelos generativos?</title><link href="https://blog.thedojo.mx/2020/12/30/que-son-los-modelos-generativos.html" rel="alternate" type="text/html" title="¿Qué son los modelos generativos?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/que%20son-los-modelos-generativos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/que-son-los-modelos-generativos.html">&lt;p&gt;Los modelos generativos permiten a una máquina “aprender” los patrones que existen en los datos con los que son entrenadas y a partir de dicho aprendizaje, son capaces de &lt;strong&gt;generar datos similares&lt;/strong&gt; que en algunos casos pueden ser casi tan “reales” como los que se utilizaron inicialmente para su entrenamiento.&lt;/p&gt;
+
+&lt;p&gt;Mediante este tipo de modelos pueden generarse nuevos datos que tienen distintas aplicaciones, entre ellas, generar datos que otros sistemas de aprendizaje podrán utilizar para su entrenamiento, sin necesidad de que dichos datos existan previamente.&lt;/p&gt;
+
+&lt;p&gt;En particular, las &lt;strong&gt;Redes Neuronales Generativas Adversariales (GAN’s)&lt;/strong&gt; pueden generar nuevas imágenes que se parecen o son similares a las imágenes con las que fueron entrenadas, pero que individualmente son distintas a todas ellas.&lt;/p&gt;
+
+&lt;p&gt;El funcionamiento de una Red Neuronal Adversarial consiste en la operación simultánea de dos redes neuronales que son “adversarias”, una de dichas redes es la encargada de generar imágenes y la segunda es la encargada de discriminar aquellas imágenes que no se parecen a lo que constituye una imágen real.&lt;/p&gt;
+
+&lt;p&gt;Algunos modelos avanzados pueden verse en:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://thispersondoesnotexist.com/&quot;&gt;This Person Does Not Exist&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.thiswaifudoesnotexist.net/&quot;&gt;This Waifu Does Not Exist&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://thisfursonadoesnotexist.com/&quot;&gt;This Furson Does Not Exist&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Como parte de un proyecto de investigación, utilizamos una red adversarial para generar imágenes de zapatos, dichas redes utilizan, modelos convolucionales para ir entendiendo las imágenes en segmentos cada vez más pequeños hasta tener una definición y similitud suficiente para reemplazar la imagen original.&lt;/p&gt;
+
+&lt;p&gt;La calidad de los modelos generados se incrementa conforme el número de iteraciones va aumentando, en general, se van almacenando nuevas muestras de las imágenes generadas cada cierto número de iteraciones de tal forma se puede observar si el modelo sigue mejorando, si ya se estancó o si se está degradando, aunque existen algunas métricas que pueden ayudar a identificar el punto óptimo donde puede detenerse el entrenamiento.&lt;/p&gt;
+
+&lt;p&gt;Algunas de las peculiaridades de estos modelos es que son relativamente sensibles a la uniformidad y el número de imágenes utilizadas, sin embargo, también es cierto que los modelos han ido mejorando y en algunos casos pueden generar imágenes de gran calidad con menos datos de entrenamiento. Por ejemplo, estas imágenes fueron generadas con sólo 500 datos de entrenamiento mediante un Modelo Generador Adversarial Eficiente:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mit-han-lab/data-efficient-gans&quot;&gt;Data Efficient GANs&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;usos-de-los-generadores-adversariales&quot;&gt;Usos de los generadores adversariales&lt;/h2&gt;
+
+&lt;p&gt;Hablemos de algunos de los usos que pueden tener en la práctica este tipo de redes.&lt;/p&gt;
+
+&lt;h3 id=&quot;mejorar-la-seguridad&quot;&gt;Mejorar la seguridad&lt;/h3&gt;
+
+&lt;p&gt;Un discriminador optimiza su capacidad para detectar imágenes que no son reales (las que emite el generador), de tal forma que dicho discriminador adquiere la capacidad de identificar imágenes que no son reales y que pueden estar siendo utilizadas para generar identidades falsas en sistemas que por ejemplo requieren fotografías.&lt;/p&gt;
+
+&lt;h3 id=&quot;en-el-sector-salud&quot;&gt;En el sector salud&lt;/h3&gt;
+
+&lt;p&gt;La capacidad de detectar anomalías (trabajo del discriminador) puede utilizarse para identificar células o formaciones anómalas (como el cáncer) al ser entrenado mediante imágenes de tejidos u órganos saludables.&lt;/p&gt;
+
+&lt;h3 id=&quot;en-el-sector-de-medios-digitales&quot;&gt;En el sector de medios digitales&lt;/h3&gt;
+
+&lt;p&gt;Ya que generadores adversariales pueden utilizarse para generar imágenes que no existían o generar imágenes a partir de un conjunto de imágenes preexistentes, dicha generación puede de igual forma generar modelos en tercera dimensión a partir de imágenes en dos dimensiones o hacer combinaciones de modelos preexistentes.&lt;/p&gt;
+
+&lt;p&gt;Esto puede usarse como material para la producción de contenido visual e incluso animaciones de video o bien como inspiración para que un diseñador genere nuevos personajes.&lt;/p&gt;
+
+&lt;p&gt;Algunos generadores pueden ayudar a corregir defectos en imágenes, removiendo o completando partes de la imágen que sobraban o que estaban faltantes, o si es el caso, a dar color a imágenes en blanco y negro.&lt;/p&gt;
+
+&lt;p&gt;De igual forma permiten crear una “interpolación” de imágenes para “regenerarlas” en una mayor resolución. Desde luego la eficacia dependerá de las imágenes utilizadas para su entrenamiento.&lt;/p&gt;
+
+&lt;p&gt;Algunas de estas aplicaciones pueden “traducir” las imágenes de un dominio a otro, por ejemplo, convirtiendo una imágen satelital en un mapa de niveles o generando fotografías a partir de bosquejos.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Los modelos generativos pueden ser una gran herramienta para diferentes industrias, aprender a usarlos y generarlos te puede ayudar a entrar en un campo que tiene cada vez más alta demanda: el uso de datos para la creación automática de programas (Machine Learning).&lt;/p&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="ai" /><category term="ml" /><category term="gans" /><summary type="html">En este artículo exploramos qué es un modelo generativo, cómo te pueden servir y el estado del arte en este campo.</summary></entry><entry><title type="html">Tipos de algoritmos criptográficos: cifrados de bloque</title><link href="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html" rel="alternate" type="text/html" title="Tipos de algoritmos criptográficos: cifrados de bloque" /><published>2020-12-03T00:00:00-06:00</published><updated>2020-12-03T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html">&lt;p&gt;Ya hablamos de lo que es &lt;a href=&quot;/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html&quot;&gt;la criptografía&lt;/a&gt;, ahora empecemos a hablar de los tipos de
 algoritmos criptográficos que existen, sus características y sus principales diferencias. En este artículo hablaremos de los cifrados de bloque.&lt;/p&gt;
 
 &lt;h3 id=&quot;qué-es-un-cifrado-de-bloque&quot;&gt;¿Qué es un cifrado de bloque?&lt;/h3&gt;
@@ -875,87 +925,4 @@ En los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la 
   &lt;li&gt;&lt;a href=&quot;http://www.tldp.org/LDP/abs/html/&quot;&gt;Advanced Bash-Scripting Guide&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://matt.might.net/articles/bash-by-example/&quot;&gt;Bash by example&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Libro: &lt;a href=&quot;https://amzn.to/32phs95&quot;&gt;From Bash to Zsh&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="shell" /><category term="zsh" /><category term="bash" /><category term="terminal" /><summary type="html">Zsh es el nuevo shell default de MacOS Catalina. Entiende las principales diferencias entre Bash y Zsh.</summary></entry><entry><title type="html">Recursos para aprender Arquitectura de Software</title><link href="https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software.html" rel="alternate" type="text/html" title="Recursos para aprender Arquitectura de Software" /><published>2020-07-15T00:00:00-05:00</published><updated>2020-07-15T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software.html">&lt;p&gt;Tuvimos una plática con &lt;a href=&quot;https://twitter.com/machinesareus&quot;&gt;Agustín Ramos&lt;/a&gt; acerca de la arquitectura de software y lo que debes aprender para practicarla. Este pequeño artículo incluye nuestro resumen y las recomendaciones de Agustín.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-la-arquitectura-de-software&quot;&gt;¿Qué es la arquitectura de software?&lt;/h2&gt;
-
-&lt;p&gt;La arquitectura del software incluye el &lt;strong&gt;diseño del sistema&lt;/strong&gt; a alto nivel: la descomposición del sistema en módulos, la descripción de las responsabilidades de cada uno y sus relaciones.&lt;/p&gt;
-
-&lt;p&gt;También incluye las prácticas y herramientas que permitirán que el proyecto cumpla con los &lt;strong&gt;atributos de calidad&lt;/strong&gt; o requerimientos no funcionales.&lt;/p&gt;
-
-&lt;p&gt;Todo lo anterior está basado en un análisis de las &lt;em&gt;funciones&lt;/em&gt; y &lt;em&gt;atributos de calidad&lt;/em&gt; del sistema.&lt;/p&gt;
-
-&lt;h1 id=&quot;el-proceso&quot;&gt;El proceso&lt;/h1&gt;
-
-&lt;p&gt;En la plática tocamos 5 etapas del desarrollo de una arquitectura:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Descubrimiento y definición de los atributos de calidad.&lt;/strong&gt; Básicamente consiste en entender el problema, escuchar a todos los involucrados en el proyecto y definir los atributos del software que no están directamente relacionados con la funcionalidad, pero que debe de cumplir.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Diseño del sistema.&lt;/strong&gt; Generalmente te ayudarás de estilos de arquitectura y patrones de diseño para llegar a los objetivos funcionales y no funcionales.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Validación del diseño.&lt;/strong&gt; Mediante la creación de prototipos se puede validar que las asunciones principales acerca del diseño y su relación con los atributos de calidad se cumplen. Esto puede derivar en &lt;em&gt;cambios&lt;/em&gt; sobre el diseño que lo mejoren.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Comunicación del diseño.&lt;/strong&gt; Después de definir la arquitectura es importante comunicar el diseño al equipo mediante un exposición directa y la documentación. Esta documentación debe incluir la mayor información posible sobre la razón de las decisiones y la evolución de la arquitectura.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Seguimiento del diseño.&lt;/strong&gt; Esto incluye varias cosas:&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;em&gt;Verificación de que el equipo está siguiendo el diseño.&lt;/em&gt; Esto se logra con revisiones constantes con el equipo: programación en parejas y revisión de código.&lt;/li&gt;
-      &lt;li&gt;&lt;em&gt;El diseño nunca está está escrito en piedra&lt;/em&gt;. Después de las revisiones de código se descubrirán cosas que no están funcionando como se esperaba, por lo que será necesario modificar el diseño y dejar registro de los cambios y las decisiones tomadas.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;consejos-específicos&quot;&gt;Consejos específicos&lt;/h2&gt;
-
-&lt;p&gt;Los arquitectos de software deben encontrar la solución más simple posible porque si no va a ser rígida.&lt;/p&gt;
-
-&lt;p&gt;Acerca de la &lt;strong&gt;documentación&lt;/strong&gt;, Agustín recomienda, exponerla al equipo en una junta y hacer un video de esto, que se le pase a cada integrante del equipo. Se puede seguir el marco llamado &lt;a href=&quot;https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf&quot;&gt;“Arquitectura 4 + 1”&lt;/a&gt; que se compone de:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Vista de Componentes&lt;/li&gt;
-  &lt;li&gt;Vista de Desarrollo&lt;/li&gt;
-  &lt;li&gt;Vista de Procesos&lt;/li&gt;
-  &lt;li&gt;Vista Física&lt;/li&gt;
-  &lt;li&gt;Vista de Casos (Este es el +1)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Además, tenemos que mantener una bitácora de los cambios y los factores que los impulsaron, esto puede ser mediante los &lt;a href=&quot;https://adr.github.io/&quot;&gt;Architectural Decision Records&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;cómo-empezar&quot;&gt;Cómo empezar&lt;/h2&gt;
-
-&lt;p&gt;Agustín nos recomendó algunos recursos para que empieces a aprender:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/179204.Object_Design?from_search=true&amp;amp;from_srp=true&amp;amp;qid=3yFmpRp03n&amp;amp;rank=6&quot;&gt;Object Design - Rebecca Wirfs-Brock&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/70143.Software_Architecture_in_Practice?from_search=true&amp;amp;from_srp=true&amp;amp;qid=mnXRSoVML7&amp;amp;rank=1&quot;&gt;Software Architecture in Practice&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Como alternativa al libro anterior  se recomienda Technical Report sobre arquitectura del Software Engineering Institute, encontré varios, tienes un ejemplo &lt;a href=&quot;https://pure.au.dk/portal/files/20484966/tech-report-5.pdf&quot;&gt;aquí&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://pragprog.com/titles/mkdsa/&quot;&gt;Design it! - Micheal Keeling&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;La serie &lt;a href=&quot;&quot;&gt;Pattern-orinted Software Architecture&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Para aprender patrones de diseño se habló de los siguientes libros:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com.mx/dp/0201633612?tag=amz-mkt-chr-mx-20&amp;amp;ascsubtag=1ba00-01000-a0087-mac00-other-nomod-mx000-pcomp-feature-scomp-wm-5&amp;amp;ref=aa_scomp&quot;&gt;Patrones de Diseño - Erich Gamma, et Al.&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Patterns-Handbook-Techniques-Strategies-Applications/dp/0521648181&quot;&gt;The patterns handbook&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;La serie &lt;a href=&quot;https://www.amazon.com.mx/Pattern-Languages-Program-Design-Coplien/dp/0201607344/ref=sr_1_3?dchild=1&amp;amp;keywords=Pattern+Languages+of+Program+Design&amp;amp;qid=1594823984&amp;amp;s=books&amp;amp;sr=1-3&quot;&gt;Pattern language of program design (5 libros)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Y entre los libros que se mencionan como la fuente de las ideas de patrones y diseño:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com.mx/Phenomenon-Life-Building-Nature-Universe/dp/0972652914/ref=pd_sim_14_1/132-2199838-9714154?_encoding=UTF8&amp;amp;pd_rd_i=0972652914&amp;amp;pd_rd_r=43c91cc2-6447-4629-a6d7-fb29dc8fd2d7&amp;amp;pd_rd_w=gNuac&amp;amp;pd_rd_wg=g8gOe&amp;amp;pf_rd_p=a62f455d-612d-4136-9fd7-44067fe2cd11&amp;amp;pf_rd_r=86FX03JZ655BENFVMSC0&amp;amp;psc=1&amp;amp;refRID=86FX03JZ655BENFVMSC0&quot;&gt;The nature of order de Christopher Alexander&lt;/a&gt; y los otros libros de él como &lt;a href=&quot;https://www.amazon.com.mx/Professor-Department-Architecture-Christopher-Alexander/dp/0195024028/ref=pd_sim_14_3/132-2199838-9714154?_encoding=UTF8&amp;amp;pd_rd_i=0195024028&amp;amp;pd_rd_r=c4dd6dad-be5f-4a11-a037-a4ecd8f56915&amp;amp;pd_rd_w=CYjKZ&amp;amp;pd_rd_wg=x61DA&amp;amp;pf_rd_p=a62f455d-612d-4136-9fd7-44067fe2cd11&amp;amp;pf_rd_r=JWAJ48WRNHYPDZ8RC2R1&amp;amp;psc=1&amp;amp;refRID=JWAJ48WRNHYPDZ8RC2R1&quot;&gt;A timeless way of building&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com.mx/Art-Scalability-Architecture-Organizations-Enterprise/dp/0134032802/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;dchild=1&amp;amp;keywords=the+art+of+scalability&amp;amp;qid=1594824264&amp;amp;s=books&amp;amp;sr=1-1&quot;&gt;The art of Scalability&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;el-capítulo&quot;&gt;El capítulo&lt;/h2&gt;
-
-&lt;p&gt;De todos modos no te pierdas el capítulo, que estuvo muy bueno:&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vfu5PsSH7us&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="podcast" /><category term="thedojomx" /><category term="arquitecturaarquitectura_de_software" /><category term="libros" /><summary type="html">¿Qué es la arquitectura de software y cómo puedes empezar a aprenderla? Aquí te damos un resumen de una plática muy interesante que tuvimos.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="shell" /><category term="zsh" /><category term="bash" /><category term="terminal" /><summary type="html">Zsh es el nuevo shell default de MacOS Catalina. Entiende las principales diferencias entre Bash y Zsh.</summary></entry></feed>

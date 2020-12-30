@@ -304,4 +304,10 @@ var store = [{
         "tags": ["comments","comentarios","mantenibilidad","código-mantenible","ousterhout","aposd"],
         "url": "https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1608012314/snapbuilder_ykt2d6.png"
+      },{
+        "title": "¿Qué son los modelos generativos?",
+        "excerpt":"Los modelos generativos permiten a una máquina “aprender” los patrones que existen en los datos con los que son entrenadas y a partir de dicho aprendizaje, son capaces de generar datos similares que en algunos casos pueden ser casi tan “reales” como los que se utilizaron inicialmente para su entrenamiento....","categories": [],
+        "tags": ["ai","ml","gans"],
+        "url": "https://blog.thedojo.mx/2020/12/30/que-son-los-modelos-generativos.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1609313335/nathan-roser-XX0vmOvQ3GA-unsplash_iath8r.jpg"
       }]
