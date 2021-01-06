@@ -12,6 +12,8 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
+Aquí tenemos un resumen de la plática que tuvimos con Diego de Granda y Pablo Trinidad sobre algunas cosas que hicieron para conseguir buenos trabajos.
+
 
 -> Aprende Inglés
 -> Aprende a recibir y dar feedback
