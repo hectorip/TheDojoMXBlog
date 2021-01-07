@@ -12,11 +12,16 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Aquí tenemos un resumen de la plática que tuvimos con Diego de Granda y Pablo Trinidad sobre algunas cosas que hicieron para conseguir buenos trabajos.
+Aquí tenemos un resumen de la plática que tuvimos con Diego De Granda y Pablo Trinidad sobre algunas cosas que hicieron para conseguir buenos trabajos.
+
+## Aprende Inglés
+
+Aunque la razón de existencia de este blog y de The Dojo MX en general es generar contenido en español para ayudar a los hispanohablantes, nunca nos cansaremos (y tampoco nuestros invitados) de darte el mismo consejo: **APRENDE INGLÉS**.
 
 
--> Aprende Inglés
--> Aprende a recibir y dar feedback
+## Aprende a dar y recibir retroalimentación
+
+
 
 
 
