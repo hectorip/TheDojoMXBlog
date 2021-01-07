@@ -22,31 +22,41 @@ Aunque la razón de existencia de este blog y de The Dojo MX en general es gener
 ## Aprende a dar y recibir retroalimentación
 
 
+- Directo
+- Accionable
+- Oportuno
+- Transparente
 
 
 
-Libros:
+
+## Libros recomendados
 
 * Pragmatic Programmer
-*
 
 
-* Fundamentos
+
+## Aprende los fundamentos
 
 
-Pablo:
+## Consejos de Pablo Trinidad
 
-* Presente en el aprendizaje - 5 why?
-* Ser crítico
-* Aprender - ser
 
-Diego:
+### Permanece presente en el aprendizaje
 
-* Resiliencia: Los problemas nunca van a parar
-* Resolver problemas: para eso te contrataron
-* Ser agnóstico
+ - 5 why?
+### Ser crítico
+### Aprender - ser
 
-Tres cosas para Google:
+
+
+## Consejos de Diego de Granda
+
+### Resiliencia: Los problemas nunca van a parar
+###  Resolver problemas: para eso te contrataron
+### Ser agnóstico
+
+## Características que necesitarás para trabajar en Google
 
 * Dificultad
 * Liderazgo
@@ -56,34 +66,24 @@ Tres cosas para Google:
 * Estar presente
 
 
-Feedback
+## Sigue alimentando tu curiosidad
 
-- Directo
-- Accionable
-- Oportuno
-- Transparente
+
+Pablo Trinidad nos recomendó lagunos canales de YouTube para seguir alementando la curiosisdad y aprender cosas de diferentes campos.
 
 
 The Cherno
 
-Pablo Trinidad
-
 Computerphile
-
-Pablo Trinidad
 
 Numberphile
 
-Pablo Trinidad
-
 Veritasium
-
-Pablo Trinidad
 
 Smarter Everyday
 
-
 Eric Weinstein
+
 Joe rogan
 
 Ben Eater
