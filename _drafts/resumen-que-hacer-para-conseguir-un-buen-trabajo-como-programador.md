@@ -16,7 +16,7 @@ Aquí tenemos un resumen de la plática que tuvimos con Diego De Granda y Pablo 
 
 ## Aprende Inglés
 
-Aunque la razón de existencia de este blog y de The Dojo MX en general es generar contenido en español para ayudar a los hispanohablantes, nunca nos cansaremos (y tampoco nuestros invitados) de darte el mismo consejo: **APRENDE INGLÉS**.
+Aunque la razón de existencia de este blog y de The Dojo MX en general es generar contenido en español para ayudar a los hispanohablantes, nunca nos cansaremos (y tampoco nuestros invitados) de darte el mismo consejo: **APRENDE INGLÉS**. Creemos sinceramente que el idioma no debería ser una limitante para que _empieces_ a aprender lo que sea que te guste, pero especialmente en el área de tecnología, la mayor parte de las personas, trabaja y habla en inglés, por lo que es importantísimo aprenderlo lo mejor que puedas.
 
 
 ## Aprende a dar y recibir retroalimentación
@@ -26,7 +26,6 @@ Aunque la razón de existencia de este blog y de The Dojo MX en general es gener
 - Accionable
 - Oportuno
 - Transparente
-
 
 
 
