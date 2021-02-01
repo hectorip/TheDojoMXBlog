@@ -18,22 +18,20 @@ Aquí tenemos un resumen de la plática que tuvimos con Diego De Granda y Pablo 
 
 Aunque la razón de existencia de este blog y de The Dojo MX en general es generar contenido en español para ayudar a los hispanohablantes, nunca nos cansaremos (y tampoco nuestros invitados) de darte el mismo consejo: **APRENDE INGLÉS**. Creemos sinceramente que el idioma no debería ser una limitante para que _empieces_ a aprender lo que sea que te guste, pero especialmente en el área de tecnología, la mayor parte de las personas, trabaja y habla en inglés, por lo que es importantísimo aprenderlo lo mejor que puedas.
 
-
 ## Aprende a dar y recibir retroalimentación
 
+En este apartado hablaron de cuatro cosas que la retroalimentación debe tener para poder ser útil:
 
-- Directo
-- Accionable
-- Oportuno
-- Transparente
-
-
+- Directa, sin darle tantas vueltas al asunto
+- Accionable, debes dejar a la persona con algo sobre lo que pueda actuar
+- Oportuno, mientras más cercano estés al momento en cuestión, mejor
+- Transparente, tus intenciones son claras
 
 ## Libros recomendados
 
+No pudimos platicar tanto de libros, pero uno que no puede faltar casi en ninguna recomendación de libros para programadores:
+
 * Pragmatic Programmer
-
-
 
 ## Aprende los fundamentos
 
