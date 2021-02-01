@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-12-30T01:30:19-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">¿Deberías comentar tu código?</title><link href="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html" rel="alternate" type="text/html" title="¿Deberías comentar tu código?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html">&lt;p&gt;Cuando hablamos de los comentarios en el código, hay dos escuelas. La primera dice que debes usar los comentarios para &lt;strong&gt;clarificar lo que quisiste expresar con tu código&lt;/strong&gt;, mientras que la segunda dice que deberías &lt;strong&gt;evitarlos al máximo&lt;/strong&gt; y que comentar tu código es un mal necesario que sólo denota tu falta de habilidad para no hacer código lo suficientemente claro.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2021-02-01T01:40:43-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Libros que te ayudarán a aprender Data Science</title><link href="https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science.html" rel="alternate" type="text/html" title="Libros que te ayudarán a aprender Data Science" /><published>2021-02-01T00:00:00-06:00</published><updated>2021-02-01T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science</id><content type="html" xml:base="https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science.html">&lt;p&gt;Creemos firmemente que una de las mejores maneras de educarte como desarrollador es conseguir guía clara.&lt;/p&gt;
+
+&lt;p&gt;Una de las mejores fuentes de conocimiento son los libros escritos por personas expertas en el tema del que quieres aprender, es por eso siempre buscamos personas que nos den consejos sobre los mejores recursos que encuentren.&lt;/p&gt;
+
+&lt;p&gt;En esta ocasión invitamos a &lt;a href=&quot;https://twitter.com/silvercorp&quot;&gt;Yesi Days&lt;/a&gt; a platicar sobre qué libros nos recomendaría para desarrollarte en &lt;strong&gt;data science&lt;/strong&gt;. Nos recomendó los siguientes:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://amzn.to/3q5lDj0&quot;&gt;Hands-on Machine Learning with Scikit-Learn and Tensorflow&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://themlbook.com/&quot;&gt;The Hundred Page Machine Learning&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://amzn.to/35qysMQ&quot;&gt;Introduction to Machine Learning with Python: A Guide for Data Scientists&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://amzn.to/2L8AiuZ&quot;&gt;Data Science from Scratch: First Principles with Python&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://amzn.to/2MGG6Mq&quot;&gt;Cracking the PM Interview: How to Land a Product Manager Job in Technology (Cracking the Interview &amp;amp; Career)&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/27783740-building-real-time-data-pipelines&quot;&gt;Building Real-time data pipelines&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;data-science-path&quot;&gt;Data science Path&lt;/h2&gt;
+
+&lt;p&gt;Yesi también nos contó sobre un guía que creó para ayuddarte a empezar en el camino, la puedes encontrar en:&lt;a href=&quot;https://ds-path.netlify.app/&quot;&gt;Data Science Path&lt;/a&gt; y próximamente estará en español.&lt;/p&gt;
+
+&lt;p&gt;La charla que tuvimos con ella se extendió sobre muchos temas más, si no te la quieres perder la puedes ver aquí:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vCzMLeq_eBk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="video" /><category term="datascience" /><category term="books" /><category term="libros" /><summary type="html">En este post te contamos sobre algunos libros que te pueden servir para avanzar en tu carrera.</summary></entry><entry><title type="html">¿Deberías comentar tu código?</title><link href="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html" rel="alternate" type="text/html" title="¿Deberías comentar tu código?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html">&lt;p&gt;Cuando hablamos de los comentarios en el código, hay dos escuelas. La primera dice que debes usar los comentarios para &lt;strong&gt;clarificar lo que quisiste expresar con tu código&lt;/strong&gt;, mientras que la segunda dice que deberías &lt;strong&gt;evitarlos al máximo&lt;/strong&gt; y que comentar tu código es un mal necesario que sólo denota tu falta de habilidad para no hacer código lo suficientemente claro.&lt;/p&gt;
 
 &lt;p&gt;¿A cuál de los dos consejos deberías hacerle caso? En este artículo explicaremos por qué creemos que deberías ver los comentarios como una &lt;strong&gt;herramienta necesaria&lt;/strong&gt;, valiosa y muy útil, y cómo usarlos para no caer en el extremo que ha llevado a algunas personas a tener una mala actitud hacia ellos.&lt;/p&gt;
 
@@ -791,138 +824,4 @@ En los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la 
   &lt;li&gt;Las redes neuronales son cajas negras por lo que si se detecta algún error en la traducción normalmente será muy difícil saber en qué parte de los datos de entrenamiento se introdujo el error y por lo tanto será difícil removerlo.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;En el siguiente artículo te contaremos cómo nos fue con las pruebas.&lt;/p&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="apis" /><category term="machine-learning" /><category term="AI" /><summary type="html">Exploremos las opciones que tienes para realizar traducciones automáticas de texto en tus proyectos.</summary></entry><entry><title type="html">De Bash a Zsh</title><link href="https://blog.thedojo.mx/2020/07/16/de-bash-a-zsh.html" rel="alternate" type="text/html" title="De Bash a Zsh" /><published>2020-07-16T00:00:00-05:00</published><updated>2020-07-16T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/16/de-bash-a-zsh</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/16/de-bash-a-zsh.html">&lt;p&gt;Con la reciente liberación de MacOS Catalina, Apple anunció que entre alguno de los cambios al sistema operativo, se utilizará a partir de esta versión un nuevo &lt;em&gt;shell&lt;/em&gt; que de manera regular se utilizaba en la app Terminal y en otras aplicaciones utilizadas por los desarrolladores para interactuar con la Mac a través de la línea de comandos.&lt;/p&gt;
-
-&lt;p&gt;El shell que se utilizaba previo a esta versión era &lt;strong&gt;Bash&lt;/strong&gt; (&lt;em&gt;Bourne Again Shell&lt;/em&gt;) y el que se utilizará ahora es &lt;strong&gt;Zsh&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-un-shell&quot;&gt;¿Qué es un shell?&lt;/h2&gt;
-
-&lt;p&gt;En resumen, un shell es un programa que permite &lt;strong&gt;controlar la computadora a través de comandos de texto&lt;/strong&gt;, normalmente se trata de interfaces de texto interactivo, donde el usuario podrá ir &lt;strong&gt;tecleando comandos para obtener información&lt;/strong&gt; o ejecutar comandos y obtener resultados a través de la misma interfaz.&lt;/p&gt;
-
-&lt;p&gt;A lo largo de la historia se han creado diferentes shells, cada uno con una serie de comandos que ponen a disposición de los usuarios &lt;strong&gt;funcionalidades específicas&lt;/strong&gt; de sus sistemas operativos. ¿Y porqué estaría alguien interesado en usar un shell y una línea de comandos para controlar una computadora? Para entenderlo hay que viajar un poco en el tiempo.&lt;/p&gt;
-
-&lt;h3 id=&quot;historia&quot;&gt;Historia&lt;/h3&gt;
-
-&lt;p&gt;Inicialmente, controlar una computadora era una tarea difícil, las primeras de ellas se controlaban mediante diferentes dispositivos (interruptores, tarjetas perforadas, etc.) que “cargaban” en memoria las distintas piezas de información que serían procesados en forma de programas. Este proceso era regularmente &lt;strong&gt;tedioso y sujeto a errores&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;En algunos casos, el primer programa que se cargaba en memoria era un programa que permitía cargar instrucciones adicionales a través de la lectura de datos en las mismas tarjetas perforadas. De igual forma, los resultados de la ejecución normalmente se plasmaban en papel o tarjetas similares a las que se utilizaban para su carga.&lt;/p&gt;
-
-&lt;p&gt;Conforme fueron evolucionando los computadores, los programas permitieron el uso de dispositivos de entrada más amigables para el usuario de la computadora, como Teletipos, que permitían enviar comandos desde teclados y terminales remotas al ordenador (remoto en un sentido práctico, quizás de un cuarto a otro). Esta forma de transmitir comandos y obtener resultados era mucho más sencilla que estar cargando información a través de interruptores o tarjetas perforadas.&lt;/p&gt;
-
-&lt;p&gt;La pregunta natural es: si esto fue la primer evolución hacia un uso más sencillo de las computadoras, &lt;strong&gt;¿por qué se sigue utilizando?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Aunque la evolución de las computadoras ha seguido su curso y la interacción Humano-Computador ha avanzado en diferentes vertientes, por ejemplo, &lt;strong&gt;mediante la implementación de interfaces gráficas&lt;/strong&gt;, el uso de la interfaz de línea de comandos se ha mantenido vigente por diversas razones:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Por su &lt;strong&gt;versatilidad&lt;/strong&gt;, es posible utilizarlo para resolver distintos tipos de problemas y con distintos tipos de opciones que harían muy difícil su integración completa en una interfaz gráfica.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Por su &lt;strong&gt;poder&lt;/strong&gt;, al tener acceso a las funciones centrales del sistema operativo, también contempla casos de uso para los cuales las interfaces gráficas no están preparados.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Permite crear programas que hacen uso de las capacidades nativas y extendidas del sistema operativo y ejecutar dichos programas o scripts en distintas modalidades, por ejemplo, de manera repetitiva a través de trabajos programados (cron jobs) o en conjunto con otros programas (por ejemplo con ambientes de desarrollo integrados). A esto le podemos llamar &lt;strong&gt;automatización de tareas&lt;/strong&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;El programa de shell específico (en este caso Bash o Zsh), definen su interfaz con el usuario, no sólo en la manera en la que presentarán la linea de comando sino también en las &lt;strong&gt;capacidades y comandos que soportan de manera nativa&lt;/strong&gt;, en general, podemos encontrar algunas de estas características:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Una sintaxis que define los comandos y secuencias de comando que el shell ‘entenderá’.&lt;/li&gt;
-  &lt;li&gt;Comandos que darán acceso a las ‘operaciones’ que el shell puede ejecutar .&lt;/li&gt;
-  &lt;li&gt;Funciones que permiten agrupar comandos para ejecutar labores más complejas.&lt;/li&gt;
-  &lt;li&gt;Parámetros para almacenar valores para su uso durante la ejecución de las funciones y comandos.&lt;/li&gt;
-  &lt;li&gt;Expansión que define la forma en la que los parámetros en un comando son aplicados.&lt;/li&gt;
-  &lt;li&gt;Flujo y redirección que controla las entradas y salidas de y desde los comandos.&lt;/li&gt;
-  &lt;li&gt;Ejecución que define lo que sucede cuando cada comando corre.&lt;/li&gt;
-  &lt;li&gt;Scripting que permite ejecutar archivos que contienen una lista de comandos y/o funciones.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;porqué-razón-puede-estar-cambiando-apple-de-un-shell-a-otro&quot;&gt;¿Porqué razón puede estar cambiando Apple de un shell a otro?&lt;/h2&gt;
-
-&lt;p&gt;Existen varias posibilidades, la primera de ellas es que aunque Apple utiliza Bash desde OSX Jaguar, no había actualizado Bash desde la versión 3.2 liberada en el 2007, es decir casi el mismo año en el que se liberó el primer iPhone. Es probable que una de las razones por las que esto sucedió fue que Bash cambió su licencia de uso de &lt;strong&gt;GNU GPL 2 a una licencia GNU GPLv3&lt;/strong&gt;, y dicho cambio incluía restricciones que quizás no fueron del todo favorables a Apple.&lt;/p&gt;
-
-&lt;p&gt;Así que migrar a Zsh es una opción refrescante. La versión que está incluida en Catalina es la 5.7.1 y utiliza una versión de licenciamiento &lt;strong&gt;MIT que es menos restrictiva que la GPLv3&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-sucederá-con-bash-tendré-que-dejar-de-usarlo&quot;&gt;¿Qué sucederá con Bash, tendré que dejar de usarlo?&lt;/h2&gt;
-
-&lt;p&gt;No necesariamente, aunque Zsh será el shell por default para todas las nuevas cuentas de usuario creadas en macOS Catalina, si tu hiciste un upgrade del Sistema Operativo, tu cuenta seguirá utilizando por default Bash. Pero siempre tendrás opción de configurar el shell que desees por default de manera voluntaria, incluso a alguno distinto a Zsh o Bash.&lt;/p&gt;
-
-&lt;p&gt;A nivel general, Bash y Zsh tienen un nivel de compatibilidad bastante alto ya que &lt;strong&gt;ambos están basados en el aún más antiguo Bourne Shell&lt;/strong&gt;, de tal forma que la mayoría de los scripts y comandos existentes funcionarán sin ningún cambio en Zsh.&lt;/p&gt;
-
-&lt;p&gt;La ventaja real de Zsh es la inclusión de funcionalidades que hacen trabajar con él más fácil (funcionalidades no incluidas por default en la versión vieja de Bash), entre algunas de mis funcionalidades favoritas están:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Auto completado de comandos&lt;/li&gt;
-  &lt;li&gt;Auto corrección de comandos&lt;/li&gt;
-  &lt;li&gt;Integración con algunos sistemas de uso común para desarrolladores (git)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;qué-sucederá-con-mis-scripts-hechos-en-bash&quot;&gt;¿Qué sucederá con mis scripts hechos en Bash?&lt;/h2&gt;
-
-&lt;p&gt;En general, correrán de igual forma a como lo venían haciendo, sin embargo en casos muy peculiares podrías requerir modificarlos o simplemente agregar #!/bin/bash (&lt;em&gt;shebang&lt;/em&gt;) para forzar a que el script utilice el shell de Bash que sigue incluyéndose en MacOS.&lt;/p&gt;
-
-&lt;p&gt;Puedes usar temporalmente uno u otro shell simplemente invocando su nombre en la línea de comandos (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zsh&lt;/code&gt; o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;En la Mac, podrás configurar el shell default en las Preferencias del Sistema, en el panel de Usuarios y Grupos, podrás seleccionar la cuenta de un usuario y en las Opciones Avanzadas podrás seleccionar uno de los shells disponibles.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión-y-referencias&quot;&gt;Conclusión y referencias&lt;/h2&gt;
-
-&lt;p&gt;Dominar tu shell &lt;strong&gt;hará que tu trabajo diario sea más sencillo&lt;/strong&gt; ya que podrás configurar funcionalidades que aumenten tus capacidades como desarrollador y en conjunto con el conocimiento a profundidad de tu interfaz de desarrollo, podrá hacerte mucho más eficiente al momento de administrar y ejecutar comandos que tengan que ver con tus proyectos.&lt;/p&gt;
-
-&lt;p&gt;Algunos recursos que te ayudarán:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;La &lt;a href=&quot;http://zsh.sourceforge.net/&quot;&gt;documentación de Zsh&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Configuración Zsh es mediante &lt;a href=&quot;https://ohmyz.sh/&quot;&gt;Oh My Zsh&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;¿Donde se configuran las funcionalidades de Zsh? En &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.zshrc&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;¿Cómo  saber que shell estoy usando?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$0&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;o&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$SHELL&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Cómo configurar Zsh como mi shell default?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chsh &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; /bin/zsh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Cómo activar el autocomplete?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;autoload &lt;span class=&quot;nt&quot;&gt;-U&lt;/span&gt; compinit &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; compinit
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Cómo activar la extensión para git?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;autoload &lt;span class=&quot;nt&quot;&gt;-Uz&lt;/span&gt; vcs_info
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Cómo configurar el cambio de directorio automático?
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;setopt autocd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;referencias&quot;&gt;Referencias&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.bash.academy/&quot;&gt;Bash academy&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=10737639&quot;&gt;Discusión en YCombinator&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.rayninfo.co.uk/tips/zshtips.html?LMCL=bNg6o6&quot;&gt;Zsh tips&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://leahneukirchen.org/blog/archive/2008/02/10-zsh-tricks-you-may-not-know.html&quot;&gt;10 trucos de Zsh&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://zsh.sourceforge.net/Guide/zshguide.html&quot;&gt;Zsh Guide&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.tldp.org/LDP/abs/html/&quot;&gt;Advanced Bash-Scripting Guide&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://matt.might.net/articles/bash-by-example/&quot;&gt;Bash by example&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Libro: &lt;a href=&quot;https://amzn.to/32phs95&quot;&gt;From Bash to Zsh&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="shell" /><category term="zsh" /><category term="bash" /><category term="terminal" /><summary type="html">Zsh es el nuevo shell default de MacOS Catalina. Entiende las principales diferencias entre Bash y Zsh.</summary></entry></feed>
+&lt;p&gt;En el siguiente artículo te contaremos cómo nos fue con las pruebas.&lt;/p&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="apis" /><category term="machine-learning" /><category term="AI" /><summary type="html">Exploremos las opciones que tienes para realizar traducciones automáticas de texto en tus proyectos.</summary></entry></feed>

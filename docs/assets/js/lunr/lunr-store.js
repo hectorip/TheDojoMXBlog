@@ -310,4 +310,10 @@ var store = [{
         "tags": ["ai","ml","gans"],
         "url": "https://blog.thedojo.mx/2020/12/30/que-son-los-modelos-generativos.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1609313335/nathan-roser-XX0vmOvQ3GA-unsplash_iath8r.jpg"
+      },{
+        "title": "Libros que te ayudarán a aprender Data Science",
+        "excerpt":"Creemos firmemente que una de las mejores maneras de educarte como desarrollador es conseguir guía clara. Una de las mejores fuentes de conocimiento son los libros escritos por personas expertas en el tema del que quieres aprender, es por eso siempre buscamos personas que nos den consejos sobre los mejores...","categories": [],
+        "tags": ["video","datascience","books","libros"],
+        "url": "https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1612164878/snapbuilder_3_xmlqlz.png"
       }]
