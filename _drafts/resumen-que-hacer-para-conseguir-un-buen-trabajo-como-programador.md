@@ -68,7 +68,6 @@ No pudimos platicar tanto de libros, pero uno que no puede faltar casi en ningun
 
 Pablo Trinidad nos recomendó lagunos canales de YouTube para seguir alementando la curiosisdad y aprender cosas de diferentes campos.
 
-
 The Cherno
 
 Computerphile
@@ -85,4 +84,3 @@ Joe rogan
 
 Ben Eater
 3Blue1Brown
-
