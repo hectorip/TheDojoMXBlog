@@ -55,6 +55,8 @@ No pudimos platicar tanto de libros, pero uno que no puede faltar casi en ningun
 
 ## Características que necesitarás para trabajar en Google
 
+¿Qué se necesita para trabajar en Google?
+
 * Dificultad
 * Liderazgo
 * Impacto

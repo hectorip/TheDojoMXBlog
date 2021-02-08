@@ -2,7 +2,7 @@
 title: "Libros que te ayudarán a aprender Data Science"
 date: 2021-02-01
 author: Héctor Patricio
-tags: video datascience books libros
+tags: video data-science books libros
 comments: true
 excerpt: "En este post te contamos sobre algunos libros que te pueden servir para avanzar en tu carrera."
 header:
