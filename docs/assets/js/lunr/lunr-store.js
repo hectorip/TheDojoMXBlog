@@ -313,7 +313,13 @@ var store = [{
       },{
         "title": "Libros que te ayudarán a aprender Data Science",
         "excerpt":"Creemos firmemente que una de las mejores maneras de educarte como desarrollador es conseguir guía clara. Una de las mejores fuentes de conocimiento son los libros escritos por personas expertas en el tema del que quieres aprender, es por eso siempre buscamos personas que nos den consejos sobre los mejores...","categories": [],
-        "tags": ["video","datascience","books","libros"],
+        "tags": ["video","data-science","books","libros"],
         "url": "https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1612164878/snapbuilder_3_xmlqlz.png"
+      },{
+        "title": "Resumen: Qué hacer para conseguir un buen trabajo como programador",
+        "excerpt":"Aquí te damos un resumen de la plática que tuvimos con Diego De Granda y Pablo Trinidad sobre algunas cosas que hicieron para conseguir buenos trabajos. Esbozaremos algunos de los connsejos independientes sin una seccuencia definida. Aprende Inglés Aunque la razón de existencia de este blog y de The Dojo...","categories": [],
+        "tags": ["lives","recomendaciones","video","libros","consejos"],
+        "url": "https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1612938717/zgc1993-JyLpF2rn0e4-unsplash_eqxvhm.jpg"
       }]

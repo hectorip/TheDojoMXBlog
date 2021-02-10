@@ -1,4 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2021-02-01T01:40:43-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Libros que te ayudarán a aprender Data Science</title><link href="https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science.html" rel="alternate" type="text/html" title="Libros que te ayudarán a aprender Data Science" /><published>2021-02-01T00:00:00-06:00</published><updated>2021-02-01T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science</id><content type="html" xml:base="https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science.html">&lt;p&gt;Creemos firmemente que una de las mejores maneras de educarte como desarrollador es conseguir guía clara.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2021-02-10T00:33:47-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Resumen: Qué hacer para conseguir un buen trabajo como programador</title><link href="https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html" rel="alternate" type="text/html" title="Resumen: Qué hacer para conseguir un buen trabajo como programador" /><published>2021-02-10T00:00:00-06:00</published><updated>2021-02-10T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador</id><content type="html" xml:base="https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html">&lt;p&gt;Aquí te damos un resumen de la plática que tuvimos con Diego De Granda y Pablo Trinidad sobre algunas cosas que hicieron para conseguir buenos trabajos. Esbozaremos algunos de los connsejos independientes sin una seccuencia definida.&lt;/p&gt;
+
+&lt;h2 id=&quot;aprende-inglés&quot;&gt;Aprende Inglés&lt;/h2&gt;
+
+&lt;p&gt;Aunque la razón de existencia de este blog y de The Dojo MX en general es generar contenido en español para ayudar a los hispanohablantes, nunca nos cansaremos (y tampoco nuestros invitados) de darte el mismo consejo: &lt;strong&gt;APRENDE INGLÉS&lt;/strong&gt;. Creemos sinceramente que el idioma no debería ser una limitante para que &lt;em&gt;empieces&lt;/em&gt; a aprender lo que sea que te guste, pero especialmente en el área de tecnología, la mayor parte de las personas, trabaja y habla en inglés, por lo que es importantísimo aprenderlo lo mejor que puedas.&lt;/p&gt;
+
+&lt;h2 id=&quot;aprende-a-dar-y-recibir-retroalimentación&quot;&gt;Aprende a dar y recibir retroalimentación&lt;/h2&gt;
+
+&lt;p&gt;En este apartado hablaron de cuatro cosas que la retroalimentación debe tener para poder ser útil:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Directa, sin darle tantas vueltas al asunto&lt;/li&gt;
+  &lt;li&gt;Accionable, debes dejar a la persona con algo sobre lo que pueda actuar&lt;/li&gt;
+  &lt;li&gt;Oportuno, mientras más cercano estés al momento en cuestión, mejor&lt;/li&gt;
+  &lt;li&gt;Transparente, tus intenciones son claras&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Y si eres la persona que toma la retroalimentación, no te ofendas y toma lo bueno.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-pragmatic-programmer&quot;&gt;The Pragmatic Programmer&lt;/h2&gt;
+
+&lt;p&gt;No pudimos platicar tanto de libros, pero uno que no puede faltar casi en ninguna recomendación de libros para programadores es &lt;a href=&quot;https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/&quot;&gt;The Pragmatic Programmer&lt;/a&gt; un libro sobre las bases que necesitas para ser un programador productivo.&lt;/p&gt;
+
+&lt;h2 id=&quot;aprende-los-fundamentos&quot;&gt;Aprende los fundamentos&lt;/h2&gt;
+
+&lt;p&gt;Es muy importante que aprendas los fundamentos de lo que haces si quieres atacar problemas difíciles.&lt;/p&gt;
+&lt;h2 id=&quot;consejos-de-pablo-trinidad-para-mantenerte-empleable&quot;&gt;Consejos de Pablo Trinidad para mantenerte empleable&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Permanecer presente en el aprendizaje y ser crítico&lt;/em&gt;: Tienes que estarte preguntando constantemente: ¿Por qué funciona lo que estoy haciendo? Y puedes aplicar la técnica de preguntar continuamente “¿Por qué?” hasta llegar al fondo de las cosas.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Leer&lt;/em&gt;. Estudiar y aprender lo más que puedas, incluso sobre cosas que no sean ténicas.
+    &lt;h2 id=&quot;consejos-de-diego-de-granda&quot;&gt;Consejos de Diego de Granda&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Resiliencia&lt;/em&gt;: Los problemas nunca van a parar, así que tienes que aprender a solucionar problemas sin frustrarte y persistir hasta que llegues a la solución&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Resolver problemas&lt;/em&gt;: mejorar tus capacidades de resolver problemas te ayudará a ser alguien más útil para tu equipo y tu empresa&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Ser agnóstico&lt;/em&gt;: No te cases con una tecnología, diversifica y usa la correcta para el problema en cuestión.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;características-que-necesitarás-para-trabajar-en-google&quot;&gt;Características que necesitarás para trabajar en Google&lt;/h2&gt;
+
+&lt;p&gt;¿Qué se necesita para trabajar en Google? Aquí algunas de las ideas que Pablo nos compartió:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Capacidad&lt;/strong&gt; de tomar problemas difíciles&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Liderazgo&lt;/strong&gt; para ayudar a tu equipo&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Impacto&lt;/strong&gt; extendido en diferentes personas y equipos&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Independencia&lt;/strong&gt;, no necesitas de un manager que te esté cuidando los pasos&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ownership&lt;/strong&gt;, te adueñas de lso problemas y pones todo tu empeño en resolverlos&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Estar presente&lt;/strong&gt;, es decir, no pasar por las experiencias sin aprender de ellas&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sigue-alimentando-tu-curiosidad&quot;&gt;Sigue alimentando tu curiosidad&lt;/h2&gt;
+
+&lt;p&gt;Pablo nos recomendó algunos canales de YouTube para seguir alimentando la curiosidad y aprender cosas de diferentes campos, como matemáticas, ciencia, computación y electrónica.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/TheChernoProject&quot;&gt;The Cherno&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/Computerphile&quot;&gt;Computerphile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/Numberphile&quot;&gt;Numberphile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/1Veritasium&quot;&gt;Veritasium&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/destinws2&quot;&gt;Smarter Everyday&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/nobani88&quot;&gt;Eric Weinstein&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/PowerfulJRE&quot;&gt;Joe rogan&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/eaterbc&quot;&gt;Ben Eater&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw&quot;&gt;3Blue1Brown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Esto no te hará un mejor programador directamente pero te ayudará a crecer como persona y te ayudará a conseguir mejores oportunidades. Y sí, necesitas inglés para entenderlos.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Hablamos de muchas cosas más, productividad, Google, cómo avanzar en tu carrera, etc. No te pierdas la plática entera aquí:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/mUfmVBaOmxM&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="lives" /><category term="recomendaciones" /><category term="video" /><category term="libros" /><category term="consejos" /><summary type="html">Hablamos con Diego De Granda y Pablo Trinidad sobre qué tienes que hacer para conseguit un buen trabajo en tecnología. Aquí tienes un resumen.</summary></entry><entry><title type="html">Libros que te ayudarán a aprender Data Science</title><link href="https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science.html" rel="alternate" type="text/html" title="Libros que te ayudarán a aprender Data Science" /><published>2021-02-01T00:00:00-06:00</published><updated>2021-02-01T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science</id><content type="html" xml:base="https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science.html">&lt;p&gt;Creemos firmemente que una de las mejores maneras de educarte como desarrollador es conseguir guía clara.&lt;/p&gt;
 
 &lt;p&gt;Una de las mejores fuentes de conocimiento son los libros escritos por personas expertas en el tema del que quieres aprender, es por eso siempre buscamos personas que nos den consejos sobre los mejores recursos que encuentren.&lt;/p&gt;
 
@@ -31,7 +104,57 @@
 
 &lt;p&gt;La charla que tuvimos con ella se extendió sobre muchos temas más, si no te la quieres perder la puedes ver aquí:&lt;/p&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vCzMLeq_eBk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="video" /><category term="datascience" /><category term="books" /><category term="libros" /><summary type="html">En este post te contamos sobre algunos libros que te pueden servir para avanzar en tu carrera.</summary></entry><entry><title type="html">¿Deberías comentar tu código?</title><link href="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html" rel="alternate" type="text/html" title="¿Deberías comentar tu código?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html">&lt;p&gt;Cuando hablamos de los comentarios en el código, hay dos escuelas. La primera dice que debes usar los comentarios para &lt;strong&gt;clarificar lo que quisiste expresar con tu código&lt;/strong&gt;, mientras que la segunda dice que deberías &lt;strong&gt;evitarlos al máximo&lt;/strong&gt; y que comentar tu código es un mal necesario que sólo denota tu falta de habilidad para no hacer código lo suficientemente claro.&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vCzMLeq_eBk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="video" /><category term="data-science" /><category term="books" /><category term="libros" /><summary type="html">En este post te contamos sobre algunos libros que te pueden servir para avanzar en tu carrera.</summary></entry><entry><title type="html">¿Qué son los modelos generativos?</title><link href="https://blog.thedojo.mx/2020/12/30/que-son-los-modelos-generativos.html" rel="alternate" type="text/html" title="¿Qué son los modelos generativos?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/que%20son-los-modelos-generativos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/que-son-los-modelos-generativos.html">&lt;p&gt;Los modelos generativos permiten a una máquina “aprender” los patrones que existen en los datos con los que son entrenadas y a partir de dicho aprendizaje, son capaces de &lt;strong&gt;generar datos similares&lt;/strong&gt; que en algunos casos pueden ser casi tan “reales” como los que se utilizaron inicialmente para su entrenamiento.&lt;/p&gt;
+
+&lt;p&gt;Mediante este tipo de modelos pueden generarse nuevos datos que tienen distintas aplicaciones, entre ellas, generar datos que otros sistemas de aprendizaje podrán utilizar para su entrenamiento, sin necesidad de que dichos datos existan previamente.&lt;/p&gt;
+
+&lt;p&gt;En particular, las &lt;strong&gt;Redes Neuronales Generativas Adversariales (GAN’s)&lt;/strong&gt; pueden generar nuevas imágenes que se parecen o son similares a las imágenes con las que fueron entrenadas, pero que individualmente son distintas a todas ellas.&lt;/p&gt;
+
+&lt;p&gt;El funcionamiento de una Red Neuronal Adversarial consiste en la operación simultánea de dos redes neuronales que son “adversarias”, una de dichas redes es la encargada de generar imágenes y la segunda es la encargada de discriminar aquellas imágenes que no se parecen a lo que constituye una imágen real.&lt;/p&gt;
+
+&lt;p&gt;Algunos modelos avanzados pueden verse en:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://thispersondoesnotexist.com/&quot;&gt;This Person Does Not Exist&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.thiswaifudoesnotexist.net/&quot;&gt;This Waifu Does Not Exist&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://thisfursonadoesnotexist.com/&quot;&gt;This Furson Does Not Exist&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Como parte de un proyecto de investigación, utilizamos una red adversarial para generar imágenes de zapatos, dichas redes utilizan, modelos convolucionales para ir entendiendo las imágenes en segmentos cada vez más pequeños hasta tener una definición y similitud suficiente para reemplazar la imagen original.&lt;/p&gt;
+
+&lt;p&gt;La calidad de los modelos generados se incrementa conforme el número de iteraciones va aumentando, en general, se van almacenando nuevas muestras de las imágenes generadas cada cierto número de iteraciones de tal forma se puede observar si el modelo sigue mejorando, si ya se estancó o si se está degradando, aunque existen algunas métricas que pueden ayudar a identificar el punto óptimo donde puede detenerse el entrenamiento.&lt;/p&gt;
+
+&lt;p&gt;Algunas de las peculiaridades de estos modelos es que son relativamente sensibles a la uniformidad y el número de imágenes utilizadas, sin embargo, también es cierto que los modelos han ido mejorando y en algunos casos pueden generar imágenes de gran calidad con menos datos de entrenamiento. Por ejemplo, estas imágenes fueron generadas con sólo 500 datos de entrenamiento mediante un Modelo Generador Adversarial Eficiente:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mit-han-lab/data-efficient-gans&quot;&gt;Data Efficient GANs&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;usos-de-los-generadores-adversariales&quot;&gt;Usos de los generadores adversariales&lt;/h2&gt;
+
+&lt;p&gt;Hablemos de algunos de los usos que pueden tener en la práctica este tipo de redes.&lt;/p&gt;
+
+&lt;h3 id=&quot;mejorar-la-seguridad&quot;&gt;Mejorar la seguridad&lt;/h3&gt;
+
+&lt;p&gt;Un discriminador optimiza su capacidad para detectar imágenes que no son reales (las que emite el generador), de tal forma que dicho discriminador adquiere la capacidad de identificar imágenes que no son reales y que pueden estar siendo utilizadas para generar identidades falsas en sistemas que por ejemplo requieren fotografías.&lt;/p&gt;
+
+&lt;h3 id=&quot;en-el-sector-salud&quot;&gt;En el sector salud&lt;/h3&gt;
+
+&lt;p&gt;La capacidad de detectar anomalías (trabajo del discriminador) puede utilizarse para identificar células o formaciones anómalas (como el cáncer) al ser entrenado mediante imágenes de tejidos u órganos saludables.&lt;/p&gt;
+
+&lt;h3 id=&quot;en-el-sector-de-medios-digitales&quot;&gt;En el sector de medios digitales&lt;/h3&gt;
+
+&lt;p&gt;Ya que generadores adversariales pueden utilizarse para generar imágenes que no existían o generar imágenes a partir de un conjunto de imágenes preexistentes, dicha generación puede de igual forma generar modelos en tercera dimensión a partir de imágenes en dos dimensiones o hacer combinaciones de modelos preexistentes.&lt;/p&gt;
+
+&lt;p&gt;Esto puede usarse como material para la producción de contenido visual e incluso animaciones de video o bien como inspiración para que un diseñador genere nuevos personajes.&lt;/p&gt;
+
+&lt;p&gt;Algunos generadores pueden ayudar a corregir defectos en imágenes, removiendo o completando partes de la imágen que sobraban o que estaban faltantes, o si es el caso, a dar color a imágenes en blanco y negro.&lt;/p&gt;
+
+&lt;p&gt;De igual forma permiten crear una “interpolación” de imágenes para “regenerarlas” en una mayor resolución. Desde luego la eficacia dependerá de las imágenes utilizadas para su entrenamiento.&lt;/p&gt;
+
+&lt;p&gt;Algunas de estas aplicaciones pueden “traducir” las imágenes de un dominio a otro, por ejemplo, convirtiendo una imágen satelital en un mapa de niveles o generando fotografías a partir de bosquejos.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Los modelos generativos pueden ser una gran herramienta para diferentes industrias, aprender a usarlos y generarlos te puede ayudar a entrar en un campo que tiene cada vez más alta demanda: el uso de datos para la creación automática de programas (Machine Learning).&lt;/p&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="ai" /><category term="ml" /><category term="gans" /><summary type="html">En este artículo exploramos qué es un modelo generativo, cómo te pueden servir y el estado del arte en este campo.</summary></entry><entry><title type="html">¿Deberías comentar tu código?</title><link href="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html" rel="alternate" type="text/html" title="¿Deberías comentar tu código?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html">&lt;p&gt;Cuando hablamos de los comentarios en el código, hay dos escuelas. La primera dice que debes usar los comentarios para &lt;strong&gt;clarificar lo que quisiste expresar con tu código&lt;/strong&gt;, mientras que la segunda dice que deberías &lt;strong&gt;evitarlos al máximo&lt;/strong&gt; y que comentar tu código es un mal necesario que sólo denota tu falta de habilidad para no hacer código lo suficientemente claro.&lt;/p&gt;
 
 &lt;p&gt;¿A cuál de los dos consejos deberías hacerle caso? En este artículo explicaremos por qué creemos que deberías ver los comentarios como una &lt;strong&gt;herramienta necesaria&lt;/strong&gt;, valiosa y muy útil, y cómo usarlos para no caer en el extremo que ha llevado a algunas personas a tener una mala actitud hacia ellos.&lt;/p&gt;
 
@@ -125,57 +248,7 @@
 
 &lt;p&gt;Si pones el suficiente esmero en aprender a escribir buenos comentarios y mantenerlos, serán una gran herramienta de diseño y documentación de tu software.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Este artículo está basado en las ideas del “A Philosophy of Software Design de John Ousterhout”, en el que se le dedican &lt;strong&gt;4 capítulos&lt;/strong&gt; al buen uso de los comentarios&lt;/em&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="comments" /><category term="comentarios" /><category term="mantenibilidad" /><category term="código-mantenible" /><category term="ousterhout" /><category term="aposd" /><summary type="html">Hay programadores que dice que los comentarios son un mal que se debería evitar al máximo. Aquí proponemos lo contrario: usa los comentarios correctamente para crear código mantenible, basados en las ideas de 'A Philosophy of Software Design'</summary></entry><entry><title type="html">¿Qué son los modelos generativos?</title><link href="https://blog.thedojo.mx/2020/12/30/que-son-los-modelos-generativos.html" rel="alternate" type="text/html" title="¿Qué son los modelos generativos?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/que%20son-los-modelos-generativos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/que-son-los-modelos-generativos.html">&lt;p&gt;Los modelos generativos permiten a una máquina “aprender” los patrones que existen en los datos con los que son entrenadas y a partir de dicho aprendizaje, son capaces de &lt;strong&gt;generar datos similares&lt;/strong&gt; que en algunos casos pueden ser casi tan “reales” como los que se utilizaron inicialmente para su entrenamiento.&lt;/p&gt;
-
-&lt;p&gt;Mediante este tipo de modelos pueden generarse nuevos datos que tienen distintas aplicaciones, entre ellas, generar datos que otros sistemas de aprendizaje podrán utilizar para su entrenamiento, sin necesidad de que dichos datos existan previamente.&lt;/p&gt;
-
-&lt;p&gt;En particular, las &lt;strong&gt;Redes Neuronales Generativas Adversariales (GAN’s)&lt;/strong&gt; pueden generar nuevas imágenes que se parecen o son similares a las imágenes con las que fueron entrenadas, pero que individualmente son distintas a todas ellas.&lt;/p&gt;
-
-&lt;p&gt;El funcionamiento de una Red Neuronal Adversarial consiste en la operación simultánea de dos redes neuronales que son “adversarias”, una de dichas redes es la encargada de generar imágenes y la segunda es la encargada de discriminar aquellas imágenes que no se parecen a lo que constituye una imágen real.&lt;/p&gt;
-
-&lt;p&gt;Algunos modelos avanzados pueden verse en:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://thispersondoesnotexist.com/&quot;&gt;This Person Does Not Exist&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.thiswaifudoesnotexist.net/&quot;&gt;This Waifu Does Not Exist&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://thisfursonadoesnotexist.com/&quot;&gt;This Furson Does Not Exist&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Como parte de un proyecto de investigación, utilizamos una red adversarial para generar imágenes de zapatos, dichas redes utilizan, modelos convolucionales para ir entendiendo las imágenes en segmentos cada vez más pequeños hasta tener una definición y similitud suficiente para reemplazar la imagen original.&lt;/p&gt;
-
-&lt;p&gt;La calidad de los modelos generados se incrementa conforme el número de iteraciones va aumentando, en general, se van almacenando nuevas muestras de las imágenes generadas cada cierto número de iteraciones de tal forma se puede observar si el modelo sigue mejorando, si ya se estancó o si se está degradando, aunque existen algunas métricas que pueden ayudar a identificar el punto óptimo donde puede detenerse el entrenamiento.&lt;/p&gt;
-
-&lt;p&gt;Algunas de las peculiaridades de estos modelos es que son relativamente sensibles a la uniformidad y el número de imágenes utilizadas, sin embargo, también es cierto que los modelos han ido mejorando y en algunos casos pueden generar imágenes de gran calidad con menos datos de entrenamiento. Por ejemplo, estas imágenes fueron generadas con sólo 500 datos de entrenamiento mediante un Modelo Generador Adversarial Eficiente:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/mit-han-lab/data-efficient-gans&quot;&gt;Data Efficient GANs&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;usos-de-los-generadores-adversariales&quot;&gt;Usos de los generadores adversariales&lt;/h2&gt;
-
-&lt;p&gt;Hablemos de algunos de los usos que pueden tener en la práctica este tipo de redes.&lt;/p&gt;
-
-&lt;h3 id=&quot;mejorar-la-seguridad&quot;&gt;Mejorar la seguridad&lt;/h3&gt;
-
-&lt;p&gt;Un discriminador optimiza su capacidad para detectar imágenes que no son reales (las que emite el generador), de tal forma que dicho discriminador adquiere la capacidad de identificar imágenes que no son reales y que pueden estar siendo utilizadas para generar identidades falsas en sistemas que por ejemplo requieren fotografías.&lt;/p&gt;
-
-&lt;h3 id=&quot;en-el-sector-salud&quot;&gt;En el sector salud&lt;/h3&gt;
-
-&lt;p&gt;La capacidad de detectar anomalías (trabajo del discriminador) puede utilizarse para identificar células o formaciones anómalas (como el cáncer) al ser entrenado mediante imágenes de tejidos u órganos saludables.&lt;/p&gt;
-
-&lt;h3 id=&quot;en-el-sector-de-medios-digitales&quot;&gt;En el sector de medios digitales&lt;/h3&gt;
-
-&lt;p&gt;Ya que generadores adversariales pueden utilizarse para generar imágenes que no existían o generar imágenes a partir de un conjunto de imágenes preexistentes, dicha generación puede de igual forma generar modelos en tercera dimensión a partir de imágenes en dos dimensiones o hacer combinaciones de modelos preexistentes.&lt;/p&gt;
-
-&lt;p&gt;Esto puede usarse como material para la producción de contenido visual e incluso animaciones de video o bien como inspiración para que un diseñador genere nuevos personajes.&lt;/p&gt;
-
-&lt;p&gt;Algunos generadores pueden ayudar a corregir defectos en imágenes, removiendo o completando partes de la imágen que sobraban o que estaban faltantes, o si es el caso, a dar color a imágenes en blanco y negro.&lt;/p&gt;
-
-&lt;p&gt;De igual forma permiten crear una “interpolación” de imágenes para “regenerarlas” en una mayor resolución. Desde luego la eficacia dependerá de las imágenes utilizadas para su entrenamiento.&lt;/p&gt;
-
-&lt;p&gt;Algunas de estas aplicaciones pueden “traducir” las imágenes de un dominio a otro, por ejemplo, convirtiendo una imágen satelital en un mapa de niveles o generando fotografías a partir de bosquejos.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Los modelos generativos pueden ser una gran herramienta para diferentes industrias, aprender a usarlos y generarlos te puede ayudar a entrar en un campo que tiene cada vez más alta demanda: el uso de datos para la creación automática de programas (Machine Learning).&lt;/p&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="ai" /><category term="ml" /><category term="gans" /><summary type="html">En este artículo exploramos qué es un modelo generativo, cómo te pueden servir y el estado del arte en este campo.</summary></entry><entry><title type="html">Tipos de algoritmos criptográficos: cifrados de bloque</title><link href="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html" rel="alternate" type="text/html" title="Tipos de algoritmos criptográficos: cifrados de bloque" /><published>2020-12-03T00:00:00-06:00</published><updated>2020-12-03T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html">&lt;p&gt;Ya hablamos de lo que es &lt;a href=&quot;/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html&quot;&gt;la criptografía&lt;/a&gt;, ahora empecemos a hablar de los tipos de
+&lt;p&gt;&lt;em&gt;Este artículo está basado en las ideas del “A Philosophy of Software Design de John Ousterhout”, en el que se le dedican &lt;strong&gt;4 capítulos&lt;/strong&gt; al buen uso de los comentarios&lt;/em&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="comments" /><category term="comentarios" /><category term="mantenibilidad" /><category term="código-mantenible" /><category term="ousterhout" /><category term="aposd" /><summary type="html">Hay programadores que dice que los comentarios son un mal que se debería evitar al máximo. Aquí proponemos lo contrario: usa los comentarios correctamente para crear código mantenible, basados en las ideas de 'A Philosophy of Software Design'</summary></entry><entry><title type="html">Tipos de algoritmos criptográficos: cifrados de bloque</title><link href="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html" rel="alternate" type="text/html" title="Tipos de algoritmos criptográficos: cifrados de bloque" /><published>2020-12-03T00:00:00-06:00</published><updated>2020-12-03T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html">&lt;p&gt;Ya hablamos de lo que es &lt;a href=&quot;/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html&quot;&gt;la criptografía&lt;/a&gt;, ahora empecemos a hablar de los tipos de
 algoritmos criptográficos que existen, sus características y sus principales diferencias. En este artículo hablaremos de los cifrados de bloque.&lt;/p&gt;
 
 &lt;h3 id=&quot;qué-es-un-cifrado-de-bloque&quot;&gt;¿Qué es un cifrado de bloque?&lt;/h3&gt;
@@ -706,122 +779,4 @@ En los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la 
 
 &lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
 
-&lt;p&gt;La separación en capas permitirá que tu código esté mejor organizado y que sea más fácil de entender. Tener cuidado con la forma en que las capas se organizan, cómo se dividen responsabilidades y las interfaces que cada capa expone hará mucho más mantenible y entendible tu base de código.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Resuelve problemas de organización de código mediante un sistema en capas.</summary></entry><entry><title type="html">Traducción automática: API’s vs tu propio modelo</title><link href="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html" rel="alternate" type="text/html" title="Traducción automática: API’s vs tu propio modelo" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-19T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html">&lt;p&gt;Traducir texto es una tarea frecuente y que puede realizarse de diferentes maneras, en este artículo queremos explorar algunas de ellas.&lt;/p&gt;
-
-&lt;p&gt;Existen sitios donde la traducción puede hacerse en línea, como en &lt;a href=&quot;https://translate.google.com.mx/?hl=es&quot;&gt;Google Translate&lt;/a&gt;, sin embargo, en muchos casos existe un límite en la cantidad de texto que puedes traducir.&lt;/p&gt;
-
-&lt;p&gt;También puedes utilizar &lt;strong&gt;APIs que pueden ayudarte a hacer dicho trabajo&lt;/strong&gt;, dichas APIs también tiene límites por traducción.&lt;/p&gt;
-
-&lt;p&gt;Una solución que nos resulta interesante es la traducción utilizando algún modelo de &lt;strong&gt;Aprendizaje de Máquina&lt;/strong&gt; que ya haya sido previamente entrenado.  En este artículo podrás explorar estos diferentes métodos y el código que podrías utilizar para llevarlo a cabo, entendiendo las ventajas y desventajas que cada método ofrece.&lt;/p&gt;
-
-&lt;p&gt;Hablemos de los diferentes métodos.&lt;/p&gt;
-
-&lt;h2 id=&quot;interfaz-gráfica&quot;&gt;Interfaz gráfica&lt;/h2&gt;
-
-&lt;p&gt;Google Translate te permite traducir 5,000 palabras a la vez en su interfaz. Si lo vas a hacer pocas veces y los textos no rebasan esa cantidad de palabras, ¿para qué construir algo?&lt;/p&gt;
-
-&lt;p&gt;Esta opción nos recuerda que a veces la mejor solución es que no programemos nada.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Ventajas&lt;/strong&gt;: Inmediata, fácil de usar y sin costo.
-&lt;strong&gt;Desventajas&lt;/strong&gt;: Requiere intervención humana cada que se tenga que traducir algo.&lt;/p&gt;
-
-&lt;h2 id=&quot;apis&quot;&gt;API’s&lt;/h2&gt;
-
-&lt;p&gt;Si quieres automatizar las tareas de traducción para integrarlas en un sistema más grande o generar salidas que se queden almacenadas en archivos o bases de datos, una solución es crear un programa que consuma una API de traducción.&lt;/p&gt;
-
-&lt;p&gt;Algunas opciones son:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Cloud Translation&lt;/strong&gt; de Google Cloud Platform. Tiene dos niveles de traducción: el básico que soporta el modelo tradicional de traducción y el avanzado que permite customizar los modelos de traducción además de incluir glosarios y otras monerías.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.ibm.com/watson/services/language-translator/&quot;&gt;Watson Language Translator&lt;/a&gt; permite traducir una gran cantidad de formatos de texto en muchos lenguajes. La única desventaja es que las API’s de IBM no son las más hermosas y en general sus sitemas de administración fallan bastante.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Otras&lt;/strong&gt;. En &lt;a href=&quot;https://rapidapi.com/collection/google-translate-api-alternatives&quot;&gt;RapidAPI&lt;/a&gt; puedes encontrar una colección actualizada de las alternativas a Google Translation API.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Para desarrollar esta pieza de software, lo más recomendable sería crear un wrapper alrededor de la API y exponer a las demás partes del programa sólo los métodos para poder realizar la tarea de traducción, abstrayendo completamente los detalles de cómo se realiza. De esta manera podrías cambiar de API fácilmente (implementando las llamadas a la nueva API) sin irrumpir en la mayoría del programa.&lt;/p&gt;
-
-&lt;p&gt;Además esta forma de hacerlo también sería compatible con el siguiente método:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;AutoML Translation&lt;/strong&gt;. Pertenece también a GCP y permite entrenar un modelo mediante el envío de pares de frases para entrenar un modelo que posteriormente puedes usar para hacer traducciones sobre un dominio específico. Es el que más trabajo implicaría de tu parte pero es el que más flexibilidad de tiene.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;ventajas&quot;&gt;Ventajas&lt;/h3&gt;
-
-&lt;p&gt;Puedes olvidarte completamente de los detalles de implementación de la traducción, del hosting y mantenimiento de esta parte y probablemente las traducciones son muy precisas, como estamos acostumbrados a las de Google.&lt;/p&gt;
-
-&lt;h3 id=&quot;desventajas&quot;&gt;Desventajas&lt;/h3&gt;
-
-&lt;p&gt;Generalmente esta comodidad viene un costo económico que varía dependiendo del uso. La flexibilidad y capacidad de configuración de las API’s es variada y si no funciona como esperas es muy probable que no puedas hacer nada por mejorar la traducción.&lt;/p&gt;
-
-&lt;h2 id=&quot;modelo-pre-entrenado-de-aprendizaje-de-máquina&quot;&gt;Modelo pre-entrenado de Aprendizaje de Máquina&lt;/h2&gt;
-
-&lt;p&gt;Los modelos de Aprendizaje Profundo que se han desarrollado de manera importante en los últimos años han sustituido los modelos previos que utilizaban el conocimiento de lingüistas y décadas de investigación estadística.&lt;/p&gt;
-
-&lt;p&gt;Una peculiaridad de un modelo de Aprendizaje Profundo es que logra detectar patrones de uso de los lenguajes y utilizar dichos patrones para realizar la traducción de uno a otro. Dichos patrones no tienen una representación equivalente de una palabra en un idioma a otra en un idioma distinto, sino que combinan los patrones internos de uso de las palabras en un idioma y después aplican los patrones que el otro idioma utilizaría. Eso hace que los traductores que utilizan aprendizaje profundo sean mucho más precisos y que las traducciones sean mucho más naturales, además de que pueden adaptarse a casos de uso específicos que los modelos anteriores no contemplaban. ¿Por qué? Porque podemos entrenarlos utilizando un conjunto de datos de entrenamiento que se enfoquen en un dominio específico del lenguaje (ej. traducción de subtítulos de películas, o traducción de textos técnicos).&lt;/p&gt;
-
-&lt;p&gt;A pesar de ello, uno de los impedimentos más relevantes para su entrenamiento es que hasta hace algunos años, entrenar un modelo requería grandes cantidades de cómputo y memoria, cosa que ha ido cambiando conforme la industria ha ido evolucionando y los principales proveedores de cómputo han puesto a disposición del mundo, plataformas en la nube donde puede adquirirse poder computacional y de procesamiento de manera sencilla (AWS, Google, Microsoft, IBM, Oracle, etc.). De igual forma, las compañías que crean procesadores especializados (NVIDIA, AMD) también han logrado reducir los costos y poner en manos de cada vez más desarrolladores, tarjetas de video con Unidades de Procesamiento Gráfico (GPUs) a precios cada vez más accesibles.&lt;/p&gt;
-
-&lt;p&gt;El modelo genérico de un sistema de traducción basado en Aprendizaje de Máquina consta de dos piezas principales (cada una de ellas una red neuronal por sí misma):&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Un  codificador de secuencias de palabras (que serían oraciones del texto) que aprende a codificar palabras como un arreglo de números que representa el significado de la oración.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Un decodificador de números, que toma un arreglo de números en general y los transforma en oraciones.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;La peculiaridad es que en el paso 1 obtenemos ese arreglo de números utilizando el lenguaje de orígen y la decodificación la hacemos hacia el lenguaje destino.&lt;/p&gt;
-
-&lt;p&gt;Para poder capturar los patrones y relaciones que existen entre las palabras en una oración, es necesario que la red neuronal cuente con la capacidad de recordar las palabras dentro de una oración, ya que las relaciones de una palabra cualquiera serán mucho más fuertes con ciertas palabras que con otras, por ejemplo la relación entre “la” y “relación” será mucho más fuerte que “él” y “relación”, no esperaríamos poder encontrar un texto donde “él” y “relación” estén presentes en dicho orden específico.&lt;/p&gt;
-
-&lt;p&gt;Esta capacidad de “recordar” de una red neuronal no existe en una red neuronal tradicional, donde las entradas pasan y son procesadas por todas las capas de la red sin hacer referencia a las palabras que pasaron antes o las palabras que pasaron después, por ello es que estos algoritmos utilizan un tipo de red neuronal llamado recurrente donde la última entrada influye en la siguiente predicción, esto permite a la red neuronal recurrente “aprender” el “significado” de cada palabra dentro de un contexto.&lt;/p&gt;
-
-&lt;p&gt;En tiempos recientes, se han mejorado los modelos de procesamiento del “significado” de las palabras dentro de un contexto utilizando Transformadores que van incluso más allá del simple contexto de una palabra dentro de una oración, modelando las relaciones cruzadas entre cualquier palabra (previa o posterior) en vez de considerar únicamente el orden.&lt;/p&gt;
-
-&lt;p&gt;Estos modelos requieren mucho más operaciones matemáticas durante su entrenamiento pero los patrones que pueden identificar las hacen mucho más poderosas, aún así los modelos de recurrentes arrojan resultados bastante aceptables.&lt;/p&gt;
-
-&lt;p&gt;Existen casos en particular donde no es necesario entrenar tu propia red neuronal recurrente, ya que es probable que alguien más lo haya hecho ya. Esto puede ahorrarte muchas horas de procesamiento de información y el entrenamiento y validación del proceso de entrenamiento.&lt;/p&gt;
-
-&lt;p&gt;El proceso que se sigue es:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Obtener un corpus o conjunto de datos sobre el problema que quieres resolver (por ejemplo, textos en el idioma de origen y en el idioma destino.&lt;/li&gt;
-  &lt;li&gt;Limpieza y normalización de este corpus que remueva errores o piezas de los textos que sean incompletas o por ejemplo se puede decidir utilizar todas las palabras en minúsculas, separar las oraciones por ciertos símbolos de puntuación, etc. estas decisiones deberán tomarse teniendo en cuenta los objetivos para los cuales utilizaremos nuestro modelo de traducción, no es lo mismo un traductor de textos formateados de manera regular a textos que por ejemplo se vayan a utilizar como subtítulos para películas. Los pasos que normalmente se utilizarán tendrán como mínimo, código para separar las oraciones, y normalizar el texto.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;utilizando-un-modelo-de-traducción-prefabricado&quot;&gt;Utilizando un modelo de traducción prefabricado&lt;/h3&gt;
-
-&lt;p&gt;Si quieres experimentar con este tipo de modelos te recomiendo empezar por el uso de un modelo pre-entrenado y dependiendo de los resultados evaluar si es necesario entrenar uno especializado en la tarea que estás buscando resolver.&lt;/p&gt;
-
-&lt;p&gt;Aunque hay varios modelos disponibles, te dejo la liga a un framework hecho en C++ y que tiene un número mínimo de dependencias, se llama &lt;a href=&quot;https://marian-nmt.github.io/quickstart/&quot;&gt;Marian Neural Machine Translation&lt;/a&gt; y como parte de sus peculiaridades es que es eficiente, puede utilizar varios procesadores gráficos para el entrenamiento y soporta el uso de CPU o GPU para la traducción (al poder utilizar sólo CPU hace que el modelo pueda utilizarse en computadoras que no tienen tantos recursos).&lt;/p&gt;
-
-&lt;p&gt;Y aquí hay un modelo pre-entrenado que puede utilizarse para traducciones de español a inglés: &lt;a href=&quot;https://github.com/ageitgey/spanish-to-english-translation&quot;&gt;Spanish to English Translation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Si tuvieras necesidad de entrenar la red neuronal sería necesario que tuvieras datos paralelos, es decir el mismo texto en los dos idiomas entre los cuales quieres hacer la traducción. Aquí te dejamos la liga a uno de ellos: &lt;a href=&quot;http://opus.nlpl.eu/&quot;&gt;The open parallel corpus&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;ventajas-1&quot;&gt;Ventajas&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Puede adaptarse mediante el entrenamiento, a un estilo o tipo específico de textos (textos científicos, técnicos, informales, subtítulos, etc.)&lt;/li&gt;
-  &lt;li&gt;Puede utilizarse en modo “offline” sin necesidad de estar conectado a alguna fuente externa de internet.&lt;/li&gt;
-  &lt;li&gt;No tiene costos o límites de uso, más que aquellos resultado de operar el modelo una vez entrenado (y de entrenarlo si fuera necesario hacerlo).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;desventajas-1&quot;&gt;Desventajas&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Entrenarlo requiere una gran cantidad de datos y un proceso de limpieza/normalización que no son técnicamente sencillos.&lt;/li&gt;
-  &lt;li&gt;Es probable que no sea sencillo alcanzar el nivel de entrenamiento que las grandes compañías han utilizado para entrenar sus propios modelos (porque seguramente tienen fuentes bastante grandes de datos/procesadores gráficos/etc).&lt;/li&gt;
-  &lt;li&gt;Escalarlo para su uso masivo puede ser todo un reto.&lt;/li&gt;
-  &lt;li&gt;Las redes neuronales son cajas negras por lo que si se detecta algún error en la traducción normalmente será muy difícil saber en qué parte de los datos de entrenamiento se introdujo el error y por lo tanto será difícil removerlo.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;En el siguiente artículo te contaremos cómo nos fue con las pruebas.&lt;/p&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="apis" /><category term="machine-learning" /><category term="AI" /><summary type="html">Exploremos las opciones que tienes para realizar traducciones automáticas de texto en tus proyectos.</summary></entry></feed>
+&lt;p&gt;La separación en capas permitirá que tu código esté mejor organizado y que sea más fácil de entender. Tener cuidado con la forma en que las capas se organizan, cómo se dividen responsabilidades y las interfaces que cada capa expone hará mucho más mantenible y entendible tu base de código.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Resuelve problemas de organización de código mediante un sistema en capas.</summary></entry></feed>

@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Entendiendo REST: Arquitectura cliente-servidor -</title>
-<meta name="description" content="Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST.">
+<!-- begin _includes/seo.html --><title>Resumen: Qué hacer para conseguir un buen trabajo como programador -</title>
+<meta name="description" content="Hablamos con Diego De Granda y Pablo Trinidad sobre qué tienes que hacer para conseguit un buen trabajo en tecnología. Aquí tienes un resumen.">
 
 
   <meta name="author" content="Héctor Patricio">
@@ -19,28 +19,28 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es">
 <meta property="og:site_name" content="">
-<meta property="og:title" content="Entendiendo REST: Arquitectura cliente-servidor">
-<meta property="og:url" content="https://blog.thedojo.mx/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html">
+<meta property="og:title" content="Resumen: Qué hacer para conseguir un buen trabajo como programador">
+<meta property="og:url" content="https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html">
 
 
-  <meta property="og:description" content="Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST.">
-
-
-
-  <meta property="og:image" content="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1260/v1562217908/krzysztof-kowalik-KiH2-tdGQRY-unsplash_v0vf7l.jpg">
+  <meta property="og:description" content="Hablamos con Diego De Granda y Pablo Trinidad sobre qué tienes que hacer para conseguit un buen trabajo en tecnología. Aquí tienes un resumen.">
 
 
 
-
-
-  <meta property="article:published_time" content="2019-07-04T00:00:00-05:00">
+  <meta property="og:image" content="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1612938717/zgc1993-JyLpF2rn0e4-unsplash_eqxvhm.jpg">
 
 
 
 
 
+  <meta property="article:published_time" content="2021-02-10T00:00:00-06:00">
 
-<link rel="canonical" href="https://blog.thedojo.mx/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html">
+
+
+
+
+
+<link rel="canonical" href="https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html">
 
 
 
@@ -126,14 +126,14 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "url": "https://blog.thedojo.mx/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html",
-      "name": "Entendiendo REST: Arquitectura cliente-servidor",
-      "headline": "Entendiendo REST: Arquitectura cliente-servidor",
-      "keywords": "REST,cliente-servidor",
-      "description": "Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST.",
-      "articleBody": "\n  El propósito de construir software no es crear una topología de interacciones específicas, o usar un tipo particular de componente; es crear un sistema que cumpla y exceda las necesidades de la aplicación. - Thomas Fielding\n\n\nYa hablamos de las motivaciones detrás del estilo arquitectural REST. Ahora empecemos con la primera de sus características o restricciones, que la empieza a definir: la arquitectura cliente-servidor.\n\n¿Qué es la arquitectura cliente-servidor?\n\nEsta arquitectura de aplicación divide un sistema en dos componentes:\n\n\n  \n    Cliente: Es un programa o proceso que solicita un servicio y usa la información provista para sus propios objetivos.\n  \n  \n    Servidor: Programa o proceso que ofrece un conjunto de servicios y espera por peticiones para ejecutar o dar estos servicios.\n  \n\n\nLa principal característica de la arquitectura cliente-servidor es que logra una separación de responsabilidades clara.\n\nEn palabras de Gregory R. Andrews, el cliente es un proceso desencadenante mientras que el servidor es un proceso reactivo. Es decir el servidor no puede envíar datos o empezar procesos que un cliente no le ha solicitado.\n\nLa arquitectura básica de un sistema cliente-servidor es esta:\n\n\n\n\n\nVeamos sus ventajas y desventajas.\n\nVentajas\n\nHablemos de los beneficios que trae usar la arquitectura cliente-servidor.\n\nSeparación clara de responsabilidades\n\nLa funcionalidad del sistema se divide en dos partes (por lo menos), como el nombre lo indica en parte de dar los servicios (generalmente de datos) y la parte de atender al usuario (humanos o programa) final.\n\nEl cliente y el servidor tienen funciones completamente distintas y cada uno puede cambiar por su lado sin afectar al otro, a esto le podemos llamar “evolución independiente”.\n\nEl ejemplo que tenemos es el del navegador y las páginas que visitamos normalmente en internet. Mientras sigan cumpliendo con el protocolo establecido de comunicación (HTTP) van a poder seguir comunicándose y transfiriendo información, sin interferir la manera en que estén implementados sus procesos internos.\n\nDivisión de complejidad\n\nLa misma división de la que hablamos en el punto anterior permite dividir la complejidad en dos partes por lo que cada una por su lado es más fácil de entender y desarrollar que el sistema completo.\n\nPor lo tanto, se sigue el mismo principio que se usa para desarrollar software complejo en general: divide y vencerás. Esto permite que podamos dividir el trabajo limpiamente en diferentes etapas de desarrollo o entre diferentes equipos, que lo único que requieren es una interfaz de comunicación clara.\n\nEsto no quiere decir que la complejidad general se reduzca. De esto hablaremos en las desventajas.\n\nMúltiples versiones y reusabilidad\n\nLa implementación de la interfaz de comunicación es el único requisito indispensable para que un sistema cliente-servidor pueda seguir funcionando. Esto permite que un servidor pueda tener un número indefinido de clientes diferentes que puedan consumir su interfaz y viceversa. En el caso de REST implementar el servidor con la API permite crear tantos clientes como se necesite:\n\n\n  página web\n  aplicación móvil\n  sistema embebido\n  SDK para servidores\n\n\nSólo para ilustrar:\n\n\n\nTener N versiones de los clientes o poder crear una sin tener que volver a a replicar la funcionalidad del servidor ha hecho que las API’s se vuelvan sumamente populares.\n\nSimplificación de escalamiento\n\nPoder tener separado el servidor permite que podamos escalarlo de forma independiente dependiendo del número de clientes a los que va a atender. Si necesitamos dar un servicio a escala mundial podemos replicar nuestros servidores (usando las arquitecturas adecuadas para esto) sin afectar a los clientes y sin que ellos se enteren y por lo tanto tengan que hacer algún cambio.\n\nDesventajas\n\nTodo en la vida viene con desventajas asociadas y generalmente directamente proporcionales a sus ventajas. Y otra vez: intercambiamos valor entre diferentes partes de la aplicación. Analicemos algunas de estos intercambios que hacemos al aplicar la arquitectura cliente-servidor.\n\nComplejidad general aumentada\n\nCuando dividimos la aplicación y funciones completas en dos partes, aunque la complejidad de cada parte es menos que la general, la complejidad general aumenta porque hay que agregar elementos al sistema:\n\n\n  Interfaces de comunicación entre cliente y servidor\n  Mantenimiento o forma de recuperación del estado general de la aplicación\n  Protocolos de comunicación de red cuando es el caso\n\n\nCentralización de la información\n\nEl servidor es el responsable de almacenar la información y procesarla para darle servicio a los diferentes clientes que los soliciten, lo cual, aunque hace más fácil su administración, representa la desventaja de tener la información centralizada en el sistema que actúa como servidor. Si este sistema se corrompe de alguna forma, los clientes necesitan otras fuentes de información para eliminar este problema.\n\nCombinar cliente-servidor con otra arquitecturas ayuda a mitigar esta falla. Por ejemplo, se puede implementar el patrón de replicación de repositorio en el lado de los proveedores de servicio.\n\nPero, un momento, ¿acaso no es cliente-servidor la única arquitectura que existe para sistemas web o sistemas distribuidos?\n\nOtras arquitecturas\n\nLa arquitectura para aplicaciones distribuidas más escuchada es la cliente-servidor, pero no es ni de lejos la única. Analicemos otras dos arquitecturas comunes y dónde se usan. Si quieres ver la lista completa que Fielding analiza puedes revisar la sección 2 de su tesis doctoral.\n\nPeer to Peer\n\nEn este estilo está compuesta por nodos equivalentes, es decir, que tiene la misma función (aunque pueden tener diferente información) y que se distribuyen la carga que soporta el sistema entero según las capacidades de cada uno y a veces se proporcionan servicios entre ellos. Un mismo nodo puede cambiar entre funciones o roles en la red dependiendo de la demanda.\n\nEn esta arquitectura no hay por definición un nodo más importante que otro y si alguno de toda la red falla, puede ser sustituido por otro si tiene la información replicada.\n\nLas redes de torrents, el blockchain y programas como Ares o LimeWire funcionaban de esta forma.\n\nUna red peer-to-peer puede lucir así:\n\n\n\nLas redes peer-to-peer son una de las mejores formas de crear sistemas distribuidos resistentes y descentralizados, es decir, que no concentran la información en un sólo punto que se vuelve el más delicado e importante de todos.\n\nPipe and Filter\n\nEn este patrón, la información pasa por una series de “filtros” o nodos que la procesan y van dejando la información en un nuevo estado o con nuevas propiedades y que pasan la información al siguiente nodo. Este patrón es el que siguen los pipelines de datos normalmente, en el que la información que es producida por una fuente externa es procesada a través de una serie de pasos, que pueden incluir la recolección, limpieza, almacenamiento, etc.\n\n\n\nConclusión\n\n\n  Los estilos arquitectónicos el diseño de un sistema deben adecuarse a las necesidades de ese sistema, no al revés. - Thomas Fielding\n\n\n¿A qué necesidades nos adaptamos?\n\nA la necesidad de tener una separación clara entre las funciones de datos y procesos de negocio y las interfaces de usuario: sean usuarios finales humanos u otros programas que consumen información.\n\nLa arquitectura cliente-servidor permite simplificar el trabajo del lado del servidor al no tener que preocuparse por todas las distintas situaciones en las que sus datos o procesos van a ser usados.\n\nEsto nos lleva a que sus procesos sean reutilizables por todos los clientes que sepan comunicarse con el servidor (léase: usar su interfaz). A su vez los clientes son más fáciles de crear por no tener en ellos mismos toda la lógica del negocio y poder enfocarse en las funcionalidades de la entidad al que le van servir.\n\nY por último, esta separación permite que el servidor sea fácil de escalar al nivel del servicio requerido.\n\nPara los propósitos de REST la arquitectura Cliente-servidor es muy adecuada. Sus beneficios superan sus desventajas para este caso de uso particular.\n",
-      "datePublished": "2019-07-04 00:00:00 -0500",
-      "dateModified": "2019-07-04 00:00:00 -0500",
+      "url": "https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html",
+      "name": "Resumen: Qué hacer para conseguir un buen trabajo como programador",
+      "headline": "Resumen: Qué hacer para conseguir un buen trabajo como programador",
+      "keywords": "lives,recomendaciones,video,libros,consejos",
+      "description": "Hablamos con Diego De Granda y Pablo Trinidad sobre qué tienes que hacer para conseguit un buen trabajo en tecnología. Aquí tienes un resumen.",
+      "articleBody": "Aquí te damos un resumen de la plática que tuvimos con Diego De Granda y Pablo Trinidad sobre algunas cosas que hicieron para conseguir buenos trabajos. Esbozaremos algunos de los connsejos independientes sin una seccuencia definida.\n\nAprende Inglés\n\nAunque la razón de existencia de este blog y de The Dojo MX en general es generar contenido en español para ayudar a los hispanohablantes, nunca nos cansaremos (y tampoco nuestros invitados) de darte el mismo consejo: APRENDE INGLÉS. Creemos sinceramente que el idioma no debería ser una limitante para que empieces a aprender lo que sea que te guste, pero especialmente en el área de tecnología, la mayor parte de las personas, trabaja y habla en inglés, por lo que es importantísimo aprenderlo lo mejor que puedas.\n\nAprende a dar y recibir retroalimentación\n\nEn este apartado hablaron de cuatro cosas que la retroalimentación debe tener para poder ser útil:\n\n\n  Directa, sin darle tantas vueltas al asunto\n  Accionable, debes dejar a la persona con algo sobre lo que pueda actuar\n  Oportuno, mientras más cercano estés al momento en cuestión, mejor\n  Transparente, tus intenciones son claras\n\n\nY si eres la persona que toma la retroalimentación, no te ofendas y toma lo bueno.\n\nThe Pragmatic Programmer\n\nNo pudimos platicar tanto de libros, pero uno que no puede faltar casi en ninguna recomendación de libros para programadores es The Pragmatic Programmer un libro sobre las bases que necesitas para ser un programador productivo.\n\nAprende los fundamentos\n\nEs muy importante que aprendas los fundamentos de lo que haces si quieres atacar problemas difíciles.\nConsejos de Pablo Trinidad para mantenerte empleable\n\n\n  Permanecer presente en el aprendizaje y ser crítico: Tienes que estarte preguntando constantemente: ¿Por qué funciona lo que estoy haciendo? Y puedes aplicar la técnica de preguntar continuamente “¿Por qué?” hasta llegar al fondo de las cosas.\n  Leer. Estudiar y aprender lo más que puedas, incluso sobre cosas que no sean ténicas.\n    Consejos de Diego de Granda\n  \n  Resiliencia: Los problemas nunca van a parar, así que tienes que aprender a solucionar problemas sin frustrarte y persistir hasta que llegues a la solución\n  Resolver problemas: mejorar tus capacidades de resolver problemas te ayudará a ser alguien más útil para tu equipo y tu empresa\n  Ser agnóstico: No te cases con una tecnología, diversifica y usa la correcta para el problema en cuestión.\n\n\nCaracterísticas que necesitarás para trabajar en Google\n\n¿Qué se necesita para trabajar en Google? Aquí algunas de las ideas que Pablo nos compartió:\n\n\n  Capacidad de tomar problemas difíciles\n  Liderazgo para ayudar a tu equipo\n  Impacto extendido en diferentes personas y equipos\n  Independencia, no necesitas de un manager que te esté cuidando los pasos\n  Ownership, te adueñas de lso problemas y pones todo tu empeño en resolverlos\n  Estar presente, es decir, no pasar por las experiencias sin aprender de ellas\n\n\nSigue alimentando tu curiosidad\n\nPablo nos recomendó algunos canales de YouTube para seguir alimentando la curiosidad y aprender cosas de diferentes campos, como matemáticas, ciencia, computación y electrónica.\n\n\n  The Cherno\n  Computerphile\n  Numberphile\n  Veritasium\n  Smarter Everyday\n  Eric Weinstein\n  Joe rogan\n  Ben Eater\n  3Blue1Brown\n\n\nEsto no te hará un mejor programador directamente pero te ayudará a crecer como persona y te ayudará a conseguir mejores oportunidades. Y sí, necesitas inglés para entenderlos.\n\nConclusión\n\nHablamos de muchas cosas más, productividad, Google, cómo avanzar en tu carrera, etc. No te pierdas la plática entera aquí:\n\n\n\n",
+      "datePublished": "2021-02-10 00:00:00 -0600",
+      "dateModified": "2021-02-10 00:00:00 -0600",
       "author": {
         "@type": "Person",
         "name": "Héctor Patricio",
@@ -153,13 +153,13 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://blog.thedojo.mx/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html"
+        "@id": "https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html"
       },
       "image": {
         "@type": "ImageObject",
         "width": 1200,
         "height": 400,
-        "url": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1260/v1562217908/krzysztof-kowalik-KiH2-tdGQRY-unsplash_v0vf7l.jpg"
+        "url": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1612938717/zgc1993-JyLpF2rn0e4-unsplash_eqxvhm.jpg"
       }
     }
 </script>
@@ -232,17 +232,17 @@
 
 
 
-<div class="page__hero--overlay" style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1260/v1562217908/krzysztof-kowalik-KiH2-tdGQRY-unsplash_v0vf7l.jpg');">
+<div class="page__hero--overlay" style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1612938717/zgc1993-JyLpF2rn0e4-unsplash_eqxvhm.jpg');">
   
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          Entendiendo REST: Arquitectura cliente-servidor
+          Resumen: Qué hacer para conseguir un buen trabajo como programador
 
         
       </h1>
       
-        <p class="page__lead">Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST.
+        <p class="page__lead">Hablamos con Diego De Granda y Pablo Trinidad sobre qué tienes que hacer para conseguit un buen trabajo en tecnología. Aquí tienes un resumen.
 </p>
       
       
@@ -260,7 +260,7 @@
 
       <i class="far fa-clock" aria-hidden="true"></i>
       
-        6 minutos de lectura
+        2 minutos de lectura
       
     
 
@@ -396,9 +396,9 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Entendiendo REST: Arquitectura cliente-servidor">
-    <meta itemprop="description" content="Hablemos de la arquitectura cliente-servidor y por qué es adecuada para REST.">
-    <meta itemprop="datePublished" content="2019-07-04T00:00:00-05:00">
+    <meta itemprop="headline" content="Resumen: Qué hacer para conseguir un buen trabajo como programador">
+    <meta itemprop="description" content="Hablamos con Diego De Granda y Pablo Trinidad sobre qué tienes que hacer para conseguit un buen trabajo en tecnología. Aquí tienes un resumen.">
+    <meta itemprop="datePublished" content="2021-02-10T00:00:00-06:00">
     
 
     <div class="page__inner-wrap">
@@ -406,141 +406,92 @@
 
       <section class="page__content" itemprop="text">
         
-        <blockquote>
-  <p>El propósito de construir software no es crear una topología de interacciones específicas, o usar un tipo particular de componente; es crear un sistema que cumpla y exceda las necesidades de la aplicación. - Thomas Fielding</p>
-</blockquote>
+        <p>Aquí te damos un resumen de la plática que tuvimos con Diego De Granda y Pablo Trinidad sobre algunas cosas que hicieron para conseguir buenos trabajos. Esbozaremos algunos de los connsejos independientes sin una seccuencia definida.</p>
 
-<p>Ya hablamos de las <a href="/2019/06/15/entendiendo-rest-estilo-de-arquitectura.html">motivaciones detrás del estilo arquitectural REST</a>. Ahora empecemos con la primera de sus características o restricciones, que la empieza a definir: la arquitectura cliente-servidor.</p>
+<h2 id="aprende-inglés">Aprende Inglés</h2>
 
-<h2 id="qué-es-la-arquitectura-cliente-servidor">¿Qué es la arquitectura cliente-servidor?</h2>
+<p>Aunque la razón de existencia de este blog y de The Dojo MX en general es generar contenido en español para ayudar a los hispanohablantes, nunca nos cansaremos (y tampoco nuestros invitados) de darte el mismo consejo: <strong>APRENDE INGLÉS</strong>. Creemos sinceramente que el idioma no debería ser una limitante para que <em>empieces</em> a aprender lo que sea que te guste, pero especialmente en el área de tecnología, la mayor parte de las personas, trabaja y habla en inglés, por lo que es importantísimo aprenderlo lo mejor que puedas.</p>
 
-<p>Esta arquitectura de aplicación divide un sistema en dos componentes:</p>
+<h2 id="aprende-a-dar-y-recibir-retroalimentación">Aprende a dar y recibir retroalimentación</h2>
+
+<p>En este apartado hablaron de cuatro cosas que la retroalimentación debe tener para poder ser útil:</p>
+
+<ul>
+  <li>Directa, sin darle tantas vueltas al asunto</li>
+  <li>Accionable, debes dejar a la persona con algo sobre lo que pueda actuar</li>
+  <li>Oportuno, mientras más cercano estés al momento en cuestión, mejor</li>
+  <li>Transparente, tus intenciones son claras</li>
+</ul>
+
+<p>Y si eres la persona que toma la retroalimentación, no te ofendas y toma lo bueno.</p>
+
+<h2 id="the-pragmatic-programmer">The Pragmatic Programmer</h2>
+
+<p>No pudimos platicar tanto de libros, pero uno que no puede faltar casi en ninguna recomendación de libros para programadores es <a href="https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/">The Pragmatic Programmer</a> un libro sobre las bases que necesitas para ser un programador productivo.</p>
+
+<h2 id="aprende-los-fundamentos">Aprende los fundamentos</h2>
+
+<p>Es muy importante que aprendas los fundamentos de lo que haces si quieres atacar problemas difíciles.</p>
+<h2 id="consejos-de-pablo-trinidad-para-mantenerte-empleable">Consejos de Pablo Trinidad para mantenerte empleable</h2>
 
 <ul>
   <li>
-    <p><strong>Cliente</strong>: Es un programa o proceso que solicita un servicio y usa la información provista para sus propios objetivos.</p>
+<em>Permanecer presente en el aprendizaje y ser crítico</em>: Tienes que estarte preguntando constantemente: ¿Por qué funciona lo que estoy haciendo? Y puedes aplicar la técnica de preguntar continuamente “¿Por qué?” hasta llegar al fondo de las cosas.</li>
+  <li>
+<em>Leer</em>. Estudiar y aprender lo más que puedas, incluso sobre cosas que no sean ténicas.
+    <h2 id="consejos-de-diego-de-granda">Consejos de Diego de Granda</h2>
   </li>
   <li>
-    <p><strong>Servidor</strong>: Programa o proceso que ofrece un conjunto de servicios y espera por peticiones para ejecutar o dar estos servicios.</p>
-  </li>
+<em>Resiliencia</em>: Los problemas nunca van a parar, así que tienes que aprender a solucionar problemas sin frustrarte y persistir hasta que llegues a la solución</li>
+  <li>
+<em>Resolver problemas</em>: mejorar tus capacidades de resolver problemas te ayudará a ser alguien más útil para tu equipo y tu empresa</li>
+  <li>
+<em>Ser agnóstico</em>: No te cases con una tecnología, diversifica y usa la correcta para el problema en cuestión.</li>
 </ul>
 
-<p>La principal característica de la arquitectura cliente-servidor es que logra una <em>separación de responsabilidades clara</em>.</p>
+<h2 id="características-que-necesitarás-para-trabajar-en-google">Características que necesitarás para trabajar en Google</h2>
 
-<p>En palabras de <a href="https://homepages.cwi.nl/~marcello/SAPapers/And91.pdf">Gregory R. Andrews</a>, el cliente es un proceso desencadenante mientras que el servidor es un proceso reactivo. Es decir el servidor no puede envíar datos o empezar procesos que un cliente no le ha solicitado.</p>
-
-<p>La arquitectura básica de un sistema cliente-servidor es esta:</p>
-
-<p><img src="https://res.cloudinary.com/hectorip/image/upload/v1562699566/PNG_image-ABC17A5C0944-1_wpyk2e.png" alt="Esquema cliente-servidor"></p>
-
-<!-- Recordemos que todos los diseños o arquitecturas implican un intercambio de valor entre varias características, en este caso un poco de simplicidad por la separación de responsabilidades claras. -->
-
-<p>Veamos sus ventajas y desventajas.</p>
-
-<h2 id="ventajas">Ventajas</h2>
-
-<p>Hablemos de los beneficios que trae usar la arquitectura cliente-servidor.</p>
-
-<h3 id="separación-clara-de-responsabilidades">Separación clara de responsabilidades</h3>
-
-<p>La funcionalidad del sistema se divide en dos partes (por lo menos), como el nombre lo indica en parte de dar los servicios (generalmente de datos) y la parte de atender al usuario (humanos o programa) final.</p>
-
-<p>El cliente y el servidor tienen funciones completamente distintas y cada uno puede cambiar por su lado sin afectar al otro, a esto le podemos llamar “evolución independiente”.</p>
-
-<p>El ejemplo que tenemos es el del navegador y las páginas que visitamos normalmente en internet. Mientras sigan cumpliendo con el protocolo establecido de comunicación (HTTP) van a poder seguir comunicándose y transfiriendo información, sin interferir la manera en que estén implementados sus procesos internos.</p>
-
-<h3 id="división-de-complejidad">División de complejidad</h3>
-
-<p>La misma división de la que hablamos en el punto anterior permite dividir la complejidad en dos partes por lo que cada una por su lado es más fácil de entender y desarrollar que el sistema completo.</p>
-
-<p>Por lo tanto, se sigue el mismo principio que se usa para desarrollar software complejo en general: <strong>divide y vencerás</strong>. Esto permite que podamos dividir el trabajo limpiamente en diferentes etapas de desarrollo o entre diferentes equipos, que lo único que requieren es una interfaz de comunicación clara.</p>
-
-<p>Esto no quiere decir que la complejidad <em>general</em> se reduzca. De esto hablaremos en las desventajas.</p>
-
-<h3 id="múltiples-versiones-y-reusabilidad">Múltiples versiones y reusabilidad</h3>
-
-<p>La implementación de la interfaz de comunicación es el único requisito indispensable para que un sistema cliente-servidor pueda seguir funcionando. Esto permite que un servidor pueda tener un número indefinido de clientes diferentes que puedan consumir su interfaz y viceversa. En el caso de REST implementar el servidor con la API permite crear tantos clientes como se necesite:</p>
+<p>¿Qué se necesita para trabajar en Google? Aquí algunas de las ideas que Pablo nos compartió:</p>
 
 <ul>
-  <li>página web</li>
-  <li>aplicación móvil</li>
-  <li>sistema embebido</li>
-  <li>SDK para servidores</li>
+  <li>
+<strong>Capacidad</strong> de tomar problemas difíciles</li>
+  <li>
+<strong>Liderazgo</strong> para ayudar a tu equipo</li>
+  <li>
+<strong>Impacto</strong> extendido en diferentes personas y equipos</li>
+  <li>
+<strong>Independencia</strong>, no necesitas de un manager que te esté cuidando los pasos</li>
+  <li>
+<strong>Ownership</strong>, te adueñas de lso problemas y pones todo tu empeño en resolverlos</li>
+  <li>
+<strong>Estar presente</strong>, es decir, no pasar por las experiencias sin aprender de ellas</li>
 </ul>
 
-<p>Sólo para ilustrar:</p>
+<h2 id="sigue-alimentando-tu-curiosidad">Sigue alimentando tu curiosidad</h2>
 
-<p><img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1562294072/PNG_image-5618E8EA3C0D-1_vk18wv.png" alt="Ilustración de cliente-servidor multi-cliente"></p>
-
-<p>Tener N versiones de los clientes o poder crear una sin tener que volver a a replicar la funcionalidad del servidor ha hecho que las API’s se vuelvan sumamente populares.</p>
-
-<h3 id="simplificación-de-escalamiento">Simplificación de escalamiento</h3>
-
-<p>Poder tener separado el servidor permite que podamos escalarlo de forma independiente dependiendo del número de clientes a los que va a atender. Si necesitamos dar un servicio a escala mundial podemos replicar nuestros servidores (usando las arquitecturas adecuadas para esto) sin afectar a los clientes y sin que ellos se enteren y por lo tanto tengan que hacer algún cambio.</p>
-
-<h2 id="desventajas">Desventajas</h2>
-
-<p>Todo en la vida viene con desventajas asociadas y generalmente directamente proporcionales a sus ventajas. Y otra vez: intercambiamos valor entre diferentes partes de la aplicación. Analicemos algunas de estos intercambios que hacemos al aplicar la arquitectura cliente-servidor.</p>
-
-<h3 id="complejidad-general-aumentada">Complejidad general aumentada</h3>
-
-<p>Cuando dividimos la aplicación y funciones completas en dos partes, aunque la complejidad de cada parte es menos que la general, la complejidad general aumenta porque hay que agregar elementos al sistema:</p>
+<p>Pablo nos recomendó algunos canales de YouTube para seguir alimentando la curiosidad y aprender cosas de diferentes campos, como matemáticas, ciencia, computación y electrónica.</p>
 
 <ul>
-  <li>Interfaces de comunicación entre cliente y servidor</li>
-  <li>Mantenimiento o forma de recuperación del estado general de la aplicación</li>
-  <li>Protocolos de comunicación de red cuando es el caso</li>
+  <li><a href="https://www.youtube.com/user/TheChernoProject">The Cherno</a></li>
+  <li><a href="https://www.youtube.com/user/Computerphile">Computerphile</a></li>
+  <li><a href="https://www.youtube.com/user/Numberphile">Numberphile</a></li>
+  <li><a href="https://www.youtube.com/user/1Veritasium">Veritasium</a></li>
+  <li><a href="https://www.youtube.com/user/destinws2">Smarter Everyday</a></li>
+  <li><a href="https://www.youtube.com/user/nobani88">Eric Weinstein</a></li>
+  <li><a href="https://www.youtube.com/user/PowerfulJRE">Joe rogan</a></li>
+  <li><a href="https://www.youtube.com/user/eaterbc">Ben Eater</a></li>
+  <li><a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3Blue1Brown</a></li>
 </ul>
 
-<h3 id="centralización-de-la-información">Centralización de la información</h3>
-
-<p>El servidor es el responsable de almacenar la información y procesarla para darle servicio a los diferentes clientes que los soliciten, lo cual, aunque hace más fácil su administración, representa la desventaja de tener la información centralizada en el sistema que actúa como servidor. Si este sistema se corrompe de alguna forma, los clientes necesitan otras fuentes de información para eliminar este problema.</p>
-
-<p>Combinar cliente-servidor con otra arquitecturas ayuda a mitigar esta falla. Por ejemplo, se puede implementar el patrón de replicación de repositorio en el lado de los proveedores de servicio.</p>
-
-<p>Pero, un momento, ¿acaso no es cliente-servidor la única arquitectura que existe para sistemas web o sistemas distribuidos?</p>
-
-<h2 id="otras-arquitecturas">Otras arquitecturas</h2>
-
-<p>La arquitectura para aplicaciones distribuidas más escuchada es la cliente-servidor, pero no es ni de lejos la única. Analicemos otras dos arquitecturas comunes y dónde se usan. Si quieres ver la lista completa que Fielding analiza puedes revisar la sección 2 de <a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf">su tesis doctoral</a>.</p>
-
-<h3 id="peer-to-peer">Peer to Peer</h3>
-
-<p>En este estilo está compuesta por nodos equivalentes, es decir, que tiene la misma función (aunque pueden tener diferente información) y que se distribuyen la carga que soporta el sistema entero según las capacidades de cada uno y a veces se proporcionan servicios entre ellos. Un mismo nodo puede cambiar entre funciones o roles en la red dependiendo de la demanda.</p>
-
-<p>En esta arquitectura no hay por definición un nodo más importante que otro y si alguno de toda la red falla, puede ser sustituido por otro si tiene la información replicada.</p>
-
-<p>Las redes de torrents, el blockchain y programas como Ares o LimeWire funcionaban de esta forma.</p>
-
-<p>Una red peer-to-peer puede lucir así:</p>
-
-<p><img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_871/v1561266301/PNG_image-CC8B051C8851-1_r78hfc.png" alt="Ejemplo de red peer to peer"></p>
-
-<p>Las redes peer-to-peer son una de las mejores formas de crear sistemas distribuidos resistentes y descentralizados, es decir, que no concentran la información en un sólo punto que se vuelve el más delicado e importante de todos.</p>
-
-<h3 id="pipe-and-filter">Pipe and Filter</h3>
-
-<p>En este patrón, la información pasa por una series de “filtros” o nodos que la procesan y van dejando la información en un nuevo estado o con nuevas propiedades y que pasan la información al siguiente nodo. Este patrón es el que siguen los pipelines de datos normalmente, en el que la información que es producida por una fuente externa es procesada a través de una serie de pasos, que pueden incluir la recolección, limpieza, almacenamiento, etc.</p>
-
-<p><img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_800/v1562217820/PNG_image-C00985E33227-1_mevaqa.png" alt="Ilustración de pipe and filter"></p>
+<p>Esto no te hará un mejor programador directamente pero te ayudará a crecer como persona y te ayudará a conseguir mejores oportunidades. Y sí, necesitas inglés para entenderlos.</p>
 
 <h2 id="conclusión">Conclusión</h2>
 
-<blockquote>
-  <p>Los estilos arquitectónicos el diseño de un sistema deben adecuarse a las necesidades de ese sistema, no al revés. - Thomas Fielding</p>
-</blockquote>
+<p>Hablamos de muchas cosas más, productividad, Google, cómo avanzar en tu carrera, etc. No te pierdas la plática entera aquí:</p>
 
-<p>¿A qué necesidades nos adaptamos?</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mUfmVBaOmxM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-<p>A la necesidad de tener una separación clara entre las funciones de datos y procesos de negocio y las interfaces de usuario: sean usuarios finales humanos u otros programas que consumen información.</p>
-
-<p>La arquitectura cliente-servidor permite simplificar el trabajo del lado del servidor al no tener que preocuparse por todas las distintas situaciones en las que sus datos o procesos van a ser usados.</p>
-
-<p>Esto nos lleva a que sus procesos sean <strong>reutilizables</strong> por todos los clientes que sepan comunicarse con el servidor (léase: usar su interfaz). A su vez los clientes son más fáciles de crear por no tener en ellos mismos toda la lógica del negocio y poder enfocarse en las funcionalidades de la entidad al que le van servir.</p>
-
-<p>Y por último, esta separación permite que el servidor sea fácil de escalar al nivel del servicio requerido.</p>
-
-<p>Para los propósitos de REST la arquitectura Cliente-servidor es muy adecuada. Sus beneficios superan sus desventajas para este caso de uso particular.</p>
 
         
       </section>
@@ -561,11 +512,23 @@
     
       
       
-      <a href="/tags/#cliente-servidor" class="page__taxonomy-item" rel="tag">cliente-servidor</a><span class="sep">, </span>
+      <a href="/tags/#consejos" class="page__taxonomy-item" rel="tag">consejos</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#rest" class="page__taxonomy-item" rel="tag">REST</a>
+      <a href="/tags/#libros" class="page__taxonomy-item" rel="tag">libros</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#lives" class="page__taxonomy-item" rel="tag">lives</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#recomendaciones" class="page__taxonomy-item" rel="tag">recomendaciones</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#video" class="page__taxonomy-item" rel="tag">video</a>
     
     </span>
   </p>
@@ -574,7 +537,7 @@
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2019-07-04T00:00:00-05:00">July 4, 2019</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time datetime="2021-02-10T00:00:00-06:00">February 10, 2021</time></p>
 
 
       </footer>
@@ -584,23 +547,22 @@
     <h4 class="page__share-title">Compartir</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Entendiendo+REST%3A+Arquitectura+cliente-servidor%20https%3A%2F%2Fblog.thedojo.mx%2F2019%2F07%2F04%2Fentendiendo-rest-arquitectura-cliente-servidor.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Resumen%3A+Qu%C3%A9+hacer+para+conseguir+un+buen+trabajo+como+programador%20https%3A%2F%2Fblog.thedojo.mx%2F2021%2F02%2F10%2Fresumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.thedojo.mx%2F2019%2F07%2F04%2Fentendiendo-rest-arquitectura-cliente-servidor.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.thedojo.mx%2F2021%2F02%2F10%2Fresumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog.thedojo.mx%2F2019%2F07%2F04%2Fentendiendo-rest-arquitectura-cliente-servidor.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog.thedojo.mx%2F2021%2F02%2F10%2Fresumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/2019/06/22/libros-gratuitos-para-aprender-analisis-de-datos.html" class="pagination--pager" title="Libros gratuitos para aprender análisis de datos
+      <a href="/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science.html" class="pagination--pager" title="Libros que te ayudarán a aprender Data Science
 ">Anterior</a>
     
     
-      <a href="/2019/08/03/entendiendo-rest-servidor-sin-estado.html" class="pagination--pager" title="Entendiendo REST: conexión sin estado
-">Siguiente</a>
+      <a href="#" class="pagination--pager disabled">Siguiente</a>
     
   </nav>
 
@@ -623,42 +585,6 @@
     <div class="page__related">
       <h4 class="page__related-title">Podrías ver también</h4>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1612938717/zgc1993-JyLpF2rn0e4-unsplash_eqxvhm.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html" rel="permalink">Resumen: Qué hacer para conseguir un buen trabajo como programador
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  2 minutos de lectura
-
-
-
-| <i class="far fa-calendar" aria-hidden="true"></i> 10-02-2021
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Hablamos con Diego De Granda y Pablo Trinidad sobre qué tienes que hacer para conseguit un buen trabajo en tecnología. Aquí tienes un resumen.
-</p>
-  </article>
-</div>
-
         
           
 
@@ -763,6 +689,42 @@
 </p>
     
     <p class="archive__item-excerpt" itemprop="description">Hay programadores que dice que los comentarios son un mal que se debería evitar al máximo. Aquí proponemos lo contrario: usa los comentarios correctamente pa...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1606978976/snapbuilder_2_ba3zxt.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/12/03/tipos-de-algoritmos-criptograficos.html" rel="permalink">Tipos de algoritmos criptográficos: cifrados de bloque
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  7 minutos de lectura
+
+
+
+| <i class="far fa-calendar" aria-hidden="true"></i> 03-12-2020
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">¿Sabes que es un cifrado de bloque? En este artículo hablamos de eso y te damos algunos ejemplos.
+</p>
   </article>
 </div>
 
@@ -880,8 +842,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://blog.thedojo.mx/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor.html";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/2019/07/04/entendiendo-rest-arquitectura-cliente-servidor"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');
