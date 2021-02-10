@@ -55,18 +55,16 @@ No pudimos platicar tanto de libros, pero uno que no puede faltar casi en ningun
 
 ## Características que necesitarás para trabajar en Google
 
-¿Qué se necesita para trabajar en Google?
+¿Qué se necesita para trabajar en Google? Aquí algunas de las ideas que Pablo nos compartió:
 
-* Dificultad
-* Liderazgo
-* Impacto
+* Capacidad de tomar problemas difíciles.
+* Liderazgo para ayudar a tu equipo.
+* Impacto extendido en diferentes personas y equipos
 * Independencia
 * Ownership
 * Estar presente
 
-
 ## Sigue alimentando tu curiosidad
-
 
 Pablo Trinidad nos recomendó lagunos canales de YouTube para seguir alementando la curiosisdad y aprender cosas de diferentes campos.
 
