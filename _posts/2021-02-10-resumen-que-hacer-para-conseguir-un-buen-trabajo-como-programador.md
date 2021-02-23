@@ -4,14 +4,14 @@ date: 2021-02-10
 author: Héctor Patricio
 tags: lives recomendaciones video libros consejos
 comments: true
-excerpt: "Hablamos con Diego De Granda y Pablo Trinidad sobre qué tienes que hacer para conseguit un buen trabajo en tecnología. Aquí tienes un resumen."
+excerpt: "Hablamos con Diego De Granda y Pablo Trinidad sobre qué tienes que hacer para conseguir un buen trabajo en tecnología. Aquí tienes un resumen."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1440/v1612938717/zgc1993-JyLpF2rn0e4-unsplash_eqxvhm.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1612938717/zgc1993-JyLpF2rn0e4-unsplash_eqxvhm.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Aquí te damos un resumen de la plática que tuvimos con Diego De Granda y Pablo Trinidad sobre algunas cosas que hicieron para conseguir buenos trabajos. Esbozaremos algunos de los connsejos independientes sin una seccuencia definida.
+Aquí te damos un resumen de la plática que tuvimos con Diego De Granda y Pablo Trinidad sobre algunas cosas que hicieron para conseguir buenos trabajos. Esbozaremos algunos de los consejos independientes sin una secuencia definida.
 
 ## Aprende Inglés
 
@@ -34,7 +34,7 @@ No pudimos platicar tanto de libros, pero uno que no puede faltar casi en ningun
 
 ## Aprende los fundamentos
 
-Es muy importante que aprendas los fundamentos de lo que haces si quieres atacar problemas difíciles.
+Es muy importante que aprendas los fundamentos de lo que haces si quieres atacar problemas difíciles. Para esto, tienes que aplicar consejos de otras partes de este mismo artículo.
 ## Consejos de Pablo Trinidad para mantenerte empleable
 
 * _Permanecer presente en el aprendizaje y ser crítico_: Tienes que estarte preguntando constantemente: ¿Por qué funciona lo que estoy haciendo? Y puedes aplicar la técnica de preguntar continuamente "¿Por qué?" hasta llegar al fondo de las cosas.
@@ -53,7 +53,7 @@ Es muy importante que aprendas los fundamentos de lo que haces si quieres atacar
 * **Liderazgo** para ayudar a tu equipo
 * **Impacto** extendido en diferentes personas y equipos
 * **Independencia**, no necesitas de un manager que te esté cuidando los pasos
-* **Ownership**, te adueñas de lso problemas y pones todo tu empeño en resolverlos
+* **Ownership**, te adueñas de los problemas y pones todo tu empeño en resolverlos
 * **Estar presente**, es decir, no pasar por las experiencias sin aprender de ellas
 
 ## Sigue alimentando tu curiosidad
