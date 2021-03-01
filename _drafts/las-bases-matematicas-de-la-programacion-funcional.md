@@ -24,5 +24,4 @@ El cálculo lambda es una forma de definir todo lo que entendemos como matemáti
 
 El cálculo lambda fue diseñado por Alonzo Church como una forma de responder a un problema muy profundo de las matemáticas: "¿Es posible encontrar una forma de computación universal que, mediante la representación de problemas y una serie de pasos definido y finitos permita resolverlos?".
 
-Esta pregunta fue planteada por Devid Hilbert y se conoce como el Entcheindungsproblem
-
+Esta pregunta fue planteada por David Hilbert y se conoce como el *Entcheindungsproblem*, o _"El problema de la decisión"_.
