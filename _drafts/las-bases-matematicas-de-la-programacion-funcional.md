@@ -3,7 +3,7 @@ title: "Las bases matemáticas de la programación funcional"
 date: 2021-02-10
 author: Héctor Patricio
 tags:
-categories: 
+categories:
 comments: true
 excerpt: "Escribe aquí un buen resumen de tu artículo"
 header:
@@ -11,3 +11,17 @@ header:
   teaser: #image
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
+
+La programación funcional tiene conceptos muy relacionados con las matemáticas. Aquí te vamos a platicar de sus orígenes y de algunos conceptos matemáticos directamente embebidos en la programación funcional.
+
+Lo primero que tienes que recordar es que las matemáticas no tienen que ver  _necesariamente_ con números, sino con el razonamiento y la _formalización_ de este. En este artículo hablamos más de ello: [Las matemáticas que necesitas para programar](/2019/12/25/las-matematicas-que-debes-saber-para-programar.html).
+
+Ahora sí, empecemos con lo más fudamental
+
+## Cálculo Lambda
+
+El cálculo lambda es una forma de definir todo lo que entendemos como matemáticas y de describir _cálculo_ o _cómputo_. Es una notación que permite definir todos los elementos necesarios para crear razonamientos formales abstractos.
+
+El cálculo lambda fue diseñado por Alonzo Church como una forma de responder a un problema muy profundo de las matemáticas: "¿Es posible encontrar una forma de computación universal que, mediante la representación de problemas y una serie de pasos definido y finitos permita resolverlos?".
+
+Esta pregunta fue planteada por David Hilbert y se conoce como el *Entcheindungsproblem*, o _"El problema de la decisión"_.
