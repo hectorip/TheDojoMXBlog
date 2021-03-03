@@ -29,5 +29,9 @@ Algunos de los programas que podemos usar para aprenderlo son los siguientes:
 
 - Nanodegree de Deep Learning en [Udacity](https://www.udacity.com/course/deep-learning-nanodegree--nd101)
 - Especialización en Deep Learning de [Coursera](https://www.coursera.org/specializations/deep-learning)
+- Redes neuronales y Deep Learning de [Coursera](https://www.coursera.org/learn/neural-networks-deep-learning)
 - Programming Machine Learning de [Pragmatic Programmers](https://pragprog.com/titles/pplearn/programming-machine-learning/)
-- [EDX](https://www.edx.org/course/machine-learning-with-python-from-linear-models-to?index=product&queryID=66ef0e341d390841649ca12aaef6fd6b&position=1)
+- Machine Learning with Python: from Linear Models to Deep Learning de [EDX](https://www.edx.org/course/machine-learning-with-python-from-linear-models-to?index=product&queryID=66ef0e341d390841649ca12aaef6fd6b&position=1)
+- CS230 de [Stanford](https://cs230.stanford.edu/syllabus/)
+- STAT 212B de [Berkeley](https://bcourses.berkeley.edu/courses/1413088/assignments/syllabus) (Lecciones: [Github](https://github.com/joanbruna/stat212b))
+-
