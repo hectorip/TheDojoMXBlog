@@ -3,7 +3,7 @@ title: "Ruta de aprendizaje: Deep Learning"
 date: 2021-03-01
 author: Héctor Patricio
 tags:
-categories: 
+categories:
 comments: true
 excerpt: "Escribe aquí un buen resumen de tu artículo"
 header:
@@ -21,11 +21,13 @@ En esta serie documentaremos las diferentes fases. Este primer post trata sobre 
 
 La primera fase de un proyecto de Ultra-aprendizaje consiste en hacer una investigación sobre las posibles opciones, recursos, metas y caminos que otros han seguido para aprender lo que quieres, así como definir claramente los límites del proyecto.
 
-En este proyecto el objetivo será: 
+En este proyecto el objetivo será:
 
 > **Entender y aplicar las técnicas básicas  Machine Learning, en específico Deep Learning, para poder resolver problemas y aplicarlos en proyectos que lo requieran.**
 
-Algunos de los currículums que podemos usar para aprenderlo son los siguientes:
+Algunos de los programas que podemos usar para aprenderlo son los siguientes:
 
 - Nanodegree de Deep Learning en [Udacity](https://www.udacity.com/course/deep-learning-nanodegree--nd101)
-- 
+- Especialización en Deep Learning de [Coursera](https://www.coursera.org/specializations/deep-learning)
+- Programming Machine Learning de [Pragmatic Programmers](https://pragprog.com/titles/pplearn/programming-machine-learning/)
+- [EDX](https://www.edx.org/course/machine-learning-with-python-from-linear-models-to?index=product&queryID=66ef0e341d390841649ca12aaef6fd6b&position=1)
