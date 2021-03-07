@@ -322,4 +322,10 @@ var store = [{
         "tags": ["lives","recomendaciones","video","libros","consejos"],
         "url": "https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1612938717/zgc1993-JyLpF2rn0e4-unsplash_eqxvhm.jpg"
+      },{
+        "title": "Ruta de aprendizaje: Deep Learning",
+        "excerpt":"Inspirado en el libro “Ultralearning” de Scott Young, voy hacer un proyecto de aprendizaje de algo que llama mi atención desde hace mucho: Deep Learning y Machine Learning en general. Si no conces el concepto, te invito leer el post aquí: Ultralearning: el arte del aprendizaje profundo. En esta serie...","categories": [],
+        "tags": [],
+        "url": "https://blog.thedojo.mx/2021/03/06/ruta-de-aprendizaje-deep-learning.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1615096252/space_ixlegm.png"
       }]
