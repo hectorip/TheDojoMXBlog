@@ -22,7 +22,17 @@ Ahora sí, empecemos con lo más fudamental
 
 El cálculo lambda es una forma de definir todo lo que entendemos como matemáticas y de describir _cálculo_ o _cómputo_. Es una notación que permite definir todos los elementos necesarios para crear razonamientos formales abstractos.
 
-El cálculo lambda fue diseñado por Alonzo Church como una forma de responder a un problema muy profundo de las matemáticas: "¿Es posible encontrar una forma de computación universal que, mediante la representación de problemas y una serie de pasos definido y finitos permita resolverlos?".
+El cálculo lambda fue diseñado por Alonzo Church como una forma de responder a un problema muy profundo de las matemáticas: **"¿Es posible encontrar una forma de computación universal que, mediante la representación de problemas y una serie de pasos definido y finitos permita resolverlos?"**.
 
 Esta pregunta fue planteada por David Hilbert y se conoce como el *Entcheindungsproblem*, o _"El problema de la decisión"_.
 
+
+## Funciones 
+
+## Combinadores
+
+### Cálculo SK
+
+## Teoría de categorías
+
+## ¿Y todo esto, a mi qué?
