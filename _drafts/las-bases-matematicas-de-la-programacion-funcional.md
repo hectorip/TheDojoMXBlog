@@ -26,12 +26,15 @@ El cálculo lambda fue diseñado por Alonzo Church como una forma de responder a
 
 Esta pregunta fue planteada por David Hilbert y se conoce como el *Entcheindungsproblem*, o _"El problema de la decisión"_.
 
+## Funciones
 
-## Funciones 
+
 
 ## Combinadores
 
 ### Cálculo SK
+
+Debido a que todas las matemáticas y cosas computables se pueden expresar con los combinadores S y K, existe una teoría llamada así **Cálculo SK**, en el que estos dos combinadores son los únicos elementos necesarios para expresar todo lo demás.
 
 ## Teoría de categorías
 
