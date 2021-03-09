@@ -28,14 +28,16 @@ Esta pregunta fue planteada por David Hilbert y se conoce como el *Entcheindungs
 
 ## Funciones
 
-
-
 ## Combinadores
+
+Un combinador es una abstracción o función, que primeramente no tiene variables libres o, en su defecto, sólo usa otros combinadores en su definición.
 
 ### Cálculo SK
 
 Debido a que todas las matemáticas y cosas computables se pueden expresar con los combinadores S y K, existe una teoría llamada así **Cálculo SK**, en el que estos dos combinadores son los únicos elementos necesarios para expresar todo lo demás.
 
 ## Teoría de categorías
+
+La teoría de categroías explora la composición
 
 ## ¿Y todo esto, a mi qué?
