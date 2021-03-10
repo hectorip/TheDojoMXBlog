@@ -28,6 +28,8 @@ Esta pregunta fue planteada por David Hilbert y se conoce como el *Entcheindungs
 
 ## Funciones
 
+Las funciones o abstracciones son la base del cómputo en el cálculo lambda y lo son también en la programación fuincional.
+
 ## Combinadores
 
 Un combinador es una abstracción o función, que primeramente no tiene variables libres o, en su defecto, sólo usa otros combinadores en su definición.
