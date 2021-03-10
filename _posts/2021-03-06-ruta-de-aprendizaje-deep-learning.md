@@ -5,7 +5,7 @@ author: Héctor Patricio
 tags:
 categories:
 comments: true
-excerpt: "Veamos algunas opciones para aprender Deep Learning"
+excerpt: "En este artículo te proponemos una forma de aprender machine learning y deep learning y te presentamos algunos recursos que te pueden servir"
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_956/v1615096252/space_ixlegm.png
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1615096252/space_ixlegm.png
