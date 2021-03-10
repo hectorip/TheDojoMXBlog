@@ -2,8 +2,7 @@
 title: "Ruta de aprendizaje: Deep Learning"
 date: 2021-03-06
 author: Héctor Patricio
-tags:
-categories:
+tags: aprendizaje ml machine-learning
 comments: true
 excerpt: "En este artículo te proponemos una forma de aprender machine learning y deep learning y te presentamos algunos recursos que te pueden servir"
 header:

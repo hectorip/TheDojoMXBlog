@@ -325,7 +325,7 @@ var store = [{
       },{
         "title": "Ruta de aprendizaje: Deep Learning",
         "excerpt":"Inspirado en el libro “Ultralearning” de Scott Young, voy hacer un proyecto de aprendizaje de algo que llama mi atención desde hace mucho: Deep Learning y Machine Learning en general. Si no conces el concepto, te invito leer el post aquí: Ultralearning: el arte del aprendizaje profundo. En esta serie...","categories": [],
-        "tags": [],
+        "tags": ["aprendizaje","ml","machine-learning"],
         "url": "https://blog.thedojo.mx/2021/03/06/ruta-de-aprendizaje-deep-learning.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1615096252/space_ixlegm.png"
       }]
