@@ -5,7 +5,7 @@ author: Héctor Patricio
 tags:
 categories:
 comments: true
-excerpt: "Escribe aquí un buen resumen de tu artículo"
+excerpt: "La programación funcional tiene bases matemáticas muy interesantes, hablemos un poco de ellas y cómo te pueden ayudar a entenderla mejor."
 header:
   overlay_image: #image
   teaser: #image
