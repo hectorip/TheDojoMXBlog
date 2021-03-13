@@ -40,6 +40,7 @@ Debido a que todas las matemáticas y cosas computables se pueden expresar con l
 
 ## Teoría de categorías
 
-La teoría de categroías explora la composición
+La teoría de categroías explora la composición de elementos y la cración de grupos con
+
 
 ## ¿Y todo esto, a mi qué?
