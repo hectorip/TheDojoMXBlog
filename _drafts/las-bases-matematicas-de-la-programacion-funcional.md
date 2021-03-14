@@ -40,7 +40,7 @@ Debido a que todas las matemáticas y cosas computables se pueden expresar con l
 
 ## Teoría de categorías
 
-La teoría de categroías explora la composición de elementos y la cración de grupos con
+La teoría de categorías explora la composición de elementos y la creación de grupos con "objetos" relacionados entre ellos. Bartosz Mileswsky afirma que la teoría de caategorías es muu importante para los programadores porque nos permite entender la composición.
 
 
 ## ¿Y todo esto, a mi qué?
