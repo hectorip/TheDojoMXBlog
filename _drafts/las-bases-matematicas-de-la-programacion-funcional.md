@@ -28,7 +28,7 @@ Esta pregunta fue planteada por David Hilbert y se conoce como el *Entcheindungs
 
 ## Funciones
 
-Las funciones o abstracciones son la base del cómputo en el cálculo lambda y lo son también en la programación fuincional.
+Las funciones o abstracciones son la base del cómputo en el cálculo lambda y lo son también en la programación funcional.
 
 ## Combinadores
 
