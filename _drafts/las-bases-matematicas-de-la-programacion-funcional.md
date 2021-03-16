@@ -44,3 +44,5 @@ La teoría de categorías explora la composición de elementos y la creación de
 
 
 ## ¿Y todo esto, a mi qué?
+
+Conocer las bases de la programación funcional te puede dar un índice muy valioso como referencia a temas en los que tienes que profundizar si quieres ser un mejor programador@ funcional.
