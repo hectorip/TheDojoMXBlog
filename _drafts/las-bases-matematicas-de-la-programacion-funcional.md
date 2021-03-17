@@ -16,7 +16,7 @@ La programación funcional tiene conceptos muy relacionados con las matemáticas
 
 Lo primero que tienes que recordar es que las matemáticas no tienen que ver  _necesariamente_ con números, sino con el razonamiento y la _formalización_ de este. En este artículo hablamos más de ello: [Las matemáticas que necesitas para programar](/2019/12/25/las-matematicas-que-debes-saber-para-programar.html).
 
-Ahora sí, empecemos con lo más fudamental
+Ahora sí, empecemos con lo más fudamental de las matemáticas que soportan la programación funcional, no sin mencionar que podemos afirmar que la programación funcional _es una forma de matemáticas_.
 
 ## Cálculo Lambda
 
@@ -40,8 +40,7 @@ Debido a que todas las matemáticas y cosas computables se pueden expresar con l
 
 ## Teoría de categorías
 
-La teoría de categorías explora la composición de elementos y la creación de grupos con "objetos" relacionados entre ellos. Bartosz Mileswsky afirma que la teoría de caategorías es muu importante para los programadores porque nos permite entender la composición.
-
+La teoría de categorías explora la composición de elementos y la creación de grupos con "objetos" relacionados entre ellos. Bartosz Mileswsky afirma que la teoría de categorías es muu importante para los programadores porque nos permite entender la composición.
 
 ## ¿Y todo esto, a mi qué?
 
