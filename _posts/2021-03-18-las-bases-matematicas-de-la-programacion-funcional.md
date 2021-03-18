@@ -23,11 +23,11 @@ El cálculo lambda es una forma de definir todo lo que entendemos como matemáti
 
 El cálculo lambda fue diseñado por **Alonzo Church** como una forma de responder a un problema muy profundo de las matemáticas: **"¿Es posible encontrar una forma de computación universal que, mediante la representación de problemas y una serie de pasos definido y finitos permita resolverlos?"**.
 
-Esta pregunta fue planteada por David Hilbert y se conoce como el *Entscheidungsproblem*, o _"El problema de la decisión"_. De esta pregunta se deriva toda la computación moderna, ya que para responder estas preguntas **Alan Turing** diseñó las _Máquinas de Turing_.
+Esta pregunta fue planteada por David Hilbert y se conoce como el *Entscheidungsproblem*, o _"El problema de la decisión"_. De esta pregunta se deriva toda la computación moderna, ya que para responder estas preguntas **Alan Turing** diseñó las _Máquinas de Turing_. Si quieres saber más de esto, el libro [La Mente Nueva del Emperador de Roger Penrose](https://www.cs.buap.mx/~jitalo/libros/lanueva.pdf) lo explica muy bien, junto con muchas otras cosas.
 
 ### Funciones
 
-Las funciones o abstracciones son la base del cómputo en el Cálculo Lambda y lo son también en la programación funcional. Puedes pensar en las funciones como en la parte central del cómputo, la que representa las acciones a realizar con la información introducida, que en el Cálculo lambda, **siempre será otra función**. Así es, no existen los número naturales, y todo se puede representar con funciones. Si quieres un idea más clara de cómo se puede lograr esto la plática de John Huges, [Why Functional Programming Matters]() da algunos ejemplos con Lisp.
+Las funciones o abstracciones son la base del cómputo en el Cálculo Lambda y lo son también en la programación funcional. Puedes pensar en las funciones como en la parte central del cómputo, la que representa las acciones a realizar con la información introducida, que en el Cálculo lambda, **siempre será otra función**. Así es, no existen los número naturales, y todo se puede representar con funciones. Si quieres un idea más clara de cómo se puede lograr esto la plática de John Huges, [Why Functional Programming Matters](https://www.youtube.com/watch?v=XrNdvWqxBvA) da algunos ejemplos con Lisp.
 
 Además esta plática en español explica más del Cálculo Lambda: [Cálculo Lambda por Jaime Pavlich-Mariscal](https://www.youtube.com/watch?v=i1zYBLdlxfc).
 
@@ -41,7 +41,7 @@ Las variables libres son las que **no se reciben como parámetros**. Los combina
 
 Uno de ellos Raymond Smullyan, los enumeró poniéndoles nombres de aves, basados en las letras con las que se les identificaba y en su libro [To Mock a Mockingbird](http://douxnet.weebly.com/uploads/2/0/4/1/20418601/raymond_m._smullyan-to_mock_a_mockingbird_and_other_logic_puzzles__including__an_amazing_adventure_in_combinatory_logic-knopf_1985.pdf) los usa para crear algunos acertijos.
 
-Puedes aprender más de los combinadores con ejemplos en JavaScript en esta plática de Lambda School: [Lambda Calculus - Fundamentals of Lambda Calculus & Functional Programming in JavaScript](https://www.youtube.com/watch?v=3VQ382QG-y4)
+Puedes aprender más de los combinadores con ejemplos en JavaScript en esta plática: [Lambda Calculus - Fundamentals of Lambda Calculus & Functional Programming in JavaScript](https://www.youtube.com/watch?v=3VQ382QG-y4)
 
 Aquí hay algunos ejemplos de combinadores en JavaSCript
 
