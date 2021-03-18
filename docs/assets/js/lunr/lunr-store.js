@@ -328,4 +328,10 @@ var store = [{
         "tags": ["aprendizaje","ml","machine-learning"],
         "url": "https://blog.thedojo.mx/2021/03/06/ruta-de-aprendizaje-deep-learning.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1615096252/space_ixlegm.png"
+      },{
+        "title": "Las bases matemáticas de la programación funcional",
+        "excerpt":"La programación funcional tiene conceptos muy relacionados con las matemáticas. Aquí te vamos a platicar de sus orígenes y de algunos conceptos matemáticos directamente embebidos en la programación funcional. Lo primero que tienes que recordar es que las matemáticas no tienen que ver necesariamente con números, sino con el razonamiento...","categories": [],
+        "tags": ["matemáticas","math","fp","programación-funcional"],
+        "url": "https://blog.thedojo.mx/2021/03/18/las-bases-matematicas-de-la-programacion-funcional.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1616045099/michael-dziedzic-VlZYu3nZIRI-unsplash_yxm6kr.jpg"
       }]

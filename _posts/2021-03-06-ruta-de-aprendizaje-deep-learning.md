@@ -51,5 +51,4 @@ Paralelamente leeré el libro [Programming Machine Learning de Pragmatic Program
 
 Es hora de ponerle un tiempo y un obejetivo más concreto al proyecto: _durante los próximos 10 meses (lo que resta de 2021) aprenderé las bases teóricas y prácitcas de machine learning, con el obejetivo de aplicarlo mejor en los proyectos de trabajo y combinarlo con mis habilidades de ingeniería del software y progeamación._
 
-
 Sobra decir que este plan no está escrito en piedra y se irá modifcando conforme vaya experimentando y aprendiendo más del campo. Por lo mientras, espero que el proyecto y lo que vaya aprendiendo y meta-aprendiendo te sirva, como la compilación de recursos para empezar que pusimos en este post.
