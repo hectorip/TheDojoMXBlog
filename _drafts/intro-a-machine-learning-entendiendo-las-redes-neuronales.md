@@ -11,4 +11,8 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Hablar de aprendizaje automático y los términos que lo rodean, muchas veces intimida a los desarrolladores.
+Hablar de aprendizaje automático y los términos que lo rodean, muchas veces intimida a los desarrolladores. En esta serie de posts vamos a intentar explicar los conceptos detrás del aprendizaje automático y llevarlos a la práctica.
+
+## Acerca de los nombres de las cosas
+
+Antes de empezar a hablar de inteligencia artificial, aprendizaje automático, aprendizaje profundo y todas esas cosas, queremos hacer una nota sobre el nombrado en las asuntos de tecnología.
