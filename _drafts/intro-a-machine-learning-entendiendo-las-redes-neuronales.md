@@ -17,11 +17,24 @@ Hablar de aprendizaje automático y los términos que lo rodean, muchas veces in
 
 Antes de empezar a hablar de inteligencia artificial, aprendizaje automático, aprendizaje profundo y todas esas cosas, queremos hacer una nota sobre el nombrado en las asuntos de tecnología.
 
-Primero, debemos recordar que la tecnología no existe en un entorno aislado que...
+Primero, debemos recordar que la tecnología no existe en un entorno aislado, y generalmente no tiene uso por sí misma, sino que la usamos para servir a otras áreas. Es por eso que lo que conoceríamos por un nombre completamente acertado y descriptivo de acuerdo a sus características técnicas se tiene que renombrar para que otras personas no pertenecientes al área de desarrollo de software.
+
+Así ha pasado vez tras vez con diferentes tecnologías:
+
+- El objeto `XMLHttpRequest` de los navegadores y su uso se nombró como **AJAX** para que fuera más vendible
+- Una página web avanzada y con más funcionalidades se empezó a llamar **Web App**
+- Las técnicas relacionadas con aprovechar las nuevas características de los navegadores como el Service Worwer, el archivo manifest se juntaron bajo un solo nombre más "vendible": **Progressive Web Apps**
+
+Los ejemplos siguen y estoy seguro que en cada área del conocimiento suceden. Este "renombramiento" permite que la tecnología en cuestión sea más aceptada y difundida, aunque a veces puede llevar a un malentendimiento por parte del público en general que puede permear a los practicantes.
+
+Esto es lo que ha pasado con los nombres que nos conciernen en este artículo, le llamamos "Inteligencia Artificial" a toda una rama de las ciencias de la computación relacionada con imitar lo que entendemos como "inteligencia", pero las bases formales de esto podrían describirse con otros nombres más familiares para nosotros.
+
+
 
 ## Perceptrones
 ## Redes Neuronales
 
 ## Las matemáticas necesarias
+
 
 ## Código
