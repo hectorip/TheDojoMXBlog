@@ -27,8 +27,11 @@ Así ha pasado vez tras vez con diferentes tecnologías:
 
 Los ejemplos siguen y estoy seguro que en cada área del conocimiento suceden. Este "renombramiento" permite que la tecnología en cuestión sea más aceptada y difundida, aunque a veces puede llevar a un malentendimiento por parte del público en general que puede permear a los practicantes.
 
-Esto es lo que ha pasado con los nombres que nos conciernen en este artículo, le llamamos "Inteligencia Artificial" a toda una rama de las ciencias de la computación relacionada con imitar lo que entendemos como "inteligencia", pero las bases formales de esto podrían describirse con otros nombres más familiares para nosotros.
+Esto es lo que ha pasado con los nombres que nos conciernen en este artículo, le llamamos _"Inteligencia Artificial"_ a toda una rama de las ciencias de la computación relacionada con imitar lo que entendemos como "inteligencia humana", pero las bases formales de esto podrían describirse con otros nombres más familiares para nosotros.
 
+Este nombre permite que los avances sean aceptados y por lo menos el área de negocio entienda las capacidades de la tecnología, **no su funcionamiento**.
+
+Cuando comprendas cómo funciona, tal vez veas que las redes neuronales no tienen nada que ver con las redes neuronales, o que en realidad el _aprendizaje automático_ es la aplicación de técnicas matemáticas y de ingeniería para aproximación de funciones, a veces muy complejas.
 
 
 ## Perceptrones
