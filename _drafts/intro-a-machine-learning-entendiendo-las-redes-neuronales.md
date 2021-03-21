@@ -33,14 +33,14 @@ Este nombre permite que los avances sean aceptados y por lo menos el área de ne
 
 Cuando comprendas cómo funciona, tal vez veas que las redes neuronales no tienen nada que ver con las redes neuronales, o que en realidad el _aprendizaje automático_ es la aplicación de técnicas matemáticas y de ingeniería para aproximación de funciones, a veces muy complejas.
 
-Ahora bien, eso no tiene nada de malo, sólo debemos aprender a no confundirnos con esos términos.
-
-Después de esta pequeña digresión, ahora si vayamos a lo que venimos: aprendamos aplicar estas técnicas.
+Ahora bien, eso no tiene nada de malo, sólo debemos aprender a no confundirnos con esos términos. Después de esta pequeña digresión, ahora si vayamos a lo que venimos: aprendamos aplicar estas técnicas.
 
 ## Perceptrones
+
+Un perceptron es básicamente una función lineal que ayuda a asignarle un valor...
+
 ## Redes Neuronales
 
 ## Las matemáticas necesarias
-
 
 ## Código
