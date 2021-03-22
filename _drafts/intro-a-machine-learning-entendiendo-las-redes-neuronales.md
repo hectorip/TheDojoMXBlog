@@ -25,7 +25,7 @@ Así ha pasado vez tras vez con diferentes tecnologías:
 - Una página web avanzada y con más funcionalidades se empezó a llamar **Web App**
 - Las técnicas relacionadas con aprovechar las nuevas características de los navegadores como el Service Worwer, el archivo manifest se juntaron bajo un solo nombre más "vendible": **Progressive Web Apps**
 
-Los ejemplos siguen y estoy seguro que en cada área del conocimiento suceden. Este "renombramiento" permite que la tecnología en cuestión sea más aceptada y difundida, aunque a veces puede llevar a un malentendimiento por parte del público en general que puede permear a los practicantes.
+Los ejemplos siguen y estoy seguro que en cada área del conocimiento suceden. Este "renombramiento" permite que la tecnología en cuestión sea más aceptada y difundida, aunque a veces puede llevar a un malentendido por parte del público en general que puede permear a los practicantes.
 
 Esto es lo que ha pasado con los nombres que nos conciernen en este artículo, le llamamos _"Inteligencia Artificial"_ a toda una rama de las ciencias de la computación relacionada con imitar lo que entendemos como "inteligencia humana", pero las bases formales de esto podrían describirse con otros nombres más familiares para nosotros.
 
@@ -34,6 +34,10 @@ Este nombre permite que los avances sean aceptados y por lo menos el área de ne
 Cuando comprendas cómo funciona, tal vez veas que las redes neuronales no tienen nada que ver con las redes neuronales, o que en realidad el _aprendizaje automático_ es la aplicación de técnicas matemáticas y de ingeniería para aproximación de funciones, a veces muy complejas.
 
 Ahora bien, eso no tiene nada de malo, sólo debemos aprender a no confundirnos con esos términos. Después de esta pequeña digresión, ahora si vayamos a lo que venimos: aprendamos aplicar estas técnicas.
+
+
+## Algunos términos
+
 
 ## Perceptrones
 
