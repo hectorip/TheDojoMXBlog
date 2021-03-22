@@ -38,10 +38,10 @@ Ahora bien, eso no tiene nada de malo, sólo debemos aprender a no confundirnos 
 
 ## Algunos términos
 
-
+Hablemos de algunos términos que usaremos durante estos artículos, para que sea más fácila avanzar por aquí.
 ## Perceptrones
 
-Un perceptron es básicamente una función lineal que ayuda a asignarle un valor...
+Un **perceptron** es básicamente una función lineal que ayuda a asignarle un valor...
 
 ## Redes Neuronales
 
