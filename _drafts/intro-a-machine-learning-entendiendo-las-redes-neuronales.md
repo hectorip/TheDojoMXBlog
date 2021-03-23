@@ -35,12 +35,9 @@ Cuando comprendas cómo funciona, tal vez veas que las redes neuronales no tiene
 
 Ahora bien, eso no tiene nada de malo, sólo debemos aprender a no confundirnos con esos términos. Después de esta pequeña digresión, ahora si vayamos a lo que venimos: aprendamos aplicar estas técnicas.
 
-## Algunos términos
-
-Hablemos de algunos términos que usaremos durante estos artículos, para que sea más fácil avanzar por aquí.
 ## Perceptrones
 
-Un **perceptron** es básicamente una función lineal que ayuda a asignarle un valor...
+Un **perceptron** es básicamente un algoritmo que aproxima una función matemática que representa una línea,
 
 ## Redes Neuronales
 
