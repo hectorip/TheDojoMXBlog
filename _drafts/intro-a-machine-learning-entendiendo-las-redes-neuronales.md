@@ -35,16 +35,28 @@ Cuando comprendas cómo funciona, tal vez veas que las redes neuronales no tiene
 
 Ahora bien, eso no tiene nada de malo, sólo debemos aprender a no confundirnos con esos términos. Después de esta pequeña digresión, ahora si vayamos a lo que venimos: aprendamos aplicar estas técnicas.
 
-
 ## Algunos términos
 
-Hablemos de algunos términos que usaremos durante estos artículos, para que sea más fácila avanzar por aquí.
+Hablemos de algunos términos que usaremos durante estos artículos, para que sea más fácil avanzar por aquí.
 ## Perceptrones
 
 Un **perceptron** es básicamente una función lineal que ayuda a asignarle un valor...
 
 ## Redes Neuronales
 
+Una red neuronal es un conjunto de perceptrones.
 ## Las matemáticas necesarias
 
-## Código
+Para poder entender las **bases de funcionamiento** de todo lo que acabamos de mencionar, hay que saber trabajar con matemáticas de nivel universitario:
+
+* Álgebra líneal
+* Análisis o Cálculo Vectorial
+* Ecuaciones diferenciales
+* Probabilidad
+* Estadística
+
+Y, claro, todas las matemáticas que soportan estas: álgebra, trigonometría, geometría analítica, etc.
+
+Si quieres aprender _profundamente_ esta área de la computación y estas técnicas y sientes que no tienes las bases matemáticas necesarias puedes estudiarlas aquí: [Khan Academy en Español](https://es.khanacademy.org/) (gratuito) o [Brilliant](https://brilliant.org/) (de pago).
+
+Sin embargo, y espero no ser linchado por esto, para empezar a aplicar las técnicas de manera práctica **no las necesitas**. Puedes abrazar la parte pragmática y algorítmica y empezar a usar los paquetes y herramientas de ML.
