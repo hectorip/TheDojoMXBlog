@@ -37,11 +37,11 @@ Ahora bien, eso no tiene nada de malo, sólo debemos aprender a no confundirnos 
 
 ## Perceptrones
 
-Un **perceptron** es básicamente un algoritmo que aproxima una función matemática que representa una línea,
+Un **perceptron** es un algoritmo que aproxima una función matemática que representa una línea. El perceptrón 
 
 ## Redes Neuronales
 
-Una red neuronal es un conjunto de perceptrones.
+Una red neuronal es un conjunto de perceptrones combinados para
 ## Las matemáticas necesarias
 
 Para poder entender las **bases de funcionamiento** de todo lo que acabamos de mencionar, hay que saber trabajar con matemáticas de nivel universitario:
