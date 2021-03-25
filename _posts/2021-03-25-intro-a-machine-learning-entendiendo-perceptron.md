@@ -1,10 +1,10 @@
 ---
-title: "Intro a Machine Learning: Entendiendo las redes neuronales"
+title: "Intro a Machine Learning: Entendiendo el perceptrón"
 date: 2021-03-06
 author: Héctor Patricio
 tags: machine-learning ml aprendizaje-automático
 comments: true
-excerpt: "En este artículo entenderemos las bases matemáticas y de programación de lo que comercialmente se conoce como redes neuronales"
+excerpt: "En este artículo entenderemos las bases matemáticas y de programación de la unidad de construcción básica de lo que comercialmente se conoce como redes neuronales"
 header:
   overlay_image: [#image](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1616115397/robynne-hu-HOrhCnQsxnQ-unsplash_sos5ux.jpg)
   teaser: [#image](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1616115397/robynne-hu-HOrhCnQsxnQ-unsplash_sos5ux.jpg)
@@ -43,10 +43,30 @@ Si eres un programador sin experiencia en ML, te puedes imaginar la función del
 
 La diferencia está **en cómo se construye esta función**, nosotros no le damos reglas programadas al perceptrón para clasificar los objetos de cierta forma, sino que le damos ejemplos **etiquetados** y el perceptrón **aprende**: ajusta los parámetros de su función interna para dividir las dos clases lo mejor posible.
 
-La fórmula básica para un perceptrón es una sumatoria de todos sus parámetros de entrada multiplicados por un factor llamado _peso_ para cada uno, más una constante llamada _sesgo_ o _bias_. Al resultado de esta suma se le aplica la función **step** que devuelve `0` (equivalente a falso) si la entrada es menor o igual que cero y `1` en cualquier otro caso.
+La fórmula básica para un perceptrón es una sumatoria de todos sus parámetros de entrada multiplicados por un factor llamado _peso_ para cada uno, más una constante llamada _sesgo_ o _bias_. Al resultado de esta suma se le aplica la **función de activación**, normalmente la función **step** que devuelve `0` (equivalente a falso) si la entrada es menor o igual que cero y `1` en cualquier otro caso.
+
+Si llamamos `X` a los parámetros de entrada, `W` a los pesos aquí puedes ver la representación gráfica de un perceptrón:
+
+![Representación gráfica de un perceptrón](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1616653024/Untitled_Artwork_2_fsqfcr.png){: .align-center}
+
+Y aquí la ecuación matemática que lo representa:
+
+![Ecuación de un perceptrón](https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1616653048/Untitled_Artwork_3_fjoaaa.png){: .align-center}
+
+### Entrenamiento
+
+Como te podrás dar cuenta, el funcionamiento de un perceptrón es muy sencillo. Pero lo importante no es su funcionamiento cuando clasifica, _sino como aprende a clasificar_. Esta fase se llama **entrenamiento** o **training** y consiste en encontrar los pesos correctos para cada parámetro de entrada y el sesgo correcto.
+
+El entrenamiento de un perceptrón toma un conjunto de ejemplos **clasificados** o **etiquetados** y encuentra los peso que pueden clasificar el mayor número de ejemplos correctamente. Este entrenamiento puede ser muy pesado dependiendo del número de entradas y ejemplos.
+
+Es justo esto lo que hace que diferencia al machine learning de la programación tradicional. Tú programaste el algoritmo para encontrar los parámetros correctos, pero nunca las reglas específicas de clasificación.
 ## Redes Neuronales
 
-Una red neuronal es un conjunto de perceptrones combinados para
+Una red neuronal es un conjunto de perceptrones combinados para poder clasificar en más de dos clases, y para crear funciones de clasificación que van mucho más allá de nuestro nivel de comprensión.
+
+Las redes neuronales generalmente usan perceptrones con una función de activación diferente, la función sigmoide que transforma cualquier entrada en un valor entre 0 y 1 (como una probabilidad).
+
+En el siguiente artículo hablaremos más a detalle sobre eso.
 ## Las matemáticas necesarias
 
 Para poder entender las **bases de funcionamiento** de todo lo que acabamos de mencionar, hay que saber trabajar con matemáticas de nivel universitario:
