@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2021-03-18T01:11:28-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Las bases matemáticas de la programación funcional</title><link href="https://blog.thedojo.mx/2021/03/18/las-bases-matematicas-de-la-programacion-funcional.html" rel="alternate" type="text/html" title="Las bases matemáticas de la programación funcional" /><published>2021-03-18T00:00:00-06:00</published><updated>2021-03-18T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/03/18/las-bases-matematicas-de-la-programacion-funcional</id><content type="html" xml:base="https://blog.thedojo.mx/2021/03/18/las-bases-matematicas-de-la-programacion-funcional.html">&lt;p&gt;La programación funcional tiene conceptos muy relacionados con las matemáticas. Aquí te vamos a platicar de sus orígenes y de algunos conceptos matemáticos directamente embebidos en la programación funcional.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2021-03-25T10:21:07-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Las bases matemáticas de la programación funcional</title><link href="https://blog.thedojo.mx/2021/03/18/las-bases-matematicas-de-la-programacion-funcional.html" rel="alternate" type="text/html" title="Las bases matemáticas de la programación funcional" /><published>2021-03-18T00:00:00-06:00</published><updated>2021-03-18T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/03/18/las-bases-matematicas-de-la-programacion-funcional</id><content type="html" xml:base="https://blog.thedojo.mx/2021/03/18/las-bases-matematicas-de-la-programacion-funcional.html">&lt;p&gt;La programación funcional tiene conceptos muy relacionados con las matemáticas. Aquí te vamos a platicar de sus orígenes y de algunos conceptos matemáticos directamente embebidos en la programación funcional.&lt;/p&gt;
 
 &lt;p&gt;Lo primero que tienes que recordar es que las matemáticas no tienen que ver  &lt;em&gt;necesariamente&lt;/em&gt; con números, sino con el razonamiento y la &lt;em&gt;formalización&lt;/em&gt; de este. En este artículo hablamos más de ello: &lt;a href=&quot;/2019/12/25/las-matematicas-que-debes-saber-para-programar.html&quot;&gt;Las matemáticas que necesitas para programar&lt;/a&gt;.&lt;/p&gt;
 
@@ -102,7 +102,81 @@
 
 &lt;p&gt;Es hora de ponerle un tiempo y un obejetivo más concreto al proyecto: &lt;em&gt;durante los próximos 10 meses (lo que resta de 2021) aprenderé las bases teóricas y prácitcas de machine learning, con el obejetivo de aplicarlo mejor en los proyectos de trabajo y combinarlo con mis habilidades de ingeniería del software y progeamación.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Sobra decir que este plan no está escrito en piedra y se irá modifcando conforme vaya experimentando y aprendiendo más del campo. Por lo mientras, espero que el proyecto y lo que vaya aprendiendo y meta-aprendiendo te sirva, como la compilación de recursos para empezar que pusimos en este post.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprendizaje" /><category term="ml" /><category term="machine-learning" /><summary type="html">En este artículo te proponemos una forma de aprender machine learning y deep learning y te presentamos algunos recursos que te pueden servir</summary></entry><entry><title type="html">Resumen: Qué hacer para conseguir un buen trabajo como programador</title><link href="https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html" rel="alternate" type="text/html" title="Resumen: Qué hacer para conseguir un buen trabajo como programador" /><published>2021-02-10T00:00:00-06:00</published><updated>2021-02-10T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador</id><content type="html" xml:base="https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html">&lt;p&gt;Aquí te damos un resumen de la plática que tuvimos con Diego De Granda y Pablo Trinidad sobre algunas cosas que hicieron para conseguir buenos trabajos. Esbozaremos algunos de los consejos independientes sin una secuencia definida.&lt;/p&gt;
+&lt;p&gt;Sobra decir que este plan no está escrito en piedra y se irá modifcando conforme vaya experimentando y aprendiendo más del campo. Por lo mientras, espero que el proyecto y lo que vaya aprendiendo y meta-aprendiendo te sirva, como la compilación de recursos para empezar que pusimos en este post.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprendizaje" /><category term="ml" /><category term="machine-learning" /><summary type="html">En este artículo te proponemos una forma de aprender machine learning y deep learning y te presentamos algunos recursos que te pueden servir</summary></entry><entry><title type="html">Intro a Machine Learning: Entendiendo el perceptrón</title><link href="https://blog.thedojo.mx/2021/03/06/intro-a-machine-learning-entendiendo-perceptron.html" rel="alternate" type="text/html" title="Intro a Machine Learning: Entendiendo el perceptrón" /><published>2021-03-06T00:00:00-06:00</published><updated>2021-03-06T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/03/06/intro-a-machine-learning-entendiendo-perceptron</id><content type="html" xml:base="https://blog.thedojo.mx/2021/03/06/intro-a-machine-learning-entendiendo-perceptron.html">&lt;p&gt;Hablar de aprendizaje automático y los términos que lo rodean, muchas veces intimida a los desarrolladores. En esta serie de posts vamos a intentar explicar los conceptos detrás del aprendizaje automático y llevarlos a la práctica.&lt;/p&gt;
+
+&lt;h2 id=&quot;acerca-de-los-nombres-de-las-cosas&quot;&gt;Acerca de los nombres de las cosas&lt;/h2&gt;
+
+&lt;p&gt;Antes de empezar a hablar de inteligencia artificial, aprendizaje automático, aprendizaje profundo y todas esas cosas, queremos hacer una nota sobre el nombrado en las asuntos de tecnología.&lt;/p&gt;
+
+&lt;p&gt;Primero, debemos recordar que la tecnología no existe en un entorno aislado, y generalmente no tiene uso por sí misma, sino que la usamos para servir a otras áreas. Es por eso que lo que conoceríamos por un nombre completamente acertado y descriptivo de acuerdo a sus características técnicas se tiene que renombrar para que otras personas no pertenecientes al área de desarrollo de software.&lt;/p&gt;
+
+&lt;p&gt;Así ha pasado vez tras vez con diferentes tecnologías:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;El objeto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XMLHttpRequest&lt;/code&gt; de los navegadores y su uso se nombró como &lt;strong&gt;AJAX&lt;/strong&gt; para que fuera más vendible&lt;/li&gt;
+  &lt;li&gt;Una página web avanzada y con más funcionalidades se empezó a llamar &lt;strong&gt;Web App&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Las técnicas relacionadas con aprovechar las nuevas características de los navegadores como el Service Worwer, el archivo manifest se juntaron bajo un solo nombre más “vendible”: &lt;strong&gt;Progressive Web Apps&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Los ejemplos siguen y estoy seguro que en cada área del conocimiento suceden. Este “renombramiento” permite que la tecnología en cuestión sea más aceptada y difundida, aunque a veces puede llevar a un malentendido por parte del público en general que puede permear a los practicantes.&lt;/p&gt;
+
+&lt;p&gt;Esto es lo que ha pasado con los nombres que nos conciernen en este artículo, le llamamos &lt;em&gt;“Inteligencia Artificial”&lt;/em&gt; a toda una rama de las ciencias de la computación relacionada con imitar lo que entendemos como “inteligencia humana”, pero las bases formales de esto podrían describirse con otros nombres más familiares para nosotros.&lt;/p&gt;
+
+&lt;p&gt;Este nombre permite que los avances sean aceptados y por lo menos el área de negocio entienda las capacidades de la tecnología, &lt;strong&gt;no su funcionamiento&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Cuando comprendas cómo funciona, tal vez veas que las redes neuronales no tienen nada que ver con las redes neuronales, o que en realidad el &lt;em&gt;aprendizaje automático&lt;/em&gt; es la aplicación de técnicas matemáticas y de ingeniería para aproximación de funciones, a veces muy complejas.&lt;/p&gt;
+
+&lt;p&gt;Ahora bien, eso no tiene nada de malo, sólo debemos aprender a no confundirnos con esos términos. Después de esta pequeña digresión, ahora si vayamos a lo que venimos: aprendamos aplicar estas técnicas.&lt;/p&gt;
+
+&lt;h2 id=&quot;perceptrones&quot;&gt;Perceptrones&lt;/h2&gt;
+
+&lt;p&gt;Un &lt;strong&gt;perceptron&lt;/strong&gt; es un algoritmo que aproxima una función matemática sirve para &lt;strong&gt;clasificar&lt;/strong&gt; su entrada entre &lt;strong&gt;dos clases&lt;/strong&gt;. Un perceptrón puede tomar N entradas y devuelve un “Sí” o un “No”.&lt;/p&gt;
+
+&lt;p&gt;Si eres un programador sin experiencia en ML, te puedes imaginar la función del perceptrón básicamente como un “IF”. Es un clasificador binario que devuelve &lt;strong&gt;Verdadero&lt;/strong&gt; si el objeto en cuestión pertenece al grupo seleccionado, &lt;strong&gt;falso&lt;/strong&gt; en el caso contrario.&lt;/p&gt;
+
+&lt;p&gt;La diferencia está &lt;strong&gt;en cómo se construye esta función&lt;/strong&gt;, nosotros no le damos reglas programadas al perceptrón para clasificar los objetos de cierta forma, sino que le damos ejemplos &lt;strong&gt;etiquetados&lt;/strong&gt; y el perceptrón &lt;strong&gt;aprende&lt;/strong&gt;: ajusta los parámetros de su función interna para dividir las dos clases lo mejor posible.&lt;/p&gt;
+
+&lt;p&gt;La fórmula básica para un perceptrón es una sumatoria de todos sus parámetros de entrada multiplicados por un factor llamado &lt;em&gt;peso&lt;/em&gt; para cada uno, más una constante llamada &lt;em&gt;sesgo&lt;/em&gt; o &lt;em&gt;bias&lt;/em&gt;. Al resultado de esta suma se le aplica la &lt;strong&gt;función de activación&lt;/strong&gt;, normalmente la función &lt;strong&gt;step&lt;/strong&gt; que devuelve &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; (equivalente a falso) si la entrada es menor o igual que cero y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; en cualquier otro caso.&lt;/p&gt;
+
+&lt;p&gt;Si llamamos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;X&lt;/code&gt; a los parámetros de entrada, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;W&lt;/code&gt; a los pesos aquí puedes ver la representación gráfica de un perceptrón:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1616653024/Untitled_Artwork_2_fsqfcr.png&quot; alt=&quot;Representación gráfica de un perceptrón&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y aquí la ecuación matemática que lo representa:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1616653048/Untitled_Artwork_3_fjoaaa.png&quot; alt=&quot;Ecuación de un perceptrón&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;entrenamiento&quot;&gt;Entrenamiento&lt;/h3&gt;
+
+&lt;p&gt;Como te podrás dar cuenta, el funcionamiento de un perceptrón es muy sencillo. Pero lo importante no es su funcionamiento cuando clasifica, &lt;em&gt;sino como aprende a clasificar&lt;/em&gt;. Esta fase se llama &lt;strong&gt;entrenamiento&lt;/strong&gt; o &lt;strong&gt;training&lt;/strong&gt; y consiste en encontrar los pesos correctos para cada parámetro de entrada y el sesgo correcto.&lt;/p&gt;
+
+&lt;p&gt;El entrenamiento de un perceptrón toma un conjunto de ejemplos &lt;strong&gt;clasificados&lt;/strong&gt; o &lt;strong&gt;etiquetados&lt;/strong&gt; y encuentra los peso que pueden clasificar el mayor número de ejemplos correctamente. Este entrenamiento puede ser muy pesado dependiendo del número de entradas y ejemplos.&lt;/p&gt;
+
+&lt;p&gt;Es justo esto lo que hace que diferencia al machine learning de la programación tradicional. Tú programaste el algoritmo para encontrar los parámetros correctos, pero nunca las reglas específicas de clasificación.&lt;/p&gt;
+&lt;h2 id=&quot;redes-neuronales&quot;&gt;Redes Neuronales&lt;/h2&gt;
+
+&lt;p&gt;Una red neuronal es un conjunto de perceptrones combinados para poder clasificar en más de dos clases, y para crear funciones de clasificación que van mucho más allá de nuestro nivel de comprensión.&lt;/p&gt;
+
+&lt;p&gt;Las redes neuronales generalmente usan perceptrones con una función de activación diferente, la función sigmoide que transforma cualquier entrada en un valor entre 0 y 1 (como una probabilidad).&lt;/p&gt;
+
+&lt;p&gt;En el siguiente artículo hablaremos más a detalle sobre eso.&lt;/p&gt;
+&lt;h2 id=&quot;las-matemáticas-necesarias&quot;&gt;Las matemáticas necesarias&lt;/h2&gt;
+
+&lt;p&gt;Para poder entender las &lt;strong&gt;bases de funcionamiento&lt;/strong&gt; de todo lo que acabamos de mencionar, hay que saber trabajar con matemáticas de nivel universitario:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Álgebra líneal&lt;/li&gt;
+  &lt;li&gt;Análisis o Cálculo Vectorial&lt;/li&gt;
+  &lt;li&gt;Ecuaciones diferenciales&lt;/li&gt;
+  &lt;li&gt;Probabilidad&lt;/li&gt;
+  &lt;li&gt;Estadística&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Y, claro, todas las matemáticas que soportan estas: álgebra, trigonometría, geometría analítica, etc.&lt;/p&gt;
+
+&lt;p&gt;Si quieres aprender &lt;em&gt;profundamente&lt;/em&gt; esta área de la computación y estas técnicas y sientes que no tienes las bases matemáticas necesarias puedes estudiarlas aquí: &lt;a href=&quot;https://es.khanacademy.org/&quot;&gt;Khan Academy en Español&lt;/a&gt; (gratuito) o &lt;a href=&quot;https://brilliant.org/&quot;&gt;Brilliant&lt;/a&gt; (de pago).&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, y espero no ser linchado por esto, para empezar a aplicar las técnicas de manera práctica &lt;strong&gt;no las necesitas&lt;/strong&gt;. Puedes abrazar la parte pragmática y algorítmica y empezar a usar los paquetes y herramientas de ML.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="machine-learning" /><category term="ml" /><category term="aprendizaje-automático" /><summary type="html">En este artículo entenderemos las bases matemáticas y de programación de la unidad de construcción básica de lo que comercialmente se conoce como redes neuronales</summary></entry><entry><title type="html">Resumen: Qué hacer para conseguir un buen trabajo como programador</title><link href="https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html" rel="alternate" type="text/html" title="Resumen: Qué hacer para conseguir un buen trabajo como programador" /><published>2021-02-10T00:00:00-06:00</published><updated>2021-02-10T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador</id><content type="html" xml:base="https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html">&lt;p&gt;Aquí te damos un resumen de la plática que tuvimos con Diego De Granda y Pablo Trinidad sobre algunas cosas que hicieron para conseguir buenos trabajos. Esbozaremos algunos de los consejos independientes sin una secuencia definida.&lt;/p&gt;
 
 &lt;h2 id=&quot;aprende-inglés&quot;&gt;Aprende Inglés&lt;/h2&gt;
 
@@ -208,7 +282,57 @@
 
 &lt;p&gt;La charla que tuvimos con ella se extendió sobre muchos temas más, si no te la quieres perder la puedes ver aquí:&lt;/p&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vCzMLeq_eBk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="video" /><category term="data-science" /><category term="books" /><category term="libros" /><summary type="html">En este post te contamos sobre algunos libros que te pueden servir para avanzar en tu carrera.</summary></entry><entry><title type="html">¿Deberías comentar tu código?</title><link href="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html" rel="alternate" type="text/html" title="¿Deberías comentar tu código?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html">&lt;p&gt;Cuando hablamos de los comentarios en el código, hay dos escuelas. La primera dice que debes usar los comentarios para &lt;strong&gt;clarificar lo que quisiste expresar con tu código&lt;/strong&gt;, mientras que la segunda dice que deberías &lt;strong&gt;evitarlos al máximo&lt;/strong&gt; y que comentar tu código es un mal necesario que sólo denota tu falta de habilidad para no hacer código lo suficientemente claro.&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vCzMLeq_eBk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="video" /><category term="data-science" /><category term="books" /><category term="libros" /><summary type="html">En este post te contamos sobre algunos libros que te pueden servir para avanzar en tu carrera.</summary></entry><entry><title type="html">¿Qué son los modelos generativos?</title><link href="https://blog.thedojo.mx/2020/12/30/que-son-los-modelos-generativos.html" rel="alternate" type="text/html" title="¿Qué son los modelos generativos?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/que%20son-los-modelos-generativos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/que-son-los-modelos-generativos.html">&lt;p&gt;Los modelos generativos permiten a una máquina “aprender” los patrones que existen en los datos con los que son entrenadas y a partir de dicho aprendizaje, son capaces de &lt;strong&gt;generar datos similares&lt;/strong&gt; que en algunos casos pueden ser casi tan “reales” como los que se utilizaron inicialmente para su entrenamiento.&lt;/p&gt;
+
+&lt;p&gt;Mediante este tipo de modelos pueden generarse nuevos datos que tienen distintas aplicaciones, entre ellas, generar datos que otros sistemas de aprendizaje podrán utilizar para su entrenamiento, sin necesidad de que dichos datos existan previamente.&lt;/p&gt;
+
+&lt;p&gt;En particular, las &lt;strong&gt;Redes Neuronales Generativas Adversariales (GAN’s)&lt;/strong&gt; pueden generar nuevas imágenes que se parecen o son similares a las imágenes con las que fueron entrenadas, pero que individualmente son distintas a todas ellas.&lt;/p&gt;
+
+&lt;p&gt;El funcionamiento de una Red Neuronal Adversarial consiste en la operación simultánea de dos redes neuronales que son “adversarias”, una de dichas redes es la encargada de generar imágenes y la segunda es la encargada de discriminar aquellas imágenes que no se parecen a lo que constituye una imágen real.&lt;/p&gt;
+
+&lt;p&gt;Algunos modelos avanzados pueden verse en:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://thispersondoesnotexist.com/&quot;&gt;This Person Does Not Exist&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.thiswaifudoesnotexist.net/&quot;&gt;This Waifu Does Not Exist&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://thisfursonadoesnotexist.com/&quot;&gt;This Furson Does Not Exist&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Como parte de un proyecto de investigación, utilizamos una red adversarial para generar imágenes de zapatos, dichas redes utilizan, modelos convolucionales para ir entendiendo las imágenes en segmentos cada vez más pequeños hasta tener una definición y similitud suficiente para reemplazar la imagen original.&lt;/p&gt;
+
+&lt;p&gt;La calidad de los modelos generados se incrementa conforme el número de iteraciones va aumentando, en general, se van almacenando nuevas muestras de las imágenes generadas cada cierto número de iteraciones de tal forma se puede observar si el modelo sigue mejorando, si ya se estancó o si se está degradando, aunque existen algunas métricas que pueden ayudar a identificar el punto óptimo donde puede detenerse el entrenamiento.&lt;/p&gt;
+
+&lt;p&gt;Algunas de las peculiaridades de estos modelos es que son relativamente sensibles a la uniformidad y el número de imágenes utilizadas, sin embargo, también es cierto que los modelos han ido mejorando y en algunos casos pueden generar imágenes de gran calidad con menos datos de entrenamiento. Por ejemplo, estas imágenes fueron generadas con sólo 500 datos de entrenamiento mediante un Modelo Generador Adversarial Eficiente:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mit-han-lab/data-efficient-gans&quot;&gt;Data Efficient GANs&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;usos-de-los-generadores-adversariales&quot;&gt;Usos de los generadores adversariales&lt;/h2&gt;
+
+&lt;p&gt;Hablemos de algunos de los usos que pueden tener en la práctica este tipo de redes.&lt;/p&gt;
+
+&lt;h3 id=&quot;mejorar-la-seguridad&quot;&gt;Mejorar la seguridad&lt;/h3&gt;
+
+&lt;p&gt;Un discriminador optimiza su capacidad para detectar imágenes que no son reales (las que emite el generador), de tal forma que dicho discriminador adquiere la capacidad de identificar imágenes que no son reales y que pueden estar siendo utilizadas para generar identidades falsas en sistemas que por ejemplo requieren fotografías.&lt;/p&gt;
+
+&lt;h3 id=&quot;en-el-sector-salud&quot;&gt;En el sector salud&lt;/h3&gt;
+
+&lt;p&gt;La capacidad de detectar anomalías (trabajo del discriminador) puede utilizarse para identificar células o formaciones anómalas (como el cáncer) al ser entrenado mediante imágenes de tejidos u órganos saludables.&lt;/p&gt;
+
+&lt;h3 id=&quot;en-el-sector-de-medios-digitales&quot;&gt;En el sector de medios digitales&lt;/h3&gt;
+
+&lt;p&gt;Ya que generadores adversariales pueden utilizarse para generar imágenes que no existían o generar imágenes a partir de un conjunto de imágenes preexistentes, dicha generación puede de igual forma generar modelos en tercera dimensión a partir de imágenes en dos dimensiones o hacer combinaciones de modelos preexistentes.&lt;/p&gt;
+
+&lt;p&gt;Esto puede usarse como material para la producción de contenido visual e incluso animaciones de video o bien como inspiración para que un diseñador genere nuevos personajes.&lt;/p&gt;
+
+&lt;p&gt;Algunos generadores pueden ayudar a corregir defectos en imágenes, removiendo o completando partes de la imágen que sobraban o que estaban faltantes, o si es el caso, a dar color a imágenes en blanco y negro.&lt;/p&gt;
+
+&lt;p&gt;De igual forma permiten crear una “interpolación” de imágenes para “regenerarlas” en una mayor resolución. Desde luego la eficacia dependerá de las imágenes utilizadas para su entrenamiento.&lt;/p&gt;
+
+&lt;p&gt;Algunas de estas aplicaciones pueden “traducir” las imágenes de un dominio a otro, por ejemplo, convirtiendo una imágen satelital en un mapa de niveles o generando fotografías a partir de bosquejos.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Los modelos generativos pueden ser una gran herramienta para diferentes industrias, aprender a usarlos y generarlos te puede ayudar a entrar en un campo que tiene cada vez más alta demanda: el uso de datos para la creación automática de programas (Machine Learning).&lt;/p&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="ai" /><category term="ml" /><category term="gans" /><summary type="html">En este artículo exploramos qué es un modelo generativo, cómo te pueden servir y el estado del arte en este campo.</summary></entry><entry><title type="html">¿Deberías comentar tu código?</title><link href="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html" rel="alternate" type="text/html" title="¿Deberías comentar tu código?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html">&lt;p&gt;Cuando hablamos de los comentarios en el código, hay dos escuelas. La primera dice que debes usar los comentarios para &lt;strong&gt;clarificar lo que quisiste expresar con tu código&lt;/strong&gt;, mientras que la segunda dice que deberías &lt;strong&gt;evitarlos al máximo&lt;/strong&gt; y que comentar tu código es un mal necesario que sólo denota tu falta de habilidad para no hacer código lo suficientemente claro.&lt;/p&gt;
 
 &lt;p&gt;¿A cuál de los dos consejos deberías hacerle caso? En este artículo explicaremos por qué creemos que deberías ver los comentarios como una &lt;strong&gt;herramienta necesaria&lt;/strong&gt;, valiosa y muy útil, y cómo usarlos para no caer en el extremo que ha llevado a algunas personas a tener una mala actitud hacia ellos.&lt;/p&gt;
 
@@ -302,57 +426,7 @@
 
 &lt;p&gt;Si pones el suficiente esmero en aprender a escribir buenos comentarios y mantenerlos, serán una gran herramienta de diseño y documentación de tu software.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Este artículo está basado en las ideas del “A Philosophy of Software Design de John Ousterhout”, en el que se le dedican &lt;strong&gt;4 capítulos&lt;/strong&gt; al buen uso de los comentarios&lt;/em&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="comments" /><category term="comentarios" /><category term="mantenibilidad" /><category term="código-mantenible" /><category term="ousterhout" /><category term="aposd" /><summary type="html">Hay programadores que dice que los comentarios son un mal que se debería evitar al máximo. Aquí proponemos lo contrario: usa los comentarios correctamente para crear código mantenible, basados en las ideas de 'A Philosophy of Software Design'</summary></entry><entry><title type="html">¿Qué son los modelos generativos?</title><link href="https://blog.thedojo.mx/2020/12/30/que-son-los-modelos-generativos.html" rel="alternate" type="text/html" title="¿Qué son los modelos generativos?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/que%20son-los-modelos-generativos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/que-son-los-modelos-generativos.html">&lt;p&gt;Los modelos generativos permiten a una máquina “aprender” los patrones que existen en los datos con los que son entrenadas y a partir de dicho aprendizaje, son capaces de &lt;strong&gt;generar datos similares&lt;/strong&gt; que en algunos casos pueden ser casi tan “reales” como los que se utilizaron inicialmente para su entrenamiento.&lt;/p&gt;
-
-&lt;p&gt;Mediante este tipo de modelos pueden generarse nuevos datos que tienen distintas aplicaciones, entre ellas, generar datos que otros sistemas de aprendizaje podrán utilizar para su entrenamiento, sin necesidad de que dichos datos existan previamente.&lt;/p&gt;
-
-&lt;p&gt;En particular, las &lt;strong&gt;Redes Neuronales Generativas Adversariales (GAN’s)&lt;/strong&gt; pueden generar nuevas imágenes que se parecen o son similares a las imágenes con las que fueron entrenadas, pero que individualmente son distintas a todas ellas.&lt;/p&gt;
-
-&lt;p&gt;El funcionamiento de una Red Neuronal Adversarial consiste en la operación simultánea de dos redes neuronales que son “adversarias”, una de dichas redes es la encargada de generar imágenes y la segunda es la encargada de discriminar aquellas imágenes que no se parecen a lo que constituye una imágen real.&lt;/p&gt;
-
-&lt;p&gt;Algunos modelos avanzados pueden verse en:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://thispersondoesnotexist.com/&quot;&gt;This Person Does Not Exist&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.thiswaifudoesnotexist.net/&quot;&gt;This Waifu Does Not Exist&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://thisfursonadoesnotexist.com/&quot;&gt;This Furson Does Not Exist&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Como parte de un proyecto de investigación, utilizamos una red adversarial para generar imágenes de zapatos, dichas redes utilizan, modelos convolucionales para ir entendiendo las imágenes en segmentos cada vez más pequeños hasta tener una definición y similitud suficiente para reemplazar la imagen original.&lt;/p&gt;
-
-&lt;p&gt;La calidad de los modelos generados se incrementa conforme el número de iteraciones va aumentando, en general, se van almacenando nuevas muestras de las imágenes generadas cada cierto número de iteraciones de tal forma se puede observar si el modelo sigue mejorando, si ya se estancó o si se está degradando, aunque existen algunas métricas que pueden ayudar a identificar el punto óptimo donde puede detenerse el entrenamiento.&lt;/p&gt;
-
-&lt;p&gt;Algunas de las peculiaridades de estos modelos es que son relativamente sensibles a la uniformidad y el número de imágenes utilizadas, sin embargo, también es cierto que los modelos han ido mejorando y en algunos casos pueden generar imágenes de gran calidad con menos datos de entrenamiento. Por ejemplo, estas imágenes fueron generadas con sólo 500 datos de entrenamiento mediante un Modelo Generador Adversarial Eficiente:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/mit-han-lab/data-efficient-gans&quot;&gt;Data Efficient GANs&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;usos-de-los-generadores-adversariales&quot;&gt;Usos de los generadores adversariales&lt;/h2&gt;
-
-&lt;p&gt;Hablemos de algunos de los usos que pueden tener en la práctica este tipo de redes.&lt;/p&gt;
-
-&lt;h3 id=&quot;mejorar-la-seguridad&quot;&gt;Mejorar la seguridad&lt;/h3&gt;
-
-&lt;p&gt;Un discriminador optimiza su capacidad para detectar imágenes que no son reales (las que emite el generador), de tal forma que dicho discriminador adquiere la capacidad de identificar imágenes que no son reales y que pueden estar siendo utilizadas para generar identidades falsas en sistemas que por ejemplo requieren fotografías.&lt;/p&gt;
-
-&lt;h3 id=&quot;en-el-sector-salud&quot;&gt;En el sector salud&lt;/h3&gt;
-
-&lt;p&gt;La capacidad de detectar anomalías (trabajo del discriminador) puede utilizarse para identificar células o formaciones anómalas (como el cáncer) al ser entrenado mediante imágenes de tejidos u órganos saludables.&lt;/p&gt;
-
-&lt;h3 id=&quot;en-el-sector-de-medios-digitales&quot;&gt;En el sector de medios digitales&lt;/h3&gt;
-
-&lt;p&gt;Ya que generadores adversariales pueden utilizarse para generar imágenes que no existían o generar imágenes a partir de un conjunto de imágenes preexistentes, dicha generación puede de igual forma generar modelos en tercera dimensión a partir de imágenes en dos dimensiones o hacer combinaciones de modelos preexistentes.&lt;/p&gt;
-
-&lt;p&gt;Esto puede usarse como material para la producción de contenido visual e incluso animaciones de video o bien como inspiración para que un diseñador genere nuevos personajes.&lt;/p&gt;
-
-&lt;p&gt;Algunos generadores pueden ayudar a corregir defectos en imágenes, removiendo o completando partes de la imágen que sobraban o que estaban faltantes, o si es el caso, a dar color a imágenes en blanco y negro.&lt;/p&gt;
-
-&lt;p&gt;De igual forma permiten crear una “interpolación” de imágenes para “regenerarlas” en una mayor resolución. Desde luego la eficacia dependerá de las imágenes utilizadas para su entrenamiento.&lt;/p&gt;
-
-&lt;p&gt;Algunas de estas aplicaciones pueden “traducir” las imágenes de un dominio a otro, por ejemplo, convirtiendo una imágen satelital en un mapa de niveles o generando fotografías a partir de bosquejos.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Los modelos generativos pueden ser una gran herramienta para diferentes industrias, aprender a usarlos y generarlos te puede ayudar a entrar en un campo que tiene cada vez más alta demanda: el uso de datos para la creación automática de programas (Machine Learning).&lt;/p&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="ai" /><category term="ml" /><category term="gans" /><summary type="html">En este artículo exploramos qué es un modelo generativo, cómo te pueden servir y el estado del arte en este campo.</summary></entry><entry><title type="html">Tipos de algoritmos criptográficos: cifrados de bloque</title><link href="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html" rel="alternate" type="text/html" title="Tipos de algoritmos criptográficos: cifrados de bloque" /><published>2020-12-03T00:00:00-06:00</published><updated>2020-12-03T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html">&lt;p&gt;Ya hablamos de lo que es &lt;a href=&quot;/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html&quot;&gt;la criptografía&lt;/a&gt;, ahora empecemos a hablar de los tipos de
+&lt;p&gt;&lt;em&gt;Este artículo está basado en las ideas del “A Philosophy of Software Design de John Ousterhout”, en el que se le dedican &lt;strong&gt;4 capítulos&lt;/strong&gt; al buen uso de los comentarios&lt;/em&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="comments" /><category term="comentarios" /><category term="mantenibilidad" /><category term="código-mantenible" /><category term="ousterhout" /><category term="aposd" /><summary type="html">Hay programadores que dice que los comentarios son un mal que se debería evitar al máximo. Aquí proponemos lo contrario: usa los comentarios correctamente para crear código mantenible, basados en las ideas de 'A Philosophy of Software Design'</summary></entry><entry><title type="html">Tipos de algoritmos criptográficos: cifrados de bloque</title><link href="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html" rel="alternate" type="text/html" title="Tipos de algoritmos criptográficos: cifrados de bloque" /><published>2020-12-03T00:00:00-06:00</published><updated>2020-12-03T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html">&lt;p&gt;Ya hablamos de lo que es &lt;a href=&quot;/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html&quot;&gt;la criptografía&lt;/a&gt;, ahora empecemos a hablar de los tipos de
 algoritmos criptográficos que existen, sus características y sus principales diferencias. En este artículo hablaremos de los cifrados de bloque.&lt;/p&gt;
 
 &lt;h3 id=&quot;qué-es-un-cifrado-de-bloque&quot;&gt;¿Qué es un cifrado de bloque?&lt;/h3&gt;
@@ -580,122 +654,4 @@ cosas:&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
 
-&lt;p&gt;Repasa estas ideas cuando te sientas atorado para resolver algún problema y puede que te ayuden a salir del hoyo. Y sobre todo, lee &lt;a href=&quot;https://amzn.to/33qfw07&quot;&gt;“How to Solve It”&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="how-to-solve-it" /><category term="problemas" /><category term="resolución" /><category term="heurística" /><summary type="html">Hablemos de algunas ideas interesantes y prácticas sobre la resolución de problemas, que te pueden ayudar a salir de un bache contra un problema difícil.</summary></entry><entry><title type="html">Formas de hacer una API con Go</title><link href="https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang.html" rel="alternate" type="text/html" title="Formas de hacer una API con Go" /><published>2020-09-20T00:00:00-05:00</published><updated>2020-09-20T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang</id><content type="html" xml:base="https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang.html">&lt;p&gt;Go es uno de los lenguajes modernos más usados. Ya hablamos de &lt;a href=&quot;/2019/09/01/por-que-deberias-aprender-go.html&quot;&gt;por qué deberías aprenderlo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ahora hablemos de un caso de uso práctico: &lt;strong&gt;úsalo para crear una API HTTP&lt;/strong&gt;. En este artículo nos enfocaremos en la parte de comunicación HTTP y la generación de respuestas adecuadas.&lt;/p&gt;
-
-&lt;p&gt;La funcionalidad básica de tu API puede o no adaptarse completamente a Go (no es es tan fácil de escribir como un lenguaje dinámico como Python), pero definitivamente es un &lt;strong&gt;lenguaje excelente&lt;/strong&gt; para crear interfaces de comunicación web, debido a su alto rendimiento y eficiencia.&lt;/p&gt;
-
-&lt;p&gt;Puedes ver algunas de las comparativas en los siguientes artículos:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://stressgrid.com/blog/benchmarking_go_vs_node_vs_elixir/&quot;&gt;Comparando el rendimiento de Go, NodeJS y Elixir&lt;/a&gt;. TL;DR: Go y Elixir llegan a manejar más de 100k conexiones sin ningún problema, Node empieza con problemas desde 30k y el más eficiente en cómputo y memoria utilizada &lt;em&gt;por mucho&lt;/em&gt; es &lt;strong&gt;Go&lt;/strong&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/mroth/phoenix-showdown&quot;&gt;Comparación de frameworks web ligeros&lt;/a&gt;. Este artículo es un poco viejo, pero el resumen es que Gin (un framework web ligero de Go) es el que más peticiones soporta por segundo y con una consistencia excelente.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1574629781/Screenshot_2019-11-24_15.09.25_ozqwcu.png&quot; alt=&quot;Comparativa de micro-frameworks Web&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Hablemos de tres formas de crear una API sobre HTTP para tu próximo proyecto. Pero antes hablemos de una opción simple que no cubre muchos casos pero que se oye recomendada por todo internet.&lt;/p&gt;
-
-&lt;h2 id=&quot;la-biblioteca-estándar&quot;&gt;La biblioteca estándar&lt;/h2&gt;
-
-&lt;p&gt;Cuando hice mi primer proyecto en Go, gran parte de la investigación sobre qué usar para crear un proyecto de una API web apuntaba a los &lt;strong&gt;paquetes nativos&lt;/strong&gt; de Go.&lt;/p&gt;
-
-&lt;p&gt;Go tiene una biblioteca estándar que cubre &lt;strong&gt;muchas&lt;/strong&gt; de las necesidades de un desarrollador moderno. Si has programado en él podrás estar de acuerdo en que se siente como subirte en hombros de gigantes, debido a que las personas que lo diseñaron y construyeron son &lt;em&gt;las mismas personas que sentaron las bases para los sistemas operativos modernos&lt;/em&gt;. Imagínate cuánta experiencia tienen.&lt;/p&gt;
-
-&lt;p&gt;En la biblioteca estándar podemos encontrar un paquete que se llama &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;net/http&lt;/code&gt; con el que puedes hacer, un servidor web con direccionamiento de rutas sencillo (la base de tu API) &lt;strong&gt;con muy pocas líneas de código&lt;/strong&gt;. Puedes recibir peticiones HTTP, procesarlas y devolver una respuesta HTTP. El ciclo básico request -&amp;gt; response.&lt;/p&gt;
-
-&lt;p&gt;Aquí hay un ejemplo:&lt;/p&gt;
-
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-	&lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;
-	&lt;span class=&quot;s&quot;&gt;&quot;net/http&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;// Implementando rutas HTTP&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HandleFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ListenAndServe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;localhost:8080&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;// iniciando el servidor&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;// handler recibe la petición http y la procesa para devolver una respuesta http&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ResponseWriter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Fprintf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hola Go API's&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;// Falta responder JSON&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Si tu API es sencilla, expone pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la biblioteca estándar es una solución buena, pero para otros casos se queda un poco corta, ya que tendrías que implementar varias cosas a mano.&lt;/p&gt;
-
-&lt;p&gt;Su uso es sencillo como acabas de ver. Usar un framework web tiene el costo de agregar complejidad a &lt;strong&gt;cambio de funcionalidades que no tienes que desarrollar tú&lt;/strong&gt;. Pero aquí te compartimos un artículo en el que un experto hablá de por qué &lt;em&gt;él&lt;/em&gt; prefiere no usar frameworks: &lt;a href=&quot;https://medium.com/code-zen/why-i-don-t-use-go-web-frameworks-1087e1facfa4&quot;&gt;Why I Don’t Use Go Web Frameworks&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Por eso te presentamos las opciones más comunes y algunos ejemplos.&lt;/p&gt;
-
-&lt;h2 id=&quot;gorilla-web-toolkit&quot;&gt;Gorilla Web Toolkit&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://avatars2.githubusercontent.com/u/489566?s=200&amp;amp;v=4&quot; alt=&quot;Gorilla Web Toolkit logo&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.gorillatoolkit.org/&quot;&gt;Gorilla Toolkit&lt;/a&gt; es un conjunto de herramientas para web que, entre otras cosas tiene:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Un router más completo que el de la biblioteca estándar: &lt;em&gt;Gorilla Mux&lt;/em&gt;. Es compatible con el tipo de dato nativo de Go para las peticiones. Además incluye:
-    &lt;ul&gt;
-      &lt;li&gt;Ruteadores secundarios, para que organices mejor tu código.&lt;/li&gt;
-      &lt;li&gt;Inversión de URL’s: te permite generar la URL a partir de un identificador.&lt;/li&gt;
-      &lt;li&gt;Matches complejos&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Middlewares: logging, compresión, recuperación&lt;/li&gt;
-  &lt;li&gt;Manejo de sesiones con cookies seguras&lt;/li&gt;
-  &lt;li&gt;Implementación de WebSockets y RPC&lt;/li&gt;
-  &lt;li&gt;Conversión de valores de entrada en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt; de Go&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Gorilla Toolkit &lt;strong&gt;no es un framework&lt;/strong&gt;, puedes usar cada de sus herramientas por separado, como las vayas necesitando. Así que puede empezar con la librería estándar y agregar lo que necesitas de Gorilla poco a poco.&lt;/p&gt;
-
-&lt;h2 id=&quot;gin&quot;&gt;Gin&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_250/v1600730661/color_whycuu.png&quot; alt=&quot;Gin go logo&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/gin-gonic/gin&quot;&gt;Gin&lt;/a&gt; es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go. Ya está en su versión 1, por lo que puedes usarlo con confianza en proyectos serios.&lt;/p&gt;
-
-&lt;p&gt;Gin usa &lt;a href=&quot;https://github.com/julienschmidt/httprouter&quot;&gt;httpRouter&lt;/a&gt; que tiene funciones parecidas a Gorilla Mux, pero que dice escalar mejor que el de la librería estándar incluso.&lt;/p&gt;
-
-&lt;p&gt;Tiene utilidades incluídas para hacer render de XML, JSON, YAML y ProtoBuf, o sea que es perfecto para crear diferentes tipos de API’s.&lt;/p&gt;
-
-&lt;p&gt;Además, tiene un montón de cosas más que puedes explorar en su documentación, que es muy completa y con muchos ejemplos, por si fuera poco.&lt;/p&gt;
-
-&lt;h2 id=&quot;beego&quot;&gt;Beego&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://beego.me/static/img/beego_purple.png&quot; alt=&quot;Beego logo&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://beego.me/&quot;&gt;Beego&lt;/a&gt; es un framweork que se especializa en API’s RESTful e intenta usar lo mejor posibles las características de Go como las interfaces y las estructuras embebidas. Parece que está hecho en China.&lt;/p&gt;
-
-&lt;p&gt;Las cuatro características que resalta son:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Fácil de usar: es MVC  y tiene herramientas incluídas para poder desarrollar más fácilmente.&lt;/li&gt;
-  &lt;li&gt;Inteligente: tiene características de ruteo avanzadas junto con monitoreo integrado que te permiten observar el estado de tu API.&lt;/li&gt;
-  &lt;li&gt;Modular: su estructura interna está compuesta por varios módulos que te permiten avanzar rápidamente.&lt;/li&gt;
-  &lt;li&gt;Alto desempeño&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Es un framework bastante completo, que cumple con todo lo mínimo necesario para que puedas empezar a desarrollar tu API eficientemente, pero parece que tiene un defecto: al ser hecho en china, la documentación no está pulida completamente y puede que haya poca información en tutoriales y otras páginas.&lt;/p&gt;
-
-&lt;h2 id=&quot;echo&quot;&gt;Echo&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn.labstack.com/images/echo-logo.svg&quot; alt=&quot;Logo de Echo&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://echo.labstack.com/&quot;&gt;Echo&lt;/a&gt; se promociona como el framework web minimalista. Tiene soporte para HTTP/2, ruteo sin uso de memoria dinámica (para mejor desempeño), TLS automático, middlewares flexibles y funciones utilitarias para responder fácilmente las peticiones web en cualquier formato.&lt;/p&gt;
-
-&lt;p&gt;En algunos benchmarks &lt;strong&gt;echo&lt;/strong&gt; parece ser más rápido que Gin.&lt;/p&gt;
-
-&lt;p&gt;Tiene desarrollo bastante activo y la documentación contiene ejemplos suficientes, junto con algunas recetas y para que logres avanzar rápido.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Existen múltiples opciones para crear tu API en Go. Hay para escoger dependiendo de tus gustos y de lo más importante para tu proyecto.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="go" /><category term="apis" /><category term="beego" /><category term="gorilla-mux" /><category term="gin-go" /><category term="go-lang" /><summary type="html">Exploramos diferentes formas en las que puedes crear una API con Go, el lenguaje enfocado en la eficiencia de los programas permitiendo productividad para los programadores.</summary></entry></feed>
+&lt;p&gt;Repasa estas ideas cuando te sientas atorado para resolver algún problema y puede que te ayuden a salir del hoyo. Y sobre todo, lee &lt;a href=&quot;https://amzn.to/33qfw07&quot;&gt;“How to Solve It”&lt;/a&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="polya" /><category term="how-to-solve-it" /><category term="problemas" /><category term="resolución" /><category term="heurística" /><summary type="html">Hablemos de algunas ideas interesantes y prácticas sobre la resolución de problemas, que te pueden ayudar a salir de un bache contra un problema difícil.</summary></entry></feed>
