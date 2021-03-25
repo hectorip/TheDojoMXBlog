@@ -37,8 +37,13 @@ Ahora bien, eso no tiene nada de malo, sólo debemos aprender a no confundirnos 
 
 ## Perceptrones
 
-Un **perceptron** es un algoritmo que aproxima una función matemática que representa una línea. El perceptrón 
+Un **perceptron** es un algoritmo que aproxima una función matemática sirve para **clasificar** su entrada entre **dos clases**. Un perceptrón puede tomar N entradas y devuelve un "Sí" o un "No".
 
+Si eres un programador sin experiencia en ML, te puedes imaginar la función del perceptrón básicamente como un "IF". Es un clasificador binario que devuelve **Verdadero** si el objeto en cuestión pertenece al grupo seleccionado, **falso** en el caso contrario.
+
+La diferencia está **en cómo se construye esta función**, nosotros no le damos reglas programadas al perceptrón para clasificar los objetos de cierta forma, sino que le damos ejemplos **etiquetados** y el perceptrón **aprende**: ajusta los parámetros de su función interna para dividir las dos clases lo mejor posible.
+
+La fórmula básica para un perceptrón es una sumatoria de todos sus parámetros de entrada multiplicados por un factor llamado _peso_ para cada uno, más una constante llamada _sesgo_ o _bias_. Al resultado de esta suma se le aplica la función **step** que devuelve `0` (equivalente a falso) si la entrada es menor o igual que cero y `1` en cualquier otro caso.
 ## Redes Neuronales
 
 Una red neuronal es un conjunto de perceptrones combinados para
