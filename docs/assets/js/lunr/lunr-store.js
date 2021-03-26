@@ -329,15 +329,15 @@ var store = [{
         "url": "/2021/03/06/ruta-de-aprendizaje-deep-learning.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1615096252/space_ixlegm.png"
       },{
-        "title": "Intro a Machine Learning: Entendiendo el perceptrón",
-        "excerpt":"Hablar de aprendizaje automático y los términos que lo rodean, muchas veces intimida a los desarrolladores. En esta serie de posts vamos a intentar explicar los conceptos detrás del aprendizaje automático y llevarlos a la práctica. Acerca de los nombres de las cosas Antes de empezar a hablar de inteligencia...","categories": [],
-        "tags": ["machine-learning","ml","aprendizaje-automático"],
-        "url": "/2021/03/06/intro-a-machine-learning-entendiendo-perceptron.html",
-        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1616115397/robynne-hu-HOrhCnQsxnQ-unsplash_sos5ux.jpg"
-      },{
         "title": "Las bases matemáticas de la programación funcional",
         "excerpt":"La programación funcional tiene conceptos muy relacionados con las matemáticas. Aquí te vamos a platicar de sus orígenes y de algunos conceptos matemáticos directamente embebidos en la programación funcional. Lo primero que tienes que recordar es que las matemáticas no tienen que ver necesariamente con números, sino con el razonamiento...","categories": [],
         "tags": ["matemáticas","math","fp","programación-funcional"],
         "url": "/2021/03/18/las-bases-matematicas-de-la-programacion-funcional.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1616045099/michael-dziedzic-VlZYu3nZIRI-unsplash_yxm6kr.jpg"
+      },{
+        "title": "Intro a Machine Learning: Entendiendo el perceptrón",
+        "excerpt":"Hablar de aprendizaje automático y los términos que lo rodean, muchas veces intimida a los desarrolladores. En esta serie de posts vamos a intentar explicar los conceptos detrás del aprendizaje automático y llevarlos a la práctica. Acerca de los nombres de las cosas Antes de empezar a hablar de inteligencia...","categories": [],
+        "tags": ["machine-learning","ml","aprendizaje-automático"],
+        "url": "/2021/03/25/intro-a-machine-learning-entendiendo-perceptron.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1616115397/robynne-hu-HOrhCnQsxnQ-unsplash_sos5ux.jpg"
       }]

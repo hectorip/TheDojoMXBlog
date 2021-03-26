@@ -1,6 +1,6 @@
 ---
 title: "Intro a Machine Learning: Entendiendo el perceptrón"
-date: 2021-03-06
+date: 2021-03-25
 author: Héctor Patricio
 tags: machine-learning ml aprendizaje-automático
 comments: true
