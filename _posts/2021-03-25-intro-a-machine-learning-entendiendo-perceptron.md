@@ -23,7 +23,7 @@ Así ha pasado vez tras vez con diferentes tecnologías:
 
 - El objeto `XMLHttpRequest` de los navegadores y su uso se nombró como **AJAX** para que fuera más vendible
 - Una página web avanzada y con más funcionalidades se empezó a llamar **Web App**
-- Las técnicas relacionadas con aprovechar las nuevas características de los navegadores como el Service Worwer, el archivo manifest se juntaron bajo un solo nombre más "vendible": **Progressive Web Apps**
+- Las técnicas relacionadas con aprovechar las nuevas características de los navegadores como el Service Worker, el archivo manifest se juntaron bajo un solo nombre más "vendible": **Progressive Web Apps**
 
 Los ejemplos siguen y estoy seguro que en cada área del conocimiento suceden. Este "renombramiento" permite que la tecnología en cuestión sea más aceptada y difundida, aunque a veces puede llevar a un malentendido por parte del público en general que puede permear a los practicantes.
 
@@ -37,7 +37,7 @@ Ahora bien, eso no tiene nada de malo, sólo debemos aprender a no confundirnos 
 
 ## Perceptrones
 
-Un **perceptron** es un algoritmo que aproxima una función matemática sirve para **clasificar** su entrada entre **dos clases**. Un perceptrón puede tomar N entradas y devuelve un "Sí" o un "No".
+Un **perceptrón** es un algoritmo que aproxima una función matemática sirve para **clasificar** su entrada entre **dos clases**. Un perceptrón puede tomar N entradas y devuelve un "Sí" o un "No".
 
 Si eres un programador sin experiencia en ML, te puedes imaginar la función del perceptrón básicamente como un "IF". Es un clasificador binario que devuelve **Verdadero** si el objeto en cuestión pertenece al grupo seleccionado, **falso** en el caso contrario.
 
@@ -60,6 +60,7 @@ Como te podrás dar cuenta, el funcionamiento de un perceptrón es muy sencillo.
 El entrenamiento de un perceptrón toma un conjunto de ejemplos **clasificados** o **etiquetados** y encuentra los peso que pueden clasificar el mayor número de ejemplos correctamente. Este entrenamiento puede ser muy pesado dependiendo del número de entradas y ejemplos.
 
 Es justo esto lo que hace que diferencia al machine learning de la programación tradicional. Tú programaste el algoritmo para encontrar los parámetros correctos, pero nunca las reglas específicas de clasificación.
+
 ## Redes Neuronales
 
 Una red neuronal es un conjunto de perceptrones combinados para poder clasificar en más de dos clases, y para crear funciones de clasificación que van mucho más allá de nuestro nivel de comprensión.
@@ -67,6 +68,7 @@ Una red neuronal es un conjunto de perceptrones combinados para poder clasificar
 Las redes neuronales generalmente usan perceptrones con una función de activación diferente, la función sigmoide que transforma cualquier entrada en un valor entre 0 y 1 (como una probabilidad).
 
 En el siguiente artículo hablaremos más a detalle sobre eso.
+
 ## Las matemáticas necesarias
 
 Para poder entender las **bases de funcionamiento** de todo lo que acabamos de mencionar, hay que saber trabajar con matemáticas de nivel universitario:

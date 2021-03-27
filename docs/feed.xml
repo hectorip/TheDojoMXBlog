@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2021-03-26T10:16:13-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Intro a Machine Learning: Entendiendo el perceptrón</title><link href="https://blog.thedojo.mx/2021/03/25/intro-a-machine-learning-entendiendo-perceptron.html" rel="alternate" type="text/html" title="Intro a Machine Learning: Entendiendo el perceptrón" /><published>2021-03-25T00:00:00-06:00</published><updated>2021-03-25T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/03/25/intro-a-machine-learning-entendiendo-perceptron</id><content type="html" xml:base="https://blog.thedojo.mx/2021/03/25/intro-a-machine-learning-entendiendo-perceptron.html">&lt;p&gt;Hablar de aprendizaje automático y los términos que lo rodean, muchas veces intimida a los desarrolladores. En esta serie de posts vamos a intentar explicar los conceptos detrás del aprendizaje automático y llevarlos a la práctica.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2021-03-26T21:36:19-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Intro a Machine Learning: Entendiendo el perceptrón</title><link href="https://blog.thedojo.mx/2021/03/25/intro-a-machine-learning-entendiendo-perceptron.html" rel="alternate" type="text/html" title="Intro a Machine Learning: Entendiendo el perceptrón" /><published>2021-03-25T00:00:00-06:00</published><updated>2021-03-25T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/03/25/intro-a-machine-learning-entendiendo-perceptron</id><content type="html" xml:base="https://blog.thedojo.mx/2021/03/25/intro-a-machine-learning-entendiendo-perceptron.html">&lt;p&gt;Hablar de aprendizaje automático y los términos que lo rodean, muchas veces intimida a los desarrolladores. En esta serie de posts vamos a intentar explicar los conceptos detrás del aprendizaje automático y llevarlos a la práctica.&lt;/p&gt;
 
 &lt;h2 id=&quot;acerca-de-los-nombres-de-las-cosas&quot;&gt;Acerca de los nombres de las cosas&lt;/h2&gt;
 
@@ -11,7 +11,7 @@
 &lt;ul&gt;
   &lt;li&gt;El objeto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XMLHttpRequest&lt;/code&gt; de los navegadores y su uso se nombró como &lt;strong&gt;AJAX&lt;/strong&gt; para que fuera más vendible&lt;/li&gt;
   &lt;li&gt;Una página web avanzada y con más funcionalidades se empezó a llamar &lt;strong&gt;Web App&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;Las técnicas relacionadas con aprovechar las nuevas características de los navegadores como el Service Worwer, el archivo manifest se juntaron bajo un solo nombre más “vendible”: &lt;strong&gt;Progressive Web Apps&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Las técnicas relacionadas con aprovechar las nuevas características de los navegadores como el Service Worker, el archivo manifest se juntaron bajo un solo nombre más “vendible”: &lt;strong&gt;Progressive Web Apps&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Los ejemplos siguen y estoy seguro que en cada área del conocimiento suceden. Este “renombramiento” permite que la tecnología en cuestión sea más aceptada y difundida, aunque a veces puede llevar a un malentendido por parte del público en general que puede permear a los practicantes.&lt;/p&gt;
@@ -26,7 +26,7 @@
 
 &lt;h2 id=&quot;perceptrones&quot;&gt;Perceptrones&lt;/h2&gt;
 
-&lt;p&gt;Un &lt;strong&gt;perceptron&lt;/strong&gt; es un algoritmo que aproxima una función matemática sirve para &lt;strong&gt;clasificar&lt;/strong&gt; su entrada entre &lt;strong&gt;dos clases&lt;/strong&gt;. Un perceptrón puede tomar N entradas y devuelve un “Sí” o un “No”.&lt;/p&gt;
+&lt;p&gt;Un &lt;strong&gt;perceptrón&lt;/strong&gt; es un algoritmo que aproxima una función matemática sirve para &lt;strong&gt;clasificar&lt;/strong&gt; su entrada entre &lt;strong&gt;dos clases&lt;/strong&gt;. Un perceptrón puede tomar N entradas y devuelve un “Sí” o un “No”.&lt;/p&gt;
 
 &lt;p&gt;Si eres un programador sin experiencia en ML, te puedes imaginar la función del perceptrón básicamente como un “IF”. Es un clasificador binario que devuelve &lt;strong&gt;Verdadero&lt;/strong&gt; si el objeto en cuestión pertenece al grupo seleccionado, &lt;strong&gt;falso&lt;/strong&gt; en el caso contrario.&lt;/p&gt;
 
@@ -49,6 +49,7 @@
 &lt;p&gt;El entrenamiento de un perceptrón toma un conjunto de ejemplos &lt;strong&gt;clasificados&lt;/strong&gt; o &lt;strong&gt;etiquetados&lt;/strong&gt; y encuentra los peso que pueden clasificar el mayor número de ejemplos correctamente. Este entrenamiento puede ser muy pesado dependiendo del número de entradas y ejemplos.&lt;/p&gt;
 
 &lt;p&gt;Es justo esto lo que hace que diferencia al machine learning de la programación tradicional. Tú programaste el algoritmo para encontrar los parámetros correctos, pero nunca las reglas específicas de clasificación.&lt;/p&gt;
+
 &lt;h2 id=&quot;redes-neuronales&quot;&gt;Redes Neuronales&lt;/h2&gt;
 
 &lt;p&gt;Una red neuronal es un conjunto de perceptrones combinados para poder clasificar en más de dos clases, y para crear funciones de clasificación que van mucho más allá de nuestro nivel de comprensión.&lt;/p&gt;
@@ -56,6 +57,7 @@
 &lt;p&gt;Las redes neuronales generalmente usan perceptrones con una función de activación diferente, la función sigmoide que transforma cualquier entrada en un valor entre 0 y 1 (como una probabilidad).&lt;/p&gt;
 
 &lt;p&gt;En el siguiente artículo hablaremos más a detalle sobre eso.&lt;/p&gt;
+
 &lt;h2 id=&quot;las-matemáticas-necesarias&quot;&gt;Las matemáticas necesarias&lt;/h2&gt;
 
 &lt;p&gt;Para poder entender las &lt;strong&gt;bases de funcionamiento&lt;/strong&gt; de todo lo que acabamos de mencionar, hay que saber trabajar con matemáticas de nivel universitario:&lt;/p&gt;
