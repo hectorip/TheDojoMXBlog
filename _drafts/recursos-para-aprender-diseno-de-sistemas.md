@@ -20,4 +20,16 @@ En este post hablaremos de algunos recursos con los que puedes empezar a aprende
 
 ## Libros
 
-Un libro que se ha recomendado mucho sobre todo en esta época en la que los datos son cada vez más importantes es [Designing Data-intensive Applications](https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications)
+Un libro que se ha recomendado mucho sobre todo en esta época en la que los datos son cada vez más importantes es [Designing Data-intensive Applications](https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications) que, como su nombre lo dice, te enseña a construir aplicaciones en donde los datos son muy importantes.
+
+Hay un libro que se enfoca justamente en la parte in
+
+## Cursos y videos
+
+Codely, una plataforma de cursos para desarrolladores, tiene un curso de introducción a la arquitectura hexagonal, que es una muy buena base para deseñar sistemas, aquí puedes ver una pequeña prueba: [Intro a arquitectura hexagonal](https://codely.tv/blog/screencasts/arquitectura-hexagonal-ddd/).
+
+En Educative.io está
+
+## Conclusión
+
+Aprender diseño de sistemas tiene que ver mucho [](https://www.youtube.com/watch?v=hWVNLloajqg)
