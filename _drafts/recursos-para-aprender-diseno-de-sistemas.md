@@ -32,4 +32,5 @@ En Educative.io está
 
 ## Conclusión
 
-Aprender diseño de sistemas tiene que ver mucho [](https://www.youtube.com/watch?v=hWVNLloajqg)
+Aprender diseño de sistemas tiene que ver con estudiar mucho, pero sobre todo con aplicar lo aprendido. En el canal de YouTube tuvimos una plática sobre este tema, tomando de nuestras experiencias, lo puedes ver aquí: [Aprendiendo diseño de sistemas
+](https://www.youtube.com/watch?v=hWVNLloajqg), en el futuro tendremos más pláticas sobre estos temas, con algunos ejercicios para ver la teoría en acción.
