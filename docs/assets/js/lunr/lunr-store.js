@@ -340,4 +340,10 @@ var store = [{
         "tags": ["machine-learning","ml","aprendizaje-automático"],
         "url": "/2021/03/25/intro-a-machine-learning-entendiendo-perceptron.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1616115397/robynne-hu-HOrhCnQsxnQ-unsplash_sos5ux.jpg"
+      },{
+        "title": "Recursos para aprender diseño de sistemas",
+        "excerpt":"El diseño de sistemas es un tema recurrente en entrevistas para desarrolladores de software, sobre todo para los niveles que requieren más experiencia, pero más allá de eso, es una habilidad fundamental a dominar si quieres avanzar en tu carrera. Es por eso que vamos a empezar a hablar más...","categories": [],
+        "tags": ["system-design","book","courses","cursos","libros","learning"],
+        "url": "/2021/03/29/recursos-para-aprender-diseno-de-sistemas.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,e_oil_paint:30,w_300/v1617037690/joel-filipe-jU9VAZDGMzs-unsplash_wzkvza.jpg"
       }]

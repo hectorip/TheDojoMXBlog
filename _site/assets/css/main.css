@@ -1,5 +1,5 @@
 /* ========================================================================== Default skin ========================================================================== */
-/*! Minimal Mistakes Jekyll Theme 4.20.1 by Michael Rose Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes Licensed under MIT (https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE) */
+/*! Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes Licensed under MIT (https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE) */
 /* Variables */
 /* ========================================================================== Variables ========================================================================== */
 /* Typography ========================================================================== */
@@ -760,13 +760,15 @@ tr, td, th { vertical-align: middle; }
 /* Priority plus navigation ========================================================================== */
 .greedy-nav { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; min-height: 2em; background: #fff; }
 
-.greedy-nav a { display: block; margin: 0 1rem; color: #6f777d; text-decoration: none; }
+.greedy-nav a { display: block; margin: 0 1rem; color: #6f777d; text-decoration: none; -webkit-transition: none; transition: none; }
 
 .greedy-nav a:hover { color: #53595e; }
 
 .greedy-nav a.site-logo { margin-left: 0; margin-right: 0.5rem; }
 
 .greedy-nav a.site-title { margin-left: 0; }
+
+.greedy-nav img { -webkit-transition: none; transition: none; }
 
 .greedy-nav__toggle { -ms-flex-item-align: center; align-self: center; height: 2rem; border: 0; outline: none; background-color: transparent; cursor: pointer; }
 
@@ -849,7 +851,7 @@ tr, td, th { vertical-align: middle; }
 .toc__menu li ul li ul li ul li ul li ul > li a { padding-left: 3.25rem; }
 
 /* ========================================================================== FOOTER ========================================================================== */
-.page__footer { clear: both; float: left; margin-left: 0; margin-right: 0; width: 100%; clear: both; margin-top: 3em; color: #646769; -webkit-animation: intro 0.3s both; animation: intro 0.3s both; -webkit-animation-delay: 0.45s; animation-delay: 0.45s; background-color: #f2f3f3; }
+.page__footer { clear: both; float: left; margin-left: 0; margin-right: 0; width: 100%; margin-top: 3em; color: #646769; -webkit-animation: intro 0.3s both; animation: intro 0.3s both; -webkit-animation-delay: 0.45s; animation-delay: 0.45s; background-color: #f2f3f3; }
 
 .page__footer::after { clear: both; content: ""; display: table; }
 
@@ -1357,7 +1359,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 .page__meta-title { margin-bottom: 10px; font-size: 0.75em; text-transform: uppercase; }
 
-.post__meta-sep::before { content: "\2022"; padding-left: 0.5em; padding-right: 0.5em; }
+.page__meta-sep::before { content: "\2022"; padding-left: 0.5em; padding-right: 0.5em; }
 
 /* Page taxonomy ========================================================================== */
 .page__taxonomy .sep { display: none; }
@@ -1507,6 +1509,10 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 .grid__item .page__meta, .grid__item .comment__date { margin: 0 0 4px; font-size: 0.6em; }
 
+.grid__item .page__meta-sep { display: block; }
+
+.grid__item .page__meta-sep::before { display: none; }
+
 .grid__item .archive__item-title { margin-top: 0.5em; font-size: 1em; }
 
 .grid__item .archive__item-excerpt { display: none; }
@@ -1630,7 +1636,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 @media (min-width: 64em) { .author__bio { margin-top: 10px; margin-bottom: 20px; } }
 
-.author__urls-wrapper { position: relative; display: table-cell; vertical-align: middle; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; z-index: 20; position: relative; cursor: pointer; }
+.author__urls-wrapper { position: relative; display: table-cell; vertical-align: middle; font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; z-index: 20; cursor: pointer; }
 
 .author__urls-wrapper li:last-child a { margin-bottom: 0; }
 

@@ -1,311 +1,335 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2020-09-22T23:51:31-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Formas de hacer una API con Go</title><link href="https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang.html" rel="alternate" type="text/html" title="Formas de hacer una API con Go" /><published>2020-09-20T00:00:00-05:00</published><updated>2020-09-20T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang</id><content type="html" xml:base="https://blog.thedojo.mx/2020/09/20/maneras-de-hacer-una-api-con-go-lang.html">&lt;p&gt;Go es uno de los lenguajes modernos más usados. Ya hablamos de &lt;a href=&quot;/2019/09/01/por-que-deberias-aprender-go.html&quot;&gt;por qué deberías aprenderlo&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2021-03-29T11:11:02-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Recursos para aprender diseño de sistemas</title><link href="https://blog.thedojo.mx/2021/03/29/recursos-para-aprender-diseno-de-sistemas.html" rel="alternate" type="text/html" title="Recursos para aprender diseño de sistemas" /><published>2021-03-29T00:00:00-06:00</published><updated>2021-03-29T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/03/29/recursos-para-aprender-diseno-de-sistemas</id><content type="html" xml:base="https://blog.thedojo.mx/2021/03/29/recursos-para-aprender-diseno-de-sistemas.html">&lt;p&gt;El diseño de sistemas es un tema recurrente en entrevistas para desarrolladores de software, sobre todo para los niveles que requieren más experiencia, pero más allá de eso, es una habilidad fundamental a dominar si quieres avanzar en tu carrera.&lt;/p&gt;
 
-&lt;p&gt;Ahora hablemos de un caso de uso práctico: &lt;strong&gt;úsalo para crear una API HTTP&lt;/strong&gt;. En este artículo nos enfocaremos en la parte de comunicación HTTP y la generación de respuestas adecuadas.&lt;/p&gt;
+&lt;p&gt;Es por eso que vamos a empezar a hablar más de ese tema, contando nuestra experiencia, pero al mismo tiempo aprendiendo a diseñar mejor.&lt;/p&gt;
 
-&lt;p&gt;La funcionalidad básica de tu API puede o no adaptarse completamente a Go (no es es tan fácil de escribir como un lenguaje dinámico como Python), pero definitivamente es un &lt;strong&gt;lenguaje excelente&lt;/strong&gt; para crear interfaces de comunicación web, debido a su alto rendimiento y eficiencia.&lt;/p&gt;
+&lt;p&gt;En este post hablaremos de algunos recursos con los que puedes empezar a aprender.&lt;/p&gt;
 
-&lt;p&gt;Puedes ver algunas de las comparativas en los siguientes artículos:&lt;/p&gt;
+&lt;h2 id=&quot;libros&quot;&gt;Libros&lt;/h2&gt;
+
+&lt;p&gt;Un libro que se ha recomendado mucho sobre todo en esta época en la que los datos son cada vez más importantes es &lt;a href=&quot;https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications&quot;&gt;Designing Data-intensive Applications&lt;/a&gt; que, como su nombre lo dice, te enseña a construir aplicaciones en donde los datos son muy importantes.&lt;/p&gt;
+
+&lt;p&gt;Hay un libro que se enfoca justamente en la parte de entrevistas llamado &lt;a href=&quot;https://www.goodreads.com/book/show/54109255-system-design-interview-an-insider-s-guide?from_search=true&amp;amp;from_srp=true&amp;amp;qid=Bm7AnA9Fzo&amp;amp;rank=9&quot;&gt;System Design Interview&lt;/a&gt;, con la mayoría de las opiniones como positivas, pero algunas resaltan un punto muy importante: gran parte del contenido se encuentra en las referencias, así que si quieres profundizar tienes que buscarlas. A mi esto me parece positivo porque en vez de intentar abarcar todo y diluirse, este libro puede servir como un índice o una referencia para aprender más.&lt;/p&gt;
+
+&lt;p&gt;Finalmente, te vamos a recordar un libro del que hemos hablado continuamente tanto en nuestros videos como en los posts de este blog: &lt;a href=&quot;https://www.goodreads.com/en/book/show/39996759&quot;&gt;A Philosophy of Software Design&lt;/a&gt; de John Ousterhout. Este es uno de los mejores libros que puedes leer acerca del diseño de software en general, y de las prácticas que llevan a crear software bien diseñado. No habla de diseño de sistemas a gran escala, sino de organización y división modular y cómo deberías aplicarla.&lt;/p&gt;
+
+&lt;h2 id=&quot;cursos-y-videos&quot;&gt;Cursos y videos&lt;/h2&gt;
+
+&lt;p&gt;Codely, una plataforma de cursos para desarrolladores, tiene un curso de introducción a la arquitectura hexagonal, que es una muy buena base para deseñar sistemas, aquí puedes ver una pequeña prueba: &lt;a href=&quot;https://codely.tv/blog/screencasts/arquitectura-hexagonal-ddd/&quot;&gt;Intro a arquitectura hexagonal&lt;/a&gt; y aquí puedes ver el curso completo: &lt;a href=&quot;https://pro.codely.tv/library/arquitectura-hexagonal/about/&quot;&gt;Arquitectura Hexagonal&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pro.codely.tv/library/principios-solid-aplicados/77070/about/&quot;&gt;Principios SOLID Aplicados&lt;/a&gt; es otro curso con aplicaciones prácticas que puedes ver para aprender más sobre estos principios que ayudan a crear código y sistemas más mantenibles.&lt;/p&gt;
+
+&lt;p&gt;En Educative.io tiene un curso llamado &lt;a href=&quot;https://www.educative.io/courses/grokking-the-system-design-interview&quot;&gt;Grokking the System Design Interview&lt;/a&gt; que tiene ejemplos de diseño explicados como blogposts, abarcando varias etapas del diseño, desde el primer borrador (back of the envelop) hasta análisis de cuellos de botella junto con diseño detallado.&lt;/p&gt;
+
+&lt;p&gt;Y finalmente, tenemos una recomendación Open Source y gratuita: &lt;a href=&quot;https://github.com/donnemartin/system-design-primer&quot;&gt;System Design Primer&lt;/a&gt; que contiene incluso tarjetas de &lt;a href=&quot;https://apps.ankiweb.net/&quot;&gt;Anki&lt;/a&gt; un software para estudio mediante repetición espaciada.&lt;/p&gt;
+
+&lt;h3 id=&quot;extras&quot;&gt;Extras&lt;/h3&gt;
+
+&lt;p&gt;Un sitio en el que puedes aprender a diseñar sistemas que requieran mucho cuidado por la afluencia de usuarios que tendrán es &lt;a href=&quot;http://highscalability.com/&quot;&gt;High Scalability&lt;/a&gt;. Ahí podrás ver algunos ejemplos reales sobre como crear sistemas web más grandes en contenido, más rápidos y más confiables.&lt;/p&gt;
+
+&lt;p&gt;Si quieres una ruta de aprendizaje completa, Educative.io tiene además la ruta de cursos que te pueden ayudar aprender aspectos teóricos y prácticos: &lt;a href=&quot;https://www.educative.io/path/scalability-system-design&quot;&gt;Scalability and System Design for developers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-representar-el-diseño&quot;&gt;Cómo representar el diseño&lt;/h3&gt;
+
+&lt;p&gt;Después de tener clara la idea de cómo resolver los problemas es buena idea tener un lenguaje visual y una guía par representar y comunicar todas las partes del sistema. Aquí te podemos recomendar el paper &lt;a href=&quot;https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf&quot;&gt;Architectural Blueprints–The “4+1” View Model of Software Architecture&lt;/a&gt; y el estilo creado por Simon Brown: &lt;a href=&quot;https://c4model.com/&quot;&gt;El modelo C4&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Cualquiera de estos dos modelos tienen las herramientas suficientes para poder visualizar y comunicar tu arquitectura desde diferentes perspectivas y a diferentes niveles.&lt;/p&gt;
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Aprender diseño de sistemas tiene que ver con estudiar mucho, pero sobre todo con aplicar lo aprendido. En el canal de YouTube tuvimos una plática sobre este tema, tomando de nuestras experiencias, lo puedes ver aquí:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/hWVNLloajqg&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;En el futuro tendremos más pláticas sobre estos temas, con algunos ejercicios para ver la teoría en acción.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="system-design" /><category term="book" /><category term="courses" /><category term="cursos" /><category term="libros" /><category term="learning" /><summary type="html">¿Quieres aprender los principios de diseño de sistemas para mejorar como desarrollador o para una entrevista? En este post te pasamos algunos recursos.</summary></entry><entry><title type="html">Intro a Machine Learning: Entendiendo el perceptrón</title><link href="https://blog.thedojo.mx/2021/03/25/intro-a-machine-learning-entendiendo-perceptron.html" rel="alternate" type="text/html" title="Intro a Machine Learning: Entendiendo el perceptrón" /><published>2021-03-25T00:00:00-06:00</published><updated>2021-03-25T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/03/25/intro-a-machine-learning-entendiendo-perceptron</id><content type="html" xml:base="https://blog.thedojo.mx/2021/03/25/intro-a-machine-learning-entendiendo-perceptron.html">&lt;p&gt;Hablar de aprendizaje automático y los términos que lo rodean, muchas veces intimida a los desarrolladores. En esta serie de posts vamos a intentar explicar los conceptos detrás del aprendizaje automático y llevarlos a la práctica.&lt;/p&gt;
+
+&lt;h2 id=&quot;acerca-de-los-nombres-de-las-cosas&quot;&gt;Acerca de los nombres de las cosas&lt;/h2&gt;
+
+&lt;p&gt;Antes de empezar a hablar de inteligencia artificial, aprendizaje automático, aprendizaje profundo y todas esas cosas, queremos hacer una nota sobre el nombrado en las asuntos de tecnología.&lt;/p&gt;
+
+&lt;p&gt;Primero, debemos recordar que la tecnología no existe en un entorno aislado, y generalmente no tiene uso por sí misma, sino que la usamos para servir a otras áreas. Es por eso que lo que conoceríamos por un nombre completamente acertado y descriptivo de acuerdo a sus características técnicas se tiene que renombrar para que otras personas no pertenecientes al área de desarrollo de software.&lt;/p&gt;
+
+&lt;p&gt;Así ha pasado vez tras vez con diferentes tecnologías:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://stressgrid.com/blog/benchmarking_go_vs_node_vs_elixir/&quot;&gt;Comparando el rendimiento de Go, NodeJS y Elixir&lt;/a&gt;. TL;DR: Go y Elixir llegan a manejar más de 100k conexiones sin ningún problema, Node empieza con problemas desde 30k y el más eficiente en cómputo y memoria utilizada &lt;em&gt;por mucho&lt;/em&gt; es &lt;strong&gt;Go&lt;/strong&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/mroth/phoenix-showdown&quot;&gt;Comparación de frameworks web ligeros&lt;/a&gt;. Este artículo es un poco viejo, pero el resumen es que Gin (un framework web ligero de Go) es el que más peticiones soporta por segundo y con una consistencia excelente.&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;El objeto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XMLHttpRequest&lt;/code&gt; de los navegadores y su uso se nombró como &lt;strong&gt;AJAX&lt;/strong&gt; para que fuera más vendible&lt;/li&gt;
+  &lt;li&gt;Una página web avanzada y con más funcionalidades se empezó a llamar &lt;strong&gt;Web App&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Las técnicas relacionadas con aprovechar las nuevas características de los navegadores como el Service Worker, el archivo manifest se juntaron bajo un solo nombre más “vendible”: &lt;strong&gt;Progressive Web Apps&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1574629781/Screenshot_2019-11-24_15.09.25_ozqwcu.png&quot; alt=&quot;Comparativa de micro-frameworks Web&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Los ejemplos siguen y estoy seguro que en cada área del conocimiento suceden. Este “renombramiento” permite que la tecnología en cuestión sea más aceptada y difundida, aunque a veces puede llevar a un malentendido por parte del público en general que puede permear a los practicantes.&lt;/p&gt;
 
-&lt;p&gt;Hablemos de tres formas de crear una API sobre HTTP para tu próximo proyecto. Pero antes hablemos de una opción simple que no cubre muchos casos pero que se oye recomendada por todo internet.&lt;/p&gt;
+&lt;p&gt;Esto es lo que ha pasado con los nombres que nos conciernen en este artículo, le llamamos &lt;em&gt;“Inteligencia Artificial”&lt;/em&gt; a toda una rama de las ciencias de la computación relacionada con imitar lo que entendemos como “inteligencia humana”, pero las bases formales de esto podrían describirse con otros nombres más familiares para nosotros.&lt;/p&gt;
 
-&lt;h2 id=&quot;la-biblioteca-estándar&quot;&gt;La biblioteca estándar&lt;/h2&gt;
+&lt;p&gt;Este nombre permite que los avances sean aceptados y por lo menos el área de negocio entienda las capacidades de la tecnología, &lt;strong&gt;no su funcionamiento&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Cuando hice mi primer proyecto en Go, gran parte de la investigación sobre qué usar para crear un proyecto de una API web apuntaba a los &lt;strong&gt;paquetes nativos&lt;/strong&gt; de Go.&lt;/p&gt;
+&lt;p&gt;Cuando comprendas cómo funciona, tal vez veas que las redes neuronales no tienen nada que ver con las redes neuronales, o que en realidad el &lt;em&gt;aprendizaje automático&lt;/em&gt; es la aplicación de técnicas matemáticas y de ingeniería para aproximación de funciones, a veces muy complejas.&lt;/p&gt;
 
-&lt;p&gt;Go tiene una biblioteca estándar que cubre &lt;strong&gt;muchas&lt;/strong&gt; de las necesidades de un desarrollador moderno. Si has programado en él podrás estar de acuerdo en que se siente como subirte en hombros de gigantes, debido a que las personas que lo diseñaron y construyeron son &lt;em&gt;las mismas personas que sentaron las bases para los sistemas operativos modernos&lt;/em&gt;. Imagínate cuánta experiencia tienen.&lt;/p&gt;
+&lt;p&gt;Ahora bien, eso no tiene nada de malo, sólo debemos aprender a no confundirnos con esos términos. Después de esta pequeña digresión, ahora si vayamos a lo que venimos: aprendamos aplicar estas técnicas.&lt;/p&gt;
 
-&lt;p&gt;En la biblioteca estándar podemos encontrar un paquete que se llama &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;net/http&lt;/code&gt; con el que puedes hacer, un servidor web con direccionamiento de rutas sencillo (la base de tu API) &lt;strong&gt;con muy pocas líneas de código&lt;/strong&gt;. Puedes recibir peticiones HTTP, procesarlas y devolver una respuesta HTTP. El ciclo básico request -&amp;gt; response.&lt;/p&gt;
+&lt;h2 id=&quot;perceptrones&quot;&gt;Perceptrones&lt;/h2&gt;
 
-&lt;p&gt;Aquí hay un ejemplo:&lt;/p&gt;
+&lt;p&gt;Un &lt;strong&gt;perceptrón&lt;/strong&gt; es un algoritmo que aproxima una función matemática sirve para &lt;strong&gt;clasificar&lt;/strong&gt; su entrada entre &lt;strong&gt;dos clases&lt;/strong&gt;. Un perceptrón puede tomar N entradas y devuelve un “Sí” o un “No”.&lt;/p&gt;
 
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;
+&lt;p&gt;Si eres un programador sin experiencia en ML, te puedes imaginar la función del perceptrón básicamente como un “IF”. Es un clasificador binario que devuelve &lt;strong&gt;Verdadero&lt;/strong&gt; si el objeto en cuestión pertenece al grupo seleccionado, &lt;strong&gt;falso&lt;/strong&gt; en el caso contrario.&lt;/p&gt;
 
-&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-	&lt;span class=&quot;s&quot;&gt;&quot;fmt&quot;&lt;/span&gt;
-	&lt;span class=&quot;s&quot;&gt;&quot;net/http&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;p&gt;La diferencia está &lt;strong&gt;en cómo se construye esta función&lt;/strong&gt;, nosotros no le damos reglas programadas al perceptrón para clasificar los objetos de cierta forma, sino que le damos ejemplos &lt;strong&gt;etiquetados&lt;/strong&gt; y el perceptrón &lt;strong&gt;aprende&lt;/strong&gt;: ajusta los parámetros de su función interna para dividir las dos clases lo mejor posible.&lt;/p&gt;
 
-&lt;span class=&quot;c&quot;&gt;// Implementando rutas HTTP&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HandleFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ListenAndServe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;localhost:8080&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;// iniciando el servidor&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;p&gt;La fórmula básica para un perceptrón es una sumatoria de todos sus parámetros de entrada multiplicados por un factor llamado &lt;em&gt;peso&lt;/em&gt; para cada uno, más una constante llamada &lt;em&gt;sesgo&lt;/em&gt; o &lt;em&gt;bias&lt;/em&gt;. Al resultado de esta suma se le aplica la &lt;strong&gt;función de activación&lt;/strong&gt;, normalmente la función &lt;strong&gt;step&lt;/strong&gt; que devuelve &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; (equivalente a falso) si la entrada es menor o igual que cero y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; en cualquier otro caso.&lt;/p&gt;
 
-&lt;span class=&quot;c&quot;&gt;// handler recibe la petición http y la procesa para devolver una respuesta http&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ResponseWriter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;fmt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Fprintf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hola Go API's&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;// Falta responder JSON&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;p&gt;Si llamamos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;X&lt;/code&gt; a los parámetros de entrada, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;W&lt;/code&gt; a los pesos aquí puedes ver la representación gráfica de un perceptrón:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1616653024/Untitled_Artwork_2_fsqfcr.png&quot; alt=&quot;Representación gráfica de un perceptrón&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y aquí la ecuación matemática que lo representa:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_400/v1616653048/Untitled_Artwork_3_fjoaaa.png&quot; alt=&quot;Ecuación de un perceptrón&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;entrenamiento&quot;&gt;Entrenamiento&lt;/h3&gt;
+
+&lt;p&gt;Como te podrás dar cuenta, el funcionamiento de un perceptrón es muy sencillo. Pero lo importante no es su funcionamiento cuando clasifica, &lt;em&gt;sino como aprende a clasificar&lt;/em&gt;. Esta fase se llama &lt;strong&gt;entrenamiento&lt;/strong&gt; o &lt;strong&gt;training&lt;/strong&gt; y consiste en encontrar los pesos correctos para cada parámetro de entrada y el sesgo correcto.&lt;/p&gt;
+
+&lt;p&gt;El entrenamiento de un perceptrón toma un conjunto de ejemplos &lt;strong&gt;clasificados&lt;/strong&gt; o &lt;strong&gt;etiquetados&lt;/strong&gt; y encuentra los peso que pueden clasificar el mayor número de ejemplos correctamente. Este entrenamiento puede ser muy pesado dependiendo del número de entradas y ejemplos.&lt;/p&gt;
+
+&lt;p&gt;Es justo esto lo que hace que diferencia al machine learning de la programación tradicional. Tú programaste el algoritmo para encontrar los parámetros correctos, pero nunca las reglas específicas de clasificación.&lt;/p&gt;
+
+&lt;h2 id=&quot;redes-neuronales&quot;&gt;Redes Neuronales&lt;/h2&gt;
+
+&lt;p&gt;Una red neuronal es un conjunto de perceptrones combinados para poder clasificar en más de dos clases, y para crear funciones de clasificación que van mucho más allá de nuestro nivel de comprensión.&lt;/p&gt;
+
+&lt;p&gt;Las redes neuronales generalmente usan perceptrones con una función de activación diferente, la función sigmoide que transforma cualquier entrada en un valor entre 0 y 1 (como una probabilidad).&lt;/p&gt;
+
+&lt;p&gt;En el siguiente artículo hablaremos más a detalle sobre eso.&lt;/p&gt;
+
+&lt;h2 id=&quot;las-matemáticas-necesarias&quot;&gt;Las matemáticas necesarias&lt;/h2&gt;
+
+&lt;p&gt;Para poder entender las &lt;strong&gt;bases de funcionamiento&lt;/strong&gt; de todo lo que acabamos de mencionar, hay que saber trabajar con matemáticas de nivel universitario:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Álgebra líneal&lt;/li&gt;
+  &lt;li&gt;Análisis o Cálculo Vectorial&lt;/li&gt;
+  &lt;li&gt;Ecuaciones diferenciales&lt;/li&gt;
+  &lt;li&gt;Probabilidad&lt;/li&gt;
+  &lt;li&gt;Estadística&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Y, claro, todas las matemáticas que soportan estas: álgebra, trigonometría, geometría analítica, etc.&lt;/p&gt;
+
+&lt;p&gt;Si quieres aprender &lt;em&gt;profundamente&lt;/em&gt; esta área de la computación y estas técnicas y sientes que no tienes las bases matemáticas necesarias puedes estudiarlas aquí: &lt;a href=&quot;https://es.khanacademy.org/&quot;&gt;Khan Academy en Español&lt;/a&gt; (gratuito) o &lt;a href=&quot;https://brilliant.org/&quot;&gt;Brilliant&lt;/a&gt; (de pago).&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, y espero no ser linchado por esto, para empezar a aplicar las técnicas de manera práctica &lt;strong&gt;no las necesitas&lt;/strong&gt;. Puedes abrazar la parte pragmática y algorítmica y empezar a usar los paquetes y herramientas de ML.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="machine-learning" /><category term="ml" /><category term="aprendizaje-automático" /><summary type="html">En este artículo entenderemos las bases matemáticas y de programación de la unidad de construcción básica de lo que comercialmente se conoce como redes neuronales</summary></entry><entry><title type="html">Las bases matemáticas de la programación funcional</title><link href="https://blog.thedojo.mx/2021/03/18/las-bases-matematicas-de-la-programacion-funcional.html" rel="alternate" type="text/html" title="Las bases matemáticas de la programación funcional" /><published>2021-03-18T00:00:00-06:00</published><updated>2021-03-18T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/03/18/las-bases-matematicas-de-la-programacion-funcional</id><content type="html" xml:base="https://blog.thedojo.mx/2021/03/18/las-bases-matematicas-de-la-programacion-funcional.html">&lt;p&gt;La programación funcional tiene conceptos muy relacionados con las matemáticas. Aquí te vamos a platicar de sus orígenes y de algunos conceptos matemáticos directamente embebidos en la programación funcional.&lt;/p&gt;
+
+&lt;p&gt;Lo primero que tienes que recordar es que las matemáticas no tienen que ver  &lt;em&gt;necesariamente&lt;/em&gt; con números, sino con el razonamiento y la &lt;em&gt;formalización&lt;/em&gt; de este. En este artículo hablamos más de ello: &lt;a href=&quot;/2019/12/25/las-matematicas-que-debes-saber-para-programar.html&quot;&gt;Las matemáticas que necesitas para programar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ahora sí, empecemos con lo más fundamental de las matemáticas que soportan la programación funcional, no sin mencionar que podemos afirmar que la programación funcional &lt;em&gt;es una forma de matemáticas&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;cálculo-lambda&quot;&gt;Cálculo Lambda&lt;/h2&gt;
+
+&lt;p&gt;El cálculo lambda es una forma de definir todo lo que entendemos como matemáticas y de describir &lt;em&gt;cálculos&lt;/em&gt; o &lt;em&gt;cómputo&lt;/em&gt;. Es una notación que permite definir todos los elementos necesarios para crear razonamientos formales abstractos.&lt;/p&gt;
+
+&lt;p&gt;El cálculo lambda fue diseñado por &lt;strong&gt;Alonzo Church&lt;/strong&gt; como una forma de responder a un problema muy profundo de las matemáticas: &lt;strong&gt;“¿Es posible encontrar una forma de computación universal que, mediante la representación de problemas y una serie de pasos definido y finitos permita resolverlos?”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Esta pregunta fue planteada por David Hilbert y se conoce como el &lt;em&gt;Entscheidungsproblem&lt;/em&gt;, o &lt;em&gt;“El problema de la decisión”&lt;/em&gt;. De esta pregunta se deriva toda la computación moderna, ya que para responder estas preguntas &lt;strong&gt;Alan Turing&lt;/strong&gt; diseñó las &lt;em&gt;Máquinas de Turing&lt;/em&gt;. Si quieres saber más de esto, el libro &lt;a href=&quot;https://www.cs.buap.mx/~jitalo/libros/lanueva.pdf&quot;&gt;La Mente Nueva del Emperador de Roger Penrose&lt;/a&gt; lo explica muy bien, junto con muchas otras cosas.&lt;/p&gt;
+
+&lt;h3 id=&quot;funciones&quot;&gt;Funciones&lt;/h3&gt;
+
+&lt;p&gt;Las funciones o abstracciones son la base del cómputo en el Cálculo Lambda y lo son también en la programación funcional. Puedes pensar en las funciones como en la parte central del cómputo, la que representa las acciones a realizar con la información introducida, que en el Cálculo lambda, &lt;strong&gt;siempre será otra función&lt;/strong&gt;. Así es, no existen los número naturales, y todo se puede representar con funciones. Si quieres un idea más clara de cómo se puede lograr esto la plática de John Huges, &lt;a href=&quot;https://www.youtube.com/watch?v=XrNdvWqxBvA&quot;&gt;Why Functional Programming Matters&lt;/a&gt; da algunos ejemplos con Lisp.&lt;/p&gt;
+
+&lt;p&gt;Además esta plática en español explica más del Cálculo Lambda: &lt;a href=&quot;https://www.youtube.com/watch?v=i1zYBLdlxfc&quot;&gt;Cálculo Lambda por Jaime Pavlich-Mariscal&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Y aquí hay un libro gratuito que puedes estudiar si quieres adentrarte más en esto: &lt;a href=&quot;http://www.cse.chalmers.se/research/group/logic/TypesSS05/Extra/geuvers.pdf&quot;&gt;Introduction to Lambda Calculus&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;combinadores&quot;&gt;Combinadores&lt;/h2&gt;
+
+&lt;p&gt;Un combinador es una abstracción o función en el cálculo lambda, que no tiene variables libres o, en su defecto, sólo usa otros combinadores en su definición. Son funciones que sirven para crear cálculos más complejos mediante la mezcla de ellas.&lt;/p&gt;
+
+&lt;p&gt;Las variables libres son las que &lt;strong&gt;no se reciben como parámetros&lt;/strong&gt;. Los combinadores sirven para crear un lenguaje sobre el cálculo lambda y crear abstracciones más fácilmente y han sido el objeto de estudio de varios matemáticos.&lt;/p&gt;
+
+&lt;p&gt;Uno de ellos Raymond Smullyan, los enumeró poniéndoles nombres de aves, basados en las letras con las que se les identificaba y en su libro &lt;a href=&quot;http://douxnet.weebly.com/uploads/2/0/4/1/20418601/raymond_m._smullyan-to_mock_a_mockingbird_and_other_logic_puzzles__including__an_amazing_adventure_in_combinatory_logic-knopf_1985.pdf&quot;&gt;To Mock a Mockingbird&lt;/a&gt; los usa para crear algunos acertijos.&lt;/p&gt;
+
+&lt;p&gt;Puedes aprender más de los combinadores con ejemplos en JavaScript en esta plática: &lt;a href=&quot;https://www.youtube.com/watch?v=3VQ382QG-y4&quot;&gt;Lambda Calculus - Fundamentals of Lambda Calculus &amp;amp; Functional Programming in JavaScript&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Aquí hay algunos ejemplos de combinadores en JavaSCript&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Combinador I, Idiot o función identidad&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Combinador K, Kestrel o función constante&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;K&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Combinador S, Starling o función de substitución&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;S&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Si tu API es sencilla, expone pocas URLs y sabes que no requerirás mucho en campo de las peticiones HTTP (procesamiento de parámetros, manejo de rutas, etc.) la biblioteca estándar es una solución buena, pero para otros casos se queda un poco corta, ya que tendrías que implementar varias cosas a mano.&lt;/p&gt;
+&lt;p&gt;Justo de esta rama de la lógica viene el famoso &lt;a href=&quot;https://medium.com/@ayanonagon/the-y-combinator-no-not-that-one-7268d8d9c46&quot;&gt;Y combinator&lt;/a&gt;, el combinador que permite la recursión. Aquí hay artículo que explica cómo se llega a él, si te quieres ir por el hoyo del conejo: &lt;a href=&quot;https://homes.cs.washington.edu/~sorawee/en/blog/2017/10-05-deriving-Y.html&quot;&gt;Deriving Y Combinator&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Su uso es sencillo como acabas de ver. Usar un framework web tiene el costo de agregar complejidad a &lt;strong&gt;cambio de funcionalidades que no tienes que desarrollar tú&lt;/strong&gt;. Pero aquí te compartimos un artículo en el que un experto hablá de por qué &lt;em&gt;él&lt;/em&gt; prefiere no usar frameworks: &lt;a href=&quot;https://medium.com/code-zen/why-i-don-t-use-go-web-frameworks-1087e1facfa4&quot;&gt;Why I Don’t Use Go Web Frameworks&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;cálculo-ski&quot;&gt;Cálculo SKI&lt;/h3&gt;
 
-&lt;p&gt;Por eso te presentamos las opciones más comunes y algunos ejemplos.&lt;/p&gt;
+&lt;p&gt;Debido a que todas las matemáticas y cosas computables se pueden expresar con los combinadores S, K e I, existe toda una rama llamada &lt;strong&gt;Cálculo SKI&lt;/strong&gt;, en el que estos tres combinadores son los únicos elementos necesarios para expresar todo lo demás.&lt;/p&gt;
 
-&lt;h2 id=&quot;gorilla-web-toolkit&quot;&gt;Gorilla Web Toolkit&lt;/h2&gt;
+&lt;h2 id=&quot;teoría-de-categorías&quot;&gt;Teoría de categorías&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://avatars2.githubusercontent.com/u/489566?s=200&amp;amp;v=4&quot; alt=&quot;Gorilla Web Toolkit logo&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;La teoría de categorías explora la composición de elementos y la creación de grupos con “objetos” relacionados entre ellos. &lt;a href=&quot;https://bartoszmilewski.com/&quot;&gt;Bartosz Mileswsky&lt;/a&gt; afirma que la teoría de categorías es muy importante para los programadores porque nos permite entender la composición y esta es la base para construir programas complejos.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.gorillatoolkit.org/&quot;&gt;Gorilla Toolkit&lt;/a&gt; es un conjunto de herramientas para web que, entre otras cosas tiene:&lt;/p&gt;
+&lt;p&gt;La teoría de categorías se extiende más allá de la programación funcional, de hecho todos los sistemas de tipos de los lenguajes se comportan como una categoría. Puedes entender más de qué se trata en el libro de Bartosz Mileswsky &lt;a href=&quot;https://github.com/hmemcpy/milewski-ctfp-pdf&quot;&gt;“Category Theory for Programmers”&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;y-todo-esto-a-mi-qué&quot;&gt;¿Y todo esto, a mi qué?&lt;/h2&gt;
+
+&lt;p&gt;Conocer las bases de la programación funcional te puede dar un índice muy valioso como referencia a temas en los que tienes que profundizar si quieres ser un mejor programador@ funcional y tú lógica en general.&lt;/p&gt;
+
+&lt;p&gt;La programación funcional y las ideas provenientes de ella están mejorando la forma en que hacemos software, ya que dan permiten un mejor tratamiento de la información que en muchos casos es más fácil de entender que su contraparte imperativa.&lt;/p&gt;
+
+&lt;p&gt;Puedes ver algunas de las características y ventajas de la programación funcional en &lt;a href=&quot;/2019/03/30/que-es-la-programacion-funcional.html&quot;&gt;este artículo&lt;/a&gt; y si quiere aprender, compilamos algunos recursos aquí: &lt;a href=&quot;/educación/2019/04/06/los-mejores-recursos-para-aprender-programacion-funcional.html&quot;&gt;Los mejores recursos para aprender programación funcional.&lt;/a&gt;&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="matemáticas" /><category term="math" /><category term="fp" /><category term="programación-funcional" /><summary type="html">La programación funcional tiene bases matemáticas muy interesantes, hablemos un poco de ellas y cómo te pueden ayudar a entenderla mejor.</summary></entry><entry><title type="html">Ruta de aprendizaje: Deep Learning</title><link href="https://blog.thedojo.mx/2021/03/06/ruta-de-aprendizaje-deep-learning.html" rel="alternate" type="text/html" title="Ruta de aprendizaje: Deep Learning" /><published>2021-03-06T00:00:00-06:00</published><updated>2021-03-06T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/03/06/ruta-de-aprendizaje-deep-learning</id><content type="html" xml:base="https://blog.thedojo.mx/2021/03/06/ruta-de-aprendizaje-deep-learning.html">&lt;p&gt;Inspirado en el libro “Ultralearning” de Scott Young, voy hacer un proyecto de aprendizaje de algo que llama mi atención desde hace mucho: Deep Learning y Machine Learning en general. Si no conces el concepto, te invito leer el post aquí: &lt;a href=&quot;/2019/08/13/lecciones-sobre-el-aprendizaje-de-manos-de-un-experto.html&quot;&gt;Ultralearning: el arte del aprendizaje profundo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;En esta serie documentaremos las diferentes fases. Este primer post trata sobre los recursos que usaré para aprender. Si tienes alguna sugerencia, ¡todas son bienvenidas!&lt;/p&gt;
+
+&lt;h2 id=&quot;fase-1-investigación&quot;&gt;Fase 1: Investigación&lt;/h2&gt;
+
+&lt;p&gt;La primera fase de un proyecto de Ultra-aprendizaje consiste en hacer una investigación sobre las posibles opciones, recursos, metas y caminos que otros han seguido para aprender lo que quieres, así como definir claramente los límites del proyecto.&lt;/p&gt;
+
+&lt;p&gt;En este proyecto el objetivo será:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Entender y aplicar las técnicas básicas  Machine Learning, en específico Deep Learning, para poder resolver problemas y aplicarlos en proyectos que lo requieran.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Algunos de los programas que podemos usar para aprenderlo son los siguientes:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Un router más completo que el de la biblioteca estándar: &lt;em&gt;Gorilla Mux&lt;/em&gt;. Es compatible con el tipo de dato nativo de Go para las peticiones. Además incluye:
-    &lt;ul&gt;
-      &lt;li&gt;Ruteadores secundarios, para que organices mejor tu código.&lt;/li&gt;
-      &lt;li&gt;Inversión de URL’s: te permite generar la URL a partir de un identificador.&lt;/li&gt;
-      &lt;li&gt;Matches complejos&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Middlewares: logging, compresión, recuperación&lt;/li&gt;
-  &lt;li&gt;Manejo de sesiones con cookies seguras&lt;/li&gt;
-  &lt;li&gt;Implementación de WebSockets y RPC&lt;/li&gt;
-  &lt;li&gt;Conversión de valores de entrada en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;struct&lt;/code&gt; de Go&lt;/li&gt;
+  &lt;li&gt;Nanodegree de Deep Learning en &lt;a href=&quot;https://www.udacity.com/course/deep-learning-nanodegree--nd101&quot;&gt;Udacity&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Especialización en Deep Learning de &lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot;&gt;Coursera&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Redes neuronales y Deep Learning de &lt;a href=&quot;https://www.coursera.org/learn/neural-networks-deep-learning&quot;&gt;Coursera&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Programming Machine Learning de &lt;a href=&quot;https://pragprog.com/titles/pplearn/programming-machine-learning/&quot;&gt;Pragmatic Programmers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Machine Learning with Python: from Linear Models to Deep Learning de &lt;a href=&quot;https://www.edx.org/course/machine-learning-with-python-from-linear-models-to?index=product&amp;amp;queryID=66ef0e341d390841649ca12aaef6fd6b&amp;amp;position=1&quot;&gt;EDX&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;CS230 de &lt;a href=&quot;https://cs230.stanford.edu/syllabus/&quot;&gt;Stanford&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;STAT 212B de &lt;a href=&quot;https://bcourses.berkeley.edu/courses/1413088/assignments/syllabus&quot;&gt;Berkeley&lt;/a&gt; (Lecciones: &lt;a href=&quot;https://github.com/joanbruna/stat212b&quot;&gt;Github&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Deep Learning Crash Course en &lt;a href=&quot;https://youtu.be/VyWAvY2CF9c&quot;&gt;Free Code Camp&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Gorilla Toolkit &lt;strong&gt;no es un framework&lt;/strong&gt;, puedes usar cada de sus herramientas por separado, como las vayas necesitando. Así que puede empezar con la librería estándar y agregar lo que necesitas de Gorilla poco a poco.&lt;/p&gt;
+&lt;h2 id=&quot;decisión&quot;&gt;Decisión&lt;/h2&gt;
 
-&lt;h2 id=&quot;gin&quot;&gt;Gin&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/c_scale,w_250/v1600730661/color_whycuu.png&quot; alt=&quot;Gin go logo&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Uno de los consjos de Ultralearning es no gastar mucho tiempo investigando. No sabemos lo que no sabemos y esta incetidumbre nos puede dar parálisis por análisis y no dejar que pasemos a la siguiente etapa.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/gin-gonic/gin&quot;&gt;Gin&lt;/a&gt; es un framework web para Go bastante completo que clama ser el más rápido de todos los frameworks web para Go. Ya está en su versión 1, por lo que puedes usarlo con confianza en proyectos serios.&lt;/p&gt;
-
-&lt;p&gt;Gin usa &lt;a href=&quot;https://github.com/julienschmidt/httprouter&quot;&gt;httpRouter&lt;/a&gt; que tiene funciones parecidas a Gorilla Mux, pero que dice escalar mejor que el de la librería estándar incluso.&lt;/p&gt;
-
-&lt;p&gt;Tiene utilidades incluídas para hacer render de XML, JSON, YAML y ProtoBuf, o sea que es perfecto para crear diferentes tipos de API’s.&lt;/p&gt;
-
-&lt;p&gt;Además, tiene un montón de cosas más que puedes explorar en su documentación, que es muy completa y con muchos ejemplos, por si fuera poco.&lt;/p&gt;
-
-&lt;h2 id=&quot;beego&quot;&gt;Beego&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://beego.me/static/img/beego_purple.png&quot; alt=&quot;Beego logo&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://beego.me/&quot;&gt;Beego&lt;/a&gt; es un framweork que se especializa en API’s RESTful e intenta usar lo mejor posibles las características de Go como las interfaces y las estructuras embebidas. Parece que está hecho en China.&lt;/p&gt;
-
-&lt;p&gt;Las cuatro características que resalta son:&lt;/p&gt;
+&lt;p&gt;Este proyecto estará basado en el &lt;a href=&quot;https://www.udacity.com/course/deep-learning-nanodegree--nd101&quot;&gt;Nanodegree de Deep Learning de Udacity&lt;/a&gt; por dos razones:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Fácil de usar: es MVC  y tiene herramientas incluídas para poder desarrollar más fácilmente.&lt;/li&gt;
-  &lt;li&gt;Inteligente: tiene características de ruteo avanzadas junto con monitoreo integrado que te permiten observar el estado de tu API.&lt;/li&gt;
-  &lt;li&gt;Modular: su estructura interna está compuesta por varios módulos que te permiten avanzar rápidamente.&lt;/li&gt;
-  &lt;li&gt;Alto desempeño&lt;/li&gt;
+  &lt;li&gt;Probé algunos de sus cursos y la calidad se me hace muy buena y el contenido muy bien desarrollado&lt;/li&gt;
+  &lt;li&gt;Puedes allí mismo optar por un certificado, lo que incluye acompañamiento de un mentor y resolución de dudas con la comunidad. esto puede servir muy bien para desatorarme si encuentro algo muy difícil.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Es un framework bastante completo, que cumple con todo lo mínimo necesario para que puedas empezar a desarrollar tu API eficientemente, pero parece que tiene un defecto: al ser hecho en china, la documentación no está pulida completamente y puede que haya poca información en tutoriales y otras páginas.&lt;/p&gt;
+&lt;p&gt;Paralelamente leeré el libro &lt;a href=&quot;https://pragprog.com/titles/pplearn/programming-machine-learning/&quot;&gt;Programming Machine Learning de Pragmatic Programmers&lt;/a&gt;, ya que parece tener justamente el enfoque que necesito: Machine Learning para programadores.&lt;/p&gt;
 
-&lt;h2 id=&quot;echo&quot;&gt;Echo&lt;/h2&gt;
+&lt;h2 id=&quot;objetivo-final&quot;&gt;Objetivo final&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.labstack.com/images/echo-logo.svg&quot; alt=&quot;Logo de Echo&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Es hora de ponerle un tiempo y un obejetivo más concreto al proyecto: &lt;em&gt;durante los próximos 10 meses (lo que resta de 2021) aprenderé las bases teóricas y prácitcas de machine learning, con el obejetivo de aplicarlo mejor en los proyectos de trabajo y combinarlo con mis habilidades de ingeniería del software y progeamación.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://echo.labstack.com/&quot;&gt;Echo&lt;/a&gt; se promociona como el framework web minimalista. Tiene soporte para HTTP/2, ruteo sin uso de memoria dinámica (para mejor desempeño), TLS automático, middlewares flexibles y funciones utilitarias para responder fácilmente las peticiones web en cualquier formato.&lt;/p&gt;
+&lt;p&gt;Sobra decir que este plan no está escrito en piedra y se irá modifcando conforme vaya experimentando y aprendiendo más del campo. Por lo mientras, espero que el proyecto y lo que vaya aprendiendo y meta-aprendiendo te sirva, como la compilación de recursos para empezar que pusimos en este post.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="aprendizaje" /><category term="ml" /><category term="machine-learning" /><summary type="html">En este artículo te proponemos una forma de aprender machine learning y deep learning y te presentamos algunos recursos que te pueden servir</summary></entry><entry><title type="html">Resumen: Qué hacer para conseguir un buen trabajo como programador</title><link href="https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html" rel="alternate" type="text/html" title="Resumen: Qué hacer para conseguir un buen trabajo como programador" /><published>2021-02-10T00:00:00-06:00</published><updated>2021-02-10T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador</id><content type="html" xml:base="https://blog.thedojo.mx/2021/02/10/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html">&lt;p&gt;Aquí te damos un resumen de la plática que tuvimos con Diego De Granda y Pablo Trinidad sobre algunas cosas que hicieron para conseguir buenos trabajos. Esbozaremos algunos de los consejos independientes sin una secuencia definida.&lt;/p&gt;
 
-&lt;p&gt;En algunos benchmarks &lt;strong&gt;echo&lt;/strong&gt; parece ser más rápido que Gin.&lt;/p&gt;
+&lt;h2 id=&quot;aprende-inglés&quot;&gt;Aprende Inglés&lt;/h2&gt;
 
-&lt;p&gt;Tiene desarrollo bastante activo y la documentación contiene ejemplos suficientes, junto con algunas recetas y para que logres avanzar rápido.&lt;/p&gt;
+&lt;p&gt;Aunque la razón de existencia de este blog y de The Dojo MX en general es generar contenido en español para ayudar a los hispanohablantes, nunca nos cansaremos (y tampoco nuestros invitados) de darte el mismo consejo: &lt;strong&gt;APRENDE INGLÉS&lt;/strong&gt;. Creemos sinceramente que el idioma no debería ser una limitante para que &lt;em&gt;empieces&lt;/em&gt; a aprender lo que sea que te guste, pero especialmente en el área de tecnología, la mayor parte de las personas, trabaja y habla en inglés, por lo que es importantísimo aprenderlo lo mejor que puedas.&lt;/p&gt;
+
+&lt;h2 id=&quot;aprende-a-dar-y-recibir-retroalimentación&quot;&gt;Aprende a dar y recibir retroalimentación&lt;/h2&gt;
+
+&lt;p&gt;En este apartado hablaron de cuatro cosas que la retroalimentación debe tener para poder ser útil:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Directa, sin darle tantas vueltas al asunto&lt;/li&gt;
+  &lt;li&gt;Accionable, debes dejar a la persona con algo sobre lo que pueda actuar&lt;/li&gt;
+  &lt;li&gt;Oportuno, mientras más cercano estés al momento en cuestión, mejor&lt;/li&gt;
+  &lt;li&gt;Transparente, tus intenciones son claras&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Y si eres la persona que toma la retroalimentación, no te ofendas y toma lo bueno.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-pragmatic-programmer&quot;&gt;The Pragmatic Programmer&lt;/h2&gt;
+
+&lt;p&gt;No pudimos platicar tanto de libros, pero uno que no puede faltar casi en ninguna recomendación de libros para programadores es &lt;a href=&quot;https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/&quot;&gt;The Pragmatic Programmer&lt;/a&gt; un libro sobre las bases que necesitas para ser un programador productivo.&lt;/p&gt;
+
+&lt;h2 id=&quot;aprende-los-fundamentos&quot;&gt;Aprende los fundamentos&lt;/h2&gt;
+
+&lt;p&gt;Es muy importante que aprendas los fundamentos de lo que haces si quieres atacar problemas difíciles. Para esto, tienes que aplicar consejos de otras partes de este mismo artículo.&lt;/p&gt;
+&lt;h2 id=&quot;consejos-de-pablo-trinidad-para-mantenerte-empleable&quot;&gt;Consejos de Pablo Trinidad para mantenerte empleable&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Permanecer presente en el aprendizaje y ser crítico&lt;/em&gt;: Tienes que estarte preguntando constantemente: ¿Por qué funciona lo que estoy haciendo? Y puedes aplicar la técnica de preguntar continuamente “¿Por qué?” hasta llegar al fondo de las cosas.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Leer&lt;/em&gt;. Estudiar y aprender lo más que puedas, incluso sobre cosas que no sean ténicas.
+    &lt;h2 id=&quot;consejos-de-diego-de-granda&quot;&gt;Consejos de Diego de Granda&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Resiliencia&lt;/em&gt;: Los problemas nunca van a parar, así que tienes que aprender a solucionar problemas sin frustrarte y persistir hasta que llegues a la solución&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Resolver problemas&lt;/em&gt;: mejorar tus capacidades de resolver problemas te ayudará a ser alguien más útil para tu equipo y tu empresa&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Ser agnóstico&lt;/em&gt;: No te cases con una tecnología, diversifica y usa la correcta para el problema en cuestión.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;características-que-necesitarás-para-trabajar-en-google&quot;&gt;Características que necesitarás para trabajar en Google&lt;/h2&gt;
+
+&lt;p&gt;¿Qué se necesita para trabajar en Google? Aquí algunas de las ideas que Pablo nos compartió:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Capacidad&lt;/strong&gt; de tomar problemas difíciles&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Liderazgo&lt;/strong&gt; para ayudar a tu equipo&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Impacto&lt;/strong&gt; extendido en diferentes personas y equipos&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Independencia&lt;/strong&gt;, no necesitas de un manager que te esté cuidando los pasos&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ownership&lt;/strong&gt;, te adueñas de los problemas y pones todo tu empeño en resolverlos&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Estar presente&lt;/strong&gt;, es decir, no pasar por las experiencias sin aprender de ellas&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sigue-alimentando-tu-curiosidad&quot;&gt;Sigue alimentando tu curiosidad&lt;/h2&gt;
+
+&lt;p&gt;Pablo nos recomendó algunos canales de YouTube para seguir alimentando la curiosidad y aprender cosas de diferentes campos, como matemáticas, ciencia, computación y electrónica.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/TheChernoProject&quot;&gt;The Cherno&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/Computerphile&quot;&gt;Computerphile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/Numberphile&quot;&gt;Numberphile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/1Veritasium&quot;&gt;Veritasium&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/destinws2&quot;&gt;Smarter Everyday&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/nobani88&quot;&gt;Eric Weinstein&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/PowerfulJRE&quot;&gt;Joe rogan&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/user/eaterbc&quot;&gt;Ben Eater&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw&quot;&gt;3Blue1Brown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Esto no te hará un mejor programador directamente pero te ayudará a crecer como persona y te ayudará a conseguir mejores oportunidades. Y sí, necesitas inglés para entenderlos.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
 
-&lt;p&gt;Existen múltiples opciones para crear tu API en Go. Hay para escoger dependiendo de tus gustos y de lo más importante para tu proyecto.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="go" /><category term="apis" /><category term="beego" /><category term="gorilla-mux" /><category term="gin-go" /><category term="go-lang" /><summary type="html">Exploramos diferentes formas en las que puedes crear una API con Go, el lenguaje enfocado en la eficiencia de los programas permitiendo productividad para los programadores.</summary></entry><entry><title type="html">No hagas hagas DevOps por convivir</title><link href="https://blog.thedojo.mx/2020/09/10/no-hagas-hagas-devops-por-convivir.html" rel="alternate" type="text/html" title="No hagas hagas DevOps por convivir" /><published>2020-09-10T00:00:00-05:00</published><updated>2020-09-10T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/09/10/no-hagas-hagas-devops-por-convivir</id><content type="html" xml:base="https://blog.thedojo.mx/2020/09/10/no-hagas-hagas-devops-por-convivir.html">&lt;p&gt;Tuvimos una plática con Domingo Suárez(&lt;a href=&quot;https://twitter.com/domix&quot;&gt;@domix&lt;/a&gt;) acerca de diferentes temas que le interesan a los desarrolladores.&lt;/p&gt;
+&lt;p&gt;Hablamos de muchas cosas más, productividad, Google, cómo avanzar en tu carrera, etc. No te pierdas la plática entera aquí:&lt;/p&gt;
 
-&lt;p&gt;En este artículo te vamos a dar un resumen.&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/mUfmVBaOmxM&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="lives" /><category term="recomendaciones" /><category term="video" /><category term="libros" /><category term="consejos" /><summary type="html">Hablamos con Diego De Granda y Pablo Trinidad sobre qué tienes que hacer para conseguir un buen trabajo en tecnología. Aquí tienes un resumen.</summary></entry><entry><title type="html">Libros que te ayudarán a aprender Data Science</title><link href="https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science.html" rel="alternate" type="text/html" title="Libros que te ayudarán a aprender Data Science" /><published>2021-02-01T00:00:00-06:00</published><updated>2021-02-01T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science</id><content type="html" xml:base="https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science.html">&lt;p&gt;Creemos firmemente que una de las mejores maneras de educarte como desarrollador es conseguir guía clara.&lt;/p&gt;
 
-&lt;h2 id=&quot;cómo-nos-dejamos-influir-para-adoptar-una-tecnología&quot;&gt;Cómo nos dejamos influir para adoptar una tecnología&lt;/h2&gt;
+&lt;p&gt;Una de las mejores fuentes de conocimiento son los libros escritos por personas expertas en el tema del que quieres aprender, es por eso siempre buscamos personas que nos den consejos sobre los mejores recursos que encuentren.&lt;/p&gt;
 
-&lt;p&gt;Lo primero de lo que hablamos es de la forma en que muchas veces adoptamos la tecnología: &lt;strong&gt;por moda&lt;/strong&gt;. A veces es porque alguien con autoridad la mencionó o muchos miembros de la comunidad la están usando. A los desarrolladores nos gustan las cosas &lt;em&gt;brillantes&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Generalmente esa decisión tiene un costo bastante alto:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Te metes en cosas de las que no hay la suficiente información disponible&lt;/li&gt;
-  &lt;li&gt;Te enfrentas con problemas totalmente desconocidos&lt;/li&gt;
-  &lt;li&gt;Gastas recursos que podrías gastar mejor en otro lado.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;La lección:&lt;/strong&gt; no tienes que aprender y usar todo lo nuevo que sale. Usa tecnología &lt;em&gt;aburrida&lt;/em&gt;: probada por el tiempo, de la que exista mucha información y usada por muchos desarrolladores de los que podrás aprender rápidamente y enfocarte en los verdaderos problemas que &lt;strong&gt;diferencian&lt;/strong&gt; a tu solución.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-devops&quot;&gt;¿Qué es DevOps?&lt;/h2&gt;
-
-&lt;p&gt;Uno de los temas principales que tratamos es la aclaración de lo que de verdad significa el término &lt;strong&gt;DevOps&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Domingo explicó que DevOps es una &lt;strong&gt;cultura&lt;/strong&gt; que intenta mejorar el flujo de trabajo que existe entre el área de desarrollo y la de operación del software (la encargada de ponerlo en manos de los usuarios y monitorearlo). Intenta &lt;strong&gt;mejorar los hilos organizacionales&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Nos explicó que el término “DevOps” originalmente era un hashtag de Twitter para hablar de esta cultura en una conferencia organizada por &lt;a href=&quot;https://blog.newrelic.com/engineering/devops-name/&quot;&gt;Patrick Debois&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Domingo dejó muy claro que &lt;strong&gt;DevOps no es un puesto, ni un rol.&lt;/strong&gt; No lo puedes comprar con una herramienta, sino que es una serie de prácticas y &lt;strong&gt;una forma de pensar&lt;/strong&gt; que &lt;em&gt;tu empresa&lt;/em&gt; debe desarrollar.&lt;/p&gt;
-
-&lt;p&gt;Platicamos a además de que DevOps establece &lt;em&gt;“Las 3 vías”&lt;/em&gt; que son tres procesos o tres formas en las que la información viaja.&lt;/p&gt;
-
-&lt;p&gt;La primera vía consiste en poner el código en producción lo más rápido posible, con opciones como quitarlo rápidamente si no funciona bien (rollback).&lt;/p&gt;
-
-&lt;p&gt;La segunda vía es &lt;strong&gt;el monitoreo del software en producción&lt;/strong&gt;, para poder actuar rápidamente. Puede ser para mejorarlo, para corregir fallas y para aprender del verdadero uso que los usuarios finales le dan.&lt;/p&gt;
-
-&lt;p&gt;La tercer vía es la repetición de estos dos procesos y la ejecución de ejercicios con el objetivo de pulir los procesos y aprender más cosas. Esta vía incluye simulaciones de falla, sesiones de estudio, sesiones de preparación y análisis de fallos, etc.&lt;/p&gt;
-
-&lt;h2 id=&quot;mentores-y-aprendizaje&quot;&gt;Mentores y aprendizaje&lt;/h2&gt;
-
-&lt;p&gt;Un tema repetido desde el principio es que Domingo tuvo un mentor que se llama &lt;strong&gt;Humberto&lt;/strong&gt;.  Una persona que sin darse cuenta le ayudó mucho a adoptar hábitos sanos de aprendizaje y le enseñó muchas cosas directamente.&lt;/p&gt;
-
-&lt;p&gt;De esto salió que en la industria de desarrollo de productos digitales &lt;strong&gt;falta en práctica poner más en práctica la mentoría&lt;/strong&gt;, ya que nos puede ayudar avanzar y puede a crear personas más hábiles.&lt;/p&gt;
-
-&lt;p&gt;Llegamos a una conclusión: &lt;strong&gt;la mentoría es una responsabilidad compartida&lt;/strong&gt;. El mentor tiene la responsabilidad de guíar al aprendiz de la mejor forma, porque puede influir de formas muy poderosas en su vida, pero la responsabilidad de aprovechar bien esa guía y aplicar los consejos es de la persona que está siendo mentoreada.&lt;/p&gt;
-
-&lt;p&gt;En este punto Alex levantó un punto interesante: en lugares como Silicon Valley, los directivos tienen la idea de que preparar gente dentro de su empresa es beneficioso en general para el ecosistema. Si todos adoptan esa mentalidad, la próxima persona que llegue a tu empresa habrá sido entrenada de la mejor manera, &lt;strong&gt;elvando el nivel de la comunidad&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Le lección: Aceptar o pedir una mentoría &lt;strong&gt;te hará crecer&lt;/strong&gt; y adoptar la idea de que preparar a las personas es beneficioso ayudará a todo el ecosistema.&lt;/p&gt;
-
-&lt;h2 id=&quot;cómo-avanzar-en-tu-carrera-como-desarrollador&quot;&gt;Cómo avanzar en tu carrera como desarrollador&lt;/h2&gt;
-
-&lt;p&gt;Conectado con el tema anterior, hablamos un poco de &lt;strong&gt;cómo puedes volverte mejor desarrollador&lt;/strong&gt;, alcanzar un nuevo puesto y obtener un mejor sueldo. La conclusión es:&lt;/p&gt;
+&lt;p&gt;En esta ocasión invitamos a &lt;a href=&quot;https://twitter.com/silvercorp&quot;&gt;Yesi Days&lt;/a&gt; a platicar sobre qué libros nos recomendaría para desarrollarte en &lt;strong&gt;data science&lt;/strong&gt;. Nos recomendó los siguientes:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;Tienes que mantenerte &lt;strong&gt;siempre aprendiendo&lt;/strong&gt; nuevas cosas, no sabes lo que puede servirte más adelante.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://amzn.to/3q5lDj0&quot;&gt;Hands-on Machine Learning with Scikit-Learn and Tensorflow&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;No estudies sólo lo relacionado con tu trabajo actual&lt;/strong&gt;, estudiar cosas que no tienen nada que ver con lo que haces hoy puede abrirte las puertas a nuevas oportunidades.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://themlbook.com/&quot;&gt;The Hundred Page Machine Learning&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Haz proyectos de las cosas que estás aprendiendo, no sólo leas o veas videos.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://amzn.to/35qysMQ&quot;&gt;Introduction to Machine Learning with Python: A Guide for Data Scientists&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Has cosas que de verdad disfrutes.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://amzn.to/2L8AiuZ&quot;&gt;Data Science from Scratch: First Principles with Python&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://amzn.to/2MGG6Mq&quot;&gt;Cracking the PM Interview: How to Land a Product Manager Job in Technology (Cracking the Interview &amp;amp; Career)&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/27783740-building-real-time-data-pipelines&quot;&gt;Building Real-time data pipelines&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;microservicios&quot;&gt;Microservicios&lt;/h2&gt;
+&lt;h2 id=&quot;data-science-path&quot;&gt;Data science Path&lt;/h2&gt;
 
-&lt;p&gt;La mayoría de las empresas no los necesita, porque aunque quieran imitar a Netflix o Google o Amazon o Facebook, no tienes sus mismos problemas.&lt;/p&gt;
+&lt;p&gt;Yesi también nos contó sobre un guía que creó para ayuddarte a empezar en el camino, la puedes encontrar en:&lt;a href=&quot;https://ds-path.netlify.app/&quot;&gt;Data Science Path&lt;/a&gt; y próximamente estará en español.&lt;/p&gt;
 
-&lt;p&gt;Además la arquitectura de microservicios tiene retos a los que tal vez no te quieres enfrentar, como las transacciones distribuidas.&lt;/p&gt;
+&lt;p&gt;La charla que tuvimos con ella se extendió sobre muchos temas más, si no te la quieres perder la puedes ver aquí:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;¿Cuándo es buena idea usar microservicios?&lt;/strong&gt; Domingo dio dos criterios:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Tu base de usuarios es muy grande, los microservicios te ayudarán a escalar mejor.&lt;/li&gt;
-  &lt;li&gt;Tu base de código es muy grande. Así la podrás dividir mejor entre tus &lt;em&gt;decenas&lt;/em&gt; de programadores.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;aprender-java-vale-la-pena&quot;&gt;Aprender Java vale la pena&lt;/h2&gt;
-
-&lt;p&gt;Después, hablamos de qué tanto vale la pena aprender Java en 2020, ya que Domingo es un &lt;strong&gt;Java Champion&lt;/strong&gt;, uno de los pocos de México y de LATAM.&lt;/p&gt;
-
-&lt;p&gt;La conclusión: &lt;strong&gt;Java es un lenguaje que vale la pena aprender, por ser una tecnología probada (aburrida) y con muchas cosas desarrolladas&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Algunas de las características que resaltamos de Java:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;La JVM es una pieza de software magnífica que tiene optimizaciones para ser muy eficiente, para ayudarte aunque tu código no sea tan bueno.&lt;/li&gt;
-  &lt;li&gt;Un montón de lenguajes corren sobre la JVM. Si te gusta más otro que Java puedes combinarlos y compartir lo que ya existe en el ecosistema de Java&lt;/li&gt;
-  &lt;li&gt;Java como lenguaje ha avanzado mucho, adoptando formas de programar más modernas.&lt;/li&gt;
-  &lt;li&gt;Sus características intrínsecas, como su compilador y el tipado estático lo hacen ideal para cierto tipo de problemas en los que tienes que reducir al mínimo los errores en tiempo de ejecución.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;El consejo de domingo es: Si quieres empezar con Java empieza con algún framework modernos como &lt;a href=&quot;https://micronaut.io/&quot;&gt;Micronaut&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;recomendaciones-de-libros&quot;&gt;Recomendaciones de libros&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://amzn.to/3jVxLQu&quot;&gt;The Phoenix Project&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://landing.google.com/sre/books/&quot;&gt;Site Reliability Engineering&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://amzn.to/3k2ZTRD&quot;&gt;Joel on Software&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Disfrutamos mucho de esta plática y esperamos tenerlo con nosotros de nuevo pronto. La puedes ver aquí:&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/3zQ3qSFDdW0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="live" /><category term="youtube" /><category term="microservicios" /><category term="java" /><category term="domix" /><category term="hype" /><category term="devops" /><summary type="html">En este artículo resumiremos una plática muy interesante que tuvimos con Domingo Suárez sobre DevOps y otras cosas.</summary></entry><entry><title type="html">A Philosophy of Software Design: Organiza bien los sistemas en capas</title><link href="https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html" rel="alternate" type="text/html" title="A Philosophy of Software Design: Organiza bien los sistemas en capas" /><published>2020-09-01T00:00:00-05:00</published><updated>2020-09-01T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas</id><content type="html" xml:base="https://blog.thedojo.mx/2020/09/01/a-philosophy-of-software-design-organiza-bien-los-sistemas-en-capas.html">&lt;p&gt;Hemos escuchado muchísimo acerca de los sistemas en capas como &lt;em&gt;Modelo-Vista-Controlador&lt;/em&gt;, Modelo-Vista-Template, Modelo-Vista-*, &lt;em&gt;MV-lo-que-sea&lt;/em&gt; etc. y eso es porque la mayoría de los sistemas actuales se organiza así: &lt;strong&gt;en capas&lt;/strong&gt;. Además, nuestros módulos se dividen naturalmente en capas con diferentes funciones (como código que usa a otro).&lt;/p&gt;
-
-&lt;p&gt;Hablemos de por qué es efectiva esta forma de organización (o patrón de arquitectura)
-de código, de sus características y cómo podemos aprovecharla para sacar el máximo provecho.&lt;/p&gt;
-
-&lt;h2 id=&quot;características-de-los-sistemas-en-capas&quot;&gt;Características de los sistemas en capas&lt;/h2&gt;
-
-&lt;p&gt;Sabemos que la mejor forma de organización de un proyecto es &lt;strong&gt;descomponerlo&lt;/strong&gt; en partes independientes que &lt;strong&gt;oculten&lt;/strong&gt; información de otras.&lt;/p&gt;
-
-&lt;p&gt;La comunicación entre las diferentes partes se da por medio de una &lt;strong&gt;interfaz&lt;/strong&gt;. Esta interfaz, es la &lt;strong&gt;API&lt;/strong&gt; del componente, ya que será usada de manera automática por otra parte del programa.&lt;/p&gt;
-
-&lt;p&gt;En un sistema en capas el conjunto de elementos pertenecientes a una capa sólo se puede comunicar con la capa superior y con la capa inferior.&lt;/p&gt;
-
-&lt;p&gt;Si un sistema tiene 10 capas, cada componente puede comunicarse máximo con 2 capas.
-En los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la capa intermedia (el controlador, por ejemplo) puede comunicarse con dos capas, mientras que las otras sólo se comunican con la intermedia.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://amzn.to/2GdeHi5&quot;&gt;John Ousterhout&lt;/a&gt; usa la división en capas para explicar cómo se organiza el software con respecto al usuario final: la capa de “hasta arriba” es la que interactúa directamente con el usuario y la de “hasta abajo” es la más alejada del usuario, generalmente el núcleo de tu sistema.&lt;/p&gt;
-
-&lt;p&gt;Hablemos ahora de las mejores prácticas según &lt;a href=&quot;https://amzn.to/2GdeHi5&quot;&gt;A Philosphy of Software Design&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;diferente-capa-diferente-abstracción&quot;&gt;Diferente capa, diferente abstracción&lt;/h2&gt;
-
-&lt;p&gt;El concepto que debes tener más claro para descomponer tu software en capas es que cada capa debe tener sus propias abstracciones. Ousterhout da el ejemplo de un sistema de archivos:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;La capa que interactúa con el mundo exterior o la más alta, tiene la abstracción de un archivo&lt;/li&gt;
-  &lt;li&gt;La siguiente capa tiene la abstracción de bloques de memoria y caché&lt;/li&gt;
-  &lt;li&gt;La siguiente capa maneja directamente los bloques en el disco&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Esta abstracción es efectiva porque cada capa trabaja con abstracciones diferentes y no repiten ninguna entre ellas.&lt;/p&gt;
-
-&lt;p&gt;Esta es la idea básica que debes checar en tus diseños, si notas que una abstracción no cambia de una capa a otra, algo está saliendo mal. ¿Cómo puedes identificarlas?&lt;/p&gt;
-
-&lt;h3 id=&quot;funciones-de-paso&quot;&gt;Funciones de paso&lt;/h3&gt;
-
-&lt;p&gt;Estos son funciones que no hacen nada mas que mandar llamar una función de la siguiente capa, normalmente para cumplir con la limitante de comunicación entre capas.&lt;/p&gt;
-
-&lt;p&gt;Esto indica que no hay una división clara de responsabilidad entre clases o módulos. Para resolver este problema tienes que asegurarte de que la interfaz y la funcionalidad de este punto de tu sistema estén en el mismo módulo.&lt;/p&gt;
-
-&lt;p&gt;Evitar este tipo de métodos te evitará complicar la interfaz sin añadir ninguna funcionalidad.&lt;/p&gt;
-
-&lt;h3 id=&quot;variables-pasadas&quot;&gt;Variables pasadas&lt;/h3&gt;
-
-&lt;p&gt;Similar al caso anterior, si tienes una variable que recibes en la llamada de tu módulo y no haces nada con ella mas que pasarla a una capa inferior, estás mezclando las abstracciones entre capas.&lt;/p&gt;
-
-&lt;p&gt;A veces son necesarias, pero el manejarlas crea complejidad. Dependiendo del paradigma y el lenguaje de programación deberías buscar una solución adecuada.&lt;/p&gt;
-
-&lt;p&gt;Por ejemplo, en lenguajes orientados a objetos podrías guardar todos lo valores a los que necesitas constante acceso desde diferentes lugares un una variable de “contexto” y que generalmente está almacenada en un lugar en el que todas tus funciones puedan acceder. Algunos frameworks usan su variable de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;settings&lt;/code&gt; para poner información necesaria ahí.&lt;/p&gt;
-
-&lt;p&gt;Los siguientes dos consejos tratan más los diferentes niveles de código que capas del sistema.&lt;/p&gt;
-
-&lt;h3 id=&quot;evita-lo-más-que-puedas-los-decoradores&quot;&gt;Evita lo más que puedas los decoradores&lt;/h3&gt;
-
-&lt;p&gt;Ousterhout habla en contra del patrón decorador. Este patrón consiste en envolver clases, objetos o funciones con otros, con el fin de extender la funcionalidad. Los decoradores intentan mantener una interfaz muy similar o exactamente igual al elemento original.&lt;/p&gt;
-
-&lt;p&gt;Un ejemplo es la clase de Java &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BufferedInputStream&lt;/code&gt; es un decorador de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;InputStream&lt;/code&gt;, añadiéndole el buffering.&lt;/p&gt;
-
-&lt;p&gt;Los decoradores pueden crear un montón de funciones y variables de pasada y agregar un montón de código de soporte sin de verdad agregar tanta funcionalidad como código.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;APoSD&lt;/strong&gt; (el libro) sugiere crear entidades separadas cuando sea posible y evitar el sobreuso de este patrón, a menos que de verdad tenga sentido, por ejemplo: cuando tienes un módulo muy profundo que con un decorador vas a poder reutilizar todo con muy poco código de soporte.&lt;/p&gt;
-
-&lt;h3 id=&quot;abstracciones-diferentes-entre-la-interfaz-y-la-implementación&quot;&gt;Abstracciones diferentes entre la interfaz y la implementación&lt;/h3&gt;
-
-&lt;p&gt;Tu código debería de exponer en su interfaz la abstracción más conveniente para los usuarios de tu módulo, sin importar las abstracciones más convenientes para manejar los datos internamente.&lt;/p&gt;
-
-&lt;p&gt;Por este principio, es muy normal que las abstracciones de la interfaz no sean las mismas interfaces que tu implementación usa.&lt;/p&gt;
-
-&lt;p&gt;Un ejemplo: imagina que estás escribiendo un componente que te permite editar texto. &lt;strong&gt;¿Cuál es la unidad básica con la que el usuario de tu módulo interactuará?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Puede ser un carácter, una línea, un párrafo. Ya que tu la visualización del texto es en líneas, lo más conveniente para la implementación es una abstracción que represente una línea de texto.&lt;/p&gt;
-
-&lt;p&gt;Pero para el usuario de la clase que maneja texto lo más conveniente es una interfaz que use carácteres porque es más fácil de usar, se quita la responsabilidad de manejar las líneas.&lt;/p&gt;
-
-&lt;p&gt;Entonces tu clase queda así: internamente representa el texto como un conjunto de líneas, pero las interfaces lo usan como si fuera un conjunto de caractéres en los que puedes insertar y borrar sin preocuparte por la organización en líneas.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;La separación en capas permitirá que tu código esté mejor organizado y que sea más fácil de entender. Tener cuidado con la forma en que las capas se organizan, cómo se dividen responsabilidades y las interfaces que cada capa expone hará mucho más mantenible y entendible tu base de código.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Resuelve problemas de organización de código mediante un sistema en capas.</summary></entry><entry><title type="html">¿Qué son los modelos generativos?</title><link href="https://blog.thedojo.mx/2020/08/01/que-son-los-modelos-generativos.html" rel="alternate" type="text/html" title="¿Qué son los modelos generativos?" /><published>2020-08-01T00:00:00-05:00</published><updated>2020-08-01T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/08/01/que%20son-los-modelos-generativos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/08/01/que-son-los-modelos-generativos.html">&lt;p&gt;Los modelos generativos permiten a una máquina “aprender” los patrones que existen en los datos con los que son entrenadas y a partir de dicho aprendizaje, son capaces de generar datos similares que en algunos casos pueden ser casi tan “reales” como los que se utilizaron inicialmente para su entrenamiento.&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vCzMLeq_eBk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="video" /><category term="data-science" /><category term="books" /><category term="libros" /><summary type="html">En este post te contamos sobre algunos libros que te pueden servir para avanzar en tu carrera.</summary></entry><entry><title type="html">¿Qué son los modelos generativos?</title><link href="https://blog.thedojo.mx/2020/12/30/que-son-los-modelos-generativos.html" rel="alternate" type="text/html" title="¿Qué son los modelos generativos?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/que%20son-los-modelos-generativos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/que-son-los-modelos-generativos.html">&lt;p&gt;Los modelos generativos permiten a una máquina “aprender” los patrones que existen en los datos con los que son entrenadas y a partir de dicho aprendizaje, son capaces de &lt;strong&gt;generar datos similares&lt;/strong&gt; que en algunos casos pueden ser casi tan “reales” como los que se utilizaron inicialmente para su entrenamiento.&lt;/p&gt;
 
 &lt;p&gt;Mediante este tipo de modelos pueden generarse nuevos datos que tienen distintas aplicaciones, entre ellas, generar datos que otros sistemas de aprendizaje podrán utilizar para su entrenamiento, sin necesidad de que dichos datos existan previamente.&lt;/p&gt;
 
-&lt;p&gt;En particular, las Redes Neronales Generativas Adversariales (GANs) pueden generar nuevas imágenes que se parecen o son similares a las imágenes con las que fueron entrenadas, pero que individualmente son distintas a todas ellas.&lt;/p&gt;
+&lt;p&gt;En particular, las &lt;strong&gt;Redes Neuronales Generativas Adversariales (GAN’s)&lt;/strong&gt; pueden generar nuevas imágenes que se parecen o son similares a las imágenes con las que fueron entrenadas, pero que individualmente son distintas a todas ellas.&lt;/p&gt;
 
 &lt;p&gt;El funcionamiento de una Red Neuronal Adversarial consiste en la operación simultánea de dos redes neuronales que son “adversarias”, una de dichas redes es la encargada de generar imágenes y la segunda es la encargada de discriminar aquellas imágenes que no se parecen a lo que constituye una imágen real.&lt;/p&gt;
 
@@ -319,13 +343,15 @@ En los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la 
 
 &lt;p&gt;Como parte de un proyecto de investigación, utilizamos una red adversarial para generar imágenes de zapatos, dichas redes utilizan, modelos convolucionales para ir entendiendo las imágenes en segmentos cada vez más pequeños hasta tener una definición y similitud suficiente para reemplazar la imagen original.&lt;/p&gt;
 
-&lt;p&gt;Como podemos ver en esta secuencia de imágenes, la calidad de los modelos generados se incrementa conforme el número de iteraciones va aumentando, en general, se van almacenando nuevas muestras de las imágenes generadas cada cierto número de iteraciones de tal forma se puede observar si el modelo sigue mejorando, si ya se estancó o si se está degradando, aunque existen algunas métricas que pueden ayudar a identificar el punto óptimo donde puede detenerse el entrenamiento.&lt;/p&gt;
+&lt;p&gt;La calidad de los modelos generados se incrementa conforme el número de iteraciones va aumentando, en general, se van almacenando nuevas muestras de las imágenes generadas cada cierto número de iteraciones de tal forma se puede observar si el modelo sigue mejorando, si ya se estancó o si se está degradando, aunque existen algunas métricas que pueden ayudar a identificar el punto óptimo donde puede detenerse el entrenamiento.&lt;/p&gt;
 
 &lt;p&gt;Algunas de las peculiaridades de estos modelos es que son relativamente sensibles a la uniformidad y el número de imágenes utilizadas, sin embargo, también es cierto que los modelos han ido mejorando y en algunos casos pueden generar imágenes de gran calidad con menos datos de entrenamiento. Por ejemplo, estas imágenes fueron generadas con sólo 500 datos de entrenamiento mediante un Modelo Generador Adversarial Eficiente:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/mit-han-lab/data-efficient-gans&quot;&gt;Data Efficient GANs&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;usos-de-los-generadores-adversariales&quot;&gt;Usos de los generadores adversariales&lt;/h2&gt;
+
+&lt;p&gt;Hablemos de algunos de los usos que pueden tener en la práctica este tipo de redes.&lt;/p&gt;
 
 &lt;h3 id=&quot;mejorar-la-seguridad&quot;&gt;Mejorar la seguridad&lt;/h3&gt;
 
@@ -337,701 +363,269 @@ En los sistemas más comunes, como el de 3 capas (MVC, MVT, MV*), sólamente la 
 
 &lt;h3 id=&quot;en-el-sector-de-medios-digitales&quot;&gt;En el sector de medios digitales&lt;/h3&gt;
 
-&lt;p&gt;Como hemos visto generadores adversariales pueden utilizarse para generar imágenes que no existían o generar imágenes a partir de un conjunto de imágenes preexistentes, dicha generación puede de igual forma generar modelos en tercera dimensión a partir de imágenes en dos dimensiones o hacer combinaciones de modelos preexistentes. Esto puede usarse como material para la producción de contenido visual e incluso animaciones de video o bien como inspiración para que un diseñador genere nuevos personajes.&lt;/p&gt;
+&lt;p&gt;Ya que generadores adversariales pueden utilizarse para generar imágenes que no existían o generar imágenes a partir de un conjunto de imágenes preexistentes, dicha generación puede de igual forma generar modelos en tercera dimensión a partir de imágenes en dos dimensiones o hacer combinaciones de modelos preexistentes.&lt;/p&gt;
 
-&lt;p&gt;Algunos generadores pueden ayudar a corregir defectos en imágenes, removiendo o completando partes de la imágen que sobraban o que estaban faltantes, o si es el caso, a dar color a imágenes en blanco y negro. De igual forma permiten crear una “interpolación” de imágenes para “regenerarlas” en una mayor resolución. Desde luego la eficacia dependerá de las imágenes utilizadas para su entrenamiento.&lt;/p&gt;
+&lt;p&gt;Esto puede usarse como material para la producción de contenido visual e incluso animaciones de video o bien como inspiración para que un diseñador genere nuevos personajes.&lt;/p&gt;
 
-&lt;p&gt;Algunas de estas aplicaciones pueden “traducir” las imágenes de un dominio a otro, por ejemplo, convirtiendo una imágen satelital en un mapa de niveles o generando fotografías a partir de bosquejos.&lt;/p&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><summary type="html">En este artículo exploramos qué es un modelo generativo, cómo te pueden servir y el estado del arte en este campo.</summary></entry><entry><title type="html">Traducción automática: API’s vs tu propio modelo</title><link href="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html" rel="alternate" type="text/html" title="Traducción automática: API’s vs tu propio modelo" /><published>2020-07-19T00:00:00-05:00</published><updated>2020-07-19T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/19/traduccion-automatica-de-textos-un-caso-practico.html">&lt;p&gt;Traducir texto es una tarea frecuente y que puede realizarse de diferentes maneras, en este artículo queremos explorar algunas de ellas.&lt;/p&gt;
+&lt;p&gt;Algunos generadores pueden ayudar a corregir defectos en imágenes, removiendo o completando partes de la imágen que sobraban o que estaban faltantes, o si es el caso, a dar color a imágenes en blanco y negro.&lt;/p&gt;
 
-&lt;p&gt;Existen sitios donde la traducción puede hacerse en línea, como en &lt;a href=&quot;https://translate.google.com.mx/?hl=es&quot;&gt;Google Translate&lt;/a&gt;, sin embargo, en muchos casos existe un límite en la cantidad de texto que puedes traducir.&lt;/p&gt;
+&lt;p&gt;De igual forma permiten crear una “interpolación” de imágenes para “regenerarlas” en una mayor resolución. Desde luego la eficacia dependerá de las imágenes utilizadas para su entrenamiento.&lt;/p&gt;
 
-&lt;p&gt;También puedes utilizar &lt;strong&gt;APIs que pueden ayudarte a hacer dicho trabajo&lt;/strong&gt;, dichas APIs también tiene límites por traducción.&lt;/p&gt;
-
-&lt;p&gt;Una solución que nos resulta interesante es la traducción utilizando algún modelo de &lt;strong&gt;Aprendizaje de Máquina&lt;/strong&gt; que ya haya sido previamente entrenado.  En este artículo podrás explorar estos diferentes métodos y el código que podrías utilizar para llevarlo a cabo, entendiendo las ventajas y desventajas que cada método ofrece.&lt;/p&gt;
-
-&lt;p&gt;Hablemos de los diferentes métodos.&lt;/p&gt;
-
-&lt;h2 id=&quot;interfaz-gráfica&quot;&gt;Interfaz gráfica&lt;/h2&gt;
-
-&lt;p&gt;Google Translate te permite traducir 5,000 palabras a la vez en su interfaz. Si lo vas a hacer pocas veces y los textos no rebasan esa cantidad de palabras, ¿para qué construir algo?&lt;/p&gt;
-
-&lt;p&gt;Esta opción nos recuerda que a veces la mejor solución es que no programemos nada.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Ventajas&lt;/strong&gt;: Inmediata, fácil de usar y sin costo.
-&lt;strong&gt;Desventajas&lt;/strong&gt;: Requiere intervención humana cada que se tenga que traducir algo.&lt;/p&gt;
-
-&lt;h2 id=&quot;apis&quot;&gt;API’s&lt;/h2&gt;
-
-&lt;p&gt;Si quieres automatizar las tareas de traducción para integrarlas en un sistema más grande o generar salidas que se queden almacenadas en archivos o bases de datos, una solución es crear un programa que consuma una API de traducción.&lt;/p&gt;
-
-&lt;p&gt;Algunas opciones son:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Cloud Translation&lt;/strong&gt; de Google Cloud Platform. Tiene dos niveles de traducción: el básico que soporta el modelo tradicional de traducción y el avanzado que permite customizar los modelos de traducción además de incluir glosarios y otras monerías.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.ibm.com/watson/services/language-translator/&quot;&gt;Watson Language Translator&lt;/a&gt; permite traducir una gran cantidad de formatos de texto en muchos lenguajes. La única desventaja es que las API’s de IBM no son las más hermosas y en general sus sitemas de administración fallan bastante.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Otras&lt;/strong&gt;. En &lt;a href=&quot;https://rapidapi.com/collection/google-translate-api-alternatives&quot;&gt;RapidAPI&lt;/a&gt; puedes encontrar una colección actualizada de las alternativas a Google Translation API.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Para desarrollar esta pieza de software, lo más recomendable sería crear un wrapper alrededor de la API y exponer a las demás partes del programa sólo los métodos para poder realizar la tarea de traducción, abstrayendo completamente los detalles de cómo se realiza. De esta manera podrías cambiar de API fácilmente (implementando las llamadas a la nueva API) sin irrumpir en la mayoría del programa.&lt;/p&gt;
-
-&lt;p&gt;Además esta forma de hacerlo también sería compatible con el siguiente método:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;AutoML Translation&lt;/strong&gt;. Pertenece también a GCP y permite entrenar un modelo mediante el envío de pares de frases para entrenar un modelo que posteriormente puedes usar para hacer traducciones sobre un dominio específico. Es el que más trabajo implicaría de tu parte pero es el que más flexibilidad de tiene.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;ventajas&quot;&gt;Ventajas&lt;/h3&gt;
-
-&lt;p&gt;Puedes olvidarte completamente de los detalles de implementación de la traducción, del hosting y mantenimiento de esta parte y probablemente las traducciones son muy precisas, como estamos acostumbrados a las de Google.&lt;/p&gt;
-
-&lt;h3 id=&quot;desventajas&quot;&gt;Desventajas&lt;/h3&gt;
-
-&lt;p&gt;Generalmente esta comodidad viene un costo económico que varía dependiendo del uso. La flexibilidad y capacidad de configuración de las API’s es variada y si no funciona como esperas es muy probable que no puedas hacer nada por mejorar la traducción.&lt;/p&gt;
-
-&lt;h2 id=&quot;modelo-pre-entrenado-de-aprendizaje-de-máquina&quot;&gt;Modelo pre-entrenado de Aprendizaje de Máquina&lt;/h2&gt;
-
-&lt;p&gt;Los modelos de Aprendizaje Profundo que se han desarrollado de manera importante en los últimos años han sustituido los modelos previos que utilizaban el conocimiento de lingüistas y décadas de investigación estadística.&lt;/p&gt;
-
-&lt;p&gt;Una peculiaridad de un modelo de Aprendizaje Profundo es que logra detectar patrones de uso de los lenguajes y utilizar dichos patrones para realizar la traducción de uno a otro. Dichos patrones no tienen una representación equivalente de una palabra en un idioma a otra en un idioma distinto, sino que combinan los patrones internos de uso de las palabras en un idioma y después aplican los patrones que el otro idioma utilizaría. Eso hace que los traductores que utilizan aprendizaje profundo sean mucho más precisos y que las traducciones sean mucho más naturales, además de que pueden adaptarse a casos de uso específicos que los modelos anteriores no contemplaban. ¿Por qué? Porque podemos entrenarlos utilizando un conjunto de datos de entrenamiento que se enfoquen en un dominio específico del lenguaje (ej. traducción de subtítulos de películas, o traducción de textos técnicos).&lt;/p&gt;
-
-&lt;p&gt;A pesar de ello, uno de los impedimentos más relevantes para su entrenamiento es que hasta hace algunos años, entrenar un modelo requería grandes cantidades de cómputo y memoria, cosa que ha ido cambiando conforme la industria ha ido evolucionando y los principales proveedores de cómputo han puesto a disposición del mundo, plataformas en la nube donde puede adquirirse poder computacional y de procesamiento de manera sencilla (AWS, Google, Microsoft, IBM, Oracle, etc.). De igual forma, las compañías que crean procesadores especializados (NVIDIA, AMD) también han logrado reducir los costos y poner en manos de cada vez más desarrolladores, tarjetas de video con Unidades de Procesamiento Gráfico (GPUs) a precios cada vez más accesibles.&lt;/p&gt;
-
-&lt;p&gt;El modelo genérico de un sistema de traducción basado en Aprendizaje de Máquina consta de dos piezas principales (cada una de ellas una red neuronal por sí misma):&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Un  codificador de secuencias de palabras (que serían oraciones del texto) que aprende a codificar palabras como un arreglo de números que representa el significado de la oración.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Un decodificador de números, que toma un arreglo de números en general y los transforma en oraciones.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;La peculiaridad es que en el paso 1 obtenemos ese arreglo de números utilizando el lenguaje de orígen y la decodificación la hacemos hacia el lenguaje destino.&lt;/p&gt;
-
-&lt;p&gt;Para poder capturar los patrones y relaciones que existen entre las palabras en una oración, es necesario que la red neuronal cuente con la capacidad de recordar las palabras dentro de una oración, ya que las relaciones de una palabra cualquiera serán mucho más fuertes con ciertas palabras que con otras, por ejemplo la relación entre “la” y “relación” será mucho más fuerte que “él” y “relación”, no esperaríamos poder encontrar un texto donde “él” y “relación” estén presentes en dicho orden específico.&lt;/p&gt;
-
-&lt;p&gt;Esta capacidad de “recordar” de una red neuronal no existe en una red neuronal tradicional, donde las entradas pasan y son procesadas por todas las capas de la red sin hacer referencia a las palabras que pasaron antes o las palabras que pasaron después, por ello es que estos algoritmos utilizan un tipo de red neuronal llamado recurrente donde la última entrada influye en la siguiente predicción, esto permite a la red neuronal recurrente “aprender” el “significado” de cada palabra dentro de un contexto.&lt;/p&gt;
-
-&lt;p&gt;En tiempos recientes, se han mejorado los modelos de procesamiento del “significado” de las palabras dentro de un contexto utilizando Transformadores que van incluso más allá del simple contexto de una palabra dentro de una oración, modelando las relaciones cruzadas entre cualquier palabra (previa o posterior) en vez de considerar únicamente el orden.&lt;/p&gt;
-
-&lt;p&gt;Estos modelos requieren mucho más operaciones matemáticas durante su entrenamiento pero los patrones que pueden identificar las hacen mucho más poderosas, aún así los modelos de recurrentes arrojan resultados bastante aceptables.&lt;/p&gt;
-
-&lt;p&gt;Existen casos en particular donde no es necesario entrenar tu propia red neuronal recurrente, ya que es probable que alguien más lo haya hecho ya. Esto puede ahorrarte muchas horas de procesamiento de información y el entrenamiento y validación del proceso de entrenamiento.&lt;/p&gt;
-
-&lt;p&gt;El proceso que se sigue es:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Obtener un corpus o conjunto de datos sobre el problema que quieres resolver (por ejemplo, textos en el idioma de origen y en el idioma destino.&lt;/li&gt;
-  &lt;li&gt;Limpieza y normalización de este corpus que remueva errores o piezas de los textos que sean incompletas o por ejemplo se puede decidir utilizar todas las palabras en minúsculas, separar las oraciones por ciertos símbolos de puntuación, etc. estas decisiones deberán tomarse teniendo en cuenta los objetivos para los cuales utilizaremos nuestro modelo de traducción, no es lo mismo un traductor de textos formateados de manera regular a textos que por ejemplo se vayan a utilizar como subtítulos para películas. Los pasos que normalmente se utilizarán tendrán como mínimo, código para separar las oraciones, y normalizar el texto.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;utilizando-un-modelo-de-traducción-prefabricado&quot;&gt;Utilizando un modelo de traducción prefabricado&lt;/h3&gt;
-
-&lt;p&gt;Si quieres experimentar con este tipo de modelos te recomiendo empezar por el uso de un modelo pre-entrenado y dependiendo de los resultados evaluar si es necesario entrenar uno especializado en la tarea que estás buscando resolver.&lt;/p&gt;
-
-&lt;p&gt;Aunque hay varios modelos disponibles, te dejo la liga a un framework hecho en C++ y que tiene un número mínimo de dependencias, se llama &lt;a href=&quot;https://marian-nmt.github.io/quickstart/&quot;&gt;Marian Neural Machine Translation&lt;/a&gt; y como parte de sus peculiaridades es que es eficiente, puede utilizar varios procesadores gráficos para el entrenamiento y soporta el uso de CPU o GPU para la traducción (al poder utilizar sólo CPU hace que el modelo pueda utilizarse en computadoras que no tienen tantos recursos).&lt;/p&gt;
-
-&lt;p&gt;Y aquí hay un modelo pre-entrenado que puede utilizarse para traducciones de español a inglés: &lt;a href=&quot;https://github.com/ageitgey/spanish-to-english-translation&quot;&gt;Spanish to English Translation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Si tuvieras necesidad de entrenar la red neuronal sería necesario que tuvieras datos paralelos, es decir el mismo texto en los dos idiomas entre los cuales quieres hacer la traducción. Aquí te dejamos la liga a uno de ellos: &lt;a href=&quot;http://opus.nlpl.eu/&quot;&gt;The open parallel corpus&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;ventajas-1&quot;&gt;Ventajas&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Puede adaptarse mediante el entrenamiento, a un estilo o tipo específico de textos (textos científicos, técnicos, informales, subtítulos, etc.)&lt;/li&gt;
-  &lt;li&gt;Puede utilizarse en modo “offline” sin necesidad de estar conectado a alguna fuente externa de internet.&lt;/li&gt;
-  &lt;li&gt;No tiene costos o límites de uso, más que aquellos resultado de operar el modelo una vez entrenado (y de entrenarlo si fuera necesario hacerlo).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;desventajas-1&quot;&gt;Desventajas&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Entrenarlo requiere una gran cantidad de datos y un proceso de limpieza/normalización que no son técnicamente sencillos.&lt;/li&gt;
-  &lt;li&gt;Es probable que no sea sencillo alcanzar el nivel de entrenamiento que las grandes compañías han utilizado para entrenar sus propios modelos (porque seguramente tienen fuentes bastante grandes de datos/procesadores gráficos/etc).&lt;/li&gt;
-  &lt;li&gt;Escalarlo para su uso masivo puede ser todo un reto.&lt;/li&gt;
-  &lt;li&gt;Las redes neuronales son cajas negras por lo que si se detecta algún error en la traducción normalmente será muy difícil saber en qué parte de los datos de entrenamiento se introdujo el error y por lo tanto será difícil removerlo.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;En el siguiente artículo te contaremos cómo nos fue con las pruebas.&lt;/p&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="apis" /><category term="machine-learning" /><category term="AI" /><summary type="html">Exploremos las opciones que tienes para realizar traducciones automáticas de texto en tus proyectos.</summary></entry><entry><title type="html">De Bash a Zsh</title><link href="https://blog.thedojo.mx/2020/07/16/de-bash-a-zsh.html" rel="alternate" type="text/html" title="De Bash a Zsh" /><published>2020-07-16T00:00:00-05:00</published><updated>2020-07-16T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/16/de-bash-a-zsh</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/16/de-bash-a-zsh.html">&lt;p&gt;Con la reciente liberación de MacOS Catalina, Apple anunció que entre alguno de los cambios al sistema operativo, se utilizará a partir de esta versión un nuevo &lt;em&gt;shell&lt;/em&gt; que de manera regular se utilizaba en la app Terminal y en otras aplicaciones utilizadas por los desarrolladores para interactuar con la Mac a través de la línea de comandos.&lt;/p&gt;
-
-&lt;p&gt;El shell que se utilizaba previo a esta versión era &lt;strong&gt;Bash&lt;/strong&gt; (&lt;em&gt;Bourne Again Shell&lt;/em&gt;) y el que se utilizará ahora es &lt;strong&gt;Zsh&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-un-shell&quot;&gt;¿Qué es un shell?&lt;/h2&gt;
-
-&lt;p&gt;En resumen, un shell es un programa que permite &lt;strong&gt;controlar la computadora a través de comandos de texto&lt;/strong&gt;, normalmente se trata de interfaces de texto interactivo, donde el usuario podrá ir &lt;strong&gt;tecleando comandos para obtener información&lt;/strong&gt; o ejecutar comandos y obtener resultados a través de la misma interfaz.&lt;/p&gt;
-
-&lt;p&gt;A lo largo de la historia se han creado diferentes shells, cada uno con una serie de comandos que ponen a disposición de los usuarios &lt;strong&gt;funcionalidades específicas&lt;/strong&gt; de sus sistemas operativos. ¿Y porqué estaría alguien interesado en usar un shell y una línea de comandos para controlar una computadora? Para entenderlo hay que viajar un poco en el tiempo.&lt;/p&gt;
-
-&lt;h3 id=&quot;historia&quot;&gt;Historia&lt;/h3&gt;
-
-&lt;p&gt;Inicialmente, controlar una computadora era una tarea difícil, las primeras de ellas se controlaban mediante diferentes dispositivos (interruptores, tarjetas perforadas, etc.) que “cargaban” en memoria las distintas piezas de información que serían procesados en forma de programas. Este proceso era regularmente &lt;strong&gt;tedioso y sujeto a errores&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;En algunos casos, el primer programa que se cargaba en memoria era un programa que permitía cargar instrucciones adicionales a través de la lectura de datos en las mismas tarjetas perforadas. De igual forma, los resultados de la ejecución normalmente se plasmaban en papel o tarjetas similares a las que se utilizaban para su carga.&lt;/p&gt;
-
-&lt;p&gt;Conforme fueron evolucionando los computadores, los programas permitieron el uso de dispositivos de entrada más amigables para el usuario de la computadora, como Teletipos, que permitían enviar comandos desde teclados y terminales remotas al ordenador (remoto en un sentido práctico, quizás de un cuarto a otro). Esta forma de transmitir comandos y obtener resultados era mucho más sencilla que estar cargando información a través de interruptores o tarjetas perforadas.&lt;/p&gt;
-
-&lt;p&gt;La pregunta natural es: si esto fue la primer evolución hacia un uso más sencillo de las computadoras, &lt;strong&gt;¿por qué se sigue utilizando?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Aunque la evolución de las computadoras ha seguido su curso y la interacción Humano-Computador ha avanzado en diferentes vertientes, por ejemplo, &lt;strong&gt;mediante la implementación de interfaces gráficas&lt;/strong&gt;, el uso de la interfaz de línea de comandos se ha mantenido vigente por diversas razones:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Por su &lt;strong&gt;versatilidad&lt;/strong&gt;, es posible utilizarlo para resolver distintos tipos de problemas y con distintos tipos de opciones que harían muy difícil su integración completa en una interfaz gráfica.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Por su &lt;strong&gt;poder&lt;/strong&gt;, al tener acceso a las funciones centrales del sistema operativo, también contempla casos de uso para los cuales las interfaces gráficas no están preparados.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Permite crear programas que hacen uso de las capacidades nativas y extendidas del sistema operativo y ejecutar dichos programas o scripts en distintas modalidades, por ejemplo, de manera repetitiva a través de trabajos programados (cron jobs) o en conjunto con otros programas (por ejemplo con ambientes de desarrollo integrados). A esto le podemos llamar &lt;strong&gt;automatización de tareas&lt;/strong&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;El programa de shell específico (en este caso Bash o Zsh), definen su interfaz con el usuario, no sólo en la manera en la que presentarán la linea de comando sino también en las &lt;strong&gt;capacidades y comandos que soportan de manera nativa&lt;/strong&gt;, en general, podemos encontrar algunas de estas características:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Una sintaxis que define los comandos y secuencias de comando que el shell ‘entenderá’.&lt;/li&gt;
-  &lt;li&gt;Comandos que darán acceso a las ‘operaciones’ que el shell puede ejecutar .&lt;/li&gt;
-  &lt;li&gt;Funciones que permiten agrupar comandos para ejecutar labores más complejas.&lt;/li&gt;
-  &lt;li&gt;Parámetros para almacenar valores para su uso durante la ejecución de las funciones y comandos.&lt;/li&gt;
-  &lt;li&gt;Expansión que define la forma en la que los parámetros en un comando son aplicados.&lt;/li&gt;
-  &lt;li&gt;Flujo y redirección que controla las entradas y salidas de y desde los comandos.&lt;/li&gt;
-  &lt;li&gt;Ejecución que define lo que sucede cuando cada comando corre.&lt;/li&gt;
-  &lt;li&gt;Scripting que permite ejecutar archivos que contienen una lista de comandos y/o funciones.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;porqué-razón-puede-estar-cambiando-apple-de-un-shell-a-otro&quot;&gt;¿Porqué razón puede estar cambiando Apple de un shell a otro?&lt;/h2&gt;
-
-&lt;p&gt;Existen varias posibilidades, la primera de ellas es que aunque Apple utiliza Bash desde OSX Jaguar, no había actualizado Bash desde la versión 3.2 liberada en el 2007, es decir casi el mismo año en el que se liberó el primer iPhone. Es probable que una de las razones por las que esto sucedió fue que Bash cambió su licencia de uso de &lt;strong&gt;GNU GPL 2 a una licencia GNU GPLv3&lt;/strong&gt;, y dicho cambio incluía restricciones que quizás no fueron del todo favorables a Apple.&lt;/p&gt;
-
-&lt;p&gt;Así que migrar a Zsh es una opción refrescante. La versión que está incluida en Catalina es la 5.7.1 y utiliza una versión de licenciamiento &lt;strong&gt;MIT que es menos restrictiva que la GPLv3&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-sucederá-con-bash-tendré-que-dejar-de-usarlo&quot;&gt;¿Qué sucederá con Bash, tendré que dejar de usarlo?&lt;/h2&gt;
-
-&lt;p&gt;No necesariamente, aunque Zsh será el shell por default para todas las nuevas cuentas de usuario creadas en macOS Catalina, si tu hiciste un upgrade del Sistema Operativo, tu cuenta seguirá utilizando por default Bash. Pero siempre tendrás opción de configurar el shell que desees por default de manera voluntaria, incluso a alguno distinto a Zsh o Bash.&lt;/p&gt;
-
-&lt;p&gt;A nivel general, Bash y Zsh tienen un nivel de compatibilidad bastante alto ya que &lt;strong&gt;ambos están basados en el aún más antiguo Bourne Shell&lt;/strong&gt;, de tal forma que la mayoría de los scripts y comandos existentes funcionarán sin ningún cambio en Zsh.&lt;/p&gt;
-
-&lt;p&gt;La ventaja real de Zsh es la inclusión de funcionalidades que hacen trabajar con él más fácil (funcionalidades no incluidas por default en la versión vieja de Bash), entre algunas de mis funcionalidades favoritas están:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Auto completado de comandos&lt;/li&gt;
-  &lt;li&gt;Auto corrección de comandos&lt;/li&gt;
-  &lt;li&gt;Integración con algunos sistemas de uso común para desarrolladores (git)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;qué-sucederá-con-mis-scripts-hechos-en-bash&quot;&gt;¿Qué sucederá con mis scripts hechos en Bash?&lt;/h2&gt;
-
-&lt;p&gt;En general, correrán de igual forma a como lo venían haciendo, sin embargo en casos muy peculiares podrías requerir modificarlos o simplemente agregar #!/bin/bash (&lt;em&gt;shebang&lt;/em&gt;) para forzar a que el script utilice el shell de Bash que sigue incluyéndose en MacOS.&lt;/p&gt;
-
-&lt;p&gt;Puedes usar temporalmente uno u otro shell simplemente invocando su nombre en la línea de comandos (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zsh&lt;/code&gt; o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bash&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;En la Mac, podrás configurar el shell default en las Preferencias del Sistema, en el panel de Usuarios y Grupos, podrás seleccionar la cuenta de un usuario y en las Opciones Avanzadas podrás seleccionar uno de los shells disponibles.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión-y-referencias&quot;&gt;Conclusión y referencias&lt;/h2&gt;
-
-&lt;p&gt;Dominar tu shell &lt;strong&gt;hará que tu trabajo diario sea más sencillo&lt;/strong&gt; ya que podrás configurar funcionalidades que aumenten tus capacidades como desarrollador y en conjunto con el conocimiento a profundidad de tu interfaz de desarrollo, podrá hacerte mucho más eficiente al momento de administrar y ejecutar comandos que tengan que ver con tus proyectos.&lt;/p&gt;
-
-&lt;p&gt;Algunos recursos que te ayudarán:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;La &lt;a href=&quot;http://zsh.sourceforge.net/&quot;&gt;documentación de Zsh&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Configuración Zsh es mediante &lt;a href=&quot;https://ohmyz.sh/&quot;&gt;Oh My Zsh&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;¿Donde se configuran las funcionalidades de Zsh? En &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.zshrc&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;¿Cómo  saber que shell estoy usando?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$0&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;o&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$SHELL&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Cómo configurar Zsh como mi shell default?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chsh &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; /bin/zsh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Cómo activar el autocomplete?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;autoload &lt;span class=&quot;nt&quot;&gt;-U&lt;/span&gt; compinit &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; compinit
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Cómo activar la extensión para git?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;autoload &lt;span class=&quot;nt&quot;&gt;-Uz&lt;/span&gt; vcs_info
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Cómo configurar el cambio de directorio automático?
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;setopt autocd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;referencias&quot;&gt;Referencias&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.bash.academy/&quot;&gt;Bash academy&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/item?id=10737639&quot;&gt;Discusión en YCombinator&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.rayninfo.co.uk/tips/zshtips.html?LMCL=bNg6o6&quot;&gt;Zsh tips&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://leahneukirchen.org/blog/archive/2008/02/10-zsh-tricks-you-may-not-know.html&quot;&gt;10 trucos de Zsh&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://zsh.sourceforge.net/Guide/zshguide.html&quot;&gt;Zsh Guide&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.tldp.org/LDP/abs/html/&quot;&gt;Advanced Bash-Scripting Guide&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://matt.might.net/articles/bash-by-example/&quot;&gt;Bash by example&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Libro: &lt;a href=&quot;https://amzn.to/32phs95&quot;&gt;From Bash to Zsh&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="shell" /><category term="zsh" /><category term="bash" /><category term="terminal" /><summary type="html">Zsh es el nuevo shell default de MacOS Catalina. Entiende las principales diferencias entre Bash y Zsh.</summary></entry><entry><title type="html">Recursos para aprender Arquitectura de Software</title><link href="https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software.html" rel="alternate" type="text/html" title="Recursos para aprender Arquitectura de Software" /><published>2020-07-15T00:00:00-05:00</published><updated>2020-07-15T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/15/recursos-para-aprender-arquitectura-de-software.html">&lt;p&gt;Tuvimos una plática con &lt;a href=&quot;https://twitter.com/machinesareus&quot;&gt;Agustín Ramos&lt;/a&gt; acerca de la arquitectura de software y lo que debes aprender para practicarla. Este pequeño artículo incluye nuestro resumen y las recomendaciones de Agustín.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-la-arquitectura-de-software&quot;&gt;¿Qué es la arquitectura de software?&lt;/h2&gt;
-
-&lt;p&gt;La arquitectura del software incluye el &lt;strong&gt;diseño del sistema&lt;/strong&gt; a alto nivel: la descomposición del sistema en módulos, la descripción de las responsabilidades de cada uno y sus relaciones.&lt;/p&gt;
-
-&lt;p&gt;También incluye las prácticas y herramientas que permitirán que el proyecto cumpla con los &lt;strong&gt;atributos de calidad&lt;/strong&gt; o requerimientos no funcionales.&lt;/p&gt;
-
-&lt;p&gt;Todo lo anterior está basado en un análisis de las &lt;em&gt;funciones&lt;/em&gt; y &lt;em&gt;atributos de calidad&lt;/em&gt; del sistema.&lt;/p&gt;
-
-&lt;h1 id=&quot;el-proceso&quot;&gt;El proceso&lt;/h1&gt;
-
-&lt;p&gt;En la plática tocamos 5 etapas del desarrollo de una arquitectura:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Descubrimiento y definición de los atributos de calidad.&lt;/strong&gt; Básicamente consiste en entender el problema, escuchar a todos los involucrados en el proyecto y definir los atributos del software que no están directamente relacionados con la funcionalidad, pero que debe de cumplir.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Diseño del sistema.&lt;/strong&gt; Generalmente te ayudarás de estilos de arquitectura y patrones de diseño para llegar a los objetivos funcionales y no funcionales.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Validación del diseño.&lt;/strong&gt; Mediante la creación de prototipos se puede validar que las asunciones principales acerca del diseño y su relación con los atributos de calidad se cumplen. Esto puede derivar en &lt;em&gt;cambios&lt;/em&gt; sobre el diseño que lo mejoren.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Comunicación del diseño.&lt;/strong&gt; Después de definir la arquitectura es importante comunicar el diseño al equipo mediante un exposición directa y la documentación. Esta documentación debe incluir la mayor información posible sobre la razón de las decisiones y la evolución de la arquitectura.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Seguimiento del diseño.&lt;/strong&gt; Esto incluye varias cosas:&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;em&gt;Verificación de que el equipo está siguiendo el diseño.&lt;/em&gt; Esto se logra con revisiones constantes con el equipo: programación en parejas y revisión de código.&lt;/li&gt;
-      &lt;li&gt;&lt;em&gt;El diseño nunca está está escrito en piedra&lt;/em&gt;. Después de las revisiones de código se descubrirán cosas que no están funcionando como se esperaba, por lo que será necesario modificar el diseño y dejar registro de los cambios y las decisiones tomadas.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;consejos-específicos&quot;&gt;Consejos específicos&lt;/h2&gt;
-
-&lt;p&gt;Los arquitectos de software deben encontrar la solución más simple posible porque si no va a ser rígida.&lt;/p&gt;
-
-&lt;p&gt;Acerca de la &lt;strong&gt;documentación&lt;/strong&gt;, Agustín recomienda, exponerla al equipo en una junta y hacer un video de esto, que se le pase a cada integrante del equipo. Se puede seguir el marco llamado &lt;a href=&quot;https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf&quot;&gt;“Arquitectura 4 + 1”&lt;/a&gt; que se compone de:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Vista de Componentes&lt;/li&gt;
-  &lt;li&gt;Vista de Desarrollo&lt;/li&gt;
-  &lt;li&gt;Vista de Procesos&lt;/li&gt;
-  &lt;li&gt;Vista Física&lt;/li&gt;
-  &lt;li&gt;Vista de Casos (Este es el +1)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Además, tenemos que mantener una bitácora de los cambios y los factores que los impulsaron, esto puede ser mediante los &lt;a href=&quot;https://adr.github.io/&quot;&gt;Architectural Decision Records&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;cómo-empezar&quot;&gt;Cómo empezar&lt;/h2&gt;
-
-&lt;p&gt;Agustín nos recomendó algunos recursos para que empieces a aprender:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/179204.Object_Design?from_search=true&amp;amp;from_srp=true&amp;amp;qid=3yFmpRp03n&amp;amp;rank=6&quot;&gt;Object Design - Rebecca Wirfs-Brock&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/70143.Software_Architecture_in_Practice?from_search=true&amp;amp;from_srp=true&amp;amp;qid=mnXRSoVML7&amp;amp;rank=1&quot;&gt;Software Architecture in Practice&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Como alternativa al libro anterior  se recomienda Technical Report sobre arquitectura del Software Engineering Institute, encontré varios, tienes un ejemplo &lt;a href=&quot;https://pure.au.dk/portal/files/20484966/tech-report-5.pdf&quot;&gt;aquí&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://pragprog.com/titles/mkdsa/&quot;&gt;Design it! - Micheal Keeling&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;La serie &lt;a href=&quot;&quot;&gt;Pattern-orinted Software Architecture&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Para aprender patrones de diseño se habló de los siguientes libros:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com.mx/dp/0201633612?tag=amz-mkt-chr-mx-20&amp;amp;ascsubtag=1ba00-01000-a0087-mac00-other-nomod-mx000-pcomp-feature-scomp-wm-5&amp;amp;ref=aa_scomp&quot;&gt;Patrones de Diseño - Erich Gamma, et Al.&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Patterns-Handbook-Techniques-Strategies-Applications/dp/0521648181&quot;&gt;The patterns handbook&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;La serie &lt;a href=&quot;https://www.amazon.com.mx/Pattern-Languages-Program-Design-Coplien/dp/0201607344/ref=sr_1_3?dchild=1&amp;amp;keywords=Pattern+Languages+of+Program+Design&amp;amp;qid=1594823984&amp;amp;s=books&amp;amp;sr=1-3&quot;&gt;Pattern language of program design (5 libros)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Y entre los libros que se mencionan como la fuente de las ideas de patrones y diseño:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com.mx/Phenomenon-Life-Building-Nature-Universe/dp/0972652914/ref=pd_sim_14_1/132-2199838-9714154?_encoding=UTF8&amp;amp;pd_rd_i=0972652914&amp;amp;pd_rd_r=43c91cc2-6447-4629-a6d7-fb29dc8fd2d7&amp;amp;pd_rd_w=gNuac&amp;amp;pd_rd_wg=g8gOe&amp;amp;pf_rd_p=a62f455d-612d-4136-9fd7-44067fe2cd11&amp;amp;pf_rd_r=86FX03JZ655BENFVMSC0&amp;amp;psc=1&amp;amp;refRID=86FX03JZ655BENFVMSC0&quot;&gt;The nature of order de Christopher Alexander&lt;/a&gt; y los otros libros de él como &lt;a href=&quot;https://www.amazon.com.mx/Professor-Department-Architecture-Christopher-Alexander/dp/0195024028/ref=pd_sim_14_3/132-2199838-9714154?_encoding=UTF8&amp;amp;pd_rd_i=0195024028&amp;amp;pd_rd_r=c4dd6dad-be5f-4a11-a037-a4ecd8f56915&amp;amp;pd_rd_w=CYjKZ&amp;amp;pd_rd_wg=x61DA&amp;amp;pf_rd_p=a62f455d-612d-4136-9fd7-44067fe2cd11&amp;amp;pf_rd_r=JWAJ48WRNHYPDZ8RC2R1&amp;amp;psc=1&amp;amp;refRID=JWAJ48WRNHYPDZ8RC2R1&quot;&gt;A timeless way of building&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.com.mx/Art-Scalability-Architecture-Organizations-Enterprise/dp/0134032802/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;amp;dchild=1&amp;amp;keywords=the+art+of+scalability&amp;amp;qid=1594824264&amp;amp;s=books&amp;amp;sr=1-1&quot;&gt;The art of Scalability&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;el-capítulo&quot;&gt;El capítulo&lt;/h2&gt;
-
-&lt;p&gt;De todos modos no te pierdas el capítulo, que estuvo muy bueno:&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vfu5PsSH7us&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="podcast" /><category term="thedojomx" /><category term="arquitecturaarquitectura_de_software" /><category term="libros" /><summary type="html">¿Qué es la arquitectura de software y cómo puedes empezar a aprenderla? Aquí te damos un resumen de una plática muy interesante que tuvimos.</summary></entry><entry><title type="html">¿Qué es el pensamiento computacional?</title><link href="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html" rel="alternate" type="text/html" title="¿Qué es el pensamiento computacional?" /><published>2020-07-09T00:00:00-05:00</published><updated>2020-07-09T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional</id><content type="html" xml:base="https://blog.thedojo.mx/2020/07/09/que-es-el-pensamiento-computacional.html">&lt;p&gt;Todo lo relacionado con el &lt;strong&gt;pensamiento computacional&lt;/strong&gt; (la programación, la inteligencia artificial, las computadoras) ha estado muy presente en la mente de la sociedad, porque vivimos en un mundo en el que &lt;em&gt;cada aspecto de la vida&lt;/em&gt; se ha visto influenciado por lo que la computación permite.&lt;/p&gt;
-
-&lt;p&gt;En varios lugares del mundo se ha pensado que se debe agregar el pensamiento computacional a la educación básica que todos reciben, bajo la promesa de que mejorará en general la &lt;strong&gt;capacidad de pensar y resolver problemas&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Hablemos de qué es el pensamiento computacional y cómo te puede ayudar a comprender mejor el mundo creado con la ayuda de las computadoras.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-el-pensamiento-computacional&quot;&gt;¿Qué es el pensamiento computacional?&lt;/h2&gt;
-
-&lt;p&gt;No hay una definición clara, y todo el tiempo está cambiando lo que se entiende por este término, pero podemos dar una definición decente como la &lt;strong&gt;habilidad mental&lt;/strong&gt; y las prácticas que nos permiten &lt;em&gt;diseñar cálculos&lt;/em&gt; para que las computadoras realicen un trabajo.&lt;/p&gt;
-
-&lt;p&gt;Otra acepción es la capacidad de entender el mundo como un &lt;strong&gt;complejo de procesos de información&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Estas dos habilidades combinadas pueden ayudarte a resolver muchos problemas y a navegar mejor el mundo moderno.&lt;/p&gt;
-
-&lt;p&gt;Por ejemplo, para tener la capacidad de diseñar algoritmos para las computadoras modernas debes entender las bases del funcionamiento y eso necesariamente te llevará a entender sus &lt;strong&gt;limitaciones y fortalezas&lt;/strong&gt;, lo cuál te llevará a evitar que te engañen fácilmente.&lt;/p&gt;
-
-&lt;p&gt;Tener conocimiento de las capacidades además nos hace conscientes de lo que una empresa o gobierno con los suficientes recursos puede lograr en los campo de manipulación y colección de datos, inteligencia artificial, &lt;strong&gt;vigilancia&lt;/strong&gt;, seguridad e influencia sobre los pensamientos colectivos.&lt;/p&gt;
-
-&lt;p&gt;El pensamiento computacional ha avanzado en por lo menos &lt;strong&gt;seis áreas&lt;/strong&gt;. Veamos lo que estas abarcan.&lt;/p&gt;
-
-&lt;h2 id=&quot;métodos-computacionales&quot;&gt;Métodos computacionales&lt;/h2&gt;
-
-&lt;p&gt;Los matemáticos e ingenieros a lo largo de la historia han buscado desarrollar métodos para hacer &lt;strong&gt;más eficientes los cálculos y poder calcular más cosas automáticamente&lt;/strong&gt;. Esto ha permitido que calculemos cosas que en cierto tiempo se creían imposibles.&lt;/p&gt;
-
-&lt;p&gt;Gran parte del trabajo que se ha realizado está dedicado a que los cálculos se puedan realizar sin entendimiento e intuición. Es por eso que se han ido desarrollando áreas de las matemáticas que tienen que ver directamente con esto:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;La lógica&lt;/li&gt;
-  &lt;li&gt;El álgebra booleana&lt;/li&gt;
-  &lt;li&gt;La teoría de autómatas.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Todo esto es con el objetivo de realizar &lt;strong&gt;cálculos libres de errores&lt;/strong&gt; lo más rápidamente posible. Algunas de las tareas principales que los métodos de cómputo incluyen son:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Descomposición de problemas en problemas más sencillos&lt;/li&gt;
-  &lt;li&gt;Distribución de la ejecución de los cálculos en diferentes tiempos y ejecutores&lt;/li&gt;
-  &lt;li&gt;Chequeo y corrección de errores&lt;/li&gt;
-  &lt;li&gt;Representación de información&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;máquinas&quot;&gt;Máquinas&lt;/h2&gt;
-
-&lt;p&gt;La computación está casada con un &lt;em&gt;medio&lt;/em&gt; que ejecute los cálculos. Estas son las computadoras, que han variado con el paso del tiempo.&lt;/p&gt;
-
-&lt;p&gt;La principal motivación de buscar máquinas automáticas que realizaran los cálculos es eliminar los &lt;strong&gt;problemas inherentes&lt;/strong&gt; a los cálculos realizados por humanos: son lentos y propensos a errores.&lt;/p&gt;
-
-&lt;p&gt;Los medios en los que se ejecutan los cálculos han ido evolucionando hasta llegar a los microprocesadores que tenemos hoy que pueden realizar una infinidad de cálculos en poco tiempo.&lt;/p&gt;
-
-&lt;p&gt;Para diseñar y trabajar con estas máquinas, se tienen que entender muchos conceptos, que el pensamiento computacional trata:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Representación de información digitalmente y señales eléctricas como códigos binarios&lt;/li&gt;
-  &lt;li&gt;Diseño de circuitos&lt;/li&gt;
-  &lt;li&gt;Temporización con reloj de los cálculos&lt;/li&gt;
-  &lt;li&gt;Control de flujo&lt;/li&gt;
-  &lt;li&gt;Loops&lt;/li&gt;
-  &lt;li&gt;Memoria digital&lt;/li&gt;
-  &lt;li&gt;Espacios de memoria&lt;/li&gt;
-  &lt;li&gt;Aislamiento de procesos&lt;/li&gt;
-  &lt;li&gt;Tolerancia a fallos&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Todo esto está casado con el concepto de computadora digital que tenemos hoy (el modelo de von Neumann), pero &lt;strong&gt;existen otro tipo de computadoras&lt;/strong&gt; que no ejecutan cálculos en la misma forma.&lt;/p&gt;
-
-&lt;p&gt;Dos ejemplos de esto son las redes neuronales y las computadoras cuánticas, que no necesitan una serie de “pasos” para resolver los cálculos y tienen un tipo de pensamiento computacional completamente diferente.&lt;/p&gt;
-
-&lt;p&gt;Es en este punto en donde la computación deja de ser un campo específicamente de las matemáticas y la lógica, ya que los cálculos y los procedimientos realizados están &lt;strong&gt;estrechamente ligados al medio de ejecución&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;De este apartado lo último que tenemos que mencionar es que toda la revolución del mundo que vemos hoy causada por las computadoras está causada por la &lt;strong&gt;gran velocidad&lt;/strong&gt; que las computadoras han alcanzado. Sin esto, que es difícil de comprender (ve la cita de abajo), no podríamos ver todo lo que las computadoras han causado hoy.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;154,300,000,000 de operaciones por segundo en el procesador del iPhone 11 Pro.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;educación-de-ciencias-de-la-computación&quot;&gt;Educación de ciencias de la computación&lt;/h2&gt;
-
-&lt;p&gt;Difundir el conocimiento para crear procedimientos que las computadoras automáticas puedan ejecutar es una de las principales tareas y &lt;em&gt;responsabilidades&lt;/em&gt; del pensamiento computacional.&lt;/p&gt;
-
-&lt;p&gt;Al ser una combinación de ingeniería, matemáticas y ciencia la computación nació como un campo nuevo de estudios que tomó tiempo en ser reconocido y abrazado como una ciencia más.&lt;/p&gt;
-
-&lt;p&gt;Las ciencias de la computación han sido entendidas de diferentes formas a lo largo del tiempo:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Como los fenómenos que rodean a las computadoras&lt;/li&gt;
-  &lt;li&gt;Entendiendo la programación como un arte y una ciencia&lt;/li&gt;
-  &lt;li&gt;Computación == Automatización&lt;/li&gt;
-  &lt;li&gt;Entendimiento del universo como una computadora gigantezca&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Estas etapas del entendimiento de las ciencias de la computación han modificado la forma en que el pensamiento computacional es entendido.&lt;/p&gt;
-
-&lt;h2 id=&quot;ingeniería-del-software&quot;&gt;Ingeniería del Software&lt;/h2&gt;
-
-&lt;p&gt;El software son los programas que las computadoras digitales modernas ejecutan para realizar los cálculos que les permiten realizar todas las tareas a las que estamos acostumbrados.&lt;/p&gt;
-
-&lt;p&gt;La &lt;strong&gt;construcción de software&lt;/strong&gt; es una da las tareas más importantes que se relacionan con el pensamiento computacional. Lo más importante de esta área es la entrega confiable de software listo para entornos de la vida real (&lt;em&gt;de producción&lt;/em&gt;), que tiene las siguientes características:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Confiable (no falla constantemente)&lt;/li&gt;
-  &lt;li&gt;Usable (cumple con su función, a una velocidad adecuada)&lt;/li&gt;
-  &lt;li&gt;Seguro (no causa daños y no se puede robar información)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Hacer software con estas características es una tarea súmamente difícil por la complejidad que implica.&lt;/p&gt;
-
-&lt;p&gt;La ingeniería es “la aplicación de las matemáticas y la ciencia a los problemas de las personas”. Así, la ingeniería de software busca establecer &lt;strong&gt;técnicas y procedimientos para desarrollar software correcto&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Además la ingeniería del software ha buscado desarrollar herramientas que faciliten el desarrollo de software. Es un área muy compleja del pensamiento computacional que está constante evolución y el principal problema de la industria del software actual.&lt;/p&gt;
-
-&lt;h2 id=&quot;diseño-de-software&quot;&gt;Diseño de Software&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;El buen diseño produce un objeto que funciona para las personas en un contexto de necesidades y valores, para producir resultados de calidad y una &lt;strong&gt;experiencia satisfactoria&lt;/strong&gt;. - Terry Winograd&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;El software muchas veces está hecho para interactuar con personas. La tarea del diseñador de software es diseñar programas que &lt;strong&gt;resuelvan los problemas de los usuarios&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Esto tiene que ver con la forma de usarlo, las interfaces que presentará a los usuarios, las funciones, las actualizaciones, la protección de información, los medios de presentación y muchas más tareas relacionadas con &lt;strong&gt;crear software que deleite al usuario&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;La principal diferencia con la ingeniería de software es que mientras la ingeniería está pensada desde el punto de vista &lt;strong&gt;del programador&lt;/strong&gt;, el diseño está pensado desde el punto de vista &lt;strong&gt;del usuario&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Es decir, la ingeniería asegura que el programa funciona como el programador desea, el diseño asegura que el programa hace lo que el usuario necesita.&lt;/p&gt;
-
-&lt;h2 id=&quot;ciencia-computacional&quot;&gt;Ciencia computacional&lt;/h2&gt;
-
-&lt;p&gt;La ciencia ha sido completamente revolucionada por lo que la computación electrónica automática permite, desde grandes cantidades de cálculos en poco tiempo hasta simulaciones de los procesos naturales.&lt;/p&gt;
-
-&lt;p&gt;Desde que la computación automática existe, ha sido una gran ayuda para llegar a lugares que no se había siquiera podido soñar. Incluso se han creado &lt;strong&gt;nuevas ciencias&lt;/strong&gt;, que son la combinación de una ciencia tradicional con la computación como “Biología computacional”.&lt;/p&gt;
-
-&lt;p&gt;Pero la ciencia computacional requiere su &lt;strong&gt;propio tipo de pensamiento computacional&lt;/strong&gt;, desde los métodos hasta el software creado. No se aplican las misma técnicas ni herramientas que para el software no usado en la ciencia. Es por eso que el uso de la computación en las ciencias he hecho &lt;strong&gt;avanzar a la computación&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Otro aspecto del pensamiento computacional en la ciencia es el uso del conocimiento de los procesos de información para &lt;strong&gt;interpretar el mundo natural como una conexión muchos modelos de información&lt;/strong&gt;. Esto nos revela que la computación ha influido incluso en la manera en la que vemos el mundo.&lt;/p&gt;
+&lt;p&gt;Algunas de estas aplicaciones pueden “traducir” las imágenes de un dominio a otro, por ejemplo, convirtiendo una imágen satelital en un mapa de niveles o generando fotografías a partir de bosquejos.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
 
-&lt;p&gt;El pensamiento computacional es mucho más complejo de lo que parece o de los que los medios han entendido (“hacer algoritmos”).&lt;/p&gt;
+&lt;p&gt;Los modelos generativos pueden ser una gran herramienta para diferentes industrias, aprender a usarlos y generarlos te puede ayudar a entrar en un campo que tiene cada vez más alta demanda: el uso de datos para la creación automática de programas (Machine Learning).&lt;/p&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="ai" /><category term="ml" /><category term="gans" /><summary type="html">En este artículo exploramos qué es un modelo generativo, cómo te pueden servir y el estado del arte en este campo.</summary></entry><entry><title type="html">¿Deberías comentar tu código?</title><link href="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html" rel="alternate" type="text/html" title="¿Deberías comentar tu código?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html">&lt;p&gt;Cuando hablamos de los comentarios en el código, hay dos escuelas. La primera dice que debes usar los comentarios para &lt;strong&gt;clarificar lo que quisiste expresar con tu código&lt;/strong&gt;, mientras que la segunda dice que deberías &lt;strong&gt;evitarlos al máximo&lt;/strong&gt; y que comentar tu código es un mal necesario que sólo denota tu falta de habilidad para no hacer código lo suficientemente claro.&lt;/p&gt;
 
-&lt;p&gt;Este campo del pensamiento es tan grande que no alcanzaría una vida para cubrirlo en su totalidad, pero podemos tener una idea general de los campos que abarca y si nos gusta, especializarnos en uno de ellos.&lt;/p&gt;
+&lt;p&gt;¿A cuál de los dos consejos deberías hacerle caso? En este artículo explicaremos por qué creemos que deberías ver los comentarios como una &lt;strong&gt;herramienta necesaria&lt;/strong&gt;, valiosa y muy útil, y cómo usarlos para no caer en el extremo que ha llevado a algunas personas a tener una mala actitud hacia ellos.&lt;/p&gt;
 
-&lt;hr /&gt;
-&lt;p&gt;Este artículo está basado en el libro &lt;a href=&quot;https://mitpress.mit.edu/books/computational-thinking&quot;&gt;Computational Thinking&lt;/a&gt; de Peter J. Denning y Matti Tedre.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cs" /><category term="computational-thinking" /><category term="pensamiento-computacional" /><category term="libros" /><category term="mit" /><summary type="html">El pensamiento computacional ha sonado mucho en los medios últimamente. Hablemos de lo que es y todo lo que implica.</summary></entry><entry><title type="html">Resumen: Qué hacer para conseguir un buen trabajo como programador</title><link href="https://blog.thedojo.mx/2020/06/02/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html" rel="alternate" type="text/html" title="Resumen: Qué hacer para conseguir un buen trabajo como programador" /><published>2020-06-02T00:00:00-05:00</published><updated>2020-06-02T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/06/02/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador</id><content type="html" xml:base="https://blog.thedojo.mx/2020/06/02/resumen-que-hacer-para-conseguir-un-buen-trabajo-como-programador.html">&lt;p&gt;= ¿Qué hacer para conseguir un buen trabajo en tecnología?&lt;/p&gt;
+&lt;h2 id=&quot;un-sistema-sin-documentación-esta-incompleto&quot;&gt;Un sistema sin documentación esta incompleto&lt;/h2&gt;
 
-&lt;p&gt;-&amp;gt; Intro por Alex&lt;/p&gt;
+&lt;p&gt;Como desarrollador estarás de acuerdo en que un sistema &lt;strong&gt;no&lt;/strong&gt; tiene la &lt;em&gt;calidad suficiente&lt;/em&gt; si no cuenta con documentación, es decir, información acerca del sistema que comunique cosas como la razón de existir de ciertos módulos, valores y funciones y cómo usarlos.&lt;/p&gt;
 
-&lt;p&gt;-&amp;gt; Cuente Pablo de su trayectoria
--&amp;gt; Trayectoria de Diego&lt;/p&gt;
+&lt;p&gt;Si, además, tienes que modificar este sistema, será una pesadilla entender todo lo que los programadores anteriores hicieron o &lt;em&gt;intentaron&lt;/em&gt; hacer. Si tienes que &lt;em&gt;usar&lt;/em&gt; algo sin documentación, es el mismo caso: &lt;strong&gt;tienes estudiar el código para saber como funciona.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;-&amp;gt; ¿Consideras que donde estás ahora o donde estuviste en tu último trabajo
-es donde querías estar? ¿O en qué punto te diste cuenta?&lt;/p&gt;
+&lt;p&gt;Así que hemos establecido que la documentación es completamente necesaria para crear programas útiles. Ahora bien, ¿dónde ponemos esa documentación? Muchos desarrolladores y equipos no tienen idea de dónde ponerla y crean documentos que dejan después olvidados en una carpeta en la nube y que nadie encuentra después. Pero, ¿no sería más lógico mantener la documentación lo &lt;strong&gt;más cerca posible del código&lt;/strong&gt;? Eso es precisamente lo que los comentarios te permiten hacer.&lt;/p&gt;
 
-&lt;p&gt;-&amp;gt; Sabemos que los dos han trabajado con gente de otros países. En qué les ha ayudado eso para mejorar como desarrolladores&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Qué diferencias básicas hay entre la cultura de trabajo de empresas exitosas y la general en LATAM.&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Cómo es el día a día de un desarrollador en una FAANG&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Cuáles son las 3 habilidades básicas que creen que todo desarrollador debe tener para mantenerse empleable y cada vez con mejores responsabilidades (y por lo tanto sueldo)&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Qué tanto se ocupan las siguientes herramientas:
-    -&amp;gt; Matemáticas
-    -&amp;gt; Algoritmos
-    -&amp;gt; Estructuras de datos
-    -&amp;gt; Otras bases de CS&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Qué tanto se ocupan las habilidades blandas&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Hay cursos de todo ahora mismo, pero ahora llama curso a todo, cuándo consideran que vale la pena llamar a algo un curso para no devaluar las palabras.&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Cosas de alto nivel contra cosas de bajo nivel. Python vs C++
--&amp;gt; Diego: Qué opinas de JS&lt;/p&gt;
-
-&lt;p&gt;-&amp;gt; Aprende Inglés
--&amp;gt; Aprende a recibir y dar feedback&lt;/p&gt;
-
-&lt;p&gt;Libros:&lt;/p&gt;
+&lt;p&gt;Puedes usar los comentarios documentar:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Pragmatic Programmer&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-  &lt;li&gt;Fundamentos&lt;/li&gt;
+  &lt;li&gt;Decisiones de diseño&lt;/li&gt;
+  &lt;li&gt;Explicaciones sobre la existencia, funcionamiento o razón de ser de cierta parte del código&lt;/li&gt;
+  &lt;li&gt;Las interfaces y su ejemplo de uso&lt;/li&gt;
+  &lt;li&gt;Efectos de usar cierto código&lt;/li&gt;
+  &lt;li&gt;Partes inconclusas o que se pueden mejorar (TODO’s)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Pablo:&lt;/p&gt;
+&lt;p&gt;Tener esta información muy cerca del código sobre el que está proporcionando información ayudará a que sea fácil de encontrar y además, si se establecen reglas como tratar los comentarios como ciudadanos de primer rango, se mantendrá actualizado y útil.&lt;/p&gt;
+
+&lt;p&gt;También es buena idea tener un documento o sitio web especializado en documentación que te ayude a encontrar rápido lo que buscas como Docusaurus o un sitio generado por Sophinx. Puedes utilizar esta misma documentación que escribiste junto al código si usaste el estilo definido por el lenguaje de programación o por las herramientas de generación de documentos.&lt;/p&gt;
+
+&lt;h3 id=&quot;los-comentarios-te-pueden-ayudar-en-el-futuro&quot;&gt;Los comentarios te pueden ayudar en el futuro&lt;/h3&gt;
+
+&lt;p&gt;Incluso aunque no los uses formalmente como documentación, los comentarios estarán ahí para darte información y recordarte lo que hiciste, pero sobre todo &lt;strong&gt;por qué&lt;/strong&gt; lo hiciste.&lt;/p&gt;
+
+&lt;p&gt;Recuerda que la mente humana busca la eficiencia máxima de recursos, por lo que es probable que elimine información que no ocupe inmediatamente y que no recuerdas a menudo, como por qué esa variable tenía el valor 730 y no otro.&lt;/p&gt;
+
+&lt;p&gt;Tu yo futuro y tu equipo te agradecerán haber escrito esos comentarios que te informan sobre lo que estabas pensando en el momento que escribiste ese código.&lt;/p&gt;
+
+&lt;h3 id=&quot;los-comentarios-son-una-buena-herramienta-de-diseño&quot;&gt;Los comentarios son una buena herramienta de diseño&lt;/h3&gt;
+
+&lt;p&gt;John Ousterhout, en “A Philosophy of Software Design” recomienda &lt;strong&gt;empezar&lt;/strong&gt; con los comentarios antes de programar (de esto hablaremos más adelante). Pero, ¿por qué lo recomienda?&lt;/p&gt;
+
+&lt;p&gt;Escribir en un lenguaje humano cómo funciona algo antes de implementarlo realmente, te da la capacidad de ver si es lógico y suficiente, además te permite ponerte en los zapatos del usuario para notar deficiencias sobre todo en &lt;strong&gt;la interfaz&lt;/strong&gt;. Los comentarios de interfaz es lo primero que deberías crear porque te servirán de guía para avanzar con tu diseño y, sobre todo, que sea lógico y fácil de usar.&lt;/p&gt;
+
+&lt;p&gt;Una buena guía: si no eres capaz de crear un comentario concreto y corto sobre cómo funciona o por qué existe algo, &lt;strong&gt;lo más probable es que tengas que re-pensar tu diseño&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;el-lenguaje-de-programación-no-es-suficiente-para-expresar-todo-lo-necesario&quot;&gt;El lenguaje de programación no es suficiente para expresar todo lo necesario&lt;/h3&gt;
+
+&lt;p&gt;Todos los lenguajes de programación están pensados para ser un &lt;strong&gt;subconjunto del lenguaje humano&lt;/strong&gt; que elimine las ambigüedades, manteniendo el mayor poder expresivo posible. Esto nos lleva a sus limitantes: es imposible, o por lo menos impráctico, intentar expresar todas las ideas con el código.&lt;/p&gt;
+
+&lt;p&gt;En la práctica, el tiempo y los recursos para lograr algo son limitados, por lo que a veces es más conveniente y fácil para todos explicar lenguaje humano algo que intentar expresarlo con código, como los puristas afirman.&lt;/p&gt;
+
+&lt;p&gt;No te sientas mal si tienes que recurrir de vez en cuando a explicar la forma en que funciona algo, siempre y cuando no sea la práctica común.&lt;/p&gt;
+
+&lt;h2 id=&quot;cómo-usar-los-comentarios-para-que-sean-valiosos&quot;&gt;¿Cómo usar los comentarios para que sean valiosos?&lt;/h2&gt;
+
+&lt;p&gt;No todos los comentarios son valiosos, hay algunos que pueden estorbar más de lo que ayudan, por ejemplo, los que no aportan información a lo que es obvio en el código.&lt;/p&gt;
+
+&lt;p&gt;Hablemos de algunas formas de aprovecharlos lo mejor posible para que contribuyan positivamente a aumentar la calidad del proyecto.&lt;/p&gt;
+
+&lt;h3 id=&quot;escribe-los-comentarios-primero&quot;&gt;Escribe los comentarios primero&lt;/h3&gt;
+
+&lt;p&gt;Una de las partes más importantes de los comentarios como documentación es que deben ser concretos, cercanos a la realidad y que proporcionen la mayor cantidad de información útil posible.&lt;/p&gt;
+
+&lt;p&gt;Para lograr esto, se tienen que crear lo más cerca que puedas a la &lt;em&gt;creación del código&lt;/em&gt;. Pero como todos sabemos que después de escribir y probar (básicamente) el código vamos a sentir que ya está terminado, es buena práctica obligarte a escribirlos antes, justo como propone TDD con las pruebas.&lt;/p&gt;
+
+&lt;p&gt;De esta manera te asegurarás que tu código esté documentado incluso antes de escribirlo y te servirán como una &lt;strong&gt;herramienta de diseño&lt;/strong&gt; que te ayudará a pensar mejor en la usabilidad de tus módulos y piezas de software.&lt;/p&gt;
+
+&lt;h3 id=&quot;crea-comentarios-acerca-de-la-interfaz&quot;&gt;Crea comentarios acerca de la interfaz&lt;/h3&gt;
+
+&lt;p&gt;La interfaz es el &lt;strong&gt;medio de uso&lt;/strong&gt; que tus módulos o funciones presentan para que las demás partes de tu sistema lo usen. Lo primero que deberías documentar y explicar es &lt;strong&gt;esta interfaz&lt;/strong&gt;, para que más personas a parte de ti puedan usar este pedazo de código.&lt;/p&gt;
+
+&lt;p&gt;Debes escribir comentarios claros sobre:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Presente en el aprendizaje - 5 why?&lt;/li&gt;
-  &lt;li&gt;Ser crítico&lt;/li&gt;
-  &lt;li&gt;Aprender - ser&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cómo usar esa pieza de código&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Por qué existe esa parte del sistema&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Qué efectos tiene usarla&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Diego:&lt;/p&gt;
+&lt;p&gt;Este tipo de comentarios son los que aportan mayor valor al sistema y si están lo suficientemente completos, con ejemplos y explicaciones claras, son una documentación válida que está en un muy buen lugar: es fácil de encontrar y no se va a perder enterrada entre otros documentes que después nadie va a consultar.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Resiliencia: Los problemas nunca van a parar&lt;/li&gt;
-  &lt;li&gt;Resolver problemas: para eso te contrataron&lt;/li&gt;
-  &lt;li&gt;Ser agnóstico&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&quot;evita-los-comentarios-sobre-la-implementación&quot;&gt;Evita los comentarios sobre la implementación&lt;/h3&gt;
 
-&lt;p&gt;Tres cosas para Google:&lt;/p&gt;
+&lt;p&gt;Los comentarios sobre la implementación son aquello que describen &lt;em&gt;qué&lt;/em&gt; estas haciendo, como por ejemplo, sumar número, abrir un archivo, etc. Estos comentarios normalmente son innecesarios, ya que lo que se está haciendo es obvio si el código es lo suficientemente expresivo y &lt;em&gt;siempre deberíamos buscar que sea así&lt;/em&gt;.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Dificultad&lt;/li&gt;
-  &lt;li&gt;Liderazgo&lt;/li&gt;
-  &lt;li&gt;Impacto&lt;/li&gt;
-  &lt;li&gt;Independencia&lt;/li&gt;
-  &lt;li&gt;Ownership&lt;/li&gt;
-  &lt;li&gt;Estar presente&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;De hecho, estos son los comentarios que hacen que la gente odie a los comentarios en general, pues en vez de proporcionar información extra son una carga que hay que mantener y pueden confundir si no son actualizados.&lt;/p&gt;
 
-&lt;p&gt;Feedback&lt;/p&gt;
+&lt;p&gt;Si realmente sientes que tienes que explicar &lt;em&gt;qué&lt;/em&gt; estás haciendo con cierta pieza de código, primero pregúntate si no hay una manera de reescribirlo para que &lt;strong&gt;sea obvio&lt;/strong&gt;. Si no existe o no es práctica esta solución, entonces escribe el comentario de la manera más concisa posible, incluyendo la razón de la existencia de ese código.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Directo&lt;/li&gt;
-  &lt;li&gt;Accionable&lt;/li&gt;
-  &lt;li&gt;Oportuno&lt;/li&gt;
-  &lt;li&gt;Transparente&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The Cherno&lt;/p&gt;
-
-&lt;p&gt;Pablo Trinidad&lt;/p&gt;
-
-&lt;p&gt;Computerphile&lt;/p&gt;
-
-&lt;p&gt;Pablo Trinidad&lt;/p&gt;
-
-&lt;p&gt;Numberphile&lt;/p&gt;
-
-&lt;p&gt;Pablo Trinidad&lt;/p&gt;
-
-&lt;p&gt;Veritasium&lt;/p&gt;
-
-&lt;p&gt;Pablo Trinidad&lt;/p&gt;
-
-&lt;p&gt;Smarter Everyday&lt;/p&gt;
-
-&lt;p&gt;Eric Weinstein
-Joe rogan&lt;/p&gt;
-
-&lt;p&gt;Ben Eater
-3Blue1Brown&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Escribe aquí un buen resumen de tu artículo</summary></entry><entry><title type="html">¿Qué es un engine de JavaScript?</title><link href="https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html" rel="alternate" type="text/html" title="¿Qué es un engine de JavaScript?" /><published>2020-05-17T00:00:00-05:00</published><updated>2020-05-17T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript</id><content type="html" xml:base="https://blog.thedojo.mx/2020/05/17/que-es-un-engine-de-javascript.html">&lt;p&gt;Me llamó mucho la atención  la salida de &lt;a href=&quot;https://deno.land/v1&quot;&gt;Deno v1 esta semana&lt;/a&gt; y le quise echar un ojito. Pero desde la explicación que da inicialmente, no entiendo &lt;em&gt;exactamente&lt;/em&gt; lo que es y hace:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Deno is a simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Aquí me surgió la pregunta: ¿Qué es un &lt;strong&gt;runtime&lt;/strong&gt; para JavaScript?&lt;/p&gt;
-
-&lt;p&gt;Pero para contestarla, antes tengo que entender &lt;strong&gt;qué es V8&lt;/strong&gt;. La respuesta es: un &lt;em&gt;engine&lt;/em&gt; o &lt;em&gt;motor&lt;/em&gt; de JavaScript. En este artículo explicaremos qué es y cómo funciona.&lt;/p&gt;
-
-&lt;h2 id=&quot;explicación-rápida&quot;&gt;Explicación rápida&lt;/h2&gt;
-
-&lt;p&gt;Puedes pensar en un engine o motor de JavaScript como en el programa encargado de correr el código de JavaScript. Todos los navegadores tienen uno:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Navegador&lt;/th&gt;
-      &lt;th&gt;Engine&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Chrome&lt;/strong&gt; y &lt;strong&gt;Opera&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://v8.dev/&quot;&gt;V8&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Firefox&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey&quot;&gt;SpiderMonkey&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Safari&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://trac.webkit.org/wiki/JavaScriptCore&quot;&gt;WebKit JSCore&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;strong&gt;Edge&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;https://github.com/microsoft/ChakraCore&quot;&gt;Chakra&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Este, combinado con el motor web componen la mayor parte de un navegador. Los engines se pueden usar fuera de los navegadores para otras tareas, como en Deno o Node.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;El &lt;strong&gt;motor de JavaScript&lt;/strong&gt; es quien convierte tu código de JavaScript en código ejecutable por la máquina en la que va a correr.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;teoría-compilación-contra-interpretación&quot;&gt;Teoría: Compilación contra Interpretación&lt;/h2&gt;
-
-&lt;p&gt;Para correr un programa en cualquier lenguaje, hay que convertirlo en instrucciones que las computadoras puedan entender. Esto es el &lt;strong&gt;código máquina&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Los lenguajes compilados transforman todo el código &lt;strong&gt;antes de ejecutarlo&lt;/strong&gt;, por lo que pueden hacer optimizaciones generales para que el programa sea más eficiente.&lt;/p&gt;
-
-&lt;p&gt;Para que el programa compile tiene que estar libre de errores. Generalmente esa compilación lleva un poco de tiempo, que va creciendo dependiendo del tamaño y complejidad del programa. Los programas compilados pueden ser más eficientes en ejecución, pero cuesta más empezarlos a correr.&lt;/p&gt;
-
-&lt;p&gt;Los lenguajes interpretados van ejecutando &lt;strong&gt;línea por línea&lt;/strong&gt;, sentencia por sentencia. Por esto mismo no pueden hacer optimizaciones generales, pero es más fácil y rápido para el programador &lt;em&gt;empezar&lt;/em&gt; a ejecutarlos. Normalmente tienen un &lt;strong&gt;REPL&lt;/strong&gt; (Read - Eval - Print - Loop) que puede servir para jugar con ellos y hacer pruebas.&lt;/p&gt;
-
-&lt;p&gt;Se pude pensar que es &lt;em&gt;más fácil&lt;/em&gt; desarrollar en lenguajes interpretados que compilados, por lo que su desarrollo es &lt;em&gt;más rápido&lt;/em&gt;. Pero como los lenguajes compilados pueden hacer optimizaciones generales, son &lt;strong&gt;más eficientes&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;la-ejecución-de-javascript&quot;&gt;La ejecución de JavaScript&lt;/h2&gt;
-
-&lt;p&gt;JavaScript &lt;em&gt;nació&lt;/em&gt; como lenguaje &lt;strong&gt;interpretado&lt;/strong&gt;, para correr dentro del navegador Netscape. La idea principal de esto es que no necesitara de un paso de &lt;em&gt;compilación&lt;/em&gt; previa, entendida como la generación de un producto intermedio que sea ejecutable.&lt;/p&gt;
-
-&lt;p&gt;El encargado de esta “interpretación”, es decir, de convertir instrucciones de JavaScript en
-instrucciones de la computadora es el &lt;em&gt;engine o motor&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Pero los motores modernos de JavaScript están muy optimizados, la ejecución de JS puede a veces compararse con la de lenguajes completamente compilados. Y esto es gracias las optimizaciones de compilación en el momento de la ejecución: &lt;em&gt;just in time&lt;/em&gt; o &lt;strong&gt;JIT&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;En resumen: JavaScript dejó de de ser un lenguaje &lt;em&gt;puramente interpretado&lt;/em&gt; para convertirse en un lenguaje híbrido, con interpretación y compilado JIT. Se comporta como interpretado cuando un programador lo corre, pero el motor compila el código, produciendo algunas veces un producto intermedio (bytecode) que puede ser optimizado para que las siguientes ejecuciones sean mucho más rápidas.&lt;/p&gt;
-
-&lt;h2 id=&quot;las-etapas-de-un-motor-de-javascript&quot;&gt;Las etapas de un motor de JavaScript&lt;/h2&gt;
-
-&lt;p&gt;Ls principales etapas son:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Escaneo&lt;/strong&gt;. Convierte el texto del código que escribes en &lt;em&gt;tokens&lt;/em&gt;. Un token es un bloque de carácteres que tienen un significado sintáctico. Ejemplo: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x=33&lt;/code&gt; está compuesto por 3 tokens: Un identificador (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt;), un operador (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt;) y un número (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;33&lt;/code&gt;). Puedes irte por el hoyo del conejo si quieres entender como funciona el scanner de V8 aquí: &lt;a href=&quot;https://v8.dev/blog/scanner&quot;&gt;Blazingly fast parsing&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Parseo&lt;/strong&gt;. No encontré la palabra correcta para traducirlo, pero se puede entender como la ‘lectura’ de un texto que lo transforma en una estructura de datos. Esta fase convierte el conjunto de &lt;em&gt;tokens&lt;/em&gt; generados por el scanner en un Árbol de Sintaxis Abstracta (AST - Abstract Sintax Tree). Este árbol representa tu programa sintácticamente y se pasa a la siguiente fase de la compilación.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Interpretación&lt;/strong&gt;. En esta fase se toma el AST y se convierte en una primera versión de código que la máquina ya puede ejecutar, &lt;em&gt;sin optimizaciones&lt;/em&gt;. Genera además código intermedio (bytecode) que puede ser pasado a la siguiente etapa para optimizarlo. En V8 se llama &lt;a href=&quot;https://medium.com/dailyjs/understanding-v8s-bytecode-317d46c94775&quot;&gt;Ignition&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Optimización&lt;/strong&gt;. Esta parte es ejecutada por un compilador JIT, que analiza el código, cómo se comporta, los tipos de datos usados para crear una versión más optimizada en código máquina. Si las optimizaciones fallan, el bytecode sigue siendo ejecutado por el intérprete. En V8 se llama &lt;a href=&quot;https://v8.dev/docs/turbofan&quot;&gt;TurboFan&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Las últimas dos etapas son donde el código se ejecuta, una en forma de bytecode interpretado y la otra en forma de código máquina &lt;strong&gt;altamente eficiente y optimizado&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Aquí puedes ver un diagrama de la secuencia de operaciones de V8.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1589700777/1_ZIH_wjqDfZn6NRKsDi9mvA_wc08nl.png&quot; alt=&quot;Ejecución de un script de JavaScript&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;ejecución&quot;&gt;Ejecución&lt;/h2&gt;
-
-&lt;p&gt;Durante la ejecución, el motor de JavaScript debe mantener por lo menos dos cosas:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;La información de tu programa&lt;/li&gt;
-  &lt;li&gt;En qué parte del programa estamos&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Esto lo hace mediante dos espacios de memoria organizados específicamente para estas tareas:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;El &lt;strong&gt;Heap&lt;/strong&gt;. Encargado de mantener la información de las variables y todo otro dato ocupado por el programa.&lt;/li&gt;
-  &lt;li&gt;El &lt;strong&gt;Stack&lt;/strong&gt;. Encargado de llevar un registro de las llamadas a funciones y contextos de ejecución.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Además necesitamos a alguien que libere memoria para que nuestro programa no crezca infinitamente en la memoria y el &lt;em&gt;heap&lt;/em&gt; sea fácil de acceder. Esto es el &lt;strong&gt;garbage collector&lt;/strong&gt; o &lt;em&gt;recolector de basura&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Todo este proceso complejo se explica en mayor profundidad aquí: &lt;a href=&quot;https://deepu.tech/memory-management-in-v8/&quot;&gt;Visualizing memory management in V8 Engine&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Para hacer esto debes tomar muy en cuenta los recursos del proyecto: no te puedes tardar el triple del tiempo implementando la pieza de código perfecta porque no quieres escribir un comentario que explique cómo funciona.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
 
-&lt;p&gt;Esto es lo básico que necesitamos entender de lo que hace un motor de JavaScript, el encargado de ejecutar el código. Pero no es suficiente contar con alguien que pueda correr el código, necesitamos además &lt;strong&gt;algo que nos proporcione el material para trabajar&lt;/strong&gt;, ya que los programas en general actúan sobre algo, u obtienen información de algún lado. Esto es el &lt;strong&gt;Runtime&lt;/strong&gt;, que explicaremos en el siguiente artículo.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="js" /><category term="javascript" /><category term="compiladores" /><category term="javascript-engine" /><category term="v8" /><category term="chrome" /><summary type="html">Hablemos de qué es y cómo funciona un motor de Javascript.</summary></entry></feed>
+&lt;p&gt;Escribir comentarios es una de las grandes tareas que los programadores debemos dominar. Los lenguajes de programación y los entornos de programación cada vez le dan más poder a esta parte de los programas y permiten incluso escribir pruebas en ellos, generar documentación automática y listar tareas a partir de ellos.&lt;/p&gt;
+
+&lt;p&gt;Si pones el suficiente esmero en aprender a escribir buenos comentarios y mantenerlos, serán una gran herramienta de diseño y documentación de tu software.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Este artículo está basado en las ideas del “A Philosophy of Software Design de John Ousterhout”, en el que se le dedican &lt;strong&gt;4 capítulos&lt;/strong&gt; al buen uso de los comentarios&lt;/em&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="comments" /><category term="comentarios" /><category term="mantenibilidad" /><category term="código-mantenible" /><category term="ousterhout" /><category term="aposd" /><summary type="html">Hay programadores que dice que los comentarios son un mal que se debería evitar al máximo. Aquí proponemos lo contrario: usa los comentarios correctamente para crear código mantenible, basados en las ideas de 'A Philosophy of Software Design'</summary></entry><entry><title type="html">Tipos de algoritmos criptográficos: cifrados de bloque</title><link href="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html" rel="alternate" type="text/html" title="Tipos de algoritmos criptográficos: cifrados de bloque" /><published>2020-12-03T00:00:00-06:00</published><updated>2020-12-03T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html">&lt;p&gt;Ya hablamos de lo que es &lt;a href=&quot;/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html&quot;&gt;la criptografía&lt;/a&gt;, ahora empecemos a hablar de los tipos de
+algoritmos criptográficos que existen, sus características y sus principales diferencias. En este artículo hablaremos de los cifrados de bloque.&lt;/p&gt;
+
+&lt;h3 id=&quot;qué-es-un-cifrado-de-bloque&quot;&gt;¿Qué es un cifrado de bloque?&lt;/h3&gt;
+
+&lt;p&gt;Los cifrados de bloque trabajan sobre un conjunto de bits de tamaño fijo, produciendo un texto cifrado del mismo tamaño. Para cifrar datos de tamaño arbitrario como sucede en la vida real, se utiliza el algoritmo de cifrado de bloque combinado con diferentes técnicas llamadas &lt;strong&gt;Modos de Operación&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Algunos ejemplos de estos algoritmos de cifrado son el DES (Estadounidense), GOST 28147-89 (Ruso) y el actual &lt;strong&gt;AES&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Un bloque cifrado debe ser &lt;em&gt;permutación pseudo-aleatoria&lt;/em&gt; de bits, es decir, un conjunto de bits que sean &lt;em&gt;indistinguibles de bits generados completamente de manera aleatoria&lt;/em&gt;. Es como si aventaras un montón de bits y dijeras que esa es la salida de tu algoritmo.&lt;/p&gt;
+
+&lt;p&gt;Esta propiedad evita que un atacante obtenga información sobre el contenido del mensaje que fue cifrado.&lt;/p&gt;
+
+&lt;h2 id=&quot;ejemplos-de-cifrado-de-bloque&quot;&gt;Ejemplos de Cifrado de Bloque&lt;/h2&gt;
+
+&lt;p&gt;Veamos algunos ejemplos de cifrados de bloque y sus características principales. Algunos se usan mientras que otros ya cayeron en el olvido.&lt;/p&gt;
+
+&lt;h3 id=&quot;des-y-triple-des&quot;&gt;DES y Triple DES&lt;/h3&gt;
+
+&lt;p&gt;El &lt;strong&gt;Data Encryption Standard&lt;/strong&gt; era el algoritmo que más se usaba en la década de los 90, lo suficientemente seguro para el poder de cómputo de aquel entonces. Usa una llave de 56 bits y bloques de 64 bits. Debido a estas características, el poder de cómputo actual hace que sea demasiado fácil de romper con el suficiente poder computacional (2^56, el tamaño de la llave, no se considera seguro ya), así que su uso está completamente desrecomendado.&lt;/p&gt;
+
+&lt;p&gt;Su sucesor, el Triple DES realiza tres veces el mismo proceso usando tres llaves diferentes, con un tamaño de llave de 168 bits. Esto evita que sea posible romperlo a base de fuerza bruta, pero este proceso provee sólamente una seguridad de 112 bits, por lo que se considera ineficiente (usas el cómputo de tres DES para obtener seguridad de una llave del doble de tamaño) y por lo tanto su uso no es recomendado también.&lt;/p&gt;
+
+&lt;h3 id=&quot;aes&quot;&gt;AES&lt;/h3&gt;
+
+&lt;p&gt;Debido a las visibles fallas de DES y triple DES, la NIST (National Institute of Standards and Technology de Estados Unidos) quería un algoritmo de cifrado que fuera dado a conocer públicamente y “capaz de proteger la información sensible del gobierno por los próximos cien años”.&lt;/p&gt;
+
+&lt;p&gt;El &lt;strong&gt;Advanced Encryption Standard&lt;/strong&gt; (Estándar de cifrado avanzado), es en realidad un subconjunto de los cifrados posibles de otro algoritmo llamado &lt;a href=&quot;https://csrc.nist.gov/csrc/media/projects/cryptographic-standards-and-guidelines/documents/aes-development/rijndael-ammended.pdf&quot;&gt;Rijndael&lt;/a&gt; y que fue el ganador del concurso que la NIST hizo para seleccionar el nuevo algoritmo de cifrado estándar que sustituiría a DES.&lt;/p&gt;
+
+&lt;p&gt;Rijndael fue creado por analistas criptográficos Belgas con objetivos claros: que fuera rápido y simple. Es una familia de cifrados que permiten cifrar bloques en múltiplos de 32 bits, desde 128 hasta 256 bits (128, 160, 192, 224, 256 bits). Las longitudes de llaves posibles son los mismos desde 128 hasta 256 bits.&lt;/p&gt;
+
+&lt;p&gt;AES es Rijndael con bloques de &lt;strong&gt;128 bits&lt;/strong&gt; y llaves que pueden ser de 128, 192 o 256 bits.&lt;/p&gt;
+
+&lt;p&gt;AES aplica internamente una misma operación múltiples veces dependiendo del tamaño de la llave, y esto le permite se más seguro aumentando el tamaño de la llave. Esto es lo que se conoce como los “rounds” de AES, usando 10 para llaves de 128 bits, 12 para 192 bits y 14 para 256 bits.&lt;/p&gt;
+
+&lt;p&gt;AES tiene un diseño de operaciones concurrentes, que es fácilmente paralelizable y puede implementarse muy eficientemente en hardware, de hecho los procesadores modernos normalmente lo traen implementado en sus circuitos, es parte del conjunto de instrucciones del procesador.&lt;/p&gt;
+
+&lt;p&gt;La seguridad de AES según ciertos criptanalistas (por ejemplo, los creadores de Twofish) está completamente rota &lt;em&gt;teóricamente&lt;/em&gt;, ya que hay ataques que pueden romper el cifrado de 14 ciclos (los ciclos completos que hace la versión de la llave de 256 bits) con ciertas condiciones, con 2^176 operaciones (lo cuál es un ataque que no se puede llevar a la práctica fácilmente).&lt;/p&gt;
+
+&lt;p&gt;Los ataques mencionados anteriormente no tienen nada de prácticos, es decir, no se pueden llevar a la realidad en entornos normales, por lo que no se piensa por ningún lado que la seguridad de AES está comprometida. Si necesitas un algoritmo de cifrado confiable y rápido, con AES no te puedes equivocar.&lt;/p&gt;
+
+&lt;h2 id=&quot;otros-algoritmos&quot;&gt;Otros algoritmos&lt;/h2&gt;
+
+&lt;p&gt;Como finalistas del concurso de la NIST hay otros algoritmos que vale la pena mencionar:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Serpent.&lt;/strong&gt; Es un algoritmo de cifrado de bloque que está pensado completamente para ser resistente. Aplicaca una operación repetidamente (rounds) pero a diferencia de AES la aplica 32 veces. Los criptanalistas han logrado romper 12 de esos 32 rounds, por lo que se piensa que tiene bastante espacio de reserva para continuar siendo seguro. La desventaja contra AES es que es 3 veces más lento.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;TwoFish.&lt;/strong&gt; Este algoritmo tiene una construcción parecida a DES, y aplica su operación básica 16 veces. Los autores del algoritmo mencionan que es casi tan rápido como AES pero ofreciendo más margen de seguridad.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;modos-de-operación&quot;&gt;Modos de operación&lt;/h3&gt;
+
+&lt;p&gt;Un modo de operación es la forma en que se aplica un cifrado de bloque a un texto no cifrado que no es del tamaño exacto del bloque. Existen diferentes técnicas para hacer hacer que un algoritmo que acepta bloques de tamaño fijo acepte bloques arbitrarios. Los más conocidos son:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Electronic Codebook (ECB)&lt;/strong&gt;. Este modo de operación parte el contenido en bloques del tamaño aceptado (rellenando los bits faltantes para hacer un múltiplo exacto) y manda cada bloque a cifrar de manera independiente. Este modo de operación está completamente prohibido si quieres hacer que tu programa sea seguro, ya que bloques en tu mensaje con el mismo contenido siempre dará el mismo resultado, dando pistas sobre la información subyacente a observadores meticulosos. &lt;strong&gt;NO USES POR NINGÚN MOTIVO AES EN ECB&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Cypher Block Chaining (CBC)&lt;/strong&gt;. Este modo de igual manera parte el contenido en bloques del tamaño aceptado, pero en vez de cifrar cada bloque independientemente cifra el resultado de aplicar la operación XOR con el resultado del bloque anterior. De esta manera “encadena” los bloques haciendo que cada bloque dependa de los anteriores. Para cifrar el primer bloque utiliza un valor inicial generado de manera aleatoria. Para descifrar el valor se tiene que pasar el valor inicial aleatorio junto con el texto cifrado.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Counter mode (CTR)&lt;/strong&gt;. En este modo de operación no se cifran los bloques de texto sino la combinación de un número de uso único (&lt;em&gt;nonce&lt;/em&gt;) y un contador (de ahí su nombre). Después, ese cifrado se combina con un bloque del mensaje. El contador se aumenta en cada bloque del mensaje, mientras que el número de uso único sólo cambia entre cifrados de diferentes mensajes. El modo contador no requiere relleno, ya que la operación XOR se puede realizar con contenido de cualquier tamaño. Este es el modo de operación más rápido y elegante, pero es muy fácil de usar mal ya que la repetición de &lt;em&gt;nonces&lt;/em&gt; lo hace vulnerable.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;completado-de-bloques&quot;&gt;Completado de bloques&lt;/h3&gt;
+
+&lt;p&gt;Los modos de operación ECB y CBC siguen requiriendo bloques del tamaño aceptado por el algoritmo, por lo que deben existir técnicas para completar mensajes que no sean del tamaño de un múltiplo del bloque. Hablaremos de dos:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Relleno (&lt;em&gt;padding&lt;/em&gt;). Esta técnica completa el último bloque del contenido que no alcanza el tamaño requerido con bytes que comunican el número de bytes que se están rellenando. Ejemplo: Si faltan 15 bytes para rellenar el mensaje agrega 15 bytes con el valor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0f&lt;/code&gt;, si falta un sólo byte agrega un byte con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;01&lt;/code&gt;. Esta técnica sólo funciona para mensajes que construído de bytes completos. Puedes ver una especificación aquí: &lt;a href=&quot;https://tools.ietf.org/html/rfc5652&quot;&gt;RFC 5652&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Robo de texto cifrado (cyphertext stealing). Esta técnica es un poco más compleja pero más flexible. Consiste básicamente en tomar los bits que falten para el último bloque del texto cifrado anterior y dejar los bits no usados de ese mismo mensaje como el último bloque cifrado. Es un poco más complicado que esto, pero la idea básica aquí está. La NIST menciona tres formas de implementarlo &lt;a href=&quot;https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a-add.pdf&quot;&gt;aquí&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;qué-algoritmo-debería-usar&quot;&gt;¿Qué algoritmo debería usar?&lt;/h2&gt;
+
+&lt;p&gt;La respuesta corta: AES con el mayor de tamaño de llave que tus recursos te permitan. Si tienes restricciones más fuertes de seguridad puedes pensar en TwoFish o Serpent, pero debes tener en cuenta que al no ser tan populares como AES puede que sus implementaciones en el lenguaje de programación de tu elección no estén disponibles o tengan vulnerabilidades no conocidas.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cryptografía" /><category term="cryptography" /><category term="aes" /><category term="des" /><category term="3-des" /><category term="serpent" /><summary type="html">¿Sabes que es un cifrado de bloque? En este artículo hablamos de eso y te damos algunos ejemplos.</summary></entry><entry><title type="html">Orígenes de la deuda técnica</title><link href="https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica.html" rel="alternate" type="text/html" title="Orígenes de la deuda técnica" /><published>2020-10-19T00:00:00-05:00</published><updated>2020-10-19T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica.html">&lt;p&gt;Tuvimos una plática con &lt;a href=&quot;https://twitter.com/sagmmd&quot;&gt;Sagrario Meneses&lt;/a&gt; sobre la &lt;strong&gt;deuda técnica&lt;/strong&gt; y cómo podemos atacarla. En este artículo te presentamos un pequeño resumen de lo que es y algunas sugerencias sobre su manejo.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-la-deuda-técnica&quot;&gt;¿Qué es la deuda técnica?&lt;/h2&gt;
+
+&lt;p&gt;La definición corta de deuda técnica es: &lt;strong&gt;todo aquello que hace que el software sea más difícil de producir y desarrollar&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;La deuda técnica es &lt;strong&gt;invisible&lt;/strong&gt; para los miembros no directamente relacionados con el desarrollo del proyecto; para los que participan en ellos no siempre es fácil de ver.&lt;/p&gt;
+
+&lt;p&gt;Esto incluye algunas cosas concretas como:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Los valores fijos que pueden cambiar en el futuro y en realidad deberían ser fáciles de cambiar sin tener que modificar el código (&lt;em&gt;hardcoding&lt;/em&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Falta de información: cuando nadie sabe sobre cómo trabaja cierta parte del sistema o qué hace cierta pieza de código&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Falta de distribución de información y conocimiento: cuando muy pocas personas saben sobre una parte del sistema y se convierten en cuello de botella&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Falta de diseño explícito&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Malas elecciones sobre diseño o tecnologías&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Mezcla de diseños y estilos de programación diferente sin guía&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Bugs que nadie conoce&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sagrario comparó la deuda técnica con &lt;strong&gt;deberle dinero a la mafia&lt;/strong&gt;: no la puedes negociar, y cuando te supera estás en grandes problemas. Así que más vale que la aprendamos a controlar porque la deuda técnica puede hacer colapsar tu sistema.&lt;/p&gt;
+
+&lt;h2 id=&quot;formas-de-hacer-visible-la-deuda-técnica&quot;&gt;Formas de hacer visible la deuda técnica&lt;/h2&gt;
+
+&lt;p&gt;Una forma que nos parece súper efectiva para hacer visible (literalmente) la deuda técnica: ponerlo en tablero de control en un espacio, idealmente, &lt;strong&gt;físico&lt;/strong&gt;, que esté a la vista tanto del equipo técnico como del equipo administrativo. Este tablero fosforescente recordará a todos que hay temas importantes para atender antes de que la mafia venga a cobrarte.&lt;/p&gt;
+
+&lt;p&gt;En el caso de equipos remotos, el sustituto es un tablero de la herramienta de control que uses (Jira, Trello, Asana, Monday) que contenga temas importantes con respecto a las cosas que se pueden mejorar del sistema.&lt;/p&gt;
+
+&lt;p&gt;Finalmente, tus herramientas de desarrollo te pueden dar ideas valiosas de las cosas que tienes que mejorar de tu código:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Te ayudan a listar las tareas pendientes (TODO’s)&lt;/li&gt;
+  &lt;li&gt;Te advierten sobre posibles problemas de código&lt;/li&gt;
+  &lt;li&gt;Si tienes una guía de estilo configurada, te dan advertencias sobre este punto también.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;prácticas-para-evitarla-y-dominarla&quot;&gt;Prácticas para evitarla y dominarla&lt;/h2&gt;
+
+&lt;p&gt;Para poder reducir la deuda técnica hacen falta dos
+cosas:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Pruebas, &lt;strong&gt;principalmente unitarias&lt;/strong&gt;. Esto permitirá encontrar los errores más rápidamente, pero además refactorizar sin miedo.&lt;/li&gt;
+  &lt;li&gt;Lineamientos estrictos respecto a las acciones en el proyecto. Sagrario lo llamó &lt;em&gt;disciplina&lt;/em&gt;, es decir, tener reglas y los procesos necesarios para hacer que estas reglas sean seguidas.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;otros-temas&quot;&gt;Otros temas&lt;/h2&gt;
+
+&lt;p&gt;También, hablamos de otros temas como el rol de arquitecta de software que tiene en Linio. De esto podemos sacar dos cosas relevantes:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Aunque no se se sentía completamente lista para el puesto, aplicó para obtenerlo, y por eso está en una posición en la que está aprendiendo mucho. Sin miedo al éxito.&lt;/li&gt;
+  &lt;li&gt;A veces la ataca el síndrome del impostor, con el que siente que no pertenece allí, &lt;strong&gt;pero continua trabajando y estudiando&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Mantiene la humildad sabiendo que no por tener el “&lt;em&gt;título&lt;/em&gt;” es todopoderosa y ahora tiene autoridad sobre todos.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Disfrutamos mucho la plática con una experimentada desarrolladora de software que ha ido tomando nuevos roles y responsabilidades en la misma empresa, que también se ha ido transformando. Puedes aprender mucho de ella y de las preguntas que se hicieron en vivo:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/7E_xzjMwZMU&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="deuda-técnica" /><category term="arquitectura" /><category term="diseño-de-software" /><summary type="html">¿Qué es la deuda técnica y cómo podemos hacer para dominarla al máximo?</summary></entry></feed>
