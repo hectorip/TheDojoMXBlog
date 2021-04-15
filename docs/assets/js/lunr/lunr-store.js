@@ -108,7 +108,7 @@ var store = [{
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1565702060/annie-spratt-kZO9xqmO_TA-unsplash_swtrj6.jpg"
       },{
         "title": "¿Por qué deberías aprender Go?",
-        "excerpt":"Go es eficiente, escalable y productivo. - Rob Pike Go es un lenguaje que llama la atención por algunos rumores que hay acerca de él, como, por ejemplo, que es el lenguaje que va a matar a C, o que es muy muy rápido y poderoso. En este artículo vamos...","categories": [],
+        "excerpt":"Go es eficiente, escalable y productivo. - Rob Pike Go es un lenguaje popular por los rumores que hay acerca de él, como que es el lenguaje que va a matar a C, o que es muy muy rápido y poderoso. En este artículo vamos a hablar de qué cosas...","categories": [],
         "tags": ["go","golang","lenguajes-de-programación"],
         "url": "/2019/09/01/por-que-deberias-aprender-go.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/v1567376344/google-servers-datacenter_bs7xzt.png"

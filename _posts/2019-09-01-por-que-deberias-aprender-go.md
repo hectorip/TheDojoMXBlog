@@ -13,7 +13,7 @@ header:
 
 > Go es **eficiente, escalable y productivo**. - _Rob Pike_
 
-Go es un lenguaje que llama la atención por algunos rumores que hay acerca de él, como, por ejemplo, que es el lenguaje que va a matar a C, o que es muy muy rápido y poderoso. En este artículo vamos a hablar de qué cosas son ciertas y en qué casos te conviene aprender Go.
+Go es un lenguaje popular por los rumores que hay acerca de él, como que es el lenguaje que va a matar a C, o que es muy muy rápido y poderoso. En este artículo vamos a hablar de qué cosas son ciertas y en qué casos te conviene aprender Go.
 
 Empecemos hablando de cómo y por qué nació.
 
@@ -25,9 +25,11 @@ Go fue creado dentro de Google por un grupo de desarrolladores de software y cie
 
 Después de una serie de correos y discusiones sobre el diseño, empezaron a trabajar en él y [lo presentaron como proyecto Open Source en 2009](https://www.youtube.com/watch?v=rKnDgT73v8s), a partir de ahí muchas personas tanto de dentro como de fuera de Google han contribuido a su desarrollo.
 
-## Características de  Go
+## Características de Go
 
-Go fue concebido pensando en los problemas que los diseñadores veían en los sistemas de Google: su proceso de desarrollo estaba entorpecido por las herramientas que usaban. Según Rob Pike, todo era demasiado lento: demasiado lento de compilar, demasiado lento de construir, demasiado lento de pensar. Cuando decimos que el tiempo de compilación era demasiado largo nos referimos a que podía llegar a tomar _varias horas_ para compilar un sistema.
+Go fue concebido pensando en los problemas que los diseñadores veían en los sistemas de Google: su proceso de desarrollo estaba entorpecido por las herramientas que usaban.
+
+Según Rob Pike, todo era demasiado lento: demasiado lento de compilar, demasiado lento de construir, demasiado lento de pensar. Cuando decimos que el tiempo de compilación era demasiado largo nos referimos a que podía llegar a tomar _varias horas_ para compilar un sistema.
 
 También había una "explosión de complejidad". Así que Go fue pensado para ser simple, de una "simplicidad radical". Por lo tanto, carece de características que otros lenguajes sí tienen, pero hacen que los programas sean complejos.
 
@@ -53,9 +55,9 @@ func main() {
 
 ### Tipado estático y fuerte
 
-Go es un lenguaje fuertemente tipado, lo cuál quiere implica varias cosas:
+Go es un lenguaje fuertemente tipado, lo cuál significa varias cosas:
 
-1. La declaración de variables implica el tipo de valor que estará asociado a esta instancia del nombre, por lo que no puede usarse para guardar otro tipo de valor. En Go no necesariamente se tiene que decir explícitamente el tipo de valor a usarse, puede ser inferido:
+* La declaración de variables implica el tipo de valor que estará asociado a esta instancia del nombre, por lo que no puede usarse para guardar otro tipo de valor. En Go no necesariamente se tiene que decir explícitamente el tipo de valor a usarse, puede ser inferido:
 
 ```go
 
@@ -64,7 +66,7 @@ miNombre := "Héctor"  // La variable es un string
 ```
 Esto es verificado en tiempo de compilación, por lo que podrás estar tranquilo de que Go no te dejará correr programas usando variables como lo que no son.
 
-2. No existe la conversión o forzamiento de tipos automática e implícita, como en JS, que intenta realizar la operación aunque los tipos de valor usados no tengan sentido en la operación. En Go, si intentas hacer una operación con tipos no compatibles el programa puede no compilar o fallar en tiempo de ejecución.
+* No existe la conversión o forzamiento de tipos automática e implícita, como en JS, que intenta realizar la operación aunque los tipos de valor usados no tengan sentido en la operación. En Go, si intentas hacer una operación con tipos no compatibles el programa puede no compilar o fallar en tiempo de ejecución.
 
 ### Rápida compilación
 
@@ -75,6 +77,7 @@ Pensado para sistemas muy grandes, justo como los desarrollados en Google, Go se
 - El programa objeto compilado de cada paquete exporta información útil para sus dependencias que puede ser usada sin tener que leer todo el paquete.
 
 ### Manejo de dependencias y paquetes
+
 Go tiene en su biblioteca estándar más de 100 paquetes y la comunidad de Go cada vez contribuye más paquetes. Go viene con la herramienta para la línea de comandos `go` que es fácil de usar para manejar proyectos creados con Go. La herramienta `go` nos ayuda a administrar nuestras dependencias: descargarlas, limpiarlas e instalarlas.
 
 ### Manejo de memoria

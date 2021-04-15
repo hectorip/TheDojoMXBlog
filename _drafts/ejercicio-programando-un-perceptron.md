@@ -13,5 +13,6 @@ header:
 
 En este post platicaremos acerca de cómo funciona un perceptrón a nivel de código y las técnicas que utiliza para aproximar una función a partir de datos.
 
-Si no tienes claro lo que es un perceptrón, puedes leer nuestro [artículo anterior](/2021/03/25/intro-a-machine-learning-entendiendo-perceptron.html){:target _blank}.
+Si no tienes claro lo que es un perceptrón, puedes leer nuestro [artículo anterior](/2021/03/25/intro-a-machine-learning-entendiendo-perceptron.html){:target="_blank"}.
 
+## El conjunto de datos
