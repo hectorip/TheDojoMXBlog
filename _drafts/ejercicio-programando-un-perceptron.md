@@ -2,9 +2,9 @@
 title: "Ejercicio: programando un perceptrón"
 date: 2021-04-10
 author: Héctor Patricio
-tags: machine-learning ia 
+tags: machine-learning ia
 comments: true
-excerpt: "Programemos un percepetrón en Python para entender a fondo como funciona y poder construir sobre eso para temas más complejos."
+excerpt: "Programemos un perceptrón en Python para entender a fondo como funciona y poder construir sobre eso para temas más complejos."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,e_oil_paint:30,w_1400/v1618030907/arseny-togulev-MECKPoKJYjM-unsplash_nakl3a.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,e_oil_paint:30,w_300/v1618030907/arseny-togulev-MECKPoKJYjM-unsplash_nakl3a.jpg
