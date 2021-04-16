@@ -122,7 +122,7 @@ Go fue pensado para ser _simple_. Sus estructuras, su sintaxis y su filosofía l
 
 ### Usable
 
-Una de las promesas de Go desde el principio era poder hacer mucho con poco. Y es algo que cumple completamente. Su librería estándar está diseñada y construida por verdaderos **titanes** de la ingeniería del software, practicantes de esto por más tiempo que la vida de muchos de los que leerán este artículo. El siguiente ejemplo es un servidor web con una ruta, sin usar ningún framework o biblioteca extra, sino la pura biblioteca estándar de Go.
+Una de las promesas de Go desde el principio era poder hacer mucho con poco. Y es algo que cumple completamente. Su librería estándar está diseñada y construida por **verdaderos titanes** de la ingeniería del software, practicantes de esto por más tiempo que la vida de muchos de los que leerán este artículo. El siguiente ejemplo es un servidor web con una ruta, sin usar ningún framework o biblioteca extra, sino la pura biblioteca estándar de Go.
 
 ```go
 package main
@@ -174,7 +174,10 @@ Esto te debería dar una idea de la importancia de Go en el ecosistema de desarr
 
 ## Go vs Rust
 
-Una discusión reciente es cuál de los dos lenguajes va a lograr efectivamente reemplazar a C, con características más modernas y como un lenguaje más adaptado a las necesidades actuales. Esto es pura opinión: Rust es un mejor candidato para reemplazar a C por sus características de manejo de memoria. Pero Rust no es un lenguaje tan fácil de aprender o empezar com Go.
+¿Cuál de los dos lenguajes va a lograr efectivamente reemplazar a C, con características más modernas y como un lenguaje más adaptado a las necesidades actuales?
+
+Esto es pura opinión: Rust es un mejor candidato para reemplazar a C por sus características de manejo de memoria. Pero Rust no es un lenguaje tan fácil de aprender o empezar com Go.
+
 En Go puedes hacer muchas cosas que haces con C razonablemente bien, sin tanta complicación y sin tener que manejar la memoria manualmente o semi-manualmente. La prueba está en todos los proyectos que manejan cosas de bajo nivel.
 
 Más adelante tendremos un artículo de por qué deberías aprender Rust.
