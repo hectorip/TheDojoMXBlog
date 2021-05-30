@@ -5,7 +5,7 @@ author: Héctor Patricio
 tags:
 categories: 
 comments: true
-excerpt: "Escribe aquí un buen resumen de tu artículo"
+excerpt: "Hagamos una pequeña API en Go usando Beego, mientras intentamos seguir los principios de Domain Driven Design"
 header:
   overlay_image: #image
   teaser: #image
