@@ -17,7 +17,8 @@ Si no tienes claro lo que es un perceptrón, puedes leer nuestro [artículo ante
 
 ## El conjunto de datos
 
+Vamos a aproximar un conjunto de datos relacionado con  
+
 ## Aproximando la función
 
 ## Resultado
-
