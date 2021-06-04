@@ -16,11 +16,13 @@ header:
 
 ¿Quieres aprender a programar y no sabes por dónde empezar?
 
-En este post te daremos algunos recursos que puedes seguir para aprender a programar desde lo más básico hasta tener un conocimiento razonable de programación con el que podrías empezar a trabajar como becario.
+En este artículo te daremos algunos recursos que puedes seguir para aprender a programar desde lo más básico hasta tener un conocimiento razonable de programación con el que podrías empezar a trabajar.
 
 ## Motívate
 
-Para ser un buen programador es importante conocer las bases, pero para eso antes hay que tener motivación y _mantenerla_. Así que empecemos por algo que te mostrará el poder de la programación y de lo que puedes hacer con un poco de conocimiento.
+Es importante conocer las bases, pero para eso antes hay que tener motivación y _mantenerla_. Así que empecemos por algo que te mostrará el poder de la programación y de lo que puedes hacer con un poco de conocimiento.
+
+El curso de programación web de [CourseIt](https://courseit.io/) es un muy buen punto en dónde empezar, el profesor Juani Gallo explica de manera concisa y sencilla lo que es la programación y terminarás creando una página de internet con HTML y CSS: [Introducción al desarrollo web](https://courseit.io/cursos/curso-gratuito-html-css).
 
 Puedes empezar con la creación de una página de internet. Si buscas "Crear página web desde cero" vas a encontrar un montón de opciones, pero aquí tienes una [Creando una página](http://bit.ly/2Mq1aE0).
 

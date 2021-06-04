@@ -156,7 +156,7 @@ var store = [{
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_fill,g_custom,h_1000,w_1400,x_0/v1586794249/7CD56C0C-C8F6-448E-891B-348469AAF598_h9jpih.jpg"
       },{
         "title": "Recursos gratutitos para aprender a programar desde cero",
-        "excerpt":"¿Quieres aprender a programar y no sabes por dónde empezar? En este post te daremos algunos recursos que puedes seguir para aprender a programar desde lo más básico hasta tener un conocimiento razonable de programación con el que podrías empezar a trabajar como becario. Motívate Para ser un buen programador...","categories": [],
+        "excerpt":"¿Quieres aprender a programar y no sabes por dónde empezar? En este artículo te daremos algunos recursos que puedes seguir para aprender a programar desde lo más básico hasta tener un conocimiento razonable de programación con el que podrías empezar a trabajar. Motívate Es importante conocer las bases, pero para...","categories": [],
         "tags": ["aprender","programar","recursos-aprendizaje"],
         "url": "/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1577598219/siora-photography-hgFY1mZY-Y0-unsplash_brzlus.jpg"
