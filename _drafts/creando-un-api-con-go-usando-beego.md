@@ -11,3 +11,5 @@ header:
   teaser: #image
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
+
+Vamos a probar el poder y la facilidad de Beego, un framework creado en China, en dónde sabemos que las exigencias respecto a lo que deben soportar los sistemas son fuertes.
