@@ -346,4 +346,10 @@ var store = [{
         "tags": ["system-design","book","courses","cursos","libros","learning"],
         "url": "/2021/03/29/recursos-para-aprender-diseno-de-sistemas.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,e_oil_paint:30,w_300/v1617037690/joel-filipe-jU9VAZDGMzs-unsplash_wzkvza.jpg"
+      },{
+        "title": "Fuentes no convencionales de aprendizaje",
+        "excerpt":"Cada quien tiene su forma de aprender. A algunas personas les funcionan mejor formas visuales y no convencionales. En este artículo te vamos a presentar algunos de los recursos que hemos encontrado que explican ideas y temas relacionados con la programación con un formato no convencional. Te lo explico con...","categories": [],
+        "tags": ["recursos","aprendizaje","programación"],
+        "url": "/2021/06/14/fuentes-no-convencionales-de-aprendizaje.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1617383682/michael-dziedzic-gEN5Btvf2Eg-unsplash_nrd8uv.jpg"
       }]
