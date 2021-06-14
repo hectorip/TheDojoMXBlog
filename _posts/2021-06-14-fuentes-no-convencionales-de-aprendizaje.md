@@ -4,7 +4,7 @@ date: 2021-06-14
 author: Héctor Patricio
 tags: recursos aprendizaje programación
 comments: true
-excerpt: "En este artículo te recomendamos algunos recursos que te servirán para aprender conceptos de progrmación que no son libros o cursos comunes."
+excerpt: "En este artículo te recomendamos algunos recursos que te servirán para aprender conceptos de programación que no son libros o cursos comunes."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1617383682/michael-dziedzic-gEN5Btvf2Eg-unsplash_nrd8uv.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1617383682/michael-dziedzic-gEN5Btvf2Eg-unsplash_nrd8uv.jpg
@@ -54,7 +54,7 @@ En las Wiardzines puedes encontrar temas como "How containers work", "Hell yes! 
 
 Su página también tiene una sección llamada "questions" que te permite estudiar temas en formato de tarjetas con preguntas y respuestas que se revelan. Es una forma bastante buena de entender básicamente los temas de los que trata y al mismo tiempo de estudiar para memorizar algo que creas necesitar.
 
-Puedes encontrar los wizardzines en:
+Puedes encontrar los wizard zines en:
 
 - [Página de Wizard Zines](https://wizardzines.com/)
 - [Twitter de Julia Evans](https://twitter.com/b0rk)
@@ -84,9 +84,9 @@ El creador de **Destroy All Software**,  Gary Bernhardt creó una plataforma par
 - SQL
 - TypeScript
 
-La dinámica de la plataforma es la siguiente: tú eres el compilador o el intérprete, es decir, la plataforma te da sentencias cada vez más complejas de la tecnología en cuestión y tú predices los resultados.
+La dinámica de la plataforma es la siguiente: tú eres el compilador o el intérprete, es decir, la plataforma te da sentencias cada vez más complejas de la tecnología en cuestión y tú predices los resultados. Además tiene un sistema de **repetición espaciada** que automáticamente te hace repasar los temas para que los recuerdes más efectivamente.
 
-Puedes entrar a la plataforma aquí: [Execute Program](https://www.executeprogram.com/) también te recomiendo su otra plataforma, con videos tradicionales explicando cosas difíciles de desarrollar como compiladores: [Deatroy all Software](https://www.destroyallsoftware.com/screencasts). También tienes acceso con la suscripción de Execute Program.
+Puedes entrar a la plataforma aquí: [Execute Program](https://www.executeprogram.com/) también te recomiendo su otra plataforma, con videos tradicionales explicando cosas difíciles de desarrollar como compiladores: [Destroy all Software](https://www.destroyallsoftware.com/screencasts). También tienes acceso con la suscripción de Execute Program.
 
 ## Otras utilidades
 
