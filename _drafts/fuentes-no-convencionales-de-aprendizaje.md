@@ -6,8 +6,8 @@ tags: recursos aprendizaje programación
 comments: true
 excerpt: "En este artículo te recomendamos algunos recursos que te servirán para aprender conceptos de progrmación que no son libros o cursos comunes."
 header:
-  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_1200/v1617383682/michael-dziedzic-gEN5Btvf2Eg-unsplash_nrd8uv.jpg
-  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1617383682/michael-dziedzic-gEN5Btvf2Eg-unsplash_nrd8uv.jpg
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/c_scale,e_oil_paint:49,w_1200/v1617383682/michael-dziedzic-gEN5Btvf2Eg-unsplash_nrd8uv.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/c_scale,e_oil_paint:49,w_300/v1617383682/michael-dziedzic-gEN5Btvf2Eg-unsplash_nrd8uv.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -31,6 +31,8 @@ Puedes ver su contenido en:
 
 ## Los apuntes de Majo
 
+![Ejemplo de los apuntes de Majo](https://res.cloudinary.com/hectorip/image/upload/v1623713646/losapuntes_ijwxfh.png)
+
 Majo Ledesma, mientras estaba estudiando programación empezó a crear notas bastante bonitas y visuales reportando y resumiendo temas diversos como Python, JavaScript, CSS y ahora amasa una gran cantidad de temas y apuntes.
 
 Se hizo tan famosa que el CEO de [Vercel](https://losapuntesdemajo.vercel.app/) le ofreció poner todo su contenido en línea gratis usando su plataforma.
@@ -46,13 +48,21 @@ Pudes obtener los apuntes:
 
 ![Algunos wizard zines](https://res.cloudinary.com/hectorip/image/upload/v1623630863/wz_3_vvj9pp.png)
 
-Los wizardzines son explicaciones sobre un tema en formato de cómic co dibujos sencillos e ilustrativos. Lo que resalta de estos cómics es que tratan a veces temas no tan sencillos de manera fácil de entender y para eso se lleva una buena cantidad de espacio, por lo que el artículo se convierte en una "revistita".
+Los wizardzines son explicaciones sobre un tema en formato de cómic con dibujos sencillos e ilustrativos. Lo que resalta de estos cómics es que tratan a veces temas no tan sencillos de manera fácil de entender y para eso se lleva una buena cantidad de espacio, por lo que el artículo se convierte en una "revistita".
 
-Julia vende las revistas que ha hecho en aproximadamente _10 USD_ en formato digital con instrucciones para que tú la imprimas tú mismo. Sin embargo, si no las puedes pagar, Julia ofrece el modelo que yo llamaría "paga sólo si puedes". Recientemente abrió todo su contenido para que lo descargues sin costo, con la confianza de que pagarás si no es un impedimento para ti.
+Julia vende las revistas que ha hecho en aproximadamente _10 USD_, en formato digital con instrucciones para que tú las imprimas. Sin embargo, si no las puedes pagar, Julia ofrece el modelo que yo llamaría **"paga sólo si puedes"**: abrió todo su contenido para que lo descargues sin costo, con la confianza de que pagarás si no es un impedimento para ti.
 
-En las Wiardzines puedes encontrar temas como "How containers work", "Hell yes! CSS!" y "Help! I have a manager!"
+En las Wiardzines puedes encontrar los siguientes temas:
 
-Su página también tiene una sección llamada "questions" que te permite estudiar temas en formato de tarjetas con preguntas y respuestas que se revelan. Es una forma bastante buena de entender básicamente los temas de los que trata y al mismo tiempo de estudiar para memorizar algo que creas necesitar.
+- "How containers work"
+- "Hell yes! CSS!"
+- "Help! I have a manager!"
+
+Además, tiene un montón de zines gratuitos que tratan temas más pequeños y no están a color.
+
+Su página tiene una sección llamada "questions" que te permite estudiar temas en formato de tarjetas con preguntas y respuestas que se revelan. Es una forma bastante buena de entender básicamente los temas de los que trata y al mismo tiempo de estudiar para memorizar algo que creas necesitar.
+
+![Ejemplo de Questions de wizardzines](https://res.cloudinary.com/hectorip/image/upload/v1623713772/wizard_zines_bt7dzw.png)
 
 Puedes encontrar los wizardzines en:
 
@@ -61,7 +71,9 @@ Puedes encontrar los wizardzines en:
 
 ## Visual Partner
 
-Carlo Gilmar, siguiendo la tendencia de [visual thinking](https://extremservicejam.wordpress.com/2013/02/18/que-es-visual-thinking-y-como-puede-ayudarte/) ha creado **Visual Partner**, la empresa/proyecto alterno en la que comparte sus apuntes visuales sobre todo de charlas que se dan en meetups y conferencias.
+![Ejemplo de registro grǻfico](https://camo.githubusercontent.com/b196b29325f46dda5728d8d27884075949eaa7315beebf32a0537f259d54ee58/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6361726c6f67696c6d61722f696d6167652f75706c6f61642f76313539353937323133392f696c6c757374726174696f6e732f426568696e64253230746865253230636f64652f494d475f353837335f656d7173686b2e706e67)
+
+Carlo Gilmar, siguiendo la tendencia de [visual thinking](https://extremservicejam.wordpress.com/2013/02/18/que-es-visual-thinking-y-como-puede-ayudarte/) ha creado **Visual Partner**, la empresa/proyecto alterno en la que comparte sus _apuntes visuales_ de charlas que se dan en meetups y conferencias.
 
 Carlo ha creado un buen cuerpo de conocimiento de temas muy variados y probablemente puedas encontrar algo que estés aprendiendo en alguno de los lugares en lo que los comparte:
 
@@ -69,7 +81,7 @@ Carlo ha creado un buen cuerpo de conocimiento de temas muy variados y probablem
 - [Facebook](https://www.facebook.com/visualpartnership/)
 - [Twitter](https://twitter.com/carlogilmar?lang=en)
 
-Su contenido puede servir como resumen y guía para aprender más acerca de cierto tema, ya que no está ordenado por tópicos o toca los temas profundamente. Aquí podrás encontrar contenido variado.
+Su contenido puede servir como resumen y guía para aprender más acerca de cierto tema, ya que no está ordenado por tópicos, ni toca los temas profundamente. Aquí podrás encontrar contenido variado.
 
 ## Execute Program (inglés)
 
@@ -86,7 +98,7 @@ El creador de **Destroy All Software**,  Gary Bernhardt creó una plataforma par
 
 La dinámica de la plataforma es la siguiente: tú eres el compilador o el intérprete, es decir, la plataforma te da sentencias cada vez más complejas de la tecnología en cuestión y tú predices los resultados.
 
-Puedes entrar a la plataforma aquí: [Execute Program](https://www.executeprogram.com/) también te recomiendo su otra plataforma, con videos tradicionales explicando cosas difíciles de desarrollar como compiladores: [Deatroy all Software](https://www.destroyallsoftware.com/screencasts). También tienes acceso con la suscripción de Execute Program.
+Puedes entrar a la plataforma aquí: [Execute Program](https://www.executeprogram.com/). Te recomiendo su otra plataforma, con videos tradicionales explicando cosas difíciles de desarrollar como compiladores: [Destroy all Software](https://www.destroyallsoftware.com/screencasts). Tienes acceso a ambas plataformas con la suscripción de Execute Program.
 
 ## Otras utilidades
 
@@ -98,4 +110,4 @@ Hay otras experiencias no convencionales que puedes para aprender cosas específ
 - [HTTP Cats](https://http.cat/)
 - [Web Skills](https://andreasbm.github.io/web-skills/)
 
-Si no te acomodas con las formas tradicionales como los libros y los videos, siempre habrá opciones diferentes e interactivas.
+Si no te acomodas con las formas tradicionales como los libros y los videos, siempre habrá opciones diferentes e interactivas. ¿Tienes alguna otra recomendación? La esperamos en los comentarios.
