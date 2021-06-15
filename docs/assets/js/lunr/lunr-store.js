@@ -351,5 +351,5 @@ var store = [{
         "excerpt":"Cada quien tiene su forma de aprender. A algunas personas les funcionan mejor formas visuales y no convencionales. En este artículo te vamos a presentar algunos de los recursos que hemos encontrado que explican ideas y temas relacionados con la programación con un formato no convencional. Te lo explico con...","categories": [],
         "tags": ["recursos","aprendizaje","programación"],
         "url": "/2021/06/14/fuentes-no-convencionales-de-aprendizaje.html",
-        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1617383682/michael-dziedzic-gEN5Btvf2Eg-unsplash_nrd8uv.jpg"
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,e_oil_paint:49,w_300/v1617383682/michael-dziedzic-gEN5Btvf2Eg-unsplash_nrd8uv.jpg"
       }]

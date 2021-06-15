@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2021-06-14T18:38:55-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Fuentes no convencionales de aprendizaje</title><link href="https://blog.thedojo.mx/2021/06/14/fuentes-no-convencionales-de-aprendizaje.html" rel="alternate" type="text/html" title="Fuentes no convencionales de aprendizaje" /><published>2021-06-14T00:00:00-05:00</published><updated>2021-06-14T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2021/06/14/fuentes-no-convencionales-de-aprendizaje</id><content type="html" xml:base="https://blog.thedojo.mx/2021/06/14/fuentes-no-convencionales-de-aprendizaje.html">&lt;p&gt;Cada quien tiene su forma de aprender. A algunas personas les funcionan mejor formas visuales y no convencionales. En este artículo te vamos a presentar algunos de los recursos que hemos encontrado que explican ideas y temas relacionados con la programación con un formato no convencional.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2021-06-14T19:02:11-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Fuentes no convencionales de aprendizaje</title><link href="https://blog.thedojo.mx/2021/06/14/fuentes-no-convencionales-de-aprendizaje.html" rel="alternate" type="text/html" title="Fuentes no convencionales de aprendizaje" /><published>2021-06-14T00:00:00-05:00</published><updated>2021-06-14T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2021/06/14/fuentes-no-convencionales-de-aprendizaje</id><content type="html" xml:base="https://blog.thedojo.mx/2021/06/14/fuentes-no-convencionales-de-aprendizaje.html">&lt;p&gt;Cada quien tiene su forma de aprender. A algunas personas les funcionan mejor formas visuales y no convencionales. En este artículo te vamos a presentar algunos de los recursos que hemos encontrado que explican ideas y temas relacionados con la programación con un formato no convencional.&lt;/p&gt;
 
 &lt;h2 id=&quot;te-lo-explico-con-gatitos&quot;&gt;Te lo explico con gatitos&lt;/h2&gt;
 
@@ -20,6 +20,8 @@
 
 &lt;h2 id=&quot;los-apuntes-de-majo&quot;&gt;Los apuntes de Majo&lt;/h2&gt;
 
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1623713646/losapuntes_ijwxfh.png&quot; alt=&quot;Ejemplo de los apuntes de Majo&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Majo Ledesma, mientras estaba estudiando programación empezó a crear notas bastante bonitas y visuales reportando y resumiendo temas diversos como Python, JavaScript, CSS y ahora amasa una gran cantidad de temas y apuntes.&lt;/p&gt;
 
 &lt;p&gt;Se hizo tan famosa que el CEO de &lt;a href=&quot;https://losapuntesdemajo.vercel.app/&quot;&gt;Vercel&lt;/a&gt; le ofreció poner todo su contenido en línea gratis usando su plataforma.&lt;/p&gt;
@@ -37,15 +39,25 @@
 
 &lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1623630863/wz_3_vvj9pp.png&quot; alt=&quot;Algunos wizard zines&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Los wizardzines son explicaciones sobre un tema en formato de cómic co dibujos sencillos e ilustrativos. Lo que resalta de estos cómics es que tratan a veces temas no tan sencillos de manera fácil de entender y para eso se lleva una buena cantidad de espacio, por lo que el artículo se convierte en una “revistita”.&lt;/p&gt;
+&lt;p&gt;Los wizardzines son explicaciones sobre un tema en formato de cómic con dibujos sencillos e ilustrativos. Lo que resalta de estos cómics es que tratan a veces temas no tan sencillos de manera fácil de entender y para eso se lleva una buena cantidad de espacio, por lo que el artículo se convierte en una “revistita”.&lt;/p&gt;
 
-&lt;p&gt;Julia vende las revistas que ha hecho en aproximadamente &lt;em&gt;10 USD&lt;/em&gt; en formato digital con instrucciones para que tú la imprimas tú mismo. Sin embargo, si no las puedes pagar, Julia ofrece el modelo que yo llamaría “paga sólo si puedes”. Recientemente abrió todo su contenido para que lo descargues sin costo, con la confianza de que pagarás si no es un impedimento para ti.&lt;/p&gt;
+&lt;p&gt;Julia vende las revistas que ha hecho en aproximadamente &lt;em&gt;10 USD&lt;/em&gt;, en formato digital con instrucciones para que tú las imprimas. Sin embargo, si no las puedes pagar, Julia ofrece el modelo que yo llamaría &lt;strong&gt;“paga sólo si puedes”&lt;/strong&gt;: abrió todo su contenido para que lo descargues sin costo, con la confianza de que pagarás si no es un impedimento para ti.&lt;/p&gt;
 
-&lt;p&gt;En las Wiardzines puedes encontrar temas como “How containers work”, “Hell yes! CSS!” y “Help! I have a manager!”&lt;/p&gt;
+&lt;p&gt;En las Wiardzines puedes encontrar los siguientes temas:&lt;/p&gt;
 
-&lt;p&gt;Su página también tiene una sección llamada “questions” que te permite estudiar temas en formato de tarjetas con preguntas y respuestas que se revelan. Es una forma bastante buena de entender básicamente los temas de los que trata y al mismo tiempo de estudiar para memorizar algo que creas necesitar.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;“How containers work”&lt;/li&gt;
+  &lt;li&gt;“Hell yes! CSS!”&lt;/li&gt;
+  &lt;li&gt;“Help! I have a manager!”&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Puedes encontrar los wizard zines en:&lt;/p&gt;
+&lt;p&gt;Además, tiene un montón de zines gratuitos que tratan temas más pequeños y no están a color.&lt;/p&gt;
+
+&lt;p&gt;Su página tiene una sección llamada “questions” que te permite estudiar temas en formato de tarjetas con preguntas y respuestas que se revelan. Es una forma bastante buena de entender básicamente los temas de los que trata y al mismo tiempo de estudiar para memorizar algo que creas necesitar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1623713772/wizard_zines_bt7dzw.png&quot; alt=&quot;Ejemplo de Questions de wizardzines&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Puedes encontrar los wizardzines en:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://wizardzines.com/&quot;&gt;Página de Wizard Zines&lt;/a&gt;&lt;/li&gt;
@@ -54,7 +66,9 @@
 
 &lt;h2 id=&quot;visual-partner&quot;&gt;Visual Partner&lt;/h2&gt;
 
-&lt;p&gt;Carlo Gilmar, siguiendo la tendencia de &lt;a href=&quot;https://extremservicejam.wordpress.com/2013/02/18/que-es-visual-thinking-y-como-puede-ayudarte/&quot;&gt;visual thinking&lt;/a&gt; ha creado &lt;strong&gt;Visual Partner&lt;/strong&gt;, la empresa/proyecto alterno en la que comparte sus apuntes visuales sobre todo de charlas que se dan en meetups y conferencias.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://camo.githubusercontent.com/b196b29325f46dda5728d8d27884075949eaa7315beebf32a0537f259d54ee58/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6361726c6f67696c6d61722f696d6167652f75706c6f61642f76313539353937323133392f696c6c757374726174696f6e732f426568696e64253230746865253230636f64652f494d475f353837335f656d7173686b2e706e67&quot; alt=&quot;Ejemplo de registro grǻfico&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Carlo Gilmar, siguiendo la tendencia de &lt;a href=&quot;https://extremservicejam.wordpress.com/2013/02/18/que-es-visual-thinking-y-como-puede-ayudarte/&quot;&gt;visual thinking&lt;/a&gt; ha creado &lt;strong&gt;Visual Partner&lt;/strong&gt;, la empresa/proyecto alterno en la que comparte sus &lt;em&gt;apuntes visuales&lt;/em&gt; de charlas que se dan en meetups y conferencias.&lt;/p&gt;
 
 &lt;p&gt;Carlo ha creado un buen cuerpo de conocimiento de temas muy variados y probablemente puedas encontrar algo que estés aprendiendo en alguno de los lugares en lo que los comparte:&lt;/p&gt;
 
@@ -64,7 +78,7 @@
   &lt;li&gt;&lt;a href=&quot;https://twitter.com/carlogilmar?lang=en&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Su contenido puede servir como resumen y guía para aprender más acerca de cierto tema, ya que no está ordenado por tópicos o toca los temas profundamente. Aquí podrás encontrar contenido variado.&lt;/p&gt;
+&lt;p&gt;Su contenido puede servir como resumen y guía para aprender más acerca de cierto tema, ya que no está ordenado por tópicos, ni toca los temas profundamente. Aquí podrás encontrar contenido variado.&lt;/p&gt;
 
 &lt;h2 id=&quot;execute-program-inglés&quot;&gt;Execute Program (inglés)&lt;/h2&gt;
 
@@ -81,9 +95,9 @@
   &lt;li&gt;TypeScript&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;La dinámica de la plataforma es la siguiente: tú eres el compilador o el intérprete, es decir, la plataforma te da sentencias cada vez más complejas de la tecnología en cuestión y tú predices los resultados. Además tiene un sistema de &lt;strong&gt;repetición espaciada&lt;/strong&gt; que automáticamente te hace repasar los temas para que los recuerdes más efectivamente.&lt;/p&gt;
+&lt;p&gt;La dinámica de la plataforma es la siguiente: tú eres el compilador o el intérprete, es decir, la plataforma te da sentencias cada vez más complejas de la tecnología en cuestión y tú predices los resultados.&lt;/p&gt;
 
-&lt;p&gt;Puedes entrar a la plataforma aquí: &lt;a href=&quot;https://www.executeprogram.com/&quot;&gt;Execute Program&lt;/a&gt; también te recomiendo su otra plataforma, con videos tradicionales explicando cosas difíciles de desarrollar como compiladores: &lt;a href=&quot;https://www.destroyallsoftware.com/screencasts&quot;&gt;Destroy all Software&lt;/a&gt;. También tienes acceso con la suscripción de Execute Program.&lt;/p&gt;
+&lt;p&gt;Puedes entrar a la plataforma aquí: &lt;a href=&quot;https://www.executeprogram.com/&quot;&gt;Execute Program&lt;/a&gt;. Te recomiendo su otra plataforma, con videos tradicionales explicando cosas difíciles de desarrollar como compiladores: &lt;a href=&quot;https://www.destroyallsoftware.com/screencasts&quot;&gt;Destroy all Software&lt;/a&gt;. Tienes acceso a ambas plataformas con la suscripción de Execute Program.&lt;/p&gt;
 
 &lt;h2 id=&quot;otras-utilidades&quot;&gt;Otras utilidades&lt;/h2&gt;
 
@@ -97,7 +111,7 @@
   &lt;li&gt;&lt;a href=&quot;https://andreasbm.github.io/web-skills/&quot;&gt;Web Skills&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Si no te acomodas con las formas tradicionales como los libros y los videos, siempre habrá opciones diferentes e interactivas.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="recursos" /><category term="aprendizaje" /><category term="programación" /><summary type="html">En este artículo te recomendamos algunos recursos que te servirán para aprender conceptos de programación que no son libros o cursos comunes.</summary></entry><entry><title type="html">Recursos para aprender diseño de sistemas</title><link href="https://blog.thedojo.mx/2021/03/29/recursos-para-aprender-diseno-de-sistemas.html" rel="alternate" type="text/html" title="Recursos para aprender diseño de sistemas" /><published>2021-03-29T00:00:00-06:00</published><updated>2021-03-29T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/03/29/recursos-para-aprender-diseno-de-sistemas</id><content type="html" xml:base="https://blog.thedojo.mx/2021/03/29/recursos-para-aprender-diseno-de-sistemas.html">&lt;p&gt;El diseño de sistemas es un tema recurrente en entrevistas para desarrolladores de software, sobre todo para los niveles que requieren más experiencia, pero más allá de eso, es una habilidad fundamental a dominar si quieres avanzar en tu carrera.&lt;/p&gt;
+&lt;p&gt;Si no te acomodas con las formas tradicionales como los libros y los videos, siempre habrá opciones diferentes e interactivas. ¿Tienes alguna otra recomendación? La esperamos en los comentarios.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="recursos" /><category term="aprendizaje" /><category term="programación" /><summary type="html">En este artículo te recomendamos algunos recursos que te servirán para aprender conceptos de progrmación que no son libros o cursos comunes.</summary></entry><entry><title type="html">Recursos para aprender diseño de sistemas</title><link href="https://blog.thedojo.mx/2021/03/29/recursos-para-aprender-diseno-de-sistemas.html" rel="alternate" type="text/html" title="Recursos para aprender diseño de sistemas" /><published>2021-03-29T00:00:00-06:00</published><updated>2021-03-29T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/03/29/recursos-para-aprender-diseno-de-sistemas</id><content type="html" xml:base="https://blog.thedojo.mx/2021/03/29/recursos-para-aprender-diseno-de-sistemas.html">&lt;p&gt;El diseño de sistemas es un tema recurrente en entrevistas para desarrolladores de software, sobre todo para los niveles que requieren más experiencia, pero más allá de eso, es una habilidad fundamental a dominar si quieres avanzar en tu carrera.&lt;/p&gt;
 
 &lt;p&gt;Es por eso que vamos a empezar a hablar más de ese tema, contando nuestra experiencia, pero al mismo tiempo aprendiendo a diseñar mejor.&lt;/p&gt;
 
