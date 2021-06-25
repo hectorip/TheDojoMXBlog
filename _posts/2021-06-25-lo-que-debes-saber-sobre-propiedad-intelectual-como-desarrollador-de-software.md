@@ -13,9 +13,9 @@ header:
 
 Programar es una cosa, desarrollar software algo completamente diferente, sobre todo en un ambiente comercial en el que tienes que tratar con clientes y patrones. En este entorno tienes que entender otras cosas como la forma de colaborar con ellos, los precios y algo muy importante: las leyes.
 
-En este artículo vamos a hacer un resumen de las cosas que platicamos con [Cynthia Romero](https://twitter.com/LaCD_Rom) y con [Conde](https://twitter.com/LawyerCount) en la plática ["Todo lo que debes saber acerca de propiedad intelectual como creador de Software"](https://youtu.be/CpISQxihazU).
+En este artículo vamos a hacer un resumen de las cosas que platicamos con [Cynthia Romero](https://twitter.com/LaCD_Rom) y con [Conde](https://twitter.com/LawyerCount) en la plática ["Todo lo que debes saber acerca de propiedad intelectual como creador de Software"](https://youtu.be/CpISQxihazU). También Novus hizo un resumen por si lo quieres checar: [Tips legales para crear software](https://www.novusconcilium.com/post/software).
 
-TL;DR: Es muy importante controlar y conocer los componentes de tu software y mantener un registro para no meterte en problemas.
+**TL;DR**: Es muy importante controlar y conocer los componentes de tu software y mantener un registro para no meterte en problemas.
 
 ## ¿Qué es la propiedad?
 
@@ -40,6 +40,8 @@ Si el software que vas a usar tiene una licencia, debes asegurarte que cumples c
 ## El inventario de activos
 
 Muy conectado con el punto anterior existe una cosa que los creadores de software deberíamos tener muy presente: el inventario de activos (bill of materials). Este es un documento que contiene todas las piezas de software que estas usando, junto con las licencias y algún otro detalle sobre la pieza en específico. Esta lista ayudará al momento de asegurarnos que el software no está rompiendo ninguna licencia.
+
+Dependiendo del lenguaje que programes, hay herramientas que te pueden ayudar a verificar esto automáticamente, incluso a listar las licencias que usan, por ejemplo, Node tiene el paquete [License Checker](https://www.npmjs.com/package/license-checker) y Python tiene [PIP Licenses](https://pypi.org/project/pip-licenses/). El que existan estas herramientas de este estilo tal vez te de una idea de **lo importante** que es tener tu inventario de activos controlado.
 
 ## Documentos legales
 
