@@ -31,6 +31,31 @@ Los desarrolladores de software debemos tener bien claro cómo es que queremos s
 
 ## Uso de software de terceros
 
-Cuando desarrollamos software medianamente usable para casos cotidianos, es muy difícil que seamos nosotros quienes escribamos cada línea que compone el programa. Es por eso que confiamos en bibliotecas y piezas de software.
+Cuando desarrollamos software medianamente usable para casos cotidianos, es muy difícil que seamos nosotros quienes escribamos cada línea que compone el programa. Es por eso que confiamos en bibliotecas y piezas de software. ¿Cómo puedes asegurarte de respetar la propiedad intelectual de otros desarrolladores?
 
+El primer punto es que si alguna pieza de software no tiene una licencia explícita, entonces debes asumir que no tienes permiso para usarlo, mucho menos para incluirlo en software comercial o por encargo.
 
+Si el software que vas a usar tiene una licencia, debes asegurarte que cumples con lo que se establece en ella. Entender esto y asegurarte de que se estás cumpliendo requiere tiempo y esfuerzo, que debes considerar en la estimación del proyecto.
+
+## El inventario de activos
+
+Muy conectado con el punto anterior existe una cosa que los creadores de software deberíamos tener muy presente: el inventario de activos (bill of materials). Este es un documento que contiene todas las piezas de software que estas usando, junto con las licencias y algún otro detalle sobre la pieza en específico. Esta lista ayudará al momento de asegurarnos que el software no está rompiendo ninguna licencia.
+
+## Documentos legales
+
+Cuando queremos obtener beneficios por el software que comercializamos o exponemos a un público, es muy importante contar con documentos legales que establecen los acuerdos que se asumen con el uso del software. Estos documentos son normalmente:
+
+- La licencia de uso (para software comercial)
+- Los términos y condiciones de uso (para software de uso público)
+- El aviso de privacidad
+
+Crear estos documentos es un asunto serio en el que normalmente se necesita la ayuda de expertos, a menos que sea una aplicación muy sencilla y poco seria.
+
+Si estás exponiendo el software como OpenSource, entonces puedes usar una licencia prefabricada: [OpenSource Licenses](https://opensource.org/licenses), pero también tienes que entenderlas para ver qué es lo que permites con cada una.
+
+Estos costos los deberías de considerar en el costo final del software.
+## Conclusión
+
+Como desarrollador de software es importante que conozcas los temas básicos de propiedad intelectual si quieres desarrollar y comercializar software. Puedes ver la charla entera, para que obtengas más detalles aquí:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CpISQxihazU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

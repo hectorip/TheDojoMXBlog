@@ -352,4 +352,10 @@ var store = [{
         "tags": ["recursos","aprendizaje","programación"],
         "url": "/2021/06/14/fuentes-no-convencionales-de-aprendizaje.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,e_oil_paint:49,w_300/v1617383682/michael-dziedzic-gEN5Btvf2Eg-unsplash_nrd8uv.jpg"
+      },{
+        "title": "Lo que debes saber sobre propiedad intelectual como desarrollador de software",
+        "excerpt":"Programar es una cosa, desarrollar software algo completamente diferente, sobre todo en un ambiente comercial en el que tienes que tratar con clientes y patrones. En este entorno tienes que entender otras cosas como la forma de colaborar con ellos, los precios y algo muy importante: las leyes. En este...","categories": [],
+        "tags": ["propiedad-intelectual","leyes"],
+        "url": "/2021/06/22/lo-que-debes-saber-sobre-propiedad-intelectual-como-desarrollador-de-software.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,e_cartoonify,w_1200/v1624377067/giammarco-zeH-ljawHtg-unsplash_e4u5ve.jpg"
       }]
