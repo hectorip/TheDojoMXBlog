@@ -23,4 +23,16 @@ Las condiciones para que aparezcan aquí son las siguientes:
 
 El objetivo de esta serie es que aprendamos de las personas que han dedicado su vida a esto y construyamos sobre lo que ellos han hecho en vez de reinventar la rueda cada vez.
 
-En este capítulo hablaremos de [Kevlin Henney]().
+En este capítulo hablaremos de [Kevlin Henney](https://blog.eisele.net/2013/07/the-heroes-of-java-kevlin-henney.html).
+
+## Acerca de Kevlin Henney
+
+Kevlin es actualmente un consultor, escritor, entrenador y presentador de temas relacionados con los sistemas, los procesos, la gente y el software. Sus escritos, talleres y consultorías siempre tienen que ver con la forma en que _desarrollamos_ y _diseñamos_ software.
+
+## Algunas ideas y frases de Kevlin
+
+## Pláticas
+
+## Recursos
+
+## Conclusión
