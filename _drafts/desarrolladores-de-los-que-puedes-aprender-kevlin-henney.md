@@ -31,7 +31,7 @@ Kevlin es actualmente un consultor, escritor, entrenador y presentador de temas 
 
 ## Algunas ideas de Kevlin
 
-
+"Mientras menos código, mejor"
 
 ## Pláticas
 
@@ -39,4 +39,4 @@ Kevlin es actualmente un consultor, escritor, entrenador y presentador de temas 
 
 ## Conclusión
 
-Todos los desarrolladores de diferentes niveles podemos aprender mucho de las ideas que Kevlin se ha dedicado a enseñar.
+Todos los desarrolladores de diferentes niveles podemos aprender mucho de las ideas que Kevlin se ha dedicado a enseñar. 
