@@ -3,9 +3,8 @@ title: "Desarrolladores de los que puedes aprender: Kevlin Henney"
 date: 2021-06-26
 author: Héctor Patricio
 tags:
-categories: 
 comments: true
-excerpt: "Escribe aquí un buen resumen de tu artículo"
+excerpt: "Hay muchas personas de las cuáles aprender, con muchos años de experiencia más allá de Robert Martín. En esta serie de artículos vamos a resaltar el trabajo y las ideas de varios desarrolladores y consultores con gran experiencia. Empecemos con Kevlin Henney."
 header:
   overlay_image: #image
   teaser: #image
@@ -35,8 +34,11 @@ Kevlin es actualmente un consultor, escritor, entrenador y presentador de temas 
 
 ## Pláticas
 
+Kevlin tiene decenas de pláticas en YouTube y Vimeo, hablando temas muy variados, todos relacionados de una forma u otra con el _proceso_ de desarrollo de calidad.
 ## Recursos
+
+- 97 Things Every Developer should know
 
 ## Conclusión
 
-Todos los desarrolladores de diferentes niveles podemos aprender mucho de las ideas que Kevlin se ha dedicado a enseñar. 
+Todos los desarrolladores de diferentes niveles podemos aprender mucho de las ideas que Kevlin se ha dedicado a enseñar.
