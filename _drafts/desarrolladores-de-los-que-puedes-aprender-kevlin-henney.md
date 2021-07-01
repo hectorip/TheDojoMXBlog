@@ -34,11 +34,11 @@ Kevlin es actualmente un consultor, escritor, entrenador y presentador de temas 
 
 ## Pláticas
 
-Kevlin tiene decenas de pláticas en YouTube y Vimeo, hablando temas muy variados, todos relacionados de una forma u otra con el _proceso_ de desarrollo de calidad.
+Kevlin tiene decenas de pláticas en YouTube y Vimeo, hablando temas muy variados, todos relacionados de una forma u otra con el _proceso_ de desarrollo de calidad. Aquí vamos a listar algunas de las que nos han parecido las mejores.
 ## Recursos
 
-- 97 Things Every Developer should know
-
+- [97 Things Every Developer should know](https://www.oreilly.com/library/view/97-things-every/9780596809515/) - Es una colección de ensayos que Kevlin se encargó de compilar y editar.
+- []() -
 ## Conclusión
 
 Todos los desarrolladores de diferentes niveles podemos aprender mucho de las ideas que Kevlin se ha dedicado a enseñar.
