@@ -6,8 +6,8 @@ tags:
 comments: true
 excerpt: "Hay muchas personas de las cuáles aprender, con muchos años de experiencia más allá de Robert Martín. En esta serie de artículos vamos a resaltar el trabajo y las ideas de varios desarrolladores y consultores con gran experiencia. Empecemos con Kevlin Henney."
 header:
-  overlay_image: #image
-  teaser: #image
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/e_oil_paint:12/v1625199907/DevTernity-2016-Kevlin-Henney-Seven-Ineffective-Coding-Habits-of-Many-Programmers-Video-Speech_jrjhg8.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/e_oil_paint:12/v1625199907/DevTernity-2016-Kevlin-Henney-Seven-Ineffective-Coding-Habits-of-Many-Programmers-Video-Speech_jrjhg8.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -30,7 +30,7 @@ Kevlin es actualmente un consultor, escritor, entrenador y presentador de temas 
 
 ## Algunas ideas de Kevlin
 
-"Mientras menos código, mejor"
+"Mientras menos código, mejor",
 
 ## Pláticas
 
