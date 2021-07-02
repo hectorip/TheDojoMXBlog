@@ -38,7 +38,7 @@ Kevlin tiene decenas de pláticas en YouTube y Vimeo, hablando temas muy variado
 ## Recursos
 
 - [97 Things Every Developer should know](https://www.oreilly.com/library/view/97-things-every/9780596809515/) - Es una colección de ensayos que Kevlin se encargó de compilar y editar.
-- []() -
+- [Another thing ]() -
 ## Conclusión
 
 Todos los desarrolladores de diferentes niveles podemos aprender mucho de las ideas que Kevlin se ha dedicado a enseñar.
