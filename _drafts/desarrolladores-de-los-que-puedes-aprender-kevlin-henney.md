@@ -11,7 +11,7 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Hay muchos desarrolladores de talla internacional de los que puedes aprender mucho, y que creemos que no tienen la suficiente atención. Es por eso que estamos creando una serie de artículos y videos en la que resaltaremos la trayectoria, forma de pensar, pláticas y cosas que puedes aprender.
+Hay varios desarrolladores de talla internacional de los que puedes **aprender mucho**, que creemos que no tienen la suficiente exposición, sobre todo en America Latina. Es por eso que estamos creando una serie de artículos y videos en la que resaltaremos la trayectoria, forma de pensar, pláticas y cosas que puedes aprender.
 
 Las condiciones para que aparezcan aquí son las siguientes:
 
