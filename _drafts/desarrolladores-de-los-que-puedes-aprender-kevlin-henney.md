@@ -26,7 +26,9 @@ En este capítulo hablaremos de [Kevlin Henney](https://blog.eisele.net/2013/07/
 
 ## Acerca de Kevlin Henney
 
-Kevlin es actualmente un consultor, escritor, entrenador y presentador de temas relacionados con los sistemas, los procesos, la gente y el software. Sus escritos, talleres y consultorías siempre tienen que ver con la forma en que _desarrollamos_ y _diseñamos_ software, además de con los procesos y prácticas que llevan al software a ser exitoso.
+Kevlin es un consultor, escritor, entrenador y presentador de temas relacionados con sistemas, procesos, las personas y el software. Sus escritos, talleres y consultorías siempre tienen que ver con **la forma** en que _desarrollamos_ y _diseñamos_ software, además de con los procesos y prácticas que llevan al éxito los proyectos de software complejos.
+
+
 
 ## Algunas ideas de Kevlin
 
