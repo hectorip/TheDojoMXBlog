@@ -26,21 +26,33 @@ En este capítulo hablaremos de [Kevlin Henney](https://blog.eisele.net/2013/07/
 
 ## Acerca de Kevlin Henney
 
-Kevlin es un consultor, escritor, entrenador y presentador de temas relacionados con sistemas, procesos, las personas y el software. Sus escritos, talleres y consultorías siempre tienen que ver con **la forma** en que _desarrollamos_ y _diseñamos_ software, además de con los procesos y prácticas que llevan al éxito los proyectos de software complejos.
+Kevlin Henney es un consultor, escritor, entrenador y presentador de temas relacionados con sistemas, procesos, las personas y el software. Sus escritos, talleres y consultorías siempre tienen que ver con **la forma** en que _desarrollamos_ y _diseñamos_ software, además de con los procesos y prácticas que llevan al éxito los proyectos de software complejos.
 
+Ha escrito columnas para múltiples revistas dedicadas al desarrollo de software. Es autor o editor de diferentes libros que son muy recomendados para arquitectos de software y desarrolladores, por ejemplo:
 
+- [A Pattern Oriented Software Architecture for Distributed Computing](https://www.amazon.com.mx/Pattern-Oriented-Software-Architecture-Distributed-Computing/dp/0470059028)
+- [97 Things Every Developer should know](https://www.oreilly.com/library/view/97-things-every/9780596809515/) - Es una colección de ensayos que Kevlin se encargó de compilar y editar.
+
+Kevlin vive en Bristol, Reino Unido y también disfruta de escribir ficción.
 
 ## Algunas ideas de Kevlin
 
-"Mientras menos código, mejor",
+> "Less code = less bugs". - Kevlin Henney
+
 
 ## Pláticas
 
 Kevlin tiene decenas de pláticas en YouTube y Vimeo, hablando temas muy variados, todos relacionados de una forma u otra con el _proceso_ de desarrollo de calidad. Aquí vamos a listar algunas de las que nos han parecido las mejores.
+
 ## Recursos
 
-- [97 Things Every Developer should know](https://www.oreilly.com/library/view/97-things-every/9780596809515/) - Es una colección de ensayos que Kevlin se encargó de compilar y editar.
-- [Another thing ]() -
+Para aprender más de las ideas qeu Kevlin enseña, pueds investigar más de él y su trabajo aquí:
+
+- [Página de Kevlin Henney](https://about.me/kevlin)
+
+- [What to read if you are a programmer](https://blog.itkonekt.com/2021/01/21/kevlin-henney-on-the-topic-of-what-to-read-if-youre-a-programmer/)
+
+- [Entrevista de la serie "Heroes of Java"](https://blog.eisele.net/2013/07/the-heroes-of-java-kevlin-henney.html)
 ## Conclusión
 
 Todos los desarrolladores de diferentes niveles podemos aprender mucho de las ideas que Kevlin se ha dedicado a enseñar.
