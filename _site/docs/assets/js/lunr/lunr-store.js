@@ -108,7 +108,7 @@ var store = [{
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1565702060/annie-spratt-kZO9xqmO_TA-unsplash_swtrj6.jpg"
       },{
         "title": "¿Por qué deberías aprender Go?",
-        "excerpt":"Go es eficiente, escalable y productivo. - Rob Pike Go es un lenguaje que llama la atención por algunos rumores que hay acerca de él, como, por ejemplo, que es el lenguaje que va a matar a C, o que es muy muy rápido y poderoso. En este artículo vamos...","categories": [],
+        "excerpt":"Go es eficiente, escalable y productivo. - Rob Pike Go es un lenguaje popular por los rumores que hay acerca de él, como que es el lenguaje que va a matar a C, o que es muy muy rápido y poderoso. En este artículo vamos a hablar de qué cosas...","categories": [],
         "tags": ["go","golang","lenguajes-de-programación"],
         "url": "/2019/09/01/por-que-deberias-aprender-go.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/v1567376344/google-servers-datacenter_bs7xzt.png"
@@ -156,7 +156,7 @@ var store = [{
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_fill,g_custom,h_1000,w_1400,x_0/v1586794249/7CD56C0C-C8F6-448E-891B-348469AAF598_h9jpih.jpg"
       },{
         "title": "Recursos gratutitos para aprender a programar desde cero",
-        "excerpt":"¿Quieres aprender a programar y no sabes por dónde empezar? En este post te daremos algunos recursos que puedes seguir para aprender a programar desde lo más básico hasta tener un conocimiento razonable de programación con el que podrías empezar a trabajar como becario. Motívate Para ser un buen programador...","categories": [],
+        "excerpt":"¿Quieres aprender a programar y no sabes por dónde empezar? En este artículo te daremos algunos recursos que puedes seguir para aprender a programar desde lo más básico hasta tener un conocimiento razonable de programación con el que podrías empezar a trabajar. Motívate Es importante conocer las bases, pero para...","categories": [],
         "tags": ["aprender","programar","recursos-aprendizaje"],
         "url": "/2019/12/29/recursos-gratutitos-para-aprender-a-programar-desde-cero.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_200/v1577598219/siora-photography-hgFY1mZY-Y0-unsplash_brzlus.jpg"
@@ -340,4 +340,22 @@ var store = [{
         "tags": ["machine-learning","ml","aprendizaje-automático"],
         "url": "/2021/03/25/intro-a-machine-learning-entendiendo-perceptron.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,w_300/v1616115397/robynne-hu-HOrhCnQsxnQ-unsplash_sos5ux.jpg"
+      },{
+        "title": "Recursos para aprender diseño de sistemas",
+        "excerpt":"El diseño de sistemas es un tema recurrente en entrevistas para desarrolladores de software, sobre todo para los niveles que requieren más experiencia, pero más allá de eso, es una habilidad fundamental a dominar si quieres avanzar en tu carrera. Es por eso que vamos a empezar a hablar más...","categories": [],
+        "tags": ["system-design","book","courses","cursos","libros","learning"],
+        "url": "/2021/03/29/recursos-para-aprender-diseno-de-sistemas.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,e_oil_paint:30,w_300/v1617037690/joel-filipe-jU9VAZDGMzs-unsplash_wzkvza.jpg"
+      },{
+        "title": "Fuentes no convencionales de aprendizaje",
+        "excerpt":"Cada quien tiene su forma de aprender. A algunas personas les funcionan mejor formas visuales y no convencionales. En este artículo te vamos a presentar algunos de los recursos que hemos encontrado que explican ideas y temas relacionados con la programación con un formato no convencional. Te lo explico con...","categories": [],
+        "tags": ["recursos","aprendizaje","programación"],
+        "url": "/2021/06/14/fuentes-no-convencionales-de-aprendizaje.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,e_oil_paint:49,w_300/v1617383682/michael-dziedzic-gEN5Btvf2Eg-unsplash_nrd8uv.jpg"
+      },{
+        "title": "Lo que debes saber sobre propiedad intelectual como desarrollador de software",
+        "excerpt":"Programar es una cosa, desarrollar software algo completamente diferente, sobre todo en un ambiente comercial en el que tienes que tratar con clientes y patrones. En este entorno tienes que entender otras cosas como la forma de colaborar con ellos, los precios y algo muy importante: las leyes. En este...","categories": [],
+        "tags": ["propiedad-intelectual","leyes"],
+        "url": "/2021/06/22/lo-que-debes-saber-sobre-propiedad-intelectual-como-desarrollador-de-software.html",
+        "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,e_cartoonify,w_1200/v1624377067/giammarco-zeH-ljawHtg-unsplash_e4u5ve.jpg"
       }]

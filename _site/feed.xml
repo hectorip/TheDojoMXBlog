@@ -1,4 +1,210 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2021-03-29T11:11:02-06:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Recursos para aprender diseño de sistemas</title><link href="https://blog.thedojo.mx/2021/03/29/recursos-para-aprender-diseno-de-sistemas.html" rel="alternate" type="text/html" title="Recursos para aprender diseño de sistemas" /><published>2021-03-29T00:00:00-06:00</published><updated>2021-03-29T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/03/29/recursos-para-aprender-diseno-de-sistemas</id><content type="html" xml:base="https://blog.thedojo.mx/2021/03/29/recursos-para-aprender-diseno-de-sistemas.html">&lt;p&gt;El diseño de sistemas es un tema recurrente en entrevistas para desarrolladores de software, sobre todo para los niveles que requieren más experiencia, pero más allá de eso, es una habilidad fundamental a dominar si quieres avanzar en tu carrera.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.thedojo.mx/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.thedojo.mx/" rel="alternate" type="text/html" /><updated>2021-07-02T01:05:06-05:00</updated><id>https://blog.thedojo.mx/feed.xml</id><author><name>Héctor Patricio</name><uri>https://github.com/hectorip</uri></author><entry><title type="html">Desarrolladores de los que puedes aprender: Kevlin Henney</title><link href="https://blog.thedojo.mx/2021/06/26/desarrolladores-de-los-que-puedes-aprender-kevlin-henney.html" rel="alternate" type="text/html" title="Desarrolladores de los que puedes aprender: Kevlin Henney" /><published>2021-06-26T00:00:00-05:00</published><updated>2021-06-26T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2021/06/26/desarrolladores-de-los-que-puedes-aprender-kevlin-henney</id><content type="html" xml:base="https://blog.thedojo.mx/2021/06/26/desarrolladores-de-los-que-puedes-aprender-kevlin-henney.html">&lt;p&gt;Hay muchos desarrolladores de talla internacional de los que puedes aprender mucho, y que creemos que no tienen la suficiente atención. Es por eso que estamos creando una serie de artículos y videos en la que resaltaremos la trayectoria, forma de pensar, pláticas y cosas que puedes aprender.&lt;/p&gt;
+
+&lt;p&gt;Las condiciones para que aparezcan aquí son las siguientes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Amplia experiencia real desarrollando sistemas&lt;/li&gt;
+  &lt;li&gt;Que tengan algún logro notable en el desarrollo de sistemas&lt;/li&gt;
+  &lt;li&gt;Comparten sus ideas con la comunidad de forma continua&lt;/li&gt;
+  &lt;li&gt;No son unos &lt;em&gt;“brilliant jerks”&lt;/em&gt;, es decir, no usan su experiencia o inteligencia para el mal&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;El objetivo de esta serie es que aprendamos de las personas que han dedicado su vida a esto y construyamos sobre lo que ellos han hecho en vez de reinventar la rueda cada vez.&lt;/p&gt;
+
+&lt;p&gt;En este capítulo hablaremos de &lt;a href=&quot;https://blog.eisele.net/2013/07/the-heroes-of-java-kevlin-henney.html&quot;&gt;Kevlin Henney&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;acerca-de-kevlin-henney&quot;&gt;Acerca de Kevlin Henney&lt;/h2&gt;
+
+&lt;p&gt;Kevlin es actualmente un consultor, escritor, entrenador y presentador de temas relacionados con los sistemas, los procesos, la gente y el software. Sus escritos, talleres y consultorías siempre tienen que ver con la forma en que &lt;em&gt;desarrollamos&lt;/em&gt; y &lt;em&gt;diseñamos&lt;/em&gt; software, además de con los procesos y prácticas que llevan al software a ser exitoso.&lt;/p&gt;
+
+&lt;h2 id=&quot;algunas-ideas-de-kevlin&quot;&gt;Algunas ideas de Kevlin&lt;/h2&gt;
+
+&lt;p&gt;“Mientras menos código, mejor”,&lt;/p&gt;
+
+&lt;h2 id=&quot;pláticas&quot;&gt;Pláticas&lt;/h2&gt;
+
+&lt;p&gt;Kevlin tiene decenas de pláticas en YouTube y Vimeo, hablando temas muy variados, todos relacionados de una forma u otra con el &lt;em&gt;proceso&lt;/em&gt; de desarrollo de calidad. Aquí vamos a listar algunas de las que nos han parecido las mejores.&lt;/p&gt;
+&lt;h2 id=&quot;recursos&quot;&gt;Recursos&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.oreilly.com/library/view/97-things-every/9780596809515/&quot;&gt;97 Things Every Developer should know&lt;/a&gt; - Es una colección de ensayos que Kevlin se encargó de compilar y editar.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Another thing &lt;/a&gt; -
+    &lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Todos los desarrolladores de diferentes niveles podemos aprender mucho de las ideas que Kevlin se ha dedicado a enseñar.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Hay muchas personas de las cuáles aprender, con muchos años de experiencia más allá de Robert Martín. En esta serie de artículos vamos a resaltar el trabajo y las ideas de varios desarrolladores y consultores con gran experiencia. Empecemos con Kevlin Henney.</summary></entry><entry><title type="html">Lo que debes saber sobre propiedad intelectual como desarrollador de software</title><link href="https://blog.thedojo.mx/2021/06/22/lo-que-debes-saber-sobre-propiedad-intelectual-como-desarrollador-de-software.html" rel="alternate" type="text/html" title="Lo que debes saber sobre propiedad intelectual como desarrollador de software" /><published>2021-06-22T00:00:00-05:00</published><updated>2021-06-22T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2021/06/22/lo-que-debes-saber-sobre-propiedad-intelectual-como-desarrollador-de-software</id><content type="html" xml:base="https://blog.thedojo.mx/2021/06/22/lo-que-debes-saber-sobre-propiedad-intelectual-como-desarrollador-de-software.html">&lt;p&gt;Programar es una cosa, desarrollar software algo completamente diferente, sobre todo en un ambiente comercial en el que tienes que tratar con clientes y patrones. En este entorno tienes que entender otras cosas como la forma de colaborar con ellos, los precios y algo muy importante: las leyes.&lt;/p&gt;
+
+&lt;p&gt;En este artículo vamos a hacer un resumen de las cosas que platicamos con &lt;a href=&quot;https://twitter.com/LaCD_Rom&quot;&gt;Cynthia Romero&lt;/a&gt; y con &lt;a href=&quot;https://twitter.com/LawyerCount&quot;&gt;Conde&lt;/a&gt; en la plática &lt;a href=&quot;https://youtu.be/CpISQxihazU&quot;&gt;“Todo lo que debes saber acerca de propiedad intelectual como creador de Software”&lt;/a&gt;. También Novus hizo un resumen por si lo quieres checar: &lt;a href=&quot;https://www.novusconcilium.com/post/software&quot;&gt;Tips legales para crear software&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: Es muy importante controlar y conocer los componentes de tu software y mantener un registro para no meterte en problemas.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-la-propiedad&quot;&gt;¿Qué es la propiedad?&lt;/h2&gt;
+
+&lt;p&gt;La propiedad es la facultad que se define en el derecho como la capacidad de usar algo, aprovecharse de los frutos o productos de ese algo y la facultad de usar como quieras, incluso deshacerte de ese algo.&lt;/p&gt;
+
+&lt;p&gt;La propiedad es muy fácil de entender cuando se trata de cosas físicas, pero no tanto cuando se trata de cosas intangibles. La propiedad &lt;strong&gt;intelectual&lt;/strong&gt; se refiere a la aplicación de las facultades antes mencionadas a obras o trabajos que hiciste con tu mente y no con tus manos. Algo que se resaltó en la plática, es que el software y todas las obras intelectuales están protegidas por las leyes desde escribes la primera línea.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-una-licencia&quot;&gt;¿Qué es una licencia?&lt;/h2&gt;
+
+&lt;p&gt;Debido a que somos los dueños de las cosas que creamos, podemos extender facultades como el uso o la distribución sobre nuestras obras. Estas facultades se formalizan mediante &lt;strong&gt;una licencia&lt;/strong&gt;, que es un contrato que establece las condiciones de uso de la obra intelectual.&lt;/p&gt;
+
+&lt;p&gt;Los desarrolladores de software debemos tener bien claro cómo es que queremos sacarle provecho a nuestras obras para establecer el contrato, &lt;em&gt;la licencia&lt;/em&gt; adecuada. Para establecer esto, lo normal es consultar con expertos que nos ayuden a tangibilizar la licencia, ya que los términos y procedimientos legales no son fáciles de manejar, y más vale contar con la ayuda de alguien con experiencia.&lt;/p&gt;
+
+&lt;h2 id=&quot;uso-de-software-de-terceros&quot;&gt;Uso de software de terceros&lt;/h2&gt;
+
+&lt;p&gt;Cuando desarrollamos software medianamente usable para casos cotidianos, es muy difícil que seamos nosotros quienes escribamos cada línea que compone el programa. Es por eso que confiamos en bibliotecas y piezas de software. ¿Cómo puedes asegurarte de respetar la propiedad intelectual de otros desarrolladores?&lt;/p&gt;
+
+&lt;p&gt;El primer punto es que si alguna pieza de software no tiene una licencia explícita, entonces debes asumir que no tienes permiso para usarlo, mucho menos para incluirlo en software comercial o por encargo.&lt;/p&gt;
+
+&lt;p&gt;Si el software que vas a usar tiene una licencia, debes asegurarte que cumples con lo que se establece en ella. Entender esto y asegurarte de que se estás cumpliendo requiere tiempo y esfuerzo, que debes considerar en la estimación del proyecto.&lt;/p&gt;
+
+&lt;h2 id=&quot;el-inventario-de-activos&quot;&gt;El inventario de activos&lt;/h2&gt;
+
+&lt;p&gt;Muy conectado con el punto anterior existe una cosa que los creadores de software deberíamos tener muy presente: el inventario de activos (bill of materials). Este es un documento que contiene todas las piezas de software que estas usando, junto con las licencias y algún otro detalle sobre la pieza en específico. Esta lista ayudará al momento de asegurarnos que el software no está rompiendo ninguna licencia.&lt;/p&gt;
+
+&lt;p&gt;Dependiendo del lenguaje que programes, hay herramientas que te pueden ayudar a verificar esto automáticamente, incluso a listar las licencias que usan, por ejemplo, Node tiene el paquete &lt;a href=&quot;https://www.npmjs.com/package/license-checker&quot;&gt;License Checker&lt;/a&gt; y Python tiene &lt;a href=&quot;https://pypi.org/project/pip-licenses/&quot;&gt;PIP Licenses&lt;/a&gt;. El que existan estas herramientas de este estilo tal vez te de una idea de &lt;strong&gt;lo importante&lt;/strong&gt; que es tener tu inventario de activos controlado.&lt;/p&gt;
+
+&lt;h2 id=&quot;documentos-legales&quot;&gt;Documentos legales&lt;/h2&gt;
+
+&lt;p&gt;Cuando queremos obtener beneficios por el software que comercializamos o exponemos a un público, es muy importante contar con documentos legales que establecen los acuerdos que se asumen con el uso del software. Estos documentos son normalmente:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;La licencia de uso (para software comercial)&lt;/li&gt;
+  &lt;li&gt;Los términos y condiciones de uso (para software de uso público)&lt;/li&gt;
+  &lt;li&gt;El aviso de privacidad&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Crear estos documentos es un asunto serio en el que normalmente se necesita la ayuda de expertos, a menos que sea una aplicación muy sencilla y poco seria.&lt;/p&gt;
+
+&lt;p&gt;Si estás exponiendo el software como OpenSource, entonces puedes usar una licencia prefabricada: &lt;a href=&quot;https://opensource.org/licenses&quot;&gt;OpenSource Licenses&lt;/a&gt;, pero también tienes que entenderlas para ver qué es lo que permites con cada una.&lt;/p&gt;
+
+&lt;p&gt;Estos costos los deberías de considerar en el costo final del software.&lt;/p&gt;
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Como desarrollador de software es importante que conozcas los temas básicos de propiedad intelectual si quieres desarrollar y comercializar software. Puedes ver la charla entera, para que obtengas más detalles aquí:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/CpISQxihazU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="propiedad-intelectual" /><category term="leyes" /><summary type="html">Como creadores de software es importante que conozcamos lo básico sobre las leyes que rigen la propiedad intelectual respecto a los programas y sus diferentes formas.</summary></entry><entry><title type="html">Fuentes no convencionales de aprendizaje</title><link href="https://blog.thedojo.mx/2021/06/14/fuentes-no-convencionales-de-aprendizaje.html" rel="alternate" type="text/html" title="Fuentes no convencionales de aprendizaje" /><published>2021-06-14T00:00:00-05:00</published><updated>2021-06-14T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2021/06/14/fuentes-no-convencionales-de-aprendizaje</id><content type="html" xml:base="https://blog.thedojo.mx/2021/06/14/fuentes-no-convencionales-de-aprendizaje.html">&lt;p&gt;Cada quien tiene su forma de aprender. A algunas personas les funcionan mejor formas visuales y no convencionales. En este artículo te vamos a presentar algunos de los recursos que hemos encontrado que explican ideas y temas relacionados con la programación con un formato no convencional.&lt;/p&gt;
+
+&lt;h2 id=&quot;te-lo-explico-con-gatitos&quot;&gt;Te lo explico con gatitos&lt;/h2&gt;
+
+&lt;p&gt;Bel Rey, una programadora de Argentina (con la que tenemos una &lt;a href=&quot;https://youtu.be/7Ea4BGxwhEA&quot;&gt;entrevista&lt;/a&gt;) crea explicaciones estilo comics usando gatitos para embellecer y hacer divertidas las explicaciones.&lt;/p&gt;
+
+&lt;p&gt;En este cómic explica una de las motivaciones para hacer este estilo de ilustraciones-explicaciones:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://teloexplicocongatitos.com/_next/image?url=https%3A%2F%2Fdoomvault.nyc3.digitaloceanspaces.com%2Ftlecg%2Fbig%2Faprender00.jpg&amp;amp;w=1200&amp;amp;q=75&quot; alt=&quot;Estilos de aprendizaje - te lo explico con gatitos&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Entre sus explicaciones puedes encontrar temas como Docker, programación orientada objetos y comandos SQL todo con el estilo simpático y la estética de los gatitos, algunos de ellos enojados.&lt;/p&gt;
+
+&lt;p&gt;Puedes ver su contenido en:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://teloexplicocongatitos.com/&quot;&gt;Su página&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.instagram.com/teloexplicocongatitos/&quot;&gt;Instagram&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/explicocongatos&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;los-apuntes-de-majo&quot;&gt;Los apuntes de Majo&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1623713646/losapuntes_ijwxfh.png&quot; alt=&quot;Ejemplo de los apuntes de Majo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Majo Ledesma, mientras estaba estudiando programación empezó a crear notas bastante bonitas y visuales reportando y resumiendo temas diversos como Python, JavaScript, CSS y ahora amasa una gran cantidad de temas y apuntes.&lt;/p&gt;
+
+&lt;p&gt;Se hizo tan famosa que el CEO de &lt;a href=&quot;https://losapuntesdemajo.vercel.app/&quot;&gt;Vercel&lt;/a&gt; le ofreció poner todo su contenido en línea gratis usando su plataforma.&lt;/p&gt;
+
+&lt;p&gt;El estilo de los apuntes es como si estuvieras leyendo la libreta de la alumna más aplicada y dedicada del salón para cualquier materia, con ilustraciones que embellecen la nota pero no siempre relacionadas con el tema. Son apuntes completamente hechos a mano en medios físicos y digitalizados.&lt;/p&gt;
+
+&lt;p&gt;Pudes obtener los apuntes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://losapuntesdemajo.vercel.app/&quot;&gt;Los apuntes de Majo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/MajoLedes&quot;&gt;Twitter de Majo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;wizardzines-de-julia-evans-en-inglés&quot;&gt;Wizardzines de Julia Evans (en inglés)&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1623630863/wz_3_vvj9pp.png&quot; alt=&quot;Algunos wizard zines&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Los wizardzines son explicaciones sobre un tema en formato de cómic con dibujos sencillos e ilustrativos. Lo que resalta de estos cómics es que tratan a veces temas no tan sencillos de manera fácil de entender y para eso se lleva una buena cantidad de espacio, por lo que el artículo se convierte en una “revistita”.&lt;/p&gt;
+
+&lt;p&gt;Julia vende las revistas que ha hecho en aproximadamente &lt;em&gt;10 USD&lt;/em&gt;, en formato digital con instrucciones para que tú las imprimas. Sin embargo, si no las puedes pagar, Julia ofrece el modelo que yo llamaría &lt;strong&gt;“paga sólo si puedes”&lt;/strong&gt;: abrió todo su contenido para que lo descargues sin costo, con la confianza de que pagarás si no es un impedimento para ti.&lt;/p&gt;
+
+&lt;p&gt;En las Wiardzines puedes encontrar los siguientes temas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“How containers work”&lt;/li&gt;
+  &lt;li&gt;“Hell yes! CSS!”&lt;/li&gt;
+  &lt;li&gt;“Help! I have a manager!”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Además, tiene un montón de zines gratuitos que tratan temas más pequeños y no están a color.&lt;/p&gt;
+
+&lt;p&gt;Su página tiene una sección llamada “questions” que te permite estudiar temas en formato de tarjetas con preguntas y respuestas que se revelan. Es una forma bastante buena de entender básicamente los temas de los que trata y al mismo tiempo de estudiar para memorizar algo que creas necesitar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1623713772/wizard_zines_bt7dzw.png&quot; alt=&quot;Ejemplo de Questions de wizardzines&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Puedes encontrar los wizardzines en:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wizardzines.com/&quot;&gt;Página de Wizard Zines&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/b0rk&quot;&gt;Twitter de Julia Evans&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;visual-partner&quot;&gt;Visual Partner&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://camo.githubusercontent.com/b196b29325f46dda5728d8d27884075949eaa7315beebf32a0537f259d54ee58/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f6361726c6f67696c6d61722f696d6167652f75706c6f61642f76313539353937323133392f696c6c757374726174696f6e732f426568696e64253230746865253230636f64652f494d475f353837335f656d7173686b2e706e67&quot; alt=&quot;Ejemplo de registro grǻfico&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Carlo Gilmar, siguiendo la tendencia de &lt;a href=&quot;https://extremservicejam.wordpress.com/2013/02/18/que-es-visual-thinking-y-como-puede-ayudarte/&quot;&gt;visual thinking&lt;/a&gt; ha creado &lt;strong&gt;Visual Partner&lt;/strong&gt;, la empresa/proyecto alterno en la que comparte sus &lt;em&gt;apuntes visuales&lt;/em&gt; de charlas que se dan en meetups y conferencias.&lt;/p&gt;
+
+&lt;p&gt;Carlo ha creado un buen cuerpo de conocimiento de temas muy variados y probablemente puedas encontrar algo que estés aprendiendo en alguno de los lugares en lo que los comparte:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://visualpartnership.herokuapp.com/&quot;&gt;Visual Partnership&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/visualpartnership/&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/carlogilmar?lang=en&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Su contenido puede servir como resumen y guía para aprender más acerca de cierto tema, ya que no está ordenado por tópicos, ni toca los temas profundamente. Aquí podrás encontrar contenido variado.&lt;/p&gt;
+
+&lt;h2 id=&quot;execute-program-inglés&quot;&gt;Execute Program (inglés)&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/hectorip/image/upload/v1623647102/execute_program_ofbgcz.png&quot; alt=&quot;Execute program home&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;El creador de &lt;strong&gt;Destroy All Software&lt;/strong&gt;,  Gary Bernhardt creó una plataforma para que aprendieras las siguientes tecnologías de forma no convencional:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;JavaScript Arrays&lt;/li&gt;
+  &lt;li&gt;Concurrencia con JavaScript&lt;/li&gt;
+  &lt;li&gt;JavaScript moderno (ES2015-2019)&lt;/li&gt;
+  &lt;li&gt;Expresiones Regulares&lt;/li&gt;
+  &lt;li&gt;SQL&lt;/li&gt;
+  &lt;li&gt;TypeScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La dinámica de la plataforma es la siguiente: tú eres el compilador o el intérprete, es decir, la plataforma te da sentencias cada vez más complejas de la tecnología en cuestión y tú predices los resultados.&lt;/p&gt;
+
+&lt;p&gt;Puedes entrar a la plataforma aquí: &lt;a href=&quot;https://www.executeprogram.com/&quot;&gt;Execute Program&lt;/a&gt;. Te recomiendo su otra plataforma, con videos tradicionales explicando cosas difíciles de desarrollar como compiladores: &lt;a href=&quot;https://www.destroyallsoftware.com/screencasts&quot;&gt;Destroy all Software&lt;/a&gt;. Tienes acceso a ambas plataformas con la suscripción de Execute Program.&lt;/p&gt;
+
+&lt;h2 id=&quot;otras-utilidades&quot;&gt;Otras utilidades&lt;/h2&gt;
+
+&lt;p&gt;Hay otras experiencias no convencionales que puedes para aprender cosas específicas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://learngitbranching.js.org/?locale=es_ES&quot;&gt;Aprende Git branching&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://flukeout.github.io/&quot;&gt;CSS Diner&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://flexboxfroggy.com/#es&quot;&gt;Flexbox Froggy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://http.cat/&quot;&gt;HTTP Cats&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://andreasbm.github.io/web-skills/&quot;&gt;Web Skills&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Si no te acomodas con las formas tradicionales como los libros y los videos, siempre habrá opciones diferentes e interactivas. ¿Tienes alguna otra recomendación? La esperamos en los comentarios.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="recursos" /><category term="aprendizaje" /><category term="programación" /><summary type="html">En este artículo te recomendamos algunos recursos que te servirán para aprender conceptos de progrmación que no son libros o cursos comunes.</summary></entry><entry><title type="html">Ejercicio: programando un perceptrón</title><link href="https://blog.thedojo.mx/2021/04/10/ejercicio-programando-un-perceptron.html" rel="alternate" type="text/html" title="Ejercicio: programando un perceptrón" /><published>2021-04-10T00:00:00-05:00</published><updated>2021-04-10T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2021/04/10/ejercicio-programando-un-perceptron</id><content type="html" xml:base="https://blog.thedojo.mx/2021/04/10/ejercicio-programando-un-perceptron.html">&lt;p&gt;En este post platicaremos acerca de cómo funciona un perceptrón a nivel de código y las técnicas que utiliza para aproximar una función a partir de datos.&lt;/p&gt;
+
+&lt;p&gt;Si no tienes claro lo que es un perceptrón, puedes leer nuestro &lt;a href=&quot;/2021/03/25/intro-a-machine-learning-entendiendo-perceptron.html&quot; target=&quot;_blank&quot;&gt;artículo anterior&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;el-conjunto-de-datos&quot;&gt;El conjunto de datos&lt;/h2&gt;
+
+&lt;h2 id=&quot;aproximando-la-función&quot;&gt;Aproximando la función&lt;/h2&gt;
+
+&lt;h2 id=&quot;resultado&quot;&gt;Resultado&lt;/h2&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="machine-learning" /><category term="ia" /><summary type="html">Programemos un perceptrón en Python para entender a fondo como funciona y poder construir sobre eso para temas más complejos.</summary></entry><entry><title type="html">Creando un API con GO: Usando Beego</title><link href="https://blog.thedojo.mx/2021/03/31/creando-un-api-con-go-usando-beego.html" rel="alternate" type="text/html" title="Creando un API con GO: Usando Beego" /><published>2021-03-31T00:00:00-06:00</published><updated>2021-03-31T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/03/31/creando-un-api-con-go-usando-beego</id><content type="html" xml:base="https://blog.thedojo.mx/2021/03/31/creando-un-api-con-go-usando-beego.html">&lt;p&gt;Vamos a probar el poder y la facilidad de Beego, un framework creado en China, en dónde sabemos que las exigencias respecto a lo que deben soportar los sistemas son fuertes.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><summary type="html">Hagamos una pequeña API en Go usando Beego, mientras intentamos seguir los principios de Domain Driven Design</summary></entry><entry><title type="html">Recursos para aprender diseño de sistemas</title><link href="https://blog.thedojo.mx/2021/03/29/recursos-para-aprender-diseno-de-sistemas.html" rel="alternate" type="text/html" title="Recursos para aprender diseño de sistemas" /><published>2021-03-29T00:00:00-06:00</published><updated>2021-03-29T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/03/29/recursos-para-aprender-diseno-de-sistemas</id><content type="html" xml:base="https://blog.thedojo.mx/2021/03/29/recursos-para-aprender-diseno-de-sistemas.html">&lt;p&gt;El diseño de sistemas es un tema recurrente en entrevistas para desarrolladores de software, sobre todo para los niveles que requieren más experiencia, pero más allá de eso, es una habilidad fundamental a dominar si quieres avanzar en tu carrera.&lt;/p&gt;
 
 &lt;p&gt;Es por eso que vamos a empezar a hablar más de ese tema, contando nuestra experiencia, pero al mismo tiempo aprendiendo a diseñar mejor.&lt;/p&gt;
 
@@ -6,31 +212,31 @@
 
 &lt;h2 id=&quot;libros&quot;&gt;Libros&lt;/h2&gt;
 
-&lt;p&gt;Un libro que se ha recomendado mucho sobre todo en esta época en la que los datos son cada vez más importantes es &lt;a href=&quot;https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications&quot;&gt;Designing Data-intensive Applications&lt;/a&gt; que, como su nombre lo dice, te enseña a construir aplicaciones en donde los datos son muy importantes.&lt;/p&gt;
+&lt;p&gt;Un libro que se ha recomendado mucho sobre todo en esta época en la que los datos son cada vez más importantes es &lt;a href=&quot;https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications&quot; target=&quot;_blank&quot;&gt;Designing Data-intensive Applications&lt;/a&gt; que, como su nombre lo dice, te enseña a construir aplicaciones en donde los datos son muy importantes.&lt;/p&gt;
 
-&lt;p&gt;Hay un libro que se enfoca justamente en la parte de entrevistas llamado &lt;a href=&quot;https://www.goodreads.com/book/show/54109255-system-design-interview-an-insider-s-guide?from_search=true&amp;amp;from_srp=true&amp;amp;qid=Bm7AnA9Fzo&amp;amp;rank=9&quot;&gt;System Design Interview&lt;/a&gt;, con la mayoría de las opiniones como positivas, pero algunas resaltan un punto muy importante: gran parte del contenido se encuentra en las referencias, así que si quieres profundizar tienes que buscarlas. A mi esto me parece positivo porque en vez de intentar abarcar todo y diluirse, este libro puede servir como un índice o una referencia para aprender más.&lt;/p&gt;
+&lt;p&gt;Hay un libro que se enfoca justamente en la parte de entrevistas llamado &lt;a href=&quot;https://www.goodreads.com/book/show/54109255-system-design-interview-an-insider-s-guide?from_search=true&amp;amp;from_srp=true&amp;amp;qid=Bm7AnA9Fzo&amp;amp;rank=9&quot; target=&quot;_blank&quot;&gt;System Design Interview&lt;/a&gt;, con la mayoría de las opiniones como positivas, pero algunas resaltan un punto muy importante: gran parte del contenido se encuentra en las referencias, así que si quieres profundizar tienes que buscarlas. A mi esto me parece positivo porque en vez de intentar abarcar todo y diluirse, este libro puede servir como un índice o una referencia para aprender más.&lt;/p&gt;
 
-&lt;p&gt;Finalmente, te vamos a recordar un libro del que hemos hablado continuamente tanto en nuestros videos como en los posts de este blog: &lt;a href=&quot;https://www.goodreads.com/en/book/show/39996759&quot;&gt;A Philosophy of Software Design&lt;/a&gt; de John Ousterhout. Este es uno de los mejores libros que puedes leer acerca del diseño de software en general, y de las prácticas que llevan a crear software bien diseñado. No habla de diseño de sistemas a gran escala, sino de organización y división modular y cómo deberías aplicarla.&lt;/p&gt;
+&lt;p&gt;Finalmente, te vamos a recordar un libro del que hemos hablado continuamente tanto en nuestros videos como en los posts de este blog: &lt;a href=&quot;https://www.goodreads.com/en/book/show/39996759&quot; target=&quot;_blank&quot;&gt;A Philosophy of Software Design&lt;/a&gt; de John Ousterhout. Este es uno de los mejores libros que puedes leer acerca del diseño de software en general, y de las prácticas que llevan a crear software bien diseñado. No habla de diseño de sistemas a gran escala, sino de organización y división modular y cómo deberías aplicarla.&lt;/p&gt;
 
 &lt;h2 id=&quot;cursos-y-videos&quot;&gt;Cursos y videos&lt;/h2&gt;
 
-&lt;p&gt;Codely, una plataforma de cursos para desarrolladores, tiene un curso de introducción a la arquitectura hexagonal, que es una muy buena base para deseñar sistemas, aquí puedes ver una pequeña prueba: &lt;a href=&quot;https://codely.tv/blog/screencasts/arquitectura-hexagonal-ddd/&quot;&gt;Intro a arquitectura hexagonal&lt;/a&gt; y aquí puedes ver el curso completo: &lt;a href=&quot;https://pro.codely.tv/library/arquitectura-hexagonal/about/&quot;&gt;Arquitectura Hexagonal&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Codely, una plataforma de cursos para desarrolladores, tiene un curso de introducción a la arquitectura hexagonal, que es una muy buena base para deseñar sistemas, aquí puedes ver una pequeña prueba: &lt;a href=&quot;https://codely.tv/blog/screencasts/arquitectura-hexagonal-ddd/&quot; target=&quot;_blank&quot;&gt;Intro a arquitectura hexagonal&lt;/a&gt; y aquí puedes ver el curso completo: &lt;a href=&quot;https://pro.codely.tv/library/arquitectura-hexagonal/about/&quot; target=&quot;_blank&quot;&gt;Arquitectura Hexagonal&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://pro.codely.tv/library/principios-solid-aplicados/77070/about/&quot;&gt;Principios SOLID Aplicados&lt;/a&gt; es otro curso con aplicaciones prácticas que puedes ver para aprender más sobre estos principios que ayudan a crear código y sistemas más mantenibles.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://pro.codely.tv/library/principios-solid-aplicados/77070/about/&quot; target=&quot;_blank&quot;&gt;Principios SOLID Aplicados&lt;/a&gt; es otro curso con aplicaciones prácticas que puedes ver para aprender más sobre estos principios que ayudan a crear código y sistemas más mantenibles.&lt;/p&gt;
 
-&lt;p&gt;En Educative.io tiene un curso llamado &lt;a href=&quot;https://www.educative.io/courses/grokking-the-system-design-interview&quot;&gt;Grokking the System Design Interview&lt;/a&gt; que tiene ejemplos de diseño explicados como blogposts, abarcando varias etapas del diseño, desde el primer borrador (back of the envelop) hasta análisis de cuellos de botella junto con diseño detallado.&lt;/p&gt;
+&lt;p&gt;En Educative.io tiene un curso llamado &lt;a href=&quot;https://www.educative.io/courses/grokking-the-system-design-interview&quot; target=&quot;_blank&quot;&gt;Grokking the System Design Interview&lt;/a&gt; que tiene ejemplos de diseño explicados como blogposts, abarcando varias etapas del diseño, desde el primer borrador (back of the envelop) hasta análisis de cuellos de botella junto con diseño detallado.&lt;/p&gt;
 
-&lt;p&gt;Y finalmente, tenemos una recomendación Open Source y gratuita: &lt;a href=&quot;https://github.com/donnemartin/system-design-primer&quot;&gt;System Design Primer&lt;/a&gt; que contiene incluso tarjetas de &lt;a href=&quot;https://apps.ankiweb.net/&quot;&gt;Anki&lt;/a&gt; un software para estudio mediante repetición espaciada.&lt;/p&gt;
+&lt;p&gt;Y finalmente, tenemos una recomendación Open Source y gratuita: &lt;a href=&quot;https://github.com/donnemartin/system-design-primer&quot; target=&quot;_blank&quot;&gt;System Design Primer&lt;/a&gt; que contiene incluso tarjetas de &lt;a href=&quot;https://apps.ankiweb.net/&quot; target=&quot;_blank&quot;&gt;Anki&lt;/a&gt; un software para estudio mediante repetición espaciada.&lt;/p&gt;
 
 &lt;h3 id=&quot;extras&quot;&gt;Extras&lt;/h3&gt;
 
-&lt;p&gt;Un sitio en el que puedes aprender a diseñar sistemas que requieran mucho cuidado por la afluencia de usuarios que tendrán es &lt;a href=&quot;http://highscalability.com/&quot;&gt;High Scalability&lt;/a&gt;. Ahí podrás ver algunos ejemplos reales sobre como crear sistemas web más grandes en contenido, más rápidos y más confiables.&lt;/p&gt;
+&lt;p&gt;Un sitio en el que puedes aprender a diseñar sistemas que requieran mucho cuidado por la afluencia de usuarios que tendrán es &lt;a href=&quot;http://highscalability.com/&quot; target=&quot;_blank&quot;&gt;High Scalability&lt;/a&gt;. Ahí podrás ver algunos ejemplos reales sobre como crear sistemas web más grandes en contenido, más rápidos y más confiables.&lt;/p&gt;
 
-&lt;p&gt;Si quieres una ruta de aprendizaje completa, Educative.io tiene además la ruta de cursos que te pueden ayudar aprender aspectos teóricos y prácticos: &lt;a href=&quot;https://www.educative.io/path/scalability-system-design&quot;&gt;Scalability and System Design for developers&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Si quieres una ruta de aprendizaje completa, Educative.io tiene además la ruta de cursos que te pueden ayudar aprender aspectos teóricos y prácticos: &lt;a href=&quot;https://www.educative.io/path/scalability-system-design&quot; target=&quot;_blank&quot;&gt;Scalability and System Design for developers&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;cómo-representar-el-diseño&quot;&gt;Cómo representar el diseño&lt;/h3&gt;
 
-&lt;p&gt;Después de tener clara la idea de cómo resolver los problemas es buena idea tener un lenguaje visual y una guía par representar y comunicar todas las partes del sistema. Aquí te podemos recomendar el paper &lt;a href=&quot;https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf&quot;&gt;Architectural Blueprints–The “4+1” View Model of Software Architecture&lt;/a&gt; y el estilo creado por Simon Brown: &lt;a href=&quot;https://c4model.com/&quot;&gt;El modelo C4&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Después de tener clara la idea de cómo resolver los problemas es buena idea tener un lenguaje visual y una guía par representar y comunicar todas las partes del sistema. Aquí te podemos recomendar el paper &lt;a href=&quot;https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf&quot; target=&quot;_blank&quot;&gt;Architectural Blueprints–The “4+1” View Model of Software Architecture&lt;/a&gt; y el estilo creado por Simon Brown: &lt;a href=&quot;https://c4model.com/&quot; target=&quot;_blank&quot;&gt;El modelo C4&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Cualquiera de estos dos modelos tienen las herramientas suficientes para poder visualizar y comunicar tu arquitectura desde diferentes perspectivas y a diferentes niveles.&lt;/p&gt;
 &lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
@@ -292,340 +498,4 @@
 
 &lt;p&gt;Hablamos de muchas cosas más, productividad, Google, cómo avanzar en tu carrera, etc. No te pierdas la plática entera aquí:&lt;/p&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/mUfmVBaOmxM&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="lives" /><category term="recomendaciones" /><category term="video" /><category term="libros" /><category term="consejos" /><summary type="html">Hablamos con Diego De Granda y Pablo Trinidad sobre qué tienes que hacer para conseguir un buen trabajo en tecnología. Aquí tienes un resumen.</summary></entry><entry><title type="html">Libros que te ayudarán a aprender Data Science</title><link href="https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science.html" rel="alternate" type="text/html" title="Libros que te ayudarán a aprender Data Science" /><published>2021-02-01T00:00:00-06:00</published><updated>2021-02-01T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science</id><content type="html" xml:base="https://blog.thedojo.mx/2021/02/01/libros-que-te-ayurdaran-a-aprender-data-science.html">&lt;p&gt;Creemos firmemente que una de las mejores maneras de educarte como desarrollador es conseguir guía clara.&lt;/p&gt;
-
-&lt;p&gt;Una de las mejores fuentes de conocimiento son los libros escritos por personas expertas en el tema del que quieres aprender, es por eso siempre buscamos personas que nos den consejos sobre los mejores recursos que encuentren.&lt;/p&gt;
-
-&lt;p&gt;En esta ocasión invitamos a &lt;a href=&quot;https://twitter.com/silvercorp&quot;&gt;Yesi Days&lt;/a&gt; a platicar sobre qué libros nos recomendaría para desarrollarte en &lt;strong&gt;data science&lt;/strong&gt;. Nos recomendó los siguientes:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://amzn.to/3q5lDj0&quot;&gt;Hands-on Machine Learning with Scikit-Learn and Tensorflow&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://themlbook.com/&quot;&gt;The Hundred Page Machine Learning&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://amzn.to/35qysMQ&quot;&gt;Introduction to Machine Learning with Python: A Guide for Data Scientists&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://amzn.to/2L8AiuZ&quot;&gt;Data Science from Scratch: First Principles with Python&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://amzn.to/2MGG6Mq&quot;&gt;Cracking the PM Interview: How to Land a Product Manager Job in Technology (Cracking the Interview &amp;amp; Career)&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.goodreads.com/book/show/27783740-building-real-time-data-pipelines&quot;&gt;Building Real-time data pipelines&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;data-science-path&quot;&gt;Data science Path&lt;/h2&gt;
-
-&lt;p&gt;Yesi también nos contó sobre un guía que creó para ayuddarte a empezar en el camino, la puedes encontrar en:&lt;a href=&quot;https://ds-path.netlify.app/&quot;&gt;Data Science Path&lt;/a&gt; y próximamente estará en español.&lt;/p&gt;
-
-&lt;p&gt;La charla que tuvimos con ella se extendió sobre muchos temas más, si no te la quieres perder la puedes ver aquí:&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vCzMLeq_eBk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="video" /><category term="data-science" /><category term="books" /><category term="libros" /><summary type="html">En este post te contamos sobre algunos libros que te pueden servir para avanzar en tu carrera.</summary></entry><entry><title type="html">¿Qué son los modelos generativos?</title><link href="https://blog.thedojo.mx/2020/12/30/que-son-los-modelos-generativos.html" rel="alternate" type="text/html" title="¿Qué son los modelos generativos?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/que%20son-los-modelos-generativos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/que-son-los-modelos-generativos.html">&lt;p&gt;Los modelos generativos permiten a una máquina “aprender” los patrones que existen en los datos con los que son entrenadas y a partir de dicho aprendizaje, son capaces de &lt;strong&gt;generar datos similares&lt;/strong&gt; que en algunos casos pueden ser casi tan “reales” como los que se utilizaron inicialmente para su entrenamiento.&lt;/p&gt;
-
-&lt;p&gt;Mediante este tipo de modelos pueden generarse nuevos datos que tienen distintas aplicaciones, entre ellas, generar datos que otros sistemas de aprendizaje podrán utilizar para su entrenamiento, sin necesidad de que dichos datos existan previamente.&lt;/p&gt;
-
-&lt;p&gt;En particular, las &lt;strong&gt;Redes Neuronales Generativas Adversariales (GAN’s)&lt;/strong&gt; pueden generar nuevas imágenes que se parecen o son similares a las imágenes con las que fueron entrenadas, pero que individualmente son distintas a todas ellas.&lt;/p&gt;
-
-&lt;p&gt;El funcionamiento de una Red Neuronal Adversarial consiste en la operación simultánea de dos redes neuronales que son “adversarias”, una de dichas redes es la encargada de generar imágenes y la segunda es la encargada de discriminar aquellas imágenes que no se parecen a lo que constituye una imágen real.&lt;/p&gt;
-
-&lt;p&gt;Algunos modelos avanzados pueden verse en:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://thispersondoesnotexist.com/&quot;&gt;This Person Does Not Exist&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.thiswaifudoesnotexist.net/&quot;&gt;This Waifu Does Not Exist&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://thisfursonadoesnotexist.com/&quot;&gt;This Furson Does Not Exist&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Como parte de un proyecto de investigación, utilizamos una red adversarial para generar imágenes de zapatos, dichas redes utilizan, modelos convolucionales para ir entendiendo las imágenes en segmentos cada vez más pequeños hasta tener una definición y similitud suficiente para reemplazar la imagen original.&lt;/p&gt;
-
-&lt;p&gt;La calidad de los modelos generados se incrementa conforme el número de iteraciones va aumentando, en general, se van almacenando nuevas muestras de las imágenes generadas cada cierto número de iteraciones de tal forma se puede observar si el modelo sigue mejorando, si ya se estancó o si se está degradando, aunque existen algunas métricas que pueden ayudar a identificar el punto óptimo donde puede detenerse el entrenamiento.&lt;/p&gt;
-
-&lt;p&gt;Algunas de las peculiaridades de estos modelos es que son relativamente sensibles a la uniformidad y el número de imágenes utilizadas, sin embargo, también es cierto que los modelos han ido mejorando y en algunos casos pueden generar imágenes de gran calidad con menos datos de entrenamiento. Por ejemplo, estas imágenes fueron generadas con sólo 500 datos de entrenamiento mediante un Modelo Generador Adversarial Eficiente:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/mit-han-lab/data-efficient-gans&quot;&gt;Data Efficient GANs&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;usos-de-los-generadores-adversariales&quot;&gt;Usos de los generadores adversariales&lt;/h2&gt;
-
-&lt;p&gt;Hablemos de algunos de los usos que pueden tener en la práctica este tipo de redes.&lt;/p&gt;
-
-&lt;h3 id=&quot;mejorar-la-seguridad&quot;&gt;Mejorar la seguridad&lt;/h3&gt;
-
-&lt;p&gt;Un discriminador optimiza su capacidad para detectar imágenes que no son reales (las que emite el generador), de tal forma que dicho discriminador adquiere la capacidad de identificar imágenes que no son reales y que pueden estar siendo utilizadas para generar identidades falsas en sistemas que por ejemplo requieren fotografías.&lt;/p&gt;
-
-&lt;h3 id=&quot;en-el-sector-salud&quot;&gt;En el sector salud&lt;/h3&gt;
-
-&lt;p&gt;La capacidad de detectar anomalías (trabajo del discriminador) puede utilizarse para identificar células o formaciones anómalas (como el cáncer) al ser entrenado mediante imágenes de tejidos u órganos saludables.&lt;/p&gt;
-
-&lt;h3 id=&quot;en-el-sector-de-medios-digitales&quot;&gt;En el sector de medios digitales&lt;/h3&gt;
-
-&lt;p&gt;Ya que generadores adversariales pueden utilizarse para generar imágenes que no existían o generar imágenes a partir de un conjunto de imágenes preexistentes, dicha generación puede de igual forma generar modelos en tercera dimensión a partir de imágenes en dos dimensiones o hacer combinaciones de modelos preexistentes.&lt;/p&gt;
-
-&lt;p&gt;Esto puede usarse como material para la producción de contenido visual e incluso animaciones de video o bien como inspiración para que un diseñador genere nuevos personajes.&lt;/p&gt;
-
-&lt;p&gt;Algunos generadores pueden ayudar a corregir defectos en imágenes, removiendo o completando partes de la imágen que sobraban o que estaban faltantes, o si es el caso, a dar color a imágenes en blanco y negro.&lt;/p&gt;
-
-&lt;p&gt;De igual forma permiten crear una “interpolación” de imágenes para “regenerarlas” en una mayor resolución. Desde luego la eficacia dependerá de las imágenes utilizadas para su entrenamiento.&lt;/p&gt;
-
-&lt;p&gt;Algunas de estas aplicaciones pueden “traducir” las imágenes de un dominio a otro, por ejemplo, convirtiendo una imágen satelital en un mapa de niveles o generando fotografías a partir de bosquejos.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Los modelos generativos pueden ser una gran herramienta para diferentes industrias, aprender a usarlos y generarlos te puede ayudar a entrar en un campo que tiene cada vez más alta demanda: el uso de datos para la creación automática de programas (Machine Learning).&lt;/p&gt;</content><author><name>Alejandro Santamaría</name><email>alexsmx@gmail.com</email><uri>https://github.com/alexsmx</uri></author><category term="ai" /><category term="ml" /><category term="gans" /><summary type="html">En este artículo exploramos qué es un modelo generativo, cómo te pueden servir y el estado del arte en este campo.</summary></entry><entry><title type="html">¿Deberías comentar tu código?</title><link href="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html" rel="alternate" type="text/html" title="¿Deberías comentar tu código?" /><published>2020-12-30T00:00:00-06:00</published><updated>2020-12-30T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/30/deberias-comentar-tu-codigo.html">&lt;p&gt;Cuando hablamos de los comentarios en el código, hay dos escuelas. La primera dice que debes usar los comentarios para &lt;strong&gt;clarificar lo que quisiste expresar con tu código&lt;/strong&gt;, mientras que la segunda dice que deberías &lt;strong&gt;evitarlos al máximo&lt;/strong&gt; y que comentar tu código es un mal necesario que sólo denota tu falta de habilidad para no hacer código lo suficientemente claro.&lt;/p&gt;
-
-&lt;p&gt;¿A cuál de los dos consejos deberías hacerle caso? En este artículo explicaremos por qué creemos que deberías ver los comentarios como una &lt;strong&gt;herramienta necesaria&lt;/strong&gt;, valiosa y muy útil, y cómo usarlos para no caer en el extremo que ha llevado a algunas personas a tener una mala actitud hacia ellos.&lt;/p&gt;
-
-&lt;h2 id=&quot;un-sistema-sin-documentación-esta-incompleto&quot;&gt;Un sistema sin documentación esta incompleto&lt;/h2&gt;
-
-&lt;p&gt;Como desarrollador estarás de acuerdo en que un sistema &lt;strong&gt;no&lt;/strong&gt; tiene la &lt;em&gt;calidad suficiente&lt;/em&gt; si no cuenta con documentación, es decir, información acerca del sistema que comunique cosas como la razón de existir de ciertos módulos, valores y funciones y cómo usarlos.&lt;/p&gt;
-
-&lt;p&gt;Si, además, tienes que modificar este sistema, será una pesadilla entender todo lo que los programadores anteriores hicieron o &lt;em&gt;intentaron&lt;/em&gt; hacer. Si tienes que &lt;em&gt;usar&lt;/em&gt; algo sin documentación, es el mismo caso: &lt;strong&gt;tienes estudiar el código para saber como funciona.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Así que hemos establecido que la documentación es completamente necesaria para crear programas útiles. Ahora bien, ¿dónde ponemos esa documentación? Muchos desarrolladores y equipos no tienen idea de dónde ponerla y crean documentos que dejan después olvidados en una carpeta en la nube y que nadie encuentra después. Pero, ¿no sería más lógico mantener la documentación lo &lt;strong&gt;más cerca posible del código&lt;/strong&gt;? Eso es precisamente lo que los comentarios te permiten hacer.&lt;/p&gt;
-
-&lt;p&gt;Puedes usar los comentarios documentar:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Decisiones de diseño&lt;/li&gt;
-  &lt;li&gt;Explicaciones sobre la existencia, funcionamiento o razón de ser de cierta parte del código&lt;/li&gt;
-  &lt;li&gt;Las interfaces y su ejemplo de uso&lt;/li&gt;
-  &lt;li&gt;Efectos de usar cierto código&lt;/li&gt;
-  &lt;li&gt;Partes inconclusas o que se pueden mejorar (TODO’s)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Tener esta información muy cerca del código sobre el que está proporcionando información ayudará a que sea fácil de encontrar y además, si se establecen reglas como tratar los comentarios como ciudadanos de primer rango, se mantendrá actualizado y útil.&lt;/p&gt;
-
-&lt;p&gt;También es buena idea tener un documento o sitio web especializado en documentación que te ayude a encontrar rápido lo que buscas como Docusaurus o un sitio generado por Sophinx. Puedes utilizar esta misma documentación que escribiste junto al código si usaste el estilo definido por el lenguaje de programación o por las herramientas de generación de documentos.&lt;/p&gt;
-
-&lt;h3 id=&quot;los-comentarios-te-pueden-ayudar-en-el-futuro&quot;&gt;Los comentarios te pueden ayudar en el futuro&lt;/h3&gt;
-
-&lt;p&gt;Incluso aunque no los uses formalmente como documentación, los comentarios estarán ahí para darte información y recordarte lo que hiciste, pero sobre todo &lt;strong&gt;por qué&lt;/strong&gt; lo hiciste.&lt;/p&gt;
-
-&lt;p&gt;Recuerda que la mente humana busca la eficiencia máxima de recursos, por lo que es probable que elimine información que no ocupe inmediatamente y que no recuerdas a menudo, como por qué esa variable tenía el valor 730 y no otro.&lt;/p&gt;
-
-&lt;p&gt;Tu yo futuro y tu equipo te agradecerán haber escrito esos comentarios que te informan sobre lo que estabas pensando en el momento que escribiste ese código.&lt;/p&gt;
-
-&lt;h3 id=&quot;los-comentarios-son-una-buena-herramienta-de-diseño&quot;&gt;Los comentarios son una buena herramienta de diseño&lt;/h3&gt;
-
-&lt;p&gt;John Ousterhout, en “A Philosophy of Software Design” recomienda &lt;strong&gt;empezar&lt;/strong&gt; con los comentarios antes de programar (de esto hablaremos más adelante). Pero, ¿por qué lo recomienda?&lt;/p&gt;
-
-&lt;p&gt;Escribir en un lenguaje humano cómo funciona algo antes de implementarlo realmente, te da la capacidad de ver si es lógico y suficiente, además te permite ponerte en los zapatos del usuario para notar deficiencias sobre todo en &lt;strong&gt;la interfaz&lt;/strong&gt;. Los comentarios de interfaz es lo primero que deberías crear porque te servirán de guía para avanzar con tu diseño y, sobre todo, que sea lógico y fácil de usar.&lt;/p&gt;
-
-&lt;p&gt;Una buena guía: si no eres capaz de crear un comentario concreto y corto sobre cómo funciona o por qué existe algo, &lt;strong&gt;lo más probable es que tengas que re-pensar tu diseño&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;el-lenguaje-de-programación-no-es-suficiente-para-expresar-todo-lo-necesario&quot;&gt;El lenguaje de programación no es suficiente para expresar todo lo necesario&lt;/h3&gt;
-
-&lt;p&gt;Todos los lenguajes de programación están pensados para ser un &lt;strong&gt;subconjunto del lenguaje humano&lt;/strong&gt; que elimine las ambigüedades, manteniendo el mayor poder expresivo posible. Esto nos lleva a sus limitantes: es imposible, o por lo menos impráctico, intentar expresar todas las ideas con el código.&lt;/p&gt;
-
-&lt;p&gt;En la práctica, el tiempo y los recursos para lograr algo son limitados, por lo que a veces es más conveniente y fácil para todos explicar lenguaje humano algo que intentar expresarlo con código, como los puristas afirman.&lt;/p&gt;
-
-&lt;p&gt;No te sientas mal si tienes que recurrir de vez en cuando a explicar la forma en que funciona algo, siempre y cuando no sea la práctica común.&lt;/p&gt;
-
-&lt;h2 id=&quot;cómo-usar-los-comentarios-para-que-sean-valiosos&quot;&gt;¿Cómo usar los comentarios para que sean valiosos?&lt;/h2&gt;
-
-&lt;p&gt;No todos los comentarios son valiosos, hay algunos que pueden estorbar más de lo que ayudan, por ejemplo, los que no aportan información a lo que es obvio en el código.&lt;/p&gt;
-
-&lt;p&gt;Hablemos de algunas formas de aprovecharlos lo mejor posible para que contribuyan positivamente a aumentar la calidad del proyecto.&lt;/p&gt;
-
-&lt;h3 id=&quot;escribe-los-comentarios-primero&quot;&gt;Escribe los comentarios primero&lt;/h3&gt;
-
-&lt;p&gt;Una de las partes más importantes de los comentarios como documentación es que deben ser concretos, cercanos a la realidad y que proporcionen la mayor cantidad de información útil posible.&lt;/p&gt;
-
-&lt;p&gt;Para lograr esto, se tienen que crear lo más cerca que puedas a la &lt;em&gt;creación del código&lt;/em&gt;. Pero como todos sabemos que después de escribir y probar (básicamente) el código vamos a sentir que ya está terminado, es buena práctica obligarte a escribirlos antes, justo como propone TDD con las pruebas.&lt;/p&gt;
-
-&lt;p&gt;De esta manera te asegurarás que tu código esté documentado incluso antes de escribirlo y te servirán como una &lt;strong&gt;herramienta de diseño&lt;/strong&gt; que te ayudará a pensar mejor en la usabilidad de tus módulos y piezas de software.&lt;/p&gt;
-
-&lt;h3 id=&quot;crea-comentarios-acerca-de-la-interfaz&quot;&gt;Crea comentarios acerca de la interfaz&lt;/h3&gt;
-
-&lt;p&gt;La interfaz es el &lt;strong&gt;medio de uso&lt;/strong&gt; que tus módulos o funciones presentan para que las demás partes de tu sistema lo usen. Lo primero que deberías documentar y explicar es &lt;strong&gt;esta interfaz&lt;/strong&gt;, para que más personas a parte de ti puedan usar este pedazo de código.&lt;/p&gt;
-
-&lt;p&gt;Debes escribir comentarios claros sobre:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Cómo usar esa pieza de código&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Por qué existe esa parte del sistema&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Qué efectos tiene usarla&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Este tipo de comentarios son los que aportan mayor valor al sistema y si están lo suficientemente completos, con ejemplos y explicaciones claras, son una documentación válida que está en un muy buen lugar: es fácil de encontrar y no se va a perder enterrada entre otros documentes que después nadie va a consultar.&lt;/p&gt;
-
-&lt;h3 id=&quot;evita-los-comentarios-sobre-la-implementación&quot;&gt;Evita los comentarios sobre la implementación&lt;/h3&gt;
-
-&lt;p&gt;Los comentarios sobre la implementación son aquello que describen &lt;em&gt;qué&lt;/em&gt; estas haciendo, como por ejemplo, sumar número, abrir un archivo, etc. Estos comentarios normalmente son innecesarios, ya que lo que se está haciendo es obvio si el código es lo suficientemente expresivo y &lt;em&gt;siempre deberíamos buscar que sea así&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;De hecho, estos son los comentarios que hacen que la gente odie a los comentarios en general, pues en vez de proporcionar información extra son una carga que hay que mantener y pueden confundir si no son actualizados.&lt;/p&gt;
-
-&lt;p&gt;Si realmente sientes que tienes que explicar &lt;em&gt;qué&lt;/em&gt; estás haciendo con cierta pieza de código, primero pregúntate si no hay una manera de reescribirlo para que &lt;strong&gt;sea obvio&lt;/strong&gt;. Si no existe o no es práctica esta solución, entonces escribe el comentario de la manera más concisa posible, incluyendo la razón de la existencia de ese código.&lt;/p&gt;
-
-&lt;p&gt;Para hacer esto debes tomar muy en cuenta los recursos del proyecto: no te puedes tardar el triple del tiempo implementando la pieza de código perfecta porque no quieres escribir un comentario que explique cómo funciona.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Escribir comentarios es una de las grandes tareas que los programadores debemos dominar. Los lenguajes de programación y los entornos de programación cada vez le dan más poder a esta parte de los programas y permiten incluso escribir pruebas en ellos, generar documentación automática y listar tareas a partir de ellos.&lt;/p&gt;
-
-&lt;p&gt;Si pones el suficiente esmero en aprender a escribir buenos comentarios y mantenerlos, serán una gran herramienta de diseño y documentación de tu software.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Este artículo está basado en las ideas del “A Philosophy of Software Design de John Ousterhout”, en el que se le dedican &lt;strong&gt;4 capítulos&lt;/strong&gt; al buen uso de los comentarios&lt;/em&gt;.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="comments" /><category term="comentarios" /><category term="mantenibilidad" /><category term="código-mantenible" /><category term="ousterhout" /><category term="aposd" /><summary type="html">Hay programadores que dice que los comentarios son un mal que se debería evitar al máximo. Aquí proponemos lo contrario: usa los comentarios correctamente para crear código mantenible, basados en las ideas de 'A Philosophy of Software Design'</summary></entry><entry><title type="html">Tipos de algoritmos criptográficos: cifrados de bloque</title><link href="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html" rel="alternate" type="text/html" title="Tipos de algoritmos criptográficos: cifrados de bloque" /><published>2020-12-03T00:00:00-06:00</published><updated>2020-12-03T00:00:00-06:00</updated><id>https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos</id><content type="html" xml:base="https://blog.thedojo.mx/2020/12/03/tipos-de-algoritmos-criptograficos.html">&lt;p&gt;Ya hablamos de lo que es &lt;a href=&quot;/2019/11/12/criptografia-basica-para-programadores-que-es-la-criptografia.html&quot;&gt;la criptografía&lt;/a&gt;, ahora empecemos a hablar de los tipos de
-algoritmos criptográficos que existen, sus características y sus principales diferencias. En este artículo hablaremos de los cifrados de bloque.&lt;/p&gt;
-
-&lt;h3 id=&quot;qué-es-un-cifrado-de-bloque&quot;&gt;¿Qué es un cifrado de bloque?&lt;/h3&gt;
-
-&lt;p&gt;Los cifrados de bloque trabajan sobre un conjunto de bits de tamaño fijo, produciendo un texto cifrado del mismo tamaño. Para cifrar datos de tamaño arbitrario como sucede en la vida real, se utiliza el algoritmo de cifrado de bloque combinado con diferentes técnicas llamadas &lt;strong&gt;Modos de Operación&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Algunos ejemplos de estos algoritmos de cifrado son el DES (Estadounidense), GOST 28147-89 (Ruso) y el actual &lt;strong&gt;AES&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Un bloque cifrado debe ser &lt;em&gt;permutación pseudo-aleatoria&lt;/em&gt; de bits, es decir, un conjunto de bits que sean &lt;em&gt;indistinguibles de bits generados completamente de manera aleatoria&lt;/em&gt;. Es como si aventaras un montón de bits y dijeras que esa es la salida de tu algoritmo.&lt;/p&gt;
-
-&lt;p&gt;Esta propiedad evita que un atacante obtenga información sobre el contenido del mensaje que fue cifrado.&lt;/p&gt;
-
-&lt;h2 id=&quot;ejemplos-de-cifrado-de-bloque&quot;&gt;Ejemplos de Cifrado de Bloque&lt;/h2&gt;
-
-&lt;p&gt;Veamos algunos ejemplos de cifrados de bloque y sus características principales. Algunos se usan mientras que otros ya cayeron en el olvido.&lt;/p&gt;
-
-&lt;h3 id=&quot;des-y-triple-des&quot;&gt;DES y Triple DES&lt;/h3&gt;
-
-&lt;p&gt;El &lt;strong&gt;Data Encryption Standard&lt;/strong&gt; era el algoritmo que más se usaba en la década de los 90, lo suficientemente seguro para el poder de cómputo de aquel entonces. Usa una llave de 56 bits y bloques de 64 bits. Debido a estas características, el poder de cómputo actual hace que sea demasiado fácil de romper con el suficiente poder computacional (2^56, el tamaño de la llave, no se considera seguro ya), así que su uso está completamente desrecomendado.&lt;/p&gt;
-
-&lt;p&gt;Su sucesor, el Triple DES realiza tres veces el mismo proceso usando tres llaves diferentes, con un tamaño de llave de 168 bits. Esto evita que sea posible romperlo a base de fuerza bruta, pero este proceso provee sólamente una seguridad de 112 bits, por lo que se considera ineficiente (usas el cómputo de tres DES para obtener seguridad de una llave del doble de tamaño) y por lo tanto su uso no es recomendado también.&lt;/p&gt;
-
-&lt;h3 id=&quot;aes&quot;&gt;AES&lt;/h3&gt;
-
-&lt;p&gt;Debido a las visibles fallas de DES y triple DES, la NIST (National Institute of Standards and Technology de Estados Unidos) quería un algoritmo de cifrado que fuera dado a conocer públicamente y “capaz de proteger la información sensible del gobierno por los próximos cien años”.&lt;/p&gt;
-
-&lt;p&gt;El &lt;strong&gt;Advanced Encryption Standard&lt;/strong&gt; (Estándar de cifrado avanzado), es en realidad un subconjunto de los cifrados posibles de otro algoritmo llamado &lt;a href=&quot;https://csrc.nist.gov/csrc/media/projects/cryptographic-standards-and-guidelines/documents/aes-development/rijndael-ammended.pdf&quot;&gt;Rijndael&lt;/a&gt; y que fue el ganador del concurso que la NIST hizo para seleccionar el nuevo algoritmo de cifrado estándar que sustituiría a DES.&lt;/p&gt;
-
-&lt;p&gt;Rijndael fue creado por analistas criptográficos Belgas con objetivos claros: que fuera rápido y simple. Es una familia de cifrados que permiten cifrar bloques en múltiplos de 32 bits, desde 128 hasta 256 bits (128, 160, 192, 224, 256 bits). Las longitudes de llaves posibles son los mismos desde 128 hasta 256 bits.&lt;/p&gt;
-
-&lt;p&gt;AES es Rijndael con bloques de &lt;strong&gt;128 bits&lt;/strong&gt; y llaves que pueden ser de 128, 192 o 256 bits.&lt;/p&gt;
-
-&lt;p&gt;AES aplica internamente una misma operación múltiples veces dependiendo del tamaño de la llave, y esto le permite se más seguro aumentando el tamaño de la llave. Esto es lo que se conoce como los “rounds” de AES, usando 10 para llaves de 128 bits, 12 para 192 bits y 14 para 256 bits.&lt;/p&gt;
-
-&lt;p&gt;AES tiene un diseño de operaciones concurrentes, que es fácilmente paralelizable y puede implementarse muy eficientemente en hardware, de hecho los procesadores modernos normalmente lo traen implementado en sus circuitos, es parte del conjunto de instrucciones del procesador.&lt;/p&gt;
-
-&lt;p&gt;La seguridad de AES según ciertos criptanalistas (por ejemplo, los creadores de Twofish) está completamente rota &lt;em&gt;teóricamente&lt;/em&gt;, ya que hay ataques que pueden romper el cifrado de 14 ciclos (los ciclos completos que hace la versión de la llave de 256 bits) con ciertas condiciones, con 2^176 operaciones (lo cuál es un ataque que no se puede llevar a la práctica fácilmente).&lt;/p&gt;
-
-&lt;p&gt;Los ataques mencionados anteriormente no tienen nada de prácticos, es decir, no se pueden llevar a la realidad en entornos normales, por lo que no se piensa por ningún lado que la seguridad de AES está comprometida. Si necesitas un algoritmo de cifrado confiable y rápido, con AES no te puedes equivocar.&lt;/p&gt;
-
-&lt;h2 id=&quot;otros-algoritmos&quot;&gt;Otros algoritmos&lt;/h2&gt;
-
-&lt;p&gt;Como finalistas del concurso de la NIST hay otros algoritmos que vale la pena mencionar:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Serpent.&lt;/strong&gt; Es un algoritmo de cifrado de bloque que está pensado completamente para ser resistente. Aplicaca una operación repetidamente (rounds) pero a diferencia de AES la aplica 32 veces. Los criptanalistas han logrado romper 12 de esos 32 rounds, por lo que se piensa que tiene bastante espacio de reserva para continuar siendo seguro. La desventaja contra AES es que es 3 veces más lento.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;TwoFish.&lt;/strong&gt; Este algoritmo tiene una construcción parecida a DES, y aplica su operación básica 16 veces. Los autores del algoritmo mencionan que es casi tan rápido como AES pero ofreciendo más margen de seguridad.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;modos-de-operación&quot;&gt;Modos de operación&lt;/h3&gt;
-
-&lt;p&gt;Un modo de operación es la forma en que se aplica un cifrado de bloque a un texto no cifrado que no es del tamaño exacto del bloque. Existen diferentes técnicas para hacer hacer que un algoritmo que acepta bloques de tamaño fijo acepte bloques arbitrarios. Los más conocidos son:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Electronic Codebook (ECB)&lt;/strong&gt;. Este modo de operación parte el contenido en bloques del tamaño aceptado (rellenando los bits faltantes para hacer un múltiplo exacto) y manda cada bloque a cifrar de manera independiente. Este modo de operación está completamente prohibido si quieres hacer que tu programa sea seguro, ya que bloques en tu mensaje con el mismo contenido siempre dará el mismo resultado, dando pistas sobre la información subyacente a observadores meticulosos. &lt;strong&gt;NO USES POR NINGÚN MOTIVO AES EN ECB&lt;/strong&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Cypher Block Chaining (CBC)&lt;/strong&gt;. Este modo de igual manera parte el contenido en bloques del tamaño aceptado, pero en vez de cifrar cada bloque independientemente cifra el resultado de aplicar la operación XOR con el resultado del bloque anterior. De esta manera “encadena” los bloques haciendo que cada bloque dependa de los anteriores. Para cifrar el primer bloque utiliza un valor inicial generado de manera aleatoria. Para descifrar el valor se tiene que pasar el valor inicial aleatorio junto con el texto cifrado.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Counter mode (CTR)&lt;/strong&gt;. En este modo de operación no se cifran los bloques de texto sino la combinación de un número de uso único (&lt;em&gt;nonce&lt;/em&gt;) y un contador (de ahí su nombre). Después, ese cifrado se combina con un bloque del mensaje. El contador se aumenta en cada bloque del mensaje, mientras que el número de uso único sólo cambia entre cifrados de diferentes mensajes. El modo contador no requiere relleno, ya que la operación XOR se puede realizar con contenido de cualquier tamaño. Este es el modo de operación más rápido y elegante, pero es muy fácil de usar mal ya que la repetición de &lt;em&gt;nonces&lt;/em&gt; lo hace vulnerable.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;completado-de-bloques&quot;&gt;Completado de bloques&lt;/h3&gt;
-
-&lt;p&gt;Los modos de operación ECB y CBC siguen requiriendo bloques del tamaño aceptado por el algoritmo, por lo que deben existir técnicas para completar mensajes que no sean del tamaño de un múltiplo del bloque. Hablaremos de dos:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Relleno (&lt;em&gt;padding&lt;/em&gt;). Esta técnica completa el último bloque del contenido que no alcanza el tamaño requerido con bytes que comunican el número de bytes que se están rellenando. Ejemplo: Si faltan 15 bytes para rellenar el mensaje agrega 15 bytes con el valor &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0f&lt;/code&gt;, si falta un sólo byte agrega un byte con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;01&lt;/code&gt;. Esta técnica sólo funciona para mensajes que construído de bytes completos. Puedes ver una especificación aquí: &lt;a href=&quot;https://tools.ietf.org/html/rfc5652&quot;&gt;RFC 5652&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Robo de texto cifrado (cyphertext stealing). Esta técnica es un poco más compleja pero más flexible. Consiste básicamente en tomar los bits que falten para el último bloque del texto cifrado anterior y dejar los bits no usados de ese mismo mensaje como el último bloque cifrado. Es un poco más complicado que esto, pero la idea básica aquí está. La NIST menciona tres formas de implementarlo &lt;a href=&quot;https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38a-add.pdf&quot;&gt;aquí&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;qué-algoritmo-debería-usar&quot;&gt;¿Qué algoritmo debería usar?&lt;/h2&gt;
-
-&lt;p&gt;La respuesta corta: AES con el mayor de tamaño de llave que tus recursos te permitan. Si tienes restricciones más fuertes de seguridad puedes pensar en TwoFish o Serpent, pero debes tener en cuenta que al no ser tan populares como AES puede que sus implementaciones en el lenguaje de programación de tu elección no estén disponibles o tengan vulnerabilidades no conocidas.&lt;/p&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="cryptografía" /><category term="cryptography" /><category term="aes" /><category term="des" /><category term="3-des" /><category term="serpent" /><summary type="html">¿Sabes que es un cifrado de bloque? En este artículo hablamos de eso y te damos algunos ejemplos.</summary></entry><entry><title type="html">Orígenes de la deuda técnica</title><link href="https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica.html" rel="alternate" type="text/html" title="Orígenes de la deuda técnica" /><published>2020-10-19T00:00:00-05:00</published><updated>2020-10-19T00:00:00-05:00</updated><id>https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica</id><content type="html" xml:base="https://blog.thedojo.mx/2020/10/19/origenes-de-la-deuda-tecnica.html">&lt;p&gt;Tuvimos una plática con &lt;a href=&quot;https://twitter.com/sagmmd&quot;&gt;Sagrario Meneses&lt;/a&gt; sobre la &lt;strong&gt;deuda técnica&lt;/strong&gt; y cómo podemos atacarla. En este artículo te presentamos un pequeño resumen de lo que es y algunas sugerencias sobre su manejo.&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-la-deuda-técnica&quot;&gt;¿Qué es la deuda técnica?&lt;/h2&gt;
-
-&lt;p&gt;La definición corta de deuda técnica es: &lt;strong&gt;todo aquello que hace que el software sea más difícil de producir y desarrollar&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;La deuda técnica es &lt;strong&gt;invisible&lt;/strong&gt; para los miembros no directamente relacionados con el desarrollo del proyecto; para los que participan en ellos no siempre es fácil de ver.&lt;/p&gt;
-
-&lt;p&gt;Esto incluye algunas cosas concretas como:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Los valores fijos que pueden cambiar en el futuro y en realidad deberían ser fáciles de cambiar sin tener que modificar el código (&lt;em&gt;hardcoding&lt;/em&gt;)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Falta de información: cuando nadie sabe sobre cómo trabaja cierta parte del sistema o qué hace cierta pieza de código&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Falta de distribución de información y conocimiento: cuando muy pocas personas saben sobre una parte del sistema y se convierten en cuello de botella&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Falta de diseño explícito&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Malas elecciones sobre diseño o tecnologías&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Mezcla de diseños y estilos de programación diferente sin guía&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Bugs que nadie conoce&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Sagrario comparó la deuda técnica con &lt;strong&gt;deberle dinero a la mafia&lt;/strong&gt;: no la puedes negociar, y cuando te supera estás en grandes problemas. Así que más vale que la aprendamos a controlar porque la deuda técnica puede hacer colapsar tu sistema.&lt;/p&gt;
-
-&lt;h2 id=&quot;formas-de-hacer-visible-la-deuda-técnica&quot;&gt;Formas de hacer visible la deuda técnica&lt;/h2&gt;
-
-&lt;p&gt;Una forma que nos parece súper efectiva para hacer visible (literalmente) la deuda técnica: ponerlo en tablero de control en un espacio, idealmente, &lt;strong&gt;físico&lt;/strong&gt;, que esté a la vista tanto del equipo técnico como del equipo administrativo. Este tablero fosforescente recordará a todos que hay temas importantes para atender antes de que la mafia venga a cobrarte.&lt;/p&gt;
-
-&lt;p&gt;En el caso de equipos remotos, el sustituto es un tablero de la herramienta de control que uses (Jira, Trello, Asana, Monday) que contenga temas importantes con respecto a las cosas que se pueden mejorar del sistema.&lt;/p&gt;
-
-&lt;p&gt;Finalmente, tus herramientas de desarrollo te pueden dar ideas valiosas de las cosas que tienes que mejorar de tu código:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Te ayudan a listar las tareas pendientes (TODO’s)&lt;/li&gt;
-  &lt;li&gt;Te advierten sobre posibles problemas de código&lt;/li&gt;
-  &lt;li&gt;Si tienes una guía de estilo configurada, te dan advertencias sobre este punto también.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;prácticas-para-evitarla-y-dominarla&quot;&gt;Prácticas para evitarla y dominarla&lt;/h2&gt;
-
-&lt;p&gt;Para poder reducir la deuda técnica hacen falta dos
-cosas:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Pruebas, &lt;strong&gt;principalmente unitarias&lt;/strong&gt;. Esto permitirá encontrar los errores más rápidamente, pero además refactorizar sin miedo.&lt;/li&gt;
-  &lt;li&gt;Lineamientos estrictos respecto a las acciones en el proyecto. Sagrario lo llamó &lt;em&gt;disciplina&lt;/em&gt;, es decir, tener reglas y los procesos necesarios para hacer que estas reglas sean seguidas.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;otros-temas&quot;&gt;Otros temas&lt;/h2&gt;
-
-&lt;p&gt;También, hablamos de otros temas como el rol de arquitecta de software que tiene en Linio. De esto podemos sacar dos cosas relevantes:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Aunque no se se sentía completamente lista para el puesto, aplicó para obtenerlo, y por eso está en una posición en la que está aprendiendo mucho. Sin miedo al éxito.&lt;/li&gt;
-  &lt;li&gt;A veces la ataca el síndrome del impostor, con el que siente que no pertenece allí, &lt;strong&gt;pero continua trabajando y estudiando&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;Mantiene la humildad sabiendo que no por tener el “&lt;em&gt;título&lt;/em&gt;” es todopoderosa y ahora tiene autoridad sobre todos.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Disfrutamos mucho la plática con una experimentada desarrolladora de software que ha ido tomando nuevos roles y responsabilidades en la misma empresa, que también se ha ido transformando. Puedes aprender mucho de ella y de las preguntas que se hicieron en vivo:&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/7E_xzjMwZMU&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="deuda-técnica" /><category term="arquitectura" /><category term="diseño-de-software" /><summary type="html">¿Qué es la deuda técnica y cómo podemos hacer para dominarla al máximo?</summary></entry></feed>
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/mUfmVBaOmxM&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Héctor Patricio</name><email>hectorivanpatriciomoreno@gmail.com</email><uri>https://github.com/hectorip</uri></author><category term="lives" /><category term="recomendaciones" /><category term="video" /><category term="libros" /><category term="consejos" /><summary type="html">Hablamos con Diego De Granda y Pablo Trinidad sobre qué tienes que hacer para conseguir un buen trabajo en tecnología. Aquí tienes un resumen.</summary></entry></feed>
