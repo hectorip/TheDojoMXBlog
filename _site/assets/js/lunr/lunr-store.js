@@ -372,8 +372,14 @@ var store = [{
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/c_scale,e_cartoonify,w_1200/v1624377067/giammarco-zeH-ljawHtg-unsplash_e4u5ve.jpg"
       },{
         "title": "Desarrolladores de los que puedes aprender: Kevlin Henney",
-        "excerpt":"Hay muchos desarrolladores de talla internacional de los que puedes aprender mucho, y que creemos que no tienen la suficiente atención. Es por eso que estamos creando una serie de artículos y videos en la que resaltaremos la trayectoria, forma de pensar, pláticas y cosas que puedes aprender. Las condiciones...","categories": [],
+        "excerpt":"Hay varios desarrolladores de talla internacional de los que puedes aprender mucho, que creemos que no tienen la suficiente exposición, sobre todo en America Latina. Es por eso que estamos creando una serie de artículos y videos en la que resaltaremos la trayectoria, forma de pensar, pláticas y cosas que...","categories": [],
         "tags": [],
         "url": "/2021/06/26/desarrolladores-de-los-que-puedes-aprender-kevlin-henney.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/e_oil_paint:12/v1625199907/DevTernity-2016-Kevlin-Henney-Seven-Ineffective-Coding-Habits-of-Many-Programmers-Video-Speech_jrjhg8.jpg"
+      },{
+        "title": "Desarrolladores de los que puedes aprender: Russ Olsen",
+        "excerpt":"Twitter: https://twitter.com/russolsen  ","categories": [],
+        "tags": [],
+        "url": "/2021/07/04/desarrolladores-de-los-que-puedes-aprender-russ-olsen.html",
+        "teaser": null
       }]

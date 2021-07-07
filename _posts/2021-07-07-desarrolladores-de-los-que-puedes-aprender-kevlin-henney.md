@@ -1,8 +1,8 @@
 ---
 title: "Desarrolladores de los que puedes aprender: Kevlin Henney"
-date: 2021-06-26
+date: 2021-07-07
 author: Héctor Patricio
-tags:
+tags: developers
 comments: true
 excerpt: "Hay muchas personas de las cuáles aprender, con muchos años de experiencia más allá de Robert Martín. En esta serie de artículos vamos a resaltar el trabajo y las ideas de varios desarrolladores y consultores con gran experiencia. Empecemos con Kevlin Henney."
 header:
@@ -35,7 +35,7 @@ Ha escrito columnas para múltiples revistas dedicadas al desarrollo de software
 - [A Pattern Oriented Software Architecture for Distributed Computing](https://www.amazon.com.mx/Pattern-Oriented-Software-Architecture-Distributed-Computing/dp/0470059028)
 - [97 Things Every Developer should know](https://www.oreilly.com/library/view/97-things-every/9780596809515/) - Es una colección de ensayos que Kevlin se encargó de compilar y editar.
 
-Kevlin se ha presentado en casi todas las conferencias importante de desarrollo de software europeas y de hable inglesa. Vive en Bristol, Reino Unido y también disfruta de escribir ficción, puedes encontrar en [Amazon](https://www.amazon.com/Kevlin-Henney/e/B0716N93KR%3Fref=dbs_a_mng_rwt_scns_share) sus libros de ficción.
+Kevlin se ha presentado en casi todas las conferencias importante de desarrollo de software europeas y de hable inglesa. Vive en Bristol, Reino Unido y también disfruta de escribir ficción, puedes encontrar en [Amazon](https://www.amazon.com/Kevlin-Henney/e/B0716N93KR%3Fref=dbs_a_mng_rwt_scns_share) sus libros de ficción. Además es muy accesible, si lo buscas en Twitter es muy probable que te conteste: [Kevlin Henney en Twitter](https://twitter.com/KevlinHenney)
 
 ## Algunas ideas de Kevlin
 
@@ -46,13 +46,31 @@ De las pláticas y el contenido que hemos consumido de Kevlin, hemos podido deri
 
 1. **La arquitectura de software requiere entendimiento completo del dominio.** Una de las ideas que Kevlin repite vez tras vez es la importancia de entender y definir el problema que estamos tratando de resolver. Se basa en las ideas de otros autores para reforzar esto. Una de las cosas que Kevlin resalta es que debemos conocer los **detalles**, para poder implementar software correcto con la arquitectura adecuada.
 2. **El diseño y la arquitectura de software son procesos iterativos e incrementales.** Es imposible hacer un diseño completamente correcto y sin errores desde la primera vez. Es por eso que esta es una idea que se repite en sus conferencias vez tras vez. La lección para nosotros: _debemos diseñar el software con el conocimiento de que siempre habrá algo que mejorar_.
-3. **El software simple, pequeño y "aburrido" es más fácil de manejar**.
+3. **El software simple, pequeño y "aburrido" es más fácil de manejar**. Haciendo eco de la frase que pusimos al inicio de esta sección, una de las ideas que Kevlin promueve más es la de minimizar la cantidad de código para lograr algo, así como buscar la simplicidad tanto en funciones como de construcción. Esto último es lo que llamamos aburrido, evitar tanto como podamos
 
 ## Pláticas
 
 Kevlin tiene decenas de pláticas en YouTube y Vimeo, hablando temas muy variados, todos relacionados de una forma u otra con el _proceso_ de desarrollo de calidad. Aquí vamos a listar algunas de las que nos han parecido las mejores.
 
+### Software is Details
 
+Aquí presenta una idea que repite a lo largo de sus presentaciones: la implementación del software requiere un conocimiento lo más profundo y completo que se pueda sobre el problema que se está resolviendo. Aquí da algunos ejemplos en los que se pensó en un diseño del sistema sin pensar en los "detalles de implementación". Mantener la vista en el sistema entero mientras se toma en cuenta los detalles es un señal de un arquitecto de software efectivo.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kX0prJklhUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Old is the new new
+
+En esta plática resalta la importancia de conocer y mantener los principios que habilitan a las nuevas tecnologías que pasan rápido, mientras que estos se mantienen.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AbgsfeGvg3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### It Depends...
+
+Crear software **depende** del conocimiento que tengamos acerca del dominio que estamos tratando. Nuestro conocimiento tiene límites que no podemos sobrepasar y es contra eso con lo que debemos tener cuidado, cosas que no están inmediatamente en nuestra visión.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rNSVZs66o48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Tiene muchas más pláticas en conferencias que puedes buscar directamente en YouTube. Cada una de sus pláticas es un conjunto de ideas y referencias que es más de lo que se puede absorber en el tiempo en el que lo presenta, por lo que tal vez tengas que verlas varias veces, pero todo ese bagaje vale la pena. Aquí te dejamos una búsqueda que las agrupa: [DevTube](https://dev.tube/@kevlinhenney)
 ## Recursos
 
 Para aprender más de las ideas qeu Kevlin enseña, puedes investigar más de él y su trabajo aquí:
@@ -62,7 +80,9 @@ Para aprender más de las ideas qeu Kevlin enseña, puedes investigar más de é
 - [What to read if you are a programmer](https://blog.itkonekt.com/2021/01/21/kevlin-henney-on-the-topic-of-what-to-read-if-youre-a-programmer/)
 
 - [Entrevista de la serie "Heroes of Java"](https://blog.eisele.net/2013/07/the-heroes-of-java-kevlin-henney.html)
+
+- [Blog](https://kevlinhenney.medium.com/)
+
 ## Conclusión
 
-Todos los desarrolladores de diferentes niveles podemos aprender mucho de las ideas que Kevlin se ha dedicado a enseñar.
-
+Todos los desarrolladores de diferentes niveles podemos aprender mucho de las ideas que Kevlin se ha dedicado a enseñar, mientras lo hace de una manera entretenida, profunda y que va puliendo con el tiempo. Es importante escuchar a personas con experiencia para pode desarrollar el criterio propio y las habilidades y formas de pensar para ser efectivos.
