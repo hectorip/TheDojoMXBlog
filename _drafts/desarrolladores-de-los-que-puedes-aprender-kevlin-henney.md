@@ -30,8 +30,7 @@ Kevlin es actualmente un consultor, escritor, entrenador y presentador de temas 
 
 ## Algunas ideas de Kevlin
 
-"Mientras menos código, mejor",
-
+"Mientras menos código, mejor"
 ## Pláticas
 
 Kevlin tiene decenas de pláticas en YouTube y Vimeo, hablando temas muy variados, todos relacionados de una forma u otra con el _proceso_ de desarrollo de calidad. Aquí vamos a listar algunas de las que nos han parecido las mejores.
