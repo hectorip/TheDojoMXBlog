@@ -361,7 +361,7 @@ var store = [{
       },{
         "title": "Desarrolladores de los que puedes aprender: Kevlin Henney",
         "excerpt":"Hay varios desarrolladores de talla internacional de los que puedes aprender mucho, que creemos que no tienen la suficiente exposición, sobre todo en America Latina. Es por eso que estamos creando una serie de artículos y videos en la que resaltaremos la trayectoria, forma de pensar, pláticas y cosas que...","categories": [],
-        "tags": ["developers"],
+        "tags": ["developers","arquitectura"],
         "url": "/2021/07/07/desarrolladores-de-los-que-puedes-aprender-kevlin-henney.html",
         "teaser": "https://res.cloudinary.com/hectorip/image/upload/e_oil_paint:12/v1625199907/DevTernity-2016-Kevlin-Henney-Seven-Ineffective-Coding-Habits-of-Many-Programmers-Video-Speech_jrjhg8.jpg"
       }]

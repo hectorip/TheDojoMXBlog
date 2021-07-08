@@ -2,7 +2,7 @@
 title: "Desarrolladores de los que puedes aprender: Kevlin Henney"
 date: 2021-07-07
 author: Héctor Patricio
-tags: developers
+tags: developers arquitectura
 comments: true
 excerpt: "Hay muchas personas de las cuáles aprender, con muchos años de experiencia más allá de Robert Martín. En esta serie de artículos vamos a resaltar el trabajo y las ideas de varios desarrolladores y consultores con gran experiencia. Empecemos con Kevlin Henney."
 header:
@@ -18,13 +18,13 @@ Las condiciones para que aparezcan aquí son las siguientes:
 - Amplia experiencia real desarrollando sistemas
 - Que tengan algún logro notable en el desarrollo de sistemas
 - Comparten sus ideas con la comunidad de forma continua
-- No son unos _"brilliant jerks"_, es decir, no usan su experiencia o inteligencia para el mal
+- No son unos _"brilliant jerks"_, es decir, no usan su experiencia o inteligencia para humillar o desacreditar a otros, y mucho menos su exposición para promover ideas nocivas.
 
 El objetivo de esta serie es que aprendamos de las personas que han dedicado su vida a esto y construyamos sobre lo que ellos han hecho en vez de reinventar la rueda cada vez.
 
 **Nota:** El que los mencionemos aquí no implica que todas sus ideas son correctas o que estemos de acuerdo con todo lo que dicen. Conocer diferentes puntos de vista, sumado a tu experiencia en diferentes contextos te ayudará a tener un criterio adaptado a tu realidad.
 
-En este capítulo hablaremos de [Kevlin Henney](https://blog.eisele.net/2013/07/the-heroes-of-java-kevlin-henney.html).
+Ahora sí, vamos a hablar de [Kevlin Henney](https://blog.eisele.net/2013/07/the-heroes-of-java-kevlin-henney.html).
 
 ## Acerca de Kevlin Henney
 
@@ -36,6 +36,8 @@ Ha escrito columnas para múltiples revistas dedicadas al desarrollo de software
 - [97 Things Every Developer should know](https://www.oreilly.com/library/view/97-things-every/9780596809515/) - Es una colección de ensayos que Kevlin se encargó de compilar y editar.
 
 Kevlin se ha presentado en casi todas las conferencias importante de desarrollo de software europeas y de hable inglesa. Vive en Bristol, Reino Unido y también disfruta de escribir ficción, puedes encontrar en [Amazon](https://www.amazon.com/Kevlin-Henney/e/B0716N93KR%3Fref=dbs_a_mng_rwt_scns_share) sus libros de ficción. Además es muy accesible, si lo buscas en Twitter es muy probable que te conteste: [Kevlin Henney en Twitter](https://twitter.com/KevlinHenney)
+
+Una de las cosas que menciona que más nos gusta es: **"Si estás de acuerdo con todo lo qu estoy diciendo, no me estás escuchando."**.
 
 ## Algunas ideas de Kevlin
 
@@ -50,23 +52,25 @@ De las pláticas y el contenido que hemos consumido de Kevlin, hemos podido deri
 
 ## Pláticas
 
-Kevlin tiene decenas de pláticas en YouTube y Vimeo, hablando temas muy variados, todos relacionados de una forma u otra con el _proceso_ de desarrollo de calidad. Aquí vamos a listar algunas de las que nos han parecido las mejores.
+Kevlin tiene decenas de pláticas en YouTube y Vimeo, hablando temas variados, todos relacionados de una forma u otra con el _proceso_ de desarrollo y la calidad del software. V
+
+Vamos a mencionar tres de las que nos han parecido las mejores.
 
 ### Software is Details
 
-Aquí presenta una idea que repite a lo largo de sus presentaciones: la implementación del software requiere un conocimiento lo más profundo y completo que se pueda sobre el problema que se está resolviendo. Aquí da algunos ejemplos en los que se pensó en un diseño del sistema sin pensar en los "detalles de implementación". Mantener la vista en el sistema entero mientras se toma en cuenta los detalles es un señal de un arquitecto de software efectivo.
+Aquí presenta una idea que repite a lo largo de sus presentaciones: **la implementación del software requiere un conocimiento lo más profundo y completo que se pueda sobre el problema que se está resolviendo**. Da algunos ejemplos en los que se diseñó un sistema sin pensar en los "detalles de implementación" con resultados catastróficos. Mantener la vista en el sistema entero mientras se toman en cuenta los detalles es una señal de un arquitecto de software efectivo.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kX0prJklhUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Old is the new new
 
-En esta plática resalta la importancia de conocer y mantener los principios que habilitan a las nuevas tecnologías que pasan rápido, mientras que estos se mantienen.
+En esta plática resalta la importancia de conocer y dominar los principios que habilitan a las nuevas tecnologías y herramientas. Las implementaciones tienen una vida corta mientras que los principios se mantienen inalterados.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AbgsfeGvg3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### It Depends...
 
-Crear software **depende** del conocimiento que tengamos acerca del dominio que estamos tratando. Nuestro conocimiento tiene límites que no podemos sobrepasar y es contra eso con lo que debemos tener cuidado, cosas que no están inmediatamente en nuestra visión.
+Crear software **depende** del conocimiento que tengamos acerca del dominio que estamos tratando. Nuestro conocimiento tiene límites que no podemos sobrepasar (incertidumbre) y es contra eso con lo que debemos tener cuidado, cosas que no están inmediatamente en nuestra visión.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rNSVZs66o48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
