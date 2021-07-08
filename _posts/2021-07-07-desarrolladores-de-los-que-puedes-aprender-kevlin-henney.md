@@ -48,7 +48,7 @@ De las pláticas y el contenido que hemos consumido de Kevlin, hemos podido deri
 
 1. **La arquitectura de software requiere entendimiento completo del dominio.** Una de las ideas que Kevlin repite vez tras vez es la importancia de entender y definir el problema que estamos tratando de resolver. Se basa en las ideas de otros autores para reforzar esto. Una de las cosas que Kevlin resalta es que debemos conocer los **detalles**, para poder implementar software correcto con la arquitectura adecuada.
 2. **El diseño y la arquitectura de software son procesos iterativos e incrementales.** Es imposible hacer un diseño completamente correcto y sin errores desde la primera vez. Es por eso que esta es una idea que se repite en sus conferencias vez tras vez. La lección para nosotros: _debemos diseñar el software con el conocimiento de que siempre habrá algo que mejorar_.
-3. **El software simple, pequeño y "aburrido" es más fácil de manejar**. Haciendo eco de la frase que pusimos al inicio de esta sección, una de las ideas que Kevlin promueve más es la de minimizar la cantidad de código para lograr algo, así como buscar la simplicidad tanto en funciones como de construcción. Esto último es lo que llamamos aburrido, evitar tanto como podamos
+3. **El software simple, pequeño y "aburrido" es más fácil de manejar**. Haciendo eco de la frase que pusimos al inicio de esta sección, una de las ideas que Kevlin promueve más es la de minimizar la cantidad de código para lograr algo, así como buscar la simplicidad tanto en funciones como de construcción. Esto último es lo que llamamos aburrido: evitar tanto como podamos tecnologías a las que no estamos acostumbrados o demasiado nuevas y que agreguen dependencias inecesarias.
 
 ## Pláticas
 
