@@ -87,6 +87,9 @@ Para aprender más de las ideas qeu Kevlin enseña, puedes investigar más de é
 
 - [Blog](https://kevlinhenney.medium.com/)
 
+- [Sus presentaciones](https://www.slideshare.net/Kevlin/presentations)
+
+
 ## Conclusión
 
 Todos los desarrolladores de diferentes niveles podemos aprender mucho de las ideas que Kevlin se ha dedicado a enseñar, mientras lo hace de una manera entretenida, profunda y que va puliendo con el tiempo. Es importante escuchar a personas con experiencia para pode desarrollar el criterio propio y las habilidades y formas de pensar para ser efectivos.
