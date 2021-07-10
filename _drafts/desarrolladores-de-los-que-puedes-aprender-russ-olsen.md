@@ -13,3 +13,5 @@ header:
 ---
 
 Twitter: https://twitter.com/russolsen
+
+En este capítulo vamos a Hablar de [Russ Olsen]()
