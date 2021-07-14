@@ -11,13 +11,17 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-En este capítulo vamos a Hablar de [Russ Olsen](http://russolsen.com/), un desarrollador ahora de [Clojure](), pero bastante reconocido en el mundo de Ruby. Ha escrito varios libros y contribuye activamente a la comunidad mediante podcast, presentaciones y charlas.
+En este capítulo vamos a Hablar de [Russ Olsen](http://russolsen.com/), un desarrollador ahora de [Clojure](https://clojure.org/), pero bastante reconocido en el mundo de Ruby. Ha escrito varios libros y contribuye activamente a la comunidad mediante podcast, presentaciones y charlas.
 
 ## Acerca de Russ
 
 Russ trabaja actualmente para [Cognitec](https://www.cognitect.com/), la empresa que está detrás de Clojure. Está en su [blog](https://www.cognitect.com/blog/) y en su [website](https://www.cognitect.com/).
 
-## Las ideas de Russ 
+
+
+## Las ideas de Russ
+
+Russ tiene ideas muy pragmáticas para crear software, con un background de ingeniería mecánica.
 
 ## Presentaciones
 
@@ -29,7 +33,7 @@ Aquí tienes las tres charlas que Russ que pueden aportar a tu conocimiento y mo
 
 - [Eloquent Explanations](https://www.youtube.com/watch?v=80EE4mZmp3A): En esta charla Russ nos habla sobre lo importante que es comunicar claramente varios aspeectos de los sistemas que creamos, con la premisa fundamental de que el conocimiento es lo que nos permite crear el software que necesitamos. En [este hilo de Twitter]() hicimos un resumen.
 
-- [Functional Programming in 40 minutes](): Como puedes ver, Russ es un programador bastante versátil. En los últimos años se ha dedicado a programar en Clojure, y como viste incluso tiene un libro dedicado a enseñarlo. Esta es una de las charlas que más me ayudó a comprender la programción funcional como idea más allá de las definiciones clásicas y que te dejan híper confundido. Si quieres aprender programación funcional, esta charla te puede ayudar a entenderla para empezar con una buena base.
+- [Functional Programming in 40 minutes](https://www.youtube.com/watch?v=0if71HOyVjY): Como puedes ver, Russ es un programador bastante versátil. En los últimos años se ha dedicado a programar en Clojure, y como viste incluso tiene un libro dedicado a enseñarlo. Esta es una de las charlas que más me ayudó a comprender la programción funcional como idea más allá de las definiciones clásicas y que te dejan híper confundido. Si quieres aprender programación funcional, esta charla te puede ayudar a entenderla para empezar con una buena base.
 
 Tiene varias charlas más que puedes buscar en YouTube, pero estas son las más importantes para mi.
 
@@ -37,9 +41,7 @@ Tiene varias charlas más que puedes buscar en YouTube, pero estas son las más 
 
 - [Twitter de Russ](https://twitter.com/russolsen).
 - [Podcaasts ene los que participa](https://github.com/russolsen/podcasts)
-- Su [Github](https://github.com/russolsen/), tiene cosas interesantes, como la implementación del languaje Forth en Python y Clojure, una implementación de Transit (un formato de serialización) en Go y Julia. 
+- Su [Github](https://github.com/russolsen/), tiene cosas interesantes, como la implementación del languaje Forth en Python y Clojure, una implementación de Transit (un formato de serialización) en Go y Julia.
 ## Conclusión
 
 Una de las cosas que aprender al ver la carrera de Russ es su flexibilidad y adaptabilidad.
-
-
