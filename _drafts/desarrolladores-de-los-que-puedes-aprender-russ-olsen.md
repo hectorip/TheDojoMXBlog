@@ -6,8 +6,8 @@ tags: devs ruby clojure
 comments: true
 excerpt: "Escribe aquí un buen resumen de tu artículo"
 header:
-  overlay_image: #image
-  teaser: #image
+  overlay_image: https://res.cloudinary.com/hectorip/image/upload/e_oil_paint:13/v1626237333/slideslive_russ-olsen_explain-it_mejk2s.jpg
+  teaser: https://res.cloudinary.com/hectorip/image/upload/e_oil_paint:13,w_300/v1626237333/slideslive_russ-olsen_explain-it_mejk2s.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
@@ -18,12 +18,11 @@ En este capítulo vamos a Hablar de [Russ Olsen](http://russolsen.com/), un desa
 Russ trabaja actualmente para [Cognitec](https://www.cognitect.com/), la empresa que está detrás de Clojure. Está en su [blog](https://www.cognitect.com/blog/) y en su [website](https://www.cognitect.com/).
 
 
-
 ## Las ideas de Russ
 
 Russ tiene ideas muy pragmáticas para crear software, con un background de ingeniería mecánica.
 
-## Presentaciones
+## Charlas y presentaciones
 
 > "Ve y haz cosas difíciles." - Russ Olsen
 
@@ -42,6 +41,12 @@ Tiene varias charlas más que puedes buscar en YouTube, pero estas son las más 
 - [Twitter de Russ](https://twitter.com/russolsen).
 - [Podcaasts ene los que participa](https://github.com/russolsen/podcasts)
 - Su [Github](https://github.com/russolsen/), tiene cosas interesantes, como la implementación del languaje Forth en Python y Clojure, una implementación de Transit (un formato de serialización) en Go y Julia.
+- El blog de [Cognitect](https://www.cognitect.com/blog/)
+
 ## Conclusión
 
-Una de las cosas que aprender al ver la carrera de Russ es su flexibilidad y adaptabilidad.
+Una de las cosas que aprender al ver la carrera de Russ es su flexibilidad y adaptabilidad. Russ era un gran nombre en el mundo de Rails y Ruby, pero ahora está en el mundo de Clojure y tiene una de las mejores explicaciones para aprender programación funcional.
+
+Además, el pragmatismo que demuestra en los consejos que da, es algo que podemos aprender a aplicar: resolver el problema es mucho más importante que sonar rimbombantes y asombrar a todos con las palabras tan bonitas que usamos.
+
+El último punto que quiero resaltar tiene que ver con la capacidad que tiene de contar historias, explicar progresivamente y dar charlas entretenidas. La comunicación es uno de los aspectos más importantes en el desarrollo de software, y mientreas mejores seamos e eso, más podremos avanzar en nuestra carrera.
