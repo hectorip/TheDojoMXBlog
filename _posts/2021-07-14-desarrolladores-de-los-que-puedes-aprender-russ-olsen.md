@@ -4,7 +4,7 @@ date: 2021-07-14
 author: Héctor Patricio
 tags: devs ruby clojure
 comments: true
-excerpt: "Escribe aquí un buen resumen de tu artículo"
+excerpt: "Russ Olsen es un desarrollador de software conocido por sus libros sobre Ruby y Clojure y por las excelentes charlas que da. Veamos algunas de sus ideas y lo que podemos aprender de él."
 header:
   overlay_image: https://res.cloudinary.com/hectorip/image/upload/e_oil_paint:13/v1626237333/slideslive_russ-olsen_explain-it_mejk2s.jpg
   teaser: https://res.cloudinary.com/hectorip/image/upload/e_oil_paint:13,w_300/v1626237333/slideslive_russ-olsen_explain-it_mejk2s.jpg
@@ -15,11 +15,21 @@ En este capítulo vamos a Hablar de [Russ Olsen](http://russolsen.com/), un desa
 
 ## Acerca de Russ
 
-Russ trabaja actualmente para [Cognitec](https://www.cognitect.com/) (parece ser que como vicepresidente), la empresa que está detrás del lenguaje Clojure. Según el blog de Cognitec.
+Russ trabaja como vicepresidente de [Cognitec](https://www.cognitect.com/), la empresa que está detrás de Clojure. Ha participado en proyectos que parecen bastante complejos, su Github muestra creación de compiladores, marshalling y otras cosas interesantes.
+
+Según la biografía que se encuentra en [sitios de conferencias](https://gotocon.com/berlin-2015/speaker/Russ+Olsen) ha trabajado en motores de renderizado 3D, sistemas de consulta de bases de datos y sistema de flujos de trabajo, en pocas palbras, proyectos bastante complejos.
 
 ## Las ideas de Russ
 
-Russ tiene ideas muy pragmáticas para crear software, con un background de ingeniería mecánica.
+Russ tiene ideas muy pragmáticas para crear software, con un background de ingeniería mecánica. Vamos a hablar de algunas cosas que podemos aprender de él y aplicar directamente en nuestras carreras y proyectos.
+
+1. Transmitir conocimiento es MUY IMPORTANTE para el desarrollo de software. Si no lo compartimos ponemos en riesgo el desarrollo del proyecto en el que estamos participando. Saber explicarlo de manera sencilla es una habilidad que todos debemos adquirir.
+
+2. La programación funcional, como una serie de _restricciones, técnicas y habilidades_ que reorganizan la forma en que escribimos código, es una forma de crear código de mejor calidad y más mantenible.
+
+3. **Trabajar con otras personas** es uno de los aspectos más importantes que tiene el desarrollo de software y saber organizarla y tratar con ellas es imperativo para llevar a los proyectos a buen término.
+
+4. **Crear cosas que importen** y difíciles te inspirará para seguir creando y también a otras personas.
 
 ## Charlas y presentaciones
 

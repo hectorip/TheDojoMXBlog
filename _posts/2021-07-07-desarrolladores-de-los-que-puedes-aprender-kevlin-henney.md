@@ -74,6 +74,8 @@ Crear software **depende** del conocimiento que tengamos acerca del dominio que 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rNSVZs66o48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+---
+
 Tiene muchas más pláticas en conferencias que puedes buscar directamente en YouTube. Cada una de sus pláticas es un conjunto de ideas y referencias que es más de lo que se puede absorber en el tiempo en el que lo presenta, por lo que tal vez tengas que verlas varias veces, pero todo ese bagaje vale la pena. Aquí te dejamos una búsqueda que las agrupa: [DevTube](https://dev.tube/@kevlinhenney)
 ## Recursos
 
