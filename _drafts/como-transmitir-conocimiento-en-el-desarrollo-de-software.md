@@ -11,16 +11,10 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
 ---
 
-Programar software es uno
+Desarrollar software es una de las cosas que están basadas completamente en el conocimiento que tenemos sobre lo que estamos programando.
 
-
-      - text: 
-          La semana pasada, investigando sobre @russolsen vi la charla "Eloquent Explanations". En ella se proponen 5 puntos para darnos a entender cuando compartimos conocimiento con nuestro equipo u otras personas. Aquí te resumo lo que aprendí.
-          🕳🐇
-        media:
-          - media/russ1.png
-      - text: |
-          La motivación: lo que nos limita para construir software es conocimiento. Conocimiento sobre el dominio, el negocio o el sistema. Es por eso que compartirlo es una muy buena forma de ayudar al equipo a avanzar. La principal forma de compartirlo es con explicaciones.
+La charla ["Eloquent Explanations"](). En ella se proponen 5 puntos para darnos a entender cuando compartimos conocimiento con nuestro equipo u otras personas. Aquí te resumo lo que aprendí.
+Primeramente hablemos de la motivación para explicar mejor las cosas: lo que nos limita para construir software es conocimiento. Conocimiento sobre el dominio, el negocio o el sistema. Es por eso que compartirlo es una muy buena forma de ayudar al equipo a avanzar. La principal forma de compartirlo es con explicaciones.
       - text: |
           Ahora veamos cómo podemos explicarnos mejor. Punto 1: debemos tener un plan o una estructura para compartir el conocimiento, lo primero es no aventar tus pensamientos sin estructura. Russ propone algunas estructuras, como "Zomm In", "Zoom Out" y "simple to complex".
       - text: |
