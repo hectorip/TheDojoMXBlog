@@ -47,15 +47,14 @@ Aquí tienes las tres charlas que Russ que pueden aportar a tu conocimiento y mo
 
 - [Eloquent Explanations](https://www.youtube.com/watch?v=80EE4mZmp3A): En esta charla Russ nos habla sobre lo importante que es comunicar claramente varios aspeectos de los sistemas que creamos, con la premisa fundamental de que el conocimiento es lo que nos permite crear el software que necesitamos. En [este hilo de Twitter](https://twitter.com/HectorIP/status/1414096122306498560) hicimos un resumen.
 
-- [Functional Programming in 40 minutes](https://www.youtube.com/watch?v=0if71HOyVjY): Como puedes ver, Russ es un programador bastante versátil. En los últimos años se ha dedicado a programar en Clojure, y como viste incluso tiene un libro dedicado a enseñarlo. Esta es una de las charlas que más me ayudó a comprender la programación funcional como idea más allá de las definiciones clásicas y que te dejan híper confundido. Si quieres aprender programación funcional, esta charla te puede ayudar a entenderla para empezar con una buena base.
+- [Functional Programming in 40 minutes](https://www.youtube.com/watch?v=0if71HOyVjY): Como puedes ver, Russ es un programador bastante versátil. En los últimos años se ha dedicado a programar en Clojure. Esta es una de las charlas que más me ayudó a comprender la programación funcional como idea más allá de las definiciones clásicas y que te dejan híper confundido. Si quieres aprender programación funcional, esta charla te puede ayudar a entenderla para empezar con una buena base.
 
 Tiene varias charlas más que puedes buscar en [YouTube](https://www.youtube.com/results?search_query=russ+olsen), pero estas son las más importantes para mi, y parece que varias de ellas son la mismas que mencionamos aquí pero repetidas.
 
 ## Recursos para aprender más
 
 - [Twitter de Russ](https://twitter.com/russolsen).
-- [Podcaasts ene los que participa](https://github.com/russolsen/podcasts)
-- Su [Github](https://github.com/russolsen/), tiene cosas interesantes, como la implementación del languaje [Forth](https://hackaday.com/2017/01/27/forth-the-hackers-language/) en Python y Clojure, una implementación de Transit (un formato de serialización) en Go y Julia.
+- Su [Github](https://github.com/russolsen/), tiene cosas interesantes, como la implementación del lenguaje [Forth](https://hackaday.com/2017/01/27/forth-the-hackers-language/) en Python y Clojure, una implementación de Transit (un formato de serialización) en Go y Julia.
 - El blog de [Cognitect](https://www.cognitect.com/blog/)
 - Este podcast en el que participó: [Get Smarter and Make Stuff](https://www.youtube.com/watch?v=gcs1t91X5LA)
 
