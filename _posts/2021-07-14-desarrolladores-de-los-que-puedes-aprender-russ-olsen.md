@@ -17,7 +17,13 @@ En este capítulo vamos a Hablar de [Russ Olsen](http://russolsen.com/), un desa
 
 Russ trabaja como vicepresidente de [Cognitec](https://www.cognitect.com/), la empresa que está detrás de Clojure. Ha participado en proyectos que parecen bastante complejos, su Github muestra creación de compiladores, marshalling y otras cosas interesantes.
 
-Según la biografía que se encuentra en [sitios de conferencias](https://gotocon.com/berlin-2015/speaker/Russ+Olsen) ha trabajado en motores de renderizado 3D, sistemas de consulta de bases de datos y sistema de flujos de trabajo, en pocas palbras, proyectos bastante complejos.
+Según la biografía que se encuentra en [sitios de conferencias](https://gotocon.com/berlin-2015/speaker/Russ+Olsen) ha trabajado en motores de renderizado 3D, sistemas de consulta de bases de datos y sistema de flujos de trabajo, en pocas palabras, proyectos bastante complejos.
+
+Russ es el autor de tres libros bastantes respetados:
+
+- [Eloquent Ruby](https://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional/dp/0321584104): acerca de cómo escribir Ruby idiomáticamente.
+- [Design Patterns in Ruby](https://www.amazon.com/gp/product/B004YW6M6G/ref=dbs_a_def_rwt_hsch_vapi_tkin_p1_i2): la implementación de los patrones de diseño clásicos en Ruby.
+- [Getting Clojure](https://pragprog.com/titles/roclojure/getting-clojure/): te enseña a programar en Clojure mientras te explica las ideas detrás de cada una de las caracerísticas del lenguaje, ya que es importante concer _la visión_ detrás del lenguaje.
 
 ## Las ideas de Russ
 
